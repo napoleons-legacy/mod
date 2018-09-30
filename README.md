@@ -1,3 +1,3 @@
 # Napoleon's Legacy
 
-A fantasy mod for Victoria 2
+An alternate history mod for Victoria 2
