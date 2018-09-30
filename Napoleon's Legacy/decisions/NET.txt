@@ -1,233 +1,234 @@
+
 political_decisions = {
-	move_home = {
-		picture = move_home
-		potential = {
-			tag = NET
-			owns = 375
-			NOT = {
-				has_country_flag = returned_home
-			}
-		}
+    move_home = {
+        picture = move_home
+        potential = {
+            tag = NET
+            owns = 375
+            NOT = {
+                has_country_flag = returned_home
+            }
+        }
 
-		allow = {
-			NET = {
-				all_core = {
-					owned_by = THIS
-						}
-					}
-		}
+        allow = {
+            NET = {
+                all_core = {
+                    owned_by = THIS
+                        }
+                    }
+        }
 
-		effect = {
-			capital = 375
-			prestige = 50
-			set_country_flag = returned_home
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	integrating_philippines = {
-		picture = integrating_philippines
-		potential = {
-			tag = NET
-			exists = PHL
-		}
-		allow = {
-			OR = { 
-				is_our_vassal = PHL
-				PHL = { in_sphere = NET }
-				PHL = { all_core = { owned_by = THIS }	}
-			}
-		}
-		effect = {
-			prestige = 5
-			badboy = 5
-			random_country = {
-				limit = {
-					tag = PHL
-					exists = yes
-				}
-				NET = { inherit = PHL }
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	dutch_lowlands = {
-		picture = become_wallonia
-		potential = {
-			tag = NET
-			owns = 387
-			NOT = { has_country_flag = lowlands_claimed }
-		}
-		allow = {
-			capital = 375
-			OR = {
-				ruling_party_ideology = conservative
-				ruling_party_ideology = reactionary
-				ruling_party_ideology = fascist
-			}
-			nationalism_n_imperialism = 1
-			prestige = 25
-		}
-		effect = {
-			badboy = 7
-			BEL_394 = { add_core = NET }
-			397 = { add_core = NET }
-			399 = { add_core = NET }
-			400 = { add_core = NET }
-			401 = { add_core = NET }
-			404 = { add_core = NET }
-			405 = { add_core = NET } 
-			set_country_flag = lowlands_claimed
-		}
-		ai_will_do = { factor = 1 }
-	}
-			
+        effect = {
+            capital = 375
+            prestige = 50
+            set_country_flag = returned_home
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
 
-	dutch_wallonia = {
-		picture = become_wallonia
-		potential = {
-			tag = NET
-			owns = 392
-			owns = 393
-			owns = 394
-			owns = 395
-			owns = 398
-			NOT = { has_global_flag = dutch_wallons }
-		}
-		
-		allow = {
-			war = no
-			nationalism_n_imperialism = 1
-		}
-		
-		effect = {
-			prestige = 5
-			set_global_flag = dutch_wallons
-			395 = { change_province_name = "Luik" }
-			392 = { change_province_name = "Namen" }
-			398 = { change_province_name = "Aarlen" }
-			393 = { change_province_name = "Doornik" }
-			394 = { change_province_name = "Bergen" }
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-	
-	standard_wallonia = {
-		picture = become_wallonia
-		potential = {
-			NOT = { tag = NET }
-			owns = 392
-			owns = 393
-			owns = 394
-			owns = 395
-			owns = 398
-			has_global_flag = dutch_wallons
-		}
-		
-		allow = {
-			war = no
-		}
-		
-		effect = {
-			prestige = 5
-			clr_global_flag = dutch_wallons
-			395 = { change_province_name = "Liège" }
-			392 = { change_province_name = "Namur" }
-			398 = { change_province_name = "Arlon" }
-			393 = { change_province_name = "Tournai" }
-			394 = { change_province_name = "Charleroi" }
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-	embrace_wallons = {
-		picture = embrace_minority
-		potential = {
-			tag = NET
-			any_owned_province = { culture = wallonian }
-			NOT = {
-				primary_culture = wallonian
-				accepted_culture = wallonian
-			}
-		}
-		
-		allow = {
-			prestige = 50
-			nationalism_n_imperialism = 1
-			NOT = {
-				any_owned_province = {
-					culture = wallonian
-					average_militancy = 2
-				}
-			}
-		}
-		
-		effect = {
-			add_accepted_culture = wallonian
-			prestige = -25
-			any_pop = {
-				limit = { has_pop_culture = wallonian }
-				consciousness = -4
-				militancy = -4
-			}
-			any_pop = {
-				limit = {
-					is_primary_culture = no
-					is_accepted_culture = no
-				}
-				consciousness = 8
-				militancy = 6
-			}
-		}
-	}
-	
-	embrace_picard = {
-		picture = embrace_minority
-		potential = {
-			tag = NET
-			any_owned_province = { culture = picard }
-			NOT = {
-				primary_culture = picard
-				accepted_culture = picard
-			}
-		}
-		
-		allow = {
-			prestige = 75
-			nationalism_n_imperialism = 1
-			NOT = {
-				any_owned_province = {
-					culture = picard
-					average_militancy = 1
-				}
-			}
-		}
-		
-		effect = {
-			add_accepted_culture = picard
-			prestige = -30
-			any_pop = {
-				limit = { has_pop_culture = picard }
-				consciousness = -5
-				militancy = -5
-			}
-			any_pop = {
-				limit = {
-					is_primary_culture = no
-					is_accepted_culture = no
-				}
-				consciousness = 9
-				militancy = 7
-			}
-		}
-	}
+    integrating_philippines = {
+        picture = integrating_philippines
+        potential = {
+            tag = NET
+            exists = PHL
+        }
+        allow = {
+            OR = {
+                is_our_vassal = PHL
+                PHL = { in_sphere = NET }
+                PHL = { all_core = { owned_by = THIS }  }
+            }
+        }
+        effect = {
+            prestige = 5
+            badboy = 5
+            random_country = {
+                limit = {
+                    tag = PHL
+                    exists = yes
+                }
+                NET = { inherit = PHL }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    dutch_lowlands = {
+        picture = become_wallonia
+        potential = {
+            tag = NET
+            owns = 387
+            NOT = { has_country_flag = lowlands_claimed }
+        }
+        allow = {
+            capital = 375
+            OR = {
+                ruling_party_ideology = conservative
+                ruling_party_ideology = reactionary
+                ruling_party_ideology = fascist
+            }
+            nationalism_n_imperialism = 1
+            prestige = 25
+        }
+        effect = {
+            badboy = 7
+            BEL_394 = { add_core = NET }
+            397 = { add_core = NET }
+            399 = { add_core = NET }
+            400 = { add_core = NET }
+            401 = { add_core = NET }
+            404 = { add_core = NET }
+            405 = { add_core = NET }
+            set_country_flag = lowlands_claimed
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+
+    dutch_wallonia = {
+        picture = become_wallonia
+        potential = {
+            tag = NET
+            owns = 392
+            owns = 393
+            owns = 394
+            owns = 395
+            owns = 398
+            NOT = { has_global_flag = dutch_wallons }
+        }
+
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+        }
+
+        effect = {
+            prestige = 5
+            set_global_flag = dutch_wallons
+            395 = { change_province_name = "Luik" }
+            392 = { change_province_name = "Namen" }
+            398 = { change_province_name = "Aarlen" }
+            393 = { change_province_name = "Doornik" }
+            394 = { change_province_name = "Bergen" }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+
+    standard_wallonia = {
+        picture = become_wallonia
+        potential = {
+            NOT = { tag = NET }
+            owns = 392
+            owns = 393
+            owns = 394
+            owns = 395
+            owns = 398
+            has_global_flag = dutch_wallons
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 5
+            clr_global_flag = dutch_wallons
+            395 = { change_province_name = "Liège" }
+            392 = { change_province_name = "Namur" }
+            398 = { change_province_name = "Arlon" }
+            393 = { change_province_name = "Tournai" }
+            394 = { change_province_name = "Charleroi" }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    embrace_wallons = {
+        picture = embrace_minority
+        potential = {
+            tag = NET
+            any_owned_province = { culture = wallonian }
+            NOT = {
+                primary_culture = wallonian
+                accepted_culture = wallonian
+            }
+        }
+
+        allow = {
+            prestige = 50
+            nationalism_n_imperialism = 1
+            NOT = {
+                any_owned_province = {
+                    culture = wallonian
+                    average_militancy = 2
+                }
+            }
+        }
+
+        effect = {
+            add_accepted_culture = wallonian
+            prestige = -25
+            any_pop = {
+                limit = { has_pop_culture = wallonian }
+                consciousness = -4
+                militancy = -4
+            }
+            any_pop = {
+                limit = {
+                    is_primary_culture = no
+                    is_accepted_culture = no
+                }
+                consciousness = 8
+                militancy = 6
+            }
+        }
+    }
+
+    embrace_picard = {
+        picture = embrace_minority
+        potential = {
+            tag = NET
+            any_owned_province = { culture = picard }
+            NOT = {
+                primary_culture = picard
+                accepted_culture = picard
+            }
+        }
+
+        allow = {
+            prestige = 75
+            nationalism_n_imperialism = 1
+            NOT = {
+                any_owned_province = {
+                    culture = picard
+                    average_militancy = 1
+                }
+            }
+        }
+
+        effect = {
+            add_accepted_culture = picard
+            prestige = -30
+            any_pop = {
+                limit = { has_pop_culture = picard }
+                consciousness = -5
+                militancy = -5
+            }
+            any_pop = {
+                limit = {
+                    is_primary_culture = no
+                    is_accepted_culture = no
+                }
+                consciousness = 9
+                militancy = 7
+            }
+        }
+    }
 }

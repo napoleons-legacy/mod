@@ -1,1286 +1,1286 @@
 #HUN revolts against AUS - Germ or federalism
 country_event = {
-	title = "EVTNAME55031"
-	desc = "EVTDESC55031"
-	picture = "Rebellion"
-	id = 55031
+    title = "EVTNAME55031"
+    desc = "EVTDESC55031"
+    picture = "Rebellion"
+    id = 55031
 
-	trigger = {
-		tag = AUS
-		OR = {
-			641 = {	pop_militancy = 7 }
-			war_exhaustion = 30
-		}
-	NOT = {
-		exists = HUN
-		has_country_modifier = dualism_modifier
-		}
-	641 = {
-		NOT = {
-			has_province_modifier = hungarians_revolted
-			}
-		OR = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-			has_province_modifier = federalized_province
-		}
-	}
-	has_country_flag = Dual_comp
-	owns = 641
-	}
+    trigger = {
+        tag = AUS
+        OR = {
+            641 = { pop_militancy = 7 }
+            war_exhaustion = 30
+        }
+    NOT = {
+        exists = HUN
+        has_country_modifier = dualism_modifier
+        }
+    641 = {
+        NOT = {
+            has_province_modifier = hungarians_revolted
+            }
+        OR = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+            has_province_modifier = federalized_province
+        }
+    }
+    has_country_flag = Dual_comp
+    owns = 641
+    }
 
-	mean_time_to_happen =  {
-		months = 2
-	}
+    mean_time_to_happen =  {
+        months = 2
+    }
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	option = {
-		name = "EVTOPTA55031"
-		any_owned = {
-			limit = {
-				is_core = HUN
-				NOT = {
-					is_core = CRO
-					is_core = SER
-					is_core = AUS
-					province_id = 633
-					province_id = 634
-					province_id = 636
-					province_id = 638
-					}
-				}
-				secede_province = HUN
-			}
-		HUN = {
-			political_reform = mandatory_service
-			capital = 641
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55031"
+        any_owned = {
+            limit = {
+                is_core = HUN
+                NOT = {
+                    is_core = CRO
+                    is_core = SER
+                    is_core = AUS
+                    province_id = 633
+                    province_id = 634
+                    province_id = 636
+                    province_id = 638
+                    }
+                }
+                secede_province = HUN
+            }
+        HUN = {
+            political_reform = mandatory_service
+            capital = 641
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		casus_belli = {
-			target = HUN
-			type = conquest
-			months = 1
-		}
-		war = {
-			target = HUN
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Hungarian_Uprising_2
-		}
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        casus_belli = {
+            target = HUN
+            type = conquest
+            months = 1
+        }
+        war = {
+            target = HUN
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Hungarian_Uprising_2
+        }
+    }
 
 #The Hungarians Win
 country_event = {
-	title = "EVTNAME55033"
-	desc = "EVTDESC55033"
-	picture = "Budapest"
-	id = 55033
-	trigger = {
-		tag = AUS
-		has_country_flag = Dual_comp
-		HUN = {exists = yes}
-		NOT = {
-			war_with = HUN
-		}
-		has_country_flag = Hungarian_Uprising_2
-	}
-	
-	fire_only_once = yes
+    title = "EVTNAME55033"
+    desc = "EVTDESC55033"
+    picture = "Budapest"
+    id = 55033
+    trigger = {
+        tag = AUS
+        has_country_flag = Dual_comp
+        HUN = {exists = yes}
+        NOT = {
+            war_with = HUN
+        }
+        has_country_flag = Hungarian_Uprising_2
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	option = {
-		name = "EVTOPTA55033" 
-		prestige = -15
-		any_owned = {
-			limit = {
-				is_core = HUN
-			}
-			remove_core = AUS
-			secede_province = HUN
-		}
-	}
+    option = {
+        name = "EVTOPTA55033" 
+        prestige = -15
+        any_owned = {
+            limit = {
+                is_core = HUN
+            }
+            remove_core = AUS
+            secede_province = HUN
+        }
+    }
 }
 
 #The Hungarians Lose
 country_event = {
 
-	id = 55034
-	trigger = {
-		tag = AUS
-		has_country_flag = Dual_comp
-		HUN = {exists = no}
-		NOT = {
-			war_with = HUN
-		}
-		has_country_flag = Hungarian_Uprising_2
-	}
+    id = 55034
+    trigger = {
+        tag = AUS
+        has_country_flag = Dual_comp
+        HUN = {exists = no}
+        NOT = {
+            war_with = HUN
+        }
+        has_country_flag = Hungarian_Uprising_2
+    }
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME55034"
-	desc = "EVTDESC55034"
-	picture = "Budapest"
+    title = "EVTNAME55034"
+    desc = "EVTDESC55034"
+    picture = "Budapest"
 
-	option = {
-		name = "EVTOPTA55034" 
-		prestige = 10
-		any_owned = {
-			limit = {
-				is_core = HUN
-				NOT = {
-					is_core = CRO
-					is_core = SER
-					is_core = AUS
-					province_id = 633
-					province_id = 634
-					province_id = 636
-					province_id = 638
-					}
-				}
-			add_province_modifier = {
-				name = hungarians_revolted
-				duration = 6000
-			}
-		}
-		clr_country_flag = Hungarian_Uprising_2
-	}
+    option = {
+        name = "EVTOPTA55034" 
+        prestige = 10
+        any_owned = {
+            limit = {
+                is_core = HUN
+                NOT = {
+                    is_core = CRO
+                    is_core = SER
+                    is_core = AUS
+                    province_id = 633
+                    province_id = 634
+                    province_id = 636
+                    province_id = 638
+                    }
+                }
+            add_province_modifier = {
+                name = hungarians_revolted
+                duration = 6000
+            }
+        }
+        clr_country_flag = Hungarian_Uprising_2
+    }
 }
 
 #HUN revolts against AUS - Armed by Foe
 country_event = {
 
-	id = 55035
+    id = 55035
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	title = "EVTNAME55031"
-	desc = "EVTDESC55031"
-	picture = "Rebellion"
+    title = "EVTNAME55031"
+    desc = "EVTDESC55031"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55031"
-		any_owned = {
-			limit = {
-				is_core = HUN
-				NOT = {
-					is_core = CRO
-					is_core = SER
-					is_core = AUS
-					province_id = 633
-					province_id = 634
-					province_id = 636
-					province_id = 638
-					}
-				}
-				secede_province = HUN
-			}
-			HUN = {
-			political_reform = mandatory_service
-			capital = 641
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55031"
+        any_owned = {
+            limit = {
+                is_core = HUN
+                NOT = {
+                    is_core = CRO
+                    is_core = SER
+                    is_core = AUS
+                    province_id = 633
+                    province_id = 634
+                    province_id = 636
+                    province_id = 638
+                    }
+                }
+                secede_province = HUN
+            }
+            HUN = {
+            political_reform = mandatory_service
+            capital = 641
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-			create_alliance = FROM
-			military_access = FROM
-		}
-		casus_belli = {
-			target = HUN
-			type = conquest
-			months = 1
-		}
-		war = {
-			target = HUN
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Hungarian_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+            create_alliance = FROM
+            military_access = FROM
+        }
+        casus_belli = {
+            target = HUN
+            type = conquest
+            months = 1
+        }
+        war = {
+            target = HUN
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Hungarian_Uprising_2
+    }
 }
 
 #GLM revolts against AUS - Armed by Foe
 country_event = {
 
-	id = 55036
+    id = 55036
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	title = "EVTNAME55036"
-	desc = "EVTDESC55036"
-	picture = "Rebellion"
+    title = "EVTNAME55036"
+    desc = "EVTDESC55036"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55036"
-		any_owned = {
-			limit = {
-				is_core = GLM
-			}
-			secede_province = GLM
-		}
-		GLM = {
-			political_reform = mandatory_service
-			capital = 702
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55036"
+        any_owned = {
+            limit = {
+                is_core = GLM
+            }
+            secede_province = GLM
+        }
+        GLM = {
+            political_reform = mandatory_service
+            capital = 702
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-			create_alliance = FROM
-			military_access = FROM
-		}
-		casus_belli = {
-			target = GLM
-			type = conquest
-			months = 1
-		}
-		set_global_flag = galician_revolt
-		war = {
-			target = GLM
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Polish_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+            create_alliance = FROM
+            military_access = FROM
+        }
+        casus_belli = {
+            target = GLM
+            type = conquest
+            months = 1
+        }
+        set_global_flag = galician_revolt
+        war = {
+            target = GLM
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Polish_Uprising_2
+    }
 }
 
 #GLM revolts against AUS - Germ or Dual active
 country_event = {
 
-	id = 55037
+    id = 55037
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		OR = {
-			702 = {
-				pop_militancy = 7
-			}
-			war_exhaustion = 30
-		}
-		702 = {
-			NOT = {
-				has_province_modifier = hungarians_revolted
-				has_province_modifier = federalized_province
-			}
-		}
-		NOT = {
-			exists = GLM
-		}
-		year = 1861
-		owns = 702
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        OR = {
+            702 = {
+                pop_militancy = 7
+            }
+            war_exhaustion = 30
+        }
+        702 = {
+            NOT = {
+                has_province_modifier = hungarians_revolted
+                has_province_modifier = federalized_province
+            }
+        }
+        NOT = {
+            exists = GLM
+        }
+        year = 1861
+        owns = 702
+    }
 
-	mean_time_to_happen =  {
-		months = 2
-	}
+    mean_time_to_happen =  {
+        months = 2
+    }
 
-	fire_only_once = yes	
-	
-	title = "EVTNAME55036"
-	desc = "EVTDESC55036"
-	picture = "Rebellion"
+    fire_only_once = yes    
+    
+    title = "EVTNAME55036"
+    desc = "EVTDESC55036"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55036"
-		any_owned = {
-			limit = {
-				is_core = GLM
-			}
-			secede_province = GLM
-		}
-		GLM = {
-			political_reform = mandatory_service
-			capital = 702
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55036"
+        any_owned = {
+            limit = {
+                is_core = GLM
+            }
+            secede_province = GLM
+        }
+        GLM = {
+            political_reform = mandatory_service
+            capital = 702
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		casus_belli = {
-			target = GLM
-			type = conquest
-			months = 1
-		}
-		set_global_flag = galician_revolt
-		war = {
-			target = GLM
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Polish_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        casus_belli = {
+            target = GLM
+            type = conquest
+            months = 1
+        }
+        set_global_flag = galician_revolt
+        war = {
+            target = GLM
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Polish_Uprising_2
+    }
 }
 
 #The Poles Win
 country_event = {
 
-	id = 55038
-	trigger = {
-		tag = AUS
-		year = 1861
-		OR = {
-			PLC = {
-				owns = 702
-			}
-			GLM = {
-				owns = 702
-			}
-		}
-		NOT = {
-			war_with = GLM
-			has_global_flag = GLC_rebels_win
-		}
-		has_country_flag = Polish_Uprising_2
-	}
-	
-	fire_only_once = yes
+    id = 55038
+    trigger = {
+        tag = AUS
+        year = 1861
+        OR = {
+            PLC = {
+                owns = 702
+            }
+            GLM = {
+                owns = 702
+            }
+        }
+        NOT = {
+            war_with = GLM
+            has_global_flag = GLC_rebels_win
+        }
+        has_country_flag = Polish_Uprising_2
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME55038"
-	desc = "EVTDESC55038"
-	picture = "genevaconvention"
+    title = "EVTNAME55038"
+    desc = "EVTDESC55038"
+    picture = "genevaconvention"
 
-	option = {
-		name = "EVTOPTA55038" 
-		prestige = -15
-		set_global_flag = GLC_rebels_win
-	}
+    option = {
+        name = "EVTOPTA55038" 
+        prestige = -15
+        set_global_flag = GLC_rebels_win
+    }
 }
 
 #The Poles Lose
 country_event = {
 
-	id = 55039
-	
-	trigger = {
-		tag = AUS
-		year = 1861
-		NOT = {
-			OR = {
-				PLC = {
-					owns = 702
-				}
-				GLM = {
-					owns = 702
-				}
-			}
-		}
-		NOT = {
-			war_with = GLM
-			has_global_flag = GLC_rebels_win
-		}
-		has_country_flag = Polish_Uprising_2
-	}
+    id = 55039
+    
+    trigger = {
+        tag = AUS
+        year = 1861
+        NOT = {
+            OR = {
+                PLC = {
+                    owns = 702
+                }
+                GLM = {
+                    owns = 702
+                }
+            }
+        }
+        NOT = {
+            war_with = GLM
+            has_global_flag = GLC_rebels_win
+        }
+        has_country_flag = Polish_Uprising_2
+    }
  
-	mean_time_to_happen =  {
-		days = 1
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        days = 1
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55039"
-	desc = "EVTDESC55039"
-	picture = "genevaconvention"
+    title = "EVTNAME55039"
+    desc = "EVTDESC55039"
+    picture = "genevaconvention"
 
-	option = {
-		name = "EVTOPTA55039" 
-		prestige = 10
-		any_owned = {
-			limit = {
-				is_core = GLM
-				}
-			add_province_modifier = {
-				name = hungarians_revolted
-				duration = 6000
-			}
-		}
-		clr_country_flag = Polish_Uprising_2
-	}
+    option = {
+        name = "EVTOPTA55039" 
+        prestige = 10
+        any_owned = {
+            limit = {
+                is_core = GLM
+                }
+            add_province_modifier = {
+                name = hungarians_revolted
+                duration = 6000
+            }
+        }
+        clr_country_flag = Polish_Uprising_2
+    }
 }
 
 #Slovaks Get federalism
 country_event = {
 
-	id = 55041
+    id = 55041
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		has_country_flag = Dual_comp
-		owns = 950
-		has_country_modifier = federalism_modifier
-		950 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        has_country_flag = Dual_comp
+        owns = 950
+        has_country_modifier = federalism_modifier
+        950 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 3
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55041"
-	desc = "EVTDESC55041"
-	picture = "Administration"
+    title = "EVTNAME55041"
+    desc = "EVTDESC55041"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55041"
-		any_owned = {
-			limit = {
-				is_core = SLV
-				}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-				has_pop_culture = slovak
-			}
-			militancy = -4
-		}
-		set_global_flag = Slovakia_federalized
-	}
+    option = {
+        name = "EVTOPTA55041"
+        any_owned = {
+            limit = {
+                is_core = SLV
+                }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+                has_pop_culture = slovak
+            }
+            militancy = -4
+        }
+        set_global_flag = Slovakia_federalized
+    }
 }
 
 #Galicia Get federalism
 country_event = {
 
-	id = 55042
+    id = 55042
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		has_country_flag = Dual_comp
-		owns = 702
-		has_country_modifier = federalism_modifier
-		702 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        has_country_flag = Dual_comp
+        owns = 702
+        has_country_modifier = federalism_modifier
+        702 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 3
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55042"
-	desc = "EVTDESC55042"
-	picture = "Administration"
+    title = "EVTNAME55042"
+    desc = "EVTDESC55042"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55042"
-		any_owned = {
-			limit = {
-				is_core = GLM
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-			OR = {
-				has_pop_culture = polish
-				has_pop_culture = ukrainian
-				}
-			}
-			militancy = -3
-		}
-		set_global_flag = Galicia_federalized
-	}
+    option = {
+        name = "EVTOPTA55042"
+        any_owned = {
+            limit = {
+                is_core = GLM
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+            OR = {
+                has_pop_culture = polish
+                has_pop_culture = ukrainian
+                }
+            }
+            militancy = -3
+        }
+        set_global_flag = Galicia_federalized
+    }
 }
 
 #Bohemia Gets federalism
 country_event = {
 
-	id = 55044
+    id = 55044
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		has_country_flag = czech_nationalism
-		owns = 625
-		has_country_modifier = federalism_modifier
-		625 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        has_country_flag = czech_nationalism
+        owns = 625
+        has_country_modifier = federalism_modifier
+        625 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 3
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55044"
-	desc = "EVTDESC55044"
-	picture = "Administration"
+    title = "EVTNAME55044"
+    desc = "EVTDESC55044"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55044"
-		any_owned = {
-			limit = {
-				is_core = BOH
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-				has_pop_culture = czech
-			}
-			militancy = -4
-		}
-		set_global_flag = Bohemia_federalized
-	}
+    option = {
+        name = "EVTOPTA55044"
+        any_owned = {
+            limit = {
+                is_core = BOH
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+                has_pop_culture = czech
+            }
+            militancy = -4
+        }
+        set_global_flag = Bohemia_federalized
+    }
 }
 
 #BOH revolts against AUS - Germ or Dualism active
 country_event = {
 
-	id = 55046
+    id = 55046
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		OR = {
-			625 = {
-				pop_militancy = 7
-			}
-			war_exhaustion = 30
-		}
-		625 = {
-			NOT = {
-				has_province_modifier = hungarians_revolted
-				has_province_modifier = federalized_province
-			}
-		}
-		NOT = {
-			exists = BOH
-		}
-		has_country_flag = czech_nationalism
-		owns = 625
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        OR = {
+            625 = {
+                pop_militancy = 7
+            }
+            war_exhaustion = 30
+        }
+        625 = {
+            NOT = {
+                has_province_modifier = hungarians_revolted
+                has_province_modifier = federalized_province
+            }
+        }
+        NOT = {
+            exists = BOH
+        }
+        has_country_flag = czech_nationalism
+        owns = 625
+    }
 
-	mean_time_to_happen =  {
-		months = 2
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 2
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55046"
-	desc = "EVTDESC55046"
-	picture = "Rebellion"
+    title = "EVTNAME55046"
+    desc = "EVTDESC55046"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55046"
-		any_owned = {
-			limit = {
-				is_core = BOH
-			}
-			secede_province = BOH
-		}
-		BOH = {
-			political_reform = mandatory_service
-			capital = 625
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55046"
+        any_owned = {
+            limit = {
+                is_core = BOH
+            }
+            secede_province = BOH
+        }
+        BOH = {
+            political_reform = mandatory_service
+            capital = 625
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-			}
-		casus_belli = {
-			target = BOH
-			type = conquest
-			months = 1
-		}
-		war = {
-			target = BOH
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Czech_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+            }
+        casus_belli = {
+            target = BOH
+            type = conquest
+            months = 1
+        }
+        war = {
+            target = BOH
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Czech_Uprising_2
+    }
 }
 
 #The Czechs Win
 country_event = {
 
-	id = 55049
-	trigger = {
-		tag = AUS
-		BOH = {exists = yes}
-		NOT = {
-			war_with = BOH
-		}
-		has_country_flag = Czech_Uprising_2
-	}
+    id = 55049
+    trigger = {
+        tag = AUS
+        BOH = {exists = yes}
+        NOT = {
+            war_with = BOH
+        }
+        has_country_flag = Czech_Uprising_2
+    }
 
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	title = "EVTNAME55049"
-	desc = "EVTDESC55049"
-	picture = "UpperHouse"
+    title = "EVTNAME55049"
+    desc = "EVTDESC55049"
+    picture = "UpperHouse"
 
-	option = {
-		name = "EVTOPTA55049" 
-		prestige = -15
-		BOH = {
-			any_owned = {
-				limit = {
-					is_core = AUS
-				}
-				remove_core = AUS
-			}
-		}
-	}
+    option = {
+        name = "EVTOPTA55049" 
+        prestige = -15
+        BOH = {
+            any_owned = {
+                limit = {
+                    is_core = AUS
+                }
+                remove_core = AUS
+            }
+        }
+    }
 }
 
 #The Czechs Lose
 country_event = {
 
-	id = 55047
-	trigger = {
-		tag = AUS
-		has_country_flag = czech_nationalism
-		BOH = {exists = no}
-		NOT = {
-			war_with = BOH
-		}
-		has_country_flag = Czech_Uprising_2
-	}
+    id = 55047
+    trigger = {
+        tag = AUS
+        has_country_flag = czech_nationalism
+        BOH = {exists = no}
+        NOT = {
+            war_with = BOH
+        }
+        has_country_flag = Czech_Uprising_2
+    }
 
-	mean_time_to_happen =  {
-		days = 1
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        days = 1
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55047"
-	desc = "EVTDESC55047"
-	picture = "UpperHouse"
+    title = "EVTNAME55047"
+    desc = "EVTDESC55047"
+    picture = "UpperHouse"
 
-	option = {
-		name = "EVTOPTA55047" 
-		prestige = 10
-		any_owned = {
-			limit = {
-				is_core = BOH
-			}
-			add_province_modifier = {
-				name = hungarians_revolted
-				duration = 6000
-			}
-		}
-		clr_country_flag = Czech_Uprising_2
-	}
+    option = {
+        name = "EVTOPTA55047" 
+        prestige = 10
+        any_owned = {
+            limit = {
+                is_core = BOH
+            }
+            add_province_modifier = {
+                name = hungarians_revolted
+                duration = 6000
+            }
+        }
+        clr_country_flag = Czech_Uprising_2
+    }
 }
 
 #BOH revolts against AUS - Armed by Foe
 country_event = {
 
-	id = 55048
+    id = 55048
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	title = "EVTNAME55046"
-	desc = "EVTDESC55046"
-	picture = "Rebellion"
+    title = "EVTNAME55046"
+    desc = "EVTDESC55046"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55046"
-		any_owned = {
-			limit = {
-				is_core = BOH
-			}
-			secede_province = BOH
-		}
-		BOH = {
-			political_reform = mandatory_service
-			capital = 625
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55046"
+        any_owned = {
+            limit = {
+                is_core = BOH
+            }
+            secede_province = BOH
+        }
+        BOH = {
+            political_reform = mandatory_service
+            capital = 625
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-			}
-		casus_belli = {
-			target = BOH
-			type = conquest
-			months = 1
-		}
-		war = {
-			target = BOH
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Czech_Uprising_2
-		}
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+            }
+        casus_belli = {
+            target = BOH
+            type = conquest
+            months = 1
+        }
+        war = {
+            target = BOH
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Czech_Uprising_2
+        }
+    }
 
 #Trieste Gets federalism
 country_event = {
 
-	id = 55051
+    id = 55051
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		has_country_flag = butthurt_italians
-		owns = 736
-		has_country_modifier = federalism_modifier
-		736 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        has_country_flag = butthurt_italians
+        owns = 736
+        has_country_modifier = federalism_modifier
+        736 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 3
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55051"
-	desc = "EVTDESC55051"
-	picture = "Administration"
+    title = "EVTNAME55051"
+    desc = "EVTDESC55051"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55051"
-		any_owned = {
-			limit = {
-				region = AUS_736
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-				has_pop_culture = north_italian
-			}
-			militancy = -4
-		}
-		set_global_flag = Trieste_federalized
-	}
+    option = {
+        name = "EVTOPTA55051"
+        any_owned = {
+            limit = {
+                region = AUS_736
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+                has_pop_culture = north_italian
+            }
+            militancy = -4
+        }
+        set_global_flag = Trieste_federalized
+    }
 }
 
 #Vojvodina Gets federalism
 country_event = {
 
-	id = 55052
+    id = 55052
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		owns = 2538
-		has_country_modifier = federalism_modifier
-		2538 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        owns = 2538
+        has_country_modifier = federalism_modifier
+        2538 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 3
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55052"
-	desc = "EVTDESC55052"
-	picture = "Administration"
+    title = "EVTNAME55052"
+    desc = "EVTDESC55052"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55052"
-		any_owned = {
-			limit = {
-				region = AUS_2538
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-				has_pop_culture = serb
-			}
-			militancy = -4
-		}
-		set_global_flag = Vojvodina_federalized
-	}
+    option = {
+        name = "EVTOPTA55052"
+        any_owned = {
+            limit = {
+                region = AUS_2538
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+                has_pop_culture = serb
+            }
+            militancy = -4
+        }
+        set_global_flag = Vojvodina_federalized
+    }
 }
 
 #Croatia Gets federalism
 country_event = {
 
-	id = 55053
+    id = 55053
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		owns = 771
-		has_country_modifier = federalism_modifier
-		771 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        owns = 771
+        has_country_modifier = federalism_modifier
+        771 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 3
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55053"
-	desc = "EVTDESC55053"
-	picture = "Administration"
+    title = "EVTNAME55053"
+    desc = "EVTDESC55053"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55053"
-		any_owned = {
-			limit = {
-				is_core = CRO
-				NOT = {
-					has_province_modifier = federalized_province }
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-				has_pop_culture = croat
-			}
-			militancy = -4
-		}
-		set_global_flag = Croatia_federalized
-	}
+    option = {
+        name = "EVTOPTA55053"
+        any_owned = {
+            limit = {
+                is_core = CRO
+                NOT = {
+                    has_province_modifier = federalized_province }
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+                has_pop_culture = croat
+            }
+            militancy = -4
+        }
+        set_global_flag = Croatia_federalized
+    }
 }
 
 #SIE revolts against AUS - Armed by Foe
 country_event = {
 
-	id = 55056
+    id = 55056
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	title = "EVTNAME55056"
-	desc = "EVTDESC55056"
-	picture = "Rebellion"
+    title = "EVTNAME55056"
+    desc = "EVTDESC55056"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55056"
-		any_owned = {
-			limit = {
-				is_core = SIE
-			}
-			secede_province = SIE
-		}
-		SIE = {
-			political_reform = mandatory_service
-			capital = 654
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55056"
+        any_owned = {
+            limit = {
+                is_core = SIE
+            }
+            secede_province = SIE
+        }
+        SIE = {
+            political_reform = mandatory_service
+            capital = 654
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-			create_alliance = FROM
-			military_access = FROM
-		}
-		casus_belli = {
-			target = SIE
-			type = conquest
-			months = 1
-		}
-		set_global_flag = galician_revolt
-		war = {
-			target = SIE
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Romanian_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+            create_alliance = FROM
+            military_access = FROM
+        }
+        casus_belli = {
+            target = SIE
+            type = conquest
+            months = 1
+        }
+        set_global_flag = galician_revolt
+        war = {
+            target = SIE
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Romanian_Uprising_2
+    }
 }
 
 #SIE revolts against AUS - Germ or Dual active
 country_event = {
 
-	id = 55057
+    id = 55057
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		war_exhaustion = 30
-		654 = {
-			NOT = {
-				has_province_modifier = hungarians_revolted
-				has_province_modifier = federalized_province
-			}
-		}
-		NOT = {
-			exists = SIE
-		}
-		has_country_flag = Trans_memo
-		owns = 654
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        war_exhaustion = 30
+        654 = {
+            NOT = {
+                has_province_modifier = hungarians_revolted
+                has_province_modifier = federalized_province
+            }
+        }
+        NOT = {
+            exists = SIE
+        }
+        has_country_flag = Trans_memo
+        owns = 654
+    }
 
-	mean_time_to_happen =  {
-		months = 2
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 2
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55056"
-	desc = "EVTDESC55056"
-	picture = "Rebellion"
+    title = "EVTNAME55056"
+    desc = "EVTDESC55056"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55056"
-		any_owned = {
-			limit = {
-				is_core = SIE
-			}
-			secede_province = SIE
-		}
-		SIE = {
-			political_reform = mandatory_service
-			capital = 654
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55056"
+        any_owned = {
+            limit = {
+                is_core = SIE
+            }
+            secede_province = SIE
+        }
+        SIE = {
+            political_reform = mandatory_service
+            capital = 654
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		casus_belli = {
-			target = SIE
-			type = conquest
-			months = 1
-		}
-		war = {
-			target = SIE
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Romanian_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        casus_belli = {
+            target = SIE
+            type = conquest
+            months = 1
+        }
+        war = {
+            target = SIE
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Romanian_Uprising_2
+    }
 }
 
 #The Romanians Win
 country_event = {
 
-	id = 55058
-	trigger = {
-		tag = AUS
-		year = 1861
-		OR = {
-			ROM = {
-				owns = 654
-			}
-			SIE = {
-				owns = 654
-			}
-		}
-		NOT = {
-			war_with = SIE
-			has_global_flag = SIE_rebels_win
-		}
-		has_country_flag = Romanian_Uprising_2
-	}
-	
-	fire_only_once = yes
+    id = 55058
+    trigger = {
+        tag = AUS
+        year = 1861
+        OR = {
+            ROM = {
+                owns = 654
+            }
+            SIE = {
+                owns = 654
+            }
+        }
+        NOT = {
+            war_with = SIE
+            has_global_flag = SIE_rebels_win
+        }
+        has_country_flag = Romanian_Uprising_2
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME55058"
-	desc = "EVTDESC55058"
-	picture = "genevaconvention"
+    title = "EVTNAME55058"
+    desc = "EVTDESC55058"
+    picture = "genevaconvention"
 
-	option = {
-		name = "EVTOPTA55058" 
-		prestige = -15
-	}
+    option = {
+        name = "EVTOPTA55058" 
+        prestige = -15
+    }
 }
 
 #The Romanians Lose
 country_event = {
 
-	id = 55059
-	trigger = {
-		tag = AUS
-		year = 1861
-		NOT = {
-			OR = {
-				ROM = {
-					owns = 654
-				}
-				SIE = {
-					owns = 654
-				}
-			}
-		}
-		NOT = {
-			war_with = SIE
-			has_global_flag = SIE_rebels_win
-		}
-		has_country_flag = Romanian_Uprising_2
-	}
+    id = 55059
+    trigger = {
+        tag = AUS
+        year = 1861
+        NOT = {
+            OR = {
+                ROM = {
+                    owns = 654
+                }
+                SIE = {
+                    owns = 654
+                }
+            }
+        }
+        NOT = {
+            war_with = SIE
+            has_global_flag = SIE_rebels_win
+        }
+        has_country_flag = Romanian_Uprising_2
+    }
  
-	mean_time_to_happen =  {
-		days = 1
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        days = 1
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55059"
-	desc = "EVTDESC55059"
-	picture = "genevaconvention"
+    title = "EVTNAME55059"
+    desc = "EVTDESC55059"
+    picture = "genevaconvention"
 
-	option = {
-		name = "EVTOPTA55059" 
-		prestige = 10
-		any_owned = {
-			limit = {
-				is_core = SIE
-			}
-			add_province_modifier = {
-				name = hungarians_revolted
-				duration = 6000
-			}
-		}
-		clr_country_flag = Romanian_Uprising_2
-	}
+    option = {
+        name = "EVTOPTA55059" 
+        prestige = 10
+        any_owned = {
+            limit = {
+                is_core = SIE
+            }
+            add_province_modifier = {
+                name = hungarians_revolted
+                duration = 6000
+            }
+        }
+        clr_country_flag = Romanian_Uprising_2
+    }
 }
 
 #Event allowing ROM to intervene
 country_event = {
-	id = 55060
-	title = "EVTNAME55060"
-	desc = "EVTDESC55060"
-	picture = "greatpowers"
-	
-	trigger = {
-		SIE = {
-			war_with = AUS
+    id = 55060
+    title = "EVTNAME55060"
+    desc = "EVTDESC55060"
+    picture = "greatpowers"
+    
+    trigger = {
+        SIE = {
+            war_with = AUS
                 }
-		exists = yes
-		tag = ROM
-		NOT = {
-			vassal_of = TUR
-		}
-	}
-	
-	fire_only_once = yes
+        exists = yes
+        tag = ROM
+        NOT = {
+            vassal_of = TUR
+        }
+    }
+    
+    fire_only_once = yes
 
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
      
         option = {
                 name = "EVTOPTA55060"
-        	diplomatic_influence = {
-			who = SIE
-			value = 200
-		}
-		create_alliance = SIE
-		relation = {
-                	who = SIE
+            diplomatic_influence = {
+            who = SIE
+            value = 200
+        }
+        create_alliance = SIE
+        relation = {
+                    who = SIE
                         value = 200
                 }
-		casus_belli = {
-			target = AUS
-			type = cut_down_to_size
-			months = 1
-		}
-		war = {
-			call_ally = yes
-			target = AUS
-			attacker_goal = {
-				casus_belli = cut_down_to_size
-			}
-		}
+        casus_belli = {
+            target = AUS
+            type = cut_down_to_size
+            months = 1
+        }
+        war = {
+            call_ally = yes
+            target = AUS
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+        }
                 AUS = {
                         country_event = 55061
                 }
-		relation = {
-                	who = AUS
+        relation = {
+                    who = AUS
                         value = -400
                 }
-		ai_chance = {
-			factor = 50
+        ai_chance = {
+            factor = 50
                 }
         }
 
-	option = {
+    option = {
                 name = "EVTOPTB55060"
                 relation = {
-                	who = AUS
+                    who = AUS
                         value = 25
                 }
-		any_pop = {
-			militancy = 3
-			consciousness = 1
-		}
-		ai_chance = {
-			factor = 50
+        any_pop = {
+            militancy = 3
+            consciousness = 1
+        }
+        ai_chance = {
+            factor = 50
                 }
         }
 }
@@ -1288,548 +1288,548 @@ country_event = {
 #Event informing AUS of ROM's intervention
 country_event = {
      
-	id = 55061
+    id = 55061
  
-	title = "EVTNAME55061"
-	desc = "EVTDESC55061"
+    title = "EVTNAME55061"
+    desc = "EVTDESC55061"
  
-	picture = "greatpowers"
+    picture = "greatpowers"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
      
-	option = {
-			name = "EVTOPTA55061"
-	}
+    option = {
+            name = "EVTOPTA55061"
+    }
 }
 
 #Event that ends the ROM war with AUS if SIE wins
 country_event = {
 
-	id = 55062
-	trigger = {
-		war_with = AUS
-		tag = ROM
-		SIE = {NOT = {war_with = AUS}}
-		alliance_with = SIE
-		exists = SIE
-	}
-	
-	fire_only_once = yes
+    id = 55062
+    trigger = {
+        war_with = AUS
+        tag = ROM
+        SIE = {NOT = {war_with = AUS}}
+        alliance_with = SIE
+        exists = SIE
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME55062"
-	desc = "EVTDESC55062"
-	picture = "Celebration"
+    title = "EVTNAME55062"
+    desc = "EVTDESC55062"
+    picture = "Celebration"
 
-	option = {
-		name = "EVTOPTA55062" 
-		prestige = 10
-		end_war = AUS
-	}
+    option = {
+        name = "EVTOPTA55062" 
+        prestige = 10
+        end_war = AUS
+    }
 }
 
 #Event that makes AUS lose its cores and get annexed to ROM
 country_event = {
 
-	id = 55063
-	trigger = {
-		tag = SIE
-		AUS = {
-			has_country_flag = Romanian_Uprising_2
-		}
-		exists = yes
-		NOT = {
-			war_with = AUS
-		}
-	}
-	
-	fire_only_once = yes
+    id = 55063
+    trigger = {
+        tag = SIE
+        AUS = {
+            has_country_flag = Romanian_Uprising_2
+        }
+        exists = yes
+        NOT = {
+            war_with = AUS
+        }
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME86082"
-	desc = "EVTDESC86082"
-	picture = "Ottoman"
+    title = "EVTNAME86082"
+    desc = "EVTDESC86082"
+    picture = "Ottoman"
 
-	option = {
-		name = "EVTOPTA86082" 
-		set_global_flag = SIE_rebels_win
-		ROM = {
-			inherit = THIS
-		}
-	}
+    option = {
+        name = "EVTOPTA86082" 
+        set_global_flag = SIE_rebels_win
+        ROM = {
+            inherit = THIS
+        }
+    }
 }
 
 #Romanians Get federalism
 country_event = {
 
-	id = 55064
+    id = 55064
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		has_country_flag = Trans_memo
-		owns = 654
-		has_country_modifier = federalism_modifier
-		654 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        has_country_flag = Trans_memo
+        owns = 654
+        has_country_modifier = federalism_modifier
+        654 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
+    mean_time_to_happen =  {
+        months = 3
+    }
 
-	title = "EVTNAME55064"
-	desc = "EVTDESC55064"
-	picture = "Administration"
+    title = "EVTNAME55064"
+    desc = "EVTDESC55064"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55064"
-		any_owned = {
-			limit = {
-				is_core = ROM
-				owned_by = AUS
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-				has_pop_culture = romanian
-			}
-			militancy = -4
-		}
-		set_global_flag = Romania_federalized
-	}
+    option = {
+        name = "EVTOPTA55064"
+        any_owned = {
+            limit = {
+                is_core = ROM
+                owned_by = AUS
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+                has_pop_culture = romanian
+            }
+            militancy = -4
+        }
+        set_global_flag = Romania_federalized
+    }
 }
 
 #hungarians Get federalism
 country_event = {
 
-	id = 55080
+    id = 55080
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		has_country_flag = Dual_comp
-		owns = 641
-		has_country_modifier = federalism_modifier
-		641 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        has_country_flag = Dual_comp
+        owns = 641
+        has_country_modifier = federalism_modifier
+        641 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
+    mean_time_to_happen =  {
+        months = 3
+    }
 
-	fire_only_once = yes
-	
-	title = "EVTNAME55080"
-	desc = "EVTDESC55080"
-	picture = "Administration"
+    fire_only_once = yes
+    
+    title = "EVTNAME55080"
+    desc = "EVTDESC55080"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55080"
-		any_owned = {
-			limit = {
-				is_core = HUN
-				NOT = {
-					has_province_modifier = federalized_province
-					}
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		set_global_flag = Hungary_federalized
-		any_pop = {
-			limit = { 
-				has_pop_culture = hungarian
-			}
-			militancy = -2
-		}
-	}
+    option = {
+        name = "EVTOPTA55080"
+        any_owned = {
+            limit = {
+                is_core = HUN
+                NOT = {
+                    has_province_modifier = federalized_province
+                    }
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        set_global_flag = Hungary_federalized
+        any_pop = {
+            limit = { 
+                has_pop_culture = hungarian
+            }
+            militancy = -2
+        }
+    }
 }
 
-		
+        
 
 #Slovenians Get federalism
 country_event = {
 
-	id = 55066
+    id = 55066
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		has_country_flag = Slovenes_Uppity
-		owns = 768
-		has_country_modifier = federalism_modifier
-		768 = {
-			NOT = {
-				has_province_modifier = federalized_province
-			}
-		}
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        has_country_flag = Slovenes_Uppity
+        owns = 768
+        has_country_modifier = federalism_modifier
+        768 = {
+            NOT = {
+                has_province_modifier = federalized_province
+            }
+        }
+    }
 
-	mean_time_to_happen =  {
-		months = 3
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 3
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55066"
-	desc = "EVTDESC55066"
-	picture = "Administration"
+    title = "EVTNAME55066"
+    desc = "EVTDESC55066"
+    picture = "Administration"
 
-	option = {
-		name = "EVTOPTA55066"
-		any_owned = {
-			limit = {
-				region = AUS_768
-			}
-			add_province_modifier = {
-				name = federalized_province
-				duration = -1
-			}
-		}
-		any_pop = {
-			limit = { 
-				has_pop_culture = slovene
-			}
-			militancy = -4
-		}
-		set_global_flag = Slovenia_federalized
-	}
+    option = {
+        name = "EVTOPTA55066"
+        any_owned = {
+            limit = {
+                region = AUS_768
+            }
+            add_province_modifier = {
+                name = federalized_province
+                duration = -1
+            }
+        }
+        any_pop = {
+            limit = { 
+                has_pop_culture = slovene
+            }
+            militancy = -4
+        }
+        set_global_flag = Slovenia_federalized
+    }
 }
 
 #YUG revolts against AUS - Armed by Foe
 country_event = {
 
-	id = 55067
+    id = 55067
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	title = "EVTNAME55067"
-	desc = "EVTDESC55067"
-	picture = "Rebellion"
+    title = "EVTNAME55067"
+    desc = "EVTDESC55067"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55067"
-		any_owned = {
-			limit = {
-				OR = {
-					region = AUS_736
-					region = AUS_768
-					region = AUS_771
-					region = AUS_777
-					region = AUS_2538
-				}
-			}
-			secede_province = YUG
-		}
-		YUG = {
-			political_reform = mandatory_service
-			capital = 771
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55067"
+        any_owned = {
+            limit = {
+                OR = {
+                    region = AUS_736
+                    region = AUS_768
+                    region = AUS_771
+                    region = AUS_777
+                    region = AUS_2538
+                }
+            }
+            secede_province = YUG
+        }
+        YUG = {
+            political_reform = mandatory_service
+            capital = 771
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-			create_alliance = FROM
-			military_access = FROM
-		}
-		casus_belli = {
-			target = YUG
-			type = conquest
-			months = 1
-		}
-		set_global_flag = yugoslavian_revolt
-		war = {
-			target = YUG
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Yugoslavian_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+            create_alliance = FROM
+            military_access = FROM
+        }
+        casus_belli = {
+            target = YUG
+            type = conquest
+            months = 1
+        }
+        set_global_flag = yugoslavian_revolt
+        war = {
+            target = YUG
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Yugoslavian_Uprising_2
+    }
 }
 
 #YUG revolts against AUS - Germ or Dual active
 country_event = {
 
-	id = 55068
+    id = 55068
 
-	trigger = {
-		OR = {
-			tag = AUS
-			tag = KUK
-			tag = DNB
-		}
-		OR = {
-			771 = {
-				pop_militancy = 8
-			}
-			war_exhaustion = 40
-		}
-		771 = {
-			NOT = {
-				has_province_modifier = hungarians_revolted
-				has_province_modifier = federalized_province
-			}
-		}
-		NOT = {
-			exists = YUG
-		}
-		year = 1880
-		owns = 654
-	}
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        OR = {
+            771 = {
+                pop_militancy = 8
+            }
+            war_exhaustion = 40
+        }
+        771 = {
+            NOT = {
+                has_province_modifier = hungarians_revolted
+                has_province_modifier = federalized_province
+            }
+        }
+        NOT = {
+            exists = YUG
+        }
+        year = 1880
+        owns = 654
+    }
 
-	mean_time_to_happen =  {
-		months = 2
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        months = 2
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55067"
-	desc = "EVTDESC55067"
-	picture = "Rebellion"
+    title = "EVTNAME55067"
+    desc = "EVTDESC55067"
+    picture = "Rebellion"
 
-	option = {
-		name = "EVTOPTA55067"
-		any_owned = {
-			limit = {
-				OR = {
-					region = AUS_736
-					region = AUS_768
-					region = AUS_771
-					region = AUS_777
-					region = AUS_2538
-					region = AUS_780
-				}
-			}
-			secede_province = YUG
-		}
-		YUG = {
-			political_reform = mandatory_service
-			capital = 771
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    option = {
+        name = "EVTOPTA55067"
+        any_owned = {
+            limit = {
+                OR = {
+                    region = AUS_736
+                    region = AUS_768
+                    region = AUS_771
+                    region = AUS_777
+                    region = AUS_2538
+                    region = AUS_780
+                }
+            }
+            secede_province = YUG
+        }
+        YUG = {
+            political_reform = mandatory_service
+            capital = 771
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		casus_belli = {
-			target = YUG
-			type = conquest
-			months = 1
-		}
-		war = {
-			target = YUG
-			attacker_goal = {
-				casus_belli = conquest
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-		}
-		set_country_flag = Yugoslavian_Uprising_2
-	}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        casus_belli = {
+            target = YUG
+            type = conquest
+            months = 1
+        }
+        war = {
+            target = YUG
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        set_country_flag = Yugoslavian_Uprising_2
+    }
 }
 
 #The Yugoslavs Win
 country_event = {
 
-	id = 55069
-	trigger = {
-		tag = AUS
-		year = 1880
-		YUG = {
-			owns = 771
-		}
-		NOT = {
-			war_with = YUG
-			has_global_flag = YUG_rebels_win
-		}
-		has_country_flag = Yugoslavian_Uprising_2
-	}
-	
-	fire_only_once = yes
+    id = 55069
+    trigger = {
+        tag = AUS
+        year = 1880
+        YUG = {
+            owns = 771
+        }
+        NOT = {
+            war_with = YUG
+            has_global_flag = YUG_rebels_win
+        }
+        has_country_flag = Yugoslavian_Uprising_2
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME55069"
-	desc = "EVTDESC55069"
-	picture = "Meeting3"
+    title = "EVTNAME55069"
+    desc = "EVTDESC55069"
+    picture = "Meeting3"
 
-	option = {
-		name = "EVTOPTA55069" 
-		prestige = -15
-	}
+    option = {
+        name = "EVTOPTA55069" 
+        prestige = -15
+    }
 }
 
 #The Yugoslavs Lose
 country_event = {
 
-	id = 55070
-	trigger = {
-		tag = AUS
-		year = 1861
-		NOT = {
-			YUG = {
-				owns = 771
-			}
-		}
-		NOT = {
-			war_with = YUG
-			has_global_flag = YUG_rebels_win
-		}
-		has_country_flag = Yugoslavian_Uprising_2
-	}
+    id = 55070
+    trigger = {
+        tag = AUS
+        year = 1861
+        NOT = {
+            YUG = {
+                owns = 771
+            }
+        }
+        NOT = {
+            war_with = YUG
+            has_global_flag = YUG_rebels_win
+        }
+        has_country_flag = Yugoslavian_Uprising_2
+    }
  
-	mean_time_to_happen =  {
-		days = 1
-	}
-	
-	fire_only_once = yes
+    mean_time_to_happen =  {
+        days = 1
+    }
+    
+    fire_only_once = yes
 
-	title = "EVTNAME55070"
-	desc = "EVTDESC55070"
-	picture = "Meeting3"
+    title = "EVTNAME55070"
+    desc = "EVTDESC55070"
+    picture = "Meeting3"
 
-	option = {
-		name = "EVTOPTA55070" 
-		prestige = 10
-		any_owned = {
-			limit = {
-				OR = {
-					region = AUS_736
-					region = AUS_768
-					region = AUS_771
-					region = AUS_777
-					region = AUS_2538
-				}
-			}
-			add_province_modifier = {
-				name = hungarians_revolted
-				duration = 6000
-			}
-		}
-		clr_country_flag = Yugoslavian_Uprising_2
-	}
+    option = {
+        name = "EVTOPTA55070" 
+        prestige = 10
+        any_owned = {
+            limit = {
+                OR = {
+                    region = AUS_736
+                    region = AUS_768
+                    region = AUS_771
+                    region = AUS_777
+                    region = AUS_2538
+                }
+            }
+            add_province_modifier = {
+                name = hungarians_revolted
+                duration = 6000
+            }
+        }
+        clr_country_flag = Yugoslavian_Uprising_2
+    }
 }
 
 #Event allowing SER to intervene
 country_event = {
-	id = 55071
-	title = "EVTNAME55071"
-	desc = "EVTDESC55071"
-	picture = "greatpowers"
-	
-	trigger = {
-		YUG = {
-			war_with = AUS
+    id = 55071
+    title = "EVTNAME55071"
+    desc = "EVTDESC55071"
+    picture = "greatpowers"
+    
+    trigger = {
+        YUG = {
+            war_with = AUS
                 }
-		exists = yes
-		tag = SER
-		NOT = {
-			vassal_of = TUR
-		}
-	}
-	
-	fire_only_once = yes
+        exists = yes
+        tag = SER
+        NOT = {
+            vassal_of = TUR
+        }
+    }
+    
+    fire_only_once = yes
 
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
      
-	option = {
-		name = "EVTOPTA55071"
-		diplomatic_influence = {
-		who = YUG
-		value = 200
-		}
-		create_alliance = YUG
-		relation = {
-			who = YUG
-			value = 200
-		}
-		casus_belli = {
-			target = AUS
-			type = cut_down_to_size
-			months = 1
-		}
-		war = {
-			call_ally = yes
-			target = AUS
-			attacker_goal = {
-				casus_belli = cut_down_to_size
-			}
-		}
-		AUS = { country_event = 55072 }
-		
-		relation = {
-			who = AUS
-			value = -400
-		}
-		ai_chance = {
-			factor = 50
-		}
-	}
+    option = {
+        name = "EVTOPTA55071"
+        diplomatic_influence = {
+        who = YUG
+        value = 200
+        }
+        create_alliance = YUG
+        relation = {
+            who = YUG
+            value = 200
+        }
+        casus_belli = {
+            target = AUS
+            type = cut_down_to_size
+            months = 1
+        }
+        war = {
+            call_ally = yes
+            target = AUS
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+        }
+        AUS = { country_event = 55072 }
+        
+        relation = {
+            who = AUS
+            value = -400
+        }
+        ai_chance = {
+            factor = 50
+        }
+    }
 
-	option = {
+    option = {
                 name = "EVTOPTB55071"
                 relation = {
-                	who = AUS
+                    who = AUS
                         value = 25
                 }
-		any_pop = {
-			militancy = 3
-			consciousness = 1
-		}
-		ai_chance = {
-			factor = 50
+        any_pop = {
+            militancy = 3
+            consciousness = 1
+        }
+        ai_chance = {
+            factor = 50
                 }
         }
 }
@@ -1844,7 +1844,7 @@ country_event = {
      
         picture = "greatpowers"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
      
         option = {
                 name = "EVTOPTA55072"
@@ -1854,86 +1854,86 @@ country_event = {
 #Event that ends the SER war with AUS if YUG wins
 country_event = {
 
-	id = 55073
-	trigger = {
-		war_with = AUS
-		tag = SER
-		YUG = {NOT = {war_with = AUS}}
-		alliance_with = YUG
-		exists = YUG
-	}
-	
-	fire_only_once = yes
+    id = 55073
+    trigger = {
+        war_with = AUS
+        tag = SER
+        YUG = {NOT = {war_with = AUS}}
+        alliance_with = YUG
+        exists = YUG
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME55073"
-	desc = "EVTDESC55073"
-	picture = "Celebration"
+    title = "EVTNAME55073"
+    desc = "EVTDESC55073"
+    picture = "Celebration"
 
-	option = {
-		name = "EVTOPTA55073" 
-		prestige = 20
-		end_war = AUS
-	}
+    option = {
+        name = "EVTOPTA55073" 
+        prestige = 20
+        end_war = AUS
+    }
 }
 
 #Event that makes AUS lose cores and gives yugoslavia to serb
 country_event = {
 
-	id = 55074
-	trigger = {
-		tag = YUG
-		AUS = {
-			has_country_flag = Yugoslavian_Uprising_2
-		}
-		exists = yes
-		NOT = {
-			war_with = AUS
-		}
-	}
-	
-	fire_only_once = yes
+    id = 55074
+    trigger = {
+        tag = YUG
+        AUS = {
+            has_country_flag = Yugoslavian_Uprising_2
+        }
+        exists = yes
+        NOT = {
+            war_with = AUS
+        }
+    }
+    
+    fire_only_once = yes
  
-	mean_time_to_happen =  {
-		days = 1
-	}
+    mean_time_to_happen =  {
+        days = 1
+    }
 
-	title = "EVTNAME86082"
-	desc = "EVTDESC86082"
-	picture = "Ottoman"
+    title = "EVTNAME86082"
+    desc = "EVTDESC86082"
+    picture = "Ottoman"
 
-	option = {
-		name = "EVTOPTA86082" 
-		any_owned = {
-			remove_core = AUS
-			add_core = YUG
-		}
-		set_global_flag = YUG_rebels_win
-		SER = {
-			inherit = THIS
-			MON_2582 = { add_core = THIS }
-			country_event = 55075
-			}
-		}
-	}
+    option = {
+        name = "EVTOPTA86082" 
+        any_owned = {
+            remove_core = AUS
+            add_core = YUG
+        }
+        set_global_flag = YUG_rebels_win
+        SER = {
+            inherit = THIS
+            MON_2582 = { add_core = THIS }
+            country_event = 55075
+            }
+        }
+    }
 
 #Event that makes SER into YUG
 country_event = {
 
-	id = 55075
+    id = 55075
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	title = "EVTNAME55075"
-	desc = "EVTDESC55075"
-	picture = "Monarchy"
+    title = "EVTNAME55075"
+    desc = "EVTDESC55075"
+    picture = "Monarchy"
 
-	option = {
-		name = "EVTOPTA55075" 
-		change_tag = YUG
-		prestige = 10
-	}
+    option = {
+        name = "EVTOPTA55075" 
+        change_tag = YUG
+        prestige = 10
+    }
 }

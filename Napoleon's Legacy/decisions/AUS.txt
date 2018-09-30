@@ -1,104 +1,103 @@
 political_decisions = {
-	
-	the_grunderzeit = {
-		potential = {
-			capital = 619
-			NOT = {
-				has_country_flag = grunderzeit_we_have_done
-			}
-		}
-		allow = {
-			iron_railroad = 1
-			cheap_iron = 1
-		}
-		effect = {
-			619 = {
-				any_pop = {
-					ideology = {
-						value = liberal
-						factor = 0.2
-					}
-				}
-				life_rating = 5
-			}
-			prestige = 25
-			set_country_flag = grunderzeit_we_have_done
-		}
-	}
 
-	bosnian_annexation = {
-		picture = treaty_signing
-		potential = {
-			OR = {
-				tag = AUS
-				tag = KUK
-				tag = DNB
-			}
-			BOS = {
-				ai = yes
-				exists = yes
-				vassal_of = THIS
-			}
-			NOT = { has_country_flag = annexed_bosnia }
-		}
-		
-		allow = {
-			war = no
-			OR = {
-				mass_politics = 1
-				BOS = { num_of_revolts = 1 }
-				BOS = { average_militancy = 6 }
-				year = 1908
-			}
-		}
-		
-		effect = {
-			set_country_flag = annexed_bosnia
-			prestige = 10
-			badboy = 5
-			inherit = BOS
-			any_country = {
-				limit = {
-					OR = {
-						tag = RUS
-						tag = TSA
-						is_culture_group = south_slavic
-					}
-				}
-				relation = { who = THIS value = -50 }
-			}
-		}
-	}
-	
-	budapest_united = {
-		picture = budapest_city
-		potential = {
-			OR = {
-				tag = KUK
-				tag = AUS
-				tag = DNB
-				tag = HUN
-			}
-			owns = 641
-			NOT = { has_global_flag = budapest_founded }
-		}
-		
-		allow = {
-			revolution_n_counterrevolution = 1
-			money = 25000
-		}
-		
-		effect = {
-			treasury = -20000
-			set_global_flag = budapest_founded
-			641 = { change_province_name = "Budapest" }
-			641 = { 
-				life_rating = 5
-				add_province_modifier = { name = recently_built_city duration = 1825 }
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
+    the_grunderzeit = {
+        potential = {
+            capital = 619
+            NOT = {
+                has_country_flag = grunderzeit_we_have_done
+            }
+        }
+        allow = {
+            iron_railroad = 1
+            cheap_iron = 1
+        }
+        effect = {
+            619 = {
+                any_pop = {
+                    ideology = {
+                        value = liberal
+                        factor = 0.2
+                    }
+                }
+                life_rating = 5
+            }
+            prestige = 25
+            set_country_flag = grunderzeit_we_have_done
+        }
+    }
+
+    bosnian_annexation = {
+        picture = treaty_signing
+        potential = {
+            OR = {
+                tag = AUS
+                tag = KUK
+                tag = DNB
+            }
+            BOS = {
+                ai = yes
+                exists = yes
+                vassal_of = THIS
+            }
+            NOT = { has_country_flag = annexed_bosnia }
+        }
+
+        allow = {
+            war = no
+            OR = {
+                mass_politics = 1
+                BOS = { num_of_revolts = 1 }
+                BOS = { average_militancy = 6 }
+                year = 1908
+            }
+        }
+
+        effect = {
+            set_country_flag = annexed_bosnia
+            prestige = 10
+            badboy = 5
+            inherit = BOS
+            any_country = {
+                limit = {
+                    OR = {
+                        tag = RUS
+                        tag = TSA
+                        is_culture_group = south_slavic
+                    }
+                }
+                relation = { who = THIS value = -50 }
+            }
+        }
+    }
+
+    budapest_united = {
+        picture = budapest_city
+        potential = {
+            OR = {
+                tag = KUK
+                tag = AUS
+                tag = DNB
+                tag = HUN
+            }
+            owns = 641
+            NOT = { has_global_flag = budapest_founded }
+        }
+
+        allow = {
+            revolution_n_counterrevolution = 1
+            money = 25000
+        }
+
+        effect = {
+            treasury = -20000
+            set_global_flag = budapest_founded
+            641 = { change_province_name = "Budapest" }
+            641 = {
+                life_rating = 5
+                add_province_modifier = { name = recently_built_city duration = 1825 }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
 }
-

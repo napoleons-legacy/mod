@@ -1,3 +1,4 @@
+
 political_decisions = {
    gtfo_on = { picture = gtfo alert = no potential = { num_of_vassals_no_substates  = 1 NOT = { has_country_flag = gtfo } } allow = { civilized = yes ai = no } effect = { set_country_flag = gtfo } }
    gtfo_off = { picture = gtfo alert = no potential = { has_country_flag = gtfo } allow = { ai = no } effect = { clr_country_flag = gtfo } }

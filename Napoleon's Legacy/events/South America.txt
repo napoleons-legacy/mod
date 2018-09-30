@@ -1,243 +1,243 @@
 #########################################################
-#														#
-#      			South American Events					#
-#														#
+#                                                       #
+#               South American Events                   #
+#                                                       #
 #########################################################
 
 
 country_event = {
-	id = 97070
-	title = "EVTNAME97070" #La Carta de la Esclavitud
-	desc = "EVTDESC97070"
-	news = yes
-	news_title = "EVTNAME97070_NEWS_TITLE"
-	news_desc_long = "EVTDESC97070_NEWS_LONG"
-	news_desc_medium = "EVTDESC97070_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC97070_NEWS_SHORT"
-	picture = "carta_esclavitud_ecu"
+    id = 97070
+    title = "EVTNAME97070" #La Carta de la Esclavitud
+    desc = "EVTDESC97070"
+    news = yes
+    news_title = "EVTNAME97070_NEWS_TITLE"
+    news_desc_long = "EVTDESC97070_NEWS_LONG"
+    news_desc_medium = "EVTDESC97070_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC97070_NEWS_SHORT"
+    picture = "carta_esclavitud_ecu"
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	trigger = {
-		tag = ECU
-		government = democracy
-		year = 1842
-		election = yes
-		NOT = { year = 1860 }
-	}
+    trigger = {
+        tag = ECU
+        government = democracy
+        year = 1842
+        election = yes
+        NOT = { year = 1860 }
+    }
 
-	mean_time_to_happen = {
-		months = 1
-	}
+    mean_time_to_happen = {
+        months = 1
+    }
 
-	option = {
-		name = "EVTOPT97070A" #Flores will step down.
-		ruling_party_ideology = liberal
-		
-		add_country_modifier = {
-			name = national_confusion
-			duration = 365
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 9
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = 3
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-	}
+    option = {
+        name = "EVTOPT97070A" #Flores will step down.
+        ruling_party_ideology = liberal
+        
+        add_country_modifier = {
+            name = national_confusion
+            duration = 365
+        }
+        any_pop = {
+            scaled_militancy = {
+                ideology = reactionary
+                factor = 9
+            }
+            scaled_militancy = {
+                ideology = conservative
+                factor = 3
+            }
+        }
+        ai_chance = {
+            factor = 10
+        }
+    }
 
-	option = {
-		name = "EVTOPT97070B" #We must keep order in Ecuador.
-		government = presidential_dictatorship
-		ruling_party_ideology = reactionary
-		political_reform = none_voting
-		political_reform = party_appointed
-		political_reform = underground_parties
-		any_pop = {
-			scaled_militancy = {
-				ideology = liberal
-				factor = 9
-			}
-		}		
-		ai_chance = {
-			factor = 90
-		}
-	}
+    option = {
+        name = "EVTOPT97070B" #We must keep order in Ecuador.
+        government = presidential_dictatorship
+        ruling_party_ideology = reactionary
+        political_reform = none_voting
+        political_reform = party_appointed
+        political_reform = underground_parties
+        any_pop = {
+            scaled_militancy = {
+                ideology = liberal
+                factor = 9
+            }
+        }       
+        ai_chance = {
+            factor = 90
+        }
+    }
 }
 
 country_event = {
-	id = 97075
-	title = "EVTNAME97075" #The Era of Conservatism
-	desc = "EVTDESC97075"
-	news = yes
-	news_title = "EVTNAME97070_NEWS_TITLE"
-	news_desc_long = "EVTDESC97075_NEWS_LONG"
-	news_desc_medium = "EVTDESC97075_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC97075_NEWS_SHORT"
-	picture = "garcia_moreno"
+    id = 97075
+    title = "EVTNAME97075" #The Era of Conservatism
+    desc = "EVTDESC97075"
+    news = yes
+    news_title = "EVTNAME97070_NEWS_TITLE"
+    news_desc_long = "EVTDESC97075_NEWS_LONG"
+    news_desc_medium = "EVTDESC97075_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC97075_NEWS_SHORT"
+    picture = "garcia_moreno"
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	trigger = {
-		tag = ECU
-		government = democracy
-		year = 1860
-		NOT = { year = 1885 }
-		OR = {
-			num_of_revolts = 1
-			average_militancy = 4
-			has_recently_lost_war = yes
-		}
-	}
+    trigger = {
+        tag = ECU
+        government = democracy
+        year = 1860
+        NOT = { year = 1885 }
+        OR = {
+            num_of_revolts = 1
+            average_militancy = 4
+            has_recently_lost_war = yes
+        }
+    }
 
-	mean_time_to_happen = {
-		months = 1
-	}
+    mean_time_to_happen = {
+        months = 1
+    }
 
-	option = {
-		name = "EVTOPT97075A" #Hail El Presidente!
-		government = presidential_dictatorship
-		ruling_party_ideology = conservative
-		political_reform = none_voting
-		political_reform = party_appointed
-		political_reform = state_controlled
-		political_reform = underground_parties
-		
-		add_country_modifier = {
-			name = national_confusion
-			duration = 365
-		}
-		any_pop = {
-			ideology = { factor = 0.1 value = conservative }
-		}
-		any_pop = {
-			scaled_militancy = {
-				ideology = reactionary
-				factor = -4
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = -8
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = 4
-			}
-			scaled_militancy = {
-				ideology = anarcho_liberal
-				factor = 4
-			}
-		}
-		any_owned = {
-			remove_province_modifier = labor_union
-			remove_province_modifier = militant_trade_union
-			remove_province_modifier = worker_union
-			remove_province_modifier = strike_solution
-			remove_province_modifier = province_strike
-			remove_province_modifier = may_day
-		}
-			
-	}
+    option = {
+        name = "EVTOPT97075A" #Hail El Presidente!
+        government = presidential_dictatorship
+        ruling_party_ideology = conservative
+        political_reform = none_voting
+        political_reform = party_appointed
+        political_reform = state_controlled
+        political_reform = underground_parties
+        
+        add_country_modifier = {
+            name = national_confusion
+            duration = 365
+        }
+        any_pop = {
+            ideology = { factor = 0.1 value = conservative }
+        }
+        any_pop = {
+            scaled_militancy = {
+                ideology = reactionary
+                factor = -4
+            }
+            scaled_militancy = {
+                ideology = conservative
+                factor = -8
+            }
+            scaled_militancy = {
+                ideology = liberal
+                factor = 4
+            }
+            scaled_militancy = {
+                ideology = anarcho_liberal
+                factor = 4
+            }
+        }
+        any_owned = {
+            remove_province_modifier = labor_union
+            remove_province_modifier = militant_trade_union
+            remove_province_modifier = worker_union
+            remove_province_modifier = strike_solution
+            remove_province_modifier = province_strike
+            remove_province_modifier = may_day
+        }
+            
+    }
 }
 
 country_event = {
-	id = 97076
-	title = "EVTNAME97076" #Settling Tarauaca
-	desc = "EVTDESC97076"
-	picture = "BurkeandWills"
-	
-	trigger = {
-		war = no
-		2549 = {
-			empty = yes
-			is_core = THIS
-		}
-		OR = {
-			owns = 2404
-			owns = 2321
-			owns = 2301
-			owns = 2300
-		}
-		OR = {
-			revolution_n_counterrevolution = 1
-			machine_guns = 1
-			year = 1890
-		}
-		NOT = { has_country_flag = ignoring_tarauaca }
-		NOT = { has_country_modifier = in_bankrupcy }
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-		modifier = {
-			factor = 2
-			NOT = { medicine = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				machine_guns = 1
-				revolution_n_counterrevolution = 1
-			}
-		}
-		modifier = {
-			factor = 0.5
-			year = 1895
-		}
-		modifier = {
-			factor = 0.5
-			year = 1900
-		}
-	}
-	
-	option = {
-		name = "EVTOPT97076A" #We will settle the Amazon.
-		prestige = 5
-		treasury = -25000
-		2549 = { secede_province = THIS any_pop = { literacy = -0.99 } }
-		ai_chance = {
-			factor = 90
-		}
-	}
-	
-	option = {
-		name = "EVTOPT97076B" #Ignore Tarauaca. It's not worth it.
-		set_country_flag = ignoring_tarauaca
-		prestige = -2
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				tag = BRZ
-			}
-		}
-	}
+    id = 97076
+    title = "EVTNAME97076" #Settling Tarauaca
+    desc = "EVTDESC97076"
+    picture = "BurkeandWills"
+    
+    trigger = {
+        war = no
+        2549 = {
+            empty = yes
+            is_core = THIS
+        }
+        OR = {
+            owns = 2404
+            owns = 2321
+            owns = 2301
+            owns = 2300
+        }
+        OR = {
+            revolution_n_counterrevolution = 1
+            machine_guns = 1
+            year = 1890
+        }
+        NOT = { has_country_flag = ignoring_tarauaca }
+        NOT = { has_country_modifier = in_bankrupcy }
+    }
+    
+    mean_time_to_happen = {
+        months = 60
+        modifier = {
+            factor = 2
+            NOT = { medicine = 1 }
+        }
+        modifier = {
+            factor = 0.5
+            OR = {
+                machine_guns = 1
+                revolution_n_counterrevolution = 1
+            }
+        }
+        modifier = {
+            factor = 0.5
+            year = 1895
+        }
+        modifier = {
+            factor = 0.5
+            year = 1900
+        }
+    }
+    
+    option = {
+        name = "EVTOPT97076A" #We will settle the Amazon.
+        prestige = 5
+        treasury = -25000
+        2549 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+        ai_chance = {
+            factor = 90
+        }
+    }
+    
+    option = {
+        name = "EVTOPT97076B" #Ignore Tarauaca. It's not worth it.
+        set_country_flag = ignoring_tarauaca
+        prestige = -2
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 0
+                tag = BRZ
+            }
+        }
+    }
 }
 
 country_event = {
-	id = 97051
-	title = "EVTNAME97051" #Renaming Sucre
-	desc = "EVTDESC97051"
-	picture = "sucre"
-	
-	fire_only_once = yes
-	
-	trigger = {
-		year = 1838
-		owns = 2313
-		}
-		
-	mean_time_to_happen = { days = 5 }
-	
-	option = {
-		name = "EVT970501PTA"
-		2313 = { change_province_name = "Sucre" }
-		}
-	}
+    id = 97051
+    title = "EVTNAME97051" #Renaming Sucre
+    desc = "EVTDESC97051"
+    picture = "sucre"
+    
+    fire_only_once = yes
+    
+    trigger = {
+        year = 1838
+        owns = 2313
+        }
+        
+    mean_time_to_happen = { days = 5 }
+    
+    option = {
+        name = "EVT970501PTA"
+        2313 = { change_province_name = "Sucre" }
+        }
+    }

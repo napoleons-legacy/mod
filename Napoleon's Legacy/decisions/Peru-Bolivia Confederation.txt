@@ -1,157 +1,166 @@
 political_decisions = {
 
-	end_of_confederation_PEU = {
-		picture = peru_bolivia
-		potential = {
-			tag = PBC
-			owns = 2295
-			OR = {
-				AND = {
-					NOT = { owns = 2313 }
-					NOT = { owns = 2310 }
-				}
-				exists = BOL
-			}
-		}
-	
-		allow = {
-			war = no
-			NOT = { exists = PEU }
-			BOL = {
-				NOT = { vassal_of = PBC }
-			}
-		}
-	
-		effect = {
-			capital = 2295
-			PBC = {
-				all_core = { remove_core = PBC }
-			}
-			random_owned = {
-				limit = { exists = PEU }
-				owner = {
-					change_tag_no_core_switch = PEU
-					any_owned = { secede_province = PEU }
-				}
-			}
-			random_owned = {
-				limit = { NOT = { exists = PEU } }
-				owner = {
-					change_tag = PEU
-				}
-			}
-			any_country = {
-				limit = {
-					OR = {
-						tag = CHL
-						tag = ARG
-						tag = ARC
-						tag = BOL
-					}
-				}
-				relation = { who = PEU value = 300 }
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	claim_bolivia = {
-		picture = peru_bolivia
-		potential = {
-			tag = PEU
-			BOL = {	any_core = { is_core = PEU } }
-		}
-		
-		allow = {
-			owns = 2319
-			owns = 2317
-		}
-		
-		effect = {
-			prestige = 10
-			badboy = 5
-			BOL = {	all_core = { add_core = PEU } }
-		}
+    end_of_confederation_PEU = {
+        picture = peru_bolivia
+        potential = {
+            tag = PBC
+            owns = 2295
+            OR = {
+                AND = {
+                    NOT = { owns = 2313 }
+                    NOT = { owns = 2310 }
+                }
+                exists = BOL
+            }
+        }
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
+        allow = {
+            war = no
+            NOT = { exists = PEU }
+            BOL = {
+                NOT = { vassal_of = PBC }
+            }
+        }
 
-	the_new_pbc={
-		picture = peru_bolivia
-		potential = {
-			tag = PEU
-			NOT = { exists = PBC }
-		}
-		
-		allow = {
-			war = no
-			tag = PEU
-			owns = 2295
-			OR = {
-				is_sphere_leader_of = BOL
-				AND = {
-					owns = 2310	
-					owns = 2313
-				}
-			}
-			nationalism_n_imperialism = 1
-		}
-		
-		effect = {
-			prestige = 10
-			badboy = 5
-			any_country = {
-				limit = {
-					primary_culture = south_andean
-					OR = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
-					NOT = { tag = THIS }
-				}
-				all_core = { add_core = PBC }
-				annex_to = THIS
-			}
-			all_core = { add_core = PBC }
-			change_tag = PBC
-		}
+        effect = {
+            capital = 2295
+            PBC = {
+                all_core = { remove_core = PBC }
+            }
+            random_owned = {
+                limit = { exists = PEU }
+                owner = {
+                    change_tag_no_core_switch = PEU
+                    any_owned = { secede_province = PEU }
+                }
+            }
+            random_owned = {
+                limit = { NOT = { exists = PEU } }
+                owner = {
+                    change_tag = PEU
+                }
+            }
+            any_country = {
+                limit = {
+                    OR = {
+                        tag = CHL
+                        tag = ARG
+                        tag = ARC
+                        tag = BOL
+                    }
+                }
+                relation = { who = PEU value = 300 }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
+    claim_bolivia = {
+        picture = peru_bolivia
 
-	declare_la_paz_capital = {
-		picture = la_paz_capital
-		potential = {
-			tag = BOL
-			year = 1898
-			2310 = { is_capital = no }
-			owns = 2310
-		}
-	
-		allow = {
-			year = 1898
-			owns = 2310
-			war = no
-			2310 = { is_capital = no }
-		}
-	
-		effect = {
-			capital = 2310
-			prestige = 5
-			BOL_2321 = {
-				rich_strata = { militancy = -3}
-				middle_strata = { militancy = -1 }
-			}
-		}
+        potential = {
+            tag = PEU
+            BOL = { any_core = { is_core = PEU } }
+        }
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
+        allow = {
+            owns = 2319
+            owns = 2317
+        }
+
+        effect = {
+            prestige = 10
+            badboy = 5
+            BOL = { all_core = { add_core = PEU } }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    the_new_pbc = {
+        picture = peru_bolivia
+
+        potential = {
+            tag = PEU
+            NOT = { exists = PBC }
+            NOT = { has_country_flag = new_pbc_created }
+        }
+
+        allow = {
+            war = no
+            tag = PEU
+            owns = 2295
+
+            OR = {
+                is_sphere_leader_of = BOL
+                AND = {
+                    owns = 2310
+                    owns = 2313
+                }
+            }
+
+            nationalism_n_imperialism = 1
+        }
+
+        effect = {
+            prestige = 10
+            badboy = 5
+
+            any_country = {
+                limit = {
+                    primary_culture = south_andean
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+
+                    NOT = { tag = THIS }
+                }
+
+                all_core = { add_core = PBC }
+                annex_to = THIS
+            }
+
+            all_core = { add_core = PBC }
+            change_tag = PBC
+
+            set_country_flag = new_pbc_created
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    declare_la_paz_capital = {
+        picture = la_paz_capital
+        potential = {
+            tag = BOL
+            year = 1898
+            2310 = { is_capital = no }
+            owns = 2310
+        }
+
+        allow = {
+            war = no
+            2310 = { is_capital = no }
+        }
+
+        effect = {
+            capital = 2310
+            prestige = 5
+            BOL_2321 = {
+                rich_strata = { militancy = -3}
+                middle_strata = { militancy = -1 }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
 }

@@ -1,508 +1,510 @@
+
+
 political_decisions = {
 
-	law_1420_of_general_common_education = {
-		potential = {
-			tag = ARG
-			NOT = {
-				has_country_flag = 1420_passed
-			}
-		}
-		allow = {
-			social_science = 1
-			ruling_party_ideology = conservative
-		}
-		effect = {
-			years_of_research = 0.2
-			set_country_flag = 1420_passed
-		}
-	}
+    law_1420_of_general_common_education = {
+        potential = {
+            tag = ARG
+            NOT = {
+                has_country_flag = 1420_passed
+            }
+        }
+        allow = {
+            social_science = 1
+            ruling_party_ideology = conservative
+        }
+        effect = {
+            years_of_research = 0.2
+            set_country_flag = 1420_passed
+        }
+    }
 
-	BRPR_compromise = {
+    BRPR_compromise = {
 
-		potential = {
-			tag = REI
-			NOT = {
-				has_country_flag = BRPR_union_done
-				exists = POR
-				exists = BRZ
-			}
-			owns = 2447
-			owns = 521
-		}
+        potential = {
+            tag = REI
+            NOT = {
+                has_country_flag = BRPR_union_done
+                exists = POR
+                exists = BRZ
+            }
+            owns = 2447
+            owns = 521
+        }
 
-		allow = {
-			average_consciousness = 5
-			central_bank_money_bill_printing = 1
-			nationalism_n_imperialism = 1
-		}
+        allow = {
+            average_consciousness = 5
+            central_bank_money_bill_printing = 1
+            nationalism_n_imperialism = 1
+        }
 
-		effect = {
-			set_country_flag = BRPR_union_done
-			BRZ = {
-				all_core = {
-					remove_core = BRZ
-				}
-			}
-			POR = {
-				all_core = {
-					remove_core = POR
-				}
-			clr_country_flag = move_PR
-			clr_country_flag = stay_BR
-			remove_country_modifier = UR_tensions
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	fatherland_volunteers = {
-		potential = {
-		OR = {
-			tag = REI
-			tag = BRZ
-			}
-			government = hms_government
-			NOT = {
-				has_global_flag = pedro_said_it_best
-			}
-		}
-		allow = {
-			army_decision_making = 1
-			war = yes
-		}
-		effect = {
-			war_exhaustion = -1
-			prestige = 10
-			set_global_flag = pedro_said_it_best
-		}
-	}
-	
-	build_teresina = {
-		picture = build_teresina
-		potential = {
-		OR = {
-			tag = REI
-			tag = BRZ
-			}
-			year = 1852
-			NOT = { has_global_flag = teresina_built }
-		}
-		allow = {
-			money = 5000
-		}
-		effect = {	
-			set_global_flag = teresina_built
-			treasury = -5000
-			2426 = { change_province_name = "Teresina" }
-			2426 = {
-				life_rating = 5
-				add_province_modifier = {
-				name = recently_built_city
-				duration = 365
-				}
-			}
-		}
-	}
-	
-	build_belo_horizonte = {
-		picture = build_belo_horizonte
-		potential = {
-		OR = {
-			tag = REI
-			tag = BRZ
-			}
-			year = 1870
-			NOT = { has_global_flag = bh_built }
-		}
-		allow = {
-			money = 5000
-		}
-		effect = {
-			set_global_flag = bh_built
-			treasury = -5000
-			2442 = { change_province_name = "Belo Horizonte" }
-			2442 = {
-				life_rating = 5
-				trade_goods = iron
-				add_province_modifier = {
-					name = recently_built_city
-					duration = 365
-				}
-			}
-		}
-	}
-	
-	new_life_in_the_new_world = {
-		picture = new_life
-		potential = {
-			OR = {
-				capital_scope = { continent = north_america }
-				capital_scope = { continent = south_america }
-				primary_culture = australian
-			}
-			is_greater_power = no
-			NOT = { has_country_flag = come_to_the_new_world }
-			number_of_states = 2
-			num_of_ports = 1
-		}
-		
-		allow = {
-			war = no
-			is_vassal = no
-			is_greater_power = no
-			state_n_government = 1
-			slavery = no_slavery
-			public_meetings = yes_meeting
-			press_rights = free_press
-			citizens_rights = all_voting_pops
-			NOT = { citizenship_policy = residency }
-			NOT = { religious_policy = moralism }
-			OR = {
-				government = democracy
-				government = hms_government
-			}
-			money = 60000
-		}
-		
-		effect = {
-			set_country_flag = come_to_the_new_world
-			treasury = -50000
-			add_country_modifier = { name = small_immigration_boom duration = 730 }
-		}
-		
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				factor = 100
-				OR  = { tag = BRZ tag = CHL }
-			}
-		}
-	}
-	
-	brazilian_rubber_boom = {
-		picture = rubber_cycle
-		potential = {
-		OR = {
-			tag = BRZ
-			tag = REI
-			}
-			owns = 2550
-			owns = 2419
-			owns = 2532
-			owns = 2410
-			owns = 2402
-			year = 1880
-			NOT = { has_country_flag = brazilian_rubber_boom }
-		}
-	
-		allow = {
-			war = no
-			owns = 2550
-			owns = 2419
-			owns = 2532
-			owns = 2410
-			owns = 2402
-			state_n_government = 1
-			2550 = { trade_goods = rubber }
-		}
-		
-		effect = {
-			set_country_flag = brazilian_rubber_boom
-			2410 = { add_province_modifier = { name = colonial_recruitment duration = 365 } }
-			2402 = { add_province_modifier = { name = colonial_recruitment duration = 365 } }
-			2419 = { change_province_name = "Campo Grande" trade_goods = cattle }
-			2550 = { change_province_name = "Porto Velho" add_province_modifier = { name = recently_built_city duration = 150 } }
-			2532 = { change_province_name = "Boa Vista" add_province_modifier = { name = recently_built_city duration = 150 } }	
-			random_owned = { limit = { province_id = 2549 }
-				change_province_name = "Rio Branco" add_province_modifier = { name = recently_built_city duration = 100 } 
-			}
-		}
-	}
-	
-	native_protection_act = {
-		picture = native_protection_act
-		potential = {
-			OR = {
-				capital_scope = { continent = north_america }
-				capital_scope = { continent = south_america }
-				capital_scope = { continent = australia_new_zealand }
-			}
-			NOT = {
-				tag = BRI
-				has_country_flag = native_protection_act_enacted
-			}
-			any_owned_province = {
-				any_core = {
-					any_pop = {
-						OR = {
-							has_pop_culture = zapotec
-							has_pop_culture = mayan
-							has_pop_culture = nahua
-							has_pop_culture = tarascan
-							has_pop_culture = quechua
-							has_pop_culture = guarani
-							has_pop_culture = aimara
-							has_pop_culture = amazonian
-							has_pop_culture = patagonian
-							has_pop_culture = guajiro
-							has_pop_culture = tupinamba
-							has_pop_culture = metis
-							has_pop_culture = dakota
-							has_pop_culture = cherokee
-							has_pop_culture = pueblo
-							has_pop_culture = inuit
-							has_pop_culture = cree
-							has_pop_culture = navajo
-							has_pop_culture = native_american_minor
-							}
-						}
-					}
-				}
-		}
-	
-		allow = {
-			war = no
-			is_vassal = no
-			NOT = { ruling_party_ideology = reactionary }
-			NOT = { ruling_party_ideology = fascist }
-			all_core = { owned_by = THIS }
-			citizens_rights = all_voting_pops
-			citizenship_policy = full_citizenship
-			invention = social_anthropology
-			money = 50000
-			OR = {
-				upper_house = { ideology = socialist value = 0.3 }
-				upper_house = { ideology = liberal value = 0.3 }
-				AND = {
-					upper_house = { ideology = socialist value = 0.15 }
-					upper_house = { ideology = liberal value = 0.15 }
-				}
-			}
-		}
-		
-		effect = {
-			treasury = -50000
-			set_country_flag = native_protection_act_enacted
-			any_pop = { limit = { NOT = { is_culture_group = native_american } }
-				scaled_militancy = { factor = 3 ideology = reactionary }
-				scaled_consciousness = { factor = 3 ideology = conservative }
-			}
-			
-			any_pop = { limit = { is_culture_group = native_american }
-				consciousness = 4
-				militancy = -2
-				dominant_issue = { factor = 0.5 value = full_citizenship }
-			}
-				
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = zapotec } NOT = { owner = { accepted_culture = zapotec } } }
-				owner = { add_accepted_culture = zapotec } 
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = mayan } NOT = { owner = { accepted_culture = mayan } } }
-				owner = { add_accepted_culture = mayan } 
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = nahua } NOT = { owner = { accepted_culture = nahua } } }
-				owner = { add_accepted_culture = nahua } 
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = tarascan } NOT = { owner = { accepted_culture = tarascan } } }
-				owner = { add_accepted_culture = tarascan } 
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = quechua } NOT = { owner = { accepted_culture = quechua } } }
-				owner = { add_accepted_culture = quechua } 
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = guarani } NOT = { owner = { accepted_culture = guarani } } }
-				owner = { add_accepted_culture = guarani } 
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = aimara } NOT = { owner = { accepted_culture = aimara } } }
-				owner = { add_accepted_culture = aimara }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = amazonian } NOT = { owner = { accepted_culture = amazonian } } }
-				owner = { add_accepted_culture = amazonian }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = patagonian } NOT = { owner = { accepted_culture = patagonian } } }
-				owner = { add_accepted_culture = patagonian }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = guajiro } NOT = { owner = { accepted_culture = guajiro } } }
-				owner = { add_accepted_culture = guajiro }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = tupinamba } NOT = { owner = { accepted_culture = tupinamba } } }
-				owner = { add_accepted_culture = tupinamba }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = metis } NOT = { owner = { accepted_culture = metis } } }
-				owner = { add_accepted_culture = metis }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = dakota } NOT = { owner = { accepted_culture = dakota } } }
-				owner = { add_accepted_culture = dakota }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = cherokee } NOT = { owner = { accepted_culture = cherokee } } }
-				owner = { add_accepted_culture = cherokee }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = pueblo } NOT = { owner = { accepted_culture = pueblo } } }
-				owner = { add_accepted_culture = pueblo }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = inuit } NOT = { owner = { accepted_culture = inuit } } }
-				owner = { add_accepted_culture = inuit }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = cree } NOT = { owner = { accepted_culture = cree } } }
-				owner = { add_accepted_culture = cree }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = navajo } NOT = { owner = { accepted_culture = navajo } } }
-				owner = { add_accepted_culture = navajo }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = native_american_minor } NOT = { owner = { accepted_culture = native_american_minor } } }
-				owner = { add_accepted_culture = native_american_minor }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = aborigine } NOT = { owner = { accepted_culture = aborigine } } }
-				owner = { add_accepted_culture = aborigine }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = maori } NOT = { owner = { accepted_culture = maori } } }
-				owner = { add_accepted_culture = maori }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = polynesian } NOT = { owner = { accepted_culture = polynesian } } }
-				owner = { add_accepted_culture = polynesian }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = hawaiian } NOT = { owner = { accepted_culture = hawaiian } } }
-				owner = { add_accepted_culture = hawaiian }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = melanesian } NOT = { owner = { accepted_culture = melanesian } } }
-				owner = { add_accepted_culture = melanesian }
-			}
-			random_owned = {
-				limit = { is_core = THIS any_pop = { culture = micronesian } NOT = { owner = { accepted_culture = micronesian } } }
-				owner = { add_accepted_culture = micronesian }
-			}
-		}
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				factor = 0
-				OR = {
-					NOT = { plurality = 95 }
-					NOT = { year = 1900 }
-					NOT = { upper_house = { ideology = socialist value = 0.3 } }
-				}
-			}
-		}
-	}
-	
-	havana_capital = {
-		picture = map_caribbean
-		potential = {
-			tag = CUB
-			owns = 2209
-			NOT = { capital = 2209 }
-		}
-		
-		allow = { war = no }
-		
-		effect = { capital = 2209 }
-		ai_will_do = { factor = 1 }
-	}
-	
-	
-	remove_central_american_cores = {
-		picture = map_central_america
-		potential = {
-			OR = {
-				tag = MEX
-				tag = UCA
-				tag = GUA
-			}
-			OR = {
-				any_owned_province = { is_core = YUC }
-				any_owned_province = { is_core = CHP }
-				any_owned_province = { is_core = LOS }
-			}
-			OR = {
-				YUC = { all_core = { owned_by = THIS is_core = THIS } }
-				CHP = { all_core = { owned_by = THIS is_core = THIS } }
-				AND = { tag = MEX 2181 = { owned_by = THIS is_core = LOS } 2182 = { owned_by = THIS is_core = LOS } }
-				AND = { OR = { tag = UCA tag = GUA } 2187 = { owned_by = THIS is_core = LOS } }
-			}
-			year = 1860
-		}
-		
-		allow = {
-			war = no
-			is_vassal = no
-			invention = manifest_destiny
-			NOT = { rebel_power_fraction = 50 }
-			NOT = { num_of_revolts = 1 }
-			NOT = { any_owned_province = { country_units_in_province = REB } }
-			OR = {
-				money = 10000
-				ai = yes
-			}
-		}
-		
-		effect = {
-			random_owned = { limit = { owner = { ai = no } } owner = { treasury = -10000 } }
-			
-			random_owned = {
-				limit = { YUC = { all_core = { owned_by = THIS is_core = THIS } } }
-				owner = { YUC = { all_core = { any_pop = { consciousness = 4 militancy = 1 } remove_core = YUC } } }
-			}
-			random_owned = {
-				limit = { CHP = { all_core = { owned_by = THIS is_core = THIS } } }
-				owner = { CHP = { all_core = { any_pop = { consciousness = 4 militancy = 1 } remove_core = CHP } } }
-			}
-			random_owned = {
-				limit = {
-					owner = { 
-						tag = MEX
-						OR = {
-							2181 = { owned_by = THIS is_core = THIS is_core = LOS }
-							2182 = { owned_by = THIS is_core = THIS is_core = LOS }
-						}
-					}
-				}
-				owner = {
-					any_owned = {
-						limit = { OR = { province_id = 2181 province_id = 2182 } }
-						any_pop = { consciousness = 4 militancy = 1 } remove_core = LOS
-					}
-				}
-			}
-			random_owned = {
-				limit = { owner = { OR = { tag = UCA tag = GUA } 2187 = { owned_by = THIS is_core = LOS } } }
-				owner = { 2187 = { remove_core = LOS any_pop = { consciousness = 4 militancy = 1 } } }
-			}
-			
-			random_owned = {
-				limit = { 
-					owner = { 
-						NOT = { primary_culture = central_american } owns = 2182 2182 = { is_core = GUA is_core = THIS } GUA = { ai = yes } 
-					}
-				}
-				2182 = { remove_core = GUA }
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
+        effect = {
+            set_country_flag = BRPR_union_done
+            BRZ = {
+                all_core = {
+                    remove_core = BRZ
+                }
+            }
+            POR = {
+                all_core = {
+                    remove_core = POR
+                }
+            clr_country_flag = move_PR
+            clr_country_flag = stay_BR
+            remove_country_modifier = UR_tensions
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    fatherland_volunteers = {
+        potential = {
+        OR = {
+            tag = REI
+            tag = BRZ
+            }
+            government = hms_government
+            NOT = {
+                has_global_flag = pedro_said_it_best
+            }
+        }
+        allow = {
+            army_decision_making = 1
+            war = yes
+        }
+        effect = {
+            war_exhaustion = -1
+            prestige = 10
+            set_global_flag = pedro_said_it_best
+        }
+    }
+
+    build_teresina = {
+        picture = build_teresina
+        potential = {
+        OR = {
+            tag = REI
+            tag = BRZ
+            }
+            year = 1852
+            NOT = { has_global_flag = teresina_built }
+        }
+        allow = {
+            money = 5000
+        }
+        effect = {
+            set_global_flag = teresina_built
+            treasury = -5000
+            2426 = { change_province_name = "Teresina" }
+            2426 = {
+                life_rating = 5
+                add_province_modifier = {
+                name = recently_built_city
+                duration = 365
+                }
+            }
+        }
+    }
+
+    build_belo_horizonte = {
+        picture = build_belo_horizonte
+        potential = {
+        OR = {
+            tag = REI
+            tag = BRZ
+            }
+            year = 1870
+            NOT = { has_global_flag = bh_built }
+        }
+        allow = {
+            money = 5000
+        }
+        effect = {
+            set_global_flag = bh_built
+            treasury = -5000
+            2442 = { change_province_name = "Belo Horizonte" }
+            2442 = {
+                life_rating = 5
+                trade_goods = iron
+                add_province_modifier = {
+                    name = recently_built_city
+                    duration = 365
+                }
+            }
+        }
+    }
+
+    new_life_in_the_new_world = {
+        picture = new_life
+        potential = {
+            OR = {
+                capital_scope = { continent = north_america }
+                capital_scope = { continent = south_america }
+                primary_culture = australian
+            }
+            is_greater_power = no
+            NOT = { has_country_flag = come_to_the_new_world }
+            number_of_states = 2
+            num_of_ports = 1
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+            is_greater_power = no
+            state_n_government = 1
+            slavery = no_slavery
+            public_meetings = yes_meeting
+            press_rights = free_press
+            citizens_rights = all_voting_pops
+            NOT = { citizenship_policy = residency }
+            NOT = { religious_policy = moralism }
+            OR = {
+                government = democracy
+                government = hms_government
+            }
+            money = 60000
+        }
+
+        effect = {
+            set_country_flag = come_to_the_new_world
+            treasury = -50000
+            add_country_modifier = { name = small_immigration_boom duration = 730 }
+        }
+
+        ai_will_do = {
+            factor = 0
+            modifier = {
+                factor = 100
+                OR  = { tag = BRZ tag = CHL }
+            }
+        }
+    }
+
+    brazilian_rubber_boom = {
+        picture = rubber_cycle
+        potential = {
+        OR = {
+            tag = BRZ
+            tag = REI
+            }
+            owns = 2550
+            owns = 2419
+            owns = 2532
+            owns = 2410
+            owns = 2402
+            year = 1880
+            NOT = { has_country_flag = brazilian_rubber_boom }
+        }
+
+        allow = {
+            war = no
+            owns = 2550
+            owns = 2419
+            owns = 2532
+            owns = 2410
+            owns = 2402
+            state_n_government = 1
+            2550 = { trade_goods = rubber }
+        }
+
+        effect = {
+            set_country_flag = brazilian_rubber_boom
+            2410 = { add_province_modifier = { name = colonial_recruitment duration = 365 } }
+            2402 = { add_province_modifier = { name = colonial_recruitment duration = 365 } }
+            2419 = { change_province_name = "Campo Grande" trade_goods = cattle }
+            2550 = { change_province_name = "Porto Velho" add_province_modifier = { name = recently_built_city duration = 150 } }
+            2532 = { change_province_name = "Boa Vista" add_province_modifier = { name = recently_built_city duration = 150 } }
+            random_owned = { limit = { province_id = 2549 }
+                change_province_name = "Rio Branco" add_province_modifier = { name = recently_built_city duration = 100 }
+            }
+        }
+    }
+
+    native_protection_act = {
+        picture = native_protection_act
+        potential = {
+            OR = {
+                capital_scope = { continent = north_america }
+                capital_scope = { continent = south_america }
+                capital_scope = { continent = australia_new_zealand }
+            }
+            NOT = {
+                tag = BRI
+                has_country_flag = native_protection_act_enacted
+            }
+            any_owned_province = {
+                any_core = {
+                    any_pop = {
+                        OR = {
+                            has_pop_culture = zapotec
+                            has_pop_culture = mayan
+                            has_pop_culture = nahua
+                            has_pop_culture = tarascan
+                            has_pop_culture = quechua
+                            has_pop_culture = guarani
+                            has_pop_culture = aimara
+                            has_pop_culture = amazonian
+                            has_pop_culture = patagonian
+                            has_pop_culture = guajiro
+                            has_pop_culture = tupinamba
+                            has_pop_culture = metis
+                            has_pop_culture = dakota
+                            has_pop_culture = cherokee
+                            has_pop_culture = pueblo
+                            has_pop_culture = inuit
+                            has_pop_culture = cree
+                            has_pop_culture = navajo
+                            has_pop_culture = native_american_minor
+                            }
+                        }
+                    }
+                }
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+            NOT = { ruling_party_ideology = reactionary }
+            NOT = { ruling_party_ideology = fascist }
+            all_core = { owned_by = THIS }
+            citizens_rights = all_voting_pops
+            citizenship_policy = full_citizenship
+            invention = social_anthropology
+            money = 50000
+            OR = {
+                upper_house = { ideology = socialist value = 0.3 }
+                upper_house = { ideology = liberal value = 0.3 }
+                AND = {
+                    upper_house = { ideology = socialist value = 0.15 }
+                    upper_house = { ideology = liberal value = 0.15 }
+                }
+            }
+        }
+
+        effect = {
+            treasury = -50000
+            set_country_flag = native_protection_act_enacted
+            any_pop = { limit = { NOT = { is_culture_group = native_american } }
+                scaled_militancy = { factor = 3 ideology = reactionary }
+                scaled_consciousness = { factor = 3 ideology = conservative }
+            }
+
+            any_pop = { limit = { is_culture_group = native_american }
+                consciousness = 4
+                militancy = -2
+                dominant_issue = { factor = 0.5 value = full_citizenship }
+            }
+
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = zapotec } NOT = { owner = { accepted_culture = zapotec } } }
+                owner = { add_accepted_culture = zapotec }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = mayan } NOT = { owner = { accepted_culture = mayan } } }
+                owner = { add_accepted_culture = mayan }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = nahua } NOT = { owner = { accepted_culture = nahua } } }
+                owner = { add_accepted_culture = nahua }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = tarascan } NOT = { owner = { accepted_culture = tarascan } } }
+                owner = { add_accepted_culture = tarascan }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = quechua } NOT = { owner = { accepted_culture = quechua } } }
+                owner = { add_accepted_culture = quechua }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = guarani } NOT = { owner = { accepted_culture = guarani } } }
+                owner = { add_accepted_culture = guarani }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = aimara } NOT = { owner = { accepted_culture = aimara } } }
+                owner = { add_accepted_culture = aimara }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = amazonian } NOT = { owner = { accepted_culture = amazonian } } }
+                owner = { add_accepted_culture = amazonian }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = patagonian } NOT = { owner = { accepted_culture = patagonian } } }
+                owner = { add_accepted_culture = patagonian }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = guajiro } NOT = { owner = { accepted_culture = guajiro } } }
+                owner = { add_accepted_culture = guajiro }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = tupinamba } NOT = { owner = { accepted_culture = tupinamba } } }
+                owner = { add_accepted_culture = tupinamba }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = metis } NOT = { owner = { accepted_culture = metis } } }
+                owner = { add_accepted_culture = metis }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = dakota } NOT = { owner = { accepted_culture = dakota } } }
+                owner = { add_accepted_culture = dakota }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = cherokee } NOT = { owner = { accepted_culture = cherokee } } }
+                owner = { add_accepted_culture = cherokee }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = pueblo } NOT = { owner = { accepted_culture = pueblo } } }
+                owner = { add_accepted_culture = pueblo }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = inuit } NOT = { owner = { accepted_culture = inuit } } }
+                owner = { add_accepted_culture = inuit }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = cree } NOT = { owner = { accepted_culture = cree } } }
+                owner = { add_accepted_culture = cree }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = navajo } NOT = { owner = { accepted_culture = navajo } } }
+                owner = { add_accepted_culture = navajo }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = native_american_minor } NOT = { owner = { accepted_culture = native_american_minor } } }
+                owner = { add_accepted_culture = native_american_minor }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = aborigine } NOT = { owner = { accepted_culture = aborigine } } }
+                owner = { add_accepted_culture = aborigine }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = maori } NOT = { owner = { accepted_culture = maori } } }
+                owner = { add_accepted_culture = maori }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = polynesian } NOT = { owner = { accepted_culture = polynesian } } }
+                owner = { add_accepted_culture = polynesian }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = hawaiian } NOT = { owner = { accepted_culture = hawaiian } } }
+                owner = { add_accepted_culture = hawaiian }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = melanesian } NOT = { owner = { accepted_culture = melanesian } } }
+                owner = { add_accepted_culture = melanesian }
+            }
+            random_owned = {
+                limit = { is_core = THIS any_pop = { culture = micronesian } NOT = { owner = { accepted_culture = micronesian } } }
+                owner = { add_accepted_culture = micronesian }
+            }
+        }
+        ai_will_do = {
+            factor = 100
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = { plurality = 95 }
+                    NOT = { year = 1900 }
+                    NOT = { upper_house = { ideology = socialist value = 0.3 } }
+                }
+            }
+        }
+    }
+
+    havana_capital = {
+        picture = map_caribbean
+        potential = {
+            tag = CUB
+            owns = 2209
+            NOT = { capital = 2209 }
+        }
+
+        allow = { war = no }
+
+        effect = { capital = 2209 }
+        ai_will_do = { factor = 1 }
+    }
+
+
+    remove_central_american_cores = {
+        picture = map_central_america
+        potential = {
+            OR = {
+                tag = MEX
+                tag = UCA
+                tag = GUA
+            }
+            OR = {
+                any_owned_province = { is_core = YUC }
+                any_owned_province = { is_core = CHP }
+                any_owned_province = { is_core = LOS }
+            }
+            OR = {
+                YUC = { all_core = { owned_by = THIS is_core = THIS } }
+                CHP = { all_core = { owned_by = THIS is_core = THIS } }
+                AND = { tag = MEX 2181 = { owned_by = THIS is_core = LOS } 2182 = { owned_by = THIS is_core = LOS } }
+                AND = { OR = { tag = UCA tag = GUA } 2187 = { owned_by = THIS is_core = LOS } }
+            }
+            year = 1860
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+            invention = manifest_destiny
+            NOT = { rebel_power_fraction = 50 }
+            NOT = { num_of_revolts = 1 }
+            NOT = { any_owned_province = { country_units_in_province = REB } }
+            OR = {
+                money = 10000
+                ai = yes
+            }
+        }
+
+        effect = {
+            random_owned = { limit = { owner = { ai = no } } owner = { treasury = -10000 } }
+
+            random_owned = {
+                limit = { YUC = { all_core = { owned_by = THIS is_core = THIS } } }
+                owner = { YUC = { all_core = { any_pop = { consciousness = 4 militancy = 1 } remove_core = YUC } } }
+            }
+            random_owned = {
+                limit = { CHP = { all_core = { owned_by = THIS is_core = THIS } } }
+                owner = { CHP = { all_core = { any_pop = { consciousness = 4 militancy = 1 } remove_core = CHP } } }
+            }
+            random_owned = {
+                limit = {
+                    owner = {
+                        tag = MEX
+                        OR = {
+                            2181 = { owned_by = THIS is_core = THIS is_core = LOS }
+                            2182 = { owned_by = THIS is_core = THIS is_core = LOS }
+                        }
+                    }
+                }
+                owner = {
+                    any_owned = {
+                        limit = { OR = { province_id = 2181 province_id = 2182 } }
+                        any_pop = { consciousness = 4 militancy = 1 } remove_core = LOS
+                    }
+                }
+            }
+            random_owned = {
+                limit = { owner = { OR = { tag = UCA tag = GUA } 2187 = { owned_by = THIS is_core = LOS } } }
+                owner = { 2187 = { remove_core = LOS any_pop = { consciousness = 4 militancy = 1 } } }
+            }
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { primary_culture = central_american } owns = 2182 2182 = { is_core = GUA is_core = THIS } GUA = { ai = yes }
+                    }
+                }
+                2182 = { remove_core = GUA }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
 }

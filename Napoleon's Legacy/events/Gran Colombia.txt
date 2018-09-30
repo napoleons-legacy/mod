@@ -1,296 +1,296 @@
 #FRCA invades for Panama
 
 country_event = {
-	id = 4662001
-	title = "EVTNAME4662001"
-	desc = "EVTDESC4662001"
-	picture = "panama_claim"
-	
-	trigger = {
-		tag = UCA
-		NOT = { 
-			has_country_flag = panama_war
-			has_country_flag = panama_no_war
-			}
-		CLM_1723 = { owned_by = GCO }
-		UCA_2201 = { owned_by = THIS }
-		GCO = { exists = yes }
-		}
-	mean_time_to_happen = { months = 3 }
-	
-	option = {
-		name = "EVTOPTA4662001"
-		prestige = 10
-		badboy = 5
-		set_country_flag = panama_war
-		war = {
-				target = GCO
-					attacker_goal = {
+    id = 4662001
+    title = "EVTNAME4662001"
+    desc = "EVTDESC4662001"
+    picture = "panama_claim"
+    
+    trigger = {
+        tag = UCA
+        NOT = { 
+            has_country_flag = panama_war
+            has_country_flag = panama_no_war
+            }
+        CLM_1723 = { owned_by = GCO }
+        UCA_2201 = { owned_by = THIS }
+        GCO = { exists = yes }
+        }
+    mean_time_to_happen = { months = 3 }
+    
+    option = {
+        name = "EVTOPTA4662001"
+        prestige = 10
+        badboy = 5
+        set_country_flag = panama_war
+        war = {
+                target = GCO
+                    attacker_goal = {
                         casus_belli = acquire_state
-							state_province_id = 2204
+                            state_province_id = 2204
                         }
-					defender_goal = {
-						casus_belli = humiliate
-						}
-			}                
-		ai_chance = {
-			factor = 75
-		modifier = { 
-			factor = 1.5
-			GCO = { is_disarmed = yes }
-			}
-		}
-	}
-	
-	option = {
-		name = "EVTOPTB4662001"
-		prestige = -10
-		badboy = -2
-		UCA = {		
-			relation = {
-				who = GCO
-				value = 50
-			}
-		}
-	set_country_flag = panama_no_war
-			
-	ai_chance = {
-		factor = 25
-		modifier = { 
-			factor = 0
-			GCO = { war_with = PEU }
-			}
-		}
-	}
+                    defender_goal = {
+                        casus_belli = humiliate
+                        }
+            }                
+        ai_chance = {
+            factor = 75
+        modifier = { 
+            factor = 1.5
+            GCO = { is_disarmed = yes }
+            }
+        }
+    }
+    
+    option = {
+        name = "EVTOPTB4662001"
+        prestige = -10
+        badboy = -2
+        UCA = {     
+            relation = {
+                who = GCO
+                value = 50
+            }
+        }
+    set_country_flag = panama_no_war
+            
+    ai_chance = {
+        factor = 25
+        modifier = { 
+            factor = 0
+            GCO = { war_with = PEU }
+            }
+        }
+    }
 }
 
-	
+    
 country_event = {
-	id = 4662002
-	title = "EVTNAME4662002"
-	desc = "EVTDESC4662002"
-	picture = "panama_claim"
-	
-	trigger = {
-	tag = UCA
-	has_country_flag = panama_war
-	CLM_1723 = { owned_by = THIS }
-	NOT = { has_country_flag = panama_war_won }
-	}
-	
-	mean_time_to_happen = { days = 1 }
-	
-	option = {
-		name = "EVTOPTA4662002"
-		prestige = 5
-		CLM_1723 = { add_core = THIS remove_core = GCO }
-		set_country_flag = panama_war_won
-	}
+    id = 4662002
+    title = "EVTNAME4662002"
+    desc = "EVTDESC4662002"
+    picture = "panama_claim"
+    
+    trigger = {
+    tag = UCA
+    has_country_flag = panama_war
+    CLM_1723 = { owned_by = THIS }
+    NOT = { has_country_flag = panama_war_won }
+    }
+    
+    mean_time_to_happen = { days = 1 }
+    
+    option = {
+        name = "EVTOPTA4662002"
+        prestige = 5
+        CLM_1723 = { add_core = THIS remove_core = GCO }
+        set_country_flag = panama_war_won
+    }
 }
-	
-	
+    
+    
 country_event = {
-	id = 4662003
-	title = "EVTNAME4662003"
-	desc = "EVTDESC4662003"
-	picture = "ecuador_claim"
-	
-		trigger = {
-		tag = PEU
-		NOT = { 
-			has_country_flag = ecuador_war
-			has_country_flag = ecuador_no_war
-			}
-		PEU_2289 = { NOT = { owned_by = THIS } }
-		GCO = { exists = yes }
-		}
-	mean_time_to_happen = { months = 3 }
-	
-	option = {
-		name = "EVTOPTA4662001"
-		prestige = 10
-		set_country_flag = ecuador_war
-		war = {
-				target = GCO
-					attacker_goal = {
+    id = 4662003
+    title = "EVTNAME4662003"
+    desc = "EVTDESC4662003"
+    picture = "ecuador_claim"
+    
+        trigger = {
+        tag = PEU
+        NOT = { 
+            has_country_flag = ecuador_war
+            has_country_flag = ecuador_no_war
+            }
+        PEU_2289 = { NOT = { owned_by = THIS } }
+        GCO = { exists = yes }
+        }
+    mean_time_to_happen = { months = 3 }
+    
+    option = {
+        name = "EVTOPTA4662001"
+        prestige = 10
+        set_country_flag = ecuador_war
+        war = {
+                target = GCO
+                    attacker_goal = {
                         casus_belli = cut_down_to_size
-						}
-					defender_goal = {
-						casus_belli = humiliate
-						}
-			}                
-		ai_chance = {
-			factor = 75
-		modifier = { 
-			factor = 1.5
-			GCO = { war_with = UCA }
-			}
-		}
-	}
-	
-	option = {
-		name = "EVTOPTB4662001"
-		prestige = -10
-		PEU = {		
-			relation = {
-				who = GCO
-				value = 50
-			}
-		}
-	set_country_flag = ecuador_no_war
-		ai_chance = {
-			factor = 25
-			}
-		}
-	}
-	
+                        }
+                    defender_goal = {
+                        casus_belli = humiliate
+                        }
+            }                
+        ai_chance = {
+            factor = 75
+        modifier = { 
+            factor = 1.5
+            GCO = { war_with = UCA }
+            }
+        }
+    }
+    
+    option = {
+        name = "EVTOPTB4662001"
+        prestige = -10
+        PEU = {     
+            relation = {
+                who = GCO
+                value = 50
+            }
+        }
+    set_country_flag = ecuador_no_war
+        ai_chance = {
+            factor = 25
+            }
+        }
+    }
+    
 #Peru invades for Pastaza
 
 country_event = {
-	id = 4662004
-	title = "EVTNAME4662004"
-	desc = "EVTDESC4662004"
-	picture = "ecuador_claim"
-	
-	trigger = {
-		tag = PEU
-		GCO = { is_disarmed = yes }
-		has_country_flag = ecuador_war
-		NOT = { has_country_flag = ecuador_war_won }
-		}
-	fire_only_once = yes
-	
-	mean_time_to_happen = { days = 1 }
-	
-	option = {
-		name = "EVTOPTA4662004"
-		prestige = 5
-		PEU_2289 = { secede_province = GCO remove_core = GCO} 
-		PEU_2289 = { secede_province = PEU }
-		set_country_flag = ecuador_war_won
-	}
+    id = 4662004
+    title = "EVTNAME4662004"
+    desc = "EVTDESC4662004"
+    picture = "ecuador_claim"
+    
+    trigger = {
+        tag = PEU
+        GCO = { is_disarmed = yes }
+        has_country_flag = ecuador_war
+        NOT = { has_country_flag = ecuador_war_won }
+        }
+    fire_only_once = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    option = {
+        name = "EVTOPTA4662004"
+        prestige = 5
+        PEU_2289 = { secede_province = GCO remove_core = GCO} 
+        PEU_2289 = { secede_province = PEU }
+        set_country_flag = ecuador_war_won
+    }
 }
 
 #Gran Colombia Collapses from war loss
 
 country_event = {
-	id = 4662005
-	title = "EVTNAME4662005"
-	desc = "EVTDESC4662005"
-	picture = "gran_col_unite"
-	
-	trigger = {
-		tag = GCO
-		OR = {
-			AND = {
-				CLM_1723 = { NOT = { owned_by = THIS } }
-				war = no
-				UCA = { has_country_flag = panama_war_won }
-				}
-			AND = {
-				ECU = { PEU_2289 = { NOT = { owned_by = THIS } } }
-				war = no
-				PEU = { has_country_flag = ecuador_war_won }
-				}
-			is_disarmed = yes
-			}
-		}	
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen = { days = 10 }
-	
-	option = {
-		name = "EVTOPTA4662005"
-		
-		release_vassal = ECU
-		release_vassal = VNZ
-		GCO = { all_core = { remove_core = GCO } }
-		change_tag = CLM
-	}
+    id = 4662005
+    title = "EVTNAME4662005"
+    desc = "EVTDESC4662005"
+    picture = "gran_col_unite"
+    
+    trigger = {
+        tag = GCO
+        OR = {
+            AND = {
+                CLM_1723 = { NOT = { owned_by = THIS } }
+                war = no
+                UCA = { has_country_flag = panama_war_won }
+                }
+            AND = {
+                ECU = { PEU_2289 = { NOT = { owned_by = THIS } } }
+                war = no
+                PEU = { has_country_flag = ecuador_war_won }
+                }
+            is_disarmed = yes
+            }
+        }   
+    
+    fire_only_once = yes
+    
+    mean_time_to_happen = { days = 10 }
+    
+    option = {
+        name = "EVTOPTA4662005"
+        
+        release_vassal = ECU
+        release_vassal = VNZ
+        GCO = { all_core = { remove_core = GCO } }
+        change_tag = CLM
+    }
 }
 
 #Gran Colombia federalizes due to war victories
 
 country_event = {
-	id = 4662006
-	title = "EVTNAME4662006"
-	desc = "EVTDESC4662006"
-	picture = "gran_col_unite"
-	
-	trigger = {
-		tag = GCO
-			PEU = {
-				OR = {
-					has_country_flag = ecuador_no_war
-					has_country_flag = ecuador_war
-					}
-				NOT = { has_country_flag = ecuador_war_won }
-					}
-			UCA = { 
-				OR = {
-					has_country_flag = panama_war
-					has_country_flag = panama_no_war
-					}
-				NOT = { has_country_flag = panama_war_won }
-					}
-			ECU = { PEU_2289 = { owned_by = ECU } } 
-			GCO = { CLM_1723 = { owned_by = THIS } }
-			war = no
-			is_disarmed = no
-		}
-		
-	fire_only_once = yes
-	
-	mean_time_to_happen = { months = 1 }
-	
-	option = {
-		name = "EVTOPTA4662006"
-		prestige = 15
-		inherit = ECU
-		inherit = VNZ
-		ECU = { all_core = { remove_core = PEU remove_core = ECU } }
-		VNZ = { all_core = { add_core = GCO remove_core = VNZ } }
-		CLM = { all_core = { remove_core = CLM } }
-		
-	}
+    id = 4662006
+    title = "EVTNAME4662006"
+    desc = "EVTDESC4662006"
+    picture = "gran_col_unite"
+    
+    trigger = {
+        tag = GCO
+            PEU = {
+                OR = {
+                    has_country_flag = ecuador_no_war
+                    has_country_flag = ecuador_war
+                    }
+                NOT = { has_country_flag = ecuador_war_won }
+                    }
+            UCA = { 
+                OR = {
+                    has_country_flag = panama_war
+                    has_country_flag = panama_no_war
+                    }
+                NOT = { has_country_flag = panama_war_won }
+                    }
+            ECU = { PEU_2289 = { owned_by = ECU } } 
+            GCO = { CLM_1723 = { owned_by = THIS } }
+            war = no
+            is_disarmed = no
+        }
+        
+    fire_only_once = yes
+    
+    mean_time_to_happen = { months = 1 }
+    
+    option = {
+        name = "EVTOPTA4662006"
+        prestige = 15
+        inherit = ECU
+        inherit = VNZ
+        ECU = { all_core = { remove_core = PEU remove_core = ECU } }
+        VNZ = { all_core = { add_core = GCO remove_core = VNZ } }
+        CLM = { all_core = { remove_core = CLM } }
+        
+    }
 }
 
 country_event = {
 id = 4662009
-	title = "EVTNAME4662009"
-	desc = "EVTDESC4662009"
-	picture = "sucre"
+    title = "EVTNAME4662009"
+    desc = "EVTDESC4662009"
+    picture = "sucre"
 
-	trigger = {
-		tag = GCO
-		owns = 2247
-		owns = 2279
-		owns = 2264
-	VNZ = { exists = no }
-	ECU = { exists = no }
-		}
-		
-	fire_only_once = yes
-	
-	mean_time_to_happen = { months = 1 }
-	
-	option = {
-		name = "EVTOPTA4662009"
-		capital = 2279
-		prestige = 5
-		}
-	option = { 
-		name = "EVTOPTB4662009"
-		capital = 2247
-		prestige = 5
-		}
-	option = {
-		name = "EVTOPTC4662009"
-		capital = 2264
-		prestige = 5
-		}
-	}
-	
-	
-	
+    trigger = {
+        tag = GCO
+        owns = 2247
+        owns = 2279
+        owns = 2264
+    VNZ = { exists = no }
+    ECU = { exists = no }
+        }
+        
+    fire_only_once = yes
+    
+    mean_time_to_happen = { months = 1 }
+    
+    option = {
+        name = "EVTOPTA4662009"
+        capital = 2279
+        prestige = 5
+        }
+    option = { 
+        name = "EVTOPTB4662009"
+        capital = 2247
+        prestige = 5
+        }
+    option = {
+        name = "EVTOPTC4662009"
+        capital = 2264
+        prestige = 5
+        }
+    }
+    
+    
+    

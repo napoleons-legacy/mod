@@ -1,1016 +1,1016 @@
 country_event = {
-	id = 86018
-	title = "EVTNAME86018"
-	desc = "EVTDESC86018"
-	picture = "Upperhouse"
-	
-	trigger = {
-		tag = FRA
-		is_ideology_enabled = socialist 
-		year = 1862
-		NOT = {
-			has_country_flag = socialist_nobility
-		}
-		OR = {
-			government = hms_government
-			government = prussian_constitutionalism
-			government = absolute_monarchy
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-		modifier = {
-			factor = 0.01
-			year = 1862
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA86018"
-		any_pop = {
-			limit = {
-				location = {
-					is_colonial = no
-				}
-			is_accepted_culture = yes
-			}
-			ideology = {
-				value = reactionary
-				factor = 0.1
-			}
-			ideology = {
-				value = socialist
-				factor = 0.1
-			}
-			scaled_militancy = {
-				ideology = socialist
-				factor = 1
-			}
-			scaled_consciousness = {
-				ideology = socialist
-				factor = 1
-			}
-		}
-		add_country_modifier = {
-			name = mad_socialists
-			duration = -1
-		}
-		set_country_flag = socialist_nobility
-	}
+    id = 86018
+    title = "EVTNAME86018"
+    desc = "EVTDESC86018"
+    picture = "Upperhouse"
+    
+    trigger = {
+        tag = FRA
+        is_ideology_enabled = socialist 
+        year = 1862
+        NOT = {
+            has_country_flag = socialist_nobility
+        }
+        OR = {
+            government = hms_government
+            government = prussian_constitutionalism
+            government = absolute_monarchy
+        }
+    }
+    
+    mean_time_to_happen = {
+        months = 1
+        modifier = {
+            factor = 0.01
+            year = 1862
+        }
+    }
+    
+    option = {
+        name = "EVTOPTA86018"
+        any_pop = {
+            limit = {
+                location = {
+                    is_colonial = no
+                }
+            is_accepted_culture = yes
+            }
+            ideology = {
+                value = reactionary
+                factor = 0.1
+            }
+            ideology = {
+                value = socialist
+                factor = 0.1
+            }
+            scaled_militancy = {
+                ideology = socialist
+                factor = 1
+            }
+            scaled_consciousness = {
+                ideology = socialist
+                factor = 1
+            }
+        }
+        add_country_modifier = {
+            name = mad_socialists
+            duration = -1
+        }
+        set_country_flag = socialist_nobility
+    }
 }
 
 country_event = {
-	id = 86019
-	title = "EVTNAME86019"
-	desc = "EVTDESC86019"
-	picture = "danishgovernment"
-	
-	trigger = {
-		tag = FRA
-		year = 1863
-		has_country_flag = socialist_nobility
-	}
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen = {
-		months = 1
-		modifier = {
-			factor = 0.01
-			year = 1862
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA86019"
-		set_global_flag = cool_nobility
-		any_pop = {
-			limit = {
-				location = {
-					is_colonial = no
-				}
-			is_accepted_culture = yes
-			}
-			ideology = {
-				value = socialist
-				factor = 0.2
-			}
-			scaled_militancy = {
-				ideology = socialist
-				factor = 3
-			}
-			scaled_consciousness = {
-				ideology = socialist
-				factor = 3
-			}
-		}
-		add_country_modifier = {
-			name = happy_nobility
-			duration = -1
-		}
-		ai_chance = {
+    id = 86019
+    title = "EVTNAME86019"
+    desc = "EVTDESC86019"
+    picture = "danishgovernment"
+    
+    trigger = {
+        tag = FRA
+        year = 1863
+        has_country_flag = socialist_nobility
+    }
+    
+    fire_only_once = yes
+    
+    mean_time_to_happen = {
+        months = 1
+        modifier = {
+            factor = 0.01
+            year = 1862
+        }
+    }
+    
+    option = {
+        name = "EVTOPTA86019"
+        set_global_flag = cool_nobility
+        any_pop = {
+            limit = {
+                location = {
+                    is_colonial = no
+                }
+            is_accepted_culture = yes
+            }
+            ideology = {
+                value = socialist
+                factor = 0.2
+            }
+            scaled_militancy = {
+                ideology = socialist
+                factor = 3
+            }
+            scaled_consciousness = {
+                ideology = socialist
+                factor = 3
+            }
+        }
+        add_country_modifier = {
+            name = happy_nobility
+            duration = -1
+        }
+        ai_chance = {
             factor = 50
                 }
-	}
+    }
 
-	option = {
-		name = "EVTOPTB86019"
-		set_global_flag = hot_nobility
-		any_pop = {
-			limit = {
-				location = {
-					is_colonial = no
-				}
-			is_accepted_culture = yes
-			}
-			ideology = {
-				value = reactionary
-				factor = 0.2
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 3
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = 3
-			}
-		}
-		add_country_modifier = {
-			name = mad_nobility
-			duration = -1
-		}
-		add_country_modifier = {
-			name = happy_socialists
-			duration = -1
-		}
-		remove_country_modifier = mad_socialists
-		ai_chance = {
+    option = {
+        name = "EVTOPTB86019"
+        set_global_flag = hot_nobility
+        any_pop = {
+            limit = {
+                location = {
+                    is_colonial = no
+                }
+            is_accepted_culture = yes
+            }
+            ideology = {
+                value = reactionary
+                factor = 0.2
+            }
+            scaled_militancy = {
+                ideology = reactionary
+                factor = 3
+            }
+            scaled_consciousness = {
+                ideology = reactionary
+                factor = 3
+            }
+        }
+        add_country_modifier = {
+            name = mad_nobility
+            duration = -1
+        }
+        add_country_modifier = {
+            name = happy_socialists
+            duration = -1
+        }
+        remove_country_modifier = mad_socialists
+        ai_chance = {
                         factor = 50
                 }
-	}
+    }
 }
 
 #Societies Socialist
 country_event = {
-	id = 86020
-	title = "EVTNAME86020"
-	desc = "EVTDESC86020"
-	picture = "Revolution"
-	
-	trigger = {
-		tag = FRA
-		has_global_flag = cool_nobility	
-		NOT = {
-			year = 1870
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 3
-	}
-	
-	option = {
-		name = "EVTOPTA86020"
-		random_owned = {
-			any_pop = {
-				consciousness = 3
-			}
-			any_pop = {
-				militancy = 3
-			}
-			any_pop = {
-				ideology = {
-					value = socialist
-					factor = 0.15
-				}
-			}
-		}
-	}
+    id = 86020
+    title = "EVTNAME86020"
+    desc = "EVTDESC86020"
+    picture = "Revolution"
+    
+    trigger = {
+        tag = FRA
+        has_global_flag = cool_nobility 
+        NOT = {
+            year = 1870
+        }
+    }
+    
+    mean_time_to_happen = {
+        months = 3
+    }
+    
+    option = {
+        name = "EVTOPTA86020"
+        random_owned = {
+            any_pop = {
+                consciousness = 3
+            }
+            any_pop = {
+                militancy = 3
+            }
+            any_pop = {
+                ideology = {
+                    value = socialist
+                    factor = 0.15
+                }
+            }
+        }
+    }
 }
 
 
 #Socities Reactionary
 country_event = {
-	id = 86021
-	title = "EVTNAME86021"
-	desc = "EVTDESC86021"
-	picture = "Revolution"
-	
-	trigger = {
-		tag = FRA
-		has_global_flag = hot_nobility
-		NOT = {
-			year = 1870
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 3
-	}
-	
-	option = {
-		name = "EVTOPTA86020"
-		random_owned = {
-			any_pop = {
-				consciousness = 3
-			}
-			any_pop = {
-				militancy = 3
-			}
-			any_pop = {
-				ideology = {
-					value = reactionary
-					factor = 0.15
-				}
-			}
-		}
-	}
+    id = 86021
+    title = "EVTNAME86021"
+    desc = "EVTDESC86021"
+    picture = "Revolution"
+    
+    trigger = {
+        tag = FRA
+        has_global_flag = hot_nobility
+        NOT = {
+            year = 1870
+        }
+    }
+    
+    mean_time_to_happen = {
+        months = 3
+    }
+    
+    option = {
+        name = "EVTOPTA86020"
+        random_owned = {
+            any_pop = {
+                consciousness = 3
+            }
+            any_pop = {
+                militancy = 3
+            }
+            any_pop = {
+                ideology = {
+                    value = reactionary
+                    factor = 0.15
+                }
+            }
+        }
+    }
 }
 
 #Socialist Civil War
 country_event = {
-	id = 86024
-	title = "EVTNAME86024"
-	desc = "EVTDESC86024"
-	major = yes
+    id = 86024
+    title = "EVTNAME86024"
+    desc = "EVTDESC86024"
+    major = yes
 
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA86024"
-		remove_country_modifier = mad_socialists
-		remove_country_modifier = happy_nobility
-		any_owned = {
-			limit = {
-				OR = {
-					is_core = BRE
-					is_core = MUN
-					is_core = SAR
-					is_core = NET
-					is_core = WLL
-					is_core = CLG
-					is_core = OST
-					is_core = LUX
-					is_core = PAL
-					is_core = HAM
-					is_core = OLD
-					is_core = SWI
-					is_core = CAT
-					is_core = HOL
-					is_core = LUB
-					is_core = LUC
-				}
-			}
-			add_core = AFA
-		}
-		any_owned = {
-			limit = {
-				is_core = FRA
-				NOT = {
-					is_core = AFA
-				}
-			}
-			add_core = BOR
-		}
-		464 = { add_core = BOR }
-		any_owned = {
-			limit = {
-				OR = {
-					region = FRA_458
-					region = FRA_455
-					region = FRA_461
-					region = FRA_467
-					region = FRA_451
-					region = FRA_448
-					province_id = 473
-				}
-			}
-			secede_province = BOR
-		}
-		BOR = {
-			upper_house = {
-				ideology = socialist
-				value = 1
-			}
-			government = democracy
-			add_accepted_culture = breton
-			add_accepted_culture = picard
-			political_reform = mandatory_service
-			capital = 467
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
-
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		war = {
-			target = BOR
-			attacker_goal = {
-				casus_belli = civil_war
-			}
-			defender_goal = {
-				casus_belli = civil_war
-			}
-		}
-		set_global_flag = french_civil_war_has_happened
-		set_global_flag = REP_war
-		clr_global_flag = cool_nobility
-		any_pop = {
-			militancy = -7
-			consciousness = -7
-		}
-		ai_chance = {
-			factor = 100
+    is_triggered_only = yes
+    
+    option = {
+        name = "EVTOPTA86024"
+        remove_country_modifier = mad_socialists
+        remove_country_modifier = happy_nobility
+        any_owned = {
+            limit = {
+                OR = {
+                    is_core = BRE
+                    is_core = MUN
+                    is_core = SAR
+                    is_core = NET
+                    is_core = WLL
+                    is_core = CLG
+                    is_core = OST
+                    is_core = LUX
+                    is_core = PAL
+                    is_core = HAM
+                    is_core = OLD
+                    is_core = SWI
+                    is_core = CAT
+                    is_core = HOL
+                    is_core = LUB
+                    is_core = LUC
                 }
-	}
-	
-	option = {
-		name = "EVTOPTB86024"
-		remove_country_modifier = mad_socialists
-		remove_country_modifier = happy_nobility
-		any_owned = {
-			limit = {
-				OR = {
-					is_core = BRE
-					is_core = MUN
-					is_core = SAR
-					is_core = NET
-					is_core = WLL
-					is_core = CLG
-					is_core = OST
-					is_core = LUX
-					is_core = PAL
-					is_core = HAM
-					is_core = OLD
-					is_core = SWI
-					is_core = CAT
-					is_core = HOL
-					is_core = LUB
-				}
-			}
-			add_core = AFA
-		}
-		any_pop = {
-			militancy = -7
-			consciousness = -7
-		}
-		any_owned = {
-			limit = {
-				is_core = FRA
-				NOT = {
-					is_core = AFA
-				}
-			}
-			add_core = BOR
-		}
-		464 = { add_core = BOR }
-		any_owned = {
-			limit = {
-				OR = {
-					region = FRA_458
-					region = FRA_455
-					region = FRA_461
-					region = FRA_467
-					region = FRA_451
-					region = FRA_448
-					province_id = 473
-				}
-			}
-			secede_province = BOR
-		}
-		BOR = {
-			upper_house = {
-				ideology = socialist
-				value = 1
-			}
-			government = democracy
-			add_accepted_culture = breton
-			add_accepted_culture = picard
-			political_reform = mandatory_service
-			capital = 467
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+            }
+            add_core = AFA
+        }
+        any_owned = {
+            limit = {
+                is_core = FRA
+                NOT = {
+                    is_core = AFA
+                }
+            }
+            add_core = BOR
+        }
+        464 = { add_core = BOR }
+        any_owned = {
+            limit = {
+                OR = {
+                    region = FRA_458
+                    region = FRA_455
+                    region = FRA_461
+                    region = FRA_467
+                    region = FRA_451
+                    region = FRA_448
+                    province_id = 473
+                }
+            }
+            secede_province = BOR
+        }
+        BOR = {
+            upper_house = {
+                ideology = socialist
+                value = 1
+            }
+            government = democracy
+            add_accepted_culture = breton
+            add_accepted_culture = picard
+            political_reform = mandatory_service
+            capital = 467
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		change_tag_no_core_switch = BOR
-		FRA = {
-			war = {
-				target = BOR
-				attacker_goal = {
-					casus_belli = civil_war
-				}
-				defender_goal = {
-					casus_belli = civil_war
-				}
-			}
-		}
-		set_global_flag = french_civil_war_has_happened
-		set_global_flag = REP_war
-		clr_global_flag = cool_nobility
-		ai_chance = {
-			factor = 0
-				}
-			}
-		}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        war = {
+            target = BOR
+            attacker_goal = {
+                casus_belli = civil_war
+            }
+            defender_goal = {
+                casus_belli = civil_war
+            }
+        }
+        set_global_flag = french_civil_war_has_happened
+        set_global_flag = REP_war
+        clr_global_flag = cool_nobility
+        any_pop = {
+            militancy = -7
+            consciousness = -7
+        }
+        ai_chance = {
+            factor = 100
+                }
+    }
+    
+    option = {
+        name = "EVTOPTB86024"
+        remove_country_modifier = mad_socialists
+        remove_country_modifier = happy_nobility
+        any_owned = {
+            limit = {
+                OR = {
+                    is_core = BRE
+                    is_core = MUN
+                    is_core = SAR
+                    is_core = NET
+                    is_core = WLL
+                    is_core = CLG
+                    is_core = OST
+                    is_core = LUX
+                    is_core = PAL
+                    is_core = HAM
+                    is_core = OLD
+                    is_core = SWI
+                    is_core = CAT
+                    is_core = HOL
+                    is_core = LUB
+                }
+            }
+            add_core = AFA
+        }
+        any_pop = {
+            militancy = -7
+            consciousness = -7
+        }
+        any_owned = {
+            limit = {
+                is_core = FRA
+                NOT = {
+                    is_core = AFA
+                }
+            }
+            add_core = BOR
+        }
+        464 = { add_core = BOR }
+        any_owned = {
+            limit = {
+                OR = {
+                    region = FRA_458
+                    region = FRA_455
+                    region = FRA_461
+                    region = FRA_467
+                    region = FRA_451
+                    region = FRA_448
+                    province_id = 473
+                }
+            }
+            secede_province = BOR
+        }
+        BOR = {
+            upper_house = {
+                ideology = socialist
+                value = 1
+            }
+            government = democracy
+            add_accepted_culture = breton
+            add_accepted_culture = picard
+            political_reform = mandatory_service
+            capital = 467
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
+
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        change_tag_no_core_switch = BOR
+        FRA = {
+            war = {
+                target = BOR
+                attacker_goal = {
+                    casus_belli = civil_war
+                }
+                defender_goal = {
+                    casus_belli = civil_war
+                }
+            }
+        }
+        set_global_flag = french_civil_war_has_happened
+        set_global_flag = REP_war
+        clr_global_flag = cool_nobility
+        ai_chance = {
+            factor = 0
+                }
+            }
+        }
 
 #Monarchist Civil War
 country_event = {
-	id = 86025
-	title = "EVTNAME86025"
-	desc = "EVTDESC86025"
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA86025"
-		remove_country_modifier = mad_nobility
-		remove_country_modifier = happy_socialists
-		any_owned = {
-			limit = {
-				OR = {
-					is_core = BRE
-					is_core = MUN
-					is_core = SAR
-					is_core = NET
-					is_core = WLL
-					is_core = CLG
-					is_core = OST
-					is_core = LUX
-					is_core = PAL
-					is_core = HAM
-					is_core = OLD
-					is_core = SWI
-					is_core = CAT
-					is_core = HOL
-					is_core = LUB
-				}
-			}
-			add_core = AFA
-		}
-		any_owned = {
-			limit = {
-				is_core = FRA
-				NOT = {
-					is_core = AFA
-				}
-			}
-			add_core = BOR
-		}
-		464 = { add_core = BOR }
-		any_owned = {
-			limit = {
-				OR = {
-					region = FRA_420
-					region = FRA_435
-					region = FRA_418
-					region = FRA_438
-					region = FRA_442
-					region = FRA_445
-					region = FRA_458
-				}
-				NOT = {
-					province_id = 415
-					province_id = 416
-					province_id = 438					
-				}
-			}
-			secede_province = BOR
-		}
-		BOR = {
-			upper_house = {
-				ideology = conservative
-				value = 1
-			}
-			government = absolute_monarchy
-			remove_accepted_culture = wallonian
-			political_reform = mandatory_service
-			capital = 442
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+    id = 86025
+    title = "EVTNAME86025"
+    desc = "EVTDESC86025"
+    major = yes
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = "EVTOPTA86025"
+        remove_country_modifier = mad_nobility
+        remove_country_modifier = happy_socialists
+        any_owned = {
+            limit = {
+                OR = {
+                    is_core = BRE
+                    is_core = MUN
+                    is_core = SAR
+                    is_core = NET
+                    is_core = WLL
+                    is_core = CLG
+                    is_core = OST
+                    is_core = LUX
+                    is_core = PAL
+                    is_core = HAM
+                    is_core = OLD
+                    is_core = SWI
+                    is_core = CAT
+                    is_core = HOL
+                    is_core = LUB
+                }
+            }
+            add_core = AFA
+        }
+        any_owned = {
+            limit = {
+                is_core = FRA
+                NOT = {
+                    is_core = AFA
+                }
+            }
+            add_core = BOR
+        }
+        464 = { add_core = BOR }
+        any_owned = {
+            limit = {
+                OR = {
+                    region = FRA_420
+                    region = FRA_435
+                    region = FRA_418
+                    region = FRA_438
+                    region = FRA_442
+                    region = FRA_445
+                    region = FRA_458
+                }
+                NOT = {
+                    province_id = 415
+                    province_id = 416
+                    province_id = 438                   
+                }
+            }
+            secede_province = BOR
+        }
+        BOR = {
+            upper_house = {
+                ideology = conservative
+                value = 1
+            }
+            government = absolute_monarchy
+            remove_accepted_culture = wallonian
+            political_reform = mandatory_service
+            capital = 442
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		war = {
-			target = BOR
-			attacker_goal = {
-				casus_belli = civil_war
-			}
-			defender_goal = {
-				casus_belli = civil_war
-			}
-		}
-		set_global_flag = french_civil_war_has_happened
-		set_global_flag = BOR_war
-		clr_global_flag = hot_nobility
-		any_pop = {
-			militancy = -7
-			consciousness = -7
-		}
-		ai_chance = {
-			factor = 100
-			}
-		}
-	
-	option = {
-		name = "EVTOPTB86025"
-		remove_country_modifier = mad_nobility
-		remove_country_modifier = happy_socialists
-		any_owned = {
-			limit = {
-				OR = {
-					is_core = BRE
-					is_core = MUN
-					is_core = SAR
-					is_core = NET
-					is_core = WLL
-					is_core = CLG
-					is_core = OST
-					is_core = LUX
-					is_core = PAL
-					is_core = HAM
-					is_core = OLD
-					is_core = SWI
-					is_core = CAT
-					is_core = HOL
-					is_core = LUB
-				}
-			}
-			add_core = AFA
-		}
-		any_pop = {
-			militancy = -7
-			consciousness = -7
-		}
-		any_owned = {
-			limit = {
-				is_core = FRA
-				NOT = {
-					is_core = AFA
-				}
-			}
-			add_core = BOR
-		}
-		464 = { add_core = BOR }
-		any_owned = {
-			limit = {
-				OR = {
-					region = FRA_420
-					region = FRA_435
-					region = FRA_418
-					region = FRA_438
-					region = FRA_442
-					region = FRA_445
-					region = FRA_458
-				}
-				NOT = {
-					province_id = 415
-					province_id = 416
-					province_id = 438					
-				}
-			}
-			secede_province = BOR
-		}
-		BOR = {
-			upper_house = {
-				ideology = conservative
-				value = 1
-			}
-			government = absolute_monarchy
-			remove_accepted_culture = wallonian
-			political_reform = mandatory_service
-			capital = 442
-			leadership = 80
-			treasury = 10000
-			small_arms = 100
-			ammunition = 200
-			canned_food = 200
-			wine = 200
-			liquor = 200
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        war = {
+            target = BOR
+            attacker_goal = {
+                casus_belli = civil_war
+            }
+            defender_goal = {
+                casus_belli = civil_war
+            }
+        }
+        set_global_flag = french_civil_war_has_happened
+        set_global_flag = BOR_war
+        clr_global_flag = hot_nobility
+        any_pop = {
+            militancy = -7
+            consciousness = -7
+        }
+        ai_chance = {
+            factor = 100
+            }
+        }
+    
+    option = {
+        name = "EVTOPTB86025"
+        remove_country_modifier = mad_nobility
+        remove_country_modifier = happy_socialists
+        any_owned = {
+            limit = {
+                OR = {
+                    is_core = BRE
+                    is_core = MUN
+                    is_core = SAR
+                    is_core = NET
+                    is_core = WLL
+                    is_core = CLG
+                    is_core = OST
+                    is_core = LUX
+                    is_core = PAL
+                    is_core = HAM
+                    is_core = OLD
+                    is_core = SWI
+                    is_core = CAT
+                    is_core = HOL
+                    is_core = LUB
+                }
+            }
+            add_core = AFA
+        }
+        any_pop = {
+            militancy = -7
+            consciousness = -7
+        }
+        any_owned = {
+            limit = {
+                is_core = FRA
+                NOT = {
+                    is_core = AFA
+                }
+            }
+            add_core = BOR
+        }
+        464 = { add_core = BOR }
+        any_owned = {
+            limit = {
+                OR = {
+                    region = FRA_420
+                    region = FRA_435
+                    region = FRA_418
+                    region = FRA_438
+                    region = FRA_442
+                    region = FRA_445
+                    region = FRA_458
+                }
+                NOT = {
+                    province_id = 415
+                    province_id = 416
+                    province_id = 438                   
+                }
+            }
+            secede_province = BOR
+        }
+        BOR = {
+            upper_house = {
+                ideology = conservative
+                value = 1
+            }
+            government = absolute_monarchy
+            remove_accepted_culture = wallonian
+            political_reform = mandatory_service
+            capital = 442
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
 
-			add_country_modifier = {
-			name = small_country_draft
-			duration = 1825
-			}
-		}
-		change_tag_no_core_switch = BOR
-		FRA = {
-			war = {
-				target = BOR
-				attacker_goal = {
-					casus_belli = civil_war
-				}
-				defender_goal = {
-					casus_belli = civil_war
-				}
-			}
-		}
-		set_global_flag = french_civil_war_has_happened
-		set_global_flag = BOR_war
-		clr_global_flag = hot_nobility
-		ai_chance = {
-			factor = 0
-			}
-		}
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        change_tag_no_core_switch = BOR
+        FRA = {
+            war = {
+                target = BOR
+                attacker_goal = {
+                    casus_belli = civil_war
+                }
+                defender_goal = {
+                    casus_belli = civil_war
+                }
+            }
+        }
+        set_global_flag = french_civil_war_has_happened
+        set_global_flag = BOR_war
+        clr_global_flag = hot_nobility
+        ai_chance = {
+            factor = 0
+            }
+        }
 }
 
 #WE Victory for BOR
 country_event = {
-	id = 86026
-	title = "EVTNAME86029"
-	desc = "EVTDESC86029"
-	picture = "Riot"
+    id = 86026
+    title = "EVTNAME86029"
+    desc = "EVTDESC86029"
+    picture = "Riot"
 
-	trigger = {
-		ai = yes
-		tag = FRA
-		war_with = BOR
-		war_exhaustion = 100
-	}
+    trigger = {
+        ai = yes
+        tag = FRA
+        war_with = BOR
+        war_exhaustion = 100
+    }
 
-	mean_time_to_happen = {
-		months = 1
-	}
+    mean_time_to_happen = {
+        months = 1
+    }
 
-	option = {
-		name = "EVTOPTA86029"
-		BOR = {
-			inherit = FRA
-		}
-	}
+    option = {
+        name = "EVTOPTA86029"
+        BOR = {
+            inherit = FRA
+        }
+    }
 }
 
 #WE Victory for FRA over BOR
 country_event = {
-	id = 86028
-	title = "EVTNAME86029"
-	desc = "EVTDESC86029"
-	picture = "Riot"
+    id = 86028
+    title = "EVTNAME86029"
+    desc = "EVTDESC86029"
+    picture = "Riot"
 
-	trigger = {
-		ai = yes
-		tag = BOR
-		war_with = FRA
-		war_exhaustion = 100
-	}
+    trigger = {
+        ai = yes
+        tag = BOR
+        war_with = FRA
+        war_exhaustion = 100
+    }
 
-	mean_time_to_happen = {
-		months = 1
-	}
+    mean_time_to_happen = {
+        months = 1
+    }
 
-	option = {
-		name = "EVTOPTA86029"
-		FRA = {
-			inherit = BOR
-		}
-	}
+    option = {
+        name = "EVTOPTA86029"
+        FRA = {
+            inherit = BOR
+        }
+    }
 }
 
 
 #FRA wins against BOR
 country_event = {
-	id = 86030
-	title = "EVTNAME86030"
-	desc = "EVTDESC86030"
-	picture = "Celebration"
+    id = 86030
+    title = "EVTNAME86030"
+    desc = "EVTDESC86030"
+    picture = "Celebration"
 
-	trigger = {
-		civilized = yes
-		tag = FRA
-		NOT = {
-			war_with = BOR
-			exists = BOR
-		}
-		has_global_flag = french_civil_war_has_happened
-		war = no
-	}
+    trigger = {
+        civilized = yes
+        tag = FRA
+        NOT = {
+            war_with = BOR
+            exists = BOR
+        }
+        has_global_flag = french_civil_war_has_happened
+        war = no
+    }
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
+    mean_time_to_happen = {
+        months = 1
+    }
 
-	option = {
-		name = "EVTOPTA86030"
-		FRA = {
-			any_owned = {
-				remove_core = BOR
-			}
-		}
-		any_pop = {
-			ideology = {
-				value = liberal
-				factor = 0.15
-			}
-		}
-		any_pop = {
-			ideology = {
-				value = conservative
-				factor = 0.20
-			}
-		}
-		war_exhaustion = -25
-		set_global_flag = French_victory_REP
-	}
+    option = {
+        name = "EVTOPTA86030"
+        FRA = {
+            any_owned = {
+                remove_core = BOR
+            }
+        }
+        any_pop = {
+            ideology = {
+                value = liberal
+                factor = 0.15
+            }
+        }
+        any_pop = {
+            ideology = {
+                value = conservative
+                factor = 0.20
+            }
+        }
+        war_exhaustion = -25
+        set_global_flag = French_victory_REP
+    }
 }
 
 
 #BOR wins against FRA
 country_event = {
-	id = 86032
-	title = "EVTNAME86032"
-	desc = "EVTDESC86032"
-	picture = "Celebration"
+    id = 86032
+    title = "EVTNAME86032"
+    desc = "EVTDESC86032"
+    picture = "Celebration"
 
-	trigger = {
-		civilized = yes
-		tag = BOR
-		NOT = {
-			war_with = FRA
-			exists = FRA
-		}
-		has_global_flag = french_civil_war_has_happened
-		war = no
-	}
+    trigger = {
+        civilized = yes
+        tag = BOR
+        NOT = {
+            war_with = FRA
+            exists = FRA
+        }
+        has_global_flag = french_civil_war_has_happened
+        war = no
+    }
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 3
-	}
+    mean_time_to_happen = {
+        months = 3
+    }
 
-	option = {
-		name = "EVTOPTA86032"
-		prestige = 15
-		FRA = {
-			all_core = {
-				remove_core = FRA
-			}
-		}
-		war_exhaustion = -50
-	}
+    option = {
+        name = "EVTOPTA86032"
+        prestige = 15
+        FRA = {
+            all_core = {
+                remove_core = FRA
+            }
+        }
+        war_exhaustion = -50
+    }
 }
 
 #Back to war with BOR
 country_event = {
-	id = 86034
-	title = "EVTNAME86034"
-	desc = "EVTDESC86034"
-	picture = "Riot"
+    id = 86034
+    title = "EVTNAME86034"
+    desc = "EVTDESC86034"
+    picture = "Riot"
 
-	trigger = {
-		civilized = yes
-		tag = FRA
-		NOT = {
-			war_with = BOR
-		}
-		has_global_flag = french_civil_war_has_happened
-		exists = BOR
-		exists = FRA
-	}
+    trigger = {
+        civilized = yes
+        tag = FRA
+        NOT = {
+            war_with = BOR
+        }
+        has_global_flag = french_civil_war_has_happened
+        exists = BOR
+        exists = FRA
+    }
 
-	mean_time_to_happen = {
-		months = 1
-		modifier = {
-			factor = 0.01
-			average_militancy = 0
-		}
-	}
+    mean_time_to_happen = {
+        months = 1
+        modifier = {
+            factor = 0.01
+            average_militancy = 0
+        }
+    }
 
-	option = {
-		name = "EVTOPTA86034"
-		FRA = {
-			war = {
-				target = BOR
-				attacker_goal = {
-					casus_belli = civil_war
-				}
-				defender_goal = {
-					casus_belli = civil_war
-				}
-			}
-		}
-	}
+    option = {
+        name = "EVTOPTA86034"
+        FRA = {
+            war = {
+                target = BOR
+                attacker_goal = {
+                    casus_belli = civil_war
+                }
+                defender_goal = {
+                    casus_belli = civil_war
+                }
+            }
+        }
+    }
 }
 
 
 #Socialist offer to prevent war
 country_event = {
-	id = 86036
-	title = "EVTNAME86036"
-	desc = "EVTDESC86036"
-	picture = "Unite"
+    id = 86036
+    title = "EVTNAME86036"
+    desc = "EVTDESC86036"
+    picture = "Unite"
 
-	trigger = {
-		tag = FRA
-		NOT = {
-			has_global_flag = french_civil_war_has_happened
-		}
-		year = 1870
-		has_global_flag = cool_nobility
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-		modifier = {
-			factor = 0.01
-			year = 1869
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA86036"
-		government = hms_government
-		political_reform = no_slavery 
-		political_reform = universal_voting
-		political_reform = population_equal_weight
-		political_reform = proportional_representation
-		political_reform = yes_meeting
-		political_reform = free_press
-		political_reform = all_trade_unions
-		political_reform = secret_ballots
-		child_labor = child_labor_illegal
-		penal_system = incarceration
-		citizens_rights = all_voting_pops
-		any_pop = {
-			ideology = {
-				value = reactionary
-				factor = 0.3
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-					ideology = reactionary
-					factor = 9
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-					ideology = conservative
-					factor = 6
-			}
-		}
-		any_pop = {
-			scaled_consciousness = {
-					ideology = socialist
-					factor = 8
-			}
-		}
-		any_pop = {
-			scaled_consciousness = {
-					ideology = liberal
-					factor = 4
-			}
-		}
-		money = -500000
-		prestige = -100
-		FRA = {
-			all_core = {
-				remove_core = BOR
-			}
-		remove_country_modifier = happy_nobility
-		remove_country_modifier = mad_socialists
-		clr_global_flag = cool_nobility
-		}
-		ai_chance = {
+    trigger = {
+        tag = FRA
+        NOT = {
+            has_global_flag = french_civil_war_has_happened
+        }
+        year = 1870
+        has_global_flag = cool_nobility
+    }
+    
+    mean_time_to_happen = {
+        months = 1
+        modifier = {
+            factor = 0.01
+            year = 1869
+        }
+    }
+    
+    option = {
+        name = "EVTOPTA86036"
+        government = hms_government
+        political_reform = no_slavery 
+        political_reform = universal_voting
+        political_reform = population_equal_weight
+        political_reform = proportional_representation
+        political_reform = yes_meeting
+        political_reform = free_press
+        political_reform = all_trade_unions
+        political_reform = secret_ballots
+        child_labor = child_labor_illegal
+        penal_system = incarceration
+        citizens_rights = all_voting_pops
+        any_pop = {
+            ideology = {
+                value = reactionary
+                factor = 0.3
+            }
+        }
+        any_pop = {
+            scaled_militancy = {
+                    ideology = reactionary
+                    factor = 9
+            }
+        }
+        any_pop = {
+            scaled_militancy = {
+                    ideology = conservative
+                    factor = 6
+            }
+        }
+        any_pop = {
+            scaled_consciousness = {
+                    ideology = socialist
+                    factor = 8
+            }
+        }
+        any_pop = {
+            scaled_consciousness = {
+                    ideology = liberal
+                    factor = 4
+            }
+        }
+        money = -500000
+        prestige = -100
+        FRA = {
+            all_core = {
+                remove_core = BOR
+            }
+        remove_country_modifier = happy_nobility
+        remove_country_modifier = mad_socialists
+        clr_global_flag = cool_nobility
+        }
+        ai_chance = {
                         factor = 0
                 }
-	}
+    }
 
-	option = {
-		name = "EVTOPTB86036"
-		FRA = {
-        		country_event = 86024
-        	}
-		ai_chance = {
-			factor = 100
+    option = {
+        name = "EVTOPTB86036"
+        FRA = {
+                country_event = 86024
+            }
+        ai_chance = {
+            factor = 100
                 }
-	}
+    }
 }
 
 #Monarchist offer to prevent war
 country_event = {
-	id = 86037
-	title = "EVTNAME86037"
-	desc = "EVTDESC86037"
-	picture = "danishgovernment"
+    id = 86037
+    title = "EVTNAME86037"
+    desc = "EVTDESC86037"
+    picture = "danishgovernment"
 
-	trigger = {
-		tag = FRA
-		NOT = {
-			has_global_flag = french_civil_war_has_happened
-		}
-		year = 1870
-		has_global_flag = hot_nobility
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-		modifier = {
-			factor = 0.01
-			year = 1869
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA86037"
-		government = absolute_monarchy
-		political_reform = yes_slavery
-		political_reform = landed_voting
-		political_reform = appointed
-		political_reform = first_past_the_post
-		political_reform = no_meeting
-		political_reform = state_press
-		political_reform = no_trade_unions
-		political_reform = underground_parties
-		citizens_rights = primary_culture_only
-		
-		any_pop = {
-			ideology = {
-				value = socialist
-				factor = 0.2
-			}
-		}
-		any_pop = {
-			ideology = {
-				value = liberal
-				factor = 0.1
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-					ideology = socialist
-					factor = 9
-			}
-		}
-		any_pop = {
-			scaled_militancy = {
-					ideology = liberal
-					factor = 8
-			}
-		}
-		any_pop = {
-			scaled_consciousness = {
-					ideology = reactionary
-					factor = 8
-			}
-		}
-		any_pop = {
-			scaled_consciousness = {
-					ideology = conservative
-					factor = 2
-			}
-		}
-		money = -500000
-		prestige = -100
-		FRA = {
-			all_core = {
-				remove_core = BOR
-			}
-		}
-		remove_country_modifier = mad_nobility
-		remove_country_modifier = happy_socialists
-		clr_global_flag = hot_nobility
-		ai_chance = {
-			factor = 0
+    trigger = {
+        tag = FRA
+        NOT = {
+            has_global_flag = french_civil_war_has_happened
+        }
+        year = 1870
+        has_global_flag = hot_nobility
+    }
+    
+    mean_time_to_happen = {
+        months = 1
+        modifier = {
+            factor = 0.01
+            year = 1869
+        }
+    }
+    
+    option = {
+        name = "EVTOPTA86037"
+        government = absolute_monarchy
+        political_reform = yes_slavery
+        political_reform = landed_voting
+        political_reform = appointed
+        political_reform = first_past_the_post
+        political_reform = no_meeting
+        political_reform = state_press
+        political_reform = no_trade_unions
+        political_reform = underground_parties
+        citizens_rights = primary_culture_only
+        
+        any_pop = {
+            ideology = {
+                value = socialist
+                factor = 0.2
+            }
+        }
+        any_pop = {
+            ideology = {
+                value = liberal
+                factor = 0.1
+            }
+        }
+        any_pop = {
+            scaled_militancy = {
+                    ideology = socialist
+                    factor = 9
+            }
+        }
+        any_pop = {
+            scaled_militancy = {
+                    ideology = liberal
+                    factor = 8
+            }
+        }
+        any_pop = {
+            scaled_consciousness = {
+                    ideology = reactionary
+                    factor = 8
+            }
+        }
+        any_pop = {
+            scaled_consciousness = {
+                    ideology = conservative
+                    factor = 2
+            }
+        }
+        money = -500000
+        prestige = -100
+        FRA = {
+            all_core = {
+                remove_core = BOR
+            }
+        }
+        remove_country_modifier = mad_nobility
+        remove_country_modifier = happy_socialists
+        clr_global_flag = hot_nobility
+        ai_chance = {
+            factor = 0
                 }
-	}
+    }
 
-	option = {
-		name = "EVTOPTB86037"
-		FRA = {
-        		country_event = 86025
-        	}
-		ai_chance = {
+    option = {
+        name = "EVTOPTB86037"
+        FRA = {
+                country_event = 86025
+            }
+        ai_chance = {
                         factor = 100
                 }
-	}
+    }
 }
 
