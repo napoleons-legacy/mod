@@ -1,0 +1,574 @@
+# Mughal Bahadur Shah
+country_event = {
+    id = 121274
+    title = "EVTNAME121274"
+    desc = "EVTDESC121274"
+    picture = "sultan"
+    fire_only_once = yes
+
+    trigger = {
+        tag = MUG
+        year = 1837
+    }
+
+    mean_time_to_happen = {
+        months = 5
+    }
+
+    option = {
+        name = "EVTOPTA121274"
+        prestige = 2
+        any_pop = {
+            militancy = -1
+        }
+    }
+}
+
+# Mughals hears of Hyderabad's kidnapping
+country_event = {
+    id = 121275
+    title = "EVTNAME121275"
+    desc = "EVTDESC121275"
+    picture = "Outside_influences"
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA121275"
+        casus_belli = {
+            target = HYD
+            type = cut_down_to_size
+        }
+        HYD = {
+            casus_belli = {
+                target = MUG
+                type = cut_down_to_size
+            }
+        }
+
+        war = {
+            call_ally = yes
+            target = HYD
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+            defender_goal = {
+                casus_belli = cut_down_to_size
+            }
+        }
+
+        set_global_flag = mughal_hyderabadi_war
+        ai_chance = {
+            factor = 70
+        }
+    }
+
+    option = {
+        name = "EVTOPTB121275"
+        prestige = -5
+        HYD = {
+            create_vassal = IND
+            create_vassal = BHO
+            create_alliance = IND
+            create_alliance = BHO
+        }
+
+        ai_chance = {
+            factor = 30
+        }
+    }
+}
+
+# Small states hear of Mughal-Hyderabadi war
+country_event = {
+    id = 121276
+    title = "EVTNAME121276"
+    desc = "EVTDESC121276"
+    picture = "sultan"
+
+    trigger = {
+        OR = {
+            tag = IND
+            tag = BHO
+        }
+
+        has_global_flag = mughal_hyderabadi_war
+        NOT = { has_country_flag = mughal_hyderabadi_war_decision }
+    }
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "EVTOPTA121276"
+        casus_belli = {
+            target = HYD
+            type = cut_down_to_size
+        }
+
+        HYD = {
+            casus_belli = {
+                target = THIS
+                type = conquest
+            }
+        }
+
+        war = {
+            target = HYD
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+            defender_goal = {
+                casus_belli = conquest
+            }
+        }
+
+        create_alliance = MUG
+        set_country_flag = mughal_hyderabadi_war_decision
+        ai_chance = {
+            factor = 50
+        }
+    }
+
+    option = {
+        name = "EVTOPTB121276"
+        casus_belli = {
+            target = MUG
+            type = cut_down_to_size
+        }
+
+        MUG = {
+            casus_belli = {
+                target = THIS
+                type = conquest
+            }
+        }
+
+        war = {
+            target = MUG
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+            defender_goal = {
+                casus_belli = conquest
+            }
+        }
+
+        create_alliance = HYD
+        set_country_flag = mughal_hyderabadi_war_decision
+
+        ai_chance = {
+            factor = 50
+        }
+    }
+
+    option = {
+        name = "EVTOPTC121276"
+        prestige = -2
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+# The Congress is called
+country_event = {
+    id = 121278
+    title = "EVTNAME121278"
+    desc = "EVTDESC121278"
+    picture = "anticorn"
+
+    trigger = {
+        has_global_flag = congress_called
+        is_culture_group = south_asian
+
+        NOT = {
+            has_country_flag = delegate_sent_too
+            has_country_flag = delegate_sent_not
+            has_country_flag = congress_caller
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "EVTOPTA121278"
+        set_country_flag = delegate_sent_too
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    option = {
+        name = "EVTOPTB121278"
+        prestige = -5
+        set_country_flag = delegate_sent_not
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+# Purpose of the Congress
+country_event = {
+    id = 121279
+    title = "EVTNAME121279"
+    desc = "EVTDESC121279"
+    picture = "anticorn"
+
+    trigger = {
+        OR = {
+            has_country_flag = delegate_sent_too
+            has_country_flag = congress_caller
+        }
+        is_culture_group = south_asian
+        NOT = {
+            has_country_flag = no_confed
+            has_country_flag = yes_confed
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVTOPTA121279"
+        set_country_flag = yes_confed
+        random_country = {
+            limit = {
+                tag = JAP
+                NOT = { exists = TKG }
+                exists = yes
+            }
+
+            JAP = {
+                set_variable = {
+                    which = delegates_sent
+                    value = 1
+                }
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = TKG
+                NOT = { exists = JAP }
+                exists = yes
+            }
+
+            TKG = {
+                set_variable = {
+                    which = delegates_sent
+                    value = 1
+                }
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = TKG
+                exists = JAP
+                exists = TKG
+            }
+
+            TKG = {
+                set_variable = {
+                    which = delegates_sent
+                    value = 1
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 75
+        }
+    }
+
+    option = {
+        name = "EVTOPTB121279"
+        prestige = -5
+        set_country_flag = no_confed
+        ai_chance = {
+            factor = 25
+        }
+    }
+}
+
+# 11 votes gained GP informed
+country_event = {
+    id = 121280
+    title = "EVTNAME121280"
+    desc = "EVTDESC121280"
+    picture = "monarchy"
+
+    fire_only_once = yes
+
+    trigger = {
+        check_variable = {
+            which = delegates_sent
+            value = 10
+        }
+
+        has_country_flag = congress_caller
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "EVTOPTA121280"
+        set_country_flag = indian_confed_formed
+        add_country_modifier = {
+            name = indian_confed_start
+            duration = -1
+        }
+
+        any_country = {
+            limit = {
+                is_culture_group = south_asian
+            }
+
+            country_event = 121281
+        }
+    }
+}
+
+# 11 votes gained non-GP informed
+country_event = {
+    id = 121281
+    title = "EVTNAME121281"
+    desc = "EVTDESC121281"
+    picture = "monarchy"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA121281"
+        FROM = {
+            create_vassal = THIS
+            create_alliance = THIS
+        }
+
+        set_country_flag = puppet_of_confed
+        ai_chance = {
+            factor = 90
+        }
+    }
+
+    option = {
+        name = "EVTOPTB121281"
+        FROM = {
+            casus_belli = {
+                target = THIS
+                type = make_puppet
+                months = 12
+            }
+        }
+
+        ai_chance = {
+            factor = 10
+        }
+    }
+}
+
+# A puppet of confed leaves the confed
+country_event = {
+    id = 121282
+    title = "EVTNAME121282"
+    desc = "EVTDESC121282"
+    picture = "sultan"
+
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = puppet_of_confed
+        is_greater_power = yes
+    }
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "EVTOPTA121282"
+        any_country = {
+            limit = {
+                has_country_flag = congress_caller
+            }
+            country_event = { id = 121283 days = 0}
+        }
+    }
+}
+
+#A  puppet of confed leaves the confed
+country_event = {
+    id = 121283
+    title = "EVTNAME121283"
+    desc = "EVTDESC121283"
+    picture = "sultan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA121283"
+        casus_belli = {
+            target = FROM
+            type = conquest
+        }
+        war = {
+            target = FROM
+            attacker_goal = {
+                casus_belli = conquest
+            }
+        }
+        change_tag = HND
+        add_accepted_culture = assamese
+        add_accepted_culture = bihari
+        add_accepted_culture = manipuri
+        add_accepted_culture = oriya
+        add_accepted_culture = sinhala
+        add_accepted_culture = avadhi
+        add_accepted_culture = kanauji
+        add_accepted_culture = panjabi
+        add_accepted_culture = kashmiri
+        add_accepted_culture = gujarati
+        add_accepted_culture = marathi
+        add_accepted_culture = rajput
+        add_accepted_culture = kannada
+        add_accepted_culture = malayalam
+        add_accepted_culture = tamil
+        add_accepted_culture = telegu
+
+        any_country = {
+            limit = {
+                is_culture_group = south_asian
+                NOT = {
+                    war_with = THIS
+                    tag = THIS
+                }
+            }
+
+            country_event = 121284
+        }
+
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    option = {
+        name = "EVTOPTB121283"
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+# The doctrine of Federation
+country_event = {
+    id = 121284
+    title = "EVTNAME121284"
+    desc = "EVTDESC121284"
+    picture = "sultan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA121284"
+        FROM = {
+            inherit = THIS
+        }
+        ai_chance = {
+            factor = 50
+        }
+    }
+
+    option = {
+        name = "EVTOPTB121284"
+        casus_belli = {
+            target = FROM
+            type = cut_down_to_size
+        }
+
+        FROM = {
+            release_vassal = THIS
+            diplomatic_influence = {
+                who = THIS
+                value = -200
+            }
+            casus_belli = {
+                target = THIS
+                type = conquest
+            }
+            war = {
+                target = THIS
+                attacker_goal = {
+                    casus_belli = conquest
+                }
+                defender_goal = {
+                    casus_belli = cut_down_to_size
+                }
+            }
+        }
+
+        ai_chance = {
+            factor = 50
+        }
+    }
+}
+
+
+
+# End the Bengali War
+country_event = {
+    id = 121291
+    title = "EVTNAME121291"
+    desc = "EVTDESC121291"
+    picture = "sultan"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = CAN
+        war_with = BNG
+        year = 1853
+        NOT = {
+            year = 1854
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "EVTOPTA121291"
+
+        end_war = BNG
+        any_owned = {
+            limit = { is_core = BNG }
+
+            secede_province = BNG
+        }
+
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    option = {
+        name = "EVTOPTA121291"
+
+        prestige = -10
+
+        ai_chance = {
+            factor = 0
+        }
+    }
+}

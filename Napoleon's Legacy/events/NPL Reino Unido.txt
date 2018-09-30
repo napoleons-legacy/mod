@@ -1,0 +1,353 @@
+country_event = {
+    id = 32499
+    title = "EVTNAME32499"
+    desc = "EVTDESC32499"
+    picture = "greatpowers"
+
+    trigger = {
+        tag = REI
+        NOT = {
+            OR = {
+                has_country_flag = stay_BR
+                has_country_flag = move_PR
+            }
+
+            exists = BRZ
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 3
+
+        modifier = {
+            factor = 0.55
+            year = 1837
+        }
+
+        modifier = {
+            factor = 0.75
+            year = 1838
+        }
+    }
+
+    option = {
+        name = "EVTOPTA32499"
+        set_country_flag = stay_BR
+        add_country_modifier = {
+            name = UR_tensions
+            duration = -1
+        }
+
+        BRZ = {
+            all_core = {
+                remove_core = BRZ
+            }
+        }
+
+        ai_chance = {
+            factor = 45
+        }
+    }
+
+    option = {
+        name = "EVTOPTB32499"
+        set_country_flag = move_PR
+        add_country_modifier = {
+            name = UR_tensions
+            duration = -1
+        }
+
+        capital = 521
+
+        POR = {
+            all_core = {
+                remove_core = POR
+            }
+        }
+
+        ai_chance = {
+            factor = 55
+        }
+    }
+}
+
+country_event = {
+    id = 32498
+    title = "EVTNAME32498"
+    desc = "EVTDESC32498"
+    picture = "greatpowers"
+
+    trigger = {
+        has_country_flag = stay_BR
+        521 = {
+            owned_by = THIS
+            is_core = POR
+        }
+
+        NOT = { has_global_flag = BRPR_civil_war_has_happened }
+    }
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    option = {
+        name = "EVTOPTA32498"
+        random_owned = {
+            limit = { is_core = POR }
+
+            any_pop = {
+                consciousness = 1
+                militancy = 1
+            }
+
+            add_province_modifier = {
+                name = PR_rebellion
+                duration = 1825
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 32497
+    title = "EVTNAME32497"
+    desc = "EVTDESC32497"
+    picture = "greatpowers"
+
+    trigger = {
+        has_country_flag = move_PR
+        2447 = {
+            owned_by = THIS
+            is_core = BRZ
+        }
+        NOT = { has_global_flag = BRPR_civil_war_has_happened }
+    }
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    option = {
+        name = "EVTOPTA32497"
+        random_owned = {
+            limit = { is_core = BRZ }
+
+            any_pop = {
+                consciousness = 1
+                militancy = 1
+            }
+
+            add_province_modifier = {
+                name = PR_rebellion
+                duration = 1825
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 4662011
+    title = "EVTNAME4662011"
+    desc = "EVTDESC4662011"
+    picture = "brazil_court"
+
+    trigger = {
+        tag = REI
+        2447 = { controlled_by = REB is_core = BRZ owned_by = REI }
+        NOT = { has_global_flag = BRPR_civil_war_has_happened }
+    }
+
+    fire_only_once = yes
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA4662011"
+        release = BRZ
+        ENG_1979 = { any_owned = { limit = { owned_by = REI } secede_province = BRZ } }
+
+        REI = { any_owned = { limit = { is_core = BOL } secede_province = BOL remove_core = BRZ remove_core = REI } }
+        war = {
+            target = BRZ
+            attacker_goal = {
+                casus_belli = civil_war
+            }
+
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+
+        set_global_flag = BRPR_civil_war_has_happened
+        BRZ = {
+            political_reform = mandatory_service
+            capital = 2447
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTB4662011"
+        release = BRZ
+        BRZ = { all_core = { remove_core = REI } }
+        REI = { any_owned = { limit = { is_core = BOL } secede_province = BOL remove_core = BRZ remove_core = REI } }
+
+        change_tag = POR
+        REI = { all_core = { remove_core = REI } }
+
+        set_global_flag = BRPR_civil_war_has_happened
+
+        ai_chance = {
+            factor = 45
+        }
+    }
+
+    option = {
+        name = "EVTOPTC4662011"
+        release = BRZ
+        ENG_1979 = { any_owned = { limit = { owned_by = REI } secede_province = BRZ } }
+        REI = { any_owned = { limit = { is_core = BOL } secede_province = BRZ remove_core = REI add_core = BRZ } }
+        change_tag = POR
+        REI = { all_core = { remove_core = REI } }
+
+        ai_chance = {
+            factor = 20
+        }
+    }
+}
+
+country_event = {
+    id = 4662012
+    title = "EVTNAME4662012"
+    desc = "EVTDESC4662012"
+    picture = "deliberation"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA4662012"
+        ENG_1979 = { secede_province = FROM }
+        money = 50000
+        FROM = { money = -50000 prestige = 15 }
+        prestige = 10
+        set_global_flag = guyana_sale_full
+        relation = { who = FROM value = 100 }
+
+        ai_chance = {
+            factor = 45
+        }
+    }
+
+    option = {
+        name = "EVTOPTB4662012"
+        2241 = { owner = { country_event = 4662013 } }
+        prestige = 6
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+
+    option = {
+        name = "EVTOPTC4662012"
+        2241 = { owner = { country_event = 4662014 } }
+        prestige = 4
+
+        ai_chance = {
+            factor = 20
+        }
+    }
+}
+
+country_event = {
+    id = 4662013
+    title = "EVTNAME4662013"
+    desc = "EVTDESC4662013"
+    picture = "deliberation"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA4662013"
+        2245 = { secede_province = THIS }
+        2240 = { secede_province = THIS }
+
+        CAN = { money = 25000 }
+        money = -25000
+        prestige = 5
+        set_global_flag = guyana_sale_half
+        relation = { who = CAN value = 50 }
+
+        ai_chance = {
+            factor = 85
+        }
+    }
+
+    option = {
+        name = "EVTOPTB4662013"
+        prestige = -5
+        relation = { who = CAN value = -100 }
+
+        ai_chance = {
+            factor = 15
+        }
+    }
+}
+
+country_event = {
+    id = 4662014
+    title = "EVTNAME4662014"
+    desc = "EVTDESC4662014"
+    picture = "deliberation"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA4662014"
+        prestige = -10
+        relation = { who = CAN value = -100 }
+
+        ai_chance = {
+            factor = 65
+        }
+    }
+
+    option = {
+        name = "EVTOPTB4662014"
+        prestige = 10
+        badboy = 5
+        casus_belli = {
+            type = place_in_the_sun
+            target = CAN
+            months = 30
+        }
+
+        war = {
+            target = CAN
+            attacker_goal = {
+                casus_belli = place_in_the_sun
+                state_province_id = 1979
+            }
+
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+
+        ai_chance = {
+            factor = 35
+        }
+    }
+}

@@ -1,0 +1,24 @@
+owner = BRI
+controller = BRI
+add_core = CAN
+add_core = BRI
+trade_goods = coal
+life_rating = 35
+party_loyalty = {
+    ideology = liberal
+    loyalty_value = 15
+}
+party_loyalty = {
+    ideology = conservative
+    loyalty_value = 15
+}
+state_building = {
+    level = 2
+    building = explosives_factory
+    upgrade = yes
+}
+state_building = {
+    level = 3
+    building = artillery_factory
+    upgrade = yes
+}

@@ -1,0 +1,54 @@
+#Sphere of Influence
+
+CAN = {
+    value = -200
+}
+
+FRA = {
+    value = 150
+}
+
+BRI = {
+    value = -50
+}
+
+army = {
+    name = "1st Corps"
+    location = 263
+    regiment = {
+        name= "1.1st Cavalry Division"
+        type = cavalry
+        home = 263
+    }
+
+    regiment = {
+        name= "1.1st Division"
+        type = infantry
+        home = 259
+    }
+
+    regiment = {
+        name= "2.1st Division"
+        type = infantry
+        home = 264
+    }
+
+    regiment = {
+        name= "3.1st Division"
+        type = infantry
+        home = 261
+    }
+
+    regiment = {
+        name= "4.1st Division"
+        type = infantry
+        home = 260
+    }
+
+    regiment = {
+        name= "5.1st Division"
+        type = infantry
+        home = 258
+    }
+
+}

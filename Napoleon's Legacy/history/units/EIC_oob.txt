@@ -1,0 +1,90 @@
+#Sphere of Influence
+
+army = {
+    name = "The Calcutta Army"
+    location = 1251
+    regiment = {
+        name= "1.10th Division"
+        type = infantry
+        home = 1248
+    }
+
+    regiment = {
+        name= "2.10th Division"
+        type = infantry
+        home = 1247
+    }
+
+    regiment = {
+        name= "3.10th Division"
+        type = infantry
+        home = 1251
+    }
+
+    regiment = {
+        name= "1.3rd Indian Division"
+        type = infantry
+        home = 1251
+    }
+
+    regiment = {
+        name= "2.3rd Indian Division"
+        type = infantry
+        home = 1247
+    }
+
+    regiment = {
+        name= "3.3rd Indian Division"
+        type = infantry
+        home = 1254
+    }
+
+    regiment = {
+        name= "1.4th Indian Division"
+        type = infantry
+        home = 1248
+    }
+
+    regiment = {
+        name= "2.4th Indian Division"
+        type = infantry
+        home = 1248
+    }
+
+    regiment = {
+        name= "3.4th Indian Division"
+        type = infantry
+        home = 2217
+    }
+
+}
+
+navy = {
+    name = "Indian Fleet"
+    location = 1251
+    ship = {
+        name= "HMS Agincourt"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Alfred"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Andromeda"
+        type = frigate
+    }
+
+}
+
+navy = {
+    name = "2nd Transport Squadron"
+    location = 1251
+    ship = {
+        name= "7th Transport Flotilla"
+        type = clipper_transport
+    }
+
+}

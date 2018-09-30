@@ -1,0 +1,380 @@
+country_event = {
+
+    id = 35300
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITM
+            tag = ITN
+            tag = ITS
+            tag = ITL
+        }
+        year = 1910
+        NOT = {
+            year = 1913
+        }
+
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1911
+        }
+
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1912
+        }
+    }
+
+    title = "EVTNAME35300"
+    desc = "EVTDESC35300"
+    picture = "theatre"
+
+    option = {
+        name = "EVTOPTA35300"
+        prestige = 2
+    }
+}
+
+country_event = {
+
+    id = 35301
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITM
+            tag = ITN
+            tag = ITS
+            tag = ITL
+        }
+        year = 1902
+        NOT = {
+            year = 1905
+            }
+
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1903
+        }
+
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1904
+        }
+    }
+
+    title = "EVTNAME35301"
+    desc = "EVTDESC35301"
+    picture = "theatre"
+
+    option = {
+        name = "EVTOPTA35301"
+        prestige = 3
+    }
+}
+
+country_event = {
+
+    id = 35302 #Parallel to PAP35700
+    title = "EVTNAME35700"
+    desc = "EVTDESC35700"
+    picture = "pope"
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITM
+            tag = ITN
+            tag = ITS
+            tag = ITL
+        }
+        year = 1891
+        NOT = {
+            year = 1894
+            exists = PAP
+            has_global_flag = RerumNovarum
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1892
+        }
+
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1893
+        }
+    }
+
+    option = {
+        name = "EVTOPTA35700"
+        prestige = 5
+        labourers = {
+            consciousness = 1
+        }
+        craftsmen = {
+            consciousness = 1
+        }
+        artisans = {
+            consciousness = 1
+        }
+        soldiers = {
+            consciousness = 1
+        }
+        set_global_flag = RerumNovarum
+    }
+}
+
+country_event = {
+
+    id = 32470
+
+    trigger = {
+        tag = SIC
+        year = 1836
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 3
+
+        modifier = {
+            factor = 0.1
+            year = 1836
+        }
+    }
+
+    title = "EVTNAME32470"
+    desc = "EVTDESC32470"
+    picture = "norwayflag"
+
+    option = {
+        name = "EVTOPTA32470"
+        prestige = 2
+    }
+}
+
+country_event = {
+
+    id = 96170
+    title = "EVTNAME96170" #Il Risorgimento
+    desc = "EVTDESC96170"
+    major = yes
+
+    trigger = {
+        is_culture_group = italian
+        war = no
+        is_vassal = no
+        is_disarmed = no
+        NOT = {
+            exists = ITA
+            exists = ITL
+            exists = ITM
+            exists = ITN
+            exists = ITS
+            has_country_flag = does_not_want_to_be_unified
+        }
+        OR = {
+            revolution_n_counterrevolution = 1
+            AND = {
+                year = 1890
+                OR = {
+                    is_secondary_power = yes
+                    is_greater_power = yes
+                }
+            }
+        }
+        OR = {
+            has_global_flag = italian_call_to_union
+            has_global_flag = garibaldi_redshirts
+            AND = {
+                OR = {
+                    tag = SAR
+                    tag = ILY
+                    tag = SIC
+                    tag = MOD
+                }
+                exists = GER
+                year = 1890
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 40
+        modifier = {
+            factor = 0.25
+            has_country_flag = made_the_call_to_union
+        }
+        modifier = {
+            factor = 0.5
+            is_greater_power = yes
+        }
+        modifier = {
+            factor = 1.5
+            is_greater_power = no
+            is_secondary_power = no
+        }
+        modifier = {
+            factor = 3
+            NOT = { year = 1870 }
+        }
+        modifier = {
+            factor = 1.5
+            year = 1870
+            NOT = { year = 1880 }
+        }
+        modifier = {
+            factor = 0.5
+            year = 1890
+        }
+        modifier = {
+            factor = 0.75
+            exists = GER
+        }
+    }
+
+    option = {
+        name = "EVTOPTA11103" #Accept inheritance
+        clr_country_flag = made_the_call_to_union
+        prestige = 10
+        random_country = {
+            limit = { is_sphere_leader_of = THIS }
+            set_country_flag = objects_to_italy
+        }
+        add_accepted_culture = south_italian
+        add_accepted_culture = north_italian
+        change_tag = culture
+        any_country = {
+            limit = {
+                NOT = {
+                    tag = THIS
+                    tag = PAP
+                }
+                is_culture_group = THIS
+                is_greater_power = no
+                num_of_cities = 1
+            }
+            country_event = 11101
+        }
+        random_country = {
+            limit = {
+                tag = PAP
+                NOT = { tag = THIS }
+            }
+            relation = {
+                who = THIS
+                value = -200
+            }
+            leave_alliance = THIS
+            any_owned = {
+                limit = {
+                    NOT = { province_id = 749 }
+                }
+                secede_province = THIS
+            }
+        }
+        any_country = {
+            limit = {
+                NOT = { is_culture_group = italian }
+                OR = {
+                    has_country_flag = objects_to_italy
+                    AND = {
+                    OR = {
+                        neighbour = ITA
+                        neighbour = ITL
+                        neighbour = ITM
+                        neighbour = ITN
+                        neighbour = ITS
+                        }
+                        OR = {
+                            tag = AUS
+                            tag = KUK
+                        }
+                    }
+                    AND = {
+                    OR = {
+                        neighbour = ITA
+                        neighbour = ITL
+                        neighbour = ITM
+                        neighbour = ITN
+                        neighbour = ITS
+                        }
+                        is_greater_power = yes
+                    }
+                }
+            }
+            country_event = 96165
+        }
+        ai_chance = {
+            factor = 95
+        }
+    }
+
+    option = {
+        name = "EVTOPTB11103" #Refuse inheritance
+        prestige = 5
+        set_country_flag = does_not_want_to_be_unified
+        clr_country_flag = made_the_call_to_union
+        any_pop = {
+            militancy = 6
+        }
+        ai_chance = {
+            factor = 5
+            modifier = {
+                factor = 0
+                    tag = SAR
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 96172
+    title = "EVTNAME96172" #Altare della patria construction
+    desc = "EVTDESC96172"
+    picture = "vittoriano"
+
+    trigger = {
+        owns = 749
+        NOT = { tag = PAP }
+        has_country_flag = altar_built
+        NOT = { has_country_modifier = monument_under_construction }
+        }
+
+    fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVTOPTA96172"
+        prestige = 15
+        war_exhaustion = -20
+        749 = { set_province_flag = fine_arts }
+    }
+}

@@ -1,0 +1,404 @@
+country_event = {
+
+    id = 44122
+    title = "EVTNAME44122" #Webster-Ashburton Treaty
+    desc = "EVTDESC44122"
+    news = yes
+    news_desc_long = "EVTDESC44122_NEWS_LONG"
+    news_desc_medium = "EVTDESC44122_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC44122_NEWS_SHORT"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44122OPTA"
+        prestige = 10
+        250 = {
+            remove_core = CAN
+            add_core = THIS
+            secede_province = THIS
+        }
+        69 = {
+            remove_core = NEN
+        }
+        relation = {
+            who = CAN
+            value = 100
+        }
+        ai_chance = {
+            factor = 95
+        }
+    }
+
+    option = {
+        name = "EVT44122OPTB"
+        prestige = 15
+        badboy = 4
+        250 = { add_core = THIS add_core = CAN}
+        249 = { add_core = THIS add_core = CAN}
+        69 = { add_core = THIS add_core = CAN}
+        relation = {
+            who = CAN
+            value = -200
+        }
+        ai_chance = {
+            factor = 0.05
+        }
+    }
+}
+
+#Mexican-American War
+country_event = {
+    id = 44126
+    title = "EVTNAME44126" #USA Demands Northwest Territories!
+    desc = "EVTDESC44126"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44126OPTA"
+        set_country_flag = mexico_refused_usa_once
+        USA = { country_event = 44127 }
+        any_pop = { militancy = -1 }
+        ai_chance = {
+            factor = 90
+        }
+    }
+
+    option = {
+        name = "EVT44126OPTB"
+        set_country_flag = treaty_of_guadalupe_hidalgo
+        all_core = {
+            limit = {
+                OR = {
+                    region = TEX_132
+                    region = MEX_94
+                    region = MEX_97
+                    region = MEX_85
+                    region = USA_100
+                    region = USA_103
+                    region = USA_126
+                    region = MEX_2138
+                    region = MEX_2142
+                }
+            }
+            remove_core = MEX
+        }
+        any_owned = {
+            limit = {
+                OR = {
+                    is_core = USA
+                    region = TEX_132
+                    region = MEX_94
+                    region = MEX_97
+                    region = MEX_85
+                    region = USA_100
+                    region = USA_103
+                    region = USA_126
+                    region = MEX_2138
+                    region = MEX_2142
+                }
+            }
+            secede_province = USA
+        }
+        MEX = { money = 100000 }
+        country_event = 44128
+
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 0
+                is_greater_power = yes
+            }
+            modifier = {
+                factor = 0
+                NOT = { in_sphere = USA }
+                part_of_sphere = yes
+            }
+            modifier = {
+                factor = 2
+                USA = { brigades_compare = 2 }
+            }
+            modifier = {
+                factor = 0.5
+                NOT = {
+                    USA = { brigades_compare = 1 }
+                }
+            }
+            modifier = {
+                factor = 0.5
+                war_policy = jingoism
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 44127
+    title = "EVTNAME44127" #Mexico Has Refused!
+    desc = "EVTDESC44127"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44127OPTA"
+        set_global_flag = mexican_american_war
+        war_exhaustion = -20
+        relation = { who = MEX value = -200 }
+        diplomatic_influence = { who = MEX value = -400 }
+        leave_alliance = MEX
+        war = {
+            target = MEX
+            attacker_goal = {
+                casus_belli = acquire_all_cores
+                country = USA
+            }
+        }
+        any_pop = {
+            limit = { has_pop_culture = mexican }
+            militancy = 6
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    option = {
+        name = "EVT44127OPTB"
+        set_global_flag = no_mexican_american_war
+        prestige_factor = -0.2
+        any_pop = {
+            consciousness = 1
+            militancy = 1
+        }
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+
+    id = 44128
+    title = "EVTNAME44826" #Mexico Agrees
+    desc = "EVTDESC44826"
+    news = yes
+    news_title = "EVTNAME44825"
+    news_desc_long = "EVTDESC44826_NEWS_LONG"
+    news_desc_medium = "EVTDESC44826_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC44826_NEWS_SHORT"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44147OPTA"
+        set_country_flag = treaty_of_guadalupe_hidalgo
+        prestige = 20
+
+        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -100000 } }
+        random_owned = {
+            limit = { owner = { ai = yes } }
+            owner = { set_variable = { which = owed_cash_money value = 100 } }
+        }
+
+
+        relation = {
+            who = FROM
+            value = 200
+        }
+        diplomatic_influence = {
+            who = FROM
+            value = 400
+        }
+    }
+}
+
+country_event = {
+
+    id = 44140
+    title = "EVTNAME44140" #The Northern Alaska Purchase
+    desc = "EVTDESC44140"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44145OPTA"
+        FROM = { country_event = 44142 }
+        money = 50000
+        prestige = 5
+        ai_chance = {
+            factor = 75
+            modifier = {
+                factor = 0.1
+                any_core = { owned_by = FROM }
+            }
+            modifier = {
+                factor = 0.5
+                truce_with = FROM
+            }
+        }
+    }
+    option = {
+        name = "EVT44145OPTB"
+        FROM = { country_event = 44141 }
+        ai_chance = {
+            factor = 25
+            modifier = {
+                factor = 0.75
+                relation = { who = FROM value = 100 }
+            }
+            modifier = {
+                factor = 0.5
+                alliance_with = FROM
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 44141
+    title = "EVTNAME44141" #Refused
+    desc = "EVTDESC44141"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44146OPTA"
+        relation = {
+            who = FROM
+            value = -50
+        }
+        leave_alliance = FROM
+        any_pop = {
+            dominant_issue = {
+                factor = 0.02
+                value = jingoism
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 44142
+    title = "EVTNAME44142" #Agreed
+    desc = "EVTDESC44142"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44147OPTA"
+        money = -50000
+        FROM = {
+            any_owned = {
+                limit = { region = USA_1 }
+                secede_province = THIS
+            }
+        }
+        relation = {
+            who = FROM
+            value = 50
+        }
+    }
+}
+
+country_event = {
+
+    id = 44145
+    title = "EVTNAME44145" #The Hawaiian Islands Purchase
+    desc = "EVTDESC44145"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44145OPTA"
+        FROM = { country_event = 44147 }
+        money = 50000
+        prestige = 5
+        ai_chance = {
+            factor = 75
+            modifier = {
+                factor = 0.1
+                any_core = { owned_by = FROM }
+            }
+            modifier = {
+                factor = 0.5
+                truce_with = FROM
+            }
+        }
+    }
+    option = {
+        name = "EVT44145OPTB"
+        FROM = { country_event = 44146 }
+        ai_chance = {
+            factor = 25
+            modifier = {
+                factor = 0.75
+                relation = { who = FROM value = 100 }
+            }
+            modifier = {
+                factor = 0.5
+                alliance_with = FROM
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 44146
+    title = "EVTNAME44141" #Refused
+    desc = "EVTDESC44146"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44146OPTA"
+        relation = {
+            who = FROM
+            value = -50
+        }
+        leave_alliance = FROM
+        any_pop = {
+            dominant_issue = {
+                factor = 0.02
+                value = jingoism
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 44147
+    title = "EVTNAME44142"
+    desc = "EVTDESC44147"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44147OPTA"
+        money = -50000
+        FROM = {
+            any_owned = {
+                limit = { region = HAW_658 }
+                secede_province = THIS
+            }
+        }
+        relation = {
+            who = FROM
+            value = 50
+        }
+    }
+}

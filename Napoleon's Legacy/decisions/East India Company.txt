@@ -1,0 +1,264 @@
+political_decisions = {
+
+    end_EIC = {
+        picture = map_india
+        potential = {
+            tag = EIC
+            year = 1850
+            war_with = BNG
+        }
+
+        allow = {
+            year = 1850
+        }
+
+        effect = {
+            CAN = {
+                country_event = 121267
+            }
+
+            BNG = {
+                years_of_research = 5
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    indie_EIC = {
+        picture = map_india
+        potential = {
+            tag = EIC
+            EIC = { ai = yes }
+            year = 1851
+            NOT = {
+                war_with = BNG
+                exists = BNG
+                has_country_flag = EIC_gone_free
+            }
+        }
+
+        allow = {
+            year = 1851
+        }
+
+        effect = {
+            CAN = {
+                country_event = 121268
+            }
+            BNG = {
+                all_core = {
+                    remove_core = BNG
+                }
+            }
+            prestige = 15
+            set_country_flag = EIC_gone_free
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    form_EIC_india = {
+        picture = map_india
+        potential = {
+            tag = EIC
+            NOT = {
+                exists = HND
+            }
+            capital_scope = {
+                is_core = HND
+            }
+            has_country_flag = british_EIC_potential
+            NOT = {
+                has_country_modifier = indian_confed_start
+            }
+        }
+
+        alert = no
+
+        allow = {
+            prestige = 45
+            nationalism_n_imperialism = 1
+            war = no
+            HND = {
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        province_id = 1303
+                        province_id = 1312
+                        province_id = 1320
+                        province_id = 2591
+                        is_core = KAL
+                        is_core = MAK
+                        is_core = AFG
+                        is_core = KAS
+                        owner = {
+                            in_sphere = THIS
+                            OR = {
+                                is_vassal = no
+                                vassal_of = THIS
+                            }
+                            war = no
+                            is_greater_power = no
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            prestige = 20
+            all_core = { remove_core = THIS }
+            1303 = { add_core = HND }
+            1312 = { add_core = HND }
+            change_tag = HND
+            any_country = {
+                limit = {
+                OR = {
+                    AND = {
+                        NOT = { is_greater_power = yes }
+                        is_culture_group = south_asian
+                        in_sphere = THIS
+                        NOT = { has_country_flag = post_colonial_country }
+                        OR = {
+                            is_vassal = no
+                            vassal_of = THIS
+                            }
+                        }
+                    AND = {
+                        in_sphere = THIS
+                        tag = EIC
+                        OR = {
+                            is_vassal = no
+                            vassal_of = THIS
+                            }
+                        NOT = { is_greater_power = yes }
+                        NOT = { has_country_flag = post_colonial_country }
+                        }
+                    }
+                }
+                country_event = 11101
+            }
+            add_accepted_culture = avadhi
+            add_accepted_culture = marathi
+            add_accepted_culture = rajput
+            add_accepted_culture = bihari
+            add_accepted_culture = bengali
+            add_accepted_culture = kanauji
+            add_accepted_culture = panjabi
+            add_accepted_culture = kashmiri
+        }
+        ai_will_do = {
+            factor = .75
+        }
+    }
+
+    travancore_eic_conflict = {
+        picture = map_india
+        potential = {
+            tag = EIC
+            owns = 2699
+            year = 1844
+            NOT = { year = 1850 }
+            exists = TRA
+            TRA = { owns = 1310 }
+            NOT = { has_country_flag = travancore_eic_conflict }
+        }
+        allow = {
+            tag = EIC
+            owns = 1305
+        }
+        effect = {
+            badboy = 7
+            1310 = { secede_province = THIS }
+            casus_belli = {
+                    target = TRA
+                    type = establish_protectorate_casus_belli
+                    months = 1
+            }
+            war = {
+                target = TRA
+                    attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+                    defender_goal = {
+                    casus_belli = acquire_core_state
+                    state_province_id = 1310
+                    }
+            }
+            set_country_flag = travancore_eic_conflict
+            any_country = {
+                limit = { capital_scope = { is_core = HND } }
+                relation = {
+                    who = THIS
+                    value = -50
+                }
+            }
+        }
+        ai_will_do = {
+            factor = .5
+            modifier = {
+                factor = 1.5
+                has_country_flag = big_hyderabad_war_eic
+            }
+            modifier = {
+                factor = 1.5
+                has_country_flag = hyderabad_pushed_closer
+            }
+        }
+    }
+
+    beroda_eic_conflict = {
+        picture = map_india
+        potential = {
+            tag = EIC
+            owns = 1310
+            NOT = { exists = TRA }
+            NOT = { has_country_flag = beroda_eic_conflict }
+            OR = {
+                has_country_flag = big_mughal_war_eic
+                has_country_flag = big_hyderabad_war_eic
+            }
+        }
+
+        allow = {
+            tag = EIC
+            owns = 1310
+        }
+
+        effect = {
+            badboy = 7
+            1291 = { secede_province = EIC }
+            1292 = { secede_province = EIC }
+            casus_belli = {
+                    target = BER
+                    type = establish_protectorate_casus_belli
+                    months = 1
+            }
+            war = {
+                target = BER
+                    attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+                    defender_goal = {
+                        casus_belli = acquire_core_state
+                        state_province_id = 1291
+                    }
+            }
+            set_country_flag = beroda_eic_conflict
+            any_country = {
+                limit = { capital_scope = { is_core = HND } }
+                relation = {
+                    who = THIS
+                    value = -50
+                }
+            }
+        }
+        ai_will_do = {
+            factor = .5
+            modifier = {
+                factor = 1.5
+                has_country_flag = big_mughal_war_eic
+            }
+        }
+    }
+}

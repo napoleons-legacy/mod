@@ -1,0 +1,347 @@
+#Sphere of Influence
+INC = {
+    value = 125
+    level = 5
+    influence_value = 25
+}
+
+HUD = {
+    value = 200
+    level = 5
+    influence_value = 25
+}
+
+EIC = {
+    value = 200
+    level = 5
+    influence_value = 25
+}
+
+MEX = {
+    value = 100
+    level = 3
+    influence_value = 25
+}
+
+BRI = {
+    value = -200
+}
+
+FRA = {
+    value = -175
+}
+
+USA = {
+    value = -100
+}
+
+NEN = {
+    value = 200
+}
+
+RUS = {
+    value = -100
+}
+
+leader = {
+    name = "Thomas Cochrane"
+    date = 1831.1.1
+    type = sea
+    personality = charismatic
+    background = adventurer
+    prestige = 0.1
+
+}
+
+army = {
+    name = "The Canada Garrison"
+    location = 57
+    regiment = {
+        name= "1st Division"
+        type = infantry
+        home = 46
+    }
+
+    regiment = {
+        name= "2nd Division"
+        type = hussar
+        home = 2217
+    }
+}
+
+army = {
+    name = "The Australia Garrison"
+    location = 2468
+
+    regiment = {
+        name= "3.8th Division"
+        type = infantry
+        home = 2468
+    }
+
+}
+
+navy = {
+    name = "Atlantic Fleet"
+    location = 73
+    ship = {
+        name= "HMS Monarch"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Neptune"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Powerful"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Prince Regent"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Princess Charlotte"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Rodney"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Royal Adelaide"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Royal George"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Royal William"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Russell"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Talavera"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Thunderer"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Vanguard"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Vengeance"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Waterloo"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS America"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Castor"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Conquestadore"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Eagle"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Forth"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Gloucester"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Medea"
+        type = commerce_raider
+    }
+
+    ship = {
+        name= "HMS Phoenix"
+        type = commerce_raider
+    }
+
+}
+
+navy = {
+    name = "1st Reserve Squadron"
+    location = 71
+    ship = {
+        name= "HMS Blenheim"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Cambridge"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Cornwallis"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Defence"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Genoa"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Amazon"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Fisguard"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Isis"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Latona"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Melampus"
+        type = frigate
+    }
+
+}
+
+navy = {
+    name = "5th Reserve Squadron"
+    location = 74
+    ship = {
+        name= "HMS Achille"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Canopus"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Donegal"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Boadicea"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Dryad"
+        type = frigate
+    }
+
+}
+
+navy = {
+    name = "North America Station"
+    location = 71 #Halifax
+    ship = {
+        name= "HMS Saint Vincent"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Wellesley"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Aeolus"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Barham"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Daedalus"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Druid"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Dublin"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Hebe"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Mercury"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Mermaid"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Rhadamanthus"
+        type = commerce_raider
+    }
+
+}

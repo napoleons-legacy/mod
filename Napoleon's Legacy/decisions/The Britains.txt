@@ -1,0 +1,802 @@
+political_decisions = {
+    british_claim_on_ireland = {
+        potential = {
+            exists = IRE
+            tag = BRI
+            OR = {
+                government = democracy
+                government = presidential_dictatorship
+            }
+
+            CAN = {
+                OR = {
+                    government = hms_government
+                    government = prussian_constitutionalism
+                    government = absolute_monarchy
+                }
+            }
+
+            year = 1850
+
+            NOT = { has_global_flag = british_claim_on_ireland }
+            IRE = { war = no }
+
+            NOT = {
+                has_global_flag = the_britains_reunified
+            }
+        }
+
+        allow = {
+            war = no
+            state_n_government = 1
+        }
+
+        effect = {
+            set_global_flag = british_claim_on_ireland
+            ENG_254 = { add_core = BRI }
+            release_vassal = IRE
+            leave_alliance = IRE
+
+            diplomatic_influence = {
+                who = IRE
+                value = -200
+            }
+
+            relation = {
+                who = IRE
+                value = -100
+            }
+
+            IRE = { country_event = 66649 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    royal_treaty_of_dublin = {
+        potential = {
+            exists = IRE
+            tag = CAN
+            NOT = { has_country_flag = royal_treaty_of_dublin }
+            has_global_flag = british_claim_on_ireland
+            NOT = { has_global_flag = the_britains_reunified }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            set_country_flag = royal_treaty_of_dublin
+            IRE = { country_event = 66650 }
+            badboy = -2
+            prestige = 5
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    treaty_of_dublin = {
+        potential = {
+            tag = IRE
+            has_country_flag = nope
+            NOT = { has_country_flag = treaty_of_dublin }
+            NOT = { has_global_flag = the_britains_reunified }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 10
+            set_country_flag = treaty_of_dublin
+            BRI = {
+                country_event = 66654
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    100k_move_BRI = {
+        potential = {
+            tag = BRI
+            has_global_flag = aussie_prewar
+            NOT = { has_global_flag = aussie_civil_war }
+            NOT = {
+                has_country_modifier = 100k_move
+            }
+        }
+
+        allow = {
+            money = 25000
+        }
+
+        effect = {
+            money = -25000
+            CAN = {
+                random_owned = {
+                    limit = {
+                        is_core = CAP
+                    }
+                    remove_core = CAP
+                    add_core = BRP
+                }
+            }
+            add_country_modifier = {
+                name = 100k_move
+                duration = 7
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    CAN = {
+                        has_country_modifier = 100k_move
+                    }
+                }
+            }
+        }
+    }
+
+    100k_move_CAN = {
+        potential = {
+            tag = CAN
+            has_global_flag = aussie_prewar
+            NOT = { has_global_flag = aussie_civil_war }
+            NOT = {
+                has_country_modifier = 100k_move
+            }
+        }
+
+        allow = {
+            money = 25000
+        }
+
+        effect = {
+            money = -25000
+            CAN = {
+                random_owned = {
+                    limit = {
+                        is_core = BRP
+                    }
+
+                    remove_core = BRP
+                    add_core = CAP
+                }
+            }
+
+            add_country_modifier = {
+                name = 100k_move
+                duration = 7
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    BRI = {
+                        has_country_modifier = 100k_move
+                    }
+                }
+            }
+        }
+    }
+
+    500k_move_BRI = {
+        potential = {
+            tag = BRI
+            has_global_flag = aussie_prewar
+            NOT = { has_global_flag = aussie_civil_war }
+            NOT = {
+                has_country_modifier = 500k_move
+            }
+        }
+
+        allow = {
+            money = 100000
+        }
+
+        effect = {
+            money = -100000
+            CAN = {
+                random_owned = {
+                    limit = {
+                        OR = {
+                            is_core = CAP
+                            is_core = BRP
+                        }
+
+                        NOT = { has_province_modifier = BRI_beacon }
+                        NOT = { has_province_modifier = CAN_beacon }
+                    }
+
+                    add_province_modifier = {
+                        name = BRI_beacon
+                        duration = 180
+                    }
+                }
+            }
+
+            add_country_modifier = {
+                name = 500k_move
+                duration = 15
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    CAN = {
+                        has_country_modifier = 500k_move
+                    }
+                }
+            }
+        }
+    }
+
+    500k_move_CAN = {
+        potential = {
+            tag = CAN
+            has_global_flag = aussie_prewar
+            NOT = { has_global_flag = aussie_civil_war }
+            NOT = {
+                has_country_modifier = 500k_move
+            }
+        }
+
+        allow = {
+            money = 100000
+        }
+
+        effect = {
+            money = -100000
+            CAN = {
+                random_owned = {
+                    limit = {
+                        OR = {
+                            is_core = CAP
+                            is_core = BRP
+                        }
+                        NOT = {
+                            has_province_modifier = CAN_beacon
+                        }
+                        NOT = {
+                            has_province_modifier = BRI_beacon
+                        }
+                    }
+                    add_province_modifier = {
+                        name = CAN_beacon
+                        duration = 180
+                    }
+                }
+            }
+            add_country_modifier = {
+                name = 500k_move
+                duration = 15
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    BRI = {
+                        has_country_modifier = 500k_move
+                    }
+                }
+            }
+        }
+    }
+
+    1m_move = {
+        potential = {
+            OR = {
+                tag = CAN
+                tag = BRI
+            }
+
+            has_global_flag = aussie_prewar
+            NOT = { has_global_flag = aussie_civil_war }
+        }
+
+        allow = {
+            money = 300000
+        }
+
+        effect = {
+            money = -300000
+            CAN = {
+                any_owned = {
+                    limit = {
+                        is_core = CAP
+                    }
+
+                    remove_core = CAP
+                }
+
+                any_owned = {
+                    limit = {
+                        is_core = BRP
+                    }
+
+                    remove_core = BRP
+                }
+            }
+
+            ENG_2468 = {
+                add_core = BRP
+            }
+            ENG_2476 = {
+                add_core = CAP
+            }
+            ENG_2483 = {
+                add_core = BRP
+            }
+            ENG_2491 = {
+                add_core = CAP
+            }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    fund_proxy_BRI = {
+        potential = {
+            tag = BRI
+            has_global_flag = aussie_civil_war
+            exists = BRP
+            NOT = {
+                has_country_modifier = fund_proxy
+            }
+        }
+
+        allow = {
+            money = 100000
+        }
+
+        effect = {
+            money = -100000
+            BRP = { war_exhaustion = -20 }
+
+            add_country_modifier = {
+                name = fund_proxy
+                duration = 30
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    fund_proxy_CAN = {
+        potential = {
+            tag = CAN
+            has_global_flag = aussie_civil_war
+            exists = CAP
+            NOT = {
+                has_country_modifier = fund_proxy
+            }
+        }
+
+        allow = {
+            money = 100000
+        }
+
+        effect = {
+            money = -100000
+            CAP = { war_exhaustion = -20 }
+            add_country_modifier = {
+                name = fund_proxy
+                duration = 60
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    demoralize_BRI = {
+        potential = {
+            tag = BRI
+            has_global_flag = aussie_civil_war
+            exists = BRP
+            NOT = {
+                has_country_modifier = demoralize_opponent
+            }
+        }
+
+        allow = {
+            money = 300000
+        }
+
+        effect = {
+            money = -300000
+            CAP = { war_exhaustion = 20 }
+
+            add_country_modifier = {
+                name = demoralize_opponent
+                duration = 60
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    demoralize_CAN = {
+        potential = {
+            tag = CAN
+            has_global_flag = aussie_civil_war
+            exists = CAP
+            NOT = {
+                has_country_modifier = demoralize_opponent
+            }
+        }
+
+        allow = {
+            money = 300000
+        }
+
+        effect = {
+            money = -300000
+            BRP = { war_exhaustion = 20 }
+
+            add_country_modifier = {
+                name = demoralize_opponent
+                duration = 60
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    BRI_wins_modifier = {
+        potential = {
+            tag = BRI
+            OR = {
+                government = democracy
+                government = presidential_dictatorship
+            }
+
+            CAN = {
+                OR = {
+                    government = hms_government
+                    government = prussian_constitutionalism
+                    government = absolute_monarchy
+                }
+            }
+
+            OR = {
+                AND = {
+                    has_global_flag = union_wins_ireland
+                    has_global_flag = union_wins_aus
+                }
+                AND = {
+                    has_global_flag = union_wins_ireland
+                    has_global_flag = union_wins_scotland
+                }
+                AND = {
+                    has_global_flag = union_wins_aus
+                    has_global_flag = union_wins_scotland
+                }
+            }
+
+            NOT = {
+                has_country_modifier = hurting_enemy
+                has_global_flag = the_final_battle
+            }
+
+            year = 1888
+
+            NOT = { has_global_flag = the_britains_reunified }
+            exists = CAN
+        }
+
+        allow = {
+            money = 100000
+            war = no
+        }
+
+        effect = {
+            set_global_flag = BRI_using_modifier
+            money = -100000
+            CAN = {
+                country_event = 66623
+            }
+            add_country_modifier = {
+                name = hurting_enemy
+                duration = 365
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    CAN_wins_modifier = {
+        potential = {
+            tag = CAN
+            BRI = {
+                OR = {
+                    government = democracy
+                    government = presidential_dictatorship
+                }
+            }
+            OR = {
+                government = hms_government
+                government = prussian_constitutionalism
+                government = absolute_monarchy
+            }
+            OR = {
+                AND = {
+                    has_global_flag = empire_wins_ireland
+                    has_global_flag = empire_wins_aus
+                }
+                AND = {
+                    has_global_flag = empire_wins_ireland
+                    has_global_flag = empire_wins_scotland
+                }
+                AND = {
+                    has_global_flag = empire_wins_aus
+                    has_global_flag = empire_wins_scotland
+                }
+            }
+            NOT = {
+                has_country_modifier = hurting_enemy
+                has_global_flag = the_final_battle
+            }
+            year = 1888
+            NOT = {
+                has_global_flag = the_britains_reunified
+            }
+            exists = BRI
+        }
+
+        allow = {
+            money = 100000
+            war = no
+        }
+
+        effect = {
+            set_global_flag = CAN_using_modifier
+            money = -100000
+            BRI = { country_event = 66624 }
+
+            add_country_modifier = {
+                name = hurting_enemy
+                duration = 365
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    the_final_battle_BRI = {
+        potential = {
+            tag = BRI
+            has_global_flag = BRI_using_modifier
+            war = no
+            OR = {
+                year = 1900
+                CAN = { average_militancy = 6 }
+            }
+
+            NOT = {
+                has_global_flag = the_britains_reunified
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            war = {
+                target = CAN
+                attacker_goal = {
+                    casus_belli = civil_war
+                }
+                defender_goal = {
+                    casus_belli = civil_war
+                }
+            }
+
+            set_global_flag = the_final_battle
+
+            CAN = {
+                any_owned = {
+                    limit = {
+                        OR = {
+                            province_id = 46
+                            province_id = 13
+                            province_id = 58
+                            province_id = 68
+                            province_id = 71
+                            province_id = 2087
+                            province_id = 2089
+                            province_id = 2090
+                            province_id = 1312
+                            province_id = 1251
+                            province_id = 1256
+                            province_id = 2468
+                            province_id = 2476
+                            province_id = 2482
+                            province_id = 1384
+                        }
+                    }
+
+                change_controller = BRI
+                }
+
+                country_event = 66625
+            }
+        }
+    }
+
+    the_final_battle_CAN = {
+        potential = {
+            tag = CAN
+            has_global_flag = CAN_using_modifier
+            BRI = {
+                OR = {
+                    government = democracy
+                    government = presidential_dictatorship
+                }
+            }
+
+            OR = {
+                government = hms_government
+                government = prussian_constitutionalism
+                government = absolute_monarchy
+            }
+            war = no
+
+            OR = {
+                year = 1900
+                BRI = {
+                    average_militancy = 6
+                }
+            }
+
+            NOT = {
+                has_global_flag = the_britains_reunified
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            war = {
+                target = BRI
+                attacker_goal = {
+                    casus_belli = civil_war
+                }
+                defender_goal = {
+                    casus_belli = civil_war
+                }
+            }
+
+            set_global_flag = the_final_battle
+            BRI = {
+                any_owned = {
+                    limit = {
+                        OR = {
+                            province_id = 300
+                            province_id = 297
+                            province_id = 299
+                            province_id = 276
+                            province_id = 275
+                            province_id = 274
+                            province_id = 273
+                            province_id = 267
+                            province_id = 268
+                            province_id = 270
+                            province_id = 271
+                            province_id = 292
+                        }
+                    }
+
+                    change_controller = CAN
+                }
+
+                country_event = 66626
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                war_exhaustion = 1
+            }
+        }
+    }
+
+    take_in_war_CAN = {
+        potential = {
+            tag = CAN
+            NOT = {
+                has_global_flag = the_britains_reunified
+                has_global_flag = the_final_battle
+            }
+
+            war_with = BRI
+            BRI = { owns = 300 }
+        }
+
+        allow = {
+            controls = 300
+            BRI = {
+                war_exhaustion = 100
+            }
+        }
+
+        effect = {
+            inherit = BRI
+            set_global_flag = the_britains_reunified
+            country_event = { id = 66631 months = 1 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    take_in_war_BRI = {
+        potential = {
+            tag = BRI
+            NOT = {
+                has_global_flag = the_britains_reunified
+                has_global_flag = the_final_battle
+            }
+            war_with = CAN
+            CAN = {
+                owns = 46
+            }
+        }
+
+        allow = {
+            controls = 46
+            CAN = {
+                war_exhaustion = 100
+            }
+        }
+
+        effect = {
+            inherit = CAN
+            set_global_flag = the_britains_reunified
+            country_event = { id = 66630 months = 1 }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

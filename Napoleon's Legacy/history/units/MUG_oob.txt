@@ -1,0 +1,104 @@
+army = {
+    name = "Imperial Guard"
+    location = 1236
+    regiment = {
+        name= "1.Imperial Guard"
+        type = infantry
+        home = 1267
+    }
+
+    regiment = {
+        name= "2.Imperial Guard"
+        type = infantry
+        home = 1267
+    }
+
+    regiment = {
+        name= "3.Imperial Guard"
+        type = infantry
+        home = 1267
+    }
+
+    regiment = {
+        name= "3.Imperial Guard"
+        type = infantry
+        home = 1267
+    }
+
+    regiment = {
+        name= "3.Imperial Guard"
+        type = infantry
+        home = 1267
+    }
+
+}
+
+army = {
+    name = "Mughal Troops"
+    location = 1266
+    regiment = {
+        name= "1.Mughal Contingent"
+        type = irregular
+        home = 1240
+    }
+
+    regiment = {
+        name= "2.Mughal Contingent"
+        type = irregular
+        home = 1240
+    }
+
+    regiment = {
+        name= "3.Mughal Contingent"
+        type = irregular
+        home = 1240
+    }
+
+    regiment = {
+        name= "3.Mughal Contingent"
+        type = irregular
+        home = 1241
+    }
+
+    regiment = {
+        name= "3.Mughal Contingent"
+        type = irregular
+        home = 1241
+    }
+
+}
+
+army = {
+    name = "Udaipur Troops"
+    location = 1269
+    regiment = {
+        name= "1.Mughal Contingent"
+        type = irregular
+        home = 1270
+    }
+
+    regiment = {
+        name= "2.Mughal Contingent"
+        type = irregular
+        home = 1270
+    }
+
+    regiment = {
+        name= "2.Mughal Contingent"
+        type = irregular
+        home = 1269
+    }
+
+    regiment = {
+        name= "2.Mughal Contingent"
+        type = irregular
+        home = 1269
+    }
+
+    regiment = {
+        name= "2.Mughal Contingent"
+        type = irregular
+        home = 1268
+    }
+
+}

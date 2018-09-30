@@ -1,0 +1,502 @@
+# TODO REDO THIS FILE
+
+#Starting event announcing Germanization
+country_event = {
+
+    id = 55010
+
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        year = 1836
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 1
+
+        modifier = {
+            factor = 0.01
+            year = 1836
+        }
+    }
+
+    title = "EVTNAME55010"
+    desc = "EVTDESC55010"
+    picture = "Ferdinand"
+
+    option = {
+        name = "EVTOPTA55010"
+        add_country_modifier = {
+            name = germanization_modifier
+            duration = -1
+        }
+    }
+}
+
+#Galician Revolt Starting Event
+country_event = {
+
+    id = 55012
+
+    trigger = {
+        OR = {
+            tag = AUS
+            tag = KUK
+            tag = DNB
+        }
+        year = 1846
+        OR = {
+            owns = 714
+            owns = 702
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 3
+    }
+
+    title = "EVTNAME55012"
+    desc = "EVTDESC55012"
+    picture = "Revolution"
+
+    option = {
+        name = "EVTOPTA55012"
+        any_pop = {
+            limit = {
+                    has_pop_culture = polish
+                    pop_type = farmers
+            }
+            consciousness = 2
+        }
+        any_pop = {
+            limit = {
+                    has_pop_culture = polish
+                    pop_type = aristocrats
+            }
+            reduce_pop = 0.9
+            militancy = 7
+        }
+        relation = {
+            who = PLC
+            value = -200
+        }
+        badboy = 3
+        prestige = -5
+        ai_chance = {
+            factor = 70
+        }
+    }
+
+    option = {
+        name = "EVTOPTB55012"
+        any_owned = {
+            limit = {
+                is_core = GLM
+                }
+            secede_province = GLM
+            }
+        prestige = 10
+        GLM = {
+            political_reform = mandatory_service
+            capital = 702
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
+
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        casus_belli = {
+            target = GLM
+            type = conquest
+            months = 1
+        }
+        set_global_flag = galician_revolt
+        war = {
+            target = GLM
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+        ai_chance = {
+            factor = 30
+        }
+    }
+}
+
+#Event allowing PLC to intervene
+country_event = {
+    id = 55013
+    title = "EVTNAME55013"
+    desc = "EVTDESC55013"
+    picture = "greatpowers"
+
+    trigger = {
+        GLM = {
+            war_with = AUS
+                }
+        OR = {
+            tag = PLC
+            tag = POL
+        }
+        NOT = {
+            war_with = AUS
+            truce_with = AUS
+        }
+    }
+
+    mean_time_to_happen =  {
+        months = 1
+
+        modifier = {
+            factor = 0.1
+            year = 1836
+        }
+    }
+
+        option = {
+                name = "EVTOPTA55013"
+            diplomatic_influence = {
+            who = GLM
+            value = 200
+        }
+        create_alliance = GLM
+        relation = {
+                    who = GLM
+                        value = 200
+                }
+        casus_belli = {
+            target = AUS
+            type = cut_down_to_size
+            months = 1
+        }
+        war = {
+            call_ally = yes
+            target = AUS
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+        }
+                AUS = {
+                        country_event = 55014
+                }
+        relation = {
+                    who = AUS
+                        value = -400
+                }
+        relation = {
+                    who = PRU
+                        value = -400
+                }
+        relation = {
+                    who = RUS
+                        value = -400
+                }
+        ai_chance = {
+            factor = 50
+                }
+        }
+
+    option = {
+                name = "EVTOPTB55013"
+                relation = {
+                    who = AUS
+                        value = 25
+                }
+        any_pop = {
+            militancy = 3
+            consciousness = 1
+        }
+        ai_chance = {
+            factor = 50
+                }
+        }
+}
+
+#Event that ends the PLC war with AUS if GLM wins
+country_event = {
+
+    id = 55015
+    trigger = {
+        war_with = AUS
+        OR = {
+            tag = PLC
+            tag = POL
+        }
+        GLM = { NOT = {war_with = AUS } }
+        alliance_with = GLM
+        exists = GLM
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 1
+
+        modifier = {
+            factor = 0.01
+            year = 1836
+        }
+    }
+
+    title = "EVTNAME55015"
+    desc = "EVTDESC55015"
+    picture = "Celebration"
+
+    option = {
+        name = "EVTOPTA55015"
+        prestige = 20
+        end_war = AUS
+        PLC = {
+             country_event = 55016
+        }
+    }
+}
+
+country_event = {
+    id = 55016
+    title = "EVTNAME55015"
+    desc = "EVTDESC55015"
+    picture = "Celebration"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA55015"
+        GLM = { any_owned = { add_core = PLC } }
+        inherit = GLM
+    }
+}
+#Resignation of Metternich
+country_event = {
+
+    id = 55017
+    trigger = {
+        tag = AUS
+        has_country_flag = liberal_revolution_fired
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 1
+    }
+
+    title = "EVTNAME55017"
+    desc = "EVTDESC55017"
+    picture = "Upperhouse"
+
+    option = {
+        name = "EVTOPTA55017"
+        any_pop = {
+            ideology = {
+                value = liberal
+                factor = 0.1
+            }
+        }
+        any_pop = {
+            scaled_militancy = {
+                factor = -1
+                ideology = liberal
+            }
+        }
+        any_pop = {
+            scaled_consciousness = {
+                factor = 1
+                ideology = liberal
+            }
+        }
+        set_country_flag = metternich_gone
+    }
+}
+
+#Jacobin Rebels in Vienna
+country_event = {
+
+    id = 55018
+    trigger = {
+        tag = AUS
+        has_country_flag = metternich_gone
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 2
+    }
+
+    title = "EVTNAME55018"
+    desc = "EVTDESC55018"
+    picture = "Riot"
+
+    option = {
+        name = "EVTOPTA55018"
+        prestige = -30
+        any_pop = {
+            ideology = {
+                value = liberal
+                factor = 0.1
+            }
+        }
+        any_pop = {
+            scaled_militancy = {
+                factor = -3
+                ideology = liberal
+            }
+        }
+        any_pop = {
+            scaled_consciousness = {
+                factor = 3
+                ideology = liberal
+            }
+        }
+        set_country_flag = Constituion_done
+        ai_chance = {
+            factor = 80
+                }
+    }
+
+    option = {
+        name = "EVTOPTB55018"
+        any_pop = {
+            scaled_militancy = {
+                factor = 5
+                ideology = liberal
+            }
+        }
+        set_country_flag = Constituion_done
+        ai_chance = {
+            factor = 20
+                }
+    }
+}
+
+#Franz Joseph comes to the throne
+country_event = {
+
+    id = 55019
+    trigger = {
+        tag = AUS
+        has_country_flag = Constituion_done
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 3
+    }
+
+    title = "EVTNAME55019"
+    desc = "EVTDESC55019"
+    picture = "Sisi"
+
+    option = {
+        name = "EVTOPTA55019"
+        political_reform = none_voting
+        political_reform = appointed
+        political_reform = censored_press
+        political_reform = underground_parties
+        government = absolute_monarchy
+        prestige = 10
+        set_country_flag = Franz_Emperor
+        any_pop = {
+            militancy = -4
+            consciousness = -3
+        }
+    }
+}
+
+#Pan-Slav Congress
+country_event = {
+
+    id = 55020
+    trigger = {
+        owns = 625
+        tag = AUS
+        has_country_flag = metternich_gone
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 1
+    }
+
+    title = "EVTNAME55020"
+    desc = "EVTDESC55020"
+    picture = "anticorn"
+
+    option = {
+        name = "EVTOPTA55020"
+        any_pop = {
+            limit = { has_pop_culture = czech }
+            militancy = 1
+            consciousness = 3
+        }
+    }
+}
+
+#The Collapse of the Empire
+country_event = {
+
+    id = 55085
+
+    trigger = {
+        tag = AUS
+        NOT = {
+            owns = 641
+            owns = 771
+            owns = 769
+            owns = 768
+            owns = 662
+            owns = 689
+        }
+    }
+
+    mean_time_to_happen =  {
+        months = 2
+    }
+
+    fire_only_once = yes
+
+    title = "EVTNAME55085"
+    desc = "EVTDESC55085"
+    picture = "AnarchoLiberals"
+
+    option = {
+        name = "EVTOPTA55085"
+        AUS_626 = {
+            add_core = GER
+        }
+        AUS_613 = {
+            add_core = GER
+        }
+        AUS_619 = {
+            add_core = GER
+        }
+        any_pop = {
+            limit = {
+                has_pop_culture = south_german
+            }
+            consciousness = 4
+            militancy = 4
+        }
+    }
+}

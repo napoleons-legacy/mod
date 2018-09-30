@@ -1,0 +1,87 @@
+political_decisions = {
+    the_british_cession = {
+        picture = parallel_49
+        potential = {
+            tag = CAN
+            NOT = {
+                has_country_flag = imperial_cession
+            }
+        }
+
+        allow = {
+            NOT = { war_with = USA }
+            USA = { owns = 35 }
+
+            OR = {
+                HUD = { owns = 157 }
+                CAN = { owns = 157 }
+            }
+        }
+
+        effect = {
+            badboy = -2
+            prestige = 15
+
+            USA = { country_event = 44157 }
+            set_country_flag = imperial_cession
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { badboy = 2 }
+            }
+            modifier = {
+                factor = 0
+                NOT = { year = 1840 }
+            }
+        }
+    }
+
+    brown_raid = {
+        # TODO make a picture? Or just redo this entire chain
+        potential = {
+            tag = NEN
+            year = 1855
+            exists = USA
+            NOT = {
+                has_global_flag = american_civil_war_has_happened
+            }
+        }
+
+        allow = {
+            year = 1855
+            war = no
+            NOT = { war_exhaustion = 1 }
+
+            USA = {
+                war = no
+                NOT = {
+                    war_exhaustion = 1
+                }
+            }
+        }
+
+        effect = {
+            diplomatic_influence = {
+                who = USA
+                value = -200
+            }
+            relation = {
+                who = USA
+                value = -200
+            }
+
+            badboy = 3
+            USA = { country_event = 121215 }
+
+            set_global_flag = american_civil_war_has_happened
+            prestige = 15
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

@@ -1,0 +1,121 @@
+#Sphere of Influence
+
+FRA = {
+    value = 150
+}
+
+PRU = {
+    value = -100
+}
+
+AUS = {
+    value = -100
+}
+
+RUS = {
+    value = -100
+}
+
+BRI = {
+    value = -50
+}
+
+DZG = {
+    value = 100
+}
+
+leader = {
+    name = "Thomas Cochrane"
+    date = 1831.1.1
+    type = sea
+    personality = charismatic
+    background = adventurer
+    prestige = 0.1
+}
+
+army = {
+    name = "1st Army"
+    location = 699
+    regiment = {
+        name= "1.1st Division"
+        type = infantry
+        home = 706
+    }
+
+    regiment = {
+        name= "2.1st Division"
+        type = infantry
+        home = 706
+    }
+
+    regiment = {
+        name= "3.1st Division"
+        type = infantry
+        home = 701
+    }
+
+    regiment = {
+        name= "4.1st Division"
+        type = infantry
+        home = 701
+    }
+
+    regiment = {
+        name= "5.1st Division"
+        type = artillery
+        home = 699
+    }
+
+    regiment = {
+        name= "4.1st Division"
+        type = artillery
+        home = 701
+    }
+
+}
+
+army = {
+    name = "2nd Army"
+    location = 706
+    regiment = {
+        name= "1.1st Cavalry Division"
+        type = cavalry
+        home = 706
+    }
+
+    regiment = {
+        name= "2.1st Cavalry Division"
+        type = cavalry
+        home = 703
+    }
+
+    regiment = {
+        name= "3.1st Cavalry Division"
+        type = cavalry
+        home = 712
+    }
+
+}
+
+army = {
+    name = "3rd Army"
+    location = 706
+    regiment = {
+        name= "1.1st Cavalry Division"
+        type = cavalry
+        home = 699
+    }
+
+    regiment = {
+        name= "2.1st Cavalry Division"
+        type = cavalry
+        home = 699
+    }
+
+    regiment = {
+        name= "3.1st Cavalry Division"
+        type = cavalry
+        home = 712
+    }
+
+}

@@ -1,0 +1,18 @@
+#Relations
+
+
+LHJ = {
+    value = 0        #relation
+}
+
+
+army = {
+    name = "Sultan Army"
+    location = 1176
+    regiment = {
+        name= "1. Brigade"
+        type = irregular
+        home = 1176
+    }
+
+}

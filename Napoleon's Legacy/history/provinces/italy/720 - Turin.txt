@@ -1,0 +1,10 @@
+owner = FRA
+controller = FRA
+add_core = SAR
+trade_goods = fruit
+life_rating = 40
+state_building = {
+    level = 1
+    building = luxury_clothes_factory
+    upgrade = yes
+}

@@ -1,0 +1,72 @@
+#####################################################
+#                                                    #
+#           Netherlands events                        #
+#                                                    #
+#####################################################
+#Aceh is Conquered/Guerrilla War
+country_event = {
+    id = 952511
+    title = "EVTNAME952511"
+    desc = "EVTDESC952511"
+    picture = "aceh_jihad"
+
+    trigger = {
+        NOT = { tag = ATJ }
+        civilized = yes
+        owns = 1405
+        ATJ = { exists = no }
+        NOT = { has_country_flag = sunni_country }
+        year = 1890
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { months = 36 }
+
+    option = {
+        name = "EVT952511OPTA"
+        set_global_flag = aceh_jihad
+        any_owned = { limit = { is_core = ATJ }
+            add_province_modifier = {
+                name = nationalist_agitation
+                duration = 7300
+            }
+        }
+        any_country = { any_owned = { limit = { is_core = ATJ }
+            add_province_modifier = {
+                name = nationalist_agitation
+                duration = 7300
+                }
+            }
+        }
+    }
+}
+
+#Aceh is free - cleaning nationalism
+province_event = {
+    id = 952512
+    title = "EVTNAME952512"
+    desc = "EVTDESC952512"
+
+    trigger = {
+        OR = {
+            owned_by = ATJ
+            owner = { has_country_flag = sunni_country }
+        }
+        is_core = ATJ
+        has_global_flag = aceh_jihad
+        has_province_modifier = nationalist_agitation
+    }
+
+    fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVT952512OPTA"
+        state_scope = { remove_province_modifier = nationalist_agitation }
+        any_pop = {
+            consciousness = -3
+            militancy = -8
+        }
+    }
+}
