@@ -1,0 +1,1132 @@
+#MUG Bahadur Shah
+country_event = {
+	id = 121274
+	title = "EVTNAME121274"
+	desc = "EVTDESC121274"
+	picture = "sultan"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUG
+		year = 1837
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "EVTOPTA121274"
+		prestige = 2
+		any_pop = {
+			militancy = -1
+		}
+	}
+}
+
+
+#MUG hears of HYD's kidnapping
+country_event = {
+	id = 121275
+	title = "EVTNAME121275"
+	desc = "EVTDESC121275"
+	picture = "Outside_influences"
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121275"
+		casus_belli = {
+			target = HYD
+			type = cut_down_to_size
+		}
+		HYD = {
+			casus_belli = {
+				target = MUG
+				type = cut_down_to_size
+			}
+		}
+		war = {
+			call_ally = yes
+			target = HYD
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+		set_global_flag = HYD_MUG_war
+		ai_chance = {
+			factor = 70
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121275"
+		prestige = -5
+		HYD = {
+			create_vassal = IND
+			create_vassal = BHO
+			create_alliance = IND
+			create_alliance = BHO
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#Small states hear of HYD-MUG war
+country_event = {
+	id = 121276
+	title = "EVTNAME121276"
+	desc = "EVTDESC121276"
+	picture = "sultan"
+	
+	trigger = {
+		OR = {
+			tag = IND
+			tag = BHO
+		}
+		has_global_flag = HYD_MUG_war
+		NOT = {
+			has_country_flag = HYD_MUG_war_decision
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA121276"
+		casus_belli = {
+			target = HYD
+			type = cut_down_to_size
+		}
+		HYD = {
+			casus_belli = {
+				target = THIS
+				type = conquest
+			}
+		}
+		war = {
+			target = HYD
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+		create_alliance = MUG
+		set_country_flag = HYD_MUG_war_decision
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121276"
+		casus_belli = {
+			target = MUG
+			type = cut_down_to_size
+		}
+		MUG = {
+			casus_belli = {
+				target = THIS
+				type = conquest
+			}
+		}
+		war = {
+			target = MUG
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+		create_alliance = HYD
+		set_country_flag = HYD_MUG_war_decision
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121276"
+		prestige = -2
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#HUD event post-indie
+country_event = {
+	id = 121277
+	title = "EVTNAME121277"
+	desc = "EVTDESC121277"
+	picture = "meeting"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUD
+		war = no
+		NOT = {
+			vassal_of = CAN
+		}
+		year = 1857
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA121269"
+		government = absolute_monarchy
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121269"
+		government = democracy
+		political_reform = wealth_voting
+		any_pop = {
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121269"
+		any_pop = {
+			militancy = 2
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#The Congress is called
+country_event = {
+	id = 121278
+	title = "EVTNAME121278"
+	desc = "EVTDESC121278"
+	picture = "anticorn"
+	
+	trigger = {
+		has_global_flag = congress_called
+		is_culture_group = south_asian
+		NOT = {
+			has_country_flag = delegate_sent_too
+			has_country_flag = delegate_sent_not
+			has_country_flag = congress_caller
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA121278"
+		set_country_flag = delegate_sent_too
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121278"
+		prestige = -5
+		set_country_flag = delegate_sent_not
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Purpose of the Congress
+country_event = {
+	id = 121279
+	title = "EVTNAME121279"
+	desc = "EVTDESC121279"
+	picture = "anticorn"
+	
+	trigger = {
+		OR = {
+			has_country_flag = delegate_sent_too
+			has_country_flag = congress_caller
+		}
+		is_culture_group = south_asian
+		NOT = {
+			has_country_flag = no_confed
+			has_country_flag = yes_confed
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA121279"
+		set_country_flag = yes_confed
+			random_country = {
+				limit = {
+					tag = JAP
+					NOT = { exists = TKG }
+					exists = yes
+					}
+				JAP = {
+				set_variable = {
+					which = delegates_sent
+					value = 1
+						}
+					}
+				}
+			random_country = {
+				limit = {
+					tag = TKG
+					NOT = { exists = JAP }
+					exists = yes
+					}
+				TKG = {
+				set_variable = {
+					which = delegates_sent
+					value = 1
+						}
+					}
+				}
+			random_country = {
+				limit = {
+					tag = TKG
+					exists = JAP
+					exists = yes
+					}
+				TKG = {
+				set_variable = {
+					which = delegates_sent
+					value = 1
+						}
+					}
+				}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121279"
+		prestige = -5
+		set_country_flag = no_confed
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#11 votes gained GP informed
+country_event = {
+	id = 121280
+	title = "EVTNAME121280"
+	desc = "EVTDESC121280"
+	picture = "monarchy"
+
+	fire_only_once = yes
+	
+	trigger = {
+		JAP = {
+			check_variable = {
+				which = delegates_sent
+				value = 10
+			}
+		}
+		has_country_flag = congress_caller
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA121280"
+		set_country_flag = indian_confed_formed
+		add_country_modifier = {
+			name = indian_confed_start
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				is_culture_group = south_asian
+			}
+				country_event = { id=121281 days = 0}
+		}
+	}
+}
+
+#11 votes gained non-GP informed
+country_event = {
+	id = 121281
+	title = "EVTNAME121281"
+	desc = "EVTDESC121281"
+	picture = "monarchy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121281"
+		FROM = {
+			create_vassal = THIS
+			create_alliance = THIS
+		}
+		set_country_flag = puppet_of_confed
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121281"
+		FROM = {
+			casus_belli = {
+				target = THIS
+				type = make_puppet
+				months = 12
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#A puppet of confed leaves the confed
+country_event = {
+	id = 121282
+	title = "EVTNAME121282"
+	desc = "EVTDESC121282"
+	picture = "sultan"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = puppet_of_confed
+		is_greater_power = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA121282"
+		any_country = {
+			limit = {
+				has_country_flag = congress_caller
+			}
+			country_event = { id = 121283 days = 0}
+		}
+	}
+}
+
+#A puppet of confed leaves the confed
+country_event = {
+	id = 121283
+	title = "EVTNAME121283"
+	desc = "EVTDESC121283"
+	picture = "sultan"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121283"
+		casus_belli = {
+			target = FROM
+			type = conquest
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		change_tag = HND
+		add_accepted_culture = assamese
+		add_accepted_culture = bihari
+		add_accepted_culture = manipuri
+		add_accepted_culture = oriya
+		add_accepted_culture = sinhala
+		add_accepted_culture = avadhi
+		add_accepted_culture = kanauji
+		add_accepted_culture = panjabi
+		add_accepted_culture = kashmiri
+		add_accepted_culture = gujarati
+		add_accepted_culture = marathi
+		add_accepted_culture = rajput
+		add_accepted_culture = kannada
+		add_accepted_culture = malayalam
+		add_accepted_culture = tamil
+		add_accepted_culture = telegu
+		any_country = {
+			limit = {
+					is_culture_group = south_asian
+					NOT = {
+						war_with = THIS
+						tag = THIS
+					}
+				}
+			country_event = { id=121284 days = 0}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121283"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The doctrine of Federation
+country_event = {
+	id = 121284
+	title = "EVTNAME121284"
+	desc = "EVTDESC121284"
+	picture = "sultan"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA121284"
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121284"
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+		}
+		FROM = {
+			release_vassal = THIS
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			casus_belli = {
+				target = THIS
+				type = conquest
+			}
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = conquest
+				}
+				defender_goal = {
+					casus_belli = cut_down_to_size
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+
+
+#End the Bengali War
+country_event = {
+	id = 121291
+	title = "EVTNAME121291"
+	desc = "EVTDESC121291"
+	picture = "sultan"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CAN
+		war_with = BNG
+		year = 1853
+		NOT = {
+			year = 1854
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA121291"
+		end_war = BNG
+		any_owned = {
+			limit = {
+				is_core = BNG
+			}
+			secede_province = BNG
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTA121291"
+		prestige = -10
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+province_event = {
+	
+	id = 97100
+	title = "EVTNAME97100" #Rebellion in Indian State
+	desc = "EVTDESC97100"
+	
+	trigger = {
+		is_core = HND
+		controlled_by = THIS
+		OR = {
+			culture = assamese
+			culture = bengali
+			culture = bihari
+			culture = nepali
+			culture = oriya
+			culture = avadhi
+			culture = kanauji
+			culture = panjabi
+			culture = kashmiri
+			culture = gujarati
+			culture = marathi
+			culture = sindi
+			culture = rajput
+			culture = kannada
+			culture = malayalam
+			culture = tamil
+			culture = telegu
+		}
+		NOT = { country = { tag = PAK } }
+		NOT = { has_province_modifier = nationalist_agitation }
+		owner = {
+			NOT = { is_culture_group = south_asian }
+				has_country_flag = sepoy_rebellion
+		}
+		NOT = { poor_strata_everyday_needs = 0.9 }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = {
+				is_core = HND
+				has_province_modifier = nationalist_agitation
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_neighbor_province = {
+				is_core = HND
+				controlled_by = REB
+			}
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_everyday_needs = 0.7
+		}
+		modifier = {
+			factor = 2
+			poor_strata_luxury_needs = 0.5
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 0.5 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 0.1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_life_needs = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { average_consciousness = 3 }
+		}
+		modifier = {
+			factor = 3
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 1.2
+			owner = { war = yes }
+		}
+	}
+	
+	option = {
+		name = "EVT97100OPTA"
+		state_scope = {
+			any_pop = {
+				limit = {
+					is_culture_group = south_asian
+					location = { is_core = HND }
+				}
+				militancy = 6
+			}
+			any_owned = {
+				limit = {
+					is_core = HND
+					OR = {
+						culture = assamese
+						culture = bengali
+						culture = bihari
+						culture = nepali
+						culture = oriya
+						culture = avadhi
+						culture = kanauji
+						culture = panjabi
+						culture = kashmiri
+						culture = gujarati
+						culture = marathi
+						culture = sindi
+						culture = rajput
+						culture = kannada
+						culture = malayalam
+						culture = tamil
+						culture = telegu
+					}
+				}
+				add_province_modifier = {
+					name = nationalist_agitation
+					duration = 365
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	
+	id = 97105
+	title = "EVTNAME97105" #Rebellion Against Foreign Rule
+	desc = "EVTDESC97105"
+	picture = "sepoy"
+	
+	trigger = {
+		is_culture_group = south_asian
+		is_vassal = yes
+		war = no
+			any_greater_power = {
+				is_our_vassal = THIS
+				has_country_flag = sepoy_rebellion
+			}
+		NOT = {
+			any_owned_province = { has_province_modifier = nationalist_agitation }
+		}
+		NOT = { poor_strata_everyday_needs = 0.7 }
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 2
+			poor_strata_luxury_needs = 0.5
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 0.5 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_everyday_needs = 0.1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { poor_strata_life_needs = 0.8 }
+		}
+	}
+	
+	option = {
+		name = "EVT90040OPTA"
+		random_state = {
+			limit = { any_owned_province = { is_core = HND } }
+			any_pop = {
+				limit = { is_culture_group = south_asian }
+				militancy = 4
+			}
+			any_owned = {
+				limit = { is_core = HND }
+				add_province_modifier = {
+					name = nationalist_agitation
+					duration = 365
+				}
+			}
+		}
+	}
+}
+
+	
+#################################################################################
+#																				#
+#             				Indian Nationalism	Events							#
+#																				#
+#################################################################################	
+
+country_event = {
+	
+	id = 97110
+	title = "EVTNAME97110" #The Stirrings of Indian Nationalism
+	desc = "EVTDESC97110"
+	news = yes
+	news_desc_long = "EVTDESC97110_NEWS_LONG"
+	news_desc_medium = "EVTDESC97110_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97110_NEWS_SHORT"
+	picture = "national_congress"
+	
+	trigger = {
+		OR = {
+			is_culture_group = south_asian
+			any_owned_province = { is_core = HND any_pop = { is_culture_group = south_asian } }
+		}
+		NOT = { tag = MUG }
+		NOT = { tag = PAK }
+		year = 1885
+		is_vassal = no
+		revolution_n_counterrevolution = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.5
+				tag = DRA
+		}
+		modifier = {
+			factor = 2
+			NOT = { is_culture_group = south_asian }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { is_culture_group = south_asian }
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_core = HND
+				average_militancy = 2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_core = HND
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_core = HND
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			mass_politics = 1
+		}
+		modifier = {
+			factor = 0.5
+			is_secondary_power = yes
+			is_culture_group = south_asian
+		}
+		modifier = {
+			factor = 0.1
+			is_greater_power = yes
+			is_culture_group = south_asian
+		}
+	}
+	
+	option = {
+		name = "EVT97110OPTA"
+		clr_country_flag = sepoy_rebellion
+		any_owned = {
+			limit = {
+				owner = {
+					OR = {
+						is_greater_power = no
+						NOT = { is_culture_group = south_asian }
+					}
+				}
+				is_core = HND
+				OR = {
+					culture = assamese
+					culture = bengali
+					culture = bihari
+					culture = nepali
+					culture = oriya
+					culture = avadhi
+					culture = kanauji
+					culture = panjabi
+					culture = kashmiri
+					culture = gujarati
+					culture = marathi
+					culture = sindi
+					culture = rajput
+					culture = kannada
+					culture = malayalam
+					culture = tamil
+					culture = telegu
+				}
+			}
+			random_list = {
+				25 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 1095
+					}
+				}
+				50 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 730
+					}
+				}
+				25 = {
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = THIS }
+				any_owned_province = { is_core = HND }
+			}
+			country_event = 97111
+		}
+	}
+}
+
+country_event = {
+	
+	id = 97111
+	title = "EVTNAME97110"
+	desc = "EVTDESC97111"
+	picture = "national_congress"	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT97111OPTA"
+		clr_country_flag = sepoy_rebellion
+		any_owned = {
+			limit = {
+				owner = {
+					OR = {
+						is_greater_power = no
+						NOT = { is_culture_group = south_asian }
+					}
+				}
+				is_core = HND
+				OR = {
+					culture = assamese
+					culture = bengali
+					culture = bihari
+					culture = nepali
+					culture = oriya
+					culture = avadhi
+					culture = kanauji
+					culture = panjabi
+					culture = kashmiri
+					culture = gujarati
+					culture = marathi
+					culture = sindi
+					culture = rajput
+					culture = kannada
+					culture = malayalam
+					culture = tamil
+					culture = telegu
+				}
+			}
+			random_list = {
+				25 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 1095
+					}
+				}
+				50 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 730
+					}
+				}
+				25 = {
+				}
+			}
+		}
+	}
+}
+
+#################################################################################
+#																				#
+#             					Panjab Events									#
+#																				#
+#################################################################################
+
+country_event = {
+
+	id = 97115
+	title = "EVTNAME97115" #The Death of Ranjit Singh
+	desc = "EVTDESC97115"
+	picture = "ranjit_singh_death"
+	
+	trigger = {
+		tag = PNJ
+		has_country_flag = singh
+		NOT = { has_leader = "Ranjit Singh" }
+		NOT = { has_country_flag = ranjit_singh_dead }
+		
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = "EVT97115OPTA"
+		set_country_flag = ranjit_singh_dead
+		any_pop = { militancy = 4 }
+	}
+}
+
+#country_event = {
+#
+#	id = 97117
+#	title = "EVTNAME97117"
+#	desc = "EVTDESC97117"
+#	picture = "afghan_tribes"
+#	
+#	trigger = {
+#		NOT = { has_country_modifier = afghan_tribal_warfare }
+#		tag = AFG
+#		war = yes
+#		civilized = no
+#	}
+#	
+#	mean_time_to_happen = { days = 1 }
+#	
+#	option = {
+#		name = "EVT97117OPTA"
+#		add_country_modifier = {
+#			name = guerilla_warfare
+#			duration = 1825
+#		}
+#	}
+#}
+
+#Inheriting Chitral
+country_event = {
+
+	id = 97118
+	title = "EVTNAME97118"
+	desc = "EVTDESC97118"
+	picture = "sepoy"
+	
+	trigger = {
+		war = no
+		owns = 1227
+		neighbour = CRL
+		has_global_flag = berlin_conference
+		CRL = {
+			war = no
+			OR = {
+				in_sphere = THIS
+				part_of_sphere = no
+			}
+		}
+	}
+	
+	mean_time_to_happen = { months = 30 }
+	
+	option = {
+		name = "EVT97118OPTA"
+		inherit = CRL
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "EVT97118OPTB"
+		create_vassal = CRL
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = "EVT97118OPTC"
+		prestige = -5
+		ai_chance = { factor = 0 }
+	}
+}
+
+#The Last Mughal Emperor - Bahadur Shah Zafar
+country_event = {
+
+	id = 97119
+	title = "EVTNAME97119"
+	desc = "EVTDESC97119"
+	picture = "death_of_zafar"
+	
+	trigger = {
+		war = no
+		owns = 1236
+		MUG = { exists = no }
+		OR = {
+			has_country_flag = sepoy_rebellion
+			any_neighbor_country = { has_country_flag = sepoy_rebellion }
+		}
+		year = 1862
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { months = 50 }
+	
+	option = {
+		name = "EVT97119OPTA"
+		MUG = { all_core = { remove_core = MUG } }
+		1236 = { add_core = RAJ }
+		1237 = { add_core = RAJ }
+	}
+}

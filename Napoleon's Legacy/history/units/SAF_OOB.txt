@@ -1,0 +1,29 @@
+leader = {
+   name = "Piet Retief"
+   type = land
+   date = 1836.1.1
+   background = nationalist
+   personality = audacious
+}
+
+army = {
+	name = "Army of South Africa"
+	location = 2097
+	regiment = {
+		name= "Graaf Reinet Commando"
+		type = infantry
+		home = 2087
+	}
+
+	regiment = {
+		name= "Petrusvallei Commando"
+		type = infantry
+		home = 2096
+	}
+
+	regiment = {
+		name= "Khoikhoi Band"
+		type = hussar
+		home = 2087
+	}
+}

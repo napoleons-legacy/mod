@@ -1,0 +1,44 @@
+army = {
+	name = "Ejército de Colombia"
+	location = 2253
+	regiment = {
+		name= "1. Brigada de Infantería"
+		type = infantry
+		home = 2247
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 2252
+	}
+
+	regiment = {
+		name= "1. Brigada de Caballería"
+		type = cavalry
+		home = 2250
+	}
+
+}
+
+army = {
+	name = "Ejército de Venezuela"
+	location = 2264
+	regiment = {
+		name= "1. División de Caballería"
+		type = cavalry
+		home = 2268
+	}
+
+}
+
+army = {
+	name = "Ejército de Ecuador"
+	location = 2279
+	regiment = {
+		name= "1. Brigada de Infantería"
+		type = infantry
+		home = 2279
+	}
+
+}

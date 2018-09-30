@@ -1,0 +1,11 @@
+owner = NEN
+controller = NEN
+add_core = NEN
+trade_goods = timber
+life_rating = 35
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}
+

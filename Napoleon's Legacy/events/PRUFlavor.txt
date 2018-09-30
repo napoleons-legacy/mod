@@ -1,0 +1,1261 @@
+country_event = {
+
+	id = 34600
+	news = yes
+	news_desc_long = "EVTDESC34600_NEWS_LONG"
+	news_desc_medium = "EVTDESC34600_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34600_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1836
+		war = no
+		NOT = {
+			year = 1839
+		}	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1837
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1838
+		}
+	}
+
+	title = "EVTNAME34600"
+	desc = "EVTDESC34600"
+	picture = "Diesterweg"
+
+	option = {
+		name = "EVTOPTA34600" 
+		prestige = 3
+		years_of_research = 0.05
+	}
+}
+
+country_event = {
+
+	id = 34601
+	news = yes
+	news_desc_long = "EVTDESC34601_NEWS_LONG"
+	news_desc_medium = "EVTDESC34601_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34601_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+
+		year = 1841
+		war = no
+		NOT = {
+			year = 1844
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1842
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1843
+		}
+	}
+
+	title = "EVTNAME34601"
+	desc = "EVTDESC34601"
+	picture = "Deutschlandlied"
+
+	option = {
+		name = "EVTOPTA34601" 
+		any_pop = {
+			limit = { has_pop_culture = north_german }
+			consciousness = 1
+		}	
+		any_pop = {
+			limit = { has_pop_culture = south_german }
+			consciousness = 1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 34602
+	news = yes
+	news_desc_long = "EVTDESC34602_NEWS_LONG"
+	news_desc_medium = "EVTDESC34602_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34602_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1840
+		war = no
+		NOT = {
+			year = 1843
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1841
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1842
+		}
+	}
+
+	title = "EVTNAME34602"
+	desc = "EVTDESC34602"
+	picture = "WilhelmIV"
+
+	option = {
+		name = "EVTOPTA34602" 
+		any_pop = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = liberal
+			}	
+		}
+	}
+}
+
+country_event = {
+
+	id = 34603
+	news = yes
+	news_desc_long = "EVTDESC34603_NEWS_LONG"
+	news_desc_medium = "EVTDESC34603_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34603_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1844
+		war = no
+		NOT = {
+			year = 1847
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1844
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1845
+		}
+	}
+
+	title = "EVTNAME34603"
+	desc = "EVTDESC34603"
+	picture = "berlinzoo"
+
+	option = {
+		name = "EVTOPTA34603" 
+		prestige = 5
+	}
+}
+
+country_event = {
+
+	id = 34604
+	news = yes
+	news_desc_long = "EVTDESC34604_NEWS_LONG"
+	news_desc_medium = "EVTDESC34604_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34604_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1845
+		NOT = {
+			year = 1848
+		}
+	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1846
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1847
+		}
+	}
+
+	title = "EVTNAME34604"
+	desc = "EVTDESC34604"
+	picture = "jews"
+
+	option = {
+		name = "EVTOPTA34604" 
+		prestige = 5
+		any_pop = {
+			limit = { has_pop_religion = jewish }
+			consciousness = 1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 34605
+	news = yes
+	news_desc_long = "EVTDESC34605_NEWS_LONG"
+	news_desc_medium = "EVTDESC34605_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34605_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1846
+		NOT = {
+			year = 1849
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1847
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1848
+		}
+	}
+
+	title = "EVTNAME34605"
+	desc = "EVTDESC34605"
+	picture = "Gottlieb"
+
+	option = {
+		name = "EVTOPTA34605" 
+		prestige = 5
+	}	
+}
+
+country_event = {
+
+	id = 34606
+	news = yes
+	news_desc_long = "EVTDESC34606_NEWS_LONG"
+	news_desc_medium = "EVTDESC34606_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34606_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1849
+		NOT = {
+			year = 1852
+		}
+	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1850
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1851
+		}
+	}
+
+	title = "EVTNAME34606"
+	desc = "EVTDESC34606"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA34606" 
+		prestige = 3
+	}	
+}
+
+country_event = {
+
+	id = 34607
+	news = yes
+	news_desc_long = "EVTDESC34607_NEWS_LONG"
+	news_desc_medium = "EVTDESC34607_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34607_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1856
+		safety_regulations = no_safety
+		NOT = {
+			year = 1859
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1850
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1851
+		}
+	}
+
+	title = "EVTNAME34607"
+	desc = "EVTDESC34607"
+	picture = "krupp"
+
+	option = {
+		name = "EVTOPTA34607" 
+		social_reform = trinket_safety
+		capitalists = {
+			consciousness = 2
+		}
+		aristocrats = {
+			consciousness = 1
+		}
+		artisans = {
+			consciousness = 1
+		}
+	}	
+
+	option = {
+		name = "EVTOPTB34607" 
+		labourers = {
+			consciousness = 1
+		}
+		craftsmen = {
+			consciousness = 1
+		}
+		clerks = {
+			consciousness = 1
+		}
+	}	
+}
+
+country_event = {
+
+	id = 34608
+	news = yes
+	news_desc_long = "EVTDESC34608_NEWS_LONG"
+	news_desc_medium = "EVTDESC34608_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34608_NEWS_SHORT"
+
+	trigger = {
+		child_labor = child_labor_legal
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1839
+		NOT = {
+			year = 1843
+		}
+	}
+ 
+ 	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1840
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1841
+		}
+	}
+
+	title = "EVTNAME34608"
+	desc = "EVTDESC34608"
+	picture = "prussian_child_labor_act"
+
+	option = {
+		name = "EVTOPTA34608" 
+		prestige = 2
+		social_reform = child_labor_restricted
+		any_pop = {
+			limit = { has_pop_culture = north_german }
+			consciousness = 1
+		}	
+		any_pop = {
+			limit = { has_pop_culture = south_german }
+			consciousness = 1
+		}
+	ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB34608" 
+		prestige = -5
+		any_pop = {
+			limit = { has_pop_culture = north_german }
+			militancy = 3
+		}	
+		any_pop = {
+			limit = { has_pop_culture = south_german }
+			militancy = 3
+			}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+country_event = {
+
+	id = 34609
+	news = yes
+	news_desc_long = "EVTDESC34609_NEWS_LONG"
+	news_desc_medium = "EVTDESC34609_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC34609_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			capital = 549
+		}
+		year = 1838
+		war = no
+		has_global_flag = MozartFest1838
+		NOT = {
+			has_country_flag = MozartFest1838
+			year = 1841
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1839
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1840
+		}
+	}
+
+	title = "EVTNAME34100"
+	desc = "EVTDESC34100"
+	picture = "Mozart"
+
+	option = {
+		name = "EVTOPTA34100" 
+		set_country_flag = MozartFest1838
+		plurality = 1
+		farmers = {
+			consciousness = 1 
+		}
+		artisans = {
+			consciousness = 1 
+		}
+		craftsmen = {
+			consciousness = 1 
+		}
+		clerks = {
+			consciousness = 1 
+		}
+		labourers = {
+			consciousness = 1 
+		}
+	}
+}
+
+country_event = {
+	id = 34610
+	title = "EVTNAME34610"
+	desc = "EVTDESC34610"
+	picture = "hamburg_great_fire"
+
+	trigger = {
+		owns = 528
+		year = 1841
+		NOT = { year = 1844 }
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 0.8 #increase likelihood to happen
+			year = 1842
+		}
+	}
+
+	option = {
+		name = "EVTOPTA34610"
+		set_global_flag = hamburg_great_fire
+		528 = { infrastructure = -1 }
+		random_list = {
+			33 = { 528 = { any_pop = { reduce_pop = 0.999 } } }
+			33 = { 528 = { any_pop = { reduce_pop = 0.998 } } }
+			33 = { 528 = { any_pop = { reduce_pop = 0.997 } } }
+			}
+		}
+	}
+	
+country_event = {
+	id = 34612
+	title = "EVTNAME34612"
+	desc = "EVTDESC34612"
+	picture = "prussian_constitution"
+
+	trigger = {
+		tag = PRU
+		year = 1847
+		month = 6
+		militancy = 5
+		OR = {
+			AND = {
+			NOT = { press_rights = free_press }
+			NOT = { vote_franschise = wealth_voting }
+			NOT = { vote_franschise = universal_weighted_voting }
+			}
+			ai = yes
+		}
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen = { months = 6 }
+
+	option = {
+		name = "EVTOPTA34612"
+		add_country_modifier = {
+			name = new_constitution
+			duration = 7300
+			}
+		political_reform = wealth_weighted_voting
+		political_reform = free_press
+		political_reform = yes_meeting
+		political_reform = no_trade_unions
+		political_reform = mandatory_service
+		social_reform = trinket_health_care
+		any_pop = { militancy = -4 }
+		any_pop = { scaled_militancy = {
+			factor = 3
+			ideology = reactionary 
+				}
+			}
+		ai_chance = { factor = 90 }
+		}
+	
+	option = {
+		name = "EVTOPTB34612"
+		any_pop = { scaled_militancy = {
+			factor = -5
+			ideology = reactionary 
+				}
+			}
+		any_pop = { scaled_militancy = {
+			factor = 6
+			ideology = liberal 
+				}
+			}
+		ai_chance = { factor = 10 }
+		}
+	}
+	
+
+#PLC hears PRU wants to annex DZG
+country_event = {
+
+	id = 121305
+	title = "EVTNAME121305"
+	desc = "EVTDESC121305"
+	picture = "unite"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121305"
+		prestige = -2
+		PRU = {
+			country_event = { id=121306 days=0 }
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121305"
+		casus_belli = {
+			target = PRU
+			type = free_peoples
+			months = 1
+		}                
+                war = {
+                	target = PRU
+                        attacker_goal = {
+                        	casus_belli = free_peoples
+				country = DZG
+				state_province_id = 690
+                        }
+                        defender_goal = {
+                                casus_belli = status_quo
+			}
+                }
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Prussia successfully annexes Danzig
+country_event = {
+
+	id = 121306
+	title = "EVTNAME121306"
+	desc = "EVTDESC121306"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121306"
+		prestige = 5
+	}
+}
+
+#PRU hears SWE wants to sell pom
+country_event = {
+
+	id = 121307
+	title = "EVTNAME121307"
+	desc = "EVTDESC121307"
+	picture = "meeting"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121307"
+		money = -40000
+		SWE = {
+			country_event = { id=121308 days=0 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121307"
+		prestige = -5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#SWE gets Yes answer
+country_event = {
+
+	id = 121308
+	title = "EVTNAME121308"
+	desc = "EVTDESC121308"
+	picture = "meeting"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121308"
+		money = 40000
+		548 = {
+			remove_core = SWE
+			remove_core = SCA
+			secede_province = PRU
+			add_core = PRU
+			}
+		}
+	}
+
+#PLC responds to Prussian uprising
+country_event = {
+
+	id = 121310
+	title = "EVTNAME121310"
+	desc = "EVTDESC121310"
+	picture = "revolution"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121310"
+		prestige = -15
+		694 = {secede_province = PRU}
+		685 = {secede_province = PRU}
+		PRU_701 = {secede_province = PRU}
+		PRU = {
+			country_event = { id=121311 days=0 }
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121310"
+		694 = {secede_province = PRU}
+		685 = {secede_province = PRU}
+		casus_belli = {
+			target = FROM
+			type = acquire_state
+			months = 1
+		}  
+		PRU = {
+			casus_belli = {
+				target = THIS
+				type = acquire_state
+				months = 1
+			} 
+		}               
+                war = {
+			call_ally = yes
+                	target = FROM
+                        attacker_goal = {
+                        	casus_belli = acquire_state
+				state_province_id = 694
+                        }
+			defender_goal = {
+                                casus_belli = acquire_state
+				state_province_id = 701
+			}
+                }                
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+#Prussia gets Eastern Lands
+country_event = {
+
+	id = 121311
+	title = "EVTNAME121311"
+	desc = "EVTDESC121311"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121311"
+		prestige = 10
+	}
+
+}
+
+#PRU gets Posen and Torun without war
+country_event = {
+
+	id = 121312
+	title = "EVTNAME121312"
+	desc = "EVTDESC121312"
+	picture = "Celebration"
+
+	trigger = {
+		OR = {
+			tag = PRU
+			tag = TEU
+		}
+		owns = 694
+		owns = 685
+		owns = 701
+		NOT = {
+			has_country_flag = Pru_Pol_crisis
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA121312"
+		PRU_701 = { add_core = PRU }
+		694 = { add_core = PRU }
+		685 = { add_core = PRU }
+	}
+}
+
+#FED gets PRU offer
+country_event = {
+
+	id = 121313
+	title = "EVTNAME121313"
+	desc = "EVTDESC121313"
+	picture = "administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121313"
+		prestige = -5
+		PRU = {
+			all_core = {
+				limit = {
+					is_core = PRU
+				}
+				remove_core = GER
+			}
+			country_event = { id=121314 days=0 }
+		}
+		relation = {
+			who = PRU
+      			value = 100
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121313"
+		PRU = {
+			country_event = { id=121315 days=0 }
+		} 
+		relation = {
+			who = PRU
+      			value = -100
+		}           
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#PRU gets Yes asnwer
+country_event = {
+
+	id = 121314
+	title = "EVTNAME121314"
+	desc = "EVTDESC121314"
+	picture = "administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121314"
+		set_country_flag = prussian_federation_agreement
+	}
+}
+
+#PRU gets No asnwer
+country_event = {
+
+	id = 121315
+	title = "EVTNAME121315"
+	desc = "EVTDESC121315"
+	picture = "administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121315"
+	}
+}
+
+#Prussia decides to go Teuton or Germanic
+country_event = {
+
+	id = 121316
+	title = "EVTNAME121316"
+	desc = "EVTDESC121316"
+	picture = "administration"
+
+	trigger = {
+		tag = PRU
+		is_greater_power = yes
+		NOT = {
+			has_country_flag = Prussian_fed_concord_attempt
+			year = 1889
+		}
+		has_country_flag = bismarck_in_the_reich
+		exists = FED
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA121316"
+		set_country_flag = Prussian_fed_concord_attempt
+		FED = { 
+			country_event = { id=121313 days=0 }
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121316"         
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Prussia decides to go Teuton or Germanic - FED does not exist
+country_event = {
+
+	id = 121317
+	title = "EVTNAME121317"
+	desc = "EVTDESC121317"
+	picture = "administration"
+
+	trigger = {
+		tag = PRU
+		is_greater_power = yes
+		NOT = {
+			has_country_flag = Prussian_fed_concord_attempt
+			year = 1889
+		}
+		has_country_flag = bismarck_in_the_reich
+		NOT = {
+			exists = FED
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA121317"
+		set_country_flag = prussian_federation_agreement
+		any_owned = {
+			limit = {
+				is_core = PRU
+			}
+			remove_core = GER
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121317"         
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+
+#PRU gets offer from Tsarists for Baltic
+country_event = {
+
+	id = 121318
+	title = "EVTNAME121318"
+	desc = "EVTDESC121318"
+	picture = "danishgovernment"
+
+	trigger = {
+		tag = PRU
+		is_greater_power = yes
+		owns = 360
+		NOT = {
+			AND = {
+				owns = 354
+				owns = 350
+			}
+		}
+		has_country_flag = prussian_federation_agreement
+		year = 1861
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA121318"
+		set_country_flag = Prussian_TSA_concord
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121318"         
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#PRU chooses to follow through on promise
+country_event = {
+
+	id = 121319
+	title = "EVTNAME121319"
+	desc = "EVTDESC121319"
+	picture = "Riot"
+
+	trigger = {
+		tag = PRU
+		has_country_flag = Prussian_TSA_concord
+		NOT = {
+			AND = {
+				owns = 354
+				owns = 350
+			}
+		}
+		exists = TSA
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA121319"
+		set_global_flag = Prussia_comes_through
+		create_alliance = TSA
+		casus_belli = {
+			target = RUS
+			type = cut_down_to_size
+			months = 1
+		}                
+                war = {
+                	target = RUS
+                        attacker_goal = {
+                        	casus_belli = cut_down_to_size
+                        }
+                }
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121319"  
+		prestige = -10       
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#TSA gets choice to follow through with Prussian promise
+country_event = {
+
+	id = 121320
+	title = "EVTNAME121320"
+	desc = "EVTDESC121320"
+	picture = "danishgovernment"
+
+	trigger = {
+		tag = TSA
+		war = no
+		OR = {
+			owns = 354
+			owns = 350
+		}
+		has_global_flag = Prussia_comes_through
+		NOT = {
+			exists = RUS
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA121320"
+		PRU = { 
+			country_event = { id=121321 days=0 }
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					region = RUS_349
+					region = RUS_354
+				}	
+			}
+			remove_core = THIS
+			remove_core = RUS
+			secede_province = PRU
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121320" 
+		any_owned = {
+			limit = {
+				OR = {
+					region = RUS_349
+					region = RUS_354
+				}	
+			}
+			remove_core = RUS
+		}
+		PRU = { 
+			country_event = { id=121322 days=0 }
+		}        
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#TSA fulfills promise
+country_event = {
+
+	id = 121321
+	title = "EVTNAME121321"
+	desc = "EVTDESC121321"
+	picture = "danishgovernment"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121321"
+		prestige = 10
+	}
+}
+
+#TSA betrays promise
+country_event = {
+
+	id = 121322
+	title = "EVTNAME121322"
+	desc = "EVTDESC121322"
+	picture = "danishgovernment"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA121322"
+		prestige = 10
+		casus_belli = {
+			target = TSA
+			type = cut_down_to_size
+			months = 1
+		}                
+                war = {
+			call_ally = yes
+                	target = TSA
+                        attacker_goal = {
+                        	casus_belli = cut_down_to_size
+                        }
+                }  
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121322" 
+		prestige = -15        
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,39 @@
+army = {
+	name = "Arabs"
+	location = 1732
+	regiment = {
+		name= "1st Arab"
+		type = irregular
+		home = 1732
+	}
+
+}
+
+army = {
+	name = "Berbers"
+	location = 1744
+	regiment = {
+		name= "1.Imazighen"
+		type = irregular
+		home = 1744
+	}
+}
+
+army = {
+	name = "Tuareg"
+	location = 1743
+	regiment = {
+		name= "1.Ihajenem"
+		type = irregular
+		home = 1743
+	}
+}
+
+leader = {
+	name = "Ali II Karamanli"
+	type = land
+	date = 1836.1.1
+	background = aristocrat
+	personality = mediocre
+	}
+	

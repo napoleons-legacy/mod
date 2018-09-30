@@ -1,0 +1,310 @@
+country_event = {
+	id = 500058
+	title = "EVTNAME500058" #Infamy on the skies
+	desc = "EVTDESC500058"
+	picture = "bad_badboy"
+	major = yes
+	
+	trigger = {
+		ai = no
+		badboy = 2
+		has_country_modifier = kinda_bad_badboy
+		NOT = { has_country_modifier = bad_badboy }
+		NOT = { has_country_modifier = uncivilized_isolationism }
+	}
+		
+	mean_time_to_happen = { months = 4 }
+
+	option = {
+		name = "EVTOPT500058A"
+		remove_country_modifier = kinda_bad_badboy
+		add_country_modifier = {
+			name = bad_badboy
+			duration = 7300
+			}
+	any_greater_power = {
+		leave_alliance = THIS
+		relation = {
+			who = THIS
+			value = -400
+			}
+		casus_belli = {
+			target = THIS
+			type = cut_down_to_size
+			months = 36
+			}
+		casus_belli = {
+			target = THIS
+			type = dismantle_cb
+			months = 36
+			}
+		}
+	any_country = {
+		limit = {
+	 	NOT = {
+			OR = {
+			vassal_of = THIS
+			in_sphere = THIS
+				}
+			}
+		}
+	relation = {
+			who = THIS
+			value = -100
+			}
+	casus_belli = {
+		target = THIS
+		type = cut_down_to_size
+		months = 12
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 500059
+	title = "EVTNAME500059" #Infamy too high
+	desc = "EVTDESC500059"
+	picture = "bad_badboy"
+	
+	trigger = {
+		NOT = { has_country_modifier = uncivilized_isolationism }
+		ai = no
+		badboy = 1.3
+		NOT = {
+			OR = {
+				has_country_modifier = kinda_bad_badboy 
+				has_country_modifier = bad_badboy 
+				}
+			}
+	}
+		
+	mean_time_to_happen = { months = 1 }
+
+	option = {
+		name = "EVTOPT500059A"
+		add_country_modifier = {
+			name = kinda_bad_badboy
+			duration = 1825
+			}
+		any_greater_power = {
+		casus_belli = {
+			target = THIS
+			type = humiliate
+			months = 60
+			}
+		casus_belli = {
+			target = THIS
+			type = free_peoples
+			months = 12
+			}
+		relation = {
+			who = THIS
+			value = -100
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 5000059
+	title = "EVTNAME5000059" #Infamy too high - Cleaning it up
+	desc = "EVTDESC5000059"
+	picture = "bad_badboy"
+	
+	trigger = {
+	is_disarmed = yes
+	has_recently_lost_war = yes
+		OR = {
+	has_country_modifier = kinda_bad_badboy 
+	has_country_modifier = bad_badboy 
+			}
+		}
+		
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPT5000059A"
+		remove_country_modifier = kinda_bad_badboy
+		remove_country_modifier = bad_badboy
+		}
+	}
+
+#Initial Game Set Up
+country_event = {
+	id = 500060
+	title = "EVTNAME500059"
+	desc = "EVTDESC500059"
+	picture = "bad_badboy"
+	
+	trigger = {
+		ai = yes
+		year = 1836
+		NOT = { has_global_flag = 1836_set_up }
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPT500059A"
+		ZUL = { add_country_modifier = { name = assegai duration = -1 } }
+		SWI = { 603 = { aristocrats  = { money = 12000 } } }
+		NEJ = {
+			add_country_modifier = { name = wahhabism_in_nejd duration = -1 }
+		
+			any_pop = { limit = { is_state_religion = yes }
+				dominant_issue = { factor = 0.60 value = moralism }
+				dominant_issue = { factor = 0.30 value = jingoism }
+				ideology = { factor = 0.75 value = conservative }
+			}
+		}
+		
+		set_global_flag = 1836_set_up
+		2172 = { set_province_flag = mexico_city }
+		1616 = { set_province_flag = summer_palace }
+		any_pop = { limit = { has_pop_religion = animist } literacy = -0.5 }
+		any_country = { limit = { exists = yes } any_pop = { limit = { has_pop_religion = animist } literacy = -0.5 } }
+		
+		serfs = { militancy = -9 consciousness = -9 literacy = -0.99 }
+			
+		slaves = { literacy = -0.99 }
+		any_pop = { limit = { culture = gypsy } literacy = -0.99 }
+		
+		any_country = { limit = { exists = yes }
+			serfs = { militancy = -9 consciousness = -9 literacy = -0.99 }
+			slaves = { literacy = -0.99 }
+		}
+		
+		any_country = { limit = { exists = yes } any_pop = { limit = { culture = gypsy } literacy = -0.99 } }
+		
+		any_country = { limit = { OR = { tag = MOL tag = WAL } }
+			any_pop = { limit = { OR = { culture = ashkenazi culture = sephardic  } }
+			literacy = 0.3
+			}
+		}		
+		
+		any_country = { limit = { government = absolute_monarchy NOT = { has_country_flag = absolute_monarchy_gov } exists = yes }
+			clr_country_flag = communist_gov
+			set_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			clr_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+		}
+		
+		any_country = { limit = { government = hms_government NOT = { has_country_flag = constitutional_monarchy_gov } exists = yes }
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			set_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+		}
+		
+		any_country = { limit = { government = democracy NOT = { has_country_flag = democracy_gov } exists = yes }
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			clr_country_flag = constitutional_monarchy_gov
+			set_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+		}
+		
+		any_country = { limit = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } exists = yes }
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			clr_country_flag = semi_constitutional_monarchy_gov
+			clr_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			set_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+		}
+		
+		any_country = { limit = { government = prussian_constitutionalism NOT = { has_country_flag = semi_constitutional_monarchy_gov } exists = yes }
+			clr_country_flag = communist_gov
+			clr_country_flag = absolute_monarchy_gov
+			set_country_flag = semi_constitutional_monarchy_gov
+			clr_country_flag = constitutional_monarchy_gov
+			clr_country_flag = democracy_gov
+			clr_country_flag = presidential_dictatorship_gov
+			clr_country_flag = fascist_gov
+			clr_country_flag = anarcho_liberal_gov
+		}
+			
+		QNG = { add_country_modifier = { name = corrupt_army duration = 10950 } }
+		ENT = { add_country_modifier = { name = caudillo_leaders duration = 7300 } }
+		CRT = { add_country_modifier = { name = caudillo_leaders duration = 1825 } }
+		HAI = { add_country_modifier = { name = divided_society duration = 10950 } }
+			
+		any_greater_power = {
+			limit = { NOT = { tag = PRU } }
+			diplomatic_influence = { who = NCT value = -400 }
+		}
+		
+		any_country = {
+			limit = {
+				exists = yes
+				has_country_flag = islamic_law
+				OR = {
+					tag = HAL
+					tag = JAL
+					tag = SOK
+					tag = TOO
+				}
+			}
+			add_country_modifier = { name = islamic_law duration = -1 }
+		}
+
+		MEX = {
+			random_owned = {
+				limit = {
+					owner = { NOT = { year = 1840 } }
+				}
+				owner = {
+					add_country_modifier = {
+						name = fight_the_power
+						duration = 3650
+					}
+				}
+			}
+		}
+		any_country = { limit = { NOT = { debt_law = serfdom } exists = yes } set_country_flag = serfdom_abolished_generic }
+		any_country = {
+			limit = { has_country_flag = lacking_writing_system exists = yes }
+			add_country_modifier = { name = lacks_writing_system duration = -1 } 
+		}
+	}
+}
+
+country_event = {
+	id = 500061
+	title = "EVTNAME500061" #Removing Neuchatel cores - clean up
+	desc = "EVTDESC500061"
+	picture = "rhineland"
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWI
+		owns = 608
+		war = no
+		608 = { OR = { is_core = NCT is_core = PRU is_core = NGF is_core = GER } }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "EVTOPT500061A"
+		608 = { remove_core = NCT remove_core = PRU remove_core = NGF remove_core = GER }
+		any_country = { clr_country_flag = neuchatel_crisis_escalated }
+		}
+	}

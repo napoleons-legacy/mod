@@ -1,0 +1,667 @@
+country_event = {
+
+	id = 35300
+
+	trigger = {
+		OR = {
+			tag = ITA
+			tag = ITM
+			tag = ITN
+			tag = ITS
+			tag = ITL
+		}
+		year = 1910
+		NOT = {
+			year = 1913
+		}
+		
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1911
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1912
+		}
+	}
+
+	title = "EVTNAME35300"
+	desc = "EVTDESC35300"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA35300" 
+		prestige = 2
+	}
+}
+
+country_event = {
+
+	id = 35301
+
+	trigger = {
+		OR = {
+			tag = ITA
+			tag = ITM
+			tag = ITN
+			tag = ITS
+			tag = ITL
+		}
+		year = 1902
+		NOT = {
+			year = 1905
+			}
+		
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1903
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1904
+		}
+	}
+
+	title = "EVTNAME35301"
+	desc = "EVTDESC35301"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA35301" 
+		prestige = 3
+	}
+}
+
+country_event = {
+
+	id = 35302 #Parallel to PAP35700
+	title = "EVTNAME35700"
+	desc = "EVTDESC35700"
+	picture = "pope"
+	
+	trigger = {
+		OR = {
+			tag = ITA
+			tag = ITM
+			tag = ITN
+			tag = ITS
+			tag = ITL
+		}
+		year = 1891
+		NOT = {
+			year = 1894
+			exists = PAP
+			has_global_flag = RerumNovarum
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1892
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1893
+		}
+	}
+
+	option = {
+		name = "EVTOPTA35700" 
+		prestige = 5
+		labourers = {
+			consciousness = 1
+		}
+		craftsmen = {
+			consciousness = 1
+		}
+		artisans = {
+			consciousness = 1
+		}
+		soldiers = {
+			consciousness = 1
+		}
+		set_global_flag = RerumNovarum		
+	}
+}
+
+country_event = {
+
+	id = 32470
+
+	trigger = {
+		tag = SIC
+		year = 1836	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 3
+
+		modifier = {
+			factor = 0.1 
+			year = 1836
+		}
+	}
+
+	title = "EVTNAME32470"
+	desc = "EVTDESC32470"
+	picture = "norwayflag"
+
+	option = {
+		name = "EVTOPTA32470" 
+		prestige = 2
+	}
+}
+
+#country_event = {
+#	id = 32461
+#
+#	title = "EVTNAME32461"
+#	desc = "EVTDESC32461"
+#	picture = "pope"
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA32461" 
+#		prestige = -50
+#		PAP = { 
+#			country_event = { id=32462 days=0 }
+#		}
+#		ai_chance = {
+#			factor = 10
+#		}
+#	}
+#	option = {
+#		name = "EVTOPTB32461" 
+#		prestige = 5
+#		PAP = { 
+#			country_event = { id=32463 days=0 }
+#		}
+#		ai_chance = {
+#			factor = 90
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = 32462
+#
+#	title = "EVTNAME32462"
+#	desc = "EVTDESC32462"
+#	picture = "pope"
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA32462" 
+#		prestige = 20
+#		relation = {
+#			value = 50
+#			who = FRA
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = 32463
+#
+#	title = "EVTNAME32463"
+#	desc = "EVTDESC32463"
+#	picture = "pope"
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA32463" 
+#		prestige = -10
+#		FRA = { 
+#			country_event = { id=32464 days=0 }
+#		}
+#		ai_chance = {
+#			factor = 40
+#		}
+#	}
+#	option = {
+#		name = "EVTOPTB32463" 
+#		prestige = 5
+#		FRA = { 
+#			country_event = { id=32465 days=0 }
+#		}
+#		relation = {
+#			value = -100
+#			who = FRA
+#		}
+#		ai_chance = {
+#			factor = 60
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = 32464
+#
+#	title = "EVTNAME32464"
+#	desc = "EVTDESC32464"
+#	picture = "PopeLeo"
+#	
+#	is_triggered_only = yes
+#	option = {
+#		name = "EVTOPTA32464" 
+#		prestige = 10
+#		relation = {
+#			value = 50
+#			who = PAP
+#	}
+#}
+#
+#country_event = {
+#	id = 32465
+#
+#	title = "EVTNAME32465"
+#	desc = "EVTDESC32465"
+#	picture = "PopeLeo"
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA32465" 
+#		relation = {
+#			value = -200
+#			who = PAP
+#		}
+#			diplomatic_influence = { who = PAP value = -200 }
+#		badboy = 5
+#		casus_belli = {
+#			target = PAP
+#			type = conquest
+#			months = 1
+#		}
+#		war = {
+#           target = PAP
+#               attacker_goal = {
+#                   casus_belli = conquest
+#                        }
+#               }
+#		ai_chance = {
+#			factor = 60
+#		}
+#	}
+#
+#	option = {
+#		name = "EVTOPTB32465" 
+#		prestige = -10
+#		ai_chance = {
+#			factor = 40
+#		}
+#	}
+#}
+
+country_event = {
+
+	id = 96170
+	title = "EVTNAME96170" #Il Risorgimento
+	desc = "EVTDESC96170"
+	major = yes
+
+	trigger = {
+		is_culture_group = italian
+		war = no
+		is_vassal = no
+		is_disarmed = no
+		NOT = {
+			exists = ITA
+			exists = ITL
+			exists = ITM
+			exists = ITN
+			exists = ITS
+			has_country_flag = does_not_want_to_be_unified
+		}
+		OR = {
+			revolution_n_counterrevolution = 1
+			AND = {
+				year = 1890
+				OR = {
+					is_secondary_power = yes
+					is_greater_power = yes
+				}
+			}
+		}
+		OR = {
+			has_global_flag = italian_call_to_union
+			has_global_flag = garibaldi_redshirts
+			AND = {
+				OR = {
+					tag = SAR
+					tag = ILY
+					tag = SIC
+					tag = MOD
+				}
+				exists = GER
+				year = 1890
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.25
+			has_country_flag = made_the_call_to_union
+		}
+		modifier = {
+			factor = 0.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = no
+			is_secondary_power = no
+		}
+		modifier = {
+			factor = 3
+			NOT = { year = 1870 }
+		}
+		modifier = {
+			factor = 1.5
+			year = 1870
+			NOT = { year = 1880 }
+		}
+		modifier = {
+			factor = 0.5
+			year = 1890
+		}
+		modifier = {
+			factor = 0.75
+			exists = GER
+		}
+	}
+
+	option = {				
+		name = "EVTOPTA11103" #Accept inheritance
+		clr_country_flag = made_the_call_to_union
+		prestige = 10
+		random_country = {
+			limit = { is_sphere_leader_of = THIS }
+			set_country_flag = objects_to_italy
+		}
+		add_accepted_culture = south_italian
+		add_accepted_culture = north_italian
+		change_tag = culture
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+					tag = PAP
+				}
+				is_culture_group = THIS
+				is_greater_power = no
+				num_of_cities = 1
+			}
+			country_event = 11101
+		}
+		random_country = {
+			limit = {
+				tag = PAP
+				NOT = { tag = THIS }
+			}
+			relation = {
+				who = THIS
+				value = -200
+			}
+			leave_alliance = THIS
+			any_owned = {
+				limit = {
+					NOT = { province_id = 749 }
+				}
+				secede_province = THIS
+			}
+		}
+		any_country = {
+			limit = {
+				NOT = { is_culture_group = italian }
+				OR = {
+					has_country_flag = objects_to_italy
+					AND = {
+					OR = {
+						neighbour = ITA
+						neighbour = ITL
+						neighbour = ITM
+						neighbour = ITN
+						neighbour = ITS
+						}
+						OR = {
+							tag = AUS
+							tag = KUK
+						}
+					}
+					AND = {
+					OR = {
+						neighbour = ITA
+						neighbour = ITL
+						neighbour = ITM
+						neighbour = ITN
+						neighbour = ITS
+						}
+						is_greater_power = yes
+					}
+				}
+			}
+			country_event = 96165
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB11103" #Refuse inheritance
+		prestige = 5
+		set_country_flag = does_not_want_to_be_unified
+		clr_country_flag = made_the_call_to_union
+		any_pop = {
+			militancy = 6
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+					tag = SAR
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 96172
+	title = "EVTNAME96172" #Altare della patria construction
+	desc = "EVTDESC96172"
+	picture = "vittoriano"
+
+	trigger = {
+		owns = 749
+		NOT = { tag = PAP } 
+		has_country_flag = altar_built
+		NOT = { has_country_modifier = monument_under_construction }
+		}
+		
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {				
+		name = "EVTOPTA96172"
+		prestige = 15
+		war_exhaustion = -20
+		749 = { set_province_flag = fine_arts }
+	}
+}
+
+#Baby boom
+country_event = {
+
+	id = 96174
+	title = "EVTNAME96173"
+	desc = "EVTDESC96173"
+	picture = "vittoriano"
+
+	trigger = {
+		ai = yes
+	OR = {
+		ITA = { owns = 749 exists = yes }
+		ITL = { owns = 749 exists = yes }
+		ITM = { owns = 749 exists = yes }
+		ITN = { owns = 749 exists = yes }
+		ITS = { owns = 749 exists = yes }
+		}
+	}
+		
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {				
+		name = "EVTOPTA96172"
+		ITA = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+		ITS = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+		ITM = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+		ITN = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+		ITL = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+	}
+}
+
+country_event = {
+	id = 4662010
+	title = "EVTNAME4662010"
+	desc = "EVTDESC4662010"
+	picture = "vittoriano"
+	
+	trigger = {
+		tag = FRA
+			OR = {
+				has_global_flag = Italian_Unification_B
+				has_global_flag = Italian_Unification_A
+			}
+		year = 1840
+		NOT = { 
+			exists = ITA
+			exists = ITM
+			exists = ITN
+			exists = ITS
+			exists = ITL
+			}
+		}
+		
+	fire_only_once = yes
+	mean_time_to_happen = { months = 3 }
+	
+	option = {
+		name = "EVTOPTA4662010"
+		inherit = LUC
+		740 = { secede_province = MOD add_core = MOD remove_core = LUC }
+		746 = { secede_province = PAP add_core = PAP remove_core = LUC }
+		prestige = 15
+		relation = {
+			value = 100
+			who = MOD
+		}
+		relation = {
+			value = 100
+			who = PAP
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	option = {
+		name = "EVTOPTB4662010"
+		badboy = -3
+		prestige = 5
+		relation = {
+			value = 100
+			who = LUC
+		}
+		ai_chance = {
+			factor = 30
+			}
+	}
+	option = {
+		name = "EVTOPTC4662010"
+		badboy = 10
+		prestige = 10
+		inherit = LUC
+		relation = {
+			value = -100
+			who = MOD
+		}
+		relation = {
+			value = -100
+			who = PAP
+		}
+		ai_chance = {
+			factor = 30
+			}
+		}
+	}
+	
+country_event = {
+	id = 4662015
+	title = "EVTNAME4662015"
+	desc = "EVTDESC4662015"
+	picture = "vittoriano"
+	trigger = {
+		tag = SIC
+		ILY = { all_core = { owned_by = THIS } exists = no }
+		war = no
+		}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = "EVTOPTA4662015"
+		ILY = { all_core = { add_core = SIC remove_core = ILY } }
+		prestige = 5
+		}
+	}
+	
+country_event = {
+	id = 4662016
+	title = "EVTNAME4662016"
+	desc = "EVTDESC4662016"
+	picture = "vittoriano"
+	trigger = {
+		tag = ILY
+		SIC = { all_core = { owned_by = THIS } exists = no }
+		war = no
+		}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = "EVTOPTA4662015"
+		SIC = { all_core = { add_core = ILY remove_core = SIC } }
+		}
+	}

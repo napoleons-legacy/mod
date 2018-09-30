@@ -1,0 +1,9 @@
+owner = HUD
+controller = HUD
+add_core = HUD
+add_core = CAN
+add_core = MTC
+trade_goods = fish
+terrain = arctic
+life_rating = 10
+colonial = 2

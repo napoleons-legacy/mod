@@ -1,0 +1,101 @@
+political_decisions = {
+
+	integrate_neuchatel = {
+		picture = declare_republic_of_neuchatel
+		potential = {
+			tag = FRA
+			exists = yes
+			NCT = { exists = yes vassal_of = FRA }
+			year = 1855
+		}
+		
+		allow = {
+			war = no
+			NCT = { war = no }
+		}
+		
+		effect = {
+			badboy = 5
+			inherit = NCT
+			608 = {	add_core = FRA }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	call_geneva_convention = {
+		picture = call_geneva_convention
+		potential = {
+			tag = SWI
+			owns = 607
+			NOT = {
+				has_global_flag = geneva_convention_held
+			}
+		}
+		
+		allow = {
+			any_greater_power = {
+				war_exhaustion = 5
+			}
+			empiricism = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			set_global_flag = geneva_convention_held
+			prestige = 10
+		}
+	}
+	
+	sign_the_geneva_convention = {
+		alert = no
+		potential = {
+			civilized = yes
+			has_global_flag = geneva_convention_held
+			NOT = { has_country_modifier = signed_the_geneva_convention }
+		}
+		
+		allow = {
+			NOT = {
+				badboy = 1
+				has_country_modifier = withdrew_from_geneva_convention
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			badboy = -1
+		}
+	}
+	
+	build_gotthard_tunnel = {
+	picture = build_gotthard_tunnel
+		potential = {
+			tag = SWI
+			owns = 606
+			NOT = {
+				has_country_flag = gotthard_tunnel_built
+			}
+		}
+		
+		allow = {
+			invention = machine_tools
+			steel_railroad = 1
+			money = 10000
+		}
+		
+		effect = {
+			money = -10000
+			606 = {
+				infrastructure = 4
+			}
+			prestige = 5
+			set_country_flag = gotthard_tunnel_built
+		}
+	}
+}

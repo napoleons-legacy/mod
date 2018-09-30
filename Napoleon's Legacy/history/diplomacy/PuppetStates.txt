@@ -1,0 +1,222 @@
+
+# France-Neuchatel
+vassal = {
+	first = FRA
+	second = NCT
+	start_date = 1773.1.1
+	end_date = 1949.1.1
+}
+
+vassal = {
+	first = FRA
+	second = LUC
+	start_date = 1773.1.1
+	end_date = 1949.1.1
+}
+
+vassal = {
+	first = FRA
+	second = NSA
+	start_date = 1773.1.1
+	end_date = 1949.1.1
+}
+
+# USA-Liberia
+vassal = {
+	first = USA
+	second = LIB
+	start_date = 1822.1.1
+	end_date = 1847.7.26
+}
+
+# UK-Native Confederation
+vassal = {
+	first = CAN
+	second = INC
+	start_date = 1822.1.1
+	end_date = 1949.1.1
+}
+
+vassal = {
+	first = CAN
+	second = EIC
+	start_date = 1801.1.1
+	end_date = 1949.1.1
+}
+
+substate = {
+	first = CAN
+	second = HUD
+	start_date = 1670.1.1
+	end_date = 1890.1.1
+}
+
+#Bahrain - Qatar
+vassal = {
+	first = BHR
+	second = QAT
+	start_date = 1815.1.1
+	end_date = 1868.1.1
+}
+
+#Russia - Abkhazia
+substate = {
+	first = RUS
+	second = ABK
+	start_date = 1801.1.1
+	end_date = 1865.1.1
+}
+
+#Ottoman Empire-Wallachia
+substate = {
+	first = TUR
+	second = WAL
+	start_date = 1836.1.1
+	end_date = 1859.1.24	# Reunification of Wallachia and Moldavia
+}
+
+# Ottoman Empire-Moldavia
+substate = {
+	first = TUR
+	second = MOL
+	start_date = 1836.1.1
+	end_date = 1859.1.24	# Reunification of Wallachia and Moldavia
+}
+
+# Ottoman Empire-Tunisia
+vassal = {
+	first = TUR
+	second = TUN
+	start_date = 1836.1.1
+	end_date = 1881.1.24	# French annexation due to bankruptcy
+}
+
+# Ottoman Empire-Egypt
+vassal = {
+	first = TUR
+	second = EGY
+	start_date = 1836.1.1
+	end_date = 1840.7.1	# the Oriental Crisis
+}
+
+# Egypt-Hedjaz
+vassal = {
+	first = EGY
+	second = HDJ
+	start_date = 1836.1.1
+	end_date = 1840.7.1
+}
+
+# Siam - Champasak 
+vassal = {
+	first = SIA
+	second = CHK
+	start_date = 1826.1.1
+	end_date = 1975.1.1
+}
+
+# Dai Nam-Cambodia
+vassal = {
+	first = DAI
+	second = CAM
+	start_date = 1807.1.1
+	end_date = 1863.1.1
+}
+
+#China - Qinghai
+substate = {
+	first = QNG
+	second = XBI
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+#China - Xinjiang
+substate = {
+	first = QNG
+	second = XIN
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+#China - Kashgaria
+vassal = {
+	first = QNG
+	second = KML
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+#China - Tannu Tuva
+vassal = {
+	first = QNG
+	second = TNT
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+#China - Yunnan
+substate = {
+	first = QNG
+	second = YNN
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+#China - Manchuria
+substate = {
+	first = QNG
+	second = MCK
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+#China/Mongolia
+vassal = {
+	first = QNG
+	second = MGL
+	start_date = 1691.1.1
+	end_date = 1937.1.1
+}
+
+# China/Tibet.
+vassal = {
+	first = QNG
+	second = TIB
+	start_date = 1815.11.9
+	end_date = 1912.1.1
+}
+
+#China/Korea
+vassal = {
+	first = QNG
+	second = KOR
+	start_date = 1636.1.1
+	end_date = 1876.1.1
+}
+
+###La Plata###
+
+#Corrientes
+vassal = {
+	first = ARC
+	second = CRT
+	start_date = 1821.1.1
+	end_date = 1937.1.1
+	}
+	
+#Enterrianos
+vassal = {
+	first = ARC
+	second = ENT
+	start_date = 1821.1.1
+	end_date = 1937.1.1
+	}
+	
+#Bolivia
+vassal = {
+	first = ARC
+	second = BOL
+	start_date = 1821.1.1
+	end_date = 1937.1.1
+	}

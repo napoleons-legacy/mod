@@ -1,0 +1,46 @@
+army = {
+	name = "Arma dei Granatieri"
+	location = 765
+	regiment = {
+		name= "1.Granatieri di Sardegna"
+		type = infantry
+		home = 765
+	}
+
+	regiment = {
+		name= "2.Granatieri di Sardegna"
+		type = infantry
+		home = 766
+	}
+}
+
+navy = {
+	name = "Armata di Mare"
+	location = 766
+	ship = {
+		name= "Beraldo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Haute Combe"
+		type = frigate
+	}
+
+	ship = {
+		name= "Carlo Felice"
+		type = frigate
+	}
+
+	ship = {
+		name= "2a Squadrone Transporti"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Squadrone Transporti"
+		type = clipper_transport
+	}
+
+}
+

@@ -1,0 +1,102 @@
+navy = {
+	name = "Taba"
+	location = 1753
+	ship = {
+		name= "Toushka"
+		type = manowar
+	}
+
+	ship = {
+		name= "Sharm El-Sheikh"
+		type = manowar
+	}
+
+	ship = {
+		name= "Cairo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Al Iskandariyah"
+		type = frigate
+	}
+
+	ship = {
+		name= "Aswan"
+		type = frigate
+	}
+
+	ship = {
+		name= "Port Said"
+		type = frigate
+	}
+
+	ship = {
+		name= "Marsa Matruh"
+		type = frigate
+	}
+
+	ship = {
+		name= "Bur Tawfiq"
+		type = frigate
+	}
+
+	ship = {
+		name= "Al Ghardaqah"
+		type = frigate
+	}
+
+	ship = {
+		name= "Bur Safajah"
+		type = frigate
+	}
+
+	ship = {
+		name= "1st transport flotilla"
+		type = clipper_transport
+	}
+
+}
+
+army = {
+	name = "Army of Egypt"
+	location = 1745
+	regiment = {
+		name= "1.1 Sipahis"
+		type = cavalry
+		home = 1745
+	}
+
+	regiment = {
+		name= "2.1 Sipahis"
+		type = cavalry
+		home = 1745
+	}
+
+	regiment = {
+		name= "3.1 Infantry"
+		type = infantry
+		home = 1750
+	}
+
+	regiment = {
+		name= "1.2 Infantry"
+		type = infantry
+		home = 1751
+	}
+
+	regiment = {
+		name= "2.2 Infantry"
+		type = infantry
+		home = 1751
+	}
+
+	regiment = {
+		name= "3.2 Infantry"
+		type = infantry
+		home = 1747
+	}
+}
+
+}
+

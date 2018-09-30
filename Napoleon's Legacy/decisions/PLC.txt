@@ -1,0 +1,227 @@
+political_decisions = {
+	reclaim_prussian_poland_1 = {
+	picture = plc_west_ost
+		potential = {
+			tag = PLC
+			NOT = {
+				has_country_flag = save_the_prussian_poles_1
+			}
+		}
+		
+		allow = {
+				nationalism_n_imperialism = 1
+				is_greater_power = yes
+			NOT = {
+				alliance_with = PRU
+			}
+		}
+		
+		effect = {
+			set_country_flag = save_the_prussian_poles_1
+			PRU_690 = {
+				add_core = PLC
+			}
+			PRU_695 = {
+				add_core = PLC
+			}
+			relation = {
+				who = PRU
+				value = -200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	reclaim_prussian_poland_2 = {
+	picture = plc_silesia
+		potential = {
+			tag = PLC
+			NOT = {
+				has_country_flag = save_the_prussian_poles_2
+			}
+				owns = 690
+				owns = 693
+				owns = 695
+		}
+		
+		allow = {
+				nationalism_n_imperialism = 1
+				is_greater_power = yes
+			NOT = {
+				alliance_with = PRU
+			}
+		}
+		
+		effect = {
+			set_country_flag = save_the_prussian_poles_2
+			682 = {
+				add_core = PLC
+			}
+			683 = {
+				add_core = PLC
+			}
+			684 = {
+				add_core = PLC
+			}
+			relation = {
+				who = PRU
+				value = -200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	reclaim_austrian_poland = {
+	picture = plc_galicia
+		potential = {
+			tag = PLC
+			NOT = {
+				has_country_flag = save_the_austrian_poles
+			}
+			owns = 682
+		}
+		
+		allow = {
+				nationalism_n_imperialism = 1
+				is_greater_power = yes
+			NOT = {
+				alliance_with = AUS
+			}
+		}
+		
+		effect = {
+			set_country_flag = save_the_austrian_poles
+			689 = {
+				add_core = PLC
+			}
+			2584 = {
+				add_core = PLC
+			}
+			AUS_702 = {
+				add_core = PLC
+			}
+			AUS_662 = {
+				add_core = PLC
+			}
+			relation = {
+				who = AUS
+				value = -200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	reclaim_russian_poland_1 = {
+	picture = plc_russia
+		potential = {
+			tag = PLC
+			NOT = {
+				has_country_flag = save_the_russian_poles_1
+			}
+			owns = 702
+		}
+		
+		allow = {
+				nationalism_n_imperialism = 1
+				is_greater_power = yes
+			NOT = {
+				alliance_with = RUS
+			}
+		}
+		
+		effect = {
+			set_country_flag = save_the_russian_poles_1
+			RUS_955 = {
+				add_core = PLC
+			}
+			RUS_718 = {
+				add_core = PLC
+			}
+			relation = {
+				who = RUS
+				value = -200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	reclaim_russian_poland_2 = {
+	picture = plc_russia
+		potential = {
+			tag = PLC
+			NOT = {
+				has_country_flag = save_the_russian_poles_2
+			}
+				owns = 718
+				owns = 955
+		}
+		
+		allow = {
+				nationalism_n_imperialism = 1
+				is_greater_power = yes
+			NOT = {
+				alliance_with = RUS
+			}
+		}
+		
+		effect = {
+			set_country_flag = save_the_russian_poles_2
+			RUS_354 = {
+				add_core = PLC
+			}
+			relation = {
+				who = RUS
+				value = -200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	reclaim_russian_poland_3 = {
+	picture = plc_russia
+		potential = {
+			tag = PLC
+			NOT = {
+				has_country_flag = save_the_russian_poles_3
+			}
+			owns = 718
+			owns = 955
+			owns = 354
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+			NOT = {
+				alliance_with = RUS
+			}
+		}
+		
+		effect = {
+			set_country_flag = save_the_russian_poles_3
+			RUS_958 = {
+				add_core = PLC
+			}
+			RUS_947 = {
+				add_core = PLC
+			}
+			relation = {
+				who = RUS
+				value = -200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

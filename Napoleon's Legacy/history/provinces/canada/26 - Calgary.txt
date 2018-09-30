@@ -1,0 +1,9 @@
+owner = HUD
+controller = HUD
+add_core = HUD
+add_core = CAN
+colonial = 2
+add_core = MTC
+trade_goods = grain
+terrain = plains
+life_rating = 30

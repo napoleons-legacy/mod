@@ -1,0 +1,15 @@
+owner = BRI
+controller = BRI
+add_core = CAN
+add_core = BRI
+trade_goods = coal
+life_rating = 35
+party_loyalty = {
+	ideology = conservative
+	loyalty_value = 55
+}
+party_loyalty = {
+	ideology = liberal
+	loyalty_value = 45
+}
+1861.1.1 = { railroad = 3 }

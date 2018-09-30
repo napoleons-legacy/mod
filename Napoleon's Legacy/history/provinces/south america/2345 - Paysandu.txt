@@ -1,0 +1,10 @@
+owner = REI
+controller = REI
+add_core = REI
+add_core = BRZ
+trade_goods = cattle
+life_rating = 35
+party_loyalty = {
+	ideology = conservative
+	loyalty_value = 75
+}

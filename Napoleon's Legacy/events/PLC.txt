@@ -1,0 +1,436 @@
+country_event = {
+
+	id = 121225
+
+	trigger = {
+		tag = PLC	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1836
+		}
+		
+	}
+
+	title = "EVTNAME121225"
+	desc = "EVTDESC121225"
+	picture = "midsummer"
+
+	option = {
+		name = "EVTOPTA121225" 
+		FRA = {
+        		country_event = { id=121226 days=0 }
+        	}
+		prestige = -10
+		set_country_flag = PLC_seeking_allies
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121225" 
+		AUS = {
+        		country_event = { id=121227 days=0 }
+        	}
+		set_country_flag = PLC_seeking_allies
+		ai_chance = {
+			factor = 15
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121225" 
+		PRU = {
+        		country_event = { id=121228 days=0 }
+        	}
+		set_country_flag = PLC_seeking_allies
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = "EVTOPTD121225" 
+		RUS = {
+        		country_event = { id=121229 days=0 }
+        	}
+		set_country_flag = PLC_seeking_allies
+		ai_chance = {
+			factor = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTE121225" 
+		prestige = 10
+		set_country_flag = PLC_seeking_allies
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#FRA gets PLC's offer
+country_event = {
+
+	id = 121226
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121226"
+	desc = "EVTDESC121226"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121226" 
+		create_alliance = PLC
+		diplomatic_influence = {
+			who = PLC
+      			value = 300
+		}
+		relation = {
+			who = PLC
+      			value = 400
+		}
+		PLC = {
+        		country_event = { id=121230 days=0 }
+        	}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121226" 
+		PLC = {
+        		country_event = { id=121231 days=0 }
+        	}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#AUS gets PLC's offer
+country_event = {
+
+	id = 121227
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121227"
+	desc = "EVTDESC121227"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121227" 
+		create_alliance = PLC
+		diplomatic_influence = {
+			who = PLC
+      			value = 300
+		}
+		relation = {
+			who = PLC
+      			value = 400
+		}
+		PLC = {
+        		country_event = { id=121230 days=0 }
+        	}
+		ai_chance = {
+			factor = 35
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121227" 
+		PLC = {
+        		country_event = { id=121232 days=0 }
+        	}
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121227" 
+		PLC = {
+        		country_event = { id=121231 days=0 }
+        	}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#PRU gets PLC's offer
+country_event = {
+
+	id = 121228
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121228"
+	desc = "EVTDESC121228"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121228" 
+		create_alliance = PLC
+		diplomatic_influence = {
+			who = PLC
+      			value = 300
+		}
+		relation = {
+			who = PLC
+      			value = 400
+		}
+		PLC = {
+        		country_event = { id=121230 days=0 }
+        	}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121228" 
+		PLC = {
+        		country_event = { id=121233 days=0 }
+        	}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121228" 
+		PLC = {
+        		country_event = { id=121231 days=0 }
+        	}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#RUS gets PLC's offer
+country_event = {
+
+	id = 121229
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121229"
+	desc = "EVTDESC121229"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121229" 
+		create_alliance = PLC
+		diplomatic_influence = {
+			who = PLC
+      			value = 300
+		}
+		relation = {
+			who = PLC
+      			value = 400
+		}
+		PLC = {
+        		country_event = { id=121230 days=0 }
+        	}
+		ai_chance = {
+			factor = 15
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121229" 
+		PLC = {
+        		country_event = { id=121234 days=0 }
+        	}
+		ai_chance = {
+			factor = 60
+		}
+	}
+
+	option = {
+		name = "EVTOPTC121229" 
+		PLC = {
+        		country_event = { id=121231 days=0 }
+        	}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#PLC gets offer accepted
+country_event = {
+
+	id = 121230
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121230"
+	desc = "EVTDESC121230"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121230" 
+		relation = {
+			who = FROM
+      			value = 400
+		}
+	}
+}
+
+#PLC gets offer accepted
+country_event = {
+
+	id = 121231
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121231"
+	desc = "EVTDESC121231"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121231" 
+		relation = {
+			who = FROM
+      			value = 400
+		}
+	}
+}
+
+
+#PLC gets AUS's conditions
+country_event = {
+
+	id = 121232
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121232"
+	desc = "EVTDESC121232"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121232" 
+		create_alliance = AUS
+		relation = {
+			who = AUS
+      			value = 400
+		}
+		703 = {
+			remove_core = PLC
+			add_core = AUS
+			secede_province = AUS
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121232"
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+
+#PLC gets PRU's conditions
+country_event = {
+
+	id = 121233
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121233"
+	desc = "EVTDESC121233"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121233" 
+		create_alliance = PRU
+		relation = {
+			who = PRU
+      			value = 400
+		}
+		694 = {
+			remove_core = PLC
+			add_core = PRU
+			secede_province = PRU
+		}
+		685 = {
+			remove_core = PLC
+			add_core = PRU
+			secede_province = PRU
+		}
+		PRU_701 = {
+			remove_core = PLC
+			add_core = PRU
+			secede_province = PRU
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121233"
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+#PLC gets RUS's conditions
+country_event = {
+
+	id = 121234
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME121234"
+	desc = "EVTDESC121234"
+	picture = "Military_reform"
+
+	option = {
+		name = "EVTOPTA121234" 
+		create_alliance = RUS
+		relation = {
+			who = RUS
+      			value = 400
+		}
+		RUS_940 = {
+			remove_core = PLC
+			add_core = RUS
+			secede_province = RUS
+		}
+		RUS_955 = {
+			remove_core = PLC
+			add_core = RUS
+			secede_province = RUS
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = "EVTOPTB121234"
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

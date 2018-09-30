@@ -1,0 +1,165 @@
+#Sphere of Influence
+MEX = {
+	value = -75		#relation
+}
+ECU = {
+	value = -100		#relation
+}
+PEU = {
+	value = -100		#relation
+}
+BOL = {
+	value = -100		#relation
+}
+CHL = {
+	value = -100		#relation
+}
+PRG = {
+	value = -100		#relation
+}
+UCA = {
+	value = -100		#relation
+}
+HUD = {
+	value = -100		#relation
+}
+BRZ = {
+	value = -100		#relatio
+}
+URU = {
+	value = -75		#relation
+}
+POR = {
+	value = -100		#relation
+}
+FRA = {
+	value = 150		#relation
+}
+
+
+#Army
+army = {
+	name = "Ejército Cristino del Centro"
+	location = 487
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = infantry
+		home = 487
+	}
+
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = infantry
+		home = 489
+	}
+
+	regiment = {
+		name= "3. Guardia Real"
+		type = infantry
+		home = 481
+	}
+
+	regiment = {
+		name= "1. Brigada de Infantería 'El Ramillete'"
+		type = infantry
+		home = 503
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 509
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantería"
+		type = infantry
+		home = 513
+	}
+
+	regiment = {
+		name= "1. Brigada de Ingenieros"
+		type = engineer
+		home = 495
+	}
+
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = cavalry
+		home = 487
+	}
+}
+
+army = {
+	name = "Ejército del Sur"
+	location = 512
+
+	regiment = {
+		name= "8. Brigada de Infantería"
+		type = infantry
+		home = 512
+	}
+
+	regiment = {
+		name= "9. Brigada de Infantería"
+		type = infantry
+		home = 514
+	}
+
+	regiment = {
+		name= "10. Brigada de Infantería"
+		type = infantry
+		home = 510
+	}
+
+	regiment = {
+		name= "11. Brigada de Infantería"
+		type = infantry
+		home = 516
+	}
+	
+	regiment = {
+		name= "12. Brigada de Infantería"
+		type = infantry
+		home = 515
+	}
+}
+
+navy = {
+	name = "Armada Real Española"
+	location = 506
+	ship = {
+		name= "San Raimundo"
+		type = manowar
+	}
+
+	ship = {
+		name= "Nuestra Señora de Asunción"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nuestra Señora de Atocha"
+		type = frigate
+	}
+
+	ship = {
+		name= "Santa Sabina"
+		type = frigate
+	}
+
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}

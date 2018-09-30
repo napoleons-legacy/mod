@@ -1,0 +1,48 @@
+army = {
+	name = "Guardia Reale"
+	location = 762
+	regiment = {
+		name= "1. Guardia Reale"
+		type = artillery
+		home = 763
+	}
+
+	regiment = {
+		name= "2. Guardia Reale"
+		type = infantry
+		home = 762
+	}
+	regiment = {
+		name= "3. Guardia Reale"
+		type = infantry
+		home = 764
+	}
+
+}
+
+navy = {
+	name = "Real Marina delle Sicilia"
+	location = 763
+
+
+	ship = {
+		name= "Ferdinando I"
+		type = commerce_raider
+	}
+	ship = {
+		name= "Regina Isabella"
+		type = frigate
+	}
+
+	ship = {
+		name= "Principe Carlo"
+		type = frigate
+	}
+
+	ship = {
+		name= "1a Squadrone Transporti"
+		type = clipper_transport
+	}
+
+}
+

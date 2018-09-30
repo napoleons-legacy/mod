@@ -1,0 +1,287 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+the_british_raj = {
+	trigger = {
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+		NOT = { is_culture_group = indo_iranian }
+		NOT = { is_culture_group = south_asian }
+		exists = yes
+		1227 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1236 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1251 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1297 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 1
+	issue_change_speed = -0.25
+	ruling_party_support = 1
+	core_pop_militancy_modifier = -0.1
+	prestige = 0.02
+	icon = 19
+}
+
+
+dutch_east_india = {
+	trigger = {
+		exists = yes
+		1413 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1418 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 0.5
+	prestige = 0.01
+	icon = 19
+}
+
+vassal_nation = {
+	trigger = {
+		exists = yes
+		is_vassal = yes
+	}
+	icon = 10
+	prestige = -0.1
+}
+
+chinese_substate = {
+	trigger = {
+		exists = yes
+		OR = {
+			substate_of = QNG
+			vassal_of = QNG
+			AND = {
+				vassal_of = TUR
+				ai = yes
+			}
+		}
+		civilized = no
+		QNG = {	government = absolute_monarchy }
+		NOT = { capital = 1624 }
+	}
+	icon = 10
+	research_points_modifier = -0.2
+	global_pop_consciousness_modifier = 0.02
+}
+
+own_kiel_canal = {
+	trigger = {
+		exists = yes
+		owns = 369
+		civilized = yes
+		is_canal_enabled = 1
+	}
+	icon = 9
+	tariff_efficiency_modifier = 0.05
+}
+
+own_suez_canal = {
+	trigger = {	
+		exists = yes
+		owns = 1755
+		civilized = yes
+		is_canal_enabled = 2
+	}
+	icon = 9
+	tariff_efficiency_modifier = 0.1
+	import_cost = -0.2
+	prestige = 0.01
+}
+
+own_panama_canal = {
+	trigger = {
+		exists = yes
+		owns = 1723
+		civilized = yes
+		is_canal_enabled = 3
+	}
+	icon = 9
+	tariff_efficiency_modifier = 0.2
+	import_cost = -0.25
+	prestige = 0.02
+}
+
+small_but_efficient = {
+	trigger = {
+			capital_scope = { continent = europe }
+			exists = yes
+			civilized = yes
+			num_of_cities = 1
+			num_of_vassals = 0
+			NOT = { number_of_states = 3 }
+			NOT = { num_of_cities = 6 }
+			NOT = { total_pops = 300000 }
+			NOT = { money = 1000000 }
+			NOT = { 
+				is_culture_group = south_slavic
+				is_culture_group = pan_romanian
+				is_culture_group = levantine
+			}
+		}
+	icon = 9
+	import_cost = -0.1
+	tax_efficiency = 0.5
+	administrative_efficiency_modifier = 0.2
+	tariff_efficiency_modifier = 0.5
+	supply_consumption = -0.25
+}
+
+sounds_dues_toll = {
+		trigger = {
+			exists = yes
+			owns = 372
+			owns = 373
+			NOT = { is_canal_enabled = 1 }
+		}
+	tax_efficiency = 0.05
+	tariff_efficiency_modifier = 0.05
+	icon = 7
+}
+
+landlocked_nation = {
+		trigger = {
+			NOT = { total_num_of_ports = 1 }
+			exists = yes
+		}
+		
+	import_cost = 1
+	icon = 8
+}
+
+social_reformed_nation = {
+		trigger = {
+			exists = yes
+			wage_reform = good_minimum_wage
+			work_hours = eight_hours
+			safety_regulations = good_safety
+			unemployment_subsidies = good_subsidies
+			pensions = good_pensions
+			health_care = good_health_care
+			school_reforms = good_schools
+			penal_system = rehabilitation
+		}
+		
+	social_reform_desire = -0.3
+	icon = 13
+}
+
+chinese_foreign_training = {
+		trigger = {
+			exists = yes
+			civilized = no
+			OR = {
+				primary_culture = manchu
+				primary_culture = nanfaren
+				primary_culture = beifaren
+			}
+			foreign_training = yes_foreign_training
+		}
+		
+	research_points_on_conquer = -0.25
+	icon = 16
+}
+
+chinese_foreign_weapons = {
+		trigger = {
+			exists = yes
+			civilized = no
+			OR = {
+				primary_culture = manchu
+				primary_culture = nanfaren
+				primary_culture = beifaren
+			}
+			foreign_weapons = yes_foreign_weapons
+		}
+		
+	research_points_on_conquer = -0.25
+	icon = 16
+}
+
+chinese_foreign_officers = {
+		trigger = {
+			exists = yes
+			civilized = no
+			OR = {
+				primary_culture = manchu
+				primary_culture = nanfaren
+				primary_culture = beifaren
+			}
+			foreign_officers = yes_foreign_officers
+		}
+		
+	research_points_on_conquer = -0.25
+	icon = 16
+}
+
+chinese_foreign_artillery = {
+		trigger = {
+			exists = yes
+			civilized = no
+			OR = {
+				primary_culture = manchu
+				primary_culture = nanfaren
+				primary_culture = beifaren
+			}
+			foreign_artillery = yes_foreign_artillery
+		}
+		
+	research_points_on_conquer = -0.25
+	icon = 16
+}
+
+educational_spen = {
+		trigger = {
+			ai = yes
+			exists = yes
+			education_spending = 0.74
+		}
+
+	education_efficiency_modifier = 0.25
+	icon = 16
+}
+
+admin_spen = {
+		trigger = {
+			ai = yes
+			exists = yes
+			administration_spending = 0.74
+		}
+
+	administrative_efficiency_modifier = 0.25
+	icon = 16
+}
+
+hormuz_strait = {
+		trigger = {
+			year = 1880
+			owns = 1071
+			owns = 2664
+			exists = yes
+		}
+
+	tax_efficiency = 0.02
+	tariff_efficiency_modifier = 0.05
+	icon = 16
+}
+

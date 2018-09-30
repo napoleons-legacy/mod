@@ -1,0 +1,8 @@
+owner = HUD
+controller = HUD
+add_core = CAN
+add_core = HUD
+trade_goods = timber
+terrain = arctic
+life_rating = 10
+colonial = 2

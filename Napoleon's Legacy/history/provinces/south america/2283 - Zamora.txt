@@ -1,0 +1,7 @@
+owner = ECU
+controller = ECU
+add_core = GCO
+add_core = ECU
+trade_goods = grain
+terrain = montane_forest
+life_rating = 32

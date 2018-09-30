@@ -1,0 +1,10 @@
+owner = MOD
+controller = MOD
+add_core = MOD
+trade_goods = wool
+life_rating = 35
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}

@@ -1,0 +1,85 @@
+#Sphere of Influence
+
+USA = {
+	value = -200
+}
+
+CAN = {
+	value = 100
+}
+
+BRI = {
+	value = 100
+}
+
+
+
+army = {
+	name = "Pennsylvania Army"
+	location = 226
+	regiment = {
+		name= "1st Regiment of Infantry"
+		type = infantry
+		home = 243
+	}
+
+	regiment = {
+		name= "2nd Regiment of Infantry"
+		type = infantry
+		home = 234
+	}
+
+	regiment = {
+		name= "3rd Regiment of Infantry"
+		type = infantry
+		home = 232
+	}
+
+	regiment = {
+		name= "1st Regiment of Artillery"
+		type = artillery
+		home = 247
+	}
+
+}
+
+army = {
+	name = "Army of the North"
+	location = 239
+	regiment = {
+		name= "1st Regiment of Infantry"
+		type = infantry
+		home = 241
+	}
+
+}
+
+
+navy = {
+	name = "1st Squadron"
+	location = 248
+	ship = {
+		name= "Franklin"
+		type = manowar
+	}
+
+	ship = {
+		name= "Pennsylvania"
+		type = manowar
+	}
+
+	ship = {
+		name= "Washington"
+		type = manowar
+	}
+
+	ship = {
+		name= "Columbia"
+		type = frigate
+	}
+
+	ship = {
+		name= "Constellation"
+		type = frigate
+	}
+}

@@ -1,0 +1,21 @@
+army = {
+	name = "Shawnee Braves"
+	location = 169
+	regiment = {
+		name= "1st Rifle Braves"
+		type = infantry
+		home = 169
+	}
+
+}
+
+army = {
+	name = "Shawnee Braves"
+	location = 181
+	regiment = {
+		name= "2nd Rifle Braves"
+		type = infantry
+		home = 181
+	}
+
+}

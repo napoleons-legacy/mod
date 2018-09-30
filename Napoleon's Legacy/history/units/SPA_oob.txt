@@ -1,0 +1,108 @@
+#Sphere of Influence
+MEX = {
+	value = 75		#relation
+}
+ECU = {
+	value = 100		#relation
+}
+PEU = {
+	value = 100		#relation
+}
+BOL = {
+	value = 100		#relation
+}
+CHL = {
+	value = 100		#relation
+}
+PRG = {
+	value = 100		#relation
+}
+UCA = {
+	value = 100		#relation
+}
+HUD = {
+	value = 100		#relation
+}
+BRZ = {
+	value = 100		#relatio
+}
+URU = {
+	value = 75		#relation
+}
+POR = {
+	value = 100		#relation
+}
+
+army = {
+	name = "Ejército de Cuba"
+	location = 2209
+	
+	regiment = {
+		name = "1. Brigada Colonial"
+		type = infantry
+		home = 1455
+	}
+	
+	regiment = {
+		name = "2. Brigada Colonial"
+		type = infantry
+		home = 2209
+	}
+}
+
+army = {
+	name = "Ejército de Puerto Rico"
+	location = 2222
+	
+	regiment = {
+		name = "3. Brigada Colonial"
+		type = infantry
+		home = 1456
+	}
+}
+
+army = {
+	name = "Ejército de Filipinas"
+	location = 1455
+	
+	regiment = {
+		name = "4. Brigada Colonial"
+		type = infantry
+		home = 1455
+	}
+}
+
+navy = {
+	name = "Armada de Cuba"
+	location = 2212
+	
+	ship = {
+		name = "Santiago"
+		type = manowar
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Armada de Filipinas"
+	location = 1455
+	
+	ship = {
+		name = "Victoria"
+		type = frigate
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}

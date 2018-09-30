@@ -1,0 +1,29 @@
+name = "Sixth Cape Frontier War"
+
+1835.10.2 = {
+	add_attacker = XHO
+	add_defender = SAF
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = status_quo
+		actor = SAF
+		receiver = XHO
+	}
+	war_goal = {
+		state_province_id = 2096
+		casus_belli = acquire_core_state
+		actor = XHO
+		receiver = SAF
+	}
+
+}
+
+1836.6.6 = {
+	rem_attacker = XHO
+	rem_defender = SAF
+}
