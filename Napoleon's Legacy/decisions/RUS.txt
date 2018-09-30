@@ -2,10 +2,7 @@ political_decisions = {
     abolish_serfdom = {
         picture = abolish_serfdom
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             debt_law = serfdom
             #government = absolute_monarchy
             has_country_flag = serfdom_not_abolished
@@ -88,10 +85,7 @@ political_decisions = {
     establish_the_sovnarkom = {
         picture = establish_the_sovnarkom
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             NOT = {
                 has_country_flag = big_brother_is_watching
             }
@@ -123,10 +117,7 @@ political_decisions = {
 
     manifesto_on_unshakable_autocracy = {
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             OR = {
                 government = prussian_constitutionalism
                 government = hms_government
@@ -140,15 +131,22 @@ political_decisions = {
         effect = {
             prestige = 5
             badboy = 2
-
-            ruling_party_ideology = reactionary
             political_reform = none_voting
             political_reform = state_press
             political_reform = appointed
             political_reform = state_controlled
             political_reform = underground_parties
             government = absolute_monarchy
+            ruling_party_ideology = reactionary
 
+            clr_country_flag = election_started
+            clr_country_flag = conservative_party_in_power
+            clr_country_flag = liberal_party_in_power
+            clr_country_flag = reactionary_party_in_power
+            clr_country_flag = socialist_party_in_power
+            clr_country_flag = communist_party_in_power
+            clr_country_flag = fascist_party_in_power
+            clr_country_flag = anarcho_liberal_party_in_power
             any_pop = {
                 militancy = -1
                 scaled_militancy  = {
@@ -203,10 +201,7 @@ political_decisions = {
 
     promulgate_the_ems_ukaz = {
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             NOT = {
                 has_country_flag = ems_ukaz_dispatched
             }
@@ -233,7 +228,7 @@ political_decisions = {
         effect = {
             any_pop = {
                 limit = {
-                    has_pop_culture = ukrainian
+                    has_pop_culture = ruthenian
                 }
                 militancy = 3
                 consciousness = -2
@@ -245,10 +240,7 @@ political_decisions = {
     convention_of_peking = {
         picture = peking_convention
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             is_greater_power = yes
             1082 = {
                 owner = {
@@ -298,10 +290,7 @@ political_decisions = {
     mongolian_protectorate = {
         picture = unequal_treaty
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             is_greater_power = yes
             MGL = {
                 exists = yes
@@ -342,10 +331,7 @@ political_decisions = {
     peking_convention_TPG = {
         picture = peking_convention
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             is_greater_power = yes
             TPG = { owns = 1082 }
             NOT = { has_global_flag = convention_of_peking }
@@ -377,10 +363,7 @@ political_decisions = {
 
     russian_vladivostok = {
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             owns = 1085
             owns = 1084
             owns = 2617
@@ -578,10 +561,7 @@ political_decisions = {
 
     move_capital_to_moscow = {
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             NOT = { capital = 1008 }
         }
 
@@ -702,10 +682,7 @@ political_decisions = {
                 government = hms_government
             }
             is_greater_power = yes
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             has_global_flag = crimea_has_happened
             year = 1865
             exists = BUK
@@ -740,10 +717,7 @@ political_decisions = {
                 government = hms_government
             }
             is_greater_power = yes
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             has_global_flag = crimea_has_happened
             year = 1865
             exists = KOK
@@ -778,10 +752,7 @@ political_decisions = {
                 government = hms_government
             }
             is_greater_power = yes
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             has_global_flag = crimea_has_happened
             year = 1865
             exists = KHI
@@ -810,10 +781,7 @@ political_decisions = {
     claim_sakhalin = {
         picture = map_yellow_sea
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             1086 = { owned_by = THIS }
             OR = {
                 1086 = {
@@ -860,10 +828,7 @@ political_decisions = {
     names_of_the_revolution = {
         picture = names_of_the_rev
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             government = proletarian_dictatorship
             NOT = { has_country_flag = names_of_the_revolution }
             owns = 996
@@ -905,10 +870,7 @@ political_decisions = {
     remove_names_of_the_revolution = {
         picture = names_of_the_rev
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             NOT = { government = proletarian_dictatorship }
             has_country_flag = names_of_the_revolution
             owns = 996
@@ -952,10 +914,7 @@ political_decisions = {
     names_of_the_revolution_ukraine = {
         picture = names_of_the_rev
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             government = proletarian_dictatorship
             NOT = { has_global_flag = names_of_the_revolution_ukraine }
             owns = 972
@@ -1012,62 +971,6 @@ political_decisions = {
         }
     }
 
-    expel_the_poles_GLM = {
-        picture = polish_expelled
-        potential = {
-            is_culture_group = east_slavic
-            OR = {
-                owns = 951
-                owns = 952
-                owns = 953
-                owns = 702
-            }
-            NOT = { has_global_flag = poles_expelled }
-        }
-
-        allow = {
-            war = no
-            owns = 951
-            owns = 952
-            owns = 953
-            owns = 702
-            mass_politics = 1
-            NOT = { citizenship_policy = full_citizenship }
-            NOT = { citizens_rights = all_voting_pops }
-            OR = {
-                government = fascist_dictatorship
-                government = proletarian_dictatorship
-                government = bourgeois_dictatorship
-            }
-        }
-
-        effect = {
-            set_global_flag = poles_expelled
-            952 = { change_province_name = "Ternopil" }
-            953 = { change_province_name = "Frankivsk" }
-            702 = { change_province_name = "Lviv" }
-
-            702 = { remove_core = POL }
-            702 = { remove_core = GLM }
-
-            951 = { remove_core = POL }
-            951 = { remove_core = GLM }
-
-            952 = { remove_core = POL }
-            952 = { remove_core = GLM }
-
-            953 = { remove_core = POL }
-            953 = { remove_core = RUT }
-            953 = { remove_core = GLM }
-
-            702 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 715 } }
-            952 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 706 } }
-            953 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 716 } }
-            951 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 708 } }
-        }
-        ai_will_do = { factor = 1 }
-    }
-
     drain_the_pinsk_marshes = {
         picture = drain_the_pinsk_marshes
         potential = {
@@ -1118,10 +1021,7 @@ political_decisions = {
     colonize_uriankhai = {
         picture = uriankhai_colony
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             NOT = { has_country_flag = colonize_uriankhai }
         }
 
@@ -1157,10 +1057,7 @@ political_decisions = {
     integrate_uriankhai = {
         picture = uriankhai_colony
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             has_country_flag = colonize_uriankhai
             NOT = { has_country_flag = tannu_integrated }
             TNT = {    exists = yes }
@@ -1229,10 +1126,7 @@ political_decisions = {
     alexander_reforms = {
         picture = alexander_emancipating
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             OR = {
                 has_country_flag = crimean_war
                 year = 1870
@@ -1317,10 +1211,7 @@ political_decisions = {
     petrograd_renaming_act = {
         picture = petrograd_city
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             NOT = { has_country_flag = peters_city_renamed }
             NOT = { has_country_flag = names_of_the_revolution }
             owns = 994
@@ -1357,13 +1248,10 @@ political_decisions = {
             }
         }
 
-    integrate_kazakhstan = {
+    integrate_kazakhstan = { #needs a revision
         picture = unite_turkestan
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             NOT = { has_country_flag = kazakhstan_integrated }
             KAZ = { civilized = no neighbour = THIS }
             NOT = { exists = KHI }
@@ -1397,10 +1285,7 @@ political_decisions = {
     russification_of_finland = {
         picture = suomineito
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             is_our_vassal = FIN
             revolution_n_counterrevolution = 1
             NOT = { has_country_flag = finland_russification }

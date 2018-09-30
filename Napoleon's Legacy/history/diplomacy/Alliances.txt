@@ -124,14 +124,6 @@ alliance=
 alliance=
     {
         first="BAD"
-        second="SGM"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="BAD"
         second="COB"
         end_date="1936.1.1"
         start_date="1836.1.1"
@@ -252,14 +244,6 @@ alliance=
 alliance=
     {
         first="BAV"
-        second="SGM"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="BAV"
         second="COB"
         end_date="1936.1.1"
         start_date="1836.1.1"
@@ -365,14 +349,6 @@ alliance=
     {
         first="BRA"
         second="WRZ"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="BRA"
-        second="SGM"
         end_date="1936.1.1"
         start_date="1836.1.1"
     }
@@ -500,14 +476,6 @@ alliance=
 alliance=
     {
         first="HES"
-        second="SGM"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="HES"
         second="COB"
         end_date="1936.1.1"
         start_date="1836.1.1"
@@ -604,14 +572,6 @@ alliance=
 alliance=
     {
         first="FRM"
-        second="SGM"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="FRM"
         second="COB"
         end_date="1936.1.1"
         start_date="1836.1.1"
@@ -700,14 +660,6 @@ alliance=
 alliance=
     {
         first="SAX"
-        second="SGM"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SAX"
         second="COB"
         end_date="1936.1.1"
         start_date="1836.1.1"
@@ -781,14 +733,6 @@ alliance=
     {
         first="WST"
         second="WRZ"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="WST"
-        second="SGM"
         end_date="1936.1.1"
         start_date="1836.1.1"
     }
@@ -876,14 +820,6 @@ alliance=
 alliance=
     {
         first="WUR"
-        second="SGM"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="WUR"
         second="COB"
         end_date="1936.1.1"
         start_date="1836.1.1"
@@ -948,14 +884,6 @@ alliance=
 alliance=
     {
         first="WRZ"
-        second="SGM"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="WRZ"
         second="COB"
         end_date="1936.1.1"
         start_date="1836.1.1"
@@ -1012,70 +940,6 @@ alliance=
 alliance=
     {
         first="WRZ"
-        second="MEC"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
-        second="COB"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
-        second="MEI"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
-        second="WEI"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
-        second="NAS"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
-        second="LIP"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
-        second="ANH"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
-        second="HEK"
-        end_date="1936.1.1"
-        start_date="1836.1.1"
-    }
-
-alliance=
-    {
-        first="SGM"
         second="MEC"
         end_date="1936.1.1"
         start_date="1836.1.1"

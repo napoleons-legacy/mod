@@ -42,6 +42,7 @@ citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
+set_country_flag = prussian_germany
 
 decision = literacy_PRU
 
@@ -86,7 +87,7 @@ interchangeable_parts = 1
 romanticism = 1
 #hot_blast = 1
 high_pressure_steam_engine = 1
-
+#puddling = 1
 
 #Inventions
 
@@ -97,8 +98,6 @@ nonstate_consciousness = 1
 schools = army_tech_school
 
 foreign_investment = {
-    NEH = 10000
-    SGM = 10000
     OLD = 10000
     MEC = 7500
     SAX = 7500

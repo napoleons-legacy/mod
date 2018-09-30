@@ -2,7 +2,7 @@ country_event = {
     id = 32499
     title = "EVTNAME32499"
     desc = "EVTDESC32499"
-    picture = "greatpowers"
+    picture = "brazil_court"
 
     trigger = {
         tag = REI
@@ -20,31 +20,13 @@ country_event = {
 
     mean_time_to_happen =  {
         months = 3
-
-        modifier = {
-            factor = 0.55
-            year = 1837
-        }
-
-        modifier = {
-            factor = 0.75
-            year = 1838
-        }
     }
 
     option = {
         name = "EVTOPTA32499"
         set_country_flag = stay_BR
-        add_country_modifier = {
-            name = UR_tensions
-            duration = -1
-        }
 
-        BRZ = {
-            all_core = {
-                remove_core = BRZ
-            }
-        }
+        BRZ = { all_core = { remove_core = BRZ } }
 
         ai_chance = {
             factor = 45
@@ -54,18 +36,10 @@ country_event = {
     option = {
         name = "EVTOPTB32499"
         set_country_flag = move_PR
-        add_country_modifier = {
-            name = UR_tensions
-            duration = -1
-        }
 
         capital = 521
 
-        POR = {
-            all_core = {
-                remove_core = POR
-            }
-        }
+        POR = { all_core = { remove_core = POR } }
 
         ai_chance = {
             factor = 55
@@ -104,8 +78,8 @@ country_event = {
             }
 
             add_province_modifier = {
-                name = PR_rebellion
-                duration = 1825
+                name = nationalist_agitation
+                duration = 365
             }
         }
     }
@@ -141,7 +115,7 @@ country_event = {
             }
 
             add_province_modifier = {
-                name = PR_rebellion
+                name = nationalist_agitation
                 duration = 1825
             }
         }

@@ -1,141 +1,150 @@
-# TODO CLEAN UP
-
+# Poland Lithuania searches for allies
 country_event = {
-
     id = 121225
+    title = "EVTNAME121225"
+    desc = "EVTDESC121225"
+    picture = "midsummer"
 
     trigger = {
         tag = PLC
+        NOT = { year = 1837 }
+        NOT = {
+            OR = {
+                alliance_with = FRA
+                alliance_with = PRU
+                alliance_with = AUS
+                alliance_with = RUS
+            }
+        }
     }
 
     fire_only_once = yes
 
     mean_time_to_happen =  {
-        months = 1
-
-        modifier = {
-            factor = 0.75 #increase likelihood to happen
-            year = 1836
-        }
-
+        days = 20
     }
 
-    title = "EVTNAME121225"
-    desc = "EVTDESC121225"
-    picture = "midsummer"
+    immediate = {
+        set_country_flag = PLC_seeking_allies
+    }
 
+    # Seek the French
     option = {
         name = "EVTOPTA121225"
         FRA = { country_event = 121226 }
         prestige = -10
-        set_country_flag = PLC_seeking_allies
         ai_chance = {
-            factor = 40
+            factor = 50
         }
     }
 
+    # Seek the Austrians
     option = {
         name = "EVTOPTB121225"
         AUS = { country_event = 121227 }
-        set_country_flag = PLC_seeking_allies
-        ai_chance = {
-            factor = 15
-        }
-    }
-
-    option = {
-        name = "EVTOPTC121225"
-        PRU = { country_event = 121228 }
         set_country_flag = PLC_seeking_allies
         ai_chance = {
             factor = 10
         }
     }
 
+    # Seek the Prussians
     option = {
-        name = "EVTOPTD121225"
-        RUS = { country_event = 121229 }
-        set_country_flag = PLC_seeking_allies
+        name = "EVTOPTC121225"
+        PRU = { country_event = 121228 }
         ai_chance = {
             factor = 5
         }
     }
 
+    # Seek the Russians
+    option = {
+        name = "EVTOPTD121225"
+        RUS = { country_event = 121229 }
+        ai_chance = {
+            factor = 5
+        }
+    }
+
+    # Seek nobody
     option = {
         name = "EVTOPTE121225"
         prestige = 10
-        set_country_flag = PLC_seeking_allies
         ai_chance = {
             factor = 30
         }
     }
 }
 
-#FRA gets PLC's offer
+# France gets an offer from Poland-Lithuania
 country_event = {
-
     id = 121226
-
-    is_triggered_only = yes
-
     title = "EVTNAME121226"
     desc = "EVTDESC121226"
     picture = "Military_reform"
 
+    is_triggered_only = yes
+
+    # Ally them
     option = {
         name = "EVTOPTA121226"
         create_alliance = PLC
         diplomatic_influence = {
             who = PLC
-            value = 300
+            value = 400
         }
+
         relation = {
             who = PLC
             value = 400
         }
+
         PLC = { country_event = 121230 }
         ai_chance = {
-            factor = 75
+            factor = 80
         }
     }
 
+    # Decline them
     option = {
         name = "EVTOPTB121226"
         PLC = { country_event = 121231 }
         ai_chance = {
-            factor = 25
+            factor = 20
         }
     }
 }
 
-#AUS gets PLC's offer
+# Austria gets an offer from Poland-Lithuania
 country_event = {
-
     id = 121227
-
-    is_triggered_only = yes
-
     title = "EVTNAME121227"
     desc = "EVTDESC121227"
     picture = "Military_reform"
 
+    is_triggered_only = yes
+
+    # Ally them for free
     option = {
         name = "EVTOPTA121227"
         create_alliance = PLC
         diplomatic_influence = {
             who = PLC
-            value = 300
+            value = 400
         }
+
         relation = {
             who = PLC
             value = 400
         }
+
         PLC = { country_event = 121230 }
         ai_chance = {
             factor = 35
         }
     }
 
+    # Send counter-offer
     option = {
         name = "EVTOPTB121227"
         PLC = { country_event = 121232 }
@@ -144,6 +153,7 @@ country_event = {
         }
     }
 
+    # Decline them
     option = {
         name = "EVTOPTC121227"
         PLC = { country_event = 121231 }
@@ -153,42 +163,47 @@ country_event = {
     }
 }
 
-#PRU gets PLC's offer
+# Prussia gets an offer from Poland-Lithuania
 country_event = {
     id = 121228
-    title = "EVTNAME121228"
-    desc = "EVTDESC121228"
+    title = "EVTNAME121227"
+    desc = "EVTDESC121227"
     picture = "Military_reform"
 
     is_triggered_only = yes
 
+    # Ally them for free
     option = {
-        name = "EVTOPTA121228"
+        name = "EVTOPTA121227"
         create_alliance = PLC
         diplomatic_influence = {
             who = PLC
-            value = 300
+            value = 400
         }
+
         relation = {
             who = PLC
             value = 400
         }
+
         PLC = { country_event = 121230 }
         ai_chance = {
             factor = 25
         }
     }
 
+    # Send counter-offer
     option = {
-        name = "EVTOPTB121228"
+        name = "EVTOPTB121227"
         PLC = { country_event = 121233 }
         ai_chance = {
             factor = 50
         }
     }
 
+    # Decline them
     option = {
-        name = "EVTOPTC121228"
+        name = "EVTOPTC121227"
         PLC = { country_event = 121231 }
         ai_chance = {
             factor = 25
@@ -196,44 +211,47 @@ country_event = {
     }
 }
 
-#RUS gets PLC's offer
+# Russia gets an offer from Poland-Lithuania
 country_event = {
-
     id = 121229
+    title = "EVTNAME121227"
+    desc = "EVTDESC121227"
+    picture = "Military_reform"
 
     is_triggered_only = yes
 
-    title = "EVTNAME121229"
-    desc = "EVTDESC121229"
-    picture = "Military_reform"
-
+    # Ally them for free
     option = {
-        name = "EVTOPTA121229"
+        name = "EVTOPTA121227"
         create_alliance = PLC
         diplomatic_influence = {
             who = PLC
-            value = 300
+            value = 400
         }
+
         relation = {
             who = PLC
             value = 400
         }
+
         PLC = { country_event = 121230 }
         ai_chance = {
             factor = 15
         }
     }
 
+    # Send counter-offer
     option = {
-        name = "EVTOPTB121229"
+        name = "EVTOPTB121227"
         PLC = { country_event = 121234 }
         ai_chance = {
             factor = 60
         }
     }
 
+    # Decline them
     option = {
-        name = "EVTOPTC121229"
+        name = "EVTOPTC121227"
         PLC = { country_event = 121231 }
         ai_chance = {
             factor = 25
@@ -241,7 +259,7 @@ country_event = {
     }
 }
 
-#PLC gets offer accepted
+# Poland-Lithuania gets offer acceptance
 country_event = {
     id = 121230
     title = "EVTNAME121230"
@@ -249,7 +267,6 @@ country_event = {
     picture = "Military_reform"
 
     is_triggered_only = yes
-
 
     option = {
         name = "EVTOPTA121230"
@@ -260,7 +277,7 @@ country_event = {
     }
 }
 
-#PLC gets offer accepted
+# Poland-Lithuania gets offer rejection
 country_event = {
     id = 121231
     title = "EVTNAME121231"
@@ -269,136 +286,137 @@ country_event = {
 
     is_triggered_only = yes
 
-
     option = {
         name = "EVTOPTA121231"
-        relation = {
-            who = FROM
-            value = 400
-        }
+        prestige = -5
+        relation = { who = AUS value = -100 }
+        relation = { who = PRU value = -100 }
+        relation = { who = RUS value = -100 }
     }
 }
 
-
-#PLC gets AUS's conditions
+# Poland-Lithuania gets Austrian counter-offer
 country_event = {
-
     id = 121232
-
-    is_triggered_only = yes
-
     title = "EVTNAME121232"
     desc = "EVTDESC121232"
     picture = "Military_reform"
 
+    is_triggered_only = yes
+
     option = {
         name = "EVTOPTA121232"
-        create_alliance = AUS
         relation = {
             who = AUS
-                value = 400
+            value = 400
         }
-        703 = {
-            remove_core = PLC
-            add_core = AUS
+        create_alliance = AUS
+
+        AUS_702 = {
             secede_province = AUS
+            add_core = AUS
+            remove_core = PLC
         }
+
+        AUS_662 = {
+            secede_province = AUS
+            add_core = AUS
+            remove_core = PLC
+        }
+
         ai_chance = {
-            factor = 30
+            factor = 10
         }
     }
 
     option = {
         name = "EVTOPTB121232"
         ai_chance = {
-            factor = 70
+            factor = 90
         }
     }
 }
 
-#PLC gets PRU's conditions
+# Poland-Lithuania gets Prussian counter-offer
 country_event = {
-
     id = 121233
-
-    is_triggered_only = yes
-
-    title = "EVTNAME121233"
+    title = "EVTNAME121232"
     desc = "EVTDESC121233"
     picture = "Military_reform"
 
+    is_triggered_only = yes
+
     option = {
-        name = "EVTOPTA121233"
-        create_alliance = PRU
+        name = "EVTOPTA121232"
         relation = {
             who = PRU
-                value = 400
+            value = 400
         }
+        create_alliance = PRU
+
         694 = {
             remove_core = PLC
             add_core = PRU
             secede_province = PRU
         }
-        685 = {
-            remove_core = PLC
-            add_core = PRU
-            secede_province = PRU
-        }
+
         PRU_701 = {
             remove_core = PLC
             add_core = PRU
             secede_province = PRU
         }
+
         ai_chance = {
-            factor = 40
+            factor = 10
         }
     }
 
     option = {
-        name = "EVTOPTB121233"
+        name = "EVTOPTB121232"
         ai_chance = {
-            factor = 60
+            factor = 90
         }
     }
 }
 
-#PLC gets RUS's conditions
+# Poland-Lithuania gets Russian counter-offer
 country_event = {
-
     id = 121234
-
-    is_triggered_only = yes
-
-    title = "EVTNAME121234"
+    title = "EVTNAME121232"
     desc = "EVTDESC121234"
     picture = "Military_reform"
 
+    is_triggered_only = yes
+
     option = {
-        name = "EVTOPTA121234"
-        create_alliance = RUS
+        name = "EVTOPTA121232"
         relation = {
             who = RUS
-                value = 400
+            value = 400
         }
+        create_alliance = RUS
+
         RUS_940 = {
             remove_core = PLC
             add_core = RUS
             secede_province = RUS
         }
-        RUS_955 = {
+
+        RUS_959 = {
             remove_core = PLC
             add_core = RUS
             secede_province = RUS
         }
+
         ai_chance = {
-            factor = 50
+            factor = 10
         }
     }
 
     option = {
-        name = "EVTOPTB121234"
+        name = "EVTOPTB121232"
         ai_chance = {
-            factor = 50
+            factor = 90
         }
     }
 }

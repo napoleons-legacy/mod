@@ -1,8 +1,8 @@
 #############################################################################
-#                                                                           #
-#  These events deal with neighboring countries of similar ideologies       #
-#               gaining closer relations with each other                    #
-#                                                                           #
+#                                                                            #
+#  These events deal with neighboring countries of similar ideologies        #
+#                gaining closer relations with each other                    #
+#                                                                            #
 #############################################################################
 
 country_event = {
@@ -788,10 +788,10 @@ country_event = {
 }
 
 #############################################################
-#                                                           #
-#    These events deal with GP's of similar ideologies      #
-#          having a summit to improve relations             #
-#                                                           #
+#                                                            #
+#    These events deal with GP's of similar ideologies        #
+#           having a summit to improve relations                #
+#                                                            #
 #############################################################
 
 country_event = {
@@ -1310,10 +1310,10 @@ country_event = {
 }
 
 #############################################################
-#                                                           #
-#   These events involve diplomatic incidents between       #
-#    opposing ideologies that will reduce relations         #
-#                                                           #
+#                                                            #
+#   These events involve diplomatic incidents between        #
+#    opposing ideologies that will reduce relations            #
+#                                                            #
 #############################################################
 
 country_event = {

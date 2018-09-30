@@ -1,6 +1,7 @@
-owner = PEU
-controller = PEU
+owner = SPA
+controller = SPA
+add_core = SPA
 add_core = PEU
 trade_goods = wool
 terrain = new_world_desert
-life_rating = 15
+life_rating = 31

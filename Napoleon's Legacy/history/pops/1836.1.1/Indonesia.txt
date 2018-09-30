@@ -2356,17 +2356,6 @@
 #uncolonized in 1836
 #Pontianak (148000/37000 POPS)
 1426 = {
-    aristocrats = {
-        culture = hakka
-        religion = mahayana
-        size = 50
-    }
-
-    clergymen = {
-        culture = malay
-        religion = animist
-        size = 50
-    }
 
     artisans = {
         culture = malay
@@ -2374,16 +2363,10 @@
         size = 100
     }
 
-    soldiers = {
-        culture = malay
-        religion = animist
-        size = 50
-    }
-
     farmers = {
         culture = malay
         religion = animist
-        size = 4750
+        size = 4850
     }
 
     aristocrats = {
@@ -2422,51 +2405,34 @@
         size = 20600
     }
 
-    bureaucrats = {
-        culture = hakka
-        religion = mahayana
-        size = 500
-    }
-
-        bureaucrats = {
+    aristocrats = {
         culture = yue
         religion = mahayana
-        size = 25
+        size = 250
     }
 
-    clergymen = {
-        culture = hakka
+    bureaucrats = {
+        culture = yue
         religion = mahayana
-        size = 50
+        size = 70
     }
 
     artisans = {
-        culture = hakka
+        culture = yue
         religion = mahayana
-        size = 4150
+        size = 500
     }
 
     soldiers = {
-        culture = hakka
+        culture = yue
         religion = mahayana
-        size = 500
+        size = 125
     }
 
     farmers = {
-        culture = hakka
-        religion = mahayana
-        size = 9250
-    }
-
-    artisans = {
         culture = yue
         religion = mahayana
-        size = 750
-    }
-    soldiers = {
-        culture = yue
-        religion = mahayana
-        size = 1750
+        size = 11555
     }
 }
 #Kota Waringin (152000/38000 POPS)
@@ -3118,7 +3084,7 @@
     farmers = {
         culture = moluccan
         religion = sunni
-        size = 38425
+        size = 48425
     }
 
     slaves = {

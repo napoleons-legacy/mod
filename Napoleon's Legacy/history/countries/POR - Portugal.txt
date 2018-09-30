@@ -37,6 +37,7 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
+set_country_flag = portuguese_country
 
 ruling_party = POR_liberal
 last_election = 1834.1.1
@@ -74,9 +75,12 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-mechanical_production = 1
+#mechanical_production = 1
 mechanized_mining = 1
-basic_chemistry = 1
+#basic_chemistry = 1
+stock_exchange = 1
+ad_hoc_money_bill_printing = 1
+late_classical_theory = 1
 
 #Inventions
 #corvettes = yes

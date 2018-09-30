@@ -2,10 +2,7 @@ political_decisions = {
     build_the_tsr = { #Trans-Siberian railroad- mirrors CNR, but offers choice of route: Irkutsk-Yakutia-Okhotsk or Irkutsk-Chita-Vladivostok(if owned)
         picture = whistlestop_tour
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             early_railroad = 1
             NOT = { has_global_flag = build_the_tsr }
         }
@@ -38,10 +35,7 @@ political_decisions = {
     build_the_manchurian_railway = { #Railroad through Manchuria if they own Port Arthur
         picture = whistlestop_tour
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             has_global_flag = build_the_tsr
             NOT = { has_global_flag = build_the_manchurian_railway }
             owns = 1481

@@ -17,6 +17,10 @@ country_event = {
             num_of_ports = 5
             any_owned_province = {
                 is_colonial = yes
+                OR = {
+                    any_neighbor_province = { owned_by = THIS }
+                    port = yes
+                }
             }
             NOT = {
                 alliance_with = THIS
@@ -25,6 +29,7 @@ country_event = {
         }
         any_owned_province = { port = yes }
         press_rights = free_press
+        NOT = { has_global_flag = berlin_conference }
     }
 
     mean_time_to_happen = {
@@ -169,13 +174,13 @@ country_event = {
     picture = "Administration"
 
     trigger = {
-        NOT = { has_country_modifier = neutrality }
+        NOT = { has_country_modifier = neutrality_modifier }
         is_greater_power = yes
         prestige = 100
         any_greater_power = {
             prestige = 100
             NOT = {
-                has_country_modifier = neutrality
+                has_country_modifier = neutrality_modifier
                 war_with = THIS
                 truce_with = THIS
                 relation = {
@@ -241,7 +246,7 @@ country_event = {
                 is_greater_power = yes
                 prestige = 100
                 NOT = {
-                    has_country_modifier = neutrality
+                    has_country_modifier = neutrality_modifier
                     war_with = THIS
                     truce_with = THIS
                     relation = {
@@ -297,7 +302,7 @@ country_event = {
                 is_greater_power = yes
                 prestige = 100
                 NOT = {
-                    has_country_modifier = neutrality
+                    has_country_modifier = neutrality_modifier
                     war_with = THIS
                     truce_with = THIS
                     relation = {
@@ -352,7 +357,8 @@ country_event = {
     picture = "patrol"
 
     trigger = {
-        NOT = { has_country_modifier = neutrality }
+        NOT = { has_country_modifier = neutrality_modifier }
+        NOT = { has_global_flag = berlin_conference }
         war = no
         colonial_nation = yes
         any_owned_province = {
@@ -365,7 +371,7 @@ country_event = {
                     NOT = {
                         war_with = THIS
                         truce_with = THIS
-                        has_country_modifier = neutrality
+                        has_country_modifier = neutrality_modifier
                         relation = {
                             who = THIS
                             value = 50
@@ -379,7 +385,7 @@ country_event = {
     mean_time_to_happen = {
         months = 300
         modifier = {
-            factor = 2
+            factor = 4
             NOT = { has_global_flag = berlin_conference }
         }
         modifier = {
@@ -448,8 +454,7 @@ country_event = {
         }
     }
 
-    option =
-    {
+    option = {
         name = "EVTOPTA2530"
         random_owned = {
             limit = {
@@ -462,11 +467,8 @@ country_event = {
                         NOT = {
                             war_with = THIS
                             truce_with = THIS
-                            has_country_modifier = neutrality
-                            relation = {
-                                who = THIS
-                                value = 100
-                            }
+                            has_country_modifier = neutrality_modifier
+                            relation = { who = THIS value = 100 }
                         }
                     }
                 }
@@ -480,7 +482,7 @@ country_event = {
                         NOT = {
                             war_with = THIS
                             truce_with = THIS
-                            has_country_modifier = neutrality
+                            has_country_modifier = neutrality_modifier
                             relation = {
                                 who = THIS
                                 value = 100
@@ -489,6 +491,7 @@ country_event = {
                     }
                 }
                 owner = {
+                    relation = { who = THIS value = -20 }
                     add_casus_belli = {
                         target = THIS
                         type = place_in_the_sun
@@ -496,10 +499,6 @@ country_event = {
                     }
                 }
             }
-        }
-        relation = {
-            who = THIS
-            value = -20
         }
     }
     option = {
@@ -525,7 +524,7 @@ country_event = {
 
     trigger = {
         num_of_ports = 1
-        NOT = { has_country_modifier = neutrality }
+        NOT = { has_country_modifier = neutrality_modifier }
         economic_policy = laissez_faire
         OR = {
             war_policy = jingoism
@@ -536,7 +535,7 @@ country_event = {
             num_of_ports = 1
             NOT = {
                 economic_policy = laissez_faire
-                has_country_modifier = neutrality
+                has_country_modifier = neutrality_modifier
                 relation = {
                     who = THIS
                     value = 100
@@ -611,7 +610,7 @@ country_event = {
                 neighbour = THIS
                 NOT = {
                     economic_policy = laissez_faire
-                    has_country_modifier = neutrality
+                    has_country_modifier = neutrality_modifier
                     relation = {
                         who = THIS
                         value = 100
@@ -644,12 +643,14 @@ country_event = {
         civilized = no
         colonial_nation = no
         is_vassal = no
+        NOT = { has_global_flag = berlin_conference }
         any_neighbor_country = {
             is_vassal = no
             colonial_nation = yes
             civilized = yes
             NOT = {
-                has_country_modifier = neutrality
+                casus_belli = THIS
+                has_country_modifier = neutrality_modifier
                 relation = {
                     who = THIS
                     value = 100
@@ -735,7 +736,8 @@ country_event = {
                 colonial_nation = yes
                 civilized = yes
                 NOT = {
-                    has_country_modifier = neutrality
+                    casus_belli = THIS
+                    has_country_modifier = neutrality_modifier
                     relation = {
                         who = THIS
                         value = 100
@@ -827,7 +829,7 @@ country_event = {
 
 #######################################################################################################################
 
-# Fascist Aggression
+# Fascist Aggression - Living Space
 country_event = {
     id = 2570
     title = "EVTNAME2570"
@@ -836,21 +838,31 @@ country_event = {
 
     trigger = {
         government = fascist_dictatorship
-        any_neighbor_country = {
-            is_vassal = no
-            NOT = {
-                brigades_compare = 1
-                has_country_modifier = neutrality
-                alliance_with = THIS
-                truce_with = THIS
-                in_sphere = THIS
-                is_vassal = yes
+        any_owned_province = {
+            is_colonial = no
+            any_neighbor_province = {
+                NOT = { owned_by = THIS }
+                is_colonial = no
+                owner = {
+                    civilized = yes
+                    any_owned_province = { NOT = { is_core = THIS } }
+                    NOT = {
+                        brigades_compare = 1.5
+                        government = fascist_dictatorship
+                        has_country_modifier = neutrality_modifier
+                        alliance_with = THIS
+                        truce_with = THIS
+                        in_sphere = THIS
+                        is_vassal = yes
+                        #Add take vassal CB later on
+                    }
+                }
             }
-            any_owned_province = { is_colonial = no any_neighbor_province = { owned_by = THIS } }
         }
         NOT = {
-            badboy = 0.5
-            has_country_modifier = neutrality
+            is_disarmed = yes
+            badboy = 0.7
+            has_country_modifier = neutrality_modifier
             war_policy = pacifism
             has_country_flag = in_great_war
             has_country_modifier = no_more_war
@@ -877,55 +889,61 @@ country_event = {
         }
         modifier = {
             factor = 1.5
-            NOT = {
-                military_score = 75
-            }
+            NOT = { military_score = 75 }
         }
         modifier = {
             factor = 1.5
-            NOT = {
-                prestige = 20
-            }
+            NOT = { prestige = 20 }
         }
         modifier = {
             factor = 1.5
             average_militancy = 2
         }
+        modifier = {
+            factor = 1.5
+            badboy = 0.5
+        }
+        modifier = {
+            factor = 2
+            war = yes
+        }
     }
 
     option = {
         name = "EVTOPTA2570"
-        badboy = 2
-        random_country = {
+        random_list = {
+            25 = { badboy = 1 }
+            50 = { badboy = 2 }
+            25 = { badboy = 3 }
+        }
+        any_pop = {
             limit = {
-                is_vassal = no
-                neighbour = THIS
-                number_of_states = 4
-                NOT = {
-                    brigades_compare = 1
-                    has_country_modifier = neutrality
-                    alliance_with = THIS
-                    truce_with = THIS
-                    in_sphere = THIS
-                    is_vassal = yes
+                OR = {
+                    is_primary_culture = yes
+                    is_accepted_culture = yes
                 }
             }
-            relation = { who = THIS value = -50 }
-            leave_alliance = THIS
-            add_casus_belli = {
-                target = THIS
-                type = acquire_state
-                months = 12
+            dominant_issue = {
+                value = jingoism
+                factor = 0.05
             }
         }
         random_country = {
             limit = {
-                is_vassal = no
                 neighbour = THIS
-                NOT = { number_of_states = 4 }
+                civilized = yes
+                any_owned_province = { NOT = { is_core = THIS } }
+                any_owned_province = {
+                    is_colonial = no
+                    any_neighbor_province = {
+                        owned_by = THIS
+                        is_colonial = no
+                    }
+                }
                 NOT = {
-                    brigades_compare = 1
-                    has_country_modifier = neutrality
+                    brigades_compare = 1.5
+                    government = fascist_dictatorship
+                    has_country_modifier = neutrality_modifier
                     alliance_with = THIS
                     truce_with = THIS
                     in_sphere = THIS
@@ -933,20 +951,102 @@ country_event = {
                 }
             }
             relation = { who = THIS value = -50 }
-            leave_alliance = THIS
-            add_casus_belli = {
-                target = THIS
-                type = conquest
-                months = 12
+            country_event = 2571
+        }
+        ai_chance = {
+            factor = 80
+        }
+    }
+
+    option = {
+        name = "EVTOPTB2570"
+        prestige_factor = -0.05
+        any_pop = {
+            limit = {
+                OR = {
+                    is_primary_culture = yes
+                    is_accepted_culture = yes
+                }
+            }
+            scaled_militancy = {
+                ideology = fascist
+                factor = 4
+            }
+            scaled_militancy = {
+                issue = jingoism
+                factor = 4
+            }
+        }
+        ai_chance = {
+            factor = 20
+        }
+    }
+}
+
+# Fascist Aggression - Answer from State
+country_event = {
+    id = 2571
+    title = "EVTNAME2571"
+    desc = "EVTDESC2571"
+    picture = "Parade"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA2571"
+        random_owned = {
+            limit = {
+                owner = {
+                    number_of_states = 4
+                    colonial_nation = no
+                }
+            }
+            owner = {
+                add_casus_belli = {
+                    target = FROM
+                    type = acquire_state
+                    months = 12
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { number_of_states = 4 }
+                }
+            }
+            owner = {
+                add_casus_belli = {
+                    target = FROM
+                    type = conquest
+                    months = 12
+                }
+            }
+        }
+        #One (non colonial) state, many colonies
+        random_owned = {
+            limit = {
+                owner = {
+                    number_of_states = 4
+                    colonial_nation = yes
+                }
+            }
+            owner = {
+                add_casus_belli = {
+                    target = FROM
+                    type = place_in_the_sun
+                    months = 12
+                }
             }
         }
     }
 }
 
+
 #########################################################
-#                                                       #
+#                                                        #
 #                   Gain Core Events                    #
-#                                                       #
+#                                                        #
 #########################################################
 
 province_event = {
@@ -955,8 +1055,6 @@ province_event = {
     desc = "EVTDESC2600"
 
     trigger = {
-        owner = { is_substate = no }
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
         NOT = {
             is_core = THIS
             has_province_modifier = core_integration
@@ -973,6 +1071,8 @@ province_event = {
         }
         any_neighbor_province = { is_core = THIS }
         owner = {
+            NOT = { has_country_modifier = interment_camps }
+            is_substate = no
             civilized = yes
             is_vassal = no
             war = no
@@ -1124,7 +1224,9 @@ province_event = {
 
     trigger = {
         has_province_modifier = core_integration
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
+        owner = {
+            NOT = { has_country_modifier = interment_camps }
+        }
         is_core = THIS
     }
 
@@ -1152,7 +1254,6 @@ province_event = {
     desc = "EVTDESC2605"
 
     trigger = {
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
         has_province_modifier = core_integration
         NOT = {
             is_core = THIS
@@ -1167,6 +1268,7 @@ province_event = {
         }
         any_neighbor_province = { is_core = THIS }
         owner = {
+            NOT = { has_country_modifier = interment_camps }
             civilized = yes
             war = no
         }
@@ -1210,9 +1312,9 @@ province_event = {
 }
 
 #########################################################
-#                                                       #
-#                   Remove Core Events                  #
-#                                                       #
+#                                                        #
+#                   Remove Core Events                    #
+#                                                        #
 #########################################################
 
 province_event = {
@@ -1221,8 +1323,6 @@ province_event = {
     desc = "EVTDESC2610"
 
     trigger = {
-        owner = { is_substate = no }
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
         is_core = THIS
         is_overseas = no
         any_core = {
@@ -1255,9 +1355,13 @@ province_event = {
         is_colonial = no
         owner = {
             war = no
+            is_substate = no
             civilized = yes
             is_vassal = no
-            NOT = { citizens_rights = all_voting_pops }
+            NOT = {
+                citizens_rights = all_voting_pops
+                has_country_modifier = interment_camps
+            }
         }
     }
 
@@ -1447,6 +1551,10 @@ country_event = {
     option = {
         name = "EVT2611OPTA"
         any_owned = {
+            limit = { has_province_modifier = core_integration }
+            remove_province_modifier = core_integration
+        }
+        any_owned = {
             limit = { has_province_modifier = national_assimilation }
             remove_province_modifier = national_assimilation
             remove_province_modifier = national_assimilation_rejection
@@ -1490,7 +1598,9 @@ province_event = {
 
     trigger = {
         has_province_modifier = national_assimilation
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
+        owner = {
+            NOT = { has_country_modifier = interment_camps }
+        }
         OR = {
             NOT = { is_core = THIS }
             NOT = {
@@ -1538,7 +1648,6 @@ province_event = {
 
     trigger = {
         is_core = THIS
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
         any_core = {
             exists = yes
             NOT = { tag = THIS }
@@ -1552,7 +1661,10 @@ province_event = {
         owner = {
             civilized = yes
             war = no
-            NOT = { citizens_rights = all_voting_pops }
+            NOT = {
+                citizens_rights = all_voting_pops
+                has_country_modifier = interment_camps
+            }
         }
     }
 
@@ -1742,14 +1854,16 @@ province_event = {
     desc = "EVTDESC2616"
 
     trigger = {
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
         has_province_modifier = national_assimilation_rejection
         NOT = { has_province_modifier = nationalist_agitation }
         controlled_by = THIS
         owner = {
             civilized = yes
             war = no
-            NOT = { citizens_rights = all_voting_pops }
+            NOT = {
+                citizens_rights = all_voting_pops
+                has_country_modifier = interment_camps
+            }
         }
     }
 
@@ -1841,7 +1955,6 @@ province_event = {
     desc = "EVTDESC2620"
 
     trigger = {
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
         is_core = THIS
         any_core = {
             exists = yes
@@ -1859,7 +1972,10 @@ province_event = {
         owner = {
             civilized = yes
             war = no
-            NOT = { citizens_rights = all_voting_pops }
+            NOT = {
+                citizens_rights = all_voting_pops
+                has_country_modifier = interment_camps
+            }
         }
     }
 
@@ -1939,7 +2055,6 @@ province_event = {
     desc = "EVTDESC2625"
 
     trigger = {
-        owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
         is_core = THIS
         any_core = {
             exists = yes
@@ -1961,8 +2076,11 @@ province_event = {
         owner = {
             civilized = yes
             war = no
-            NOT = { citizens_rights = all_voting_pops }
-            NOT = { badboy = 0.92 }
+            NOT = {
+                citizens_rights = all_voting_pops
+                has_country_modifier = interment_camps
+                badboy = 0.92
+            }
         }
     }
 
@@ -2145,9 +2263,9 @@ country_event = {
 }
 
 #########################################################
-#                                                       #
-#               Territorial Loss Events                 #
-#                                                       #
+#                                                        #
+#               Territorial Loss Events                    #
+#                                                        #
 #########################################################
 
 country_event = {

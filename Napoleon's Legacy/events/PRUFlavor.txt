@@ -744,7 +744,7 @@ country_event = {
         add_country_modifier = {
             name = new_constitution
             duration = 7300
-            }
+        }
         political_reform = wealth_weighted_voting
         political_reform = free_press
         political_reform = yes_meeting
@@ -752,13 +752,14 @@ country_event = {
         political_reform = mandatory_service
         social_reform = trinket_health_care
         any_pop = { militancy = -4 }
-        any_pop = { scaled_militancy = {
-            factor = 3
-            ideology = reactionary
-                }
+        any_pop = {
+            scaled_militancy = {
+                factor = 3
+                ideology = reactionary
             }
-        ai_chance = { factor = 90 }
         }
+        ai_chance = { factor = 90 }
+    }
 
     option = {
         name = "EVTOPTB34612"

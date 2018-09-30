@@ -16,7 +16,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 1200
+        months = 800
         modifier = {
             factor = 0.9
             unemployment = 0.1
@@ -482,37 +482,68 @@ country_event = {
 
     option = {
         name = "EVTOPTA22581" #Mercantilism
-        add_country_modifier = { name = mercantilism duration = 3650 }
+        random_owned = {
+            limit = {
+                owner = {
+                    OR = {
+                        has_country_flag = russian_country
+                        tag = TUR
+                    }
+                    ai = yes
+                }
+            }
+            owner = { add_country_modifier = { name = russian_protectionism duration = 3650 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    OR = {
+                        NOT = {
+                            has_country_flag = russian_country
+                            tag = TUR
+                        }
+                        ai = no
+                    }
+                }
+            }
+            owner = { add_country_modifier = { name = mercantilism duration = 3650 } }
+        }
         ai_chance = {
             factor = 70
             modifier = {
-                factor = 2
+                factor = 5
                 NOT = { money = 50000 }
-                OR = {
-                    tag = AUS
-                    tag = KUK
-                    tag = DNB
-                    tag = TUR
-                    tag = RUS
-                }
+                is_greater_power = yes
+            }
+            modifier = {
+                factor = 10
+                NOT = { money = 20000 }
+                is_secondary_power = yes
+            }
+            modifier = {
+                factor = 1.5
+                NOT = { money = 10000 }
             }
             modifier = {
                 factor = 2
                 NOT = { money = 5000 }
             }
             modifier = {
-                factor = 1.2
-                NOT = { money = 20000 }
-            }
-            modifier = {
-                factor = 1.3
-                NOT = { money = 50000 }
+                factor = 1.5
+                NOT = { industrial_score = 10 }
             }
             modifier = {
                 factor = 1.1
                 OR = {
                     is_greater_power = yes
                     is_secondary_power = yes
+                }
+            }
+            modifier = {
+                factor = 2
+                OR = {
+                    has_country_flag = russian_country
+                    tag = TUR
                 }
             }
             modifier = {
@@ -662,17 +693,14 @@ country_event = {
                 }
             }
             modifier = {
-                factor = 1.5
+                factor = 5
                 NOT = { money = 200000 }
-                OR = {
-                    tag = AUS
-                    tag = KUK
-                    tag = DNB
-                    tag = TUR
-                    tag = RUS
-                    tag = TSA
-                    tag = USA
-                }
+                is_greater_power = yes
+            }
+            modifier = {
+                factor = 10
+                NOT = { money = 50000 }
+                is_secondary_power = yes
             }
             modifier = {
                 factor = 1.5
@@ -730,7 +758,26 @@ country_event = {
     #Mercantilism
     option = {
         name = "EVTOPTA22581"
-        add_country_modifier = { name = mercantilism duration = 3650 }
+        random_owned = {
+            limit = {
+                owner = {
+                    OR = {
+                        NOT = { has_country_flag = russian_country }
+                        ai = no
+                    }
+                }
+            }
+            owner = { add_country_modifier = { name = mercantilism duration = 3650 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    has_country_flag = russian_country
+                    ai = yes
+                }
+            }
+            owner = { add_country_modifier = { name = russian_protectionism duration = 3650 } }
+        }
         ai_chance = {
             factor = 30
             modifier = {
@@ -926,10 +973,42 @@ country_event = {
     }
 
     option = {
+        name = "EVTOPTD22584" #Non-Interventionism
+        add_country_modifier = { name = non_interventionism_trade_policy duration = 3650 }
+        ai_chance = {
+            factor = 40
+            modifier = {
+                factor = 1.1
+                nationalvalue = nv_productivity
+            }
+            modifier = {
+                factor = 1.2
+                nationalvalue = nv_liberty
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 10000 }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 20000 }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 30000 }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 40000 }
+            }
+        }
+    }
+
+    option = {
         name = "EVTOPTB22581" #No policy
         add_country_modifier = { name = no_trade_policy_set duration = 3650 }
         ai_chance = {
-            factor = 70
+            factor = 30
             modifier = {
                 factor = 2
                 NOT = { ruling_party_ideology = liberal }
@@ -942,7 +1021,7 @@ country_event = {
                     tag = KUK
                     tag = DNB
                     tag = TUR
-                    tag = RUS
+                    has_country_flag = russian_country
                     tag = USA
                 }
             }
@@ -1115,10 +1194,42 @@ country_event = {
     }
 
     option = {
+        name = "EVTOPTD22584" #Non-Interventionism
+        add_country_modifier = { name = non_interventionism_trade_policy duration = 3650 }
+        ai_chance = {
+            factor = 25
+            modifier = {
+                factor = 1.1
+                nationalvalue = nv_productivity
+            }
+            modifier = {
+                factor = 1.2
+                nationalvalue = nv_liberty
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 10000 }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 20000 }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 30000 }
+            }
+            modifier = {
+                factor = 1.1
+                NOT = { money = 40000 }
+            }
+        }
+    }
+
+    option = {
         name = "EVTOPTB22581" #No policy
         add_country_modifier = { name = no_trade_policy_set duration = 3650 }
         ai_chance = {
-            factor = 50
+            factor = 25
             modifier = {
                 factor = 2
                 NOT = { ruling_party_ideology = liberal }
@@ -1131,7 +1242,7 @@ country_event = {
                     tag = KUK
                     tag = DNB
                     tag = TUR
-                    tag = RUS
+                    has_country_flag = russian_country
                     tag = USA
                 }
             }
@@ -1209,3 +1320,213 @@ country_event = {
         ai_chance = { factor = 0 }
     }
 }
+
+#Disrepair - Naval Bases
+province_event = {
+    id = 22590
+    title = "EVTNAME22590"
+    desc = "EVTDESC22590"
+
+    trigger = {
+        NOT = { has_province_modifier = in_disrepair }
+        has_building = naval_base
+        owner = {
+            OR = {
+                has_country_modifier = in_bankrupcy
+                has_country_modifier = generalised_debt_default
+            }
+        }
+    }
+
+    allow_multiple_instances = no
+
+    mean_time_to_happen = {
+        months = 400
+        modifier = {
+            factor = 0.9
+            owner = { colonial_nation = yes }
+        }
+        modifier = {
+            factor = 0.9
+            owner = { economic_policy = laissez_faire }
+        }
+    }
+
+    option = {
+        name = "EVT22590OPTA"
+        naval_base = -1
+        add_province_modifier = { name = in_disrepair duration = 545 }
+    }
+}
+
+#Disrepair - Railways
+province_event = {
+    id = 22591
+    title = "EVTNAME22591"
+    desc = "EVTDESC22591"
+
+    trigger = {
+        NOT = { has_province_modifier = in_disrepair }
+        has_building = railroad
+        owner = {
+            OR = {
+                has_country_modifier = in_bankrupcy
+                has_country_modifier = generalised_debt_default
+            }
+        }
+    }
+
+    allow_multiple_instances = no
+
+    mean_time_to_happen = {
+        months = 600
+        modifier = {
+            factor = 0.9
+            owner = { colonial_nation = yes }
+        }
+        modifier = {
+            factor = 0.9
+            owner = { economic_policy = laissez_faire }
+        }
+    }
+
+    option = {
+        name = "EVT22590OPTA"
+        state_scope = {
+            infrastructure = -1
+            add_province_modifier = { name = in_disrepair duration = 545 }
+        }
+    }
+}
+
+#Disrepair - Railways
+province_event = {
+    id = 22592
+    title = "EVTNAME22592"
+    desc = "EVTDESC22592"
+
+    trigger = {
+        NOT = { has_province_modifier = in_disrepair }
+        has_building = fort
+        owner = {
+            OR = {
+                has_country_modifier = in_bankrupcy
+                has_country_modifier = generalised_debt_default
+            }
+        }
+    }
+
+    allow_multiple_instances = no
+
+    mean_time_to_happen = {
+        months = 600
+        modifier = {
+            factor = 0.9
+            owner = { colonial_nation = yes }
+        }
+        modifier = {
+            factor = 0.9
+            owner = { economic_policy = laissez_faire }
+        }
+    }
+
+    option = {
+        name = "EVT22590OPTA"
+        state_scope = {
+            fort = -1
+            add_province_modifier = { name = in_disrepair duration = 545 }
+        }
+    }
+}
+
+# # Inflation
+# country_event = {
+    # id = 22590
+    # title = "EVTNAME22590"
+    # desc = "EVTDESC22590"
+    # picture = "private_banks"
+
+    # trigger = {
+        # money = 5000000
+        # ai = yes
+        # NOT = {
+            # has_country_modifier = high_inflation_1
+            # has_country_modifier = high_inflation_2
+            # has_country_modifier = high_inflation_3
+        # }
+    # }
+
+    # mean_time_to_happen = {
+        # months = 60
+        # modifier = {
+            # factor = 0.9
+            # money = 5000000
+        # }
+        # modifier = {
+            # factor = 0.9
+            # money = 5500000
+        # }
+        # modifier = {
+            # factor = 0.9
+            # money = 6000000
+        # }
+        # modifier = {
+            # factor = 0.9
+            # money = 6500000
+        # }
+        # modifier = {
+            # factor = 0.9
+            # money = 7000000
+        # }
+        # modifier = {
+            # factor = 0.9
+            # money = 7500000
+        # }
+        # modifier = {
+            # factor = 0.9
+            # money = 8000000
+        # }
+        # modifier = {
+            # factor = 0.5
+            # money = 10000000
+        # }
+    # }
+
+    # option = {
+        # name = "EVTOPTA22590"
+        # random_owned = {
+            # limit = {
+                # owner = {
+                    # NOT = {
+                        # has_country_modifier = high_inflation_1
+                        # has_country_modifier = high_inflation_2
+                        # has_country_modifier = high_inflation_3
+                    # }
+                # }
+            # }
+            # owner = { add_country_modifier = { name = high_inflation_1 duration = 3650 } }
+        # }
+        # random_owned = {
+            # limit = {
+                # owner = {
+                    # has_country_modifier = high_inflation_1
+                    # NOT = { has_country_modifier = high_inflation_3 }
+                # }
+            # }
+            # owner = {
+                # remove_country_modifier = high_inflation_1
+                # add_country_modifier = { name = high_inflation_2 duration = 3650 }
+            # }
+        # }
+        # random_owned = {
+            # limit = {
+                # owner = { has_country_modifier = high_inflation_2 }
+            # }
+            # owner = {
+                # remove_country_modifier = high_inflation_1
+                # remove_country_modifier = high_inflation_2
+                # add_country_modifier = { name = high_inflation_3 duration = 3650 }
+            # }
+        # }
+    # }
+# }

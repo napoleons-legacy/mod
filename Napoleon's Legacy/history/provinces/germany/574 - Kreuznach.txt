@@ -1,7 +1,7 @@
 owner = FRA
 controller = FRA
 add_core = FRA
-add_core = PAL
+add_core = RHI
 add_core = GER
 trade_goods = iron
 life_rating = 40

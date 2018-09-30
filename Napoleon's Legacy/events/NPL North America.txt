@@ -9,20 +9,15 @@ country_event = {
 
     fire_only_once = yes
 
+    # TODO: trigger for when LOU is released at the start?
     trigger = {
         tag = USA
         13 = {
-            OR = {
-                owned_by = USA
-                owned_by = CAN
-            }
+            owned_by = CAN
         }
 
-        111 = {
-            OR = {
-                owned_by = USA
-                owned_by = CAN
-            }
+        113 = {
+            owned_by = USA
         }
 
         NOT = {
@@ -30,6 +25,7 @@ country_event = {
             has_country_flag = oregon_treaty
         }
 
+        # TODO: remove this flag?
         has_country_flag = hasmanifestdestiny
 
         OR = {
@@ -61,12 +57,9 @@ country_event = {
         set_country_flag = oregon_treaty
         CAN = { country_event = 44154 }
         badboy = 5
-        USA_78 = { add_core = USA }
-        USA_81 = { add_core = USA }
 
-        CAN_13 = { add_core = USA }
-        2627 = { remove_core = USA }
-        18 = { remove_core = USA } # Only 54th parallel, let them keep Stikine though, makes life easier
+        COL = { all_core = { add_core = CAN } }
+        COL = { all_core = { add_core = USA } }
 
         any_pop = {
             dominant_issue = {
@@ -112,6 +105,7 @@ country_event = {
     option = {
         name = "EVT44150OPTB"
         set_country_flag = oregon_treaty
+
         USA_78 = { add_core = USA }
         USA_81 = { add_core = USA }
 
@@ -146,6 +140,9 @@ country_event = {
         name = "EVT44150OPTC"
         set_country_flag = oregon_treaty
         CAN = { country_event = 44156 }
+
+        USA_81 = { add_core = USA }
+
         any_pop = {
             scaled_consciousness = {
                 issue = jingoism
@@ -162,7 +159,7 @@ country_event = {
     }
 }
 
-# The Columbia District
+# The Columbia District, CAN sees request to split fairly
 country_event = {
     id = 44151
     title = "EVTNAME44151"
@@ -180,6 +177,7 @@ country_event = {
 
         USA_78 = { remove_core = CAN }
         USA_81 = { remove_core = CAN }
+        CAN_13 = { remove_core = COL }
 
         any_owned = {
             limit = {
@@ -218,7 +216,7 @@ country_event = {
         name = "EVT44151OPTB"
         badboy = 5
         prestige = 10
-
+        COL = { all_core = { add_core = CAN } }
         leave_alliance = USA
         USA = { country_event = 44153 }
         ai_chance = {
@@ -267,7 +265,23 @@ country_event = {
         prestige = 10
         relation = { who = CAN value = 100 }
 
-        set_country_flag = peaceful_oregon_treaty
+        any_owned = {
+            limit = {
+                OR = {
+                    region = CAN_13
+                    region = ENG_22
+                }
+                NOT = {
+                    province_id = 38
+                }
+            }
+            remove_core = USA
+            secede_province = CAN
+        }
+
+        COL = { all_core = { remove_core = CAN } }
+
+        set_global_flag = peaceful_oregon_treaty
 
         any_pop = {
             scaled_consciousness = {
@@ -301,9 +315,14 @@ country_event = {
         prestige = -20
         relation = { who = CAN value = -50 }
 
-        USA_78 = { remove_core = USA }
-        USA_81 = { remove_core = USA }
-        CAN_13 = { remove_core = USA }
+        any_owned = {
+            limit = {
+                is_core = COL
+            }
+            secede_province = CAN
+        }
+
+        COL = { all_core = { remove_core = USA } }
 
         any_pop = {
             scaled_militancy = {
@@ -329,6 +348,10 @@ country_event = {
         name = "EVT44153OPTB"
         prestige = 5
         relation = { who = CAN value = -100 }
+
+        COL = { all_core = { add_core = USA } }
+        COL = { all_core = { add_core = CAN } }
+
         any_pop = {
             scaled_consciousness = {
                 issue = jingoism
@@ -389,18 +412,17 @@ country_event = {
         prestige = -20
         USA = { country_event = 44155 }
         relation = { who = USA value = 50 }
-        any_owned = {
-            limit = {
-                OR = {
-                    region = USA_78
-                    region = USA_81
-                    region = CAN_13
-                }
-                is_core = USA
-            }
 
-            remove_core = CAN
+        COL = { all_core = { remove_core = CAN } }
+        any_owned = {
+            limit = { is_core = COL }
             secede_province = USA
+        }
+
+        COL = {
+            primary_culture = dixie
+            remove_accepted_culture = anglo_canadian
+            remove_accepted_culture = french_canadian
         }
 
         ai_chance = {
@@ -505,6 +527,8 @@ country_event = {
         }
 
         USA_81 = { secede_province = USA }
+        CAN_13 = { remove_core = COL }
+        USA_78 = { remove_core = COL }
 
         USA = { country_event = 44152 }
         any_pop = {
@@ -543,6 +567,9 @@ country_event = {
 
         leave_alliance = USA
         USA = { country_event = 44153 }
+
+        COL = { all_core = { add_core = CAN } }
+
         ai_chance = {
             factor = 5
             modifier = {
@@ -569,62 +596,59 @@ country_event = {
     }
 }
 
-# The British Cession
+# The British Cession, originally 44157, HPM added Hawaiian event that overlaps
 country_event = {
-    id = 44157
-    title = "EVTNAME44157"
-    desc = "EVTDESC44157"
+    id = 44183
+    title = "EVTNAME44183"
+    desc = "EVTDESC44183"
     picture = "treaty"
 
     is_triggered_only = yes
 
     # Accept the cession
     option = {
-        name = "EVT44157OPTA"
+        name = "EVT44183OPTA"
 
         relation = {
             who = CAN
             value = 100
         }
 
+        # May have duplicate add_core when tag = LOU, but this handles the tag = USA
+        # Adjust the tags for Louisiana no matter what.
         157 = {
             remove_core = CAN
-            add_core = USA
-            secede_province = USA
+            remove_core = MTC
+            add_core = LOU
+            add_core = THIS
+            secede_province = THIS
         }
 
         118 = {
             remove_core = CAN
-            add_core = USA
-            secede_province = USA
+            remove_core = MTC
+            add_core = LOU
+            add_core = THIS
+            secede_province = THIS
         }
 
-        2684 = {
-            secede_province = CAN
-            remove_core = INC
-        }
-        2684 = { secede_province = USA }
-
-        # 35 and 38 are the US owned lands above the parallel
+        # 35 and 38 are the owned lands above the parallel
         35 = {
-            remove_core = USA
+            remove_core = THIS
+            remove_core = LOU
             add_core = CAN
+            add_core = MTC
             secede_province = CAN
         }
 
         38 = {
-            remove_core = USA
+            remove_core = THIS
+            remove_core = LOU
             add_core = CAN
+            add_core = MTC
             secede_province = CAN
 
             change_province_name = "Fort York"
-        }
-
-        # Grand Portage
-        158 = {
-            remove_core = CAN
-            add_core = USA
-            secede_province = USA
         }
 
         ai_chance = {
@@ -634,7 +658,7 @@ country_event = {
 
     # Do nothing
     option = {
-        name = "EVT44157OPTB"
+        name = "EVT44183OPTB"
         prestige = 5
         relation = {
             who = CAN
@@ -660,7 +684,7 @@ country_event = {
             NOT = { has_country_flag = imperial_cession }
         }
 
-        has_country_flag = peaceful_oregon_treaty
+        has_global_flag = peaceful_oregon_treaty
     }
 
     mean_time_to_happen = {
@@ -696,16 +720,253 @@ country_event = {
 
     option = {
         name = "EVT44158OPTA"
-        USA = { country_event = 44157 }
+        USA = { country_event = 44183 }
         ai_chance = {
             factor = 90
         }
     }
 
     option = {
-        name = "EVT44158OPTb"
+        name = "EVT44158OPTB"
         ai_chance = {
             factor = 10
+        }
+    }
+}
+
+# TODO something to let the INC participate
+
+# The fate of the Native Confederation
+country_event = {
+    id = 44170
+    title = "EVTNAME44170"
+    desc = "EVTDESC44170"
+    picture = "treaty"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = CAN
+        INC = {
+            exists = yes
+            civilized = no
+        }
+
+        state_n_government = 1
+    }
+
+    mean_time_to_happen = {
+        months = 12
+        modifier = {
+            factor = 0.5
+            has_global_flag = peaceful_oregon_treaty
+        }
+
+        modifier = {
+            factor = 0.25
+            year = 1848
+        }
+    }
+
+    # Split the Native Confederation, give pieces to whoever wants it
+    option = {
+        name = "EVT44170OPTA"
+
+        badboy = 2
+
+        INC = {
+            all_core = {
+                add_core = CAN
+            }
+        }
+
+        inherit = INC
+
+        USA = { country_event = 44171 }
+        NEN = { country_event = 44172 }
+
+        ai_chance = {
+            factor = 80
+        }
+    }
+
+    # British annex all of Native Confederation
+    option = {
+        name = "EVT44170OPTB"
+
+        badboy = 4
+
+        relation = {
+            who = NEN
+            value = -20
+        }
+
+        relation = {
+            who = USA
+            value = -50
+        }
+
+        INC = {
+            all_core = {
+                add_core = CAN
+            }
+        }
+
+        inherit = INC
+
+        USA = { country_event = 44173 }
+
+        ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+        }
+    }
+}
+
+# USA offered Illinois and Miami, if they drop claims
+country_event = {
+    id = 44171
+    title = "EVTNAME44171"
+    desc = "EVTDESC44171"
+    picture = "treaty"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    # Accept and lose all claims
+    option = {
+        name = "EVT44171OPTA"
+        all_core = {
+            limit = {
+                OR = {
+                    region = USA_162
+                    region = USA_176
+                    region = USA_178
+                    province_id = 2684
+                    province_id = 158
+                }
+            }
+
+            remove_core = USA
+        }
+
+        USA_168 = { secede_province = USA remove_core = CAN }
+        USA_170 = { secede_province = USA remove_core = CAN }
+
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                is_greater_power = yes
+            }
+        }
+    }
+
+    # British keep these two states, USA keeps all acquire_all_cores
+    # Ohio is removed as a US core if New England takes it though, since
+    # US claims in this area are there just for no assimilation. Resolved in 1st ACW Conflict.
+    option = {
+        name = "EVT44171OPTB"
+
+        ai_chance = {
+            factor = 50
+        }
+    }
+}
+
+# New England offered Ohio for 10000
+country_event = {
+    id = 44172
+    title = "EVTNAME44171"
+    desc = "EVTDESC44172"
+    picture = "treaty"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    # Accept and pay
+    option = {
+        name = "EVT44171OPTA"
+
+        treasury = -10000
+        CAN = { treasury = 10000 }
+        USA_178 = {
+            remove_core = USA
+            remove_core = CAN
+            add_core = NEN
+            secede_province = NEN
+        }
+
+        ai_chance = {
+            factor = 70
+            modifier = {
+                factor = 0
+                NOT = { money = 20000 }
+            }
+        }
+    }
+
+    # Decline, British keep it
+    option = {
+        name = "EVT44171OPTB"
+        USA_178 = { add_core = CAN }
+
+        ai_chance = {
+            factor = 30
+        }
+    }
+}
+
+# British annex it all, USA reacts
+country_event = {
+    id = 44173
+    title = "EVTNAME44173"
+    desc = "EVTDESC44173"
+    picture = "treaty"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    # USA keeps their claims
+    option = {
+        name = "EVT44173OPTA"
+
+        relation = {
+            who = CAN
+            value = -100
+        }
+
+        ai_chance = {
+            factor = 95
+        }
+    }
+
+    # Allow the British to keep it all
+    option = {
+        name = "EVT44173OPTB"
+        CAN = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = USA_162
+                        region = USA_168
+                        region = USA_170
+                        region = USA_176
+                        region = USA_178
+                        province_id = 2684
+                        province_id = 158
+                    }
+                }
+
+                remove_core = USA
+            }
+        }
+
+        ai_chance = {
+            factor = 5
         }
     }
 }

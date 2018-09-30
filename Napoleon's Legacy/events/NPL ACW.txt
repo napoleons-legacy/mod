@@ -1,1 +1,1124 @@
 # American Civil War Chain
+
+### First Phase
+
+# Slave owner gets shot in Pennsylvania
+country_event = {
+    id = 44160
+    title = "EVTNAME44160"
+    desc = "EVTDESC44160"
+    picture = "knights_golden_circle"
+
+    trigger = {
+        tag = USA
+        year = 1850
+
+        OR = {
+            year = 1856
+            has_country_flag = hasmanifestdestiny
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 3
+        modifier = {
+            factor = 0.5
+            is_greater_power = yes
+        }
+    }
+
+    option = {
+        name = "EVT44160OPTA"
+        any_pop = {
+            limit = {
+                is_primary_culture = yes
+                strata = rich
+            }
+
+            consciousness = 1
+        }
+
+        NEN = { country_event = 44161 }
+    }
+}
+
+# New England gets the ultimatum and refuses, war starts
+country_event = {
+    id = 44161
+    title = "EVTNAME44160"
+    desc = "EVTDESC44160"
+    picture = "knights_golden_circle"
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT44161OPTA"
+        # A white peace means the war will restart after 5 years
+        # But, British intervention only happens once!
+        USA_219 = { add_core = NEN }
+        USA_223 = { add_core = USA }
+
+        set_global_flag = acw_first_phase
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = acquire_core_state
+                state_province_id = 219
+            }
+
+            defender_goal = {
+                casus_belli = acquire_core_state
+                state_province_id = 223
+            }
+
+            call_ally = no
+        }
+    }
+}
+
+# British Empire oversees the war
+country_event = {
+    id = 44162
+    title = "EVTNAME44162"
+    desc = "EVTDESC44162"
+    picture = "senate_debate"
+
+    trigger = {
+        tag = CAN
+
+        # Anything not in Pennsylvania is occupied
+        NEN = {
+            any_owned_province = {
+                NOT = {
+                    region = USA_223
+                    region = USA_178
+                }
+                controlled_by = USA
+            }
+
+            # above makes it implicit, but explicit is always better!
+            war_with = USA
+        }
+
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    # Join the war, puppeting New England on victory.
+    option = {
+        name = "EVT44162OPTA"
+        military_access = NEN
+        create_alliance = NEN
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+
+            defender_goal = {
+                casus_belli = status_quo
+            }
+
+            call_ally = no
+        }
+
+        set_country_flag = acw_empire_intervenes
+
+        ai_chance = {
+            factor = 95
+
+            modifier = {
+                factor = 0.1
+                NOT = { relation = { who = NEN value = 50 } }
+            }
+        }
+    }
+
+    # Do nothing
+    option = {
+        name = "EVT44162OPTB"
+        prestige = -5
+
+        ai_chance = {
+            factor = 5
+        }
+    }
+}
+
+# New England wins the war independently
+country_event = {
+    id = 44163
+    title = "EVTNAME44163"
+    desc = "EVTDESC44163"
+    picture = "treaty"
+
+    trigger = {
+        tag = NEN
+
+        USA = { has_recently_lost_war = yes }
+        USA_219 = { owned_by = NEN }
+        has_global_flag = acw_first_phase
+        NOT = {
+            CAN = { has_country_flag = acw_empire_intervenes }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = USA }
+        USA_223 = { remove_core = USA }
+
+        random_country = {
+            limit = {
+                179 = { owned_by = NEN }
+            }
+
+            USA = {
+                any_owned = {
+                    limit = {
+                        is_core = INC
+                    }
+
+                    add_core = NEN
+                    remove_core = USA
+                    secede_province = NEN
+                }
+            }
+        }
+
+        prestige = 10
+    }
+}
+
+# New England wins the war with help and are puppeted
+country_event = {
+    id = 44164
+    title = "EVTNAME44163"
+    desc = "EVTDESC44164"
+    picture = "treaty"
+
+    trigger = {
+        tag = CAN
+        has_country_flag = acw_empire_intervenes
+
+        USA = { has_recently_lost_war = yes }
+        USA_219 = { owned_by = NEN }
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        end_war = USA
+
+        USA_219 = { remove_core = USA }
+        USA_223 = { remove_core = USA }
+        create_vassal = NEN
+        NEN = {
+            any_owned = {
+                limit = {
+                    # all of maine
+                    OR = {
+                        province_id = 69
+                        province_id = 248
+                        province_id = 249
+                        province_id = 250
+                    }
+                }
+
+                remove_core = NEN
+                secede_province = CAN
+                add_core = CAN
+            }
+
+            prestige = -1000
+        }
+
+        # All of Northwest Territories
+        USA = {
+            any_owned = {
+                limit = {
+                    is_core = INC
+                }
+
+                add_core = CAN
+                remove_core = USA
+                secede_province = CAN
+            }
+        }
+
+        prestige = 10
+        set_country_flag = empire_puppets_nen
+    }
+}
+
+# New England loses the war
+country_event = {
+    id = 44165
+    title = "EVTNAME44165"
+    desc = "EVTDESC44165"
+    picture = "treaty"
+
+    trigger = {
+        tag = USA
+
+        NEN = { has_recently_lost_war = yes }
+        USA_223 = { owned_by = USA }
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = NEN }
+        USA_223 = { remove_core = NEN }
+
+        NEN = {
+            any_owned = {
+                limit = {
+                    is_core = INC
+                }
+
+                add_core = USA
+                remove_core = NEN
+                secede_province = USA
+            }
+        }
+
+        prestige = 10
+    }
+}
+
+### Final Phase
+
+# John Browns Raid happens
+country_event = {
+    id = 44166
+    title = "EVTNAME44166"
+    desc = "EVTDESC44166"
+    picture = "john_brown_raid"
+
+    trigger = {
+        tag = USA
+        war = no
+        year = 1859
+        NOT = { truce_with = NEN }
+
+        # Not a puppet
+        exists = NEN
+        NOT = {
+            CAN = {
+                has_country_flag = empire_puppets_nen
+                is_our_vassal = NEN
+            }
+        }
+
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    # Send demands to New England
+    option = {
+        name = "EVT44166OPTA"
+        any_pop = {
+            limit = {
+                is_primary_culture = yes
+                strata = rich
+            }
+
+            militancy = 2
+            consciousness = 2
+        }
+
+        relation = {
+            who = NEN
+            value = -100
+        }
+
+        NEN = { country_event = 44167 }
+    }
+}
+
+# New England gets demands
+country_event = {
+    id = 44167
+    title = "EVTNAME44166"
+    desc = "EVTDESC44167"
+    picture = "john_brown_raid"
+    major = yes
+
+    is_triggered_only = yes
+
+    # You can only refuse, the war must happen
+    option = {
+        name = "EVT44167OPTA"
+        # Just keep lowering their relations
+        relation = {
+            who = USA
+            value = -100
+        }
+
+        # New England is a puppet
+        random_country = {
+            limit = {
+                tag = CAN
+                has_country_flag = empire_puppets_nen
+                # is_our_vassal = NEN (may become a GP and ruin the chain)
+            }
+
+            # CAN declares war on USA
+            country_event = 44169
+        }
+
+        USA = { country_event = 44168 }
+    }
+}
+
+# USA declares war on New England, starting the Civil War
+country_event = {
+    id = 44168
+    title = "EVTNAME44168"
+    desc = "EVTDESC44168"
+    picture = "john_brown_raid"
+    major = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_global_flag = american_civil_war_has_happened
+    }
+
+    # War time
+    option = {
+        name = "EVT44168OPTA"
+
+        war = {
+            target = NEN
+            attacker_goal = {
+                casus_belli = civil_war
+            }
+
+            defender_goal = {
+                casus_belli = civil_war
+            }
+
+            call_ally = no
+        }
+    }
+}
+
+# British Empire declares war on USA, if NEN is a puppet.
+country_event = {
+    id = 44169
+    title = "EVTNAME44169"
+    desc = "EVTDESC44169"
+    picture = "john_brown_raid"
+
+    is_triggered_only = yes
+
+    immediate = {
+        release_vassal = NEN
+    }
+
+    # Fight the USA
+    option = {
+        name = "EVT44169OPTA"
+
+        military_access = NEN
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+
+            defender_goal = {
+                casus_belli = status_quo
+            }
+
+            call_ally = no
+        }
+
+        set_country_flag = british_intervention_acw
+
+        ai_chance = {
+            factor = 90
+        }
+    }
+
+    # Do nothing
+    option = {
+        name = "EVT44169OPTB"
+        prestige = -20
+        relation = {
+            who = USA
+            value = 100
+        }
+
+        relation = {
+            who = NEN
+            value = -200
+        }
+
+        ai_chance = {
+            factor = 10
+        }
+    }
+}
+
+### The War is Over
+
+# TODO: should we have this become immediately triggerable
+# by creating a custom CB?
+
+## USA Victory Chain
+
+# USA wins the war
+country_event = {
+    id = 44174
+    title = "EVTNAME44174"
+    desc = "EVTDESC44174"
+    picture = "treaty"
+
+    fire_only_once = yes
+
+    trigger = {
+        war = no
+        NOT = { exists = NEN }
+        has_global_flag = american_civil_war_has_happened
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    # Get their cores, and get some things from the empire if they intervene
+    option = {
+        name = "EVT44174OPTA"
+
+        prestige = 10
+
+        NEN = { all_core = { add_core = USA } }
+
+        set_global_flag = american_reconstruction
+
+        random_country = {
+            limit = {
+                tag = CAN
+                has_country_flag = acw_empire_intervenes
+            }
+
+            # Tell the Empire they lost the war
+            CAN = { country_event = 44175 }
+
+            # Give the USA an event letting them choose what to take
+            USA = { country_event = 44176 }
+        }
+    }
+}
+
+# British are notified of their loss, ending the war with the USA
+country_event = {
+    id = 44175
+    title = "EVTNAME44175"
+    desc = "EVTDESC44175"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44175OPTA"
+        prestige = -5
+    }
+}
+
+## The United States - British Empire Peace Treaty
+
+# Eastern half of the USA resolved
+country_event = {
+    id = 44176
+    title = "EVTNAME44176"
+    desc = "EVTDESC44176"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Take the Northwest Territory and Maine (if possible), continue on
+    option = {
+        name = "EVT44176OPTA"
+
+        CAN = {
+            # Transfer anything they own in the area to the USA
+            any_owned = {
+                limit = {
+                    OR = {
+                        # Northwest Territory
+                        is_core = INC
+                        # Maine
+                        province_id = 248
+                        province_id = 249
+                        province_id = 250
+                        province_id = 69
+                    }
+                }
+
+                secede_province = USA
+            }
+
+            # Fix Maine
+            all_core = {
+                limit = {
+                    OR = {
+                        # Maine
+                        province_id = 248
+                        province_id = 249
+                        province_id = 250
+                        province_id = 69
+                    }
+                }
+
+                remove_core = CAN
+                add_core = NEN
+                add_core = USA
+                secede_province = USA
+            }
+
+            # Swap the cores
+            all_core = {
+                limit = {
+                    # Northwest Territory
+                    is_core = INC
+                }
+
+                remove_core = CAN
+                add_core = USA
+            }
+        }
+
+        random_country = {
+            # Countries must differ
+            limit = {
+                ai = yes
+                NOT = { tag = USA }
+                USA = { owns = 115 }
+            }
+
+            USA = { country_event = 44177 }
+        }
+    }
+
+    # Stop the treaty here
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -6
+    }
+}
+
+# Prompt to set the border to the 49th parallel
+country_event = {
+    id = 44177
+    title = "EVTNAME44177"
+    desc = "EVTDESC44176"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Correct the borders and move on
+    # Duplicated from event 44182 in "NPL North America.txt"
+    option = {
+        name = "EVT44177OPTA"
+
+        157 = {
+            remove_core = CAN
+            remove_core = MTC
+            add_core = LOU
+            add_core = THIS
+            secede_province = THIS
+        }
+
+        118 = {
+            remove_core = CAN
+            remove_core = MTC
+            add_core = LOU
+            add_core = THIS
+            secede_province = THIS
+        }
+
+        # 35 and 38 are the owned lands above the parallel
+        35 = {
+            remove_core = THIS
+            remove_core = LOU
+            add_core = CAN
+            add_core = MTC
+            secede_province = CAN
+        }
+
+        38 = {
+            remove_core = THIS
+            remove_core = LOU
+            add_core = CAN
+            add_core = MTC
+            secede_province = CAN
+
+            change_province_name = "Fort York"
+        }
+
+        random_country = {
+            limit = {
+                tag = CAN
+                owns = 13
+            }
+
+            THIS = { country_event = 44178 }
+        }
+    }
+
+    # Don't set the borders and move on
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -1
+    }
+}
+
+# Western half of the USA resolved
+country_event = {
+    id = 44178
+    title = "EVTNAME44178"
+    desc = "EVTDESC44176"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Take 49th parallel and move onto Caribbean
+    option = {
+        name = "EVT44178OPTA"
+
+        USA_78 = { add_core = USA remove_core = CAN }
+        USA_81 = { add_core = USA remove_core = CAN }
+
+        CAN = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = USA_78
+                        region = USA_81
+                    }
+                }
+
+                secede_province = USA
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = CAN
+
+                OR = {
+                    owns = 2190
+                    owns = 2217
+                    owns = 203
+                    owns = 2219
+                    owns = 2224
+                    owns = 2228
+                    owns = 2239
+                }
+            }
+
+            THIS = { country_event = 44179 }
+        }
+    }
+
+    # Take 54th parallel and move onto Caribbean
+    option = {
+        name = "EVT44178OPTB"
+        badboy = 4
+
+        USA_78 = { add_core = USA remove_core = CAN }
+        USA_81 = { add_core = USA remove_core = CAN }
+        CAN_13 = { add_core = USA remove_core = CAN }
+        2629 = { remove_core = USA add_core = CAN }
+        18 = { remove_core = USA add_core = CAN }
+
+        CAN = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = USA_78
+                        region = USA_81
+                        region = CAN_13
+                    }
+
+                    NOT = {
+                        OR = {
+                            province_id = 18
+                            province_id = 2629
+                        }
+                    }
+                }
+
+                secede_province = USA
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = CAN
+
+                OR = {
+                    owns = 2190
+                    owns = 2217
+                    owns = 203
+                    owns = 2219
+                    owns = 2224
+                    owns = 2228
+                    owns = 2239
+                }
+            }
+
+            THIS = { country_event = 44179 }
+        }
+    }
+
+    # Stop the treaty
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -3
+    }
+}
+
+# Seize the Caribbean
+country_event = {
+    id = 44179
+    title = "EVTNAME44179"
+    desc = "EVTDESC44176"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Correct the borders and move on to the Caribbean
+    option = {
+        name = "EVT44179OPTA"
+        badboy = 4
+
+        CAN = {
+            any_owned = {
+                limit = {
+                    OR ={
+                        region = ENG_203
+                        region = ENG_2224
+                        region = ENG_2228
+                        region = HAI_2213
+                        region = SPA_2209
+                        region = ENG_1979
+                        region = UCA_2186
+                    }
+                }
+
+                secede_province = THIS
+            }
+        }
+    }
+
+    # Stop the treaty
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -2
+    }
+}
+
+## NEN Victory Chain
+country_event = {
+    id = 44180
+    title = "EVTNAME44175"
+    desc = "EVTDESC44180"
+    picture = "treaty"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = NEN
+        war = no
+        NOT = { exists = USA }
+        has_global_flag = american_civil_war_has_happened
+        NOT = { CAN = { has_country_flag = british_intervention_acw } }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    # Partition the United States for reintegration
+    option = {
+        name = "EVT44180OPTA"
+
+        USA = { all_core = { add_core = NEN } }
+        USA = { all_core = { remove_core = USA } }
+
+        USA_205 = { add_core = CSA }
+        USA_201 = { add_core = CSA }
+        USA_200 = { add_core = CSA }
+        USA_196 = { add_core = CSA }
+        USA_194 = { add_core = CSA }
+
+        release_vassal = CSA
+        CSA = {
+            capital = 201
+        }
+
+        release_vassal = LOU
+        LOU = {
+            primary_culture = yankee
+            add_accepted_culture = acadian
+
+        }
+
+        release_vassal = TEX
+
+        any_owned = {
+            limit = {
+                OR = {
+                    region = MEX_85
+                    region = MEX_94
+                    region = MEX_97
+                    region = MEX_100
+                    region = MEX_2138
+                    region = MEX_2142
+                }
+                NOT = { is_core = TEX }
+            }
+
+            add_core = CAL
+        }
+
+        CAL = {
+            primary_culture = yankee
+        }
+        release_vassal = CAL
+
+        # Set capital to Portland if Seattle isn't owned
+        random_country = {
+            limit = {
+                tag = COL
+                NEN = { owns = 81 NOT = { owns = 78 owns = 13 } }
+            }
+
+            capital = 81
+        }
+
+        # Set capital to Vancouver if Portland and Seattle aren't owned
+        random_country = {
+            limit = {
+                tag = COL
+                NEN = { owns = 13 NOT = { owns = 78 owns = 81 } }
+            }
+
+            capital = 13
+        }
+
+        # At this point, either COL only has Washington state or it isn't released.
+        release_vassal = COL
+        COL = {
+            primary_culture = yankee
+        }
+
+        diplomatic_influence = { who = CSA value = 400 }
+        diplomatic_influence = { who = LOU value = 400 }
+        diplomatic_influence = { who = TEX value = 400 }
+        diplomatic_influence = { who = CAL value = 400 }
+        diplomatic_influence = { who = COL value = 400 }
+
+        set_global_flag = american_reconstruction
+        set_country_flag = reconstruct_usa
+    }
+}
+
+## CAN Victory Chain
+
+# British win the war and must decide where they belong.
+country_event = {
+    id = 44181
+    title = "EVTNAME44175"
+    desc = "EVTDESC44181"
+    picture = "treaty"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = CAN
+        war = no
+        NOT = { exists = USA }
+        has_global_flag = american_civil_war_has_happened
+        has_country_flag = british_intervention_acw
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    # Retain interest in the British Isles
+    option = {
+        name = "EVT44181OPTA"
+        prestige = 10
+
+        NEN = { country_event = 44180 }
+    }
+
+    # Abandon the British Isles, focus on North America
+    option = {
+        name = "EVT44181OPTB"
+        prestige = 10
+
+        primary_culture = anglo_canadian
+        add_accepted_culture = british
+
+        # Let the British Union know they can keep the isles.
+        BRI = { country_event = 44182 }
+
+        inherit = NEN
+        add_accepted_culture = yankee
+
+        USA_205 = { add_core = CSA }
+        USA_201 = { add_core = CSA }
+        USA_200 = { add_core = CSA }
+        USA_196 = { add_core = CSA }
+        USA_194 = { add_core = CSA }
+
+        release_vassal = CSA
+        CSA = {
+            capital = 201
+        }
+
+        release_vassal = LOU
+        LOU = {
+            primary_culture = anglo_canadian
+            add_accepted_culture = acadian
+
+        }
+
+        release_vassal = TEX
+
+        any_owned = {
+            limit = {
+                OR = {
+                    region = MEX_85
+                    region = MEX_94
+                    region = MEX_97
+                    region = MEX_100
+                    region = MEX_2138
+                    region = MEX_2142
+                }
+                NOT = { is_core = TEX }
+            }
+
+            add_core = CAL
+        }
+
+        CAL = {
+            primary_culture = anglo_canadian
+            add_accepted_culture = dixie
+        }
+        release_vassal = CAL
+
+        USA = {
+            all_core = {
+                limit = {
+                    NOT = { is_core = CSA }
+                    NOT = { is_core = LOU }
+                    NOT = { is_core = TEX }
+                    NOT = { is_core = CAL }
+                }
+
+                add_core = NEN
+            }
+        }
+        NEN = { all_core = { add_core = CAN } }
+
+        diplomatic_influence = { who = CSA value = 400 }
+        diplomatic_influence = { who = LOU value = 400 }
+        diplomatic_influence = { who = TEX value = 400 }
+        diplomatic_influence = { who = CAL value = 400 }
+        diplomatic_influence = { who = COL value = 400 }
+
+        set_global_flag = american_reconstruction
+        set_country_flag = reconstruct_usa
+    }
+}
+
+country_event = {
+    id = 44182
+    title = "EVTNAME44182"
+    desc = "EVTDESC44182"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44182OPTA"
+
+        relation = {
+            who = CAN
+            value = 200
+        }
+
+        # Return all cores and pass everything in Europe to the Union
+        CAN = {
+            any_owned = {
+                limit = { is_core = BRI }
+                secede_province = BRI
+            }
+
+            any_owned = {
+                limit = { is_core = IRE }
+                secede_province = IRE
+            }
+
+            relation = {
+                who = IRE
+                value = 200
+            }
+        }
+
+        BRI = { all_core = { remove_core = CAN } }
+        IRE = { all_core = { remove_core = CAN } }
+
+        # TODO add some country flag, will be revised when conflict is redone.
+    }
+}

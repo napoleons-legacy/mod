@@ -1,7 +1,6 @@
 capital = 1121
 primary_culture = persian
 culture = azerbaijani
-culture = hazara
 religion = shiite
 government = absolute_monarchy
 plurality = 0.0
@@ -59,6 +58,11 @@ flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 
 # Inventions
+small_arms_production = yes
+ammunition_production = yes
+big_sail_ships = yes
+sail_ships_transport = yes
+big_sail_support = yes
 
 # Starting Consciousness
 consciousness = 0

@@ -95,7 +95,6 @@ political_decisions = {
                 has_global_flag = sound_dues_resisted
                 has_global_flag = copenhagen_convention_called
                 tag = TUR
-                check_variable = { which = owed_cash_money value = 1 }
             }
         }
 
@@ -111,7 +110,6 @@ political_decisions = {
         effect = {
             set_global_flag = copenhagen_convention_called
             372 = { owner = { country_event = { id = 810003 days = 7 } } }
-            set_variable = { which = owed_cash_money value = 0 }
         }
     }
 

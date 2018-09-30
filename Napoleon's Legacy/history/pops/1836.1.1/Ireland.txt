@@ -1,35 +1,46 @@
 #Ulster Region - 1846000
-#under rule of Britain 1836
 #Belfast (540000/135000 POPs)
 254 = {
-    aristocrats = {
-        culture = british
-        religion = protestant
-        size = 1100
+    clergymen = {
+        culture = irish
+        religion = catholic
+        size = 250
     }
 
-    officers = {
-        culture = british
-        religion = protestant
-        size = 250
+    soldiers = {
+        culture = irish
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = irish
+        religion = catholic
+        size = 5400
+    }
+
+    farmers = {
+        culture = irish
+        religion = catholic
+        size = 25250
     }
 
     bureaucrats = {
         culture = british
         religion = protestant
-        size = 1125
+        size = 325
     }
 
     clergymen = {
         culture = british
         religion = protestant
-        size = 500
+        size = 100
     }
 
     soldiers = {
         culture = british
         religion = protestant
-        size = 1250
+        size = 1000
     }
 
     artisans = {
@@ -38,34 +49,10 @@
         size = 10000
     }
 
-    artisans = {
-        culture = british
-        religion = protestant
-        size = 2000
-    }
-
     farmers = {
         culture = british
         religion = protestant
-        size = 87875
-    }
-
-    clergymen = {
-        culture = irish
-        religion = catholic
-        size = 250
-    }
-
-    artisans = {
-        culture = irish
-        religion = catholic
-        size = 5500
-    }
-
-    labourers = {
-        culture = irish
-        religion = catholic
-        size = 25250
+        size = 54875
     }
 }
 #Londonderry (524000/131000 POPS)
@@ -88,7 +75,7 @@
         size = 500
     }
 
-    labourers = {
+    farmers = {
         culture = irish
         religion = catholic
         size = 46625
@@ -106,54 +93,18 @@
         size = 250
     }
 
-    artisans = {
-        culture = british
-        religion = protestant
-        size = 5000
-    }
-
-    soldiers = {
-        culture = british
-        religion = protestant
-        size = 1100
-    }
-
     farmers = {
         culture = british
         religion = protestant
-        size = 75250
+        size = 32250
     }
 }
 #Armagh (274000/68500 POPS)
 256 = {
-    aristocrats = {
-        culture = british
-        religion = protestant
-        size = 250
-    }
-
-    clergymen = {
-        culture = british
-        religion = protestant
-        size = 250
-    }
-
-    artisans = {
-        culture = british
-        religion = protestant
-        size = 2500
-    }
-
-    soldiers = {
-        culture = british
-        religion = protestant
-        size = 1100
-    }
-
-    labourers = {
-        culture = british
-        religion = protestant
-        size = 43000
+    farmers = {
+        culture = irish
+        religion = catholic
+        size = 20500
     }
 
     clergymen = {
@@ -174,10 +125,10 @@
         size = 250
     }
 
-    labourers = {
-        culture = irish
-        religion = catholic
-        size = 20500
+    farmers = {
+        culture = british
+        religion = protestant
+        size = 13000
     }
 }
 #Donegal (508000/127000 POPS)
@@ -206,39 +157,13 @@
         size = 500
     }
 
-    labourers = {
+    farmers = {
         culture = irish
         religion = catholic
         size = 103250
     }
-
-    clergymen = {
-        culture = british
-        religion = protestant
-        size = 50
-    }
-
-    artisans = {
-        culture = british
-        religion = protestant
-        size = 2250
-    }
-
-    soldiers = {
-        culture = british
-        religion = protestant
-        size = 125
-    }
-
-    farmers = {
-        culture = british
-        religion = protestant
-        size = 16575
-    }
-
 }
 #Connaught Region - 1316000
-#under rule of Britain 1836
 #Galway (548000/137000 POPS)
 258 = {
     aristocrats = {
@@ -269,6 +194,32 @@
         culture = irish
         religion = catholic
         size = 126750
+    }
+}
+#Westport (2000/500 POPS)
+2657 = {
+    aristocrats = {
+        culture = irish
+        religion = catholic
+        size = 5
+    }
+
+    clergymen = {
+        culture = irish
+        religion = catholic
+        size = 5
+    }
+
+    artisans = {
+        culture = irish
+        religion = catholic
+        size = 20
+    }
+
+    farmers = {
+        culture = irish
+        religion = catholic
+        size = 470
     }
 }
 #Sligo (768000/192000 POPs)
@@ -317,7 +268,6 @@
 
 }
 #Munster Region - 2244000
-#under rule of Britain 1836
 #Cork (890000/224000 POPS)
 260 = {
     aristocrats = {
@@ -476,7 +426,6 @@
 
 }
 #Leinster Region - 1836000
-#under rule of Britain 1836
 #Dublin (860000/215000 POPs)
 263 = {
     aristocrats = {

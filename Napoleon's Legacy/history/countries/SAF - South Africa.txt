@@ -1,7 +1,7 @@
 capital = 2087
 primary_culture = boer
 religion = protestant
-government = hms_government
+government = democracy
 plurality = 0.6
 nationalvalue = nv_productivity
 literacy = 0.2
@@ -13,22 +13,22 @@ slavery = no_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = wealth_voting
 public_meetings = yes_meeting
-press_rights = free_press
+press_rights = censored_press
 trade_unions = all_trade_unions
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
 
 # Social Reforms
-wage_reform = low_minimum_wage
-work_hours = ten_hours
-safety_regulations = low_safety
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
 health_care = no_health_care
-unemployment_subsidies = trinket_subsidies
-pensions = trinket_pensions
+unemployment_subsidies = no_subsidies
+pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = two_year_draft
+conscription = mandatory_service
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
@@ -71,24 +71,24 @@ malthusian_thought = 1
 enlightenment_thought = 1
 introspectionism = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 experimental_railroad = 1
 basic_chemistry = 1
-mechanical_production = 1
-clean_coal = 1
+interchangeable_parts = 1
 battleship_column_doctrine = 1
 naval_professionalism = 1
 stock_exchange = 1
 ad_hoc_money_bill_printing = 1
 late_classical_theory = 1
 market_structure = 1
+high_pressure_steam_engine = 1
 
 # Inventions
-#corvettes = yes
+# corvettes = yes
 commerce_raiders = yes
 precision_work = yes
 
-set_country_flag = post_colonial_country
-
-oob = "SAF_OOB.txt"
+set_country_flag = new_world_nation
+set_country_flag = south_africa_immigration
+oob = "SAF_oob.txt"

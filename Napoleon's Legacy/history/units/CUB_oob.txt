@@ -1,0 +1,49 @@
+USA = {
+    value = 100
+}
+
+SPA = {
+    value = 75
+}
+
+army = {
+    name = "Ej�rcito de Cuba"
+    location = 2209
+
+    regiment = {
+        name = "2. Brigada Colonial"
+        type = infantry
+        home = 2209
+    }
+}
+
+army = {
+    name = "Ej�rcito de Puerto Rico"
+    location = 2222
+
+    regiment = {
+        name = "3. Brigada Colonial"
+        type = infantry
+        home = 1456
+    }
+}
+
+navy = {
+    name = "Armada de Cuba"
+    location = 2212
+
+    ship = {
+        name = "Santiago"
+        type = manowar
+    }
+
+    ship = {
+        name= "2a Flotilla de Transporte"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "3a Flotilla de Transporte"
+        type = clipper_transport
+    }
+}

@@ -72,7 +72,7 @@ country_event = {
             consciousness = 5
             literacy = 0.40
             has_country_flag = free_press_promised
-            NOT = { has_country_modifier = free_press_promised  }
+            NOT = { has_country_modifier = free_press_promised    }
             NOT = { government = proletarian_dictatorship }
             NOT = { government = fascist_dictatorship }
     }
@@ -182,7 +182,7 @@ country_event = {
             consciousness = 5
             literacy = 0.40
             has_country_flag = yes_meeting_promised
-            NOT = { has_country_modifier = yes_meeting_promised }
+            NOT = { has_country_modifier = yes_meeting_promised    }
     }
 
     mean_time_to_happen =  {

@@ -9,7 +9,7 @@ country_event = {
     news_desc_short = "EVTDESC32500_NEWS_SHORT"
 
     trigger = {
-        tag = RUS
+        has_country_flag = russian_country
         year = 1837
         war = no
         NOT = {
@@ -44,7 +44,7 @@ country_event = {
     id = 32502
 
     trigger = {
-        tag = RUS
+        has_country_flag = russian_country
         year = 1849
         war = no
         NOT = {
@@ -91,7 +91,7 @@ country_event = {
     id = 32503
 
     trigger = {
-        tag = RUS
+        has_country_flag = russian_country
         year = 1852
         NOT = {
             year = 1855
@@ -129,7 +129,7 @@ country_event = {
     id = 32504
 
     trigger = {
-        tag = RUS
+        has_country_flag = russian_country
         year = 1874
         NOT = {
             year = 1877
@@ -175,7 +175,7 @@ country_event = {
     news_desc_short = "EVTDESC32505_NEWS_SHORT"
 
     trigger = {
-        tag = RUS
+        has_country_flag = russian_country
         year = 1880
         NOT = {
             year = 1883
@@ -216,7 +216,7 @@ country_event = {
 
     id = 32506
     trigger = {
-        tag = RUS
+        has_country_flag = russian_country
         year = 1837
         experimental_railroad = 1
         994 = {
@@ -259,10 +259,7 @@ country_event = {
     id = 32508
 
     trigger = {
-        OR = {
-            tag = TSA
-            tag = RUS
-        }
+        has_country_flag = russian_country
         year = 1899
         NOT = {
             year = 1902
@@ -379,16 +376,10 @@ country_event = {
 
     option = {
         name = "EVT32509OPTA"
-        random_owned = { limit = { owner = { ai = no } } treasury = -100000 }
-        random_owned = { limit = { owner = { ai = yes } } treasury = -20000 }
         RUS = { country_event = 32510 }
         TSA = { country_event = 32510 }
         ai_chance = {
             factor = 95
-            modifier = {
-                factor = 0.1
-                NOT = { money = 21000 }
-            }
         }
     }
 
@@ -398,10 +389,6 @@ country_event = {
         set_country_flag = refused_alaska
         ai_chance = {
             factor = 5
-            modifier = {
-                factor = 2
-                NOT = { money = 20000 }
-            }
             modifier = {
                 factor = 0
                 OR = {
@@ -413,9 +400,10 @@ country_event = {
     }
 }
 
+#the Alaskan Purchase
 country_event = {
     id = 32510
-    title = "EVTNAME32510_NEW" #the Alaskan Purchase
+    title = "EVTNAME32510_NEW"
     desc = "EVTDESC32510_NEW"
     picture = "alaska"
 
@@ -427,7 +415,31 @@ country_event = {
         prestige = 10
         treasury = 100000
         USA_1 = { remove_core = THIS }
-        FROM = { country_event = 32511 }
+        FROM = {
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { money = 100000 }
+                        NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                    }
+                }
+                owner = { set_variable = { which = owed_cash_money value = 100 } }
+            }
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { money = 100000 }
+                        check_variable = { which = owed_cash_money value = 9 }
+                    }
+                }
+                owner = { change_variable = { which = owed_cash_money value = 100 } }
+            }
+            random_owned = {
+                limit = { owner = { money = 100000 } }
+                owner = { treasury = -100000 }
+            }
+            country_event = 32511
+        }
         ai_chance = {
             factor = 75
         }
@@ -442,8 +454,7 @@ country_event = {
         }
         any_country = {
             limit = {
-                NOT = { tag = RUS }
-                NOT = { tag = TSA }
+                NOT = { has_country_flag = russian_country }
                 NOT = { has_country_flag = refused_alaska }
                 OR = {
                     is_greater_power = yes
@@ -502,13 +513,95 @@ country_event = {
         name = "EVT32511OPTA"
         prestige = 10
         USA_1 = { add_core = THIS }
+        random_owned = {
+            limit = {
+                owner = {
+                    OR = {
+                        is_culture_group = american_cultures
+                        is_culture_group = neo_european_cultures
+                        is_culture_group = latin_american_cultures
+                    }
+                }
+            }
+            LSK = { primary_culture = THIS }
+        }
+
+        random_owned = {
+            limit = { owner = { is_culture_group = british } }
+            LSK = { primary_culture = anglo_canadian }
+        }
         FROM = {
+            remove_accepted_culture = alaskan
             any_owned = {
                 limit = { continent = north_america }
                 secede_province = THIS
             }
         }
-        LSK = { primary_culture = THIS }
+
+        random_owned = { limit = { owner = { NOT = { primary_culture = japanese } } }
+            owner = {
+                1 = { change_province_name = "Sitka" }
+                2 = { change_province_name = "Juneau" }
+                3 = { change_province_name = "Kenai" }
+                4 = { change_province_name = "Kodiak" }
+                2599 = { change_province_name = "Fairbanks" }
+                2630 = { change_province_name = "Tok" }
+            }
+        }
+
+        random_owned = { limit = { owner = { primary_culture = japanese } }
+            owner = {
+                1 = { change_province_name = "Shitoka" }
+                2 = { change_province_name = "Juno" }
+                3 = { change_province_name = "Ankarejji" }
+                4 = { change_province_name = "Yakutato" }
+                5 = { change_province_name = "Yunirasuka" }
+                2631 = { change_province_name = "Beseru" }
+                2599 = { change_province_name = "Feabankusu" }
+                2630 = { change_province_name = "Howaitohosu" }
+                1 = { state_scope = { change_region_name = "Arasuka" } }
+            }
+        }
+
+        LSK = {
+            clr_country_flag = sunni_country
+            clr_country_flag = shiite_country
+            clr_country_flag = ibadi_country
+            clr_country_flag = catholic_country
+            clr_country_flag = protestant_country
+            clr_country_flag = mormon_country
+            clr_country_flag = orthodox_country
+            clr_country_flag = coptic_country
+            clr_country_flag = jewish_country
+            clr_country_flag = yazidi_country
+            clr_country_flag = mahayana_country
+            clr_country_flag = gelugpa_country
+            clr_country_flag = theravada_country
+            clr_country_flag = hindu_country
+            clr_country_flag = shinto_country
+            clr_country_flag = sikh_country
+            clr_country_flag = animist_country
+        }
+
+        random_owned = { limit = { owner = { has_country_flag = catholic_country } } LSK = { religion = catholic set_country_flag = catholic_country } }
+        random_owned = {
+            limit = { owner = { has_country_flag = protestant_country } }
+            LSK = { religion = protestant set_country_flag = protestant_country }
+        }
+        random_owned = { limit = { owner = { has_country_flag = orthodox_country } } LSK = { religion = orthodox set_country_flag = orthodox_country } }
+        random_owned = { limit = { owner = { has_country_flag = mormon_country } } LSK = { religion = mormon set_country_flag = mormon_country } }
+        random_owned = { limit = { owner = { has_country_flag = coptic_country } } LSK = { religion = coptic set_country_flag = coptic_country } }
+        random_owned = { limit = { owner = { has_country_flag = sunni_country } } LSK = { religion = sunni set_country_flag = sunni_country } }
+        random_owned = { limit = { owner = { has_country_flag = shiite_country } } LSK = { religion = shiite set_country_flag = shiite_country } }
+        random_owned = { limit = { owner = { has_country_flag = shinto_country } } LSK = { religion = shinto set_country_flag = shinto_country } }
+        random_owned = { limit = { owner = { has_country_flag = mahayana_country } } LSK = { religion = mahayana set_country_flag = mahayana_country } }
+        random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } LSK = { religion = gelugpa set_country_flag = gelugpa_country } }
+        random_owned = { limit = { owner = { has_country_flag = theravada_country } } LSK = { religion = theravada set_country_flag = theravada_country } }
+        random_owned = { limit = { owner = { has_country_flag = hindu_country } } LSK = { religion = hindu set_country_flag = hindu_country } }
+        random_owned = { limit = { owner = { has_country_flag = sikh_country } } LSK = { religion = sikh set_country_flag = sikh_country } }
+        random_owned = { limit = { owner = { has_country_flag = jewish_country } } LSK = { religion = jewish set_country_flag = jewish_country } }
+        random_owned = { limit = { owner = { has_country_flag = ibadi_country } } LSK = { religion = ibadi set_country_flag = ibadi_country } }
+        random_owned = { limit = { owner = { has_country_flag = yazidi_country } } LSK = { religion = yazidi set_country_flag = yazidi_country } }
     }
 }
 
@@ -584,9 +677,15 @@ country_event = {
             secede_province = RUS
         }
         1613 = { add_core = MCK }
-        annex_to = FROM
-        FROM = { any_owned = { limit = { is_core = MCK } add_province_modifier = { name = nationalist_agitation duration = 365 } } }
-        FROM = { any_owned = { limit = { is_core = MCK NOT = { is_core = RUS } } add_core = QNG } }
+        #random_owned = { limit = { owner = { ai = yes } } owner = { annex_to = FROM } }
+        any_owned = { limit = { is_core = MCK } add_province_modifier = { name = nationalist_agitation duration = 365 } }
+        any_owned = {
+            limit = {
+                is_core = MCK
+                NOT = { is_core = RUS }
+            }
+            add_core = QNG
+        }
         ai_chance = {
             factor = 95
             modifier = {
@@ -685,13 +784,8 @@ country_event = {
         ai_chance = {
             factor = 80
             modifier = {
-                factor = 0.5
-                NOT = { war_exhaustion = 25 }
-                1082 = { owner = { part_of_sphere = no } }
-            }
-            modifier = {
                 factor = 0.75
-                NOT = { war_exhaustion = 5 }
+                NOT = { relation = { who = THIS value = -50 } }
             }
         }
     }
@@ -901,6 +995,7 @@ country_event = {
     }
 }
 
+
 country_event = {
 
     id = 32520
@@ -909,10 +1004,7 @@ country_event = {
     picture = "Southpole3"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         war = no
         year = 1845
         OR = {
@@ -939,7 +1031,7 @@ country_event = {
             }
             1088 = {
                 secede_province = THIS
-                any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = 0.99 }
+                any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = -0.99 }
             }
         }
         random_owned = {
@@ -950,7 +1042,7 @@ country_event = {
             1086 = {
                 secede_province = THIS
                 add_core = THIS
-                any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = 0.99 }
+                any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = -0.99 }
             }
         }
     }
@@ -985,10 +1077,7 @@ country_event = {
     picture = "kurils"
 
     trigger = {
-        OR = {
-            tag = TSA
-            tag = RUS
-        }
+        has_country_flag = russian_country
         war = no
         owns = 1086 #Pogobi
         owns = 1088 #Shumshu
@@ -1506,10 +1595,7 @@ country_event = {
     picture = "treaty"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = fought_for_sakhalin
         1087 = { #Otomari
             owner = {
@@ -1574,10 +1660,7 @@ country_event = {
     picture = "treaty"
 
     trigger = {
-        OR = {
-            tag = TSA
-            tag = RUS
-        }
+        has_country_flag = russian_country
         has_country_flag = fought_for_sakhalin
         owns = 1087 #Otomari
         owns = 1089 #Etorofu
@@ -1673,8 +1756,8 @@ country_event = {
         1082 = {
 
         poor_strata = {
-        limit = {
-            OR = {
+            limit = {
+                OR = {
                     has_pop_culture = manchu
                     has_pop_culture = beifaren
                     has_pop_culture = nanfaren
@@ -1684,34 +1767,33 @@ country_event = {
                 34 = { reduce_pop = 0.9 }
                 33 = { reduce_pop = 0.8 }
                 33 = { reduce_pop = 0.7 }
-                }
-                move_pop = 1554
             }
+            move_pop = 1554
+        }
 
-            any_pop = {
-                limit = {
+        any_pop = {
+            limit = {
                 OR = {
                     has_pop_culture = manchu
                     has_pop_culture = beifaren
                     has_pop_culture = nanfaren
-                    }
                 }
-
-                militancy = 7
-                consciousness = 9
             }
+            militancy = 7
+            consciousness = 9
+        }
 
         any_pop = {
-        limit = {
-            OR = {
+            limit = {
+                OR = {
                     has_pop_culture = manchu
                     has_pop_culture = beifaren
                     has_pop_culture = nanfaren
-            }
-            OR = {
-                pop_type = artisans
-                pop_type = clergymen
-                pop_type = bureaucrats
+                }
+                OR = {
+                    pop_type = artisans
+                    pop_type = clergymen
+                    pop_type = bureaucrats
                 }
             }
             pop_type = labourers
@@ -1722,45 +1804,45 @@ country_event = {
 
         1083 = {
             poor_strata = {
-        limit = {
-            OR = {
+                limit = {
+                    OR = {
                         has_pop_culture = manchu
                         has_pop_culture = beifaren
                         has_pop_culture = nanfaren
+                    }
                 }
-            }
                 random_list = {
                     34 = { reduce_pop = 0.9 }
                     33 = { reduce_pop = 0.8 }
                     33 = { reduce_pop = 0.7 }
-                    }
-                move_pop = 1554
                 }
+                move_pop = 1554
+            }
             any_pop = {
-            limit = {
-            OR = {
+                limit = {
+                    OR = {
                         has_pop_culture = manchu
                         has_pop_culture = beifaren
                         has_pop_culture = nanfaren
+                    }
                 }
-            }
                 militancy = 7
                 consciousness = 9
             }
             any_pop = {
                 limit = {
-            OR = {
+                    OR = {
                         has_pop_culture = manchu
                         has_pop_culture = beifaren
                         has_pop_culture = nanfaren
+                    }
+                    OR = {
+                        pop_type = artisans
+                        pop_type = clergymen
+                        pop_type = bureaucrats
+                    }
                 }
-            OR = {
-                pop_type = artisans
-                pop_type = clergymen
-                pop_type = bureaucrats
-                }
-            }
-            pop_type = labourers
+                pop_type = labourers
             }
             add_province_modifier = { name = population_resettlement duration = 1460 }
             remove_province_modifier = nationalist_agitation
@@ -1973,10 +2055,7 @@ country_event = {
     picture = "storm_of_samarkand"
 
     trigger = {
-        OR = {
-            tag = TSA
-            tag = RUS
-        }
+        has_country_flag = russian_country
         owns = 1186
         owns = 1187
         owns = 1188
@@ -2017,10 +2096,7 @@ country_event = {
     picture = "mysticism_in_russia"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         OR = {
             government = absolute_monarchy
             government = prussian_constitutionalism
@@ -2090,16 +2166,13 @@ country_event = {
     picture = "orthodox_priests"
 
     trigger = {
-        OR = {
-            tag = TSA
-            tag = RUS
-        }
+        has_country_flag = russian_country
         has_country_flag = come_see_me_grigori
         OR = {
             government = absolute_monarchy
             government = prussian_constitutionalism
             government = hms_government
-            }
+        }
         year = 1900
     }
 
@@ -2126,10 +2199,7 @@ country_event = {
     picture = "grigori_in_court"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = grigori_arrived
         OR = {
             government = absolute_monarchy
@@ -2170,10 +2240,7 @@ country_event = {
     picture = "look_into_my_eyes_child"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = grigori_will_be_exiled
         OR = {
             government = absolute_monarchy
@@ -2204,10 +2271,7 @@ country_event = {
     picture = "grigori_cartoons"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = grigori_in_power
         OR = {
             government = absolute_monarchy
@@ -2241,10 +2305,7 @@ country_event = {
     picture = "look_into_my_eyes_child"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = tsar_in_the_front
         OR = {
             government = absolute_monarchy
@@ -2289,10 +2350,7 @@ country_event = {
     picture = "yusupov_palace"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = rasputin_killed_by_nobles
         OR = {
             government = absolute_monarchy
@@ -2324,10 +2382,7 @@ country_event = {
     picture = "grigori_blessing"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = rasputin_killed_by_peasants
         OR = {
             government = absolute_monarchy
@@ -2373,10 +2428,7 @@ country_event = {
     picture = "grigori_hospital"
 
     trigger = {
-        OR = {
-            tag = RUS
-            tag = TSA
-        }
+        has_country_flag = russian_country
         has_country_flag = rasputin_survived
         OR = {
             government = absolute_monarchy

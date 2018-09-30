@@ -40,6 +40,7 @@ political_decisions = {
         effect = {
             set_country_flag = voule_ton_ellinon
             political_reform = wealth_weighted_voting
+            prestige = 5
             random_owned = {
                 limit = { owner = { political_parties = underground_parties } }
                 owner = { political_reform = harassment }

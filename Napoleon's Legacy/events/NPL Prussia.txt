@@ -125,7 +125,6 @@ country_event = {
         prestige = -10
 
         694 = { secede_province = PRU }
-        685 = { secede_province = PRU }
         PRU_701 = { secede_province = PRU }
 
         PRU = { country_event = 121311 }
@@ -138,7 +137,6 @@ country_event = {
     option = {
         name = "EVTOPTB121310"
         694 = { secede_province = PRU }
-        685 = { secede_province = PRU }
 
         casus_belli = {
             target = FROM
@@ -206,7 +204,6 @@ country_event = {
         }
 
         owns = 694
-        owns = 685
         owns = 701
 
         NOT = {
@@ -225,7 +222,6 @@ country_event = {
 
         PRU_701 = { add_core = PRU }
         694 = { add_core = PRU }
-        685 = { add_core = PRU }
     }
 }
 

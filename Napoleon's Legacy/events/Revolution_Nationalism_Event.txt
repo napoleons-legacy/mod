@@ -1,7 +1,7 @@
 #################################################################################
-#                                                                               #
-#   Supporting Patriots living in your cores within a neighboring country       #
-#                                                                               #
+#                                                                                #
+#      Supporting Patriots living in your cores within a neighboring country        #
+#                                                                                #
 #################################################################################
 
 country_event = {
@@ -353,9 +353,9 @@ country_event = {
 }
 
 #########################################################################################
-#                                                                                       #
+#                                                                                        #
 #  Events returning a colony's independence if it's under rebel control for too long    #
-#                                                                                       #
+#                                                                                        #
 #########################################################################################
 
 province_event = {

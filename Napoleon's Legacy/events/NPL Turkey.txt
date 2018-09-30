@@ -1,8 +1,9 @@
-# TODO REFORMAT THIS FILE. IT IS UGLY
-
+# The start of Greek nationalism
 country_event = {
-
     id = 32490
+    title = "EVTNAME32490"
+    desc = "EVTDESC32490"
+    picture = "Execution"
 
     trigger = {
         tag = TUR
@@ -12,67 +13,52 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen =  {
-        months = 1
-
-        modifier = {
-            factor = 0.1
-            average_militancy = 0
-        }
+        days = 1
     }
 
-    title = "EVTNAME32490"
-    desc = "EVTDESC32490"
-    picture = "Execution"
-
+    # Prepare the scenario
     option = {
         name = "EVTOPTA32490"
-        set_country_flag = mad_greeks
+        set_country_flag = greek_tensions
     }
 }
 
+# Greek secret societies
 country_event = {
-
     id = 32489
-
-    trigger = {
-            has_country_flag = mad_greeks
-    NOT = {
-        exists = GRE
-        }
-    }
-
     title = "EVTNAME32489"
     desc = "EVTDESC32489"
-
     picture = "Riot"
+
+    trigger = {
+        has_country_flag = greek_tensions
+        NOT = { exists = GRE }
+    }
+
+    fire_only_once = yes
 
     mean_time_to_happen = {
         months = 18
     }
 
-    fire_only_once = yes
+    option = {
+        name = "EVTOPTA32489"
+        set_country_flag = greek_agitation
+        any_owned = {
+            limit = {
+                pop_majority_culture = greek
+                is_core = GRE
+            }
 
-        option = {
-                name = "EVTOPTA32489"
-        set_country_flag = madder_greeks
-        any_pop = {
-            limit = { culture = greek }
-            militancy = 5
+            add_province_modifier = {
+                name = nationalist_agitation
+                duration = 730
+            }
         }
-                any_owned = {
-                        limit = { is_core = GRE
-            NOT = { has_province_modifier = GR_rebellion
-                }
-                        }
-
-                        add_province_modifier = {
-                                name = GR_rebellion
-                                duration = 2250
-                        }
-                }
-        }
+    }
 }
 
+# Greeks ask for funding
 country_event = {
     id = 32488
     title = "EVTNAME32488"
@@ -83,19 +69,16 @@ country_event = {
         OR = {
             tag = BRI
             tag = FRA
-            tag = RUS
+            has_country_flag = russian_country
         }
-        NOT = {
-            exists = GRE
-        }
-        NOT = { has_global_flag = great_wars_enabled }
-        NOT = {
-            has_country_flag = dealt_with
-        }
+
+        NOT = { exists = GRE }
+        NOT = { has_country_flag = greek_foreign_funding }
+        NOT = { has_country_flag = greek_no_foreign_funding }
     }
 
     mean_time_to_happen =  {
-        months = 3
+        months = 6
 
         modifier = {
             factor = 0.75
@@ -108,81 +91,97 @@ country_event = {
         }
     }
 
-        option = {
-                name = "EVTOPTA32488"
-            relation = {
-                    who = TUR
-                        value = -100
-                }
-                TUR = {
-                        country_event = { id=32487 days=0 }
-                }
-        money = -10000
-        set_country_flag = dealt_with
-        ai_chance = {
-            factor = 60
-                }
+    # Greeks get funding, war will happen at some point
+    option = {
+        name = "EVTOPTA32488"
+        relation = {
+            who = TUR
+            value = -100
         }
 
-    option = {
-                name = "EVTOPTB32488"
+        TUR = { country_event = 32487 }
+        money = -10000
+
+        set_country_flag = greek_foreign_funding
+        ai_chance = {
+            factor = 60
+            modifier = {
+                factor = 0.75
                 relation = {
                     who = TUR
-                        value = 25
+                    value = 100
                 }
+            }
+
+            modifier = {
+                factor = 0
+                NOT = { money = 15000 }
+            }
+        }
+    }
+
+    # Greeks don't get funding, if nobody funds, nothing will come of it
+    option = {
+        name = "EVTOPTB32488"
+        relation = {
+            who = TUR
+            value = 25
+        }
+
         rich_strata = {
             militancy = 1
             consciousness = 1
         }
+
         middle_strata = {
             militancy = 2
             consciousness = 2
         }
-        set_country_flag = dealt_with
+
+        set_country_flag = greek_no_foreign_funding
         ai_chance = {
             factor = 40
-                }
         }
+    }
 }
 
+# Greeks get funding, revolt will happen.
 country_event = {
-
-        id = 32487
-
-        title = "EVTNAME32487"
-        desc = "EVTDESC32487"
-
-        picture = "Riot"
+    id = 32487
+    title = "EVTNAME32487"
+    desc = "EVTDESC32487"
+    picture = "Riot"
 
     is_triggered_only = yes
 
     fire_only_once = yes
 
-        option = {
-                name = "EVTOPTA32487"
-                TUR = {
+    option = {
+        name = "EVTOPTA32487"
+        TUR = {
             any_pop = {
-                limit = {
-                    has_pop_culture = greek
-                }
+                limit = { has_pop_culture = greek }
                 militancy = 1.5
             }
-                }
-        set_country_flag = greeks_being_putindebt
         }
+
+        set_country_flag = greek_revolt
+    }
 }
 
+# Greek rebellion starts
 country_event = {
-
     id = 86080
+    title = "EVTNAME86080"
+    desc = "EVTDESC86080"
+    picture = "Riot"
+
     trigger = {
         tag = TUR
         year = 1839
-        has_country_flag = madder_greeks
-        NOT = {
-            exists = GRE
-        }
-        has_country_flag = greeks_being_putindebt
+        has_country_flag = greek_agitation
+        NOT = { exists = GRE }
+        has_country_flag = greek_revolt
     }
 
     fire_only_once = yes
@@ -191,28 +190,30 @@ country_event = {
         months = 3
     }
 
-    title = "EVTNAME86080"
-    desc = "EVTDESC86080"
-    picture = "Riot"
-
     option = {
         name = "EVTOPTA86080"
 
         any_owned = {
             limit = {
                 pop_majority_culture = greek
-                average_militancy = 3
+                is_core = GRE
                 NOT = {
-                    region = TUR_823
-                    region = TUR_855
+                    OR = {
+                        is_core = CYP
+                        is_core = BUL
+                        region = TUR_853
+                        region = EGY_843
+                    }
                 }
             }
+
             secede_province = GRE
         }
+
         GRE = {
             government = absolute_monarchy
             political_reform = mandatory_service
-            capital = 833 #So they don't get that 12% loss due to Athens blockade
+            capital = 833 # So they don't get that 12% loss due to Athens blockade
             leadership = 80
             treasury = 10000
             small_arms = 100
@@ -221,22 +222,21 @@ country_event = {
             wine = 200
             liquor = 200
 
+            any_pop = { militancy = -6 }
+
             add_country_modifier = {
-            name = small_country_draft
-            duration = 1825
+                name = small_country_draft
+                duration = 1825
             }
         }
-        casus_belli = {
-            target = GRE
-            type = conquest
-            months = 1
-        }
-        set_global_flag = greek_civil_war
+
+        set_global_flag = greek_revolt_starts
         war = {
             target = GRE
             attacker_goal = {
-                casus_belli = conquest
+                casus_belli = annex_core_country
             }
+
             defender_goal = {
                 casus_belli = status_quo
             }
@@ -244,112 +244,72 @@ country_event = {
     }
 }
 
+# War in Greece ends, great powers exit, can be inconclusive
 country_event = {
-
     id = 86081
+    title = "EVTNAME86081"
+    desc = "EVTDESC86081"
+    picture = "Ottoman"
+
     trigger = {
         war_with = TUR
-        GRE = { NOT = { war_with = TUR } }
-        alliance_with = GRE
-        exists = GRE
-        NOT = { has_global_flag = greeks_win_war }
+        has_country_flag = greek_intervention
+        has_global_flag = greek_revolt_starts
+
+        OR = {
+            has_global_flag = greeks_win_war
+            GRE = { exists = no }
+        }
     }
 
     mean_time_to_happen =  {
         days = 1
     }
 
-    title = "EVTNAME86081"
-    desc = "EVTDESC86081"
-    picture = "Ottoman"
-
     option = {
         name = "EVTOPTA86081"
-        prestige = 5
         end_war = TUR
-        end_war = EGY
-        end_war = TUN
     }
 }
 
+# Greeks win the war
 country_event = {
-
     id = 86082
-    trigger = {
-        tag = TUR
-        truce_with = GRE
-        exists = GRE
-        owns = 829
-        NOT = {
-            war_with = GRE
-            has_global_flag = greeks_win_war
-        }
-    }
+    title = "EVTNAME86082"
+    desc = "EVTDESC86082"
+    picture = "Ottoman"
 
     fire_only_once = yes
+
+    trigger = {
+        tag = GRE
+        truce_with = TUR
+        exists = yes
+        NOT = {
+            war_with = TUR
+            has_global_flag = greeks_win_war
+        }
+
+        has_global_flag = greek_revolt_starts
+    }
 
     mean_time_to_happen =  {
         days = 5
     }
 
-    title = "EVTNAME86082"
-    desc = "EVTDESC86082"
-    picture = "Ottoman"
-
     option = {
         name = "EVTOPTA86082"
-        GRE = {
-            all_core = {
-                limit = {
-                NOT = {
-                    region = TUR_823
-                    region = TUR_855
-                }
-            }
-            secede_province = GRE
-            }
-            capital = 834
+
+        capital = 834
+        any_owned = {
+            remove_core = TUR
         }
-        GRE = {
-            any_owned = {
-                remove_core = TUR
-                }
-            }
-        set_global_flag = greeks_win_war
-        }
-}
 
-country_event = {
-
-    id = 86083
-    trigger = {
-        tag = TUR
-        truce_with = GRE
-        exists = GRE
-        NOT = {
-            war_with = GRE
-            owns = 829
-            has_global_flag = greeks_win_war
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        days = 1
-    }
-
-    title = "EVTNAME86082"
-    desc = "EVTDESC86082"
-    picture = "Ottoman"
-
-    option = {
-        name = "EVTOPTA86082"
-        prestige = -15
         set_global_flag = greeks_win_war
     }
 }
 
+# Great powers who funded the greeks can choose to join the war
 country_event = {
     id = 32486
     title = "EVTNAME32486"
@@ -357,179 +317,146 @@ country_event = {
     picture = "greatpowers"
 
     trigger = {
-        GRE = {
-            war_with = TUR
-                }
-        OR = {
-            tag = BRI
-            tag = FRA
-            tag = RUS
-        }
+        GRE = { war_with = TUR }
+        has_country_flag = greek_foreign_funding
+
         NOT = { has_global_flag = great_wars_enabled }
-        NOT = {
-                    has_country_flag = dealt_with_2
-        }
+        NOT = { has_country_flag = greek_intervention }
+        NOT = { has_country_flag = greek_no_intervention }
     }
 
     mean_time_to_happen =  {
         months = 1
     }
 
-        option = {
-                name = "EVTOPTA32486"
-            diplomatic_influence = {
+    # Join the war, cut the Ottomans down to size
+    option = {
+        name = "EVTOPTA32486"
+        diplomatic_influence = {
             who = GRE
-            value = 100
+            value = 50
         }
+
         create_alliance = GRE
         relation = {
-                    who = GRE
-                        value = 200
-                }
+            who = GRE
+            value = 200
+        }
+
         casus_belli = {
             target = TUR
             type = cut_down_to_size
             months = 1
         }
+
         war = {
             target = TUR
             attacker_goal = {
                 casus_belli = cut_down_to_size
             }
-        }
-                TUR = {
-                        country_event = 32485
-                }
-        set_country_flag = dealt_with_2
-        ai_chance = {
-            factor = 50
-                }
+            defender_goal = {
+                casus_belli = status_quo
+            }
         }
 
-    option = {
-                name = "EVTOPTB32486"
-                relation = {
-                    who = TUR
-                        value = 25
-                }
-        rich_strata = {
-            militancy = 1
-            consciousness = 1
+        TUR = { country_event = 32485 }
+        set_country_flag = greek_intervention
+        ai_chance = {
+            factor = 50
         }
-        middle_strata = {
+    }
+
+    # Don't join the war
+    option = {
+        name = "EVTOPTB32486"
+        relation = {
+            who = TUR
+            value = 25
+        }
+
+        relation = {
+            who = GRE
+            value = -50
+        }
+
+        rich_strata = {
             militancy = 2
             consciousness = 2
         }
-        set_country_flag = dealt_with_2
+
+        middle_strata = {
+            militancy = 1
+            consciousness = 1
+        }
+
+        set_country_flag = greek_no_intervention
         ai_chance = {
             factor = 50
-                }
         }
+    }
 }
 
+# Ottomans notified of Great power joining the war
 country_event = {
-
-        id = 32485
-
-        title = "EVTNAME32485"
-        desc = "EVTDESC32485"
-
-        picture = "greatpowers"
+    id = 32485
+    title = "EVTNAME32485"
+    desc = "EVTDESC32485"
+    picture = "greatpowers"
 
     is_triggered_only = yes
 
-        option = {
-                name = "EVTOPTA32485"
-        }
-}
-
-country_event = {
-
-    id = 32484
-
-    trigger = {
-        tag = TUR
-        OR = {
-            has_global_flag = great_wars_enabled
-            has_country_flag = tanzimat_reforms_enacted
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        months = 1
-
-        modifier = {
-            factor = 0.75
-            year = 1870
-        }
-
-        modifier = {
-            factor = 0.55
-            year = 1871
-        }
-    }
-
-    title = "EVTNAME32484"
-    desc = "EVTDESC32484"
-    picture = "Execution"
-
     option = {
-        name = "EVTOPTA32484"
-        clr_country_flag = mad_greeks
+        name = "EVTOPTA32485"
     }
 }
 
+# Ottomans lose the Crimean war
 country_event = {
-
     id = 32482
     title = "EVTNAME32482"
     desc = "EVTDESC32482"
     picture = "Ottoman"
 
-            trigger = {
-                    tag = TUR
-                    has_country_flag = crimean_war
-                    war = no
-                    NOT = { has_country_flag = we_are_failures }
-                    CRI = {
-                            NOT = { owns = 964 }
-                    }
-            }
+    trigger = {
+        tag = TUR
+        has_country_flag = crimean_war
+        war = no
+        NOT = { has_country_flag = we_are_failures }
+        CRI = {
+            NOT = { owns = 964 }
+        }
+    }
 
     fire_only_once = yes
 
-            mean_time_to_happen = {
-                    months = 1
-            modifier = {
-                factor = 0.01
-                year = 1836
-             }
-            }
+    mean_time_to_happen = {
+        days = 1
+    }
 
-            option = {
+    # Crimea loses its gained cores
+    option = {
         name = "EVTOPTA32482"
-                    prestige = -15
-                    678 = { remove_core = TUR  }
-                    1094 = { remove_core = TUR }
-                    1095 = { remove_core = TUR  }
-                    1092 = { remove_core = TUR  }
-                    1091 = { remove_core = TUR  }
-                    1049 = { remove_core = TUR  }
-                    967 = { remove_core = TUR }
-                    968 = { remove_core = TUR }
-                    965 = { remove_core = CRI  }
-                    970 = { remove_core = CRI }
-                    971 = { remove_core = CRI }
-                    972 = { remove_core = CRI  }
-                    973 = { remove_core = CRI}
-                    974 = { remove_core = CRI  }
-                    975 = { remove_core = CRI  }
-                    976 = { remove_core = CRI }
-                    979 = { remove_core = CRI}
-                    1047 = { remove_core = CRI  }
-                    1048 = { remove_core = CRI }
-                    set_country_flag = we_are_failures
-            }
+
+        prestige = -15
+        678 = { remove_core = TUR  }
+        1094 = { remove_core = TUR }
+        1095 = { remove_core = TUR  }
+        1092 = { remove_core = TUR  }
+        1091 = { remove_core = TUR  }
+        1049 = { remove_core = TUR  }
+        967 = { remove_core = TUR }
+        968 = { remove_core = TUR }
+        965 = { remove_core = CRI  }
+        970 = { remove_core = CRI }
+        971 = { remove_core = CRI }
+        972 = { remove_core = CRI  }
+        973 = { remove_core = CRI}
+        974 = { remove_core = CRI  }
+        975 = { remove_core = CRI  }
+        976 = { remove_core = CRI }
+        979 = { remove_core = CRI}
+        1047 = { remove_core = CRI  }
+        1048 = { remove_core = CRI }
+        set_country_flag = we_are_failures
+    }
 }

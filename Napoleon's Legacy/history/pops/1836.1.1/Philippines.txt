@@ -3,36 +3,6 @@
 #Manila (780000/195000 POPS)
 1455 = {
     aristocrats = {
-        culture = spanish
-        religion = catholic
-        size = 200
-    }
-
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 400
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 250
-    }
-
-    artisans = {
-        culture = spanish
-        religion = catholic
-        size = 1050
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 100
-    }
-
-    aristocrats = {
         culture = filipino
         religion = catholic
         size = 1250
@@ -488,24 +458,6 @@
 }
 #Cebu (304000/76000 POPS)
 2565 = {
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 125
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 50
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 25
-    }
-
     aristocrats = {
         culture = filipino
         religion = catholic
@@ -565,24 +517,6 @@
 #Under Spanish "Rule" 1836
 #Davao (152000/38000 POPS)
 1463 = {
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 75
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 50
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 25
-    }
-
     aristocrats = {
         culture = filipino
         religion = catholic

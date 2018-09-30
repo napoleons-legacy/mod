@@ -39,32 +39,10 @@ province_event = {
     }
 
     mean_time_to_happen = {
-        months = 375
+        months = 500
         modifier = {
             factor = 1.2
-            owner = {
-                    nationalvalue = nv_liberty
-            }
-        }
-        modifier = {
-            factor = 1.2
-            OR = {
-            owner = {
-                    nationalvalue = nv_autocracy
-                NOT = {
-                    ruling_party_ideology = socialist
-                    ruling_party_ideology = communist
-                }
-            }
-
-            owner = {
-                    nationalvalue = nv_order
-                NOT = {
-                    ruling_party_ideology = socialist
-                    ruling_party_ideology = communist
-                    }
-                }
-            }
+            owner = { NOT = { nationalvalue = nv_equality } }
         }
         modifier = {
             factor = 1.5
@@ -194,6 +172,7 @@ province_event = {
                 consciousness = 3
             }
         }
+        ai_chance = { factor = 75 }
     }
 
     option = {
@@ -228,6 +207,13 @@ country_event = {
         is_ideology_enabled = socialist
         civilized = yes
         socialist = 5
+        any_state = {
+            is_colonial = no
+            OR = {
+                has_pop_type = labourers
+                has_pop_type = craftsmen
+            }
+        }
         OR = {
             government = prussian_constitutionalism
             government = democracy
@@ -292,24 +278,9 @@ country_event = {
 
         modifier = {
             factor = 1.2
-                nationalvalue = nv_liberty
+            NOT = { nationalvalue = nv_equality }
         }
-        modifier = {
-            factor = 1.1
-                nationalvalue = nv_order
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
-        }
-        modifier = {
-            factor = 1.1
-                nationalvalue = nv_autocracy
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
-        }
+
         modifier = {
             factor = 1.1
             economic_policy = laissez_faire
@@ -416,25 +387,16 @@ province_event = {
             has_province_modifier = worker_union
         }
         state_scope = {
-            has_building = factory
+            has_pop_type = craftsmen
         }
     }
 
     mean_time_to_happen = {
-        months = 275
+        months = 500
         modifier = {
             factor = 1.2
-            owner = {
-                    nationalvalue = nv_liberty
-            }
+            owner = { NOT = { nationalvalue = nv_equality } }
         }
-        modifier = {
-            factor = 1.1
-            OR = {
-                owner = { nationalvalue = nv_order }
-                owner = { nationalvalue = nv_autocracy }
-                }
-            }
         modifier = {
             factor = 1.5
             poor_strata_everyday_needs = 1.0
@@ -478,12 +440,6 @@ province_event = {
         modifier = {
             factor = 0.9
             average_consciousness = 7
-        }
-        modifier = {
-            factor = 0.9
-            owner = {
-                    nationalvalue = nv_equality
-            }
         }
         modifier = {
             factor = 1.1
@@ -663,28 +619,8 @@ country_event = {
             average_consciousness = 7
         }
         modifier = {
-            factor = 0.9
-                nationalvalue = nv_equality
-        }
-        modifier = {
             factor = 1.2
-                nationalvalue = nv_liberty
-        }
-        modifier = {
-            factor = 1.1
-                nationalvalue = nv_order
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
-        }
-        modifier = {
-            factor = 1.1
-                nationalvalue = nv_autocracy
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
+            NOT = { nationalvalue = nv_equality }
         }
         modifier = {
             factor = 1.2
@@ -780,7 +716,7 @@ province_event = {
     }
 
     mean_time_to_happen = {
-        months = 275
+        months = 500
         modifier = {
             factor = 0.9
             has_province_modifier = labor_union
@@ -850,24 +786,12 @@ province_event = {
             average_consciousness = 7
         }
         modifier = {
-            factor = 0.9
-            owner = {
-                    nationalvalue = nv_equality
-            }
-        }
-        modifier = {
-            factor = 1.5
-            owner = {
-                    nationalvalue = nv_liberty
-            }
-        }
-        modifier = {
             factor = 1.2
-            OR = {
-            owner = { nationalvalue = nv_order }
-            owner = { nationalvalue = nv_autocracy }
+            owner = {
+                NOT = { nationalvalue = nv_equality }
             }
         }
+
         modifier = {
             factor = 1.3
             owner = { economic_policy = laissez_faire }
@@ -999,13 +923,14 @@ country_event = {
             trade_unions = all_trade_unions
         }
         press_rights = free_press
+        socialist = 5
         NOT = {
             ruling_party_ideology = socialist
         }
     }
 
     mean_time_to_happen = {
-        months = 250
+        months = 400
         modifier = {
             factor = 1.5
             poor_strata_everyday_needs = 1.0
@@ -1059,28 +984,8 @@ country_event = {
             average_consciousness = 7
         }
         modifier = {
-            factor = 0.9
-                nationalvalue = nv_equality
-        }
-        modifier = {
-            factor = 1.5
-                nationalvalue = nv_liberty
-        }
-        modifier = {
             factor = 1.2
-                nationalvalue = nv_order
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
-        }
-        modifier = {
-            factor = 1.2
-                nationalvalue = nv_autocracy
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
+             NOT = { nationalvalue = nv_equality }
         }
         modifier = {
             factor = 1.1
@@ -1145,6 +1050,10 @@ country_event = {
             government = absolute_monarchy
         }
         public_meetings = yes_meeting
+        any_state = {
+            is_colonial = no
+            socialist = 10
+        }
         NOT = {
             ruling_party_ideology = socialist
             any_owned_province = { has_province_modifier = may_day }
@@ -1152,7 +1061,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 300
+        months = 350
         modifier = {
             factor = 1.2
             poor_strata_everyday_needs = 1.0
@@ -1198,29 +1107,10 @@ country_event = {
             average_consciousness = 7
         }
         modifier = {
-            factor = 0.9
-                nationalvalue = nv_equality
-        }
-        modifier = {
-            factor = 1.5
-                nationalvalue = nv_liberty
-        }
-        modifier = {
             factor = 1.2
-                nationalvalue = nv_order
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
+            NOT = { nationalvalue = nv_equality }
         }
-        modifier = {
-            factor = 1.2
-                nationalvalue = nv_autocracy
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
-        }
+
         modifier = {
             factor = 1.1
             economic_policy = laissez_faire
@@ -1287,6 +1177,7 @@ country_event = {
     trigger = {
         is_ideology_enabled = socialist
         civilized = yes
+        socialist = 5
         OR = {
             government = prussian_constitutionalism
             government = democracy
@@ -1297,7 +1188,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 300
+        months = 350
         modifier = {
             factor = 1.2
             poor_strata_everyday_needs = 1.0
@@ -1343,20 +1234,8 @@ country_event = {
             average_consciousness = 7
         }
         modifier = {
-            factor = 0.9
-                nationalvalue = nv_equality
-        }
-        modifier = {
-            factor = 1.5
-                nationalvalue = nv_liberty
-        }
-        modifier = {
-            factor = 1.2
-                nationalvalue = nv_order
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
+            factor = 1.25
+            NOT = { nationalvalue = nv_equality }
         }
         modifier = {
             factor = 1.1
@@ -1438,7 +1317,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 300
+        months = 350
         modifier = {
             factor = 1.5
             poor_strata_everyday_needs = 1.0
@@ -1500,28 +1379,8 @@ country_event = {
             average_consciousness = 7
         }
         modifier = {
-            factor = 0.9
-                nationalvalue = nv_equality
-        }
-        modifier = {
-            factor = 1.2
-                nationalvalue = nv_liberty
-        }
-        modifier = {
-            factor = 1.1
-                nationalvalue = nv_order
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
-        }
-        modifier = {
-            factor = 1.1
-                nationalvalue = nv_autocracy
-            NOT = {
-                ruling_party_ideology = socialist
-                ruling_party_ideology = communist
-            }
+            factor = 1.25
+            NOT = { nationalvalue = nv_equality }
         }
         modifier = {
             factor = 1.1
@@ -1636,7 +1495,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 300
+        months = 350
         modifier = {
             factor = 1.5
             poor_strata_everyday_needs = 1.0
@@ -1824,26 +1683,26 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 150
+        months = 200
         modifier = {
             factor = 0.9
-            average_consciousness = 5
+            revanchism = 0.01
         }
         modifier = {
             factor = 0.9
-            average_consciousness = 7
+            revanchism = 0.05
         }
         modifier = {
             factor = 0.7
-            average_militancy = 3
+            revanchism = 0.1
         }
         modifier = {
             factor = 0.6
-            average_militancy = 4
+            revanchism = 0.2
         }
         modifier = {
             factor = 0.5
-            average_militancy = 5
+            revanchism = 0.3
         }
         modifier = {
             factor = 0.8
@@ -1886,7 +1745,7 @@ country_event = {
         }
         modifier = {
             factor = 1.5
-                nationalvalue = nv_liberty
+            nationalvalue = nv_liberty
         }
         modifier = {
             factor = 0.9
@@ -2008,26 +1867,26 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 150
+        months = 200
         modifier = {
             factor = 0.9
-            average_consciousness = 5
+            revanchism = 0.01
         }
         modifier = {
             factor = 0.9
-            average_consciousness = 7
+            revanchism = 0.05
         }
         modifier = {
             factor = 0.7
-            average_militancy = 3
+            revanchism = 0.1
         }
         modifier = {
             factor = 0.6
-            average_militancy = 4
+            revanchism = 0.2
         }
         modifier = {
             factor = 0.5
-            average_militancy = 5
+            revanchism = 0.3
         }
         modifier = {
             factor = 0.8
@@ -2070,7 +1929,7 @@ country_event = {
         }
         modifier = {
             factor = 1.5
-                nationalvalue = nv_liberty
+            nationalvalue = nv_liberty
         }
         modifier = {
             factor = 0.9
@@ -2182,26 +2041,26 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 150
+        months = 200
         modifier = {
             factor = 0.9
-            average_consciousness = 5
+            revanchism = 0.01
         }
         modifier = {
             factor = 0.9
-            average_consciousness = 7
+            revanchism = 0.05
         }
         modifier = {
             factor = 0.7
-            average_militancy = 3
+            revanchism = 0.1
         }
         modifier = {
             factor = 0.6
-            average_militancy = 4
+            revanchism = 0.2
         }
         modifier = {
             factor = 0.5
-            average_militancy = 5
+            revanchism = 0.3
         }
         modifier = {
             factor = 0.8
@@ -2340,7 +2199,7 @@ country_event = {
     trigger = {
         is_ideology_enabled = fascist
         civilized = yes
-        fascist = 30
+        capital_scope = { fascist = 30 }
         OR = {
             government = prussian_constitutionalism
             government = democracy
@@ -2466,6 +2325,15 @@ country_event = {
         political_reform = state_press
         political_reform = state_controlled
         political_reform = underground_parties
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
+
         prestige = -25
 
         add_country_modifier = {
@@ -2534,30 +2402,30 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 30
+        months = 100
         modifier = {
             factor = 0.9
-            average_consciousness = 5
+            revanchism = 0.01
         }
         modifier = {
             factor = 0.9
-            average_consciousness = 7
+            revanchism = 0.05
+        }
+        modifier = {
+            factor = 0.7
+            revanchism = 0.1
+        }
+        modifier = {
+            factor = 0.6
+            revanchism = 0.2
+        }
+        modifier = {
+            factor = 0.5
+            revanchism = 0.3
         }
         modifier = {
             factor = 1.5
             NOT = { average_militancy = 2 }
-        }
-        modifier = {
-            factor = 0.8
-            average_militancy = 3
-        }
-        modifier = {
-            factor = 0.7
-            average_militancy = 4
-        }
-        modifier = {
-            factor = 0.6
-            average_militancy = 5
         }
         modifier = {
             factor = 0.8
@@ -2607,7 +2475,7 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-                nationalvalue = nv_order
+            nationalvalue = nv_order
         }
         modifier = {
             factor = 2
@@ -2704,6 +2572,7 @@ country_event = {
             government = hms_government
             government = absolute_monarchy
         }
+        fascist = 5
         OR = {
             any_core = {
                 empty = no
@@ -2715,30 +2584,30 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 150
-        modifier = {
-            factor = 0.9
-            average_consciousness = 5
-        }
-        modifier = {
-            factor = 0.9
-            average_consciousness = 7
-        }
+        months = 200
         modifier = {
             factor = 1.5
             NOT = { average_militancy = 2 }
         }
         modifier = {
-            factor = 0.8
-            average_militancy = 3
+            factor = 0.9
+            revanchism = 0.01
+        }
+        modifier = {
+            factor = 0.9
+            revanchism = 0.05
         }
         modifier = {
             factor = 0.7
-            average_militancy = 4
+            revanchism = 0.1
         }
         modifier = {
             factor = 0.6
-            average_militancy = 5
+            revanchism = 0.2
+        }
+        modifier = {
+            factor = 0.5
+            revanchism = 0.3
         }
         modifier = {
             factor = 0.8
@@ -3027,43 +2896,32 @@ country_event = {
             government = hms_government
             government = absolute_monarchy
         }
-        OR = {
-            any_core = {
-                empty = no
-                NOT = { owned_by = THIS }
-            }
-            has_recently_lost_war = yes
-            part_of_sphere = yes
-            is_disarmed = yes
+        any_owned_province = {
+            has_national_minority = yes
         }
     }
 
     mean_time_to_happen = {
         months = 200
         modifier = {
-            factor = 0.9
-            average_consciousness = 5
-        }
-        modifier = {
-            factor = 0.9
-            average_consciousness = 7
-        }
-        modifier = {
             factor = 1.5
             NOT = { average_militancy = 2 }
         }
         modifier = {
-            factor = 0.9
-            average_militancy = 3
-        }
-        modifier = {
             factor = 0.8
-            average_militancy = 4
+            any_owned_province = {
+                is_primary_culture = no
+                is_accepted_culture = no
+            }
         }
         modifier = {
             factor = 0.7
-            average_militancy = 5
+            any_state = {
+                is_primary_culture = no
+                is_accepted_culture = no
+            }
         }
+
         modifier = {
             factor = 0.8
             great_war_experience = 1
@@ -3086,13 +2944,6 @@ country_event = {
         }
         modifier = {
             factor = 0.8
-            any_core = {
-                empty = no
-                NOT = { owned_by = THIS }
-            }
-        }
-        modifier = {
-            factor = 0.8
             is_disarmed = yes
         }
         modifier = {
@@ -3112,7 +2963,7 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-                nationalvalue = nv_order
+            nationalvalue = nv_order
         }
 
         modifier = {
@@ -3217,28 +3068,28 @@ country_event = {
     mean_time_to_happen = {
         months = 200
         modifier = {
-            factor = 0.9
-            average_consciousness = 5
-        }
-        modifier = {
-            factor = 0.9
-            average_consciousness = 7
-        }
-        modifier = {
             factor = 1.5
             NOT = { average_militancy = 2 }
         }
         modifier = {
             factor = 0.9
-            average_militancy = 3
+            revanchism = 0.01
         }
         modifier = {
-            factor = 0.8
-            average_militancy = 4
+            factor = 0.9
+            revanchism = 0.05
         }
         modifier = {
             factor = 0.7
-            average_militancy = 5
+            revanchism = 0.1
+        }
+        modifier = {
+            factor = 0.6
+            revanchism = 0.2
+        }
+        modifier = {
+            factor = 0.5
+            revanchism = 0.3
         }
         modifier = {
             factor = 0.8
@@ -3388,28 +3239,28 @@ country_event = {
     mean_time_to_happen = {
         months = 200
         modifier = {
-            factor = 0.9
-            average_consciousness = 5
-        }
-        modifier = {
-            factor = 0.9
-            average_consciousness = 7
-        }
-        modifier = {
             factor = 1.5
             NOT = { average_militancy = 2 }
         }
         modifier = {
             factor = 0.9
-            average_militancy = 3
+            revanchism = 0.01
         }
         modifier = {
-            factor = 0.8
-            average_militancy = 4
+            factor = 0.9
+            revanchism = 0.05
         }
         modifier = {
             factor = 0.7
-            average_militancy = 5
+            revanchism = 0.1
+        }
+        modifier = {
+            factor = 0.6
+            revanchism = 0.2
+        }
+        modifier = {
+            factor = 0.5
+            revanchism = 0.3
         }
         modifier = {
             factor = 0.8
@@ -3570,28 +3421,28 @@ country_event = {
     mean_time_to_happen = {
         months = 250
         modifier = {
-            factor = 0.9
-            average_consciousness = 5
-        }
-        modifier = {
-            factor = 0.9
-            average_consciousness = 7
-        }
-        modifier = {
             factor = 1.5
             NOT = { average_militancy = 2 }
         }
         modifier = {
             factor = 0.9
-            average_militancy = 3
+            revanchism = 0.01
         }
         modifier = {
-            factor = 0.8
-            average_militancy = 4
+            factor = 0.9
+            revanchism = 0.05
         }
         modifier = {
             factor = 0.7
-            average_militancy = 5
+            revanchism = 0.1
+        }
+        modifier = {
+            factor = 0.6
+            revanchism = 0.2
+        }
+        modifier = {
+            factor = 0.5
+            revanchism = 0.3
         }
         modifier = {
             factor = 0.8
@@ -3741,10 +3592,9 @@ country_event = {
         civilized = yes
         any_owned_province = {
             is_colonial = no
-            socialist = 20
+            communist = 5
             OR = {
                 has_pop_type = artisans
-                has_pop_type = clerks
                 has_pop_type = craftsmen
                 has_pop_type = labourers
             }
@@ -3763,19 +3613,11 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-            NOT = { poor_strata_everyday_needs = 0.7 }
-        }
-        modifier = {
-            factor = 0.9
             NOT = { poor_strata_everyday_needs = 0.5 }
         }
         modifier = {
             factor  = 0.9
             NOT = { poor_strata_everyday_needs = 0.3 }
-        }
-        modifier = {
-            factor  = 0.8
-            NOT = { poor_strata_life_needs = 1.0 }
         }
         modifier = {
             factor = 0.9
@@ -3823,11 +3665,11 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-                nationalvalue = nv_equality
+            nationalvalue = nv_equality
         }
         modifier = {
             factor = 2
-                nationalvalue = nv_liberty
+            nationalvalue = nv_liberty
         }
         modifier = {
             factor = 1.2
@@ -3871,7 +3713,6 @@ country_event = {
                 socialist = 20
                 OR = {
                     has_pop_type = artisans
-                    has_pop_type = clerks
                     has_pop_type = craftsmen
                     has_pop_type = labourers
                 }
@@ -3892,7 +3733,6 @@ country_event = {
                     limit = {
                         OR = {
                             type = artisans
-                            type = clerks
                             type = labourers
                             type = craftsmen
                         }
@@ -3921,7 +3761,6 @@ country_event = {
                 socialist = 20
                 OR = {
                     has_pop_type = artisans
-                    has_pop_type = clerks
                     has_pop_type = craftsmen
                     has_pop_type = labourers
                 }
@@ -3931,7 +3770,6 @@ country_event = {
                     limit = {
                         OR = {
                             type = artisans
-                            type = clerks
                             type = labourers
                             type = craftsmen
                         }
@@ -3966,7 +3804,7 @@ country_event = {
         civilized = yes
         any_owned_province = {
             is_colonial = no
-            socialist = 20
+            communist = 5
         }
         OR = {
             government = absolute_monarchy
@@ -4041,11 +3879,11 @@ country_event = {
 
         modifier = {
             factor = 0.9
-                nationalvalue = nv_equality
+            nationalvalue = nv_equality
         }
         modifier = {
             factor = 2
-                nationalvalue = nv_liberty
+            nationalvalue = nv_liberty
         }
         modifier = {
             factor = 1.2
@@ -4153,10 +3991,9 @@ country_event = {
         civilized = yes
         any_owned_province = {
             is_colonial = no
-            socialist = 20
+            communist = 5
             OR = {
                 has_pop_type = artisans
-                has_pop_type = clerks
                 has_pop_type = craftsmen
                 has_pop_type = labourers
             }
@@ -4169,12 +4006,12 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 120
+        months = 200
         modifier = {
             factor = 0.9
             any_owned_province = {
                 is_colonial = no
-                socialist = 20
+                communist = 5
                 average_militancy = 5
             }
         }
@@ -4182,7 +4019,7 @@ country_event = {
             factor = 0.9
             any_owned_province = {
                 is_colonial = no
-                socialist = 20
+                communist = 5
                 average_militancy = 6
             }
         }
@@ -4190,7 +4027,7 @@ country_event = {
             factor = 0.9
             any_owned_province = {
                 is_colonial = no
-                socialist = 20
+                communist = 5
                 average_militancy = 7
             }
         }
@@ -4236,11 +4073,11 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-                nationalvalue = nv_equality
+            nationalvalue = nv_equality
         }
         modifier = {
             factor = 2
-                nationalvalue = nv_liberty
+            nationalvalue = nv_liberty
         }
         modifier = {
             factor = 1.2
@@ -4347,12 +4184,14 @@ province_event = {
         is_colonial = no
         NOT = { controlled_by = REB }
         OR = {
-            socialist = 20
+            AND = {
+                socialist = 30
+                communist = 5
+            }
             communist = 10
         }
         OR = {
             has_pop_type = artisans
-            has_pop_type = clerks
             has_pop_type = craftsmen
             has_pop_type = labourers
         }
@@ -4388,14 +4227,6 @@ province_event = {
         modifier = {
             factor = 1.5
             NOT = { communist = 5 }
-        }
-        modifier = {
-            factor = 0.9
-            socialist = 25
-        }
-        modifier = {
-            factor = 0.9
-            socialist = 30
         }
         modifier = {
             factor = 0.9

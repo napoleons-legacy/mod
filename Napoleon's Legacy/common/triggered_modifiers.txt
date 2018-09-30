@@ -215,7 +215,7 @@ the_british_raj = {
         }
     }
     research_points = 0.5
-    core_pop_militancy_modifier = -0.05
+    core_pop_militancy_modifier = -0.01
     prestige = 0.03
     icon = 19
 }
@@ -252,14 +252,31 @@ substate_nation = {
         exists = yes
         is_substate = yes
         civilized = yes
+        ai = yes
     }
 
     prestige = -0.25
     max_loan_modifier = -1.0
-    min_tax = 0.4
+    min_tax = 0.25
     max_military_spending = -0.25
     min_tariff = 1.2
-    tax_efficiency = 0.5
+    tax_efficiency = 0.3
+
+    icon = 10
+}
+
+substate_nation_player = {
+    trigger = {
+        exists = yes
+        is_substate = yes
+        civilized = yes
+        ai = no
+    }
+
+    prestige = -0.25
+    max_loan_modifier = -1.0
+    max_military_spending = -0.25
+    tax_efficiency = 0.3
 
     icon = 10
 }
@@ -371,7 +388,6 @@ landlocked_nation = {
     trigger = {
         exists = yes
         NOT = { total_num_of_ports = 1 }
-        NOT = { has_country_modifier = trek_boers }
     }
 
     import_cost = 0.5
@@ -440,9 +456,75 @@ new_world_war = {
             capital_scope = { continent = north_america }
             capital_scope = { continent = south_america }
             capital_scope = { continent = australia_new_zealand }
+            has_country_flag = south_africa_immigration
         }
     }
 
-    global_immigrant_attract = -1.15
+    global_immigrant_attract = -1.3
     icon = 16
 }
+
+# atlantic_only_nation = {
+    # trigger = {
+        # exists = yes
+        # NOT = { is_canal_enabled = 3 }
+        # year = 1837
+        # OR = {
+            # capital_scope = { continent = north_america }
+            # capital_scope = { continent = south_america }
+        # }
+        # any_owned_province = {
+            # is_overseas = no
+            # any_neighbor_province = {
+                # OR = {
+                    # #province_id = 2992 #Magellan Strait
+                    # province_id = 2991
+                    # province_id = 2990
+                    # province_id = 2989
+                    # province_id = 2988
+                    # province_id = 2987
+                    # province_id = 2986
+                    # province_id = 2985
+                    # province_id = 2984
+                    # province_id = 2983
+                    # province_id = 2982
+                    # province_id = 2981
+                    # province_id = 2980
+                    # province_id = 2975
+                    # province_id = 2973
+                    # province_id = 2972
+                    # province_id = 2968
+                    # province_id = 2967
+                    # province_id = 2966
+                    # province_id = 2965
+                    # province_id = 2964
+                    # province_id = 2963
+                    # province_id = 2962
+                    # province_id = 2961
+                    # province_id = 2960
+                    # province_id = 2959
+                    # province_id = 2958
+                    # province_id = 2956
+                    # province_id = 2955
+                    # province_id = 2954
+                    # province_id = 2953
+                    # province_id = 2952
+                    # province_id = 2945
+                    # province_id = 3022
+                    # province_id = 2944
+                    # province_id = 2943
+                    # province_id = 2946
+                    # province_id = 2978
+                    # province_id = 2971
+                    # province_id = 2969
+                    # province_id = 2974
+                    # province_id = 2979
+                    # province_id = 2977
+                # }
+            # }
+        # }
+    # }
+
+    # global_immigrant_attract = 0.1
+    # icon = 16
+# }

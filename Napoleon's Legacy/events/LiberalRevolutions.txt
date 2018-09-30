@@ -8,13 +8,14 @@ country_event = {
     trigger = {
         civilized = yes
         capital_scope = { continent = europe }
-        NOT = { tag = BRI }
-        NOT = { tag = RUS }
-        NOT = { tag = TSA }
-        NOT = { tag = FIN }
-        NOT = { tag = SWE }
-        NOT = { tag = NOR }
-        NOT = { tag = TUR }
+        OR = {
+            overlord = { has_country_flag = liberal_revolution_in_progress }
+            is_vassal = no
+            AND = {
+                culture_has_union_tag = yes
+                cultural_union = { exists = no }
+            }
+        }
         NOT = { tag = UBD }
         OR = {
             tag = AUS
@@ -39,17 +40,14 @@ country_event = {
             government = democracy
         }
         NOT = {
-            OR = {
             has_global_flag = liberal_revolution_should_now_fire
-            has_country_flag = isolationist
-            }
         }
     }
 
     mean_time_to_happen = {
         months = 96
         modifier = {
-            factor = 0.1
+            factor = 0.3
             has_global_flag = liberal_revolution_somewhere
             NOT = { is_culture_group = scandinavian }
         }
@@ -61,10 +59,6 @@ country_event = {
         modifier = {
             factor = 0.5
             any_neighbor_country = { has_country_flag = liberal_revolution_in_progress }
-        }
-        modifier = {
-            factor = 2
-            NOT = { literacy = 0.3 }
         }
         modifier = {
             factor = 0.8
@@ -79,6 +73,10 @@ country_event = {
             year = 1843
         }
         modifier = {
+            factor = 0.8
+            unemployment = 0.05
+        }
+        modifier = {
             factor = 0.5
             nationalvalue = nv_liberty
         }
@@ -91,8 +89,36 @@ country_event = {
             nationalvalue = nv_order
         }
         modifier = {
-            factor = 1.5
+            factor = 2
             nationalvalue = nv_autocracy
+        }
+        modifier = {
+            factor = 1.5
+            NOT = { industrial_score = 10 }
+        }
+        modifier = {
+            factor = 1.5
+            border_policy = closed_borders
+        }
+        modifier = {
+            factor = 1.5
+            press_rights = state_press
+        }
+        modifier = {
+            factor = 1.25
+            press_rights = censored_press
+        }
+        modifier = {
+            factor = 1.25
+            public_meetings = no_meeting
+        }
+        modifier = {
+            factor = 0.8
+            public_meetings = yes_meeting
+        }
+        modifier = {
+            factor = 0.8
+            press_rights = free_press
         }
     }
 
@@ -136,8 +162,8 @@ country_event = {
         }
         NOT = {
             OR = {
-            vote_franschise = universal_weighted_voting
-            vote_franschise = universal_voting
+                vote_franschise = universal_weighted_voting
+                vote_franschise = universal_voting
             }
         }
         year = 1847
@@ -411,7 +437,7 @@ country_event = {
         clr_country_flag = liberal_revolution_fired
         clr_country_flag = liberal_revolution_in_progress
         set_country_flag = had_liberal_revolution
-        prestige = 15
+        prestige = 10
     }
 }
 
@@ -425,7 +451,7 @@ country_event = {
     trigger = {
         civilized = yes
         OR = {
-        NOT = { inorganic_chemistry = 1 }
+            NOT = { inorganic_chemistry = 1 }
             AND = {
                 war_exhaustion = 25
                 OR = {
@@ -437,7 +463,7 @@ country_event = {
         any_owned_province = {
             total_pops = 30000
             OR = {
-            trade_goods = grain
+                trade_goods = grain
                 trade_goods = fruit
                 trade_goods = cattle
             }
@@ -447,14 +473,13 @@ country_event = {
             NOT = { terrain = montane_tundra }
             NOT = { terrain = boreal }
             NOT = { has_province_modifier = potato_blight }
-            NOT = { has_province_modifier = irish_potato_blight }
             OR = {
                 continent = europe
                 continent = north_america
                 continent = south_america
                 year = 1900
+            }
         }
-    }
     }
 
     mean_time_to_happen = {
@@ -495,7 +520,7 @@ country_event = {
             limit = {
                 total_pops = 30000
                 OR = {
-                trade_goods = grain
+                    trade_goods = grain
                     trade_goods = fruit
                     trade_goods = cattle
                 }
@@ -505,12 +530,11 @@ country_event = {
                 NOT = { terrain = montane_tundra }
                 NOT = { terrain = boreal }
                 NOT = { has_province_modifier = potato_blight }
-                NOT = { has_province_modifier = irish_potato_blight }
             }
             add_province_modifier = { name = potato_blight duration = 180 }
             state_scope = { any_pop = { consciousness = 3 } }
-            }
         }
+    }
 
     option = {
         name = "EVTOPTA10100"
@@ -519,7 +543,7 @@ country_event = {
                 any_owned_province = {
                     total_pops = 30000
                     OR = {
-                    trade_goods = grain
+                        trade_goods = grain
                         trade_goods = fruit
                         trade_goods = cattle
                     }
@@ -529,7 +553,6 @@ country_event = {
                     NOT = { terrain = montane_tundra }
                     NOT = { terrain = boreal }
                     NOT = { has_province_modifier = potato_blight }
-                    NOT = { has_province_modifier = irish_potato_blight }
                 }
             }
             any_owned = {
@@ -546,7 +569,6 @@ country_event = {
                     NOT = { terrain = montane_tundra }
                     NOT = { terrain = boreal }
                     NOT = { has_province_modifier = potato_blight }
-                    NOT = { has_province_modifier = irish_potato_blight }
                 }
                 add_province_modifier = { name = potato_blight duration = 365 }
             }
@@ -564,10 +586,7 @@ country_event = {
     trigger = {
         has_country_flag = liberal_revolution_in_progress
         any_owned_province = {
-            OR = {
-                has_province_modifier = potato_blight
-                has_province_modifier = irish_potato_blight
-            }
+            has_province_modifier = potato_blight
         }
         any_state = {
             is_colonial = no
@@ -927,6 +946,7 @@ country_event = {
         name = "EVTOPTA10120" # Allow it
         random_state = {
             limit = {
+                owner = { press_rights = censored_press }
                 is_colonial = no
                 liberal = 5
                 any_owned_province = {
@@ -945,6 +965,32 @@ country_event = {
                 }
                 dominant_issue = {
                     value = free_press
+                    factor = 0.1
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { press_rights = state_press }
+                is_colonial = no
+                liberal = 5
+                any_owned_province = {
+                    NOT = { has_province_modifier = liberal_agitation }
+                }
+            }
+            any_pop = {
+                limit = { literacy = 0.2 }
+                ideology = {
+                    value = liberal
+                    factor = 0.05
+                }
+                scaled_consciousness = {
+                    ideology = liberal
+                    factor = 4
+                }
+                dominant_issue = {
+                    value = censored_press
                     factor = 0.1
                 }
             }
@@ -989,19 +1035,35 @@ country_event = {
             value = 0.1
         }
         any_pop = {
-            limit = { reactionary = 20 }
-            consciousness = -3
-            dominant_issue = {
-                value = state_press
-                factor = 0.1
+            limit = {
+                reactionary = 15
+                OR = {
+                    is_accepted_culture = yes
+                    is_primary_culture = yes
+                }
             }
+            consciousness = -3
         }
         any_pop = {
-            limit = { pop_majority_ideology = conservative }
+            limit = {
+                pop_majority_ideology = conservative
+                OR = {
+                    is_accepted_culture = yes
+                    is_primary_culture = yes
+                }
+            }
             consciousness = -1
-            dominant_issue = {
-                value = state_press
-                factor = 0.05
+        }
+        any_pop = {
+            limit = {
+                OR = {
+                    is_accepted_culture = yes
+                    is_primary_culture = yes
+                }
+            }
+            scaled_militancy = {
+                ideology = liberal
+                factor = 3
             }
         }
         random_state = {
@@ -1124,6 +1186,7 @@ country_event = {
             limit = {
                 is_colonial = no
                 liberal = 10
+                owner = { vote_franschise = wealth_voting }
                 any_owned_province = {
                     NOT = { has_province_modifier = liberal_agitation }
                 }
@@ -1138,7 +1201,55 @@ country_event = {
                     factor = 4
                 }
                 dominant_issue = {
-                    value = universal_voting
+                    value = universal_weighted_voting
+                    factor = 0.1
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                is_colonial = no
+                liberal = 10
+                owner = { vote_franschise = wealth_weighted_voting }
+                any_owned_province = {
+                    NOT = { has_province_modifier = liberal_agitation }
+                }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.05
+                }
+                scaled_consciousness = {
+                    ideology = liberal
+                    factor = 4
+                }
+                dominant_issue = {
+                    value = wealth_voting
+                    factor = 0.1
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                is_colonial = no
+                liberal = 10
+                owner = { vote_franschise = landed_voting }
+                any_owned_province = {
+                    NOT = { has_province_modifier = liberal_agitation }
+                }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.05
+                }
+                scaled_consciousness = {
+                    ideology = liberal
+                    factor = 4
+                }
+                dominant_issue = {
+                    value = wealth_weighted_voting
                     factor = 0.1
                 }
             }
@@ -1182,27 +1293,114 @@ country_event = {
             ideology = reactionary
             value = 0.1
         }
-        any_pop = {
-            limit = {
-                OR = {
-                    reactionary = 20
-                    type = aristocrats
+        random_owned = {
+            limit = { owner = { vote_franschise = universal_weighted_voting } }
+            owner = {
+                any_pop = {
+                    limit = {
+                        OR = {
+                            reactionary = 15
+                            type = aristocrats
+                        }
+                    }
+                    consciousness = -3
+                    dominant_issue = {
+                        value = wealth_voting
+                        factor = 0.1
+                    }
+                }
+                any_pop = {
+                    limit = { pop_majority_ideology = conservative }
+                    consciousness = -1
+                    dominant_issue = {
+                        value = wealth_voting
+                        factor = 0.05
+                    }
                 }
             }
-            consciousness = -3
-            dominant_issue = {
-                value = landed_voting
-                factor = 0.1
+        }
+
+        random_owned = {
+            limit = { owner = { vote_franschise = wealth_voting } }
+            owner = {
+                any_pop = {
+                    limit = {
+                        OR = {
+                            reactionary = 15
+                            type = aristocrats
+                        }
+                    }
+                    consciousness = -3
+                    dominant_issue = {
+                        value = wealth_weighted_voting
+                        factor = 0.1
+                    }
+                }
+                any_pop = {
+                    limit = { pop_majority_ideology = conservative }
+                    consciousness = -1
+                    dominant_issue = {
+                        value = wealth_weighted_voting
+                        factor = 0.05
+                    }
+                }
             }
         }
-        any_pop = {
-            limit = { pop_majority_ideology = conservative }
-            consciousness = -1
-            dominant_issue = {
-                value = landed_voting
-                factor = 0.05
+
+        random_owned = {
+            limit = { owner = { vote_franschise = wealth_weighted_voting } }
+            owner = {
+                any_pop = {
+                    limit = {
+                        OR = {
+                            reactionary = 15
+                            type = aristocrats
+                        }
+                    }
+                    consciousness = -3
+                    dominant_issue = {
+                        value = landed_voting
+                        factor = 0.1
+                    }
+                }
+                any_pop = {
+                    limit = { pop_majority_ideology = conservative }
+                    consciousness = -1
+                    dominant_issue = {
+                        value = landed_voting
+                        factor = 0.05
+                    }
+                }
             }
         }
+
+        random_owned = {
+            limit = { owner = { vote_franschise = landed_voting } }
+            owner = {
+                any_pop = {
+                    limit = {
+                        OR = {
+                            reactionary = 15
+                            type = aristocrats
+                        }
+                    }
+                    consciousness = -3
+                    dominant_issue = {
+                        value = none_voting
+                        factor = 0.1
+                    }
+                }
+                any_pop = {
+                    limit = { pop_majority_ideology = conservative }
+                    consciousness = -1
+                    dominant_issue = {
+                        value = none_voting
+                        factor = 0.05
+                    }
+                }
+            }
+        }
+
         random_state = {
             limit = {
                 is_colonial = no
@@ -1308,6 +1506,7 @@ country_event = {
             limit = {
                 is_colonial = no
                 liberal = 5
+                owner = { political_parties = non_secret_ballots }
                 any_owned_province = {
                     NOT = { has_province_modifier = liberal_agitation }
                 }
@@ -1327,6 +1526,82 @@ country_event = {
                 }
             }
         }
+
+        random_state = {
+            limit = {
+                is_colonial = no
+                liberal = 5
+                owner = { political_parties = gerrymandering }
+                any_owned_province = {
+                    NOT = { has_province_modifier = liberal_agitation }
+                }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.05
+                }
+                scaled_consciousness = {
+                    ideology = liberal
+                    factor = 4
+                }
+                dominant_issue = {
+                    value = non_secret_ballots
+                    factor = 0.1
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                is_colonial = no
+                liberal = 5
+                owner = { political_parties = harassment }
+                any_owned_province = {
+                    NOT = { has_province_modifier = liberal_agitation }
+                }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.05
+                }
+                scaled_consciousness = {
+                    ideology = liberal
+                    factor = 4
+                }
+                dominant_issue = {
+                    value = gerrymandering
+                    factor = 0.1
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                is_colonial = no
+                liberal = 5
+                owner = { political_parties = underground_parties }
+                any_owned_province = {
+                    NOT = { has_province_modifier = liberal_agitation }
+                }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.05
+                }
+                scaled_consciousness = {
+                    ideology = liberal
+                    factor = 4
+                }
+                dominant_issue = {
+                    value = harassment
+                    factor = 0.1
+                }
+            }
+        }
+
         ai_chance = {
             factor = 50
             modifier = {
@@ -1366,20 +1641,67 @@ country_event = {
             ideology = reactionary
             value = 0.1
         }
-        any_pop = {
-            limit = { reactionary = 20 }
-            consciousness = -3
-            dominant_issue = {
-                value = underground_parties
-                factor = 0.1
+        random_owned = {
+            limit = { owner = { political_parties = harassment } }
+            owner = {
+                any_pop = {
+                    limit = { reactionary = 15 }
+                    consciousness = -3
+                    dominant_issue = {
+                        value = underground_parties
+                        factor = 0.1
+                    }
+                }
+                any_pop = {
+                    limit = { pop_majority_ideology = conservative }
+                    consciousness = -1
+                    dominant_issue = {
+                        value = underground_parties
+                        factor = 0.05
+                    }
+                }
             }
         }
-        any_pop = {
-            limit = { pop_majority_ideology = conservative }
-            consciousness = -1
-            dominant_issue = {
-                value = underground_parties
-                factor = 0.05
+        random_owned = {
+            limit = { owner = { political_parties = gerrymandering } }
+            owner = {
+                any_pop = {
+                    limit = { reactionary = 15 }
+                    consciousness = -3
+                    dominant_issue = {
+                        value = underground_parties
+                        factor = 0.1
+                    }
+                }
+                any_pop = {
+                    limit = { pop_majority_ideology = conservative }
+                    consciousness = -1
+                    dominant_issue = {
+                        value = harassment
+                        factor = 0.05
+                    }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { political_parties = non_secret_ballots } }
+            owner = {
+                any_pop = {
+                    limit = { reactionary = 15 }
+                    consciousness = -3
+                    dominant_issue = {
+                        value = underground_parties
+                        factor = 0.1
+                    }
+                }
+                any_pop = {
+                    limit = { pop_majority_ideology = conservative }
+                    consciousness = -1
+                    dominant_issue = {
+                        value = gerrymandering
+                        factor = 0.05
+                    }
+                }
             }
         }
         random_state = {
@@ -2075,7 +2397,7 @@ province_event = {
                     nationalvalue = nv_liberty
                     nationalvalue = nv_equality
                 }
-                NOT = { is_culture_group = scandinavian }
+                NOT = { is_culture_group = scandinavian    }
             }
         }
         modifier = {
@@ -2175,16 +2497,86 @@ country_event = {
             name = anti_jacobin_tract
             duration = 365
         }
-        aristocrats = {
-            ideology = {
-                value = reactionary
-                factor = 0.4
-            }
-            dominant_issue = {
-                value = landed_voting
-                factor = 0.2
+        random_owned = {
+            limit = { owner = { vote_franschise = landed_voting } }
+            owner = {
+                aristocrats = {
+                    ideology = {
+                        value = reactionary
+                        factor = 0.4
+                    }
+                    dominant_issue = {
+                        value = none_voting
+                        factor = 0.2
+                    }
+                }
             }
         }
+
+        random_owned = {
+            limit = { owner = { vote_franschise = wealth_weighted_voting } }
+            owner = {
+                aristocrats = {
+                    ideology = {
+                        value = reactionary
+                        factor = 0.4
+                    }
+                    dominant_issue = {
+                        value = landed_voting
+                        factor = 0.2
+                    }
+                }
+            }
+        }
+
+        random_owned = {
+            limit = { owner = { vote_franschise = wealth_voting } }
+            owner = {
+                aristocrats = {
+                    ideology = {
+                        value = reactionary
+                        factor = 0.4
+                    }
+                    dominant_issue = {
+                        value = wealth_weighted_voting
+                        factor = 0.2
+                    }
+                }
+            }
+        }
+
+        random_owned = {
+            limit = { owner = { vote_franschise = universal_weighted_voting } }
+            owner = {
+                aristocrats = {
+                    ideology = {
+                        value = reactionary
+                        factor = 0.4
+                    }
+                    dominant_issue = {
+                        value = wealth_voting
+                        factor = 0.2
+                    }
+                }
+            }
+        }
+
+        random_owned = {
+            limit = { owner = { vote_franschise = universal_voting } }
+            owner = {
+                aristocrats = {
+                    ideology = {
+                        value = reactionary
+                        factor = 0.4
+                    }
+                    dominant_issue = {
+                        value = universal_weighted_voting
+                        factor = 0.2
+                    }
+                }
+            }
+        }
+
         any_pop = {
             scaled_consciousness = {
                 ideology = conservative
@@ -3574,8 +3966,8 @@ country_event = {
         }
         HUN = {
             capital = 641
-            political_reform = mandatory_service
             government = hms_government
+            political_reform = mandatory_service
             political_reform = non_secret_ballots
             political_reform = universal_weighted_voting
             political_reform = population_equal_weight
@@ -3589,7 +3981,187 @@ country_event = {
             clr_country_flag = presidential_dictatorship_gov
             clr_country_flag = fascist_gov
             clr_country_flag = anarcho_liberal_gov
-            }
+        }
+
+        ##Debt Law
+        random_owned = {
+            limit = { owner = { debt_law = peonage } }
+            HUN = { political_reform = peonage }
+        }
+        random_owned = {
+            limit = { owner = { debt_law = debtors_prisons } }
+            HUN = { political_reform = debtors_prisons }
+        }
+        random_owned = {
+            limit = { owner = { debt_law = bankruptcy } }
+            HUN = { political_reform = bankruptcy }
+        }
+        random_owned = {
+            limit = { owner = { debt_law = bankruptcy } }
+            HUN = { political_reform = bankruptcy }
+        }
+
+        ##Trade Unions
+        random_owned = {
+            limit = { owner = { trade_unions = state_controlled } }
+            HUN = { political_reform = state_controlled }
+        }
+        random_owned = {
+            limit = { owner = { trade_unions = non_socialist } }
+            HUN = { political_reform = non_socialist }
+        }
+        random_owned = {
+            limit = { owner = { trade_unions = all_trade_unions } }
+            HUN = { political_reform = all_trade_unions }
+        }
+
+
+        #Child labor
+        random_owned = {
+            limit = { owner = { child_labor = child_labor_restricted } }
+            HUN = { social_reform = child_labor_restricted }
+        }
+        random_owned = {
+            limit = { owner = { child_labor = child_labor_illegal } }
+            HUN = { social_reform = child_labor_illegal }
+        }
+
+        ##Health Care
+        random_owned = {
+            limit = { owner = { health_care = trinket_health_care } }
+            HUN = { social_reform = trinket_health_care }
+        }
+        random_owned = {
+            limit = { owner = { health_care = low_health_care } }
+            HUN = { social_reform = low_health_care }
+        }
+        random_owned = {
+            limit = { owner = { health_care = acceptable_health_care } }
+            HUN = { social_reform = acceptable_health_care }
+        }
+        random_owned = {
+            limit = { owner = { health_care = good_health_care } }
+            HUN = { social_reform = good_health_care }
+        }
+
+        ##Schools
+        random_owned = {
+            limit = { owner = { school_reforms = low_schools } }
+            HUN = { social_reform = low_schools }
+        }
+        random_owned = {
+            limit = { owner = { school_reforms = acceptable_schools } }
+            HUN = { social_reform = acceptable_schools }
+        }
+        random_owned = {
+            limit = { owner = { school_reforms = good_schools } }
+            HUN = { social_reform = good_schools }
+        }
+
+        ##Penal System
+        random_owned = {
+            limit = { owner = { penal_system = colonial_transportation } }
+            HUN = { social_reform = colonial_transportation }
+        }
+        random_owned = {
+            limit = { owner = { penal_system = incarceration } }
+            HUN = { social_reform = incarceration }
+        }
+        random_owned = {
+            limit = { owner = { penal_system = rehabilitation } }
+            HUN = { social_reform = rehabilitation }
+        }
+
+
+        ##Min Wage
+        random_owned = {
+            limit = { owner = { wage_reform = trinket_wage } }
+            HUN = { social_reform = trinket_wage }
+        }
+        random_owned = {
+            limit = { owner = { wage_reform = low_minimum_wage } }
+            HUN = { social_reform = low_minimum_wage }
+        }
+        random_owned = {
+            limit = { owner = { wage_reform = acceptable_minimum_wage } }
+            HUN = { social_reform = acceptable_minimum_wage }
+        }
+        random_owned = {
+            limit = { owner = { wage_reform = good_minimum_wage } }
+            HUN = { social_reform = good_minimum_wage }
+        }
+
+        ##Work Hours
+        random_owned = {
+            limit = { owner = { work_hours = fourteen_hours } }
+            HUN = { social_reform = fourteen_hours }
+        }
+        random_owned = {
+            limit = { owner = { work_hours = twelve_hours } }
+            HUN = { social_reform = twelve_hours }
+        }
+        random_owned = {
+            limit = { owner = { work_hours = ten_hours } }
+            HUN = { social_reform = ten_hours }
+        }
+        random_owned = {
+            limit = { owner = { work_hours = eight_hours } }
+            HUN = { social_reform = eight_hours }
+        }
+
+        ##Safety Regulations
+        random_owned = {
+            limit = { owner = { safety_regulations = trinket_safety } }
+            HUN = { social_reform = trinket_safety }
+        }
+        random_owned = {
+            limit = { owner = { safety_regulations = low_safety } }
+            HUN = { social_reform = low_safety }
+        }
+        random_owned = {
+            limit = { owner = { safety_regulations = acceptable_safety } }
+            HUN = { social_reform = acceptable_safety }
+        }
+        random_owned = {
+            limit = { owner = { safety_regulations = good_safety } }
+            HUN = { social_reform = good_safety }
+        }
+
+        ##unemployment_subsidies
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = trinket_subsidies } }
+            HUN = { social_reform = trinket_subsidies }
+        }
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = low_subsidies } }
+            HUN = { social_reform = low_subsidies }
+        }
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = acceptable_subsidies } }
+            HUN = { social_reform = acceptable_subsidies }
+        }
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = good_subsidies } }
+            HUN = { social_reform = good_subsidies }
+        }
+
+        ##pensions
+        random_owned = {
+            limit = { owner = { pensions = trinket_pensions } }
+            HUN = { social_reform = trinket_pensions }
+        }
+        random_owned = {
+            limit = { owner = { pensions = low_pensions } }
+            HUN = { social_reform = low_pensions }
+        }
+        random_owned = {
+            limit = { owner = { pensions = acceptable_pensions } }
+            HUN = { social_reform = acceptable_pensions }
+        }
+        random_owned = {
+            limit = { owner = { pensions = good_pensions } }
+            HUN = { social_reform = good_pensions }
+        }
         ai_chance = {
             factor = 95
         }
@@ -3727,9 +4299,204 @@ country_event = {
             }
         }
         HUN = {
-            political_reform = mandatory_service
             capital = 641
-            }
+            government = hms_government
+            political_reform = mandatory_service
+            political_reform = non_secret_ballots
+            political_reform = universal_weighted_voting
+            political_reform = population_equal_weight
+            political_reform = free_press
+            political_reform = yes_meeting
+            clr_country_flag = communist_gov
+            clr_country_flag = absolute_monarchy_gov
+            clr_country_flag = semi_constitutional_monarchy_gov
+            set_country_flag = constitutional_monarchy_gov
+            clr_country_flag = democracy_gov
+            clr_country_flag = presidential_dictatorship_gov
+            clr_country_flag = fascist_gov
+            clr_country_flag = anarcho_liberal_gov
+        }
+
+        ##Debt Law
+        random_owned = {
+            limit = { owner = { debt_law = peonage } }
+            HUN = { political_reform = peonage }
+        }
+        random_owned = {
+            limit = { owner = { debt_law = debtors_prisons } }
+            HUN = { political_reform = debtors_prisons }
+        }
+        random_owned = {
+            limit = { owner = { debt_law = bankruptcy } }
+            HUN = { political_reform = bankruptcy }
+        }
+        random_owned = {
+            limit = { owner = { debt_law = bankruptcy } }
+            HUN = { political_reform = bankruptcy }
+        }
+
+        ##Trade Unions
+        random_owned = {
+            limit = { owner = { trade_unions = state_controlled } }
+            HUN = { political_reform = state_controlled }
+        }
+        random_owned = {
+            limit = { owner = { trade_unions = non_socialist } }
+            HUN = { political_reform = non_socialist }
+        }
+        random_owned = {
+            limit = { owner = { trade_unions = all_trade_unions } }
+            HUN = { political_reform = all_trade_unions }
+        }
+
+
+        #Child labor
+        random_owned = {
+            limit = { owner = { child_labor = child_labor_restricted } }
+            HUN = { social_reform = child_labor_restricted }
+        }
+        random_owned = {
+            limit = { owner = { child_labor = child_labor_illegal } }
+            HUN = { social_reform = child_labor_illegal }
+        }
+
+        ##Health Care
+        random_owned = {
+            limit = { owner = { health_care = trinket_health_care } }
+            HUN = { social_reform = trinket_health_care }
+        }
+        random_owned = {
+            limit = { owner = { health_care = low_health_care } }
+            HUN = { social_reform = low_health_care }
+        }
+        random_owned = {
+            limit = { owner = { health_care = acceptable_health_care } }
+            HUN = { social_reform = acceptable_health_care }
+        }
+        random_owned = {
+            limit = { owner = { health_care = good_health_care } }
+            HUN = { social_reform = good_health_care }
+        }
+
+        ##Schools
+        random_owned = {
+            limit = { owner = { school_reforms = low_schools } }
+            HUN = { social_reform = low_schools }
+        }
+        random_owned = {
+            limit = { owner = { school_reforms = acceptable_schools } }
+            HUN = { social_reform = acceptable_schools }
+        }
+        random_owned = {
+            limit = { owner = { school_reforms = good_schools } }
+            HUN = { social_reform = good_schools }
+        }
+
+        ##Penal System
+        random_owned = {
+            limit = { owner = { penal_system = colonial_transportation } }
+            HUN = { social_reform = colonial_transportation }
+        }
+        random_owned = {
+            limit = { owner = { penal_system = incarceration } }
+            HUN = { social_reform = incarceration }
+        }
+        random_owned = {
+            limit = { owner = { penal_system = rehabilitation } }
+            HUN = { social_reform = rehabilitation }
+        }
+
+
+        ##Min Wage
+        random_owned = {
+            limit = { owner = { wage_reform = trinket_wage } }
+            HUN = { social_reform = trinket_wage }
+        }
+        random_owned = {
+            limit = { owner = { wage_reform = low_minimum_wage } }
+            HUN = { social_reform = low_minimum_wage }
+        }
+        random_owned = {
+            limit = { owner = { wage_reform = acceptable_minimum_wage } }
+            HUN = { social_reform = acceptable_minimum_wage }
+        }
+        random_owned = {
+            limit = { owner = { wage_reform = good_minimum_wage } }
+            HUN = { social_reform = good_minimum_wage }
+        }
+
+        ##Work Hours
+        random_owned = {
+            limit = { owner = { work_hours = fourteen_hours } }
+            HUN = { social_reform = fourteen_hours }
+        }
+        random_owned = {
+            limit = { owner = { work_hours = twelve_hours } }
+            HUN = { social_reform = twelve_hours }
+        }
+        random_owned = {
+            limit = { owner = { work_hours = ten_hours } }
+            HUN = { social_reform = ten_hours }
+        }
+        random_owned = {
+            limit = { owner = { work_hours = eight_hours } }
+            HUN = { social_reform = eight_hours }
+        }
+
+        ##Safety Regulations
+        random_owned = {
+            limit = { owner = { safety_regulations = trinket_safety } }
+            HUN = { social_reform = trinket_safety }
+        }
+        random_owned = {
+            limit = { owner = { safety_regulations = low_safety } }
+            HUN = { social_reform = low_safety }
+        }
+        random_owned = {
+            limit = { owner = { safety_regulations = acceptable_safety } }
+            HUN = { social_reform = acceptable_safety }
+        }
+        random_owned = {
+            limit = { owner = { safety_regulations = good_safety } }
+            HUN = { social_reform = good_safety }
+        }
+
+        ##unemployment_subsidies
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = trinket_subsidies } }
+            HUN = { social_reform = trinket_subsidies }
+        }
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = low_subsidies } }
+            HUN = { social_reform = low_subsidies }
+        }
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = acceptable_subsidies } }
+            HUN = { social_reform = acceptable_subsidies }
+        }
+        random_owned = {
+            limit = { owner = { unemployment_subsidies = good_subsidies } }
+            HUN = { social_reform = good_subsidies }
+        }
+
+        ##pensions
+        random_owned = {
+            limit = { owner = { pensions = trinket_pensions } }
+            HUN = { social_reform = trinket_pensions }
+        }
+        random_owned = {
+            limit = { owner = { pensions = low_pensions } }
+            HUN = { social_reform = low_pensions }
+        }
+        random_owned = {
+            limit = { owner = { pensions = acceptable_pensions } }
+            HUN = { social_reform = acceptable_pensions }
+        }
+        random_owned = {
+            limit = { owner = { pensions = good_pensions } }
+            HUN = { social_reform = good_pensions }
+        }
+
         change_tag_no_core_switch = HUN
         ai_chance = {
             factor = 0
@@ -3881,146 +4648,6 @@ country_event = {
         }
         ai_chance = {
             factor = 25
-        }
-    }
-}
-
-# Dutch Constitutional Reform
-country_event = {
-    id = 10228
-    title = "EVTNAME10228"
-    desc = "EVTDESC10228"
-    news = yes
-    news_desc_long = "EVTDESC10228_NEWS_LONG"
-    news_desc_medium = "EVTDESC10228_NEWS_MEDIUM"
-    news_desc_short = "EVTDESC10228_NEWS_SHORT"
-    picture = "danishgovernment"
-
-    trigger = {
-        tag = NET
-        exists = BEL
-        OR = {
-            government = absolute_monarchy
-            government = prussian_constitutionalism
-        }
-        OR = {
-            has_country_flag = liberal_revolution_in_progress
-            has_country_modifier = springtime_of_nations
-        }
-        any_owned_province = {
-            is_core = NET
-            controlled_by = REB
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-        modifier = {
-            factor = 0.1
-            capital_scope = { controlled_by = REB }
-        }
-    }
-
-    option = {
-        name = "EVT10228OPTA"
-        prestige = -10
-        random_owned = {
-            limit = {
-                owner = { government = prussian_constitutionalism }
-            }
-            owner = {
-                political_reform = universal_weighted_voting
-                political_reform = yes_meeting
-                political_reform = free_press
-            }
-        }
-        random_owned = {
-            limit = {
-                owner = { government = absolute_monarchy }
-            }
-            owner = {
-                government = prussian_constitutionalism
-                political_reform = landed_voting
-                political_reform = yes_meeting
-                political_reform = free_press
-            }
-        }
-        ruling_party_ideology = liberal
-        random_owned = {
-            limit = {
-                province_id = 375
-                controlled_by = REB
-            }
-            change_controller = NET
-        }
-        any_owned = {
-            limit = { is_colonial = no }
-            remove_province_modifier = liberal_agitation
-            any_pop = {
-                scaled_militancy = {
-                    ideology = liberal
-                    factor = -8
-                }
-                scaled_militancy = {
-                    ideology = conservative
-                    factor = -6
-                }
-            }
-        }
-    }
-
-    option = {
-        name = "EVT10228OPTB"
-        prestige = -5
-        ruling_party_ideology = liberal
-        political_reform = yes_meeting
-        political_reform = free_press
-        random_owned = {
-            limit = {
-                province_id = 375
-                controlled_by = REB
-            }
-            change_controller = NET
-        }
-        any_owned = {
-            limit = { is_colonial = no }
-            remove_province_modifier = liberal_agitation
-            any_pop = {
-                scaled_militancy = {
-                    ideology = liberal
-                    factor = -4
-                }
-                scaled_militancy = {
-                    ideology = conservative
-                    factor = -8
-                }
-                scaled_consciousness = {
-                    ideology = liberal
-                    factor = 4
-                }
-            }
-        }
-    }
-
-    option = {
-        name = "EVT10228OPTC"
-        prestige = 5
-        random_owned = {
-            limit = {
-                province_id = 375
-                controlled_by = REB
-            }
-            change_controller = NET
-        }
-        any_owned = {
-            limit = { is_colonial = no }
-            remove_province_modifier = liberal_agitation
-            any_pop = {
-                scaled_militancy = {
-                    ideology = conservative
-                    factor = -3
-                }
-            }
         }
     }
 }
@@ -4644,7 +5271,7 @@ country_event = {
 country_event = {
     id = 10310
     title = "EVTNAME10320"
-    desc = "EVTDESC10330"
+    desc = "EVTDESC10320"
     picture = "Demonstration"
 
     trigger = {
@@ -4656,9 +5283,9 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 300
+        months = 480
         modifier = {
-            factor = 0.1
+            factor = 0.5 #0.1
             has_country_flag = liberal_revolution_in_progress
         }
         modifier = {
@@ -4713,7 +5340,6 @@ country_event = {
             OR = {
                 vote_franschise = universal_weighted_voting
                 vote_franschise = universal_voting
-                has_country_flag = isolationist
             }
         }
         civilized = yes
@@ -4782,6 +5408,68 @@ country_event = {
         random_state = {
             limit = {
                 is_colonial = no
+                owner = { vote_franschise = none_voting }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.1
+                }
+                militancy = 1
+                consciousness = 1
+            }
+            poor_strata = {
+                dominant_issue = {
+                    value = landed_voting
+                    factor = 0.1
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                is_colonial = no
+                owner = { vote_franschise = landed_voting }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.1
+                }
+                militancy = 1
+                consciousness = 1
+            }
+            poor_strata = {
+                dominant_issue = {
+                    value = wealth_weighted_voting
+                    factor = 0.1
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                is_colonial = no
+                owner = { vote_franschise = wealth_weighted_voting }
+            }
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.1
+                }
+                militancy = 1
+                consciousness = 1
+            }
+            poor_strata = {
+                dominant_issue = {
+                    value = wealth_voting
+                    factor = 0.1
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                is_colonial = no
+                owner = { vote_franschise = wealth_voting }
             }
             any_pop = {
                 ideology = {

@@ -811,25 +811,25 @@
     aristocrats = {
         culture = mashriqi
         religion = shiite
-        size = 350
+        size = 550
     }
 
     clergymen = {
         culture = mashriqi
         religion = shiite
-        size = 150
+        size = 275
     }
 
     artisans = {
         culture = mashriqi
         religion = shiite
-        size = 650
+        size = 1300
     }
 
     farmers = {
         culture = mashriqi
         religion = shiite
-        size = 11850
+        size = 23875
     }
 }
 #Kut (100000/25000 POPS)
@@ -1216,30 +1216,6 @@
         culture = bedouin
         religion = shiite
         size = 4550
-    }
-
-    aristocrats = {
-        culture = mashriqi
-        religion = shiite
-        size = 200
-    }
-
-    clergymen = {
-        culture = mashriqi
-        religion = shiite
-        size = 125
-    }
-
-    artisans = {
-        culture = mashriqi
-        religion = shiite
-        size = 650
-    }
-
-    farmers = {
-        culture = mashriqi
-        religion = shiite
-        size = 12025
     }
 
 }

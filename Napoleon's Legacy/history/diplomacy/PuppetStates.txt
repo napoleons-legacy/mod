@@ -33,21 +33,14 @@ vassal = {
     first = CAN
     second = INC
     start_date = 1822.1.1
-    end_date = 1949.1.1
-}
-
-vassal = {
-    first = CAN
-    second = EIC
-    start_date = 1801.1.1
-    end_date = 1949.1.1
+    end_date = 1878.1.1
 }
 
 substate = {
     first = CAN
     second = HUD
     start_date = 1670.1.1
-    end_date = 1890.1.1
+    end_date = 1860.1.1
 }
 
 #Bahrain - Qatar
@@ -56,35 +49,6 @@ vassal = {
     second = QAT
     start_date = 1815.1.1
     end_date = 1868.1.1
-}
-##Substates of the Argentine Confederation
-substate = {
-    first = ARC
-    second = ENT
-    start_date = 1836.1.1
-    end_date = 1937.1.1
-}
-
-substate = {
-    first = ARC
-    second = CRT
-    start_date = 1836.1.1
-    end_date = 1937.1.1
-}
-
-vassal = {
-    first = ARC
-    second = BOL
-    start_date = 1836.1.1
-    end_date = 1937.1.1
-}
-
-#Russia - Abkhazia
-vassal = {
-    first = RUS
-    second = ABK
-    start_date = 1801.1.1
-    end_date = 1865.1.1
 }
 
 #Ottoman Empire-Wallachia

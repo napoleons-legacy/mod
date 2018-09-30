@@ -1,7 +1,7 @@
 #########################################################
-#                                                       #
-#       Events for the Taiping Rebellion in China       #
-#                                                       #
+#                                                        #
+#       Events for the Taiping Rebellion in China        #
+#                                                        #
 #########################################################
 
 #Main Rebellion Event
@@ -15,6 +15,8 @@ country_event = {
     news_desc_medium = "EVTDESC160001_NEWS_MEDIUM"
     news_desc_short = "EVTDESC160001_NEWS_SHORT"
     major = yes
+
+
 
     trigger = {
         tag = QNG
@@ -670,7 +672,7 @@ country_event = {
         poor_strata = { militancy = 3 }
         add_country_modifier = {
             name = taiping_draft
-            duration = 1825
+            duration = 90
         }
         random_country = {
             limit = {
@@ -919,16 +921,7 @@ country_event = {
     desc = "EVTDESC160009"
     picture = "taiping"
 
-    trigger = {
-        tag = QNG
-        owns = 2221
-        2221 = { is_core = TPG }
-        NOT = { has_country_flag = heavenly_kingdom }
-    }
-
-    mean_time_to_happen = {
-        days = 10
-    }
+    is_triggered_only = yes
 
     option = {
         name = "EVT160003OPTA"
@@ -1672,6 +1665,15 @@ country_event = {
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
         clr_country_flag = theocratic_government
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
+
         ai_chance = {
             factor = 30
             modifier = {
@@ -1850,6 +1852,107 @@ country_event = {
                 move_pop = 2681
             }
         }
+
+        random_owned = {
+            limit = { owner = { civilized = no land_reform = yes_land_reform } }
+            TAI = { economic_reform = yes_land_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no admin_reform = yes_admin_reform } }
+            TAI = { economic_reform = yes_admin_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no finance_reform = yes_finance_reform } }
+            TAI = { economic_reform = yes_finance_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no finance_reform = finance_reform_two } }
+            TAI = { economic_reform = finance_reform_two }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no monetary_reform = yes_monetary_reform } }
+            TAI = { economic_reform = yes_monetary_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no monetary_reform = monetary_reform_two } }
+            TAI = { economic_reform = monetary_reform_two activate_technology = no_standard }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no education_reform = yes_education_reform } }
+            TAI = { economic_reform = yes_education_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no research_reform = yes_research_reform } }
+            TAI = { economic_reform = yes_research_reform activate_technology = late_enlightenment_philosophy }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_training = yes_foreign_training } }
+            TAI = { military_reform = yes_foreign_training }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_weapons = yes_foreign_weapons } }
+            TAI = { military_reform = yes_foreign_weapons activate_technology = flintlock_rifles }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_officers = yes_foreign_officers } }
+            TAI = { military_reform = yes_foreign_officers activate_technology = military_staff_system }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no army_schools = yes_army_schools } }
+            TAI = { military_reform = yes_army_schools }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_naval_officers = yes_foreign_naval_officers } }
+            TAI = { military_reform = yes_foreign_naval_officers }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no naval_schools = yes_naval_schools } }
+            TAI = { military_reform = yes_naval_schools }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_navies = yes_foreign_navies } }
+            TAI = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no western_shipyards = yes_western_shipyards } }
+            TAI = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_artillery = yes_foreign_artillery } }
+            TAI = { military_reform = yes_foreign_artillery activate_technology = bronze_muzzle_loaded_artillery }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no slavery = yes_slavery } }
+            TAI = { political_reform = yes_slavery }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no slavery = freedom_of_womb } }
+            TAI = { political_reform = freedom_of_womb }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no slavery = no_slavery } }
+            TAI = { political_reform = no_slavery }
+        }
+
         random_owned = {
             limit = {
                 owner = { government = absolute_monarchy }
@@ -1863,6 +1966,14 @@ country_event = {
                 political_reform = state_press
                 political_reform = state_controlled
                 political_reform = underground_parties
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
             }
         }
         random_owned = {
@@ -1878,6 +1989,14 @@ country_event = {
                 political_reform = state_press
                 political_reform = state_controlled
                 political_reform = underground_parties
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
             }
         }
         random_owned = {
@@ -1893,6 +2012,14 @@ country_event = {
                 political_reform = state_press
                 political_reform = state_controlled
                 political_reform = underground_parties
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
             }
         }
         random_owned = {
@@ -1916,6 +2043,14 @@ country_event = {
                 political_reform = state_press
                 political_reform = state_controlled
                 political_reform = underground_parties
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
             }
         }
         random_owned = {
@@ -1931,6 +2066,14 @@ country_event = {
                 political_reform = state_press
                 political_reform = state_controlled
                 political_reform = underground_parties
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
             }
         }
         random_owned = {
@@ -1951,6 +2094,14 @@ country_event = {
                 social_reform = good_subsidies
                 social_reform = good_pensions
                 social_reform = good_health_care
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
             }
         }
         TAI = {

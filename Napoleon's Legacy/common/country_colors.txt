@@ -43,13 +43,6 @@ AWA = {
     color3= { 117 127 174  }
 }
 
-# Belgium FIXED
-BEL     = {
-    color1= { 244 56 49  }
-    color2= { 248 199 67  }
-    color3= { 107 170 77  }
-}
-
 
 # Bosnia
 BOS = {
@@ -149,13 +142,6 @@ IRE = {
     color1= { 112 150 105  }
     color2= { 136 157 23  }
     color3= { 117 127 174  }
-}
-
-# Ionian Islands FIXED
-ION = {
-    color1= { 69 80 169  }
-    color2= { 248 199 67  }
-    color3= { 131 101 85  }
 }
 
 # Scotland
@@ -489,8 +475,8 @@ ITA = {
 #    color3= { 99 137 153  }
 #}
 
-# Modena
-MOD = {
+# Kingdom of Italy
+KOI = {
     color1= { 241 252 151  }
     color2= { 129 177 125  }
     color3= { 193 26 14  }
@@ -501,13 +487,6 @@ PAP = {
     color1= { 248 199 67  }
     color2= { 255 255 255  }
     color3= { 48 164 51  }
-}
-
-# Parma FIXED
-PAR = {
-    color1= { 255 255 255  }
-    color2= { 248 199 67  }
-    color3= { 112 150 105  }
 }
 
 # Sardinia FIXED
@@ -524,32 +503,11 @@ SIC = {
     color3= { 131 101 85  }
 }
 
-# Siebenbürgen
+# SiebenbÃ¼rgen
 SIE = {
     color1= { 75 111 205  }
     color2= { 124 140 162  }
     color3= { 117 127 174  }
-}
-
-# Tuscany FIXED
-TUS = {
-    color1= { 217 80 75  }
-    color2= { 255 255 255  }
-    color3= { 107 170 77  }
-}
-
-# Venice
-VEN = {
-    color1= { 54 167 156  }
-    color2= { 69 157 208  }
-    color3= { 166 189 199  }
-}
-
-# Flanders
-FLA = {
-    color1= { 43 141 172  }
-    color2= { 195 149 155  }
-    color3= { 134 166 117  }
 }
 
 # Haiti
@@ -571,13 +529,6 @@ LIP = {
     color1= { 248 199 67  }
     color2= { 244 56 49  }
     color3= { 255 255 255  }
-}
-
-# Luxembourg FIXED
-LUX = {
-    color1= { 122 182 242 }
-    color2= { 255 255 255  }
-    color3= { 132 11 11  }
 }
 
 # Lubeck FIXED
@@ -666,13 +617,6 @@ HDJ = {
     color3= { 69 157 208  }
 }
 
-# Krakow FIXED
-KRA = {
-    color1= { 255 255 255  }
-    color2= { 128 146 202  }
-    color3= { 255 255 255  }
-}
-
 # Trieste
 TRE = {
     color1= { 40 164 157  }
@@ -701,13 +645,6 @@ EGY = {
     color3= { 48 164 51  }
 }
 
-# Transvaal FIXED
-TRN = {
-    color1= { 49 244 76  }
-    color2= { 94 117 55  }
-    color3= { 112 150 105  }
-}
-
 # Tripoli FIXED
 TRI = {
     color1= { 87 146 87  }
@@ -725,13 +662,6 @@ TUN = {
 # Sokoto FIXED
 SOK = {
     color1= { 49 244 76  }
-    color2= { 94 117 55  }
-    color3= { 112 150 105  }
-}
-
-# Oranje
-ORA = {
-    color1= { 255 154 82  }
     color2= { 94 117 55  }
     color3= { 112 150 105  }
 }

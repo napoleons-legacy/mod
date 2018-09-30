@@ -37,6 +37,7 @@ citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
+
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
@@ -57,10 +58,11 @@ private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
 guild_based_production = 1
-publishing_industry = 1
+piston_steam_engine = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
-piston_steam_engine = 1
+romanticism = 1
 
 #Inventions
 #corvettes = yes

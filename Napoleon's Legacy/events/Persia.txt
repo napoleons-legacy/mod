@@ -38,6 +38,7 @@ country_event = {
         NOT = { relation = { who = PER value = 180 } }
         revolution_n_counterrevolution = 1
         PER = {
+            is_vassal = no
             ai = yes
             average_militancy = 6
             OR = {
@@ -66,7 +67,7 @@ country_event = {
             relation = { who = THIS value = -50 }
         }
         any_country = {
-            limit = { neighbour = PER OR = { is_greater_power = yes tag = TUR tag = RUS tag = TSA NOT = { tag = THIS } } }
+            limit = { neighbour = PER OR = { is_greater_power = yes tag = TUR has_country_flag = russian_country NOT = { tag = THIS } } }
             casus_belli = {
                 target = THIS
                 type = release_puppet
@@ -204,7 +205,7 @@ country_event = {
             ideology = { value = reactionary factor = 0.1 }
         }
         upper_house = { ideology = reactionary value = 0.3 }
-        country_event = { id = 110021 days = 14 }
+        country_event = { id = 110021 days = 5 }
     }
     option = {
         name = "EVT110020OPTB" # "The state must be independent."
@@ -213,7 +214,7 @@ country_event = {
             limit = { is_primary_culture = yes is_state_religion = yes }
             scaled_militancy = { factor = 6 ideology = reactionary }
         }
-        country_event = { id = 110022 days = 14 }
+        country_event = { id = 110022 days = 5 }
     }
 
 }
@@ -263,7 +264,7 @@ country_event = {
         name = "EVT110021OPTB" # "We do not abide to their pressure!"
         set_country_flag = refused_deal_with_ulama
         clr_country_flag = ulama_yes
-        country_event = { id = 110028 days = 30 }
+        country_event = { id = 110028 days = 5 }
         any_pop = {
             limit = { is_primary_culture = yes is_state_religion = yes }
             scaled_militancy = { factor = 8 ideology = reactionary }
@@ -317,7 +318,7 @@ country_event = {
         name = "EVT110022OPTB" # "We cannot be bought!"
         set_country_flag = refused_deal_with_ulama
         clr_country_flag = ulama_no
-        country_event = { id = 110028 days = 30 }
+        country_event = { id = 110028 days = 5 }
         any_pop = {
             limit = { is_primary_culture = yes is_state_religion = yes }
             scaled_militancy = { factor = 8 ideology = reactionary }
@@ -327,7 +328,7 @@ country_event = {
     option = {
         name = "EVT110022OPTC" # "They shall submit or pay the price."
         set_country_flag = refused_deal_with_ulama
-        country_event = { id = 110028 days = 30 }
+        country_event = { id = 110028 days = 5 }
         clr_country_flag = ulama_no
         any_pop = {
             limit = {
@@ -467,7 +468,7 @@ country_event = {
     }
 }
 
-#The B�b
+#The Báb
 country_event = {
     id = 900022
     title = "EVTNAME900022"
@@ -490,7 +491,7 @@ country_event = {
     }
 }
 
-# The B�b's Execution
+# The Báb's Execution
 country_event = {
     id = 900023
     title = "EVTNAME900023"

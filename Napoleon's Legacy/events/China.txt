@@ -44,10 +44,10 @@ country_event = {
         remove_country_modifier = uncivilized_isolationism
         remove_country_modifier = trade_restrictions
         remove_country_modifier = sayings_of_the_dutch
-        remove_country_modifier = isolationist_foreign_naval_officers
-        remove_country_modifier = isolationist_foreign_naval_schools
-        remove_country_modifier = isolationist_foreign_officers
-        remove_country_modifier = isolationist_foreign_training
+        clr_country_flag = using_foreign_weapons
+        clr_country_flag = using_foreign_artillery
+        clr_country_flag = using_foreign_ships
+        clr_country_flag = using_foreign_shipyards
         any_owned = {
             remove_province_modifier = western_presence
             remove_province_modifier = foreign_smugglers
@@ -201,7 +201,7 @@ country_event = {
         }
         add_country_modifier = {
             name = taiping_draft
-            duration = 365
+            duration = 90
         }
         add_country_modifier = { name = global_baby_boom duration = 730 }
         prestige = 10
@@ -211,10 +211,10 @@ country_event = {
         remove_country_modifier = uncivilized_isolationism
         remove_country_modifier = trade_restrictions
         remove_country_modifier = sayings_of_the_dutch
-        remove_country_modifier = isolationist_foreign_naval_officers
-        remove_country_modifier = isolationist_foreign_naval_schools
-        remove_country_modifier = isolationist_foreign_officers
-        remove_country_modifier = isolationist_foreign_training
+        clr_country_flag = using_foreign_weapons
+        clr_country_flag = using_foreign_artillery
+        clr_country_flag = using_foreign_ships
+        clr_country_flag = using_foreign_shipyards
         any_owned = {
             remove_province_modifier = western_presence
             remove_province_modifier = foreign_smugglers
@@ -497,8 +497,7 @@ country_event = {
                 ai = yes
                 capital_scope = { continent = europe }
                 NOT = { tag = TUR }
-                NOT = { tag = RUS }
-                NOT = { tag = TSA }
+                NOT = { has_country_flag = russian_country }
                 NOT = { relation = { who = THIS value = 0 } }
                 NOT = { truce_with = THIS }
                 military_score = 100

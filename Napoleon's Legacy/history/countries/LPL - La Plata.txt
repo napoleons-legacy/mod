@@ -1,21 +1,24 @@
 capital = 2348
 primary_culture = platinean
 religion = catholic
-government = presidential_dictatorship
-plurality = 0.0
-nationalvalue = nv_order
-literacy = 0.12
+government = democracy
+plurality = 20.0
+nationalvalue = nv_equality
+literacy = 0.13
+non_state_culture_literacy = 0.01
 civilized = yes
+prestige = 3
+is_releasable_vassal = no
 
 # Political reforms
 slavery = no_slavery
-upper_house_composition = appointed
-vote_franschise = none_voting
+upper_house_composition = state_equal_weight
+vote_franschise = landed_voting
 public_meetings = yes_meeting
-press_rights = censored_press
+press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
-political_parties = underground_parties
+political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -31,7 +34,7 @@ conscription = one_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = primary_culture_only
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -48,3 +51,27 @@ upper_house = {
 }
 
 set_country_flag = new_world_nation
+
+# Technologies
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
+the_command_principle = 1
+private_banks = 1
+no_standard = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+enlightenment_thought = 1
+piston_steam_engine = 1
+mechanical_production = 1
+
+# Inventions
+
+#Starting Consciousness
+consciousness = 2
+nonstate_consciousness = 0
+
+oob = "LPL_oob.txt"

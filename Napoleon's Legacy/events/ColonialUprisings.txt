@@ -5,7 +5,7 @@
 #
 ###########################################################################
 
-# Bitter Rain
+# Bitter Rain/Dry Spell
 country_event = {
     id = 14500
     title = "EVTNAME14500"
@@ -29,9 +29,7 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-            NOT = {
-                plurality = 4
-            }
+            NOT = { plurality = 40 }
         }
         modifier = {
             factor = 2
@@ -69,7 +67,10 @@ country_event = {
         random_state = {
             limit = { is_colonial = yes }
             any_owned = {
-                any_pop = { consciousness = 6 militancy = 4 }
+                any_pop = {
+                    consciousness = 6
+                    militancy = 4
+                }
                 add_province_modifier = {
                     name = colonial_exploitation
                     duration = 365
@@ -89,7 +90,7 @@ country_event  = {
     trigger = {
         colonial_nation = yes
         civilized = yes
-        NOT = { economic_policy = laissez_faire }
+        NOT = {    economic_policy = laissez_faire }
         liberal = 0.05
     }
 
@@ -325,15 +326,34 @@ country_event = {
 
     option = {
         name = "EVTOPTA14540"
-        random_owned = { limit = { owner = { ai = yes } } owner = { treasury = 50000 } }
+        random_owned = {
+            limit = {
+                owner = {
+                    ai = yes
+                    NOT = { money = 50000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 50 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    ai = yes
+                    NOT = { money = 50000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 50 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 50000 ai = yes } }
+            owner = { treasury = -50000 }
+        }
         random_owned = { limit = { owner = { ai = no } } owner = { add_tax_relative_income = -0.30 } }
         add_country_modifier = { name = colonial_museum_of_natural_history duration = -1 }
         ai_chance = {
             factor = 80
-            modifier = {
-                factor = 0
-                NOT = { money = 51000}
-            }
         }
     }
 
@@ -347,13 +367,7 @@ country_event = {
                 militancy = -2
             }
         }
-        ai_chance = {
-            factor = 20
-            modifier = {
-                factor = 100
-                NOT = { money = 51000}
-            }
-        }
+        ai_chance = { factor = 20 }
     }
 }
 
@@ -676,12 +690,12 @@ country_event = {
 
     trigger = {
         any_owned_province = {
-        is_colonial = yes
+            is_colonial = yes
             any_pop = {
                 type = soldiers
                 militancy = 5
-        is_primary_culture = no
-        is_accepted_culture = no
+                is_primary_culture = no
+                is_accepted_culture = no
             }
         }
     }
@@ -718,20 +732,21 @@ country_event = {
                     is_accepted_culture = no
                 }
             }
-        state_scope = {
-            soldiers = {
-                limit = {
-                    is_primary_culture = no
-                    is_accepted_culture = no
+            state_scope = {
+                soldiers = {
+                    limit = {
+                        is_primary_culture = no
+                        is_accepted_culture = no
+                    }
+                    militancy = 4
                 }
-                militancy = 4
             }
         }
     }
-    }
+
     option = {
         name = "EVTOPTB14590"
-            prestige = -5
+        prestige = -5
         random_owned = {
             limit = {
                 is_colonial = yes
@@ -741,14 +756,14 @@ country_event = {
                     is_primary_culture = no
                     is_accepted_culture = no
                 }
-        }
-        state_scope = {
-            soldiers = {
-                limit = {
-                    is_primary_culture = no
-                    is_accepted_culture = no
-                }
-                militancy = 2
+            }
+            state_scope = {
+                soldiers = {
+                    limit = {
+                        is_primary_culture = no
+                        is_accepted_culture = no
+                    }
+                    militancy = 2
                 }
             }
         }
@@ -939,7 +954,7 @@ province_event = {
         modifier = {
             factor = 0.9
             owner = { mass_politics = 1 }
-            }
+        }
         modifier = {
             factor = 1.5
             NOT = { average_consciousness = 5 }
@@ -1010,8 +1025,7 @@ country_event = {
         civilized = yes
         NOT = { administration_spending = 0.5 }
         NOT = { state_n_government = 1 }
-        }
-
+    }
 
     mean_time_to_happen = {
         months = 300
@@ -2147,22 +2161,23 @@ country_event = {
             limit = { is_colonial = yes }
             any_pop = { reduce_pop = 0.8 }
             any_owned = { life_rating = -1 }
-            }
+        }
         ai_chance = {
             factor = 50
             modifier = {
                 factor = 100
                 NOT = { money = 10000 }
+            }
         }
     }
-    }
+
     option = {
         name = "EVTOPTB14780"
         treasury = -10000
         random_state = {
             limit = { is_colonial = yes }
             any_pop = { reduce_pop = 0.95 }
-            }
+        }
         ai_chance = {
             factor = 50
             modifier = {
@@ -2213,9 +2228,8 @@ country_event = {
         random_state = {
             limit = { is_colonial = yes }
             any_owned = { life_rating = 1 }
-            }
         }
-
+    }
 
     option = {
         name = "EVTOPTB14790"

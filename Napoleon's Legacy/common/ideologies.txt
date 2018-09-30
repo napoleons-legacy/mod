@@ -325,18 +325,20 @@ socialist_group = {
 
         add_political_reform = {
             base = 0
-            modifier = {
-                factor = 0.9
-                ruling_party_ideology = communist
-                militancy = 9
-                political_movement_strength = 0.9
-            }
         }
         remove_political_reform = {
             base = 1
+            modifier = {
+                factor = -1
+                NOT = { ruling_party_ideology = communist }
+            }
         }
         add_social_reform = {
             base = 1
+            modifier = {
+                factor = -1
+                NOT = { ruling_party_ideology = communist }
+            }
         }
         remove_social_reform = {
             base = 0
@@ -445,12 +447,6 @@ liberal_group = {
 
         add_political_reform = {
             base = 0
-            modifier = {
-                factor = 0.9
-                ruling_party_ideology = anarcho_liberal
-                militancy = 9
-                political_movement_strength = 0.9
-            }
         }
         remove_political_reform = {
             base = 0

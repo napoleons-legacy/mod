@@ -40,16 +40,6 @@ SER = {
     level = 4
     influence_value = 0
 }
-GRE = {
-    value = 125
-    level = 4
-    influence_value = 0
-}
-KRA = {
-    value = 125
-    level = 4
-    influence_value = 0
-}
 DNW = {
     value = 125
 }
@@ -738,7 +728,7 @@ leader = {
 }
 
 leader = {
-    name = "Alexander von Lüders"
+    name = "Alexander von Lï¿½ders"
     picture = rus_gen_lueders
     date = 1829.1.1
     type = land

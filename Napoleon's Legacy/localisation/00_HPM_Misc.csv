@@ -1,4 +1,15 @@
 ;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+oceanic;Pacific Islander;;;;;;;;;;;;;;;;;;;;;!;;;;;;;;x;;;
+levantine;Greco-Caucasian;;;;;;;;;;;;;;;;;;;;;!;;;;;;;;x;;;
+turko_semitic;Turkic;;;;;;;;;;;;;;;;;;;;;!;;;;;;;;x;;;
+polish_culture_group;Western Slavic;;;;;;;;;;;;;;;;;;;;;!;;;;;;;;x;;;
+BRIGADES_COMPARE_GREATER;Brigades comparison factor of two countries is at least §Y$VAL$§!\n;;;;;;;;;;;;;;;;;;;;;;!;;;;;;;;x;;;
+BRIGADES_COMPARE_SMALLER;Brigades comparison factor of two countries is less than §Y$VAL$§!\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
+jewish_group;Jewish;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+muslim;Muslim;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+christian;Christian;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+eastern;Eastern Religions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+pagan;Pagans;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 jefferson_method_desc;The Jefferson Method is a highest averages method for allocating seats, and is thus a type of party-list proportional representation. Proportional representation systems aim to allocate seats to parties approximately in proportion to the number of votes received. For example, if a party wins one-third of the votes then it should gain about one-third of the seats. In general, exact proportionality is not possible because these divisions produce fractional numbers of seats. As a result, several methods have been devised which ensure that the parties' seat allocations, which are of course whole numbers, are as proportional as possible. In comparison with the Sainte-Lague method, §Ythe Jefferson Method slightly favours large parties and coalitions over scattered small parties§W.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 precious_goods;Precious Goods;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 precious_goods_RGO_SIZE;Precious Goods Market Size;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -43,14 +54,14 @@ social_policy;Welfare Policy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 colonial_spending_policy;Colonial;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 colonial_spending_policy_l;Colonial;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 colonial_spending_policy_desc;The government has a colonial policy towards its subjects and has no intention of spending any money on their welfare.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-no_state_interference;Opposed;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-no_state_interference_l;Opposed;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+no_state_interference;Opposed to Welfare;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+no_state_interference_l;Opposed to Welfare;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 no_state_interference_desc;The government feels that welfare expenditures are unnecessary and that individuals should look after themselves.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 no_position_set;No Official Policy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-no_position_set_l;No Official Policy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
+no_position_set_l;No Official Welfare Policy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 no_position_set_desc;There's no official position on welfare policy and how much should the government spend on it, the amount being largely left for the ruler to decide.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 populist_welfare;Paternalistic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-populist_welfare_l;Paternalistic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+populist_welfare_l;Paternalistic Welfare;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 populist_welfare_desc;The welfare system in this government has a paternalistic characteristic, with a minimum amount set to be spent in support of this oftentimes populist policy.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 welfare_state;Full Welfare State;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 welfare_state_l;Full Welfare State;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -298,7 +309,7 @@ dagestani;Dagestani;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 circassian;Circassian;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 chechen;Chechen;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 north_caucasian;Caucasian Minor;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-caucasian;Caucasian;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+caucasian;North Caucasian;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 botanical_expedition_threatened;Botanical Expedition Threatened;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 participates_in_botanical_expedition;Participates in Botanical Expedition;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 ANY_POP_IN_PROVINCE_STARTS;Any Pop;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -751,6 +762,10 @@ christino_rebels_title;Christino;;;;;;;;;;;;x,,
 christino_rebels_name;Christinos;;;;;;;;;;;;x,,
 christino_rebels_desc;These rebels support the royal line of Ferdinand VII, and consider the current king to be a pretender. They intend to reinstall the rightful queen, and restore the liberal reforms enacted by the previous royal line.;;;;;;;;;;;;x
 christino_rebels_army;Christinos;;;;;;;;;;;;x,,
+slave_revolt_title;Slaves;;;;;;;;;;;;x,,
+slave_revolt_name;Slave Revolt;;;;;;;;;;;;x,,
+slave_revolt_desc;These slaves are mounting an armed uprising. They will shed blood and free slaves wherever they go, until the country is freed from the institution of slavery.;;;;;;;;;;;;x
+slave_revolt_army;Escaped Slaves;;;;;;;;;;;;x,,
 independence_rebels_title;Independence;;;;;;;;;;;;x,,
 independence_rebels_name;Independence Rebels;;;;;;;;;;;;x,,
 independence_rebels_desc;These rebels seek to free the country from its vassal status.;;;;;;;;;;;;x,,
@@ -764,6 +779,6 @@ native_rebels_name;Anti-Colonial Rebels;;;;;;;;;;;;x,,
 native_rebels_desc;These rebels seek to restore rulership of the country to its proper native culture.;;;;;;;;;;;;x,,
 native_rebels_army;Anti-Colonial Rebels;;;;;;;;;;;;x,,
 liberal_rebels_desc;In an absolute monarchy, Jacobins will seek to impose a constitutional monarchy. Otherwise, Jacobins will strive to create a democratic government with a liberal ideology and a focus on political reform.;;;;;;;;;;;;;x
-NORMAL_WAR_CONQUEST_ANY_NAME;$ORDER$Conquest of $SECOND$ War;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+NORMAL_WAR_CONQUEST_ANY_NAME;$ORDER$Conquest of $SECOND_COUNTRY$ War;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 AGRESSION_WAR_CONQUEST_ANY_NAME;$ORDER$War of $FIRST$ Aggression against $SECOND_COUNTRY$;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 RANK_INDUSTRY_D;Industry score is a measure of your level of industrialization. It is a combination of the number of employed craftsmen and clerks, divided by 2500, and the value of your foreign investment.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

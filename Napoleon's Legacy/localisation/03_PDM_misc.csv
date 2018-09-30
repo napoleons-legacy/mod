@@ -1,14 +1,12 @@
 ;;;;;;;;;;;;;;x,,,
 HAS_NO_UNION_TAG;has culture union;n'a pas de culture syndicale;besitzt KEINE kulturellen Unionen;;;;;;;;;;;x
-able;Able;Capable;Fähig;;;;;;;;;;;;x;;;;;;;;;;;;;;
+UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;
 breton;Breton;Breton;Bretonisch;;;;;;;;;;;x
 occitan;Occitan;Occitain;Occitanisch;;;;;;;;;;;x
-old_school;Old School;Vieille école;Alte Schule;;;;;;;;;;;;x;;;;;;;;;;;;;;
 HAS_GOODS;produces ;;;;;;;;;;;;;x,,,
 assyrian;Assyrian;;;;;;;;;;;;;x,,,
 xhosa;Xhosa;;;;;;;;;;;;;x,,,
 shinto;Shinto;;;;;;;;;;;;;x,,,
-shirker;Shirker;Tire-au-flanc;Drückeberger;;;;;;;;;;;;x;;;;;;;;;;;;;;
 sephardic;Sephardic;;;;;;;;;;;;x,,,
 picard;Picard;;;;;;;;;;;;x,,,
 jewish_cultures;Jewish;;;;;;;;;;;;x,,,
@@ -28,7 +26,6 @@ socialist_rebels_title;Militant Socialist;;;;;;;;;;;;x,,,
 socialist_rebels_name;Militant Socialists;;;;;;;;;;;;x,,,
 socialist_rebels_army;Militant Socialists;;;;;;;;;;;;x,,,
 indian_nationalists_title;Indian Nationalist;Pan-nationalistes;Pan-Nationalisten;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-indifferent;Indifferent;Indifférent;Gleichgültig;;;;;;;;;;;;x;;;;;;;;;;;;;;
 indian_nationalists_name;Indian Nationalists;$UNION_ADJ$ - Pan-nationalistes;$UNION_ADJ$ Pan-Nationalisten;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 indian_nationalists_desc;Indian nationalists seek to unify the sub-continent into a free and independent nation-state, by any means necessary. This includes breaking free from foreign oppressors and uniting with their cultural kin.;;;;;;;;;;;;x,,
 indian_nationalists_army;Indian Nationalists;$UNION$ - Jeunes brigades;Junge $UNION$ Brigaden;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
@@ -41,14 +38,12 @@ independence_rebels_name;Independence Rebels;;;;;;;;;;;;x,,,
 independence_rebels_desc;These rebels seek to free the country from its vassal status.;;;;;;;;;;;;x,,,
 independence_rebels_army;Independence Rebels;;;;;;;;;;;;x,,,
 native_rebels_title;Anti-Colonial;;;;;;;;;;;;x,,,
-natural_born_leader;Natural Born Leader;Leader naturel;Geborener Anführer;;;;;;;;;;;;x;;;;;;;;;;;;;;
 native_rebels_name;Anti-Colonial Rebels;;;;;;;;;;;;x,,,
 native_rebels_desc;These rebels seek to restore rulership of the country to its proper native culture.;;;;;;;;;;;;x,,,
 native_rebels_army;Anti-Colonial Rebels;;;;;;;;;;;;x,,,
 liberal_rebels_desc;In an absolute monarchy, Jacobins will seek to impose a constitutional monarchy. Otherwise, Jacobins will strive to create a democratic government with a liberal ideology and a focus on political reform.;;;;;;;;;;;;;x,
 NOT_STRONGER_ARMY_THAN;Does not have a stronger military than ;;;;;;;;;;;;x,,,
 STRONGER_ARMY_THAN;Has a stronger military than ;;;;;;;;;;;;x,,,
-UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;
 regular;Regular;;;;;;;;;;;;x,,,
 regular_short;Reg;;;;;;;;;;;;x,,,
 horse_artillery;Mobile Artillery;;;;;;;;;;;;x,,,
@@ -56,73 +51,73 @@ horse_artillery_short;M-art;;;;;;;;;;;;x,,,
 no_personality;No Personality;Aucune;Nichts;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 active_p;Active;Actif;Aktiv;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 au_fait;Au'fait;Au fait;Sicher;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-audacious;Audacious;Audacieux;Kühn;;;;;;;;;;;;x;;;;;;;;;;;;;;
 apathetic;Apathetic;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+audacious;Audacious;Audacieux;Kühn;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+able;Able;Capable;Fähig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 aweless;Aweless;Casse-cou;Respektlos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-balanced_p;Balanced;Pondéré;Ausgewogen;;;;;;;;;;;;x;;;;;;;;;;;;;;
 aggressive;Aggressive;Agressif;Aggressiv;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 arrogant;Arrogant;Arrogant;Arrogant;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+balanced_p;Balanced;Pondéré;Ausgewogen;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 bigoted;Bigoted;Sectaire;Engstirnig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 brilliant;Brilliant;Brillant;Brilliant;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 brutish;Brutish;Brutal;Brutal;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-bootlicker;Bootlicker;Lèche-bottes;Speichellecker;;;;;;;;;;;;x;;;;;;;;;;;;;;
+bold;Bold;Téméraire;Mutig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 brash;Brash;Impudent;Forsch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 ballsy;Ballsy;Valeureux;Forsch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 bastard;Bastard;Goujat;Bastard;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 cautious;Cautious;Prudent;Vorsichtig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-cavalry_school;Cavalry School;École de cavalerie;Kavallerieschule;;;;;;;;;;;;x;;;;;;;;;;;;;;
+coward;Coward;Couard;Kleinmütig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+chickenhearted;Chickenhearted;Poltron;Ängstlich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 craven;Craven;Veule;Mutlos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+competent;Competent;Compétent;Kompetent;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 clever;Clever;Adroit;Clever;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+careless;Careless;Négligent;Achtlos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 calm;Calm;Calme;Ruhig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 cool_minded;Coolminded;Serein;Bedachtsam;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 careful;Careful;Attentif;Sorgsam;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-careless;Careless;Négligent;Achtlos;;;;;;;;;;;;x;;;;;;;;;;;;;;
 cruel;Cruel;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+choleric;Choleric;Colérique;Cholerisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 charismatic;Charismatic;Charismatique;Charismatisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-chickenhearted;Chickenhearted;Poltron;Ängstlich;;;;;;;;;;;;x;;;;;;;;;;;;;;
 chivalrous;Chivalrous;Courtois;Ritterlich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-choleric;Choleric;Colérique;Cholerisch;;;;;;;;;;;;x;;;;;;;;;;;;;;
 confident;Confident;Confiant;Sicher;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 doughty;Doughty;Vaillant;Tapfer;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 defiant;Defiant;Provocateur;Trotzig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-disgraced;Disgraced;Déshonoré;In Ungnade Gefallener;;;;;;;;;;;;x;;;;;;;;;;;;;;
+disciplined;Disciplined;Discipliné;Diszipliniert;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 diligent;Diligent;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-debutante;Debutante;Débutant;Debütant;;;;;;;;;;;;x;;;;;;;;;;;;;;
-dauntless;Dauntless;Déterminé;Unverzagt;;;;;;;;;;;;x;;;;;;;;;;;;;;
+dauntless;Dauntless;Déterminé;Unverzagt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+daring;Daring;Hardi;Draufgängerisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+disorderly;Disorderly;Désordonné;Unordentlich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 decisive;Decisive;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-deeply_religious;Deeply Religious;Très croyant;Tief religiös;;;;;;;;;;;;x;;;;;;;;;;;;;;
 dumb;Dumb;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-earnest;Earnest;Sérieux;Ernsthaft;;;;;;;;;;;;x;;;;;;;;;;;;;;
 diplomatic;Diplomatic;Diplomate;Diplomatisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-disciplined;Disciplined;Discipliné;Diszipliniert;;;;;;;;;;;;x;;;;;;;;;;;;;;
+deeply_religious;Deeply Religious;Très croyant;Tief religiös;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 expert;Expert;Expert;Experte;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-expert_raider;Expert Raider;Commando expérimenté;Überfallexperte;;;;;;;;;;;;x;;;;;;;;;;;;;;
 energetic;Energetic;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-engineer;Engineer;Génie;Ingenieur;;;;;;;;;;;;x;;;;;;;;;;;;;;
 efficient;Efficient;Efficace;Effizient;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 emotional;Emotional;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-eccentric_genius;Eccentric Genius;Génie excentrique;Exzentrisches Genie;;;;;;;;;;;;x;;;;;;;;;;;;;;
+earnest;Earnest;Sérieux;Ernsthaft;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 fearless;Fearless;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 forgiving;Forgiving;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 fanatic;Fanatic;Fanatique;Fanatisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 gallant;Gallant;Courageux;Galant;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+glory_hound;Glory Hound;Ambitieux;Ruhmsüchtig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 genius;Genius;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-gifted_administrator;Gifted Administrator;Administrateur doué;Begabter Administrator;;;;;;;;;;;;x;;;;;;;;;;;;;;
 gutsy;Gutsy;Brave;Waghalsig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 harsh;Harsh;Dur;Harsch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-heroic;Heroic;Héroïque;Heroisch;;;;;;;;;;;;x;;;;;;;;;;;;;;
+hellbent;Hellbent;Acharné;Draufgänger;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+heroic;Heroic;Héroïque;Heroisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 irresponsible;Irresponsible;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 imaginative;Imaginative;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 indecisive;Indecisive;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 inspiring;Inspiring;Stimulant;Inspirierend;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+impetuous;Impetuous;Impétueux;Ungestüm;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 implacable;Implacable;Implacable;Unerbittlich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 imperious;Imperious;Autoritaire;Herrisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-impetuous;Impetuous;Impétueux;Ungestüm;;;;;;;;;;;;x;;;;;;;;;;;;;;
 irate;Irate;Furieux;Aufbrausend;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 intuitive;Intuitive;Intuitif;Intuitiv;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 impulsive;Impulsive;Impulsif;Impulsiv;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-incapable;Incapable;Incapable;Unfähig;;;;;;;;;;;;x;;;;;;;;;;;;;;
-incompetent;Incompetent;Incompétent;Inkompetent;;;;;;;;;;;;x;;;;;;;;;;;;;;
+incapable;Incapable;Incapable;Unfähig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+indifferent;Indifferent;Indifférent;Gleichgültig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 intelligent;Intelligent;Intelligent;Intelligent;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 inept;Inept;Inepte;Untauglich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 inefficient;Inefficient;Inefficace;Ineffizient;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
@@ -130,133 +125,144 @@ keen;Keen;Enthousiaste;Gewitzt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 lilylivered;Lilylivered;Froussard;Feige;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 lackluster;Lackluster;Terne;Lustlos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 merciless;Merciless;Impitoyable;Gnadenlos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-meticulous;Meticulous;Méticuleux;Genau;;;;;;;;;;;;x;;;;;;;;;;;;;;
-mediocre;Mediocre;Médiocre;Mittelmäßig;;;;;;;;;;;;x;;;;;;;;;;;;;;
+meticulous;Meticulous;Méticuleux;Genau;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+manful;Manful;Ardent;Männlich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 madman;Madman;Fou;Irrer;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-megalomaniac;Megalomaniac;Mégalomane;Megalomane;;;;;;;;;;;;x;;;;;;;;;;;;;;
+mediocre;Mediocre;Médiocre;Mittelmäßig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 maladroit;Maladroit;Maladroit;Unbeholfen;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-manful;Manful;Ardent;Männlich;;;;;;;;;;;;x;;;;;;;;;;;;;;
 openminded;Openminded;Ouvert d'esprit;Offen;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-perverse;Perverse;Entêté;Pervers;;;;;;;;;;;;x;;;;;;;;;;;;;;
+persistant;Persistant;Persévérant;Hartnäckig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 pompous;Pompous;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 paranoid;Paranoid;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+polite;Polite;Poli;Höflich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 pusillanimous;Pusillanimous;Pusillanime;Verzagt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 pisspoor;Pisspoor;Pitoyable;Arm;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+perverse;Perverse;Entêté;Pervers;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+resourceful;Resourceful;Ingénieux;Findig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 respectful;Respectful;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-rising_star;Rising Star;Étoile montante;Aufsteigender Stern;;;;;;;;;;;;x;;;;;;;;;;;;;;
 romantic;Romantic;Romantique;Romantisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 relentless;Relentless;Implacable;Unbarmherzig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-resolute;Resolute;Résolu;Resolut;;;;;;;;;;;;x;;;;;;;;;;;;;;
-resourceful;Resourceful;Ingénieux;Findig;;;;;;;;;;;;x;;;;;;;;;;;;;;
+reserved;Reserved;Réservé;Reserviert;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+resolute;Resolute;Résolu;Resolut;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 ruthless;Ruthless;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-sad_sack;Sad Sack;Raté;Trauriger Sack;;;;;;;;;;;;x;;;;;;;;;;;;;;
 rebellious;Rebellious;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 skilled;Skilled;Talentueux;Geschickt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 secretive;Secretive;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+shrinking_violet;Shrinking Violet;Timoré;Mauerblümchen;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 sinner;Sinner;;;;;;;;;;;;x,,,
+strange;Strange;Étrange;Merkwürdig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 stout;Stout;Solide;Beherzt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-stouthearted;Stouthearted;Intrépide;Beherzt;;;;;;;;;;;;x;;;;;;;;;;;;;;
 soldierly;Soldierly;Militaire;Soldatisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-spoiled;Spoiled;Gâté;Verwöhnt;;;;;;;;;;;;x;;;;;;;;;;;;;;
+spirited;Spirited;Fougueux;Sprühend;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 stalwart;Stalwart;Robuste;Robust;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 soft;Soft;Indolent;Weich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-spirited;Spirited;Fougueux;Sprühend;;;;;;;;;;;;x;;;;;;;;;;;;;;
-strange;Strange;Étrange;Merkwürdig;;;;;;;;;;;;x;;;;;;;;;;;;;;
-school_of_defense;School of Defense;École de défense;Schule der Verteidigung;;;;;;;;;;;;x;;;;;;;;;;;;;;
-shrinking_violet;Shrinking Violet;Timoré;Mauerblümchen;;;;;;;;;;;;x;;;;;;;;;;;;;;
+spineless;Spineless;Mou;Rückgratlos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+stouthearted;Stouthearted;Intrépide;Beherzt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+steadfast;Steadfast;Inébranlable;Solide;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+scared;Scared;Craintif;Verängstigt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+shirker;Shirker;Tire-au-flanc;Drückeberger;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 smart_p;Smart;Habile;Schlau;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 sharp;Sharp;Malin;Klug;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 timid;Timid;Timide;Furchtsam;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+tactful;Tactful;Délicat;Taktvoll;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+unflinching;Unflinching;Opiniâtre;Entschlossen;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 unruly;Unruly;Insoumis;Widerborstig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-unsound;Unsound;Dangereux;Unzuverlässig;;;;;;;;;;;;x;;;;;;;;;;;;;;
+undisciplined;Undisciplined;Indiscipliné;Undiszipliniert;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 unforgiving;Unforgiving;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-unqualified;Unqualified;Non qualifié;Unqualifiziert;;;;;;;;;;;;x;;;;;;;;;;;;;;
+unmanly;Unmanly;Lâche;Unmännlich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+unsound;Unsound;Dangereux;Unzuverlässig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 vainglorious;Vainglorious;Vaniteux;Prahlerisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-vicious;Vicious;Violent;Bösartig;;;;;;;;;;;;x;;;;;;;;;;;;;;
-war_college;War College;École militaire;Militärakademie;;;;;;;;;;;;x;;;;;;;;;;;;;;
-wretched;Wretched;Misérable;Jämmerlich;;;;;;;;;;;;x;;;;;;;;;;;;;;
+vicious;Vicious;Violent;Bösartig;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+wrathful;Wrathful;Courroucé;Zornerfüllt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+wretched;Wretched;Misérable;Jämmerlich;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 yellow;Yellow;Trouillard;Memme;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-yesman;Yesman;Béni-oui-oui;Jasager;;;;;;;;;;;;x;;;;;;;;;;;;;;
 no_background;No Background;Aucun(e);Nichts;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 ambitious_careerist;Ambitious Careerist;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 architect;Architect;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+armchair_general;Armchair General;Général de façade;Sesselgeneral;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 artillerist;Artillerist;Artilleur;Artillerist;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 amateur;Amateur;Amateur;Amateur;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 aristocrat;Aristocrat;Aristocrate;Aristokrat;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-armchair_general;Armchair General;Général de façade;Sesselgeneral;;;;;;;;;;;;x;;;;;;;;;;;;;;
 adventurer;Adventurer;Aventurier;Abenteurer;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-butcher;Butcher;Boucher;Schlächter;;;;;;;;;;;;x;;;;;;;;;;;;;;
+butcher;Butcher;Boucher;Schlächter;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+bureaucrat_speed;Bureaucrat Speed;Vitesse de bureaucrate;Bürokratische Geschwindigkeit;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+brownnoser;Brownnoser;Lèche-cul;Stiefellecker;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 brilliant_strategist;Brilliant Strategist;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-brownnoser;Brownnoser;Lèche-cul;Stiefellecker;;;;;;;;;;;;x;;;;;;;;;;;;;;
+bootlicker;Bootlicker;Lèche-bottes;Speichellecker;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+cavalry_school;Cavalry School;École de cavalerie;Kavallerieschule;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 colonial_recruit;Colonial Recruit;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-competent;Competent;Compétent;Kompetent;;;;;;;;;;;;x;;;;;;;;;;;;;;
 colonial_b;Colonial;Colonial;Kolonial;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 cartographer;Cartographer;Cartographe;Kartograf;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 cursed_luck;Cursed Luck;Malchanceux;Vom Pech verflucht;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-daring;Daring;Hardi;Draufgängerisch;;;;;;;;;;;;x;;;;;;;;;;;;;;
 corrupt;Corrupt;Corrompu;Korrupt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-coward;Coward;Couard;Kleinmütig;;;;;;;;;;;;x;;;;;;;;;;;;;;
 clueless;Clueless;Ignorant;Ahnungslos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-disorderly;Disorderly;Désordonné;Unordentlich;;;;;;;;;;;;x;;;;;;;;;;;;;;
+debutante;Debutante;Débutant;Debütant;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+disgraced;Disgraced;Déshonoré;In Ungnade Gefallener;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 drillmaster;Drillmaster;Sergent instructeur;Zuchtmeister;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 diplomat;Diplomat;Diplomate;Diplomat;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+engineer;Engineer;Génie;Ingenieur;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 entrepreneur;Entrepreneur;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 exranker;Exranker;Ancien militaire;Ex-Gefreiter;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+expert_raider;Expert Raider;Commando expérimenté;Überfallexperte;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+eccentric_genius;Eccentric Genius;Génie excentrique;Exzentrisches Genie;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 elder_statesmen;Elder Statesman;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-elderly;Elderly;Âgé;Älter;;;;;;;;;;;;x;;;;;;;;;;;;;;
+elderly;Elderly;Âgé;Älter;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 ethnic;Ethnic;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-glory_hound;Glory Hound;Ambitieux;Ruhmsüchtig;;;;;;;;;;;;x;;;;;;;;;;;;;;
+gifted_administrator;Gifted Administrator;Administrateur doué;Begabter Administrator;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 generals_aide;General's Aide;Aide de camp;Generalsadjutant;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 hated;Hated;Odieux;Gehasst;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-hellbent;Hellbent;Acharné;Draufgänger;;;;;;;;;;;;x;;;;;;;;;;;;;;
 innovative_tactician;Innovative Tactician;Tacticien novateur;Innovativer Taktiker;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 immoral;Immoral;Immoral;Unmoralisch;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 introverted_philosopher;Introverted Philosopher;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+incompetent;Incompetent;Incompétent;Inkompetent;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 intellectual;Intellectual;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 military_theoretician;Military Theoretician;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+megalomaniac;Megalomaniac;Mégalomane;Megalomane;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 mercenary;Mercenary;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 feeble;Feeble;;;;;;;;;;;;x,,,
 harsh_disciplinarian;Harsh Disciplinarian;;;;;;;;;;;;x,,,
 fearsome;Fearsome;;;;;;;;;;;;x,,,
 independent;Independent-Minded;;;;;;;;;;;;x,,,
 bureaucrat;Bureaucrat;;;;;;;;;;;;x,,,
-bureaucrat_speed;Bureaucrat Speed;Vitesse de bureaucrate;Bürokratische Geschwindigkeit;;;;;;;;;;;;x;;;;;;;;;;;;;;
 member_of_elite;Member of the Elite;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+natural_born_leader;Natural Born Leader;Leader naturel;Geborener Anführer;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 nationalist;Nationalist;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+old_school;Old School;Vieille école;Alte Schule;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+poet;Poet;Poète;Poet;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+priest;Priest;Prêtre;Priester;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 professor;Professor;Professeur;Professor;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-priest;Priest;Prêtre;Priester;;;;;;;;;;;;x;;;;;;;;;;;;;;
+powerful_friends;Powerful Friends;Amis puissants;Mächtige Freunde;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 pawn;Pawn;Pion;Pfand;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-persistant;Persistant;Persévérant;Hartnäckig;;;;;;;;;;;;x;;;;;;;;;;;;;;
 questionable_loyalties;Questionable Loyalties;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 renowned_adventurer;Renowned Adventurer;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-reserved;Reserved;Réservé;Reserviert;;;;;;;;;;;;x;;;;;;;;;;;;;;
 politician;Politician;Politicien;Politiker;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+rising_star;Rising Star;Étoile montante;Aufsteigender Stern;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 religious_fanatic;Religious Fanatic;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 religious_leader;Religious Leader;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 railroad_man;Railroad Man;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 rags_to_riches;Rags to Riches;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 son_of_hero;Hero's Son;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-spineless;Spineless;Mou;Rückgratlos;;;;;;;;;;;;x;;;;;;;;;;;;;;
-school_of_firepower;School of Firepower;École de la puissance de feu;Schule der Feuerkraft;;;;;;;;;;;;x;;;;;;;;;;;;;;
-school_of_the_bayonet;School of the Bayonet;École de la baïonnette;Schule des Bajonetts;;;;;;;;;;;;x;;;;;;;;;;;;;;
-school_of_offense;School of Offense;École d'attaque;Schule der Offensive;;;;;;;;;;;;x;;;;;;;;;;;;;;
-scared;Scared;Craintif;Verängstigt;;;;;;;;;;;;x;;;;;;;;;;;;;;
+spoiled;Spoiled;Gâté;Verwöhnt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+school_of_defense;School of Defense;École de défense;Schule der Verteidigung;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+school_of_offense;School of Offense;École d'attaque;Schule der Offensive;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+school_of_the_bayonet;School of the Bayonet;École de la baïonnette;Schule des Bajonetts;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+school_of_firepower;School of Firepower;École de la puissance de feu;Schule der Feuerkraft;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+sad_sack;Sad Sack;Raté;Trauriger Sack;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 state_ideologue;State Ideologue;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-steadfast;Steadfast;Inébranlable;Solide;;;;;;;;;;;;x;;;;;;;;;;;;;;
 sucker;Sucker;Gogo;Trottel;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 sycophant;Sycophant;Flagorneur;Kriecher;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-tactful;Tactful;Délicat;Taktvoll;;;;;;;;;;;;x;;;;;;;;;;;;;;
 toady;Toady;Flatteur;Schleimer;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 turncoat;Turncoat;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 university_educated;University Educated;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-unmanly;Unmanly;Lâche;Unmännlich;;;;;;;;;;;;x;;;;;;;;;;;;;;
-undisciplined;Undisciplined;Indiscipliné;Undiszipliniert;;;;;;;;;;;;x;;;;;;;;;;;;;;
+uncommonly_young;Uncommonly Young;Singulièrement jeune;Ungewöhnlich jung;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 unfit;Unfit;Inapte;Ungeeignet;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-unflinching;Unflinching;Opiniâtre;Entschlossen;;;;;;;;;;;;x;;;;;;;;;;;;;;
+unqualified;Unqualified;Non qualifié;Unqualifiziert;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 unfulfilled_potential;Unfulfilled Potential;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 warmonger;Warmonger;Belliciste;Kriegstreiber;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+war_college;War College;École militaire;Militärakademie;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 wounded_veteran;Wounded Veteran;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-wrathful;Wrathful;Courroucé;Zornerfüllt;;;;;;;;;;;;x;;;;;;;;;;;;;;
+womanizer;Womanizer;Coureur de jupons;Schürzenjäger;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
+yesman;Yesman;Béni-oui-oui;Jasager;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 arab_revolt_ended;Arab Revolt Ended;;;;;;;;;;;;x,,,
 newly_released_nation;Newly-Formed Nation;;;;;;;;;;;;x,,,
 crop_rotation;Crop Rotation;;;;;;;;;;;;x,,,
@@ -266,16 +272,14 @@ phosphates_desc;Phosphates are now being used to fertilize farm soil in the area
 nitrates;Nitrates;;;;;;;;;;;;x,,,
 nitrates_desc;Nitrates are now being used to fertilize farm soil in the area.;;;;;;;;;;;;x,,,
 will_support_entre_rios;Pledged Support to Entre Rios;;;;;;;;;;;;x,,,
-womanizer;Womanizer;Coureur de jupons;Schürzenjäger;;;;;;;;;;;;x;;;;;;;;;;;;;;
 shaft_mine;Shaft Mining;;;;;;;;;;;;x,,,
 shaft_mine_desc;Deep shaft mining has been developed in the province.;;;;;;;;;;;;x,,,
 pit_mine;Pit Mining;;;;;;;;;;;;x,,,
 pit_mine_desc;Pit mining has been developed in the province.;;;;;;;;;;;;x,,,
-poet;Poet;Poète;Poet;;;;;;;;;;;;x;;;;;;;;;;;;;;
 strip_mine;Strip Mining;;;;;;;;;;;;x,,,
 strip_mine_desc;Strip mining has been developed in the province.;;;;;;;;;;;;x,,,
 tax_reforms;National Tax Reforms;;;;;;;;;;;;x,,,
-tax_reforms_desc;Recent reforms to tax laws have increased our tax efficiency… at least until those laws are repealed or loopholes found to evade them.;;;;;;;;;;;;x
+tax_reforms_desc;Recent reforms to tax laws have increased our tax efficiency… at least until those laws are repealed or loopholes found to evade them.;;;;;;;;;;;;x,,,
 intense_farming;Intensive Farming;;;;;;;;;;;;x,,,
 intense_farming_desc;Plantations have been started in this province to more efficiently and intensively farm it-- even though this comes with a risk of exhausting the farmland.;;;;;;;;;;;;x,,,
 exhausted_land;Exhausted Farmland;;;;;;;;;;;;x,,,
@@ -284,10 +288,8 @@ irrigration_network;Irrigation Network;;;;;;;;;;;;x,,,
 irrigration_network_desc;An irrigation network has been built here, allowing the desert to be farmed more effectively.;;;;;;;;;;;;x,,
 population_trend;Population Growth Trend;;;;;;;;;;;;x,,,
 population_trend_desc;Our nation has recently experienced a change in our population growth. It will likely remain stable for some time to come.;;;;;;;;;;;;x,,,
-powerful_friends;Powerful Friends;Amis puissants;Mächtige Freunde;;;;;;;;;;;;x;;;;;;;;;;;;;;
 point_five_children;Growth Rate: 0.5 Children;;;;;;;;;;;;x,,,
 point_five_children_desc;Our nation's growth rate is abysmal-- roughly equivalent to one child for every four healthy adults.;;;;;;;;;;;;x,,,
-polite;Polite;Poli;Höflich;;;;;;;;;;;;x;;;;;;;;;;;;;;
 one_child;Growth Rate: 1 Child;;;;;;;;;;;;x,,,
 one_child_desc;Our nation's growth rate is very low-- roughly equivalent to one child for every two healthy adults.;;;;;;;;;;;;x,,,
 one_point_five_children;Growth Rate: 1.5 Children;;;;;;;;;;;;x,,,
@@ -296,12 +298,10 @@ two_children;Growth Rate: 2 Children;;;;;;;;;;;;x,,,
 two_children_desc;Our nation's growth rate is stable-- roughly equivalent to two children for every two healthy adults.;;;;;;;;;;;;x,,,
 two_point_five_children;Growth Rate: 2.5 Children;;;;;;;;;;;;x,,,
 two_point_five_children_desc;Our nation's growth rate is above average-- roughly equivalent to five children for every four healthy adults.;;;;;;;;;;;;x,,,
-uncommonly_young;Uncommonly Young;Singulièrement jeune;Ungewöhnlich jung;;;;;;;;;;;;x;;;;;;;;;;;;;;
 three_children;Growth Rate: 3 Children;;;;;;;;;;;;x,,,
 three_children_desc;Our nation's growth rate is high-- roughly equivalent to three children for every two healthy adults.;;;;;;;;;;;;x,,,
 four_children;Growth Rate: 4 Children;;;;;;;;;;;;x,,,
 four_children_desc;Our nation's growth rate is very high-- roughly equivalent to four children for every two healthy adults.;;;;;;;;;;;;x,,,
 bleeding;Bleeding State;;;;;;;;;;;;x,,,
 bleeding_desc;Caught between the forces of abolitionism and those supporting slavery, this state is in the throes of violence as the locals attempt to sway the entire populace one way or the other.;;;;;;;;;;;;x,,
-bold;Bold;Téméraire;Mutig;;;;;;;;;;;;x;;;;;;;;;;;;;;
 submarine;Submarine;;;;;;;;;;;;x,,,

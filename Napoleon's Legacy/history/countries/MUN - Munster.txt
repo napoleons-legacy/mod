@@ -1,4 +1,4 @@
-capital = 538
+capital = 581
 primary_culture = north_german
 religion = protestant
 government = absolute_monarchy
@@ -38,7 +38,7 @@ border_policy = open_borders
 
 set_country_flag = protestant_country
 
-ruling_party = MEC_conservative_2
+ruling_party = RHI_conservative_2
 upper_house = {
     fascist = 0
     liberal = 25
@@ -48,7 +48,6 @@ upper_house = {
     socialist = 0
     communist = 0
 }
-
 
 # Technologies
 post_napoleonic_thought = 1

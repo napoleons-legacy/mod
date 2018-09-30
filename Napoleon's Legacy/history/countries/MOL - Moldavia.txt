@@ -38,12 +38,12 @@ border_policy = open_borders
 
 set_country_flag = orthodox_country
 
-ruling_party = MOL_reactionary
+ruling_party = MOL_liberal
 upper_house = {
     fascist = 0
-    liberal = 20
-    conservative = 21
-    reactionary = 59
+    liberal = 35
+    conservative = 34
+    reactionary = 31
     anarcho_liberal = 0
     socialist = 0
     communist = 0

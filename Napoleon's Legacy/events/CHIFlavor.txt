@@ -1,7 +1,7 @@
 #################################################################################################################
-#                                                                                                               #
+#                                                                                                                #
 #                                                   China Events                                                #
-#                                                                                                               #
+#                                                                                                                #
 #################################################################################################################
 
 #The Xinhai Revolution
@@ -19,9 +19,9 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-    has_global_flag = the_new_army
+        has_global_flag = the_new_army
         NOT = { has_global_flag = warlord_era_has_begun }
-    civilized = yes
+        civilized = yes
         OR = {
             AND = {
                 tag = QNG
@@ -56,7 +56,7 @@ country_event = {
                 has_recently_lost_war = yes
                 war_exhaustion = 15
                 average_militancy = 2
-        }
+            }
             has_country_modifier = the_terror
             has_country_modifier = totalitarian_system
             has_country_modifier = political_education
@@ -64,8 +64,9 @@ country_event = {
             AND = { ruling_party_ideology = fascist average_militancy = 2 }
             AND = { ruling_party_ideology = communist average_militancy = 2 }
             AND = { ruling_party_ideology = anarcho_liberal average_militancy = 2 }
+        }
     }
-    }
+
     mean_time_to_happen = {
         months = 30
         modifier = {
@@ -117,6 +118,7 @@ country_event = {
     option = {
         name = "EVT164599OPTA"
         prestige = -25
+        clr_country_flag = totalitarian_government
         remove_country_modifier = the_terror
         remove_country_modifier = totalitarian_system
         remove_country_modifier = political_education
@@ -177,7 +179,7 @@ country_event = {
             random_country = {
                 limit = { tag = MGL vassal_of = THIS }
                 government = theocracy
-                }
+            }
         }
 
         random_country = {
@@ -256,10 +258,9 @@ country_event = {
         any_country = {
             limit = { is_greater_power = yes }
             diplomatic_influence = { who = THIS value = -200 }
-            }
-        ai_chance = { factor = 80 }
         }
-
+        ai_chance = { factor = 80 }
+    }
 
     option = {
         name = "EVT164599OPTB"
@@ -736,49 +737,15 @@ province_event = {
 }
 
 country_event = {
-    id = 1645091
-    title = "EVTNAME1645091"
-    desc = "EVTDESC1645091"
-    picture = "qing_emperor"
-
-    trigger = {
-        tag = QNG
-        NOT = {
-            has_country_flag = mandate
-            has_country_flag = has_lost_mandate
-            year = 1860
-        }
-    }
-
-    mean_time_to_happen = { months = 1 }
-
-    fire_only_once = yes
-
-    option = {
-        name = "EVT1645091OPTA"
-        add_country_modifier = {
-            name = global_baby_boom
-            duration = 1065
-        }
-        remove_country_modifier = western_influences
-        add_country_modifier = {
-            name = uncivilized_isolationism
-            duration = -1
-        }
-        set_country_flag = mandate
-    }
-}
-
-country_event = {
     id = 1645092
     title = "EVTNAME1645092"
     desc = "EVTDESC1645092"
     fire_only_once = yes
     trigger = {
-        tag = QNG
+         tag = QNG
         has_global_flag = taiping_has_happened
         has_country_flag = mandate
-        NOT = { has_country_flag = has_lost_mandate }
+        NOT = {    has_country_flag = has_lost_mandate }
     }
 
     mean_time_to_happen = {
@@ -929,7 +896,7 @@ country_event = {
                 FROM = {
                     NOT = { neighbour = THIS }
                     NOT = { any_owned_province = { port = yes } }
-                    NOT = { any_neighbor_country = { alliance_with = THIS } }
+                    NOT = {    any_neighbor_country = { alliance_with = THIS } }
                 }
             }
             modifier = {
@@ -1020,9 +987,9 @@ country_event = {
 
 
 #################################################################################################################
-#                                                                                                               #
-#                                               Natural Disasters                                               #
-#                                                                                                               #
+#                                                                                                                #
+#                                               Natural Disasters                                                #
+#                                                                                                                #
 #################################################################################################################
 
 #Yellow River Floods
@@ -1436,7 +1403,7 @@ country_event = {
             relation = { who = THIS value = -50 }
             casus_belli = {
                 target = THIS
-                type = place_in_the_sun
+                type = treaty_port_casus_belli
                 months = 60
             }
         }
@@ -1503,7 +1470,7 @@ country_event = {
         }
         random_owned = {
             limit = {
-                owner = { tag = RUS }
+                owner = { has_country_flag = russian_country }
                 FROM = { NOT = { owns = 1481 } }
             }
             FROM = {
@@ -1531,9 +1498,16 @@ country_event = {
         }
         random_owned = {
             limit = {
+                owner = { tag = TSA }
+                FROM = { owns = 1481 }
+            }
+            1481 = { secede_province = TSA }
+        }
+        random_owned = {
+            limit = {
                 owner = {
                     NOT = { tag = FRA }
-                    NOT = { tag = RUS }
+                    NOT = { has_country_flag = russian_country }
                 }
             }
             FROM = {
@@ -1594,7 +1568,7 @@ country_event = {
             relation = { who = THIS value = -50 }
             casus_belli = {
                 target = THIS
-                type = place_in_the_sun
+                type = treaty_port_casus_belli
                 months = 60
             }
         }
@@ -1613,7 +1587,7 @@ country_event = {
     option = {
         name = "EVT1316092OPTA"
         prestige_factor = -0.2
-        random_country = { limit = { exists = yes tag = CHI } inherit = CHI }
+        #random_country = { limit = { exists = yes tag = CHI } inherit = CHI }
         treasury = -200000
         any_owned = {
             limit = { is_core = FROM }
@@ -1637,8 +1611,8 @@ country_event = {
 
 #################################################################################################################
 #
-#                                                       Tibet                                                   #
-#                                                                                                               #
+#                                                       Tibet                                                    #
+#                                                                                                                #
 #################################################################################################################
 
 # The Simla Convention
@@ -1795,9 +1769,9 @@ country_event = {
 }
 
 #################################################################################################################
-#                                                                                                               #
-#                                               Warlord Era Events                                              #
-#                                                                                                               #
+#                                                                                                                #
+#                                               Warlord Era Events                                                #
+#                                                                                                                #
 #################################################################################################################
 
 country_event = {
@@ -3153,7 +3127,7 @@ country_event = {
             limit = {
                 province_id = 1485
                 owner = { NOT = { owns = 1482 } }
-                }
+            }
             1485 = {
                 remove_core = FJN
                 add_core = TAI
@@ -3275,7 +3249,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -3365,7 +3339,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -3447,7 +3421,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -3589,7 +3563,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -3684,7 +3658,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -3771,7 +3745,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -3987,7 +3961,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -4082,7 +4056,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -4169,7 +4143,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -4276,7 +4250,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -4381,7 +4355,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -5106,6 +5080,107 @@ country_event = {
         clr_country_flag = neutral_faction
         clr_country_flag = communist_faction
         clr_country_flag = beiyang_faction
+
+        random_owned = {
+            limit = { owner = { civilized = no land_reform = yes_land_reform } }
+            TAI = { economic_reform = yes_land_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no admin_reform = yes_admin_reform } }
+            TAI = { economic_reform = yes_admin_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no finance_reform = yes_finance_reform } }
+            TAI = { economic_reform = yes_finance_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no finance_reform = finance_reform_two } }
+            TAI = { economic_reform = finance_reform_two }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no monetary_reform = yes_monetary_reform } }
+            TAI = { economic_reform = yes_monetary_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no monetary_reform = monetary_reform_two } }
+            TAI = { economic_reform = monetary_reform_two activate_technology = no_standard }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no education_reform = yes_education_reform } }
+            TAI = { economic_reform = yes_education_reform }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no research_reform = yes_research_reform } }
+            TAI = { economic_reform = yes_research_reform activate_technology = late_enlightenment_philosophy }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_training = yes_foreign_training } }
+            TAI = { military_reform = yes_foreign_training }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_weapons = yes_foreign_weapons } }
+            TAI = { military_reform = yes_foreign_weapons activate_technology = flintlock_rifles }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_officers = yes_foreign_officers } }
+            TAI = { military_reform = yes_foreign_officers activate_technology = military_staff_system }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no army_schools = yes_army_schools } }
+            TAI = { military_reform = yes_army_schools }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_naval_officers = yes_foreign_naval_officers } }
+            TAI = { military_reform = yes_foreign_naval_officers }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no naval_schools = yes_naval_schools } }
+            TAI = { military_reform = yes_naval_schools }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_navies = yes_foreign_navies } }
+            TAI = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no western_shipyards = yes_western_shipyards } }
+            TAI = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no foreign_artillery = yes_foreign_artillery } }
+            TAI = { military_reform = yes_foreign_artillery activate_technology = bronze_muzzle_loaded_artillery }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no slavery = yes_slavery } }
+            TAI = { political_reform = yes_slavery }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no slavery = freedom_of_womb } }
+            TAI = { political_reform = freedom_of_womb }
+        }
+
+        random_owned = {
+            limit = { owner = { civilized = no slavery = no_slavery } }
+            TAI = { political_reform = no_slavery }
+        }
+
         1485 = {
             add_core = KMT
             fort = 3

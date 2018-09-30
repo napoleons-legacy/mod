@@ -50,7 +50,7 @@ upper_house = {
 
 
 foreign_weapons = yes_foreign_weapons
-land_reform = yes_land_reform
+admin_reform = yes_admin_reform
 
 # Technologies
 flintlock_rifles = 1
@@ -60,6 +60,9 @@ flintlock_rifles = 1
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
+big_sail_ships = yes
+sail_ships_transport = yes
+big_sail_support = yes
 
 # Starting Consciousness
 consciousness = 0

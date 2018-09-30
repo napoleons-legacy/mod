@@ -45,27 +45,119 @@ RUS = {
 
 leader = {
     name = "Thomas Cochrane"
-    date = 1831.1.1
+    picture = eng_adm_cochrane
+    date = 1832.1.1
     type = sea
     personality = charismatic
     background = adventurer
-    prestige = 0.1
+    prestige = 0.4
+}
 
+leader = {
+    name = "Edward Codrington"
+    picture = eng_adm_codrington
+    date = 1836.1.1
+    type = sea
+    personality = daring
+    background = expert_raider
+    prestige = 0.3
+}
+
+leader = {
+    name = "Sir George Cockburn"
+    picture = eng_adm_cockburn
+    date = 1812.1.1
+    type = sea
+    personality = earnest
+    background = old_school
+    prestige = 0.3
+}
+
+leader = {
+    name = "Edward Blakeney"
+    picture = eng_gen_blakeney
+    date = 1825.1.1
+    type = land
+    personality = indifferent
+    background = gifted_administrator
+    prestige = 0.1
+}
+
+leader = {
+    name = "John Seaton"
+    picture = eng_gen_seaton
+    date = 1825.1.1
+    type = land
+    personality = doughty
+    background = school_of_offense
+    prestige = 0.2
+}
+
+leader = {
+    name = "Henry Smith"
+    picture = eng_gen_smith
+    date = 1814.1.1
+    type = land
+    personality = efficient
+    background = gifted_administrator
+    prestige = 0.1
 }
 
 army = {
     name = "The Canada Garrison"
     location = 57
     regiment = {
-        name= "1st Division"
+        name= "1.Royal Guards Division"
+        type = guard
+        home = 57
+    }
+
+    regiment = {
+        name= "2.Royal Guards Division"
+        type = guard
+        home = 57
+    }
+
+    regiment = {
+        name= "1.1. Division"
         type = infantry
         home = 46
     }
 
     regiment = {
-        name= "2nd Division"
+        name= "1.2. Division"
+        type = infantry
+        home = 46
+    }
+
+    regiment = {
+        name= "1.3. Division"
+        type = engineer
+        home = 54
+    }
+
+    regiment = {
+        name= "1.4. Division"
+        type = artillery
+        home = 57
+    }
+
+        regiment = {
+        name= "2.6. Division"
+        type = engineer
+        home = 288
+    }
+
+    regiment = {
+        name= "1.Republican Guards Cavalry Division"
         type = hussar
-        home = 2217
+        home = 71
+    }
+
+    regiment = {
+        name= "2.Republican Guards Cavalry Division"
+        type = hussar
+        home = 56
     }
 }
 
@@ -83,7 +175,7 @@ army = {
 
 navy = {
     name = "Atlantic Fleet"
-    location = 73
+    location = 65
     ship = {
         name= "HMS Monarch"
         type = manowar
@@ -203,7 +295,7 @@ navy = {
 
 navy = {
     name = "1st Reserve Squadron"
-    location = 71
+    location = 74
     ship = {
         name= "HMS Blenheim"
         type = manowar
@@ -230,36 +322,6 @@ navy = {
     }
 
     ship = {
-        name= "HMS Amazon"
-        type = frigate
-    }
-
-    ship = {
-        name= "HMS Fisguard"
-        type = frigate
-    }
-
-    ship = {
-        name= "HMS Isis"
-        type = frigate
-    }
-
-    ship = {
-        name= "HMS Latona"
-        type = frigate
-    }
-
-    ship = {
-        name= "HMS Melampus"
-        type = frigate
-    }
-
-}
-
-navy = {
-    name = "5th Reserve Squadron"
-    location = 74
-    ship = {
         name= "HMS Achille"
         type = manowar
     }
@@ -281,6 +343,31 @@ navy = {
 
     ship = {
         name= "HMS Dryad"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Amazon"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Fisguard"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Isis"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Latona"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Melampus"
         type = frigate
     }
 
@@ -342,6 +429,104 @@ navy = {
     ship = {
         name= "HMS Rhadamanthus"
         type = commerce_raider
+    }
+
+}
+
+
+navy = {
+    name = "South Atlantic Station"
+    location = 2131 # Falklands
+    ship = {
+        name= "HMS Hamadryad"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Lancaster"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Thames"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Thisbe"
+        type = frigate
+    }
+
+}
+
+navy = {
+    name = "West Africa Station"
+    location = 1884 #Freetown
+    ship = {
+        name= "HMS Diana"
+        type = frigate
+    }
+
+}
+
+navy = {
+    name = "East Indies Station"
+    location = 1321 #Colombo
+    ship = {
+        name= "HMS Madagascar"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Portland"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Winchester"
+        type = frigate
+    }
+
+}
+
+navy = {
+    name = "1st Transport Squadron"
+    location = 1321 #Colombo
+    ship = {
+        name= "1st Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "2nd Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name= "3rd Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "4th Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name= "5th Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "6th Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name= "7th Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "8th Transport Flotilla"
+        type = clipper_transport
     }
 
 }

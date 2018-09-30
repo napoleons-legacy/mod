@@ -323,11 +323,7 @@ country_event = {
 
     option = {
         name = "EVTOPTA121280"
-        set_country_flag = indian_confed_formed
-        add_country_modifier = {
-            name = indian_confed_start
-            duration = -1
-        }
+        set_global_flag = indian_confed_formed
 
         any_country = {
             limit = {

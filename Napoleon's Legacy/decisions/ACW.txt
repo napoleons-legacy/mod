@@ -215,7 +215,7 @@ political_decisions = {
             set_country_flag = homestead_act
             add_country_modifier = {
                 name = the_homestead_act
-                duration = -1
+                duration = 3650
             }
         }
     }
@@ -223,7 +223,6 @@ political_decisions = {
     manifest_destiny = {
         potential = {
             tag = USA
-            is_greater_power = yes
             NOT = { has_country_flag = hasmanifestdestiny }
         }
 
@@ -231,14 +230,15 @@ political_decisions = {
             war = no
             idealism = 1
             state_n_government = 1
+            neighbour = MEX
             NOT = { truce_with = MEX }
             NOT = { war_policy = pacifism }
             NOT = { MEX = { any_owned_province = { country_units_in_province = USA } } }
             OR = {
                 TEX = { in_sphere = THIS }
                 TEX = { exists = no }
-                invention = manifest_destiny
                 any_owned_province = { is_core = MEX }
+                invention = manifest_destiny
             }
         }
 
@@ -251,21 +251,32 @@ political_decisions = {
                 25 = { badboy = 3 }
             }
 
-            MEX_85 = { add_core = USA } #California
+            MEX_85 = { add_core = USA } # California
+            TEX_132 = { add_core = USA } # Texas
             MEX_94 = { add_core = USA } #Nevada
-            TEX_132 = { add_core = USA } #Texas
-            MEX_103 = { add_core = USA } #West Texas
-            MEX_97 = { add_core = USA } #Utah
-            MEX_100 = { add_core = USA } #Arizona
-            103 = { add_core = USA } #Pueblo for Kansas
+            MEX_103 = { add_core = USA } # West Texas
+            MEX_97 = { add_core = USA } # Utah
+            MEX_100 = { add_core = USA } # Arizona
+            103 = { add_core = USA } # Pueblo for Kansas
 
-            #Mexican states taken as a result of POD
+            # Mexican states taken as a result of POD
             MEX_2138 = { add_core = USA }
             MEX_2142 = { add_core = USA }
 
+            100 = { add_core = USA life_rating = 5 } #Phoenix
+            89 = { life_rating = 5 } #Los Angeles
+            90 = { life_rating = 2 } #San Diego
+            104 = { life_rating = 5 } #San Francisco
+            84 = { life_rating = 4 } #Sacramento
+            87 = { life_rating = 3 } #Monterey
+            106 = { life_rating = 3 } #Denver
+            43 = { life_rating = 4 } #Dallas
+            132 = { life_rating = 2 } #Houston
+            133 = { life_rating = 1 } #Austin
+            137 = { life_rating = 4 } #San Antonio
+            136 = { life_rating = 2 } #El Paso
             relation = { who = MEX value = -200 }
             diplomatic_influence = { who = MEX value = -200 }
-
             leave_alliance = MEX
             random_country = {
                 limit = {
@@ -274,7 +285,6 @@ political_decisions = {
                 }
                 THIS = { release_vassal = MEX }
             }
-
             random_country = {
                 limit = {
                     is_our_vassal = MEX
@@ -283,7 +293,6 @@ political_decisions = {
                 relation = { who = THIS value = -200 }
                 leave_alliance = THIS
             }
-
             random_country = {
                 limit = {
                     tag = MEX
@@ -302,10 +311,11 @@ political_decisions = {
                 }
                 country_event = 44126
             }
-
             any_country = {
                 limit = {
                     exists = yes
+                    war = no
+                    is_mobilised = no
                     OR = {
                         tag = CAL
                         tag = TEX
@@ -322,7 +332,6 @@ political_decisions = {
                 }
                 country_event = 98650
             }
-
             any_country = {
                 limit = {
                     is_greater_power = yes
@@ -330,7 +339,6 @@ political_decisions = {
                 }
                 diplomatic_influence = { who = MEX value = -100 }
             }
-
             any_pop = {
                 dominant_issue = {
                     factor = 0.05
@@ -338,6 +346,100 @@ political_decisions = {
                 }
                 consciousness = 2
             }
+        }
+    }
+
+    form_kellys_irish_brigade = {
+        picture = form_kellys_irish_brigade
+        potential = {
+            tag = USA
+            war_with = NEN
+            has_global_flag = american_civil_war_has_happened
+            NOT = {
+                has_country_flag = kellys_irish_brigade
+            }
+        }
+
+        allow = {
+            war_exhaustion = 4
+            is_vassal = no
+        }
+
+        effect = {
+            random_pop = {
+                limit = {
+                    pop_type = farmers
+                    has_pop_culture = dixie
+                }
+                pop_type = soldiers
+            }
+            war_exhaustion = -1
+            set_country_flag = kellys_irish_brigade
+        }
+    }
+
+    raise_the_bonnie_blue_flag = {
+        potential = {
+            tag = USA
+            war_with = NEN
+            has_global_flag = american_civil_war_has_happened
+            NOT = {
+                has_country_flag = bonnie_blue_flag
+            }
+        }
+
+        allow = {
+            is_vassal = no
+        }
+
+        effect = {
+
+            define_general = {
+                name = "Robert E. Lee"
+                personality = audacious
+                background = war_college
+            }
+
+            define_general = {
+                name = "Thomas Jackson"
+                personality = coolminded
+                background = school_of_defense
+            }
+            define_general = {
+                name = "J.E.B. Stuart"
+                personality = brilliant
+                background = aristocrat
+            }
+            define_general = {
+                name = "James Longstreet"
+                personality = efficient
+                background = armchair_general
+            }
+            define_general = {
+                name = "Pierre Beauregard"
+                personality = expert
+                background = gifted_administrator
+            }
+            define_admiral = {
+                name = "Franklin Buchanan"
+                personality = balanced_p
+                background = nationalist
+            }
+            define_admiral = {
+                name = "Catesby ap Roger Jones"
+                personality = skilled
+                background = rising_star
+            }
+
+            #small_arms = 100
+            #regular_clothes = 100
+
+            add_country_modifier = {
+                name = the_bonnie_blue_flag
+                duration = 365
+            }
+
+            set_country_flag = bonnie_blue_flag
         }
     }
 
@@ -422,6 +524,18 @@ political_decisions = {
         allow = {
             revolution_n_counterrevolution = 1
             is_sphere_leader_of = HAW
+            OR = {
+                AND = {
+                    year = 1898
+                    HAW = { militancy = 1 }
+                    }
+                HAW = { militancy = 8 }
+                mass_politics = 1
+            }
+            HAW = {
+                war = no
+                is_mobilised = no
+            }
         }
 
         effect = {
@@ -436,6 +550,14 @@ political_decisions = {
             }
             random_owned = { limit = { owner = { tag = USA ai = yes } } 658 = { naval_base = 1 } }
             HAW = { civilized = yes }
+            random_owned = {
+                limit = {
+                    owner = { NOT = { is_primary_culture = yankee } }
+                    province_id = 658
+                    any_pop = { has_pop_culture = yankee }
+                }
+                658 = { add_core = USA }
+            }
         }
     }
 
@@ -444,18 +566,10 @@ political_decisions = {
         potential = {
             NOT = { has_country_flag = alaska_purchase_started }
             NOT = { has_global_flag = alaska_purchase_completed }
-            OR = {
-                has_global_flag = american_civil_war_has_happened
-                year = 1870
-            }
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
 
             year = 1859
             USA = { NOT = { war_with = NEN } }
-            NEN = { NOT = { war_with = USA } }
         }
 
         allow = {
@@ -470,7 +584,7 @@ political_decisions = {
             prestige = 5
             any_country = {
                 limit = {
-                    NOT = { OR = { tag = RUS tag = TSA } }
+                    NOT = { has_country_flag = russian_country }
                     OR = {
                         is_greater_power = yes
                         is_secondary_power = yes
@@ -508,13 +622,11 @@ political_decisions = {
 
         allow = {
             owns = 250
-
             OR = {
                 AND = {
                     USA = { owns = 249 }
                     NOT = { war_with = USA }
                 }
-
                 AND = {
                     NEN = { owns = 249 }
                     NOT = { war_with = NEN }
@@ -536,14 +648,12 @@ political_decisions = {
                 factor = 0
                 NOT = { badboy = 0.08 }
             }
-
             modifier = {
                 factor = 0
                 NOT = { year = 1842 }
             }
         }
     }
-
     rio_grande_treaty = {
         picture = rio_grande_treaty
         potential = {
@@ -555,7 +665,6 @@ political_decisions = {
             }
             NOT = { has_country_flag = rio_grande_treaty }
         }
-
         allow = {
             war = no
             money = 100000
@@ -565,7 +674,6 @@ political_decisions = {
                 in_sphere = USA
             }
         }
-
         effect = {
             set_country_flag = rio_grande_treaty
             treasury = -100000
@@ -596,7 +704,6 @@ political_decisions = {
             100 = { owned_by = THIS NOT = { is_core = MEX } }
             104 = { owned_by = THIS NOT = { is_core = MEX } }
             105 = { owned_by = THIS NOT = { is_core = MEX } }
-            NOT = { check_variable = { which = owed_cash_money value = 1 } }
         }
 
         allow = {
@@ -622,7 +729,6 @@ political_decisions = {
                 country_event = 16453
             }
         }
-
         ai_will_do = { factor = 1 }
     }
 
@@ -642,17 +748,14 @@ political_decisions = {
                 money = 101000
                 2209 = { owned_by = THIS }
             }
-
             OR = {
                 steel_steamers = 1
                 2209 = { owner = { truce_with = THIS } }
             }
-
             OR = {
                 war_policy = jingoism
                 war_policy = pro_military
             }
-
             2209 = {
                 owner = {
                     NOT = { is_greater_power = yes }
@@ -662,7 +765,6 @@ political_decisions = {
                     }
                 }
             }
-
             OR = {
                 owns = 44
                 2209 = { NOT = { owned_by = THIS } owner = { in_sphere = THIS } }
@@ -680,45 +782,6 @@ political_decisions = {
         ai_will_do = {
             factor = 1
             modifier = { factor = 0 badboy = 0.85 }
-        }
-    }
-
-    offer_to_buy_cuba = {
-        picture = map_caribbean
-        potential = {
-            tag = USA
-            2209 = { owned_by = SPA }
-            NOT = {
-                has_country_flag = ostend_manifesto_published
-                has_country_flag = maine_incident
-                has_country_flag = trying_to_buy_cuba
-            }
-            has_global_flag = american_civil_war_has_happened
-        }
-
-        allow = {
-            war = no
-            is_greater_power = yes
-            money = 1000000
-            2209 = { owner = { NOT = { truce_with = THIS } } }
-            SPA = {
-                exists = yes
-                war = no
-                any_owned_province = {
-                    is_core = CUB
-                    OR = {
-                        controlled_by = REB
-                        has_province_modifier = nationalist_agitation
-                        average_militancy = 6
-                        }
-                }
-            }
-            NOT = { has_country_flag = maine_incident }
-        }
-
-        effect = {
-            set_country_flag = trying_to_buy_cuba
-            2209 = { owner = { country_event = 90131 } }
         }
     }
 
@@ -809,12 +872,12 @@ political_decisions = {
         ai_will_do = { factor = 100 }
     }
 
+
     the_iron_range = {
-        picture = dreams_of_empire
+    picture = iron_range_mountains
         potential = {
             owns = 232
-            NOT = { has_country_flag = iron_ranges }
-            NOT = { 232 = { trade_goods = iron } }
+            NOT = { has_global_flag = iron_ranges }
         }
 
         allow = {
@@ -823,13 +886,22 @@ political_decisions = {
         }
 
         effect = {
-            set_country_flag = iron_ranges
+            set_global_flag = iron_ranges
             158 = { trade_goods = iron change_province_name = "Duluth" }
             177 = { trade_goods = iron }
             157 = { trade_goods = iron }
-            232 = { trade_goods = iron }
             235 = { trade_goods = iron }
             98 = { trade_goods = iron }
+            232 = { life_rating = 5 } #New York
+            163 = { life_rating = 5 } #Chicago
+            173 = { life_rating = 5 } #Detroit
+            243 = { life_rating = 4 } #Boston
+            223 = { life_rating = 5 } #Philadelphia
+            139 = { life_rating = 5 } #New Orleans
+            199 = { life_rating = 4 } #Jacksonville
+            169 = { life_rating = 4 } #Indianapolis
+            179 = { life_rating = 4 } #Columbus
+            209 = { life_rating = 3 } #Charlotte
         }
 
         ai_will_do = { factor = 1 }
@@ -869,6 +941,7 @@ political_decisions = {
                 move_pop = 97
             }
             97 = {
+                life_rating = 2
                 add_province_modifier = { name = home_of_the_mormons duration = 10950 }
                 any_pop = {
                     limit = { has_pop_culture = native_american_minor }
@@ -939,17 +1012,8 @@ political_decisions = {
 
         effect = {
             set_global_flag = american_frontier
-            any_owned = {
-                limit = {
-                    OR = {
-                        province_id = 132
-                        province_id = 136
-                        province_id = 137
-                    }
-                }
-                life_rating = 5
-            }
-            43 = { change_province_name = "Dallas" life_rating = 5 }
+            189 = { life_rating = 3 } #Memphis
+            43 = { change_province_name = "Dallas" }
             134 = { change_province_name = "Abilene" }
             135 = { change_province_name = "Lubbock" }
             92 = { change_province_name = "Coeur D'Alene" }
@@ -984,48 +1048,232 @@ political_decisions = {
         ai_will_do = { factor = 1 }
     }
 
-    restore_washington_capital = {
+    back_to_africa_act = {
+        picture = going_to_liberia
         potential = {
-            tag = USA
-            NEN = { exists = no }
-            owns = 2146
+            has_country_flag = new_world_nation
+            NOT = { is_culture_group = african_diaspora_cultures }
+            any_owned_province = {
+                is_core = THIS
+                NOT = { continent = africa }
+                any_pop = { is_culture_group = african_diaspora_cultures }
+            }
             NOT = {
-                capital = 2146
+                has_country_modifier = forceful_back_to_africa
+                has_country_modifier = the_slavery_debate
+            }
+            OR = {
+                government = absolute_monarchy
+                government = bourgeois_dictatorship
+                government = fascist_dictatorship
+                government = presidential_dictatorship
             }
         }
 
         allow = {
-            controls = 2146
-            NOT = { capital = 2146 }
+            war = no
+            money = 250000
+            phenomenalism = 1
+            NOT = { ruling_party_ideology = liberal }
+            NOT = { ruling_party_ideology = communist }
+            NOT = { citizenship_policy = full_citizenship }
+            NOT = { citizens_rights = all_voting_pops }
+            NOT = { has_country_modifier = law_changed_by_force }
+            1887 = {
+                OR = {
+                    is_colonial = yes
+                    NOT = { owned_by = THIS }
+                }
+                OR = {
+                    owned_by = THIS
+                    owner = { in_sphere = THIS }
+                    owner = { vassal_of = THIS }
+                }
+            }
+            1888 = {
+                OR = {
+                    is_colonial = yes
+                    NOT = { owned_by = THIS }
+                }
+                OR = {
+                    owned_by = THIS
+                    owner = { in_sphere = THIS }
+                    owner = { vassal_of = THIS }
+                }
+            }
         }
 
         effect = {
-            capital = 2146
-            prestige = 5
+            treasury = -250000
+            any_owned = {
+                limit = { is_core = LIB }
+                add_province_modifier = { name = plantation duration = -1 }
+            }
+            add_country_modifier = { name = forceful_back_to_africa duration = -1 }
+            any_pop = {
+                limit = { is_culture_group = african_diaspora_cultures }
+                consciousness = 7
+                militancy = 9
+            }
+
+            any_pop = {
+                limit = { NOT = { is_culture_group = african_diaspora_cultures } }
+                scaled_militancy = {
+                    factor = 7
+                    ideology = liberal
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { is_ideology_enabled = communist } }
+                owner = {
+                    any_pop = {
+                        limit = { NOT = { is_culture_group = african_diaspora_cultures } }
+                        scaled_militancy = {
+                            factor = 7
+                            ideology = communist
+                        }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { is_ideology_enabled = socialist } }
+                owner = {
+                    any_pop = {
+                        limit = { NOT = { is_culture_group = african_diaspora_cultures } }
+                        scaled_militancy = {
+                            factor = 7
+                            ideology = socialist
+                        }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { has_pop_type = slaves }
+                owner = {
+                    any_pop = {
+                        limit = { NOT = { is_culture_group = african_diaspora_cultures } }
+                        scaled_militancy = {
+                            factor = 7
+                            issue = no_slavery
+                        }
+                    }
+                }
+            }
+
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { money = 1000000 }
+            }
+
+            modifier = {
+                factor = 0
+                NOT = { war_policy = jingoism }
+            }
+
+            modifier = {
+                factor = 0
+                NOT = { citizenship_policy = residency  }
+            }
         }
     }
 
-    move_capital_to_philadelphia = {
-        picture = restore_washington_capital
+    revoke_back_to_africa_act = {
+        picture = going_to_liberia
         potential = {
-            tag = USA
-            owns = 223
-            primary_culture = yankee
-            NOT = {
-                OR = {
-                    capital = 223
-                    capital = 2146
+            has_country_modifier = forceful_back_to_africa
+        }
+
+        allow = {
+        }
+
+        effect = {
+            remove_country_modifier = forceful_back_to_africa
+            add_country_modifier = { name = law_changed_by_force duration = 1825 }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { badboy = 0.4 }
+            }
+
+            modifier = {
+                factor = 0
+                vote_franschise = none_voting
+                political_parties = underground_parties
+            }
+        }
+    }
+
+    revoke_back_to_africa_act_player = {
+        picture = going_to_liberia
+        potential = {
+            ai = yes
+            OR = {
+                any_neighbor_country = {
+                    ai = no
+                    has_country_modifier = forceful_back_to_africa
+                    OR = {
+                        ruling_party_ideology = liberal
+                        ruling_party_ideology = communist
+                        NOT = {
+                            government = absolute_monarchy
+                            government = bourgeois_dictatorship
+                            government = fascist_dictatorship
+                            government = presidential_dictatorship
+                        }
+                    }
+                }
+                any_greater_power = {
+                    ai = no
+                    has_country_modifier = forceful_back_to_africa
+                    OR = {
+                        ruling_party_ideology = liberal
+                        ruling_party_ideology = communist
+                        NOT = {
+                            government = absolute_monarchy
+                            government = bourgeois_dictatorship
+                            government = fascist_dictatorship
+                            government = presidential_dictatorship
+                        }
+                    }
                 }
             }
         }
 
         allow = {
-            controls = 223
-            NOT = { capital = 223 }
         }
 
         effect = {
-            capital = 223
+            any_country = {
+                limit = {
+                    ai = no
+                    has_country_modifier = forceful_back_to_africa
+                    OR = {
+                        ruling_party_ideology = liberal
+                        ruling_party_ideology = communist
+                        NOT = {
+                            government = absolute_monarchy
+                            government = bourgeois_dictatorship
+                            government = fascist_dictatorship
+                            government = presidential_dictatorship
+                        }
+                    }
+                }
+                remove_country_modifier = forceful_back_to_africa
+                add_country_modifier = { name = law_changed_by_force duration = 1825 }
+            }
         }
+
+        ai_will_do = { factor = 1 }
     }
- }
+
+}

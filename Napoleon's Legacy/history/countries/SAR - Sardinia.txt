@@ -1,5 +1,6 @@
-capital = 720
-primary_culture = north_italian
+capital = 765
+primary_culture = south_italian
+culture = north_italian
 religion = catholic
 government = absolute_monarchy
 plurality = 25.0
@@ -37,6 +38,7 @@ citizens_rights = all_voting_pops
 border_policy = open_borders
 
 set_country_flag = catholic_country
+set_country_flag = sardinian_italy
 
 ruling_party = SAR_conservative
 upper_house = {

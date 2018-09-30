@@ -20,21 +20,21 @@ country_event = {
         name = "EVTOPT500058A"
         remove_country_modifier = kinda_bad_badboy
         add_country_modifier = { name = bad_badboy duration = 7300 }
-    any_greater_power = {
-        leave_alliance = THIS
+        any_greater_power = {
+            leave_alliance = THIS
             relation = { who = THIS value = -400 }
             casus_belli = { target = THIS type = cut_down_to_size months = 36 }
             casus_belli = { target = THIS type = dismantle_cb months = 36 }
         }
-    any_country = {
-        limit = {
-        NOT = {
-            OR = {
-            vassal_of = THIS
-            in_sphere = THIS
+        any_country = {
+            limit = {
+                NOT = {
+                    OR = {
+                        vassal_of = THIS
+                        in_sphere = THIS
+                    }
                 }
             }
-        }
             relation = { who = THIS value = -100 }
             casus_belli = { target = THIS type = cut_down_to_size months = 24 }
         }
@@ -55,8 +55,8 @@ country_event = {
             OR = {
                 has_country_modifier = kinda_bad_badboy
                 has_country_modifier = bad_badboy
-                }
             }
+        }
     }
 
     mean_time_to_happen = { months = 1 }

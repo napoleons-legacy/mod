@@ -3,7 +3,7 @@ primary_culture = north_andean
 religion = catholic
 government = democracy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_equality
 literacy = 0.12
 civilized = yes
 is_releasable_vassal = no
@@ -27,7 +27,7 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
-# New Reforms
+#New Reforms
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
@@ -49,6 +49,9 @@ upper_house = {
     communist = 0
 }
 
+decision = CLM_1836_setup
+set_country_flag = new_world_nation
+
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
@@ -56,29 +59,18 @@ bronze_muzzle_loaded_artillery = 1
 military_staff_system = 1
 army_command_principle = 1
 post_nelsonian_thought = 1
-clipper_design = 1
-naval_design_bureaus = 1
-alphabetic_flag_signaling = 1
-the_command_principle = 1
-classicism_n_early_romanticism = 1
-late_enlightenment_philosophy = 1
-malthusian_thought = 1
-enlightenment_thought = 1
-introspectionism = 1
 private_banks = 1
 no_standard = 1
-early_classical_theory_and_critique = 1
-freedom_of_trade = 1
 guild_based_production = 1
-compound_steam_engines = 1
-publishing_industry = 1
-mechanized_mining = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+enlightenment_thought = 1
+piston_steam_engine = 1
+freedom_of_trade = 1
+mechanical_production = 1
 basic_chemistry = 1
 
 #Inventions
 #corvettes = yes
 
 oob = "CLM_oob.txt"
-
-
-set_country_flag = new_world_nation
