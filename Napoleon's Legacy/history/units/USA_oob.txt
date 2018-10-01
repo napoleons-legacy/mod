@@ -1,152 +1,125 @@
-
-#Sphere of Influence
+# Sphere of Influence
 
 TEX = {
-	value = 125		#relation
-	
-level = 4		#3=cordial, 4 = friendly, 5 sphere
-	
-influence_value = 25
+    value = 125		# relation
+    level = 4		# 3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
-
-
 
 MEX = {
-	value = 75		#relation
-	
-level = 2		#3=cordial, 4 = friendly, 5 sphere
-	
-influence_value = 25
+    value = 75		# relation
+    level = 2		# 3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
-
 
 UCA = {
-	value = 100		#relation
-	
-level = 3		#3=cordial, 4 = friendly, 5 sphere
-	
-influence_value = 25
+    value = 100		# relation
+    level = 3		# 3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
-
 
 HUD = {
-	value = 100		#relation
-	
-level = 3		#3=cordial, 4 = friendly, 5 sphere
-	
-influence_value = 25
+    value = -100    # relation
+    level = 2		# 3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
 
-
-BRZ = {
-	value = 100		#relation
-	
-level = 3		#3=cordial, 4 = friendly, 5 sphere
-	
-influence_value = 25
-}
-
-
-URU = {
-	value = 75		#relation
-	
-level = 3		#3=cordial, 4 = friendly, 5 sphere
-	
-influence_value = 25
+REI = {
+    value = 50		# relation
+    level = 2   	# 3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
 
 NEN = {
-	value = -200
+    value = -200
 }
 
 CAN = {
-	value = -150
+    value = -150
 }
 
 INC = {
-	value = -150
+    value = -150
 }
 
-
-
 army = {
-	name = "US Dragoons"
-	location = 187
-	regiment = {
-		name= "1st Cavalry Regiment"
-		type = dragoon
-		home = 223
-	}
+    name = "US Dragoons"
+    location = 187
+    regiment = {
+        name= "1st Cavalry Regiment"
+        type = dragoon
+        home = 223
+    }
 
-	regiment = {
-		name= "2nd Cavalry Regiment"
-		type = dragoon
-		home = 241
-	}
+    regiment = {
+        name= "2nd Cavalry Regiment"
+        type = dragoon
+        home = 241
+    }
 
-	regiment = {
-		name= "3rd Cavalry Regiment"
-		type = dragoon
-		home = 205
-	}
+    regiment = {
+        name= "3rd Cavalry Regiment"
+        type = dragoon
+        home = 205
+    }
 
 }
 
 army = {
-	name = "Army of the South"
-	location = 220
-	regiment = {
-		name= "1st Regiment of Infantry"
-		type = infantry
-		home = 211
-	}
+    name = "Army of the South"
+    location = 220
+    regiment = {
+        name= "1st Regiment of Infantry"
+        type = infantry
+        home = 211
+    }
 
-	regiment = {
-		name= "2nd Regiment of Infantry"
-		type = infantry
-		home = 206
-	}
+    regiment = {
+        name= "2nd Regiment of Infantry"
+        type = infantry
+        home = 206
+    }
 
-	regiment = {
-		name= "3rd Regiment of Infantry"
-		type = infantry
-		home = 188
-	}
+    regiment = {
+        name= "3rd Regiment of Infantry"
+        type = infantry
+        home = 188
+    }
 
-	regiment = {
-		name= "1st Regiment of Artillery"
-		type = artillery
-		home = 195
-	}
-
-}
-
-navy = {
-	name = "2nd Squadron"
-	location = 220
-	ship = {
-		name= "Ohio"
-		type = manowar
-	}
-
-	ship = {
-		name= "Hudson"
-		type = frigate
-	}
+    regiment = {
+        name= "1st Regiment of Artillery"
+        type = artillery
+        home = 195
+    }
 
 }
 
 navy = {
-	name = "3rd Squadron"
-	location = 214
-	ship = {
-		name= "John Adams"
-		type = frigate
-	}
+    name = "2nd Squadron"
+    location = 220
+    ship = {
+        name= "Ohio"
+        type = manowar
+    }
 
-	ship = {
-		name= "United States"
-		type = frigate
-	}
+    ship = {
+        name= "Hudson"
+        type = frigate
+    }
+
+}
+
+navy = {
+    name = "3rd Squadron"
+    location = 214
+    ship = {
+        name= "John Adams"
+        type = frigate
+    }
+
+    ship = {
+        name= "United States"
+        type = frigate
+    }
 
 }
