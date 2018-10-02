@@ -56,7 +56,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_crime_strip"
 		textureFile = "gfx\\interface\\crime_strip.dds"
-		noOfFrames = 11
+		noOfFrames = 12
 	}
 	spriteType = {
 		name = "GFX_party_loyalty_strip"
@@ -71,12 +71,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_natfocus_strip"
 		textureFile = "gfx\\interface\\province_natfocus_strip.dds"
-		noOfFrames = 32
+		noOfFrames = 38
 	}
 	spriteType = {
 		name = "GFX_province_natfocus_strip_small"
 		textureFile = "gfx\\interface\\province_natfocus_strip_small.dds"
-		noOfFrames = 32
+		noOfFrames = 38
 	}
 	spriteType = {
 		name = "GFX_province_fort_strip"
@@ -340,6 +340,18 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\terrain_small_island.tga"
 		norefcount = yes
 	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_coral_island"
+		texturefile = "gfx\\interface\\terrain_coral_island.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_urban"
+		texturefile = "gfx\\interface\\terrain_urban.tga"
+		norefcount = yes
+	}
 
 	spriteType = {
 		name = "GFX_terrainimg_arctic"
@@ -349,9 +361,64 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_terrainimg_ocean"
-		texturefile = "gfx\\interface\\terrain_mountains.tga"
+		texturefile = "gfx\\interface\\terrain_ocean.tga"
 		norefcount = yes
 	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_montane_tundra"
+		texturefile = "gfx\\interface\\terrain_new_world_montane_tundra.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_mountain"
+		texturefile = "gfx\\interface\\terrain_new_world_mountain.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_arctic"
+		texturefile = "gfx\\interface\\terrain_new_world_arctic.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_small_island"
+		texturefile = "gfx\\interface\\terrain_new_world_small_island.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_jungle"
+		texturefile = "gfx\\interface\\terrain_new_world_jungle.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_plains"
+		texturefile = "gfx\\interface\\terrain_new_world_plains.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_boreal"
+		texturefile = "gfx\\interface\\terrain_new_world_boreal.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_desert"
+		texturefile = "gfx\\interface\\terrain_new_world_desert.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_semidesert"
+		texturefile = "gfx\\interface\\terrain_new_world_semidesert.tga"
+		norefcount = yes
+	}
+	
 	spriteType = {
 		name = "GFX_invest_rail_button"
 		texturefile = "gfx\\interface\\invest_rail_button.tga"
