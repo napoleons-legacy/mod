@@ -30,7 +30,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 
 ruling_party = BHU_conservative
 upper_house = {
@@ -49,18 +50,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "BHU_oob.txt"
-1861.1.1 = {
-	oob = "/1861/BHU_oob.txt"
-}
-1861.1.1 = {
-
-	literacy = 0.04
-	non_state_culture_literacy = 0.02
-
-	#Military Reforms
-	foreign_weapons = yes_foreign_weapons
-	
-	#Technologies
-	flintlock_rifles = 1
-
-}
