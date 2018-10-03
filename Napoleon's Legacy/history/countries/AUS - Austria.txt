@@ -35,6 +35,9 @@ debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 decision = AUS_setup_1836
 
@@ -71,7 +74,7 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 
@@ -82,5 +85,11 @@ consciousness = 1
 nonstate_consciousness = 3
 
 schools = army_tech_school
+
+foreign_investment = {
+		BAV = 7500
+		WUR = 5000
+		BAD = 5000
+}
 
 oob = "AUS_oob.txt"

@@ -28,7 +28,7 @@ school_reforms = no_schools
 
 #New Reforms
 conscription = one_year_draft
-debt_law = peonage
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
@@ -51,6 +51,8 @@ foreign_weapons = yes_foreign_weapons
 flintlock_rifles = 1
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
 # Starting Consciousness
 consciousness = 0

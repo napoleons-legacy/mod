@@ -8,7 +8,6 @@ plurality = 0.0
 nationalvalue = nv_autocracy
 literacy = 0.03
 non_state_culture_literacy = 0
-civilized = yes
 
 # Political reforms
 slavery = no_slavery
@@ -34,8 +33,10 @@ conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 set_country_flag = post_colonial_country
+set_country_flag = sunni_country
 
 ruling_party = CYR_conservative
 upper_house = {

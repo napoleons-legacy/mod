@@ -33,6 +33,9 @@ conscription = four_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = SGF_liberal
 upper_house = {
@@ -43,10 +46,4 @@ upper_house = {
 	anarcho_liberal = 5
 	socialist = 5
 	communist = 2
-}
-
-1861.1.1 = {
-# Technologies
-
-#Inventions
 }

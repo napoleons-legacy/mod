@@ -33,17 +33,22 @@ conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
 
-ruling_party = NEN_liberal
+set_country_flag = protestant_country
+
+ruling_party = NEN_conservative
 upper_house = {
 	fascist = 0
-	liberal = 61
-	conservative = 35
+	liberal = 35
+	conservative = 61
 	reactionary = 4
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
+
+set_country_flag = new_world_nation
 
 # Technologies
 post_napoleonic_thought = 1

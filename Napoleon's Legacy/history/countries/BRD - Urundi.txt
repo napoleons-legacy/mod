@@ -33,8 +33,11 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
+border_policy = open_borders
 
-ruling_party = BRD_conservative
+set_country_flag = animist_country
+
+ruling_party = BRD_reactionary
 upper_house = {
 	fascist = 0
 	liberal = 15

@@ -1,5 +1,10 @@
 capital = 2048
 primary_culture = swahili
+culture = kilombero
+culture = yao
+culture = sukuma
+culture = kikuyu
+culture = cushitic
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -18,20 +23,13 @@ upper_house = {
 }
 
 set_country_flag = delay_unciv_annexation
+set_country_flag = sunni_country
 
-
-# Starting Consciousness
+#Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
-1861.1.1 = {
-	oob = "/1861/ZAN_oob.txt"
-}
-1861.1.1 = {
-
-}
-
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = no_meeting

@@ -34,6 +34,9 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = ARG_conservative
 upper_house = {
@@ -45,6 +48,8 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+set_country_flag = new_world_nation
 
 # Technologies
 post_napoleonic_thought = 1
@@ -60,7 +65,7 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 
 # Inventions
 

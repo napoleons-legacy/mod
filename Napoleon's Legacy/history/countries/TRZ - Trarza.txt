@@ -1,6 +1,9 @@
 capital = 1775
 primary_culture = maures
-culture = african_minor
+culture = berber
+culture = bedouin
+culture = fulbe
+culture = wolof
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -32,6 +35,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = TRZ_conservative
 upper_house = {
@@ -44,7 +48,7 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = lacking_writing_system
+set_country_flag = sunni_country
 
 # Technologies
 

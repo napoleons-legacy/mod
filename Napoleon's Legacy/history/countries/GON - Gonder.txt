@@ -1,6 +1,8 @@
 capital = 1852
 primary_culture = amhara
+culture = tigray
 culture = oromo
+culture = cushitic
 religion = coptic
 government = absolute_monarchy
 plurality = 0.0
@@ -32,6 +34,9 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = coptic_country
 
 ruling_party = GON_reactionary
 upper_house = {
@@ -51,6 +56,8 @@ oob = "GON_oob.txt"
 # Technologies
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
 # Starting Consciousness
 consciousness = 0

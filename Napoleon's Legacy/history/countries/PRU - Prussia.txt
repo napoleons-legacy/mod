@@ -38,6 +38,9 @@ conscription = mandatory_service
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 decision = literacy_PRU
 
@@ -74,13 +77,13 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 army_professionalism = 1
-mechanical_production = 1
+interchangeable_parts = 1
 romanticism = 1
-#clean_coal = 1
+#hot_blast = 1
 high_pressure_steam_engine = 1
 
 
@@ -93,7 +96,12 @@ nonstate_consciousness = 1
 schools = army_tech_school
 
 foreign_investment = {
-	NCT = 10000
+	NEH = 10000
+	SGM = 10000
+	OLD = 10000
+	MEC = 7500
+	SAX = 7500
+	HAN = 10000
 }
 
 oob = "PRU_oob.txt"

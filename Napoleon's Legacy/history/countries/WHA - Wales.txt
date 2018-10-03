@@ -15,16 +15,16 @@ vote_franschise = wealth_voting
 public_meetings = yes_meeting
 press_rights = censored_press
 trade_unions = non_socialist
-voting_system = first_past_the_post
+voting_system = jefferson_method
 political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
-health_care = trinket_health_care
-unemployment_subsidies = trinket_subsidies
-pensions = no_pensions
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
 school_reforms = no_schools
 
 # New Reforms
@@ -32,6 +32,9 @@ conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = WHA_liberal
 upper_house = {

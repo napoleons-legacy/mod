@@ -1,6 +1,8 @@
 capital = 1880
 primary_culture = fulbe
-culture = african_minor
+culture = mande
+culture = dyula
+culture = western_nigritic
 religion = sunni
 government = theocracy
 plurality = 0.0
@@ -32,6 +34,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = JAL_reactionary
 upper_house = {
@@ -44,7 +47,7 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = islamic_law
+set_country_flag = sunni_country
 
 # Technologies
 

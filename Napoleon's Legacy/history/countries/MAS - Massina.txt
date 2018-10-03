@@ -1,6 +1,9 @@
 capital = 1804
 primary_culture = fulbe
-culture = african_minor
+culture = tuareg
+culture = mande
+culture = gur
+culture = senufo
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -29,9 +32,10 @@ school_reforms = no_schools
 
 # New Reforms
 conscription = no_draft
-debt_law = peonage
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = MAS_reactionary
 upper_house = {
@@ -44,8 +48,7 @@ upper_house = {
 	communist = 0
 }
 
-
-foreign_training = yes_foreign_training
+set_country_flag = sunni_country
 
 # Technologies
 
@@ -56,4 +59,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "MAS_oob.txt"
-

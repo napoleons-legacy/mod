@@ -1,12 +1,13 @@
 capital = 1859
 primary_culture = amhara
+culture = tigray
 culture = oromo
+culture = cushitic
 religion = coptic
 government = absolute_monarchy
-plurality = 0.0
+plurality = 5.0
 nationalvalue = nv_tradition
 literacy = 0.07
-non_state_culture_literacy = 0.03
 is_releasable_vassal = no
 
 slavery = yes_slavery
@@ -31,6 +32,9 @@ conscription = four_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = coptic_country
 
 ruling_party = ETH_conservative
 upper_house = {
@@ -47,17 +51,8 @@ upper_house = {
 consciousness = 0
 nonstate_consciousness = 0
 
-1861.1.1 = {
-	oob = "/1861/ETH_oob.txt"
-	set_global_flag = is_negusa_nagast
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
-	foreign_weapons = yes_foreign_weapons
-	foreign_training = yes_foreign_training
-	admin_reform = yes_admin_reform
-
-	# Technologies
-	flintlock_rifles = 1
-
-}
+schools = unciv_tech_school

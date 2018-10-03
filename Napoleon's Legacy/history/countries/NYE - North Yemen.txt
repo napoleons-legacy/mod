@@ -32,6 +32,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = YEM_reactionary
 upper_house = {
@@ -49,6 +50,7 @@ govt_flag = {
 	flag = fascist_dictatorship
 }
 
+set_country_flag = shiite_country
 foreign_weapons = yes_foreign_weapons
 
 # Technologies
@@ -61,11 +63,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "NYE_oob.txt"
-1861.1.1 = {
-
-foreign_weapons = yes_foreign_weapons
-
-# Technologies
-flintlock_rifles = 1
-
-}

@@ -1,6 +1,6 @@
 capital = 1166
 primary_culture = bedouin
-religion = shiite
+religion = ibadi
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
@@ -31,6 +31,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = OMA_conservative
 upper_house = {
@@ -43,6 +44,7 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = ibadi_country
 foreign_weapons = yes_foreign_weapons
 
 # Technologies
@@ -55,8 +57,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "OMA_oob.txt"
-1861.1.1 = {
-	oob = "/1861/OMA_oob.txt"
-	literacy = 0.13
-	non_state_culture_literacy = 0.06
-}

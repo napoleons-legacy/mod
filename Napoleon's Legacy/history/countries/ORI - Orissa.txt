@@ -30,6 +30,9 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = hindu_country
 
 ruling_party = ORI_conservative
 upper_house = {
@@ -48,22 +51,12 @@ foreign_weapons = yes_foreign_weapons
 # Technologies
 flintlock_rifles = 1
 
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
+
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "ORI_oob.txt"
-1861.1.1 = {
-	oob = "/1861/ORI_oob.txt"
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
-
-	#Military Reforms
-	foreign_training = yes_foreign_training
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
-
-	#Technologies
-	flintlock_rifles = 1
-}
-

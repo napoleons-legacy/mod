@@ -29,9 +29,12 @@ school_reforms = no_schools
 
 # New Reforms
 conscription = no_draft
-debt_law = peonage
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = closed_borders
+
+set_country_flag = gelugpa_country
 
 ruling_party = SIK_conservative
 upper_house = {
@@ -54,7 +57,8 @@ flintlock_rifles = 1
 consciousness = 0
 nonstate_consciousness = 0
 
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
+
 oob = "SIK_oob.txt"
-1861.1.1 = {
-	oob = "/1861/SIK_oob.txt"
-}

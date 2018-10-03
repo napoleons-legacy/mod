@@ -32,6 +32,9 @@ conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = SAF_conservative_2
 upper_house = {

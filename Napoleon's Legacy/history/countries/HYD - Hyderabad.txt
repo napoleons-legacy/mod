@@ -33,6 +33,7 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = HYD_conservative
 upper_house = {
@@ -45,7 +46,7 @@ upper_house = {
 	communist = 0
 }
 
-
+set_country_flag = sunni_country
 foreign_artillery = yes_foreign_artillery
 foreign_weapons = yes_foreign_weapons
 
@@ -60,20 +61,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "HYD_oob.txt"
-1861.1.1 = {
-	oob = "/1861/HYD_oob.txt"
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
-
-	foreign_training = yes_foreign_training
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
-	army_schools = yes_army_schools
-
-	# Technologies
-	military_staff_system = 1
-	flintlock_rifles = 1
-
-	# Inventions
-
-}

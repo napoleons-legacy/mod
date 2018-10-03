@@ -32,6 +32,9 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = POL_conservative
 upper_house = {
@@ -59,7 +62,7 @@ private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
 guild_based_production = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 

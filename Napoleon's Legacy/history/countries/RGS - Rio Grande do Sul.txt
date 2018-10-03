@@ -8,16 +8,17 @@ nationalvalue = nv_liberty
 literacy = 0.1
 non_state_culture_literacy = 0.01
 civilized = yes
+prestige = 2
 
 # Political reforms
 slavery = yes_slavery
-upper_house_composition = state_equal_weight
-vote_franschise = wealth_voting
+upper_house_composition = appointed
+vote_franschise = wealth_weighted_voting
 public_meetings = yes_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
-voting_system = first_past_the_post
-political_parties = underground_parties
+voting_system = jefferson_method
+political_parties = harassment
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -33,6 +34,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = RGS_conservative
 upper_house = {
@@ -45,6 +49,7 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = new_world_nation
 
 # Technologies
 post_napoleonic_thought = 1
@@ -60,7 +65,7 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 
 # Inventions
 

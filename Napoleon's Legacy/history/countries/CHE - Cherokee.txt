@@ -40,7 +40,8 @@ conscription = four_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
-1861.1.1 = {
-	religion = protestant
-}
+set_country_flag = protestant_country
+
+set_country_flag = new_world_nation

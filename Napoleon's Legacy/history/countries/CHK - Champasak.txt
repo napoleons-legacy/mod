@@ -32,7 +32,9 @@ conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
+set_country_flag = theravada_country
 
 ruling_party = CHK_conservative
 upper_house = {
@@ -55,3 +57,5 @@ foreign_weapons = yes_foreign_weapons
 flintlock_rifles = 1
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes

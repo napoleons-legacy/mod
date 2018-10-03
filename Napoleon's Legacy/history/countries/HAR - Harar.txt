@@ -1,6 +1,7 @@
 capital = 1865
 primary_culture = harari
 culture = somali
+culture = cushitic
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -32,6 +33,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = HAR_conservative
 upper_house = {
@@ -44,10 +46,10 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = sunni_country
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "HAR_oob.txt"
-

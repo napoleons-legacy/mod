@@ -3,6 +3,7 @@ primary_culture = russian
 culture = byelorussian
 culture = ukrainian
 culture = ugrian
+culture = alaskan
 religion = orthodox
 government = absolute_monarchy
 plurality = 5.0
@@ -10,7 +11,6 @@ nationalvalue = nv_autocracy
 literacy = 0.04
 non_state_culture_literacy = 0.01
 civilized = yes
-is_releasable_vassal = no
 
 set_country_flag = serfdom_not_abolished
 
@@ -37,22 +37,27 @@ pensions = no_pensions
 school_reforms = no_schools
 
 #New Reforms
-conscription = four_year_draft
+conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
+border_policy = closed_borders
 
-ruling_party = RUS_reactionary
+set_country_flag = orthodox_country
+
+ruling_party = RUS_conservative
 upper_house = {
 	fascist = 0
-	liberal = 15
-	conservative = 75
-	reactionary = 10
+	liberal = 19
+	conservative = 60
+	reactionary = 21
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
+
+decision = RUS_setup_1836
 
 # Technologies
 post_napoleonic_thought = 1
@@ -74,17 +79,23 @@ private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
 guild_based_production = 1
-compound_steam_engines = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
+piston_steam_engine = 1
 
 #Inventions
 #corvettes = yes
-commerce_raiders = yes
 
 # Starting Consciousness
-consciousness = 3
+consciousness = 1
 nonstate_consciousness = 1
 
 schools = culture_tech_school
+
+govt_flag = {
+	government = hms_government
+	flag = theocracy
+}
+
+oob = "RUS_oob.txt"

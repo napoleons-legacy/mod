@@ -1,25 +1,23 @@
 capital = 768
 primary_culture = slovene
 culture = croat
-culture = north_italian
-culture = south_german
 religion = orthodox
-government = prussian_constitutionalism
-plurality = 0.0
-nationalvalue = nv_order
+government = hms_government
+plurality = 25.0
+nationalvalue = nv_autocracy
 literacy = 0.28
 civilized = yes
 prestige = 10
 
 # Political reforms
 slavery = no_slavery
-upper_house_composition = appointed
-vote_franschise = none_voting
+upper_house_composition = state_equal_weight
+vote_franschise = wealth_voting
 public_meetings = yes_meeting
-press_rights = state_press
+press_rights = free_press
 trade_unions = no_trade_unions
-voting_system = first_past_the_post
-political_parties = underground_parties
+voting_system = jefferson_method
+political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -31,11 +29,14 @@ pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = four_year_draft
-debt_law = serfdom
+conscription = one_year_draft
+debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = primary_culture_only
+citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = orthodox_country
 
 ruling_party = YUG_conservative
 last_election = 1834.1.1
@@ -70,12 +71,13 @@ no_standard = 1
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
-compound_steam_engines = 1
-publishing_industry = 1
+piston_steam_engine = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 
 #Inventions
+
 
 # Starting Consciousness
 consciousness = 4

@@ -6,6 +6,7 @@ plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.03
 non_state_culture_literacy = 0.01
+prestige = 1
 
 slavery = yes_slavery
 upper_house_composition = appointed
@@ -29,6 +30,9 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = mahayana_country
 
 ruling_party = KOR_conservative_2
 upper_house = {
@@ -48,6 +52,7 @@ govt_flag = {
 
 
 foreign_weapons = yes_foreign_weapons
+land_reform = yes_land_reform
 
 # Technologies
 flintlock_rifles = 1
@@ -56,19 +61,8 @@ flintlock_rifles = 1
 consciousness = 0
 nonstate_consciousness = 0
 
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
+
 oob = "KOR_oob.txt"
-1861.1.1 = {
-	oob = "/1861/KOR_oob.txt"
-	literacy = 0.09
-	non_state_culture_literacy = 0.05
-
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
-	admin_reform = yes_admin_reform
-	land_reform = yes_land_reform
-
-	# Technologies
-	flintlock_rifles = 1
-	military_staff_system = 1
-}
-

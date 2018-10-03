@@ -1,5 +1,6 @@
 capital = 1934
 primary_culture = ibibio
+culture = tiv
 religion = animist
 government = absolute_monarchy
 plurality = 0.0
@@ -31,6 +32,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = animist_country
 
 ruling_party = CLA_conservative
 upper_house = {

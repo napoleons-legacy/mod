@@ -7,7 +7,6 @@ nationalvalue = nv_order
 literacy = 0.25
 civilized = yes
 
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -32,6 +31,9 @@ conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = TRE_conservative
 upper_house = {
@@ -42,10 +44,4 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
-}
-
-1861.1.1 = {
-# Technologies
-
-#Inventions
 }

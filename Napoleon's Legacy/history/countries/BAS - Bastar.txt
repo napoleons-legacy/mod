@@ -32,6 +32,9 @@ debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = hindu_country
 
 ruling_party = BAS_conservative
 upper_house = {
@@ -51,27 +54,11 @@ foreign_weapons = yes_foreign_weapons
 flintlock_rifles = 1
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "BAS_oob.txt"
-1861.1.1 = {
-	oob = "/1861/BAS_oob.txt"
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
-}
-1861.1.1 = {
-
-	foreign_training = yes_foreign_training
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
-
-# Technologies
-military_staff_system = 1
-flintlock_rifles = 1
-
-# Inventions
-
-}

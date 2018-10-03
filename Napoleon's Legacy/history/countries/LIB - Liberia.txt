@@ -1,5 +1,8 @@
 capital = 1887
 primary_culture = afro_american
+culture = kru
+culture = mande
+culture = western_nigritic
 religion = protestant
 government = democracy
 plurality = 0.0
@@ -32,6 +35,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = LIB_conservative
 
@@ -45,6 +51,7 @@ upper_house = {
 	communist = 0
 }
 
+schools = unciv_tech_school
 
 # Technologies
 flintlock_rifles = 1

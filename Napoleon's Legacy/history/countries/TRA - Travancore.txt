@@ -31,6 +31,9 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = hindu_country
 
 ruling_party = TRA_conservative
 upper_house = {
@@ -52,25 +55,11 @@ flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "TRA_oob.txt"
-1861.1.1 = {
-	oob = "/1861/TRA_oob.txt"
-}
-1861.1.1 = {
-
-foreign_training = yes_foreign_training
-foreign_weapons = yes_foreign_weapons
-army_schools = yes_army_schools
-
-# Technologies
-military_staff_system = 1
-flintlock_rifles = 1
-
-# Inventions
-
-}

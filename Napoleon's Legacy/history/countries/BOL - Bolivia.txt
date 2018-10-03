@@ -3,7 +3,7 @@ primary_culture = south_andean
 religion = catholic
 government = presidential_dictatorship
 plurality = 15.0
-nationalvalue = nv_order
+nationalvalue = nv_equality
 literacy = 0.09
 non_state_culture_literacy = 0.09
 civilized = yes
@@ -35,7 +35,9 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
 
+set_country_flag = catholic_country
 
 ruling_party = BOL_conservative
 upper_house = {
@@ -48,12 +50,13 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = new_world_nation
+
 # Technologies
-post_napoleonic_thought = 1
-flintlock_rifles = 1
+#post_napoleonic_thought = 1
+#flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-army_command_principle = 1
-post_nelsonian_thought = 1
+#post_nelsonian_thought = 1
 the_command_principle = 1
 private_banks = 1
 no_standard = 1
@@ -62,7 +65,7 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 
 # Inventions
 

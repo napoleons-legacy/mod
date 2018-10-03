@@ -32,6 +32,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = theravada_country
 
 ruling_party = SHA_conservative
 upper_house = {
@@ -43,3 +46,7 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes

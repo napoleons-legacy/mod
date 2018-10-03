@@ -3,6 +3,7 @@ primary_culture = russian
 culture = byelorussian
 culture = ukrainian
 culture = ugrian
+culture = alaskan
 religion = orthodox
 government = absolute_monarchy
 plurality = 5.0
@@ -40,6 +41,9 @@ conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = closed_borders
+
+set_country_flag = orthodox_country
 
 ruling_party = RUS_conservative
 upper_house = {
@@ -74,14 +78,13 @@ private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
 guild_based_production = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 piston_steam_engine = 1
 
 #Inventions
 #corvettes = yes
-commerce_raiders = yes
 
 # Starting Consciousness
 consciousness = 1

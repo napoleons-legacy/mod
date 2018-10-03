@@ -2,7 +2,7 @@ capital = 605
 primary_culture = swiss
 religion = protestant
 government = democracy
-plurality = 25.0
+plurality = 40.0
 nationalvalue = nv_liberty
 literacy = 0.8
 civilized = yes
@@ -32,6 +32,9 @@ conscription = mandatory_service
 debt_law = debtors_prisons
 penal_system = incarceration
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = SWI_conservative
 last_election = 1835.1.1
@@ -68,9 +71,10 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
+high_pressure_steam_engine = 1
 
 #Inventions
 authoritarianism = yes

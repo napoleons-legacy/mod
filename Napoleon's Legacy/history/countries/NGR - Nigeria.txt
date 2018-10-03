@@ -1,9 +1,14 @@
 capital = 1923
-primary_culture = british 
-culture = yoruba
-culture = edo
+primary_culture = yoruba
+culture = hausa
+culture = ibo
 culture = fulbe
-culture = african_minor
+culture = kanuri
+culture = itsekari
+culture = edo
+culture = east_kwa
+culture = tiv
+culture = ibibio
 religion = protestant
 government = democracy
 plurality = 0.0
@@ -34,10 +39,13 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 set_country_flag = post_colonial_country
 
-ruling_party = SOK_conservative
+ruling_party = NGR_conservative
 upper_house = {
 	fascist = 0
 	liberal = 16

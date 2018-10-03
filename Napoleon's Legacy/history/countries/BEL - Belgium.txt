@@ -5,11 +5,11 @@ culture = picard
 religion = catholic
 government = hms_government
 plurality = 25.0
-nationalvalue = nv_productivity
+nationalvalue = nv_liberty
 literacy = 0.45
 non_state_culture_literacy = 0.5 #Germans/Dutch
 civilized = yes
-prestige = 3
+prestige = 5
 
 # Political reforms
 slavery = no_slavery
@@ -27,7 +27,7 @@ work_hours = fourteen_hours
 safety_regulations = trinket_safety
 health_care = trinket_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions
+pensions = no_pensions 
 school_reforms = no_schools
 
 #New Reforms
@@ -36,6 +36,9 @@ debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = BEL_conservative
 last_election = 1834.1.1
@@ -72,10 +75,12 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 experimental_railroad = 1
+high_pressure_steam_engine = 1
+interchangeable_parts = 1
 
 #Inventions
 

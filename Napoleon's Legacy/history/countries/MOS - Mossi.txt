@@ -1,6 +1,8 @@
 capital = 1901
 primary_culture = mossi
-culture = african_minor
+culture = gur
+culture = mande
+culture = senufo
 religion = animist
 government = absolute_monarchy
 plurality = 0.0
@@ -32,6 +34,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = animist_country
 
 ruling_party = MOS_conservative
 upper_house = {
@@ -55,4 +60,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "MOS_oob.txt"
-

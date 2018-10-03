@@ -21,9 +21,9 @@ political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
-work_hours = fourteen_hours
-safety_regulations = trinket_safety
-health_care = trinket_health_care
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
@@ -34,6 +34,7 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
 
 ruling_party = AZB_conservative
 last_election = 1834.1.1
@@ -45,6 +46,13 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
+
+set_country_flag = sunni_country
+
+govt_flag = {
+	government = presidential_dictatorship
+	flag = theocracy
 }
 
 # Technologies
@@ -69,7 +77,7 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 
