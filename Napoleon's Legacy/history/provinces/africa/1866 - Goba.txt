@@ -1,9 +1,5 @@
-owner = SID
-controller = SID
-add_core = SID
+add_core = SHW
 add_core = ETH
-add_core = MAJ
-add_core = GEL
-add_core = WRL
+terrain = dryhills
 trade_goods = cattle
-life_rating = 35
+life_rating = 10
