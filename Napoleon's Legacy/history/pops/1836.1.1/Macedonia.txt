@@ -32,10 +32,28 @@
 		size = 25225
 	}
 
+	aristocrats = {
+		culture = bulgarian
+		religion = orthodox
+		size = 125
+	}
+	
+	officers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 110
+	}
+	
+	soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 200
+	}
+	
 	clergymen = {
 		culture = bulgarian
 		religion = orthodox
-		size = 425
+		size = 125
 	}
 
 	artisans = {
@@ -47,13 +65,31 @@
 	farmers = {
 		culture = bulgarian
 		religion = orthodox
-		size = 56475
+		size = 56350
+	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 200
 	}
 
 	clergymen = {
 		culture = greek
 		religion = orthodox
-		size = 200
+		size = 110
 	}
 
 	artisans = {
@@ -65,13 +101,7 @@
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 11600
-	}
-
-	clergymen = {
-		culture = sephardic
-		religion = jewish
-		size = 25
+		size = 11200
 	}
 
 	artisans = {
@@ -83,17 +113,23 @@
 	farmers = {
 		culture = sephardic
 		religion = jewish
-		size = 275
+		size = 300
 	}
 }
 #Monastir Region (268000) #see Greece.txt for balance of region 
 #under the rule of Ottoman Empire in 1836  
 #Bitola (268000/67000 POPS) 
 807 = {
+	soldiers = {
+		culture = bulgarian
+		religion = orthodox
+		size = 1200
+	}
+	
 	clergymen = {
 		culture = bulgarian
 		religion = orthodox
-		size = 300
+		size = 110
 	}
 
 	artisans = {
@@ -105,13 +141,31 @@
 	farmers = {
 		culture = bulgarian
 		religion = orthodox
-		size = 25275
+		size = 24075
+	}
+	
+	soldiers = {
+		culture = serb
+		religion = orthodox
+		size = 200
+	}
+	
+	clergymen = {
+		culture = serb
+		religion = orthodox
+		size = 110
+	}
+
+	artisans = {
+		culture = serb
+		religion = orthodox
+		size = 225
 	}
 	
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 3500
+		size = 2965
 	}
 	
 	farmers = {
@@ -167,11 +221,17 @@
 		religion = sunni
 		size = 1975
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 175
+	}
 
 	clergymen = {
 		culture = greek
 		religion = orthodox
-		size = 175
+		size = 110
 	}
 
 	artisans = {
@@ -183,24 +243,18 @@
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 9575
-	}
-
-	clergymen = {
-		culture = sephardic
-		religion = jewish
-		size = 25
+		size = 9475
 	}
 
 	artisans = {
 		culture = sephardic
 		religion = jewish
-		size = 975
+		size = 1000
 	}
 
 }
 
-# Former Tichit
+#Debar - Former Tichit
 1780 = {
 	clergymen = {
 		culture = albanian
@@ -226,10 +280,28 @@
 		size = 22062
 	}
 	
+	soldiers = {
+		culture = serb
+		religion = orthodox
+		size = 175
+	}
+
+	clergymen = {
+		culture = serb
+		religion = orthodox
+		size = 110
+	}
+
+	artisans = {
+		culture = serb
+		religion = orthodox
+		size = 250
+	}
+	
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 1000
+		size = 1100
 	}
 
 }

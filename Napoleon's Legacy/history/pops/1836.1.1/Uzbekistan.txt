@@ -436,7 +436,7 @@
 	farmers = {
 		culture = uzbek
 		religion = sunni
-		size = 148950
+		size = 142950
 	}
 
 	aristocrats = {
@@ -514,7 +514,7 @@
 	slaves = {
 		culture = mashriqi
 		religion = sunni
-		size = 12000
+		size = 8000
 	}
 
 	slaves = {
@@ -720,3 +720,32 @@
 	}
 
 }
+
+#Kyzyl Kum - Former Medicine Hat (8000/2000 POPS)
+29 = {
+	
+	clergymen = {
+		culture = uzbek
+		religion = sunni
+		size = 100
+	}
+
+	artisans = {
+		culture = uzbek
+		religion = sunni
+		size = 500
+	}
+
+	soldiers = {
+		culture = uzbek
+		religion = sunni
+		size = 250
+	}
+
+	farmers = {
+		culture = uzbek
+		religion = sunni
+		size = 5000
+	}
+}
+

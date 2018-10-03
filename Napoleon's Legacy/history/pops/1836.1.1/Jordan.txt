@@ -11,25 +11,25 @@
 	clergymen = {
 		culture = mashriqi
 		religion = sunni
-		size = 25
+		size = 100
 	}
 
 	artisans = {
 		culture = mashriqi
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	soldiers = {
 		culture = mashriqi
 		religion = sunni
-		size = 25
+		size = 100
 	}
 
 	farmers = {
 		culture = mashriqi
 		religion = sunni
-		size = 875
+		size = 775
 	}
 
 	farmers = {
@@ -47,13 +47,13 @@
 	clergymen = {
 		culture = bedouin
 		religion = sunni
-		size = 75
+		size = 100
 	}
 
 	artisans = {
 		culture = bedouin
 		religion = sunni
-		size = 175
+		size = 125
 	}
 
 	soldiers = {
@@ -65,7 +65,37 @@
 	farmers = {
 		culture = bedouin
 		religion = sunni
-		size = 3675
+		size = 2875
+	}
+	
+	clergymen = {
+		culture = mashriqi
+		religion = orthodox
+		size = 100
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = orthodox
+		size = 100
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = orthodox
+		size = 500
+	}
+	
+	clergymen = {
+		culture = mashriqi
+		religion = druze
+		size = 100
+	}
+	
+	farmers = {
+		culture = mashriqi
+		religion = druze
+		size = 390
 	}
 }
 #Jerash (16000/4000 POPS) #now part of Jordan
@@ -85,7 +115,7 @@
 	artisans = {
 		culture = mashriqi
 		religion = sunni
-		size = 150
+		size = 100
 	}
 
 	soldiers = {
@@ -97,7 +127,7 @@
 	farmers = {
 		culture = mashriqi
 		religion = sunni
-		size = 2715
+		size = 2215
 	}
 
 	aristocrats = {
@@ -129,10 +159,28 @@
 		religion = sunni
 		size = 910
 	}
+	
+	clergymen = {
+		culture = mashriqi
+		religion = orthodox
+		size = 100
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = orthodox
+		size = 100
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = orthodox
+		size = 500
+	}
 }
 #Badiyat al-Sham Region (40000)  #see Syria.txt, Iraq.txt & Saudi Arabia.txt for balance of region
 #under the "rule" of Egypt in 1836  
-#Ruwayshid (12000/3000 POPS) #now part of Jordan 
+#Azraq (12000/3000 POPS) #now part of Jordan 
 910 = {
 	aristocrats = {
 		culture = bedouin

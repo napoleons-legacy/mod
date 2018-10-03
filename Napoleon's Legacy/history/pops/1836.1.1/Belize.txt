@@ -2,6 +2,19 @@
 #Ruled by Britain 1836
 #Belize (7200/1800 POPS)
 2190 = {
+
+	aristocrats = {
+		culture = central_american
+		religion = catholic
+		size = 40
+	}
+	
+	officers = {
+		culture = central_american
+		religion = catholic
+		size = 2
+	}
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -35,7 +48,7 @@
 	farmers = {
 		culture = central_american
 		religion = catholic
-		size = 1100
+		size = 1058
 	}
 
 	farmers = {

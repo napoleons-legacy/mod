@@ -14,6 +14,12 @@ name = "Russian-Circassian War"
 		actor = RUS
 		receiver = CIR
 	}
+	
+	war_goal = {
+		casus_belli = status_quo
+		actor = CIR
+		receiver = RUS
+	}
 
 }
 

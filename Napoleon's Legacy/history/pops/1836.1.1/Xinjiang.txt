@@ -492,7 +492,7 @@
 		size = 25
 	}
 
-	farmers = {
+	slaves = {
 		culture = beifaren
 		religion = sunni
 		size = 2700
@@ -516,7 +516,7 @@
 		size = 25
 	}
 
-	farmers = {
+	slaves = {
 		culture = beifaren
 		religion = mahayana
 		size = 900

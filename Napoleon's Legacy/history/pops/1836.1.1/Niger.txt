@@ -35,7 +35,7 @@
 	aristocrats = {
 		culture = dyula
 		religion = sunni
-		size = 150
+		size = 170
 	}
 
 	clergymen = {
@@ -89,55 +89,25 @@
 	artisans = {
 		culture = songhai
 		religion = sunni
-		size = 1050
+		size = 1150
 	}
 
 	soldiers = {
 		culture = songhai
 		religion = sunni
-		size = 2250
+		size = 2280
 	}
 
 	farmers = {
 		culture = songhai
 		religion = sunni
-		size = 20000
-	}
-
-	aristocrats = {
-		culture = african_minor
-		religion = animist
-		size = 20
-	}
-
-	clergymen = {
-		culture = african_minor
-		religion = animist
-		size = 50
-	}
-
-	artisans = {
-		culture = african_minor
-		religion = animist
-		size = 100
-	}
-
-	soldiers = {
-		culture = african_minor
-		religion = animist
-		size = 30
-	}
-
-	farmers = {
-		culture = african_minor
-		religion = animist
-		size = 1800
+		size = 24050
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = gur
 		religion = animist
-		size = 6000
+		size = 2000
 	}
 
 	aristocrats = {
@@ -235,7 +205,7 @@
 	aristocrats = {
 		culture = songhai
 		religion = sunni
-		size = 200
+		size = 350
 	}
 
 	clergymen = {
@@ -247,53 +217,23 @@
 	artisans = {
 		culture = songhai
 		religion = sunni
-		size = 600
+		size = 1000
 	}
 
 	soldiers = {
 		culture = songhai
 		religion = sunni
-		size = 1100
+		size = 1200
 	}
 
 	farmers = {
 		culture = songhai
 		religion = sunni
-		size = 8000
-	}
-
-	aristocrats = {
-		culture = african_minor
-		religion = animist
-		size = 150
-	}
-
-	clergymen = {
-		culture = african_minor
-		religion = animist
-		size = 100
-	}
-
-	artisans = {
-		culture = african_minor
-		religion = animist
-		size = 400
-	}
-
-	soldiers = {
-		culture = african_minor
-		religion = animist
-		size = 100
-	}
-
-	farmers = {
-		culture = african_minor
-		religion = animist
-		size = 7250
+		size = 35350
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 4000
 	}
@@ -357,41 +297,41 @@
 	farmers = {
 		culture = hausa
 		religion = sunni
-		size = 31900
+		size = 47900
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 3600
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 5800
 	}
@@ -411,7 +351,7 @@
 	artisans = {
 		culture = tuareg
 		religion = sunni
-		size = 750
+		size = 250
 	}
 
 	soldiers = {
@@ -423,7 +363,7 @@
 	farmers = {
 		culture = tuareg
 		religion = sunni
-		size = 16500
+		size = 1000
 	}
 }
 #Maradi (280000/70000 POPS)
@@ -431,13 +371,13 @@
 	aristocrats = {
 		culture = fulbe
 		religion = sunni
-		size = 20
+		size = 100
 	}
 
 	clergymen = {
 		culture = fulbe
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	artisans = {
@@ -449,7 +389,7 @@
 	soldiers = {
 		culture = fulbe
 		religion = sunni
-		size = 30
+		size = 100
 	}
 
 	farmers = {
@@ -485,41 +425,41 @@
 	farmers = {
 		culture = hausa
 		religion = sunni
-		size = 37000
+		size = 44000
 	}
 
 	aristocrats = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 300
 	}
 
 	clergymen = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 150
 	}
 
 	artisans = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 800
 	}
 
 	soldiers = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 150
 	}
 
 	farmers = {
-		culture = african_minor
-		religion = animist
-		size = 14600
+		culture = songhai
+		religion = sunni
+		size = 7600
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
 		size = 8000
 	}
@@ -585,7 +525,7 @@
 	farmers = {
 		culture = tuareg
 		religion = sunni
-		size = 17000
+		size = 15000
 	}
 
 	aristocrats = {
@@ -615,13 +555,13 @@
 	farmers = {
 		culture = hausa
 		religion = sunni
-		size = 8750
+		size = 20750
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = baguirmi
 		religion = animist
-		size = 12000
+		size = 2000
 	}
 }
 #Arlit (16000/4000 POPS)
@@ -685,13 +625,13 @@
 	farmers = {
 		culture = tuareg
 		religion = sunni
-		size = 6025
+		size = 9025
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
-		size = 4000
+		culture = teda
+		religion = sunni
+		size = 1000
 	}
 }
 #Damergu Region (360000)
@@ -731,43 +671,43 @@
 	farmers = {
 		culture = hausa
 		religion = sunni
-		size = 62900
+		size = 79900
 	}
 
 	aristocrats = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 650
 	}
 
 	clergymen = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 350
 	}
 
 	artisans = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 1800
 	}
 
 	soldiers = {
-		culture = african_minor
-		religion = animist
+		culture = songhai
+		religion = sunni
 		size = 2150
 	}
 
 	farmers = {
-		culture = african_minor
-		religion = animist
-		size = 20850
+		culture = songhai
+		religion = sunni
+		size = 10850
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = songhai
 		religion = animist
-		size = 12000
+		size = 10000
 	}
 
 	aristocrats = {
@@ -797,7 +737,7 @@
 	farmers = {
 		culture = tuareg
 		religion = sunni
-		size = 7150
+		size = 2150
 	}
 }
 #under the rule of Kanem-Bornu in 1836
@@ -830,13 +770,13 @@
 	farmers = {
 		culture = kanuri
 		religion = sunni
-		size = 56600
+		size = 17600
 	}
 
 	aristocrats = {
 		culture = tuareg
 		religion = sunni
-		size = 40
+		size = 100
 	}
 
 	clergymen = {
@@ -854,19 +794,49 @@
 	soldiers = {
 		culture = tuareg
 		religion = sunni
-		size = 60
+		size = 100
 	}
 
 	farmers = {
 		culture = tuareg
 		religion = sunni
-		size = 3600
+		size = 1600
+	}
+	
+	aristocrats = {
+		culture = hausa
+		religion = sunni
+		size = 100
+	}
+
+	clergymen = {
+		culture = hausa
+		religion = sunni
+		size = 100
+	}
+
+	artisans = {
+		culture = tuareg
+		religion = sunni
+		size = 200
+	}
+
+	soldiers = {
+		culture = hausa
+		religion = sunni
+		size = 100
+	}
+
+	farmers = {
+		culture = hausa
+		religion = sunni
+		size = 61600
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
-		size = 28000
+		culture = fulbe
+		religion = sunni
+		size = 8000
 	}
 }
 #Bilma (36000/9000 POPS)
@@ -898,7 +868,7 @@
 	farmers = {
 		culture = tuareg
 		religion = sunni
-		size = 4375
+		size = 6375
 	}
 
 	aristocrats = {
@@ -928,13 +898,13 @@
 	farmers = {
 		culture = teda
 		religion = sunni
-		size = 1800
+		size = 800
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = baguirmi
 		religion = animist
-		size = 2000
+		size = 1000
 	}
 
 }

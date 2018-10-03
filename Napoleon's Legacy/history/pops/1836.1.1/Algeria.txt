@@ -175,7 +175,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 5000
 	}
@@ -249,7 +249,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 6000
 	}
@@ -500,7 +500,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 8000
 	}
@@ -568,7 +568,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 2000
 	}
@@ -1083,7 +1083,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 2500
 	}
@@ -1228,13 +1228,13 @@
 	soldiers = {
 		culture = berber
 		religion = sunni
-		size = 100
+		size = 1100
 	}
 
 	farmers = {
 		culture = berber
 		religion = sunni
-		size = 1850
+		size = 850
 	}
 	
 	aristocrats = {
@@ -1307,13 +1307,13 @@
 	soldiers = {
 		culture = tuareg
 		religion = sunni
-		size = 215
+		size = 1215
 	}
 
 	farmers = {
 		culture = tuareg
 		religion = sunni
-		size = 5700
+		size = 4700
 	}
 	
 	aristocrats = {

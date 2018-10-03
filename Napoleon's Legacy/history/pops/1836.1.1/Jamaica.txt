@@ -7,6 +7,12 @@
 		religion = protestant
 		size = 100
 	}
+	
+	aristocrats = { #So the state has 2% aristocrats
+		culture = british
+		religion = protestant
+		size = 1890
+	}
 
 	bureaucrats = {
 		culture = british
@@ -23,7 +29,7 @@
 	artisans = {
 		culture = british
 		religion = protestant
-		size = 2500
+		size = 1250
 	}
 
 	soldiers = {
@@ -47,7 +53,7 @@
 	artisans = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 2000
+		size = 3250
 	}
 
 	soldiers = {

@@ -30,24 +30,6 @@
 		religion = catholic
 		size = 10000
 	}
-	
-	artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 10000
-	}
-	
-	artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 5500
-	}
 
 	soldiers = {
 		culture = portuguese
@@ -78,7 +60,7 @@
 	artisans = {
 		culture = portuguese
 		religion = catholic
-		size = 8250
+		size = 3250
 	}
 
 	soldiers = {
@@ -110,12 +92,6 @@
 	artisans = {
 		culture = portuguese
 		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = portuguese
-		religion = catholic
 		size = 7250
 	}
 
@@ -128,7 +104,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 120500
+		size = 86500
 	}
 
 }
@@ -162,30 +138,6 @@
 	artisans = {
 		culture = portuguese
 		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = portuguese
-		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = portuguese
-		religion = catholic
 		size = 8500
 	}
 
@@ -198,7 +150,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 28500
+		size = 68500
 	}
 }
 #Coimbra (460000/115000 POPS)
@@ -268,7 +220,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 31550
+		size = 41550
 	}
 }
 #Setubal (112000/28000 POPS)
@@ -300,7 +252,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 22800
+		size = 42800
 	}
 
 }
@@ -346,7 +298,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 34250
+		size = 44250
 	}
 }
 #Beja (96000/24000 POPS)
@@ -378,7 +330,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 21750
+		size = 42250
 	}
 }
 #Faro (120000/30000 POPS)
@@ -410,7 +362,7 @@
 	farmers = {
 		culture = portuguese
 		religion = catholic
-		size = 27025
+		size = 41025
 	}
 
 }

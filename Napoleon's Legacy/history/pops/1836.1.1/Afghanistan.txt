@@ -251,6 +251,12 @@
 		religion = sunni
 		size = 825
 	}
+	
+	bureaucrats = {
+		culture = pashtun
+		religion = sunni
+		size = 375
+	}
 
 	clergymen = {
 		culture = pashtun
@@ -725,13 +731,25 @@
 	clergymen = {
 		culture = uzbek
 		religion = sunni
-		size = 63
+		size = 100
+	}
+	
+	bureaucrats = {
+		culture = uzbek
+		religion = sunni
+		size = 300
 	}
 
 	artisans = {
 		culture = uzbek
 		religion = sunni
 		size = 350
+	}
+	
+	officers = {
+		culture = uzbek
+		religion = sunni
+		size = 100
 	}
 
 	soldiers = {
@@ -763,17 +781,17 @@
 		religion = sunni
 		size = 3750
 	}
-
-	soldiers = {
+	
+	officers = {
 		culture = tajik
 		religion = sunni
-		size = 3000
+		size = 100
 	}
 
 	soldiers = {
 		culture = tajik
 		religion = sunni
-		size = 1000
+		size = 4000
 	}
 
 	farmers = {
@@ -783,7 +801,7 @@
 	}
 
 	slaves = {
-		culture = uzbek
+		culture = tajik
 		religion = sunni
 		size = 6000
 	}
