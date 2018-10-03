@@ -2,6 +2,6 @@ owner = HUD
 controller = HUD
 add_core = HUD
 add_core = CAN
-terrain = montane_tundra
+terrain = new_world_montane_tundra
 trade_goods = fish
 life_rating = 20

@@ -1,7 +1,6 @@
-owner = HUD
-controller = HUD
-add_core = HUD
-add_core = CAN
+owner = UCA
+controller = UCA
+add_core = UCA
+add_core = GUA
 trade_goods = fish
-terrain = boreal
-life_rating = 25
+life_rating = 31
