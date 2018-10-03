@@ -19,15 +19,15 @@ declaration_of_the_rights_of_man = {
 	effect = {
 		rebel_org_gain = {
 			faction = liberal_rebels
-			value = 0.20
+			value = 0.25
 		}
 		rebel_org_gain = {
 			faction = nationalist_rebels 
-			value = 0.20
+			value = 0.50
 		}
 		rebel_org_gain = {
 			faction = separatist_rebels
-			value = 0.20
+			value = 0.50
 		}
 	}
 }
@@ -136,7 +136,7 @@ spirit_of_freedom = {
 	effect = {
 		rebel_org_gain = {
 			faction = liberal_rebels
-			value = 0.2
+			value = 0.25
 		}
 	}
 }
@@ -176,8 +176,9 @@ carlism = {
 
 the_dark_continent = {
 	limit = {
-		year = 1880
-		nationalism_n_imperialism = 1
+		has_country_flag = existing_country
+		revolution_n_counterrevolution = 1
+		year = 1890
 	}
 	chance = {
 		base = 0
