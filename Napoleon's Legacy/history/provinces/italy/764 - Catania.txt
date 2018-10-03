@@ -1,12 +1,6 @@
 owner = ILY
 controller = ILY
 add_core = ILY
-
 add_core = SIC
-
 trade_goods = sulphur
 life_rating = 40
-1861.1.1 = {
-	controller = ITA
-	owner = ITA
-}

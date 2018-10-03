@@ -3,9 +3,4 @@ controller = UCA
 add_core = UCA
 add_core = GUA
 trade_goods = timber
-life_rating = 30
-1861.1.1 = {
-	owner = GUA
-	controller = GUA
-	remove_core = UCA
-}
+life_rating = 31

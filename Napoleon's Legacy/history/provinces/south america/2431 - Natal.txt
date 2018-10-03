@@ -2,6 +2,7 @@ owner = REI
 controller = REI
 add_core = REI
 add_core = BRZ
+add_core = PNB
 trade_goods = cotton
 terrain = savanna
 life_rating = 35

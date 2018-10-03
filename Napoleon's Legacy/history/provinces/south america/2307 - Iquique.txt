@@ -1,7 +1,6 @@
 owner = PEU
 controller = PEU
 add_core = PEU
-add_core = CHL
 trade_goods = cattle
-terrain = semidesert
+terrain = new_world_desert
 life_rating = 15

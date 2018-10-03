@@ -1,7 +1,7 @@
 owner = EIC
 controller = EIC
-add_core = ASM
 add_core = HND
-trade_goods = tea
+add_core = ASM
+trade_goods = fruit
 life_rating = 32
 colonial = 2
