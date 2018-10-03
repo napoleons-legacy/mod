@@ -8,6 +8,7 @@
 # cost = x #==> extra construction cost (added to goods cost estimations)
 # time = x #==> number of days to build.
 #
+# Audax Validator EnableCommentMetadata
 
 
 ############# LATE GAME FACTORIES
@@ -484,7 +485,7 @@ dye_factory = {
 	goods_cost =
 	{
 		machine_parts = 80
-		iron = 200
+		steel = 200 #was iron
 		cement = 200
 	}
 	time = 365
@@ -493,6 +494,7 @@ dye_factory = {
 
 	production_type = dye_factory
 	pop_build_factory = yes
+	strategic_factory = yes #Wasn't strategic
 }
 
 liquor_distillery = {
@@ -511,7 +513,7 @@ liquor_distillery = {
 	visibility = yes
 	onmap = no
 	
-	default_enabled = yes	
+	default_enabled = yes
 	production_type = liquor_distillery
 	pop_build_factory = yes
 }
@@ -531,7 +533,6 @@ winery = {
 	visibility = yes
 	onmap = no
 
-	default_enabled = yes	
 	production_type = winery
 	pop_build_factory = yes
 }
@@ -634,14 +635,19 @@ fertilizer_factory = {
 	pop_build_factory = yes
 }
 
+############# Military Buildings and Infrastructure
+
 fort = {      
 	type = fort
-	goods_cost = {
+	goods_cost =
+	{
+		steel = 100
 		lumber = 100
 		cement = 100
 		explosives = 50
 		small_arms = 50
 		artillery = 40
+		ammunition = 10
 	}
 	time = 1080 
 	visibility = yes
@@ -654,7 +660,8 @@ fort = {
 naval_base = {    
 	type = naval_base
 	cost = 15000
-	goods_cost = {
+	goods_cost =
+	{
 		lumber = 100
 		cement = 100
 		steel = 100
@@ -667,16 +674,18 @@ naval_base = {
 	port = yes
 	visibility = yes
 	max_level = 6
+	# Audax Validator "." Ignore_NEXT
 	colonial_points = { 30 50 70 90 110 130 } #points at levels 1-6
 	province = yes
 	one_per_state = yes
-	colonial_range = 50
+	colonial_range = 25
 	local_ship_build = -0.10
 }
 
 railroad = {   
 	type = infrastructure
-	goods_cost = {
+	goods_cost =
+	{
 		lumber = 100
 		cement = 100
 		steel = 100

@@ -1,13 +1,15 @@
-color = { 0 49 83 }
-graphical_culture = Generic
+color = { 255 141 72 }
+#color = { 255 69 0 }
+graphical_culture = ChineseGC
 
 party = {
-	name = "MCK_reactionary"
+	name = "HUI_reactionary"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = reactionary
-	
+
+	social_policy = no_position_set	
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -16,12 +18,13 @@ party = {
 }
 
 party = {
-	name = "MCK_liberal"
+	name = "HUI_liberal"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = liberal
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -30,12 +33,13 @@ party = {
 }
 
 party = {
-	name = "MCK_conservative"
+	name = "HUI_conservative"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
+	social_policy = no_position_set
 	economic_policy = interventionism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -44,12 +48,13 @@ party = {
 }
 
 party = {
-	name = "MCK_anarcho_liberal"
+	name = "HUI_anarcho_liberal"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = anarcho_liberal
 
+	social_policy = no_state_interference
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pro_atheism
@@ -58,12 +63,13 @@ party = {
 }
 
 party = {
-	name = "MCK_socialist"
+	name = "HUI_socialist"
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = secularized
@@ -72,12 +78,13 @@ party = {
 }
 
 party = {
-	name = "MCK_communist"
+	name = "HUI_communist"
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
 	ideology = communist
 
+	social_policy = populist_welfare
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = pro_atheism
@@ -86,12 +93,13 @@ party = {
 }
 
 party = {
-	name = "MCK_fascist"
+	name = "HUI_fascist"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = fascist
 
+	social_policy = populist_welfare
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -101,22 +109,24 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Man'chu'kuo" "Ben'xi" "Shen'yang" "Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" "Aisin Gioro" 
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" 
+		
+		
 	}
 	ironclad = {
-		"Man'chu'kuo" "Ben'xi" "Shen'yang" "Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" "Aisin Gioro" 
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" 
 	}
 	manowar = {
-		"Man'chu'kuo" "Ben'xi" "Shen'yang" "Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" "Aisin Gioro" 
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" 
 	}
 	cruiser = {
-		"Man'chu'kuo" "Ben'xi" "Shen'yang" "Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" "Aisin Gioro" 
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" 
 	}
 	frigate = {
-		"Man'chu'kuo" "Ben'xi" "Shen'yang" "Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" "Aisin Gioro" 
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" 
 	}
 	monitor = {
-		"Man'chu'kuo" "Ben'xi" "Shen'yang" "Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" "Aisin Gioro" 
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" 
 	}
 	clipper_transport = {
 		
@@ -125,6 +135,6 @@ unit_names = {
 		
 	}
 	commerce_raider = {
-		"Man'chu'kuo" "Ben'xi" "Shen'yang" "Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" "Aisin Gioro" 
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" 
 	}
 }

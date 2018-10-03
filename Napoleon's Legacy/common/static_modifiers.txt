@@ -25,11 +25,19 @@ easy_player = {
 }
 
 hard_player = {
-	supply_consumption = 0.5
+	loan_interest = 0.1
+	leadership_modifier = -0.25
+	unit_start_experience = -10
 }
 
 very_hard_player = {
-	supply_consumption = 1.0
+	loan_interest = 0.25
+	leadership_modifier = -0.5
+	unit_start_experience = -10
+	prestige = -0.02
+	research_points_modifier = -0.1
+	tax_efficiency = -0.05
+	education_efficiency_modifier = -0.05
 }
 
 
@@ -50,7 +58,9 @@ hard_ai = {
 	land_organisation = 0.25
 	naval_organisation = 0.25
 	leadership_modifier = 0.5
+	unit_start_experience = 5
 	global_pop_militancy_modifier = -0.02
+	war_exhaustion = -0.25
 }
 
 very_hard_ai = {
@@ -59,7 +69,9 @@ very_hard_ai = {
 	land_organisation = 0.5
 	naval_organisation = 0.5
 	leadership_modifier = 1.0
+	unit_start_experience = 10
 	global_pop_militancy_modifier = -0.04
+	war_exhaustion = -0.5
 }
 
 
@@ -68,10 +80,8 @@ very_hard_ai = {
 ##########################################################################
 
 overseas = {
-	farm_rgo_size = 0.5
-	mine_rgo_size = 0.5
 	assimilation_rate = -0.3
-	pop_militancy_modifier = -0.03
+	pop_militancy_modifier = -0.01
 }
 
 coastal = {
@@ -119,7 +129,7 @@ has_siege = {
 }
 
 occupied = {
-	population_growth = -0.02
+	population_growth = -0.001
 	immigrant_attract = -1
 }
 
@@ -149,7 +159,6 @@ war = {
 	supply_consumption = -0.5
 	#war_exhaustion = 0.1
 	badboy = -0.033
-	global_pop_consciousness_modifier = -0.03
 	import_cost = 0.01
 }
 
@@ -194,6 +203,7 @@ great_power = {
 	research_points = 1.5
 	diplomatic_points_modifier = 1.0
 	leadership = 2.0
+	global_immigrant_attract = 0.20
 }
 
 second_power = {
@@ -201,6 +211,7 @@ second_power = {
 	research_points = 1.25
 	diplomatic_points_modifier = 0.25
 	leadership = 1.0
+	global_immigrant_attract = 0.05
 }
 
 civ_nation = {
@@ -210,7 +221,6 @@ civ_nation = {
 }
 
 unciv_nation = {
-	prestige = -0.05
 	mobilisation_size = -0.2
 	diplomatic_points_modifier = -0.25
 	cb_generation_speed_modifier = 0.8
@@ -248,8 +258,9 @@ total_blockaded = {
 
 in_bankrupcy = {
 	max_loan_modifier = -1.0
-	min_tariff = 0.5
-	min_tax = 0.6
-#	max_social_spending = 0.75
+	min_tariff = 0.75
+	min_tax = 0.45
+	max_military_spending = -0.2
+	#max_social_spending = 0.5
 	ruling_party_support = -0.75
 }

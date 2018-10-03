@@ -1,27 +1,15 @@
-color = { 47 91 18 }
+color = { 57 105 49 }
+proletarian_dictatorship = { 200 10 10 }
 graphical_culture = RussianGC
 
 party = {
-	name = "RUS_conservative_3"
-	start_date = 1836.1.1
-	end_date = 1837.1.1
-
-	ideology = conservative
-
-	economic_policy = interventionism
-	trade_policy = free_trade
-	religious_policy = pluralism
-	citizenship_policy = limited_citizenship
-	war_policy = pro_military
-}
-
-party = {
 	name = "RUS_conservative"
-	start_date = 1837.1.1
+	start_date = 1830.1.1
 	end_date = 1905.1.1
 
 	ideology = conservative
 
+	social_policy = no_position_set
 	economic_policy = interventionism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -31,11 +19,12 @@ party = {
 
 party = {
 	name = "RUS_liberal"
-	start_date = 1837.1.1
+	start_date = 1830.1.1
 	end_date = 1905.1.1
 
 	ideology = liberal
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -50,6 +39,7 @@ party = {
 
 	ideology = communist
 
+	social_policy = populist_welfare
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = pro_atheism
@@ -64,6 +54,7 @@ party = {
 
 	ideology = communist
 
+	social_policy = populist_welfare
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = pro_atheism
@@ -78,6 +69,7 @@ party = {
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = secularized
@@ -92,6 +84,7 @@ party = {
 
 	ideology = reactionary
 
+	social_policy = no_position_set
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -101,11 +94,12 @@ party = {
 
 party = {
 	name = "RUS_liberal_2"
-	start_date = 1905.1.1
+	start_date = 1900.1.1
 	end_date = 2000.1.1
 
 	ideology = liberal
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -115,11 +109,12 @@ party = {
 
 party = {
 	name = "RUS_conservative_2"
-	start_date = 1905.1.1
+	start_date = 1900.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
+	social_policy = no_position_set
 	economic_policy = interventionism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -134,6 +129,7 @@ party = {
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = secularized
@@ -148,6 +144,7 @@ party = {
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = secularized
@@ -162,6 +159,7 @@ party = {
 
 	ideology = anarcho_liberal
 
+	social_policy = no_state_interference
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pro_atheism
@@ -171,11 +169,12 @@ party = {
 
 party = {
 	name = "RUS_fascist"
-	start_date = 1905.1.1
+	start_date = 1900.1.1
 	end_date = 2000.1.1
 
 	ideology = fascist
 
+	social_policy = populist_welfare
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -187,6 +186,9 @@ unit_names = {
 	dreadnought = {
                        Petropavlovsk Mariya Ekaterina Velikaya "Svobodnaya Rossiya" Aleksander Gangut Sevastopol Poltava Volya Arkhangel’sk Novorossiysk Soyuz Ukraina Rossiya Alekseev Belarussia Potemkin Moskva Mariya Ekaterina Alekseev Krasnaya "Uralskiye gory" Sibir Imperator Komunna "General Alexeiev" Retivisan "Nizhny Novgorod" Omck Chelyabinsk Krasnoyarsk Saratov "Ivan Grozny" Kulikovo 
 
+	}
+	battleship = {
+		"Ekaterina II" Chesma Sinop "Georgii Pobedonosits" "Dvenadsat Apostolov" Navarin "Tri Sviatitelia" "Sissoi Veliky" Poltava Petropavlovsk Sevastopol Rostislav Peresvet Osliabia Pobeda Potemkin Retvizan Tsesarevich Borodino "Imperator Aleksandr III" Oryol "Kniaz’ Suvorov" Slava Evstafi "Ioann Zlatoust" "Andrey Pervozvanny" "Imperator Pavel I"
 	}
 	ironclad = {
                         Minin "Kniaz Pozharskii" Pervenets Kreml "Ne Tron Menia" Smerch Lazarev "Pyotr Velikyy" Chesma Kyiv Minsk "Zaria Svobody" "Admiral Butakov" Kreiser Ladoga Georgii "Sissoi Veliky" Navarin "Pamiat Merkuria" Tsesarevich Narodnaya "Poluostrov Kamchatka" Kama Voronezh Bityug 

@@ -2,12 +2,13 @@ color = { 242 26 26 }
 graphical_culture = EuropeanGC
 
 party = {
-	name = "FRM_liberal"
+	name = "RHI_liberal"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = liberal
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -16,12 +17,13 @@ party = {
 }
 
 party = {
-	name = "FRM_conservative"
+	name = "RHI_conservative"
 	start_date = 1878.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -30,12 +32,13 @@ party = {
 }
 
 party = {
-	name = "FRM_liberal_2"
+	name = "RHI_liberal_2"
 	start_date = 1861.1.1
 	end_date = 2000.1.1
 
 	ideology = liberal
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -44,12 +47,13 @@ party = {
 }
 
 party = {
-	name = "FRM_liberal_3"
+	name = "RHI_liberal_3"
 	start_date = 1861.1.1
 	end_date = 2000.1.1
 
 	ideology = liberal
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -58,12 +62,13 @@ party = {
 }
 
 party = {
-	name = "FRM_socialist"
+	name = "RHI_socialist"
 	start_date = 1860.1.1
 	end_date = 1875.1.1
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = planned_economy
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -72,12 +77,13 @@ party = {
 }
 
 party = {
-	name = "FRM_socialist_2"
+	name = "RHI_socialist_2"
 	start_date = 1848.1.1
 	end_date = 1875.1.1
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = planned_economy
 	trade_policy = free_trade
 	religious_policy = secularized
@@ -86,12 +92,13 @@ party = {
 }
 
 party = {
-	name = "FRM_socialist_3"
+	name = "RHI_socialist_3"
 	start_date = 1875.1.1
 	end_date = 2000.1.1
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = planned_economy
 	trade_policy = free_trade
 	religious_policy = secularized
@@ -100,12 +107,13 @@ party = {
 }
 
 party = {
-	name = "FRM_reactionary"
+	name = "RHI_reactionary"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = reactionary
 
+	social_policy = no_position_set
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -114,12 +122,13 @@ party = {
 }
 
 party = {
-	name = "FRM_conservative_2"
+	name = "RHI_conservative_2"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
+	social_policy = no_position_set
 	economic_policy = interventionism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -128,12 +137,13 @@ party = {
 }
 
 party = {
-	name = "FRM_conservative_3"
+	name = "RHI_conservative_3"
 	start_date = 1878.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
+	social_policy = no_position_set
 	economic_policy = interventionism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -142,12 +152,13 @@ party = {
 }
 
 party = {
-	name = "FRM_anarcho_liberal"
+	name = "RHI_anarcho_liberal"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
 	ideology = anarcho_liberal
 
+	social_policy = no_state_interference
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pro_atheism
@@ -156,12 +167,13 @@ party = {
 }
 
 party = {
-	name = "FRM_communist"
+	name = "RHI_communist"
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
 	ideology = communist
 
+	social_policy = populist_welfare
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = pro_atheism
@@ -170,12 +182,13 @@ party = {
 }
 
 party = {
-	name = "FRM_fascist"
-	start_date = 1905.1.1
+	name = "RHI_fascist"
+	start_date = 1900.1.1
 	end_date = 2000.1.1
 
 	ideology = fascist
 
+	social_policy = populist_welfare
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -185,35 +198,45 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		Cologne "Karl Theodor" Erzbischof Kurfürst Fulda Hanau Aschaffenburg Wetzlar "Friedrich Jucho" "Heinrich von Gagern" 
-		
+		Lorelai Rhinelander Derfflinger "Friedrich der Große" Goeben "Großer Kurfürst" Helgoland Hindenburg Kaiser Kaiserin König "König Albert" Kronprinz Lützow 
+		Mackensen Markgraf Moltke Nassau Oldenburg Ostfriesland Posen Rheinland Sachsen Seydlitz Thüringen Westfalen 
 	}
 	ironclad = {
-		Cologne "Karl Theodor" Erzbischof Kurfürst Fulda Hanau Aschaffenburg Wetzlar "Friedrich Jucho" "Heinrich von Gagern" 
-		
+		Lorelai Arminius Bremen Carola Charlotte Frankfurt "Friedrich Carl" "Friedrich der Große" "Großer Kurfürst" Hamburg Hansa Kaiser "König Wilhelm" 
+		Kronprinz Leipzig Lübeck Marie Medusa Möwe Moltke Nixe Oldenburg Olga Otter Pfeil Preußen "Preußischer Adler" "Prinz Adalbert" Sophie
 	}
 	manowar = {
-		Cologne "Karl Theodor" Erzbischof Kurfürst Fulda Hanau Aschaffenburg Wetzlar "Friedrich Jucho" "Heinrich von Gagern" 
-		
+		Lorelai Rhinelander Brandenburg Braunschweig Deutschland Hannover Hessen "Kaiser Barbarossa" "Kaiser Friedrich III" "Kaiser Karl der Große" "Kurfürst Friedrich Wilhelm" 
+		Mecklenburg Pommern Preußen Schlesien Schleswig-Holstein Wettin
 	}
 	cruiser = {
-		Cologne "Karl Theodor" Erzbischof Kurfürst Fulda Hanau Aschaffenburg Wetzlar "Friedrich Jucho" "Heinrich von Gagern" 
-		
+		Lorelai Amazone Arcona Ariadne Berlin Blücher Blitz Bremen Bremse Breslau Brummer Bussard Köln Comet Condor Cormoran Danzig Deutschland Dresden
+		Elbing Emden Falke Frankfurt Freya "Friedrich Carl" "Fürst Bismarck" Gazelle Gefion Geier Gneisenau Graudenz Greif Hamburg Hansa Hela Hertha Irene Jagd 
+		"Kaiserin Augusta" Königsberg Kolberg Leipzig Lübeck Magdeburg Medusa Meteor Niobe Nymphe Pillau "Prinz Adalbert" "Prinz Heinrich" "Prinz Wilhelm" 
+		Regensburg Roon Rostock Scharnhorst Schwalbe Seeadler Sperber Stettin Stralsund Thetis Undine "Victoria Louise" Vineta Wacht Yorck
 	}
 	frigate = {
-		Cologne "Karl Theodor" Erzbischof Kurfürst Fulda Hanau Aschaffenburg Wetzlar "Friedrich Jucho" "Heinrich von Gagern" 
+		Lorelai Adler Albatross Alexandrine Amazone Arcona Ariadne Augusta Barbarossa Basilisk Bismarck Blitz Blücher Cameleon Comet Cyclop Delphin 
+		"Der Königliche Ernst August" Deutschland Drache Eber Eckernförde Elbe Elisabeth "Erzherzog Johann" Franklin Freya Fuchs Gazelle Gefion Gneisenau Grille
+		"Großherzog von Oldenburg" Habicht Hay Hertha Hyäne Iltis Jäger Luise Meteor Natter Niobe Nymphe Pfeil Salamander Schwalbe Skorpion Sperber Stein Stosch
+		Thetis Tiger Undine Victoria Vineta Wespe Wolf Ziethen
 	}
 	monitor = {
-		Cologne "Karl Theodor" Erzbischof Kurfürst Fulda Hanau Aschaffenburg Wetzlar "Friedrich Jucho" "Heinrich von Gagern" 
+		Lorelai Ägir Basilisk Beowulf Biene Bremse Brummer Cameleon Crocodill Frithjof Hagen Heimdall Hildebrand Hummel Mücke Natter Odin Rhein Sachsen
+		Salamander Skorpion Siegfried Viper Wespe 
 	}
 	clipper_transport = {
-		
+		America Deutschland Elbe Europa Hansa Hela Hermann Hudson "New York" Nord-Amerika Pamir Pangani Passat Peking "Peter Rickmers"
+		Petschili Pisagua Pitlochry Placilla Pola Pommern Potosi Preußen Priwall Rhein "Rickmer Rickmers" Weser
 	}
 	steam_transport = {
-		
+		Aachen "Adeline Hugo Stinnes 3" Aller Answald Ausonia Berlin Bonn Braunschweig Bremen Breslau Bülow Kassel Chemnitz Choising Coblenz 
+		Coburg Cormoran Krefeld Danzig Darmstadt Delphin Donau Dresden Eider Eisenach Elbe Ems Erlangen Frankfurt Fulda "General Werder" Gera Giessen Gotha Halle 
+		Hannover Hansa Havel Hermann Hohenstaufen Hohenzollern Kleist Köln Lahn Leipzig Libau Lübeck Mark "Minister Roon" Nordsee Oder Oldenburg Oswald Pfalz 
+		Rhein Roon Saale Salier Schleswig Seydlitz Skutari Spree Stettin Therapia Trave Trier Union Wartburg Weimar Werra Weser Willehad Wittekind Zieten
 	}
 	commerce_raider = {
-		Cologne "Karl Theodor" Erzbischof Kurfürst Fulda Hanau Aschaffenburg Wetzlar "Friedrich Jucho" "Heinrich von Gagern" 
-		
+		Barbarossa "Kap Trafalgar" Cormoran Iltis "Kaiser Wilhelm der Große" "Kronprinz Wilhelm" Leopard Loreley Meteor Möwe "Preußischer Adler" 
+		Seeadler Seelöwe Vineta Wolf
 	}
 }
