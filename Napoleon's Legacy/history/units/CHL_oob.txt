@@ -1,3 +1,5 @@
+ECU = { value = -100 }
+PBC = { value = -100 }
 
 army = {
 	name = "Ejército de Chile"
@@ -56,12 +58,38 @@ navy = {
 	ship = {
 		name = "Aquiles"
 		type = frigate
-		}
+	}
 	
 	ship = {
 		name = "Voltaire"
 		type = frigate
-		}
-
 	}
+	
+	ship = {
+		name = "Orbegoso"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Valparaiso"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Libertad"
+		type = frigate
+	}
+	
+	ship = {
+		name = "1. Buque de transporte"
+		type = clipper_transport
+	}
+	
+	
+	ship = {
+		name = "2. Buque de transporte"
+		type = clipper_transport
+	}
+
+}
 	

@@ -20,44 +20,9 @@ army = {
 	}
 
 	regiment = {
-		name= "1. División de Caballería"
-		type = cavalry
-		home = 2349
-	}
-
-	regiment = {
-		name= "2. División de Caballería"
-		type = cavalry
-		home = 2349
-	}
-
-	regiment = {
-		name= "3. División de Caballería"
-		type = cavalry
-		home = 2349
-	}
-
-}
-
-army = {
-	name = "Ejército de Entre Ríos"
-	location = 2360
-	regiment = {
-		name= "1. División de Infantería"
+		name= "4. División de Infantería"
 		type = infantry
-		home = 2379
-	}
-
-	regiment = {
-		name= "2. División de Infantería"
-		type = infantry
-		home = 2379
-	}
-
-	regiment = {
-		name= "3. División de Infantería"
-		type = infantry
-		home = 2379
+		home = 2349
 	}
 
 }

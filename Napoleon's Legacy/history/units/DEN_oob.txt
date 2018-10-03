@@ -9,6 +9,7 @@ leader = {
 	personality = daring
 	background = adventurer
 }
+
 army = {
 	name = "Danske Haeren"
 	location = 372
@@ -27,7 +28,7 @@ army = {
 	regiment = {
 		name= "3.1. Infanteridivision"
 		type = infantry
-		home = 372
+		home = 367
 	}
 	
 	regiment = {
@@ -37,15 +38,15 @@ army = {
 	}
 
 	regiment = {
-		name= "2.2. Infanteridivision"
-		type = infantry
-		home = 366
+		name= "1.1. Artilleridivision"
+		type = artillery
+		home = 368
 	}
 
 	regiment = {
-		name= "3.2. Infanteridivision"
-		type = infantry
-		home = 366
+		name= "1.2. Artilleridivision"
+		type = artillery
+		home = 2557
 	}
 
 	regiment = {
@@ -68,24 +69,4 @@ navy = {
 		name= "Dronning Marie"
 		type = manowar
 	}
-
-
-
-
-	ship = {
-		name= "1st Transport Flotilla"
-		type = clipper_transport
-	}
-
-	ship = {
-		name= "2nd Transport Flotilla"
-		type = clipper_transport
-	}
-
-	ship = {
-		name= "3rd Transport Flotilla"
-		type = clipper_transport
-	}
-
 }
-

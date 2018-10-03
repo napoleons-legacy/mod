@@ -1,8 +1,13 @@
 army = {
-	name = "Arabs"
+	name = "Arab Army"
 	location = 1732
 	regiment = {
-		name= "1st Arab"
+		name= "1st Arab Battalion"
+		type = irregular
+		home = 1732
+	}
+	regiment = {
+		name= "1st Arab Battalion"
 		type = irregular
 		home = 1732
 	}
@@ -21,11 +26,11 @@ army = {
 
 army = {
 	name = "Tuareg"
-	location = 1743
+	location = 1740
 	regiment = {
 		name= "1.Ihajenem"
 		type = irregular
-		home = 1743
+		home = 1740
 	}
 }
 
@@ -33,7 +38,7 @@ leader = {
 	name = "Ali II Karamanli"
 	type = land
 	date = 1836.1.1
-	background = aristocrat
-	personality = mediocre
-	}
+	background = cavalry_school
+	personality = resolute
+}
 	

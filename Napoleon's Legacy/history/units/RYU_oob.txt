@@ -2,11 +2,12 @@ QNG = { value = 125 }
 JAP = { value = 125 }
 
 army = {
-	name = "Royal army of Ryukyu"
+	name = "Royal Army of Ryukyu"
 	location = 1678
 	regiment = {
 		name= "Ryukyuan Warriors"
 		type = irregular
-		home = 1678	}
+		home = 1678	
+	}
 }
 

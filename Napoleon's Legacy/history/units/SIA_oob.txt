@@ -1,3 +1,9 @@
+#Relations
+
+BUR = {
+	value = -200		#relation
+}
+
 DAI = {
 	value = -50
 	truce_until = 1840.1.1

@@ -1,3 +1,15 @@
+AFG = { value = 400 }
+
+PER = { value = 100 }
+
+leader = {
+	name = "Muhammad Rahim Quli"
+	type = land
+	date = 1825.1.1
+	personality = resourceful
+	background = aristocrat
+}
+
 army = {
 	name = "Army of the Khanate of Khiva"
 	location = 1191

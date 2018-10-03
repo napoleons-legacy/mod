@@ -1,3 +1,15 @@
+CRL = {
+	truce_until = 1837.1.1
+}
+
+AFG = {
+	value = 110
+}
+
+QNG = {
+	value = 50
+}
+
 leader = {
 	name = "Ranjit Singh"
 	type = land
