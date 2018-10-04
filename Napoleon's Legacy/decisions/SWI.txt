@@ -5,18 +5,18 @@ political_decisions = {
         potential = {
             tag = FRA
             exists = yes
-            NCT = { exists = yes vassal_of = FRA }
+            NEH = { exists = yes vassal_of = FRA }
             year = 1855
         }
 
         allow = {
             war = no
-            NCT = { war = no }
+            NEH = { war = no }
         }
 
         effect = {
             badboy = 5
-            inherit = NCT
+            inherit = NEH
             608 = { add_core = FRA }
         }
         ai_will_do = { factor = 1 }

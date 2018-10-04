@@ -1,45 +1,38 @@
-
 political_decisions = {
     french_invasion = {
          potential = {
             tag = FRA
-            NOT = {
-                has_country_flag = egypt_invaded
-                }
-            EGY = {
-                civilized = no
-                }
-            NOT = {
-                government = democracy
-                }
+            NOT = { has_country_flag = egypt_invaded }
+            EGY = { civilized = no }
+            NOT = { government = democracy }
             war = no
             year = 1871
-                }
+
+        }
 
 
-            allow = {
-                war = no
-                EGY = {
-                    civilized = no
-                    }
-                }
+        allow = {
+            war = no
+        }
 
-            effect = {
-                prestige = 10
-                badboy = 6
-                casus_belli = {
-                    target = EGY
-                    type = establish_protectorate_casus_belli
-                    months = 1
+        effect = {
+            prestige = 10
+            badboy = 6
+            casus_belli = {
+                target = EGY
+                type = establish_protectorate_casus_belli
+                months = 1
+            }
+
+            war = {
+                target = EGY
+                attacker_goal = {
+                    casus_belli = establish_protectorate_casus_belli
                 }
-                war = {
-                    target = EGY
-                    attacker_goal = {
-                        casus_belli = establish_protectorate_casus_belli
-                        }
-                }
-                    set_country_flag = egypt_invaded
-                }
+            }
+
+            set_country_flag = egypt_invaded
+        }
 
         ai_will_do = {
             factor = 1
@@ -48,15 +41,11 @@ political_decisions = {
                 war_exhaustion = 1
             }
         }
-        }
+    }
 
     end_the_mysore_monarchy = {
         picture = mysore_annex
         potential = {
-            MYS = {
-                in_sphere = FRA
-                civilized = no
-            }
             NOT = {
                 has_country_flag = mysore_monarchy_is_over
             }
@@ -66,67 +55,65 @@ political_decisions = {
         }
 
         allow = {
-            MYS = {
-                in_sphere = FRA
-                civilized = no
-                year = 1840
-            }
+            year = 1840
+            state_n_government = 1
         }
 
         effect = {
+            # TODO make this an event chain so mysore can reject.
             inherit = MYS
             set_country_flag = mysore_monarchy_is_over
         }
     }
 
- liberty_enlightening_the_world = {
+    liberty_enlightening_the_world = {
         potential = {
-            NOT = {
-                has_global_flag = statue_of_liberty_has_been_built
-                    }
+            NOT = { has_global_flag = statue_of_liberty_has_been_built }
             tag = FRA
 
             OR = {
                 exists = PLC
                 exists = POL
-                }
+            }
 
             year = 1850
             OR = {
-            alliance_with = PLC
-            alliance_with = POL
-                }
+                alliance_with = PLC
+                alliance_with = POL
+            }
+        }
+
+        allow = {
+            cheap_steel = 1
+        }
+
+        effect = {
+            set_global_flag = statue_of_liberty_has_been_built
+            any_pop = { consciousness = -0.5 }
+
+            random_country = {
+                limit = { tag = PLC exists = yes }
+                country_event = 19300
             }
 
-            allow = {
-                cheap_steel = 1
-                }
+            random_country = {
+                limit = { tag = POL exists = yes PLC = { exists = no } }
+                country_event = 19300
+            }
+        }
 
-            effect = {
-                set_global_flag = statue_of_liberty_has_been_built
-                any_pop = {
-                    consciousness = -0.5
+            ai_will_do = {
+                factor = 1
+                modifier = {
+                    factor = 0
+                    NOT = {
+                        relation = {
+                            who = PLC
+                            value = 50
+                        }
                     }
-                PLC = {
-                    country_event = { id=19300 days=0 }
-                        }
-                POL = {
-                    country_event = { id=19300 days=0 }
-                        }
                 }
-
-                ai_will_do = {
-                        factor = 1
-                        modifier = {
-                                factor = 0
-                                NOT = {
-                                        relation = {
-                                                who = PLC
-                                                value = 50
-                                        }
-                                }
-                        }
-                }
+            }
         }
 
     support_french_foreign_legion = {
@@ -137,9 +124,11 @@ political_decisions = {
                 has_country_flag = french_foreign_legion_supported
             }
         }
+
         allow = {
             army_professionalism = 1
         }
+
         effect = {
             add_country_modifier = {
                 name = the_french_foreign_legion
@@ -188,6 +177,7 @@ political_decisions = {
                 relation = { who = FRA value = 50 }
                 years_of_research = 0.2
             }
+
             set_country_flag = military_mission_in_japan
         }
     }
@@ -314,26 +304,27 @@ political_decisions = {
                 tag = FRA
                 tag = BOR
             }
+
             OR = {
                 war_with = FRA
                 war_with = BOR
             }
+
             OR = {
                 FRA = {
-                        any_owned_province = {
-                            is_core = AFA
-                        }
+                    any_owned_province = {
+                        is_core = AFA
+                    }
                     }
                 BOR = {
-                        any_owned_province = {
-                            is_core = AFA
-                        }
+                    any_owned_province = {
+                        is_core = AFA
+                    }
                 }
             }
-            NOT = {
-                has_country_flag = AFA_done
-            }
-        AFA = { exists = no }
+
+            NOT = { has_country_flag = AFA_done }
+            AFA = { exists = no }
         }
 
         allow = {
@@ -348,22 +339,24 @@ political_decisions = {
                 }
                 remove_core = THIS
             }
+
             release = AFA
             AFA = {
-            leadership = 80
-            political_reform = mandatory_service
-            treasury = 10000
-            small_arms = 100
-            ammunition = 200
-            canned_food = 200
-            wine = 200
-            liquor = 200
+                leadership = 80
+                political_reform = mandatory_service
+                treasury = 10000
+                small_arms = 100
+                ammunition = 200
+                canned_food = 200
+                wine = 200
+                liquor = 200
 
-            add_country_modifier = {
-            name = small_country_draft
-            duration = 1825
+                add_country_modifier = {
+                    name = small_country_draft
+                    duration = 1825
                 }
             }
+
             any_country = {
                 limit = {
                     exists = yes
@@ -375,6 +368,7 @@ political_decisions = {
                             tag = BOR
                         }
                 }
+
                 country_event = 86000
             }
             set_country_flag = AFA_done
@@ -393,7 +387,7 @@ political_decisions = {
     }
 
     move_home_BOR = {
-    picture = move_home
+        picture = move_home
         potential = {
             tag = BOR
             owns = 425
@@ -401,7 +395,6 @@ political_decisions = {
                 has_country_flag = returned_home
             }
         }
-        alert = no
 
         allow = {
             owns = 425
@@ -416,12 +409,13 @@ political_decisions = {
                 remove_core = FRA
             }
         }
+
         ai_will_do = {
             factor = 1
         }
     }
 
-        annex_new_caledonia = {
+    annex_new_caledonia = {
         picture = dreams_of_empire
         potential = {
             tag = FRA
@@ -491,7 +485,7 @@ political_decisions = {
         }
     }
 
-        senegal_gambia_border_treaty = {
+    senegal_gambia_border_treaty = {
         picture = map_africa
         potential = {
             is_greater_power = yes

@@ -1,5 +1,3 @@
-
-
 political_decisions = {
 
     gran_colombia_by_sword = {
@@ -108,6 +106,7 @@ political_decisions = {
             COS = {
                 all_core = { add_core = GCO }
             }
+
             # some early claims we can roll with for future colombian lebensraum
             2401 = { add_core = GCO }
             any_country = {
@@ -123,6 +122,7 @@ political_decisions = {
                     secede_province = THIS
                 }
             }
+
             random_country = {
                 limit = {
                     tag = CLM
@@ -131,6 +131,7 @@ political_decisions = {
                 }
                 country_event = 11101
             }
+
             random_country = {
                 limit = {
                     tag = ECU
@@ -139,6 +140,7 @@ political_decisions = {
                 }
                 country_event = 11101
             }
+
             random_country = {
                 limit = {
                     tag = VNZ
@@ -147,6 +149,7 @@ political_decisions = {
                 }
                 country_event = 11101
             }
+
             change_tag = GCO
         }
 

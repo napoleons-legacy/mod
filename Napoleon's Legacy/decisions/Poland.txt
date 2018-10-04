@@ -1,8 +1,6 @@
-
 political_decisions = {
 
     become_poland = {
-
         potential = {
             primary_culture = polish
             NOT = { exists = POL }

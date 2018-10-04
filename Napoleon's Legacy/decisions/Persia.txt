@@ -1,9 +1,7 @@
-
-
 political_decisions = {
 
-#Trip to Europe
-travel_to_europe = {
+    #Trip to Europe
+    travel_to_europe = {
         picture = dreams_of_empire
 
         potential = {
@@ -30,8 +28,8 @@ travel_to_europe = {
 
     }
 
-#Appoint Mirza Taghi
-appoint_mirza = {
+    #Appoint Mirza Taghi
+    appoint_mirza = {
         picture = mirza_taghi
 
         potential = {
@@ -54,25 +52,25 @@ appoint_mirza = {
         ai_will_do = { factor = 1 }
     }
 
-#Persian Cinema
-persian_cinema = {
-    picture = fatherland_altar
+    #Persian Cinema
+    persian_cinema = {
+        picture = fatherland_altar
 
-    potential = {
-        tag = PER
-        NOT = { has_country_flag = persian_cinema }
-        NOT = { has_country_modifier = silver_age }
-        year = 1880
+        potential = {
+            tag = PER
+            NOT = { has_country_flag = persian_cinema }
+            NOT = { has_country_modifier = silver_age }
+            year = 1880
+            }
+
+        allow = {
+            OR = {
+                any_greater_power = { invention = the_talkies relation = { who = THIS value = 50 } }
+                invention = the_talkies
+            }
         }
 
-    allow = {
-        OR = {
-            any_greater_power = { invention = the_talkies relation = { who = THIS value = 50 } }
-            invention = the_talkies
-        }
-    }
-
-    effect = {
+        effect = {
             set_country_flag = persian_cinema
             prestige = 2
             years_of_research = 0.5
@@ -82,26 +80,26 @@ persian_cinema = {
         }
 
 
-    ai_will_do = { factor = 1 }
+        ai_will_do = { factor = 1 }
     }
 
-#Greater Iran
-greater_iran = {
-    picture = greater_iran
+    #Greater Iran
+    greater_iran = {
+        picture = greater_iran
 
-    potential = {
-        tag = PER
-        civilized = yes
-        NOT = { has_country_flag = greater_iran }
-        }
+        potential = {
+            tag = PER
+            civilized = yes
+            NOT = { has_country_flag = greater_iran }
+            }
 
-    allow = {
-        nationalism_n_imperialism = 1
-        is_greater_power = yes
-        war_policy = jingoism
-        }
+        allow = {
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            war_policy = jingoism
+            }
 
-    effect = {
+        effect = {
             set_country_flag = greater_iran
             badboy = 10
             any_country = { limit = { neighbour = THIS NOT = { vassal_of = THIS } } relation = { who = THIS value = -50 } }
@@ -114,11 +112,11 @@ greater_iran = {
         }
 
 
-    ai_will_do = { factor = 1 }
+        ai_will_do = { factor = 1 }
     }
 
 
-establish_the_dar_al_funun = {
+    establish_the_dar_al_funun = {
         picture = suezcanalcompany
         potential = {
             tag = PER
@@ -127,9 +125,11 @@ establish_the_dar_al_funun = {
                 has_country_flag = dar_al_funun_built
             }
         }
+
         allow = {
             literacy = 0.10
         }
+
         effect = {
             years_of_research = 0.5
             any_pop = { consciousness = 0.5 }
@@ -138,6 +138,7 @@ establish_the_dar_al_funun = {
                 name = dar_al_funun
                 duration = 3650
             }
+
             random_owned = {
                 limit = {
                     owner = {
@@ -166,9 +167,8 @@ establish_the_dar_al_funun = {
         }
     }
 
-
-#Establish the Majles
-establish_the_majles = {
+    #Establish the Majles
+    establish_the_majles = {
         picture = caucasus_viceroyalty
         potential = {
             tag = PER
@@ -191,5 +191,4 @@ establish_the_majles = {
         }
         ai_will_do = { factor = 1 }
     }
-
 }

@@ -1,4 +1,3 @@
-
 political_decisions = {
 
     construct_germania_werft = {
@@ -654,18 +653,10 @@ political_decisions = {
                 }
             }
             OR = {
-                PLC = {
-                    owns = 694
-                }
-                PLC = {
-                    owns = 699
-                }
-                POL = {
-                    owns = 694
-                }
-                POL = {
-                    owns = 699
-                }
+                PLC = { owns = 694 }
+                PLC = { owns = 699 }
+                POL = { owns = 694 }
+                POL = { owns = 699 }
             }
             year = 1845
         }
@@ -684,12 +675,14 @@ political_decisions = {
                 limit = {
                     owns = 699
                 }
-                country_event = { id=121310 days=0 }
+
+                country_event = { id = 121310 days = 0 }
             }
-            694 = {add_core = PRU}
-            685 = {add_core = PRU}
-            PRU_701 = {add_core = PRU}
+            694 = { add_core = PRU }
+            685 = { add_core = PRU }
+            PRU_701 = { add_core = PRU }
         }
+
         ai_will_do = {
             factor = 1
         }
@@ -701,11 +694,14 @@ political_decisions = {
                 tag = PRU
                 tag = TEU
             }
+
             is_greater_power = yes
+
             NOT = {
                 has_country_flag = ostpolitik_enacted
                 year = 1889
             }
+
             has_country_flag = bismarck_in_the_reich
             has_country_flag = prussian_federation_agreement
         }
@@ -716,6 +712,7 @@ political_decisions = {
                 government = prussian_constitutionalism
                 government = absolute_monarchy
             }
+
             NOT = {
                 alliance_with = RUS
                 alliance_with = TSA
@@ -736,10 +733,11 @@ political_decisions = {
                 who = TSA
                       value = -400
             }
-            RUS_349 = {add_core = PRU}
-            RUS_354 = {add_core = PRU}
-            RUS_360 = {add_core = PRU}
+            RUS_349 = { add_core = PRU }
+            RUS_354 = { add_core = PRU }
+            RUS_360 = { add_core = PRU }
         }
+
         ai_will_do = {
             factor = 1
         }
@@ -752,12 +750,15 @@ political_decisions = {
                 tag = PRU
                 tag = TEU
             }
+
+            # TODO simplify this
             owns = 360
             owns = 361
             owns = 362
             owns = 363
             owns = 364
             owns = 365
+
             NOT = {
                 exists = LIT
                 has_global_flag = prussia_renamed_lithuania
@@ -772,24 +773,16 @@ political_decisions = {
             360 = {
                 change_province_name = "Wilna"
                 state_scope = {
-                change_region_name = "Litauen"
-                    }
+                    change_region_name = "Litauen"
                 }
-            361 = {
-                change_province_name = "Kauen"
-                }
-            362 = {
-                change_province_name = "Mariampol"
-                }
-            363 = {
-                change_province_name = "Ponewesch"
-                }
-            364 = {
-                change_province_name = "Schaulen"
-                }
-            365 = {
-                change_province_name = "Polangen"
-                }
+            }
+
+            361 = { change_province_name = "Kauen" }
+            362 = { change_province_name = "Mariampol" }
+            363 = { change_province_name = "Ponewesch" }
+            364 = { change_province_name = "Schaulen" }
+            365 = { change_province_name = "Polangen" }
+
             prestige = 2
             set_global_flag = prussia_renamed_lithuania
         }
@@ -812,6 +805,7 @@ political_decisions = {
             owns = 357
             owns = 358
             owns = 359
+
             NOT = {
                 exists = LAT
                 has_global_flag = prussia_renamed_latvia
@@ -826,21 +820,14 @@ political_decisions = {
             355 = {
                 change_province_name = "Wolmar"
                 state_scope = {
-                change_region_name = "Lettland"
-                    }
+                    change_region_name = "Lettland"
                 }
-            356 = {
-                change_province_name = "Dünaburg"
-                }
-            357 = {
-                change_province_name = "Mitau"
-                }
-            358 = {
-                change_province_name = "Windau"
-                }
-            359 = {
-                change_province_name = "Libau"
-                }
+            }
+            356 = { change_province_name = "Dünaburg" }
+            357 = { change_province_name = "Mitau" }
+            358 = { change_province_name = "Windau" }
+            359 = { change_province_name = "Libau" }
+
             prestige = 2
             set_global_flag = prussia_renamed_latvia
         }
@@ -857,11 +844,13 @@ political_decisions = {
                 tag = PRU
                 tag = TEU
             }
+
             owns = 349
             owns = 350
             owns = 351
             owns = 352
             owns = 353
+
             NOT = {
                 exists = EST
                 has_global_flag = prussia_renamed_estonia
@@ -876,15 +865,12 @@ political_decisions = {
             350 = {
                 change_province_name = "Narwa"
                 state_scope = {
-                change_region_name = "Estland"
-                    }
+                    change_region_name = "Estland"
                 }
-            351 = {
-                change_province_name = "Pernau"
-                }
-            352 = {
-                change_province_name = "Arensburg"
-                }
+            }
+            351 = { change_province_name = "Pernau" }
+            352 = { change_province_name = "Arensburg" }
+
             prestige = 2
             set_global_flag = prussia_renamed_estonia
         }
@@ -898,12 +884,14 @@ political_decisions = {
         picture = baltic_states
         potential = {
             tag = LIT
+
             owns = 360
             owns = 361
             owns = 362
             owns = 363
             owns = 364
             owns = 365
+
             has_global_flag = prussia_renamed_lithuania
         }
 
@@ -915,24 +903,15 @@ political_decisions = {
             360 = {
                 change_province_name = "Vilnius"
                 state_scope = {
-                change_region_name = "Lietuva"
-                    }
+                    change_region_name = "Lietuva"
                 }
-            361 = {
-                change_province_name = "Kaunas"
-                }
-            362 = {
-                change_province_name = "Marijampole"
-                }
-            363 = {
-                change_province_name = "Panevezys"
-                }
-            364 = {
-                change_province_name = "Siauliai"
-                }
-            365 = {
-                change_province_name = "Palanga"
-                }
+            }
+            361 = { change_province_name = "Kaunas" }
+            362 = { change_province_name = "Marijampole" }
+            363 = { change_province_name = "Panevezys" }
+            364 = { change_province_name = "Siauliai" }
+            365 = { change_province_name = "Palanga" }
+
             prestige = 2
             clr_global_flag = prussia_renamed_lithuania
         }
@@ -946,12 +925,14 @@ political_decisions = {
         picture = baltic_states
         potential = {
             tag = LAT
+
             owns = 354
             owns = 355
             owns = 356
             owns = 357
             owns = 358
             owns = 359
+
             exists = LAT
             has_global_flag = prussia_renamed_latvia
         }
@@ -964,21 +945,14 @@ political_decisions = {
             355 = {
                 change_province_name = "Valmiera"
                 state_scope = {
-                change_region_name = "Latvia"
-                    }
+                    change_region_name = "Latvia"
                 }
-            356 = {
-                change_province_name = "Daugavpils"
-                }
-            357 = {
-                change_province_name = "Jelgava"
-                }
-            358 = {
-                change_province_name = "Ventspils"
-                }
-            359 = {
-                change_province_name = "Liepaja"
-                }
+            }
+            356 = { change_province_name = "Daugavpils" }
+            357 = { change_province_name = "Jelgava" }
+            358 = { change_province_name = "Ventspils" }
+            359 = { change_province_name = "Liepaja" }
+
             prestige = 2
             clr_global_flag = prussia_renamed_latvia
         }
@@ -1006,24 +980,17 @@ political_decisions = {
         }
 
         effect = {
-            349 = {
-                change_province_name = "Tallinn"
-                }
+            349 = { change_province_name = "Tallinn" }
             350 = {
                 change_province_name = "Narva"
                 state_scope = {
-                change_region_name = "Estonia"
-                    }
+                    change_region_name = "Estonia"
                 }
-            351 = {
-                change_province_name = "Pärnu"
-                }
-            352 = {
-                change_province_name = "Tartu"
-                }
-            353 = {
-                change_province_name = "Saaremaa"
-                }
+            }
+            351 = { change_province_name = "Pärnu" }
+            352 = { change_province_name = "Tartu" }
+            353 = { change_province_name = "Saaremaa" }
+
             prestige = 2
             clr_global_flag = prussia_renamed_estonia
         }
@@ -1079,12 +1046,14 @@ political_decisions = {
                 alliance_with = TSA
                 government = democracy
             }
-                PRU_546 = { owned_by = THIS }
-                PRU_690 = { owned_by = THIS }
-                PRU_695 = { owned_by = THIS }
-                RUS_349 = { owned_by = THIS }
-                RUS_354 = { owned_by = THIS }
-                RUS_360 = { owned_by = THIS }
+
+            # TODO simplify this
+            PRU_546 = { owned_by = THIS }
+            PRU_690 = { owned_by = THIS }
+            PRU_695 = { owned_by = THIS }
+            RUS_349 = { owned_by = THIS }
+            RUS_354 = { owned_by = THIS }
+            RUS_360 = { owned_by = THIS }
         }
 
         effect = {
@@ -1106,6 +1075,7 @@ political_decisions = {
                 who = TSA
                       value = -400
             }
+
             AUS_702 = { add_core = TEU }
             PRU_701 = { add_core = TEU }
             RUS_706 = { add_core = TEU }
@@ -1119,6 +1089,7 @@ political_decisions = {
             RUS_964 = { add_core = TEU }
             MOL_676 = { add_core = TEU }
         }
+
         ai_will_do = {
             factor = .1
             modifier = {

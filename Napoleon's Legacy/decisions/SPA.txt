@@ -1,15 +1,15 @@
-
-
 political_decisions = {
 
     become_cuba = {
+        # todo give a picture
         alert = no
+
         potential = {
             tag = SPA
-                OR = {
-                    has_country_flag = cuba_unlocked
-                    year = 1860
-                    }
+            OR = {
+                has_country_flag = cuba_unlocked
+                year = 1860
+            }
             NOT = {
                 owns = 487
                 owns = 762
@@ -17,48 +17,49 @@ political_decisions = {
             }
         }
 
-            allow = {
-                war = no
-                state_n_government = 1
-                }
-
-            effect = {
-                add_accepted_culture = caribeno
-                government = democracy
-                political_reform = wealth_voting
-                political_reform = censored_press
-                political_reform = non_socialist
-                political_reform = non_secret_ballots
-                change_tag = CUB
-                prestige = 10
-                NSA = {
-                    country_event = 600033
-                }
-                SPA = {
-                    all_core = {
-                        remove_core = SPA
-                        }
-                    }
-                any_pop = {
-                    limit = {
-                        has_pop_culture = caribeno
-                        }
-                    militancy = -3
-                }
-                any_pop = {
-                    limit = {
-                        has_pop_culture = caribeno
-                        }
-                    consciousness = -3
-                    }
-                }
-            ai_will_do = {
-                factor = .5
-                }
+        allow = {
+            war = no
+            state_n_government = 1
         }
 
+        effect = {
+            add_accepted_culture = caribeno
+            government = democracy
+            political_reform = wealth_voting
+            political_reform = censored_press
+            political_reform = non_socialist
+            political_reform = non_secret_ballots
+            change_tag = CUB
+            prestige = 10
+            NSA = { country_event = 600033 }
+            SPA = {
+                all_core = {
+                    remove_core = SPA
+                }
+            }
+            any_pop = {
+                limit = {
+                    has_pop_culture = caribeno
+                    }
+
+                militancy = -3
+            }
+            any_pop = {
+                limit = {
+                    has_pop_culture = caribeno
+                }
+
+                consciousness = -3
+            }
+        }
+
+        ai_will_do = {
+            factor = .5
+        }
+    }
+
     attempt_annex_NSA = {
-    potential = {
+        potential = {
             tag = SPA
             NOT = { has_country_flag = attempt_NSA }
             exists = NSA
@@ -77,26 +78,24 @@ political_decisions = {
             }
         }
 
-    allow = {
-        war = no
-            NSA = {
-                NOT = {
-                    vassal_of = FRA
-                    is_greater_power = yes
+        allow = {
+            war = no
+                NSA = {
+                    NOT = {
+                        vassal_of = FRA
+                        is_greater_power = yes
+                    }
                 }
-            }
         }
 
-    effect = {
-        set_country_flag = attempt_NSA
-            NSA = {
-                country_event = 600034
-                }
+        effect = {
+            set_country_flag = attempt_NSA
+            NSA = { country_event = 600034 }
             prestige = 15
         }
 
-    ai_will_do = {
-        factor = 1
+        ai_will_do = {
+            factor = 1
         }
     }
 
@@ -119,6 +118,7 @@ political_decisions = {
             prestige = 20
             set_country_flag = returned_home
         }
+
         ai_will_do = {
             factor = 1
         }
@@ -187,7 +187,7 @@ political_decisions = {
     }
 
     spanish_restoration = {
-    picture = spanish_restoration
+        picture = spanish_restoration
         potential = {
             tag = SPA
             has_country_flag = king_alfonso_rules
@@ -220,11 +220,11 @@ political_decisions = {
     }
 
     falangist_doctrine = {
-    picture = falangist_doctrine
+        picture = falangist_doctrine
         potential = {
             OR = {
-            tag = SPA
-            tag = SPC
+                tag = SPA
+                tag = SPC
             }
             government = fascist_dictatorship
             NOT = { has_country_flag = falangist_doctrine }
@@ -261,57 +261,57 @@ political_decisions = {
                         months = 24
                 }
             }
-        any_pop = { limit = { culture = spanish }
-            scaled_consciousness = {
-                factor = -9
-                ideology = fascist
+            any_pop = { limit = { culture = spanish }
+                scaled_consciousness = {
+                    factor = -9
+                    ideology = fascist
                 }
-            scaled_militancy = {
-                factor = -9
-                ideology = fascist
+                scaled_militancy = {
+                    factor = -9
+                    ideology = fascist
                 }
-            scaled_consciousness = {
-                factor = -6
-                ideology = reactionary
+                scaled_consciousness = {
+                    factor = -6
+                    ideology = reactionary
                 }
-            scaled_militancy = {
-                factor = -3
-                ideology = reactionary
-                }
-            }
-
-        any_pop = {
-            scaled_consciousness = {
-                factor = 8
-                ideology = liberal
-                }
-            scaled_militancy = {
-                factor = 6
-                ideology = liberal
-                }
-            scaled_consciousness = {
-                factor = 9
-                ideology = anarcho_liberal
-                }
-            scaled_militancy = {
-                factor = 7
-                ideology = anarcho_liberal
+                scaled_militancy = {
+                    factor = -3
+                    ideology = reactionary
                 }
             }
 
-        any_pop = {
-            limit = {
-            OR = {
-                culture = basque
-                culture = catalan
+            any_pop = {
+                scaled_consciousness = {
+                    factor = 8
+                    ideology = liberal
+                }
+                scaled_militancy = {
+                    factor = 6
+                    ideology = liberal
+                }
+                scaled_consciousness = {
+                    factor = 9
+                    ideology = anarcho_liberal
+                }
+                scaled_militancy = {
+                    factor = 7
+                    ideology = anarcho_liberal
                 }
             }
-            consciousness = 9
-            militancy = 6
+
+            any_pop = {
+                limit = {
+                OR = {
+                    culture = basque
+                    culture = catalan
+                    }
+                }
+                consciousness = 9
+                militancy = 6
             }
-        any_pop = { limit = { NOT = { culture = spanish } }
-            consciousness = 6
-            militancy = 3
+            any_pop = { limit = { NOT = { culture = spanish } }
+                consciousness = 6
+                militancy = 3
             }
         }
         ai_will_do = {
@@ -325,7 +325,7 @@ political_decisions = {
     }
 
     the_moroccan_question = {
-    picture = moroccan_partition
+        picture = moroccan_partition
         potential = {
             OR = {
                 tag = SPA

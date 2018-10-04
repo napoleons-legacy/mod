@@ -1,6 +1,6 @@
 political_decisions = {
     become_guatemala = {
-    picture = become_guatemala
+        picture = become_guatemala
         potential = {
             tag = UCA
             NOT = { exists = GUA }
