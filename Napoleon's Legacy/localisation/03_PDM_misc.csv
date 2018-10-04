@@ -1,16 +1,15 @@
 ;;;;;;;;;;;;;;x,,,
+HAS_NO_UNION_TAG;has culture union;n'a pas de culture syndicale;besitzt KEINE kulturellen Unionen;;;;;;;;;;;x
 UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;
 breton;Breton;Breton;Bretonisch;;;;;;;;;;;x
 occitan;Occitan;Occitain;Occitanisch;;;;;;;;;;;x
 HAS_GOODS;produces ;;;;;;;;;;;;;x,,,
 assyrian;Assyrian;;;;;;;;;;;;;x,,,
 xhosa;Xhosa;;;;;;;;;;;;;x,,,
-shinto;Shinbutsu;;;;;;;;;;;;;x,,,
+shinto;Shinto;;;;;;;;;;;;;x,,,
 sephardic;Sephardic;;;;;;;;;;;;x,,,
 picard;Picard;;;;;;;;;;;;x,,,
 jewish_cultures;Jewish;;;;;;;;;;;;x,,,
-itsekari;Ijaw;;;;;;;;;;;;x,,,
-kuba;Bashong;;;;;;;;;;;;x,,,
 far_east_asian;Far East Asian;;;;;;;;;;;;x,,,
 arabic;Arabic;;;;;;;;;;;;x,,,
 pan_albanian;Albanian;;;;;;;;;;;;x,,,
@@ -194,7 +193,6 @@ cavalry_school;Cavalry School;École de cavalerie;Kavallerieschule;;;;;;;;;;;;x;;
 colonial_recruit;Colonial Recruit;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 colonial_b;Colonial;Colonial;Kolonial;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 cartographer;Cartographer;Cartographe;Kartograf;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
-clerk;Clerk;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 cursed_luck;Cursed Luck;Malchanceux;Vom Pech verflucht;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 corrupt;Corrupt;Corrompu;Korrupt;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 clueless;Clueless;Ignorant;Ahnungslos;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,

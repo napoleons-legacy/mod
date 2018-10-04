@@ -59,6 +59,7 @@ EVTNAME96071;Transfer of the $FROMCOUNTRY_ADJ$ Colonies;Les Colonies $FROMCOUNTR
 EVTDESC96071;Negotiations are still underway as to which countries will obtain control over the remaining $FROMCOUNTRY_ADJ$ colonies and overseas territories.;;;;;;;;;;;;;x,,,,
 EVTOPTA96071;We will accept control over the colony.;Nous acceptons.;Wir nehmen an.;;;;;;;;;;;x,,,,
 EVTOPTB96071;We do not wish any more colonies.;Nous refusons.;Wir lehnen ab.;;;;;;;;;;;x,,,,
+EVTOPTC96071;We will skip the current colony.;;;;;;;;;;;;;;;;;;;;;;;;;;;x,,,,
 EVTDESC96081;An isolated $FROMCOUNTRY_ADJ$ territory has been offered to us. We should consider whether we wish to adminster it, as accessing the land may be difficult according to current borders. But, then again, do we truly wish $FROMCOUNTRY$ to keep it?;;;;;;;;;;;;;x,
 EVTNAME96085;The New $COUNTRY_ADJ$ Government;Le Nouveau Gouvernement $COUNTRY_ADJ$;Die Neue $COUNTRY_ADJ$ Regierung;;;;;;;;;;;x,,,,
 EVTDESC96085;As the armies of our former enemy depart $CAPITAL$, they leave behind a newly-installed democratic government friendly to their nation. How long this government will last is unknown, but many within $COUNTRY$ question whether 'freedom' imposed by a foreign power is truly that.;;;;;;;;;;;;;x,,

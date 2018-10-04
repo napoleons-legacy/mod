@@ -579,7 +579,6 @@ GUY_reactionary;British Faction;;;;;;;;;;;;;x
 GUY_anarcho_liberal;American Faction;;;;;;;;;;;;;x
 GUY_fascist;Unity Party;;;;;;;;;;;;;x
 GXI_presidential_dictatorship;Guangxi Clique;Clique de Guangxi;Guangxi-Clique;;;;;;;;;;;x
-HAL;Hail;;;;;;;;;;;;x
 HAL_ADJ;Haili;;;;;;;;;;;;x
 HAL_absolute_monarchy_ADJ;Rashidi;;;;;;;;;;;;x
 HAL_prussian_constitutionalism_ADJ;Rashidi;;;;;;;;;;;;x
@@ -614,8 +613,6 @@ HUI_liberal;Liberal Party;Parti libéral;Liberale Partei;;;;;;;;;;;x
 HUI_conservative;Kuomintang Faction;Faction Kuomintang;Guomintang-Fraktion;;;;;;;;;;;x
 HUI_fascist;Fascist Party;Parti fasciste;Faschistische Partei;;;;;;;;;;;x
 HUI_anarcho_liberal;Freedom Party;Parti de la liberté;Freiheitspartei;;;;;;;;;;;x
-IBR;Iberia;;;;;;;;;;;;;x
-IBR_ADJ;Iberian;;;;;;;;;;;;;x
 INO;Indonesia;Indonésie;Indonesien;;Indonesia;;;;;;;;;x
 INO_ADJ;Indonesian;Indonésienne;Indonesisch;;Indonesio;;;;;;;;;x
 INO_conservative;Royal Faction;;;;;;;;;;;;x
@@ -1127,15 +1124,6 @@ OCC_socialist;Partit Soucialisto;Partit Soucialisto;Partit Soucialisto;;Partit S
 OCC_anarcho_liberal;Partit Anarquisto;Partit Anarquisto;Partit Anarquisto;;Partit Anarquisto;;;;;;;;;;;x
 OCC_communist;Partit Comunisto;Partit Comunisto;Partit Comunisto;;Partit Comunisto;;;;;;;;;;;x
 OCC_fascist;Partit Faissisto;Partit Faissisto;Partit Faissisto;;Partit Faissisto;;;;;;;;;;;x
-PAP_democracy;Roman Republic;;;;;;;;;;;;;x
-PAP_presidential_dictatorship;Roman Republic;;;;;;;;;;;;;x
-PAP_bourgeois_dictatorship;Roman Republic;;;;;;;;;;;;;x
-PAP_fascist_dictatorship;Roman Republic;;;;;;;;;;;;;x
-PAP_ADJ_democracy;Roman;;;;;;;;;;;;;x
-PAP_ADJ_presidential_dictatorship;Roman;;;;;;;;;;;;;x
-PAP_ADJ__bourgeois_dictatorship;Roman;;;;;;;;;;;;;x
-PAP_ADJ_proletarian_dictatorship;Roman;;;;;;;;;;;;;x
-PAP_ADJ_fascist_dictatorship;Roman;;;;;;;;;;;;;x
 PAR_reactionary;Restaurazionisti;Restaurazionisti;Restaurazionisti;;Restaurazionis ti;;;;;;;;;x
 PAR_conservative;Moderati ;Moderati ;Moderati;;Moderati ;;;;;;;;;x
 PAR_liberal;Riformisti ;Riformisti ;Riformisti;;Riformisti ;;;;;;;;;x
@@ -1538,7 +1526,6 @@ SYR_socialist;Haraka al-Ishtirakiyyun al-Arab;;;;;;;;;;;;;x
 SYR_reactionary;Haraka al-Ahd al-Watani;;;;;;;;;;;;;x
 SYR_anarcho_liberal;Hizb al-Wataniyyin al-Ahrar;;;;;;;;;;;;;x
 SYR_communist;Al-hizb ash-Shuyu'i as-Suri;;;;;;;;;;;;;x
-SYR_fascist;Hizb al-Ba'ath;;;;;;;;;;;;;x
 SZC;Sichuan;;;;;;;;;;;;x
 SZC_ADJ;Sichuan;;;;;;;;;;;;x
 SZC_presidential_dictatorship;Sichuan Clique;;;;;;;;;;;;x
@@ -1597,9 +1584,6 @@ TCA_ADJ;Transcaucasian;;;;;;;;;;;;x
 TKG;Shogunate Japan;;;;;;;;;;;x
 TKG_ADJ;Tokugawa;;;;;;;;;;;x
 TKM;Turkmenistan;;;;;;;;;;;;;x
-TKM_absolute_monarchy;Salor Confederation;;;;;;;;;;;;x
-TKM_hms_government;Salor Confederation;;;;;;;;;;;;x
-TKM_prussian_constitutionalism;Salor Confederation;;;;;;;;;;;;x
 TKM_ADJ;Turkmenian;;;;;;;;;;;;;x
 TKM_conservative;Royal Faction;Faction royale;Königsfraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 TKM_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -1640,15 +1624,6 @@ TOS_hms_government;Tosa;;;;;;;;;;;;;x
 TOS_absolute_monarchy_ADJ;Yamauchi;;;;;;;;;;;;;x
 TOS_prussian_constitutionalism_ADJ;Yamauchi;;;;;;;;;;;;;x
 TOS_hms_government_ADJ;Yamauchi;;;;;;;;;;;;;x
-TOU;Toucouleur Empire;;;;;;;;;;;;x
-TOU_ADJ;Toucouleur;;;;;;;;;;;;x
-TOU_democracy;Toucouleur Republic;;;;;;;;;;;;x
-TOU_proletarian_dictatorship;Sahelian People's Republic;;;;;;;;;;;;x
-TOU_fascist_dictatorship;Sahelian Republic;;;;;;;;;;;;x
-TOU_bourgeois_dictatorship;Toucouleur Republic;;;;;;;;;;;;x
-TOU_presidential_dictatorship;Toucouleur Republic;;;;;;;;;;;;x
-TOU_proletarian_dictatorship_ADJ;Sahelian;;;;;;;;;;;;x
-TOU_fascist_dictatorship_ADJ;Sahelian;;;;;;;;;;;;x
 TPG;Heavenly Kingdom;;;;;;;;;;;;x
 TPG_democracy;Taiping Republic;;;;;;;;;;;;;x
 TPG_bourgeois_dictatorship;Taiping Republic;;;;;;;;;;;;;x
@@ -1688,8 +1663,6 @@ TUR_presidential_dictatorship;Turkey;;;;;;;;;;;;;x
 TUR_presidential_dictatorship_ADJ;Turkish;;;;;;;;;;;;;x
 TUR_bourgeois_dictatorship;Turkey;;;;;;;;;;;;;x
 TUR_bourgeois_dictatorship_ADJ;Turkish;;;;;;;;;;;;;x
-TUR_proletarian_dictatorship;Near East Popular Union;;;;;;;;;;;;;x
-TUR_proletarian_dictatorship_ADJ;Near Eastern;;;;;;;;;;;;;x
 TUR_fascist_dictatorship;Turkey;;;;;;;;;;;;;x
 TUR_fascist_dictatorship;Turkish;;;;;;;;;;;;;x
 TUR_reactionary;Nizam-i Alem;;;;;;;;;;;;;x
@@ -2025,8 +1998,6 @@ DAH_anarcho_liberal;Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;
 DAH_socialist;Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 DAH_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 DAH_fascist;Great Dahomey Faction;Faction Dahomey Grande;Große Dahomey Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
-DAM;Damagaram;Damagaram;Damagaram;;Damgaram;;;;;;;;;;x;;;;;;;;;;;;;;
-DAM_ADJ;Damagaram;Damagaram;Damagaram;;;;;;;;;;;;x;;;;;;;;;;;;;;
 DAM_conservative;Sultan's Faction;Faction Sultan;Sultan Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 DAM_liberal;Reform Faction;Faction de réforme;Verbesserung Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 DAM_reactionary;Religious Faction;Faction Religieux;Religiöse Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -2215,16 +2186,6 @@ MOS_anarcho_liberal;Freedom Faction;Faction de liberté;Freiheits Fraktion;;;;;;;
 MOS_socialist;Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 MOS_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 MOS_fascist;Empire Faction;Faction d'empire;Reich Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_proletarian_dictatorship;Burkina Faso;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_proletarian_dictatorship_ADJ;Burkinabe;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_fascist_dictatorship;Burkina Faso;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_fascist_dictatorship_ADJ;Burkinabe;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_presidential_dictatorship;Burkina Faso;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_presidential_dictatorship_ADJ;Burkinabe;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_bourgeois_dictatorship;Burkina Faso;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_bourgeois_dictatorship_ADJ;Burkinabe;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_democracy;Burkina Faso;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
-MOS_democracy_ADJ;Burkinabe;Mossi;Mossi;;Mossi;;;;;;;;;;x;;;;;;;;;;;;;;
 OYO;Oyo;Oyo;Oyo;;Oyo;;;;;;;;;;x;;;;;;;;;;;;;;
 OYO_ADJ;Oyo;Oyo;Oyo;;;;;;;;;;;;x;;;;;;;;;;;;;;
 OYO_conservative;Alaafin's Faction;Faction Alaafin;Alaafin Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -2397,8 +2358,6 @@ GON_anarcho_liberal;Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;
 GON_socialist;Socialist Party;Parti socialiste;Sozialistische Partei;;;;;;;;;;;;x;;;;;;;;;;;;;;
 GON_communist;Communist Party;Parti communiste;Kommunistische Partei;;;;;;;;;;;;x;;;;;;;;;;;;;;
 GON_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
-HAR;Harar;Harar;Harar;;Harar;;;;;;;;;;x;;;;;;;;;;;;;;
-HAR_ADJ;Harari;Hararienne;Hararische;;;;;;;;;;;;x;;;;;;;;;;;;;;
 HAR_conservative;Emir's Faction;Faction Emir;Emir Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 HAR_liberal;Reform Faction;Faction de réforme;Verbesserung Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 HAR_reactionary;Religious Faction;Faction religieuse;Religiöse Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
