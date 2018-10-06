@@ -28,30 +28,6 @@ political_decisions = {
 
     }
 
-    #Appoint Mirza Taghi
-    appoint_mirza = {
-        picture = mirza_taghi
-
-        potential = {
-                tag = PER
-                NOT = { has_country_flag = appoint_mirza}
-                has_country_modifier = silver_age
-        }
-
-        allow = {
-            has_country_modifier = silver_age
-            admin_reform = yes_admin_reform
-        }
-
-        effect = {
-            set_country_flag = appoint_mirza
-            prestige = 2
-            years_of_research = 2
-        }
-
-        ai_will_do = { factor = 1 }
-    }
-
     #Persian Cinema
     persian_cinema = {
         picture = fatherland_altar
@@ -101,7 +77,7 @@ political_decisions = {
 
         effect = {
             set_country_flag = greater_iran
-            badboy = 10
+			badboy = 10
             any_country = { limit = { neighbour = THIS NOT = { vassal_of = THIS } } relation = { who = THIS value = -50 } }
             RUS_1052 = { add_core = PER }
             1206 = { add_core = PER }
@@ -116,23 +92,23 @@ political_decisions = {
     }
 
 
+    # Establish the Dar ul-Funun
     establish_the_dar_al_funun = {
         picture = suezcanalcompany
         potential = {
             tag = PER
             civilized = no
-            NOT = {
-                has_country_flag = dar_al_funun_built
+			has_country_modifier = silver_age
+			NOT = {	has_country_flag = dar_al_funun_built }
             }
-        }
 
         allow = {
-            literacy = 0.10
+			has_country_modifier = amir_kabir
         }
 
         effect = {
             years_of_research = 0.5
-            any_pop = { consciousness = 0.5 }
+			any_pop = { consciousness = 1 }
             set_country_flag = dar_al_funun_built
             add_country_modifier = {
                 name = dar_al_funun
@@ -146,6 +122,7 @@ political_decisions = {
                         education_reform = no_education_reform
                     }
                 }
+
                 owner = {
                     economic_reform = yes_education_reform
                     any_pop = {
@@ -172,6 +149,7 @@ political_decisions = {
         picture = caucasus_viceroyalty
         potential = {
             tag = PER
+		    year = 1900
             NOT = { has_country_flag = majles_established }
         }
 
@@ -188,7 +166,115 @@ political_decisions = {
             prestige = 5
             plurality = 10
             any_pop = { consciousness = 1 }
+		    clr_country_flag = per_backed_down
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    # End the bazaari strike.
+    end_bazaari_strike = {
+        picture = PER_bazaari_strike
+        potential = {
+            has_country_modifier = bazaari_strike
+        }
+
+        allow = {
+            has_country_modifier = bazaari_strike
+        }
+
+        effect = {
+            prestige_factor = -0.1
+            remove_country_modifier = bazaari_strike
+            remove_country_modifier = western_influences
+            years_of_research = -1
+            add_country_modifier = { name = uncivilized_isolationism duration = -1 }
+            treasury = -50000
+            any_country = {
+                limit = { is_greater_power = yes }
+                diplomatic_influence = { who = THIS value = -200 }
+                relation = { who = THIS value = -100 }
+            }
+            random_country = {
+                limit = { is_greater_power = yes is_sphere_leader_of = THIS }
+                treasury = 50000
+            }
+            clr_country_flag = ulama_no
         }
         ai_will_do = { factor = 1 }
     }
+
+    # Appoint Amir Kabir Mirza Taghi Khan
+    appoint_amir_kabir = {
+        picture = amir_kabir
+        potential = {
+            tag = PER
+            NOT = { year = 1852 }
+            NOT = {	has_country_flag = amir_kabir }
+            has_country_modifier = silver_age
+        }
+
+        allow = {
+            has_country_modifier = silver_age
+        }
+
+        effect = {
+            set_country_flag = amir_kabir
+            add_country_modifier = { name = amir_kabir duration = -1 }
+            any_pop = {
+                scaled_militancy = {
+                    ideology = liberal
+                    factor = -3
+                }
+                scaled_militancy = {
+                    ideology = conservative
+                    factor = 1
+                }
+                scaled_militancy = {
+                    ideology = reactionary
+                    factor = 3
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    #Bring Tea to Iran
+    bring_tea_to_iran = {
+        picture = prince_mirza
+        potential = {
+            tag = PER
+            NOT = { has_country_flag = tea_in_iran }
+            OR = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+            }
+        }
+
+        allow = {
+            owns = 1113
+            owns = 1115
+            owns = 1114
+            owns = 1121
+            OR = {
+                year = 1900
+                management_strategy = 1
+            }
+        }
+
+        effect = {
+            set_country_flag = tea_in_iran
+            1113 = { trade_goods = tea }
+            1115 = { trade_goods = tea }
+            1114 = { trade_goods = tea }
+            1121 = { trade_goods = tea }
+            1116 = { trade_goods = tea }
+            relation = { who = ENG value = -50 }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
 }

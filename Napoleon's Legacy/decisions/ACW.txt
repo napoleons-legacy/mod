@@ -77,6 +77,7 @@ political_decisions = {
             owns = 130
             owns = 131
             average_consciousness = 3
+	        is_vassal = no
         }
 
         effect = {
@@ -137,6 +138,7 @@ political_decisions = {
             }
             owns = 130
             owns = 131
+	        is_vassal = no
         }
 
         effect = {
@@ -198,8 +200,10 @@ political_decisions = {
         potential = {
             tag = USA
             government = democracy
-            NOT = { has_country_modifier = the_homestead_act }
+	        NOT = { has_country_flag = homestead_act }
             year = 1862
+            number_of_states = 3
+            num_of_ports = 1
         }
 
         allow = {
@@ -208,6 +212,7 @@ political_decisions = {
         }
 
         effect = {
+			set_country_flag = homestead_act
             add_country_modifier = {
                 name = the_homestead_act
                 duration = -1
@@ -304,21 +309,22 @@ political_decisions = {
     }
 
     emancipation_proclamation = {
-    picture = emancipation_proclamation
-    potential = {
-        tag = NEN
-        NOT = {
-            has_country_flag = emancipation
-            has_country_flag = the_slavery_debate
-            }
-        OR = {
-            war_with = USA
-                AND = {
-                NOT = { exists = USA }
-                    has_global_flag = american_civil_war_has_happened
+        picture = emancipation_proclamation
+        potential = {
+            tag = NEN
+            NOT = {
+                has_country_flag = emancipation
+                has_country_flag = the_slavery_debate
                 }
-            }
+            OR = {
+                war_with = USA
+                    AND = {
+                    NOT = { exists = USA }
+                        has_global_flag = american_civil_war_has_happened
+                    }
+                }
         }
+
         allow = {
             OR = {
                 USA = { national_provinces_occupied = 0.40 }
@@ -326,6 +332,7 @@ political_decisions = {
             }
             prestige = 35
         }
+
         effect = {
             set_country_flag = emancipation
             prestige = 5
@@ -353,13 +360,11 @@ political_decisions = {
 
         allow = {
             war = no
-            romanticism = 1
+	        idealism = 1
             state_n_government = 1
             NOT = { truce_with = MEX }
-            OR = {
-                war_policy = jingoism
-                war_policy = pro_military
-            }
+            NOT = { war_policy = pacifism }
+            NOT = { MEX = { any_owned_province = { country_units_in_province = USA } } }
             OR = {
                 TEX = { in_sphere = THIS }
                 TEX = { exists = no }
@@ -376,14 +381,13 @@ political_decisions = {
                 25 = { badboy = 2 }
                 25 = { badboy = 3 }
             }
-            MEX = { clr_country_flag = manifest_destiny_refuted }
             MEX_85 = { add_core = USA } #California
             TEX_132 = { add_core = USA } #Texas
             MEX_94 = { add_core = USA } #Nevada
             MEX_97 = { add_core = USA } #Utah
             USA_129 = { add_core = USA } #Oklahoma
             USA_106 = { add_core = USA } #Colorado
-            USA_78 = { add_core = USA } #Washington
+            #USA_78 = { add_core = USA } #Washington
             USA_81 = { add_core = USA } #Portland
             USA_91 = { add_core = USA } #Idaho
             USA_111 = { add_core = USA }
@@ -489,9 +493,10 @@ political_decisions = {
         }
 
         allow = {
-            ruling_party_ideology = reactionary
-            upper_house = { ideology = liberal value = 0.25 }
-            average_consciousness = 4
+	        OR = {
+                ruling_party_ideology = reactionary
+                upper_house = { ideology = reactionary value = 0.25 }
+	        }
             SPA_2209 = { is_slave = yes }
             OR = {
                 slavery = yes_slavery
@@ -594,7 +599,7 @@ political_decisions = {
         }
 
         allow = {
-                NOT = { exists = USA }
+            NOT = { exists = USA }
         }
 
         effect = {
@@ -677,85 +682,107 @@ political_decisions = {
             is_sphere_leader_of = HAW
             HAW = { ai = yes }
             NOT = { has_country_flag = annexed_hawaii }
-        }
+			any_owned_province = { has_building = naval_base }
+			OR = {
+				any_owned_province = { continent = polynesia }
+				owns = 78
+				owns = 79
+				owns = 81
+				owns = 83
+				owns = 85
+				owns = 84
+				owns = 104
+				owns = 87
+				owns = 89
+				owns = 90
+				owns = 2139
+				owns = 2140
+				owns = 2138
+				owns = 2141
+				owns = 2157
+				owns = 2156
+				owns = 2161
+				owns = 2168
+				owns = 2169
+				owns = 2179
+				owns = 2171
+				owns = 2178
+				owns = 2181
+				owns = 2182
+				owns = 2186
+				owns = 2191
+				owns = 2192
+				owns = 2193
+				owns = 2199
+				owns = 2197
+				owns = 2198
+				owns = 2202
+				owns = 2201
+				owns = 2206
+				owns = 2205
+				owns = 1723
+				owns = 2204
+				owns = 2208
+				owns = 2253
+				owns = 2258
+				owns = 2281
+				owns = 2280
+				owns = 2291
+				owns = 2292
+				owns = 2298
+				owns = 2295
+				owns = 2297
+				owns = 2285
+				owns = 2336
+				owns = 2304
+				owns = 2578
+				owns = 2308
+				owns = 2307
+				owns = 2305
+				owns = 2309
+				any_owned_province = {
+					is_core = CHL
+					is_coastal = yes
+                }
+			}
+			OR = {
+				capital_scope = { continent = north_america }
+				capital_scope = { continent = south_america }
+				capital_scope = { continent = asia }
+				capital_scope = { continent = australia_new_zealand }
+				any_owned_province = { continent = polynesia }
+			}
+		}
 
-        allow = {
-            revolution_n_counterrevolution = 1
-            is_sphere_leader_of = HAW
-        }
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_sphere_leader_of = HAW
+		}
 
-        effect = {
-            set_country_flag = annexed_hawaii
-            HAW_658 = {
-                add_core = THIS
-            }
-
+		effect = {
+			set_country_flag = annexed_hawaii
+			658 = { trade_goods = coffee }
             prestige = 2
-            random_country = {
-                limit = {
-                    tag = HAW
-                    civilized = no
-                }
-                civilized = yes
-            }
+			HAW = { civilized = no }
+			inherit = HAW
+			random_owned = {
+				limit = { owner = { capital_scope = { continent = north_america } } }
+				owner = { HAW_658 = { add_core = THIS } }
+			}
+			random_owned = { limit = { owner = { tag = USA ai = yes } } 658 = { naval_base = 1 } }
+			HAW = { civilized = yes }
+		}
+	}
 
-            inherit = HAW
-        }
-    }
-
-    Brown_raid = {
-        potential = {
-            tag = NEN
-            year = 1855
-            exists = USA
-            NOT = {
-                has_global_flag = american_civil_war_has_happened
-            }
-        }
-
-        allow = {
-            year = 1855
-            war = no
-            NOT = { war_exhaustion = 1 }
-
-            USA = {
-                war = no
-                NOT = {
-                    war_exhaustion = 1
-                }
-            }
-        }
-
-        effect = {
-            diplomatic_influence = {
-                who = USA
-                value = -200
-            }
-            relation = {
-                who = USA
-                value = -200
-            }
-            badboy = 3
-            USA = { country_event = { id = 121215  days = 0  } }
-
-            set_global_flag = american_civil_war_has_happened
-            prestige = 15
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
-    sell_alaska = {
-        picture = map_alaska
-        potential = {
-            NOT = { has_country_flag = alaska_purchase_started }
-            NOT = { has_global_flag = alaska_purchase_completed }
-            OR = {
-                has_global_flag = american_civil_war_has_happened
-                year = 1870
-            }
+	sell_alaska = {
+		picture = map_alaska
+		potential = {
+			NOT = { has_country_flag = alaska_purchase_started }
+			NOT = { has_global_flag = alaska_purchase_completed }
+			OR = {
+				has_global_flag = american_civil_war_has_happened
+				year = 1870
+			}
             OR = {
                 tag = RUS
                 tag = TSA
@@ -842,19 +869,15 @@ political_decisions = {
             factor = 1
             modifier = {
                 factor = 0
-                NOT = {
-                    badboy = 0.1
-                }
+				NOT = { badboy = 0.08 }
             }
 
             modifier = {
                 factor = 0
-                NOT = {
-                    year = 1842
+				NOT = { year = 1842 }
                 }
             }
         }
-    }
 
     rio_grande_treaty = {
         picture = rio_grande_treaty
@@ -925,49 +948,55 @@ political_decisions = {
 
 
     texan_claims = {
-    picture = all_texas
+        picture = all_texas
         potential = {
             tag = TEX
+			NOT = { year = 1870 }
             NOT = { has_country_flag = lone_star_state }
-            NOT = { year = 1850 }
             is_vassal = no
             exists = yes
         }
 
         allow = {
             war = no
-            NOT = { year = 1850 }
-        }
+			NOT = { year = 1870 }
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+				nationalism_n_imperialism = 1
+            }
+		}
 
-        effect = {
-            set_country_flag = lone_star_state
-            badboy = 1
-            relation = { who = MEX value = -100 }
-            129 = { add_core = TEX }
-            128 = { add_core = TEX }
-            103 = { add_core = TEX }
-            105 = { add_core = TEX }
-            109 = { add_core = TEX }
-            107 = { add_core = TEX }
-            135 = { add_core = TEX }
-            136 = { add_core = TEX }
-            138 = { add_core = TEX }
-        }
-        ai_will_do = { factor = 1 }
-    }
+		effect = {
+			set_country_flag = lone_star_state
+			badboy = 1
+			relation = { who = MEX value = -100 }
+			129 = { add_core = TEX }
+			128 = { add_core = TEX }
+			103 = { add_core = TEX }
+			105 = { add_core = TEX }
+			109 = { add_core = TEX }
+			107 = { add_core = TEX }
+			135 = { add_core = TEX }
+			136 = { add_core = TEX }
+			138 = { add_core = TEX }
+		}
+		ai_will_do = { factor = 1 }
+	}
 
-    gadsden_purchase = {
-        picture = gadsden
-        potential = {
-            NOT = { owns = 102 }
-            102 = { NOT = { is_core = THIS } }
-            102 = { owner = { NOT = { OR = { primary_culture = yankee primary_culture = dixie primary_culture = texan } } } }
-            is_culture_group = american_cultures
-            NOT = { has_country_flag = gadsden_negotiations }
-            90 = { owned_by = THIS NOT = { is_core = MEX } }
-            100 = { owned_by = THIS NOT = { is_core = MEX } }
-            104 = { owned_by = THIS NOT = { is_core = MEX } }
-            105 = { owned_by = THIS NOT = { is_core = MEX } }
+	gadsden_purchase = {
+	picture = gadsden
+		potential = {
+			NOT = { owns = 102 }
+			102 = { NOT = { is_core = THIS } }
+			102 = { owner = { NOT = { OR = { primary_culture = yankee primary_culture = dixie primary_culture = texan } } } }
+			is_culture_group = american_cultures
+			NOT = { has_country_flag = gadsden_negotiations }
+			90 = { owned_by = THIS NOT = { is_core = MEX } }
+			100 = { owned_by = THIS NOT = { is_core = MEX } }
+			104 = { owned_by = THIS NOT = { is_core = MEX } }
+			105 = { owned_by = THIS NOT = { is_core = MEX } }
+			NOT = { check_variable = { which = owed_cash_money value = 1 } }
         }
 
         allow = {
@@ -975,7 +1004,10 @@ political_decisions = {
             102 = { owner = { NOT = { truce_with = THIS } } NOT = { owned_by = THIS } }
             2662 = { owner = { NOT = { truce_with = THIS } } NOT = { owned_by = THIS } }
             war = no
-            money = 51000
+			OR = {
+				money = 50000
+				ai = yes
+			}
             nationalism_n_imperialism = 1
             owns = 90
             owns = 100
@@ -1023,6 +1055,7 @@ political_decisions = {
 
             2209 = {
                 owner = {
+					NOT = { is_greater_power = yes }
                     OR = {
                         is_vassal = no
                         vassal_of = THIS
@@ -1033,7 +1066,7 @@ political_decisions = {
             OR = {
                 owns = 44
                 2209 = { NOT = { owned_by = THIS } owner = { in_sphere = THIS } }
-                2209 = { NOT = { owned_by = THIS } owner = { relation = { who = THIS value = 100 } } }
+				2209 = { NOT = { owned_by = THIS } owner = { relation = { who = THIS value = 175 } NOT = { part_of_sphere = yes } } }
             }
         }
 
@@ -1041,18 +1074,362 @@ political_decisions = {
             set_global_flag = guantanamo_lease
             badboy = 2
             44 = { add_core = THIS }
-            random_country = {
-                limit = {
-                    owns = 2209
-                    NOT = { tag = THIS }
-                }
-            country_event = 16458
-            }
+			random_country = { limit = { owns = 2209 NOT = { tag = THIS } } country_event = 16458 }
         }
 
         ai_will_do = {
             factor = 1
             modifier = { factor = 0 badboy = 0.85 }
+        }
+    }
+
+
+
+	offer_to_buy_cuba = {
+		picture = map_caribbean
+		potential = {
+			tag = USA
+			2209 = { owned_by = SPA }
+			NOT = {
+				has_country_flag = ostend_manifesto_published
+				has_country_flag = maine_incident
+				has_country_flag = trying_to_buy_cuba
+			}
+			has_global_flag = american_civil_war_has_happened
+		}
+
+		allow = {
+			war = no
+			is_greater_power = yes
+			money = 1000000
+			2209 = { owner = { NOT = { truce_with = THIS } } }
+			SPA = {
+				exists = yes
+				war = no
+			any_owned_province = {
+				is_core = CUB
+				OR = {
+					controlled_by = REB
+					has_province_modifier = nationalist_agitation
+					average_militancy = 6
+					}
+				}
+			}
+			NOT = { has_country_flag = maine_incident }
+		}
+
+		effect = {
+			set_country_flag = trying_to_buy_cuba
+			2209 = { owner = { country_event = 90131 } }
+		}
+	}
+
+	annexation_santo_domingo = {
+	    picture = annexation_santo_domingo
+		potential = {
+            tag = USA
+			is_greater_power = yes
+			DOM = {
+				exists = yes
+				owns = 2214
+				owns = 2216
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+			}
+			OR = {
+				2214 = { is_core = HAI }
+				2216 = { is_core = HAI }
+			}
+			NOT = { has_country_flag = annex_santo_domingo }
+			year = 1850
+			NOT = { year = 1900 }
+			government = democracy
+		}
+
+		allow = {
+			war = no
+			money = 100000
+			is_vassal = no
+			war_policy = jingoism
+			invention = manifest_destiny
+			ruling_party_ideology = reactionary
+			upper_house = { ideology = reactionary value = 0.15 }
+			all_core = { owned_by = THIS }
+			is_sphere_leader_of = DOM
+			DOM = { war = no }
+			DOM = { government = presidential_dictatorship }
+			OR = {
+				2214 = { is_core = HAI }
+				2216 = { is_core = HAI }
+			}
+		}
+
+		effect = {
+			set_country_flag = annex_santo_domingo
+			relation = { who = HAI value = -400 }
+			diplomatic_influence = { who = HAI value = -400 }
+			DOM = { country_event = 45105 }
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = { factor = 0 badboy = 0.8 }
+		}
+	}
+
+	guano_islands_act = {
+	picture = dreams_of_empire
+		potential = {
+			OR = {
+				owns = 2525
+				owns = 658
+			}
+			is_greater_power = yes
+			2623 = { empty = yes }
+			2526 = { empty = yes }
+			NOT = { has_global_flag = annexed_midway_island }
+		}
+
+		allow = {
+			war = no
+			money = 30000
+			invention = manifest_destiny
+			blue_and_brown_water_schools = 1
+			tech_school = commerce_tech_school
+			is_vassal = no
+			is_disarmed = no
+		}
+
+		effect = {
+			set_global_flag = annexed_midway_island
+			treasury = -30000
+			2623 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			2526 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+
+		ai_will_do = { factor = 100 }
+	}
+
+
+	the_iron_range = {
+	picture = dreams_of_empire
+		potential = {
+			owns = 232
+			NOT = { has_country_flag = iron_ranges }
+			NOT = { 232 = { trade_goods = iron } }
+
+		}
+
+		allow = {
+			war = no
+			invention = advanced_ore_smelting_processes
+		}
+
+		effect = {
+			set_country_flag = iron_ranges
+			158 = { trade_goods = iron change_province_name = "Duluth" }
+			177 = { trade_goods = iron }
+			157 = { trade_goods = iron }
+			232 = { trade_goods = iron }
+			235 = { trade_goods = iron }
+			98 = { trade_goods = iron }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	the_mormon_exodus = {
+	picture = nauvoo_temple
+		potential = {
+			OR = {
+				tag = USA
+				tag = DES
+			}
+			year = 1846
+			NOT = { has_country_flag = mormon_exodus }
+		}
+
+		allow = {
+			war = no
+			owns = 97
+			MEX_97 = { is_colonial = no }
+		}
+
+		effect = {
+			set_country_flag = mormon_exodus
+			any_country = {
+				any_pop = {
+				limit = { has_pop_religion = mormon }
+					dominant_issue = { value = moralism factor = 0.5 }
+					consciousness = 5
+					move_pop = 97
+				}
+			}
+			any_pop = {
+			limit = { has_pop_religion = mormon }
+				dominant_issue = { value = moralism factor = 0.5 }
+				consciousness = 5
+				move_pop = 97
+			}
+			97 = {
+				add_province_modifier = { name = home_of_the_mormons duration = 10950 }
+				any_pop = {
+					limit = { has_pop_culture = native_american_minor }
+					reduce_pop = 0.25
+				}
+			}
+			MEX_94 = { add_core = DES }
+			MEX_97 = { add_core = DES }
+			88 = { add_core = DES }
+			89 = { add_core = DES }
+			90 = { add_core = DES }
+			100 = { add_core = DES }
+			101 = { add_core = DES }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+
+	the_american_frontier = {
+	picture = cowboy
+		potential = {
+			OR = {
+				primary_culture = texan
+				primary_culture = yankee
+				primary_culture = dixie
+			}
+			OR = {
+				owns = 92
+				owns = 93
+				owns = 112
+				owns = 111
+				owns = 106
+				owns = 130
+				owns = 131
+				owns = 113
+				owns = 114
+				owns = 115
+				owns = 116
+				owns = 117
+				owns = 118
+				owns = 119
+				owns = 120
+				owns = 121
+				owns = 122
+				owns = 123
+				owns = 124
+				owns = 125
+				owns = 126
+				owns = 127
+				owns = 155
+				owns = 156
+				owns = 157
+			}
+			NOT = { has_global_flag = american_frontier }
+		}
+
+		allow = {
+			war = no
+			OR = {
+				year = 1865
+				AND = {
+					invention = manifest_destiny
+					nationalism_n_imperialism = 1
+					central_bank_money_bill_printing = 1
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = american_frontier
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 132
+						province_id = 136
+						province_id = 137
+					}
+				}
+				life_rating = 5
+			}
+			43 = { change_province_name = "Dallas" life_rating = 5 }
+			134 = { change_province_name = "Abilene" }
+			135 = { change_province_name = "Lubbock" }
+			92 = { change_province_name = "Coeur D'Alene" }
+			93 = { change_province_name = "Pocatello" }
+			111 = { change_province_name = "Rock Springs" }
+			130 = { change_province_name = "Tahlequah" }
+			114 = { change_province_name = "Missoula" }
+			115 = { change_province_name = "Great Falls" }
+			116 = { change_province_name = "Billings" }
+			118 = { change_province_name = "Minot" }
+			119 = { change_province_name = "Dickinson" }
+			121 = { change_province_name = "Dupree" }
+			122 = { change_province_name = "Rapid City" }
+			124 = { change_province_name = "North Platte" }
+			125 = { change_province_name = "Hastings" }
+			127 = { change_province_name = "Goodland" }
+			156 = { change_province_name = "Granite Falls" }
+			157 = { change_province_name = "Moorhead" }
+			106 = { change_province_name = "Denver" add_province_modifier = { name = recently_built_city duration = 180 } }
+			131 = { change_province_name = "Oklahoma City" add_province_modifier = { name = recently_built_city duration = 180 }  }
+			113 = { change_province_name = "Helena" add_province_modifier = { name = recently_built_city duration = 180 } }
+			117 = { change_province_name = "Bismarck" add_province_modifier = { name = recently_built_city duration = 180 } }
+			120 = { change_province_name = "Sioux Falls" add_province_modifier = { name = recently_built_city duration = 180 } }
+			123 = { change_province_name = "Omaha" add_province_modifier = { name = recently_built_city duration = 180 } }
+			126 = { change_province_name = "Topeka" add_province_modifier = { name = recently_built_city duration = 180 } }
+			155 = { change_province_name = "Minneapolis" add_province_modifier = { name = recently_built_city duration = 180 } }
+			112 = { change_province_name = "Cheyenne" add_province_modifier = { name = recently_built_city duration = 180 } }
+			97 = { add_province_modifier = { name = recently_built_city duration = 730 } }
+			96 = { add_province_modifier = { name = recently_built_city duration = 730 } }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+ Brown_raid = {
+        potential = {
+            tag = NEN
+            year = 1855
+            exists = USA
+            NOT = {
+                has_global_flag = american_civil_war_has_happened
+            }
+        }
+
+        allow = {
+            year = 1855
+            war = no
+            NOT = { war_exhaustion = 1 }
+
+            USA = {
+                war = no
+                NOT = {
+                    war_exhaustion = 1
+                }
+            }
+        }
+
+        effect = {
+            diplomatic_influence = {
+                who = USA
+                value = -200
+            }
+            relation = {
+                who = USA
+                value = -200
+            }
+            badboy = 3
+            USA = { country_event = { id = 121215  days = 0  } }
+
+            set_global_flag = american_civil_war_has_happened
+            prestige = 15
+        }
+
+        ai_will_do = {
+            factor = 1
         }
     }
 
@@ -1101,102 +1478,4 @@ political_decisions = {
             capital = 223
         }
     }
-
-    offer_to_buy_cuba = {
-        picture = map_caribbean
-        potential = {
-            tag = USA
-            2209 = { owned_by = SPA }
-            NOT = {
-                has_country_flag = ostend_manifesto_published
-                has_country_flag = maine_incident
-                has_country_flag = trying_to_buy_cuba
-            }
-            has_global_flag = american_civil_war_has_happened
-        }
-
-        allow = {
-            war = no
-            is_greater_power = yes
-            money = 1000000
-            2209 = { owner = { NOT = { truce_with = THIS } } }
-            SPA = {
-                exists = yes
-                war = no
-                any_owned_province = {
-                    is_core = CUB
-                    OR = {
-                        controlled_by = REB
-                        has_province_modifier = nationalist_agitation
-                        average_militancy = 6
-                    }
-                }
-            }
-
-            NOT = { has_country_flag = maine_incident }
-        }
-
-        effect = {
-            set_country_flag = trying_to_buy_cuba
-            2209 = { owner = { country_event = 90131 } }
-        }
-    }
-
-    annexation_santo_domingo = {
-        picture = annexation_santo_domingo
-        potential = {
-            tag = USA # Bostonians wouldn't annex santo domingo.
-
-            is_greater_power = yes
-
-            DOM = {
-                exists = yes
-                owns = 2214
-                owns = 2216
-                OR = {
-                    is_vassal = no
-                    vassal_of = THIS
-                }
-            }
-
-            OR = {
-                2214 = { is_core = HAI }
-                2216 = { is_core = HAI }
-            }
-
-            NOT = { has_country_flag = annex_santo_domingo }
-            year = 1850
-            NOT = { year = 1900 }
-            government = democracy
-        }
-
-        allow = {
-            war = no
-            money = 100000
-            war_policy = jingoism
-            invention = manifest_destiny
-            ruling_party_ideology = reactionary
-            upper_house = { ideology = reactionary value = 0.3 }
-            has_unclaimed_cores = no
-            is_sphere_leader_of = DOM
-            DOM = { war = no }
-            DOM = { government = presidential_dictatorship }
-            OR = {
-                2214 = { is_core = HAI }
-                2216 = { is_core = HAI }
-            }
-        }
-
-        effect = {
-            set_country_flag = annex_santo_domingo
-            relation = { who = HAI value = -400 }
-            diplomatic_influence = { who = HAI value = -400 }
-            DOM = { country_event = 45105 }
-        }
-
-        ai_will_do = {
-            factor = 100
-            modifier = { factor = 0 badboy = 0.8 }
-        }
-    }
-}
+ }

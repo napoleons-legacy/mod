@@ -13,15 +13,16 @@ political_decisions = {
             NET = {
                 all_core = {
                     owned_by = THIS
-                        }
-                    }
+                }
+            }
         }
 
         effect = {
             capital = 375
-            prestige = 50
+            prestige = 25
             set_country_flag = returned_home
         }
+
         ai_will_do = {
             factor = 1
         }
@@ -33,6 +34,7 @@ political_decisions = {
             tag = NET
             exists = PHL
         }
+
         allow = {
             OR = {
                 is_our_vassal = PHL
@@ -40,16 +42,12 @@ political_decisions = {
                 PHL = { all_core = { owned_by = THIS }  }
             }
         }
+
         effect = {
             prestige = 5
             badboy = 5
-            random_country = {
-                limit = {
-                    tag = PHL
-                    exists = yes
-                }
-                NET = { inherit = PHL }
-            }
+
+            inherit = PHL
         }
 
         ai_will_do = {
@@ -88,66 +86,60 @@ political_decisions = {
         ai_will_do = { factor = 1 }
     }
 
-
     dutch_wallonia = {
-        picture = become_wallonia
-        potential = {
-            tag = NET
-            owns = 392
-            owns = 393
-            owns = 394
-            owns = 395
-            owns = 398
-            NOT = { has_global_flag = dutch_wallons }
-        }
+		picture = become_wallonia
+		potential = {
+			owns = 392
+			owns = 393
+			owns = 394
+			owns = 395
+			owns = 398
+			OR = {
+				AND = {
+					NOT = { has_global_flag = dutch_wallonia_renamed }
+					tag = NET
+				}
+				AND = {
+					has_global_flag = dutch_wallonia_renamed
+					NOT = { tag = NET }
+				}
+			}
+		}
 
-        allow = {
-            war = no
-            nationalism_n_imperialism = 1
-        }
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
 
-        effect = {
-            prestige = 5
-            set_global_flag = dutch_wallons
-            395 = { change_province_name = "Luik" }
-            392 = { change_province_name = "Namen" }
-            398 = { change_province_name = "Aarlen" }
-            393 = { change_province_name = "Doornik" }
-            394 = { change_province_name = "Bergen" }
-        }
+		effect = {
+			prestige = 5
+			random_owned = {
+				limit = { owner = { tag = NET } }
+				owner = {
+					set_global_flag = dutch_wallonia_renamed
+					395 = { change_province_name = "Luik" }
+					392 = { change_province_name = "Namen" }
+					398 = { change_province_name = "Aarlen" }
+					393 = { change_province_name = "Doornik" }
+					394 = { change_province_name = "Bergen" }
+				}
+			}
 
-        ai_will_do = { factor = 1 }
-    }
+			random_owned = {
+				limit = { owner = { NOT = { tag = NET } } }
+				owner = {
+					clr_global_flag = dutch_wallonia_renamed
+					395 = { change_province_name = "Li�ge" }
+					392 = { change_province_name = "Namur" }
+					398 = { change_province_name = "Arlon" }
+					393 = { change_province_name = "Tournai" }
+					394 = { change_province_name = "Charleroi" }
+				}
+			}
+		}
 
-
-    standard_wallonia = {
-        picture = become_wallonia
-        potential = {
-            NOT = { tag = NET }
-            owns = 392
-            owns = 393
-            owns = 394
-            owns = 395
-            owns = 398
-            has_global_flag = dutch_wallons
-        }
-
-        allow = {
-            war = no
-        }
-
-        effect = {
-            prestige = 5
-            clr_global_flag = dutch_wallons
-            395 = { change_province_name = "Liège" }
-            392 = { change_province_name = "Namur" }
-            398 = { change_province_name = "Arlon" }
-            393 = { change_province_name = "Tournai" }
-            394 = { change_province_name = "Charleroi" }
-        }
-
-        ai_will_do = { factor = 1 }
-    }
+		ai_will_do = { factor = 1 }
+	}
 
     embrace_wallons = {
         picture = embrace_minority
