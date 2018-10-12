@@ -3,8 +3,8 @@ country_event = {
     id = 36201
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1870
         NOT = {
@@ -14,7 +14,7 @@ country_event = {
             trade_unions = all_trade_unions
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -40,7 +40,7 @@ country_event = {
     picture = "Danishgovernment"
 
     option = {
-        name = "EVTOPTA36201" 
+        name = "EVTOPTA36201"
         set_country_flag = LouisPioFirst
         labourers = {
             consciousness = 1
@@ -65,8 +65,8 @@ country_event = {
     id = 36202
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1871
         has_country_flag = LouisPioFirst
@@ -77,7 +77,7 @@ country_event = {
             trade_unions = all_trade_unions
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -103,7 +103,7 @@ country_event = {
     picture = "Danishgovernment"
 
     option = {
-        name = "EVTOPTA36202" 
+        name = "EVTOPTA36202"
         set_country_flag = LouisPioSecond
         set_country_flag = LouisPioArrested
         labourers = {
@@ -124,7 +124,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB36202" 
+        name = "EVTOPTB36202"
         set_country_flag = LouisPioSecond
         political_reform = all_trade_unions
         clerks = {
@@ -156,8 +156,8 @@ country_event = {
     id = 36203
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1874
         has_country_flag = LouisPioSecond
@@ -168,7 +168,7 @@ country_event = {
             has_country_flag = LouisPioThird
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -194,7 +194,7 @@ country_event = {
     picture = "Danishgovernment"
 
     option = {
-        name = "EVTOPTA36203" 
+        name = "EVTOPTA36203"
         set_country_flag = LouisPioThird
         treasury = -100
         any_pop = {
@@ -203,7 +203,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB36203" 
+        name = "EVTOPTB36203"
         set_country_flag = LouisPioThird
         political_reform = all_trade_unions
         labourers = {
@@ -240,14 +240,14 @@ country_event = {
     news_desc_long = "EVTDESC36204_NEWS_LONG"
     news_desc_medium = "EVTDESC36204_NEWS_MEDIUM"
     news_desc_short = "EVTDESC36204_NEWS_SHORT"
-    
+
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1848
-        owns = 2223 #St Thomas, Virgin Islands 
+        owns = 2223 #St Thomas, Virgin Islands
         OR = {
         slavery = yes_slavery
         slavery = freedom_of_womb
@@ -257,7 +257,7 @@ country_event = {
             has_country_flag = WestIndiesRevolt
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -283,14 +283,14 @@ country_event = {
     picture = "Slaves"
 
     option = {
-        name = "EVTOPTA36204" 
+        name = "EVTOPTA36204"
         set_country_flag = WestIndiesRevolt
         money = -500
         political_reform = no_slavery
     }
 
     option = {
-        name = "EVTOPTB36204" 
+        name = "EVTOPTB36204"
         set_country_flag = WestIndiesRevolt
         slaves = {
             militancy = 10
@@ -311,7 +311,7 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
+        tag = DEN
         tag = DNW
         }
         year = 1885
@@ -325,7 +325,7 @@ country_event = {
             has_country_flag = CopenhagenFort
             }
         }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -351,7 +351,7 @@ country_event = {
     picture = "fortification"
 
     option = {
-        name = "EVTOPTA36205" 
+        name = "EVTOPTA36205"
         set_country_flag = CopenhagenFort
         money = -1000
         372 = {
@@ -368,7 +368,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB36205" 
+        name = "EVTOPTB36205"
         set_country_flag = CopenhagenFort
         officers = {
             consciousness = 1
@@ -395,8 +395,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1896
         neighbour = GER
@@ -405,7 +405,7 @@ country_event = {
             has_country_flag = SchlewsigDENesGermanized
             }
         }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -432,7 +432,7 @@ country_event = {
 
 
     option = {
-        name = "EVTOPTA36206" 
+        name = "EVTOPTA36206"
         set_country_flag = SchlewsigDENesGermanized
         relation = { who = GER value = -100 }
         any_pop = {
@@ -450,8 +450,8 @@ country_event = {
     id = 36207
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1898
         NOT = {
@@ -462,7 +462,7 @@ country_event = {
             has_country_flag = GeneralStrike
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -488,7 +488,7 @@ country_event = {
     picture = "Strike"
 
     option = {
-        name = "EVTOPTA36207" 
+        name = "EVTOPTA36207"
         set_country_flag = GeneralStrike
         craftsmen = {
             consciousness = 1
@@ -519,8 +519,8 @@ country_event = {
     id = 36208
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1908
         war = no
@@ -533,7 +533,7 @@ country_event = {
             has_country_flag = AlberiniAffair
             }
         }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -559,7 +559,7 @@ country_event = {
     picture = "Alberti"
 
     option = {
-        name = "EVTOPTA36207" 
+        name = "EVTOPTA36207"
         set_country_flag = AlberiniAffair
         election = yes
         any_pop = {
@@ -574,8 +574,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1882
         war = no
@@ -585,9 +585,9 @@ country_event = {
 
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -609,11 +609,11 @@ country_event = {
     }
 
     title = "EVTNAME36210"
-    desc = "EVTDESC36210"   
+    desc = "EVTDESC36210"
     picture = "Jorgensen"
-    
+
     option = {
-        name = "EVTOPTA36210" 
+        name = "EVTOPTA36210"
         prestige = 1
         any_pop = {
             dominant_issue = {
@@ -630,8 +630,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1865
         war = no
@@ -643,7 +643,7 @@ country_event = {
             }
         }
     }
-    
+
     fire_only_once = yes
 
     mean_time_to_happen =  {
@@ -669,9 +669,9 @@ country_event = {
     title = "EVTNAME36211"
     desc = "EVTDESC36211"
     picture = hedeselskabet
-    
+
     option = {
-        name = "EVTOPTA36211" 
+        name = "EVTOPTA36211"
         set_country_flag = Hedeselskab
         366 = { add_province_modifier = { name = the_hedeselskab duration = -1 } }
         367 = { add_province_modifier = { name = the_hedeselskab duration = -1 } }
@@ -685,9 +685,9 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
-        } 
+            tag = DEN
+            tag = DNW
+        }
         year = 1884
         capital = 372 #copenhagen
         OR = {
@@ -699,9 +699,9 @@ country_event = {
             year = 1888
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -727,9 +727,9 @@ country_event = {
     picture = "Christiansborgs"
 
     option = {
-        name = "EVTOPTA36212" 
+        name = "EVTOPTA36212"
         prestige = -1
-        treasury = -500 
+        treasury = -500
     }
 }
 
@@ -740,9 +740,9 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
-        } 
+            tag = DEN
+            tag = DNW
+        }
         year = 1891
         capital = 372 #copenhagen
         impressionism = 1 #has impressionism tech
@@ -755,9 +755,9 @@ country_event = {
             year = 1895
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -780,7 +780,7 @@ country_event = {
     picture = "Glyptoteket"
 
     option = {
-        name = "EVTOPTA36213" 
+        name = "EVTOPTA36213"
         prestige = 10
     }
 }
@@ -791,8 +791,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1884
         ruling_party_ideology = conservative
@@ -802,7 +802,7 @@ country_event = {
             has_country_flag = EstrupAssassination
             }
         }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -828,7 +828,7 @@ country_event = {
     picture = "Estrup"
 
     option = {
-        name = "EVTOPTA36214" 
+        name = "EVTOPTA36214"
         set_country_flag = EstrupAssassination
         prestige = -5
         any_pop = {
@@ -854,8 +854,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1840
         invention = proto_existentialism
@@ -863,9 +863,9 @@ country_event = {
             year = 1880
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -891,7 +891,7 @@ country_event = {
     picture = "Kierkegaard"
 
     option = {
-        name = "EVTOPTA36217" 
+        name = "EVTOPTA36217"
         prestige = 5
     }
 }
@@ -903,8 +903,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1842
         capital = 372 #copenhagen
@@ -914,7 +914,7 @@ country_event = {
     }
 
     fire_only_once = yes
-    
+
     mean_time_to_happen =  {
         months = 12
 
@@ -938,9 +938,9 @@ country_event = {
     title = "EVTNAME36218"
     desc = "EVTDESC36218"
     picture = "tivoli"
-        
+
     option = {
-        name = "EVTOPTA36218" 
+        name = "EVTOPTA36218"
         prestige = 5
         372 = {
             any_pop = {
@@ -957,8 +957,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1843
         owns = 368 #ribe (province where Rodding is located)
@@ -966,9 +966,9 @@ country_event = {
             year = 1848
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -994,7 +994,7 @@ country_event = {
     picture = "School"
 
     option = {
-        name = "EVTOPTA36219" 
+        name = "EVTOPTA36219"
         prestige = 1
         farmers = {
             consciousness = 1
@@ -1012,8 +1012,8 @@ country_event = {
 
     trigger = {
         OR = {
-        tag = DEN 
-        tag = DNW
+            tag = DEN
+            tag = DNW
         }
         year = 1870
         public_meetings = yes_meeting
@@ -1025,9 +1025,9 @@ country_event = {
             year = 1875
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -1053,7 +1053,7 @@ country_event = {
     picture = "Brandes"
 
     option = {
-        name = "EVTOPTA36219" 
+        name = "EVTOPTA36219"
         any_pop = {
             consciousness = 1
         }
@@ -1065,9 +1065,9 @@ country_event = {
     id = 36223 #see SWE36622 for parallel event
 
     trigger = {
-        OR = {
-        tag = DEN 
-        tag = DNW
+            OR = {
+            tag = DEN
+            tag = DNW
         }
         year = 1856
         war = no
@@ -1077,9 +1077,9 @@ country_event = {
             has_country_flag = SCAStudent
             }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -1100,7 +1100,7 @@ country_event = {
     picture = "Danishgovernment"
 
     option = {
-        name = "EVTOPTA36622" 
+        name = "EVTOPTA36622"
         set_country_flag = SCAStudent
         prestige = 1
         relation = { who = PRU value = -50 }
@@ -1114,7 +1114,7 @@ country_event = {
             scaled_consciousness = {
                 factor = 2
                 ideology = liberal
-            }   
+            }
         }
     }
 }
@@ -1126,7 +1126,7 @@ country_event = {
 
 country_event = { #Faroese Nationalism - Christmas Meeting
     id = 120013
-    
+
     trigger = {
         owns = 253
         253 = { is_colonial = yes }
@@ -1134,16 +1134,16 @@ country_event = { #Faroese Nationalism - Christmas Meeting
         month = 11
         NOT = { month = 12 }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen = { days = 4 }
 
     title = "EVTNAME120013"
     desc = "EVTDESC120013"
     picture = "election"
 
-    option = { 
+    option = {
         name = "EVTOPTA120013"
         253 = {
             add_province_modifier = {

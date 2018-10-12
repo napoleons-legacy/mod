@@ -18,9 +18,9 @@ country_event = {
             exists = BRZ
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 6
 
@@ -40,7 +40,7 @@ country_event = {
     picture = "NavioNegreiro"
 
     option = {
-        name = "EVTOPTA46300" 
+        name = "EVTOPTA46300"
         any_pop = {
             limit = {
                 consciousness = 4
@@ -74,9 +74,9 @@ country_event = {
             exists = BRZ
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 18
 
@@ -96,7 +96,7 @@ country_event = {
     picture = "football"
 
     option = {
-        name = "EVTOPTA46301" 
+        name = "EVTOPTA46301"
         set_country_flag = JogoBonito
         prestige = 1
         poor_strata = {
@@ -120,14 +120,14 @@ province_event = {
         owner = { OR = {
             slavery = yes_slavery
             slavery = freedom_of_womb
-                } 
+                }
             }
         NOT = { exists = BRZ }
         NOT = { year = 1840 }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 18
 
@@ -147,11 +147,11 @@ province_event = {
     picture = "Slaves"
 
     option = {
-        name = "EVTOPTA46302" 
+        name = "EVTOPTA46302"
         set_country_flag = Sabinada
         slaves = {
             militancy = 6
-        }       
+        }
     }
 }
 
@@ -165,17 +165,23 @@ country_event = {
     picture = "vargas"
 
     trigger = {
-        tag = BRZ
+        OR = {
+            tag = BRZ
+            tag = REI
+        }
+
         month = 3
         year = 1930
         NOT = {
             month = 11
         }
         government = democracy
-        }
-    mean_time_to_happen = {days = 20}
+		average_militancy = 3
+	}
+
+	mean_time_to_happen = { months = 12 }
     fire_only_once = yes
-    
+
     option = {
         name = "vargasopt1"
         clr_country_flag = communist_gov
@@ -196,118 +202,47 @@ country_event = {
         political_reform = first_past_the_post
         ruling_party_ideology = conservative
 
-        any_owned = {
-            limit = {
-                is_colonial = no
-            }
-            any_pop = {
-                scaled_militancy = {
-                    factor = 3
-                    ideology = liberal
-                }
-                scaled_consciousness = {
-                    factor = 4
-                    ideology = liberal
-            }
-        }
-        }
-        ai_chance = { factor = 0.8 }
-        }
-        
-option = {
-        name = "vargasopt2"
-        any_owned = {
-            limit = {
-                is_core = RGS
-            }
-            secede_province = RGS
-        }
-        RGS = {
-            capital = 2463
-            leadership = 80
-        }
-        war = {
-            target = RGS
-            attacker_goal = {
-                casus_belli = civil_war
-            }
-            defender_goal = {
-                casus_belli = status_quo
-            }
-        }
-                ai_chance = {
-            factor = 0.2
-            }
-        }
-    }
-        
-##############Golden Law
+		any_owned = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				scaled_militancy = {
+					factor = 3
+					ideology = liberal
+				}
+				scaled_consciousness = {
+					factor = 4
+					ideology = liberal
+			}
+		}
+		}
+	}
 
-country_event = {
-
-    id = 50001
-    title = "goldentitle"
-    desc = "goldendesc"
-    picture = "Brazilian_abolition"
-
-    trigger = {
-    OR = {
-        tag = BRZ 
-        tag = REI
-        }
-        month = 4
-        year = 1888
-        OR = {
-        slavery = yes_slavery
-        slavery = freedom_of_womb
-        }
-        NOT = {
-            month = 5
-            }
-        }
-        
-        mean_time_to_happen = {days = 10}
-        fire_only_once = yes
-    
     option = {
-            name = "goldenopt1"
-            political_reform = no_slavery
-            badboy = -1
-            poor_strata = {
-                consciousness = -2
-                militancy = -1
-            }
-        slaves = {
-        militancy = -4
-        consciousness = -2
+		name = "vargasopt2"
+		any_owned = {
+			limit = {
+				is_core = RGS
+			}
+			secede_province = RGS
+		}
+		RGS = {
+			capital = 2463
+			leadership = 80
+		}
+		war = {
+			target = RGS
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
     }
-    rich_strata = {
-    militancy = 2
-    consciousness = 5
-    ideology = {
-    factor = 0.1
-    value = liberal
-        }
-    }
-    add_accepted_culture = afro_brazilian
-    ai_chance = {
-            factor = 0.9
-            }
-    }
-option = {
-        name = "goldenopt2"
-        badboy = 1
-        prestige = -10
-        slaves = {
-        militancy = 7
-        consciousness = 8
-    }
-            ai_chance = {
-            factor = 0.1
-            }
-    }
-
 }
+
 ####################Pedro II Abdication
 
 country_event = {
@@ -318,25 +253,163 @@ country_event = {
     picture = "DPII"
 
     trigger = {
-        tag = BRZ 
+        OR = {
+            tag = BRZ
+            tag = REI
+        }
         month = 10
         year = 1889
         OR = {
+			average_militancy = 3
+			average_consciousness = 6
+		}
+		OR = {
         government = absolute_monarchy
-        government = prussian_constitutionalism 
+        government = prussian_constitutionalism
         government = hms_government
             }
-        NOT = {
-            month = 11
-        }
-    }
+		has_country_flag = coronation_of_pedro
+		NOT = { month = 11 }
+	}
+	mean_time_to_happen = { months = 24 }
 
+	fire_only_once = yes
+	option = {
+		name = "EVTOPTA50000"
+		clr_country_flag = coronation_of_pedro
+		2461 = { change_province_name = "Florianópolis" }
+		government = democracy
+		add_country_modifier = { name = small_immigration_boom duration = 1095 }
+		clr_country_flag = communist_gov
+		clr_country_flag = absolute_monarchy_gov
+		clr_country_flag = semi_constitutional_monarchy_gov
+		clr_country_flag = constitutional_monarchy_gov
+		set_country_flag = democracy_gov
+		clr_country_flag = presidential_dictatorship_gov
+		clr_country_flag = fascist_gov
+		clr_country_flag = anarcho_liberal_gov
+		random_owned = {
+			limit = { NOT = { owner = { upper_house_composition = population_equal_weight } } }
+			owner = { political_reform = population_equal_weight }
+        }
+		random_owned = {
+			limit = { NOT = { owner = { press_rights = free_press } } }
+			owner = { political_reform = free_press }
+    }
+		random_owned = {
+			limit = { NOT = { owner = { public_meetings = yes_meeting } } }
+			owner = { political_reform = yes_meeting }
+		}
+		random_owned = {
+			limit = { NOT = { owner = { citizens_rights = all_voting_pops } } }
+			owner = { political_reform = all_voting_pops }
+		}
+		random_owned = {
+			limit = { NOT = { owner = { voting_system = first_past_the_post } } }
+			owner = { political_reform = first_past_the_post }
+		}
+		random_owned = {
+			limit = { owner = { OR = { vote_franschise = landed_voting vote_franschise = none_voting } } }
+			owner = { political_reform = wealth_weighted_voting }
+		}
+		random_owned = {
+			limit = { owner = { OR = { political_parties = underground_parties political_parties = harassment } } }
+			owner = { political_reform = gerrymandering }
+		}
+		ruling_party_ideology = liberal
+		any_pop = { ideology = { factor = 0.02 value = liberal } }
+		rich_strata = { militancy = -1 consciousness = -3 }
+		ai_chance = { factor = 90 }
+	}
+	option = {
+		name = "EVTOPTB50000"
+		rich_strata = { militancy = 8 consciousness = 7 }
+		middle_strata = { militancy = 2 consciousness = 3 }
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+
+	id = 50003
+	title = "EVTNAME50003"
+	desc = "EVTDESC50003"
+	picture = "juiz_de_fora"
+	trigger = {
+        OR = {
+            tag = BRZ
+            tag = REI
+        }
+		year = 1860
+	}
+	mean_time_to_happen = { months = 12 }
     fire_only_once = yes
-    
+
     option = {
-        name = "EVTOPTA50000"
+		name = "EVTOPTA50003"
+		2446 = { change_province_name = "Juiz de Fora" }
+	}
+}
+# BRZ - Coronation of Dom Pedro II
+country_event = {
+	id = 110074
+	title = "EVTNAME110074"
+	desc = "EVTDESC110074"
+	picture = "BRZ_pedro_coronation"
+	trigger = {
+        OR = {
+            tag = BRZ
+            tag = REI
+        }
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+		year = 1840
+		NOT = { year = 1840 }
+	}
+	mean_time_to_happen = { months = 12 }
+	fire_only_once = yes
+	option = {
+		name = "EVT110074OPTA" #Long live!
+		prestige = 5
+		any_pop = { militancy = -1 consciousness = 1 }
+		set_country_flag = coronation_of_pedro
+	}
+}
+# BRZ - Death of Dom Pedro II
+country_event = {
+	id = 110075
+	title = "EVTNAME110075"
+	desc = "EVTDESC110075"
+	picture = "BRZ_pedro_death"
+	trigger = {
+        OR = {
+            tag = BRZ
+            tag = REI
+        }
+		has_country_flag = coronation_of_pedro
+		year = 1889
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+	mean_time_to_happen = { months = 30 }
+	fire_only_once = yes
+	option = {
+		name = "EVT110075OPTA" #He will be missed.
+		clr_country_flag = coronation_of_pedro
+		ai_chance = { factor = 60 }
+	}
+	option = {
+		name = "EVT110075OPTB" #Time for Democracy
+		clr_country_flag = coronation_of_pedro
+		prestige = -10
         2461 = { change_province_name = "Florianópolis" }
         government = democracy
+		add_country_modifier = { name = small_immigration_boom duration = 1095 }
         clr_country_flag = communist_gov
         clr_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -354,400 +427,147 @@ country_event = {
         political_reform = first_past_the_post
         political_reform = all_voting_pops
         ruling_party_ideology = liberal
-        
-    any_pop = {
-    ideology = {
-    factor = 0.02
-    value = liberal
-        }
-    }
-    rich_strata = {
-        militancy = -1
-        consciousness = -3
-        }
-        ai_chance = {
-            factor = 0.9
+
+		ai_chance = { factor = 40 }
             }
         }
-        
-    option = {
-        name = "EVTOPTB50000"
-            rich_strata = {
-        militancy = 8
-        consciousness = 7
-    }
-            middle_strata = {
-        militancy = 2
-        consciousness = 3
-    }
-        ai_chance = {
-            factor = 0.1
-            }
-        }
-    }
-    
+
+# Cabanagem
+
 country_event = {
 
-    id = 50003
-    title = "EVTNAME50003"
-    desc = "EVTDESC50003"
-    picture = "juiz_de_fora"
+	id = 46305
+	title = "EVTNAME46305"
+	desc = "EVTDESC46305"
+	picture = "cabanagem"
 
     trigger = {
         OR = {
-        tag = BRZ 
-        tag = REI
-        }
-        year = 1860
-    }
-
-    mean_time_to_happen = { months = 12 }
-    
-    fire_only_once = yes
-    
-    option = {
-        name = "EVTOPTA50003"
-        2446 = { change_province_name = "Juiz de Fora" }
-        }
-    }
-
-country_event = {
-
-    id = 32499
-
-    trigger = {
-        tag = REI
-        year = 1836
-    }
-    
-    fire_only_once = yes
- 
-    mean_time_to_happen =  {
-        months = 3
-
-        modifier = {
-            factor = 0.55
-            year = 1837
-        }
-
-        modifier = {
-            factor = 0.75 
-            year = 1838
-        }
-    }
-
-    title = "EVTNAME32499"
-    desc = "EVTDESC32499"
-    picture = "greatpowers"
-
-    option = {
-        name = "EVTOPTA32499" 
-        set_country_flag = stay_BR
-        add_country_modifier = {
-            name = UR_tensions
-            duration = -1
-        }
-        BRZ = {
-            all_core = {
-                remove_core = BRZ
-            }
-        }
-        ai_chance = {
-            factor = 45
-        }
-    }
-
-    option = {
-        name = "EVTOPTB32499"
-        set_country_flag = move_PR
-        add_country_modifier = {
-            name = UR_tensions
-            duration = -1
-        }
-        capital = 521
-        POR = {
-            all_core = {
-                remove_core = POR
-            }
-        }
-        ai_chance = {
-            factor = 55
-        }
-    }
-}
-
-country_event = {
-     
-            id = 32498
-     
-            trigger = {
-                    has_country_flag = stay_BR
-                    521 = {
-                        owned_by = THIS
-                        is_core = POR
-                        }
-                    NOT = {
-                            has_global_flag = BRPR_civil_war_has_happened
-                    }
-            }
-     
-            title = "EVTNAME32498"
-            desc = "EVTDESC32498"
-     
-            picture = "greatpowers"
-     
-            mean_time_to_happen = {
-                    months = 3
-            }
-     
-            option = {
-                    name = "EVTOPTA32498"
-                    random_owned = {
-                            limit = {
-                                    is_core = POR
-                            }
-                            any_pop = {
-                                    consciousness = 1
-                                    militancy = 1
-                            }
-                            add_province_modifier = {
-                                    name = PR_rebellion
-                                    duration = 1825
-                            }
-                    }
-            }
-    }
-
-    country_event = {
-     
-            id = 32497
-     
-            trigger = {
-                    has_country_flag = move_PR
-                    2447 = {
-                        owned_by = THIS
-                        is_core = BRZ
-                        }
-                    NOT = {
-                            has_global_flag = BRPR_civil_war_has_happened
-                    }
-            }
-     
-            title = "EVTNAME32497"
-            desc = "EVTDESC32497"
-     
-            picture = "greatpowers"
-     
-            mean_time_to_happen = {
-                    months = 3
-            }
-     
-            option = {
-                    name = "EVTOPTA32497"
-                    random_owned = {
-                            limit = {
-                                    is_core = BRZ
-                            }
-                            any_pop = {
-                                    consciousness = 1
-                                    militancy = 1
-                            }
-                            add_province_modifier = {
-                                    name = PR_rebellion
-                                    duration = 1825
-                            }
-                    }
-            }
-    }
-    
-    country_event = {
-        id = 4662011
-        title = "EVTNAME4662011"
-        desc = "EVTDESC4662011"
-        picture = "brazil_court"
-
-        trigger = {
+            tag = BRZ
             tag = REI
-            2447 = { controlled_by = REB is_core = BRZ owned_by = REI }
-                NOT = {
-                    has_global_flag = BRPR_civil_war_has_happened
-                }
-            }
-            
-        fire_only_once = yes
-        mean_time_to_happen = { days = 20 }
-        
-        option = {
-            name = "EVTOPTA4662011"
-            release = BRZ
-            ENG_1979 = { any_owned = { limit = { owned_by = REI } secede_province = BRZ } }
-            REI = { any_owned = { limit = { is_core = BOL } secede_province = BOL remove_core = BRZ remove_core = REI } }
-            war = {
-            target = BRZ
-            attacker_goal = {
-                casus_belli = civil_war
-            }
-            defender_goal = {
-                casus_belli = status_quo
-            }
-            }
-        set_global_flag = BRPR_civil_war_has_happened
-                BRZ = {
-                    political_reform = mandatory_service
-                    capital = 2447
-                    leadership = 80
-                    treasury = 10000
-                    small_arms = 100
-                    ammunition = 200
-                    canned_food = 200
-                    wine = 200
-                    liquor = 200
-                    }
-        ai_chance = {
-            factor = 35
         }
-            }
-        option = {
-            name = "EVTOPTB4662011"
-            release = BRZ
-            BRZ = { all_core = { remove_core = REI } }
-            REI = { any_owned = { limit = { is_core = BOL } secede_province = BOL remove_core = BRZ remove_core = REI } }
-            change_tag = POR
-            REI = { all_core = { remove_core = REI } }
-            set_global_flag = BRPR_civil_war_has_happened
-        ai_chance = {
-            factor = 45
-        }
-        }
-        option = {
-            name = "EVTOPTC4662011"
-            release = BRZ
-            ENG_1979 = { any_owned = { limit = { owned_by = REI } secede_province = BRZ } }
-            REI = { any_owned = { limit = { is_core = BOL } secede_province = BRZ remove_core = REI add_core = BRZ } }
-            change_tag = POR
-            REI = { all_core = { remove_core = REI } }
-        ai_chance = {
-            factor = 20
-        }
-    }
+		owns = 2410
+		NOT = { upper_house_composition = state_equal_weight }
+		NOT = { upper_house_composition = population_equal_weight }
+		any_owned_province = {
+			state_id = 2410 #Belem
+			any_pop = {
+				OR = {
+					militancy = 2
+					consciousness = 4
+					NOT = { life_needs = 0.75 }
+				}
+			}
+		}
+		year = 1836
+		NOT = { year = 1840 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 18
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1837
+		}
+
+		modifier = {
+			factor = 0.80 #increase likelihood to happen
+			year = 1838
+		}
+		modifier = {
+			factor = 0.90 #increase likelihood to happen
+			year = 1839
+		}
+	}
+
+	option = {
+		name = "EVTOPTA46305"
+		BRZ_2408 = {
+			add_province_modifier = { name = nationalist_agitation duration = 1095 }
+			rich_strata = { militancy = 5 consciousness = 8 }
+		}
+		BRZ_2401 = {
+			rich_strata = { militancy = 3 consciousness = 4 }
+			add_province_modifier = { name = nationalist_agitation duration = 548 }
+		}
+	}
 }
-    
-    country_event = {
-        id = 4662012
-        title = "EVTNAME4662012"
-        desc = "EVTDESC4662012"
-        picture = "deliberation"
-        
-        is_triggered_only = yes
-        
-        option = {
-            name = "EVTOPTA4662012"
-            ENG_1979 = { secede_province = FROM }
-            money = 50000
-            FROM = { money = -50000 prestige = 15 }
-            prestige = 10
-            set_global_flag = guyana_sale_full
-            relation = { who = FROM value = 100 }
-        ai_chance = {
-            factor = 45
+
+# Balaiada
+country_event = {
+	id = 46306
+	title = "EVTNAME46306"
+	desc = "EVTDESC46306"
+	picture = "balaiada"
+
+	trigger = {
+		owns = 2425 #Chapada
+        OR = {
+            tag = BRZ
+            tag = REI
         }
-        }
-        option = {
-            name = "EVTOPTB4662012"
-            2241 = { 
-                owner = { 
-                    country_event = 4662013
-                }
-            }
-            prestige = 6
-        ai_chance = {
-            factor = 35
-        }
-        }
-        option = {
-            name = "EVTOPTC4662012"
-            2241 = { 
-                owner = { 
-                    country_event = 4662014
-                }
-            }
-            prestige = 4
-        ai_chance = {
-            factor = 20
-            }
-        }
-    }
-    
-    country_event = {
-        id = 4662013
-        title = "EVTNAME4662013"
-        desc = "EVTDESC4662013"
-        picture = "deliberation"
-        
-        is_triggered_only = yes
-        
-        option = {
-        name = "EVTOPTA4662013"
-            2245 = { secede_province = THIS }
-            2240 = { secede_province = THIS }
-        CAN = { money = 25000}
-        money = -25000
-        prestige = 5
-        set_global_flag = guyana_sale_half
-        relation = { who = CAN value = 50 }
-            ai_chance = {
-                factor = 85
-            }
-        }
-        
-        option = {
-        name = "EVTOPTB4662013"
-        prestige = -5
-        relation = { who = CAN value = -100 }
-            ai_chance = {
-                factor = 15
-            }
-        }
-    }   
-        
-    country_event = {
-        id = 4662014
-        title = "EVTNAME4662014"
-        desc = "EVTDESC4662014"
-        picture = "deliberation"
-        
-        is_triggered_only = yes
-        
-        option = {
-        name = "EVTOPTA4662014"
-        prestige = -10
-        relation = { who = CAN value = -100 }
-        ai_chance = {
-            factor = 65
-            }
-        }
-        
-        option = {
-        name = "EVTOPTB4662014"
-        prestige = 10
-        badboy = 5
-                casus_belli = {
-                    type = place_in_the_sun
-                    target = CAN
-                    months = 30
-                }
-            war = {
-            target = CAN
-                    attacker_goal = {
-                        casus_belli = place_in_the_sun
-                        state_province_id = 1979
-                    }
-            defender_goal = {
-                casus_belli = status_quo
-            }
-        }
-        ai_chance = {
-            factor = 35
-            }
-        }
-    }
+		year = 1838
+		any_owned_province = {
+			OR = {
+				province_id = 2425
+				province_id = 2424
+			}
+			OR = {
+				average_consciousness = 4
+				average_militancy = 3
+				unemployment = 0.05
+				any_pop = {
+					strata = rich
+					NOT = { everyday_needs = 0.75 }
+				}
+			}
+		}
+		OR = {
+			ruling_party_ideology = conservative
+			ruling_party_ideology = reactionary
+		}
+		NOT = { year = 1842 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 18
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1839
+		}
+
+		modifier = {
+			factor = 0.80 #increase likelihood to happen
+			year = 1840
+		}
+		modifier = {
+			factor = 0.90 #increase likelihood to happen
+			year = 1841
+		}
+	}
+
+	option = {
+		name = "EVTOPTA46306"
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 2425
+					province_id = 2424
+				}
+			}
+			poor_strata = {
+				scaled_militancy = { factor = 6 ideology = liberal }
+			}
+			rich_strata = {
+				scaled_militancy = { factor = 8 ideology = liberal }
+			}
+			add_province_modifier = { name = liberal_agitation duration = 1095 }
+		}
+	}
+}

@@ -1,479 +1,308 @@
 country_event = {
-        id = 66550
-        title = "EVTNAME66550"
-        desc = "EVTDESC66550"
-    picture = "meeting"
- 
-        is_triggered_only = yes
- 
-        option = {
-                name = "EVTOPTA66550"
-                CAN = {
-                    country_event = 66551
-                }
-                ai_chance = {
-                        factor = 90
-                }
-        }
- 
-        option = {
-                name = "EVTOPTB66550"
-                CAN = {
-            country_event = 66552
-        }
-                ai_chance = {
-                        factor = 10
-                }
-        }
-}
- 
-country_event = {
-        id = 66551
-        title = "EVTNAME66551"
-        desc = "EVTDESC66551"
-    picture = "administration"
- 
-        is_triggered_only = yes
- 
-        option = {
-                name = "EVTOPTA66551"
-                FRA = {
-            country_event = 66553
-        }
-        relation = {
-            who = FRA
-            value = 150
-        }
-                ai_chance = {
-                        factor = 45
-                }
-        }
- 
-        option = {
-                name = "EVTOPTB66551"
-                FRA = {
-            country_event = 66554
-        }
-                ai_chance = {
-                        factor = 55
-                }
-        }
-}
- 
-country_event = {
-        id = 66552
-        title = "EVTNAME66552"
-        desc = "EVTDESC66552"
-    picture = "meeting3"
-       
-        is_triggered_only = yes
-       
-        option = {
-                name = "EVTOPTA66552"
-                relation = {
-            who = FRA
-            value = -50
-        }
-        }
-}
- 
-country_event = {
-        id = 66553
-        title = "EVTNAME66553"
-        desc = "EVTDESC66553"
-    picture = "Travel"
- 
-        is_triggered_only = yes
- 
-        option = {
-                name = "EVTOPTA66553"
-                CAN = {
-                        2230 = {
-                                secede_province = FRA
-                                remove_core = CAN
-                        }
-                        2228 = {
-                                secede_province = FRA
-                                remove_core = CAN
-                        }
-                        77 = {
-                                secede_province = FRA
-                                remove_core = CAN
-                        }
-                }
-        relation = {
-            who = CAN
-            value = 150
-        }
-        }
-}
- 
-country_event = {
-        id = 66554
-        title = "EVTNAME66554"
-        desc = "EVTDESC66554"
-    picture = "slavepower"
- 
-        is_triggered_only = yes
- 
-        option = {
-                name = "EVTOPTA66554"
-                money = 100000
-                FRA = {
-                        2230 = {
-                remove_core = FRA
-            }
-                        2228 = {
-                remove_core = FRA
-            }
-                        77 = {
-                remove_core = FRA
-            }
-                }
-        CAN = {
-                        2230 = {
-                add_core = CAN
-            }
-                        2228 = {
-                add_core = CAN
-            }
-                        77 = {
-                add_core = CAN
-            }
-                }
-                relation = {
-            who = CAN
-            value = 50
-        }
-                CAN = {
-            country_event = 66556
-        }
-                ai_chance = {
-                        factor = 45
-                }
-        }
- 
-        option = {
-                name = "EVTOPTB66554"
-        relation = {
-            who = CAN
-            value = -50
-        }
-                CAN = {
-            country_event = 66557
-        }
-                ai_chance = {
-                        factor = 55
-                }
-        }
-}
- 
-country_event = {
-        id = 66556
-        title = "EVTNAME66556"
-        desc = "EVTDESC66556"
-    picture = "Sturt"
-       
-        is_triggered_only = yes
-       
-        option = {
-                name = "EVTOPTA66556"
-                prestige = 5
-                money = -100000
-                relation = {
-            who = FRA
-            value = 20
-        }
-        }
-}
- 
-country_event = {
-        id = 66557
-        title = "EVTNAME66557"
-        desc = "EVTDESC66557"
-    picture = "finepeople"
-       
-        is_triggered_only = yes
-       
-        option = {
-                name = "EVTOPTA66557"
-                relation = {
-            who = FRA
-            value = -50
-        }
-        }
-}
+	id = 44351
+	title = "EVTNAME44351"
+	desc = "EVTDESC44351"
+	picture = "confederation"
 
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT44351OPTA"
+		set_country_flag = promised_national_railway
+		prestige = 5
+		COL = {
+			all_core = { add_core = CAN }
+		}
+		FROM = {
+			any_owned = {
+				limit = { is_core = COL }
+				secede_province = CAN
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "EVT44351OPTB"
+		set_country_flag = refused_columbia
+		prestige = -10
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
 
 #The Pacific Scandal
 country_event = {
-    id = 44300
-    title = "EVTNAME44300"
-    desc = "EVTDESC44300"
-    picture = "train"
+	id = 44300
+	title = "EVTNAME44300"
+	desc = "EVTDESC44300"
+	picture = "train"
 
-    trigger = {
-        tag = CAN 
-        year = 1872
-        has_country_flag = build_the_cnr
-    }
- 
-    fire_only_once = yes
- 
-    mean_time_to_happen =  {
-        months = 12
-        modifier = {
-            factor = 0.75 #increase likelihood to happen
-            year = 1873
-        }
-        modifier = {
-            factor = 0.95 #increase likelihood to happen
-            year = 1875
-        }
-    }
+	trigger = {
+		tag = CAN
+		year = 1872
+		has_country_flag = build_the_cnr
+	}
 
-    option = {
-        name = "EVTOPTA44300" 
-        any_pop = {
-            ideology = {
-                factor = 0.1
-                value = liberal
-            }
-            scaled_consciousness = {
-                factor = 3
-                ideology = liberal
-            }
-        }
-    }
+	fire_only_once = yes
 
-    option = {
-        name = "EVTOPTB44300" 
-        any_pop = {
-            ideology = {
-                factor = 0.1
-                value = liberal
-            }
-            scaled_militancy = {
-                factor = 3
-                ideology = liberal
-            }
-        }
-    }
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1873
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1875
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44300"
+		any_pop = {
+			ideology = {
+				factor = 0.1
+				value = liberal
+			}
+			scaled_consciousness = {
+				factor = 3
+				ideology = liberal
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44300"
+		any_pop = {
+			ideology = {
+				factor = 0.1
+				value = liberal
+			}
+			scaled_militancy = {
+				factor = 3
+				ideology = liberal
+			}
+		}
+	}
 }
 
 #Louis Riel and the 1st Métis Rebellion
 country_event = {
-    id = 44301
-    title = "EVTNAME44301"
-    desc = "EVTDESC44301"
-    picture = "Metis"
+	id = 44301
+	title = "EVTNAME44301"
+	desc = "EVTDESC44301"
+	picture = "Metis"
 
-    trigger = {
-        tag = CAN 
-        year = 1868
-        owns = 36 #Winnipeg MB
-        owns = 57 #Ottawa ON
-        NOT = {
-            has_country_flag = RielRebellion
-            has_country_flag = RielRebellionIgnored
-        }
-    }
- 
-    mean_time_to_happen =  {
-        months = 8
-        modifier = {
-            factor = 0.75 #increase likelihood to happen
-            year = 1869
-        }
-        modifier = {
-            factor = 0.95 #increase likelihood to happen
-            year = 1871
-        }
-    }
+	trigger = {
+		tag = CAN
+		year = 1868
+		owns = 36 #Winnipeg MB
+		owns = 57 #Ottawa ON
+		NOT = {
+			has_country_flag = RielRebellion
+			has_country_flag = RielRebellionIgnored
+		}
+	}
 
-    option = {
-        name = "EVTOPTA44301" 
-        set_country_flag = RielRebellion
-        set_country_flag = RielRebellionIgnored
-        any_pop = {
-            limit = {
-                has_pop_culture = french_canadian
-            }
-            militancy = 5
-            consciousness = 3
-        }
-        any_pop = {
-            limit = {
-                has_pop_culture = metis
-            }
-            militancy = -3
-            consciousness = 2
-        }
-        any_pop = {
-            limit = {
-                has_pop_culture = anglo_canadian
-            }
-            consciousness = 2
-        }
-        ai_chance = {
-            factor = 20
-        }
-    }
+	mean_time_to_happen =  {
+		months = 8
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1869
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1871
+		}
+	}
 
-    option = {
-        name = "EVTOPTB44301" 
-        set_country_flag = RielRebellion
-        any_pop = {
-            limit = {
-                has_pop_culture = french_canadian
-            }
-            militancy = 1
-            consciousness = 3
-        }
-        any_pop = {
-            limit = {
-                has_pop_culture = metis
-            }
-            militancy = 10
-            consciousness = 5
-        }
-        any_pop = {
-            limit = {
-                has_pop_culture = anglo_canadian
-            }
-            militancy = -1
-            consciousness = 1
-        }
-        any_owned = {
-            limit = { has_pop_culture = metis }
-            add_province_modifier = {
-                name = nationalist_agitation
-                duration = 365
-            }
-        }
-        ai_chance = {
-            factor = 80
-        }
-    }
+	option = {
+		name = "EVTOPTA44301"
+		set_country_flag = RielRebellion
+		set_country_flag = RielRebellionIgnored
+		any_pop = {
+			limit = {
+				has_pop_culture = french_canadian
+			}
+			militancy = 5
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = metis
+			}
+			militancy = -3
+			consciousness = 2
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = anglo_canadian
+			}
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44301"
+		set_country_flag = RielRebellion
+		any_pop = {
+			limit = {
+				has_pop_culture = french_canadian
+			}
+			militancy = 1
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = metis
+			}
+			militancy = 10
+			consciousness = 5
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = anglo_canadian
+			}
+			militancy = -1
+			consciousness = 1
+		}
+		any_owned = {
+			limit = { is_core = MTC }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
+			}
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
 }
 
 #The Northwest Rebellion
 country_event = {
-    id = 44302
-    title = "EVTNAME44302"
-    desc = "EVTDESC44302"
-    news = yes
-    news_desc_long = "EVTDESC44302_NEWS_LONG"
-    news_desc_medium = "EVTDESC44302_NEWS_MEDIUM"
-    news_desc_short = "EVTDESC44302_NEWS_SHORT"
-    picture = "Rebellion"   
-    
-    trigger = {
-        tag = CAN 
-        year = 1884
-        owns = 57 #Ottawa ON
-        has_country_flag = RielRebellion
-        NOT = { has_country_flag = RielRebellionIgnored }
-        OR = {
-            owns = 30 #Saskatchewan 
-            owns = 34  
-            owns = 38 #Western Manitoba 
-            owns = 39  
-            owns = 40 
-            owns = 41
-        } 
-        NOT = {
-            year = 1888
-            has_country_flag = NorthwestRebellion
-        }
-    }
- 
-    mean_time_to_happen =  {
-        months = 8
-        modifier = {
-            factor = 0.75 #increase likelihood to happen
-            year = 1885
-        }
-        modifier = {
-            factor = 0.95 #increase likelihood to happen
-            year = 1886
-        }
-    }
+	id = 44302
+	title = "EVTNAME44302"
+	desc = "EVTDESC44302"
+	news = yes
+	news_desc_long = "EVTDESC44302_NEWS_LONG"
+	news_desc_medium = "EVTDESC44302_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC44302_NEWS_SHORT"
+	picture = "Rebellion"
 
-    option = {
-        name = "EVTOPTA44302" 
-        set_country_flag = NorthwestRebellion
-        any_pop = {
-            limit = {
-                has_pop_culture = metis
-            }
-            militancy = 7
-            consciousness = 5
-        }
-        any_pop = {
-            limit = {
-                has_pop_culture = cree
-            }
-            militancy = 3
-            consciousness = 3
-        }
-        any_pop = {
-            limit = {
-                has_pop_culture = native_american_minor
-            }
-            militancy = 1
-            consciousness = 2
-        }
-        any_owned = {
-            limit = { is_core = MTC }
-            add_province_modifier = {
-                name = nationalist_agitation
-                duration = 730
-            }
-        }
-    }
+	trigger = {
+		tag = CAN
+		year = 1884
+		owns = 57 #Ottawa ON
+		has_country_flag = RielRebellion
+		NOT = { has_country_flag = RielRebellionIgnored }
+		OR = {
+			owns = 30 #Saskatchewan
+			owns = 34
+			owns = 38 #Western Manitoba
+			owns = 39
+			owns = 40
+			owns = 41
+		}
+		NOT = {
+			year = 1888
+			has_country_flag = NorthwestRebellion
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 8
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1885
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1886
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44302"
+		set_country_flag = NorthwestRebellion
+		any_pop = {
+			limit = {
+				has_pop_culture = metis
+			}
+			militancy = 7
+			consciousness = 5
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = cree
+			}
+			militancy = 3
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = native_american_minor
+			}
+			militancy = 1
+			consciousness = 2
+		}
+		any_owned = {
+			limit = { is_core = MTC }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 730
+			}
+		}
+	}
 }
 
 #Pacification of the Metis
 country_event = {
-    id = 44303
-    title = "EVTNAME44303"
-    desc = "EVTDESC44303"
-    picture = "Metis"
-    
-    trigger = {
-        tag = CAN
-        owns = 36
-        owns = 30
-        revolution_n_counterrevolution = 1
-        OR = {
-            has_country_flag = RielRebellionIgnored
-            has_country_flag = NorthwestRebellion
-        }
-        NOT = {
-            has_country_flag = metis_pacification
-            any_owned_province = {
-                is_core = MTC
-                average_militancy = 1
-            }
-        }
-    }
-    
-    mean_time_to_happen = {
-        months = 36
-    }
-    
-    option = {
-        name = "EVT44303OPTA"
-        set_country_flag = metis_pacification
-        MTC = {
-            all_core = { remove_core = MTC }
-        }
-        any_pop = {
-            ideology = {
-                value = liberal
-                factor = 0.10
-            }
-        }
-    }
+	id = 44303
+	title = "EVTNAME44303"
+	desc = "EVTDESC44303"
+	picture = "Metis"
+
+	trigger = {
+		tag = CAN
+		owns = 36
+		owns = 30
+		revolution_n_counterrevolution = 1
+		OR = {
+			has_country_flag = RielRebellionIgnored
+			has_country_flag = NorthwestRebellion
+		}
+		NOT = {
+			has_country_flag = metis_pacification
+			any_owned_province = {
+				is_core = MTC
+				average_militancy = 1
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVT44303OPTA"
+		set_country_flag = metis_pacification
+		MTC = {
+			all_core = { remove_core = MTC }
+		}
+		any_pop = {
+			ideology = {
+				value = liberal
+				factor = 0.10
+			}
+		}
+	}
 }

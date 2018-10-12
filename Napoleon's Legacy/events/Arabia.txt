@@ -65,7 +65,7 @@ country_event = {
         modifier = {
             factor = 1.5
             citizenship_policy = full_citizenship
-        }       
+        }
         modifier = {
             factor = 0.9
             any_owned_province = {
@@ -106,24 +106,18 @@ country_event = {
         set_country_flag = arab_revolt
         set_global_flag = arab_revolt_has_begun
         random_owned = {
-            limit = {
-                owner = { accepted_culture = mashriqi }
-            }
+			limit = { owner = { accepted_culture = mashriqi } }
             owner = { remove_accepted_culture = mashriqi }
         }
         random_owned = {
-            limit = {
-                owner = { accepted_culture = misri }
-            }
+			limit = { owner = { accepted_culture = misri } }
             owner = { remove_accepted_culture = misri }
         }
         random_owned = {
-            limit = {
-                owner = { accepted_culture = bedouin }
-            }
+			limit = { owner = { accepted_culture = bedouin } }
             owner = { remove_accepted_culture = bedouin }
         }
-        any_pop = { 
+        any_pop = {
             limit = {
                 has_pop_culture = mashriqi
                 location = {
@@ -132,7 +126,7 @@ country_event = {
             }
             militancy = 10
         }
-        any_pop = { 
+        any_pop = {
             limit = {
                 has_pop_culture = misri
                 location = {
@@ -141,7 +135,7 @@ country_event = {
             }
             militancy = 10
         }
-        any_pop = { 
+        any_pop = {
             limit = {
                 has_pop_culture = bedouin
                 location = {
@@ -183,6 +177,18 @@ country_event = {
         set_country_flag = arab_revolt
         set_global_flag = arab_revolt_has_begun
         prestige = -10
+		random_owned = {
+			limit = { owner = { accepted_culture = mashriqi } }
+			owner = { remove_accepted_culture = mashriqi }
+		}
+		random_owned = {
+			limit = { owner = { accepted_culture = misri } }
+			owner = { remove_accepted_culture = misri }
+		}
+		random_owned = {
+			limit = { owner = { accepted_culture = bedouin } }
+			owner = { remove_accepted_culture = bedouin }
+		}
         any_country = {
             limit = {
                 any_core = { owned_by = THIS }
@@ -194,8 +200,9 @@ country_event = {
                 }
             }
             country_event = 96101
+			all_core = { remove_core = THIS }
         }
-        any_pop = { 
+        any_pop = {
             limit = {
                 has_pop_culture = mashriqi
                 location = {
@@ -204,7 +211,7 @@ country_event = {
             }
             militancy = 4
         }
-        any_pop = { 
+        any_pop = {
             limit = {
                 has_pop_culture = misri
                 location = {
@@ -213,7 +220,7 @@ country_event = {
             }
             militancy = 4
         }
-        any_pop = { 
+        any_pop = {
             limit = {
                 has_pop_culture = bedouin
                 location = {
@@ -262,7 +269,7 @@ country_event = {
                 factor = 0.25
                 war_policy = jingoism
             }
-        }           
+        }
     }
 }
 
@@ -285,7 +292,7 @@ country_event = {
 }
 
 country_event = {
-        
+
     id = 96102
     title = "EVTNAME96100" #Arab Revolt (for vassals)
     desc = "EVTDESC96102"
@@ -307,7 +314,7 @@ country_event = {
     option = {
         name = "EVT96102OPTA"
         set_country_flag = arab_revolt
-        any_pop = { 
+        any_pop = {
             limit = { is_culture_group = arab }
             militancy = 6
         }
@@ -325,7 +332,7 @@ country_event = {
     title = "EVTNAME96105" #End of the Arab Revolt
     desc = "EVTDESC96105"
     picture = "arab_revolt"
-    
+
     trigger = {
         has_country_flag = arab_revolt
         NOT = {
@@ -344,7 +351,7 @@ country_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 24
         modifier = {
@@ -392,7 +399,7 @@ country_event = {
             year = 1925
         }
     }
-    
+
     option = {
         name = "EVT96105OPTA"
         set_country_flag = arab_revolt_ended
@@ -409,7 +416,7 @@ province_event = {
     id = 96106
     title = "EVTNAME96106" #Arab Uprising in $PROVINCENAME$
     desc = "EVTDESC96106"
-    
+
     trigger = {
         owner = {
             has_country_flag = arab_revolt
@@ -419,7 +426,7 @@ province_event = {
                 is_culture_group = iranian_turanian
             }
         }
-        
+
         controlled_by = THIS
         NOT = { has_province_modifier = nationalist_agitation }
         any_core = {
@@ -435,7 +442,7 @@ province_event = {
             culture = misri
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
         modifier = {
@@ -475,7 +482,7 @@ province_event = {
             owner = { invention = secret_police }
         }
     }
-    
+
     option = {
         name = "EVT96106OPTA"
         owner = { prestige = -3 }
@@ -483,16 +490,16 @@ province_event = {
             name = nationalist_agitation
             duration = 1095
         }
-        any_pop = { 
+        any_pop = {
             limit = { is_culture_group = arab }
             militancy = 6
-        }   
+        }
     }
-    
+
     option = {
         name = "EVT96106OPTB"
         state_scope = {
-            any_pop = { 
+            any_pop = {
                 limit = { is_culture_group = arab }
                 militancy = 4
             }
@@ -578,7 +585,7 @@ country_event = {
                 who = NEJ
                 value = 100
             }
-        }               
+        }
     }
 }
 
@@ -599,7 +606,7 @@ country_event = {
     mean_time_to_happen = {
         months = 1
     }
-    
+
     option = {
         name = "EVT96115OPTA"
         leave_alliance = EGY
@@ -821,9 +828,9 @@ country_event = {
     title = "EVTNAME98725" #The Call for Arab Unity
     desc = "EVTDESC98725"
     picture = "arab_revolt"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT98725OPTA"
         any_country = {
@@ -897,7 +904,7 @@ country_event = {
     title = "EVTNAME98725"
     desc = "EVTDESC98725"
     picture = "wahhabism"
-    
+
     trigger = {
         has_country_flag = claimed_yemen
         ai = yes
@@ -921,9 +928,9 @@ country_event = {
             NOT = { truce_with = MHR }
             NOT = { year = 1900 }
     }
-    
+
     mean_time_to_happen = { days = 30 }
-    
+
     option = {
         name = "EVT98725OPTA"
             diplomatic_influence = { who = LHJ value = -400 }

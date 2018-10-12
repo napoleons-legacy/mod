@@ -1,0 +1,535 @@
+# TODO REFORMAT THIS FILE. IT IS UGLY
+
+country_event = {
+
+    id = 32490
+
+    trigger = {
+        tag = TUR
+        year = 1836
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 1
+
+        modifier = {
+            factor = 0.1
+            average_militancy = 0
+        }
+    }
+
+    title = "EVTNAME32490"
+    desc = "EVTDESC32490"
+    picture = "Execution"
+
+    option = {
+        name = "EVTOPTA32490"
+        set_country_flag = mad_greeks
+    }
+}
+
+country_event = {
+
+    id = 32489
+
+    trigger = {
+            has_country_flag = mad_greeks
+    NOT = {
+        exists = GRE
+        }
+    }
+
+    title = "EVTNAME32489"
+    desc = "EVTDESC32489"
+
+    picture = "Riot"
+
+    mean_time_to_happen = {
+        months = 18
+    }
+
+    fire_only_once = yes
+
+        option = {
+                name = "EVTOPTA32489"
+        set_country_flag = madder_greeks
+        any_pop = {
+            limit = { culture = greek }
+            militancy = 5
+        }
+                any_owned = {
+                        limit = { is_core = GRE
+            NOT = { has_province_modifier = GR_rebellion
+                }
+                        }
+
+                        add_province_modifier = {
+                                name = GR_rebellion
+                                duration = 2250
+                        }
+                }
+        }
+}
+
+country_event = {
+    id = 32488
+    title = "EVTNAME32488"
+    desc = "EVTDESC32488"
+    picture = "greatpowers"
+
+    trigger = {
+        OR = {
+            tag = BRI
+            tag = FRA
+            tag = RUS
+        }
+        NOT = {
+            exists = GRE
+        }
+        NOT = { has_global_flag = great_wars_enabled }
+        NOT = {
+            has_country_flag = dealt_with
+        }
+    }
+
+    mean_time_to_happen =  {
+        months = 3
+
+        modifier = {
+            factor = 0.75
+            year = 1838
+        }
+
+        modifier = {
+            factor = 0.55
+            year = 1840
+        }
+    }
+
+        option = {
+                name = "EVTOPTA32488"
+            relation = {
+                    who = TUR
+                        value = -100
+                }
+                TUR = {
+                        country_event = { id=32487 days=0 }
+                }
+        money = -10000
+        set_country_flag = dealt_with
+        ai_chance = {
+            factor = 60
+                }
+        }
+
+    option = {
+                name = "EVTOPTB32488"
+                relation = {
+                    who = TUR
+                        value = 25
+                }
+        rich_strata = {
+            militancy = 1
+            consciousness = 1
+        }
+        middle_strata = {
+            militancy = 2
+            consciousness = 2
+        }
+        set_country_flag = dealt_with
+        ai_chance = {
+            factor = 40
+                }
+        }
+}
+
+country_event = {
+
+        id = 32487
+
+        title = "EVTNAME32487"
+        desc = "EVTDESC32487"
+
+        picture = "Riot"
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+        option = {
+                name = "EVTOPTA32487"
+                TUR = {
+            any_pop = {
+                limit = {
+                    has_pop_culture = greek
+                }
+                militancy = 1.5
+            }
+                }
+        set_country_flag = greeks_being_putindebt
+        }
+}
+
+country_event = {
+
+    id = 86080
+    trigger = {
+        tag = TUR
+        year = 1839
+        has_country_flag = madder_greeks
+        NOT = {
+            exists = GRE
+        }
+        has_country_flag = greeks_being_putindebt
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 3
+    }
+
+    title = "EVTNAME86080"
+    desc = "EVTDESC86080"
+    picture = "Riot"
+
+    option = {
+        name = "EVTOPTA86080"
+
+        any_owned = {
+            limit = {
+                pop_majority_culture = greek
+                average_militancy = 3
+                NOT = {
+                    region = TUR_823
+                    region = TUR_855
+                }
+            }
+            secede_province = GRE
+        }
+        GRE = {
+            government = absolute_monarchy
+            political_reform = mandatory_service
+            capital = 833 #So they don't get that 12% loss due to Athens blockade
+            leadership = 80
+            treasury = 10000
+            small_arms = 100
+            ammunition = 200
+            canned_food = 200
+            wine = 200
+            liquor = 200
+
+            add_country_modifier = {
+            name = small_country_draft
+            duration = 1825
+            }
+        }
+        casus_belli = {
+            target = GRE
+            type = conquest
+            months = 1
+        }
+        set_global_flag = greek_civil_war
+        war = {
+            target = GRE
+            attacker_goal = {
+                casus_belli = conquest
+            }
+            defender_goal = {
+                casus_belli = status_quo
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 86081
+    trigger = {
+        war_with = TUR
+        GRE = { NOT = { war_with = TUR } }
+        alliance_with = GRE
+        exists = GRE
+        NOT = { has_global_flag = greeks_win_war }
+    }
+
+    mean_time_to_happen =  {
+        days = 1
+    }
+
+    title = "EVTNAME86081"
+    desc = "EVTDESC86081"
+    picture = "Ottoman"
+
+    option = {
+        name = "EVTOPTA86081"
+        prestige = 5
+        end_war = TUR
+        end_war = EGY
+        end_war = TUN
+    }
+}
+
+country_event = {
+
+    id = 86082
+    trigger = {
+        tag = TUR
+        truce_with = GRE
+        exists = GRE
+        owns = 829
+        NOT = {
+            war_with = GRE
+            has_global_flag = greeks_win_war
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        days = 5
+    }
+
+    title = "EVTNAME86082"
+    desc = "EVTDESC86082"
+    picture = "Ottoman"
+
+    option = {
+        name = "EVTOPTA86082"
+        GRE = {
+            all_core = {
+                limit = {
+                NOT = {
+                    region = TUR_823
+                    region = TUR_855
+                }
+            }
+            secede_province = GRE
+            }
+            capital = 834
+        }
+        GRE = {
+            any_owned = {
+                remove_core = TUR
+                }
+            }
+        set_global_flag = greeks_win_war
+        }
+}
+
+country_event = {
+
+    id = 86083
+    trigger = {
+        tag = TUR
+        truce_with = GRE
+        exists = GRE
+        NOT = {
+            war_with = GRE
+            owns = 829
+            has_global_flag = greeks_win_war
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        days = 1
+    }
+
+    title = "EVTNAME86082"
+    desc = "EVTDESC86082"
+    picture = "Ottoman"
+
+    option = {
+        name = "EVTOPTA86082"
+        prestige = -15
+        set_global_flag = greeks_win_war
+    }
+}
+
+country_event = {
+    id = 32486
+    title = "EVTNAME32486"
+    desc = "EVTDESC32486"
+    picture = "greatpowers"
+
+    trigger = {
+        GRE = {
+            war_with = TUR
+                }
+        OR = {
+            tag = BRI
+            tag = FRA
+            tag = RUS
+        }
+        NOT = { has_global_flag = great_wars_enabled }
+        NOT = {
+                    has_country_flag = dealt_with_2
+        }
+    }
+
+    mean_time_to_happen =  {
+        months = 1
+    }
+
+        option = {
+                name = "EVTOPTA32486"
+            diplomatic_influence = {
+            who = GRE
+            value = 100
+        }
+        create_alliance = GRE
+        relation = {
+                    who = GRE
+                        value = 200
+                }
+        casus_belli = {
+            target = TUR
+            type = cut_down_to_size
+            months = 1
+        }
+        war = {
+            target = TUR
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+        }
+                TUR = {
+                        country_event = 32485
+                }
+        set_country_flag = dealt_with_2
+        ai_chance = {
+            factor = 50
+                }
+        }
+
+    option = {
+                name = "EVTOPTB32486"
+                relation = {
+                    who = TUR
+                        value = 25
+                }
+        rich_strata = {
+            militancy = 1
+            consciousness = 1
+        }
+        middle_strata = {
+            militancy = 2
+            consciousness = 2
+        }
+        set_country_flag = dealt_with_2
+        ai_chance = {
+            factor = 50
+                }
+        }
+}
+
+country_event = {
+
+        id = 32485
+
+        title = "EVTNAME32485"
+        desc = "EVTDESC32485"
+
+        picture = "greatpowers"
+
+    is_triggered_only = yes
+
+        option = {
+                name = "EVTOPTA32485"
+        }
+}
+
+country_event = {
+
+    id = 32484
+
+    trigger = {
+        tag = TUR
+        OR = {
+            has_global_flag = great_wars_enabled
+            has_country_flag = tanzimat_reforms_enacted
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen =  {
+        months = 1
+
+        modifier = {
+            factor = 0.75
+            year = 1870
+        }
+
+        modifier = {
+            factor = 0.55
+            year = 1871
+        }
+    }
+
+    title = "EVTNAME32484"
+    desc = "EVTDESC32484"
+    picture = "Execution"
+
+    option = {
+        name = "EVTOPTA32484"
+        clr_country_flag = mad_greeks
+    }
+}
+
+country_event = {
+
+    id = 32482
+    title = "EVTNAME32482"
+    desc = "EVTDESC32482"
+    picture = "Ottoman"
+
+            trigger = {
+                    tag = TUR
+                    has_country_flag = crimean_war
+                    war = no
+                    NOT = { has_country_flag = we_are_failures }
+                    CRI = {
+                            NOT = { owns = 964 }
+                    }
+            }
+
+    fire_only_once = yes
+
+            mean_time_to_happen = {
+                    months = 1
+            modifier = {
+                factor = 0.01
+                year = 1836
+             }
+            }
+
+            option = {
+        name = "EVTOPTA32482"
+                    prestige = -15
+                    678 = { remove_core = TUR  }
+                    1094 = { remove_core = TUR }
+                    1095 = { remove_core = TUR  }
+                    1092 = { remove_core = TUR  }
+                    1091 = { remove_core = TUR  }
+                    1049 = { remove_core = TUR  }
+                    967 = { remove_core = TUR }
+                    968 = { remove_core = TUR }
+                    965 = { remove_core = CRI  }
+                    970 = { remove_core = CRI }
+                    971 = { remove_core = CRI }
+                    972 = { remove_core = CRI  }
+                    973 = { remove_core = CRI}
+                    974 = { remove_core = CRI  }
+                    975 = { remove_core = CRI  }
+                    976 = { remove_core = CRI }
+                    979 = { remove_core = CRI}
+                    1047 = { remove_core = CRI  }
+                    1048 = { remove_core = CRI }
+                    set_country_flag = we_are_failures
+            }
+}

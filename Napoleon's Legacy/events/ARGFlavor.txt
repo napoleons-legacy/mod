@@ -1,6 +1,6 @@
 country_event = {
 
-    id = 46600 
+    id = 46600
     news = yes
     news_desc_long = "EVTDESC46600_NEWS_LONG"
     news_desc_medium = "EVTDESC46600_NEWS_MEDIUM"
@@ -19,9 +19,9 @@ country_event = {
         }
         war = no
         is_ideology_enabled = anarcho_liberal
-        government = democracy #only fire if ARG is a republic 
+        government = democracy #only fire if ARG is a republic
         }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -45,9 +45,9 @@ country_event = {
     title = "EVTNAME46600"
     desc = "EVTDESC46600"
     picture = "Alberdi"
-    
+
     option = {
-        name = "EVTOPTA46600" 
+        name = "EVTOPTA46600"
         prestige = 2
         any_pop = {
             consciousness = 1
@@ -75,7 +75,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB46600" 
+        name = "EVTOPTB46600"
         any_pop = {
             ideology = {
                 value = liberal
@@ -101,7 +101,7 @@ country_event = {
     news = yes
     news_desc_long = "EVTDESC46601_NEWS_LONG"
     news_desc_medium = "EVTDESC46601_NEWS_MEDIUM"
-    news_desc_short = "EVTDESC46601_NEWS_SHORT" 
+    news_desc_short = "EVTDESC46601_NEWS_SHORT"
 
     trigger = {
         OR = {
@@ -118,9 +118,9 @@ country_event = {
         OR = {
             government = presidential_dictatorship  #book is reaction against strong-man rule
             government = absolute_monarchy
-            }  
+            }
         }
- 
+
     mean_time_to_happen =  {
         months = 8
 
@@ -146,7 +146,7 @@ country_event = {
     picture = "Facundo"
 
     option = {
-        name = "EVTOPTA46601" 
+        name = "EVTOPTA46601"
         any_country = {
             limit = {
                 exists = yes
@@ -172,7 +172,7 @@ country_event = {
                 }
             }
         }
-        
+
         any_pop = {
             consciousness = 1
             ideology = {
@@ -200,7 +200,7 @@ country_event = {
     title = "EVTNAME97085" #Conquest of the Desert
     desc = "EVTDESC97085"
     picture = "conquest_of_the_desert"
-    
+
     trigger = {
         OR = {
             tag = ARG
@@ -223,7 +223,7 @@ country_event = {
         }
         has_country_flag = conquest_of_the_desert
     }
-    
+
     mean_time_to_happen = {
         months = 18
         modifier = {
@@ -239,7 +239,7 @@ country_event = {
             state_n_government = 1
         }
     }
-    
+
     option = {
         name = "EVT97085OPTA" #For the glory of Argentina!
         prestige = 1
@@ -404,7 +404,7 @@ province_event = {
     title = "EVTNAME97086" #Pacification of Patagonia
     desc = "EVTDESC97086"
     picture = "pacification_of_patagonia"
-    
+
     trigger = {
         OR = {
             region = CHL_2332
@@ -426,7 +426,7 @@ province_event = {
             }
         NOT = { life_rating = 18 }
         }
-    
+
     mean_time_to_happen = {
         months = 24
         modifier = {
@@ -438,10 +438,10 @@ province_event = {
             owner = { machine_guns = 1 }
         }
     }
-    
+
     option = {
         name = "EVT97086OPTA" #Excellent!
-        life_rating = 10
+		life_rating = 18
         any_pop = {
             limit = { is_culture_group = native_american }
             militancy = 8
@@ -450,29 +450,30 @@ province_event = {
         }
     }
 }
-        
+
 
 country_event = {
     id = 97090
     title = "EVTNAME97090" #The Argentina-Chile Border Treaty
     desc = "EVTDESC97090"
     picture = "argentina_chile_border_treaty"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT97090OPTA" #Sign the treaty.
         CHL_2332 = { add_core = CHL }
         relation = {
             who = FROM
-            value = 150
+			value = 200
         }
         any_owned = {
             limit = {
                 FROM = {
                 OR = {
                 tag = ARG
-                tag = ARC }
+						tag = ARC
+					}
                   }
                  OR = {
                 is_core = ARG
@@ -502,26 +503,26 @@ country_event = {
         ai_chance = {
             factor = 90
             modifier = {
-                factor = 0.5
+				factor = 0.8
                 war_policy = jingoism
             }
             modifier = {
-                factor = 0.5
+				factor = 0.8
                 NOT = { relation = { who = FROM value = 0 } }
             }
             modifier = {
-                factor = 0.5
+				factor = 0.8
                 FROM = {
                     any_owned_province = { is_core = CHL }
                 }
             }
             modifier = {
-                factor = 0.5
+				factor = 0.8
                 any_owned_province = { is_core = FROM }
             }
         }
     }
-    
+
     option = {
         name = "EVT97090OPTB" #There is no need for such an agreement.
         CHL_2332 = { add_core = CHL }
@@ -532,7 +533,8 @@ country_event = {
                 FROM = {
                     OR = {
                     tag = ARG
-                    tag = ARC }
+						tag = ARC
+					}
                     }
             }
             2335 = { add_core = THIS }
@@ -553,31 +555,6 @@ country_event = {
         }
         ai_chance = {
             factor = 10
-            modifier = {
-                factor = 0.2
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 0.5
-                OR = {
-                    alliance_with = FROM
-                    relation = { who = FROM value = 100 }
-                }
-            }
-            modifier = {
-                factor = 0.4
-                NOT = { relation = { who = FROM value = 0 } }
-            }
-            modifier = {
-                factor = 0.2
-                FROM = {
-                    any_owned_province = { is_core = CHL }
-                }
-            }
-            modifier = {
-                factor = 0.2
-                any_owned_province = { is_core = FROM }
-            }
         }
     }
 }
@@ -587,20 +564,23 @@ country_event = {
     title = "EVTNAME97091" #Transferring Sovereignty
     desc = "EVTDESC97091"
     picture = "danishgovernment"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT97091OPTA" #Sign the treaty
         set_country_flag = argentina_united_externally
         relation = { who = FROM value = 50 }
-        FROM = { 
+        FROM = {
             any_owned = {
                 limit = {
+					NOT = { province_id = 2131 }
                     OR = {
                         is_core = CRT
                         is_core = ENT
                         is_core = SBA
+						is_core = ARC
+						is_core = ARG
                         }
                     }
                 secede_province = THIS

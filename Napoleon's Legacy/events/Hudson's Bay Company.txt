@@ -1,65 +1,66 @@
+# HUD event post-indie
 country_event = {
-    id = 4662007
-    title = "EVTNAME4662007"
-    desc = "EVTDESC4662007"
-    picture = "hudson"
-    
+    id = 121277
+    title = "EVTNAME121277"
+    desc = "EVTDESC121277"
+    picture = "meeting"
+    fire_only_once = yes
+
     trigger = {
-    tag = HUD
-    OR = {
-        OR = {
-            NOT = { owns =  13 }
-            NOT = { owns = 111 }
-            }
-        year = 1850
+        tag = HUD
+        war = no
+        NOT = { vassal_of = CAN }
+        year = 1857
     }
-    OR = {
-        year = 1860
-        money = 10000
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "EVTOPTA121269"
+        government = absolute_monarchy
+        any_pop = {
+            consciousness = 1
+            militancy = 1
+        }
+
+        ai_chance = {
+            factor = 30
         }
     }
 
-    fire_only_once = yes
-    mean_time_to_happen = { months = 5 }
-    
     option = {
-        name = "EVTOPTA4662007"
-        prestige = 10
-        
-        money = -2000
-        
-        38 = { secede_province = HUD add_core = HUD }
-        39 = { secede_province = HUD add_core = HUD }
-        40 = { secede_province = HUD add_core = HUD }
-        31 = { secede_province = HUD add_core = HUD }
-        32 = { secede_province = HUD add_core = HUD }
-        23 = { secede_province = HUD add_core = HUD }
-        24 = { secede_province = HUD add_core = HUD }
-        22 = { secede_province = HUD add_core = HUD }
-        2597 = { secede_province = HUD add_core = HUD }
-        18 = { secede_province = HUD add_core = HUD }
-        2629 = { secede_province = HUD add_core = HUD }
-        
-        set_global_flag = northern_lands
-        ai_chance = {
-            factor = 100
-            }
+        name = "EVTOPTB121269"
+        government = democracy
+        political_reform = wealth_voting
+        any_pop = {
+            consciousness = 2
         }
-        
-    option = {
-        name = "EVTOPTB4662007"
+
         ai_chance = {
-            factor = 0
-            }
+            factor = 45
         }
     }
-     
+
+    option = {
+        name = "EVTOPTC121269"
+        any_pop = {
+            militancy = 2
+        }
+
+        ai_chance = {
+            factor = 25
+        }
+    }
+}
+
 country_event = {
     id = 4662008
     title = "EVTNAME4662008"
     desc = "EVTDESC4662008"
     picture = "hudson"
-    
+
     trigger = {
     OR = {
         AND = {
@@ -85,7 +86,7 @@ country_event = {
     }
     fire_only_once = yes
     mean_time_to_happen = { months = 1 }
-    
+
     option = {
         name = "EVTOPTA4662008"
         HUD = {
@@ -97,5 +98,5 @@ country_event = {
         inherit = HUD
         prestige = 10
         money = 10000
-    }   
+    }
 }

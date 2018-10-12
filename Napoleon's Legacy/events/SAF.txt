@@ -1,23 +1,24 @@
+# This can be replaced by making South Africa its own continent with immigration.
+# TODO
+
 country_event = {
-
     id = 99033
-
     title = "EVTNAME99033"
     desc = "EVTDESC99033"
     picture = "trekboers"
-    
+
     trigger = {
         tag = SAF
-        }
-        
-        fire_only_once = yes
-        
+    }
+
+    fire_only_once = yes
+
     option = {
         name = "EVTOPTA99033"
-    
-    add_country_modifier = {
-        name = trek_boers
-        duration = -1
-            }
+
+        add_country_modifier = {
+            name = trek_boers
+            duration = -1
         }
     }
+}

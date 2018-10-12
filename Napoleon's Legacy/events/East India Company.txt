@@ -1,50 +1,51 @@
-#EIC starting event
-#EIC 1850 Warning - Religion
+# EIC starting event
+# EIC 1850 Warning - Religion
 country_event = {
     id = 121262
     title = "EVTNAME121262"
     desc = "EVTDESC121262"
     picture = "BengaliNovel"
     fire_only_once = yes
-    
+
     trigger = {
         tag = EIC
         year = 1844
     }
-    
+
     mean_time_to_happen = {
         months = 3
     }
-    
+
     option = {
         name = "EVTOPTA121262"
         any_pop = {
             limit = {
                 has_pop_culture = bengali
             }
+
             consciousness = 1
             militancy = 1
         }
     }
 }
 
-#EIC 1852 Warning - Westernization
+# EIC 1852 Warning - Westernization
 country_event = {
     id = 121263
     title = "EVTNAME121263"
     desc = "EVTDESC121263"
     picture = "bagdadrailway"
     fire_only_once = yes
-    
+
     trigger = {
         tag = EIC
         year = 1846
     }
-    
+
     mean_time_to_happen = {
         months = 3
     }
-    
+
     option = {
         name = "EVTOPTA121263"
         any_pop = {
@@ -57,23 +58,23 @@ country_event = {
     }
 }
 
-#EIC 1854 Warning - Discrimination
+# EIC 1854 Warning - Discrimination
 country_event = {
     id = 121264
     title = "EVTNAME121264"
     desc = "EVTDESC121264"
     picture = "native_force"
     fire_only_once = yes
-    
+
     trigger = {
         tag = EIC
         year = 1848
     }
-    
+
     mean_time_to_happen = {
         months = 3
     }
-    
+
     option = {
         name = "EVTOPTA121264"
         set_country_flag = doctrine_lapsed
@@ -91,24 +92,24 @@ country_event = {
     }
 
 
-#EIC 1856 Mutiny - With Doctrine of Lapse
+# EIC 1856 Mutiny - With Doctrine of Lapse
 country_event = {
     id = 121265
     title = "EVTNAME121265"
     desc = "EVTDESC121265"
     picture = "sultan"
     fire_only_once = yes
-    
+
     trigger = {
         tag = EIC
         year = 1850
         has_country_flag = doctrine_lapsed
     }
-    
+
     mean_time_to_happen = {
         months = 3
     }
-    
+
     option = {
         name = "EVTOPTA121265"
         any_pop = {
@@ -137,6 +138,7 @@ country_event = {
             target = BNG
             type = conquest
         }
+
         BNG = {
             casus_belli = {
                 target = EIC
@@ -155,14 +157,14 @@ country_event = {
     }
 }
 
-#EIC 1856 Mutiny - Without Doctrine of Lapse
+# EIC 1856 Mutiny - Without Doctrine of Lapse
 country_event = {
     id = 121266
     title = "EVTNAME121265"
     desc = "EVTDESC121265"
     picture = "sultan"
     fire_only_once = yes
-    
+
     trigger = {
         tag = EIC
         year = 1850
@@ -170,11 +172,11 @@ country_event = {
             has_country_flag = doctrine_lapsed
         }
     }
-    
+
     mean_time_to_happen = {
         months = 3
     }
-    
+
     option = {
         name = "EVTOPTA121265"
         any_owned = {
@@ -221,15 +223,15 @@ country_event = {
     }
 }
 
-#EIC 1856 Mutiny - EIC submits to CAN
+# EIC 1856 Mutiny - EIC submits to CAN
 country_event = {
     id = 121267
     title = "EVTNAME121267"
     desc = "EVTDESC121267"
     picture = "sultan"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA121267"
         EIC = {
@@ -264,9 +266,11 @@ country_event = {
         EIC = {
             any_owned = {
                 limit = { is_core = BNG }
-                    secede_province = BNG 
-                }
+
+                secede_province = BNG
             }
+        }
+
         CAN = { inherit = EIC }
         ai_chance = {
             factor = 25
@@ -274,15 +278,15 @@ country_event = {
     }
 }
 
-#EIC wants indie
+# EIC wants indie
 country_event = {
     id = 121268
     title = "EVTNAME121268"
     desc = "EVTDESC121268"
     picture = "meeting3"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA121268"
         release_vassal = EIC
@@ -290,10 +294,12 @@ country_event = {
             who = EIC
             value = -200
         }
+
         casus_belli = {
             target = EIC
             type = conquest
         }
+
         war = {
             target = EIC
             attacker_goal = {
@@ -303,6 +309,7 @@ country_event = {
                 casus_belli = status_quo
             }
         }
+
         ai_chance = {
             factor = 100
         }
@@ -318,14 +325,14 @@ country_event = {
     }
 }
 
-#EIC first event post-indie
+# EIC first event post-indie
 country_event = {
     id = 121269
     title = "EVTNAME121269"
     desc = "EVTDESC121269"
     picture = "meeting"
     fire_only_once = yes
-    
+
     trigger = {
         tag = EIC
         war = no
@@ -334,11 +341,11 @@ country_event = {
         }
         year = 1850
     }
-    
+
     mean_time_to_happen = {
         months = 1
     }
-    
+
     option = {
         name = "EVTOPTA121269"
         government = absolute_monarchy
@@ -393,14 +400,14 @@ country_event = {
     }
 }
 
-#EIC second event post-indie
+# EIC second event post-indie
 country_event = {
     id = 121270
     title = "EVTNAME121270"
     desc = "EVTDESC121270"
     picture = "meeting"
     fire_only_once = yes
-    
+
     trigger = {
         tag = EIC
         war = no
@@ -408,9 +415,9 @@ country_event = {
             vassal_of = CAN
             has_country_flag = staying_british
         }
-        has_country_flag = reformed_EIC 
+        has_country_flag = reformed_EIC
     }
-    
+
     mean_time_to_happen = {
         months = 1
     }
@@ -452,49 +459,50 @@ country_event = {
     }
 }
 
-#EIC sells goods
+# EIC sells goods
 country_event = {
     id = 121271
     title = "EVTNAME121271"
     desc = "EVTDESC121271"
     picture = "Western"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA121271"
         years_of_research = 10
     }
 }
 
-#EIC Begins to Regrow, starting at Vizapatam
+# EIC Begins to Regrow, starting at Vizapatam
 
 country_event = {
     id = 4662017
     title = "EVTNAME4662017"
     desc = "EVTDESC4662017"
     picture = "delhi_sultan"
-    
+
     trigger = {
         tag = EIC
         year = 1837
     }
-    
+
     mean_time_to_happen = { months = 2 }
     fire_only_once = yes
-    
+
     option = {
         name = "EVTOPTA4662017"
         prestige = 5
         relation = {
             who = CAN
             value = 25
-        }       
+        }
         casus_belli = {
-                target = ORI
-                type = cut_down_to_size
-                months = 1
-            }
+            target = ORI
+            type = cut_down_to_size
+            months = 1
+        }
+
         ORI = {
             casus_belli = {
                 target = EIC
@@ -511,20 +519,24 @@ country_event = {
             }
         }
         set_country_flag = orissa_claim
+
         ai_chance = { factor = 100 }
-        }
+    }
+
     option = {
         name = "EVTOPTB4662017"
         prestige = -5
-            
+
         relation = {
             who = CAN
             value = -25
         }
+
         relation = {
             who = ORI
             value = 50
         }
+
         ai_chance = { factor = 0 }
     }
 }
@@ -533,26 +545,25 @@ country_event = {
     title = "EVTNAME4662018"
     desc = "EVTDESC4662018"
     picture = "sepoy"
-    
+
     trigger = {
         tag = EIC
         war_with = ORI
         has_country_flag = orissa_claim
-        }
-    
+    }
+
     mean_time_to_happen = { months = 1 }
     fire_only_once = yes
-    
+
     option = {
         name = "EVTOPTA4662018"
         prestige = 5
-        1305 = {
-            secede_province = EIC
-        }
+        1305 = { secede_province = EIC }
+
         end_war = ORI
         ai_chance = { factor = 100 }
-        }
-    
+    }
+
     option = {
         name = "EVTOPTB4662018"
         end_war = ORI
@@ -564,17 +575,17 @@ country_event = {
     title = "EVTNAME4662019"
     desc = "EVTDESC4662019"
     picture = "deliberation"
-    
+
     trigger = {
         tag = EIC
         has_country_flag = orissa_claim
         NOT = { war_with = ORI }
-        owns = 1305 
+        owns = 1305
     }
-    
+
     mean_time_to_happen = { days = 5 }
     fire_only_once = yes
-    
+
     option = {
         name = "EVTOPTA4662019"
         prestige = 2
@@ -583,44 +594,47 @@ country_event = {
             who = ORI
             value = -50
         }
+
         ORI = {
             prestige = -5
             any_pop = {
                 militancy = 4
             }
         }
+
         ai_chance = { factor = 95 }
     }
+
     option = {
         name = "EVTOPTB4662019"
         prestige = -10
-        1305 = {
-            secede_province = ORI
-        }
+        1305 = { secede_province = ORI }
+
         relation = {
             who = ORI
             value = 50
         }
+
         clr_country_flag = orissa_claim
         ai_chance = { factor = 5 }
-        }
+    }
 }
 country_event = {
     id = 4662020
     title = "EVTNAME4662020"
     desc = "EVTDESC4662020"
     picture = "delhi_sultan"
-    
+
     trigger = {
         tag = EIC
         owns = 1305
         BAS = { owns = 1279 }
         year = 1840
     }
-    
+
     mean_time_to_happen = { months = 12 }
     fire_only_once = yes
-    
+
     option = {
         name = "EVTOPTA4662020"
         prestige = 5
@@ -630,9 +644,11 @@ country_event = {
             who = HYD
             value = -50
         }
+
         set_country_flag = hyderabad_eic_conflict
         ai_chance = { factor = 80 }
     }
+
     option = {
         name = "EVTOPTB4662020"
         prestige = -5
@@ -640,15 +656,17 @@ country_event = {
             who = HYD
             value = 50
         }
+
         ai_chance = { factor = 20 }
     }
 }
+
 country_event = {
     id = 4662021
     title = "EVTNAME4662021"
     desc = "EVTDESC4662021"
     picture = "bagdadrailway"
-    
+
     trigger = {
         tag = CAN
         ai = yes
@@ -658,43 +676,44 @@ country_event = {
             BUR = { any_core = { owned_by = CAN } }
         }
     }
-    
+
     mean_time_to_happen = { days = 5 }
-    
+
     option = {
         name = "EVTOPTA4662021"
-        CAN = { 
-            any_owned = { 
+        CAN = {
+            any_owned = {
                 limit = {
                     OR = {
                         is_core = HND
                         is_core = BUR
-                        }
-                    NOT = {
-                        province_id = 1320
-                        }
                     }
+                    NOT = { province_id = 1320 }
+
+                }
+
                 secede_province = EIC
             }
         }
     }
 }
+
 country_event = {
     id = 4662022
     title = "EVTNAME4662022"
     desc = "EVTDESC4662022"
     picture = "deliberation"
-    
+
     trigger = {
         tag = EIC
         has_country_flag = orissa_claim
         owns = 1305
         year = 1846
     }
-    
+
     fire_only_once = yes
     mean_time_to_happen = { months = 18 }
-    
+
     option = {
         name = "EVTOPTA4662022"
         badboy = 6
@@ -706,18 +725,20 @@ country_event = {
             who = NAG
             value = -50
         }
-        EIC = {
-            create_vassal = BUN
-        }
+
+        EIC = { create_vassal = BUN }
+
         money = -10000
         BUN = { money = 10000 }
         relation = {
             who = MUG
             value = -100
         }
+
         set_country_flag = big_mughal_war_eic
         ai_chance = { factor = 45 }
     }
+
     option = {
         name = "EVTOPTB4662022"
         badboy = 6
@@ -729,15 +750,17 @@ country_event = {
             who = BUN
             value = -50
         }
-        EIC = {
-        create_vassal = NAG
-        }
+
+        EIC = { create_vassal = NAG }
+
         money = -10000
         NAG = { money = 10000 }
+
         relation = {
             who = HYD
             value = -100
         }
+
         set_country_flag = big_hyderabad_war_eic
         ai_chance = { factor = 45 }
     }
@@ -745,40 +768,44 @@ country_event = {
         name = "EVTOPTC4662022"
         ai_chance = { factor = 10 }
     }
-}   
+}
+
 country_event = {
     id = 4662023
     title = "EVTNAME4662023"
     desc = "EVTDESC4662023"
     picture = "delhi_sultan"
-    
+
     trigger = {
         tag = EIC
         OR = {
             NAG = { vassal_of = THIS }
             BUN = { vassal_of = THIS }
         }
+
         ENG_1261 = { owned_by = ORI }
         year = 1848
     }
-    
+
     fire_only_once = yes
     mean_time_to_happen = { months = 10 }
-    
+
     option = {
         name = "EVTOPTA4662023"
         badboy = 5
         prestige = 4
-        inherit = ORI   
+        inherit = ORI
         relation = {
             who = HYD
             value = -25
         }
+
+
         set_country_flag = hyderabad_pushed_closer
-        ai_chance = { 
+        ai_chance = {
             factor = 75
-            modifier = { 
-                factor = 1.5 
+            modifier = {
+                factor = 1.5
                 NAG = { vassal_of = THIS }
             }
         }

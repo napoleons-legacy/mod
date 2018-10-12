@@ -1,5 +1,7 @@
-#British Union claims Ulster
-country_event = {   
+# TODO REFORMAT THIS FILE.
+
+# British Union claims Ulster
+country_event = {
         id = 66649
         title = "EVTNAME66649"
         desc = "EVTDESC66649"
@@ -12,18 +14,18 @@ country_event = {
         }
 }
 
-#Treaty with British Empire over Galway
+# reaty with British Empire over Galway
 country_event = {
     id = 66650
     title = "EVTNAME66650"
     desc = "EVTDESC66650"
     picture = "meeting"
- 
+
     is_triggered_only = yes
- 
+
     #B1
-        option = { 
-            name = "EVTOPTA66650" 
+        option = {
+            name = "EVTOPTA66650"
         any_owned = {
             limit = {
                 is_core = IRE
@@ -38,7 +40,7 @@ country_event = {
         BRI = {
             country_event = {
                 id = 66651 days = 0
-            }           
+            }
         }
         CAN = {
             country_event = {
@@ -60,9 +62,9 @@ country_event = {
                 factor = 35
             }
         }
- 
+
     #B2
-        option = { 
+        option = {
             name = "EVTOPTB66650"
             CAN = {
             country_event = {
@@ -74,9 +76,9 @@ country_event = {
             }
         }
 }
- 
-#British Union Reaction
-country_event = {   
+
+# British Union Reaction
+country_event = {
         id = 66651
         title = "EVTNAME66651"
         desc = "EVTDESC66651"
@@ -88,16 +90,16 @@ country_event = {
             name = "EVTOPTA66651"
         }
 }
- 
+
 #British Empire relations boost
 country_event = {
-        id = 66652 
+        id = 66652
         title = "EVTNAME66652"
         desc = "EVTDESC66652"
     picture = "meeting3"
-       
+
         is_triggered_only = yes
-       
+
         option = {
             name = "EVTOPTA66652"
         relation = {
@@ -111,16 +113,16 @@ country_event = {
         create_alliance = CAN
         }
 }
- 
+
 #B2
 country_event = {
-    id = 66653 
+    id = 66653
         title = "EVTNAME66653"
         desc = "EVTDESC66653"
     picture = "Travel"
- 
+
         is_triggered_only = yes
- 
+
         option = {
             name = "EVTOPTA66653"
         IRE = {
@@ -128,55 +130,55 @@ country_event = {
         }
     }
 }
- 
+
 #E
 country_event = {
-    id = 66654 
+    id = 66654
     title = "EVTNAME66654"
     desc = "EVTDESC66654"
     picture = "slavepower"
- 
+
     is_triggered_only = yes
- 
+
     #sends event F
         option = {
-            name = "EVTOPTA66654" 
+            name = "EVTOPTA66654"
             IRE = {
             country_event = {
                 id = 66655 days = 0
             }
         }
             ai_chance = {
-            factor = 70     
+            factor = 70
         }
     }
-    
+
     #sends event G
     option = {
         name = "EVTOPTB66654"
             IRE = {
-            country_event = { 
+            country_event = {
                 id = 66656 days = 0
             }
         }
             ai_chance = {
             factor = 30
-        }           
+        }
     }
 }
- 
+
 #F
 country_event = {
-        id = 66655 
+        id = 66655
         title = "EVTNAME66655"
         desc = "EVTDESC66655"
     picture = "Sturt"
-       
+
         is_triggered_only = yes
-    
-    #F1 
+
+    #F1
         option = {
-            name = "EVTOPTA66655" 
+            name = "EVTOPTA66655"
         any_owned = {
             limit = {
                 is_core = IRE
@@ -194,11 +196,11 @@ country_event = {
         relation = {
             who = BRI
             value = 400
-        }           
+        }
         BRI = {
             country_event = {
                 id = 66658 days = 0
-            }           
+            }
         }
         CAN = {
             country_event = {
@@ -213,9 +215,9 @@ country_event = {
         }
             ai_chance = {
             factor = 100
-        }       
+        }
     }
-    
+
     #F2
     option = {
         name = "EVTOPTB66655"
@@ -228,24 +230,24 @@ country_event = {
         BRI = {
             country_event = {
                 id = 66657 days = 0
-            }           
+            }
         }
             ai_chance = {
             factor = 0
         }
-                    
+
     }
 }
- 
+
 #G
 country_event = {
-        id = 66656 
+        id = 66656
         title = "EVTNAME66656"
         desc = "EVTDESC66656"
     picture = "finepeople"
-       
+
         is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA66656"
         set_global_flag = irish_chain_done
@@ -259,13 +261,13 @@ country_event = {
 
 # H
 country_event = {
-        id = 66657 
+        id = 66657
         title = "EVTNAME66657"
         desc = "EVTDESC66657"
     picture = "finepeople"
-       
+
         is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA66657"
     }
@@ -273,13 +275,13 @@ country_event = {
 
 #I
 country_event = {
-        id = 66658 
+        id = 66658
         title = "EVTNAME66658"
         desc = "EVTDESC66658"
     picture = "finepeople"
-       
+
         is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA66658"
         create_alliance = IRE
@@ -296,20 +298,20 @@ country_event = {
 
 #J
 country_event = {
-        id = 66659 
+        id = 66659
         title = "EVTNAME66659"
         desc = "EVTDESC66659"
     picture = "finepeople"
-       
+
         is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA66659"
     }
 }
 
 #The Emergency Irish Chain Starter
-country_event = {   
+country_event = {
         id = 66660
         title = "EVTNAME66660"
         desc = "EVTDESC66660"
@@ -318,13 +320,13 @@ country_event = {
     trigger = {
         year = 1855
         tag = BRI
-        NOT = { 
+        NOT = {
             has_global_flag = british_claim_on_ireland
             has_global_flag = the_Britains_reunified
         }
         war = no
     }
-    
+
     fire_only_once = yes
 
     mean_time_to_happen = {
@@ -359,7 +361,7 @@ country_event = {
         title = "EVTNAME66600"
         desc = "EVTDESC66600"
     picture = "austflag"
-       
+
         trigger = {
         year = 1867
         OR = {
@@ -391,13 +393,13 @@ country_event = {
         exists = BRI
         exists = CAN
     }
-    
+
     fire_only_once = yes
 
     mean_time_to_happen = {
         months = 1
     }
-    
+
     option = {
         name = "EVTOPTA66600"
         any_owned = {
@@ -462,7 +464,7 @@ country_event = {
         title = "EVTNAME66601"
         desc = "EVTDESC66601"
     picture = "austflag"
-       
+
         trigger = {
         year = 1867
         tag = CAN
@@ -477,13 +479,13 @@ country_event = {
             war = no
         }
     }
-    
+
     fire_only_once = yes
 
     mean_time_to_happen = {
         months = 2
     }
-    
+
     option = {
         name = "EVTOPTA66601"
         ENG_2497 = {
@@ -623,9 +625,9 @@ country_event = {
         title = "EVTNAME66602"
         desc = "EVTDESC66602"
     picture = "austflag"
-       
+
         is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA66601"
         remove_country_modifier = aussie_instability
@@ -854,7 +856,7 @@ country_event = {
     title = "EVTNAME66610"
     desc = "EVTDESC66610"
     picture = "austflag"
-    
+
     trigger = {
         tag = NET
         NOT = {
@@ -870,13 +872,13 @@ country_event = {
     }
 
     fire_only_once = yes
-    
+
     mean_time_to_happen = {
         days = 1
     }
 
     option = {
-        name = "EVTOPTA66610" 
+        name = "EVTOPTA66610"
         relation = {
             value = -200
             who = BRI
@@ -893,7 +895,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB66610" 
+        name = "EVTOPTB66610"
         ai_chance = {
             factor = 30
         }
@@ -907,7 +909,7 @@ country_event = {
     title = "EVTNAME66611"
     desc = "EVTDESC66611"
     picture = "austflag"
-    
+
     trigger = {
         tag = REI
         NOT = {
@@ -923,13 +925,13 @@ country_event = {
     }
 
     fire_only_once = yes
-    
+
     mean_time_to_happen = {
         days = 1
     }
 
     option = {
-        name = "EVTOPTA66611" 
+        name = "EVTOPTA66611"
         relation = {
             value = -200
             who = CAN
@@ -946,7 +948,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB66611" 
+        name = "EVTOPTB66611"
         ai_chance = {
             factor = 30
         }
@@ -981,7 +983,7 @@ country_event = {
         CAN = {
             country_event = {
                 id = 66613 days = 0
-            }           
+            }
         }
         any_pop = {
             militancy = 6
@@ -1071,7 +1073,7 @@ country_event = {
         BRI = {
             country_event = {
                 id = 66615 days = 0
-            }           
+            }
         }
         any_pop = {
             militancy = 6
@@ -1168,13 +1170,13 @@ country_event = {
     }
 
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 2
     }
 
     option = {
-        name = "EVTOPTA66617" 
+        name = "EVTOPTA66617"
         any_pop = {
             limit = {
                 culture = scottish
@@ -1226,13 +1228,13 @@ country_event = {
     }
 
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 2
     }
 
     option = {
-        name = "EVTOPTA66618" 
+        name = "EVTOPTA66618"
         any_pop = {
             limit = {
                 culture = scottish
@@ -1255,7 +1257,7 @@ country_event = {
         }
     }
     option = {
-        name = "EVTOPTB66618" 
+        name = "EVTOPTB66618"
         add_accepted_culture = scottish
         any_pop = {
             limit = {
@@ -1306,7 +1308,7 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA66619" 
+        name = "EVTOPTA66619"
         any_pop = {
             limit = {
                 culture = scottish
@@ -1322,7 +1324,7 @@ country_event = {
         }
     }
     option = {
-        name = "EVTOPTB66619" 
+        name = "EVTOPTB66619"
         set_global_flag = scotland_chain_done
         set_global_flag = union_wins_scotland
         ai_chance = {
@@ -1350,13 +1352,13 @@ country_event = {
     }
 
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 6
     }
 
     option = {
-        name = "EVTOPTA66618" 
+        name = "EVTOPTA66618"
         any_pop = {
             scaled_militancy = {
                 ideology = liberal
@@ -1405,13 +1407,13 @@ country_event = {
     }
 
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 6
     }
 
     option = {
-        name = "EVTOPTA66621" 
+        name = "EVTOPTA66621"
         government = presidential_dictatorship
         political_reform = none_voting
         political_reform = party_appointed
@@ -1441,13 +1443,13 @@ country_event = {
     }
 
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         days = 1
     }
 
     option = {
-        name = "EVTOPTA66622" 
+        name = "EVTOPTA66622"
         any_pop = {
             limit = {
                 culture = scottish
@@ -1470,7 +1472,7 @@ country_event = {
         }
     }
     option = {
-        name = "EVTOPTB66619" 
+        name = "EVTOPTB66619"
         any_pop = {
             limit = {
                 culture = scottish

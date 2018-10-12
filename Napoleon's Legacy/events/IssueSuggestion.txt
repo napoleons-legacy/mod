@@ -13,18 +13,18 @@ country_event = {
     title = "EVTNAME3000"
     desc = "EVTDESC3000"
     picture = "slums"
-    
+
     trigger = {
         civilized = yes
         health_care = no_health_care
-        NOT = {
-            poor_strata_life_needs = 0.9
+		NOT = { poor_strata_life_needs = 0.9 }
+		is_ideology_enabled = socialist
         }
-    }
-    
+
+
     mean_time_to_happen = {
         months = 500
-        
+
         modifier = {
             factor = 0.9
             average_militancy = 5
@@ -43,12 +43,11 @@ country_event = {
         }
         modifier = {
             factor = 1.5
-            NOT = {
-                average_consciousness = 3
-            }   
+			NOT = { average_consciousness = 3 }
+            }
         }
-    }
-    
+
+
     option = {
         name = "EVTOPTA3000"
         upper_house = {
@@ -64,7 +63,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3000"
         random_state = {
@@ -80,7 +79,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3000"
         random_state = {
@@ -100,26 +99,26 @@ country_event = {
     title = "EVTNAME3001"
     desc = "EVTDESC3001"
     picture = "Hospital"
-    
+
     trigger = {
         civilized = yes
         health_care = acceptable_health_care
         conservative = 0.2
     }
-    
+
     mean_time_to_happen = {
-        months = 800 
+        months = 800
         modifier = {
             factor = 0.9
             conservative = 0.3
         }
-        
+
         modifier = {
             factor = 1.4
             average_militancy = 5
         }
     }
-    
+
     option = {
         name = "EVTOPTA3001"
         social_reform = low_health_care
@@ -131,9 +130,9 @@ country_event = {
         }
         ai_chance = {
             factor = 0
-        }       
+        }
     }
-    
+
     option = {
         name = "EVTOPTB3001"
         upper_house = {
@@ -144,7 +143,7 @@ country_event = {
             militancy = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3001"
         scaled_militancy = {
@@ -160,15 +159,15 @@ country_event = {
     title = "EVTNAME3002"
     desc = "EVTDESC3002"
     picture = "Countryside"
-    
+
     trigger = {
         civilized = yes
         health_care = low_health_care
     }
-    
+
     mean_time_to_happen = {
         months = 800
-        
+
         modifier = {
             factor = 0.9
             middle_strata_life_needs = 0.9
@@ -178,7 +177,7 @@ country_event = {
             poor_strata_militancy = 5
         }
     }
-    
+
     option = {
         name = "EVTOPTA3002"
         random_state = {
@@ -196,29 +195,28 @@ country_event = {
     title = "EVTNAME3003"
     desc = "EVTDESC3003"
     picture = "Workers"
-    
+
     trigger = {
         civilized = yes
         health_care = trinket_health_care
-        NOT = {
-            poor_strata_life_needs = 0.95
+		NOT = { poor_strata_life_needs = 0.95 }
         }
-    }
-    
+
+
     mean_time_to_happen = {
         months = 800
-        
+
         modifier = {
             factor = 0.9
             poor_strata_militancy = 5
         }
-        
+
         modifier = {
             factor = 1.5
             poor_strata_everyday_needs = 0.7
         }
     }
-    
+
     option = {
         name = "EVTOPTA3003"
         random_state = {
@@ -234,7 +232,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3003"
         random_state = {
@@ -250,15 +248,11 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3003"
-        poor_strata = {
-            militancy = 1
-        }
-        ai_chance = {
-            factor = 0
-        }
+		poor_strata = { militancy = 1 }
+		ai_chance = { factor = 0 }
     }
 }
 
@@ -268,15 +262,15 @@ country_event = {
     title = "EVTNAME3004"
     desc = "EVTDESC3004"
     picture = "Poor"
-    
+
     trigger = {
         civilized = yes
         health_care = low_health_care
-        NOT = {
-            social_reform_want = 0.2
+		NOT = { social_reform_want = 0.2 }
+		is_ideology_enabled = socialist
         }
-    }
-    
+
+
     mean_time_to_happen = {
         months = 800 # Common
         modifier = {
@@ -285,13 +279,13 @@ country_event = {
                 social_reform_want = 0.1
             }
         }
-        
+
         modifier = {
             factor = 1.1
             poor_strata_militancy = 5
         }
     }
-    
+
     option = {
         name = "EVTOPTA3004"
         random_state = {
@@ -300,7 +294,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3004"
         random_state = {
@@ -330,26 +324,26 @@ country_event = {
     title = "EVTNAME3005"
     desc = "EVTDESC3005"
     picture = "Hospital"
-    
+
     trigger = {
         civilized = yes
         health_care = acceptable_health_care
     }
-    
+
     mean_time_to_happen = {
         months = 800
-        
+
         modifier = {
             factor = 0.9
             poor_strata_life_needs = 0.8
         }
-        
+
         modifier = {
             factor = 1.5
             poor_strata_life_needs = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTA3005"
         random_owned = { limit = { owner = { ai = no } } treasury = -10000 }
@@ -366,7 +360,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3005"
         random_state = {
@@ -376,7 +370,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3005"
         random_list = {
@@ -397,23 +391,22 @@ country_event = {
     title = "EVTNAME3006"
     desc = "EVTDESC3006"
     picture = "Dental"
-    
+
     trigger = {
         health_care = good_health_care
         civilized = yes
-        NOT = {
-            ruling_party_ideology = conservative
+		NOT = { ruling_party_ideology = conservative }
         }
-    }
-    
+
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.9
             social_reform_want = 0.1
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -422,7 +415,7 @@ country_event = {
                     value = 0.4
                 }
             }
-        } 
+        }
     }
 
     option = {
@@ -436,8 +429,9 @@ country_event = {
             militancy = -2
             consciousness = 1
         }
+		ai_chance = { factor = 0 }
     }
-    
+
     option = {
         name = "EVTOPTB3006"
         any_pop = {
@@ -456,15 +450,16 @@ country_event = {
     title = "EVTNAME3300"
     desc = "EVTDESC3300"
     picture = "Finepeople"
-    
+
     trigger = {
         civilized = yes
         pensions = no_pensions
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 800
-        
+
         modifier = {
             factor = 0.8
             social_reform_want = 0.4
@@ -486,7 +481,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3300"
         social_reform = trinket_pensions
@@ -501,7 +496,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3300"
         random_state = {
@@ -511,12 +506,11 @@ country_event = {
                     factor = 0.2
                 }
             }
-            farmers = {
-                militancy = -1
+			farmers = { militancy = -1 }
             }
         }
-    }
-    
+
+
     option = {
         name = "EVTOPTC3300"
         farmers = {
@@ -530,17 +524,17 @@ country_event = {
     id = 3301
     title = "EVTNAME3301"
     desc = "EVTDESC3301"
-    picture = "Elderly" 
-    
+    picture = "Elderly"
+
     trigger = {
         pensions = trinket_pensions
         civilized = yes
     }
-    
+
     mean_time_to_happen = {
         months = 800
     }
-    
+
     option = {
         name = "EVTOPTA3301"
         any_pop = {
@@ -554,7 +548,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3302"
         any_pop = {
@@ -565,7 +559,7 @@ country_event = {
             consciousness = -2
         }
     }
-    
+
     option = {
         name = "EVTOPTC3302"
         social_reform = no_pensions
@@ -581,18 +575,19 @@ country_event = {
     id = 3302
     title = "EVTNAME3302"
     desc = "EVTDESC3302"
-    picture = "Finepeople"  
+    picture = "Finepeople"
 
     trigger = {
         civilized = yes
         pensions = low_pensions
         acceptable_pensions = 5
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 800
     }
-    
+
     option = {
         name = "EVTOPTA3302"
         social_reform = acceptable_pensions
@@ -605,7 +600,7 @@ country_event = {
             factor = 2
         }
     }
-    
+
     option = {
         name = "EVTOPTB3302"
         poor_strata = {
@@ -615,7 +610,7 @@ country_event = {
             militancy = -2
         }
     }
-    
+
     option = {
         name = "EVTOPTC3302"
         social_reform = trinket_pensions
@@ -632,12 +627,13 @@ country_event = {
     title = "EVTNAME3303"
     desc = "EVTDESC3303"
     picture = "Poor"
-    
+
     trigger = {
         civilized = yes
         pensions = acceptable_pensions
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 1600
         modifier = {
@@ -648,15 +644,15 @@ country_event = {
             factor = 0.8
             good_pensions = 30
         }
-        
+
         modifier = {
             factor = 1.5
             average_militancy = 6
         }
-            
+
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTA3303"
         random_state = {
             any_pop = {
@@ -667,7 +663,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3303"
         social_reform = good_pensions
@@ -676,7 +672,7 @@ country_event = {
             factor = 4
         }
     }
-    
+
     option = {
         name = "EVTOPTC3303"
         random_state = {
@@ -693,24 +689,24 @@ country_event = {
     title = "EVTNAME3304"
     desc = "EVTDESC3304"
     picture = "Finepeople"
-    
+
     trigger = {
         civilized = yes
         pensions = good_pensions
         conservative = 0.2
         liberal = 0.2
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.9
             NOT = {
                 average_consciousness = 6
             }
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -722,7 +718,7 @@ country_event = {
             average_militancy = 5
         }
     }
-    
+
     option = {
         name = "EVTOPTA3304"
         social_reform = acceptable_pensions
@@ -733,7 +729,7 @@ country_event = {
             militancy = 4
         }
     }
-    
+
     option = {
         name = "EVTOPTB3304"
         prestige = 5
@@ -749,7 +745,7 @@ country_event = {
     title = "EVTNAME3305"
     desc = "EVTDESC3305"
     picture = "Oldsoldiers"
-    
+
     trigger = {
         civilized = yes
         social_reform_want = 0.05
@@ -764,10 +760,10 @@ country_event = {
             wage_reform = good_minimum_wage
         }
     }
-    
+
     mean_time_to_happen = {
         months = 800
-        
+
         modifier = {
             factor = 1.3
             OR = {
@@ -775,7 +771,7 @@ country_event = {
                 wage_reform = trinket_wage
             }
         }
-        
+
         modifier = {
             factor = 1.3
             OR = {
@@ -783,7 +779,7 @@ country_event = {
                 pensions = trinket_pensions
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -792,14 +788,14 @@ country_event = {
                 work_hours = eight_hours
             }
         }
-        
+
         modifier = {
             factor = 0.8
             NOT = {
                 poor_strata_life_needs = 0.9
             }
         }
-        
+
         modifier = {
             factor = 0.8
             NOT = {
@@ -807,7 +803,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3305"
         social_reform = acceptable_pensions
@@ -818,7 +814,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3305"
         social_reform = acceptable_minimum_wage
@@ -829,7 +825,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3305"
         any_pop = {
@@ -845,7 +841,7 @@ country_event = {
     title = "EVTNAME3306"
     desc = "EVTDESC3306"
     picture = "Oldsoldiers"
-    
+
     trigger = {
         pensions = no_pensions
         civilized = yes
@@ -857,22 +853,22 @@ country_event = {
         war_exhaustion = 6
         social_reform_want = 0.1
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.8
             average_militancy = 6
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
                 average_militancy = 6
             }
         }
-        
+
         modifier = {
             factor = 0.9
             average_consciousness = 5
@@ -892,7 +888,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3306"
         war_exhaustion = 1
@@ -906,16 +902,16 @@ country_event = {
     title = "EVTNAME3307"
     desc = "EVTDESC3307"
     picture = "Oldsoldiers"
-    
+
     trigger = {
         has_country_flag = promised_post_war_pensions
         war = no
     }
-    
+
     mean_time_to_happen = {
         months = 2
     }
-    
+
     option = {
         name = "EVTOPTA3307"
         social_reform = trinket_pensions
@@ -925,7 +921,7 @@ country_event = {
         }
         clr_country_flag = promised_post_war_pensions
     }
-    
+
     option = {
         name = "EVTOPTB3307"
         social_reform = low_pensions
@@ -935,7 +931,7 @@ country_event = {
         }
         clr_country_flag = promised_post_war_pensions
     }
-    
+
     option = {
         name = "EVTOPTC3307"
         war_exhaustion = 2
@@ -953,22 +949,23 @@ country_event = {
     title = "EVTNAME3400"
     desc = "EVTDESC3400"
     picture = "Poor"
-    
+
     trigger = {
         civilized = yes
         unemployment_subsidies = no_subsidies
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.5
             NOT = {
                 poor_strata_life_needs = 0.9
             }
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -976,7 +973,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3400"
         random_state = {
@@ -988,8 +985,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3400"
         random_state = {
             poor_strata = {
@@ -1000,7 +997,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3400"
         random_state = {
@@ -1021,7 +1018,7 @@ country_event = {
     title = "EVTNAME3401"
     desc = "EVTDESC3401"
     picture = "Poor"
-    
+
     trigger = {
         civilized = yes
         unemployment = 0.05
@@ -1032,15 +1029,15 @@ country_event = {
             economic_policy = laissez_faire
         }
     }
-    
+
     mean_time_to_happen = {
         months = 600 # Common
-        
+
         modifier = {
             factor = 0.7
             average_militancy = 6
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -1048,7 +1045,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3401"
         social_reform = no_subsidies
@@ -1059,14 +1056,14 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3401"
         any_pop = {
             consciousness = -1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3401"
         social_reform = acceptable_subsidies
@@ -1085,17 +1082,18 @@ country_event = {
     title = "EVTNAME3402"
     desc = "EVTDESC3402"
     picture = "Poor"
-    
+
     trigger = {
         civilized = yes
         unemployment_subsidies = acceptable_subsidies
         unemployment = 0.05
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
     }
-    
+
     option = {
         name = "EVTOPTA3402"
         random_state = {
@@ -1105,7 +1103,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3402"
         social_reform = low_subsidies
@@ -1122,7 +1120,7 @@ country_event = {
             consciousness = 3
         }
     }
-    
+
     option = {
         name = "EVTOPTC3402"
         any_pop = {
@@ -1131,7 +1129,7 @@ country_event = {
                 factor = 0.3
             }
             militancy = 1
-        }   
+        }
     }
 }
 
@@ -1141,25 +1139,24 @@ country_event = {
     title = "EVTNAME3403"
     desc = "EVTDESC3403"
     picture = "Strike"
-    
+
     trigger = {
         civilized = yes
         unemployment_subsidies = low_subsidies
         wage_reform = low_minimum_wage
-        NOT = {
-            trade_unions = no_trade_unions
-        }
+		NOT = { trade_unions = no_trade_unions }
         poor_strata_militancy = 5
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.5
             average_militancy = 6
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -1167,7 +1164,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3403"
         random_state = {
@@ -1183,7 +1180,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3403"
         random_state = {
@@ -1199,7 +1196,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3403"
         random_state = {
@@ -1216,29 +1213,29 @@ country_event = {
     title = "EVTNAME3404"
     desc = "EVTDESC3404"
     picture = "Strike"
-    
+
     trigger = {
         civilized = yes
         unemployment_subsidies = acceptable_subsidies
-        NOT = {
-            trade_unions = no_trade_unions
+		NOT = { trade_unions = no_trade_unions }
+		is_ideology_enabled = socialist
         }
-    }
-    
+
+
     mean_time_to_happen = {
         months = 200 # Common
-        
+
         modifier = {
             factor = 0.5
             militancy = 0.2
         }
-        
+
         modifier = {
             factor = 1.5
             consciousness = 0.2
         }
     }
-    
+
     option = {
         name = "EVTOPTA3404"
         random_state = {
@@ -1269,34 +1266,31 @@ country_event = {
     title = "EVTNAME3600"
     desc = "EVTDESC3600"
     picture = "Workers"
-    
+
     trigger = {
         civilized = yes
         safety_regulations = no_safety
-        trinket_safety = 1
         industrial_score = 1
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.5
             poor_strata_militancy = 6
         }
-        
+
         modifier = {
             factor = 1.5
             poor_strata_everyday_needs = 0.9
         }
     }
-    
+
     option = {
         name = "EVTOPTA3600"
         random_state = {
-            limit = {
-                trinket_safety = 1
-            }
             any_pop = {
                 scaled_militancy = {
                     factor = 4
@@ -1305,13 +1299,10 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3600"
         random_state = {
-            limit = {
-                trinket_safety = 1
-            }
             any_pop = {
                 scaled_consciousness = {
                     factor = 4
@@ -1328,28 +1319,29 @@ country_event = {
     title = "EVTNAME3601"
     desc = "EVTDESC3601"
     picture = "Workers"
-    
-    
+
+
     trigger = {
         civilized = yes
         safety_regulations = trinket_safety
         industrial_score = 1
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.8
             average_militancy = 6
         }
-        
+
         modifier = {
             factor = 1.5
             consciousness = 0.2
         }
     }
-    
+
     option = {
         name = "EVTOPTA3601"
         random_state = {
@@ -1361,8 +1353,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3601"
         random_state = {
             any_pop = {
@@ -1381,22 +1373,23 @@ country_event = {
     title = "EVTNAME3602"
     desc = "EVTDESC3602"
     picture = "Workers"
-    
+
     trigger = {
         civilized = yes
         safety_regulations = low_safety
         social_reform_want = 0.2
         industrial_score = 1
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.5
             average_militancy = 7
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -1404,7 +1397,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3602"
         random_state = {
@@ -1416,8 +1409,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3602"
         random_state = {
             any_pop = {
@@ -1428,7 +1421,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3602"
         random_state = {
@@ -1452,29 +1445,30 @@ country_event = {
     title = "EVTNAME3603"
     desc = "EVTDESC3603"
     picture = "Workers"
-    
+
     trigger = {
         civilized = yes
         safety_regulations = acceptable_safety
         industrial_score = 1
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.9
             rich_strata_militancy = 6
             poor_strata_militancy = 6
         }
-        
+
         modifier = {
             factor = 1.5
             poor_strata_life_needs = 0.9
             rich_strata_life_needs = 0.9
         }
     }
-    
+
     option = {
         name = "EVTOPTA3603"
         random_state = {
@@ -1483,7 +1477,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3603"
         social_reform = low_safety
@@ -1493,7 +1487,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3603"
         social_reform = good_safety
@@ -1511,25 +1505,22 @@ country_event = {
     title = "EVTNAME3604"
     desc = "EVTDESC3604"
     picture = "Spies"
-    
+
     trigger = {
         civilized = yes
-        NOT = {
-            trade_unions = all_trade_unions
+		NOT = { trade_unions = all_trade_unions }
+		NOT = { safety_regulations = good_safety }
         }
-        NOT = {
-            safety_regulations = good_safety
-        }
-    }
-    
+
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.8
             poor_strata_militancy = 6
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -1537,7 +1528,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3604"
         random_state = {
@@ -1546,7 +1537,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3604"
         random_state = {
@@ -1563,27 +1554,28 @@ country_event = {
     title = "EVTNAME3605"
     desc = "EVTDESC3605"
     picture = "Police"
-    
+
     trigger = {
         civilized = yes
         safety_regulations = low_safety
         health_care = low_health_care
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 200 # Common
-        
+
         modifier = {
             factor = 0.5
             militancy = 0.2
         }
-        
+
         modifier = {
             factor = 1.5
             consciousness = 0.2
         }
     }
-    
+
     option = {
         name = "EVTOPTA3605"
         random_state = {
@@ -1593,7 +1585,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3605"
         random_state = {
@@ -1621,29 +1613,30 @@ country_event = {
     title = "EVTNAME3606"
     desc = "EVTDESC3606"
     picture = "Workers"
-    
+
     trigger = {
         civilized = yes
         safety_regulations = acceptable_safety
         health_care = acceptable_health_care
         basic_chemistry = 1
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 200 # Common
-        
+
         modifier = {
             factor = 0.5
             militancy = 0.2
         }
-        
+
         modifier = {
             factor = 1.5
             consciousness = 0.2
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTA3606"
         random_state = {
             poor_strata = {
@@ -1651,7 +1644,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3606"
         random_state = {
@@ -1671,23 +1664,23 @@ country_event = {
     title = "EVTNAME3607"
     desc = "EVTDESC3607"
     picture = "Strike"
-    
+
     trigger = {
         civilized = yes
         safety_regulations = good_safety
         health_care = good_health_care
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.9
             NOT = {
                 average_militancy = 5
             }
         }
-        
+
         modifier = {
             factor = 1.5
             average_consciousness = 5
@@ -1702,7 +1695,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB3607"
         prestige = 5
@@ -1717,20 +1710,21 @@ country_event = {
     title = "EVTNAME3700"
     desc = "EVTDESC3700"
     picture = "Childlabor2"
-    
+
     trigger = {
         civilized = yes
         child_labor = child_labor_legal
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.8
             average_consciousness = 6
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -1738,7 +1732,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3700"
         random_state = {
@@ -1751,8 +1745,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3700"
         random_state = {
             poor_strata = {
@@ -1770,20 +1764,21 @@ country_event = {
     title = "EVTNAME370000002"
     desc = "EVTDESC370000002"
     picture = "Childlabor2"
-    
+
     trigger = {
         civilized = yes
         work_hours = no_work_hour_limit
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.8
             average_consciousness = 6
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -1791,7 +1786,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA370000002"
         random_state = {
@@ -1804,8 +1799,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB370000002"
         random_state = {
             poor_strata = {
@@ -1821,20 +1816,20 @@ country_event = {
     title = "EVTNAME3701"
     desc = "EVTDESC3701"
     picture = "Strike"
-    
+
     trigger = {
         civilized = yes
         work_hours = fourteen_hours
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.8
             average_consciousness = 6
         }
-        
+
         modifier = {
             factor = 1.3
             NOT = {
@@ -1842,15 +1837,15 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3701"
         rich_strata = {
             militancy = -2
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3701"
         social_reform = twelve_hours
         poor_strata = {
@@ -1860,7 +1855,7 @@ country_event = {
             militancy = 2
         }
     }
-    
+
     option = {
         name = "EVTOPTC3701"
         social_reform = no_work_hour_limit
@@ -1879,7 +1874,7 @@ country_event = {
     title = "EVTNAME3702"
     desc = "EVTDESC3702"
     picture = "Strike"
-    
+
     trigger = {
         civilized = yes
         work_hours = twelve_hours
@@ -1888,21 +1883,21 @@ country_event = {
         }
         poor_strata_life_needs = 0.9
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.8
             trade_unions = all_trade_unions
         }
-        
+
         modifier = {
             factor = 1.3
             trade_unions = state_controlled
         }
     }
-    
+
     option = {
         name = "EVTOPTA3702"
         social_reform = fourteen_hours
@@ -1916,8 +1911,8 @@ country_event = {
             factor = 0
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3702"
         random_state = {
             any_pop = {
@@ -1928,7 +1923,7 @@ country_event = {
             factor = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3702"
         social_reform = ten_hours
@@ -1947,18 +1942,18 @@ country_event = {
     title = "EVTNAME3703"
     desc = "EVTDESC3703"
     picture = "Upperhouse"
-    
+
     trigger = {
         civilized = yes
         work_hours = ten_hours
         conservative = 0.3
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
     }
-    
+
     option = {
         name = "EVTOPTA3703"
         social_reform = fourteen_hours
@@ -1970,7 +1965,7 @@ country_event = {
             factor = 0
         }
     }
-    
+
     option = {
         name = "EVTOPTB3703"
         rich_strata = {
@@ -1980,7 +1975,7 @@ country_event = {
             factor = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3703"
         social_reform = eight_hours
@@ -1991,7 +1986,7 @@ country_event = {
         ai_chance = {
             factor = 0
         }
-        
+
     }
 }
 
@@ -2003,28 +1998,29 @@ country_event = {
     title = "EVTNAME3800"
     desc = "EVTDESC3800"
     picture = "Workers"
-    
+
     trigger = {
         civilized = yes
         wage_reform = no_minimum_wage
         social_reform_want = 0.1
+		is_ideology_enabled = socialist
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.7
             NOT = {
                 poor_strata_life_needs = 0.9
             }
         }
-        
+
         modifier = {
             factor = 0.9
             social_reform_want = 0.2
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -2032,7 +2028,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3800"
         random_state = {
@@ -2045,8 +2041,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3800"
         random_state = {
             rich_strata = {
@@ -2054,7 +2050,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3800"
         social_reform = trinket_wage
@@ -2074,7 +2070,7 @@ country_event = {
     title = "EVTNAME3801"
     desc = "EVTDESC3801"
     picture = "Upperhouse"
-    
+
     trigger = {
         civilized = yes
         wage_reform = trinket_wage
@@ -2082,17 +2078,17 @@ country_event = {
             government = proletarian_dictatorship
         }
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.8
             NOT = {
                 rich_strata_everyday_needs = 0.9
             }
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -2100,7 +2096,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3801"
         poor_strata = {
@@ -2112,8 +2108,8 @@ country_event = {
             militancy = 2
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3801"
         poor_strata = {
             militancy = 1
@@ -2122,7 +2118,7 @@ country_event = {
             militancy = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3801"
         social_reform = no_minimum_wage
@@ -2139,17 +2135,17 @@ country_event = {
     title = "EVTNAME3802"
     desc = "EVTDESC3802"
     picture = "Strike"
-    
+
     trigger = {
         civilized = yes
         wage_reform = low_minimum_wage
         average_consciousness = 5
         social_reform_want = 0.1
     }
-    
+
     mean_time_to_happen = {
         months = 400 # Common
-        
+
         modifier = {
             factor = 0.8
             social_reform_want = 0.15
@@ -2161,7 +2157,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3802"
         social_reform = no_minimum_wage
@@ -2178,8 +2174,8 @@ country_event = {
             consciousness = 1
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3802"
         rich_strata = {
             militancy = -1
@@ -2188,7 +2184,7 @@ country_event = {
             militancy = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3802"
         social_reform = acceptable_minimum_wage
@@ -2213,18 +2209,18 @@ country_event = {
     title = "EVTNAME3803"
     desc = "EVTDESC3803"
     picture = "Strike"
-    
+
     trigger = {
         civilized = yes
         wage_reform = good_minimum_wage
         has_pop_type = capitalists
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
     }
-    
+
     option = {
         name = "EVTOPTA3803"
         social_reform = acceptable_minimum_wage
@@ -2234,7 +2230,7 @@ country_event = {
         }
     }
 
-    
+
     option = {
         name = "EVTOPTC3803"
         random_state = {
@@ -2253,21 +2249,21 @@ country_event = {
     title = "EVTNAME3900"
     desc = "EVTDESC3900"
     picture = "Demonstration"
-    
+
     trigger = {
         civilized = yes
         trade_unions = no_trade_unions
         state_controlled = 10
     }
-    
+
     mean_time_to_happen = {
         months = 600 # Common
-        
+
         modifier = {
             factor = 0.5
             state_controlled = 15
         }
-        
+
         modifier = {
             factor = 2
             NOT = {
@@ -2275,7 +2271,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3900"
         any_pop = {
@@ -2285,8 +2281,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3900"
         random_state = {
             any_pop = {
@@ -2297,7 +2293,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC3900"
         political_reform = state_controlled
@@ -2322,7 +2318,7 @@ country_event = {
     title = "EVTNAME3901"
     desc = "EVTDESC3901"
     picture = "Demonstration"
-    
+
     trigger = {
         civilized = yes
         trade_unions = state_controlled
@@ -2332,10 +2328,10 @@ country_event = {
             fascist = 0.3
         }
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.5
             OR = {
@@ -2343,7 +2339,7 @@ country_event = {
                 socialist = 0.5
             }
         }
-        
+
         modifier = {
             factor = 1.5
             NOT = {
@@ -2351,7 +2347,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3901"
         any_pop = {
@@ -2365,8 +2361,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3901"
         political_reform = no_trade_unions
         poor_strata = {
@@ -2378,7 +2374,7 @@ country_event = {
             consciousness = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3901"
         political_reform = non_socialist
@@ -2399,26 +2395,26 @@ country_event = {
     title = "EVTNAME3902"
     desc = "EVTDESC3902"
     picture = "Demonstration"
-    
+
     trigger = {
         civilized = yes
         trade_unions = non_socialist
     }
-    
+
     mean_time_to_happen = {
         months = 200 # Common
-        
+
             modifier = {
             factor = 0.5
             militancy = 0.2
         }
-        
+
         modifier = {
             factor = 1.5
             consciousness = 0.2
         }
     }
-    
+
     option = {
         name = "EVTOPTA3902"
         random_state = {
@@ -2428,8 +2424,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB3902"
         random_state = {
             poor_strata = {
@@ -2455,7 +2451,7 @@ country_event = {
     title = "EVTNAME3903"
     desc = "EVTDESC3903"
     picture = "Strike"
-    
+
     trigger = {
         trade_unions = all_trade_unions
         civilized = yes
@@ -2464,24 +2460,24 @@ country_event = {
             ruling_party_ideology = communist
         }
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.9
             poor_strata_militancy = 5
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
                 socialist = 0.25
                 communist = 0.25
-            }   
+            }
         }
     }
-    
+
     option = {
         name = "EVTOPTA3903"
         political_reform = non_socialist
@@ -2494,7 +2490,7 @@ country_event = {
             consciousness = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTB3903"
         capitalists = {
@@ -2506,7 +2502,7 @@ country_event = {
             consciousness = 1
         }
     }
-    
+
     option = {
         name = "EVTOPTC3903"
         poor_strata = {
@@ -2527,27 +2523,27 @@ country_event = {
     title = "EVTNAME4000"
     desc = "EVTDESC4000"
     picture = "Slaves"
-    
+
     trigger = {
         slavery = freedom_of_womb
         civilized = yes
         no_slavery = 10
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.5
             militancy = 0.2
         }
-        
+
         modifier = {
             factor = 1.5
             consciousness = 0.2
         }
     }
-    
+
     option = {
         name = "EVTOPTA4000"
         random_state = {
@@ -2562,8 +2558,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB4000"
         random_state = {
             limit = {
@@ -2577,7 +2573,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC4000"
         random_state = {
@@ -2600,27 +2596,27 @@ country_event = {
     title = "EVTNAME4000"
     desc = "EVTDESC4000"
     picture = "Slaves"
-    
+
     trigger = {
         slavery = yes_slavery
         civilized = yes
         freedom_of_womb = 10
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.5
             militancy = 0.2
         }
-        
+
         modifier = {
             factor = 1.5
             consciousness = 0.2
         }
     }
-    
+
     option = {
         name = "EVTOPTA4000"
         random_state = {
@@ -2635,8 +2631,8 @@ country_event = {
             }
         }
     }
-    
-    option = {  
+
+    option = {
         name = "EVTOPTB4000"
         random_state = {
             limit = {
@@ -2650,7 +2646,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTC4000"
         random_state = {
@@ -2673,7 +2669,7 @@ country_event = {
     title = "EVTNAME4001"
     desc = "EVTDESC4001"
     picture = "Slaves"
-    
+
     trigger = {
         slavery = no_slavery
         civilized = yes
@@ -2685,10 +2681,10 @@ country_event = {
             slavery = yes_slavery
         }
     }
-    
+
     mean_time_to_happen = {
         months = 800 # Common
-        
+
         modifier = {
             factor = 0.8
             OR = {
@@ -2696,12 +2692,12 @@ country_event = {
                 ruling_party_ideology = liberal
             }
         }
-        
+
         modifier = {
             factor = 1.5
             ruling_party_ideology = conservative
         }
-        
+
         modifier = {
             factor = 4
             OR = {
@@ -2710,7 +2706,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTA4001"
         prestige = 2
@@ -2729,7 +2725,7 @@ country_event = {
                 value = -50
             }
         }
-        
+
         random_country = {
             limit = {
                 slavery = freedom_of_womb
@@ -2746,7 +2742,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVTOPTB4001"
         prestige = -2

@@ -1,11 +1,14 @@
-#Informing German States of the Frankfurt Assembly
+# TODO do my newer version of the Federation of the Rhine.
+# I sadly lost this version though.
+
+# Informing German States of the Frankfurt Assembly
 country_event = {
-        id = 55000
-        title = "EVTNAME55000"
-        desc = "EVTDESC55000"
+    id = 55000
+    title = "EVTNAME55000"
+    desc = "EVTDESC55000"
     picture = "Unite"
- 
-        trigger = {
+
+    trigger = {
         OR = {
             tag = WUR
             tag = BAD
@@ -28,7 +31,7 @@ country_event = {
             tag = SGF
         }
         exists = FRM
-        year = 1849
+        year = 1847
         NOT = {
             exists = GER
             exists = NGF
@@ -38,12 +41,12 @@ country_event = {
     }
 
     mean_time_to_happen =  {
-        days = 1
+        months = 36
     }
- 
-        option = {
-                name = "EVTOPTA55000"
-        any_pop = { 
+
+    option = {
+        name = "EVTOPTA55000"
+        any_pop = {
             ideology = {
                 value = liberal
                 factor = 0.1
@@ -61,17 +64,17 @@ country_event = {
         }
         set_global_flag = fed_unifying
         set_country_flag = fed_unifying
-        }
+    }
 }
 
 #9 Delegates Sent - There is a GP in the Rhine states
 country_event = {
-        id = 55001
-        title = "EVTNAME55001"
-        desc = "EVTDESC55001"
+    id = 55001
+    title = "EVTNAME55001"
+    desc = "EVTDESC55001"
     picture = "Unite"
- 
-        trigger = {
+
+    trigger = {
         tag = FRM
         year = 1849
         NOT = {
@@ -81,12 +84,14 @@ country_event = {
             has_global_flag = federation_rejected
             has_global_flag = federation_accepted
         }
+
         FRA = {
             check_variable = {
                 which = delegates_sent
                 value = 9
             }
         }
+
         OR = {
             WUR = {
                 is_greater_power = yes
@@ -147,15 +152,15 @@ country_event = {
             }
         }
     }
- 
+
     fire_only_once = yes
 
     mean_time_to_happen =  {
-        days = 1
+        months = 1
     }
- 
-        option = {
-                name = "EVTOPTA55001"
+
+    option = {
+        name = "EVTOPTA55001"
         random_country = {
             limit = {
                 exists = yes
@@ -182,24 +187,24 @@ country_event = {
                     tag = SGF
                 }
             }
-            country_event = { id=55002 days=0 }
+            country_event = 55002
         }
         }
 }
 
-#A Confed GP gets invitation
+# A Confed GP gets invitation
 country_event = {
-        id = 55002
-        title = "EVTNAME55002"
-        desc = "EVTDESC55002"
-    
+    id = 55002
+    title = "EVTNAME55002"
+    desc = "EVTDESC55002"
     major = yes
- 
-        is_triggered_only = yes
- 
-        option = {
-                name = "EVTOPTA55002"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA55002"
         prestige = -30
+
         add_accepted_culture = north_german
         add_accepted_culture = south_german
         political_reform = wealth_voting
@@ -218,7 +223,9 @@ country_event = {
             }
             annex_to = THIS
         }
+
         change_tag = FED
+
         GER = {
             all_core = {
                 limit = {
@@ -227,7 +234,9 @@ country_event = {
                 add_core = FED
             }
         }
+
         set_global_flag = federation_accepted
+
         any_country = {
             limit = {
                 exists = yes
@@ -253,30 +262,32 @@ country_event = {
                     tag = SGF
                 }
             }
-            country_event = { id=55005 days=0 }
+            country_event = 55005
         }
         ai_chance = {
             factor = 100
         }
-        }
+    }
+
     option = {
-                name = "EVTOPTB55002"
+        name = "EVTOPTB55002"
         prestige = 15
+
         set_global_flag = federation_rejected
         ai_chance = {
             factor = 0
         }
-        }
+    }
 }
 
 #9 Delegates Sent - There is NOT a GP in the Rhine states
 country_event = {
-        id = 55003
-        title = "EVTNAME55003"
-        desc = "EVTDESC55003"
+    id = 55003
+    title = "EVTNAME55003"
+    desc = "EVTDESC55003"
     picture = "Unite"
- 
-        trigger = {
+
+    trigger = {
         tag = FRM
         year = 1849
         NOT = {
@@ -354,47 +365,52 @@ country_event = {
             }
         }
     }
- 
+
     fire_only_once = yes
 
     mean_time_to_happen =  {
-        days = 1
+        months = 6
     }
- 
-        option = {
-                name = "EVTOPTA55003"
+
+    option = {
+        name = "EVTOPTA55003"
         random_country = {
             limit = {
                 tag = AUS
+                exists = yes
             }
-            country_event = { id=55004 days=0 }
+
+            country_event = 55004
         }
-        }
+    }
 }
 
 #A non-Confed GP gets invitation
 country_event = {
-        id = 55004
-        title = "EVTNAME55004"
-        desc = "EVTDESC55004"
-    
+    id = 55004
+    title = "EVTNAME55004"
+    desc = "EVTDESC55004"
+
     major = yes
- 
-        is_triggered_only = yes
- 
-        option = {
-                name = "EVTOPTA55004"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA55004"
         GER = {
             all_core = {
                 limit = {
                     NOT = { OR = { is_core = PRU is_core = DZG is_core = SWE } }
-                    }
+                }
+
                 add_core = FED
             }
         }
+
         FRM = {
             change_tag = FED
         }
+
         any_country = {
             limit = {
                 has_country_flag = sent_delegate
@@ -404,6 +420,7 @@ country_event = {
             }
             annex_to = FED
         }
+
         FED = {
             prestige = -100
             add_accepted_culture = south_german
@@ -416,13 +433,16 @@ country_event = {
             political_reform = secret_ballots
             government = hms_government
         }
+
         create_alliance = FED
         diplomatic_influence = {
             who = FED
-                value = 300
+            value = 300
         }
+
         create_vassal = FED
         set_global_flag = federation_accepted
+
         any_country = {
             limit = {
                 exists = yes
@@ -448,61 +468,62 @@ country_event = {
                     tag = SGF
                 }
             }
-            country_event = { id=55005 days=0 }
+            country_event = 55005
         }
         ai_chance = {
             factor = 100
         }
-        }
+    }
+
     option = {
-                name = "EVTOPTB55004"
+        name = "EVTOPTB55004"
         prestige = 15
         set_global_flag = federation_rejected
         ai_chance = {
             factor = 0
         }
-        }
+    }
 }
 
 #Other states offered choice to join the Fed
 country_event = {
-        id = 55005
-        title = "EVTNAME55005"
-        desc = "EVTDESC55005"
+    id = 55005
+    title = "EVTNAME55005"
+    desc = "EVTDESC55005"
     picture = "threehurrahs"
- 
-        is_triggered_only = yes
- 
-        option = {
-                name = "EVTOPTA55005"
-        FED = {
-            inherit = THIS
-        }
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA55005"
+        FED = { inherit = THIS }
         ai_chance = {
             factor = 100
         }
-        }
+    }
+
     option = {
-                name = "EVTOPTB55005"
+        name = "EVTOPTB55005"
         prestige = 15
         any_pop = {
             militancy = 3
             consciousness = 2
         }
+
         ai_chance = {
             factor = 0
         }
-        }
+    }
 }
 
 #Frankfurt Failure
 country_event = {
-        id = 55007
-        title = "EVTNAME55007"
-        desc = "EVTDESC55007"
+    id = 55007
+    title = "EVTNAME55007"
+    desc = "EVTDESC55007"
     picture = "Upperhouse"
- 
-        trigger = {
+
+    trigger = {
         OR = {
             tag = WUR
             tag = BAD
@@ -524,10 +545,12 @@ country_event = {
             tag = MEC
             tag = SGF
         }
+
         has_global_flag = fed_unifying
         NOT = {
             has_global_flag = frank_failed
         }
+
         year = 1850
         NOT = {
             exists = GER
@@ -538,13 +561,15 @@ country_event = {
     mean_time_to_happen =  {
         months = 1
     }
- 
-        option = {
-                name = "EVTOPTA55007"
+
+    option = {
+        name = "EVTOPTA55007"
+
         any_pop = {
             militancy = -3
             consciousness = -2
         }
+
         set_global_flag = frank_failed
-        }
+    }
 }

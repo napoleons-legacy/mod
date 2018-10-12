@@ -9,9 +9,11 @@ province_event = {
     id = 80120
     title = "EVTNAME80120" #Hui Unrest in $STATENAME$
     desc = "EVTDESC80120"
-    
+
     trigger = {
         OR = {
+
+
             owned_by = QNG
             owner = { substate_of = QNG }
         }
@@ -24,8 +26,8 @@ province_event = {
             has_global_flag = hong
             has_country_flag = mandate
         }
-        OR = { 
-            AND = { 
+        OR = {
+            AND = {
                 region = CHI_1601 # Yunnan
                 owner = { NOT = { has_global_flag = panthay_rebellion } }
             }
@@ -40,7 +42,7 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 60
         modifier = {
@@ -56,7 +58,7 @@ province_event = {
             any_neighbor_province = { has_province_modifier = anti_manchu_sentiment }
         }
     }
-    
+
     option = {
         name = "EVT80120OPTA"
         add_province_modifier = {
@@ -74,7 +76,7 @@ province_event = {
             consciousness = 4
         }
     }
-    
+
     option = {
         name = "EVT80120OPTB"
         state_scope = {
@@ -102,9 +104,9 @@ country_event = {
     title = "EVTNAME80121" #Panthay Rebellion
     desc = "EVTDESC80121"
     picture = "panthay_rebellion"
-    
+
     fire_only_once = yes
-    
+
     trigger = {
         tag = QNG
         YNN = {
@@ -126,7 +128,7 @@ country_event = {
         }
         NOT = { has_global_flag = panthay_rebellion }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -134,15 +136,11 @@ country_event = {
             war = no
         }
     }
-    
+
     option = {
         name = "EVT80121OPTA"
         set_global_flag = panthay_rebellion
         release_vassal = YNN
-        random = {
-            chance = 50
-            1601 = { secede_province = QNG }
-        }
         YNN = {
             capital = 1602
             any_pop = {
@@ -155,7 +153,7 @@ country_event = {
             end_war = YNN
         }
         YNN = { change_tag = PGG }
-        PGG = { religion = sunni }
+		PGG = { religion = sunni set_country_flag = sunni_country clr_country_flag = mahayana_country }
         casus_belli = {
             target = PGG
             type = make_puppet
@@ -175,17 +173,17 @@ country_event = {
     title = "EVTNAME80122" #Panthay Rebellion Crushed
     desc = "EVTDESC80122"
     picture = "panthay_rebellion"
-    
+
     trigger = {
         tag = QNG
         has_global_flag = panthay_rebellion
         is_our_vassal = PGG
     }
-    
+
     mean_time_to_happen = {
         days = 10
     }
-    
+
     option = {
         name = "EVT80126OPTA"
         clr_global_flag = panthay_rebellion
@@ -193,6 +191,8 @@ country_event = {
         PGG = { change_tag = YNN }
         YNN = {
             religion = mahayana
+			set_country_flag = mahayana_country
+			clr_country_flag = sunni_country
             any_owned = {
                 remove_province_modifier = anti_manchu_sentiment
                 any_pop = {
@@ -217,18 +217,18 @@ country_event = {
     news_desc_medium = "EVTDESC80123_NEWS_MEDIUM"
     news_desc_short = "EVTDESC80123_NEWS_SHORT"
     picture = "panthay_rebellion"
-    
+
     trigger = {
-        tag = YNN
+		tag = PGG
         has_global_flag = panthay_rebellion
         is_vassal = no
         NOT = { war_with = QNG }
     }
-    
+
     mean_time_to_happen = {
         days = 10
     }
-    
+
     option = {
         name = "EVT80123OPTA"
         prestige = 10
@@ -243,16 +243,16 @@ country_event = {
     title = "EVTNAME80125" #Dungan Revolt
     desc = "EVTDESC80125"
     picture = "dungan_revolt_xinhai"
-    
+
     fire_only_once = yes
-    
+
     trigger = {
         tag = QNG
-        XIN = { 
+        XIN = {
             substate_of = THIS
             NOT = { num_of_revolts = 1 }
             ai = yes
-        }       
+        }
         1594 = {
             owned_by = XIN
             controlled_by = XIN
@@ -267,7 +267,7 @@ country_event = {
         }
         NOT = { has_global_flag = dungan_rebellion }
     }
-    
+
     mean_time_to_happen = {
         months = 6
         modifier = {
@@ -275,7 +275,7 @@ country_event = {
             war = no
         }
     }
-    
+
     option = {
         name = "EVT80125OPTA"
         set_global_flag = dungan_rebellion
@@ -306,7 +306,7 @@ country_event = {
             target = UYG
             attacker_goal = {
                 casus_belli = make_puppet
-            }       
+            }
             defender_goal = {
                 casus_belli = status_quo
             }
@@ -315,7 +315,7 @@ country_event = {
             factor = 100
         }
     }
-    
+
     option = {
         name = "EVT80125OPTB"
         set_global_flag = dungan_rebellion
@@ -342,7 +342,7 @@ country_event = {
             target = UYG
             attacker_goal = {
                 casus_belli = make_puppet
-            }       
+            }
             defender_goal = {
                 casus_belli = status_quo
             }
@@ -357,17 +357,17 @@ country_event = {
     title = "EVTNAME80126" #Dungan Revolt Crushed
     desc = "EVTDESC80126"
     picture = "dungan_revolt_xinhai"
-    
+
     trigger = {
         tag = QNG
         has_global_flag = dungan_rebellion
         is_our_vassal = UYG
     }
-    
+
     mean_time_to_happen = {
         days = 10
     }
-    
+
     option = {
         name = "EVT80126OPTA"
         clr_global_flag = dungan_rebellion
@@ -402,18 +402,18 @@ country_event = {
     news_desc_medium = "EVTDESC80127_NEWS_MEDIUM"
     news_desc_short = "EVTDESC80127_NEWS_SHORT"
     picture = "dungan_revolt_xinhai"
-    
+
     trigger = {
         tag = UYG
         has_global_flag = dungan_rebellion
         is_vassal = no
         NOT = { war_with = QNG }
     }
-    
+
     mean_time_to_happen = {
         days = 10
     }
-    
+
     option = {
         name = "EVT80123OPTA"
         prestige = 10
@@ -427,7 +427,7 @@ country_event = {
     title = "EVTNAME80128" #Dungan Revolt -1895 in Qinghai
     desc = "EVTDESC80128"
     picture = "dungan_rebellion_qinghai"
-    
+
     trigger = {
         OR = {
             tag = QNG
@@ -447,11 +447,11 @@ country_event = {
         }
         has_global_flag = dungan_rebellion
     }
-    
+
     mean_time_to_happen = { months = 20 }
-    
+
     fire_only_once = yes
-    
+
     option = {
         name = "EVT80128OPTA"
         any_country = {
@@ -466,11 +466,10 @@ country_event = {
             target = XBI
             attacker_goal = {
                 casus_belli = conquest_any
-            }       
+            }
             defender_goal = {
                 casus_belli = status_quo
             }
         }
     }
 }
-

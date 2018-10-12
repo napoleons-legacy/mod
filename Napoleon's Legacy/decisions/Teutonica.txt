@@ -160,7 +160,7 @@ political_decisions = {
             tag = PRU
             war = no
             NOT = {
-                has_country_flag = Pru_Pol_crisis
+                has_country_flag = prussian_polish_crisis
                 AND = {
                     owns = 699
                     owns = 694
@@ -184,7 +184,7 @@ political_decisions = {
         }
 
         effect = {
-            set_country_flag = Pru_Pol_crisis
+            set_country_flag = prussian_polish_crisis
             any_country = {
                 limit = {
                     owns = 699

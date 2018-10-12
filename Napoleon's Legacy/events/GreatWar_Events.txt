@@ -636,6 +636,27 @@ country_event = {
                     state_scope = {
                         NOT = { any_owned_province = { is_capital = yes } }
                     }
+				}
+				remove_core = THIS
+			}
+			country_event = 96012
+		}
+		#release Indonesia, if possible
+		any_country = {
+			limit = {
+				tag = INO
+				exists = no
+				THIS = {
+					owns = 1413
+					owns = 1403
+				}
+				NOT = { exists = BOH }
+				NOT = { exists = SLV }
+			}
+			all_core = {
+				limit = {
+					is_core = THIS
+					state_scope = { NOT = { any_owned_province = { is_capital = yes } } }
                 }
                 remove_core = THIS
             }
@@ -2257,45 +2278,62 @@ country_event = {
             }
         }
 
-        #prestige hit
-        prestige_factor = -0.5
-        
-        #if Schleswig owned, re-add cores for Denmark
-        any_owned = {
-            limit = {
-                OR = {
-                    province_id = 370
-                    province_id = 371
-                }
-            }
-            add_core = DEN
-        }
-        
-        #add core to Danzig, if owned
-        random_owned = {
-            limit = {
-                province_id = 690
-                NOT = { is_core = DZG }
-            }
-            add_core = DZG
-        }
-        
-        #remove cores from Polish provinces if any owned
-        random_owned = {
-            limit = {
-                OR = {
-                    is_core = POL
-                    is_core = PLC
-                }
-            }
-            PRU_690 = { remove_core = THIS }
-            PRU_701 = {
-                remove_core = THIS
-                add_core = PZN
-            }
-            684 = { remove_core = THIS }
-            685 = { remove_core = THIS }
-        }
+		#prestige hit
+		prestige_factor = -0.5
+		
+		#if Schleswig owned, re-add cores for Denmark
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 370
+					province_id = 371
+				}
+			}
+			add_core = DEN
+		}
+		
+		#add core to Danzig, if owned
+		random_owned = {
+			limit = {
+				province_id = 690
+				NOT = { is_core = DZG }
+			}
+			add_core = DZG
+		}
+		
+		#remove cores from Polish provinces if any owned
+		random_owned = {
+			limit = {
+				OR = {
+					is_core = POL
+					is_core = PLC
+				}
+			}
+			PRU_690 = { remove_core = THIS }
+			PRU_701 = {
+				remove_core = THIS
+				add_core = PZN
+			}
+			684 = { remove_core = THIS }
+			685 = { remove_core = THIS }
+		}
+		
+		#if any Congress Poland cores owned, re-add cores to Russia
+		any_owned = {
+			limit = {
+				OR = {
+					region = RUS_706
+					region = RUS_715
+					province_id = 707
+					province_id = 719
+				}
+				NOT = { province_id = 703 }
+				NOT = { is_core = RUS }
+				owner = { truce_with = RUS }
+			}
+			add_core = CPL
+			add_core = RUS
+		}
 
         #remove cores on overseas provinces
         any_owned = {
@@ -3001,7 +3039,31 @@ country_event = {
             add_core = KAM
         }
 
-        
+		#remove cores from Congress Poland provinces if any owned
+		random_owned = {
+			limit = {
+				OR = {
+					is_core = POL
+					is_core = PLC
+				}
+			}
+			RUS_706 = {
+				remove_core = RUS
+				add_core = CPL
+			}
+			RUS_715 = {
+				remove_core = RUS
+				add_core = CPL
+			}
+			707 = {
+				remove_core = RUS
+				add_core = CPL
+			}
+			719 = {
+				remove_core = RUS
+				add_core = CPL
+			}
+		}
         #if any Polish cores owned, re-add cores to Germany
         any_owned = {
             limit = {
@@ -6015,11 +6077,8 @@ country_event = {
                 NOT = { is_core = LBY }
                 NOT = { exists = TRI }
             }
-            TRI = {
-                all_core = { remove_core = TRI }
-            }
+			TRI = { all_core = { remove_core = TRI } }
             TRI_1731 = { add_core = LBY }
-            TRI_1740 = { add_core = LBY }
         }
         
         random_owned = {
@@ -7208,6 +7267,12 @@ country_event = {
             factor = 0
         }
     }
+	option = {
+		name = "EVTOPTC96071" #Skip
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 #Now transfer all colonial/overseas states bordering a truce country
@@ -7357,6 +7422,12 @@ country_event = {
                 factor = 0
                 is_greater_power = yes
             }
+		}
+	}
+	option = {
+		name = "EVTOPTC96071" #Skip
+		ai_chance = {
+			factor = 0
         }
     }
 }
@@ -7369,137 +7440,144 @@ country_event = {
     desc = "EVTDESC96070"
     picture = "treaty"
 
-    trigger = {
-        war = no
-        has_country_modifier = punitive_effects
-        NOT = {
-            any_owned_province = {
-                OR = {
-                    is_colonial = yes
-                    is_overseas = yes
-                }
-                port = yes
-                NOT = { is_core = THIS }
-                NOT = {
-                    any_neighbor_province = {
-                        owner = {
-                            OR = {
-                                is_greater_power = yes
-                                is_secondary_power = yes
-                            }
-                            OR = {
-                                truce_with = THIS
-                                AND = {
-                                    THIS = { has_country_modifier = international_pariah }
-                                    has_country_flag = coalition_member
-                                }
-                            }
-                            NOT = { has_country_flag = not_want_colonies }
-                        }
-                    }
-                }
-            }
-        }
-        NOT = {
-            any_owned_province = {
-                OR = {
-                    is_colonial = yes
-                    is_overseas = yes
-                }
-                NOT = { is_core = THIS }
-                any_neighbor_province = {
-                    owner = {
-                        OR = {
-                            is_greater_power = yes
-                            is_secondary_power = yes
-                        }
-                        OR = {
-                            truce_with = THIS
-                            AND = {
-                                THIS = { has_country_modifier = international_pariah }
-                                has_country_flag = coalition_member
-                            }
-                        }
-                        NOT = { has_country_flag = not_want_colonies }
-                    }
-                }
-            }
-        }
-        any_owned_province = {
-            OR = {
-                is_colonial = yes
-                is_overseas = yes
-            }
-            NOT = { is_core = THIS }
-        }
-        any_greater_power = {
-            OR = {
-                truce_with = THIS
-                AND = {
-                    THIS = { has_country_modifier = international_pariah }
-                    has_country_flag = coalition_member
-                }
-            }
-            NOT = { has_country_flag = not_want_colonies }
-        }
-    }
+	trigger = {
+		war = no
+		has_country_modifier = punitive_effects
+		NOT = {
+			any_owned_province = {
+				OR = {
+					is_colonial = yes
+					is_overseas = yes
+				}
+				port = yes
+				NOT = { is_core = THIS }
+				NOT = {
+					any_neighbor_province = {
+						owner = {
+							OR = {
+								is_greater_power = yes
+								is_secondary_power = yes
+							}
+							OR = {
+								truce_with = THIS
+								AND = {
+									THIS = { has_country_modifier = international_pariah }
+									has_country_flag = coalition_member
+								}
+							}
+							NOT = { has_country_flag = not_want_colonies }
+						}
+					}
+				}
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				OR = {
+					is_colonial = yes
+					is_overseas = yes
+				}
+				NOT = { is_core = THIS }
+				any_neighbor_province = {
+					owner = {
+						OR = {
+							is_greater_power = yes
+							is_secondary_power = yes
+						}
+						OR = {
+							truce_with = THIS
+							AND = {
+								THIS = { has_country_modifier = international_pariah }
+								has_country_flag = coalition_member
+							}
+						}
+						NOT = { has_country_flag = not_want_colonies }
+					}
+				}
+			}
+		}
+		any_owned_province = {
+			OR = {
+				is_colonial = yes
+				is_overseas = yes
+			}
+			NOT = { is_core = THIS }
+		}
+		any_greater_power = {
+			OR = {
+				truce_with = THIS
+				AND = {
+					THIS = { has_country_modifier = international_pariah }
+					has_country_flag = coalition_member
+				}
+			}
+			NOT = { has_country_flag = not_want_colonies }
+		}
+	}
 
-    mean_time_to_happen = {
-        days = 1
-    }
+	mean_time_to_happen = {
+		days = 1
+	}
 
-    option = {
-        name = "EVTOPTA96070" #Time to carve up our empire.
-        random_country = {
-            limit = {
-                is_greater_power = yes
-                OR = {
-                    truce_with = THIS
-                    AND = {
-                        THIS = { has_country_modifier = international_pariah }
-                        has_country_flag = coalition_member
-                    }
-                }
-                NOT = { has_country_flag = not_want_colonies }
-            }
-            country_event = 96081
-        }
-    }
+	option = {
+		name = "EVTOPTA96070" #Time to carve up our empire.
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				OR = {
+					truce_with = THIS
+					AND = {
+						THIS = { has_country_modifier = international_pariah }
+						has_country_flag = coalition_member
+					}
+				}
+				NOT = { has_country_flag = not_want_colonies }
+			}
+			country_event = 96081
+		}
+	}
 }
 
 country_event = {
-    
-    id = 96081
-    title = "EVTNAME96071" #Transfer of the $FROMCOUNTRY_ADJ$ Colonies
-    desc = "EVTDESC96081"
-    picture = "treaty"
-    
-    is_triggered_only = yes
+	
+	id = 96081
+	title = "EVTNAME96071" #Transfer of the $FROMCOUNTRY_ADJ$ Colonies
+	desc = "EVTDESC96081"
+	picture = "treaty"
+	
+	is_triggered_only = yes
 
-    option = {
-        name = "EVTOPTA96071" #Agree
-        prestige = 2
-        FROM = {
-            prestige = -2
-            random_state = {
-                limit = { any_owned_province = { OR = { is_colonial = yes is_overseas = yes } NOT = { is_core = FROM } } }
-                any_owned = { secede_province = THIS }
-            }
-        }
-        ai_chance = { factor = 80 }
-    }
+	option = {
+		name = "EVTOPTA96071" #Agree
+		prestige = 2
+		FROM = {
+			prestige = -2
+			random_state = {
+				limit = { any_owned_province = { OR = { is_colonial = yes is_overseas = yes } NOT = { is_core = FROM } } }
+				any_owned = { secede_province = THIS }
+			}
+		}
+		ai_chance = { factor = 80 }
+	}
 
-    option = {
-        name = "EVTOPTB96071" #Refuse
-        set_country_flag = not_want_colonies
-        ai_chance = {
-            factor = 20
-            modifier = {
-                factor = 0
-                is_greater_power = yes
-            }
-        }
-    }
+	option = {
+		name = "EVTOPTB96071" #Refuse
+		set_country_flag = not_want_colonies
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC96071" #Skip
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 #Events for the imposition of a new government

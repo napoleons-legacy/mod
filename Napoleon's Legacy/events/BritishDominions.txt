@@ -1,201 +1,197 @@
+#The Australian Dominion - Australia asks for independence
 country_event = {
 
-    id = 44332
+	id = 44332
 
-    title = "EVTNAME44332"
-    desc = "EVTDESC44332"
-    picture = "danishgovernment"
+	title = "EVTNAME44332"
+	desc = "EVTDESC44332"
+	picture = "danishgovernment"
 
-    major = yes
+	trigger = {
+		war = no
+		year = 1901
+		any_owned_province = { is_core = AST }
+		NOT = { exists = AST }
+		is_possible_vassal = AST
+	}
 
-    trigger = {
-        OR = {
-            tag = BRI
-            tag = CAN
-        }
-        war = no
-        year = 1901
-        any_owned_province = { is_core = AST }
-        NOT = { exists = AST }
-        is_possible_vassal = AST
-    }
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 10
+			has_country_flag = AST_independence_refused
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = AST }
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = AST }
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			year = 1910
+			NOT = { has_country_flag = AST_independence_refused }
+		}
+	}
 
-    mean_time_to_happen = {
-        months = 6
-        modifier = {
-            factor = 10
-            has_country_flag = AST_independence_refused
-        }
-        modifier = {
-            factor = 0.8
-            any_state = {
-                any_owned_province = { is_core = AST }
-                average_militancy = 3
-            }
-        }
-        modifier = {
-            factor = 0.8
-            any_state = {
-                any_owned_province = { is_core = AST }
-                average_militancy = 4
-            }
-        }
-        modifier = {
-            factor = 0.5
-            year = 1910
-            NOT = { has_country_flag = AST_independence_refused }
-        }
-    }
+	option = {
+		name = "EVT44330OPTA"
+		clr_country_flag = AST_independence_refused
+		prestige = -20
+		badboy = -5
+		any_pop = {
+			limit = { location = { is_core = AST } }
+			militancy = -10
+		}
+		AST = {
+			all_core = { remove_core = THIS remove_core = ENG }
+		}
+		release_vassal = AST
+		AST = { prestige = -80 }
+		relation = {
+			who = AST
+			value = 200
+		}
+		diplomatic_influence = {
+			who = AST
+			value = 200
+		}
+		any_pop = {
+			consciousness = 1
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				OR = {
+					government = proletarian_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+					government = presidential_dictatorship
+				}
+			}
+			modifier = {
+				factor = 0.25
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 1.5
+				government = democracy
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.75
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 1.25
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 1.5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 1.2
+				militancy = 3
+			}
+			modifier = {
+				factor = 1.2
+				militancy = 5
+			}
 
-    option = {
-        name = "EVT44330OPTA"
-        clr_country_flag = AST_independence_refused
-        prestige = -20
-        badboy = -5
-        any_pop = {
-            limit = { location = { is_core = AST } }
-            militancy = -10
-        }
-        AST = {
-            all_core = { remove_core = THIS }
-        }
-        release_vassal = AST
-        AST = { prestige = -80 }
-        relation = {
-            who = AST
-            value = 200
-        }
-        diplomatic_influence = {
-            who = AST
-            value = 200
-        }
-        any_pop = {
-            consciousness = 1
-        }
-        ai_chance = {
-            factor = 80
-            modifier = {
-                factor = 0
-                OR = {
-                    government = proletarian_dictatorship
-                    government = bourgeois_dictatorship
-                    government = fascist_dictatorship
-                    government = presidential_dictatorship
-                }
-            }
-            modifier = {
-                factor = 0.25
-                government = absolute_monarchy
-            }
-            modifier = {
-                factor = 1.5
-                government = democracy
-            }
-            modifier = {
-                factor = 0.5
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 0.75
-                war_policy = pro_military
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 1.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 3
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 5
-            }
-            
-        }   
-    }
-    option = {
-        name = "EVT44330OPTB"
-        set_country_flag = AST_independence_refused
-        any_owned = {
-            limit = { is_core = AST }
-            any_pop = {
-                militancy = 3
-            }
-        }
-        ai_chance = {
-            factor = 20
-            modifier = {
-                factor = 1.75
-                government = absolute_monarchy
-            }
-            modifier = {
-                factor = 0.5
-                government = democracy
-            }
-            modifier = {
-                factor = 1.5
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = pro_military
-            }
-            modifier = {
-                factor = 0.75
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 0.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 3
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 5
-            }
-        }
-    }
-    
-    option = {
-        name = "EVT44332OPTC"
-        clr_country_flag = AST_independence_refused
-        prestige = -20
-        badboy = -5
-        any_pop = {
-            limit = { location = { is_core = AST } }
-            militancy = -10
-        }
-        AST = {
-            all_core = { remove_core = THIS }
-        }
-        release_vassal = AST
-        AST = { prestige = -80 }
-        relation = {
-            who = AST
-            value = 200
-        }
-        diplomatic_influence = {
-            who = AST
-            value = 200
-        }
-        any_pop = {
-            consciousness = 1
-        }
-        change_tag_no_core_switch = AST
-        ai_chance = {
-            factor = 0
-        }
-    }
+		}
+	}
+	option = {
+		name = "EVT44330OPTB"
+		set_country_flag = AST_independence_refused
+		any_owned = {
+			limit = { is_core = AST }
+			any_pop = {
+				militancy = 3
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.75
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 0.5
+				government = democracy
+			}
+			modifier = {
+				factor = 1.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 1.25
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 0.75
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 0.8
+				militancy = 3
+			}
+			modifier = {
+				factor = 0.8
+				militancy = 5
+			}
+		}
+	}
+
+	option = {
+		name = "EVT44332OPTC"
+		clr_country_flag = AST_independence_refused
+		prestige = -20
+		badboy = -5
+		any_pop = {
+			limit = { location = { is_core = AST } }
+			militancy = -10
+		}
+		AST = {
+			all_core = { remove_core = THIS }
+		}
+		release_vassal = AST
+		AST = { prestige = -80 }
+		relation = {
+			who = AST
+			value = 200
+		}
+		diplomatic_influence = {
+			who = AST
+			value = 200
+		}
+		any_pop = {
+			consciousness = 1
+		}
+		change_tag_no_core_switch = AST
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
+#The New Zealand Dominion - NZ asks for independence
 country_event = {
 
     id = 44333
@@ -204,13 +200,7 @@ country_event = {
     desc = "EVTDESC44333"
     picture = "danishgovernment"
 
-    major = yes
-
     trigger = {
-        OR = {
-            tag = BRI
-            tag = CAN
-        }
         war = no
         year = 1907
         any_owned_province = { is_core = NZL }
@@ -320,8 +310,8 @@ country_event = {
                 factor = 1.2
                 militancy = 5
             }
-            
-        }   
+
+        }
     }
     option = {
         name = "EVT44330OPTB"
@@ -408,7 +398,7 @@ country_event = {
     title = "EVTNAME44335"
     desc = "EVTDESC44335"
     picture = "deliberation"
-    
+
     trigger = {
         war = no
         is_vassal = yes
@@ -426,17 +416,17 @@ country_event = {
         }
         NOT = { has_country_flag = no_more_asking_for_cores }
     }
-    
+
     mean_time_to_happen = {
         months = 12
     }
-    
+
     option = {
         name = "EVT44335OPTA"
         overlord = { country_event = 44336 }
         ai_chance = { factor = 100 }
     }
-    
+
     option = {
         name = "EVT44335OPTB"
         set_country_flag = no_more_asking_for_cores
@@ -449,9 +439,9 @@ country_event = {
     title = "EVTNAME44336"
     desc = "EVTDESC44336"
     picture = "deliberation"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT44336OPTA"
         any_owned = {
@@ -465,7 +455,7 @@ country_event = {
         FROM = { country_event = 44337 }
         ai_chance = { factor = 100 }
     }
-    
+
     option = {
         name = "EVT44336OPTB"
         FROM = {
@@ -481,9 +471,9 @@ country_event = {
     title = "EVTNAME44337"
     desc = "EVTDESC44337"
     picture = "unite"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT44337OPTA"
         prestige_factor = -0.1
@@ -505,9 +495,9 @@ country_event = {
     title = "EVTNAME44338"
     desc = "EVTDESC44338"
     picture = "deliberation"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT44338OPTA"
         relation = { who = FROM value = -100 }
@@ -520,13 +510,14 @@ country_event = {
     }
 }
 
+#The Northwest Territories - England/Canada Annex White Horse
 country_event = {
-    
+
     id = 44339
-    title = "EVTNAME44339" #The Northwest Territories - British Union/Canada Annex White Horse
+	title = "EVTNAME44339"
     desc = "EVTDESC44339"
     picture = "Southpole3"
-    
+
     trigger = {
         OR = {
             tag = CAN
@@ -568,7 +559,7 @@ country_event = {
                     owns = 17
                     owns = 2629
                 }
-            }       
+            }
             AND = {
                 6 = { empty = no }
                 7 = { empty = no }
@@ -623,7 +614,7 @@ country_event = {
                 2598 = { empty = no }
                 9 = { empty = no }
                 11 = { empty = no }
-                12 = { empty = yes } #Reliance
+				#12 = { empty = yes } #Reliance
                 OR = {
                     owns = 43
                     owns = 2596
@@ -637,7 +628,7 @@ country_event = {
                 2598 = { empty = no }
                 9 = { empty = no }
                 11 = { empty = no }
-                12 = { empty = no }
+				#12 = { empty = no }
                 10 = { empty = yes } #Inuvik
                 OR = {
                     owns = 9
@@ -684,7 +675,7 @@ country_event = {
                 2598 = { empty = no }
                 9 = { empty = no }
                 11 = { empty = no }
-                12 = { empty = no }
+				#12 = { empty = no }
                 10 = { empty = yes }
                 OR = {
                     9 = { owned_by = THIS }
@@ -692,25 +683,7 @@ country_event = {
                 }
             }
             owner = { prestige = -3 }
-            10 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } }
-        }
-        random_owned = {
-            limit = {
-                6 = { empty = no }
-                7 = { empty = no }
-                8 = { empty = no }
-                2596 = { empty = no }
-                2598 = { empty = no }
-                9 = { empty = no }
-                11 = { empty = no }
-                12 = { empty = yes }
-                OR = {
-                    43 = { owned_by = THIS }
-                    2596 = { owned_by = THIS }
-                }
-            }
-            owner = { prestige = -3 }
-            12 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } }
+			10 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } }
         }
         random_owned = {
             limit = {
@@ -807,5 +780,5 @@ country_event = {
             owner = { prestige = -5 }
             6 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } }
         }
-    }
+	}
 }

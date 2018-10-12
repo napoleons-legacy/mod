@@ -2,13 +2,12 @@
 #        GOLD EVENTS        #
 #############################
 province_event = {
-	
+
 	id = 1100
 
 	trigger = {
 		year = 1836
 		NOT = { year = 1890 }
-		owner = { civilized = yes }
 		or = {
 			province_id = 766			# Sassari
 			province_id = 769			# Postojna
@@ -16,30 +15,22 @@ province_event = {
 			province_id = 1422			# Muraleve
 			province_id = 1440			# Sumbawa
 			province_id = 1884			# Freetown
-			province_id = 2501			# Kimberley
 			province_id = 2153			# Durango
 			province_id = 2157			# Culiacan
 			province_id = 2179			# Acapulco
-			province_id = 2295			# Lima
-			province_id = 2323			# La Serena
-			province_id = 2500			# Kalgoorlie
-			province_id = 2503			# Wiluna
+			#province_id = 2323			# La Serena
 			province_id = 2575			# Ipoh
-			province_id = 2601			# Sandy Desert
-			province_id = 2605			# Gibson's Desert
-			province_id = 1659			# Kobe
+			#province_id = 1659			# Kobe
 			province_id = 2142			# Chihuahua
 			province_id = 2252			# Medellin
-			province_id = 2689			# Mulda
-			province_id = 2676			# Kirensk
 			province_id = 1187			# Semipalatinsk
+			province_id = 1070			# Yeniseysk - Russia
 		}
 		not = { trade_goods = precious_metal }
 	}
 
 	mean_time_to_happen =  {
 		months = 12
-
 	}
 
 	title = "EVTNAME1100"
@@ -53,12 +44,12 @@ province_event = {
 			duration = 730
 		}
 		owner = {
-			random_owned = { 
-				limit = { 
+			random_owned = {
+				limit = {
 					owner = {
 						NOT = { has_country_modifier = gold_rush_country }
-						OR = { 
-							capital_scope = { continent = north_america } 
+						OR = {
+							capital_scope = { continent = north_america }
 							capital_scope = { continent = south_america }
 							primary_culture = australian
 						}
@@ -71,24 +62,46 @@ province_event = {
 }
 
 province_event = {
-	
+
 	id = 1101
 
 	trigger = {
 		year = 1848
-		NOT = { year = 1890 }
+		NOT = { year = 1900 }
 		or = {
 			province_id = 89			# Los Angeles
 			province_id = 104			# San Francisco
 			province_id = 3				# Kenai
 			province_id = 90			# San Diego
-			province_id = 695			# Königsberg
+			province_id = 695			# Kï¿½nigsberg
+			province_id = 2470			# Port Macquaire Australia
+			province_id = 2471			# Bathurst Australia
+			province_id = 2472			# Eden Australia
+			province_id = 2480			# Beechworth Australia
+			province_id = 2481			# Swan Hill Australia
+			province_id = 1084			# Utchan
+			province_id = 2645			# Bodaybo, Russia
+			#province_id = 2058			# Moyo, Mozambique
 		}
 		not = { trade_goods = precious_metal }
 		not = { trade_goods = oil }
 	}
 
-	mean_time_to_happen =  { months = 12 }
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 1000
+			OR = {
+				province_id = 2471
+				province_id = 2470
+				province_id = 2472
+				province_id = 2480
+				province_id = 2481
+				province_id = 1084
+			}
+			NOT = { year = 1850 }
+		}
+	}
 
 	title = "EVTNAME1100"
 	desc = "EVTDESC1100"
@@ -97,15 +110,19 @@ province_event = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
 		# life_rating = 5
+		owner = { random_owned = { limit = { province_id = 104 NOT = { life_rating = 39 } } life_rating = 10 } }
+		owner = { random_owned = { limit = { province_id = 89 NOT = { life_rating = 39 } } life_rating = 10 } }
+		owner = { random_owned = { limit = { province_id = 84 NOT = { life_rating = 39 } } life_rating = 5 } }
+		owner = { random_owned = { limit = { province_id = 87 NOT = { life_rating = 39 } } life_rating = 5 } }
 		add_province_modifier = { name = gold_rush duration = 730 }
 		owner = { random_owned = { limit = { province_id = 695 } remove_province_modifier = gold_rush } }
 		owner = {
-			random_owned = { 
-				limit = { 
+			random_owned = {
+				limit = {
 					owner = {
 						NOT = { has_country_modifier = gold_rush_country }
-						OR = { 
-							capital_scope = { continent = north_america } 
+						OR = {
+							capital_scope = { continent = north_america }
 							capital_scope = { continent = south_america }
 							primary_culture = australian
 						}
@@ -117,52 +134,42 @@ province_event = {
 	}
 }
 
-
 province_event = {
-	
-	id = 1102
 
-	trigger = {
-		year = 1850
-		province_id = 1084				# Utchan
-		not = { trade_goods = precious_metal }
-	}
-	
-	fire_only_once = yes
-
-	mean_time_to_happen =  {
-		months = 12
-
-	}
-
-	title = "EVTNAME1100"
-	desc = "EVTDESC1100"
-
-	option = {
-		name = "EVTOPTA1100"
-		trade_goods = precious_metal
-		# life_rating = 5
-	}
-}
-
-province_event = {
-	
 	id = 1103
 
 	trigger = {
 		year = 1861
 		OR = {
 			province_id = 93			# Pocatello
-			province_id = 1913				# Tamale
+			province_id = 2479			# Sale Australia
+			province_id = 2488			# Cooktown Australia
+			province_id = 2275			# Angostura Venezuela
+			province_id = 2334			# Punta Arenas
+			province_id = 2400			# Rio Grande
+			province_id = 1643			# Sapporo
 		}
 		not = { trade_goods = precious_metal }
+		NOT = { year = 1920 }
 	}
-	
+
 	fire_only_once = yes
 
 	mean_time_to_happen =  {
 		months = 12
-
+		modifier = {
+			factor = 1000
+			OR = {
+				province_id = 2334
+				province_id = 2400
+			}
+			NOT = { year = 1880 }
+		}
+		modifier = {
+			factor = 1000
+			province_id = 1643
+			NOT = { year = 1910 }
+		}
 	}
 
 	title = "EVTNAME1100"
@@ -170,16 +177,17 @@ province_event = {
 
 	option = {
 		name = "EVTOPTA1100"
+		owner = { random_owned = { limit = { province_id = 2488 NOT = { trade_goods = precious_metal } } change_province_name = "Cairns" } }
 		trade_goods = precious_metal
+		add_province_modifier = { name = gold_rush duration = 730 }
 		# life_rating = 5
-		owner = { random_owned = { limit = { province_id = 93 } add_province_modifier = { name = gold_rush duration = 730 } } }
 		owner = {
 			random_owned = {
 				limit = {
 					owner = {
 						NOT = { has_country_modifier = gold_rush_country }
-						OR = { 
-							capital_scope = { continent = north_america } 
+						OR = {
+							capital_scope = { continent = north_america }
 							capital_scope = { continent = south_america }
 							primary_culture = australian
 						}
@@ -194,22 +202,22 @@ province_event = {
 #Witwatersrand Gold Rush
 province_event = {
 	id = 1139
-	
+
 	trigger = {
 		year = 1886
 		province_id = 2106
 		NOT = { trade_goods = precious_metal }
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	title = "EVTNAME1139"
 	desc = "EVTDESC1139"
-	
+
 	option = {
 		name = "EVTOPTA1139"
 		trade_goods = precious_metal
@@ -237,26 +245,26 @@ country_event = {
 	news_desc_medium = "EVTDESC1140_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC1140_NEWS_SHORT"
 	picture = "goldrush"
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		year = 1874
 		has_country_flag = custers_expedition_sent
 	}
-	
+
 	mean_time_to_happen = {
 		months = 5
 	}
-	
+
 	option  ={
 		name = "EVTOPTA1140"
 		random_owned = {
 			limit = {
 				owner = {
 					NOT = { has_country_modifier = gold_rush_country }
-					OR = { 
-						capital_scope = { continent = north_america } 
+					OR = {
+						capital_scope = { continent = north_america }
 						capital_scope = { continent = south_america }
 						primary_culture = australian
 					}
@@ -275,21 +283,28 @@ country_event = {
 }
 
 province_event = {
-	
+
 	id = 1104
 
 	trigger = {
-		year = 1896
+		year = 1893
 		or = {
 			province_id = 6			# Whitehorse
 			province_id = 7			# Dawson
+			province_id = 2500		# Kalgoorlie Australia
+			province_id = 2603		# Alice Springs
+			province_id = 2648		# Yakutsk - Russia
 		}
 		not = { trade_goods = precious_metal }
 	}
 
 	mean_time_to_happen =  {
 		months = 12
-
+		modifier = {
+			factor = 80
+			NOT = { year = 1930 }
+			province_id = 2603
+		}
 	}
 
 	title = "EVTNAME1100"
@@ -299,7 +314,19 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		# life_rating = 5
+		add_province_modifier = { name = gold_rush duration = 730 }
+		owner = {
+			random_owned = {
+				limit = { owner = { owns = 2495 2495 = { life_rating = 15 } } }
+				2495 = { change_province_name = "Oodnadatta" life_rating = -5}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = { owner = { owns = 2496 2496 = { life_rating = 20 } } }
+				2496 = { change_province_name = "Yalata" life_rating = -5}
+			}
+		}
 	}
 }
 
@@ -307,7 +334,7 @@ province_event = {
 #        DIAMOND EVENTS        #
 ################################
 province_event = {
-	
+
 	id = 1105
 
 	trigger = {
@@ -320,7 +347,7 @@ province_event = {
 			province_id = 2107			# Klerksdorp
 			province_id = 2068			# Salisbury
 		}
-		not = { trade_goods = precious_metal }
+		not = { trade_goods = precious_goods }
 	}
 
 	mean_time_to_happen =  {
@@ -334,28 +361,33 @@ province_event = {
 
 	option = {
 		name = "EVTOPTA1105"
-		trade_goods = precious_metal
+		trade_goods = precious_goods
 		# life_rating = 5
 	}
 }
 
 province_event = {
-	
+
 	id = 1106
 
 	trigger = {
 		year = 1867
-		NOT = { year = 1890 }
+		NOT = { year = 1920 }
 		or = {
 			province_id = 2097			# Graaf Reinet
 			province_id = 1849			# Massawa
+			province_id = 2084			# Luderitzbutch/Angra Pequena
 		}
-		not = { trade_goods = precious_metal }
+		not = { trade_goods = precious_goods }
 	}
 
 	mean_time_to_happen =  {
 		months = 12
-
+		modifier = {
+			factor = 1000
+			province_id = 2084
+			NOT = { year = 1900 }
+		}
 	}
 
 	title = "EVTNAME1105"
@@ -363,7 +395,7 @@ province_event = {
 
 	option = {
 		name = "EVTOPTA1105"
-		trade_goods = precious_metal
+		trade_goods = precious_goods
 		# life_rating = 5
 	}
 }
@@ -372,11 +404,12 @@ province_event = {
 #        RUBBER EVENTS        #
 ###############################
 province_event = {
-	
+
 	id = 1107
 
 	trigger = {
 		year = 1880
+		NOT = { has_province_modifier = switched_production }
 		or = {
 			province_id = 1354
 			province_id = 1364
@@ -400,13 +433,13 @@ province_event = {
 			province_id = 1923
 			province_id = 1321
 			province_id = 1398
-			province_id = 1421
+			#province_id = 1421
 			province_id = 1985
 			province_id = 1406
 			province_id = 1318
 			province_id = 2057
 			province_id = 1426
-			province_id = 2058
+			province_id = 2055
 			province_id = 1978
 			province_id = 1980
 			province_id = 1981
@@ -414,25 +447,18 @@ province_event = {
 		}
 		not = { trade_goods = rubber }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-					invention = daimlers_automobile
-					invention = edison_light_bulb
-					infiltration = 1
-					aeronautics = 1
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = edison_light_bulb
-					infiltration = 1
-					aeronautics = 1
-					}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = edison_light_bulb } }
+			owner = { part_of_sphere = yes sphere_owner = { invention = daimlers_automobile } }
+			owner = { part_of_sphere = yes sphere_owner = { invention = wright_n_langleys_aeroplanes } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = aeroplane_factory } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = automobile_factory } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = electric_gear_factory } } }
+			owner = { invention = edison_light_bulb }
+			owner = { invention = daimlers_automobile }
+			owner = { invention = wright_n_langleys_aeroplanes }
+			owner = { any_owned_province = { has_building = aeroplane_factory } }
+			owner = { any_owned_province = { has_building = automobile_factory } }
+			owner = { any_owned_province = { has_building = electric_gear_factory } }
 			year = 1900
 		}
 	}
@@ -454,11 +480,12 @@ province_event = {
 }
 
 province_event = {
-	
+
 	id = 1108
 
 	trigger = {
 		year = 1890
+		NOT = { has_province_modifier = switched_production }
 		or = {
 			province_id = 1926
 			province_id = 1929
@@ -484,25 +511,18 @@ province_event = {
 		}
 		not = { trade_goods = rubber }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-					invention = daimlers_automobile
-					invention = edison_light_bulb
-					infiltration = 1
-					aeronautics = 1
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = edison_light_bulb
-					infiltration = 1
-					aeronautics = 1
-					}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = edison_light_bulb } }
+			owner = { part_of_sphere = yes sphere_owner = { invention = daimlers_automobile } }
+			owner = { part_of_sphere = yes sphere_owner = { invention = wright_n_langleys_aeroplanes } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = aeroplane_factory } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = automobile_factory } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = electric_gear_factory } } }
+			owner = { invention = edison_light_bulb }
+			owner = { invention = daimlers_automobile }
+			owner = { invention = wright_n_langleys_aeroplanes }
+			owner = { any_owned_province = { has_building = aeroplane_factory } }
+			owner = { any_owned_province = { has_building = automobile_factory } }
+			owner = { any_owned_province = { has_building = electric_gear_factory } }
 			year = 1900
 		}
 	}
@@ -532,29 +552,18 @@ province_event = {
 
 	trigger = {
 		year = 1870
+		NOT = { has_province_modifier = switched_production }
 		or = {
 			province_id = 1102		# Baku
 			province_id = 1205		# Kizil Arvat
 		}
 		not = { trade_goods = oil }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -580,24 +589,13 @@ province_event = {
 		year = 1871
 		province_id = 1104		# Sheki
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -623,24 +621,13 @@ province_event = {
 		year = 1872
 		province_id = 1186		# Alma Ata
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -666,24 +653,13 @@ province_event = {
 		year = 1873
 		province_id = 1202		# Kokand
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -709,24 +685,13 @@ province_event = {
 		year = 1874
 		province_id = 1107		# Lankaran
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -752,24 +717,13 @@ province_event = {
 		year = 1875
 		province_id = 132		# Houston
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -783,7 +737,7 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
+		life_rating = 5
 	}
 }
 
@@ -795,24 +749,13 @@ province_event = {
 		year = 1876
 		province_id = 667		# Tirgoviste
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -838,24 +781,13 @@ province_event = {
 		year = 1877
 		province_id = 672		# Bacau
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -881,24 +813,13 @@ province_event = {
 		year = 1879
 		province_id = 1168		# Dubai
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -922,26 +843,15 @@ province_event = {
 
 	trigger = {
 		year = 1881
-		province_id = 110		# Cheyenne
+		province_id = 112		# Cheyenne
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -968,27 +878,15 @@ province_event = {
 		or = {
 			province_id = 90		# San Diego
 			province_id = 133		# Austin
-			province_id = 126		# Topeka
 		}
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1002,7 +900,7 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
+		life_rating = 5
 	}
 }
 
@@ -1015,26 +913,16 @@ province_event = {
 		or = {
 			province_id = 1399		# Palembang
 			province_id = 1055		# Grozny
+			province_id = 126		# Topeka
 		}
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1065,24 +953,13 @@ province_event = {
 			province_id = 1432		# Mamuju
 		}
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1109,28 +986,17 @@ province_event = {
 		year = 1886
 		or = {
 			province_id = 1335		# Kyaukse
-			province_id = 134		# Dallas
+			province_id = 43		# Dallas
 			province_id = 705		# Przemysl
 		}
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1144,7 +1010,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1156,24 +1021,13 @@ province_event = {
 		year = 1889
 		province_id = 1260		# Dibrugarh
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1199,24 +1053,13 @@ province_event = {
 		year = 1892
 		province_id = 1086		# Pogobi
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1241,28 +1084,17 @@ province_event = {
 	trigger = {
 		year = 1893
 		or = {
-			province_id = 129		# Oklahoma City
+			province_id = 131		# Oklahoma City
 			province_id = 1680		# Fez
 		}
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1288,24 +1120,13 @@ province_event = {
 		year = 1894
 		province_id = 2173		# Queretaro
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1336,24 +1157,13 @@ province_event = {
 			province_id = 702		# Lvov
 		}
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1379,24 +1189,13 @@ province_event = {
 		year = 1897
 		province_id = 1397		# Sandakan
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1422,24 +1221,13 @@ province_event = {
 		year = 1902
 		province_id = 2237		# Trinidad
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1465,24 +1253,13 @@ province_event = {
 		year = 1907
 		province_id = 2396		# Rawson
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1508,24 +1285,13 @@ province_event = {
 		year = 1908
 		province_id = 1131		# Ahvaz
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1555,27 +1321,16 @@ province_event = {
 			province_id = 1167		# Abu Dhabi
 			province_id = 1163		# Qatif
 			province_id = 2270		# Maracaibo
-			province_id = 1170		# Nizwa 
+			province_id = 1170		# Nizwa
 		}
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1601,24 +1356,13 @@ province_event = {
 		year = 1912
 		province_id = 1132		# Abadan
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1644,24 +1388,13 @@ province_event = {
 		year = 1913
 		province_id = 26		# Calgary
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1687,24 +1420,13 @@ province_event = {
 		year = 1915
 		province_id = 2291		# Piura
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1728,26 +1450,18 @@ province_event = {
 
 	trigger = {
 		year = 1917
-		province_id = 849		# Tirana
-		not = { trade_goods = oil }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			province_id = 849		# Tirana
+			province_id = 2237		# Trinidad
+		}
+		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
+		OR = {
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1773,24 +1487,13 @@ province_event = {
 		year = 1923
 		province_id = 928		# Mendeli
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 
@@ -1816,24 +1519,13 @@ province_event = {
 		year = 1927
 		province_id = 923		# Mosul
 		not = { trade_goods = oil }
+		NOT = { has_province_modifier = switched_production }
 		OR = {
-			owner = {
-				part_of_sphere = yes
-				sphere_owner = {
-					or = {
-						invention = daimlers_automobile
-						invention = cracking
-						invention = protected_cruisers
-					}
-				}
-			}
-			owner = {
-				or = {
-					invention = daimlers_automobile
-					invention = cracking
-					invention = protected_cruisers
-				}
-			}
+			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { invention = cracking }
+			owner = { any_owned_province = { has_building = fuel_refinery } }
+			year = 1900
 		}
 	}
 

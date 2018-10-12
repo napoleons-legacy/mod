@@ -1,13 +1,13 @@
 country_event = {
     id = 152009874
-    title = "EVTNAME152009874" 
+    title = "EVTNAME152009874"
     desc = "EVTDESC152009874"
     major = yes
-    
+
     is_triggered_only = yes
-    
+
     immediate = { 425 = { clr_province_flag = eiffel_tower_built } }
-    
+
     option = {
         name = "EVT152009874OPTA"
         prestige_factor = -0.1
@@ -41,17 +41,17 @@ country_event = {
         }
     }
 }
-    
+
 country_event = {
     id = 152009875
-    title = "EVTNAME152009875" 
+    title = "EVTNAME152009875"
     desc = "EVTDESC152009875"
     major = yes
-    
+
     is_triggered_only = yes
-    
+
     immediate = { 300 = { change_controller = THIS } }
-    
+
     option = {
         name = "EVT152009874OPTA"
         prestige_factor = -0.1
@@ -63,7 +63,7 @@ country_event = {
                 scaled_consciousness = { factor = 2 ideology = liberal }
                 scaled_consciousness = { factor = 2 ideology = socialist }
             }
-            any_pop = { limit = { culture = british } militancy = 4 consciousness = 6 }
+			any_pop = { limit = { has_pop_culture = british } militancy = 4 consciousness = 6 }
         }
         300 = {
             add_province_modifier = { name = war_torn duration = 720 }
@@ -85,4 +85,3 @@ country_event = {
         300 = { change_controller = FROM }
     }
 }
-
