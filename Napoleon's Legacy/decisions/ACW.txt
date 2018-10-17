@@ -1240,7 +1240,7 @@ political_decisions = {
 	}
 
 	the_mormon_exodus = {
-	picture = nauvoo_temple
+	    picture = nauvoo_temple
 		potential = {
 			OR = {
 				tag = USA
