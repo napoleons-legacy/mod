@@ -346,55 +346,6 @@ political_decisions = {
 		}
 	}
 
-	appeal_to_the_british = {
-		picture = treaty_signing
-		potential = {
-			OR = {
-				tag = ORA
-				tag = TRN
-				tag = NAL
-                }
-			war = yes
-			NOT = {
-				has_country_flag = appealed_to_the_british
-				in_sphere = ENG
-				war_with = ENG
-				truce_with = ENG
-				any_owned_province = { is_core = ENG }
-				war_with = ZUL
-			}
-			ENG = {
-				is_greater_power = yes
-				owns = 2087
-			}
-		}
-
-		allow = {
-			OR = {
-				AND = {
-					NOT = { total_amount_of_divisions = 1 }
-					national_provinces_occupied = 0.25
-            }
-				national_provinces_occupied = 0.5
-        }
-    }
-
-		effect = {
-			set_country_flag = appealed_to_the_british
-			ENG = { country_event = 98241 }
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					war_with = ORA
-					war_with = TRN
-					war_with = NAL
-				}
-			}
-		}
-	}
     treaty_of_vereeniging = {
         picture = treaty_signing
         potential = {

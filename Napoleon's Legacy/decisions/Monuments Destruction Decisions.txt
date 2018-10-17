@@ -28,7 +28,7 @@ political_decisions = {
 			government = proletarian_dictatorship
 			AND = {
 				government = absolute_monarchy
-				war_policy = jingoism 
+				war_policy = jingoism
 			}
 			AND = {
 				government = presidential_dictatorship
@@ -44,7 +44,7 @@ political_decisions = {
 			}
 		}
 	}
-		
+
 		effect = {
 			badboy = 15
 			prestige = -5
@@ -53,11 +53,14 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
-	
+
 	destroy_westminster = {
 	picture = destroy_westminster
 		potential = {
-			ENG = { has_country_flag = big_ben_construction }
+            OR = {
+			    BRI = { has_country_flag = big_ben_construction }
+			    CAN = { has_country_flag = big_ben_construction }
+            }
 			is_greater_power = yes
 			300 = {
 				has_province_modifier = the_big_ben
@@ -77,9 +80,9 @@ political_decisions = {
 		}
 		allow = {
 			300 = {
-				country_units_in_province = THIS 
+				country_units_in_province = THIS
 				controlled_by = THIS
-				owner = { war_with = THIS } 
+				owner = { war_with = THIS }
 			}
 			OR = {
 				government = fascist_dictatorship
@@ -93,9 +96,9 @@ political_decisions = {
 				AND = { steel_breech_loaded_artillery = 1 invention = nitroglycerin }
 			}
 		}
-		
+
 		effect = {
-			set_global_flag = bigben_destroyed 
+			set_global_flag = bigben_destroyed
 			badboy = 15
 			prestige = -5
 			300 = { owner = { country_event = 152009875 } clr_province_flag = big_ben_built }
@@ -103,4 +106,3 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 }
-		

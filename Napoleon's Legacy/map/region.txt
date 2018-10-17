@@ -10,9 +10,9 @@ CAN_13 = { 13 14 20 21 15 19 16 18 17 2629 } #Columbia
 
 #CAN_18 = { 18 17 2629 } #New Caledonia
 
-ENG_22 = { 27 26 22 23 24 25 28 2597 } #Alberta
+ENG_22 = { 27 26 22 23 24 25 28 38 2597 } #Alberta
 
-ENG_30 = { 30 31 32 33 34 35 38 } #Saskatchewan
+ENG_30 = { 30 31 32 33 34 35 } #Saskatchewan
 
 ENG_36 = { 42 36 37 39 40 41 } #Manitoba
 
@@ -266,9 +266,9 @@ POR_2134 = { 2134 2135 2136 } #Macaronesia
 
 HAN_528 = { 528 531 532 } #Lower Elbe
 
-HAN_534 = { 534 535 536 537 } #Hannover
+HAN_534 = { 534 536 537 } #Hannover
 
-HAN_540 = { 539 540 543 542 538 541 1743 } #East Friesland
+HAN_540 = { 535 539 540 543 542 538 541 1743 } #East Friesland
 
 PRU_544 = { 544 545 } #Mecklenburg
 
@@ -613,7 +613,7 @@ RUS_1196 = { 1196 1204 1205 1206 686 } #Turkmenia
 
 RUS_1469 = { 1063 1067 1068 2698  2683 2686 1070 } #Tomsk
 
-RUS_2589 = { 986 2699 2688 } #Nenetsia
+RUS_2589 = { 986 2688 } #Nenetsia
 
 RUS_2590 = { 2622 2634 2637 2661 2666 } #Coastal Chukotka
 
@@ -676,7 +676,7 @@ MYS_1314 = { 1314 1313 1316 1315 1302 } #Mysore
 
 ENG_1317 = { 1317 1318 1319 } #Travancore
 
-ENG_1321 = { 1321 1322 1323 1324 1325 2128 } #Ceylon
+ENG_1321 = { 1321 1322 1323 1324 1325 2128 2699 } #Ceylon
 
 TIB_1591 = { 1587 1591 1592 1589 1588 1590 1593 } #Himalaya
 

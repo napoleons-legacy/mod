@@ -302,7 +302,7 @@ political_decisions = {
 	annex_fiji = {
 		picture = dreams_of_empire
 		potential = {
-			tag = ENG
+			tag = CAN
 			is_greater_power = yes
 			state_n_government = 1
 			2454 = { empty = yes }
@@ -324,7 +324,7 @@ political_decisions = {
 			prestige = 3
 			treasury = -10000
 			2454 = {
-				secede_province = ENG
+				secede_province = CAN
 				naval_base = 1
 			}
 		}
