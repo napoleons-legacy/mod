@@ -30,14 +30,15 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = low_schools
 
 #New Reforms
 conscription = mandatory_service
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
@@ -101,7 +102,7 @@ foreign_investment = {
 	OLD = 10000
 	MEC = 7500
 	SAX = 7500
-	HAN = 10000
+	WST = 10000
 }
 
 oob = "PRU_oob.txt"

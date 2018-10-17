@@ -10,28 +10,28 @@ generator_selector =
 	}
 }
 
-news_priority = 
+news_priority =
 {
 	type = "GAME_EVENT"
 	name = "default"
 
 	# Default priority of typical game event
 	case = { priority_add = 20 }
-	
+
 	case = {
 		trigger = {
-			tags_eq = { 0 0 PLAYER } 
+			tags_eq = { 0 0 PLAYER }
 		}
 		priority_add = 50
 	}
-	
+
 	case = {
 		trigger = {
 			NOT = { tags_eq = { 0 0 PLAYER } }
 			OR = {
-				tags_eq = { 0 0 ENG }
 				tags_eq = { 0 0 FRA }
 				tags_eq = { 0 0 RUS }
+				tags_eq = { 0 0 TSA }
 				tags_eq = { 0 0 USA }
 				tags_eq = { 0 0 PRU }
 				tags_eq = { 0 0 NGF }
@@ -44,7 +44,7 @@ news_priority =
 		}
 		priority_add = 20
 	}
-	
+
 	# More interested in events about inventing ideologies
 	case =
 	{
@@ -126,7 +126,7 @@ generate_article =
 
 	# Use the same picture as event
 	picture_case =
-	{ 
+	{
 		# if province event (use general pics as those has no images defined)
 		trigger = { values_eq = { 0 4 1 } }
 		picture = "news/revolution_01_news_image.dds"
@@ -148,7 +148,7 @@ generate_article =
 
 	# Use the same picture as event
 	picture_case =
-	{ 
+	{
 		# if province event (use general pics as those has no images defined)
 		trigger = { values_eq = { 0 4 1 } }
 		picture = "news/revolution_01_news_image.dds"
@@ -176,4 +176,3 @@ generate_article =
 	#description_case = { text_add = { "$EVENT_DESC_0_0_LONG$" } }
 	description_case = { text_add = { "$EVENT_DESC_0_0_SHORT$" } } # If missing - will fallback to default text (the longest)
 }
-

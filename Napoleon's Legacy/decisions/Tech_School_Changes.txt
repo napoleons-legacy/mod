@@ -215,6 +215,7 @@ political_decisions = {
 			}
 			tech_school = traditional_academic
 		}
+
 		ai_will_do = {
 			factor = 1
 		}

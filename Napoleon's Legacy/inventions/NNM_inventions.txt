@@ -22,7 +22,7 @@ declaration_of_the_rights_of_man = {
 			value = 0.25
 		}
 		rebel_org_gain = {
-			faction = nationalist_rebels 
+			faction = nationalist_rebels
 			value = 0.50
 		}
 		rebel_org_gain = {
@@ -34,7 +34,7 @@ declaration_of_the_rights_of_man = {
 
 caste_privileges = {
 	limit = {
-		enlightenment_thought = 1 
+		enlightenment_thought = 1
 		year = 1850
 		tag = EIC
 	}
@@ -43,7 +43,7 @@ caste_privileges = {
 		base = 2
 		modifier = {
 			factor = 2
-			religious_policy = moralism 
+			religious_policy = moralism
 		}
 		modifier = {
 			factor = 5
@@ -61,8 +61,8 @@ caste_privileges = {
 
 sati_abolished = {
 	limit = {
-		enlightenment_thought = 1 
-		year = 1855 
+		enlightenment_thought = 1
+		year = 1855
 		tag = EIC
 	}
 	news = no
@@ -70,7 +70,7 @@ sati_abolished = {
 		base = 2
 		modifier = {
 			factor = 2
-			religious_policy = moralism 
+			religious_policy = moralism
 		}
 		modifier = {
 			factor = 5
@@ -87,8 +87,8 @@ sati_abolished = {
 
 pig_fat_cartridges = {
 	limit = {
-		enlightenment_thought = 1 
-		year = 1860 
+		enlightenment_thought = 1
+		year = 1860
 		tag = EIC
 	}
 	news = no
@@ -96,7 +96,7 @@ pig_fat_cartridges = {
 		base = 2
 		modifier = {
 			factor = 2
-			religious_policy = moralism 
+			religious_policy = moralism
 		}
 		modifier = {
 			factor = 5
@@ -147,7 +147,6 @@ carlism = {
 		OR = {
 			tag = NSA
 			tag = SPA
-			tag = SPC
 		}
 	}
 	news = no
@@ -210,13 +209,13 @@ the_dark_continent = {
 		modifier = {
 			factor = 10
 			any_greater_power = {
-				invention = the_dark_continent 
+				invention = the_dark_continent
 			}
 		}
 		modifier = {
 			factor = 10
 			any_neighbor_country = {
-				invention = the_dark_continent 
+				invention = the_dark_continent
 			}
 		}
 		modifier = {
@@ -233,4 +232,4 @@ the_dark_continent = {
 	effect = {
 		colonial_life_rating = -5
 	}
-} 
+}

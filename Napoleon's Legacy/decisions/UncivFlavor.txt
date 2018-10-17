@@ -20,30 +20,6 @@ political_decisions = {
 		}
 	}
 
-	an_elephant_for_america = {
-		picture = an_elephant_for_america
-		potential = {
-			tag = SIA
-			year = 1861
-			exists = USA
-			NOT = {
-				has_country_flag = sent_an_elephant_to_america
-			}
-		}
-		allow = {
-			relation = {
-				who = USA
-				value = 0
-			}
-		}
-		effect = {
-			USA = {
-				country_event = { id=13350 days=0 }
-			}
-			set_country_flag = sent_an_elephant_to_america
-		}
-	}
-
 	champassak_integration_act = {
 		picture = form_laos
 		potential = {

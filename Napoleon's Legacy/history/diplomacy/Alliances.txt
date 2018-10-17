@@ -18,7 +18,7 @@ alliance=
 alliance=
 	{
 		first="FRA"
-		second="NCT"
+		second="NEH"
 		end_date="1936.1.1"
 		start_date="1836.1.1"
 	}
@@ -47,7 +47,7 @@ alliance=
 		start_date="1836.1.1"
 	}
 
-	
+
 alliance=
 	{
 		first="BRI"
@@ -57,7 +57,7 @@ alliance=
 	}
 
 ##Confederation of the Rhine##
-	
+
 alliance=
 	{
 		first="BAD"
@@ -449,7 +449,7 @@ alliance=
 		end_date="1936.1.1"
 		start_date="1836.1.1"
 	}
-	
+
 alliance=
 	{
 		first="HES"
@@ -1345,5 +1345,3 @@ alliance=
 		end_date="1936.1.1"
 		start_date="1836.1.1"
 	}
-
-	

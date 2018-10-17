@@ -5495,7 +5495,7 @@ political_decisions = {
 				exists = ZBW
 				has_global_flag = zimbabwe_organized
 				capital_scope = { continent = africa }
-				tag = ENG
+				tag = SAF
 			}
 			owns = 2068
 			NOT = { has_country_flag = ian_would_be_proud }

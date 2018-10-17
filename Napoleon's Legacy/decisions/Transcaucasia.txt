@@ -97,7 +97,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	create_transcaucasia = {
 		picture = form_transcaucasia
 		potential = {
@@ -106,6 +106,7 @@ political_decisions = {
 				tag = AZB
 				tag = ARM
 				tag = RUS
+                tag = TSA
 			}
 			NOT = { exists = TCA }
 			NOT = { has_global_flag = transcaucasia_formed }
@@ -211,7 +212,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	claim_north_caucasus = {
 		picture = form_transcaucasia
 		potential = {
@@ -262,7 +263,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	end_of_transcaucasia_GEO = {
 		picture = form_transcaucasia
 		potential = {
@@ -301,7 +302,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	end_of_transcaucasia_AZB = {
 		picture = form_transcaucasia
 		potential = {
@@ -340,7 +341,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	end_of_transcaucasia_ARM = {
 		picture = form_transcaucasia
 		potential = {
@@ -379,14 +380,14 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	make_transcaucasia_sunni = {
 		picture = form_transcaucasia
 		potential = {
 			TCA = {
-				NOT = { has_country_flag = sunni_country } 
+				NOT = { has_country_flag = sunni_country }
 				owns = 1102
-				exists = yes 
+				exists = yes
 			}
 				is_our_vassal = TCA
 				OR = {
@@ -401,7 +402,7 @@ political_decisions = {
 
 		effect = {
 			TCA = {
-				capital = 1102 
+				capital = 1102
 				set_country_flag = sunni_country
 				clr_country_flag = shiite_country
 				clr_country_flag = orthodox_country
@@ -417,12 +418,12 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	make_transcaucasia_shiite = {
 		picture = form_transcaucasia
 		potential = {
 			TCA = {
-				NOT = { has_country_flag = shiite_country } 
+				NOT = { has_country_flag = shiite_country }
 				owns = 1102
 				exists = yes
 			}
@@ -436,7 +437,7 @@ political_decisions = {
 
 		effect = {
 			TCA = {
-				capital = 1102 
+				capital = 1102
 				set_country_flag = shiite_country
 				clr_country_flag = sunni_country
 				clr_country_flag = orthodox_country
@@ -452,12 +453,12 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	make_transcaucasia_orthodox = {
 		picture = form_transcaucasia
 		potential = {
 			TCA = {
-				NOT = { has_country_flag = orthodox_country } 
+				NOT = { has_country_flag = orthodox_country }
 				owns = 1090
 				exists = yes
 			}
@@ -477,7 +478,7 @@ political_decisions = {
 
 		effect = {
 			TCA = {
-				capital = 1090 
+				capital = 1090
 				set_country_flag = orthodox_country
 				clr_country_flag = sunni_country
 				clr_country_flag = shiite_country
@@ -493,11 +494,11 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	make_abkhazia_orthodox = {
 		picture = form_transcaucasia
 		potential = {
-			ABK = { 
+			ABK = {
 				NOT = { has_country_flag = orthodox_country }
 				exists = yes
 			}
@@ -531,7 +532,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	make_abkhazia_sunni = {
 		picture = form_transcaucasia
 		potential = {
@@ -563,7 +564,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-		
+
 	recognize_circassia = {
 		picture = circassia_flag
 		potential = {
@@ -572,11 +573,12 @@ political_decisions = {
 			NOT = {
 				has_country_flag = recognize_circassia
 				tag = RUS
+                tag = TSA
 				tag = CIR
 				CIR = { part_of_sphere = yes civilized = no }
 			}
 		}
-		allow = { 
+		allow = {
 			nationalism_n_imperialism = 1
 		}
 		effect = {
@@ -584,6 +586,7 @@ political_decisions = {
 			set_country_flag = recognize_circassia
 			CIR = { prestige = 5 }
 			RUS = { prestige = -5 }
+			TSA = { prestige = -5 }
 			relation = {
 				who = CIR
 				value = 100
@@ -594,6 +597,10 @@ political_decisions = {
 			}
 			relation = {
 				who = RUS
+				value = -100
+			}
+			relation = {
+				who = TSA
 				value = -100
 			}
 		}
@@ -607,9 +614,17 @@ political_decisions = {
 				factor = 0
 				relation = { who = RUS value = 0 }
 			}
+			modifier = {
+				factor = 0
+				alliance_with = TSA
+			}
+			modifier = {
+				factor = 0
+				relation = { who = TSA value = 0 }
+			}
 		}
 	}
-	
+
 	recognize_chechenya = {
 		picture = chechenya_flag
 		potential = {
@@ -618,6 +633,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = recognize_chechenya
 				tag = RUS
+                tag = TSA
 				tag = CHY
 				CHY = { part_of_sphere = yes civilized = no }
 			}
@@ -630,6 +646,7 @@ political_decisions = {
 			set_country_flag = recognize_chechenya
 			CHY = { prestige = 5 }
 			RUS = { prestige = -5 }
+			TSA = { prestige = -5 }
 			relation = {
 				who = CHY
 				value = 100
@@ -640,6 +657,10 @@ political_decisions = {
 			}
 			relation = {
 				who = RUS
+				value = -100
+			}
+			relation = {
+				who = TSA
 				value = -100
 			}
 		}
@@ -653,9 +674,17 @@ political_decisions = {
 				factor = 0
 				relation = { who = RUS value = 0 }
 			}
+			modifier = {
+				factor = 0
+				alliance_with = TSA
+			}
+			modifier = {
+				factor = 0
+				relation = { who = TSA value = 0 }
+			}
 		}
 	}
-	
+
 	recognize_dagestan = {
 		picture = dagestan_flag
 		potential = {
@@ -664,6 +693,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = recognize_dagestan
 				tag = RUS
+                tag = TSA
 				tag = DAG
 				DAG = { part_of_sphere = yes civilized = no }
 			}
@@ -676,6 +706,7 @@ political_decisions = {
 			set_country_flag = recognize_dagestan
 			DAG = { prestige = 5 }
 			RUS = { prestige = -5 }
+			TSA = { prestige = -5 }
 			relation = {
 				who = DAG
 				value = 100
@@ -688,6 +719,10 @@ political_decisions = {
 				who = RUS
 				value = -100
 			}
+			relation = {
+				who = TSA
+				value = -100
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -698,6 +733,14 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				relation = { who = RUS value = 0 }
+			}
+			modifier = {
+				factor = 0
+				alliance_with = TSA
+			}
+			modifier = {
+				factor = 0
+				relation = { who = TSA value = 0 }
 			}
 		}
 	}
