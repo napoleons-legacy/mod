@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-ISSUE_MOVE_EFFECT;§Y$PERCENTAGE$%§W of pops move from §YFROM§W to §YTO§W\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+ISSUE_MOVE_EFFECT;ï¿½Y$PERCENTAGE$%ï¿½W of pops move from ï¿½YFROMï¿½W to ï¿½YTOï¿½W\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 IS_NOT_ACCEPTED_CULTURE;Is NOT an accepted culture.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 NOT_IN_ELECTION_CAMPAIGN;is NOT in an election campaign.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 PEACE_WE_DECLINE_2;We have declined the peace offer from;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
@@ -8,16 +8,16 @@ PEACE_WE_ACCEPT_2;We have accepted a peace offer from;;;;;;;;;;;;;;;;;;;;;;;;;;;
 CALCULATED_WARSCORE;Peace offer value: $VAL$;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 CRISIS_BACK_DOWN_WE_DECLINE_2;We have declined the peace offer from;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 HAVE_LESS_VASSALS_THAN;Have less vassals than ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-BUDGET_ADMIN_EFFICIENCY_DESC2;Our §Ycountry administrative efficiency§W determines the effectiveness of social reforms and tariffs. Our total spending also increases the ability to fight organized crime.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+BUDGET_ADMIN_EFFICIENCY_DESC2;Our ï¿½Ycountry administrative efficiencyï¿½W determines the effectiveness of social reforms and tariffs. Our total spending also increases the ability to fight organized crime.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 ADM_DESC;Spending on administration allows your bureaucrats to run and maintain a healthy bureaucracy, increasing our tariff efficiency and the rate of pop promotion.;;;;;;;;;;;;;;;;;;;;;;x
 NO_POPS_OF_TYPE;There are no pops of this type in our country.;;;;;;;;;;;;;;;;;;;;;;x
 NO_RAIL_YET;We can not encourage railroad building when we do not know how to build them yet.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-PARTY_LOYALTY_EFFECT_DESC;Loyalty towards §Y$PARTY$§W in §Y$PROV$§W will be changed by §Y$VALUE$§W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+PARTY_LOYALTY_EFFECT_DESC;Loyalty towards ï¿½Y$PARTY$ï¿½W in ï¿½Y$PROV$ï¿½W will be changed by ï¿½Y$VALUE$ï¿½W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 NAT_STOCK_DESC;Costs of trade to fill our national stockpile. Includes spending with construction, naval supplies, land units supplies and overseas maintenance.;;;;;;;;;;;;;;;;;;;;;;x
 IND_SUP_DESC;Costs of government subsidizing of factories. National cash reserves will be used to help factories buy goods needed and pay worker salaries.;;;;;;;;;;;;;;;;;;;;;;;x
 DIST_DEFENCE;Military Spending;;;;;;;;;;;;;;;;;;;;;x;;;;
 DEFENCE_DESC;The military spending goes towards paying your soldiers and officers.;;;;;;;;;;;;;;;;;;;;;;x
-SOCIAL_DESC2;The social spending budget goes towards funding your enacted social reforms. The amount of money to distribute depends on your §Ycountry administrative efficiency§W.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+SOCIAL_DESC2;The social spending budget goes towards funding your enacted social reforms. The amount of money to distribute depends on your ï¿½Ycountry administrative efficiencyï¿½W.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 TAX_MIDDLE_DESC;This controls how much of the middle strata's income will be collected as tax. Too heavy taxation will leave them less money to spend on their own needs or businesses.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 TARIFFS_DESC;Tariffs impose an extra cost on imported goods, with the proceeds going to the national treasury. Negative tariffs can be used to help subsidize imports for anyone in your nation.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 precious_metal_desc;Gold, silver,diamonds,pearls and other precious goods are not sold as normal goods but are directly converted to money.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
@@ -26,12 +26,12 @@ precious_metal;Precious Metals;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 precious_metal_RGO_SIZE;Precious Metals Mine Size;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 EDU_DESC;The education budget is used to pay the intellectuals and influence literacy.;;;;;;;;;;;;;;;;;;;;;x
 MIL_COST_DESC;Supply costs for your military, Army and Navy, not including construction costs, salaries or overseas maintenance of provinces.;;;;;;;;;;;;;;;;;;;;;x
-STOCKPILE_COST_ESTIMATED;The National Stockpile consists of the expenses with the Army, Navy, construction budget and the maintenance of overseas provinces.\nWe §Yestimate§! tomorrow's stockpile purchases will cost:;;;;;;;;;;;;;;;;;;x;;;;
+STOCKPILE_COST_ESTIMATED;The National Stockpile consists of the expenses with the Army, Navy, construction budget and the maintenance of overseas provinces.\nWe ï¿½Yestimateï¿½! tomorrow's stockpile purchases will cost:;;;;;;;;;;;;;;;;;;x;;;;
 BUDGET_OVERSEAS;Overseas Maintenance;;;;;;;;;;;;;;;;;;;;;;;x
 BUDGET_CONSUMED_OVERSEAS;Overseas Maintenance expenses are calculated with the National Stockpile and can't be lowered.\nEstimated cost of last day's overseas goods consumption:;;;;;;;;;;;;;;;;;;;;;;x
 BUDGET_CONSUMED_MILITARY;Estimated cost of last day's military goods consumption:;;;;;;;;;;;;;;;;;;;;;;;x
 BUDGET_DIPL_DESC;Costs or profits incurred through diplomacy or peace deals as a result of paid or received reparations.;;;;;;;;;;;;;;;;;;;;;;x
-BUDGET_GOLD;Precious Goods: §Y$VAL$§W;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+BUDGET_GOLD;Precious Goods: ï¿½Y$VAL$ï¿½W;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 congo_master;Congo Overlord;;;;;;;;;;;;;;;;;;;x;;
 consciousness_appeasement;Colonial Propaganda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 DOMINION_OF_NOCOLOR;Dominion of;;;;;;;;;;;;;;;;;;;x;;
@@ -42,18 +42,18 @@ HAVE_MORE_TOTAL_PORTS_THAN;Have equal or more ports than: ;;;;;;;;;;;;;;;;;;;;;;
 HAVE_LESS_NATIONAL_PROVINCES_OCCUPIED_THAN;The percentage of occupied national provinces is less than: ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 HAVE_LESS_TOTAL_PORTS_THAN;Have equal or less ports than: ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 yes_to_congo;Voted Yes in the Congo Question;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-NEED_POSITIVE_WARSCORE;The war is not going well enough. §RIn wars were you are not the war leader, contribution is calculated individually. Even though the total warscore might be positive, what allows you to add or not war goals is your individual warscore - your individual contribution - in this war.§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-WARGOAL_LACK_JINGO;We require $REQUIRED$ support for jingoism in our country, but have only $VALUE$. Jingoism represents the Ruler or the Upper House will to extend the war. The higher the jingoism, the more the chances that the necessary actors have the will and/or support to extend the war.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;; 
+NEED_POSITIVE_WARSCORE;The war is not going well enough. ï¿½RIn wars were you are not the war leader, contribution is calculated individually. Even though the total warscore might be positive, what allows you to add or not war goals is your individual warscore - your individual contribution - in this war.ï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+WARGOAL_LACK_JINGO;We require $REQUIRED$ support for jingoism in our country, but have only $VALUE$. Jingoism represents the Ruler or the Upper House will to extend the war. The higher the jingoism, the more the chances that the necessary actors have the will and/or support to extend the war.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 berlin_conference;Berlin Conference;;;;;;;;;;;;;;;;;;;;;x
 enforce_conference_decision;Enforce Deliberation;;;;;;;;;;;;;;;x;;;;
-enforce_conference_decision_desc;Force a §Ycountry§W to abide to the §YGreat Powers§W deliberation.;;;;;;;;;;;;;;;;x
-enforce_conference_decision_short;Abide to the §YGreat Powers§W deliberation.;;;;;;;;;;;;;;;;;;;;;;x;;;;
-enforce_conference_decision_setup;Force a §Ycountry§W to abide to the §YGreat Powers§W deliberation.;;;;;;;;;;;;;;;;;;;;;;;x
+enforce_conference_decision_desc;Force a ï¿½Ycountryï¿½W to abide to the ï¿½YGreat Powersï¿½W deliberation.;;;;;;;;;;;;;;;;x
+enforce_conference_decision_short;Abide to the ï¿½YGreat Powersï¿½W deliberation.;;;;;;;;;;;;;;;;;;;;;;x;;;;
+enforce_conference_decision_setup;Force a ï¿½Ycountryï¿½W to abide to the ï¿½YGreat Powersï¿½W deliberation.;;;;;;;;;;;;;;;;;;;;;;;x
 yes_to_congo;Voted Yes for the Congo Free State.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 no_to_congo;Votes No for the Congo Free State.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 abstained_to_congo;Abstain from Voting.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 acceptable_health_care;Acceptable Healthcare;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-acceptable_health_care_desc;Medicine is a fully-fledged profession,with doctors and nurses graduating with complete understanding of the human body and a vast knowledge of diseases and how to treat them. Sterilization of the facilities and equipment is common,with Chamberland Filters used to filter water and the Chamberland Autoclave used for heating solutions above their boiling point to destroy dangerous microorganisms. Government agencies exist to enforce sanitation controls and ensure there's no overcrowding. Finding a clinic in an urban center is a relatively easy job and hospitals abandoned oil lamps in favor of gaslights that increase the efficiency of staff.\n§YFor the full effects of this reform,your administration spending should be at least 40%.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+acceptable_health_care_desc;Medicine is a fully-fledged profession,with doctors and nurses graduating with complete understanding of the human body and a vast knowledge of diseases and how to treat them. Sterilization of the facilities and equipment is common,with Chamberland Filters used to filter water and the Chamberland Autoclave used for heating solutions above their boiling point to destroy dangerous microorganisms. Government agencies exist to enforce sanitation controls and ensure there's no overcrowding. Finding a clinic in an urban center is a relatively easy job and hospitals abandoned oil lamps in favor of gaslights that increase the efficiency of staff.\nï¿½YFor the full effects of this reform,your administration spending should be at least 40%.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 acceptable_safety;Regular Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 acceptable_safety_desc;Safety regulations extend to all workplaces in our country. Government agencies label agricultural chemicals for toxicity and potential health impacts,mining and construction workers are required to use protection gear and hand brakes operated by workers riding on top of train cars were abolished. Employees have their rights guaranteed and getting compensation for accidents that happen due to employer negligence is a common occurrence. Government help to the victims is reasonable.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 acceptable_schools;Acceptable School System;;;;;;;;;;;;;;;;;;;;;;x
@@ -99,18 +99,18 @@ control_3_desc;Obsolescence is the state of being which occurs when an object, s
 control_4;Obsolete Steam Turbines;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;x;;;;
 control_4_desc;Obsolescence is the state of being which occurs when an object, service, or practice is no longer wanted even though it may still be in good working order. It occurs that Steam Turbines have become rather obsolete and lost some of their advantages.;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;x;;;;
 acceptable_subsidies_l;Extended Subsidies;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;x;;;;
-MONEY_IS_ATLEAST_TRIGGER;Money is at least §Y$VALUE$§W¤.\n;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-EFFECT_BUILD_IN_CAPITAL_DESC;§Y$BLD$§! construction will take place in: §Y$PROVS$§!\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-ADD_WARGOAL_PRESTIGE;If we achieve this war goal, we will gain $COST$ §Yprestige§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-ADD_WARGOAL_MILITANCY;If we fail to achieve this war goal, our entire population will gain $MILITANCY$ §YMilitancy§W;;;;;;;;;;;;;;;;;;;;;;;;;;x
+MONEY_IS_ATLEAST_TRIGGER;Money is at least ï¿½Y$VALUE$ï¿½Wï¿½.\n;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+EFFECT_BUILD_IN_CAPITAL_DESC;ï¿½Y$BLD$ï¿½! construction will take place in: ï¿½Y$PROVS$ï¿½!\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+ADD_WARGOAL_PRESTIGE;If we achieve this war goal, we will gain $COST$ ï¿½Yprestigeï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+ADD_WARGOAL_MILITANCY;If we fail to achieve this war goal, our entire population will gain $MILITANCY$ ï¿½YMilitancyï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;x
 ADD_WARGOAL_EFFECT;When we add this war goal, we will gain:;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 ADD_WARGOAL_SUCCESS;If we achieve this war goal, we will gain:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 ADD_WARGOAL_FAILURE;If we fail to achieve this war goal, we will gain:;;;;;;;;;;;;;;;;;;;;;;;;;;x;
-BUY_FROM_STOCKPILE_DESC;Allow pops/factories to buy from country stockpile.\n\n§YNOTE: §RNEVER§W use this button while you are still buying or selling manually. §RONLY§W use it with automatic trade §GON§W for §RALL§W goods.§W §RFailing to do so will cause economy crashes both locally and globally. Use it at your own risk.§W;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+BUY_FROM_STOCKPILE_DESC;Allow pops/factories to buy from country stockpile.\n\nï¿½YNOTE: ï¿½RNEVERï¿½W use this button while you are still buying or selling manually. ï¿½RONLYï¿½W use it with automatic trade ï¿½GONï¿½W for ï¿½RALLï¿½W goods.ï¿½W ï¿½RFailing to do so will cause economy crashes both locally and globally. Use it at your own risk.ï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 military_political_decision_making;Military-Political Decision-Making;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 army_military_political_decision_making;Military-Political Decision-Making;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 army_military_political_decision_making_desc;In wartime an influential Army that had lobbied for their cause for a long time could get full control not only over the execution of the war, but also over the resource management of the country. This could basically be called a Military Dictatorship governed by the General Staff.;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-COALITION_WIN;A coalition of §Y$IDE$§W got $VAL$% of the seats and will form the basis of the government.;;;;;;;;;;;;;;;;;;;;;;;;;x
+COALITION_WIN;A coalition of ï¿½Y$IDE$ï¿½W got $VAL$% of the seats and will form the basis of the government.;;;;;;;;;;;;;;;;;;;;;;;;;x
 RULE_PRIMARY_CULTURE_VOTING;\nPrimary culture can vote;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 RULE_RICH_ONLY;\nRich Only;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 RULE_SAME_AS_RULING_PARTY;\nSame As Ruling Party;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -135,7 +135,7 @@ fuel_refinery_desc;An oil refinery is an industrial process plant where crude oi
 radio_factory_desc;AM radio uses amplitude modulation, in which the amplitude of the transmitted signal is made proportional to the sound amplitude captured (transduced) by the microphone, while the transmitted frequency remains unchanged. It can be a TRF receiver or a superheterodyne receiver, the latter typically using 6 triodes: a mixer, local oscillator, two IF and two audio amplifier stages, with an IF of 45 kHz. The radio case could be made of Bakelite or wood and the insides typically were made out of a variety of metals and vacuum tubes, with the occasional rubber to isolate.;;;;;;;;;;;;;;;;;;;;x;;;;
 rail_focus;Colonial Policy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 synthetic_oil_factory;Coal Liquefaction Plant;;;;;;;;;;;;;;;;;;;x;;;;
-synthetic_oil_factory_desc;The main methods of direct conversion of coal to liquids by hydrogenation process is the Bergius process. In this process, the coal is finely ground and dried in a stream of hot gas. The dry product is mixed with heavy oil recycled from the process and a catalyst is typically added to the mixture. Usually, iron sulphides present in the coal may have sufficient catalytic activity for the process. The mixture is then pumped into a reactor and the reaction occurs between 400 to 500 °C and 20 to 70 MPa hydrogen pressure. The reaction produces heavy oils, middle oils, gasoline, and gases.;;;;;;;;;;;;;;;;;;;x;;;;
+synthetic_oil_factory_desc;The main methods of direct conversion of coal to liquids by hydrogenation process is the Bergius process. In this process, the coal is finely ground and dried in a stream of hot gas. The dry product is mixed with heavy oil recycled from the process and a catalyst is typically added to the mixture. Usually, iron sulphides present in the coal may have sufficient catalytic activity for the process. The mixture is then pumped into a reactor and the reaction occurs between 400 to 500 ï¿½C and 20 to 70 MPa hydrogen pressure. The reaction produces heavy oils, middle oils, gasoline, and gases.;;;;;;;;;;;;;;;;;;;x;;;;
 steamer_shipyard_desc;The key innovation that made steamers viable is the change from the paddle-wheel to the screw-propeller for propulsion. Steam engines are designed with the power delivered at the bottom of the machinery, to give direct drive to the propeller shaft, where it passes to the stern tube through the hull. Since the motive power of screw propulsion is delivered along the shaft, a thrust bearing is needed to transfer that load without excessive friction.;;;;;;;;;;;;;;;;;;;x;;;;
 clipper_shipyard_desc;Clippers are fast vessels with three masts and a square rig. They are generally narrow for their length, can carry limited bulk freight and have a large total sail area. Optimized for speed, they are too fine-lined to carry much cargo. Clippers typically carry extra sails such as skysails and moonrakers on the masts and studdingsails on booms extending out from the hull or yards, which required extra hands to handle them.;;;;;;;;;;;;;;;;;;;x;;;;
 closed_borders;Closed Borders;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -163,7 +163,7 @@ dye_factory;Synthetic Dyeworks;;;;;;;;;;;;;;;;;;;x;;;;
 dye_factory_desc;Natural dye is only present in small amounts and its extraction is often inefficient, so they are usually expensive. In an experiment with a compound called aniline, one of the simplest chemical components of coal tar, one inventor discovered that an alcohol extracted purple color, which readily dyed silk, and was much more stable in sunlight than any other purple dye in use. In the Synthetic Dyeworks dyes are mixed, synthesized in a reactor, filtered for impurities, dried out and then blended. Along the way many other additives, solvents and chemical compounds are used to instigate reactions.;;;;;;;;;;;;;;;;;;;x;;;;
 liquor_distillery_desc;The earliest reference to carbonated ginger beer is in a Practical Treatise on Brewing. published in 1809. The drinking of either natural or artificial mineral water was considered at the time to be a healthy practice,and was promoted by advocates of temperance. Pharmacists selling mineral waters began to add herbs and chemicals to unflavored mineral water. They used birch bark,dandelion,sarsaparilla,fruit extracts,and other substances. Flavorings were also added to improve the taste.;;;;;;;;;;;;;;;;;;;x;;;;
 low_health_care;Low Healthcare;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-low_health_care_desc;Doctors and nurses are starting to understand wounds and diseases better during their studies and apply the principles of the so-called "germ theory" when treating patients. A Sanitary Commission was founded and its agents can be seen patrolling the hospitals,albeit infrequently,to guarantee a rudimentary sanitation standard. Healthcare facilities are starting to become common.\n§YFor the full effects of this reform,your administration spending should be at least 30%.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+low_health_care_desc;Doctors and nurses are starting to understand wounds and diseases better during their studies and apply the principles of the so-called "germ theory" when treating patients. A Sanitary Commission was founded and its agents can be seen patrolling the hospitals,albeit infrequently,to guarantee a rudimentary sanitation standard. Healthcare facilities are starting to become common.\nï¿½YFor the full effects of this reform,your administration spending should be at least 30%.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 low_safety;Limited Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 low_safety_desc;Safety regulations extend to the agricultural,civil construction and mining sectors. In mines,the use of safety lamps is mandatory. Employees suing their employers still have a hard time winning any significant compensation,but the government offers help to the affected families,albeit the amount given is barely enough to scrap an existence.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 low_schools;Basic School System;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -172,14 +172,14 @@ lumber_mill;Sawmill;;;;;;;;;;;;;;;;;;x;;;;
 lumber_mill_desc;At the sawmill, the logs are cut into boards using equipment such as circular saws and bandsaws. This is called conversion. The first stage of conversion is a process called breaking down, which means rough sawing. The second stage is called resawing and refers to more accurate / precise cutting and finishing, such as planing and further machining. The introduction of steam power in the 19th century created many new possibilities for mills, with steam powered sawmills being far more mechanized and scrap lumber from the mill providing a ready fuel source for firing the boiler.;;;;;;;;;;;;;;;;;;x;;;;
 fabric_factory;Textile Mill;;;;;;;;;;;;;;;;;;x;;;;
 fabric_factory_desc;Fabric is a tightly woven textile made in a Textile Mill which is, among other things, used to produce sails for ships as well as clothing. With the Cartwright Loom, the Spinning Mule and the Boulton & Watt steam engine, the pieces were in place to build a mechanized textile industry. From this point there were no new inventions, but a continuous improvement in technology as the mill-owner strove to reduce cost and improve quality. Developments in the transport infrastructure facilitated the import of raw materials and export of finished cloth, diminishing costs and increasing profits.;;;;;;;;;;;;;;;;;;x;;;;
-cement_factory_desc;In 1824 Joseph Aspdin, a British bricklayer turned builder, patented a chemical process for making portland cement which was an important advance in the building trades. This process involves sintering a mixture of clay and limestone to about 1,400°C (2,552°F), then grinding it into a fine powder which is then mixed with water, sand and gravel to produce concrete. Concrete is used to build factories, forts, shipyards, buildings, sewage systems and tunnels. Its use quickly became widespread in civil and military construction.;;;;;;;;;;;;;;;;;;;x;;;;
+cement_factory_desc;In 1824 Joseph Aspdin, a British bricklayer turned builder, patented a chemical process for making portland cement which was an important advance in the building trades. This process involves sintering a mixture of clay and limestone to about 1,400ï¿½C (2,552ï¿½F), then grinding it into a fine powder which is then mixed with water, sand and gravel to produce concrete. Concrete is used to build factories, forts, shipyards, buildings, sewage systems and tunnels. Its use quickly became widespread in civil and military construction.;;;;;;;;;;;;;;;;;;;x;;;;
 glass_factory_desc;A new method of producing glass, known as the cylinder process, was developed in Europe during the early 19th century. In 1832, this process was used by the Chance Brothers to create sheet glass. This advancement allowed for larger panes of glass to be created without interruption, thus freeing up the space planning in interiors as well as the fenestration of buildings. The other glass-making method is glassblowing which produces bottles and other containers. Glass is used for a variety of appliances like bottles, windows, bowls, vases, lamps, jars, vacuum tubes and light bulbs.;;;;;;;;;;;;;;;;;;;x;;;;
 good_health_care;Good Healthcare;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-good_health_care_desc;The discovery of several vaccines revolutionized medicine,with vaccination being mandatory or strongly encouraged by the government. Doctors now use pharmaceuticals to treat patients and full sterilization of all medical equipment and facilities,quarantine procedures for infectious diseases and proper disposal of medical waste are mandatory practices enforced by the sanitation standards of the government agencies. Finding clinics or hospitals in smaller population centers is common,overcrowding is rare and some smaller health centers are starting to appear even in rural areas. Hospitals are equipped with modern electric lights and informational posters for staff.\n§YFor the full effects of this reform,your administration spending should be at least 50%.\nA fully funded administration provides a bonus to this reform.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+good_health_care_desc;The discovery of several vaccines revolutionized medicine,with vaccination being mandatory or strongly encouraged by the government. Doctors now use pharmaceuticals to treat patients and full sterilization of all medical equipment and facilities,quarantine procedures for infectious diseases and proper disposal of medical waste are mandatory practices enforced by the sanitation standards of the government agencies. Finding clinics or hospitals in smaller population centers is common,overcrowding is rare and some smaller health centers are starting to appear even in rural areas. Hospitals are equipped with modern electric lights and informational posters for staff.\nï¿½YFor the full effects of this reform,your administration spending should be at least 50%.\nA fully funded administration provides a bonus to this reform.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 good_safety;Good Safety Regulations;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 good_safety_desc;Safety regulations extend to all workplaces in our country and cover potential psychological problems due to extended isolation and even minor injuries. Employers are obliged to supply workers with protection equipment and safety training. Warnings and reminders are spread through the workplace to guarantee workers remember their safety instructions. Getting compensation for employer negligence in the workplace is easy and the government supports victims with a good amount of money.;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 good_schools;Good School System;;;;;;;;;;;;;;;;;;;;;;;x
-fertilizer_factory_desc;In this factory fertilizer is created out of guano, sulphur or bone meal. The most common way to create fertilizer is the Birkeland–Eyde process. This process was used to fix atmospheric nitrogen (N2) into nitric acid (HNO3), one of several chemical processes generally referred to as nitrogen fixation. The resultant nitric acid was then used as a source of nitrate (NO3-) for the fertilizers. These fertilizers are used to increase the productivity of farms or the chemical components are further refined to make explosives.;;;;;;;;;;;;;;;;;;;;;;;x
+fertilizer_factory_desc;In this factory fertilizer is created out of guano, sulphur or bone meal. The most common way to create fertilizer is the Birkelandï¿½Eyde process. This process was used to fix atmospheric nitrogen (N2) into nitric acid (HNO3), one of several chemical processes generally referred to as nitrogen fixation. The resultant nitric acid was then used as a source of nitrate (NO3-) for the fertilizers. These fertilizers are used to increase the productivity of farms or the chemical components are further refined to make explosives.;;;;;;;;;;;;;;;;;;;;;;;x
 MODIFIER_CB_GENERATION_SPEED_MODIFIER;Casus Belli Acquisition Speed;;;;;;;;;;;;;;;;;;;;;;;x
 MODIFIER_MOBILIZATION_IMPACT;Mobilization Impact;;;;;;;;;;;;;;;;;;;x
 GREAT_WARS_ENABLED_DESC;Great Wars are discovered.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -188,16 +188,16 @@ HAVE_NOT_A_PORT_IN;Do NOT have a port in ;;;;;;;;;;;;;;x;;;;
 IN_SOCIAL_MOVEMENT;in social movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;x
 NOT_IN_SOCIAL_MOVEMENT;not in social movement\n;;;;;;;;;;;;;;;;;;;;;;;x
 IN_POLITICAL_MOVEMENT;in political movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-NOT_IN_POLITICAL_MOVEMENT;not in political movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;x	
+NOT_IN_POLITICAL_MOVEMENT;not in political movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 NEUTRALITY_EFFECT;The nation becomes neutral, dissolving all alliances and setting all satellites free.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-INFLUENCE_CHANGE;§Y$ACTIVE$§W influence with §Y$PASSIVE$§W changes by $MUCH$.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+INFLUENCE_CHANGE;ï¿½Y$ACTIVE$ï¿½W influence with ï¿½Y$PASSIVE$ï¿½W changes by $MUCH$.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 THE_CAPITAL_IS_NOT;The Capital Is Not ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-TOPBAR_POPULATION;Our adult male population is $CURR$. Our adult male population has changed by $CHANGE$ in the last §Y$DAYS$§! days.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-TOTAL_AMOUNT_OF_SHIPS;Total amount of ships: §Y$COUNT$§W \n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+TOPBAR_POPULATION;Our adult male population is $CURR$. Our adult male population has changed by $CHANGE$ in the last ï¿½Y$DAYS$ï¿½! days.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+TOTAL_AMOUNT_OF_SHIPS;Total amount of ships: ï¿½Y$COUNT$ï¿½W \n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 ENDGAME_DESC;One hundred momentous years have passed and we have entered the modern age. The world is a radically different place, how did your country do?;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DIPLOMACY_FILTER_NORTH_AMERICA;North America;;;;;;;;;;x;;;;
 DIPLOMACY_FILTER_OCEANIA;Near East;;;;;;;;;;x;;;;
-DIPLOMACY_FILTER_OCEANIA_TOOLTIP;List §YNear Eastern§W countries;;;;;;;;;;;;;;;;x;;;;
+DIPLOMACY_FILTER_OCEANIA_TOOLTIP;List ï¿½YNear Easternï¿½W countries;;;;;;;;;;;;;;;;x;;;;
 north_america;North America;;;;;;;;;;;;;;;;;;;;;;;x
 oceania;Near East;;;;;;;;;;;;;;;;;;;;;;;x
 siberian;Siberian Minor;;;;;;;;;;;;;;;;;;;;;;;x
@@ -220,7 +220,7 @@ promote_aristocrats;Encourage Landowners ;;;;;;;;;;;;;;;;;;;;;;x;;;;
 ELECTIONSTART_1;The Elections of $COUNTRY$ are starting;;;;;;;;;;;;;;;;;;;;;;x;;;;
 sepoy_rebellion;Sepoy Rebellion;;;;;;;;;;;;;;;;;;;;;x
 IS_SUBSTATE_OF;Is a substate;;;;;;;;;;;;;;;;;;;;;x
-LESS_AMOUNT_OF_SHIPS;Less amount of ships than: §Y$COUNT$§W \n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+LESS_AMOUNT_OF_SHIPS;Less amount of ships than: ï¿½Y$COUNT$ï¿½W \n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 IS_NOT_SUBSTATE_OF;Is NOT a substate;;;;;;;;;;;;;;;;;;;;x
 public_illumination;Public Illumination;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 IS_NOT_IN_A_SPHERE;Not in a sphere of influence.;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -228,7 +228,7 @@ HOLD_ELECTION_BUTTON;Hold Election;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 HOLD_ELECTION;Hold Election\n;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 NATIONALIZE_INDUSTRY_EFFECT;Perform Nationalization\n;;;;;;;;;;;;;;;;;;;;;;;;;x
 2nd_caucasian_war;Second Caucasian War;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-RELEASE;Release §Y$WHO$§W as an independent state.\n;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+RELEASE;Release ï¿½Y$WHO$ï¿½W as an independent state.\n;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 modern_central_bank_system_invented;Modern Central Banking System Invented;;;;;;;;;;;;;;;;;;;;x;;;;
 PEACE_WE_ACCEPT_2;We have accepted a peace offer from;;;;;;;;;;;;;;;;;;;;;x;;;;
 administrative_efficiency_modifier;Administrative Efficiency;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -254,8 +254,8 @@ house_of_saud_exiled;House of Saud Exiled;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 early_electrical_telegraph;Early Electrical Telegraph;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 early_electrical_telegraph_desc;The first commercial electrical telegraph was co-developed by Sir William Fothergill Cooke and Charles Wheatstone. This was a five-needle, six-wire system. The cables were originally installed underground in a steel conduit. However, the cables soon began to fail as a result of deteriorating insulation and were replaced with uninsulated wires on poles. As an interim measure, a two-needle system was used with three of the remaining working underground wires, which despite using only two needles had a greater number of codes.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 telegraph;Telegraph;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-REMOVE_MONEY_EFFECT;Lose §R$VALUE$¤§W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-MONEY_EFFECT;Funds §R$VALUE$§W¤§W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+REMOVE_MONEY_EFFECT;Lose ï¿½R$VALUE$ï¿½ï¿½W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+MONEY_EFFECT;Funds ï¿½R$VALUE$ï¿½Wï¿½ï¿½W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 theocracy_ruler;Your Holiness;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 proletarian_dictatorship_ruler;Chairman;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 presidential_dictatorship_ruler;President;;;;;;;;;;;;;;;;;;;x;;;;
@@ -297,13 +297,13 @@ french_claimed_the_rhine;French Claims on the Rhine;;;;;;;;;;;;;;;;;;;;;;;;x
 CANAL_5;Dardanelles Strait;;;;;;;;;;;;;;;;;;;;;;;;x
 CAN_BUILD_FACTORY;Can build factory.\n;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 CAN_NOT_BUILD_FACTORY;Can not build factory.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-CHANGE_GOODS;Change trade goods in §Y$PROV$§W to §Y$GOOD$§W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+CHANGE_GOODS;Change trade goods in ï¿½Y$PROV$ï¿½W to ï¿½Y$GOOD$ï¿½W.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
 CANAL_4;Bosphorus Strait;;;;;;;;;;;;;;;;;;;;;;;;x
 MODIFIER_LAND_ATTACK;Land Unit Attack;;;;;;;;;;;;;;;;;;;;;;;;;;x
 MODIFIER_NAVAL_ATTACK;Naval Unit Attack;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 MODIFIER_LAND_DEFENSE;Land Unit Defense;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 MODIFIER_NAVAL_DEFENSE;Naval Unit Defense;;;;;;;;;;;;;;;;;;;;;;;;;x
-MODIFY_RELATION_EFFECT;§Y$SOURCE$§!'s relation with §Y$TARGET$§! changed with a value of $VALUE$.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+MODIFY_RELATION_EFFECT;ï¿½Y$SOURCE$ï¿½!'s relation with ï¿½Y$TARGET$ï¿½! changed with a value of $VALUE$.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 PV_CLERGY_LIT_PROVIDES;Intellectuals provinces: $VAL$;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 PV_CLERGY_LIT_NUM;$NUM$ of your population are Intellectuals (Optimal $OPT$): $VAL$;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EDU_DESC;The educational budget is used to pay the intellectuals and to produce research points.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
@@ -316,9 +316,9 @@ BUDGET_TAX_RICH;Taxes (Upper Class);;;;;;;;;;;;;;x;;;;
 BUDGET_TAX_MIDDLE;Taxes (Middle Class);;;;;;;;;;;x;;;;
 BUDGET_TAX_POOR;Taxes (Lower Class);;;;;;;;;;;;;;x;;;;
 NATIONAL_BANK;National Bank;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-immigration_focus_desc;Migrants §Y$VAL$§W% more likely to choose this state. This focus makes immigrants more likely to settle in this state,it doesn't make more likely for them to choose our country.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+immigration_focus_desc;Migrants ï¿½Y$VAL$ï¿½W% more likely to choose this state. This focus makes immigrants more likely to settle in this state,it doesn't make more likely for them to choose our country.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 emigration_focus;Encourage Emigration;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-emigration_focus_desc;Pops will be §Y$VAL$§W% more likely to leave this region.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+emigration_focus_desc;Pops will be ï¿½Y$VAL$ï¿½W% more likely to leave this region.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 encourage_agriculture;Encourage Agriculture;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 encourage_business;Encourage Business;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 encourage_mining;Encourage Mining;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -530,15 +530,15 @@ THE_CAPITAL_IS;The Capital Is;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 post_colonial_country;Post-Colonial Nation;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 mormon;Mormon;;;;;;;;;;;;;;;;;;;;;;x;;;;;;
 gypsy;Gypsy;;;;;;;;;;;;;;;;;;;;;;x;;;;;;
-eugen_von_bohm_bawerk;Eugen von Böhm-Bawerk;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-eugen_von_bohm_bawerk_desc;Böhm-Bawerk's career as a scholar was an intermittent one. The most significant span of scholarly activity was his years at the University of Innsbruck (1881-1889). It was during the 1880s that he first published two of the three volumes of his magnum opus, Capital and Interest. His later years were dominated by his duties as the Austrian Minister of Finance, a position he held, though not continuously, throughout the 1890s and beyond-and for which he is fittingly honored by having his likeness on Austria's one-hundred schilling note. After serving in this capacity and assuming other governmental duties, he returned to teaching in 1904. With a chair at the University of Vienna, he became a colleague of Wieser, successor to the retired Menger. Students who passed through the university during the last decade of Böhm-Bawerk's career (and life: he died in 1914) included Joseph Schumpeter and Ludwig von Mises.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-leon_walras;Léon Walras;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-leon_walras_desc;The French economist Léon Walras (pronounced 'Valrasse') has been hailed by Joseph Schumpeter as 'the greatest of all economists'. Walras was one of the three leaders of the Marginalist Revolution, even though his greatest work, Elements of Pure Economics, was published in 1874, three years after those of William Stanley Jevons and Carl Menger. Nonetheless, alone among the three revolutionaries, Léon Walras set forth the new 'marginalist' or 'Neoclassical' theory in a formal general equilibrium setting.   Thus, he endowed it with the multi-market considerations Jevons had largely avoided and the mathematical precision Menger had eschewed. Léon Walras is widely and rightfully regarded as the father of general equilibrium theory.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-jean_jaures;Jean Jaurès;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-jean_jaures_desc;Jaurès was elected to the Chamber of Deputies in 1885. Defeated in the 1889 elections he returned to the University of Toulouse. He became increasingly radical in his political views and after reading Karl Marx he began advocating socialism. He was not a revolutionary and supported the Independent Socialists. While out of parliament Jaurès completed his mammoth Socialist History of the French Revolution. He also joined with Aristide Briand and Rene Viviani in 1904 to establish the left-wing newspaper, L'Humanité in 1904. A new Socialist Party under Jaurès grew rapidly at the beginning of the century but split over the correct response to German militarism. Jaurès advocated a policy of international arbitration whereas others supported the Triple Entente.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-jefferson_method_desc;The Jefferson Method is a highest averages method for allocating seats,and is thus a type of party-list proportional representation. Proportional representation systems aim to allocate seats to parties approximately in proportion to the number of votes received. For example,if a party wins one-third of the votes then it should gain about one-third of the seats. In general,exact proportionality is not possible because these divisions produce fractional numbers of seats. As a result,several methods have been devised which ensure that the parties' seat allocations,which are of course whole numbers,are as proportional as possible. In comparison with the Sainte-Lague method,§Ythe Jefferson Method slightly favours large parties and coalitions over scattered small parties§W.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-johann_heinrich_von_thunen;Johann Heinrich von Thünen;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-johann_heinrich_von_thunen_desc;Johann Heinrich von Thünen was a North German landowner from the Mecklenburg area. Although educated at Götingen, he spent most of his life managing his rural estate, Tellow.  In the first volume of his treatise, The Isolated State (1826), he laid down the first serious treatment of spatial economics, connecting with the theory of rent.  His second volume (1850) developed the essence of the marginal productivity theory of distribution in a mathematically precise way, thereby making one of the most important Proto-Marginalists of the era. Nearing his death, he asked that his famous equation for the marginal product of labor, or natural wage, be carved into his tombstone.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+eugen_von_bohm_bawerk;Eugen von Bï¿½hm-Bawerk;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+eugen_von_bohm_bawerk_desc;Bï¿½hm-Bawerk's career as a scholar was an intermittent one. The most significant span of scholarly activity was his years at the University of Innsbruck (1881-1889). It was during the 1880s that he first published two of the three volumes of his magnum opus, Capital and Interest. His later years were dominated by his duties as the Austrian Minister of Finance, a position he held, though not continuously, throughout the 1890s and beyond-and for which he is fittingly honored by having his likeness on Austria's one-hundred schilling note. After serving in this capacity and assuming other governmental duties, he returned to teaching in 1904. With a chair at the University of Vienna, he became a colleague of Wieser, successor to the retired Menger. Students who passed through the university during the last decade of Bï¿½hm-Bawerk's career (and life: he died in 1914) included Joseph Schumpeter and Ludwig von Mises.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+leon_walras;Lï¿½on Walras;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+leon_walras_desc;The French economist Lï¿½on Walras (pronounced 'Valrasse') has been hailed by Joseph Schumpeter as 'the greatest of all economists'. Walras was one of the three leaders of the Marginalist Revolution, even though his greatest work, Elements of Pure Economics, was published in 1874, three years after those of William Stanley Jevons and Carl Menger. Nonetheless, alone among the three revolutionaries, Lï¿½on Walras set forth the new 'marginalist' or 'Neoclassical' theory in a formal general equilibrium setting.   Thus, he endowed it with the multi-market considerations Jevons had largely avoided and the mathematical precision Menger had eschewed. Lï¿½on Walras is widely and rightfully regarded as the father of general equilibrium theory.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+jean_jaures;Jean Jaurï¿½s;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+jean_jaures_desc;Jaurï¿½s was elected to the Chamber of Deputies in 1885. Defeated in the 1889 elections he returned to the University of Toulouse. He became increasingly radical in his political views and after reading Karl Marx he began advocating socialism. He was not a revolutionary and supported the Independent Socialists. While out of parliament Jaurï¿½s completed his mammoth Socialist History of the French Revolution. He also joined with Aristide Briand and Rene Viviani in 1904 to establish the left-wing newspaper, L'Humanitï¿½ in 1904. A new Socialist Party under Jaurï¿½s grew rapidly at the beginning of the century but split over the correct response to German militarism. Jaurï¿½s advocated a policy of international arbitration whereas others supported the Triple Entente.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+jefferson_method_desc;The Jefferson Method is a highest averages method for allocating seats,and is thus a type of party-list proportional representation. Proportional representation systems aim to allocate seats to parties approximately in proportion to the number of votes received. For example,if a party wins one-third of the votes then it should gain about one-third of the seats. In general,exact proportionality is not possible because these divisions produce fractional numbers of seats. As a result,several methods have been devised which ensure that the parties' seat allocations,which are of course whole numbers,are as proportional as possible. In comparison with the Sainte-Lague method,ï¿½Ythe Jefferson Method slightly favours large parties and coalitions over scattered small partiesï¿½W.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+johann_heinrich_von_thunen;Johann Heinrich von Thï¿½nen;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+johann_heinrich_von_thunen_desc;Johann Heinrich von Thï¿½nen was a North German landowner from the Mecklenburg area. Although educated at Gï¿½tingen, he spent most of his life managing his rural estate, Tellow.  In the first volume of his treatise, The Isolated State (1826), he laid down the first serious treatment of spatial economics, connecting with the theory of rent.  His second volume (1850) developed the essence of the marginal productivity theory of distribution in a mathematically precise way, thereby making one of the most important Proto-Marginalists of the era. Nearing his death, he asked that his famous equation for the marginal product of labor, or natural wage, be carved into his tombstone.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 colorado_rebels_title;Colorados;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 colorado_rebels_name;Colorado Rebels;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 colorado_rebels_desc;Colorados seek to topple the Blanco government and install their own party in power.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
@@ -586,10 +586,10 @@ no_draft_l;No Draft;No Draft;No Draft;;No Draft;;;;;;;;;x;;;;;;;;;;;;;;,,,,,
 no_draft_desc;No conscription.;No conscription.;No conscription.;;No conscription.;;;;;;;;;x;;;;;;;;;;;;;;,,,,,
 conscription;Conscription;Conscription;Conscription;;Conscription;;;;;;;;;x;;;;;;;;;;;;;;,,,,,
 movement_no_draft;Movement for the Abolition of the Conscription;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-yes_slavery_desc;Slavery is allowed.\n§RThis reform affects POP promotion chance - promotion will be slower, both globally and even more in slave states.§W\n§YPops in Slave states will be more conservative and less liberal. Immigrants are less likely to choose slave states.§W\n§GThe slave population will grow.§W;;;;;;;;;;;;;;;;;x;;;;
+yes_slavery_desc;Slavery is allowed.\nï¿½RThis reform affects POP promotion chance - promotion will be slower, both globally and even more in slave states.ï¿½W\nï¿½YPops in Slave states will be more conservative and less liberal. Immigrants are less likely to choose slave states.ï¿½W\nï¿½GThe slave population will grow.ï¿½W;;;;;;;;;;;;;;;;;x;;;;
 freedom_of_womb;Freedom of Womb;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,x;;;;;;;;;;;;;;,,,
 freedom_of_womb_l;Freedom of Womb Law;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,x;;;;;;;;;;;;;;,,,
-freedom_of_womb_desc;Slaves children are freed at birth and, in most cases, old slaves are also freed. The slave population stops growing. \n§RThis reform affects POP promotion chance - promotion will be slower, both globally and even more in slave states.§W\n§YPops in Slave states will be more conservative and less liberal. Immigrants are less likely to choose slave states.§W\n§RThe slave population will stop growing.§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,,,
+freedom_of_womb_desc;Slaves children are freed at birth and, in most cases, old slaves are also freed. The slave population stops growing. \nï¿½RThis reform affects POP promotion chance - promotion will be slower, both globally and even more in slave states.ï¿½W\nï¿½YPops in Slave states will be more conservative and less liberal. Immigrants are less likely to choose slave states.ï¿½W\nï¿½RThe slave population will stop growing.ï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,,,
 movement_freedom_of_womb;Freedom of Womb Campaign;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,x;;;;;;;;;;;;;;,,,
 no_slavery;Outlawed;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
 no_slavery_desc;Slavery is forbidden.;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;,,,
@@ -636,7 +636,7 @@ movement_child_labor_illegal;Child Labor Abolition League;;;;;;;;;x;;;;;;;;;;;;;
 debt_law;Debt Law;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 serfdom;Serfdom;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 serfdom_l;Serfdom;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-serfdom_desc;Serfs are bound to the land and subject to the will of its owner and forced to work the fields under a feudal system.\n§RThis reform affects POP promotion chance - promotion will be slower.§W\n§YThis reform enables Serfs - poor POPs will demote to Serfs and won't come out of Serfdom until it's abolished.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+serfdom_desc;Serfs are bound to the land and subject to the will of its owner and forced to work the fields under a feudal system.\nï¿½RThis reform affects POP promotion chance - promotion will be slower.ï¿½W\nï¿½YThis reform enables Serfs - poor POPs will demote to Serfs and won't come out of Serfdom until it's abolished.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 movement_serfdom;Pro Serfdom League;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 movement_ten_hours;Maximum Work Hours Movement;;;;;;;;;;;;;;;;;;;;;x
 movement_twelve_hours;Maximum Work Hours Movement;;;;;;;;;;;;;;;;;;;;;x
@@ -646,7 +646,7 @@ peonage_desc;Peonage is a debt system under which the debtor is forced to work o
 movement_peonage;Campaign for the Abolition of Serfdom;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 debtors_prisons;Debtor's Prisons;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 debtors_prisons_l;Debtor's Prisons;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-debtors_prisons_desc;Debtors are confined to jail until such time as their debt is resolved.\n§YThis reform is neutral - no effects.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+debtors_prisons_desc;Debtors are confined to jail until such time as their debt is resolved.\nï¿½YThis reform is neutral - no effects.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 movement_debtors_prisons;Abolition of Peonage Movement;;;;;;;;;;;;x;;;;;;;;;;;;;;
 movement_eight_hours;Maximum Work Hours Movement;;;;;;;;;;;;;;;;;;;;;x
 bankruptcy;Bankruptcy;;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -663,33 +663,33 @@ penal_system;Penal System;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 penal_system_l;Penal System;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 colonial_transportation;Transportation;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 colonial_transportation_l;Transportation;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-colonial_transportation_desc;Prisoners are sent to either far away or inhospitable places in the mother-country or to its colonies. This, however, increases the load on the bureaucracy.\n§YThis reform will increase colonial migration but it will also increase the necessity of bureaucrats.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+colonial_transportation_desc;Prisoners are sent to either far away or inhospitable places in the mother-country or to its colonies. This, however, increases the load on the bureaucracy.\nï¿½YThis reform will increase colonial migration but it will also increase the necessity of bureaucrats.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 movement_colonial_transportation;Campaign for the Abolition of Capital Punishment;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 incarceration;Incarceration;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 incarceration_l;Incarceration;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-incarceration_desc;Convicts are imprisoned with the intent of removing undesirables from society, though they aren't used for hard manual labor most of the times.\n§YThis reform is neutral - no effects.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+incarceration_desc;Convicts are imprisoned with the intent of removing undesirables from society, though they aren't used for hard manual labor most of the times.\nï¿½YThis reform is neutral - no effects.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 movement_incarceration;Movement for the Abolition of Penal Colonies;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 rehabilitation;Rehabilitation;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 rehabilitation_l;Rehabilitation;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 rehabilitation_desc;Convicts are imprisoned with the intent of reforming them and reintroducing them into society.;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 movement_rehabilitation;Rehabilitation of Prisoners Campaign;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 trinket_health_care;Trinket Healthcare;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-trinket_health_care_desc;Doctors and nurses have a rudimentary understanding of wounds and diseases,partially relying on old beliefs when treating patients,but they do have formal training. Hospitals have rules to reduce overcrowding (beds are spaced a meter apart),provisions for ventilation,and the sewers leading from the hospital are flushed several times a day while the latrines/drains are disinfected with peat charcoal. There is meager collection of patient data but there aren't any proper sanitation standards for hospitals nor government agencies to check them. Healthcare facilities are hard to find.\n§YFor the full effects of this reform,your administration spending should be at least 20%.§W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+trinket_health_care_desc;Doctors and nurses have a rudimentary understanding of wounds and diseases,partially relying on old beliefs when treating patients,but they do have formal training. Hospitals have rules to reduce overcrowding (beds are spaced a meter apart),provisions for ventilation,and the sewers leading from the hospital are flushed several times a day while the latrines/drains are disinfected with peat charcoal. There is meager collection of patient data but there aren't any proper sanitation standards for hospitals nor government agencies to check them. Healthcare facilities are hard to find.\nï¿½YFor the full effects of this reform,your administration spending should be at least 20%.ï¿½W;;;;;;;;;;;;;x;;;;;;;;;;;;;;
 trinket_safety;Minimal Safety Regulations;;;;;;;;;;;;;;;;;;;;x;;;;
 trinket_safety_desc;Factories are required to provide proper ventilation and a regularly cleaned workspace. Workers can sue their employers in case of an accident but they rarely win any compensation. When they do the amount is usually negligible. Safety regulations only applies to factories.;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-school_reforms;School System;Système d'éducation;Schulsystem;;;;;;;;;;;x
-no_schools;No School System;Système inexistant;Kein Schulsystem;;;;;;;;;;;x
-low_schools;Basic School System;Système de base;Einfaches Schulsystem;;;;;;;;;;;x
-acceptable_schools;Acceptable School System;Système acceptable;Akzeptables Schulsystem;;;;;;;;;;;x
-good_schools;Good School System;Système de bon niveau;Gutes Schulsystem;;;;;;;;;;;x
-no_schools_l;No School System;Système d'éducation inexistant;Kein Schulsystem;;;;;;;;;;;x
-low_schools_l;Basic School System;Système d'éducation de base;Einfaches Schulsystem;;;;;;;;;;;x
-acceptable_schools_l;Acceptable School System;Système d'éducation acceptable;Akzeptables Schulsystem;;;;;;;;;;;x
-good_schools_l;Good School System;Système d'éducation de bon niveau;Gutes Schulsystem;;;;;;;;;;;x
-no_schools_desc;No public Schools.;Pas d'écoles publiques.;Keine öffentlichen Schulen.;;;;;;;;;;;x
-low_schools_desc;Public Schools are uncommon.;Les écoles publiques sont rares.;Öffentliche Schulen sind nicht verbreitet.;;;;;;;;;;;x
-acceptable_schools_desc;Public Schools are common.;Les écoles publiques sont fréquentes.;Öffentliche Schulen sind verbreitet.;;;;;;;;;;;x
-good_schools_desc;There are really a lot of Public Schools.;Il y a beaucoup d'écoles publiques.;Es gibt wirklich viele öffentliche Schulen.;;;;;;;;;;;x
+school_reforms;School System;Systï¿½me d'ï¿½ducation;Schulsystem;;;;;;;;;;;x
+no_schools;No School System;Systï¿½me inexistant;Kein Schulsystem;;;;;;;;;;;x
+low_schools;Basic School System;Systï¿½me de base;Einfaches Schulsystem;;;;;;;;;;;x
+acceptable_schools;Acceptable School System;Systï¿½me acceptable;Akzeptables Schulsystem;;;;;;;;;;;x
+good_schools;Good School System;Systï¿½me de bon niveau;Gutes Schulsystem;;;;;;;;;;;x
+no_schools_l;No School System;Systï¿½me d'ï¿½ducation inexistant;Kein Schulsystem;;;;;;;;;;;x
+low_schools_l;Basic School System;Systï¿½me d'ï¿½ducation de base;Einfaches Schulsystem;;;;;;;;;;;x
+acceptable_schools_l;Acceptable School System;Systï¿½me d'ï¿½ducation acceptable;Akzeptables Schulsystem;;;;;;;;;;;x
+good_schools_l;Good School System;Systï¿½me d'ï¿½ducation de bon niveau;Gutes Schulsystem;;;;;;;;;;;x
+no_schools_desc;No public Schools.;Pas d'ï¿½coles publiques.;Keine ï¿½ffentlichen Schulen.;;;;;;;;;;;x
+low_schools_desc;Public Schools are uncommon.;Les ï¿½coles publiques sont rares.;ï¿½ffentliche Schulen sind nicht verbreitet.;;;;;;;;;;;x
+acceptable_schools_desc;Public Schools are common.;Les ï¿½coles publiques sont frï¿½quentes.;ï¿½ffentliche Schulen sind verbreitet.;;;;;;;;;;;x
+good_schools_desc;There are really a lot of Public Schools.;Il y a beaucoup d'ï¿½coles publiques.;Es gibt wirklich viele ï¿½ffentliche Schulen.;;;;;;;;;;;x
 EVTNAME34608;Child Labour Law Passed;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;x;;;;;;;
 EVTDESC34608;Following Britain's lead, in $YEAR$ Prussia, under the influence of some religious and social figures, passed a law strictly regulating the amount of child labour that was possible during the year.  According to the new legislation, the Prussian government will lay down restrictions on child labor, with the following main points: children under the age of nine are banned from factory labor, children needed to have had at least three years of schooling before working, and children under the age of sixteen could work no more than ten hours per day. Other provisions included mandated rest times and a total ban on night work for children.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;x;;;;;;;
 EVTOPTA34608;Those poor children!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;x;;;;;;;
@@ -711,12 +711,12 @@ secularized_desc;Religion is not explicitly part of state policy, but the state 
 dismantle_declared;Dismantled;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 in_great_war;In a Great War;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 post_colonial_country;Post-Colonial Nation;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-low_schools_desc;A rudimentary school system exists in the capital and a few important cities but enrollment is completely optional. Schools limits themselves to teaching pupils how to read and write. There's no government agency to inspect schools and they have no common standards for teaching,with the few courses that exist being overcrowded. Private schools are commonly in the same conditions. Teachers don't have professional formation and are often just literate men,while pupils often leave school without being properly schooled.\n§YFor the full effects of this reform,your education spending should be at least 30%.§W\n§RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-good_schools_desc;Schools can be found in almost every city. Government agencies take education with the utmost seriousness,and enrollment is mandatory and tightly controlled. Children and teenagers are taught a variety of subjects besides reading and writing and teachers are taught pedagogy during their formation. Literacy campaigns for adults and the elderly are a part of the government's effort to eradicate illiteracy. Higher education institutions are considered good,with opportunities for the poor classes to enroll.\n§YFor the full effects of this reform,your education spending should be at least 50%.\nA fully funded education provides a bonus to this reform.§W\n§RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-no_schools_desc;There's no organized school system or budget for education. The scarce literacy gain that is achieved comes from religious schools or it is based on informal community teaching,though these places get some funding,indirectly,from the government. Higher education institutions are either non existent or completely religious and medieval.\n§RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;x
+low_schools_desc;A rudimentary school system exists in the capital and a few important cities but enrollment is completely optional. Schools limits themselves to teaching pupils how to read and write. There's no government agency to inspect schools and they have no common standards for teaching,with the few courses that exist being overcrowded. Private schools are commonly in the same conditions. Teachers don't have professional formation and are often just literate men,while pupils often leave school without being properly schooled.\nï¿½YFor the full effects of this reform,your education spending should be at least 30%.ï¿½W\nï¿½RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.ï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+good_schools_desc;Schools can be found in almost every city. Government agencies take education with the utmost seriousness,and enrollment is mandatory and tightly controlled. Children and teenagers are taught a variety of subjects besides reading and writing and teachers are taught pedagogy during their formation. Literacy campaigns for adults and the elderly are a part of the government's effort to eradicate illiteracy. Higher education institutions are considered good,with opportunities for the poor classes to enroll.\nï¿½YFor the full effects of this reform,your education spending should be at least 50%.\nA fully funded education provides a bonus to this reform.ï¿½W\nï¿½RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.ï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+no_schools_desc;There's no organized school system or budget for education. The scarce literacy gain that is achieved comes from religious schools or it is based on informal community teaching,though these places get some funding,indirectly,from the government. Higher education institutions are either non existent or completely religious and medieval.\nï¿½RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.ï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;x
 no_schools_l;No School System;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 low_schools_l;Basic School System;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-acceptable_schools_desc;Schools can be found in every major and most of the medium cities. A government agency exists to ensure quality standards in education and to inspect that proper facilities are used for it. Enrollment is encouraged and sometimes it's outright mandatory,but it's not properly enforced and pupils often don't go to school for a variety of reasons. Children are also taught math and a few other subjects. Education institutions for teenagers are starting to appear,and secular,higher education institutions for adults are common. Teachers are formally trained,but oftentimes poorly.\n§YFor the full effects of this reform,your education spending should be at least 40%.§W\n§RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+acceptable_schools_desc;Schools can be found in every major and most of the medium cities. A government agency exists to ensure quality standards in education and to inspect that proper facilities are used for it. Enrollment is encouraged and sometimes it's outright mandatory,but it's not properly enforced and pupils often don't go to school for a variety of reasons. Children are also taught math and a few other subjects. Education institutions for teenagers are starting to appear,and secular,higher education institutions for adults are common. Teachers are formally trained,but oftentimes poorly.\nï¿½YFor the full effects of this reform,your education spending should be at least 40%.ï¿½W\nï¿½RIf average literacy is more than 25%,education funding needs to be more than 10%. If it is 50%,funding needs to be at least 20%. If it is 75%,funding needs to be at least 30%. Otherwise literacy will start to fall.ï¿½W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 acceptable_schools_l;Acceptable School System;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 good_schools_l;Good School System;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 womens_suffrage_movement;Women's Suffrage Movement;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;

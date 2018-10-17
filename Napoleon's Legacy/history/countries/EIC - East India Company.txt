@@ -7,6 +7,7 @@ nationalvalue = nv_order
 literacy = 0.5
 non_state_culture_literacy = 0.08
 prestige = 0
+civilized = yes
 
 # Political reforms
 slavery = no_slavery
@@ -24,7 +25,7 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 #New Reforms

@@ -28988,8 +28988,8 @@
 
 687 = {
     text_position = {
-        x = 3036.050000
-        y = 1652.750000
+        x = 3035.600000
+        y = 1652.550000
     }
 
     text_rotation = 4.868469
@@ -30261,26 +30261,16 @@
 } # Novara
 
 722 = {
-    unit = {
-        x = 2936.000000
-        y = 1541.000000
-    }
-
     text_position = {
-        x = 2936.500000
-        y = 1536.099976
+        x = 2934.600000
+        y = 1536.350000
     }
 
     text_rotation = 6.283185
-    text_scale = 2.700000
-    building_construction = {
-        x = 2944.000000
-        y = 1534.000000
-    }
-
-    military_construction = {
-        x = 2933.000000
-        y = 1542.099976
+    text_scale = 2.300000
+    unit = {
+        x = 2936.000000
+        y = 1541.000000
     }
 
     factory = {
@@ -30288,23 +30278,20 @@
         y = 1548.000000
     }
 
+    building_construction = {
+        x = 2940.950000
+        y = 1533.000000
+    }
+
+    military_construction = {
+        x = 2933.000000
+        y = 1542.099976
+    }
+
     building_position = {
         fort = {
             x = 2933.000000
             y = 1534.300049
-        }
-
-    }
-
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 2936.501465
-            y = 1555.000000
         }
 
     }
@@ -113211,6 +113198,7 @@
         y = 1554.150000
     }
 
+    text_rotation = 0.831302
     text_scale = 1
     unit = {
         x = 2901.850000
@@ -113740,7 +113728,7 @@
     }
 
     building_rotation = {
-        naval_base = 5.544018
+        naval_base = 3.958782
     }
 
 } # Usogorsk

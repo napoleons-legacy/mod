@@ -4598,8 +4598,8 @@ country_event = {
 						is_greater_power = yes
 						has_country_flag = protestant_country
 					}
-					tag = ENG
-					tag = ENL
+					tag = BRI
+					tag = CAN
 				}
 			}
 			country_event = 90961

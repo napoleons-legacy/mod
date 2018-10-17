@@ -30,7 +30,7 @@
 		religion = protestant
 		size = 40000
 	}
-	
+
 	farmers = {
 		culture = british
 		religion = catholic
@@ -108,31 +108,31 @@
 #Dundee (364000/91000 POPS)
 268 = {
 	aristocrats = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 300
 	}
 
 	bureaucrats = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 1100
 	}
 
 	artisans = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 8000
 	}
 
 	soldiers = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 2000
 	}
 
 	farmers = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 78200
 	}
@@ -234,37 +234,37 @@
 #Stirling (364000/91000 POPS)
 270 = {
 	aristocrats = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 200
 	}
 
 	clergymen = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 200
 	}
 
 	artisans = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 6500
 	}
 
 	soldiers = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 1100
 	}
 
 	farmers = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 79100
 	}
 
 	farmers = {
-		culture = british
+		culture = scottish
 		religion = catholic
 		size = 4000
 	}
@@ -278,13 +278,13 @@
 	}
 
 	clergymen = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 1500
 	}
 
 	clerks = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 10850
 	}
@@ -300,13 +300,13 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -320,7 +320,7 @@
 	}
 
 	farmers = {
-		culture = british
+		culture = scottish
 		religion = protestant
 		size = 53150
 	}
@@ -343,7 +343,7 @@
 		size = 10000
 	}
 }
-#Dumfries (168000/42000 POPS) 
+#Dumfries (168000/42000 POPS)
 272 = {
 	aristocrats = {
 		culture = british
@@ -593,7 +593,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -691,7 +691,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -804,7 +804,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -849,7 +849,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -894,7 +894,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -960,7 +960,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -1036,7 +1036,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -1755,31 +1755,31 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant
@@ -1839,49 +1839,49 @@
 		religion = catholic
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = irish
 		religion = catholic
 		size = 2000
 	}
-	
+
 	farmers = {
 		culture = north_german
 		religion = protestant
 		size = 1050
 	}
-	
+
 	farmers = {
 		culture = french
 		religion = catholic
 		size = 900
 	}
-	
+
 	farmers = {
 		culture = ashkenazi
 		religion = jewish
 		size = 300
 	}
-	
+
 	farmers = {
 		culture = spanish
 		religion = catholic
 		size = 400
 	}
-	
+
 	farmers = {
 		culture = north_italian
 		religion = catholic
 		size = 400
 	}
-	
+
 	farmers = {
 		culture = bengali
 		religion = hindu
 		size = 100
 	}
-	
+
 	farmers = {
 		culture = yue
 		religion = mahayana
@@ -1947,7 +1947,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = british
 		religion = protestant

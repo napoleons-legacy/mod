@@ -66,7 +66,7 @@ country_event = {
 			relation = { who = THIS value = -50 }
 		}
 		any_country = {
-			limit = { neighbour = PER OR = { is_greater_power = yes tag = TUR tag = RUS NOT = { tag = THIS } } }
+			limit = { neighbour = PER OR = { is_greater_power = yes tag = TUR tag = RUS tag = TSA NOT = { tag = THIS } } }
 			casus_belli = {
 				target = THIS
 				type = release_puppet
@@ -692,11 +692,15 @@ country_event = {
 		prestige = 5
 		PER = {
 			relation = {
-				who = ENG
+				who = EIC
 				value = 25
 			}
 			relation = {
 				who = RUS
+				value = 25
+			}
+			relation = {
+				who = TSA
 				value = 25
 			}
 		}
@@ -825,11 +829,15 @@ country_event = {
 
 		PER = {
 			relation = {
-				who = ENG
+				who = EIC
 				value = -25
 			}
 			relation = {
 				who = RUS
+				value = -25
+			}
+			relation = {
+				who = TSA
 				value = -25
 			}
 		}

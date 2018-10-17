@@ -271,7 +271,7 @@ political_decisions = {
             1114 = { trade_goods = tea }
             1121 = { trade_goods = tea }
             1116 = { trade_goods = tea }
-            relation = { who = ENG value = -50 }
+            relation = { who = EIC value = -50 }
         }
 
         ai_will_do = { factor = 1 }

@@ -46,10 +46,10 @@ From;To;Type;Through;Data;Comment
 #
 254;271;sea;2737;0;Irish Strait
 324;348;sea;2706;0;Aland Strait #Uppsala to Aland #these were in V1
-334;372;sea;2711;0;Öresund
-335;374;sea;2710;0;Bornholmsfärjan
-348;345;sea;2706;0;Aland Strait #Aland to Turku 
-353;349;sea;2709;0;Öselsund
+334;372;sea;2711;0;ï¿½resund
+335;374;sea;2710;0;Bornholmsfï¿½rjan
+348;345;sea;2706;0;Aland Strait #Aland to Turku
+353;349;sea;2709;0;ï¿½selsund
 353;358;sea;2709;0;Strait of Riga
 372;373;sea;2711;0;Fyn-Sjaelland
 371;373;sea;2711;0;Fyn-Jylland
@@ -185,6 +185,7 @@ From;To;Type;Through;Data;Comment
 722;605;impassable;0;0;Novara-Bern
 2568;722;impassable;0;0;Lugano-Novara
 609;722;impassable;0;0;Sitten-Novara
+609;726;impassable;0;0;Sitten-Milano
 606;722;impassable;0;0;Lucerne-Novara
 
 #Alaskan Panhandle
@@ -197,7 +198,6 @@ From;To;Type;Through;Data;Comment
 
 #Siberia
 
-2687;2682;impassable;0;0;Northern urals
 2689;2682;impassable;0;0;Northern urals
 2689;1062;impassable;0;0;Northern urals
 1026;1062;impassable;0;0;Northern urals

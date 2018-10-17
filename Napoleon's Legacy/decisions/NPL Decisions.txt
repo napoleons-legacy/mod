@@ -152,7 +152,7 @@ political_decisions = {
                 add_core = HUD
                 add_core = CAN
             }
-            29 = {
+            38 = {
                 secede_province = CAN
                 remove_core = USA
                 add_core = HUD

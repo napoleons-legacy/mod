@@ -54,7 +54,7 @@
 		religion = protestant
 		size = 18
 	}
-	
+
 	officers = {
 		culture = alaskan
 		religion = protestant
@@ -66,13 +66,13 @@
 		religion = protestant
 		size = 20
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = protestant
 		size = 100
 	}
-	
+
 	aristocrats = {
 		culture = alaskan
 		religion = orthodox
@@ -90,7 +90,7 @@
 		religion = orthodox
 		size = 18
 	}
-	
+
 	officers = {
 		culture = alaskan
 		religion = orthodox
@@ -102,7 +102,7 @@
 		religion = orthodox
 		size = 20
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = orthodox
@@ -114,7 +114,7 @@
 		religion = animist
 		size = 50
 	}
-	
+
 	aristocrats = {
 		culture = inuit
 		religion = animist
@@ -129,7 +129,7 @@
 }
 #Juneau / Saint Dionysius (4000/1000 POPS)
 2 = {
-	
+
 	clergymen = {
 		culture = alaskan
 		religion = orthodox
@@ -147,13 +147,13 @@
 		religion = orthodox
 		size = 5
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = orthodox
 		size = 15
 	}
-	
+
 	clergymen = {
 		culture = alaskan
 		religion = protestant
@@ -171,7 +171,7 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = protestant
@@ -204,13 +204,13 @@
 		religion = orthodox
 		size = 10
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = orthodox
 		size = 20
 	}
-	
+
 	clergymen = {
 		culture = alaskan
 		religion = protestant
@@ -228,7 +228,7 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = protestant
@@ -240,7 +240,7 @@
 		religion = animist
 		size = 405
 	}
-	
+
 	farmers = {
 		culture = native_american_minor
 		religion = animist
@@ -249,7 +249,7 @@
 }
 #Cordova (2000/500 POPS)
 4 = {
-	
+
 	clergymen = {
 		culture = alaskan
 		religion = orthodox
@@ -267,13 +267,13 @@
 		religion = orthodox
 		size = 10
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = orthodox
 		size = 20
 	}
-	
+
 	clergymen = {
 		culture = alaskan
 		religion = protestant
@@ -291,7 +291,7 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = protestant
@@ -324,13 +324,13 @@
 		religion = orthodox
 		size = 10
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = orthodox
 		size = 20
 	}
-	
+
 	clergymen = {
 		culture = alaskan
 		religion = protestant
@@ -348,7 +348,7 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = protestant
@@ -405,19 +405,19 @@
 		religion = orthodox
 		size = 10
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = orthodox
 		size = 20
 	}
-	
+
 	farmers = {
 		culture = inuit
 		religion = animist
 		size = 500
 	}
-	
+
 	clergymen = {
 		culture = alaskan
 		religion = protestant
@@ -435,7 +435,7 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	farmers = {
 		culture = alaskan
 		religion = protestant
@@ -469,7 +469,7 @@
 		religion = protestant
 		size = 3
 	}
-	
+
 	farmers = {
 		culture = anglo_canadian
 		religion = protestant
@@ -502,7 +502,7 @@
 		religion = protestant
 		size = 3
 	}
-	
+
 	farmers = {
 		culture = anglo_canadian
 		religion = protestant
@@ -522,13 +522,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = anglo_canadian
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = anglo_canadian
 		religion = protestant
@@ -598,7 +598,7 @@
 		religion = animist
 		size = 2700
 	}
-	
+
 	farmers = {
 		culture = anglo_canadian
 		religion = protestant
@@ -630,13 +630,13 @@
 		religion = animist
 		size = 900
 	}
-	
+
 	farmers = {
 		culture = anglo_canadian
 		religion = protestant
 		size = 10
 	}
-	
+
 }
 #Klamath Falls (4000/1000 POPS)
 83 = {
@@ -663,13 +663,13 @@
 		religion = animist
 		size = 900
 	}
-	
+
 	farmers = {
 		culture = anglo
 		religion = protestant
 		size = 7
 	}
-	
+
 }
 #California Region (64000)
 #ruled by Mexico 1836
@@ -698,7 +698,7 @@
 		religion = catholic
 		size = 350
 	}
-	
+
 	farmers = {
 		culture = dixie
 		religion = protestant
@@ -818,7 +818,7 @@
 		religion = catholic
 		size = 525
 	}
-	
+
 	farmers = {
 		culture = dixie
 		religion = protestant
@@ -1010,7 +1010,7 @@
 }
 #Coeur d'Alene (4000/1000 POPS)
 92 = {
-	
+
 	clergymen = {
 		culture = yankee
 		religion = protestant
@@ -1503,13 +1503,13 @@
 		religion = catholic
 		size = 850
 	}
-	
+
 	farmers = {
 		culture = pueblo
 		religion = animist
 		size = 450
 	}
-	
+
 	farmers = {
 		culture = native_american_minor
 		religion = animist
@@ -1526,13 +1526,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -1695,13 +1695,13 @@
 }
 #Cody (12000/3000 POPS)
 111 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	artisans = {
 		culture = dixie
 		religion = protestant
@@ -1719,7 +1719,7 @@
 		religion = protestant
 		size = 50
 	}
-	
+
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -1745,13 +1745,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -1804,13 +1804,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -1840,7 +1840,7 @@
 		religion = animist
 		size = 150
 	}
-	
+
 	aristocrats = {
 		culture = dakota
 		religion = animist
@@ -1900,7 +1900,7 @@
 }
 #Great Falls (8000/2000 POPS)
 115 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -1951,7 +1951,7 @@
 }
 #Billings (12000/3000 POPS)
 116 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2009,13 +2009,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2045,7 +2045,7 @@
 		religion = animist
 		size = 100
 	}
-	
+
 	aristocrats = {
 		culture = dakota
 		religion = animist
@@ -2072,13 +2072,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2129,7 +2129,7 @@
 }
 #Dickinson (8000/2000 POPS)
 119 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2153,7 +2153,7 @@
 		religion = protestant
 		size = 30
 	}
-	
+
 	soldiers = {
 		culture = dakota
 		religion = animist
@@ -2188,13 +2188,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2280,7 +2280,7 @@
 		religion = protestant
 		size = 30
 	}
-	
+
 	soldiers = {
 		culture = dakota
 		religion = animist
@@ -2295,7 +2295,7 @@
 }
 #Rapid City (8000/2000 POPS)
 122 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2354,13 +2354,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = yankee
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = yankee
 		religion = protestant
@@ -2423,7 +2423,7 @@
 }
 #Alliance (4000/1000 POPS)
 124 = {
-	
+
 	clergymen = {
 		culture = yankee
 		religion = protestant
@@ -2462,7 +2462,7 @@
 }
 #North Platte (8000/2000 POPS)
 125 = {
-	
+
 	clergymen = {
 		culture = yankee
 		religion = protestant
@@ -2509,13 +2509,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2561,7 +2561,7 @@
 }
 #Goodland (8000/2000 POPS)
 127 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2666,7 +2666,7 @@
 }
 #Tahlequah (12000/3000 POPS)
 130 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2729,13 +2729,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -2811,7 +2811,7 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	aristocrats = {
 		culture = texan
 		religion = protestant
@@ -2940,7 +2940,7 @@
 		religion = protestant
 		size = 25
 	}
-	
+
 	officers = {
 		culture = texan
 		religion = protestant
@@ -2976,13 +2976,13 @@
 		religion = protestant
 		size = 400
 	}
-	
+
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
 		size = 100
 	}
-	
+
 	farmers = {
 		culture = native_american_minor
 		religion = animist
@@ -2998,7 +2998,7 @@
 		religion = protestant
 		size = 50
 	}
-	
+
 	clergymen = {
 		culture = texan
 		religion = protestant
@@ -3112,7 +3112,7 @@
 		religion = protestant
 		size = 20
 	}
-	
+
 	farmers = {
 		culture = mexican
 		religion = catholic
@@ -3167,7 +3167,7 @@
 }
 #Lubbock (8000/2000 POPS)
 135 = {
-	
+
 	clergymen = {
 		culture = texan
 		religion = protestant
@@ -3218,7 +3218,7 @@
 		size = 25
 		militancy = 9
 	}
-	
+
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
@@ -3233,7 +3233,7 @@
 		size = 1800
 		militancy = 9
 	}
-	
+
 	clergymen = {
 		culture = texan
 		religion = protestant
@@ -4174,7 +4174,7 @@
 		religion = protestant
 		size = 25
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
@@ -4216,7 +4216,7 @@
 		religion = animist
 		size = 100
 	}
-	
+
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
@@ -4319,7 +4319,7 @@
 }
 #Sioux City (8000/2000 POPS)
 154 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -4366,13 +4366,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -4420,7 +4420,7 @@
 		religion = animist
 		size = 100
 	}
-	
+
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
@@ -4441,13 +4441,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = dixie
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -4486,7 +4486,7 @@
 }
 #Moorhead (8000/2000 POPS)
 157 = {
-	
+
 	clergymen = {
 		culture = dixie
 		religion = protestant
@@ -4554,7 +4554,7 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	farmers = {
 		culture = dixie
 		religion = protestant
@@ -4603,13 +4603,13 @@
 		religion = protestant
 		size = 5
 	}
-	
+
 	officers = {
 		culture = yankee
 		religion = protestant
 		size = 5
 	}
-	
+
 	clergymen = {
 		culture = yankee
 		religion = protestant
@@ -7093,7 +7093,7 @@
 		religion = protestant
 		size = 550
 	}
-	
+
 	craftsmen = {
 		culture = dixie
 		religion = protestant
@@ -8262,7 +8262,7 @@
 		religion = catholic
 		size = 3625
 	}
-	
+
 	farmers = {
 		culture = yankee
 		religion = protestant
@@ -8337,7 +8337,7 @@
 		religion = catholic
 		size = 2725
 	}
-	
+
 	farmers = {
 		culture = yankee
 		religion = protestant
@@ -8389,7 +8389,7 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = dixie
 		religion = protestant
@@ -8537,7 +8537,7 @@
 		religion = protestant
 		size = 2125
 	}
-	
+
 	farmers = {
 		culture = yankee
 		religion = protestant
@@ -8630,7 +8630,7 @@
 		size = 1000
 	}
 }
-#Delaware Region (76000)  
+#Delaware Region (76000)
 #ruled by the USA
 #Dover (76000/19000 POPS)
 222 = {
@@ -8681,7 +8681,7 @@
 		religion = protestant
 		size = 7000
 	}
-	
+
 	clergymen = {
 		culture = afro_american
 		religion = protestant
@@ -8706,7 +8706,7 @@
 		size = 500
 	}
 }
-#Pennsylvania Region (1536000)  
+#Pennsylvania Region (1536000)
 #ruled by the USA
 #Philadelphia (468000/117000 POPS)
 223 = {
@@ -9124,7 +9124,7 @@
 		size = 25175
 	}
 }
-#New Jersey Region (340000)  
+#New Jersey Region (340000)
 #ruled by the USA
 #Newark (156000/39000 POPS)
 229 = {
@@ -9145,7 +9145,7 @@
 		religion = protestant
 		size = 325
 	}
-	
+
 	craftsmen = {
 		culture = yankee
 		religion = protestant
@@ -9300,7 +9300,7 @@
 		size = 20525
 	}
 }
-#New York Region (2140000)  
+#New York Region (2140000)
 #ruled by the USA
 #New York (440000/110000 POPS)
 232 = {
@@ -9680,7 +9680,7 @@
 		size = 17725
 	}
 }
-#Connecticut Region (304000)  
+#Connecticut Region (304000)
 #ruled by the USA
 #Hartford (304000/76000 POPS)
 241 = {
@@ -9756,7 +9756,7 @@
 		size = 1475
 	}
 }
-#Rhode Island Region (104000)  
+#Rhode Island Region (104000)
 #ruled by the USA
 #Providence (104000/26000 POPS)
 242 = {
@@ -9832,7 +9832,7 @@
 		size = 475
 	}
 }
-#Massachusetts Region (660000)  
+#Massachusetts Region (660000)
 #ruled by the USA
 #Boston (444000/111000 POPS)
 243 = {
@@ -9883,19 +9883,19 @@
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = yankee
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = yankee
 		religion = protestant
 		size = 10000
 	}
-	
+
 	artisans = {
 		culture = yankee
 		religion = protestant
@@ -10050,7 +10050,7 @@
 		size = 19575
 	}
 }
-#Vermont Region (284000)  
+#Vermont Region (284000)
 #ruled by the USA
 #Montpelier (284000/71000 POPS)
 246 = {
@@ -10114,7 +10114,7 @@
 		size = 7475
 	}
 }
-#New Hampshire Region (276000)  
+#New Hampshire Region (276000)
 #ruled by the USA
 #Concord (POPS)
 247 = {
@@ -10172,7 +10172,7 @@
 		size = 55700
 	}
 }
-#Maine Region (432000)  
+#Maine Region (432000)
 #ruled by the USA
 #Lewiston (240000/60000 POPS)
 248 = {
@@ -10347,7 +10347,7 @@
 		religion = catholic
 		size = 50
 	}
-	
+
 	farmers = {
 		culture = native_american_minor
 		religion = animist

@@ -3,11 +3,10 @@ primary_culture = british
 culture = anglo_canadian
 religion = protestant
 government = presidential_dictatorship
-plurality = 0.0
+plurality = 5.0
 nationalvalue = nv_order
-literacy = 0.5
-non_state_culture_literacy = 0.08
-prestige = 0
+literacy = 0.17
+civilized = yes
 
 # Political reforms
 slavery = no_slavery
@@ -25,7 +24,7 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 #New Reforms
@@ -63,7 +62,7 @@ market_structure = 1
 
 schools = naval_tech_school
 
-ruling_party = HUD_reactionary
+ruling_party = CAN_reactionary
 upper_house = {
 	fascist = 0
 	liberal = 33
@@ -73,3 +72,5 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+set_country_flag = new_world_nation

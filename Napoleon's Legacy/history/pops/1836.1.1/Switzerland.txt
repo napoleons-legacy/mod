@@ -273,7 +273,7 @@
 
 }
 #Vaud & Valais Region (444000)
-#Geneva (316000/79000 POPS)
+#Lausanne (316000/79000 POPS)
 607 = {
 	aristocrats = {
 		culture = swiss
@@ -303,48 +303,6 @@
 		culture = swiss
 		religion = protestant
 		size = 4000
-	}
-
-	soldiers = {
-		culture = swiss
-		religion = protestant
-		size = 1100
-	}
-
-	farmers = {
-		culture = swiss
-		religion = protestant
-		size = 37320
-	}
-
-	aristocrats = {
-		culture = swiss
-		religion = catholic
-		size = 300
-	}
-
-	bureaucrats = {
-		culture = swiss
-		religion = catholic
-		size = 80
-	}
-
-	officers = {
-		culture = swiss
-		religion = catholic
-		size = 50
-	}
-
-	clergymen = {
-		culture = swiss
-		religion = catholic
-		size = 350
-	}
-
-	artisans = {
-		culture = swiss
-		religion = catholic
-		size = 3000
 	}
 
 	soldiers = {
@@ -531,4 +489,50 @@
 		size = 6475
 	}
 
+}
+
+#Geneva, formerly Anderma
+2687 = {
+
+	aristocrats = {
+		culture = swiss
+		religion = protestant
+		size = 200
+	}
+
+	bureaucrats = {
+		culture = swiss
+		religion = catholic
+		size = 80
+	}
+
+	officers = {
+		culture = swiss
+		religion = catholic
+		size = 50
+	}
+
+	clergymen = {
+		culture = swiss
+		religion = catholic
+		size = 350
+	}
+
+	artisans = {
+		culture = swiss
+		religion = catholic
+		size = 3000
+	}
+
+	soldiers = {
+		culture = swiss
+		religion = protestant
+		size = 1100
+	}
+
+	farmers = {
+		culture = swiss
+		religion = protestant
+		size = 37320
+	}
 }
