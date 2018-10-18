@@ -27,24 +27,12 @@ romanticism = {
 	area = aesthetics
 	year = 1836
 	cost = 7200
-	
+
 	prestige = 0.075
 
 
 	ai_chance = {
 		factor = 1.05
-		modifier = {
-			factor = 1000
-			continent = north_america
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 5
-			OR = {
-			tag = CAN
-			tag = BRI
-			}
-		}
 		modifier = {
 			factor = 0.5
 			is_greater_power = yes
@@ -53,11 +41,11 @@ romanticism = {
 			factor = 0.1
 			not = { literacy = 0.5  }
 			is_greater_power = no
-		}			
+		}
 		modifier = {
 			factor = 1.05
 			literacy = 0.6
-		}		
+		}
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
@@ -79,20 +67,17 @@ realism = {
 		}
 		modifier = {
 			factor = 5
-			OR = {
-			tag = CAN
 			tag = BRI
-			}
 		}
 		modifier = {
 			factor = 0.1
 			not = { literacy = 0.3  }
 			is_greater_power = no
-		}			
+		}
 		modifier = {
 			factor = 1.05
 			literacy = 0.6
-		}		
+		}
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
@@ -115,11 +100,11 @@ impressionism = {
 			factor = 0.1
 			not = { literacy = 0.4  }
 			is_greater_power = no
-		}			
+		}
 		modifier = {
 			factor = 1.05
 			literacy = 0.6
-		}		
+		}
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
@@ -142,11 +127,11 @@ expressionism = {
 			factor = 0.1
 			not = { literacy = 0.5  }
 			is_greater_power = no
-		}			
+		}
 		modifier = {
 			factor = 1.05
 			literacy = 0.6
-		}		
+		}
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
@@ -169,11 +154,11 @@ mass_culture_n_the_avant_garde = {
 			factor = 0.1
 			not = { literacy = 0.5  }
 			is_greater_power = no
-		}			
+		}
 		modifier = {
 			factor = 1.05
 			literacy = 0.6
-		}		
+		}
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
@@ -190,16 +175,19 @@ late_enlightenment_philosophy = {
 
 
 	increase_research = 0.50
-	
+
 	ai_chance = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 6
-			is_greater_power = yes
+			factor = 20
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
@@ -230,14 +218,21 @@ idealism = {
 
 	increase_research = 0.50
 	ai_chance = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 6
-			is_greater_power = yes
+			factor = 20
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			civilized = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -266,17 +261,24 @@ empiricism = {
 	area = philosophy
 	year = 1860
 	cost = 10800
-	
+
 	increase_research = 0.50
 	ai_chance = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 6
-			is_greater_power = yes
+			factor = 20
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			civilized = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -299,14 +301,21 @@ analytic_philosophy = {
 
 	increase_research = 1.0
 	ai_chance = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 6
-			is_greater_power = yes
+			factor = 20
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			civilized = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -325,14 +334,21 @@ phenomenology_n_hermeneutic = {
 
 	increase_research = 1.0
 	ai_chance = {
-		factor = 150
+		factor = 90
 		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 6
-			is_greater_power = yes
+			factor = 20
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			civilized = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -357,8 +373,15 @@ anti__rationalism = {
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 6
-			is_greater_power = yes
+			factor = 20
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			civilized = yes
 		}
 		modifier = {
 			factor = 1.1
@@ -380,9 +403,9 @@ malthusian_thought = {
 
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	
+
 	ai_chance = {
-		factor = 1.05
+		factor = 1.5
 		modifier = {
 			factor = 2 #2
 			not = { literacy = 0.75 }
@@ -396,17 +419,17 @@ malthusian_thought = {
 			not = { literacy = 0.25 }
 		}
 		modifier = {
-			factor = 3
+			factor = 20
 			capital_scope = { continent = europe }
 			NOT = { tag = TUR }
-			not = { literacy = 0.50 }
+			not = { literacy = 0.30 }
 			OR = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
 		}
 		modifier = {
-			factor = 1.02
+			factor = 3
 			tech_school = culture_tech_school
 		}
 	}
@@ -418,7 +441,7 @@ positivism = {
 	colonial_migration = 0.05
 	education_efficiency = 0.1
 	ai_chance = {
-		factor = 1.05
+		factor = 1.8
 		modifier = {
 			factor = 2 #2
 			not = { literacy = 0.75 }
@@ -432,12 +455,11 @@ positivism = {
 			not = { literacy = 0.25 }
 		}
 		modifier = {
-			factor = 3
+			factor = 5
 			capital_scope = { continent = europe }
 			NOT = { tag = TUR }
 			OR = {
-				not = { literacy = 0.50 }
-				tag = CAN
+				not = { literacy = 0.40 }
 				tag = BRI
 			}
 			OR = {
@@ -446,7 +468,7 @@ positivism = {
 			}
 		}
 		modifier = {
-			factor = 1.02
+			factor = 3
 			tech_school = culture_tech_school
 		}
 		modifier = {
@@ -455,9 +477,9 @@ positivism = {
 				tag = PRU
 				tag = NGF
 				tag = GER
-				tag = CAN
+				tag = TEU
+				tag = FED
 				tag = BRI
-				tag = NEN
 				tag = USA
 			}
 		}
@@ -472,7 +494,7 @@ functionalism = {
 	colonial_migration = 0.05
 	education_efficiency = 0.1
 	ai_chance = {
-		factor = 1.05
+		factor = 1.5
 		modifier = {
 			factor = 2 #2
 			not = { literacy = 0.75 }
@@ -486,12 +508,11 @@ functionalism = {
 			not = { literacy = 0.25 }
 		}
 		modifier = {
-			factor = 3
+			factor = 5
 			capital_scope = { continent = europe }
 			NOT = { tag = TUR }
 			OR = {
 				not = { literacy = 0.50 }
-				tag = CAN
 				tag = BRI
 			}
 			OR = {
@@ -500,7 +521,7 @@ functionalism = {
 			}
 		}
 		modifier = {
-			factor = 1.02
+			factor = 3
 			tech_school = culture_tech_school
 		}
 		modifier = {
@@ -509,9 +530,9 @@ functionalism = {
 				tag = PRU
 				tag = NGF
 				tag = GER
-				tag = CAN
+				tag = TEU
+				tag = FED
 				tag = BRI
-				tag = NEN
 				tag = USA
 			}
 		}
@@ -526,7 +547,7 @@ biologism = {
 	colonial_migration = 0.05
 	education_efficiency = 0.1
 	ai_chance = {
-		factor = 1.05
+		factor = 2
 		modifier = {
 			factor = 2 #2
 			not = { literacy = 0.75 }
@@ -540,12 +561,12 @@ biologism = {
 			not = { literacy = 0.25 }
 		}
 		modifier = {
-			factor = 3
+			factor = 10
 			capital_scope = { continent = europe }
 			NOT = { tag = TUR }
 			OR = {
-				not = { literacy = 0.50 }
-				tag = CAN
+				not = { literacy = 0.7 }
+				year = 1880
 				tag = BRI
 			}
 			OR = {
@@ -554,18 +575,18 @@ biologism = {
 			}
 		}
 		modifier = {
-			factor = 1.02
+			factor = 5
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 3
+			factor = 5
 			OR = {
 				tag = PRU
 				tag = NGF
 				tag = GER
-				tag = CAN
+				tag = TEU
+				tag = FED
 				tag = BRI
-				tag = NEN
 				tag = USA
 			}
 		}
@@ -579,6 +600,7 @@ social_science = {
 
 	colonial_migration = 0.05
 	education_efficiency = 0.1
+
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -594,6 +616,21 @@ social_science = {
 			not = { literacy = 0.25 }
 		}
 		modifier = {
+			factor = 10
+			capital_scope = { continent = europe }
+			NOT = { tag = TUR }
+			OR = {
+				not = { literacy = 0.75 }
+				year = 1890
+				tag = BRI
+			}
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+
+		modifier = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
@@ -604,7 +641,7 @@ social_alienation = {
 	area = social_thought
 	year = 1900
 	cost = 21600
-	
+
 	colonial_migration = 0.05
 	education_efficiency = 0.1
 	ai_chance = {
@@ -641,7 +678,7 @@ enlightenment_thought = {
 	cost = 3600
 
 	max_national_focus = 1
-	
+
 	ai_chance = {
 		factor = 11
 		modifier = {
@@ -660,8 +697,8 @@ ideological_thought = {
 	year = 1836
 	cost = 7200
 
-	max_national_focus = 1 
-		
+	max_national_focus = 1
+
 	ai_chance = {
 		factor = 11
 		modifier = {
@@ -670,18 +707,32 @@ ideological_thought = {
 		}
 		modifier = {
 			factor = 1.50
-			total_pops = 2000000
+			OR = {
+				total_pops = 4000000
+				AND = {
+					is_secondary_power = yes
+					any_owned_province = { port = yes }
+				}
+				AND = {
+					capital_scope = { continent = europe }
+					colonial_nation = yes
+				}
+			}
 		}
-		
+
 		modifier = {
 			factor = 0.25
+			is_greater_power = no
+			is_secondary_power = no
 			NOT = { total_pops = 2000000 }
 		}
-		
+
 		modifier = {
 			factor = 51
 			rank = 16
 			year = 1840
+			any_owned_province = { port = yes }
+			total_pops = 2000000
 		}
 		modifier = {
 			factor = 51
@@ -695,7 +746,6 @@ ideological_thought = {
 			factor = 20
 			tag = PRU
 		}
-		
 	}
 }
 state_n_government = {
@@ -703,39 +753,54 @@ state_n_government = {
 	year = 1840
 	cost = 10800
 
-	max_national_focus = 1 
+	max_national_focus = 1
 	ai_chance = {
-		factor = 11
+		factor = 15
 		modifier = {
 			factor = 3.5
 			is_greater_power = yes
 		}
 		modifier = {
 			factor = 1.5
-			total_pops = 3000000
+			OR = {
+				total_pops = 4000000
+				AND = {
+					is_secondary_power = yes
+					any_owned_province = { port = yes }
+				}
+				AND = {
+					capital_scope = { continent = europe }
+					colonial_nation = yes
+				}
+			}
 		}
-		
+
 		modifier = {
 			factor = 0.25
+			is_greater_power = no
+			is_secondary_power = no
 			NOT = { total_pops = 3000000 }
 		}
-		
+
 		modifier = {
 			factor = 51
 			rank = 16
 			year = 1850
+			any_owned_province = { port = yes }
+			total_pops = 3000000
 		}
 		modifier = {
 			factor = 51
-			year = 1860
+			OR = {
+				year = 1860
+				tag = SAR
+				tag = PRU
+				tag = USA
+			}
 		}
 		modifier = {
-			factor = 1.02
+			factor = 3
 			tech_school = culture_tech_school
-		}
-		modifier = {
-			factor = 20
-			tag = PRU
 		}
 	}
 }
@@ -745,19 +810,25 @@ nationalism_n_imperialism = {
 	cost = 14400
 
 	max_national_focus = 1
-	#colonial_life_rating = -10 
+	#colonial_life_rating = -10
 	cb_creation_speed = 0.1
-	
+
 	ai_chance = {
 		factor = 20
 		modifier = {
 			factor = 21
 			is_greater_power = yes
+			OR = {
+				any_greater_power = { any_owned_province = { any_neighbor_province = { empty = yes } } }
+				any_owned_province = { any_neighbor_province = { empty = yes } }
+			}
 		}
 		modifier = {
 			factor = 11
 			rank = 16
 			year = 1860
+			any_owned_province = { has_building = naval_base }
+			total_pops = 4000000
 		}
 		modifier = {
 			factor = 2
@@ -771,23 +842,42 @@ nationalism_n_imperialism = {
 		}
 		modifier = {
 			factor = 1.5
-			total_pops = 4000000
+			OR = {
+				total_pops = 4000000
+				AND = {
+					is_secondary_power = yes
+					any_owned_province = { port = yes }
+				}
+				AND = {
+					capital_scope = { continent = europe }
+					colonial_nation = yes
+				}
+			}
 		}
 
 		modifier = {
 			factor = 0.25
+			is_greater_power = no
+			is_secondary_power = no
+			NOT = { any_owned_province = { continent = africa } }
 			NOT = { total_pops = 4000000 }
 		}
-		
+
 		modifier = {
-			factor = 1.02
+			factor = 3
 			tech_school = culture_tech_school
 		}
 		modifier = {
-			factor = 1000
-			tag = PRU
+			factor = 100
+			OR = {
+				AND = {
+					cultural_union = { exists = no }
+					is_greater_power = yes
+				}
+				tag = POR
+			}
 		}
-	}	
+	}
 }
 revolution_n_counterrevolution = {
 	area = political_thought
@@ -797,38 +887,51 @@ revolution_n_counterrevolution = {
 	max_national_focus = 1
 	diplomatic_points = 0.25
 	ai_chance = {
-		factor = 1.1
+		factor = 20
 		modifier = {
-			factor = 1.5
+			factor = 21
 			is_greater_power = yes
+			OR = {
+				any_greater_power = { any_owned_province = { any_neighbor_province = { empty = yes } } }
+				any_owned_province = { any_neighbor_province = { empty = yes } }
+			}
 		}
 		modifier = {
 			factor = 5
 			total_pops = 5000000
 		}
-		
+
 		modifier = {
 			factor = 10
 			tag = RUS
 		}
-		
+
 		modifier = {
-			factor = 1.02
+			factor = 51
+			rank = 16
+			year = 1880
+		}
+		modifier = {
+			factor = 3
 			tech_school = culture_tech_school
 		}
-		
-	}	
+		modifier = {
+			factor = 0.25
+			is_greater_power = no
+			NOT = { literacy = 0.4 }
+		}
+	}
 }
 mass_politics = {
 	area = political_thought
 	year = 1900
 	cost = 21600
 
-	max_national_focus = 1 
+	max_national_focus = 1
 	ai_chance = {
-		factor = 1.1
+		factor = 2
 		modifier = {
-			factor = 1.5
+			factor = 5
 			is_greater_power = yes
 		}
 		modifier = {
@@ -836,10 +939,14 @@ mass_politics = {
 			total_pops = 6000000
 		}
 		modifier = {
-			factor = 1.02
+			factor = 3
 			tech_school = culture_tech_school
 		}
-	}	
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
 }
 
 
@@ -852,7 +959,7 @@ introspectionism = {
 
 	regular_experience_level = 5
 	reinforce_rate = 0.05
-	
+
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -871,6 +978,31 @@ introspectionism = {
 			factor = 2
 			year = 1860 #1850
 		}
+		modifier = {
+			factor = 21
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 11
+			rank = 16
+			year = 1860
+			any_owned_province = { port = yes }
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1870
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 
 }
@@ -881,7 +1013,7 @@ associationism = {
 
 	regular_experience_level = 5
 	reinforce_rate = 0.05
-	
+
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -900,6 +1032,10 @@ associationism = {
 			factor = 2
 			year = 1870 #1850
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 phenomenalism = {
@@ -909,7 +1045,7 @@ phenomenalism = {
 
 	regular_experience_level = 5
 	reinforce_rate = 0.05
-	
+
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -928,6 +1064,10 @@ phenomenalism = {
 			factor = 2
 			year = 1880
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 experimental_psychology = {
@@ -937,7 +1077,7 @@ experimental_psychology = {
 
 	regular_experience_level = 5
 	reinforce_rate = 0.05
-	
+
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -956,6 +1096,10 @@ experimental_psychology = {
 			factor = 2
 			year = 1890 #1870
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 psychoanalysis = {
@@ -965,7 +1109,7 @@ psychoanalysis = {
 
 	regular_experience_level = 5
 	reinforce_rate = 0.05
-	
+
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -973,7 +1117,7 @@ psychoanalysis = {
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 1.02
+			factor = 3
 			tech_school = culture_tech_school
 		}
 		modifier = {
@@ -983,6 +1127,10 @@ psychoanalysis = {
 		modifier = {
 			factor = 2
 			year = 1900 #1890
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 
@@ -994,7 +1142,7 @@ behaviorism = {
 
 	regular_experience_level = 5
 	reinforce_rate = 0.05
-	
+
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -1013,7 +1161,9 @@ behaviorism = {
 			factor = 2
 			year = 1920
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
-
-

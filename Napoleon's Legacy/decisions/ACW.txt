@@ -1211,14 +1211,12 @@ political_decisions = {
 		ai_will_do = { factor = 100 }
 	}
 
-
 	the_iron_range = {
 	picture = dreams_of_empire
 		potential = {
 			owns = 232
 			NOT = { has_country_flag = iron_ranges }
 			NOT = { 232 = { trade_goods = iron } }
-
 		}
 
 		allow = {
