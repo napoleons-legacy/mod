@@ -354,6 +354,8 @@ WEI;Saxe-Weimar;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 ENG_fascist_dictatorship;The Union of Britain;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 ENG_democracy;The British Commonwealth;;;;;;;;;;;;;;;;;x;
 ENG_presidential_dictatorship;The British Commonwealth;;;;;;;;;;;;;;;;;x;
+ENL;England;;;;;;;;;;;;;x
+ENL_ADJ;English;;;;;;;;;;;;;x
 ENG_bourgeois_dictatorship;The British Commonwealth;;;;;;;;;;;;;;;;;x;
 shilluk;Shilluk;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 PBC;Peru-Bolivia;;;;;;;;;;;;;x
@@ -2145,6 +2147,11 @@ SON_conservative_3;Partido Constitucionalista;Partido Constitucionalista;Partido
 SON_liberal_4;Partido Antireelecionista;Partido Antireelecionista;Partido Antireelecionista;;;;;;;;;;;;x;;;;;;;;;;;;;;
 SON_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;;;;;;;;;;;x;;;;;;;;;;;;;;
 SON_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+SPC;Spain;;;;;;;;;;;;;x
+SPC_ADJ;Spanish;;;;;;;;;;;;;x
+SPC_absolute_monarchy;Carlist Spain;;;;;;;;;;;;;x
+SPC_hms_government;Carlist Spain;;;;;;;;;;;;;x
+SPC_prussian_constitutionalism;Carlist Spain;;;;;;;;;;;;;x
 SON_communist;Partido Communist;Partido communiste;Partido Communist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 SON_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 SPU;South Peru;;;;;;;;;;;;;x
@@ -2895,6 +2902,8 @@ LBA_liberal;Reform Faction;Faction de r�forme;Verbesserung Fraktion;;;;;;;;;;;
 LBA_reactionary;Empire Faction;Faction d'empire;Reich Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LBA_anarcho_liberal;Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LBA_socialist;Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LBG;Limburg;;;;;;;;;;;;;;;;;;;x;;;;
+LBG_ADJ;Limburgian;;;;;;;;;;;;;;;;;;;x;;;;
 LBA_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LBA_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LOA;Loango;Loango;Loango;;Loango;;;;;;;;;;x;;;;;;;;;;;;;;
