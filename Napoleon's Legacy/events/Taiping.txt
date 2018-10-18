@@ -247,12 +247,12 @@ country_event = {
 
         random_owned = {
             limit = { owner = { foreign_navies = yes_foreign_navies } }
-			TPG = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
+            TPG = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
         }
 
         random_owned = {
-			limit = { owner = { western_shipyards = yes_western_shipyards } }
-			TPG = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
+            limit = { owner = { western_shipyards = yes_western_shipyards } }
+            TPG = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
         }
 
         random_owned = {
@@ -452,12 +452,12 @@ country_event = {
 
         random_owned = {
             limit = { owner = { foreign_navies = yes_foreign_navies } }
-			TPG = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
+            TPG = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
         }
 
         random_owned = {
-			limit = { owner = { western_shipyards = yes_western_shipyards } }
-			TPG = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
+            limit = { owner = { western_shipyards = yes_western_shipyards } }
+            TPG = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
         }
 
         random_owned = {
@@ -1770,17 +1770,17 @@ country_event = {
             owned_by = THIS
             controlled_by = THIS
         }
-		2681 = {
-			is_capital = no
-			owned_by = THIS
-			controlled_by = THIS
-		}
+        2681 = {
+            is_capital = no
+            owned_by = THIS
+            controlled_by = THIS
+        }
         NOT = {
             any_owned_province = {
                 NOT = { province_id = 1485 }
                 NOT = { province_id = 2562 }
-				NOT = { province_id = 2406 }
-				NOT = { province_id = 2681 }
+                NOT = { province_id = 2406 }
+                NOT = { province_id = 2681 }
                 OR = {
                     controlled_by = THIS
                     controlled_by = REB
@@ -1819,35 +1819,35 @@ country_event = {
             secede_province = TAI
             fort = 3
         }
-		2681 = {
-			add_core = TAI
-			secede_province = TAI
-			fort = 3
-		}
+        2681 = {
+            add_core = TAI
+            secede_province = TAI
+            fort = 3
+        }
         capital_scope = {
             aristocrats = {
                 limit = { is_primary_culture = yes }
                 money = 2000
                 reduce_pop = 0.5
-				move_pop = 2681
+                move_pop = 2681
             }
             bureaucrats = {
                 limit = { is_primary_culture = yes }
                 money = 300
                 reduce_pop = 0.5
-				move_pop = 2681
+                move_pop = 2681
             }
             officers = {
                 limit = { is_primary_culture = yes }
                 money = 300
                 reduce_pop = 0.5
-				move_pop = 2681
+                move_pop = 2681
             }
             soldiers = {
                 limit = { is_primary_culture = yes }
                 money = 100
                 reduce_pop = 0.5
-				move_pop = 2681
+                move_pop = 2681
             }
         }
         random_owned = {
@@ -1954,7 +1954,7 @@ country_event = {
             }
         }
         TAI = {
-			capital = 2681
+            capital = 2681
             money = 100000
             leadership = 40
             primary_culture = THIS

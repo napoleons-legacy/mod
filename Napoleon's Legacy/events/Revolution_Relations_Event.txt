@@ -6,7 +6,7 @@
 #############################################################################
 
 country_event = {
-    
+
     id = 800066
     title = "EVTNAME800066" # Communist Agenda For GP's only
     desc = "EVTDESC800066"
@@ -75,7 +75,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800067
     title = "EVTNAME800067" # Diplomatic Envoy response
     desc = "EVTDESC800067"
@@ -166,7 +166,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800068
     title = "EVTNAME800068" # Communist Agenda - For Minors only
     desc = "EVTDESC800068"
@@ -246,7 +246,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800069
     title = "EVTNAME800069" # Fascist Agenda - For GP's only
     desc = "EVTDESC800069"
@@ -325,7 +325,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800070
     title = "EVTNAME800070" # Fascist Agenda - For Minors only
     desc = "EVTDESC800070"
@@ -408,7 +408,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800071
     title = "EVTNAME800071" # Anarcho-Liberal Agenda - For GP's only
     desc = "EVTDESC800071"
@@ -487,7 +487,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800072
     title = "EVTNAME800072" # Anarcho-Liberal Agenda - For Minors only
     desc = "EVTDESC800072"
@@ -570,7 +570,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800073
     title = "EVTNAME800073" # Democratic Agenda - For GP's only
     desc = "EVTDESC800073"
@@ -679,7 +679,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800074
     title = "EVTNAME800074" # Democratic Agenda - For Minors only
     desc = "EVTDESC800074"
@@ -795,7 +795,7 @@ country_event = {
 #############################################################
 
 country_event = {
-    
+
     id = 800075
     title = "EVTNAME800075" # Communist Summit - For GP's only
     desc = "EVTDESC800075"
@@ -871,7 +871,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800076
     title = "EVTNAME800076" # Summit Request response
     desc = "EVTDESC800076"
@@ -1054,7 +1054,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800081
     title = "EVTNAME800081" # Fascist Summit - For GP's only
     desc = "EVTDESC800081"
@@ -1130,7 +1130,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800082
     title = "EVTNAME800082" # Anarcho-Liberal Summit - For GP's only
     desc = "EVTDESC800082"
@@ -1206,7 +1206,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800083
     title = "EVTNAME800083" # Democracy Summit - For GP's only
     desc = "EVTDESC800083"
@@ -1317,7 +1317,7 @@ country_event = {
 #############################################################
 
 country_event = {
-    
+
     id = 800084
     title = "EVTNAME800084" # Diplomatic Incident Between GP's - Communism
     desc = "EVTDESC800084"
@@ -1809,7 +1809,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800087
     title = "EVTNAME800087" # Diplomatic Incident Between GP's - Democracy
     desc = "EVTDESC800087"
@@ -1984,7 +1984,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800088
     title = "EVTNAME800088" # Diplomatic Incident - Response to Conciliation
     desc = "EVTDESC800088"
@@ -2167,7 +2167,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800089
     title = "EVTNAME800089" # Diplomatic Incident - Response to Insult
     desc = "EVTDESC800089"
@@ -2425,7 +2425,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800094
     title = "EVTNAME800094" # Diplomatic Incident For Minors - Communism
     desc = "EVTDESC800094"
@@ -2510,7 +2510,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800095
     title = "EVTNAME800095" # Diplomatic Incident For Minors - Fascism
     desc = "EVTDESC800095"
@@ -2591,7 +2591,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800096
     title = "EVTNAME800096" # Diplomatic Incident For Minors - Anarcho-Liberalism
     desc = "EVTDESC800096"
@@ -2676,7 +2676,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800097
     title = "EVTNAME800097" # Diplomatic Incident For Minors - Democracy
     desc = "EVTDESC800097"
@@ -2767,8 +2767,8 @@ country_event = {
         }
         ai_chance = { factor = 100 }
     }
-    
-    
+
+
     option = {
         name = "EVT800094OPTB"
         prestige = -20
@@ -2791,7 +2791,7 @@ country_event = {
         }
         ai_chance = { factor = 0 }
     }
-    
+
 }
 
 country_event = {

@@ -97,7 +97,7 @@ country_event = {
         relation = { who = ZUL value = -100 }
         relation = { who = NAL value = -100 }
         diplomatic_influence = { who = NAL value = 100 }
-		NAL = { prestige = -30 add_country_modifier = { name = unrecognized_country duration = 1825 } }
+        NAL = { prestige = -30 add_country_modifier = { name = unrecognized_country duration = 1825 } }
         any_pop = {
             limit = {
                 has_pop_culture = boer
@@ -1326,66 +1326,66 @@ country_event = {
         ai_chance = {
             factor = 5
         }
-	}
+    }
 }
 
 country_event = {
-	id = 98255
-	title = "EVTNAME98255" #Conflict with the Xhosa
-	desc = "EVTDESC98256"
-	picture = "zulu"
+    id = 98255
+    title = "EVTNAME98255" #Conflict with the Xhosa
+    desc = "EVTDESC98256"
+    picture = "zulu"
 
-	trigger = {
-		tag = SAF
-		neighbour = XHO
-		NOT = {
-			war_with = XHO
-			truce_with = XHO
-			has_country_flag = claimed_xhosa
-			check_variable = {
-				which = xhosa_conflict
-				value = 3
-			}
-		}
-	}
+    trigger = {
+        tag = SAF
+        neighbour = XHO
+        NOT = {
+            war_with = XHO
+            truce_with = XHO
+            has_country_flag = claimed_xhosa
+            check_variable = {
+                which = xhosa_conflict
+                value = 3
+            }
+        }
+    }
 
-	mean_time_to_happen = {
-		months = 40
-		modifier = {
-			factor = 1.5
-			war = yes
-		}
-		modifier = {
-			factor = 0.8
-			nationalism_n_imperialism = 1
-		}
-		modifier = {
-			factor = 0.5
-			year = 1860
-		}
-	}
+    mean_time_to_happen = {
+        months = 40
+        modifier = {
+            factor = 1.5
+            war = yes
+        }
+        modifier = {
+            factor = 0.8
+            nationalism_n_imperialism = 1
+        }
+        modifier = {
+            factor = 0.5
+            year = 1860
+        }
+    }
 
-	option = {
-		name = "EVT98255OPTA"
-		change_variable = {
-			which = xhosa_conflict
-			value = 1
-		}
-		leave_alliance = XHO
-		diplomatic_influence = { who = XHO value = -200 }
-		relation = { who = XHO value = -100 }
-		casus_belli = {
-			target = XHO
-			type = cut_down_to_size
-			months = 60
-		}
-	}
+    option = {
+        name = "EVT98255OPTA"
+        change_variable = {
+            which = xhosa_conflict
+            value = 1
+        }
+        leave_alliance = XHO
+        diplomatic_influence = { who = XHO value = -200 }
+        relation = { who = XHO value = -100 }
+        casus_belli = {
+            target = XHO
+            type = cut_down_to_size
+            months = 60
+        }
+    }
 }
 
 country_event = {
-	id = 98256
-	title = "EVTNAME98256" #The Final Straw
-	desc = "EVTDESC98256"
+    id = 98256
+    title = "EVTNAME98256" #The Final Straw
+    desc = "EVTDESC98256"
     picture = "zulu"
 
     fire_only_once = yes
@@ -1393,13 +1393,13 @@ country_event = {
     trigger = {
         tag = SAF
         neighbour = XHO
-		OR = {
-			check_variable = {
-				which = xhosa_conflict
-				value = 3
-			}
-			has_global_flag = berlin_conference
-		}
+        OR = {
+            check_variable = {
+                which = xhosa_conflict
+                value = 3
+            }
+            has_global_flag = berlin_conference
+        }
         NOT = {
             war_with = XHO
             truce_with = XHO
@@ -1408,7 +1408,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-		months = 40
+        months = 40
         modifier = {
             factor = 1.5
             war = yes
@@ -1507,21 +1507,21 @@ country_event = {
 
     trigger = {
         tag = SAF
-		war = no
-		owns = 2087
-		year = 1840
-		OR = {
-			2092 = { empty = yes } #Beaufort
-			2093 = { empty = yes } #Calvinia
-			2558 = { empty = yes } #De Aar
-			2088 = { empty = yes } #Springbok
-		}
-		NOT = { has_country_flag = no_more_north_cape }
-		OR = {
-			ai = no
-			money = 10000
-		}
-	}
+        war = no
+        owns = 2087
+        year = 1840
+        OR = {
+            2092 = { empty = yes } #Beaufort
+            2093 = { empty = yes } #Calvinia
+            2558 = { empty = yes } #De Aar
+            2088 = { empty = yes } #Springbok
+        }
+        NOT = { has_country_flag = no_more_north_cape }
+        OR = {
+            ai = no
+            money = 10000
+        }
+    }
 
     mean_time_to_happen = {
         months = 12
@@ -1611,7 +1611,7 @@ country_event = {
 #Diamonds Discovered in Kimberley
 country_event = {
     id = 98262
-	title = "EVTNAME98262"
+    title = "EVTNAME98262"
     desc = "EVTDESC98262"
     picture = "diamonds_in_kimberley"
 
@@ -1627,43 +1627,43 @@ country_event = {
         civilized = yes
         2094 = {
             empty = yes
-			NOT = { trade_goods = precious_goods }
-		}
-	}
+            NOT = { trade_goods = precious_goods }
+        }
+    }
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	mean_time_to_happen = { months = 36 }
+    mean_time_to_happen = { months = 36 }
 
     option = {
         name = "EVT98262OPTA"
-		set_country_flag = kimberley_goldrush
-		random_owned = {
-			limit = { owner = { NOT = { primary_culture = boer } } }
-			random_country = {
-				limit = { tag = ORA exists = yes }
-				prestige = -5
-				THIS = {
-					relation = { who = ORA value = -100 }
-					diplomatic_influence = { who = ORA value = -50 }
-				}
-			}
-		}
-		random_owned = {
-			limit = { owner = { NOT = { primary_culture = boer } } }
-			random_country = {
-				limit = { tag = TRN exists = yes }
-				prestige = -5
-				THIS = {
-					relation = { who = TRN value = -100 }
-					diplomatic_influence = { who = TRN value = -50 }
-				}
-			}
-		}
+        set_country_flag = kimberley_goldrush
+        random_owned = {
+            limit = { owner = { NOT = { primary_culture = boer } } }
+            random_country = {
+                limit = { tag = ORA exists = yes }
+                prestige = -5
+                THIS = {
+                    relation = { who = ORA value = -100 }
+                    diplomatic_influence = { who = ORA value = -50 }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { NOT = { primary_culture = boer } } }
+            random_country = {
+                limit = { tag = TRN exists = yes }
+                prestige = -5
+                THIS = {
+                    relation = { who = TRN value = -100 }
+                    diplomatic_influence = { who = TRN value = -50 }
+                }
+            }
+        }
         2094 = {
             secede_province = THIS
             change_province_name = "Kimberley"
-			trade_goods = precious_goods
+            trade_goods = precious_goods
             add_province_modifier = { name = gold_rush duration = 5475 }
             any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
         }

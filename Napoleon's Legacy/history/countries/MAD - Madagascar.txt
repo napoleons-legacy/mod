@@ -38,13 +38,13 @@ set_country_flag = animist_country
 
 ruling_party = MAD_conservative
 upper_house = {
-	fascist = 0
-	liberal = 12
-	conservative = 79
-	reactionary = 9
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 12
+    conservative = 79
+    reactionary = 9
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 

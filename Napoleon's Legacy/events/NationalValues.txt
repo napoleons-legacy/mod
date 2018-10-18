@@ -276,7 +276,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-		months = 1600
+        months = 1600
     }
 
     option = {
@@ -543,7 +543,7 @@ country_event = {
     trigger = {
         nationalvalue = nv_tradition
         war = no
-		civilized = yes
+        civilized = yes
     }
 
     mean_time_to_happen = {

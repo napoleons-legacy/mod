@@ -2,62 +2,62 @@
 
 
 AUS = {
-	value = -200
+    value = -200
 }
 
 #Army
 
 leader = {
-	name = "Andras Bacher"
-	date = 1836.1.1
-	type = land
-	background = aristocrat
-	personality = bold
+    name = "Andras Bacher"
+    date = 1836.1.1
+    type = land
+    background = aristocrat
+    personality = bold
 }
 
 army = {
-	name = "I. Armee"
-	location = 639
-	regiment = {
-		name= "1.6. Infanteriedivision"
-		type = infantry
-		home = 639
-	}
+    name = "I. Armee"
+    location = 639
+    regiment = {
+        name= "1.6. Infanteriedivision"
+        type = infantry
+        home = 639
+    }
 
-	regiment = {
-		name= "2.6. Infanteriedivision"
-		type = infantry
-		home = 647
-	}
+    regiment = {
+        name= "2.6. Infanteriedivision"
+        type = infantry
+        home = 647
+    }
 
-	regiment = {
-		name= "3.6. Infanteriedivision"
-		type = infantry
-		home = 640
-	}
+    regiment = {
+        name= "3.6. Infanteriedivision"
+        type = infantry
+        home = 640
+    }
 
-	regiment = {
-		name= "4.6. Infanteriedivision"
-		type = infantry
-		home = 649
-	}
+    regiment = {
+        name= "4.6. Infanteriedivision"
+        type = infantry
+        home = 649
+    }
 
-	regiment = {
-		name= "5.6. Infanteriedivision"
-		type = infantry
-		home = 644
-	}
+    regiment = {
+        name= "5.6. Infanteriedivision"
+        type = infantry
+        home = 644
+    }
 
-	regiment = {
-		name= "6.6. Infanteriedivision"
-		type = infantry
-		home = 642
-	}
+    regiment = {
+        name= "6.6. Infanteriedivision"
+        type = infantry
+        home = 642
+    }
 
-	regiment = {
-		name= "7.6. Infanteriedivision"
-		type = infantry
-		home = 641
-	}
+    regiment = {
+        name= "7.6. Infanteriedivision"
+        type = infantry
+        home = 641
+    }
 
 }

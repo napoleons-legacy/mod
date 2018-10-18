@@ -30,20 +30,21 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = theravada_country
 
 ruling_party = SIA_conservative
 upper_house = {
-	fascist = 0
-	liberal = 12
-	conservative = 69
-	reactionary = 19
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 12
+    conservative = 69
+    reactionary = 19
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 
@@ -61,6 +62,6 @@ modern_winemaking = yes
 oob = "SIA_oob.txt"
 
 govt_flag = {
-	government = hms_government
-	flag = theocracy
+    government = hms_government
+    flag = theocracy
 }

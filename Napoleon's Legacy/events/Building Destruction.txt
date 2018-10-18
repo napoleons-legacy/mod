@@ -6,14 +6,14 @@ province_event = {
     allow_multiple_instances = no
 
     trigger = {
-		OR = {
+        OR = {
         unit_in_battle = yes
-			country_units_in_province = REB
-		}
+            country_units_in_province = REB
+        }
         has_building = fort
     }
 
-	mean_time_to_happen = { months = 600 }
+    mean_time_to_happen = { months = 600 }
 
     option = {
         name = "EVT60168004OPTA"
@@ -29,14 +29,14 @@ province_event = {
     allow_multiple_instances = no
 
     trigger = {
-		OR = {
+        OR = {
         unit_in_battle = yes
-			country_units_in_province = REB
-		}
+            country_units_in_province = REB
+        }
         has_building = railroad
     }
 
-	mean_time_to_happen = { months = 600 }
+    mean_time_to_happen = { months = 600 }
 
     option = {
         name = "EVT60168005OPTA"
@@ -56,7 +56,7 @@ province_event = {
 #       has_building = public_illumination
 #   }
 #
-#	mean_time_to_happen = { months = 500 }
+#    mean_time_to_happen = { months = 500 }
 #
 #   option = {
 #       name = "EVT60168006OPTA"

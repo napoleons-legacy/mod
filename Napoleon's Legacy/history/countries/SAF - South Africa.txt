@@ -31,20 +31,21 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
 
 ruling_party = SAF_conservative_2
 upper_house = {
-	fascist = 0
-	liberal = 14
-	conservative = 77
-	reactionary = 9
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 14
+    conservative = 77
+    reactionary = 9
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 # Technologies
@@ -91,4 +92,3 @@ precision_work = yes
 set_country_flag = post_colonial_country
 
 oob = "SAF_OOB.txt"
-

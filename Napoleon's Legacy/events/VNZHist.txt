@@ -45,8 +45,8 @@ country_event = {
                 }
             }
         }
-		ai_chance = {
-			factor = 50
+        ai_chance = {
+            factor = 50
             modifier = { upper_house = { ideology = conservative value = 0.6 } factor = 60 }
             modifier = { upper_house = { ideology = conservative value = 0.7 } factor = 70 }
             modifier = { upper_house = { ideology = conservative value = 0.8 } factor = 90 }
@@ -105,8 +105,8 @@ country_event = {
                 }
             }
         }
-		ai_chance = {
-			factor = 40
+        ai_chance = {
+            factor = 40
             modifier = { upper_house = { ideology = conservative value = 0.6 } factor = 30 }
             modifier = { upper_house = { ideology = conservative value = 0.7 } factor = 20 }
             modifier = { upper_house = { ideology = conservative value = 0.8 } factor = 10 }

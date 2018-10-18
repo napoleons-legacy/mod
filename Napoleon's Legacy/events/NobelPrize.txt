@@ -19,7 +19,7 @@ country_event = {
             has_global_flag = NobelPhysics
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -55,7 +55,7 @@ country_event = {
     title = "EVTNAME23451"
     desc = "EVTDESC23451"
     picture = "xrays_discovered"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         year = 1901
@@ -78,10 +78,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -96,21 +96,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -118,7 +118,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -126,9 +126,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -136,7 +136,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1902
@@ -161,7 +161,7 @@ country_event = {
     title = "EVTNAME23452"
     desc = "EVTDESC23452"
     picture = "zeeman_effect"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 1NobelPhysics
@@ -185,7 +185,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -203,21 +203,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -225,7 +225,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -233,9 +233,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -243,7 +243,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1903
@@ -268,19 +268,19 @@ country_event = {
     title = "EVTNAME23453"
     desc = "EVTDESC23453"
     picture = "radioactivity"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 2NobelPhysics
         year = 1903
         invention = x_rays
         literacy = 0.6
-        
+
         NOT = {
             year = 1908
             has_global_flag = 3NobelPhysics
         }
-        
+
         OR = {
             is_greater_power = yes # nation is a great power
             AND = {
@@ -294,7 +294,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -312,21 +312,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -334,7 +334,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -342,9 +342,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -352,7 +352,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1904
@@ -377,7 +377,7 @@ country_event = {
     title = "EVTNAME23454"
     desc = "EVTDESC23454"
     picture = "argon_discovery"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 3NobelPhysics
@@ -401,7 +401,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -419,21 +419,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -441,7 +441,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -449,9 +449,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -459,7 +459,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1905
@@ -484,7 +484,7 @@ country_event = {
     title = "EVTNAME23455"
     desc = "EVTDESC23455"
     picture = "cathode_rays"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 4NobelPhysics
@@ -508,7 +508,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -526,21 +526,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -548,7 +548,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -556,9 +556,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -566,7 +566,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1906
@@ -591,7 +591,7 @@ country_event = {
     title = "EVTNAME23456"
     desc = "EVTDESC23456"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 5NobelPhysics
@@ -615,7 +615,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -633,21 +633,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -655,7 +655,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -663,9 +663,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -673,7 +673,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1907
@@ -722,7 +722,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -740,21 +740,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -762,7 +762,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -770,9 +770,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -780,7 +780,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1908
@@ -805,7 +805,7 @@ country_event = {
     title = "EVTNAME23458"
     desc = "EVTDESC23458"
     picture = "lippmann_photography"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 7NobelPhysics
@@ -829,10 +829,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -847,21 +847,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -869,7 +869,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -877,7 +877,7 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
 
         modifier = {
@@ -887,7 +887,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1909
@@ -912,7 +912,7 @@ country_event = {
     title = "EVTNAME23459"
     desc = "EVTDESC23459"
     picture = "wireless_telegraphy"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 8NobelPhysics
@@ -936,10 +936,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -954,21 +954,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -976,7 +976,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -984,7 +984,7 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
 
         modifier = {
@@ -994,7 +994,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1910
@@ -1019,7 +1019,7 @@ country_event = {
     title = "EVTNAME23460"
     desc = "EVTDESC23460"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 9NobelPhysics
@@ -1043,7 +1043,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -1061,21 +1061,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1083,7 +1083,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1091,9 +1091,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -1101,7 +1101,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1911
@@ -1126,7 +1126,7 @@ country_event = {
     title = "EVTNAME23461"
     desc = "EVTDESC23461"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 10NobelPhysics
@@ -1150,7 +1150,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -1168,21 +1168,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1190,7 +1190,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1198,9 +1198,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -1208,7 +1208,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1912
@@ -1233,7 +1233,7 @@ country_event = {
     title = "EVTNAME23462"
     desc = "EVTDESC23462"
     picture = "aga_lighthouse"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 11NobelPhysics
@@ -1257,7 +1257,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -1275,21 +1275,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1297,7 +1297,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1305,9 +1305,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -1315,7 +1315,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1913
@@ -1340,7 +1340,7 @@ country_event = {
     title = "EVTNAME23463"
     desc = "EVTDESC23463"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 12NobelPhysics
@@ -1364,10 +1364,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -1382,21 +1382,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1404,7 +1404,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1412,7 +1412,7 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
 
         modifier = {
@@ -1422,7 +1422,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1914
@@ -1447,7 +1447,7 @@ country_event = {
     title = "EVTNAME23464"
     desc = "EVTDESC23464"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 13NobelPhysics
@@ -1471,10 +1471,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -1489,21 +1489,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1511,7 +1511,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1519,7 +1519,7 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
 
         modifier = {
@@ -1529,7 +1529,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1915
@@ -1554,7 +1554,7 @@ country_event = {
     title = "EVTNAME23465"
     desc = "EVTDESC23465"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 14NobelPhysics
@@ -1578,7 +1578,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -1596,21 +1596,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1618,7 +1618,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1626,9 +1626,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -1636,7 +1636,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1916
@@ -1661,7 +1661,7 @@ country_event = {
     title = "EVTNAME23466"
     desc = "EVTDESC23466"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 15NobelPhysics
@@ -1685,7 +1685,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 6
 
@@ -1711,7 +1711,7 @@ country_event = {
     title = "EVTNAME23467"
     desc = "EVTDESC23467"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 16NobelPhysics
@@ -1735,10 +1735,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -1753,21 +1753,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1775,7 +1775,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1783,7 +1783,7 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
 
         modifier = {
@@ -1793,7 +1793,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1918
@@ -1818,8 +1818,8 @@ country_event = {
     title = "EVTNAME23468"
     desc = "EVTDESC23468"
     picture = "Nobel_Physics"
-    
-    
+
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 17NobelPhysics
@@ -1843,7 +1843,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -1861,21 +1861,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1883,7 +1883,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1891,9 +1891,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -1901,7 +1901,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1919
@@ -1926,7 +1926,7 @@ country_event = {
     title = "EVTNAME23469"
     desc = "EVTDESC23469"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 18NobelPhysics
@@ -1950,10 +1950,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -1968,21 +1968,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1990,7 +1990,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -1998,7 +1998,7 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
 
         modifier = {
@@ -2008,7 +2008,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1920
@@ -2033,7 +2033,7 @@ country_event = {
     title = "EVTNAME23470"
     desc = "EVTDESC23470"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 19NobelPhysics
@@ -2057,7 +2057,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2075,21 +2075,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2097,7 +2097,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2105,9 +2105,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2115,7 +2115,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1921
@@ -2140,8 +2140,8 @@ country_event = {
     title = "EVTNAME23471"
     desc = "EVTDESC23471"
     picture = "einstein_lectures"
-    
-    
+
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 20NobelPhysics
@@ -2165,7 +2165,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2183,21 +2183,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2205,7 +2205,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2213,9 +2213,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2223,7 +2223,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1922
@@ -2248,7 +2248,7 @@ country_event = {
     title = "EVTNAME23472"
     desc = "EVTDESC23472"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 21NobelPhysics
@@ -2272,7 +2272,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2290,21 +2290,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2312,7 +2312,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2320,9 +2320,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2330,7 +2330,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1923
@@ -2355,7 +2355,7 @@ country_event = {
     title = "EVTNAME23473"
     desc = "EVTDESC23473"
     picture = "oil_drop_experiment"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 22NobelPhysics
@@ -2379,7 +2379,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2397,21 +2397,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2419,7 +2419,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2427,9 +2427,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2437,7 +2437,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1924
@@ -2462,8 +2462,8 @@ country_event = {
     title = "EVTNAME23474"
     desc = "EVTDESC23474"
     picture = "Nobel_Physics"
-    
-    
+
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 23NobelPhysics
@@ -2487,7 +2487,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2505,21 +2505,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2527,7 +2527,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2535,9 +2535,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2545,7 +2545,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1925
@@ -2570,7 +2570,7 @@ country_event = {
     title = "EVTNAME23475"
     desc = "EVTDESC23475"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 24NobelPhysics
@@ -2594,10 +2594,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -2612,21 +2612,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2634,7 +2634,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2642,9 +2642,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2652,7 +2652,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1926
@@ -2677,7 +2677,7 @@ country_event = {
     title = "EVTNAME23476"
     desc = "EVTDESC23476"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 25NobelPhysics
@@ -2701,7 +2701,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2719,21 +2719,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2741,7 +2741,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2749,9 +2749,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2759,7 +2759,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1927
@@ -2784,7 +2784,7 @@ country_event = {
     title = "EVTNAME23477"
     desc = "EVTDESC23477"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 26NobelPhysics
@@ -2808,7 +2808,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2826,21 +2826,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2848,7 +2848,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2856,9 +2856,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2866,7 +2866,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1928
@@ -2891,7 +2891,7 @@ country_event = {
     title = "EVTNAME23478"
     desc = "EVTDESC23478"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 27NobelPhysics
@@ -2915,7 +2915,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -2933,21 +2933,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2955,7 +2955,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -2963,9 +2963,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -2973,7 +2973,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1929
@@ -2998,7 +2998,7 @@ country_event = {
     title = "EVTNAME23479"
     desc = "EVTDESC23479"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 28NobelPhysics
@@ -3022,7 +3022,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3040,21 +3040,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3062,7 +3062,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3070,9 +3070,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -3080,7 +3080,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1930
@@ -3105,7 +3105,7 @@ country_event = {
     title = "EVTNAME23480"
     desc = "EVTDESC23480"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 29NobelPhysics
@@ -3129,7 +3129,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3147,21 +3147,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3169,7 +3169,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3177,9 +3177,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -3187,7 +3187,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1930
@@ -3212,7 +3212,7 @@ country_event = {
     title = "EVTNAME23466"
     desc = "EVTDESC23466"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 30NobelPhysics
@@ -3236,10 +3236,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -3254,21 +3254,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3276,7 +3276,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3284,9 +3284,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -3294,7 +3294,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1932
@@ -3317,7 +3317,7 @@ country_event = {
     title = "EVTNAME23482"
     desc = "EVTDESC23482"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 31NobelPhysics
@@ -3341,10 +3341,10 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.85
@@ -3359,21 +3359,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3381,7 +3381,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3389,9 +3389,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -3399,7 +3399,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1933
@@ -3448,7 +3448,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3466,21 +3466,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3488,7 +3488,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3496,9 +3496,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -3506,7 +3506,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1934
@@ -3547,7 +3547,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3577,7 +3577,7 @@ country_event = {
     title = "EVTNAME23485"
     desc = "EVTDESC23485"
     picture = "Nobel_Physics"
-    
+
     trigger = {
         has_global_flag = NobelPhysics
         has_global_flag = 34NobelPhysics
@@ -3601,7 +3601,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3619,21 +3619,21 @@ country_event = {
             total_pops = 1000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.97
             literacy = 0.95
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 0.95
             literacy = 0.97
             total_pops = 7000000
             capital_scope = { continent = europe }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3641,7 +3641,7 @@ country_event = {
                 NOT = { plurality = 75 }
             }
         }
-        
+
         modifier = {
             factor = 1.5
             OR = {
@@ -3649,9 +3649,9 @@ country_event = {
                 press_rights = censored_press
             }
         }
-        
+
         modifier = { factor = 2.0 NOT = { total_pops = 300000 } }
-        
+
         modifier = {
             factor = 2.0
             OR = {
@@ -3659,7 +3659,7 @@ country_event = {
                 is_secondary_power = no
             }
         }
-        
+
         modifier = {
             factor = 0.95
             year = 1936
@@ -3700,7 +3700,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3747,7 +3747,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3794,7 +3794,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3841,7 +3841,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3888,7 +3888,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3934,7 +3934,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -3981,7 +3981,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4028,7 +4028,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4075,7 +4075,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4122,7 +4122,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4169,7 +4169,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4216,7 +4216,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4263,7 +4263,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4310,7 +4310,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4357,7 +4357,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4404,7 +4404,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4451,7 +4451,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4498,7 +4498,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4545,7 +4545,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4592,7 +4592,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4639,7 +4639,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4686,7 +4686,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4733,7 +4733,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4780,7 +4780,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4827,7 +4827,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4874,7 +4874,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4921,7 +4921,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -4968,7 +4968,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5015,7 +5015,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5062,7 +5062,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5109,7 +5109,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5156,7 +5156,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5203,7 +5203,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5250,7 +5250,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5297,7 +5297,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5344,7 +5344,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5391,7 +5391,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5438,7 +5438,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5485,7 +5485,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5532,7 +5532,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5579,7 +5579,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5626,7 +5626,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5673,7 +5673,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5720,7 +5720,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5767,7 +5767,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5814,7 +5814,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5861,7 +5861,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5908,7 +5908,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -5955,7 +5955,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6002,7 +6002,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6049,7 +6049,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6096,7 +6096,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6143,7 +6143,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6190,7 +6190,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6237,7 +6237,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6284,7 +6284,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6331,7 +6331,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6378,7 +6378,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6425,7 +6425,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6472,7 +6472,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6519,7 +6519,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6566,7 +6566,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6613,7 +6613,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6660,7 +6660,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6707,7 +6707,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6754,7 +6754,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6801,7 +6801,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6848,7 +6848,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6895,7 +6895,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6942,7 +6942,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -6989,7 +6989,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7036,7 +7036,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7083,7 +7083,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7130,7 +7130,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7177,7 +7177,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7224,7 +7224,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7271,7 +7271,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7318,7 +7318,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7365,7 +7365,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7412,7 +7412,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7459,7 +7459,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7506,7 +7506,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7553,7 +7553,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7600,7 +7600,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7647,7 +7647,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7694,7 +7694,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7741,7 +7741,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7788,7 +7788,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7835,7 +7835,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7882,7 +7882,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7929,7 +7929,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -7976,7 +7976,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8023,7 +8023,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8070,7 +8070,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8117,7 +8117,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8164,7 +8164,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8211,7 +8211,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8258,7 +8258,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8305,7 +8305,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8352,7 +8352,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8399,7 +8399,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8446,7 +8446,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8493,7 +8493,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8540,7 +8540,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8587,7 +8587,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8636,7 +8636,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8685,7 +8685,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8734,7 +8734,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8783,7 +8783,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8832,7 +8832,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8881,7 +8881,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8930,7 +8930,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -8979,7 +8979,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9028,7 +9028,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9077,7 +9077,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9127,7 +9127,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9176,7 +9176,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9225,7 +9225,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9274,7 +9274,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9323,7 +9323,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9372,7 +9372,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9421,7 +9421,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9470,7 +9470,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9519,7 +9519,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9568,7 +9568,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9617,7 +9617,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9666,7 +9666,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9715,7 +9715,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9764,7 +9764,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9813,7 +9813,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9862,7 +9862,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9911,7 +9911,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -9960,7 +9960,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -10009,7 +10009,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -10058,7 +10058,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -10107,7 +10107,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -10156,7 +10156,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -10205,7 +10205,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -10254,7 +10254,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 
@@ -10303,7 +10303,7 @@ country_event = {
             }
         }
     }
- 
+
     mean_time_to_happen =  {
         months = 12
 

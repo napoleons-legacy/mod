@@ -59,7 +59,7 @@ country_event = {
 
 #Removes the pariah modifier if the player has low enough Infamy
 country_event = {
-    
+
     id = 96131
     title = "EVTNAME96131" #An Ease in Tensions
     desc = "EVTDESC96131"
@@ -83,7 +83,7 @@ country_event = {
 
 #An AI GP will deliver the ultimatum
 country_event = {
-    
+
     id = 96135
     title = "EVTNAME96135"
     desc = "EVTDESC96135"
@@ -383,7 +383,7 @@ country_event = {
 
 #Notification of a declaration of war
 country_event = {
-    
+
     id = 96141
     title = "EVTNAME96141" #Joins the War
     desc = "EVTDESC96141"
@@ -453,7 +453,7 @@ country_event = {
     id = 96146
     title = "EVTNAME96146"
     desc = "EVTDESC96146"
-    
+
     trigger = {
         has_country_flag = coalition_member
         NOT = { has_global_flag = ultimatum_refused }
@@ -494,9 +494,9 @@ country_event = {
     mean_time_to_happen = {
         months = 12
     }
-    
+
     immediate = { badboy = -1000 }
-    
+
     option = {
         name = "EVTOPTA96150" #Excellent
         clr_global_flag = ultimatum_refused

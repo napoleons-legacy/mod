@@ -4,27 +4,27 @@ country_event = {
     desc = "EVTDESC500058"
     picture = "bad_badboy"
     major = yes
-    
+
     trigger = {
         ai = no
         badboy = 2
-		civilized = yes
+        civilized = yes
         has_country_modifier = kinda_bad_badboy
         NOT = { has_country_modifier = bad_badboy }
         NOT = { has_country_modifier = uncivilized_isolationism }
     }
-        
+
     mean_time_to_happen = { months = 4 }
 
     option = {
         name = "EVTOPT500058A"
         remove_country_modifier = kinda_bad_badboy
-		add_country_modifier = { name = bad_badboy duration = 7300 }
+        add_country_modifier = { name = bad_badboy duration = 7300 }
     any_greater_power = {
         leave_alliance = THIS
-			relation = { who = THIS value = -400 }
-			casus_belli = { target = THIS type = cut_down_to_size months = 36 }
-			casus_belli = { target = THIS type = dismantle_cb months = 36 }
+            relation = { who = THIS value = -400 }
+            casus_belli = { target = THIS type = cut_down_to_size months = 36 }
+            casus_belli = { target = THIS type = dismantle_cb months = 36 }
         }
     any_country = {
         limit = {
@@ -35,8 +35,8 @@ country_event = {
                 }
             }
         }
-			relation = { who = THIS value = -100 }
-			casus_belli = { target = THIS type = cut_down_to_size months = 24 }
+            relation = { who = THIS value = -100 }
+            casus_belli = { target = THIS type = cut_down_to_size months = 24 }
         }
     }
 }
@@ -46,7 +46,7 @@ country_event = {
     title = "EVTNAME500059" #Infamy too high
     desc = "EVTDESC500059"
     picture = "bad_badboy"
-    
+
     trigger = {
         NOT = { has_country_modifier = uncivilized_isolationism }
         ai = no
@@ -58,7 +58,7 @@ country_event = {
                 }
             }
     }
-        
+
     mean_time_to_happen = { months = 1 }
 
     option = {

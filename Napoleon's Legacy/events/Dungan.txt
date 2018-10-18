@@ -153,7 +153,7 @@ country_event = {
             end_war = YNN
         }
         YNN = { change_tag = PGG }
-		PGG = { religion = sunni set_country_flag = sunni_country clr_country_flag = mahayana_country }
+        PGG = { religion = sunni set_country_flag = sunni_country clr_country_flag = mahayana_country }
         casus_belli = {
             target = PGG
             type = make_puppet
@@ -191,8 +191,8 @@ country_event = {
         PGG = { change_tag = YNN }
         YNN = {
             religion = mahayana
-			set_country_flag = mahayana_country
-			clr_country_flag = sunni_country
+            set_country_flag = mahayana_country
+            clr_country_flag = sunni_country
             any_owned = {
                 remove_province_modifier = anti_manchu_sentiment
                 any_pop = {
@@ -219,7 +219,7 @@ country_event = {
     picture = "panthay_rebellion"
 
     trigger = {
-		tag = PGG
+        tag = PGG
         has_global_flag = panthay_rebellion
         is_vassal = no
         NOT = { war_with = QNG }

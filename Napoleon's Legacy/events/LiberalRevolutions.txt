@@ -18,12 +18,12 @@ country_event = {
         NOT = { tag = UBD }
         OR = {
             tag = AUS
-			tag = NEH
+            tag = NEH
             tag = KUK
             tag = SIC
             tag = MOL
             tag = WAL
-			tag = SER
+            tag = SER
             literacy = 0.3
         }
         year = 1840
@@ -36,7 +36,7 @@ country_event = {
             is_ideology_enabled = socialist
             vote_franschise = universal_weighted_voting
             vote_franschise = universal_voting
-			government = democracy
+            government = democracy
         }
         NOT = {
             OR = {
@@ -60,7 +60,7 @@ country_event = {
         }
         modifier = {
             factor = 0.5
-			any_neighbor_country = { has_country_flag = liberal_revolution_in_progress }
+            any_neighbor_country = { has_country_flag = liberal_revolution_in_progress }
         }
         modifier = {
             factor = 2
@@ -231,7 +231,7 @@ country_event = {
         }
         modifier = {
             factor = 1.1
-			not = { political_reform_want = 0.05 }
+            not = { political_reform_want = 0.05 }
         }
     }
     option = {
@@ -411,7 +411,7 @@ country_event = {
         clr_country_flag = liberal_revolution_fired
         clr_country_flag = liberal_revolution_in_progress
         set_country_flag = had_liberal_revolution
-		prestige = 15
+        prestige = 15
     }
 }
 
@@ -424,46 +424,46 @@ country_event = {
 
     trigger = {
         civilized = yes
-		OR = {
+        OR = {
         NOT = { inorganic_chemistry = 1 }
-			AND = {
-				war_exhaustion = 25
-				OR = {
-					has_country_modifier = great_war2
-					has_country_modifier = great_war3
-				}
-			}
-		}
+            AND = {
+                war_exhaustion = 25
+                OR = {
+                    has_country_modifier = great_war2
+                    has_country_modifier = great_war3
+                }
+            }
+        }
         any_owned_province = {
-			total_pops = 30000
-			OR = {
+            total_pops = 30000
+            OR = {
             trade_goods = grain
-				trade_goods = fruit
-				trade_goods = cattle
-			}
-			NOT = { terrain = desert }
-			NOT = { terrain = semidesert }
-			NOT = { terrain = arctic }
-			NOT = { terrain = montane_tundra }
-			NOT = { terrain = boreal }
+                trade_goods = fruit
+                trade_goods = cattle
+            }
+            NOT = { terrain = desert }
+            NOT = { terrain = semidesert }
+            NOT = { terrain = arctic }
+            NOT = { terrain = montane_tundra }
+            NOT = { terrain = boreal }
             NOT = { has_province_modifier = potato_blight }
             NOT = { has_province_modifier = irish_potato_blight }
-			OR = {
-				continent = europe
-				continent = north_america
-				continent = south_america
-				year = 1900
+            OR = {
+                continent = europe
+                continent = north_america
+                continent = south_america
+                year = 1900
         }
     }
-	}
+    }
 
     mean_time_to_happen = {
-		months = 300
+        months = 300
         modifier = {
-			factor = 0.7
-			OR = {
-				any_owned_province = { has_province_modifier = potato_blight }
-				any_neighbor_country = { any_owned_province = { any_neighbor_province = { has_province_modifier = potato_blight } } }
+            factor = 0.7
+            OR = {
+                any_owned_province = { has_province_modifier = potato_blight }
+                any_neighbor_country = { any_owned_province = { any_neighbor_province = { has_province_modifier = potato_blight } } }
             }
         }
         modifier = {
@@ -473,14 +473,14 @@ country_event = {
         modifier = {
             factor = 0.9
             NOT = { poor_strata_life_needs = 0.8 }
-		}
-		modifier = {
-			factor = 0.7
-			NOT = { poor_strata_life_needs = 0.5 }
-		}
-		modifier = {
-			factor = 0.7
-			NOT = { unemployment_by_type = { type = farmers value = 0.5 } }
+        }
+        modifier = {
+            factor = 0.7
+            NOT = { poor_strata_life_needs = 0.5 }
+        }
+        modifier = {
+            factor = 0.7
+            NOT = { unemployment_by_type = { type = farmers value = 0.5 } }
         }
         modifier = {
             factor = 1.5
@@ -493,22 +493,22 @@ country_event = {
         prestige = -2
         random_owned = {
             limit = {
-				total_pops = 30000
-				OR = {
+                total_pops = 30000
+                OR = {
                 trade_goods = grain
-					trade_goods = fruit
-					trade_goods = cattle
-				}
-				NOT = { terrain = desert }
-				NOT = { terrain = semidesert }
-				NOT = { terrain = arctic }
-				NOT = { terrain = montane_tundra }
-				NOT = { terrain = boreal }
+                    trade_goods = fruit
+                    trade_goods = cattle
+                }
+                NOT = { terrain = desert }
+                NOT = { terrain = semidesert }
+                NOT = { terrain = arctic }
+                NOT = { terrain = montane_tundra }
+                NOT = { terrain = boreal }
                 NOT = { has_province_modifier = potato_blight }
                 NOT = { has_province_modifier = irish_potato_blight }
             }
-			add_province_modifier = { name = potato_blight duration = 180 }
-			state_scope = { any_pop = { consciousness = 3 } }
+            add_province_modifier = { name = potato_blight duration = 180 }
+            state_scope = { any_pop = { consciousness = 3 } }
             }
         }
 
@@ -517,38 +517,38 @@ country_event = {
         random_state = {
             limit = {
                 any_owned_province = {
-					total_pops = 30000
-					OR = {
+                    total_pops = 30000
+                    OR = {
                     trade_goods = grain
-						trade_goods = fruit
-						trade_goods = cattle
-					}
-					NOT = { terrain = desert }
-					NOT = { terrain = semidesert }
-					NOT = { terrain = arctic }
-					NOT = { terrain = montane_tundra }
-					NOT = { terrain = boreal }
+                        trade_goods = fruit
+                        trade_goods = cattle
+                    }
+                    NOT = { terrain = desert }
+                    NOT = { terrain = semidesert }
+                    NOT = { terrain = arctic }
+                    NOT = { terrain = montane_tundra }
+                    NOT = { terrain = boreal }
                     NOT = { has_province_modifier = potato_blight }
                     NOT = { has_province_modifier = irish_potato_blight }
                 }
             }
             any_owned = {
-				limit = {
-					total_pops = 30000
-					OR = {
-						trade_goods = grain
-						trade_goods = fruit
-						trade_goods = cattle
-					}
-					NOT = { terrain = desert }
-					NOT = { terrain = semidesert }
-					NOT = { terrain = arctic }
-					NOT = { terrain = montane_tundra }
-					NOT = { terrain = boreal }
-					NOT = { has_province_modifier = potato_blight }
-					NOT = { has_province_modifier = irish_potato_blight }
+                limit = {
+                    total_pops = 30000
+                    OR = {
+                        trade_goods = grain
+                        trade_goods = fruit
+                        trade_goods = cattle
+                    }
+                    NOT = { terrain = desert }
+                    NOT = { terrain = semidesert }
+                    NOT = { terrain = arctic }
+                    NOT = { terrain = montane_tundra }
+                    NOT = { terrain = boreal }
+                    NOT = { has_province_modifier = potato_blight }
+                    NOT = { has_province_modifier = irish_potato_blight }
                 }
-				add_province_modifier = { name = potato_blight duration = 365 }
+                add_province_modifier = { name = potato_blight duration = 365 }
             }
         }
     }
@@ -3573,22 +3573,22 @@ country_event = {
             }
         }
         HUN = {
-			capital = 641
+            capital = 641
             political_reform = mandatory_service
-			government = hms_government
-			political_reform = non_secret_ballots
-			political_reform = universal_weighted_voting
-			political_reform = population_equal_weight
-			political_reform = free_press
-			political_reform = yes_meeting
-			clr_country_flag = communist_gov
-			clr_country_flag = absolute_monarchy_gov
-			clr_country_flag = semi_constitutional_monarchy_gov
-			set_country_flag = constitutional_monarchy_gov
-			clr_country_flag = democracy_gov
-			clr_country_flag = presidential_dictatorship_gov
-			clr_country_flag = fascist_gov
-			clr_country_flag = anarcho_liberal_gov
+            government = hms_government
+            political_reform = non_secret_ballots
+            political_reform = universal_weighted_voting
+            political_reform = population_equal_weight
+            political_reform = free_press
+            political_reform = yes_meeting
+            clr_country_flag = communist_gov
+            clr_country_flag = absolute_monarchy_gov
+            clr_country_flag = semi_constitutional_monarchy_gov
+            set_country_flag = constitutional_monarchy_gov
+            clr_country_flag = democracy_gov
+            clr_country_flag = presidential_dictatorship_gov
+            clr_country_flag = fascist_gov
+            clr_country_flag = anarcho_liberal_gov
             }
         ai_chance = {
             factor = 95

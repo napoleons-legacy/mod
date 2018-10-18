@@ -9,7 +9,7 @@ province_event = {
     id = 98800
     title = "EVTNAME98800"
     desc = "EVTDESC98800"
-    
+
     trigger = {
         OR = {
             region = FRA_1923
@@ -40,11 +40,11 @@ province_event = {
             is_core = NGR
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -64,7 +64,7 @@ province_event = {
     id = 98801
     title = "EVTNAME98800"
     desc = "EVTDESC98800"
-    
+
     trigger = {
         region = SOK_1934
         owned_by = THIS
@@ -90,11 +90,11 @@ province_event = {
             is_core = NGR
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -115,7 +115,7 @@ province_event = {
     id = 98802
     title = "EVTNAME98800"
     desc = "EVTDESC98800"
-    
+
     trigger = {
         region = SOK_1945
         owned_by = THIS
@@ -141,11 +141,11 @@ province_event = {
             is_core = NGR
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -166,7 +166,7 @@ province_event = {
     id = 98803
     title = "EVTNAME98800"
     desc = "EVTDESC98800"
-    
+
     trigger = {
         region = SOK_1963
         owned_by = THIS
@@ -208,11 +208,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -235,7 +235,7 @@ province_event = {
     id = 98804
     title = "EVTNAME98800"
     desc = "EVTDESC98805"
-    
+
     trigger = {
         region = FRA_1919
         owned_by = THIS
@@ -266,11 +266,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -290,7 +290,7 @@ province_event = {
     id = 98805
     title = "EVTNAME98800"
     desc = "EVTDESC98805"
-    
+
     trigger = {
         region = FRA_1914
         owned_by = THIS
@@ -316,11 +316,11 @@ province_event = {
             is_core = TOG
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -340,7 +340,7 @@ province_event = {
     id = 98806
     title = "EVTNAME98800"
     desc = "EVTDESC98806"
-    
+
     trigger = {
         region = FRA_1788
         owned_by = THIS
@@ -366,11 +366,11 @@ province_event = {
             is_core = GMB
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -392,7 +392,7 @@ province_event = {
     id = 98807
     title = "EVTNAME98800"
     desc = "EVTDESC98807"
-    
+
     trigger = {
         region = FRA_1892
         owned_by = THIS
@@ -418,11 +418,11 @@ province_event = {
             is_core = IVC
         }
     }
-    
+
     mean_time_to_happen = {
         days = 1
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -442,7 +442,7 @@ province_event = {
     id = 98808
     title = "EVTNAME98800"
     desc = "EVTDESC98807"
-    
+
     trigger = {
         region = FRA_1893
         owned_by = THIS
@@ -468,11 +468,11 @@ province_event = {
             is_core = IVC
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -495,7 +495,7 @@ province_event = {
     id = 98810
     title = "EVTNAME98800"
     desc = "EVTDESC98810"
-    
+
     trigger = {
         region = FRA_1884
         owned_by = THIS
@@ -521,11 +521,11 @@ province_event = {
             is_core = SLE
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -545,7 +545,7 @@ province_event = {
     id = 98811
     title = "EVTNAME98800"
     desc = "EVTDESC98810"
-    
+
     trigger = {
         OR = {
             region = FRA_1883
@@ -579,11 +579,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -604,7 +604,7 @@ province_event = {
     id = 98812
     title = "EVTNAME98800"
     desc = "EVTDESC98810"
-    
+
     trigger = {
         region = FRA_1893
         owned_by = THIS
@@ -638,11 +638,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -665,7 +665,7 @@ province_event = {
     id = 98815
     title = "EVTNAME98800"
     desc = "EVTDESC98815"
-    
+
     trigger = {
         region = FRA_1878
         owned_by = THIS
@@ -691,11 +691,11 @@ province_event = {
             is_core = GNE
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -715,7 +715,7 @@ province_event = {
     id = 98816
     title = "EVTNAME98800"
     desc = "EVTDESC98815"
-    
+
     trigger = {
         region = FRA_1883
         owned_by = THIS
@@ -741,11 +741,11 @@ province_event = {
             is_core = GNE
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -766,7 +766,7 @@ province_event = {
     id = 98817
     title = "EVTNAME98800"
     desc = "EVTDESC98815"
-    
+
     trigger = {
         region = FRA_1884
         owned_by = THIS
@@ -800,11 +800,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -825,7 +825,7 @@ province_event = {
     id = 98818
     title = "EVTNAME98800"
     desc = "EVTDESC98815"
-    
+
     trigger = {
         region = FRA_1788
         owned_by = THIS
@@ -867,11 +867,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -893,7 +893,7 @@ province_event = {
     id = 98820
     title = "EVTNAME98800"
     desc = "EVTDESC98820"
-    
+
     trigger = {
         region = FRA_1783
         owned_by = THIS
@@ -919,11 +919,11 @@ province_event = {
             is_core = SNG
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -942,7 +942,7 @@ province_event = {
     id = 98821
     title = "EVTNAME98800"
     desc = "EVTDESC98820"
-    
+
     trigger = {
         region = FRA_1788
         owned_by = THIS
@@ -976,11 +976,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1001,7 +1001,7 @@ province_event = {
     id = 98825
     title = "EVTNAME98800"
     desc = "EVTDESC98825"
-    
+
     trigger = {
         OR = {
             region = FRA_1808
@@ -1030,11 +1030,11 @@ province_event = {
             is_core = NIG
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1054,7 +1054,7 @@ province_event = {
     id = 98826
     title = "EVTNAME98800"
     desc = "EVTDESC98825"
-    
+
     trigger = {
         OR = {
             region = FRA_1927
@@ -1094,11 +1094,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1119,7 +1119,7 @@ province_event = {
     id = 98827
     title = "EVTNAME98800"
     desc = "EVTDESC98825"
-    
+
     trigger = {
         region = ENG_1825
         owned_by = THIS
@@ -1153,11 +1153,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1179,7 +1179,7 @@ province_event = {
     id = 98830
     title = "EVTNAME98800"
     desc = "EVTDESC98830"
-    
+
     trigger = {
         region = ENG_1818
         owned_by = THIS
@@ -1205,11 +1205,11 @@ province_event = {
             is_core = CHD
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1228,7 +1228,7 @@ province_event = {
     id = 98831
     title = "EVTNAME98800"
     desc = "EVTDESC98830"
-    
+
     trigger = {
         region = ENG_1825
         owned_by = THIS
@@ -1254,11 +1254,11 @@ province_event = {
             is_core = CHD
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1280,7 +1280,7 @@ province_event = {
     id = 98832
     title = "EVTNAME98800"
     desc = "EVTDESC98830"
-    
+
     trigger = {
         region = EGY_1842
         owned_by = THIS
@@ -1322,11 +1322,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1348,7 +1348,7 @@ province_event = {
     id = 98833
     title = "EVTNAME98800"
     desc = "EVTDESC98830"
-    
+
     trigger = {
         region = FRA_1813
         owned_by = THIS
@@ -1382,11 +1382,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1407,7 +1407,7 @@ province_event = {
     id = 98834
     title = "EVTNAME98800"
     desc = "EVTDESC98830"
-    
+
     trigger = {
             region = TRI_1735
         owned_by = THIS
@@ -1441,11 +1441,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1469,7 +1469,7 @@ province_event = {
     id = 98835
     title = "EVTNAME98800"
     desc = "EVTDESC98835"
-    
+
     trigger = {
         OR = {
             region = ENG_1956
@@ -1506,11 +1506,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1530,7 +1530,7 @@ province_event = {
     id = 98836
     title = "EVTNAME98800"
     desc = "EVTDESC98835"
-    
+
     trigger = {
         region = SOK_1963
         owned_by = THIS
@@ -1556,11 +1556,11 @@ province_event = {
             is_core = CMR
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1583,7 +1583,7 @@ province_event = {
     id = 98837
     title = "EVTNAME98800"
     desc = "EVTDESC98837"
-    
+
     trigger = {
         OR = {
             region = FRA_1972
@@ -1612,11 +1612,11 @@ province_event = {
             is_core = GAB
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1636,7 +1636,7 @@ province_event = {
     id = 98838
     title = "EVTNAME98800"
     desc = "EVTDESC98837"
-    
+
     trigger = {
         region = FRA_1978
         owned_by = THIS
@@ -1667,11 +1667,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1693,7 +1693,7 @@ province_event = {
     id = 98840
     title = "EVTNAME98800"
     desc = "EVTDESC98840"
-    
+
     trigger = {
         OR = {
             region = FRA_1978
@@ -1731,11 +1731,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1756,7 +1756,7 @@ province_event = {
     id = 98841
     title = "EVTNAME98800"
     desc = "EVTDESC98840"
-    
+
     trigger = {
         region = BEL_1992
         owned_by = THIS
@@ -1787,11 +1787,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1812,7 +1812,7 @@ province_event = {
     id = 98842
     title = "EVTNAME98800"
     desc = "EVTDESC98840"
-    
+
     trigger = {
         region = BEL_1984
         owned_by = THIS
@@ -1843,11 +1843,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1868,7 +1868,7 @@ province_event = {
     id = 98843
     title = "EVTNAME98800"
     desc = "EVTDESC98840"
-    
+
     trigger = {
         region = BEL_1990
         owned_by = THIS
@@ -1899,11 +1899,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1925,7 +1925,7 @@ province_event = {
     id = 98845
     title = "EVTNAME98800"
     desc = "EVTDESC98845"
-    
+
     trigger = {
         region = BEL_1977
         owned_by = THIS
@@ -1951,11 +1951,11 @@ province_event = {
             is_core = CNG
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -1976,7 +1976,7 @@ province_event = {
     id = 98846
     title = "EVTNAME98800"
     desc = "EVTDESC98845"
-    
+
     trigger = {
         region = BEL_1984
         owned_by = THIS
@@ -2002,11 +2002,11 @@ province_event = {
             is_core = CNG
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2027,7 +2027,7 @@ province_event = {
     id = 98847
     title = "EVTNAME98800"
     desc = "EVTDESC98845"
-    
+
     trigger = {
         region = BEL_1992
         owned_by = THIS
@@ -2061,11 +2061,11 @@ province_event = {
             }           
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2087,7 +2087,7 @@ province_event = {
     id = 98848
     title = "EVTNAME98800"
     desc = "EVTDESC98845"
-    
+
     trigger = {
         OR = {
             region = BEL_1990
@@ -2124,11 +2124,11 @@ province_event = {
             }           
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2149,7 +2149,7 @@ province_event = {
     id = 98850
     title = "EVTNAME98800"
     desc = "EVTDESC98845"
-    
+
     trigger = {
         OR = {
             region = POR_2006
@@ -2178,11 +2178,11 @@ province_event = {
             is_core = CNG           
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2205,7 +2205,7 @@ province_event = {
     id = 98852
     title = "EVTNAME98800"
     desc = "EVTDESC98852"
-    
+
     trigger = {
         region = FRA_1965
         owned_by = THIS
@@ -2231,11 +2231,11 @@ province_event = {
             is_core = CAR
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2251,57 +2251,57 @@ province_event = {
 }
 
 #province_event = {
-#	id = 98853
-#	title = "EVTNAME98800"
-#	desc = "EVTDESC98852"
-#	
-#	trigger = {
-#		region = FRA_1970
-#		owned_by = THIS
-#		controlled_by = THIS
-#		any_neighbor_province = { is_core = CAR }
-#		owner = {
-#			civilized = yes
-#			NOT = { capital_scope = { continent = africa } }
-#		}
-#		OR = {
-#			AND = {
-#				owner = { owns = 1965 }
-#				CAR = { exists = no }
-#			}
-#			CAR = {
-#				vassal_of = THIS
-#				is_culture_group = THIS
-#			}
-#		}
-#		NOT = {
-#			is_core = CAR
-#		}
-#	}
-#	
-#	mean_time_to_happen = {
-#		months = 120
-#	}
-#	
-#	option = {
-#		name = "EVT98800OPTA"
-#		state_scope = {
-#			any_owned = {
-#				limit = {
-#					NOT = { is_core = CAR }
-#				}
-#				add_core = CAR
-#				any_pop = { militancy = -3 }
-#			}
-#		}
-#	}
+#    id = 98853
+#    title = "EVTNAME98800"
+#    desc = "EVTDESC98852"
+#    
+#    trigger = {
+#        region = FRA_1970
+#        owned_by = THIS
+#        controlled_by = THIS
+#        any_neighbor_province = { is_core = CAR }
+#        owner = {
+#            civilized = yes
+#            NOT = { capital_scope = { continent = africa } }
+#        }
+#        OR = {
+#            AND = {
+#                owner = { owns = 1965 }
+#                CAR = { exists = no }
+#            }
+#            CAR = {
+#                vassal_of = THIS
+#                is_culture_group = THIS
+#            }
+#        }
+#        NOT = {
+#            is_core = CAR
+#        }
+#    }
+#    
+#    mean_time_to_happen = {
+#        months = 120
+#    }
+#    
+#    option = {
+#        name = "EVT98800OPTA"
+#        state_scope = {
+#            any_owned = {
+#                limit = {
+#                    NOT = { is_core = CAR }
+#                }
+#                add_core = CAR
+#                any_pop = { militancy = -3 }
+#            }
+#        }
+#    }
 #}
 
 province_event = {
     id = 98854
     title = "EVTNAME98800"
     desc = "EVTDESC98852"
-    
+
     trigger = {
         OR = {
             region = ENG_1844
@@ -2338,11 +2338,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2365,7 +2365,7 @@ province_event = {
     id = 98855
     title = "EVTNAME98800"
     desc = "EVTDESC98852"
-    
+
     trigger = {
         region = BEL_1992
         owned_by = THIS
@@ -2407,11 +2407,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2433,7 +2433,7 @@ province_event = {
     id = 98856
     title = "EVTNAME98800"
     desc = "EVTDESC98852"
-    
+
     trigger = {
         region = BEL_1990
         owned_by = THIS
@@ -2467,11 +2467,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2492,7 +2492,7 @@ province_event = {
     id = 98857
     title = "EVTNAME98800"
     desc = "EVTDESC98852"
-    
+
     trigger = {
         region = SOK_1963
         owned_by = THIS
@@ -2523,11 +2523,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2550,7 +2550,7 @@ province_event = {
     id = 98858
     title = "EVTNAME98800"
     desc = "EVTDESC98858"
-    
+
     trigger = {
         OR = {
             region = EGY_1842
@@ -2579,11 +2579,11 @@ province_event = {
             is_core = SUD
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2605,7 +2605,7 @@ province_event = {
     id = 98860
     title = "EVTNAME98800"
     desc = "EVTDESC98860"
-    
+
     trigger = {
         OR = {
             region = ENG_2014
@@ -2634,11 +2634,11 @@ province_event = {
             is_core = ZAM
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2658,7 +2658,7 @@ province_event = {
     id = 98861
     title = "EVTNAME98800"
     desc = "EVTDESC98860"
-    
+
     trigger = {
         region = BEL_1987
         owned_by = THIS
@@ -2689,11 +2689,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2714,7 +2714,7 @@ province_event = {
     id = 98862
     title = "EVTNAME98800"
     desc = "EVTDESC98860"
-    
+
     trigger = {
         OR = {
             region = POR_2003
@@ -2749,11 +2749,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2776,7 +2776,7 @@ province_event = {
     id = 98865
     title = "EVTNAME98800"
     desc = "EVTDESC98865"
-    
+
     trigger = {
         region = ENG_2024
         owned_by = THIS
@@ -2802,11 +2802,11 @@ province_event = {
             is_core = KNY
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2826,7 +2826,7 @@ province_event = {
     id = 98866
     title = "EVTNAME98800"
     desc = "EVTDESC98865"
-    
+
     trigger = {
         region = ENG_2026
         owned_by = THIS
@@ -2852,11 +2852,11 @@ province_event = {
             is_core = KNY
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2878,7 +2878,7 @@ province_event = {
     id = 98870
     title = "EVTNAME98800"
     desc = "EVTDESC98870"
-    
+
     trigger = {
         region = ENG_2044
         owned_by = THIS
@@ -2904,11 +2904,11 @@ province_event = {
             is_core = TNZ
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2927,7 +2927,7 @@ province_event = {
     id = 98871
     title = "EVTNAME98800"
     desc = "EVTDESC98870"
-    
+
     trigger = {
         region = ENG_2039
         owned_by = THIS
@@ -2953,11 +2953,11 @@ province_event = {
             is_core = TNZ
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -2978,7 +2978,7 @@ province_event = {
     id = 98872
     title = "EVTNAME98800"
     desc = "EVTDESC98870"
-    
+
     trigger = {
         region = ENG_2036
         owned_by = THIS
@@ -3004,11 +3004,11 @@ province_event = {
             is_core = TNZ
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3035,7 +3035,7 @@ province_event = {
     id = 98873
     title = "EVTNAME98800"
     desc = "EVTDESC98870"
-    
+
     trigger = {
         region = POR_2060
         owned_by = THIS
@@ -3066,11 +3066,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3092,13 +3092,13 @@ province_event = {
     id = 98875
     title = "EVTNAME98800"
     desc = "EVTDESC98875"
-    
+
     trigger = {
         region = FRA_1803
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {
-			is_core = MLI
+            is_core = MLI
         }
         owner = {
             civilized = yes
@@ -3107,30 +3107,30 @@ province_event = {
         OR = {
             AND = {
                 owner = { owns = 2609 }
-				MLI = { exists = no }
+                MLI = { exists = no }
             }
-			MLI = {
+            MLI = {
                 vassal_of = THIS
                 is_culture_group = THIS
             }
         }
         NOT = {
-			is_core = MLI
+            is_core = MLI
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
             any_owned = {
                 limit = {
-					NOT = { is_core = MLI }
+                    NOT = { is_core = MLI }
                 }
-				add_core = MLI
+                add_core = MLI
                 remove_core = MOS
                 any_pop = { militancy = -3 }
             }
@@ -3142,13 +3142,13 @@ province_event = {
     id = 98876
     title = "EVTNAME98800"
     desc = "EVTDESC98875"
-    
+
     trigger = {
         region = FRA_1798
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {
-			is_core = MLI
+            is_core = MLI
         }
         owner = {
             civilized = yes
@@ -3157,35 +3157,35 @@ province_event = {
         OR = {
             AND = {
                 owner = { owns = 2609 }
-				MLI = { exists = no }
+                MLI = { exists = no }
             }
-			MLI = {
+            MLI = {
                 vassal_of = THIS
                 is_culture_group = THIS
             }
         }
         NOT = {
-			is_core = MLI
+            is_core = MLI
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
             any_owned = {
                 limit = {
-					NOT = { is_core = MLI }
+                    NOT = { is_core = MLI }
                 }
-				add_core = MLI
+                add_core = MLI
                 remove_core = MOS
                 any_pop = { militancy = -3 }
             }
         }
-		MLI = { add_accepted_culture = bambara }
+        MLI = { add_accepted_culture = bambara }
     }
 }
 
@@ -3193,13 +3193,13 @@ province_event = {
     id = 98877
     title = "EVTNAME98800"
     desc = "EVTDESC98875"
-    
+
     trigger = {
         region = FRA_1801
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {
-			is_core = MLI
+            is_core = MLI
         }
         owner = {
             civilized = yes
@@ -3208,34 +3208,34 @@ province_event = {
         OR = {
             AND = {
                 owner = { owns = 2609 }
-				MLI = { exists = no }
+                MLI = { exists = no }
             }
-			MLI = {
+            MLI = {
                 vassal_of = THIS
                 is_culture_group = THIS
             }
         }
         NOT = {
-			is_core = MLI
+            is_core = MLI
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
             any_owned = {
                 limit = {
-					NOT = { is_core = MLI }
+                    NOT = { is_core = MLI }
                 }
-				add_core = MLI
+                add_core = MLI
                 any_pop = { militancy = -3 }
             }
         }
-		MLI = {
+        MLI = {
             add_accepted_culture = bambara
             add_accepted_culture = fulbe
         }
@@ -3246,12 +3246,12 @@ province_event = {
     id = 98878
     title = "EVTNAME98800"
     desc = "EVTDESC98875"
-    
+
     trigger = {
         region = FRA_1775
         owned_by = THIS
         controlled_by = THIS
-		any_neighbor_province = { is_core = MLI }
+        any_neighbor_province = { is_core = MLI }
         owner = {
             civilized = yes
             NOT = { capital_scope = { continent = africa } }
@@ -3259,15 +3259,15 @@ province_event = {
         OR = {
             AND = {
                 owner = { owns = 2609 }
-				MLI = { exists = no }
+                MLI = { exists = no }
             }
-			MLI = {
+            MLI = {
                 vassal_of = THIS
                 is_culture_group = THIS
             }
         }
         NOT = {
-			is_core = MLI
+            is_core = MLI
             1775 = { owned_by = THIS }
             TRZ = {
                 vassal_of = THIS
@@ -3275,23 +3275,23 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
             any_owned = {
                 limit = {
-					NOT = { is_core = MLI }
+                    NOT = { is_core = MLI }
                 }
-				add_core = MLI
+                add_core = MLI
                 any_pop = { militancy = -3 }
             }
         }
-		MLI = { add_accepted_culture = maures }
+        MLI = { add_accepted_culture = maures }
     }
 }
 
@@ -3299,13 +3299,13 @@ province_event = {
     id = 98879
     title = "EVTNAME98800"
     desc = "EVTDESC98875"
-    
+
     trigger = {
         region = FRA_1798
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {
-			is_core = MLI
+            is_core = MLI
         }
         owner = {
             civilized = yes
@@ -3314,15 +3314,15 @@ province_event = {
         OR = {
             AND = {
                 owner = { owns = 2609 }
-				MLI = { exists = no }
+                MLI = { exists = no }
             }
-			MLI = {
+            MLI = {
                 vassal_of = THIS
                 is_culture_group = THIS
             }
         }
         NOT = {
-			is_core = MLI
+            is_core = MLI
             1901 = { owned_by = THIS }
             MOS = {
                 vassal_of = THIS
@@ -3330,19 +3330,19 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
             any_owned = {
                 limit = {
-					NOT = { is_core = MLI }
+                    NOT = { is_core = MLI }
                 }
-				add_core = MLI
+                add_core = MLI
                 remove_core = MOS
                 any_pop = { militancy = -3 }
             }
@@ -3355,7 +3355,7 @@ province_event = {
     id = 98880
     title = "EVTNAME98800"
     desc = "EVTDESC98880"
-    
+
     trigger = {
         OR = {
             region = TRI_1731
@@ -3384,11 +3384,11 @@ province_event = {
             is_core = LBY
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3410,7 +3410,7 @@ province_event = {
     id = 98881
     title = "EVTNAME98800"
     desc = "EVTDESC98880"
-    
+
     trigger = {
         region = ENG_1825
         owned_by = THIS
@@ -3441,11 +3441,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3468,7 +3468,7 @@ province_event = {
     id = 98883
     title = "EVTNAME98800"
     desc = "EVTDESC98883"
-    
+
     trigger = {
         OR = {
             region = ENG_2036
@@ -3502,11 +3502,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3527,7 +3527,7 @@ province_event = {
     id = 98884
     title = "EVTNAME98800"
     desc = "EVTDESC98884"
-    
+
     trigger = {
         OR = {
             region = POR_2003
@@ -3557,11 +3557,11 @@ province_event = {
             is_core = ANG
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3582,7 +3582,7 @@ province_event = {
     id = 98885
     title = "EVTNAME98800"
     desc = "EVTDESC98885"
-    
+
     trigger = {
         OR = {
             region = POR_2049
@@ -3613,11 +3613,11 @@ province_event = {
             is_core = MOZ
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3637,7 +3637,7 @@ province_event = {
     id = 98886
     title = "EVTNAME98800"
     desc = "EVTDESC98885"
-    
+
     trigger = {
         region = ENG_2039 
         owned_by = THIS
@@ -3673,11 +3673,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3699,7 +3699,7 @@ province_event = {
     id = 98890
     title = "EVTNAME98800"
     desc = "EVTDESC98890"
-    
+
     trigger = {
         region = MOR_1696
         owned_by = THIS
@@ -3729,11 +3729,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3754,7 +3754,7 @@ province_event = {
     id = 98891
     title = "EVTNAME98800"
     desc = "EVTDESC98891"
-    
+
     trigger = {
         region = MOR_1696
         owned_by = THIS
@@ -3782,11 +3782,11 @@ province_event = {
             is_core = MOR
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3807,7 +3807,7 @@ province_event = {
     id = 98892
     title = "EVTNAME98800"
     desc = "EVTDESC98892"
-    
+
     trigger = {
         OR = {
             region = FRA_1892
@@ -3846,11 +3846,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3872,7 +3872,7 @@ province_event = {
     id = 98893
     title = "EVTNAME98800"
     desc = "EVTDESC98893"
-    
+
     trigger = {
         region = FRA_1901
         owned_by = THIS
@@ -3898,11 +3898,11 @@ province_event = {
             is_core = MOS
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3911,7 +3911,7 @@ province_event = {
                     NOT = { is_core = MOS }
                 }
                 add_core = MOS
-				remove_core = MLI
+                remove_core = MLI
                 any_pop = { militancy = -3 }
             }
         }
@@ -3922,7 +3922,7 @@ province_event = {
     id = 98894
     title = "EVTNAME98800"
     desc = "EVTDESC98893"
-    
+
     trigger = {
         OR = {
             region = FRA_1798
@@ -3950,17 +3950,17 @@ province_event = {
         NOT = {
             is_core = ASH
             2609 = { owned_by = THIS }
-			MLI = {
+            MLI = {
                 vassal_of = THIS
                 is_culture_group = THIS
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -3969,7 +3969,7 @@ province_event = {
                     NOT = { is_core = MOS }
                 }
                 add_core = MOS
-				remove_core = MLI
+                remove_core = MLI
                 any_pop = { militancy = -3 }
             }
         }
@@ -3981,7 +3981,7 @@ province_event = {
     id = 98895
     title = "EVTNAME98800"
     desc = "EVTDESC98895"
-    
+
     trigger = {
         region = ENG_2026
         owned_by = THIS
@@ -4012,11 +4012,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -4036,7 +4036,7 @@ province_event = {
     id = 98896
     title = "EVTNAME98800"
     desc = "EVTDESC98895"
-    
+
     trigger = {
         region = ENG_1844
         owned_by = THIS
@@ -4072,11 +4072,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 120
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -4098,7 +4098,7 @@ province_event = {
     id = 98900
     title = "EVTNAME98800"
     desc = "EVTDESC98900"
-    
+
     trigger = {
         OR = {
             region = ENG_2087
@@ -4133,7 +4133,7 @@ province_event = {
             is_core = SAF
         }
     }
-    
+
     mean_time_to_happen = {
         months = 60
         modifier = {
@@ -4141,7 +4141,7 @@ province_event = {
             region = ENG_2083
         }
     }
-    
+
     option = {
         name = "EVT98800OPTA"
         state_scope = {
@@ -4154,4 +4154,3 @@ province_event = {
         }
     }
 }
-

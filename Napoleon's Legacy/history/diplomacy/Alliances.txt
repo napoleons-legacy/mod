@@ -1,1347 +1,1346 @@
+alliance=
+    {
+        first="CAN"
+        second="HUD"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="CAN"
-		second="HUD"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="CAN"
+        second="NEN"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="CAN"
-		second="NEN"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRA"
+        second="NEH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRA"
-		second="NEH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRA"
+        second="IRE"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRA"
-		second="IRE"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRA"
+        second="MLT"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRA"
-		second="MLT"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="FRA"
-		second="DNW"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRA"
+        second="DNW"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 
 alliance=
-	{
-		first="BRI"
-		second="MLT"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRI"
+        second="MLT"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 ##Confederation of the Rhine##
 
 alliance=
-	{
-		first="BAD"
-		second="BAV"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="BRA"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="HES"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="FRM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="SAX"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="WST"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="WUR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="BAD"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAD"
+        second="BAV"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="BRA"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="HES"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="FRM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="SAX"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="WST"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="WUR"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="BAD"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAD"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAD"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAD"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAD"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAD"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAD"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAD"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAD"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="BRA"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="BRA"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="HES"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="HES"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="FRM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="FRM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="SAX"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="SAX"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="WST"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="WST"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="WUR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="WUR"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BAV"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BAV"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="HES"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="HES"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="FRM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="FRM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="SAX"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="SAX"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="WST"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="WST"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="WUR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="WUR"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="BRA"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="BRA"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="BAD"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="BAD"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="BRA"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="BRA"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="FRM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="FRM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="SAX"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="SAX"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="WST"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="WST"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="WUR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="WUR"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="HES"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="HES"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="SAX"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="SAX"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="WST"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="WST"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="WUR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="WUR"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="FRM"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="FRM"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="WST"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="WST"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="WUR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="WUR"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SAX"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SAX"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="WUR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="WUR"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WST"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WST"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="BAD"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="BAD"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="WRZ"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="WRZ"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WUR"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WUR"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="SGM"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="SGM"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WRZ"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WRZ"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="SGM"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="SGM"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="COB"
-		second="MEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="COB"
+        second="MEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="COB"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="COB"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="COB"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="COB"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="COB"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="COB"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="COB"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="COB"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="COB"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="COB"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="COB"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="COB"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="MEI"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="MEI"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="MEI"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="MEI"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="MEI"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="MEI"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="MEI"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="MEI"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="MEI"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="MEI"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="MEI"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="MEI"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WEI"
-		second="BAV"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WEI"
+        second="BAV"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WEI"
-		second="NAS"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WEI"
+        second="NAS"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WEI"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WEI"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WEI"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WEI"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WEI"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WEI"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="WEI"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="WEI"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="NAS"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="NAS"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
 
 alliance=
-	{
-		first="NAS"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="NAS"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="NAS"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="LIP"
-		second="ANH"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="LIP"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="LIP"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="ANH"
-		second="HEK"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="ANH"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="HEK"
-		second="WEI"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="HEK"
-		second="MEC"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="HEK"
-		second="LIP"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="HEK"
-		second="BRA"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
-alliance=
-	{
-		first="MEC"
-		second="COB"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
+    {
+        first="NAS"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="NAS"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="NAS"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="LIP"
+        second="ANH"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="LIP"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="LIP"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="ANH"
+        second="HEK"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="ANH"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="HEK"
+        second="WEI"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="HEK"
+        second="MEC"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="HEK"
+        second="LIP"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="HEK"
+        second="BRA"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }
+
+alliance=
+    {
+        first="MEC"
+        second="COB"
+        end_date="1936.1.1"
+        start_date="1836.1.1"
+    }

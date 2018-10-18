@@ -303,9 +303,9 @@ id = 4662009
         2247 = {
             life_rating = 5
             add_province_modifier = {
-				name = gateway_to_harbor
-				duration = 3650
-			}
+                name = gateway_to_harbor
+                duration = 3650
+            }
         }
 
         prestige = 5
@@ -317,9 +317,9 @@ id = 4662009
         2279 = {
             life_rating = 5
             add_province_modifier = {
-				name = gateway_to_harbor
-				duration = 3650
-			}
+                name = gateway_to_harbor
+                duration = 3650
+            }
         }
 
         prestige = 5
@@ -331,9 +331,9 @@ id = 4662009
         2264 = {
             life_rating = 5
             add_province_modifier = {
-				name = gateway_to_harbor
-				duration = 3650
-			}
+                name = gateway_to_harbor
+                duration = 3650
+            }
         }
 
         prestige = 5

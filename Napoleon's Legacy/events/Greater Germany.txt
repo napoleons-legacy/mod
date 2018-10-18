@@ -19,7 +19,7 @@ country_event = {
     news_desc_short = "EVTDESC31510_NEWS_SHORT"
     picture = "threehurrahs"
     major = yes
-    
+
     trigger = {
         OR = {
             tag = AUS
@@ -59,11 +59,11 @@ country_event = {
             has_country_flag = austrian_destiny
         }
     }
-    
+
     mean_time_to_happen = {
         months = 6
     }
-    
+
     option = {
         name = "EVT31510OPTA"
         set_country_flag = austrian_destiny
@@ -127,7 +127,7 @@ country_event = {
             factor = 0
         }
     }
-    
+
     option = {
         name = "EVT31510OPTB"
         set_country_flag = austrian_destiny
@@ -222,7 +222,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31510OPTC"
         set_country_flag = austrian_destiny
@@ -304,7 +304,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31510OPTD"
         set_country_flag = austrian_destiny
@@ -342,9 +342,9 @@ country_event = {
     id = 31511
     title = "EVTNAME31511" #Limited Autonomy
     desc = "EVTDESC31511"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31511OPTA"
         FROM = {
@@ -401,7 +401,7 @@ country_event = {
     desc = "EVTDESC31512"
 
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31511OPTA"
         FROM = {
@@ -462,7 +462,7 @@ country_event = {
     title = "EVTNAME31515" #The Greater Germany Question
     desc = "EVTDESC31515"
     major = yes
-    
+
     trigger = {
         OR = {
             tag = AUS
@@ -491,11 +491,11 @@ country_event = {
         }
         NOT = { has_country_flag = austrian_destiny }
     }
-    
+
     mean_time_to_happen = {
         months = 12
     }
-    
+
     option = {
         name = "EVT31515OPTA"
         set_country_flag = wants_to_unify
@@ -565,7 +565,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31515OPTB"
         set_country_flag = wants_to_unify
@@ -657,7 +657,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31515OPTC"
         clr_country_flag = wants_to_unify
@@ -745,9 +745,9 @@ country_event = {
     news_desc_short = "EVTDESC31531_NEWS_SHORT"
     picture = "threehurrahs"
     major = yes
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31516OPTA"
         badboy = 40
@@ -822,7 +822,7 @@ country_event = {
             factor = 0
         }
     }
-    
+
     option = {
         name = "EVT31516OPTB"
         badboy = 20
@@ -864,7 +864,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31516OPTC"
         FROM = { clr_country_flag = wants_to_unify }
@@ -910,9 +910,9 @@ country_event = {
     id = 31517
     title = "EVTNAME31512"
     desc = "EVTDESC31517"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31511OPTA"
         random_country = {
@@ -988,9 +988,9 @@ country_event = {
     news_desc_short = "EVTDESC31518_NEWS_SHORT"
     picture = "threehurrahs"
     major = yes
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31518OPTA"
         badboy = 20
@@ -1053,7 +1053,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31518OPTB"
         prestige = -25
@@ -1109,9 +1109,9 @@ country_event = {
     title = "EVTNAME31516" #Austria Petitions to Join Germany
     desc = "EVTDESC31519"                                                   
     major = yes
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31519OPTA"
         prestige = 10
@@ -1164,7 +1164,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31519OPTB"
         FROM = { clr_country_flag = wants_to_unify }
@@ -1216,9 +1216,9 @@ country_event = {
     news_desc_medium = "EVTDESC31520_NEWS_MEDIUM"
     news_desc_short = "EVTDESC31520_NEWS_SHORT"
     picture = "threehurrahs"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31511OPTA"
         random_owned = {
@@ -1276,7 +1276,7 @@ country_event = {
     news_desc_short = "EVTDESC31521_NEWS_SHORT"
     major = yes
     picture = "unite"
-    
+
     trigger = {
         OR = {
             tag = AUS
@@ -1290,11 +1290,11 @@ country_event = {
             owns = 616
         }
     }
-    
+
     mean_time_to_happen = {
         months = 6
     }
-    
+
     option = {
         name = "EVT31521OPTA"
         set_country_flag = austria_dissolved
@@ -1346,7 +1346,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 31522
     title = "EVTNAME31522"
     desc = "EVTDESC31522"
@@ -1366,7 +1366,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 31523
     title = "EVTNAME31522"
     desc = "EVTDESC31523"
@@ -1385,9 +1385,9 @@ country_event = {
     title = "EVTNAME31512"
     desc = "EVTDESC31526"
     picture = "celebration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31523OPTA"
         FROM = {
@@ -1422,7 +1422,7 @@ country_event = {
     title = "EVTNAME31515" #The Greater Germany Question
     desc = "EVTDESC31530"
     picture = "greatpowers"
-    
+
     trigger = {
         tag = AUS
         is_greater_power = no
@@ -1449,11 +1449,11 @@ country_event = {
         }
         NOT = { has_country_flag = austrian_destiny }
     }
-    
+
     mean_time_to_happen = {
         months = 12
     }
-    
+
     option = {
         name = "EVT31530OPTA"
         set_country_flag = wants_to_unify
@@ -1502,7 +1502,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31515OPTC"
         clr_country_flag = wants_to_unify
@@ -1579,9 +1579,9 @@ country_event = {
     news_desc_short = "EVTDESC31531_NEWS_SHORT"
     picture = "threehurrahs"
     major = yes
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT31518OPTA"
         badboy = 10
@@ -1617,7 +1617,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT31531OPTA"
         FROM = { clr_country_flag = wants_to_unify }

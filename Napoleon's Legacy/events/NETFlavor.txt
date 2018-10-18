@@ -1,7 +1,7 @@
 #####################################################
-#													#
-#           Netherlands events						#
-#													#
+#                                                    #
+#           Netherlands events                        #
+#                                                    #
 #####################################################
 #Aceh is Conquered/Guerrilla War
 country_event = {
@@ -15,7 +15,7 @@ country_event = {
         civilized = yes
         owns = 1405
         ATJ = { exists = no }
-		NOT = { has_country_flag = sunni_country }
+        NOT = { has_country_flag = sunni_country }
         year = 1890
     }
 
@@ -51,7 +51,7 @@ province_event = {
     trigger = {
         OR = {
             owned_by = ATJ
-			owner = { has_country_flag = sunni_country }
+            owner = { has_country_flag = sunni_country }
         }
         is_core = ATJ
         has_global_flag = aceh_jihad

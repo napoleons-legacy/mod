@@ -35,13 +35,13 @@ border_policy = open_borders
 
 ruling_party = ATJ_conservative
 upper_house = {
-	fascist = 0
-	liberal = 15
-	conservative = 70
-	reactionary = 15
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 15
+    conservative = 70
+    reactionary = 15
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 # Starting Consciousness
@@ -54,5 +54,5 @@ flintlock_rifles = 1
 
 oob = "ATJ_oob.txt"
 1861.1.1 = {
-	oob = "/1861/ATJ_oob.txt"
+    oob = "/1861/ATJ_oob.txt"
 }

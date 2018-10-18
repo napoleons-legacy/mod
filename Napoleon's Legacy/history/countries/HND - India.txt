@@ -19,13 +19,13 @@ literacy = 0.02
 
 ruling_party = HND_conservative
 upper_house = {
-	fascist = 0
-	liberal = 11
-	conservative = 73
-	reactionary = 16
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 11
+    conservative = 73
+    reactionary = 16
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 # Starting Consciousness
@@ -53,7 +53,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = hindu_country

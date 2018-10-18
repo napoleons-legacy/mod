@@ -6,7 +6,7 @@ add_core = BRU
 trade_goods = timber
 life_rating = 25
 1860.1.1 = {
-	owner = NET
-	controller = NET
-	colonial = 2
+    owner = NET
+    controller = NET
+    colonial = 2
 }

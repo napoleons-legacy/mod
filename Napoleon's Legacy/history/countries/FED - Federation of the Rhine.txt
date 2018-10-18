@@ -37,15 +37,13 @@ citizens_rights = culture_voting_only
 
 ruling_party = GER_conservative
 upper_house = {
-	fascist = 0
-	liberal = 55
-	conservative = 25
-	reactionary = 5
-	anarcho_liberal = 5
-	socialist = 5
-	communist = 5
+    fascist = 0
+    liberal = 55
+    conservative = 25
+    reactionary = 5
+    anarcho_liberal = 5
+    socialist = 5
+    communist = 5
 }
 
 schools = army_tech_school
-
-

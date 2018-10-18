@@ -106,15 +106,15 @@ country_event = {
         set_country_flag = arab_revolt
         set_global_flag = arab_revolt_has_begun
         random_owned = {
-			limit = { owner = { accepted_culture = mashriqi } }
+            limit = { owner = { accepted_culture = mashriqi } }
             owner = { remove_accepted_culture = mashriqi }
         }
         random_owned = {
-			limit = { owner = { accepted_culture = misri } }
+            limit = { owner = { accepted_culture = misri } }
             owner = { remove_accepted_culture = misri }
         }
         random_owned = {
-			limit = { owner = { accepted_culture = bedouin } }
+            limit = { owner = { accepted_culture = bedouin } }
             owner = { remove_accepted_culture = bedouin }
         }
         any_pop = {
@@ -177,18 +177,18 @@ country_event = {
         set_country_flag = arab_revolt
         set_global_flag = arab_revolt_has_begun
         prestige = -10
-		random_owned = {
-			limit = { owner = { accepted_culture = mashriqi } }
-			owner = { remove_accepted_culture = mashriqi }
-		}
-		random_owned = {
-			limit = { owner = { accepted_culture = misri } }
-			owner = { remove_accepted_culture = misri }
-		}
-		random_owned = {
-			limit = { owner = { accepted_culture = bedouin } }
-			owner = { remove_accepted_culture = bedouin }
-		}
+        random_owned = {
+            limit = { owner = { accepted_culture = mashriqi } }
+            owner = { remove_accepted_culture = mashriqi }
+        }
+        random_owned = {
+            limit = { owner = { accepted_culture = misri } }
+            owner = { remove_accepted_culture = misri }
+        }
+        random_owned = {
+            limit = { owner = { accepted_culture = bedouin } }
+            owner = { remove_accepted_culture = bedouin }
+        }
         any_country = {
             limit = {
                 any_core = { owned_by = THIS }
@@ -200,7 +200,7 @@ country_event = {
                 }
             }
             country_event = 96101
-			all_core = { remove_core = THIS }
+            all_core = { remove_core = THIS }
         }
         any_pop = {
             limit = {

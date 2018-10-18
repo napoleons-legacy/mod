@@ -101,8 +101,8 @@ country_event = {
         any_owned = {
             limit = { region = DAI_1380 }
             secede_province = NET
-			1380 = { trade_goods = coffee }
-		}
+            1380 = { trade_goods = coffee }
+        }
         ai_chance = { factor = 10 }
     }
 
@@ -473,7 +473,7 @@ country_event = {
                         }
                     }
                 }
-				is_vassal = no
+                is_vassal = no
                 exists = yes
                 civilized = no
                 neighbour = THIS
@@ -823,22 +823,22 @@ country_event = {
         NET = { country_event = 95656 }
         prestige = -10
         random_owned = {
-			limit = { owner = { has_country_modifier = uncivilized_isolationism }}
+            limit = { owner = { has_country_modifier = uncivilized_isolationism }}
             owner = {
                 remove_country_modifier = uncivilized_isolationism
                 add_country_modifier = {
                     name = "western_influences"
                     duration = -1
                 }
-			}
-		}
-		random_owned = {
-			limit = { NOT = { owner = { is_culture_group = east_asian } } }
-			owner = {
-				remove_country_modifier = isolationist_foreign_naval_officers
-				remove_country_modifier = isolationist_foreign_naval_schools
-				remove_country_modifier = isolationist_foreign_officers
-				remove_country_modifier = isolationist_foreign_training
+            }
+        }
+        random_owned = {
+            limit = { NOT = { owner = { is_culture_group = east_asian } } }
+            owner = {
+                remove_country_modifier = isolationist_foreign_naval_officers
+                remove_country_modifier = isolationist_foreign_naval_schools
+                remove_country_modifier = isolationist_foreign_officers
+                remove_country_modifier = isolationist_foreign_training
             }
         }
         random_owned = {
@@ -866,7 +866,7 @@ country_event = {
                 }
             }
         }
-		ai_chance = { factor = 100 }
+        ai_chance = { factor = 100 }
         }
 
 
