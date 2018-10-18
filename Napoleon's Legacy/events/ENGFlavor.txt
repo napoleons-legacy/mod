@@ -2171,8 +2171,6 @@ country_event = {
 		2087 = { any_pop = { limit = { type = artisans has_pop_culture = british } pop_type = soldiers } }
 	}
 }
-    }
-}
 
 #Canada cores on Alaska
 country_event = {

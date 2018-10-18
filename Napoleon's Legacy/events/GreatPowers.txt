@@ -2422,7 +2422,6 @@ country_event = {
 					tag = NOR
 					tag = RUS
 					tag = TSA
-					tag =
 					AND = {
 						primary_culture = north_german
 						is_greater_power = yes

@@ -747,7 +747,6 @@ country_event = {
     }
 }
 
-
 # FRA wins against BOR
 country_event = {
     id = 86030
@@ -800,7 +799,6 @@ country_event = {
         set_global_flag = French_victory_REP
     }
 }
-
 
 # BOR wins against FRA
 country_event = {
@@ -1094,7 +1092,9 @@ country_event = {
 
 # FED declares war on the non-AFA French nation
 country_event = {
-
+    title = "EVTNAME37243"
+    desc = "EVTDESC37243"
+    picture = "Monarchy"
     id = 37243
 
     trigger = {
@@ -1112,10 +1112,6 @@ country_event = {
     mean_time_to_happen =  {
         days = 5
     }
-
-    title = "EVTNAME37243"
-    desc = "EVTDESC37243"
-    picture = "Monarchy"
 
     option = {
         name = "EVTOPTA37243"
@@ -1149,7 +1145,9 @@ country_event = {
 
 #FED declares war on the non-AFA French nation (BOR exists)
 country_event = {
-
+    title = "EVTNAME37243"
+    desc = "EVTDESC37243"
+    picture = "Monarchy"
     id = 37244
 
     trigger = {
@@ -1170,10 +1168,6 @@ country_event = {
         days = 5
 
     }
-
-    title = "EVTNAME37243"
-    desc = "EVTDESC37243"
-    picture = "Monarchy"
 
     option = {
         name = "EVTOPTA37243"
@@ -1204,7 +1198,6 @@ country_event = {
         }
     }
 }
-
 
 #FED makes peace with France, wins war
 country_event = {

@@ -1,39 +1,3 @@
-country_event = {
-	id = 44351
-	title = "EVTNAME44351"
-	desc = "EVTDESC44351"
-	picture = "confederation"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVT44351OPTA"
-		set_country_flag = promised_national_railway
-		prestige = 5
-		COL = {
-			all_core = { add_core = CAN }
-		}
-		FROM = {
-			any_owned = {
-				limit = { is_core = COL }
-				secede_province = CAN
-			}
-		}
-		ai_chance = {
-			factor = 95
-		}
-	}
-
-	option = {
-		name = "EVT44351OPTB"
-		set_country_flag = refused_columbia
-		prestige = -10
-		ai_chance = {
-			factor = 5
-		}
-	}
-}
-
 #The Pacific Scandal
 country_event = {
 	id = 44300
