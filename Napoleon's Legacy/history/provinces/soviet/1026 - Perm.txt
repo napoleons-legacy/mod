@@ -2,13 +2,6 @@ owner = RUS
 controller = RUS
 add_core = RUS
 add_core = URA
-trade_goods = iron
+trade_goods = coal
 life_rating = 35
 colonial = 2
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = artillery_factory
-		upgrade = yes
-	} 
-}

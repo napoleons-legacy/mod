@@ -2,16 +2,17 @@
 #under the rule of Ottoman Empire in 1836  
 #Ulcinj (36000/9000 POPS) 
 800 = {
+
+	soldiers = {
+		culture = serb
+		religion = sunni
+		size = 300
+	}
+
 	clergymen = {
 		culture = serb
 		religion = orthodox
-		size = 50
-	}
-	
-	bureaucrats = {
-		culture = serb
-		religion = orthodox
-		size = 20
+		size = 100
 	}
 
 	artisans = {
@@ -23,25 +24,19 @@
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 7050
-	}
-	
-	farmers = {
-		culture = serb
-		religion = sunni
-		size = 600
+		size = 7350
 	}
 
 	clergymen = {
 		culture = albanian
 		religion = sunni
-		size = 25
+		size = 100
 	}
 
 	artisans = {
 		culture = albanian
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	soldiers = {
@@ -58,16 +53,29 @@
 }
 #Niksic (52000/13000 POPS) 
 2569 = {
-	clergymen = {
+	
+	aristocrats = {
 		culture = serb
 		religion = orthodox
 		size = 100
 	}
 	
-	bureaucrats = {
+	officers = {
 		culture = serb
 		religion = orthodox
-		size = 50
+		size = 100
+	}
+	
+	soldiers = {
+		culture = serb
+		religion = orthodox
+		size = 100
+	}
+	
+	clergymen = {
+		culture = serb
+		religion = orthodox
+		size = 100
 	}
 
 	artisans = {
@@ -75,11 +83,17 @@
 		religion = orthodox
 		size = 500
 	}
+	
+	farmers = {
+		culture = serb
+		religion = orthodox
+		size = 4000
+	}
 
 	serfs = {
 		culture = serb
 		religion = orthodox
-		size = 11400
+		size = 7100
 	}
 
 	aristocrats = {
@@ -87,17 +101,23 @@
 		religion = sunni
 		size = 250
 	}
+	
+	officers = {
+		culture = bosniak
+		religion = sunni
+		size = 100
+	}
 
 	clergymen = {
 		culture = bosniak
 		religion = sunni
-		size = 25
+		size = 100
 	}
 
 	artisans = {
 		culture = bosniak
 		religion = sunni
-		size = 75
+		size = 100
 	}
 
 	soldiers = {
@@ -109,7 +129,7 @@
 	farmers = {
 		culture = bosniak
 		religion = sunni
-		size = 5825
+		size = 5725
 	}
 }
 #under the rule of Montenegro in 1836  
@@ -167,10 +187,17 @@
 #under the rule of Ottoman Empire in 1836  
 #Pljevlja (52000/13000 POPS) #now part of Montenegro
 2577 = {
+
+	soldiers = {
+		culture = serb
+		religion = orthodox
+		size = 520
+	}
+
 	clergymen = {
 		culture = serb
 		religion = orthodox
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -178,11 +205,17 @@
 		religion = orthodox
 		size = 250
 	}
+	
+	farmers = {
+		culture = serb
+		religion = orthodox
+		size = 3170
+	}
 
 	serfs = {
 		culture = serb
 		religion = orthodox
-		size = 8175
+		size = 5175
 	}
 
 	aristocrats = {
@@ -194,13 +227,13 @@
 	clergymen = {
 		culture = bosniak
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	artisans = {
 		culture = bosniak
 		religion = sunni
-		size = 400
+		size = 300
 	}
 
 	soldiers = {
@@ -214,13 +247,7 @@
 		religion = sunni
 		size = 3000
 	}
-	
-	farmers = {
-		culture = serb
-		religion = sunni
-		size = 650
-	}
-	
+
 	farmers = {
 		culture = gypsy
 		religion = sunni
@@ -231,6 +258,18 @@
 #under the rule of Austria in 1836  
 #Kotor (64000/16000 POPS) 
 2582 = {
+	aristocrats = {
+		culture = croat
+		religion = catholic
+		size = 50
+	}
+	
+	officers = {
+		culture = croat
+		religion = catholic
+		size = 10
+	}
+
 	clergymen = {
 		culture = croat
 		religion = catholic
@@ -261,10 +300,16 @@
 		size = 350
 	}
 	
-	farmers = {
+	aristocrats = {
 		culture = serb
-		religion = catholic
-		size = 350
+		religion = orthodox
+		size = 200
+	}
+	
+	officers = {
+		culture = serb
+		religion = orthodox
+		size = 10
 	}
 
 	clergymen = {
@@ -289,6 +334,48 @@
 		culture = serb
 		religion = orthodox
 		size = 10225
+	}
+	
+	farmers = {
+		culture = serb
+		religion = catholic
+		size = 350
+	}
+	
+	aristocrats = {
+		culture = north_italian
+		religion = catholic
+		size = 50
+	}
+	
+	officers = {
+		culture = north_italian
+		religion = catholic
+		size = 10
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 100
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 100
+	}
+
+	farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 100
 	}
 
 }

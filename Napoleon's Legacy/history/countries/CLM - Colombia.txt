@@ -7,6 +7,7 @@ nationalvalue = nv_order
 literacy = 0.06
 non_state_culture_literacy = 0.01
 civilized = yes
+prestige = 3
 
 # Political reforms
 slavery = freedom_of_womb
@@ -16,7 +17,7 @@ public_meetings = yes_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
-political_parties = non_secret_ballots
+political_parties = harassment
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -33,6 +34,9 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = CLM_liberal
 last_election = 1832.3.10
@@ -45,6 +49,9 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+decision = CLM_1836_setup
+set_country_flag = new_world_nation
 
 # Technologies
 post_napoleonic_thought = 1
@@ -60,7 +67,7 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 
 # Inventions
 

@@ -1,0 +1,44 @@
+political_decisions = {
+
+    BRPR_compromise = {
+        potential = {
+            tag = REI
+            NOT = {
+                has_country_flag = BRPR_union_done
+                exists = POR
+                exists = BRZ
+            }
+            owns = 2447
+            owns = 521
+        }
+
+        allow = {
+            average_consciousness = 5
+            central_bank_money_bill_printing = 1
+            nationalism_n_imperialism = 1
+        }
+
+        effect = {
+            set_country_flag = BRPR_union_done
+            BRZ = {
+                all_core = {
+                    remove_core = BRZ
+                }
+            }
+            POR = {
+                all_core = {
+                    remove_core = POR
+                }
+            clr_country_flag = move_PR
+            clr_country_flag = stay_BR
+            remove_country_modifier = UR_tensions
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+
+}

@@ -5,7 +5,7 @@
 #################################################################################
 
 country_event = {
-    
+
     id = 800060
     title = "EVTNAME800060" # Spread of Communism
     desc = "EVTDESC800060"
@@ -16,7 +16,7 @@ country_event = {
         money = 20000
         government = proletarian_dictatorship
         any_neighbor_country = {
-            NOT = { 
+            NOT = {
                 government = proletarian_dictatorship
                 ruling_party_ideology = communist
                 alliance_with = THIS
@@ -46,7 +46,7 @@ country_event = {
             factor = 1.5
             is_greater_power = no
             is_secondary_power = yes
-        }       
+        }
         modifier = {
             factor = 3
             is_greater_power = no
@@ -62,7 +62,7 @@ country_event = {
                 any_neighbor_province = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             government = proletarian_dictatorship
                             ruling_party_ideology = communist
                             alliance_with = THIS
@@ -75,7 +75,7 @@ country_event = {
                 limit = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             government = proletarian_dictatorship
                             ruling_party_ideology = communist
                             alliance_with = THIS
@@ -105,9 +105,9 @@ country_event = {
                         country_event = 800065 #Discovered
                     }
                 }
-            }       
+            }
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 75
             modifier = {
                 factor = 0.5
@@ -117,12 +117,12 @@ country_event = {
                 factor = 0.3
                 badboy = 0.8
             }
-        }       
+        }
     }
     option = {
         name = "EVT800060OPTB"
         prestige = -5
-        ai_chance = { 
+        ai_chance = {
             factor = 25
             modifier = {
                 factor = 2
@@ -137,7 +137,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800061
     title = "EVTNAME800061" # Spread of Fascism
     desc = "EVTDESC800061"
@@ -148,7 +148,7 @@ country_event = {
         money = 20000
         government = fascist_dictatorship
         any_neighbor_country = {
-            NOT = { 
+            NOT = {
                 government = fascist_dictatorship
                 ruling_party_ideology = fascist
                 alliance_with = THIS
@@ -178,7 +178,7 @@ country_event = {
             factor = 1.5
             is_greater_power = no
             is_secondary_power = yes
-        }       
+        }
         modifier = {
             factor = 3
             is_greater_power = no
@@ -194,7 +194,7 @@ country_event = {
                 any_neighbor_province = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             government = fascist_dictatorship
                             ruling_party_ideology = fascist
                             alliance_with = THIS
@@ -208,7 +208,7 @@ country_event = {
                 limit = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             government = fascist_dictatorship
                             ruling_party_ideology = fascist
                             alliance_with = THIS
@@ -239,9 +239,9 @@ country_event = {
                         country_event = 800065 #Discovered
                     }
                 }
-            }       
+            }
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 75
             modifier = {
                 factor = 0.5
@@ -251,12 +251,12 @@ country_event = {
                 factor = 0.3
                 badboy = 0.8
             }
-        }       
+        }
     }
     option = {
         name = "EVT800060OPTB"
         prestige = -5
-        ai_chance = { 
+        ai_chance = {
             factor = 25
             modifier = {
                 factor = 2
@@ -271,7 +271,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800062
     title = "EVTNAME800062" # Spread of Anarcho-Liberalism
     desc = "EVTDESC800062"
@@ -282,7 +282,7 @@ country_event = {
         money = 20000
         government = bourgeois_dictatorship
         any_neighbor_country = {
-            NOT = { 
+            NOT = {
                 government = bourgeois_dictatorship
                 ruling_party_ideology = anarcho_liberal
                 alliance_with = THIS
@@ -314,7 +314,7 @@ country_event = {
             factor = 1.5
             is_greater_power = no
             is_secondary_power = yes
-        }       
+        }
         modifier = {
             factor = 3
             is_greater_power = no
@@ -330,7 +330,7 @@ country_event = {
                 any_neighbor_province = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             government = bourgeois_dictatorship
                             ruling_party_ideology = anarcho_liberal
                             alliance_with = THIS
@@ -344,7 +344,7 @@ country_event = {
                 limit = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             government = bourgeois_dictatorship
                             ruling_party_ideology = anarcho_liberal
                             alliance_with = THIS
@@ -369,9 +369,9 @@ country_event = {
                         country_event = 800065 #Discovered
                     }
                 }
-            }       
+            }
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 75
             modifier = {
                 factor = 0.5
@@ -397,12 +397,12 @@ country_event = {
                 factor = 0.1
                 war_policy = pacifism
             }
-        }       
+        }
     }
     option = {
         name = "EVT800060OPTB"
         prestige = -5
-        ai_chance = { 
+        ai_chance = {
             factor = 25
             modifier = {
                 factor = 2
@@ -433,7 +433,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800063
     title = "EVTNAME800063" # Spread of Democracy
     desc = "EVTDESC800063"
@@ -449,7 +449,7 @@ country_event = {
         is_ideology_enabled = fascist
         is_ideology_enabled = communist
         any_neighbor_country = {
-            NOT = { 
+            NOT = {
                 OR = {
                     government = democracy
                     government = hms_government
@@ -488,7 +488,7 @@ country_event = {
             factor = 1.5
             is_greater_power = no
             is_secondary_power = yes
-        }       
+        }
         modifier = {
             factor = 3
             is_greater_power = no
@@ -504,7 +504,7 @@ country_event = {
                 any_neighbor_province = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             OR = {
                                 government = democracy
                                 government = hms_government
@@ -525,7 +525,7 @@ country_event = {
                 limit = {
                     NOT = { owned_by = THIS }
                     owner = {
-                        NOT = { 
+                        NOT = {
                             OR = {
                                 government = democracy
                                 government = hms_government
@@ -557,9 +557,9 @@ country_event = {
                         country_event = 800065 #Discovered
                     }
                 }
-            }       
+            }
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 50
             modifier = {
                 factor = 0.5
@@ -585,12 +585,12 @@ country_event = {
                 factor = 0.1
                 war_policy = pacifism
             }
-        }       
+        }
     }
     option = {
         name = "EVT800060OPTB"
         prestige = -5
-        ai_chance = { 
+        ai_chance = {
             factor = 50
             modifier = {
                 factor = 2
@@ -635,7 +635,7 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 800065
     title = "EVTNAME800065" # Diplomatic Incident -- caused when spread of ideology is discovered
     desc = "EVTDESC800065"
@@ -663,7 +663,7 @@ country_event = {
             badboy = 2
             country_event = 800064
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 50
             modifier = {
                 factor = 0.5
@@ -682,7 +682,7 @@ country_event = {
                 FROM = { is_greater_power = yes }
                 is_greater_power = no
             }
-        }   
+        }
     }
     option = {
         name = "EVT800065OPTB"
@@ -695,7 +695,7 @@ country_event = {
             badboy = 1
             country_event = 800064
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 30
             modifier = {
                 factor = 1.5
@@ -715,7 +715,7 @@ country_event = {
             who = FROM
             value = -25
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 20
             modifier = {
                 factor = 1.5

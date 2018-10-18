@@ -99,7 +99,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 22000
 	}
@@ -143,7 +143,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 7000
 	}
@@ -187,32 +187,32 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 675
 	}
 
 
 	artisans = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 1800
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 275
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 24225
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 9000
 	}
@@ -606,7 +606,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 2000
 	}
@@ -780,7 +780,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 3000
 	}
@@ -1028,7 +1028,40 @@
 	farmers = {
 		culture = bedouin
 		religion = sunni
-		size = 1800
+		size = 1100
+	}
+}
+
+#Taoudenni - Now Bayuda (8000/2000 POPS)
+1806 = {
+	aristocrats = {
+		culture = beja
+		religion = sunni
+		size = 25
+	}
+
+	clergymen = {
+		culture = beja
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = beja
+		religion = sunni
+		size = 100
+	}
+
+	soldiers = {
+		culture = beja
+		religion = sunni
+		size = 25
+	}
+
+	farmers = {
+		culture = beja
+		religion = sunni
+		size = 500
 	}
 }
 #Kordofan Region (524000)
@@ -1039,12 +1072,6 @@
 		culture = sudanese
 		religion = sunni
 		size = 500
-	}
-
-	bureaucrats = {
-		culture = sudanese
-		religion = sunni
-		size = 25
 	}
 
 	officers = {
@@ -1074,13 +1101,13 @@
 	farmers = {
 		culture = sudanese
 		religion = sunni
-		size = 23875
+		size = 23900
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = sudanese
 		religion = animist
-		size = 19000
+		size = 50000
 	}
 }
 #Nuhud (164000/41000 POPS)
@@ -1122,7 +1149,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 15000
 	}
@@ -1134,11 +1161,29 @@
 		religion = sunni
 		size = 100
 	}
-	
-	bureaucrats = {
+
+	clergymen = {
 		culture = sudanese
 		religion = sunni
-		size = 25
+		size = 100
+	}
+
+	artisans = {
+		culture = sudanese
+		religion = sunni
+		size = 200
+	}
+
+	soldiers = {
+		culture = sudanese
+		religion = sunni
+		size = 200
+	}
+
+	farmers = {
+		culture = sudanese
+		religion = sunni
+		size = 10000
 	}
 	
 	aristocrats = {
@@ -1162,7 +1207,7 @@
 	farmers = {
 		culture = nuba
 		religion = animist
-		size = 16625
+		size = 16650
 	}
 
 	slaves = {
@@ -1190,7 +1235,7 @@
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = luo
 		religion = animist
 		size = 14775
 	}
@@ -1242,8 +1287,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = teda
+		religion = sunni
 		size = 4000
 	}
 }
@@ -1280,8 +1325,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = teda
+		religion = sunni
 		size = 10400
 	}
 
@@ -1348,31 +1393,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = ubangian
 		religion = animist
 		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = ubangian
 		religion = animist
 		size = 300
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = ubangian
 		religion = animist
 		size = 75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = ubangian
 		religion = animist
 		size = 5525
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = ubangian
 		religion = animist
 		size = 4000
 	}
@@ -1515,7 +1560,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 10000
 	}
@@ -1646,7 +1691,7 @@
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 950
 	}
@@ -1664,7 +1709,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 1100
 	}
@@ -1696,7 +1741,7 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 125
 	}
@@ -1720,9 +1765,55 @@
 	}
 	
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 1100
 	}
 
 }
+
+#PLACEHOLDER, former Kufra (16000/4000 POPS)
+1739 = {
+	aristocrats = {
+		culture = fur
+		religion = sunni
+		size = 25
+	}
+
+	officers = {
+		culture = fur
+		religion = sunni
+		size = 25
+	}
+
+	clergymen = {
+		culture = fur
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = fur
+		religion = sunni
+		size = 100
+	}
+
+	soldiers = {
+		culture = fur
+		religion = sunni
+		size = 200
+	}
+
+	farmers = {
+		culture = fur
+		religion = sunni
+		size = 500
+	}
+
+	slaves = {
+		culture = fur
+		religion = animist
+		size = 200
+	}
+}
+

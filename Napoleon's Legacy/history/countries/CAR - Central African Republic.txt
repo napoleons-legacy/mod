@@ -1,7 +1,10 @@
 capital = 1965
-primary_culture = french 
-culture = african_minor
-religion = catholic
+primary_culture = ubangian
+culture = azande
+culture = sara
+culture = fur
+culture = fulbe
+religion = animist
 government = democracy
 plurality = 0.0
 nationalvalue = nv_order
@@ -31,10 +34,13 @@ conscription = four_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = animist_country
 
 set_country_flag = post_colonial_country
 
-ruling_party = AZA_conservative
+ruling_party = CAR_conservative
 upper_house = {
 	fascist = 0
 	liberal = 16

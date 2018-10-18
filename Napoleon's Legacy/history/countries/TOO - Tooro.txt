@@ -1,6 +1,5 @@
 capital = 1789
 primary_culture = fulbe
-culture = african_minor
 religion = sunni
 government = theocracy
 plurality = 0.0
@@ -32,6 +31,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = TOO_conservative
 upper_house = {
@@ -44,7 +44,7 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = islamic_law
+set_country_flag = sunni_country
 
 # Technologies
 
@@ -55,4 +55,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "TOO_oob.txt"
-

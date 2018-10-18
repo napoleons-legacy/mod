@@ -75,31 +75,31 @@
 	}
 
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 25
 	}
 
 	clergymen = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 25
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 150
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 25
 	}
 
 	farmers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 2775
 	}
@@ -215,31 +215,31 @@
 	}
 
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 100
 	}
 
 	clergymen = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 50
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 300
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 50
 	}
 
 	farmers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 5500
 	}
@@ -460,7 +460,7 @@
 		size = 3000
 	}
 }
-#Sukhumi (72000/18000 POPS) #north_caucasian = abkhaz
+#Sukhumi (72000/18000 POPS) #circassian = abkhaz
 1095 = {
 	aristocrats = {
 		culture = georgian
@@ -493,19 +493,19 @@
 	}
 
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 150
 	}
 
 	clergymen = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 75
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 450
 	}
@@ -517,31 +517,31 @@
 	}
 
 	farmers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = orthodox
 		size = 28225
 	}
 
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 100
 	}
 
 	clergymen = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 50
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 250
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 50
 	}
@@ -565,7 +565,7 @@
 	clergymen = {
 		culture = turkish
 		religion = sunni
-		size = 50
+		size = 110
 	}
 
 	artisans = {
@@ -577,7 +577,7 @@
 	soldiers = {
 		culture = turkish
 		religion = sunni
-		size = 25
+		size = 110
 	}
 
 	farmers = {
@@ -585,11 +585,17 @@
 		religion = sunni
 		size = 2725
 	}
-
+	
+	soldiers = {
+		culture = georgian
+		religion = orthodox
+		size = 110
+	}
+	
 	clergymen = {
 		culture = georgian
 		religion = orthodox
-		size = 75
+		size = 110
 	}
 
 	artisans = {
@@ -604,10 +610,28 @@
 		size = 3725
 	}
 	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
+	artisans = {
+		culture = greek
+		religion = orthodox
+		size = 110
+	}
+	
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 1250
+		size = 1000
 	}
 
 	aristocrats = {

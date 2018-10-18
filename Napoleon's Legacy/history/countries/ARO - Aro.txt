@@ -2,6 +2,7 @@ capital = 1935
 primary_culture = ibo
 culture = tiv
 culture = ibibio
+culture = edo
 religion = animist
 government = absolute_monarchy
 plurality = 0.0
@@ -32,7 +33,11 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = animist_country
 
 ruling_party = ARO_conservative
 upper_house = {

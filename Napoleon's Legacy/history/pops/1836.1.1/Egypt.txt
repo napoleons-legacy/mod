@@ -3,37 +3,37 @@
 #Cairo (1004600/251150 POPS)
 1745 = {
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 750
 	}
 
 	bureaucrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 1450
 	}
 
 	officers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 450
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 1250
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 10000
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 1250
 	}
@@ -177,7 +177,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 9000
 	}
@@ -191,25 +191,25 @@
 #Dumyat (402600/100650 POPS)
 1746 = {
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 500
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 10000
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 5575
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 75
 	}
@@ -289,19 +289,19 @@
 #Tanta (341600/85400 POPS)
 1747 = {
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 750
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 5575
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 75
 	}
@@ -357,19 +357,19 @@
 #Mansura (256200/64050 POPS)
 1748 = {
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 600
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 2400
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 50
 	}
@@ -437,19 +437,19 @@
 #Ziqaziq (272600/68150 POPS)
 1749 = {
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 650
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 425
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 75
 	}
@@ -505,19 +505,19 @@
 #Giza (386400/96600 POPS)
 1750 = {
 	aristocrats = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 950
 	}
 
 	artisans = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 550
 	}
 
 	soldiers = {
-		culture = north_caucasian
+		culture = circassian
 		religion = sunni
 		size = 100
 	}
@@ -689,7 +689,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 6000
 	}

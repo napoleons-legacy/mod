@@ -165,7 +165,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = south_forest_bantu
 		religion = animist
 		size = 40300
 	}
@@ -233,7 +233,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 17300
 	}
@@ -302,7 +302,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = south_forest_bantu
 		religion = animist
 		size = 22000
 	}
@@ -362,41 +362,41 @@
 	farmers = {
 		culture = lunda
 		religion = animist
-		size = 497180
+		size = 307180
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = south_forest_bantu
 		religion = animist
 		size = 920
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = south_forest_bantu
 		religion = animist
 		size = 460
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = south_forest_bantu
 		religion = animist
 		size = 2380
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = south_forest_bantu
 		religion = animist
 		size = 1375
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = south_forest_bantu
 		religion = animist
 		size = 83450
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = chokwe
 		religion = animist
 		size = 33000
 	}
@@ -604,7 +604,7 @@
 	}
 
 	slaves = {
-		culture = mongo
+		culture = forest_bantu
 		religion = animist
 		size = 64670
 	}
@@ -648,7 +648,7 @@
 	}
 
 	slaves = {
-		culture = kingwana
+		culture = forest_bantu
 		religion = animist
 		size = 14670
 	}
@@ -686,7 +686,7 @@
 	}
 
 	slaves = {
-		culture = mongo
+		culture = forest_bantu
 		religion = animist
 		size = 25670
 	}
@@ -726,7 +726,7 @@
 	}
 
 	slaves = {
-		culture = mongo
+		culture = forest_bantu
 		religion = animist
 		size = 10000
 	}
@@ -770,7 +770,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 10000
 	}
@@ -808,7 +808,7 @@
 	}
 
 	slaves = {
-		culture = mongo
+		culture = ubangian
 		religion = animist
 		size = 14670
 	}
@@ -929,7 +929,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 7330
 	}
@@ -963,7 +963,7 @@
 	soldiers = {
 		culture = azande
 		religion = animist
-		size = 25
+		size = 100
 	}
 
 	farmers = {

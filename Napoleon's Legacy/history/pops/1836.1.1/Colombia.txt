@@ -553,25 +553,25 @@
 	}
 
 	clergymen = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 25
 	}
 
 	artisans = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 100
 	}
 
 	soldiers = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 25
 	}
 
 	farmers = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 1850
 	}
@@ -639,25 +639,25 @@
 	}
 
 	clergymen = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 10
 	}
 
 	artisans = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 50
 	}
 
 	soldiers = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 10
 	}
 
 	farmers = {
-		culture = guajiro
+		culture = amazonian #guajiro
 		religion = catholic
 		size = 930
 	}
@@ -1008,18 +1008,6 @@
 		size = 75
 	}
 
-	clergymen = {
-		culture = amazonian
-		religion = animist
-		size = 50
-	}
-
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 250
-	}
-
 	soldiers = {
 		culture = amazonian
 		religion = animist
@@ -1029,7 +1017,31 @@
 	farmers = {
 		culture = amazonian
 		religion = animist
-		size = 4575
+		size = 4875
+	}
+	
+	clergymen = {
+		culture = north_andean
+		religion = catholic
+		size = 5
+	}
+
+	artisans = {
+		culture = north_andean
+		religion = catholic
+		size = 5
+	}
+
+	soldiers = {
+		culture = north_andean
+		religion = catholic
+		size = 5
+	}
+
+	farmers = {
+		culture = north_andean
+		religion = catholic
+		size = 20
 	}
 }
 #Casanare (60000/15000 POPS)
@@ -1144,18 +1156,6 @@
 		size = 50
 	}
 
-	clergymen = {
-		culture = amazonian
-		religion = animist
-		size = 75
-	}
-
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 150
-	}
-
 	soldiers = {
 		culture = amazonian
 		religion = animist
@@ -1165,7 +1165,31 @@
 	farmers = {
 		culture = amazonian
 		religion = animist
-		size = 2700
+		size = 2925
+	}
+	
+	clergymen = {
+		culture = north_andean
+		religion = catholic
+		size = 5
+	}
+
+	artisans = {
+		culture = north_andean
+		religion = catholic
+		size = 5
+	}
+
+	soldiers = {
+		culture = north_andean
+		religion = catholic
+		size = 5
+	}
+
+	farmers = {
+		culture = north_andean
+		religion = catholic
+		size = 20
 	}
 
 }

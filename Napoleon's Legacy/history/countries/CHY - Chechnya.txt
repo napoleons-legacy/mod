@@ -1,6 +1,5 @@
 capital = 1055 #Grozny
 primary_culture = chechen
-culture = north_caucasian
 culture = circassian
 culture = dagestani
 religion = sunni
@@ -33,8 +32,9 @@ conscription = mandatory_service
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
-ruling_party = CHY_conservative
+set_country_flag = sunni_country
 
 foreign_weapons = yes_foreign_weapons
 foreign_artillery = yes_foreign_artillery
@@ -44,6 +44,7 @@ foreign_artillery = yes_foreign_artillery
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 
+ruling_party = CHY_conservative
 upper_house = {
 	fascist = 0
 	liberal = 20

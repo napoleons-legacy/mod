@@ -10,6 +10,7 @@ nationalvalue = nv_order
 literacy = 0.5
 non_state_culture_literacy = 0.01
 civilized = yes
+prestige = 5
 
 
 # Political reforms
@@ -36,6 +37,9 @@ conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = UBD_conservative
 upper_house = {
@@ -50,6 +54,8 @@ upper_house = {
 
 set_country_flag = ubd_substate
 decision = UBD_1836_setup
+
+oob = "UBD_oob.txt"
 
 # Technologies
 post_napoleonic_thought = 1
@@ -66,7 +72,7 @@ private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
 guild_based_production = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 

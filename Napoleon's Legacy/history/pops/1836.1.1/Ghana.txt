@@ -273,38 +273,38 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 1140
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 615
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 2975
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 615
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 54160
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = dyula
+		religion = sunni
 		size = 10500
 	}
 
@@ -341,37 +341,37 @@
 #Tamale (212000/53000 POPS)  
 1913 = {
 	aristocrats = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 350
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 175
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 1050
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 760
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 38160
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = akan
 		religion = animist
 		size = 3500
 	}
@@ -477,7 +477,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 17500
 	}
@@ -486,37 +486,37 @@
 #Yendi (128000/32000 POPS)  
 1916 = {
 	aristocrats = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 440
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 265
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 1315
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 840
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 22140
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = ewe
 		religion = animist
 		size = 7000
 	}

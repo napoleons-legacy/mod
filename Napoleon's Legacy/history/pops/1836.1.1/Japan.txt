@@ -35,13 +35,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1275
+		size = 7275
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 113225
+		size = 107225
 	}
 
 	aristocrats = {
@@ -97,13 +97,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 975
+		size = 5975
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 87425
+		size = 82425
 	}
 
 	aristocrats = {
@@ -213,13 +213,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1275
+		size = 6275
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 223675
+		size = 217675
 	}
 }
 #Matsue (548000/137000 POPS)
@@ -245,13 +245,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1075
+		size = 6075
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 97425
+		size = 92425
 	}
 
 	aristocrats = {
@@ -360,18 +360,6 @@
 		religion = animist
 		size = 30
 	}
-	
-	bureaucrats = {
-		culture = ainu
-		religion = animist
-		size = 70
-	}
-
-	clergymen = {
-		culture = ainu
-		religion = animist
-		size = 70
-	}
 
 	artisans = {
 		culture = ainu
@@ -382,18 +370,36 @@
 	farmers = {
 		culture = ainu
 		religion = animist
-		size = 4700
+		size = 4840
+	}
+	
+	clergymen = {
+		culture = japanese
+		religion = shinto
+		size = 5
+	}
+
+	artisans = {
+		culture = japanese
+		religion = shinto
+		size = 5
+	}
+
+	soldiers = {
+		culture = japanese
+		religion = shinto
+		size = 5
+	}
+
+	farmers = {
+		culture = japanese
+		religion = shinto
+		size = 10
 	}
 }
 #Nemuru - Meakan (15000/4000 POPS)
 1644 = {
 	aristocrats = {
-		culture = ainu
-		religion = animist
-		size = 20
-	}
-
-	clergymen = {
 		culture = ainu
 		religion = animist
 		size = 20
@@ -414,7 +420,31 @@
 	farmers = {
 		culture = ainu
 		religion = animist
-		size = 3760
+		size = 3780
+	}
+	
+	clergymen = {
+		culture = japanese
+		religion = shinto
+		size = 5
+	}
+
+	artisans = {
+		culture = japanese
+		religion = shinto
+		size = 5
+	}
+
+	soldiers = {
+		culture = japanese
+		religion = shinto
+		size = 5
+	}
+
+	farmers = {
+		culture = japanese
+		religion = shinto
+		size = 10
 	}
 }
 #Hokuriku Region (1892000)
@@ -460,7 +490,7 @@
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 169275
+		size = 144275
 	}
 
 	aristocrats = {
@@ -1172,13 +1202,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 2575
+		size = 16900
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 252000
+		size = 237675
 	}
 
 	aristocrats = {
@@ -1326,13 +1356,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1900
+		size = 23650
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 332250
+		size = 310600
 	}
 
 	aristocrats = {
@@ -1351,12 +1381,6 @@
 		culture = japanese
 		religion = shinto
 		size = 7000
-	}
-
-	soldiers = {
-		culture = japanese
-		religion = shinto
-		size = 725
 	}
 
 	farmers = {
@@ -1456,13 +1480,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 975
+		size = 13700
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 178375
+		size = 165650
 	}
 
 	aristocrats = {
@@ -1622,13 +1646,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1850
+		size = 11850
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 166550
+		size = 156550
 	}
 
 	aristocrats = {
@@ -1764,13 +1788,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 650
+		size = 4650
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 59175
+		size = 55175
 	}
 
 	aristocrats = {
@@ -1826,13 +1850,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1475
+		size = 9475
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 133375
+		size = 125375
 	}
 
 	aristocrats = {
@@ -1890,13 +1914,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 3000
+		size = 9000
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 87650
+		size = 81650
 	}
 
 	aristocrats = {
@@ -1958,13 +1982,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1000
+		size = 4000
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 68900
+		size = 65900
 	}
 
 	aristocrats = {
@@ -2032,13 +2056,13 @@
 	soldiers = {
 		culture = japanese
 		religion = shinto
-		size = 1225
+		size = 6225
 	}
 
 	farmers = {
 		culture = japanese
 		religion = shinto
-		size = 110525
+		size = 105525
 	}
 
 	aristocrats = {
@@ -2881,4 +2905,32 @@
 		size = 18225
 	}
 
+}
+
+#Sado - Old Reliance (2000/500 POPS)
+12 = {
+
+	clergymen = {
+		culture = japanese
+		religion = shinto
+		size = 250
+	}
+
+	artisans = {
+		culture = japanese
+		religion = shinto
+		size = 3500
+	}
+
+	soldiers = {
+		culture = japanese
+		religion = shinto
+		size = 1100
+	}
+
+	farmers = {
+		culture = japanese
+		religion = shinto
+		size = 20150
+	}
 }

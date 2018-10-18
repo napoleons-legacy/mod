@@ -52,19 +52,19 @@
 
 	clergymen = {
 		culture = mashriqi
-		religion = animist
+		religion = druze
 		size = 50
 	}
 
 	artisans = {
 		culture = mashriqi
-		religion = animist
+		religion = druze
 		size = 200
 	}
 
 	farmers = {
 		culture = mashriqi
-		religion = animist
+		religion = druze
 		size = 3750
 	}
 
@@ -84,6 +84,24 @@
 		culture = mashriqi
 		religion = shiite
 		size = 1850
+	}
+	
+	clergymen = {
+		culture = sephardic
+		religion = jewish
+		size = 25
+	}
+
+	artisans = {
+		culture = sephardic
+		religion = jewish
+		size = 50
+	}
+
+	farmers = {
+		culture = sephardic
+		religion = jewish
+		size = 925
 	}
 }
 #Palestine Region (236000)  #see Jordan.txt for balance of region
@@ -226,19 +244,19 @@
 
 	clergymen = {
 		culture = mashriqi
-		religion = animist
+		religion = druze
 		size = 25
 	}
 
 	artisans = {
 		culture = mashriqi
-		religion = animist
+		religion = druze
 		size = 100
 	}
 
 	farmers = {
 		culture = mashriqi
-		religion = animist
+		religion = druze
 		size = 875
 	}
 }

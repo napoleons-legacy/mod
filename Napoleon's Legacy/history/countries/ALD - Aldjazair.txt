@@ -1,5 +1,7 @@
 capital = 1707
 primary_culture = maghrebi
+culture = berber
+culture = tuareg
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -28,7 +30,9 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = ALD_conservative
 upper_house = {
@@ -41,6 +45,7 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = sunni_country
 
 foreign_training = yes_foreign_training
 foreign_weapons = yes_foreign_weapons
@@ -55,21 +60,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "ALD_oob.txt"
-
-1861.1.1 = {
-
-	# Political reforms
-	slavery = no_slavery
-
-	foreign_training = yes_foreign_training
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
-	army_schools = yes_army_schools
-
-	# Technologies
-	military_staff_system = 1
-	flintlock_rifles = 1
-
-	# Inventions
-
-}

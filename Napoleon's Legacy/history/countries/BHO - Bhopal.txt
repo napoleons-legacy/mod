@@ -30,7 +30,11 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = hindu_country
 
 ruling_party = BHO_conservative
 upper_house = {
@@ -51,25 +55,11 @@ foreign_weapons = yes_foreign_weapons
 flintlock_rifles = 1
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "BHO_oob.txt"
-1861.1.1 = {
-	oob = "/1861/BHO_oob.txt"
-}
-1861.1.1 = {
-	literacy = 0.10
-	non_state_culture_literacy = 0.10
-
-	#Military Reforms
-	foreign_training = yes_foreign_training
-	foreign_weapons = yes_foreign_weapons
-	foreign_officers = yes_foreign_officers
-
-	#Technologies
-	flintlock_rifles = 1
-	military_staff_system = 1
-}

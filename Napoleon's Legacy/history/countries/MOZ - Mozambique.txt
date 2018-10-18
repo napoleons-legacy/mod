@@ -1,8 +1,13 @@
 capital = 2049
-primary_culture = portuguese
-culture = swahili
+primary_culture = shona
+culture = makua
+culture = yao
+culture = tonga
 culture = nguni
-culture = shona
+culture = sena
+culture = nyasa
+culture = southern_bantu
+culture = swahili
 religion = catholic
 government = presidential_dictatorship
 plurality = 0.0
@@ -33,10 +38,13 @@ conscription = one_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 set_country_flag = post_colonial_country
 
-ruling_party = POR_conservative
+ruling_party = MOZ_communist
 upper_house = {
 	fascist = 0
 	liberal = 18

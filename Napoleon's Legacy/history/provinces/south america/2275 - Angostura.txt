@@ -2,5 +2,5 @@ owner = VNZ
 controller = VNZ
 add_core = GCO
 add_core = VNZ
-trade_goods = fruit
-life_rating = 20
+trade_goods = timber
+life_rating = 31

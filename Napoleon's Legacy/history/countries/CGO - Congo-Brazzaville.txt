@@ -1,11 +1,10 @@
 capital = 1977
-primary_culture = french 
-culture = bakongo
-culture = african_minor
+primary_culture = bakongo 
+culture = forest_bantu
 religion = catholic
 government = democracy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.04
 
 # Political reforms
@@ -32,10 +31,13 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 set_country_flag = post_colonial_country
 
-ruling_party = CNG_conservative
+ruling_party = CGO_communist
 upper_house = {
 	fascist = 0
 	liberal = 16

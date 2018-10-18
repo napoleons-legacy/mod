@@ -1,4 +1,6 @@
+add_core = AWS
+add_core = WRL
 trade_goods = cattle
 terrain = semidesert
-life_rating = 15
+life_rating = 10
 colonial = 1

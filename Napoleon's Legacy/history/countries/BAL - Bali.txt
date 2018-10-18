@@ -1,7 +1,7 @@
 capital = 1438
 primary_culture = malay
 culture = moluccan
-religion = animist
+religion = hindu
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
@@ -25,12 +25,15 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-
 #New Reforms
 conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = hindu_country
 
 ruling_party = BAL_conservative
 upper_house = {
@@ -43,24 +46,15 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = lacking_writing_system
-
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "BAL_oob.txt"
-1861.1.1 = {
-	oob = "/1861/BAL_oob.txt"
-	literacy = 0.04
-	non_state_culture_literacy = 0.02
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
-	#Military Reforms
-	foreign_weapons = yes_foreign_weapons
-	
-	#Technologies
-	flintlock_rifles = 1
-}
+oob = "BAL_oob.txt"
 
 
 

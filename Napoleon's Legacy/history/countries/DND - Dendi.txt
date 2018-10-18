@@ -1,7 +1,8 @@
 capital = 1808
 primary_culture = songhai
 culture = tuareg
-culture = african_minor
+culture = gur
+culture = dyula
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -33,6 +34,7 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = DND_conservative
 upper_house = {
@@ -45,11 +47,12 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = lacking_writing_system
+set_country_flag = sunni_country
 
-foreign_weapons = yes_foreign_weapons
+#set_country_flag = lacking_writing_system
+#foreign_weapons = yes_foreign_weapons
 # Technologies
-flintlock_rifles = 1
+#flintlock_rifles = 1
 
 # Inventions
 

@@ -1,0 +1,529 @@
+political_decisions = {
+
+    form_Federation_of_the_Rhine = {
+        picture = fed_rhine
+        potential = {
+            OR = {
+                primary_culture = north_german
+                primary_culture = south_german
+            }
+            NOT = {
+                exists = GER
+                exists = FED
+                tag = SGF
+                tag = NGF
+                tag = PRU
+                tag = AUS
+                tag = KUK
+                tag = DNB
+                tag = DZG
+            }
+        }
+        allow = {
+            prestige = 45
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            war = no
+            GER = {
+                all_core = {
+                    OR = {
+                        OR = {
+                            owned_by = THIS
+                            region = HOL_369
+                            region = HAN_528
+                            region = HAN_540
+                            region = PRU_570
+                            region = PRU_575
+                            region = SCH_370
+                            region = FRA_412
+                            province_id = 535
+                            province_id = 581
+                            owned_by = PRU
+                            owned_by = DZG
+                            owner = {
+                                in_sphere = THIS
+                                OR = {
+                                    is_vassal = no
+                                    vassal_of = THIS
+                                }
+                                war = no
+                                is_greater_power = no
+                            }
+                        }
+                        NOT = { culture = north_german }
+
+                    }
+                }
+            }
+        }
+        effect = {
+            prestige = 15
+            add_accepted_culture = north_german
+            add_accepted_culture = south_german
+            any_country = {
+                limit = {
+                    is_culture_group = germanic
+                    in_sphere = THIS
+                    NOT = {
+                        tag = THIS
+                    }
+                }
+                annex_to = THIS
+            }
+            any_owned = {
+                limit = {
+                    is_core = GER
+                    NOT = {
+                        is_core = PRU
+                        is_core = DZG
+                        }
+                }
+                add_core = FED
+            }
+            change_tag = FED
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+form_italy = {
+        potential = {
+            OR = {
+            tag = PAP
+            tag = SAR
+            }
+            NOT = {
+                exists = ITA
+                exists = ITM
+                exists = ITN
+                exists = ITS
+                exists = ITL
+                tag = SPA
+            }
+        }
+
+        allow = {
+            prestige = 45
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            war = no
+            726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+            754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+        }
+
+        effect = {
+            prestige = 20
+            change_tag = ITA
+            add_accepted_culture = north_italian
+            add_accepted_culture = south_italian
+            734 = {
+                add_core = ITA
+            }
+            SAR_466 = {
+                add_core = ITA
+            }
+            SAR_765 = {
+                add_core = ITA
+            }
+            SAR_720 = {
+                add_core = ITA
+            }
+            AUS_726 = {
+                add_core = ITA
+            }
+            MOD_739 = {
+                add_core = ITA
+            }
+            AUS_729 = {
+                add_core = ITA
+            }
+            PAP_741 = {
+                add_core = ITA
+            }
+            TUS_744 = {
+                add_core = ITA
+            }
+            PAP_752 = {
+                add_core = ITA
+            }
+            SIC_753 = {
+                add_core = ITA
+            }
+            SIC_754 = {
+                add_core = ITA
+            }
+            764 = {
+                add_core = ITA
+            }
+            763 = {
+                add_core = ITA
+            }
+            762 = {
+                add_core = ITA
+            }
+            any_country = {
+                limit = {
+                    is_culture_group = italian
+                    in_sphere = THIS
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+                country_event = 11101
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    form_italy_MOD = {
+        picture = italy_mod
+        potential = {
+            tag = MOD
+            NOT = {
+                exists = ITA
+                exists = ITM
+                exists = ITN
+                exists = ITS
+                exists = ITL
+                tag = SPA
+            }
+        }
+
+        allow = {
+            prestige = 45
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            war = no
+            726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+            754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+        }
+
+        effect = {
+            prestige = 20
+            change_tag = ITM
+            add_accepted_culture = north_italian
+            add_accepted_culture = south_italian
+            734 = {
+                add_core = ITM
+            }
+            SAR_466 = {
+                add_core = ITM
+            }
+            SAR_765 = {
+                add_core = ITM
+            }
+            SAR_720 = {
+                add_core = ITM
+            }
+            AUS_726 = {
+                add_core = ITM
+            }
+            MOD_739 = {
+                add_core = ITM
+            }
+            AUS_729 = {
+                add_core = ITM
+            }
+            PAP_741 = {
+                add_core = ITM
+            }
+            TUS_744 = {
+                add_core = ITM
+            }
+            PAP_752 = {
+                add_core = ITM
+            }
+            SIC_753 = {
+                add_core = ITM
+            }
+            SIC_754 = {
+                add_core = ITM
+            }
+            764 = {
+                add_core = ITM
+            }
+            763 = {
+                add_core = ITM
+            }
+            762 = {
+                add_core = ITM
+            }
+            any_country = {
+                limit = {
+                    is_culture_group = italian
+                    in_sphere = THIS
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+                country_event = 11101
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    form_italy_SIC = {
+        picture = italy_sic
+        potential = {
+            tag = SIC
+            NOT = {
+                exists = ITA
+                exists = ITM
+                exists = ITN
+                exists = ITS
+                exists = ITL
+                tag = SPA
+            }
+        }
+
+        allow = {
+            prestige = 45
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            war = no
+            726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+            754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+            }
+
+        effect = {
+            prestige = 20
+            change_tag = ITN
+            add_accepted_culture = north_italian
+            add_accepted_culture = south_italian
+            734 = {
+                add_core = ITN
+            }
+            SAR_466 = {
+                add_core = ITN
+            }
+            SAR_765 = {
+                add_core = ITN
+            }
+            SAR_720 = {
+                add_core = ITN
+            }
+            AUS_726 = {
+                add_core = ITN
+            }
+            MOD_739 = {
+                add_core = ITN
+            }
+            AUS_729 = {
+                add_core = ITN
+            }
+            PAP_741 = {
+                add_core = ITN
+            }
+            TUS_744 = {
+                add_core = ITN
+            }
+            PAP_752 = {
+                add_core = ITN
+            }
+            SIC_753 = {
+                add_core = ITN
+            }
+            SIC_754 = {
+                add_core = ITN
+            }
+            764 = {
+                add_core = ITN
+            }
+            763 = {
+                add_core = ITN
+            }
+            762 = {
+                add_core = ITN
+            }
+            any_country = {
+                limit = {
+                    is_culture_group = italian
+                    in_sphere = THIS
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+                country_event = 11101
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    form_italy_ILY = {
+        picture = italy_ily
+        potential = {
+            tag = ILY
+            NOT = {
+                exists = ITA
+                exists = ITM
+                exists = ITN
+                exists = ITS
+                exists = ITL
+                tag = SPA
+            }
+        }
+
+        allow = {
+            prestige = 45
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            war = no
+            726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+            754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+            }
+
+        effect = {
+            prestige = 20
+            change_tag = ITS
+            add_accepted_culture = north_italian
+            add_accepted_culture = south_italian
+            734 = {
+                add_core = ITS
+            }
+            SAR_466 = {
+                add_core = ITS
+            }
+            SAR_765 = {
+                add_core = ITS
+            }
+            SAR_720 = {
+                add_core = ITS
+            }
+            AUS_726 = {
+                add_core = ITS
+            }
+            MOD_739 = {
+                add_core = ITS
+            }
+            AUS_729 = {
+                add_core = ITS
+            }
+            PAP_741 = {
+                add_core = ITS
+            }
+            TUS_744 = {
+                add_core = ITS
+            }
+            PAP_752 = {
+                add_core = ITS
+            }
+            SIC_753 = {
+                add_core = ITS
+            }
+            SIC_754 = {
+                add_core = ITS
+            }
+            764 = {
+                add_core = ITS
+            }
+            763 = {
+                add_core = ITS
+            }
+            762 = {
+                add_core = ITS
+            }
+            any_country = {
+                limit = {
+                    is_culture_group = italian
+                    in_sphere = THIS
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+                country_event = 11101
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    form_italy_LUC = {
+        picture = italy_luc
+        potential = {
+            tag = LUC
+            NOT = {
+                exists = ITA
+                exists = ITM
+                exists = ITN
+                exists = ITS
+                exists = ITL
+                tag = SPA
+            }
+        }
+
+        allow = {
+            prestige = 45
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+            war = no
+            726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+            754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
+        }
+
+        effect = {
+            prestige = 20
+            change_tag = ITL
+            add_accepted_culture = north_italian
+            add_accepted_culture = south_italian
+            734 = {
+                add_core = ITL
+            }
+            SAR_466 = {
+                add_core = ITL
+            }
+            SAR_765 = {
+                add_core = ITL
+            }
+            SAR_720 = {
+                add_core = ITL
+            }
+            AUS_726 = {
+                add_core = ITL
+            }
+            MOD_739 = {
+                add_core = ITL
+            }
+            AUS_729 = {
+                add_core = ITL
+            }
+            PAP_741 = {
+                add_core = ITL
+            }
+            TUS_744 = {
+                add_core = ITL
+            }
+            PAP_752 = {
+                add_core = ITL
+            }
+            SIC_753 = {
+                add_core = ITL
+            }
+            SIC_754 = {
+                add_core = ITL
+            }
+            764 = {
+                add_core = ITL
+            }
+            763 = {
+                add_core = ITL
+            }
+            762 = {
+                add_core = ITL
+            }
+            any_country = {
+                limit = {
+                    is_culture_group = italian
+                    in_sphere = THIS
+                    NOT = { has_country_flag = post_colonial_country }
+                }
+                country_event = 11101
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+
+
+}

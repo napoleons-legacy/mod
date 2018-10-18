@@ -1,4 +1,8 @@
+owner = HUD
+controller = HUD
+add_core = HUD
+add_core = CAN
 add_core = MTC
-trade_goods = cattle
-terrain = boreal
-life_rating = 20
+trade_goods = timber
+terrain = new_world_boreal
+life_rating = 30

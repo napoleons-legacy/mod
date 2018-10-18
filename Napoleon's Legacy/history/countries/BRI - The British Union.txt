@@ -38,6 +38,7 @@ debt_law = debtors_prisons
 penal_system = colonial_transportation
 child_labor = child_labor_restricted
 citizens_rights = primary_culture_only
+border_policy = open_borders
 
 # Technologies
 post_napoleonic_thought = 1
@@ -84,7 +85,7 @@ precision_work = yes
 consciousness = 3
 nonstate_consciousness = 1
 
-ruling_party = BRI_liberal
+ruling_party = ENG_liberal
 last_election = 1835.2.6
 upper_house = {
 	fascist = 0

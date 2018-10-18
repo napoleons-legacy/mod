@@ -12,7 +12,7 @@ upper_house_composition = appointed
 vote_franschise = wealth_voting
 public_meetings = yes_meeting
 press_rights = censored_press
-trade_unions = non_socialist
+trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
 
@@ -29,7 +29,9 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = AKH_conservative
 upper_house = {
@@ -41,3 +43,5 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+set_country_flag = sunni_country

@@ -24,7 +24,7 @@ conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
-
+border_policy = open_borders
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -36,6 +36,8 @@ pensions = no_pensions
 school_reforms = no_schools
 
 set_country_flag = theocratic_government
+set_country_flag = new_world_nation
+set_country_flag = mormon_country
 
 ruling_party = DES_reactionary
 upper_house = {
@@ -72,7 +74,7 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 battleship_column_doctrine = 1
@@ -84,9 +86,3 @@ experimental_railroad = 1
 traditionalism = yes
 political_religion = yes
 paternalism = yes
-
-1861.1.1 = {
-# Technologies
-
-#Inventions
-}

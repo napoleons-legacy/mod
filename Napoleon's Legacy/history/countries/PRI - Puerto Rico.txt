@@ -1,7 +1,5 @@
 capital = 2222
 primary_culture = caribeno
-culture = afro_caribeno
-culture = spanish
 religion = catholic
 government = democracy
 plurality = 0.3
@@ -16,7 +14,7 @@ upper_house_composition = appointed
 vote_franschise = wealth_voting
 public_meetings = yes_meeting
 press_rights = censored_press
-trade_unions = non_socialist
+trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
 
@@ -34,6 +32,11 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
+
+set_country_flag = new_world_nation
 
 ruling_party = PRI_liberal
 upper_house = {

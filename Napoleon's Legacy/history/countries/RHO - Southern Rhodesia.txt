@@ -7,7 +7,7 @@ plurality = 0.6
 nationalvalue = nv_order
 literacy = 0.2
 civilized = yes
-
+is_releasable_vassal = no
 
 # Political reforms
 slavery = no_slavery
@@ -33,6 +33,9 @@ conscription = four_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 govt_flag = {
 	government = presidential_dictatorship

@@ -24,23 +24,27 @@ dreadnought = {
 	#Building Costs
 	build_time = 360
 	build_cost = {
-		steamer_convoy = 100
-		artillery = 25
-		canned_food = 10
-		telephones = 10
-		fuel = 25
+		steamer_convoy = 125
+		artillery = 30
+		canned_food = 20
+		telephones = 20
+		regular_clothes = 20
+		fuel = 60
 	}
 	min_port_level = 5
-	limit_per_port = -1
+	limit_per_port = 1
 	supply_consumption_score = 60
 	
 	supply_consumption = 1.0
 	supply_cost = {
 		steamer_convoy = 1.6
 		artillery = 0.8
-		canned_food = 0.8
+		canned_food = 1
 		telephones = 0.02
-		fuel = 2.5
+		fuel = 4
+		ammunition = 0.8
+		regular_clothes = 0.5
+		tobacco = 2
 	}
 	
 	#Naval Abilties

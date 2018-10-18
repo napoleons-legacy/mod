@@ -12,11 +12,11 @@ country_event = {
         NOT = {
             year = 1841
             }
-        
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -36,7 +36,7 @@ country_event = {
     picture = "Lind"
 
     option = {
-        name = "EVTOPTA36600" 
+        name = "EVTOPTA36600"
         prestige = 2
     }
 }
@@ -52,9 +52,9 @@ country_event = {
             year = 1845
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -62,7 +62,7 @@ country_event = {
             factor = 0.75 #increase likelihood to happen
             year = 1843
         }
-        
+
         modifier = {
             factor = 0.95 #increase likelihood to happen
             year = 1844
@@ -74,7 +74,7 @@ country_event = {
     picture = "School"
 
     option = {
-        name = "EVTOPTA36601" 
+        name = "EVTOPTA36601"
         prestige = 1
         social_reform = low_schools
     }
@@ -90,11 +90,11 @@ country_event = {
         NOT = {
             year = 1839
         }
-    
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -114,13 +114,13 @@ country_event = {
     picture = "Aftonbladet"
 
     option = {
-        name = "EVTOPTA36602" 
+        name = "EVTOPTA36602"
         any_pop = {
             scaled_consciousness = {
                    factor = 1
                    ideology = liberal
             }
-        }            
+        }
     }
 }
 
@@ -137,11 +137,11 @@ province_event = {
             year = 1852
             poor_strata_everyday_needs = 0.75 #will not fire if poor are getting 75%+ everyday needs
         }
-        
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -149,7 +149,7 @@ province_event = {
             factor = 0.75 #increase likelihood to happen
             year = 1849
         }
-        
+
         modifier = {
             factor = 0.95 #increase likelihood to happen
             year = 1850
@@ -161,10 +161,10 @@ province_event = {
     picture = "Riot"
 
     option = {
-        name = "EVTOPTA36603" 
+        name = "EVTOPTA36603"
         any_pop = {
             militancy = 1
-        }            
+        }
     }
 }
 
@@ -180,9 +180,9 @@ country_event = {
             year = 1862
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -190,7 +190,7 @@ country_event = {
             factor = 0.75 #increase likelihood to happen
             year = 1858
         }
-        
+
         modifier = {
             factor = 0.95 #increase likelihood to happen
             year = 1859
@@ -200,10 +200,10 @@ country_event = {
     title = "EVTNAME36604"
     desc = "EVTDESC36604"
     picture = "iron"
-    
+
     option = {
         name = "EVTOPTA36604"
-        prestige = 1         
+        prestige = 1
     }
 }
 
@@ -225,9 +225,9 @@ country_event = {
             has_building = railroad
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -265,11 +265,11 @@ country_event = {
             year = 1882
             poor_strata_everyday_needs = 0.75 #will not fire if poor are getting 75%+ everyday needs
         }
-    
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -277,7 +277,7 @@ country_event = {
             factor = 0.75 #increase likelihood to happen
             year = 1879
         }
-        
+
         modifier = {
             factor = 0.95 #increase likelihood to happen
             year = 1880
@@ -319,9 +319,9 @@ country_event = {
             year = 1882
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -329,7 +329,7 @@ country_event = {
             factor = 0.75 #increase likelihood to happen
             year = 1880
         }
-        
+
         modifier = {
             factor = 0.95 #increase likelihood to happen
             year = 1881
@@ -341,7 +341,7 @@ country_event = {
     picture = "Strindberg"
 
     option = {
-        name = "EVTOPTA36611" 
+        name = "EVTOPTA36611"
         prestige = 2
     }
 }
@@ -354,11 +354,11 @@ country_event = {
     trigger = {
         tag = SWE
         owns = 321
-        year = 1900 
+        year = 1900
     }
- 
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
     }
@@ -368,7 +368,7 @@ country_event = {
     picture = "Boden"
 
     option = {
-        name = "EVTOPTA36611" 
+        name = "EVTOPTA36611"
         321 = { fort = 1 }
         treasury = -500
     }
@@ -386,9 +386,9 @@ country_event = {
             year = 1842
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -408,7 +408,7 @@ country_event = {
     picture = "Almqvist"
 
     option = {
-        name = "EVTOPTA36614" 
+        name = "EVTOPTA36614"
         prestige = 2
         any_pop = {
             scaled_consciousness = {
@@ -432,9 +432,9 @@ country_event = {
             middle_strata_everyday_needs = 0.75 #will not fire if poor are getting 75%+ everyday needs
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -454,7 +454,7 @@ country_event = {
     picture = "emigration"
 
     option = {
-        name = "EVTOPTA36615" 
+        name = "EVTOPTA36615"
         prestige = 2
         farmers = {
             consciousness = 1
@@ -485,11 +485,11 @@ country_event = {
             year = 1842
             exists = NOR
         }
-    
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -509,10 +509,10 @@ country_event = {
     picture = "norwayflag"
 
     option = {
-        name = "EVTOPTA36617" 
+        name = "EVTOPTA36617"
         prestige = -5
         any_pop = {
-            limit = { 
+            limit = {
                 has_pop_culture = swedish
             }
             consciousness = 1
@@ -520,10 +520,10 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB36617" 
+        name = "EVTOPTB36617"
         prestige = 5
         any_pop = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 2
@@ -544,11 +544,11 @@ country_event = {
             exists = NOR
             has_global_flag = Munch
         }
-    
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -568,17 +568,17 @@ country_event = {
     picture = "munch"
 
     option = {
-        name = "EVTOPTA36400" 
+        name = "EVTOPTA36400"
         prestige = 3
         any_pop = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 1
         }
         aristocrats = {
             consciousness = 1 #additional con due to "shock" to refined tastes
-        }   
+        }
         set_global_flag = Munch
     }
 }
@@ -595,11 +595,11 @@ country_event = {
             exists = NOR
             has_global_flag = Aasen
         }
-    
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -607,7 +607,7 @@ country_event = {
             factor = 0.75 #increase likelihood to happen
             year = 1891
         }
-        
+
         modifier = {
             factor = 0.95 #increase likelihood to happen
             year = 1893
@@ -619,9 +619,9 @@ country_event = {
     picture = "Aasen"
 
     option = {
-        name = "EVTOPTA36401" 
+        name = "EVTOPTA36401"
         any_pop = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 1
@@ -642,11 +642,11 @@ country_event = {
             exists = NOR
             has_global_flag = Ibsen
         }
-    
+
     }
- 
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -666,10 +666,10 @@ country_event = {
     picture = "Greatfour"
 
     option = {
-        name = "EVTOPTA36402" 
+        name = "EVTOPTA36402"
         prestige = 5
         any_pop = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 1
@@ -690,11 +690,11 @@ country_event = {
             exists = NOR
             has_global_flag = Thrane
         }
-    
+
     }
 
     fire_only_once = yes
-    
+
     mean_time_to_happen =  {
         months = 5
 
@@ -702,7 +702,7 @@ country_event = {
             factor = 0.75 #increase likelihood to happen
             year = 1851
         }
-        
+
         modifier = {
             factor = 0.95 #increase likelihood to happen
             year = 1852
@@ -714,28 +714,28 @@ country_event = {
     picture = "Thrane"
 
     option = {
-        name = "EVTOPTA36405" 
+        name = "EVTOPTA36405"
         prestige = 5
         labourers = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 1
         }
         farmers = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 1
         }
         artisans = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 1
         }
         craftsmen = {
-            limit = { 
+            limit = {
                 has_pop_culture = norwegian
             }
             consciousness = 1
@@ -757,9 +757,9 @@ country_event = {
             has_global_flag = SCAStudent
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -779,10 +779,12 @@ country_event = {
     picture = "Scandinavia"
 
     option = {
-        name = "EVTOPTA36622" 
+        name = "EVTOPTA36622"
         set_global_flag = SCAStudent
         prestige = 1
         relation = { who = PRU value = -50 }
+		relation = { who = NGF value = -50 }
+		relation = { who = SGF value = -50 }
         relation = { who = RUS value = -50 }
         relation = { who = GER value = -50 }
         relation = { who = DEN value = 75 }
@@ -790,7 +792,7 @@ country_event = {
             scaled_consciousness = {
                 factor = 2
                 ideology = liberal
-            }   
+            }
         }
     }
 }

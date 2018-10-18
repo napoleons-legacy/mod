@@ -1,5 +1,6 @@
 capital = 1868
 primary_culture = somali
+culture = cushitic
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -30,8 +31,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
-ruling_party = GEL_conservative
+ruling_party = SOM_socialist
 upper_house = {
 	fascist = 0
 	liberal = 16
@@ -41,3 +43,5 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+set_country_flag = sunni_country

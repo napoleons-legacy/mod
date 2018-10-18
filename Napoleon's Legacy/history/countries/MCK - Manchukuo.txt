@@ -6,11 +6,10 @@ plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01
 non_state_culture_literacy = 0.01
-civilized = no
 prestige = 1
 
 # Political reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = wealth_voting
 public_meetings = no_meeting
@@ -33,6 +32,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = mahayana_country
 
 ruling_party = MCK_conservative
 last_election = 1834.1.1
@@ -46,7 +48,7 @@ upper_house = {
 	communist = 0
 }
 
-
+land_reform = yes_land_reform
 foreign_weapons = yes_foreign_weapons
 
 # Technologies
@@ -57,20 +59,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "MCK_oob.txt"
-1861.1.1 = {
-	literacy = 0.07
-	non_state_culture_literacy = 0.04
-
-	foreign_weapons = yes_foreign_weapons
-	army_schools = yes_army_schools
-	admin_reform = yes_admin_reform
-	finance_reform = yes_finance_reform
-
-	# Technologies
-	flintlock_rifles = 1
-	military_staff_system = 1
-
-# Inventions
-
-}
-

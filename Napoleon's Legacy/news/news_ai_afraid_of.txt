@@ -8,7 +8,7 @@ pattern =
 		name = "%1%"
 		@2@
 	}
-	news_priority = 
+	news_priority =
 	{
 		type = "AI_AFRAID_OF"
 		name = "%1%"
@@ -28,9 +28,9 @@ pattern =
 		case = {
 			trigger = {
 				OR = {
-					tags_eq = { 0 0 ENG }
 					tags_eq = { 0 0 FRA }
 					tags_eq = { 0 0 RUS }
+					tags_eq = { 0 0 TSA }
 					tags_eq = { 0 0 USA }
 					tags_eq = { 0 0 PRU }
 					tags_eq = { 0 0 NGF }
@@ -51,7 +51,6 @@ pattern =
 					tags_eq = { 0 0 KMT }
 					tags_eq = { 0 0 JAP }
 					tags_eq = { 0 0 SPA }
-					tags_eq = { 0 0 SPC }
 					tags_eq = { 0 0 TUR }
 					tags_eq = { 0 0 NET }
 					tags_eq = { 0 0 BEL }
@@ -76,7 +75,7 @@ pattern =
 				}
 			}
 			priority_add = 5
-		}		
+		}
 	}
 	generate_article =
 	{
@@ -107,7 +106,7 @@ pattern =
 }
 
 # Default afraid of other
-AiAfraidOf = 
+AiAfraidOf =
 {
 	"default"
 	"case = { value = 10 } case = { trigger = { news_printing_count = 1 } value = -999 }"
@@ -119,7 +118,7 @@ AiAfraidOf =
 }
 
 # AI afraid of player
-AiAfraidOf = 
+AiAfraidOf =
 {
 	"player"
 	"case = { trigger = { tags_eq = { 0 1 PLAYER } } value = 100 } case = { trigger = { news_printing_count = 1 } value = -999 }"
@@ -127,5 +126,5 @@ AiAfraidOf =
 	"AI_FEARS_US_DESC1_LONG AI_FEARS_US_DESC2_LONG AI_FEARS_US_DESC3_LONG"
 	"AI_FEARS_US_DESC1_MEDIUM AI_FEARS_US_DESC2_MEDIUM AI_FEARS_US_DESC3_MEDIUM"
 	"AI_FEARS_US_DESC1_SHORT AI_FEARS_US_DESC2_SHORT AI_FEARS_US_DESC3_SHORT"
-	
+
 }

@@ -63,18 +63,19 @@
 	}
 }
 #uncolonized in 1836
-#Midway (60/15 POPS)
+#Midway + Wake (60/15 POPS)
 2623 = {
 	farmers = {
 		culture = polynesian
 		religion = animist
-		size = 15
+		size = 30
 	}
 }
 #Central Polynesia Region (604)
 #uncolonized in 1836
-#Line Islands (600/150 POPS)
-686 = {
+#Palmyra Atoll (60/15 POPS)
+2526 = {
+
 	aristocrats = {
 		culture = polynesian
 		religion = animist
@@ -102,15 +103,7 @@
 	farmers = {
 		culture = polynesian
 		religion = animist
-		size = 125
-	}
-}
-#Palmyra Atoll (60/15 POPS)
-2526 = {
-	farmers = {
-		culture = polynesian
-		religion = animist
-		size = 15
+		size = 140
 	}
 }
 #Western Polynesia Region (47000)
@@ -557,6 +550,42 @@
 		culture = polynesian
 		religion = animist
 		size = 675
+	}
+
+}
+
+#Kiritimati
+#uncolonized in 1836
+#Kiritimati
+3249 = {
+	aristocrats = {
+		culture = polynesian
+		religion = animist
+		size = 1
+	}
+
+	clergymen = {
+		culture = polynesian
+		religion = animist
+		size = 1
+	}
+
+	artisans = {
+		culture = polynesian
+		religion = animist
+		size = 1
+	}
+
+	soldiers = {
+		culture = polynesian
+		religion = animist
+		size = 2
+	}
+
+	farmers = {
+		culture = polynesian
+		religion = animist
+		size = 30
 	}
 
 }

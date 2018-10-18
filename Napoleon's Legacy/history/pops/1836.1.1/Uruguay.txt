@@ -7,7 +7,7 @@
 		religion = catholic
 		size = 575
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	bureaucrats = {
@@ -15,7 +15,7 @@
 		religion = catholic
 		size = 100
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	officers = {
@@ -23,7 +23,7 @@
 		religion = catholic
 		size = 50
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	clergymen = {
@@ -37,7 +37,7 @@
 		religion = catholic
 		size = 980
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	soldiers = {
@@ -45,7 +45,7 @@
 		religion = catholic
 		size = 5000
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	farmers = {
@@ -53,7 +53,7 @@
 		religion = catholic
 		size = 18095
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	clergymen = {
@@ -67,7 +67,7 @@
 		religion = catholic
 		size = 250
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	soldiers = {
@@ -75,7 +75,7 @@
 		religion = catholic
 		size = 500
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	farmers = {
@@ -83,7 +83,7 @@
 		religion = catholic
 		size = 3150
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	slaves = {
@@ -91,7 +91,7 @@
 		religion = catholic
 		size = 3500
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 }
 #Paysandu (36000/9000 POPS)
@@ -131,7 +131,7 @@
 		religion = catholic
 		size = 1500
 		militancy = 9
-		rebel_type = colorado_rebels
+		rebel_type = liberal_rebels
 	}
 
 	farmers = {

@@ -42,11 +42,11 @@
 	farmers = {
 		culture = somali
 		religion = sunni
-		size = 43000
+		size = 58000
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 6000
 	}
@@ -84,37 +84,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 250
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 4575
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 1100
 	}
@@ -187,7 +187,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 2000
 	}
@@ -237,7 +237,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 5000
 	}
@@ -295,7 +295,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = cushitic
 		religion = animist
 		size = 3000
 	}

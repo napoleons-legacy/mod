@@ -4,12 +4,18 @@ culture = avadhi
 culture = bihari
 culture = tamil
 culture = kanauji
+culture = rajput
+culture = bengali
+culture = panjabi
+culture = kashmiri
+culture = manipuri
+culture = assamese
+culture = oriya
 religion = hindu
 government = democracy
 plurality = 0.0
 nationalvalue = nv_equality
 literacy = 0.02
-civilized = no
 
 ruling_party = HND_conservative
 upper_house = {
@@ -48,4 +54,12 @@ conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
 
+set_country_flag = hindu_country
+
+schools = unciv_tech_school
+
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes

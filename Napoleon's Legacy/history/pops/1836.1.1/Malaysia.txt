@@ -44,36 +44,6 @@
 		religion = hindu
 		size = 1100
 	}
-	
-	artisans = {
-		culture = dutch
-		religion = protestant
-		size = 3500
-	}
-	
-	farmers = {
-		culture = dutch
-		religion = protestant
-		size = 6500
-	}
-	
-	bureaucrats = {
-		culture = dutch
-		religion = protestant
-		size = 3750
-	}
-
-	soldiers = {
-		culture = dutch
-		religion = catholic
-		size = 6000
-	}
-
-	aristocrats = {
-		culture = dutch
-		religion = protestant
-		size = 2000
-	}
 }
 #Malacca (52800/13200 POPS)
 1386 = {

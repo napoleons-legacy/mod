@@ -1,0 +1,284 @@
+# This is an event chain from the old mod. Saved for hopefully reusing this one day.
+
+#country_event = {
+#   id = 32461
+#
+#   title = "EVTNAME32461"
+#   desc = "EVTDESC32461"
+#   picture = "pope"
+#
+#   is_triggered_only = yes
+#
+#   option = {
+#       name = "EVTOPTA32461"
+#       prestige = -50
+#       PAP = {
+#           country_event = { id=32462 days=0 }
+#       }
+#       ai_chance = {
+#           factor = 10
+#       }
+#   }
+#   option = {
+#       name = "EVTOPTB32461"
+#       prestige = 5
+#       PAP = {
+#           country_event = { id=32463 days=0 }
+#       }
+#       ai_chance = {
+#           factor = 90
+#       }
+#   }
+#}
+#
+#country_event = {
+#   id = 32462
+#
+#   title = "EVTNAME32462"
+#   desc = "EVTDESC32462"
+#   picture = "pope"
+#
+#   is_triggered_only = yes
+#
+#   option = {
+#       name = "EVTOPTA32462"
+#       prestige = 20
+#       relation = {
+#           value = 50
+#           who = FRA
+#       }
+#   }
+#}
+#
+#country_event = {
+#   id = 32463
+#
+#   title = "EVTNAME32463"
+#   desc = "EVTDESC32463"
+#   picture = "pope"
+#
+#   is_triggered_only = yes
+#
+#   option = {
+#       name = "EVTOPTA32463"
+#       prestige = -10
+#       FRA = {
+#           country_event = { id=32464 days=0 }
+#       }
+#       ai_chance = {
+#           factor = 40
+#       }
+#   }
+#   option = {
+#       name = "EVTOPTB32463"
+#       prestige = 5
+#       FRA = {
+#           country_event = { id=32465 days=0 }
+#       }
+#       relation = {
+#           value = -100
+#           who = FRA
+#       }
+#       ai_chance = {
+#           factor = 60
+#       }
+#   }
+#}
+#
+#country_event = {
+#   id = 32464
+#
+#   title = "EVTNAME32464"
+#   desc = "EVTDESC32464"
+#   picture = "PopeLeo"
+#
+#   is_triggered_only = yes
+#   option = {
+#       name = "EVTOPTA32464"
+#       prestige = 10
+#       relation = {
+#           value = 50
+#           who = PAP
+#   }
+#}
+#
+#country_event = {
+#   id = 32465
+#
+#   title = "EVTNAME32465"
+#   desc = "EVTDESC32465"
+#   picture = "PopeLeo"
+#
+#   is_triggered_only = yes
+#
+#   option = {
+#       name = "EVTOPTA32465"
+#       relation = {
+#           value = -200
+#           who = PAP
+#       }
+#           diplomatic_influence = { who = PAP value = -200 }
+#       badboy = 5
+#       casus_belli = {
+#           target = PAP
+#           type = conquest
+#           months = 1
+#       }
+#       war = {
+#           target = PAP
+#               attacker_goal = {
+#                   casus_belli = conquest
+#                        }
+#               }
+#       ai_chance = {
+#           factor = 60
+#       }
+#   }
+#
+#   option = {
+#       name = "EVTOPTB32465"
+#       prestige = -10
+#       ai_chance = {
+#           factor = 40
+#       }
+#   }
+#}
+
+country_event = {
+    id = 4662010
+    title = "EVTNAME4662010"
+    desc = "EVTDESC4662010"
+    picture = "vittoriano"
+
+    trigger = {
+        tag = FRA
+        OR = {
+            has_global_flag = italian_unification_b
+            has_global_flag = italian_unification_a
+        }
+
+        year = 1840
+
+        NOT = {
+            exists = ITA
+            exists = ITM
+            exists = ITN
+            exists = ITS
+            exists = ITL
+        }
+    }
+
+    fire_only_once = yes
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "EVTOPTA4662010"
+
+        LUC = { all_core = { remove_core = LUC } }
+        inherit = LUC
+
+        740 = { secede_province = MOD add_core = MOD }
+        746 = { secede_province = PAP add_core = PAP }
+
+        badboy = 2
+        prestige = 3
+        relation = {
+            value = 100
+            who = MOD
+        }
+
+        relation = {
+            value = 100
+            who = PAP
+        }
+
+        ai_chance = {
+            factor = 40
+        }
+    }
+
+    option = {
+        name = "EVTOPTB4662010"
+        badboy = -3
+        prestige = 5
+        relation = {
+            value = 100
+            who = LUC
+        }
+
+        ai_chance = {
+            factor = 30
+        }
+    }
+
+    option = {
+        name = "EVTOPTC4662010"
+        badboy = 5
+        prestige = 10
+
+        inherit = LUC
+
+        relation = {
+            value = -50
+            who = MOD
+        }
+
+        relation = {
+            value = -50
+            who = PAP
+        }
+
+        ai_chance = {
+            factor = 30
+
+            modifier = {
+                factor = 0
+                badboy = 20
+            }
+        }
+    }
+}
+
+# Clean up SIC and ILY cores.
+country_event = {
+    id = 4662015
+    title = "EVTNAME4662015"
+    desc = "EVTDESC4662015"
+    picture = "vittoriano"
+    fire_only_once = yes
+
+    trigger = {
+        tag = SIC
+        ILY = { all_core = { owned_by = THIS } exists = no }
+        war = no
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "EVTOPTA4662015"
+
+        ILY = { all_core = { add_core = SIC remove_core = ILY } }
+        prestige = 5
+    }
+}
+
+country_event = {
+    id = 4662016
+    title = "EVTNAME4662016"
+    desc = "EVTDESC4662016"
+    picture = "vittoriano"
+    fire_only_once = yes
+
+    trigger = {
+        tag = ILY
+        SIC = { all_core = { owned_by = THIS } exists = no }
+        war = no
+    }
+
+    mean_time_to_happen = { months = 1 }
+    option = {
+        name = "EVTOPTA4662015"
+        SIC = { all_core = { add_core = ILY remove_core = SIC } }
+    }
+}

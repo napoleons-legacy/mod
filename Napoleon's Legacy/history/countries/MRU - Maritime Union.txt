@@ -19,12 +19,12 @@ voting_system = first_past_the_post
 political_parties = gerrymandering
 
 # Social Reforms
-wage_reform = trinket_wage
-work_hours = twelve_hours
-safety_regulations = trinket_safety
-health_care = trinket_health_care
-unemployment_subsidies = trinket_subsidies
-pensions = no_pensions
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
 school_reforms = no_schools
 
 # New Reforms
@@ -32,6 +32,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = CAN_conservative
 upper_house = {
@@ -43,4 +46,6 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+set_country_flag = new_world_nation
 

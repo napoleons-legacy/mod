@@ -1,5 +1,9 @@
-
 political_decisions = {
+
+    #
+    # TODO MERGE THE HPM VERSION BETTER
+    #
+
     accademia_della_crusca = {
         potential = {
                tag = PAP
@@ -13,7 +17,7 @@ political_decisions = {
         }
 
         effect = {
-               treasury = -80000
+            treasury = -80000
             prestige = 15
             political_reform = free_press
             set_country_flag = accademia_della_crusca
@@ -36,7 +40,7 @@ political_decisions = {
 
         allow = {
             state_n_government = 1
-            average_militancy = 5
+            average_militancy = 2
         }
 
         effect = {
@@ -104,7 +108,7 @@ political_decisions = {
             badboy = 1
             any_country = {
                 limit = {
-                    religion = catholic
+                    has_country_flag = catholic_country
                 }
                 relation = {
                     who = THIS
@@ -180,7 +184,7 @@ political_decisions = {
 
 
     move_home_SAR = {
-    picture = move_home
+        picture = move_home
         potential = {
             tag = SAR
             owns = 720
@@ -269,7 +273,7 @@ political_decisions = {
     }
 
     conquest_of_the_adriatic = {
-    picture = conquest_adriatic
+        picture = conquest_adriatic
         potential = {
             OR = {
             tag = ITA
@@ -303,7 +307,7 @@ political_decisions = {
     }
 
     reclaim_italian_lands = {
-    picture = reclaim_italian_lands
+        picture = reclaim_italian_lands
         potential = {
             OR = {
             tag = ITA
@@ -339,16 +343,16 @@ political_decisions = {
     }
 
     fatherland_altar = {
-    picture = build_vittoriano
+        picture = build_vittoriano
         potential = {
             owns = 749
             NOT = { has_country_flag = vittoriano_built }
             OR = {
-            tag = ITA
-            tag = ITN
-            tag = ITS
-            tag = ITM
-            tag = ITL
+                tag = ITA
+                tag = ITN
+                tag = ITS
+                tag = ITM
+                tag = ITL
             }
             OR = {
                 government = absolute_monarchy

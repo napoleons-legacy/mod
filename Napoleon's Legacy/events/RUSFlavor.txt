@@ -1,54 +1,3 @@
-#RUS Starting Event
-country_event = {
-
-    id = 32400
-
-    trigger = {
-        tag = RUS
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        days = 1
-    }
-
-    title = "EVTNAME32400"
-    desc = "EVTDESC32400"
-    picture = "Revolution"
-
-    option = {
-        name = "EVTOPTA32400"
-        set_country_flag = reactionary_fired
-        add_country_modifier = {
-            name = reactionary_fired
-            duration = -1
-        }
-        aristocrats = {
-            consciousness = 4
-        }
-        farmers = {
-            consciousness = 4
-        }
-        any_pop = {
-            limit = {
-                location = {
-                    is_colonial = no
-                }
-            is_accepted_culture = yes
-            }
-            ideology = {
-                value = reactionary
-                factor = 0.35
-            }
-            scaled_militancy = {
-                    ideology = reactionary
-                    factor = 6
-            }
-        }
-    }
-}
-
 country_event = {
     id = 32500
     title = "EVTNAME32500"
@@ -67,9 +16,9 @@ country_event = {
             year = 1840
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -85,7 +34,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA32500" 
+        name = "EVTOPTA32500"
         prestige = 3
     }
 }
@@ -102,9 +51,9 @@ country_event = {
             year = 1852
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -124,16 +73,16 @@ country_event = {
 
     option = {
         name = "EVTOPTA32502"
-        plurality = -2 
+        plurality = -2
         capitalists = {
             consciousness = -1
-        }   
+        }
         aristocrats = {
             consciousness = -1
-        }   
+        }
         bureaucrats = {
             consciousness = -1
-        }   
+        }
     }
 }
 
@@ -148,9 +97,9 @@ country_event = {
             year = 1855
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -170,7 +119,7 @@ country_event = {
     picture = "hermitage"
 
     option = {
-        name = "EVTOPTA32503" 
+        name = "EVTOPTA32503"
         prestige = 5
     }
 }
@@ -186,9 +135,9 @@ country_event = {
             year = 1877
             }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -208,12 +157,12 @@ country_event = {
     picture = "Godunov"
 
     option = {
-        name = "EVTOPTA32504" 
+        name = "EVTOPTA32504"
         prestige = 5
         any_pop = {
             limit = { has_pop_culture = russian }
             consciousness = 1
-        }   
+        }
     }
 }
 
@@ -232,9 +181,9 @@ country_event = {
             year = 1883
             }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -254,12 +203,12 @@ country_event = {
     picture = "Dostoevsky"
 
     option = {
-        name = "EVTOPTA32505" 
+        name = "EVTOPTA32505"
         prestige = 5
         any_pop = {
             limit = { has_pop_culture = russian }
             consciousness = 1
-        }   
+        }
     }
 }
 
@@ -276,11 +225,11 @@ country_event = {
         NOT = {
             year = 1850
         }
-        
+
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -300,7 +249,7 @@ country_event = {
     picture = "train"
 
     option = {
-        name = "EVTOPTA32506" 
+        name = "EVTOPTA32506"
         prestige = 2
     }
 }
@@ -310,18 +259,18 @@ country_event = {
     id = 32508
 
     trigger = {
-    OR = {
-        tag = TSA
-        tag = RUS
+        OR = {
+            tag = TSA
+            tag = RUS
         }
         year = 1899
         NOT = {
             year = 1902
         }
     }
-    
+
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 5
 
@@ -341,7 +290,7 @@ country_event = {
     picture = "theatre"
 
     option = {
-        name = "EVTOPTA32508" 
+        name = "EVTOPTA32508"
         prestige = 5
     }
 }
@@ -352,20 +301,20 @@ country_event = {
     title = "EVTNAME32509_NEW" #the Alaskan Purchase
     desc = "EVTDESC32509_NEW"
     picture = "alaska"
-    
+
     trigger = {
-    OR = {
-        RUS = {
-            war = no
-            any_owned_province = { region = USA_1 }
+        OR = {
+            RUS = {
+                war = no
+                any_owned_province = { region = USA_1 }
+            }
+
+            TSA = {
+                war = no
+                any_owned_province = { region = USA_1 }
+            }
         }
-        
-        TSA = {
-            war = no
-            any_owned_province = { region = USA_1 }
-        }
-    }
-    NOT = {
+        NOT = {
             has_global_flag = alaska_purchase_process_global
             has_global_flag = alaska_purchase_completed
             has_country_flag = refused_alaska
@@ -387,7 +336,7 @@ country_event = {
         nationalism_n_imperialism = 1
         has_country_flag = alaska_purchase_interest
     }
-    
+
     mean_time_to_happen = {
         months = 6
         modifier = {
@@ -423,11 +372,11 @@ country_event = {
             year = 1870
         }
     }
-    
+
     immediate = {
         set_global_flag = alaska_purchase_process_global
     }
-    
+
     option = {
         name = "EVT32509OPTA"
         random_owned = { limit = { owner = { ai = no } } treasury = -100000 }
@@ -442,7 +391,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT32509OPTB"
         clr_country_flag = alaska_purchase_interest
@@ -469,9 +418,9 @@ country_event = {
     title = "EVTNAME32510_NEW" #the Alaskan Purchase
     desc = "EVTDESC32510_NEW"
     picture = "alaska"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT32510OPTA"
         set_global_flag = alaska_purchase_completed
@@ -483,7 +432,7 @@ country_event = {
             factor = 75
         }
     }
-    
+
     option = {
         name = "EVT32510OPTB"
         clr_global_flag = alaska_purchase_process_global
@@ -508,7 +457,7 @@ country_event = {
                         region = CAN_13
                         region = JAP_1088
                     }
-                }                   
+                }
             }
             set_country_flag = alaska_purchase_interest
         }
@@ -525,7 +474,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT32510OPTC"
         prestige = -10
@@ -546,9 +495,9 @@ country_event = {
     news_desc_medium = "EVTDESC32511_NEWS_MEDIUM"
     news_desc_short = "EVTDESC32511_NEWS_SHORT"
     picture = "alaska"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT32511OPTA"
         prestige = 10
@@ -568,9 +517,9 @@ country_event = {
     title = "EVTNAME32514"
     desc = "EVTDESC32514"
     picture = "alaska"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT32514OPTA"
         prestige = -5
@@ -587,9 +536,9 @@ country_event = {
     title = "EVTNAME80101"
     desc = "EVTDESC80101"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT80101OPTA"
         prestige = 10
@@ -602,9 +551,9 @@ country_event = {
     title = "EVTNAME80102"
     desc = "EVTDESC80102"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT80102OPTA"
         prestige = -10
@@ -623,9 +572,9 @@ country_event = {
     title = "EVTNAME80103" #The Amban's Demand - Qing vassals to hand over territory to Russia
     desc = "EVTDESC80103"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT80103OPTA"
         prestige = -5
@@ -647,7 +596,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT80103OPTB"
         prestige = 5
@@ -692,9 +641,9 @@ country_event = {
     title = "EVTNAME80104"
     desc = "EVTDESC80104"
     picture = "rebellion"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT80104OPTA"
         prestige = -10
@@ -712,9 +661,9 @@ country_event = {
     news_desc_medium = "EVTDESC80110_NEWS_MEDIUM"
     news_desc_short = "EVTDESC80110_NEWS_SHORT"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT80110OPTA"
         RUS = { country_event = 80101 }
@@ -746,7 +695,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT80110OPTB"
         prestige = 10
@@ -761,11 +710,11 @@ country_event = {
             }
             annex_to = THIS
         }
-        
+
         1613 = { add_core = MCK }
         any_owned = { limit = { is_core = MCK } add_province_modifier = { name = nationalist_agitation duration = 365 } }
         any_owned = { limit = { is_core = MCK } add_core = QNG }
-        
+
         ai_chance = {
             factor = 20
             modifier = {
@@ -796,9 +745,9 @@ country_event = {
     title = "EVTNAME80115"
     desc = "EVTDESC80115"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT80115OPTA"
         prestige = -5
@@ -842,7 +791,7 @@ country_event = {
             factor = 75
         }
     }
-    
+
     option = {
         name = "EVT80115OPTB"
         prestige = 5
@@ -864,9 +813,9 @@ country_event = {
     title = "EVTNAME80116"
     desc = "EVTDESC80116"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT80116OPTA"
         prestige = -5
@@ -953,16 +902,16 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 32520
     title = "EVTNAME32520" #The Eastern Islands
     desc = "EVTDESC32520"
     picture = "Southpole3"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         war = no
         year = 1845
@@ -1034,7 +983,7 @@ country_event = {
     title = "EVTNAME32522" #Trouble in Sakhalin (Russia Proposal)
     desc = "EVTDESC32522"
     picture = "kurils"
-    
+
     trigger = {
         OR = {
             tag = TSA
@@ -1054,7 +1003,7 @@ country_event = {
     }
 
     fire_only_once = yes
- 
+
     mean_time_to_happen =  {
         months = 120
         modifier = {
@@ -1069,9 +1018,9 @@ country_event = {
             factor = 0.5
             year = 1880
         }
-        
+
     }
-    
+
     option = { #Proposal A
         name = "EV32522OPTA"
         badboy = -2
@@ -1264,7 +1213,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT32524OPTB"
         prestige = 5
@@ -1347,7 +1296,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT32525OPTB"
         prestige = 5
@@ -1383,9 +1332,9 @@ country_event = {
     title = "EVTNAME32526" #Trouble in Sakhalin (Russia Response)
     desc = "EVTDESC32526"
     picture = "kurils"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT32526OPTA"
         prestige_factor = -0.1
@@ -1412,7 +1361,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT32526OPTB"
         badboy = 5
@@ -1438,7 +1387,7 @@ country_event = {
             }
         }
         random_owned = {
-            limit = { 
+            limit = {
                 province_id = 1086 #Pogobi
                 is_colonial = yes
             }
@@ -1455,9 +1404,9 @@ country_event = {
                 }
             }
         }
-        
+
         random_owned = {
-            limit = { 
+            limit = {
                 province_id = 1086 #Pogobi
                 is_colonial = no
             }
@@ -1474,7 +1423,7 @@ country_event = {
                 }
             }
         }
-        
+
         ai_chance = {
             factor = 50
             modifier = {
@@ -1526,9 +1475,9 @@ country_event = {
     title = "EVTNAME32527" #Treaty of Saint Petersburg (Peace)
     desc = "EVTDESC32527"
     picture = "treaty"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT32527OPTA"
         relation = { who = FROM value = 50 }
@@ -1550,16 +1499,16 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 32528
     title = "EVTNAME32527" #Treaty of Saint Petersburg (Russia Loses War)
     desc = "EVTDESC32528"
     picture = "treaty"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = fought_for_sakhalin
         1087 = { #Otomari
@@ -1570,13 +1519,13 @@ country_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         days = 7
     }
-    
+
     fire_only_once = yes
-    
+
     option = {
         name = "EVT32528OPTA"
         prestige_factor = -0.2
@@ -1597,14 +1546,14 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 32529
     title = "EVTNAME32527" #Treaty of Saint Petersburg (Russia Loses War For Japan)
     desc = "EVTDESC32529"
     picture = "treaty"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT32529OPTA"
         prestige = 20
@@ -1618,16 +1567,16 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 32530
     title = "EVTNAME32527" #Treaty of Saint Petersburg (Russia Wins War)
     desc = "EVTDESC32530"
     picture = "treaty"
-    
+
     trigger = {
-    OR = {
-        tag = TSA
-        tag = RUS
+        OR = {
+            tag = TSA
+            tag = RUS
         }
         has_country_flag = fought_for_sakhalin
         owns = 1087 #Otomari
@@ -1643,13 +1592,13 @@ country_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         days = 7
     }
-    
+
     fire_only_once = yes
-    
+
     option = {
         name = "EVT32530OPTA"
         prestige = 20
@@ -1677,14 +1626,14 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 32531
     title = "EVTNAME32527" #Treaty of Saint Petersburg (Russia Wins War For Japan)
     desc = "EVTDESC32531"
     picture = "treaty"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT32528OPTA"
         prestige_factor = -0.1
@@ -1692,12 +1641,12 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 32532
     title = "EVTNAME32532" #Russia expels the chinese from Outer Manchuria
     desc = "EVTDESC32532"
     picture = "vladivostok_manchu"
-    
+
     trigger = {
         has_country_flag = country_trying_to_expel_the_manchus
         owns = 1082
@@ -1707,28 +1656,28 @@ country_event = {
         has_global_flag = trying_to_expel_the_manchus
     }
 
-    mean_time_to_happen = { 
-        months = 80 
+    mean_time_to_happen = {
+        months = 80
             modifier = {
                 factor = 0.8
                 CHI_1082 = { any_owned_province = { country_units_in_province = THIS } }
             }
         }
-    
+
     option = {
         name = "EVT32532OPTA"
         set_global_flag = manchus_expelled_primorye
         clr_global_flag = trying_to_expel_the_manchus
         clr_country_flag = country_trying_to_expel_the_manchus
         prestige = 5
-        1082 = { 
-        
+        1082 = {
+
         poor_strata = {
         limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+					has_pop_culture = manchu
+					has_pop_culture = beifaren
+					has_pop_culture = nanfaren
                 }
             }
             random_list = {
@@ -1738,26 +1687,26 @@ country_event = {
                 }
                 move_pop = 1554
             }
-            
-            any_pop = { 
+
+            any_pop = {
                 limit = {
                 OR = {
-                    culture = manchu
-                    culture = beifaren
-                    culture = nanfaren
+					has_pop_culture = manchu
+					has_pop_culture = beifaren
+					has_pop_culture = nanfaren
                     }
                 }
-                
+
                 militancy = 7
                 consciousness = 9
             }
-            
-        any_pop = { 
+
+        any_pop = {
         limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+					has_pop_culture = manchu
+					has_pop_culture = beifaren
+					has_pop_culture = nanfaren
             }
             OR = {
                 pop_type = artisans
@@ -1770,13 +1719,14 @@ country_event = {
         add_province_modifier = { name = population_resettlement duration = 2190 }
         remove_province_modifier = nationalist_agitation
         }
-        
-        1083 = { poor_strata = { 
+
+		1083 = {
+			poor_strata = {
         limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+						has_pop_culture = manchu
+						has_pop_culture = beifaren
+						has_pop_culture = nanfaren
                 }
             }
                 random_list = {
@@ -1786,12 +1736,12 @@ country_event = {
                     }
                 move_pop = 1554
                 }
-            any_pop = { 
+            any_pop = {
             limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+						has_pop_culture = manchu
+						has_pop_culture = beifaren
+						has_pop_culture = nanfaren
                 }
             }
                 militancy = 7
@@ -1800,9 +1750,9 @@ country_event = {
             any_pop = {
                 limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+						has_pop_culture = manchu
+						has_pop_culture = beifaren
+						has_pop_culture = nanfaren
                 }
             OR = {
                 pop_type = artisans
@@ -1815,13 +1765,13 @@ country_event = {
             add_province_modifier = { name = population_resettlement duration = 1460 }
             remove_province_modifier = nationalist_agitation
         }
-        
-        1084 = { poor_strata = { 
+
+        1084 = { poor_strata = {
         limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             }
             random_list = {
@@ -1831,23 +1781,23 @@ country_event = {
                 }
                 move_pop = 1553
             }
-            any_pop = { 
+            any_pop = {
             limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             }
                 militancy = 7
                 consciousness = 9
             }
-            any_pop = { 
+            any_pop = {
             limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             OR = {
                 pop_type = artisans
@@ -1860,13 +1810,13 @@ country_event = {
         add_province_modifier = { name = population_resettlement duration = 1460 }
         remove_province_modifier = nationalist_agitation
         }
-        
+
         1085 = { poor_strata = {
         limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             }
             random_list = {
@@ -1879,9 +1829,9 @@ country_event = {
             any_pop = {
             limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             }
                 militancy = 7
@@ -1890,9 +1840,9 @@ country_event = {
             any_pop = {
             limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             OR = {
                 pop_type = artisans
@@ -1905,13 +1855,13 @@ country_event = {
         add_province_modifier = { name = population_resettlement duration = 1460 }
         remove_province_modifier = nationalist_agitation
         }
-        
-        2617 = { poor_strata = { 
+
+        2617 = { poor_strata = {
         limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             }
             random_list = {
@@ -1921,12 +1871,12 @@ country_event = {
                 }
                 move_pop = 1553
             }
-            any_pop = { 
+            any_pop = {
             limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             }
                 militancy = 7
@@ -1935,9 +1885,9 @@ country_event = {
             any_pop = {
                 limit = {
             OR = {
-                culture = manchu
-                culture = beifaren
-                culture = nanfaren
+				has_pop_culture = manchu
+				has_pop_culture = beifaren
+				has_pop_culture = nanfaren
                 }
             OR = {
                 pop_type = artisans
@@ -1953,13 +1903,13 @@ country_event = {
     }
 }
 
-country_event = {   
-    
+country_event = {
+
     id = 32533
     title = "EVTNAME32533" #Russia fails to expels the chinese from Outer Manchuria
     desc = "EVTDESC32533"
     picture = "ambush_army"
-    
+
     trigger = {
         has_country_flag = country_trying_to_expel_the_manchus
         owns = 1082
@@ -1968,9 +1918,9 @@ country_event = {
         NOT = { has_global_flag = manchus_expelled_primorye }
         has_global_flag = trying_to_expel_the_manchus
     }
-        
+
     mean_time_to_happen = { months = 80 }
-    
+
     option = {
         name = "EVT32533OPTA"
         clr_country_flag = country_trying_to_expel_the_manchus
@@ -1982,12 +1932,13 @@ country_event = {
 
 #1841 Rebellion in Guria
 province_event = {
-    
+
     id = 32535
     title = "EVTNAME32535"
     desc = "EVTDESC32535"
-    
+
     trigger = {
+		NOT = { owner = { tag = TUR } }
         is_core = GEO
         year = 1840
         OR = {
@@ -1996,16 +1947,16 @@ province_event = {
         }
         NOT = { year = 1860 }
     }
-    
+
     fire_only_once = yes
-    
+
     allow_multiple_instances = no
-        
+
     mean_time_to_happen = { months = 6 }
-    
+
     option = {
         name = "EVT32535OPTA"
-        any_pop = { 
+        any_pop = {
             limit = { has_pop_culture = georgian }
             militancy = 7
             reduce_pop = 0.99
@@ -2015,16 +1966,16 @@ province_event = {
 
 #Renaming central asia and removing cores
 country_event = {
-    
+
     id = 32536
     title = "EVTNAME32536"
     desc = "EVTDESC32536"
     picture = "storm_of_samarkand"
-    
+
     trigger = {
-    OR = {
-        tag = TSA
-        tag = RUS
+        OR = {
+            tag = TSA
+            tag = RUS
         }
         owns = 1186
         owns = 1187
@@ -2036,12 +1987,12 @@ country_event = {
         owns = 1194
         owns = 2612
     }
-    
+
     fire_only_once = yes
-    
-        
+
+
     mean_time_to_happen = { months = 6 }
-    
+
     option = {
         name = "EVT32536OPTA"
             2606 = { change_province_name = "Zhambyl" remove_core = THIS }
@@ -2050,7 +2001,7 @@ country_event = {
             1186 = { change_province_name = "Verniy" remove_core = THIS }
             1187 = { change_province_name = "Semipalatinsk" remove_core = THIS }
             1190 = { remove_core = THIS }
-            1194 = { remove_core = THIS }
+			1194 = { remove_core = THIS change_province_name = "Fort Alexandrovsky" }
             1192 = { remove_core = THIS }
             2612 = { remove_core = THIS }
             1186 = { state_scope = { change_region_name = "Semireche" } }
@@ -2059,16 +2010,16 @@ country_event = {
 
 #Mysticism in Russia
 country_event = {
-    
+
     id = 32537
     title = "EVTNAME32537"
     desc = "EVTDESC32537"
     picture = "mysticism_in_russia"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         OR = {
             government = absolute_monarchy
@@ -2079,17 +2030,17 @@ country_event = {
         average_consciousness = 3
         average_militancy = 1
     }
-    
+
     fire_only_once = yes
 
-    mean_time_to_happen = { 
-        months = 200 
-        
+    mean_time_to_happen = {
+        months = 200
+
         modifier = {
             factor = 0.9
             year = 1875
             }
-            
+
         modifier = {
             factor = 0.6
             year = 1885
@@ -2099,12 +2050,12 @@ country_event = {
             year = 1895
             }
     }
-    
+
     option = {
         name = "EVT32537OPTA"
             any_pop = {
                 militancy = -1
-                consciousness = -6 
+                consciousness = -6
                 dominant_issue = {
                     value = moralism
                     factor = 0.1
@@ -2113,7 +2064,7 @@ country_event = {
             random = { chance = 75 set_country_flag = come_see_me_grigori }
         ai_chance = { factor = 80 }
     }
-    
+
     option = {
         name = "EVT32537OPTB"
             any_pop = {
@@ -2132,16 +2083,16 @@ country_event = {
 
 #The Rise of Grigori
 country_event = {
-    
+
     id = 32538
     title = "EVTNAME32538"
     desc = "EVTDESC32538"
     picture = "orthodox_priests"
-    
+
     trigger = {
-    OR = {
-        tag = TSA
-        tag = RUS
+        OR = {
+            tag = TSA
+            tag = RUS
         }
         has_country_flag = come_see_me_grigori
         OR = {
@@ -2152,11 +2103,11 @@ country_event = {
         year = 1900
     }
 
-    
+
     fire_only_once = yes
 
     mean_time_to_happen = { months = 6 }
-    
+
     option = {
         name = "EVT32538OPTA"
         set_country_flag = grigori_arrived
@@ -2168,16 +2119,16 @@ country_event = {
 
 #Grigori influence on court
 country_event = {
-    
+
     id = 32539
     title = "EVTNAME32539"
     desc = "EVTDESC32539"
     picture = "grigori_in_court"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = grigori_arrived
         OR = {
@@ -2191,7 +2142,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = { months = 36 }
-    
+
     option = {
         name = "EVT32539OPTA"
         clr_country_flag = grigori_arrived
@@ -2199,7 +2150,7 @@ country_event = {
         any_pop = { limit = { strata = rich } consciousness = 3 }
         ai_chance = { factor = 80 }
     }
-    
+
     option = {
         name = "EVT32539OPTB"
         clr_country_flag = grigori_arrived
@@ -2212,16 +2163,16 @@ country_event = {
 
 #Grigori exiled
 country_event = {
-    
+
     id = 32540
     title = "EVTNAME32540"
     desc = "EVTDESC32540"
     picture = "look_into_my_eyes_child"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = grigori_will_be_exiled
         OR = {
@@ -2234,7 +2185,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = { months = 6 }
-    
+
     option = {
         name = "EVT32540OPTA"
         set_country_flag = grigori_exiled
@@ -2246,16 +2197,16 @@ country_event = {
 
 #Grigori Assumes Power
 country_event = {
-    
+
     id = 32541
     title = "EVTNAME32541"
     desc = "EVTDESC32541"
     picture = "grigori_cartoons"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = grigori_in_power
         OR = {
@@ -2271,7 +2222,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = { months = 1 }
-    
+
     option = {
         name = "EVT32541OPTA"
         set_country_flag = tsar_in_the_front
@@ -2283,16 +2234,16 @@ country_event = {
 
 #The Telegram
 country_event = {
-    
+
     id = 32542
     title = "EVTNAME32542"
     desc = "EVTDESC32542"
     picture = "look_into_my_eyes_child"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = tsar_in_the_front
         OR = {
@@ -2307,7 +2258,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = { months = 4 }
-    
+
     option = {
         name = "EVT32542OPTA"
         random_list = {
@@ -2317,13 +2268,13 @@ country_event = {
         }
         ai_chance = { factor = 100 }
     }
-    
+
     option = {
         name = "EVT32542OPTB"
         random_list = {
             50 = { set_country_flag = rasputin_killed_by_peasants }
             25 = { set_country_flag = rasputin_killed_by_nobles }
-            25 = { set_country_flag = rasputin_survived } 
+            25 = { set_country_flag = rasputin_survived }
         }
     }
 }
@@ -2331,16 +2282,16 @@ country_event = {
 
 #Killed by Nobles
 country_event = {
-    
+
     id = 32543
     title = "EVTNAME32543"
     desc = "EVTDESC32543"
     picture = "yusupov_palace"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = rasputin_killed_by_nobles
         OR = {
@@ -2354,7 +2305,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = { months = 12 }
-    
+
     option = {
         name = "EVT32543OPTA"
         clr_country_flag = rasputin_killed_by_nobles
@@ -2366,16 +2317,16 @@ country_event = {
 
 #Killed by Peasants
 country_event = {
-    
+
     id = 32544
     title = "EVTNAME32544"
     desc = "EVTDESC32544"
     picture = "grigori_blessing"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = rasputin_killed_by_peasants
         OR = {
@@ -2390,41 +2341,41 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = { months = 12 }
-    
+
     option = {
         name = "EVT32543OPTA"
         clr_country_flag = rasputin_killed_by_peasants
         any_pop = { limit = { pop_majority_ideology = communist } reduce_pop = 0.95 militancy = 7 }
         any_pop = {
             consciousness = 2
-            militancy = -1 
-            
+            militancy = -1
+
             ideology = {
                 factor = -0.2
                 value = communist
                 }
-                
+
             ideology = {
-                factor = 0.2 
+                factor = 0.2
                 value = conservative
                 }
             }
-        
+
         }
 }
 
 #Survived
 country_event = {
-    
+
     id = 32545
     title = "EVTNAME32545"
     desc = "EVTDESC32545"
     picture = "grigori_hospital"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         has_country_flag = rasputin_survived
         OR = {
@@ -2438,477 +2389,10 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = { months = 12 }
-    
+
     option = {
         name = "EVT32545OPTA"
         clr_country_flag = rasputin_survived
-        any_pop = { consciousness = -1 militancy = -1 }     
+        any_pop = { consciousness = -1 militancy = -1 }
         }
-}
-
-
-#Slav-West Split
-country_event = {
-    id = 121325
-    title = "EVTNAME121325"
-    desc = "EVTDESC121325"
-    picture = "Dostoevsky"
-
-    fire_only_once = yes
-
-    trigger = {
-        tag = RUS
-        year = 1837
-    }
-
-    mean_time_to_happen = {
-        months = 5
-    }
-
-    option = {
-        name = "EVTOPTA121325"
-        any_pop = {
-            limit = {
-                location = {
-                    is_colonial = no
-                }
-            is_accepted_culture = yes
-            }
-            scaled_consciousness = {
-                ideology = liberal
-                factor = 1
-            }
-            scaled_consciousness = {
-                ideology = conservative
-                factor = 1
-            }
-        }
-    }
-}
-
-#Tsar dies, new one comes
-country_event = {
-    id = 121326
-    title = "EVTNAME121326"
-    desc = "EVTDESC121326"
-    picture = "Danishgovernment"
-
-    fire_only_once = yes
-
-    trigger = {
-        tag = RUS
-        year = 1861
-    }
-
-    mean_time_to_happen = {
-        months = 2
-    }
-
-    option = {
-        name = "EVTOPTA121326"
-        any_pop = {
-            limit = {
-                location = {
-                    is_colonial = no
-                }
-            is_accepted_culture = yes
-            }
-            ideology = {
-                value = reactionary
-                factor = 0.15
-            }
-            scaled_militancy = {
-                    ideology = reactionary
-                    factor = 5
-            }
-        }
-    }
-}
-
-#The Slavophile-Westernizer Healing
-country_event = {
-    id = 121327
-    title = "EVTNAME121327"
-    desc = "EVTDESC121327"
-    picture = "Dostoevsky"
-
-    fire_only_once = yes
-
-    trigger = {
-        tag = RUS
-        year = 1863
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA121327"
-        any_pop = {
-            limit = {
-                location = {
-                    is_colonial = no
-                }
-            is_accepted_culture = yes
-            }
-            scaled_consciousness = {
-                ideology = liberal
-                factor = -1
-            }
-            scaled_consciousness = {
-                ideology = conservative
-                factor = -1
-            }
-        }
-        remove_country_modifier = westernizers_in_power
-        remove_country_modifier = slavophiles_in_power
-        remove_country_modifier = reactionary_fired
-    }
-}
-
-#Russian Civil War
-country_event = {
-    id = 32411
-    title = "EVTNAME32411"
-    desc = "EVTDESC32411"
-    major = yes
-    
-    trigger = {
-        tag = RUS
-        year = 1860
-        NOT = {
-            has_global_flag = russian_civil_war_has_happened
-        }
-    }
-    
-    immediate = { clr_country_flag = reactionary_fired }
-    
-    mean_time_to_happen = {
-        months = 10
-        modifier = {
-            factor = .8
-                year = 1865
-            }
-        modifier = {
-            factor = .5
-                year = 1870
-        }
-        modifier = {
-            factor = .1
-            year = 1880
-        }
-    }
-    
-    option = {
-        name = "EVTOPTA32411"
-        remove_country_modifier = reactionary_fired
-        RUS = {
-            all_core = {
-                add_core = TSA
-            }
-        }
-        capital = 994
-        any_owned = {
-            limit = {
-                OR = {
-                    region = RUS_943
-                    region = RUS_947
-                    region = RUS_978
-                    region = RUS_1009
-                    region = RUS_1008
-                    region = RUS_998
-                    region = RUS_977
-                    region = RUS_973
-                    region = RUS_964
-                    region = RUS_979
-                    region = RUS_1037
-                    region = RUS_1020
-                    region = RUS_990
-                    province_id = 965
-                    province_id = 1048
-                    province_id = 1039
-                    province_id = 1035
-                }
-                NOT = {
-                    province_id = 1032
-                    province_id = 972
-                    province_id = 992
-                    province_id = 993
-                    province_id = 990
-                    province_id = 987
-                    province_id = 1038
-                }
-            }
-            secede_province = TSA
-        }
-        TSA = {
-            political_reform = mandatory_service
-            capital = 1008
-            leadership = 80
-            treasury = 25000
-            small_arms = 100
-            ammunition = 200
-            canned_food = 200
-            wine = 200
-            liquor = 200
-        }
-        war = {
-            target = TSA
-            attacker_goal = {
-                casus_belli = civil_war
-            }
-            defender_goal = {
-                casus_belli = civil_war
-            }
-        }
-        set_global_flag = russian_civil_war_has_happened
-        clr_country_flag = reactionary_fired
-        any_pop = {
-            militancy = -7
-        }
-    }
-    
-    option = {
-        name = "EVTOPTB32411"
-        remove_country_modifier = reactionary_fired
-        any_pop = {
-            militancy = -7
-        }
-        RUS = {
-            all_core = {
-                add_core = TSA
-                }
-            }
-        capital = 994
-        any_owned = {
-            limit = {
-                OR = {
-                    region = RUS_943
-                    region = RUS_947
-                    region = RUS_978
-                    region = RUS_1009
-                    region = RUS_1008
-                    region = RUS_998
-                    region = RUS_977
-                    region = RUS_973
-                    region = RUS_964
-                    region = RUS_979
-                    region = RUS_1037
-                    region = RUS_1020
-                    region = RUS_990
-                    province_id = 965
-                    province_id = 1048
-                    province_id = 1039
-                    province_id = 1035
-                }
-                NOT = {
-                    province_id = 1032
-                    province_id = 972
-                    province_id = 992
-                    province_id = 993
-                    province_id = 990
-                    province_id = 987
-                    province_id = 1038
-                }
-            }
-            secede_province = TSA
-        }
-        TSA = {
-            political_reform = mandatory_service
-            capital = 1008
-            leadership = 80
-            treasury = 25000
-            small_arms = 100
-            ammunition = 200
-            canned_food = 200
-            wine = 200
-            liquor = 200
-        }
-        change_tag_no_core_switch = TSA
-        RUS = {
-            war = {
-                target = TSA
-                attacker_goal = {
-                    casus_belli = civil_war
-                }
-                defender_goal = {
-                    casus_belli = civil_war
-                }
-            }
-        }
-        set_global_flag = russian_civil_war_has_happened
-        clr_country_flag = reactionary_fired
-    }
-}
-
-#RUS loses via WE
-country_event = {
-    id = 32412
-    title = "EVTNAME86029"
-    desc = "EVTDESC86029"
-    picture = "Riot"
-
-    trigger = {
-        civilized = yes
-        tag = RUS
-        war_with = TSA
-        war_exhaustion = 100
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA86029"
-        TSA = {
-            inherit = RUS
-        }
-    }
-}
-
-#TSA loses via WE
-country_event = {
-    id = 32413
-    title = "EVTNAME86029"
-    desc = "EVTDESC86029"
-    picture = "Riot"
-
-    trigger = {
-        civilized = yes
-        tag = TSA
-        war_with = RUS
-        war_exhaustion = 100
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA86029"
-        RUS = {
-            inherit = TSA
-        }
-    }
-}
-
-#RUS Wins Civil War, gets rid of TSA cores
-country_event = {
-    id = 32414
-    title = "EVTNAME32414"
-    desc = "EVTDESC32414"
-    picture = "Celebration"
-
-    trigger = {
-        civilized = yes
-        tag = RUS
-        NOT = {
-            war_with = TSA
-        }
-        has_global_flag = russian_civil_war_has_happened
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        months = 3
-    }
-
-    option = {
-        name = "EVTOPTA32414"
-        TSA = {
-            all_core = {
-                remove_core = TSA
-                }
-            }
-        war_exhaustion = -50
-        prestige = 20
-        any_pop = {
-            ideology = {
-                value = liberal
-                factor = 0.15
-            }
-        }
-        set_global_flag = liberal_victory
-    }
-}
-
-#TSA Wins Civil War, gets rid of RUS cores
-country_event = {
-    id = 32415
-    title = "EVTNAME32415"
-    desc = "EVTDESC32415"
-    picture = "Celebration"
-
-    trigger = {
-        civilized = yes
-        tag = TSA
-        NOT = {
-            war_with = RUS
-        }
-        has_global_flag = russian_civil_war_has_happened
-        NOT = {
-            has_global_flag = liberal_victory
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        months = 8
-    }
-
-    option = {
-        name = "EVTOPTA32415"
-        prestige = 20
-        RUS = {
-            all_core = {
-                remove_core = RUS
-                }
-            }
-        war_exhaustion = -50
-    }
-}
-
-#Back to War with Each other
-country_event = {
-    id = 32416
-    title = "EVTNAME32416"
-    desc = "EVTDESC32416"
-    picture = "Riot"
-
-    trigger = {
-        civilized = yes
-        tag = RUS
-        NOT = {
-            war_with = TSA
-        }
-        has_global_flag = russian_civil_war_has_happened
-        exists = TSA
-        exists = RUS
-        NOT = {
-            has_global_flag = liberal_victory
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA32416"
-        RUS = {
-            war = {
-                target = TSA
-                attacker_goal = {
-                    casus_belli = civil_war
-                }
-                defender_goal = {
-                    casus_belli = civil_war
-                }
-            }
-        }
-    }
 }

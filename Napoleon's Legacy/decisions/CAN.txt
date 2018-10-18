@@ -93,55 +93,45 @@ political_decisions = {
         effect = {
             set_country_flag = british_columbia_organized
             prestige = 5
-            13 = {
-                state_scope = {
-                    change_region_name = "Southern British Columbia"
-                }
-            }
-            18 = {
-                state_scope = {
-                    change_region_name = "Northern British Columbia"
-                }
-            }
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
+		}
 
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-    form_the_rcmp = {
-    picture = form_the_rcmp
-        potential = {
-            tag = CAN
-            NOT = { has_country_modifier = rcmp }
-        }
-        allow = {
-            revolution_n_counterrevolution = 1
-            owns = 22
-            owns = 30
-            owns = 36
-        }
-        effect = {
-            22 = { life_rating = 11 }
-            add_country_modifier = { name = rcmp duration = -1 }
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
+	form_the_rcmp = {
+	picture = form_the_rcmp
+		potential = {
+			tag = CAN
+			NOT = { has_country_modifier = rcmp }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			owns = 22
+			owns = 30
+			owns = 36
+		}
+		effect = {
+			22 = { life_rating = 11 }
+			add_country_modifier = { name = rcmp duration = -1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-    build_the_cnr = {
-        picture = whistlestop_tour
-        potential = {
-            tag = CAN
-            early_railroad = 1
-            NOT = { has_country_flag = build_the_cnr }
-            NOT = { has_country_flag = build_the_cnr3 }
-        }
-        allow = {
-            war = no
-            money = 4100
+	build_the_cnr = {
+		picture = whistlestop_tour
+		potential = {
+			tag = CAN
+			early_railroad = 1
+			NOT = { has_country_flag = build_the_cnr }
+			NOT = { has_country_flag = build_the_cnr3 }
+		}
+		allow = {
+			war = no
+			money = 3000
             iron_railroad = 1
             owns = 52
             owns = 36
@@ -152,8 +142,14 @@ political_decisions = {
         effect = {
             add_country_modifier = { name = monument_under_construction duration = 730 }
             set_country_flag = build_the_cnr
-            treasury = -4000
-            52 = { infrastructure = 1 }
+			treasury = -3000
+			any_owned = {
+				limit = {
+					province_id = 52
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
+				}
+				infrastructure = 1
+			}
             13 = { change_province_name = "Vancouver" }
         }
         ai_will_do = { factor = 1 }
@@ -177,7 +173,7 @@ political_decisions = {
 
         allow = {
             war = no
-            money = 101000
+			money = 10000
             iron_railroad = 1
             owns = 52
             owns = 36
@@ -191,18 +187,34 @@ political_decisions = {
         effect = {
             add_country_modifier = { name = monument_under_construction duration = 730 }
             set_country_flag = build_the_cnr1
-            treasury = -100000
+			treasury = -2000
             any_owned = {
             limit = {
-                OR = {
                     province_id = 51
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
+				}
+				infrastructure = 1 owner = { treasury = -2000 }
+			}
+			any_owned = {
+				limit = {
                     province_id = 50
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
+				}
+				infrastructure = 1 owner = { treasury = -2000 }
+			}
+			any_owned = {
+				limit = {
                     province_id = 49
-                    province_id = 36
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
                 }
-                can_build_in_province = { building = railroad }
+				infrastructure = 1 owner = { treasury = -2000 }
+			}
+			any_owned = {
+				limit = {
+					province_id = 36
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
             }
-            infrastructure = 1
+				infrastructure = 1 owner = { treasury = -2000 }
         }
             36 = { add_province_modifier = { name = gateway_to_harbor duration = 365 } }
         }
@@ -223,7 +235,7 @@ political_decisions = {
 
         allow = {
             war = no
-            money = 201000
+			money = 15000
             iron_railroad = 1
             owns = 36
             owns = 26
@@ -237,27 +249,55 @@ political_decisions = {
         effect = {
             add_country_modifier = { name = monument_under_construction duration = 730 }
             set_country_flag = build_the_cnr2
-            treasury = -200000
+			treasury = -5000
             any_owned = {
             limit = {
-                OR = {
                     province_id = 41
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
+				}
+				infrastructure = 1 owner = { treasury = -2000 }
+			}
+			any_owned = {
+				limit = {
                     province_id = 30
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
+				}
+				infrastructure = 1 owner = { treasury = -2000 }
+			}
+			any_owned = {
+				limit = {
                     province_id = 35
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
+				}
+				infrastructure = 1 owner = { treasury = -2000 }
+			}
+			any_owned = {
+				limit = {
                     province_id = 29
-                    province_id = 26
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
                 }
-                can_build_in_province = {
-                    building = railroad
+				infrastructure = 1 owner = { treasury = -2000 }
                     }
+			any_owned = {
+				limit = {
+					province_id = 26
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
                 }
-                infrastructure = 1
+				infrastructure = 1 owner = { treasury = -2000 }
             }
-            26 = {
+			25 = {
                 change_province_name = "Calgary"
                 life_rating = 12
                 add_province_modifier = { name = gateway_to_harbor duration = 365 }
             }
+			69 = { change_province_name = "Edmundston" }
+			41 = { change_province_name = "Brandon" }
+			30 = { change_province_name = "Regina" }
+			34 = { change_province_name = "Saskatoon" }
+			35 = { change_province_name = "Maple Creek" }
+			22 = { change_province_name = "Bonnyville" }
+			26 = { change_province_name = "Red Deer" }
+			24 = { change_province_name = "Medicine Hat" }
         }
         ai_will_do = { factor = 1 }
     }
@@ -275,7 +315,7 @@ political_decisions = {
 
         allow = {
             war = no
-            money = 301000
+			money = 15000
             iron_railroad = 1
             owns = 26
             owns = 13
@@ -292,25 +332,41 @@ political_decisions = {
             clr_country_flag = build_the_cnr1
             clr_country_flag = build_the_cnr2
             prestige = 10
-            treasury = -300000
+			treasury = -7000
             any_owned = {
             limit = {
-                OR = {
                     province_id = 28
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
+				}
+				infrastructure = 1 owner = { treasury = -2000 }
+			}
+			any_owned = {
+				limit = {
                     province_id = 21
-                    province_id = 20
-                    province_id = 13
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
                 }
-                can_build_in_province = {
-                    building = railroad
+				infrastructure = 1 owner = { treasury = -2000 }
                     }
+			any_owned = {
+				limit = {
+					province_id = 20
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
                 }
-                infrastructure = 1
+				infrastructure = 1 owner = { treasury = -2000 }
             }
-            13 = {
-                add_province_modifier = { name = gateway_to_harbor duration = 1825 }
+			any_owned = {
+				limit = {
+					province_id = 13
+					can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
             }
+				infrastructure = 1 owner = { treasury = -2000 }
         }
+			13 = { add_province_modifier = { name = gateway_to_harbor duration = 1825 } }
+			52 = { change_province_name = "Sudbury" }
+			49 = { change_province_name = "Kenora" }
+			2594 = { change_province_name = "Osnaburgh" }
+			6 = { change_province_name = "Whitehorse" }
+		}
         ai_will_do = { factor = 1 }
     }
 
@@ -343,6 +399,47 @@ political_decisions = {
             add_core = CAN
             }
         }
-        ai_will_do = { factor = 1 }
-    }
+		ai_will_do = { factor = 1 }
+	}
+
+	found_ottawa = {
+		picture = bytown_1853
+		potential = {
+			owns = 57
+			NOT = { has_global_flag = ottawa_founded }
+			57 = { NOT = { has_province_modifier = genocide } }
+		}
+
+		allow = {
+			war = no
+			iron_railroad = 1
+		}
+
+		effect = {
+			set_global_flag = ottawa_founded
+			57 = { change_province_name = "Ottawa" life_rating = 4 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	alaskan_frontier = {
+		picture = fort_selkirk
+		potential = {
+			owns = 17
+			6 = { empty = yes }
+		}
+
+		allow = {
+			war = no
+			invention = mission_to_civilize
+		}
+
+		effect = {
+			6 = {
+				secede_province = THIS
+				change_province_name = "Fort Selkirk"
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }

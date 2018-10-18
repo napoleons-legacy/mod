@@ -6,7 +6,7 @@ plurality = 15.0
 nationalvalue = nv_order
 literacy = 0.7
 civilized = yes
-prestige = 5
+prestige = 6
 
 # Political reforms
 slavery = no_slavery
@@ -31,7 +31,11 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = BAY_conservative_2
 upper_house = {
@@ -66,7 +70,7 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 

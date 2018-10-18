@@ -7,7 +7,7 @@ country_event = {
     title = "EVTNAME95640" #Persecution of French Missionaries
     desc = "EVTDESC95639"
     picture = "missionaries"
-    
+
     trigger = {
         owns = 1380
         civilized = no
@@ -27,7 +27,7 @@ country_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 24
         modifier = {
@@ -39,7 +39,7 @@ country_event = {
             neighbour = NET
         }
     }
-    
+
     option = {
         name = "EVT95639OPTA"
         NET = {
@@ -48,15 +48,15 @@ country_event = {
         }
     }
 }
-    
-    
+
+
 
 country_event = {
     id = 95640
     title = "EVTNAME95640" #Persecution of French Missionaries - French Response
     desc = "EVTDESC95640"
     picture = "missionaries"
-    
+
     is_triggered_only = yes
 
     option = {
@@ -66,7 +66,7 @@ country_event = {
             factor = 90
         }
     }
-    
+
     option = {
         name = "EVT95640OPTB"
         prestige = -20
@@ -90,9 +90,9 @@ country_event = {
     title = "EVTNAME95641" #The French Demand
     desc = "EVTDESC95641"
     picture = "missionaries"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95641OPTA"
         prestige = -10
@@ -101,10 +101,11 @@ country_event = {
         any_owned = {
             limit = { region = DAI_1380 }
             secede_province = NET
-        }
+			1380 = { trade_goods = coffee }
+		}
         ai_chance = { factor = 10 }
     }
-    
+
     option = {
         name = "EVT95641OPTB"
         prestige = 5
@@ -124,9 +125,9 @@ country_event = {
     news_desc_medium = "EVTDESC95641_NEWS_MEDIUM"
     news_desc_short = "EVTDESC95641_NEWS_SHORT"
     picture = "administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95642OPTA"
         relation = {
@@ -189,7 +190,7 @@ country_event = {
     title = "EVTNAME95645" #The Suzerainty of Cambodia
     desc = "EVTDESC95645"
     picture = "asian_administration"
-    
+
     trigger = {
         tag = CAM
         civilized = no
@@ -213,7 +214,7 @@ country_event = {
             has_country_flag = asked_for_french_protection
         }
     }
-    
+
     mean_time_to_happen = {
         months = 50
         modifier = {
@@ -229,7 +230,7 @@ country_event = {
             DAI = { exists = no }
         }
     }
-    
+
     option = {
         name = "EVT95645OPTA"
         NET = { country_event = 95646 }
@@ -237,7 +238,7 @@ country_event = {
             factor = 80
         }
     }
-    
+
     option = {
         name = "EVT95645OPTB"
         DAI = {
@@ -272,9 +273,9 @@ country_event = {
     title = "EVTNAME95646" #The King of Cambodia
     desc = "EVTDESC95646"
     picture = "deliberation"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95646OPTA"
         diplomatic_influence = { who = CAM value = 200 }
@@ -282,7 +283,7 @@ country_event = {
         DAI = { country_event = 95647 }
         ai_chance = { factor = 90 }
     }
-    
+
     option = {
         name = "EVT95646OPTB"
         CAM = { country_event = 95649 }
@@ -295,9 +296,9 @@ country_event = {
     title = "EVTNAME95645" #The Suzerainty of Cambodia - To Dai Nam
     desc = "EVTDESC95645"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95647OPTA"
         NET = { create_vassal = CAM }
@@ -311,7 +312,7 @@ country_event = {
         }
         ai_chance = { factor = 75 }
     }
-    
+
     option = {
         name = "EVT95647OPTB"
         NET = { country_event = 95648 }
@@ -324,9 +325,9 @@ country_event = {
     title = "EVTNAME95648"
     desc = "EVTDESC95648"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95648OPTA"
         war = {
@@ -344,9 +345,9 @@ country_event = {
     title = "EVTNAME95649"
     desc = "EVTDESC95649"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95649OPTA"
         DAI = {
@@ -372,7 +373,7 @@ country_event = {
         }
         ai_chance = { factor = 90 }
     }
-    
+
     option = {
         name = "EVT95649OPTB"
         prestige = -10
@@ -439,12 +440,12 @@ country_event = {
             factor = 2
             ai = no
         }
-        
+
         modifier = {
             factor = 0.75
             revolution_n_counterrevolution = 1
         }
-        
+
         modifier = {
             factor = 0.5
             mass_politics = 1
@@ -460,7 +461,6 @@ country_event = {
                     primary_culture = lao
                     primary_culture = khmer
                     primary_culture = vietnamese
-                    is_vassal = no
                     AND = {
                         tag = SIA
                         any_owned_province = {
@@ -473,6 +473,7 @@ country_event = {
                         }
                     }
                 }
+				is_vassal = no
                 exists = yes
                 civilized = no
                 neighbour = THIS
@@ -556,7 +557,7 @@ country_event = {
             }
             THIS = { diplomatic_influence = { who = DAI value = -200 } }
         }
-        
+
         random_country = {
             limit = {
                 tag = DAI
@@ -582,8 +583,8 @@ country_event = {
             }
             THIS = { diplomatic_influence = { who = DAI value = -200 } }
         }
-        
-        
+
+
         ai_chance = {
             factor = 90
             modifier = {
@@ -647,9 +648,9 @@ country_event = {
     title = "EVTNAME95641" #The French Demand
     desc = "EVTDESC95652"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95652OPTA"
         prestige = -20
@@ -676,7 +677,7 @@ country_event = {
         remove_core = SIA
         secede_province = NET
         }
-        
+
         random_country = {
             limit = {
                 tag = CHK
@@ -687,7 +688,7 @@ country_event = {
             }
         annex_to = NET
         }
-        
+
         any_owned = {
             limit = { is_core = LUA }
             remove_core = SIA
@@ -740,7 +741,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT95652OPTB"
         NET = { country_event = 95653 }
@@ -768,9 +769,9 @@ country_event = {
     title = "EVTNAME95653"
     desc = "EVTDESC95653"
     picture = "deliberation"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95653OPTA"
         prestige = -10
@@ -794,16 +795,16 @@ country_event = {
     title = "EVTNAME95654"
     desc = "EVTDESC95654"
     picture = "treaty"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95654OPTA"
         prestige = 20
         relation = { who = SIA value = 200 }
         diplomatic_influence = { who = SIA value = 100 }
         diplomatic_influence = { who = LUA value = 200 }
-        diplomatic_influence = { who = WIA value = 200 }            
+        diplomatic_influence = { who = WIA value = 200 }
     }
 }
 
@@ -814,23 +815,30 @@ country_event = {
     title = "EVTNAME95655" #The Unequal Treaty
     desc = "EVTDESC95655"
     picture = "Opiumwar"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95655OPTA"
         NET = { country_event = 95656 }
         prestige = -10
         random_owned = {
-            limit = {
-                owner = { has_country_modifier = uncivilized_isolationism }
-            }
+			limit = { owner = { has_country_modifier = uncivilized_isolationism }}
             owner = {
                 remove_country_modifier = uncivilized_isolationism
                 add_country_modifier = {
                     name = "western_influences"
                     duration = -1
                 }
+			}
+		}
+		random_owned = {
+			limit = { NOT = { owner = { is_culture_group = east_asian } } }
+			owner = {
+				remove_country_modifier = isolationist_foreign_naval_officers
+				remove_country_modifier = isolationist_foreign_naval_schools
+				remove_country_modifier = isolationist_foreign_officers
+				remove_country_modifier = isolationist_foreign_training
             }
         }
         random_owned = {
@@ -858,11 +866,10 @@ country_event = {
                 }
             }
         }
-        ai_chance = {
-            factor = 100
+		ai_chance = { factor = 100 }
         }
-    }
-    
+
+
     option = {
         name = "EVT95655OPTB"
         FROM = { country_event = 95657 }
@@ -883,9 +890,9 @@ country_event = {
     news_desc_medium = "EVTDESC95656_NEWS_MEDIUM"
     news_desc_short = "EVTDESC95656_NEWS_SHORT"
     picture = "asian_administration"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95656OPTA"
         clr_country_flag = negotiate_unequal_treaty
@@ -906,9 +913,9 @@ country_event = { #The Dai Viet Emperor has Refused!
     title = "EVTNAME95657"
     desc = "EVTDESC95657"
     picture = "Opiumwar"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95657OPTA"
         FROM = { clr_country_flag = negotiate_unequal_treaty }
@@ -927,7 +934,7 @@ country_event = {
     title = "EVTNAME95659"
     desc = "EVTDESC95659"
     picture = "black_flag_army"
-    
+
     trigger = {
         LUA = {
             exists = yes
@@ -942,16 +949,16 @@ country_event = {
         NOT = { is_culture_group = east_asian }
         NOT = { is_culture_group = southeast_asian }
     }
-    
+
     fire_only_once = yes
     mean_time_to_happen = { months = 12 }
-    
+
     option = {
         name = "EVT95659OPTA"
         inherit = LUA
         ai_chance = { factor = 100 }
     }
-    
+
     option = {
         name = "EVT95659OPTB"
         badboy = -1
@@ -965,7 +972,7 @@ country_event = {
     title = "EVTNAME95660"
     desc = "EVTDESC95660"
     picture = "ships_to_bangkok"
-    
+
     trigger = {
         owns = 1356
         1356 = { is_colonial = yes }
@@ -982,10 +989,10 @@ country_event = {
         }
         revolution_n_counterrevolution = 1
     }
-    
+
     fire_only_once = yes
     mean_time_to_happen = { months = 36 }
-    
+
     option = {
         name = "EVT95660OPTA"
         set_country_flag = take_laos
@@ -998,7 +1005,7 @@ country_event = {
         }
         ai_chance = { factor = 100 }
     }
-    
+
     option = {
         name = "EVT95660OPTB"
         prestige = -5
@@ -1012,7 +1019,7 @@ country_event = {
     title = "EVTNAME95661"
     desc = "EVTDESC95661"
     picture = "ships_to_bangkok"
-    
+
     trigger = {
         is_greater_power = yes
         war = no
@@ -1020,10 +1027,10 @@ country_event = {
         truce_with = SIA
         SIA = { is_disarmed = yes }
     }
-    
+
     fire_only_once = yes
     mean_time_to_happen = { days = 1 }
-    
+
     option = {
         name = "EVT95661OPTA"
         any_country = {
@@ -1038,10 +1045,10 @@ country_event = {
             years_of_research = 4
         }
         SIA = {
-            any_owned = { 
+            any_owned = {
             limit = {
                 OR = {
-                    is_core = WIA 
+                    is_core = WIA
                     is_core = LUA
                     is_core = CHK
                     }
@@ -1051,4 +1058,3 @@ country_event = {
         }
     }
 }
-

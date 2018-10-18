@@ -18,6 +18,11 @@ country_event = {
 
     option = {
         name = "EVT800050OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
         clr_country_flag = wants_to_unify
         clr_country_flag = does_not_want_to_unify
         clr_country_flag = rebels_in_capital
@@ -57,7 +62,7 @@ country_event = {
             remove_province_modifier = may_day
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -104,13 +109,13 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 is_greater_power = yes
                 NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
-            }           
+            }
             diplomatic_influence = {
                 who = THIS
                 value = -25
@@ -148,6 +153,11 @@ country_event = {
 
     option = {
         name = "EVT800051OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
         clr_country_flag = communist_gov
         clr_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -160,16 +170,16 @@ country_event = {
         clr_country_flag = does_not_want_to_unify
         clr_country_flag = paramilitaries_outlawed
         clr_country_flag = rebels_in_capital
-        random_owned = { 
-            limit = { owner = { primary_culture = british accepted_culture = irish } } 
+        random_owned = {
+            limit = { owner = { primary_culture = british accepted_culture = irish } }
             owner = { remove_accepted_culture = irish }
         }
-        
-        random_owned = { 
-            limit = { owner = { tag = XIN } } 
+
+        random_owned = {
+            limit = { owner = { tag = XIN } }
             owner = { remove_accepted_culture = uighur }
         }
-        
+
         random_owned = {
             limit = {
                 owner = {
@@ -227,7 +237,7 @@ country_event = {
             remove_province_modifier = may_day
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -291,7 +301,7 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 OR = {
                     government = democracy
                     government = hms_government
@@ -314,7 +324,7 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     OR = {
                         government = proletarian_dictatorship
@@ -333,39 +343,39 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 government = fascist_dictatorship
-                NOT = { 
+                NOT = {
                     has_country_flag = former_overlord
                     has_country_flag = former_sphere_leader
                 }
-            }           
+            }
             relation = {
                 who = THIS
                 value = 50
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 OR = {
                     government = democracy
                     government = hms_government
                     government = proletarian_dictatorship
                 }
                 is_greater_power = no
-                NOT = { 
+                NOT = {
                     has_country_flag = former_overlord
                     has_country_flag = former_sphere_leader
                 }
             }
-            leave_alliance = THIS       
+            leave_alliance = THIS
             relation = {
                 who = THIS
                 value = -100
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     OR = {
                         government = proletarian_dictatorship
@@ -374,11 +384,11 @@ country_event = {
                         government = hms_government
                     }
                 }
-                NOT = { 
+                NOT = {
                     has_country_flag = former_overlord
                     has_country_flag = former_sphere_leader
                 }
-            }           
+            }
             relation = {
                 who = THIS
                 value = -25
@@ -418,6 +428,11 @@ country_event = {
 
     option = {
         name = "EVT800052OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
         set_country_flag = communist_gov
         clr_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -477,7 +492,7 @@ country_event = {
             remove_province_modifier = may_day
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -513,7 +528,7 @@ country_event = {
                 OR = {
                     neighbour = THIS
                     is_culture_group = THIS
-                } 
+                }
                 government = proletarian_dictatorship
                 NOT = {
                     has_country_flag = former_sphere_leader
@@ -540,7 +555,7 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     government = proletarian_dictatorship
                     has_country_flag = former_sphere_leader
@@ -559,20 +574,20 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 government = proletarian_dictatorship
                 NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
-            }           
+            }
             relation = {
                 who = THIS
                 value = 50
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = { government = proletarian_dictatorship }
                 is_greater_power = no
                 NOT = {
@@ -580,7 +595,7 @@ country_event = {
                     has_country_flag = former_overlord
                 }
             }
-            leave_alliance = THIS           
+            leave_alliance = THIS
             relation = {
                 who = THIS
                 value = -100
@@ -604,7 +619,7 @@ country_event = {
             }
             relation = { who = THIS value = -100 }
             leave_alliance = THIS
-        }       
+        }
     }
 }
 
@@ -620,6 +635,12 @@ country_event = {
 
     option = {
         name = "EVT800053OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		political_reform = open_borders
         clr_country_flag = communist_gov
         clr_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -681,7 +702,7 @@ country_event = {
             }
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -716,7 +737,7 @@ country_event = {
             limit = {
                 neighbour = THIS
                 civilized = yes
-                NOT = { 
+                NOT = {
                     OR = {
                         ruling_party_ideology = anarcho_liberal
                         government = democracy
@@ -731,7 +752,7 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 government = proletarian_dictatorship
                 NOT = {
                     has_country_flag = former_sphere_leader
@@ -762,34 +783,34 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 ruling_party_ideology = anarcho_liberal
                 NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
-            }           
+            }
             relation = {
                 who = THIS
                 value = 50
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 government = proletarian_dictatorship
                 NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
             }
-            leave_alliance = THIS       
+            leave_alliance = THIS
             relation = {
                 who = THIS
                 value = -100
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     OR = {
                         government = proletarian_dictatorship
@@ -798,7 +819,7 @@ country_event = {
                     }
                     has_country_flag = former_overlord
                 }
-            }           
+            }
             relation = {
                 who = THIS
                 value = -25
@@ -816,7 +837,7 @@ country_event = {
             }
             relation = { who = THIS value = -100 }
             leave_alliance = THIS
-        }                   
+        }
     }
 }
 
@@ -832,6 +853,12 @@ country_event = {
 
     option = {
         name = "EVT800054OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
         clr_country_flag = wants_to_unify
         clr_country_flag = does_not_want_to_unify
         clr_country_flag = liberal_revolution_fired
@@ -922,7 +949,7 @@ country_event = {
             }
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -959,7 +986,7 @@ country_event = {
                     government = democracy
                     government = hms_government
                 }
-                NOT = { 
+                NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
@@ -998,7 +1025,7 @@ country_event = {
                     government = proletarian_dictatorship
                     government = fascist_dictatorship
                 }
-                NOT = { 
+                NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
@@ -1010,7 +1037,7 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     OR = {
                         government = proletarian_dictatorship
@@ -1033,34 +1060,34 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 OR = {
                     government = proletarian_dictatorship
                     government = fascist_dictatorship
                 }
                 NOT = { has_country_flag = former_overlord }
             }
-            leave_alliance = THIS       
+            leave_alliance = THIS
             relation = {
                 who = THIS
                 value = -100
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 OR = {
                     government = democracy
                     government = hms_government
                 }
                 NOT = { has_country_flag = former_overlord }
-            }           
+            }
             relation = {
                 who = THIS
                 value = 50
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     OR = {
                         government = proletarian_dictatorship
@@ -1071,7 +1098,7 @@ country_event = {
                     has_country_flag = former_overlord
                 }
                 is_greater_power = no
-            }           
+            }
             relation = {
                 who = THIS
                 value = -25
@@ -1089,20 +1116,20 @@ country_event = {
             }
             relation = { who = THIS value = -100 }
             leave_alliance = THIS
-        }                       
+        }
     }
 }
 
 country_event = {
-    
+
     id = 810055
-    
+
     is_triggered_only = yes
-    
+
     title = "EVTNAME810055" #$COUNTRY_ADJ$ Independence!
     desc = "EVTDESC810055"
     picture = "unite"
-    
+
     option = {
         name = "EVT810055OPTA"
         clr_country_flag = wants_to_unify
@@ -1116,7 +1143,7 @@ country_event = {
             remove_province_modifier = nationalist_agitation
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -1174,6 +1201,12 @@ country_event = {
 
     option = {
         name = "EVT810056OPTA"
+		clr_country_flag = everywhere_genocide_only
+		clr_country_flag = non_colonial_genocide_only
+		clr_country_flag = colonial_genocide_only
+		clr_country_flag = preparations_to_kill
+		remove_country_modifier = preparations_to_kill
+		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
         clr_country_flag = wants_to_unify
         clr_country_flag = does_not_want_to_unify
         clr_country_flag = rebels_in_capital
@@ -1227,7 +1260,7 @@ country_event = {
             }
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -1264,7 +1297,7 @@ country_event = {
                     government = democracy
                     government = hms_government
                 }
-                NOT = { 
+                NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
@@ -1302,7 +1335,7 @@ country_event = {
         any_country = {
             limit = {
                 government = fascist_dictatorship
-                NOT = { 
+                NOT = {
                     has_country_flag = former_sphere_leader
                     has_country_flag = former_overlord
                 }
@@ -1314,7 +1347,7 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     OR = {
                         government = fascist_dictatorship
@@ -1336,32 +1369,32 @@ country_event = {
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 government = fascist_dictatorship
                 NOT = { has_country_flag = former_overlord }
             }
-            leave_alliance = THIS       
+            leave_alliance = THIS
             relation = {
                 who = THIS
                 value = -100
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 OR = {
                     government = democracy
                     government = hms_government
                 }
                 NOT = { has_country_flag = former_overlord }
                 ruling_party_ideology = socialist
-            }           
+            }
             relation = {
                 who = THIS
                 value = 50
             }
         }
         any_country = {
-            limit = { 
+            limit = {
                 NOT = {
                     OR = {
                         government = fascist_dictatorship
@@ -1371,7 +1404,7 @@ country_event = {
                     has_country_flag = former_overlord
                 }
                 is_greater_power = no
-            }           
+            }
             relation = {
                 who = THIS
                 value = -25
@@ -1393,16 +1426,17 @@ country_event = {
     }
 }
 
+#The Colonial Regime Overthrown! - REDO
 country_event = {
-    
+
     id = 810057
-    
+
     is_triggered_only = yes
-    
-    title = "EVTNAME810057" #The Colonial Regime Overthrown!
+
+	title = "EVTNAME810057"
     desc = "EVTDESC810057"
     picture = "unite"
-    
+
     option = {
         name = "EVT810055OPTA"
         clr_country_flag = wants_to_unify
@@ -1410,15 +1444,11 @@ country_event = {
         clr_country_flag = rebels_in_capital
         clr_country_flag = post_colonial_country
         random_owned = {
-            limit = {
-                owner = { tag = BMK }
-            }
-            owner = { primary_culture = songhai }
+			limit = { owner = { tag = MLI } }
+			owner = { primary_culture = fulbe }
         }
         random_owned = {
-            limit = {
-                owner = { tag = BUG }
-            }
+			limit = { owner = { tag = BUG } }
             owner = { primary_culture = baganda }
         }
         random_owned = {
@@ -1434,44 +1464,34 @@ country_event = {
             owner = { primary_culture = bakongo }
         }
         random_owned = {
-            limit = {
-                owner = {
-                    OR = {
-                        tag = CHD
-                        tag = CAR
-                    }
-                }
-            }
+			limit = { owner = { tag = CHD } }
             owner = { primary_culture = sara }
         }
         random_owned = {
-            limit = {
-                owner = {
-                    OR = {
-                        tag = CMR
-                        tag = GAB
+			limit = { owner = { tag = CAR } }
+			owner = { primary_culture = ubangian }
                     }
-                }
-            }
+		random_owned = {
+			limit = { owner = { tag = GAB } }
             owner = { primary_culture = fang }
         }
         random_owned = {
-            limit = {
-                owner = { tag = INO }
+			limit = { owner = { tag = CMR } }
+			owner = { primary_culture = forest_bantu }
             }
+		random_owned = {
+			limit = { owner = { tag = INO } }
             owner = { primary_culture = javan }
         }
         random_owned = {
-            limit = {
-                owner = { tag = IVC }
-            }
-            owner = { primary_culture = akan }
+			limit = { owner = { tag = IVC } }
+			owner = { primary_culture = dyula }
         }
         random_owned = {
             limit = {
                 owner = { tag = KNY }
             }
-            owner = { primary_culture = swahili }
+			owner = { primary_culture = kikuyu }
         }
         random_owned = {
             limit = {
@@ -1483,19 +1503,73 @@ country_event = {
             limit = {
                 owner = { tag = MOZ }
             }
-            owner = { primary_culture = nguni }
+			owner = { primary_culture = shona }
         }
         random_owned = {
             limit = {
-                owner = {
-                    OR = {
-                        tag = NGR
-                        tag = NIG
-                        tag = GNE
+				owner = { tag = NGR }
+			}
+			owner = { primary_culture = yoruba }
                     }
+		random_owned = {
+			limit = {
+				owner = { tag = NIG }
                 }
+			owner = { primary_culture = hausa }
             }
+		random_owned = {
+			limit = { owner = { tag = GNE } }
             owner = { primary_culture = fulbe }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = SNG }
+			}
+			owner = { primary_culture = wolof }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = TNZ }
+			}
+			owner = { primary_culture = swahili }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = TOG }
+			}
+			owner = { primary_culture = ewe }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = BKF }
+			}
+			owner = { primary_culture = mossi }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = TSW }
+			}
+			owner = { primary_culture = tswana }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = ZAM }
+			}
+			owner = { primary_culture = lunda }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = SLE }
+			}
+			owner = { primary_culture = western_nigritic }
+		}
+		random_owned = {
+			limit = { owner = { tag = GNE } }
+			owner = { primary_culture = mande }
+		}
+		random_owned = {
+			limit = { owner = { tag = GMB } }
+			owner = { primary_culture = mande }
         }
         random_owned = {
             limit = {
@@ -1536,47 +1610,6 @@ country_event = {
                 add_accepted_culture = nguni
             }
         }
-        random_owned = {
-            limit = {
-                owner = {
-                    OR = {
-                        tag = SLE
-                        tag = GMB
-                    }
-                }
-            }
-            owner = { primary_culture = mande }
-        }
-        random_owned = {
-            limit = {
-                owner = { tag = SNG }
-            }
-            owner = { primary_culture = wolof }
-        }
-        random_owned = {
-            limit = {
-                owner = { tag = TNZ }
-            }
-            owner = { primary_culture = unyamwezi }
-        }
-        random_owned = {
-            limit = {
-                owner = { tag = TOG }
-            }
-            owner = { primary_culture = ewe }
-        }
-        random_owned = {
-            limit = {
-                owner = { tag = TSW }
-            }
-            owner = { primary_culture = tswana }
-        }
-        random_owned = {
-            limit = {
-                owner = { tag = ZAM }
-            }
-            owner = { primary_culture = lunda }
-        }
         any_pop = {
             militancy = -6
         }
@@ -1602,7 +1635,7 @@ country_event = {
             remove_province_modifier = nationalist_agitation
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
             }
@@ -1644,7 +1677,7 @@ country_event = {
             }
             relation = { who = THIS value = -100 }
             leave_alliance = THIS
-        }       
+        }
     }
 }
 
@@ -1697,7 +1730,7 @@ country_event = {
             }
             country_event = 97124
         }
-    }       
+    }
 }
 
 country_event = {
@@ -1783,15 +1816,11 @@ country_event = {
             }
         }
         random_owned = {
-            limit = {
-                owner = { has_country_modifier = educational_reform }
-            }
+			limit = { owner = { has_country_modifier = educational_reform } }
             owner = { remove_country_modifier = educational_reform }
         }
         random_owned = {
-            limit = {
-                owner = { civilized = no }
-            }
+			limit = { owner = { civilized = no } }
             owner = {
                 any_owned = {
                     remove_province_modifier = peasant_revolt
@@ -1806,7 +1835,7 @@ country_event = {
             }
         }
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
                 THIS = { is_substate = no }
@@ -1842,7 +1871,7 @@ country_event = {
             country_event = 800055
         }
         any_country = {
-            limit = { 
+            limit = {
                 is_greater_power = yes
                 NOT = {
                     has_country_flag = former_sphere_leader
@@ -1872,6 +1901,22 @@ country_event = {
                 }
             }
         }
+		random_owned = {
+			limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
+			owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
+		}
+		random_owned = {
+			limit = { owner = { foreign_training = yes_foreign_training } }
+			owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
+		}
+		random_owned = {
+			limit = { owner = { naval_schools = yes_naval_schools } }
+			owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
+		}
+		random_owned = {
+			limit = { owner = { foreign_training = yes_foreign_training } }
+			owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
+		}
         any_country = {
             limit = {
                 civilized = yes
@@ -1888,9 +1933,9 @@ country_event = {
     title = "EVTNAME800151" #$COUNTRY_ADJ$ Patriots
     desc = "EVTDESC97700"
     picture = "rebellion"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT97700OPTA"
         random_country = {
@@ -1982,7 +2027,7 @@ country_event = {
         ai_chance = {
             factor = 0
         }
-    }   
+    }
 }
 
 country_event = {
@@ -2061,7 +2106,7 @@ country_event = {
                 type = humiliate
                 months = 12
             }
-        }   
+        }
         any_neighbor_country = {
             limit = {
                 any_owned_province = {
@@ -2207,7 +2252,7 @@ country_event = {
             factor = 0
         }
     }
-}               
+}
 
 country_event = {
     id = 800152 #Provinces Under Control (Clean-Up Event)
@@ -2263,7 +2308,7 @@ country_event = {
             who = FROM
             value = 50
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 25
             modifier = {
                 factor = 0
@@ -2333,7 +2378,7 @@ country_event = {
 
     option = {
         name = "EVT800055OPTB"
-        clr_country_flag = former_overlord      
+        clr_country_flag = former_overlord
         relation = {
             who = FROM
             value = 25
@@ -2342,7 +2387,7 @@ country_event = {
             who = FROM
             value = 50
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 25
             modifier = {
                 factor = 0
@@ -2385,7 +2430,7 @@ country_event = {
                 war_policy = pacifism
             }
         }
-            
+
     }
     option = {
         name = "EVT800055OPTC"
@@ -2430,7 +2475,7 @@ country_event = {
                 }
             }
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 50
             modifier = {
                 factor = 0.5
@@ -2532,7 +2577,7 @@ country_event = {
             who = FROM
             value = 50
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 50
             modifier = {
                 factor = 0
@@ -2646,7 +2691,7 @@ country_event = {
                 months = 24
             }
         }
-        ai_chance = { 
+        ai_chance = {
             factor = 50
             modifier = {
                 factor = 0.5
@@ -2722,7 +2767,7 @@ country_event = {
     title = "EVTNAME97562" #$CAPITAL$ Burns
     desc = "EVTDESC97562"
     picture = "rebellion"
-    
+
     trigger = {
         war = yes
         is_greater_power = no
@@ -2739,7 +2784,7 @@ country_event = {
             revolt_percentage = .50
         }
     }
-    
+
     mean_time_to_happen = {
         months = 12
         modifier = {
@@ -2771,12 +2816,12 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT97562OPTA"
         prestige = -25
         random_country = {
-            limit = { 
+            limit = {
                 is_sphere_leader_of = THIS
             }
             diplomatic_influence = {
@@ -2792,7 +2837,7 @@ country_event = {
                 type = add_to_sphere
                 months = 60
             }
-        }       
+        }
     }
 }
 
@@ -2801,7 +2846,7 @@ country_event = {
     id = 97565
     title = "EVTNAME97565"
     desc = "EVTDESC97565"
-    
+
     trigger = {
         ai = yes
         war = no
@@ -2819,7 +2864,7 @@ country_event = {
         }
         NOT = { has_country_flag = called_for_help }
     }
-    
+
     mean_time_to_happen = {
         days = 30
         modifier = {
@@ -2827,7 +2872,7 @@ country_event = {
             capital_scope = { controlled_by_rebels = yes }
         }
     }
-    
+
     option = {
         name = "EVT97562OPTA"
         set_country_flag = called_for_help
@@ -2846,9 +2891,9 @@ country_event = {
     title = "EVTNAME97566" #Trouble in $FROMCOUNTRY$
     desc = "EVTDESC97566"
     picture = "rebellion"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT97566OPTA"
         create_alliance = FROM
@@ -2858,7 +2903,7 @@ country_event = {
             factor = 100
         }
     }
-    
+
     option = {
         name = "EVT97566OPTB"
         relation = { who = FROM value = -50 }
@@ -2872,7 +2917,7 @@ country_event = {
     id = 97567
     title = "EVTNAME97567"
     desc = "EVTDESC97567"
-    
+
     trigger = {
         ai = yes
         NOT = { revolt_percentage = 0.50 }
@@ -2884,11 +2929,11 @@ country_event = {
         }
         has_country_flag = called_for_help
     }
-    
+
     mean_time_to_happen = {
         months = 1
     }
-    
+
     option = {
         name = "EVT800152OPTA"
         clr_country_flag = called_for_help
@@ -2899,7 +2944,7 @@ province_event = {
     id = 97570
     title = "EVTNAME97570" #Native Unrest in $STATENAME$
     desc = "EVTDESC97570"
-    
+
     trigger = {
         owner = {
             war = no
@@ -2922,7 +2967,7 @@ province_event = {
                 is_culture_group = east_african
                 is_culture_group = southern_african
                 is_culture_group = southeast_asian
-                culture = maori
+				has_pop_culture = maori
             }
         }
         controlled_by = THIS
@@ -2932,7 +2977,7 @@ province_event = {
             has_province_modifier = peasant_revolt
         }
     }
-    
+
     mean_time_to_happen = {
         months = 400
         modifier = {
@@ -2953,7 +2998,7 @@ province_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT97570OPTA"
         add_province_modifier = {
@@ -2972,7 +3017,7 @@ province_event = {
 
 # Independence event for Indian minors
 country_event = {
-    
+
     id = 97124
     title = "EVTNAME97124"
     desc = "EVTDESC97124"

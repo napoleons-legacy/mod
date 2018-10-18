@@ -71,7 +71,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_politics_rebel_strip"
-		texturefile = "gfx\\interface\\politics_rebel_strip.tga"
+		texturefile = "gfx\\interface\\politics_rebel_strip.dds"
 		noOfFrames = 18
 	}
 	spriteType = {
@@ -166,6 +166,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_politics_citizens_rights"
 		texturefile = "gfx\\interface\\politics_citizens_rights.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_politics_border_policy"
+		texturefile = "gfx\\interface\\politics_border_policy.dds"
 	}
 	
 	spriteType = {
@@ -403,7 +408,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_politics_selectparty_entrybg"
-		texturefile = "gfx\\interface\\politics_selectparty_entrybg.tga"
+		texturefile = "gfx\\interface\\politics_selectparty_entrybg.dds"
 	}
 	
 	PieChartType = {

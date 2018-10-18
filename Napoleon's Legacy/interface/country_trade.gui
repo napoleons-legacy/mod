@@ -234,7 +234,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 		}
 		
-		##### POPS
+		##### ia
 		instantTextBoxType = { 
 			name = "headline_needs_pops"
 			position = { x = 299 y = 408 }

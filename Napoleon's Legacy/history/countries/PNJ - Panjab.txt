@@ -23,20 +23,15 @@ upper_house = {
 consciousness = 0
 nonstate_consciousness = 0
 
-
 foreign_training = yes_foreign_training
 foreign_weapons = yes_foreign_weapons
 flintlock_rifles = 1
 
-oob = "PAN_oob.txt"
-1861.1.1 = {
-	literacy = 0.12
-	non_state_culture_literacy = 0.05
-	
-	army_schools = yes_army_schools
-	foreign_officers = yes_foreign_officers
-}
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
+oob = "PAN_oob.txt"
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -52,11 +47,15 @@ work_hours = no_work_hour_limit
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
-pensions = no_pensions 
+pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
 conscription = two_year_draft
-debt_law = peonage
+debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = sikh_country

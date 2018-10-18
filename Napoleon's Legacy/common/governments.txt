@@ -15,6 +15,7 @@ proletarian_dictatorship = {
 presidential_dictatorship = {
 	#which ideology of parties.
 	reactionary = yes
+	fascist = yes
 	conservative = yes
 	
 	election = no

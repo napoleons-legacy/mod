@@ -1,3 +1,45 @@
+#New provinces for NPL
+
+#Formerly Izhma in Russia.txt
+#Point Pedro (50540, 12635 Pops)
+2699 = {
+	aristocrats = {
+		culture = british
+		religion = protestant
+		size = 1875
+	}
+	officers = {
+		culture = british
+		religion = protestant
+		size = 950
+	}
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 225
+	}
+	bureaucrats = {
+		culture = british
+		religion = protestant
+		size = 985
+	}
+	soldiers = {
+		culture = british
+		religion = protestant
+		size = 5100
+	}	
+	farmers = {
+		culture = sinhala
+		religion = theravada
+		size = 2500
+	}
+	labourers = {
+		culture = tamil
+		religion = hindu
+		size = 1000
+	}
+}
+
 #New provinces for HPM
 #Tranquebar - former Holsteinborg in Greenland (20k in 1810 / 5K POPS - assuming 3% average growth, 1836 should be 35.6K / 8.9K)
 #(Area include more than Tranquebar so pops should be higher. Religion is 95% Hindu, 4% Muslims and 1% Protestant
@@ -278,7 +320,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kilombero #african_minor
 		religion = animist
 		size = 4000
 	}
@@ -329,7 +371,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kilombero #african_minor
 		religion = animist
 		size = 5000
 	}
@@ -596,7 +638,7 @@
 	aristocrats = {
 		culture = panjabi
 		religion = sikh
-		size = 2500
+		size = 12500
 	}
 
 	bureaucrats = {
@@ -632,13 +674,13 @@
 	farmers = {
 		culture = panjabi
 		religion = sikh
-		size = 89850
+		size = 79850
 	}
 
 	aristocrats = {
 		culture = panjabi
 		religion = hindu
-		size = 800
+		size = 10800
 	}
 
 	bureaucrats = {
@@ -674,13 +716,13 @@
 	farmers = {
 		culture = panjabi
 		religion = hindu
-		size = 88600
+		size = 78600
 	}
 
 	aristocrats = {
 		culture = panjabi
 		religion = sunni
-		size = 3000
+		size = 13000
 	}
 
 	bureaucrats = {
@@ -716,7 +758,7 @@
 	farmers = {
 		culture = panjabi
 		religion = sunni
-		size = 420600
+		size = 400600
 	}
 }
 #Multan (656000/164000 POPS)
@@ -1518,7 +1560,7 @@
 	aristocrats = {
 		culture = panjabi
 		religion = sunni
-		size = 2500
+		size = 5500
 	}
 
 	bureaucrats = {
@@ -1560,7 +1602,7 @@
 	farmers = {
 		culture = panjabi
 		religion = sunni
-		size = 180000
+		size = 175000
 	}
 
 	aristocrats = {
@@ -1634,7 +1676,7 @@
 	aristocrats = {
 		culture = panjabi
 		religion = sikh
-		size = 250
+		size = 6250
 	}
 
 	clergymen = {
@@ -1658,7 +1700,7 @@
 	farmers = {
 		culture = panjabi
 		religion = sikh
-		size = 29875
+		size = 23875
 	}
 
 	aristocrats = {
@@ -1904,7 +1946,7 @@
 	aristocrats = {
 		culture = avadhi
 		religion = hindu
-		size = 7500
+		size = 27500
 	}
 
 	clergymen = {
@@ -1940,7 +1982,7 @@
 	farmers = {
 		culture = avadhi
 		religion = hindu
-		size = 675250
+		size = 655250
 	}
 	
 	farmers = {
@@ -2034,7 +2076,7 @@
 	aristocrats = {
 		culture = kanauji
 		religion = hindu
-		size = 6000
+		size = 26000
 	}
 
 	clergymen = {
@@ -2082,7 +2124,7 @@
 	farmers = {
 		culture = kanauji
 		religion = hindu
-		size = 502500
+		size = 482500
 	}
 
 	aristocrats = {
@@ -2378,7 +2420,7 @@
 	aristocrats = {
 		culture = avadhi
 		religion = hindu
-		size = 4500
+		size = 26500
 	}
 
 	bureaucrats = {
@@ -2420,7 +2462,7 @@
 	farmers = {
 		culture = avadhi
 		religion = hindu
-		size = 378500
+		size = 356500
 	}
 
 	serfs = {
@@ -2523,7 +2565,7 @@
 	aristocrats = {
 		culture = bihari
 		religion = hindu
-		size = 8000
+		size = 33000
 	}
 
 	clergymen = {
@@ -2571,7 +2613,7 @@
 	farmers = {
 		culture = bihari
 		religion = hindu
-		size = 585750
+		size = 560750
 	}
 
 	aristocrats = {
@@ -2840,7 +2882,7 @@
 	aristocrats = {
 		culture = bengali
 		religion = hindu
-		size = 12500
+		size = 42500
 	}
 
 	bureaucrats = {
@@ -2882,7 +2924,7 @@
 	farmers = {
 		culture = bengali
 		religion = hindu
-		size = 966500
+		size = 936500
 	}
 
 	aristocrats = {
@@ -3134,7 +3176,7 @@
 	aristocrats = {
 		culture = bengali
 		religion = sunni
-		size = 3000
+		size = 53000
 	}
 
 	clergymen = {
@@ -3176,7 +3218,7 @@
 	farmers = {
 		culture = bengali
 		religion = sunni
-		size = 688000
+		size = 638000
 	}
 
 	aristocrats = {
@@ -3525,7 +3567,7 @@
 	aristocrats = {
 		culture = assamese
 		religion = hindu
-		size = 1500
+		size = 11500
 	}
 
 	bureaucrats = {
@@ -3555,7 +3597,7 @@
 	farmers = {
 		culture = assamese
 		religion = hindu
-		size = 145500
+		size = 135500
 	}
 
 	bureaucrats = {
@@ -4106,7 +4148,7 @@
 	aristocrats = {
 		culture = rajput
 		religion = hindu
-		size = 1100
+		size = 2100
 	}
 
 	bureaucrats = {
@@ -4142,7 +4184,7 @@
 	farmers = {
 		culture = rajput
 		religion = hindu
-		size = 75525
+		size = 74525
 	}
 
 	clergymen = {
@@ -4181,7 +4223,7 @@
 	aristocrats = {
 		culture = rajput
 		religion = hindu
-		size = 3200
+		size = 12200
 	}
 
 	bureaucrats = {
@@ -4235,7 +4277,7 @@
 	farmers = {
 		culture = rajput
 		religion = hindu
-		size = 215050
+		size = 206050
 	}
 
 	clergymen = {
@@ -4280,7 +4322,7 @@
 	aristocrats = {
 		culture = rajput
 		religion = hindu
-		size = 2600
+		size = 5600
 	}
 
 	bureaucrats = {
@@ -4322,7 +4364,7 @@
 	farmers = {
 		culture = rajput
 		religion = hindu
-		size = 157625
+		size = 154625
 	}
 
 	clergymen = {
@@ -4368,7 +4410,7 @@
 	aristocrats = {
 		culture = rajput
 		religion = hindu
-		size = 3600
+		size = 10000
 	}
 
 	bureaucrats = {
@@ -4416,7 +4458,7 @@
 	farmers = {
 		culture = rajput
 		religion = hindu
-		size = 220000
+		size = 213600
 	}
 
 	aristocrats = {
@@ -4473,7 +4515,7 @@
 	aristocrats = {
 		culture = rajput
 		religion = hindu
-		size = 3400
+		size = 7000
 	}
 
 	bureaucrats = {
@@ -4521,7 +4563,7 @@
 	farmers = {
 		culture = rajput
 		religion = hindu
-		size = 253600
+		size = 250600
 	}
 
 	clergymen = {
@@ -4562,7 +4604,7 @@
 	aristocrats = {
 		culture = marathi
 		religion = hindu
-		size = 3000
+		size = 6000
 	}
 
 	bureaucrats = {
@@ -4604,7 +4646,7 @@
 	farmers = {
 		culture = marathi
 		religion = hindu
-		size = 207075
+		size = 204075
 	}
 
 	clergymen = {
@@ -4643,7 +4685,7 @@
 	aristocrats = {
 		culture = marathi
 		religion = hindu
-		size = 2600
+		size = 5600
 	}
 
 	bureaucrats = {
@@ -4679,7 +4721,7 @@
 	farmers = {
 		culture = marathi
 		religion = hindu
-		size = 193400
+		size = 190400
 	}
 
 	clergymen = {
@@ -4718,7 +4760,7 @@
 	aristocrats = {
 		culture = marathi
 		religion = hindu
-		size = 2000
+		size = 4000
 	}
 
 	bureaucrats = {
@@ -4760,13 +4802,13 @@
 	farmers = {
 		culture = marathi
 		religion = hindu
-		size = 141100
+		size = 139100
 	}
 
 	clergymen = {
 		culture = avadhi
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	artisans = {
@@ -4778,7 +4820,7 @@
 	soldiers = {
 		culture = avadhi
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	farmers = {
@@ -4979,7 +5021,7 @@
 	aristocrats = {
 		culture = marathi
 		religion = hindu
-		size = 7500
+		size = 27500
 	}
 
 	clergymen = {
@@ -5021,7 +5063,7 @@
 	farmers = {
 		culture = marathi
 		religion = hindu
-		size = 668650
+		size = 648650
 	}
 
 	clergymen = {
@@ -5123,7 +5165,7 @@
 	aristocrats = {
 		culture = marathi
 		religion = hindu
-		size = 3750
+		size = 25750
 	}
 
 	bureaucrats = {
@@ -5171,7 +5213,7 @@
 	farmers = {
 		culture = marathi
 		religion = hindu
-		size = 337850
+		size = 315850
 	}
 
 	clergymen = {
@@ -5433,7 +5475,7 @@
 	aristocrats = {
 		culture = telegu
 		religion = hindu
-		size = 750
+		size = 1750
 	}
 	
 	bureaucrats = {
@@ -5475,7 +5517,7 @@
 	farmers = {
 		culture = telegu
 		religion = hindu
-		size = 59400
+		size = 58400
 	}
 
 	clergymen = {
@@ -5609,7 +5651,7 @@
 	aristocrats = {
 		culture = telegu
 		religion = hindu
-		size = 3000
+		size = 24000
 	}
 
 	clergymen = {
@@ -5651,7 +5693,7 @@
 	farmers = {
 		culture = telegu
 		religion = hindu
-		size = 218250
+		size = 197250
 	}
 
 	aristocrats = {
@@ -6446,7 +6488,7 @@
 	aristocrats = {
 		culture = gujarati
 		religion = hindu
-		size = 4500
+		size = 28500
 	}
 
 	clergymen = {
@@ -6482,7 +6524,7 @@
 	farmers = {
 		culture = gujarati
 		religion = hindu
-		size = 304300
+		size = 280300
 	}
 
 	aristocrats = {
@@ -6806,7 +6848,7 @@
 	aristocrats = {
 		culture = marathi
 		religion = hindu
-		size = 6000
+		size = 26000
 	}
 
 	clergymen = {
@@ -6854,7 +6896,7 @@
 	farmers = {
 		culture = marathi
 		religion = hindu
-		size = 420000
+		size = 400000
 	}
 
 	artisans = {
@@ -7449,7 +7491,7 @@
 	aristocrats = {
 		culture = telegu
 		religion = hindu
-		size = 3000
+		size = 14000
 	}
 
 	bureaucrats = {
@@ -7491,7 +7533,7 @@
 	farmers = {
 		culture = telegu
 		religion = hindu
-		size = 283750
+		size = 272750
 	}
 
 	artisans = {
@@ -7724,7 +7766,7 @@
 	aristocrats = {
 		culture = tamil
 		religion = hindu
-		size = 10000
+		size = 33000
 	}
 
 	clergymen = {
@@ -7766,7 +7808,7 @@
 	farmers = {
 		culture = tamil
 		religion = hindu
-		size = 855000
+		size = 822000
 	}
 
 	clergymen = {
@@ -8114,6 +8156,12 @@
 		religion = catholic
 		size = 25
 	}
+	
+	aristocrats = {
+		culture = tamil
+		religion = hindu
+		size = 700
+	}
 
 	clergymen = {
 		culture = tamil
@@ -8136,7 +8184,7 @@
 	farmers = {
 		culture = tamil
 		religion = hindu
-		size = 22950
+		size = 22250
 	}
 
 	clergymen = {
@@ -8257,7 +8305,7 @@
 	aristocrats = {
 		culture = kannada
 		religion = hindu
-		size = 2250
+		size = 7250
 	}
 
 	bureaucrats = {
@@ -8293,7 +8341,7 @@
 	farmers = {
 		culture = kannada
 		religion = hindu
-		size = 154150
+		size = 149150
 	}
 
 	aristocrats = {
@@ -8413,7 +8461,7 @@
 	aristocrats = {
 		culture = kannada
 		religion = hindu
-		size = 3000
+		size = 9000
 	}
 
 	clergymen = {
@@ -8443,7 +8491,7 @@
 	farmers = {
 		culture = kannada
 		religion = hindu
-		size = 241625
+		size = 232625
 	}
 
 	aristocrats = {
@@ -8483,7 +8531,7 @@
 	aristocrats = {
 		culture = malayalam
 		religion = hindu
-		size = 2500
+		size = 6500
 	}
 
 	clergymen = {
@@ -8507,7 +8555,7 @@
 	farmers = {
 		culture = malayalam
 		religion = hindu
-		size = 175250
+		size = 171250
 	}
 
 	aristocrats = {
@@ -8606,7 +8654,7 @@
 	aristocrats = {
 		culture = malayalam
 		religion = hindu
-		size = 1500
+		size = 5500
 	}
 
 	clergymen = {
@@ -8636,7 +8684,7 @@
 	farmers = {
 		culture = malayalam
 		religion = hindu
-		size = 80000
+		size = 75000
 	}
 
 	aristocrats = {

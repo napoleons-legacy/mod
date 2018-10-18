@@ -1,0 +1,329 @@
+political_decisions = {
+
+    # Return the Canadian capital to London.
+    move_capital = {
+        picture = move_home
+        potential = {
+            tag = CAN
+            owns = 300
+            NOT = {
+                has_country_flag = capital_moved_back
+                }
+        }
+
+        alert = no
+
+        allow = {
+            tag = CAN
+            owns = 300
+        }
+
+        effect = {
+            prestige = 15
+            capital = 300
+            set_country_flag = capital_moved_back
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    carribean_treaty = {
+        potential = {
+            tag = CAN
+            year = 1837
+            NOT = { has_country_flag = carribean_treaty }
+            exists = FRA
+            owns = 77
+            owns = 2230
+            owns = 2228
+        }
+
+        allow = {
+            war = no
+            money = 100000
+        }
+
+        effect = {
+            set_country_flag = carribean_treaty
+            FRA = {
+                country_event = 66550
+            }
+            badboy = -4
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    greek_lands_question = {
+        potential = {
+            is_greater_power = yes
+            exists = GRE
+            GRE = {
+                war = no
+            }
+
+            NOT = {
+                tag = TUR
+                truce_with = GRE
+                has_country_flag = greek_lands_question
+            }
+
+            has_global_flag = greeks_win_war
+            any_owned_province = {
+                is_core = GRE
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            relation = {
+                    who = GRE
+                    value = 50
+            }
+            diplomatic_influence = {
+                    who = GRE
+                    value = 50
+            }
+
+            prestige = 15
+            badboy = -4
+            any_owned = {
+                limit = {
+                    is_core = GRE
+                }
+
+                remove_core = THIS
+                secede_province = GRE
+            }
+
+            set_country_flag = greek_lands_question
+        }
+    }
+
+    the_british_cession = {
+        picture = parallel_49
+        potential = {
+            tag = CAN
+            NOT = {
+                has_country_flag = britain_ceded
+            }
+        }
+
+        allow = {
+            NOT = {
+                war_with = USA
+            }
+            USA = { owns = 35 }
+            OR = {
+                HUD = { owns = 157 }
+                CAN = { owns = 157 }
+            }
+        }
+
+        effect = {
+            relation = {
+                who = USA
+                value = 100
+            }
+            118 = {
+                secede_province = CAN
+                remove_core = HUD
+                add_core = USA
+            }
+            2684 = {
+                secede_province = CAN
+                remove_core = INC
+            }
+            157 = {
+                secede_province = CAN
+                remove_core = HUD
+                add_core = USA
+            }
+            35 = {
+                secede_province = CAN
+                remove_core = USA
+                add_core = HUD
+                add_core = CAN
+            }
+            38 = {
+                secede_province = CAN
+                remove_core = USA
+                add_core = HUD
+                add_core = CAN
+            }
+            158 = {
+                secede_province = USA
+                add_core = USA
+                remove_core = CAN
+            }
+            118 = { secede_province = USA }
+            157 = { secede_province = USA }
+            2684 = { secede_province = USA }
+            random_country = {
+                limit = {
+                    tag = HUD
+                    owns = 26
+                }
+                35 = { secede_province = HUD }
+                29 = { secede_province = HUD }
+            }
+
+            badboy = -2
+            prestige = 15
+            set_country_flag = britain_ceded
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    badboy = 0.1
+                }
+            }
+            modifier = {
+                factor = 0
+                NOT = { year = 1840 }
+                NOT = { USA = { has_country_flag = hasmanifestdestiny } }
+            }
+        }
+    }
+
+
+    crimean_war = {
+        potential = {
+            tag = TUR
+            has_global_flag = russian_civil_war_has_happened
+            RUS = {
+                war_with = TSA
+            }
+            NOT = {
+                has_country_flag = crimean_war
+            }
+        }
+        allow = {
+            tag = TUR
+        }
+
+        effect = {
+                prestige = 20
+            casus_belli = {
+                target = TSA
+                type = free_peoples
+                months = 1
+            }
+
+            965 = { add_core = CRI } # Cherson
+            970 = { add_core = CRI }
+            971 = { add_core = CRI } # Krivoy Rog
+            972 = { add_core = CRI } # Ekaterinoslav
+            973 = { add_core = CRI } # Melitopol
+            974 = { add_core = CRI } # Kramatorsk
+            975 = { add_core = CRI } # Yuzovka
+            976 = { add_core = CRI } # Mariupol
+            979 = { add_core = CRI } # Rostov
+            1047 = { add_core = CRI } # Azov
+            1048 = { add_core = CRI } # Ekaterinodar
+
+            war = {
+                call_ally = yes
+                target = TSA
+                attacker_goal = {
+                    casus_belli = free_peoples
+                    country = CRI
+                    state_province_id = 964
+                }
+
+                defender_goal = {
+                    casus_belli = status_quo
+                }
+            }
+            set_country_flag = crimean_war
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    war_exhaustion = 1
+                    RUS = {
+                        NOT = {
+                            war_exhaustion = 10
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    vassalize_crimea = {
+        potential = {
+            tag = TUR
+            has_country_flag = crimean_war
+            exists = CRI
+            NOT = {
+                has_country_flag = crimea_vassalized
+            }
+        }
+
+        allow = {
+            exists = CRI
+        }
+
+        effect = {
+            prestige = 10
+            create_vassal = CRI
+            set_country_flag = crimea_vassalized
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    annex_algiers = {
+        potential = {
+            tag = TUR
+            is_greater_power = yes
+            year = 1860
+            ALD = {
+                civilized = no
+            }
+            NOT = {
+                has_country_flag = algiers_vassalized
+            }
+        }
+
+        allow = {
+            machine_guns = 1
+            war = no
+            ALD = {
+                civilized = no
+                OR = {
+                    in_sphere = THIS
+                    all_core = {
+                        owned_by = TUR
+                    }
+                }
+            }
+        }
+
+        effect = {
+            prestige = 10
+            inherit = ALD
+            set_country_flag = algiers_vassalized
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

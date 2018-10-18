@@ -9,21 +9,11 @@ post_nelsonian_thought = {
 
 
 	ai_chance = {
-		factor = 1.25
+		factor = 1.5
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
-		modifier = {
-			factor = 0.2
-			NOT = { literacy = 0.1 }
-		}
-		# Valuable to naval tech school countries (UK)
-		modifier = {
-			factor = 4
-			tech_school = naval_tech_school
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
@@ -33,7 +23,7 @@ post_nelsonian_thought = {
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 2
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -75,7 +65,7 @@ post_nelsonian_thought = {
 			total_num_of_ports = 40
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			any_owned_province = { is_overseas = yes }
 		}
 	}
@@ -90,32 +80,27 @@ battleship_column_doctrine = {
 
 
 	ai_chance = {
-		factor = 1.25
+		factor = 4
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
-		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
-		modifier = {
-			factor = 0.2
-			NOT = { literacy = 0.1 }
-		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 10
-			tech_school = naval_tech_school
+			factor = 8
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 8
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
-			total_num_of_ports = 12
+			factor = 2
+			total_num_of_ports = 15
 			rank = 16
 		}
 		# Bigger navy, more weight
@@ -156,8 +141,23 @@ battleship_column_doctrine = {
 			total_num_of_ports = 40
 		}
 		modifier = {
-			factor = 4
+			factor = 2
 			any_owned_province = { is_overseas = yes }
+		}
+
+		modifier = {
+			factor = 20
+			year = 1855
+			#money = 20000
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				tag = BEL
+				tag = SPA
+				tag = CHL
+			}
 		}
 	}
 }
@@ -168,7 +168,7 @@ raider_group_doctrine = {
 	unciv_military = yes
 	max_naval_base = 1
 	ai_chance = {
-		factor = 1.25
+		factor = 4
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -177,22 +177,29 @@ raider_group_doctrine = {
 		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
 		modifier = {
 			factor = 0.2
-			NOT = { literacy = 0.1 }
+			NOT = { literacy = 0.2 }
+			is_greater_power = no
+		}
+		# Low LIT GPs should pay less attention here
+		modifier = {
+			factor = 0.75
+			NOT = { literacy = 0.3 }
+			is_greater_power = yes
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 10
-			tech_school = naval_tech_school
+			factor = 8
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 2
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 2
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -233,9 +240,24 @@ raider_group_doctrine = {
 			factor = 1.1
 			total_num_of_ports = 40
 		}
+
 		modifier = {
-			factor = 3
+			factor = 2
 			any_owned_province = { is_overseas = yes }
+		}
+
+		modifier = {
+			factor = 20
+			year = 1870
+			#money = 20000
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				tag = BEL
+				tag = SPA
+			}
 		}
 	}
 }
@@ -246,7 +268,7 @@ blue_and_brown_water_schools = {
 	unciv_military = yes
 	max_naval_base = 1
 	ai_chance = {
-		factor = 1.25
+		factor = 2
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -256,21 +278,28 @@ blue_and_brown_water_schools = {
 		modifier = {
 			factor = 0.2
 			NOT = { literacy = 0.2 }
+			is_greater_power = no
+		}
+		# Low LIT GPs should pay less attention here
+		modifier = {
+			factor = 0.75
+			NOT = { literacy = 0.3 }
+			is_greater_power = yes
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 10
-			tech_school = naval_tech_school
+			factor = 8
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 2
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 2
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -312,8 +341,16 @@ blue_and_brown_water_schools = {
 			total_num_of_ports = 40
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			any_owned_province = { is_overseas = yes }
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				tag = BEL
+				tag = SPA
+			}
 		}
 	}
 }
@@ -326,7 +363,7 @@ high_sea_battle_fleet = {
 	max_naval_base = 1
 
 	ai_chance = {
-		factor = 1.25
+		factor = 2
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -336,21 +373,28 @@ high_sea_battle_fleet = {
 		modifier = {
 			factor = 0.2
 			NOT = { literacy = 0.2 }
+			is_greater_power = no
+		}
+		# Low LIT GPs should pay less attention here
+		modifier = {
+			factor = 0.75
+			NOT = { literacy = 0.3 }
+			is_greater_power = yes
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 10
-			tech_school = naval_tech_school
+			factor = 8
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 3
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 3
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -392,7 +436,7 @@ high_sea_battle_fleet = {
 			total_num_of_ports = 40
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			any_owned_province = { is_overseas = yes }
 		}
 	}
@@ -404,7 +448,7 @@ modern_naval_doctrine = {
 	unciv_military = yes
 	max_naval_base = 1
 	ai_chance = {
-		factor = 1
+		factor = 1.5
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -417,18 +461,18 @@ modern_naval_doctrine = {
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 10
-			tech_school = naval_tech_school
+			factor = 8
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 3
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 3
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -478,10 +522,11 @@ clipper_design = {
 	area = ship_construction
 	year = 1836
 	cost = 3600
+	navy_base = { maximum_speed = 1 }
 	unciv_military = yes
-	activate_building = clipper_shipyard 
+
 	ai_chance = {
-		factor = 1.25
+		factor = 1.5
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -494,18 +539,18 @@ clipper_design = {
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 4
-			tech_school = naval_tech_school
+			factor = 8
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 2
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 2
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -547,7 +592,7 @@ clipper_design = {
 			total_num_of_ports = 40
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			any_owned_province = { is_overseas = yes }
 		}
 	}
@@ -557,33 +602,54 @@ steamers = {
 	year = 1836
 	cost = 7200
 	unciv_military = yes
-	activate_building = steamer_shipyard 
+
+	navy_base = { maximum_speed = 1 }
+
 	ai_chance = {
-		factor = 1.25
+		factor = 4
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
 		}
-		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
 		modifier = {
-			factor = 0.2
-			NOT = { literacy = 0.1 }
+			factor = 10
+			is_greater_power = yes
+			OR = {
+				1755 = {
+					OR = {
+						owner = { in_sphere = THIS }
+						owned_by = THIS
+					}
+				}
+				369 = {
+					OR = {
+						owner = { in_sphere = THIS }
+						owned_by = THIS
+					}
+				}
+				1723 = {
+					OR = {
+						owner = { in_sphere = THIS }
+						owned_by = THIS
+					}
+				}
+			}
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 4
-			tech_school = naval_tech_school
+			factor = 8
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 8
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 3
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -628,16 +694,21 @@ steamers = {
 			factor = 4
 			any_owned_province = { is_overseas = yes }
 		}
+		modifier = {
+			factor = 20
+			year = 1851
+		}
 	}
 }
 iron_steamers = {
 	area = ship_construction
-	year = 1860
+	year = 1855
 	cost = 10800
 	unciv_military = yes
 	navy_base = { maximum_speed = 2 }
 	ai_chance = {
-		factor = 1.25
+		factor = 4
+
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -645,41 +716,50 @@ iron_steamers = {
 		}
 		modifier = {
 			factor = 30
+			tag = BRI
+		}
+		modifier = {
+			factor = 30
+			tag = CAN
+		}
+		modifier = {
+			factor = 100
+			is_greater_power = yes
 			OR = {
-				tag = CAN
-				tag = BRI
+				1755 = {
+					OR = {
+						owner = { in_sphere = THIS }
+						owned_by = THIS
+					}
+				}
+				369 = {
+					OR = {
+						owner = { in_sphere = THIS }
+						owned_by = THIS
+					}
+				}
+				1723 = {
+					OR = {
+						owner = { in_sphere = THIS }
+						owned_by = THIS
+					}
+				}
 			}
-		}
-		modifier = {
-			factor = 5
-			is_greater_power = yes
-		}
-		
-		modifier = {
-			factor = 1000
-			is_greater_power = yes
-			1755 = { owner = { in_sphere = THIS } }
-		}
-		
-		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
-		modifier = {
-			factor = 0.2
-			NOT = { literacy = 0.1 }
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 4
-			tech_school = naval_tech_school
+			factor = 10
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 20
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 6
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -721,12 +801,12 @@ iron_steamers = {
 			total_num_of_ports = 40
 		}
 		modifier = {
-			factor = 0
-			NOT = { raider_group_doctrine = 1 }
+			factor = 5
+			any_owned_province = { is_overseas = yes }
 		}
 		modifier = {
-			factor = 4
-			any_owned_province = { is_overseas = yes }
+			factor = 6
+			year = 1870
 		}
 	}
 }
@@ -735,9 +815,9 @@ steel_steamers = {
 	year = 1880
 	cost = 14400
 	unciv_military = yes
-	navy_base = { maximum_speed = 2 } 
+	navy_base = { maximum_speed = 1 }
 	ai_chance = {
-		factor = 1.25
+		factor = 2
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -747,21 +827,28 @@ steel_steamers = {
 		modifier = {
 			factor = 0.2
 			NOT = { literacy = 0.2 }
+			is_greater_power = no
+		}
+		# Low LIT GPs should pay less attention here
+		modifier = {
+			factor = 0.75
+			NOT = { literacy = 0.3 }
+			is_greater_power = yes
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 30
-			tech_school = naval_tech_school
+			factor = 10
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 4
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 4
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -807,8 +894,9 @@ steel_steamers = {
 			NOT = { blue_and_brown_water_schools = 1 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 3
 			any_owned_province = { is_overseas = yes }
+			#money = 20000
 		}
 	}
 }
@@ -817,9 +905,9 @@ steam_turbine_ships = {
 	year = 1900
 	cost = 18000
 	unciv_military = yes
-	navy_base = { maximum_speed = 2 } 
+	navy_base = { maximum_speed = 2 }
 	ai_chance = {
-		factor = 1.25
+		factor = 4
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -829,21 +917,28 @@ steam_turbine_ships = {
 		modifier = {
 			factor = 0.2
 			NOT = { literacy = 0.2 }
+			is_greater_power = no
+		}
+		# Low LIT GPs should pay less attention here
+		modifier = {
+			factor = 0.75
+			NOT = { literacy = 0.3 }
+			is_greater_power = yes
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 4
-			tech_school = naval_tech_school
+			factor = 10
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
-			factor = 1.05
+			factor = 4
 			total_num_of_ports = 9
 			is_greater_power = yes
 		}
 		# GPs and SPs with more than 12 ports
 		modifier = {
-			factor = 1.15
+			factor = 4
 			total_num_of_ports = 12
 			rank = 16
 		}
@@ -884,14 +979,15 @@ steam_turbine_ships = {
 			factor = 1.1
 			total_num_of_ports = 40
 		}
-		
+
 		modifier = {
 			factor = 0
 			NOT = { high_sea_battle_fleet = 1 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			any_owned_province = { is_overseas = yes }
+			#money = 20000
 		}
 	}
 }
@@ -900,9 +996,9 @@ oil_driven_ships = {
 	year = 1919
 	cost = 21600
 	unciv_military = yes
-	navy_base = { maximum_speed = 2 } 
+	navy_base = { maximum_speed = 2 }
 	ai_chance = {
-		factor = 1
+		factor = 1.25
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -915,8 +1011,8 @@ oil_driven_ships = {
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 1.05
-			tech_school = naval_tech_school
+			factor = 6
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
@@ -998,7 +1094,7 @@ naval_design_bureaus = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 4
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# GPs with 9 or more coastal provinces (Prussia+)
 		modifier = {
@@ -1056,6 +1152,10 @@ naval_design_bureaus = {
 			factor = 1.05
 			total_num_of_ports = 40
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 fire_control_systems = {
@@ -1064,6 +1164,9 @@ fire_control_systems = {
 	cost = 7200
 	unciv_military = yes
 	navy_base = { build_time = -10 }
+
+	colonial_prestige = 0.1
+
 	ai_chance = {
 		factor = 0.25
 		# Land-locked countries don't research this
@@ -1079,7 +1182,7 @@ fire_control_systems = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -1146,6 +1249,10 @@ fire_control_systems = {
 			factor = 0
 			NOT = { steel_steamers = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 
@@ -1155,6 +1262,8 @@ weapon_platforms = {
 	cost = 10800
 	unciv_military = yes
 	navy_base = { build_time = -10 }
+	colonial_prestige = 0.1
+
 	ai_chance = {
 		factor = 0.25
 		# Land-locked countries don't research this
@@ -1170,7 +1279,7 @@ weapon_platforms = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -1237,6 +1346,10 @@ weapon_platforms = {
 			factor = 0
 			NOT = { steel_steamers = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 main_armament = {
@@ -1245,6 +1358,8 @@ main_armament = {
 	cost = 14400
 	unciv_military = yes
 	navy_base = { build_time = -10 }
+	colonial_prestige = 0.1
+
 	ai_chance = {
 		factor = 0.25
 		# Land-locked countries don't research this
@@ -1260,7 +1375,7 @@ main_armament = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -1332,6 +1447,10 @@ main_armament = {
 			factor = 0
 			NOT = { steel_steamers = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 advanced_naval_design = {
@@ -1355,7 +1474,7 @@ advanced_naval_design = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -1422,6 +1541,10 @@ advanced_naval_design = {
 			factor = 0
 			NOT = { steam_turbine_ships = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 modern_naval_design = {
@@ -1445,7 +1568,7 @@ modern_naval_design = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -1507,6 +1630,10 @@ modern_naval_design = {
 			factor = 0
 			NOT = { oil_driven_ships = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 
@@ -1516,8 +1643,8 @@ alphabetic_flag_signaling = {
 	year = 1836
 	cost = 3600
 	unciv_military = yes
-	supply_range = 0.10
-	
+	supply_range = 0.5
+
 	ai_chance = {
 		factor = 0.25
 		modifier = {
@@ -1546,11 +1673,15 @@ alphabetic_flag_signaling = {
 		}
 		modifier = {
 			factor = 1.02
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		modifier = {
 			factor = 1.05
 			rank = 16
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
@@ -1559,8 +1690,8 @@ naval_plans = {
 	year = 1836
 	cost = 7200
 	unciv_military = yes
-	supply_range = 0.10
-	
+	supply_range = 0.5
+
 	ai_chance = {
 		factor = 0.25
 		modifier = {
@@ -1579,6 +1710,7 @@ naval_plans = {
 			factor = 1.05
 			total_num_of_ports = 30
 		}
+
 		modifier = {
 			factor = 1.02
 			total_amount_of_ships = 30
@@ -1589,7 +1721,7 @@ naval_plans = {
 		}
 		modifier = {
 			factor = 1.02
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		modifier = {
 			factor = 1.05
@@ -1599,6 +1731,10 @@ naval_plans = {
 			factor = 0
 			NOT = { iron_steamers = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 naval_statistics = {
@@ -1606,7 +1742,7 @@ naval_statistics = {
 	year = 1850
 	cost = 10800
 	unciv_military = yes
-	supply_range = 0.10
+	supply_range = 0.5
 		ai_chance = {
 		factor = 0.25
 		modifier = {
@@ -1622,8 +1758,17 @@ naval_statistics = {
 			NOT = { total_amount_of_ships = 1 }
 		}
 		modifier = {
+			factor = 30
+			is_greater_power = yes
+			OR = {
+				tag = GER
+				tag = NGF
+				tag = PRU
+			}
+		}
+		modifier = {
 			factor = 1.02
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		modifier = {
 			factor = 1.05
@@ -1644,6 +1789,10 @@ naval_statistics = {
 		modifier = {
 			factor = 0
 			NOT = { steel_steamers = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
@@ -1652,7 +1801,7 @@ naval_logistics = {
 	year = 1870
 	cost = 14400
 	unciv_military = yes
-	supply_range = 0.10
+	supply_range = 1.0
 		ai_chance = {
 		factor = 0.25
 		modifier = {
@@ -1681,7 +1830,7 @@ naval_logistics = {
 		}
 		modifier = {
 			factor = 1.02
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		modifier = {
 			factor = 1.05
@@ -1691,6 +1840,10 @@ naval_logistics = {
 			factor = 0
 			NOT = { steel_steamers = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 naval_directionism = {
@@ -1698,7 +1851,7 @@ naval_directionism = {
 	year = 1900
 	cost = 18000
 	unciv_military = yes
-	supply_range = 0.10
+	supply_range = 1.0
 		ai_chance = {
 		factor = 0.25
 		modifier = {
@@ -1727,7 +1880,7 @@ naval_directionism = {
 		}
 		modifier = {
 			factor = 1.02
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		modifier = {
 			factor = 1.05
@@ -1737,6 +1890,10 @@ naval_directionism = {
 			factor = 0
 			NOT = { steam_turbine_ships = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 naval_integration = {
@@ -1744,7 +1901,7 @@ naval_integration = {
 	year = 1919
 	cost = 21600
 	unciv_military = yes
-	supply_range = 0.10
+	supply_range = 1.0
 		ai_chance = {
 		factor = 0.25
 		modifier = {
@@ -1769,7 +1926,7 @@ naval_integration = {
 		}
 		modifier = {
 			factor = 1.02
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		modifier = {
 			factor = 0
@@ -1790,6 +1947,10 @@ naval_integration = {
 		modifier = {
 			factor = 0
 			NOT = { oil_driven_ships = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
@@ -1819,7 +1980,7 @@ the_command_principle = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -1877,6 +2038,10 @@ the_command_principle = {
 			factor = 1.05
 			total_num_of_ports = 40
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 naval_professionalism = {
@@ -1884,11 +2049,11 @@ naval_professionalism = {
 	year = 1836
 	cost = 7200
 	unciv_military = yes
-	navy_base = {
-		default_organisation = 5
-	}
+	navy_base = { default_organisation = 5 }
+	colonial_prestige = 0.1
+
 	ai_chance = {
-		factor = 0.25
+		factor = 0.75
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -1901,8 +2066,8 @@ naval_professionalism = {
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 1.15
-			tech_school = naval_tech_school
+			factor = 2
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -1964,6 +2129,10 @@ naval_professionalism = {
 			factor = 0
 			NOT = { iron_steamers = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 naval_decision_making = {
@@ -1971,11 +2140,11 @@ naval_decision_making = {
 	year = 1850
 	cost = 10800
 	unciv_military = yes
-	navy_base = {
-		default_organisation = 5
-	}
+	navy_base = { default_organisation = 5 }
+	colonial_prestige = 0.1
+
 	ai_chance = {
-		factor = 0.25
+		factor = 0.75
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -1988,8 +2157,8 @@ naval_decision_making = {
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 1.15
-			tech_school = naval_tech_school
+			factor = 2
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -2050,6 +2219,10 @@ naval_decision_making = {
 		modifier = {
 			factor = 0
 			NOT = { steel_steamers = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
@@ -2058,11 +2231,11 @@ naval_risk_management = {
 	year = 1870
 	cost = 14400
 	unciv_military = yes
-	navy_base = {
-		default_organisation = 5
-	}
+	navy_base = { default_organisation = 5 }
+	colonial_prestige = 0.1
+
 	ai_chance = {
-		factor = 0.25
+		factor = 0.75
 		# Land-locked countries don't research this
 		modifier = {
 			factor = 0
@@ -2075,8 +2248,8 @@ naval_risk_management = {
 		}
 		# Valuable to naval tech school countries (UK)
 		modifier = {
-			factor = 1.15
-			tech_school = naval_tech_school
+			factor = 2
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -2137,6 +2310,10 @@ naval_risk_management = {
 		modifier = {
 			factor = 0
 			NOT = { steel_steamers = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
@@ -2163,7 +2340,7 @@ naval_nco_training = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -2225,6 +2402,10 @@ naval_nco_training = {
 			factor = 0
 			NOT = { steam_turbine_ships = 1 }
 		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
 	}
 }
 modern_naval_training = {
@@ -2250,7 +2431,7 @@ modern_naval_training = {
 		# Valuable to naval tech school countries (UK)
 		modifier = {
 			factor = 1.15
-			tech_school = naval_tech_school
+			OR = { tech_school = naval_tech_school tech_school = japanese_tech_school }
 		}
 		# More popular when at war
 		modifier = {
@@ -2311,6 +2492,10 @@ modern_naval_training = {
 		modifier = {
 			factor = 0
 			NOT = { oil_driven_ships = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }

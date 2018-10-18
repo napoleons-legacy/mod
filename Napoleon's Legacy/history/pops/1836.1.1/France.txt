@@ -967,7 +967,7 @@
 	clergymen = {
 		culture = french
 		religion = catholic
-		size = 1750
+		size = 1550
 	}
 
 	artisans = {
@@ -997,7 +997,7 @@
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 146350
+		size = 146550
 	}
 }
 #Evreux (424000/106000 POPS)
@@ -1111,6 +1111,12 @@
 		religion = catholic
 		size = 1350
 	}
+	
+	aristocrats = {
+		culture = french
+		religion = catholic
+		size = 3000
+	}
 
 	officers = {
 		culture = french
@@ -1123,17 +1129,41 @@
 		religion = catholic
 		size = 1550
 	}
+	
+	clergymen = {
+		culture = french
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = french
+		religion = catholic
+		size = 500
+	}
+	
+	soldiers = {
+		culture = french
+		religion = catholic
+		size = 400
+	}
+	
+	farmers = {
+		culture = french
+		religion = catholic
+		size = 5000
+	}
 
 	clergymen = {
 		culture = breton
 		religion = catholic
-		size = 1150
+		size = 1050
 	}
 
 	artisans = {
 		culture = breton
 		religion = catholic
-		size = 10000
+		size = 9500
 	}
 
 	artisans = {
@@ -1145,17 +1175,42 @@
 	soldiers = {
 		culture = breton
 		religion = catholic
-		size = 1400
+		size = 1000
 	}
 
 	farmers = {
 		culture = breton
 		religion = catholic
-		size = 115800
+		size = 110800
 	}
 }
 #St Brieuc (604000/151000 POPS)
 421 = {
+
+	clergymen = {
+		culture = french
+		religion = catholic
+		size = 200
+	}
+
+	artisans = {
+		culture = french
+		religion = catholic
+		size = 500
+	}
+	
+	soldiers = {
+		culture = french
+		religion = catholic
+		size = 400
+	}
+	
+	farmers = {
+		culture = french
+		religion = catholic
+		size = 5000
+	}
+
 	aristocrats = {
 		culture = french
 		religion = catholic
@@ -1165,25 +1220,25 @@
 	clergymen = {
 		culture = breton
 		religion = catholic
-		size = 1300
+		size = 1100
 	}
 
 	artisans = {
 		culture = breton
 		religion = catholic
-		size = 7500
+		size = 7000
 	}
 
 	soldiers = {
 		culture = breton
 		religion = catholic
-		size = 1500
+		size = 1100
 	}
 
 	farmers = {
 		culture = breton
 		religion = catholic
-		size = 139500
+		size = 134500
 	}
 }
 #Vannes (436000/109000 POPS)
@@ -1193,29 +1248,53 @@
 		religion = catholic
 		size = 1100
 	}
+	
+	clergymen = {
+		culture = french
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = french
+		religion = catholic
+		size = 1000
+	}
+	
+	soldiers = {
+		culture = french
+		religion = catholic
+		size = 1000
+	}
+	
+	farmers = {
+		culture = french
+		religion = catholic
+		size = 10000
+	}
 
 	clergymen = {
 		culture = breton
 		religion = catholic
-		size = 900
+		size = 800
 	}
 
 	artisans = {
 		culture = breton
 		religion = catholic
-		size = 5400
+		size = 4400
 	}
 
 	soldiers = {
 		culture = breton
 		religion = catholic
-		size = 1100
+		size = 100
 	}
 
 	farmers = {
 		culture = breton
 		religion = catholic
-		size = 100700
+		size = 90700
 	}
 }
 #Nantes (476000/119000 POPS)
@@ -1281,17 +1360,29 @@
 		religion = catholic
 		size = 9000
 	}
+	
+	soldiers = {
+		culture = french
+		religion = catholic
+		size = 1000
+	}
+	
+	farmers = {
+		culture = french
+		religion = catholic
+		size = 24050
+	}
 
 	soldiers = {
 		culture = breton
 		religion = catholic
-		size = 1400
+		size = 400
 	}
 
 	farmers = {
 		culture = breton
 		religion = catholic
-		size = 124050
+		size = 100000
 	}
 
 }
@@ -1325,7 +1416,7 @@
 	capitalists = {
 		culture = french
 		religion = catholic
-		size = 50
+		size = 200
 	}
 
 	clerks = {
@@ -1355,19 +1446,19 @@
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 122200
+		size = 222200
 	}
 
 	clergymen = {
 		culture = french
 		religion = jewish
-		size = 50
+		size = 500
 	}
 
 	capitalists = {
 		culture = french
 		religion = jewish
-		size = 50
+		size = 200
 	}
 
 	clerks = {
@@ -1392,6 +1483,12 @@
 		culture = french
 		religion = jewish
 		size = 100
+	}
+	
+	farmers = {
+		culture = french
+		religion = jewish
+		size = 5000
 	}
 }
 #Chartres (284000/71000 POPS)
@@ -3068,7 +3165,7 @@
 	clergymen = {
 		culture = french
 		religion = catholic
-		size = 650
+		size = 350
 	}
 
 	artisans = {
@@ -3086,13 +3183,13 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 25600
+		size = 25100
 	}
 
     farmers = {
 		culture = french
 		religion = catholic
-		size = 30000
+		size = 30800
 	}
 }
 #Chambery (228400/57100 POPS)
@@ -3106,7 +3203,7 @@
 	clergymen = {
 		culture = french
 		religion = catholic
-		size = 575
+		size = 375
 	}
 
 	artisans = {
@@ -3124,13 +3221,13 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 26175
+		size = 23375
 	}
 
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 26175
+		size = 29175
 	}
 
 }
@@ -3182,7 +3279,13 @@
 	artisans = {
 		culture = french
 		religion = catholic
-		size = 10000
+		size = 7000
+	}
+	
+	craftsmen = {
+		culture = french
+		religion = catholic
+		size = 3000
 	}
 
 	soldiers = {
@@ -3372,7 +3475,7 @@
 	clergymen = {
 		culture = french
 		religion = catholic
-		size = 425
+		size = 225
 	}
 
 	artisans = {
@@ -3390,13 +3493,13 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 18825
+		size = 18025
 	}
 
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 18825
+		size = 19825
 	}
 
 }
@@ -3430,7 +3533,7 @@
 	clergymen = {
 		culture = french
 		religion = catholic
-		size = 500
+		size = 200
 	}
 
 	artisans = {
@@ -3454,7 +3557,7 @@
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 4800
+		size = 4830
 	}
 
 	farmers = {

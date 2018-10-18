@@ -15,18 +15,5 @@ army = {
 		type = irregular
 		home = 2213
 	}
-
-	regiment = {
-		name= "2. Infanterie"
-		type = irregular
-		home = 2213
-	}
-
-	regiment = {
-		name= "3. Infanterie"
-		type = irregular
-		home = 2215
-	}
-
 }
 

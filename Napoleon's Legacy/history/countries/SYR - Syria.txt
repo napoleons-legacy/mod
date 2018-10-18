@@ -31,6 +31,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = SYR_conservative
 last_election = 1834.1.1
@@ -44,6 +45,8 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = sunni_country
+schools = unciv_tech_school
 
 foreign_artillery = yes_foreign_artillery
 foreign_weapons = yes_foreign_weapons

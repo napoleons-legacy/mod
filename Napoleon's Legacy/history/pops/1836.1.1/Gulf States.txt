@@ -75,7 +75,7 @@
 	farmers = {
 		culture = bedouin
 		religion = sunni
-		size = 450
+		size = 500
 	}
 
 	clergymen = {
@@ -93,7 +93,7 @@
 	farmers = {
 		culture = bedouin
 		religion = shiite
-		size = 4400
+		size = 3600
 	}
 	
 	farmers = {
@@ -103,9 +103,21 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 400
+	}
+	
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 500
+	}
+	
+	farmers = {
+		culture = bedouin
+		religion = orthodox
+		size = 250
 	}
 }
 #Doha (8000/2000 POPS) #now part of Qatar 
@@ -141,7 +153,7 @@
 	}
 	
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 200
 	}
@@ -193,7 +205,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = forest_bantu
 		religion = animist
 		size = 800
 	}
@@ -230,9 +242,9 @@
 		size = 2625
 	}
 
-	slaves = {
-		culture = african_minor
-		religion = animist
+	farmers = {
+		culture = persian
+		religion = shiite
 		size = 300
 	}
 

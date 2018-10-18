@@ -1,4 +1,8 @@
+owner = USA
+controller = USA
+add_core = USA
 add_core = MTC
 trade_goods = timber
-terrain = arctic
-life_rating = 10
+terrain = steppe
+life_rating = 30
+colonial = 2

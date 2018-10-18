@@ -1,11 +1,12 @@
 capital = 1783
-primary_culture = french 
-culture = wolof
-culture = african_minor
-religion = protestant
+primary_culture = wolof 
+culture = fulbe
+culture = western_nigritic
+culture = bambara
+religion = sunni
 government = democracy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.01
 
 # Political reforms
@@ -32,10 +33,12 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
+set_country_flag = sunni_country
 set_country_flag = post_colonial_country
 
-ruling_party = TOO_conservative
+ruling_party = SNG_socialist
 upper_house = {
 	fascist = 0
 	liberal = 16

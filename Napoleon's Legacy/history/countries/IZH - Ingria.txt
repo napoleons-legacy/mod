@@ -34,6 +34,9 @@ debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = orthodox_country
 
 ruling_party = RUS_liberal
 upper_house = {

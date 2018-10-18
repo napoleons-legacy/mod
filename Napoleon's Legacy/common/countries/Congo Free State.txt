@@ -1,13 +1,14 @@
 color = { 101 68 68 }
-graphical_culture = EuropeanGC
+graphical_culture = AfricanGC
 
 party = {
 	name = "CNG_liberal"
 	start_date = 1830.1.1
-	end_date = 2000.1.1
+	end_date = 1900.1.1
 
 	ideology = liberal
 
+	social_policy = no_position_set
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pluralism
@@ -18,10 +19,41 @@ party = {
 party = {
 	name = "CNG_conservative"
 	start_date = 1830.1.1
+	end_date = 1900.1.1
+
+	ideology = conservative
+
+	social_policy = no_position_set
+	economic_policy = interventionism
+	trade_policy = protectionism
+	religious_policy = moralism
+	citizenship_policy = residency
+	war_policy = anti_military
+}
+
+party = {
+	name = "CNG_liberal_2"
+	start_date = 1900.1.1
+	end_date = 2000.1.1
+
+	ideology = liberal
+
+	social_policy = no_position_set
+	economic_policy = laissez_faire
+	trade_policy = free_trade
+	religious_policy = pluralism
+	citizenship_policy = limited_citizenship
+	war_policy = pro_military
+}
+
+party = {
+	name = "CNG_conservative_2"
+	start_date = 1900.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
 
+	social_policy = no_position_set
 	economic_policy = interventionism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -36,6 +68,7 @@ party = {
 
 	ideology = socialist
 
+	social_policy = welfare_state
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = secularized
@@ -46,10 +79,26 @@ party = {
 party = {
 	name = "CNG_reactionary"
 	start_date = 1820.1.1
+	end_date = 1900.1.1
+
+	ideology = reactionary
+
+	social_policy = no_position_set
+	economic_policy = state_capitalism
+	trade_policy = protectionism
+	religious_policy = moralism
+	citizenship_policy = residency
+	war_policy = jingoism
+}
+
+party = {
+	name = "CNG_reactionary_2"
+	start_date = 1900.1.1
 	end_date = 2000.1.1
 
 	ideology = reactionary
 
+	social_policy = no_position_set
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism
@@ -64,6 +113,7 @@ party = {
 
 	ideology = anarcho_liberal
 
+	social_policy = no_state_interference
 	economic_policy = laissez_faire
 	trade_policy = free_trade
 	religious_policy = pro_atheism
@@ -78,6 +128,7 @@ party = {
 
 	ideology = communist
 
+	social_policy = populist_welfare
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = pro_atheism
@@ -87,11 +138,12 @@ party = {
 
 party = {
 	name = "CNG_fascist"
-	start_date = 1905.1.1
+	start_date = 1900.1.1
 	end_date = 2000.1.1
 
 	ideology = fascist
 
+	social_policy = populist_welfare
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism

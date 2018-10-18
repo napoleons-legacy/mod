@@ -1,6 +1,5 @@
 capital = 487
 primary_culture = spanish
-culture = french
 culture = catalan
 culture = basque
 religion = catholic
@@ -37,8 +36,11 @@ debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
+border_policy = open_borders
 
-ruling_party = NSA_liberal
+set_country_flag = catholic_country
+
+ruling_party = SPA_liberal
 last_election = 1834.1.1
 upper_house = {
 	fascist = 0

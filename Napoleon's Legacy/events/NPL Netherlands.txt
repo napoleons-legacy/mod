@@ -1,0 +1,156 @@
+
+country_event = {
+    id = 27501
+    title = "EVTNAME27501"
+    desc = "EVTDESC27501"
+    picture = "Philippines"
+
+    trigger = {
+        year = 1850
+        tag = NET
+        war = no
+        SPA = {
+            is_greater_power = no
+            war = no
+            NOT = {
+                truce_with = NET
+            }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 120
+        modifier = {
+            factor = 0.75
+            alliance_with = SPA
+        }
+
+        modifier = {
+            factor = 0.75
+            relation = { who = SPA value = 150 }
+        }
+
+        modifier = {
+            factor = 1.5
+            NOT = { relation = { who = SPA value = 50 } }
+        }
+
+        modifier = {
+            factor = 0.5
+            year = 1860
+        }
+    }
+
+    option = {
+        name = "EVTOPTA27501"
+        SPA = { country_event = 27502 }
+        ai_chance = {
+            factor = 75
+            modifier = {
+                factor = 0
+                NOT = { money = 20000 }
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTB27501"
+        ai_chance = {
+            factor = 25
+
+            modifier = {
+                factor = 0
+                money = 25000
+            }
+        }
+    }
+ }
+
+
+country_event = {
+    id = 27502
+    title = "EVTNAME27502" # The Philippines Purchase
+    desc = "EVTDESC27502"
+    picture = "Philippines"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA27502"
+        prestige = -5
+
+        treasury = 25000
+        NET = { treasury = -25000 }
+        FROM = { country_event = 27503 }
+
+        ai_chance = {
+            factor = 25
+        }
+    }
+
+
+    option = {
+        name = "EVTOPTB27502"
+        prestige = 10
+
+        FROM = { country_event = 27504 }
+
+        ai_chance = {
+            factor = 75
+        }
+    }
+}
+
+country_event = {
+    id = 27503
+    title = "EVTNAME27503"
+    desc = "EVTDESC27503"
+    picture = "Philippines"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA27503"
+        prestige = 15
+        FROM = {
+            any_owned = {
+                limit = { is_core = PHL }
+                secede_province = THIS
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 27504
+    title = "EVTNAME27504"
+    desc = "EVTDESC27504"
+    picture = "Philippines"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA27504"
+        badboy = 5
+        casus_belli = {
+            target = SPA
+            type = liberate_country
+            months = 12
+        }
+
+        war = {
+            target = SPA
+            attacker_goal = {
+                casus_belli = liberate_country
+                country = PHL
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTB27504"
+        prestige = -5
+    }
+}

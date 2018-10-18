@@ -10,7 +10,6 @@ plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.02
 non_state_culture_literacy = 0.01
-civilized = yes
 
 # Political reforms
 slavery = no_slavery
@@ -36,6 +35,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = PAK_conservative
 upper_house = {
@@ -48,6 +48,8 @@ upper_house = {
 	communist = 0
 }
 
+schools = unciv_tech_school
+set_country_flag = sunni_country
 
 # Technologies
 

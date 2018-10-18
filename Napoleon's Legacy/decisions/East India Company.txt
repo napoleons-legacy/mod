@@ -1,11 +1,9 @@
-
 political_decisions = {
 
     sell_surplus = {
         picture = map_india
         potential = {
             tag = EIC
-            #vassal_of = CAN
             NOT = {
                 has_country_modifier = surplus_sold
                 year = 1850
@@ -24,12 +22,11 @@ political_decisions = {
             }
             any_country = {
                 limit = {
-                    capital_scope = {
-                        is_core = HND
-                        }
-                        NOT = { tag = EIC }
+                    exists = yes
+                    capital_scope = { is_core = HND }
+                    NOT = { tag = EIC }
                 }
-                country_event = { id=121271 days = 0 }
+                country_event = 121271
             }
         }
         ai_will_do = {
@@ -51,12 +48,14 @@ political_decisions = {
 
         effect = {
             CAN = {
-                country_event = { id=121267 days = 0 }
+                country_event = 121267
             }
+
             BNG = {
                 years_of_research = 5
             }
         }
+
         ai_will_do = {
             factor = 1
         }
@@ -81,7 +80,7 @@ political_decisions = {
 
         effect = {
             CAN = {
-                country_event = { id = 121268 days = 0 }
+                country_event = 121268
             }
             BNG = {
                 all_core = {
@@ -275,8 +274,8 @@ political_decisions = {
                 target = BER
                     attacker_goal = { casus_belli = establish_protectorate_casus_belli }
                     defender_goal = {
-                    casus_belli = acquire_core_state
-                    state_province_id = 1291
+                        casus_belli = acquire_core_state
+                        state_province_id = 1291
                     }
             }
             set_country_flag = beroda_eic_conflict

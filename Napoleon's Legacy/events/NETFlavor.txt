@@ -1,4 +1,9 @@
-#Aceh is Conquered and the Guerilla War
+#####################################################
+#													#
+#           Netherlands events						#
+#													#
+#####################################################
+#Aceh is Conquered/Guerrilla War
 country_event = {
     id = 952511
     title = "EVTNAME952511"
@@ -7,17 +12,17 @@ country_event = {
 
     trigger = {
         NOT = { tag = ATJ }
-        civilized = yes 
+        civilized = yes
         owns = 1405
         ATJ = { exists = no }
-        NOT = { religion = sunni }
+		NOT = { has_country_flag = sunni_country }
         year = 1890
     }
-    
+
     fire_only_once = yes
-    
+
     mean_time_to_happen = { months = 36 }
-    
+
     option = {
         name = "EVT952511OPTA"
         set_global_flag = aceh_jihad
@@ -36,7 +41,7 @@ country_event = {
         }
     }
 }
-    
+
 #Aceh is free - cleaning nationalism
 province_event = {
     id = 952512
@@ -46,167 +51,22 @@ province_event = {
     trigger = {
         OR = {
             owned_by = ATJ
-            country = { capital_scope = { pop_majority_religion = sunni } }
+			owner = { has_country_flag = sunni_country }
         }
         is_core = ATJ
         has_global_flag = aceh_jihad
         has_province_modifier = nationalist_agitation
     }
-    
+
     fire_only_once = yes
-    mean_time_to_happen = { days = 1 }  
-    
+    mean_time_to_happen = { days = 1 }
+
     option = {
         name = "EVT952512OPTA"
         state_scope = { remove_province_modifier = nationalist_agitation }
         any_pop = {
             consciousness = -3
             militancy = -8
-            }
         }
+    }
 }
-
-country_event = {
-    id = 27501
-    title = "EVTNAME27501" 
-    desc = "EVTDESC27501"
-    picture = "Philippines"
-    
-    trigger = {
-        year = 1850
-        tag = NET
-        war = no
-        SPA = {
-            is_greater_power = no
-            war = no
-        NOT = {
-            truce_with = NET
-                }
-            }
-        }
-        
-    fire_only_once = yes
-    
-    mean_time_to_happen = {
-        months = 12
-        modifier = {
-            factor = 0.8
-            alliance_with = SPA
-        }
-        modifier = {
-            factor = 0.8
-            relation = { who = SPA value = 100 }
-        }
-        modifier = {
-            factor = 1.2
-            NOT = { relation = { who = SPA value = 50 } }
-        }
-        modifier = {
-            factor = 0.5
-            year = 1860
-        }
-    }
-    
-    option = {
-        name = "EVTOPTA27501"
-        SPA = { country_event = 27502 }
-        ai_chance = {
-            factor = 75
-            modifier = {
-                factor = 1.5
-                money = 75000
-                }
-        }
-    }
-        option = {
-        name = "EVTOPTB27501"
-            ai_chance = {
-            factor = 25
-        }
-    }
- }
-    
-    
-country_event = {
-    id = 27502
-    title = "EVTNAME27502" #the Philippines Purchase
-    desc = "EVTDESC27502"
-    picture = "Philippines"
-    
-    is_triggered_only = yes
-    
-    option = {
-        name = "EVTOPTA27502"
-        prestige = -5
-        treasury = 100000
-        NET = { treasury = -100000 }        
-        FROM = { country_event = 27503 }             
-        ai_chance = {
-            factor = 25
-        }
-    }
-
-
-    option = {
-        name = "EVTOPTB27502"
-        prestige = 10
-        
-        FROM = { country_event = 27504 }
-        ai_chance = {
-             factor = 75
-     }
-  }
-}
- 
-     
-country_event = {
-    id = 27503
-    title = "EVTNAME27503"
-    desc = "EVTDESC27503"
-    picture = "Philippines"
-    
-    is_triggered_only = yes
-        
-    option = {
-        name = "EVTOPTA27503"
-        prestige = 15
-           FROM = {
-            any_owned = { 
-                      limit = { is_core = PHL }
-                      secede_province = THIS
-                        
-                }
-            }
-        }
-    }
-    
-country_event = {
-    id = 27504
-    title = "EVTNAME27504"
-    desc = "EVTDESC27504"
-    picture = "Philippines"
-    
-    is_triggered_only = yes
-        
-    option = {
-        name = "EVTOPTA27504"
-        badboy = 5
-        casus_belli = { 
-            target = SPA
-            type = liberate_country
-            months = 12
-        }
-        war = {
-            target = SPA
-                attacker_goal = {
-                    casus_belli = liberate_country
-                    country = PHL
-                }
-            }
-    }
-            
-    option = {
-        name = "EVTOPTB27504"
-        prestige = -5
-    }
-}  

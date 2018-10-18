@@ -58,21 +58,39 @@ army = {
 		type = infantry
 		home = 838
 	}
+	
+	regiment = {
+		name= "5. Taxiarchia Pezikou"
+		type = infantry
+		home = 839
+	}
 }
 
 army = {
 	name = "Stratós Epeírou"
 	location = 837
 	regiment = {
-		name= "5. Taxiarchia Pezikou"
+		name= "6. Taxiarchia Pezikou"
 		type = infantry
 		home = 837
 	}
 
 	regiment = {
-		name= "6. Taxiarchia Pezikou"
+		name= "7. Taxiarchia Pezikou"
 		type = infantry
 		home = 841
+	}
+	
+	regiment = {
+		name= "8. Taxiarchia Pezikou"
+		type = infantry
+		home = 839
+	}
+	
+	regiment = {
+		name= "1st Bavarian Legion"
+		type = infantry
+		home = 839
 	}
 }
 
@@ -81,8 +99,43 @@ navy = {
 	location = 834
 
 	ship = {
-		name= "Leda"
+		name= "1st Clipper Transport"
 		type = clipper_transport
+	}
+	
+	ship = {
+		name= "2nd Clipper Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "Hellas"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Navarino"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Psara"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Heratos"
+		type = frigate
 	}
 
 }

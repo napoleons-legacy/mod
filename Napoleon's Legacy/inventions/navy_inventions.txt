@@ -1,3 +1,28 @@
+#Modern Sail Ships
+modern_sail_ships = {
+	limit = { post_nelsonian_thought = 1 }
+	chance = {
+		base = 10
+		modifier = {
+			factor = 10
+			alphabetic_flag_signaling = 1
+		}
+	}
+	effect = {
+		clipper_transport = { maximum_speed = 1 }
+		frigate = {
+			hull = 1
+			gun_power = 1
+			maximum_speed = 1
+		}
+		manowar = {
+			hull = 1
+			gun_power = 2
+			maximum_speed = 1
+		}
+	}
+}
+
 
 #torpedo attacks
 torpedo_attacks = {
@@ -338,11 +363,15 @@ building_station_shipyards = {
 		base = 2
 		modifier = {
 			factor = 2
-			clipper_design = 1
+			puddling = 1
 		}
 		modifier = {
 			factor = 1
 			naval_design_bureaus = 1
+		}
+		modifier = {
+			factor = -6
+			NOT = { civilized = yes }
 		}
 	}
 	effect = {
@@ -351,6 +380,29 @@ building_station_shipyards = {
 		}
 	}
 }
+
+clipper_shipyard_construction = {
+	limit = { clipper_design = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			piston_steam_engine = 1
+		}
+		modifier = {
+			factor = 1
+			naval_design_bureaus = 1
+		}
+		modifier = {
+			factor = -6
+			NOT = { civilized = yes }
+		}
+	}
+	effect = {
+		activate_building = clipper_shipyard 
+	}
+}
+
 #corvettes = {
 #	limit = { clipper_design = 1 }
 #	chance = {
@@ -366,11 +418,15 @@ mechanized_fishing_vessels = {
 		base = 2
 		modifier = {
 			factor = 2
-			steamers = 1
+			interchangeable_parts = 1
 		}
 		modifier = {
 			factor = 2
 			invention = work_specialization
+		}
+		modifier = {
+			factor = -10
+			civilized = no
 		}
 	}
 	effect = {
@@ -385,11 +441,17 @@ steamer_automatic_construction_plants = {
 		base = 2
 		modifier = {
 			factor = 2
-			steamers = 1
+			semi_automatization = 1
+			
 		}
 		modifier = {
 			factor = 2
 			invention = building_station_shipyards
+		}
+		
+		modifier = {
+			factor = -10
+			civilized = no
 		}
 	}
 	effect = {
@@ -408,7 +470,7 @@ steamer_transports = {
 		}
 		modifier = {
 			factor = 1
-			clean_coal = 1
+			hot_blast = 1
 		}
 	}
 	effect = {
@@ -429,14 +491,37 @@ commerce_raiders = {
 		}
 	}
 	effect = {
-		activate_unit = commerce_raider 
+		activate_unit = commerce_raider
 	}
 }
+
+steamer_shipyard_construction = {
+	limit = { steamers = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 1
+			semi_automatization = 1
+		}
+		modifier = {
+			factor = 3
+			raider_group_doctrine = 1
+		}
+		modifier = {
+			factor = -10
+			civilized = no
+		}
+	}
+	effect = {
+		activate_building = steamer_shipyard
+	}
+}
+
 #iron_steamers
 ironclads = {
 	limit = {
 		iron_steamers = 1
-		 
+		has_country_flag = existing_country
 	}
 	chance = {
 		base = 5
@@ -456,7 +541,7 @@ ironclads = {
 monitors = {
 	limit = {
 		iron_steamers = 1
-		 
+		has_country_flag = existing_country
 	}
 	chance = {
 		base = 5
@@ -497,7 +582,7 @@ torpedo_boats = {
 protected_cruisers = {
 	limit = {
 		steel_steamers = 1
-		 
+		has_country_flag = existing_country
 	}
 	chance = {
 		base = 3
@@ -507,7 +592,7 @@ protected_cruisers = {
 		}
 		modifier = {
 			factor = 2
-			cheap_steel = 1
+			bessemer_process = 1
 		}
 	}
 	effect = {
@@ -541,7 +626,7 @@ protected_cruisers = {
 pre_dreadnought = {
 	limit = {
 		steel_steamers = 1
-		 
+		has_country_flag = existing_country
 	}
 	chance = {
 		base = 5
@@ -551,7 +636,7 @@ pre_dreadnought = {
 		}
 		modifier = {
 			factor = 1
-			cheap_steel = 1
+			bessemer_process = 1
 		}
 		modifier = {
 			factor = 1
@@ -571,7 +656,7 @@ pre_dreadnought = {
 dreadnoughts = {
 	limit = {
 		steam_turbine_ships = 1
-		 
+		has_country_flag = existing_country
 	}
 	chance = {
 		base = 5
@@ -929,7 +1014,7 @@ armour_piercing_exploding_projectiles = {
 		}
 		modifier = {
 			factor = 1
-			cheap_iron = 1
+			puddling = 1
 		}
 	}
 	effect = {
@@ -955,7 +1040,7 @@ armoured_turrets = {
 		}
 		modifier = {
 			factor = 2
-			cheap_iron = 1
+			puddling = 1
 		}
 	}
 	effect = {
@@ -1050,7 +1135,7 @@ armoured_citadels = {
 		}
 		modifier = {
 			factor = 1
-			cheap_steel = 1
+			bessemer_process = 1
 		}
 	}
 	effect = {
@@ -1133,7 +1218,7 @@ heavy_armour_plates = {
 		base = 2
 		modifier = {
 			factor = 2
-			cheap_steel = 1
+			bessemer_process = 1
 		}
 		modifier = {
 			factor = 1
@@ -1222,7 +1307,7 @@ advanced_fire_control = {
 		}
 		modifier = {
 			factor = 2
-			cheap_steel = 1
+			bessemer_process = 1
 		}
 		modifier = {
 			factor = 1

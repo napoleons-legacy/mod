@@ -1,0 +1,181 @@
+country_event = {
+    id = 66550
+    title = "EVTNAME66550"
+    desc = "EVTDESC66550"
+    picture = "meeting"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA66550"
+        CAN = { country_event = 66551 }
+        ai_chance = {
+            factor = 90
+        }
+    }
+
+    option = {
+        name = "EVTOPTB66550"
+        CAN = { country_event = 66552 }
+        ai_chance = {
+            factor = 10
+        }
+    }
+}
+
+country_event = {
+    id = 66551
+    title = "EVTNAME66551"
+    desc = "EVTDESC66551"
+    picture = "administration"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA66551"
+        FRA = { country_event = 66553 }
+        relation = {
+            who = FRA
+            value = 75
+        }
+
+        ai_chance = {
+            factor = 45
+        }
+    }
+
+    option = {
+        name = "EVTOPTB66551"
+        FRA = { country_event = 66554 }
+        ai_chance = {
+                factor = 55
+        }
+    }
+}
+
+country_event = {
+    id = 66552
+    title = "EVTNAME66552"
+    desc = "EVTDESC66552"
+    picture = "meeting3"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA66552"
+        relation = {
+            who = FRA
+            value = -50
+        }
+    }
+}
+
+country_event = {
+    id = 66553
+    title = "EVTNAME66553"
+    desc = "EVTDESC66553"
+    picture = "Travel"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA66553"
+        CAN = {
+            2230 = {
+                secede_province = FRA
+                remove_core = CAN
+            }
+            2228 = {
+                secede_province = FRA
+                remove_core = CAN
+            }
+            77 = {
+                secede_province = FRA
+                remove_core = CAN
+            }
+        }
+        relation = {
+            who = CAN
+            value = 150
+        }
+    }
+}
+
+country_event = {
+    id = 66554
+    title = "EVTNAME66554"
+    desc = "EVTDESC66554"
+    picture = "slavepower"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA66554"
+        money = 100000
+
+        2230 = { remove_core = FRA add_core = CAN }
+        2228 = { remove_core = FRA add_core = CAN }
+        77 = { remove_core = FRA add_core = CAN }
+
+        relation = {
+            who = CAN
+            value = 50
+        }
+
+        CAN = { country_event = 66556 }
+
+        ai_chance = {
+            factor = 45
+        }
+    }
+
+    option = {
+        name = "EVTOPTB66554"
+        relation = {
+            who = CAN
+            value = -50
+        }
+
+        CAN = { country_event = 66557 }
+
+        ai_chance = {
+            factor = 55
+        }
+    }
+}
+
+country_event = {
+    id = 66556
+    title = "EVTNAME66556"
+    desc = "EVTDESC66556"
+    picture = "Sturt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA66556"
+        prestige = 5
+        money = -100000
+        relation = {
+            who = FRA
+            value = 20
+        }
+    }
+}
+
+country_event = {
+    id = 66557
+    title = "EVTNAME66557"
+    desc = "EVTDESC66557"
+    picture = "finepeople"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA66557"
+        relation = {
+            who = FRA
+            value = -50
+        }
+    }
+}

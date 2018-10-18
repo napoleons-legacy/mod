@@ -1,7 +1,9 @@
 capital = 1948
 primary_culture = fulbe
 culture = hausa
-culture = african_minor
+culture = east_kwa
+culture = tiv
+culture = bedouin
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -33,6 +35,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = SOK_conservative
 upper_house = {
@@ -45,7 +48,7 @@ upper_house = {
 	communist = 0
 }
 
-set_country_flag = islamic_law
+set_country_flag = sunni_country
 
 # Technologies
 
@@ -56,10 +59,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "SOK_oob.txt"
-1861.1.1 = {
-	oob = "/1861/SOK_oob.txt"
-	literacy = 0.05
-	non_state_culture_literacy = 0.04
-	foreign_weapons = yes_foreign_weapons
-	flintlock_rifles = 1
-}

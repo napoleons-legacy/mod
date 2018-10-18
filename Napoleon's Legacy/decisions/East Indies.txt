@@ -1,4 +1,3 @@
-
 political_decisions = {
 
     unite_indonesia = {
@@ -150,6 +149,7 @@ political_decisions = {
             set_global_flag = indonesia_formed
             clr_country_flag = post_colonial_country
             prestige = 20
+			INO = { tech_school = traditional_academic }
             all_core = {
                 remove_core = THIS
                 add_core = INO
@@ -296,6 +296,7 @@ political_decisions = {
             KTI = { all_core = { add_core = MLY } }
             KLM = { all_core = { add_core = MLY } }
             BRU_1396 = { add_core = MLY }
+			random_owned = { limit = { province_id = 2576 } add_core = MLY }
             any_country = {
                 limit = {
                     OR = {
@@ -342,66 +343,119 @@ political_decisions = {
         picture = map_east_indies
         potential = {
             OR = {
-                any_owned_province = { culture = malay }
-                JOH = { in_sphere = THIS }
-                JOH = { vassal_of = THIS }
-                PHG = { in_sphere = THIS }
-                PHG = { vassal_of = THIS }
-                PRK = { in_sphere = THIS }
-                PRK = { vassal_of = THIS }
-                SLG = { in_sphere = THIS }
-                SLG = { vassal_of = THIS }
+				any_owned_province = {
+					OR = {
+						is_core = JOH
+						is_core = PHG
+						is_core = PRK
+						is_core = SLG
             }
-            NOT = {
-                primary_culture = malay
-                has_global_flag = malaya_formed
-                exists = MLY
             }
             JOH = {
+					ai = yes
                 OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				PHG = {
                     ai = yes
-                    exists = no
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				PRK = {
+					ai = yes
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
                 }
             }
+				SLG = {
+					ai = yes
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
         }
+				}
+			}
+			NOT = {
+				primary_culture = malay
+				has_global_flag = malaya_formed
+				exists = MLY
+			}
+		}
 
         allow = {
             war = no
             is_greater_power = yes
-            mass_politics = 1
+			revolution_n_counterrevolution = 1
             JOH = {
                 all_core = {
                     OR = {
                         owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
+						owner = {
+							OR = {
+								civilized = no
+								ai = yes
+							}
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
                     }
                 }
             }
+				}
+			}
             PHG = {
                 all_core = {
                     OR = {
                         owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
+						owner = {
+							OR = {
+								civilized = no
+								ai = yes
+							}
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
                     }
                 }
             }
+				}
+			}
             PRK = {
                 all_core = {
                     OR = {
                         owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
+						owner = {
+							OR = {
+								civilized = no
+								ai = yes
+							}
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
                     }
                 }
             }
+				}
+			}
             SLG = {
                 all_core = {
                     OR = {
                         owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
+						owner = {
+							OR = {
+								civilized = no
+								ai = yes
+							}
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
                     }
                 }
             }
@@ -542,11 +596,23 @@ political_decisions = {
                 limit = { has_pop_culture = malay }
                 militancy = -6
             }
-            MLY = { civilized = yes }
+			MLY = { tech_school = unciv_tech_school }
             any_owned = {
                 limit = { is_core = MLY NOT = { province_id = 1393 } }
-                remove_core = SWK remove_core = SUL remove_core = BRU remove_core = KTI remove_core = KLM remove_core = LAN
+				remove_core = SWK
+				remove_core = SUL
+				remove_core = BRU
+				remove_core = KTI
+				remove_core = KLM
+				remove_core = LAN
+				remove_core = SAK
+				remove_core = ATJ
+				remove_core = DJA
+				remove_core = PHG
+				remove_core = PRK
+				remove_core = SLG
             }
+			random_owned = { limit = { province_id = 2576 } add_core = MLY }
         }
 
         ai_will_do = {
@@ -583,7 +649,8 @@ political_decisions = {
             set_global_flag = sarawak_protectorate
             SWK = { civilized = no }
             SWK = { annex_to = NET }
-        }
+			SWK = { tech_school = unciv_tech_school }
+		}
 
         ai_will_do = {
             factor = 1
@@ -596,6 +663,7 @@ political_decisions = {
             tag = NET
             is_greater_power = yes
             nationalism_n_imperialism = 1
+			NOT = { has_country_flag = north_borneo_company }
             OR = {
                 owns = 1496
                 owns = 1384
@@ -637,6 +705,7 @@ political_decisions = {
 
         effect = {
             prestige = 5
+			set_country_flag = north_borneo_company
             any_country = {
                 limit = {
                     OR = {
@@ -665,6 +734,7 @@ political_decisions = {
     sulu_protectorate = {
         picture = map_east_indies
         potential = {
+			NOT = { has_country_flag = the_sulu_protectorate }
             OR = {
                 is_greater_power = yes
                 is_secondary_power = yes
@@ -684,6 +754,7 @@ political_decisions = {
                 any_owned_province = { is_core = JOH }
                 any_owned_province = { is_core = BRU }
             }
+			any_owned_province = { has_building = naval_base }
         }
 
         allow = {
@@ -691,7 +762,13 @@ political_decisions = {
             SUL = { war = no }
             nationalism_n_imperialism = 1
             OR = {
+				AND = {
                 is_sphere_leader_of = SUL
+					OR = {
+						any_owned_province = { continent = asia }
+						any_owned_province = { continent = australia_new_zealand }
+					}
+				}
                 AND = {
                     any_owned_province = { is_core = PHL }
                     SUL = { part_of_sphere = no }
@@ -702,6 +779,8 @@ political_decisions = {
         effect = {
             prestige = 5
             inherit = SUL
+			SUL = { tech_school = unciv_tech_school }
+			set_country_flag = the_sulu_protectorate
         }
 
         ai_will_do = { factor = 1 }
@@ -809,6 +888,7 @@ political_decisions = {
             set_global_flag = created_cambodian_protectorate
             prestige = 10
             inherit = CAM
+			CAM = { tech_school = unciv_tech_school }
         }
     }
 
@@ -819,7 +899,7 @@ political_decisions = {
             is_greater_power = yes
             OR = {
                 LUA = {
-                    NOT = { has_country_flag = annexed_to_FRA }
+                    NOT = { has_country_flag = annexed_to_NET }
                     neighbour = THIS
                     civilized = no
                     ai = yes
@@ -834,7 +914,7 @@ political_decisions = {
                     }
                 }
                 WIA = {
-                    NOT = { has_country_flag = annexed_to_FRA }
+                    NOT = { has_country_flag = annexed_to_NET }
                     neighbour = THIS
                     civilized = no
                     ai = yes
@@ -849,7 +929,7 @@ political_decisions = {
                     }
                 }
                 CHK = {
-                    NOT = { has_country_flag = annexed_to_FRA }
+                    NOT = { has_country_flag = annexed_to_NET }
                     neighbour = THIS
                     civilized = no
                     ai = yes
@@ -879,7 +959,7 @@ political_decisions = {
                     ai = yes
                     war = no
                     civilized = no
-                    NOT = { has_country_flag = annexed_to_FRA }
+                    NOT = { has_country_flag = annexed_to_NET }
                     primary_culture = lao
                     OR = {
                         part_of_sphere = no
@@ -890,8 +970,9 @@ political_decisions = {
                         vassal_of = NET
                     }
                 }
-                set_country_flag = annexed_to_FRA
-                annex_to = NET
+                set_country_flag = annexed_to_NET
+				tech_school = unciv_tech_school
+				annex_to = NET
             }
         }
     }
@@ -968,7 +1049,7 @@ political_decisions = {
                 war_with = THIS
                 NOT = { has_country_flag = negotiate_unequal_treaty }
                 OR = {
-                    owns = 1375 # Hu�
+					owns = 1375 # Hué
                     owns = 1380 # Saigon
                 }
             }

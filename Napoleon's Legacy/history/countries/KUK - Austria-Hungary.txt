@@ -33,6 +33,9 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = AUS_conservative
 upper_house = {
@@ -43,10 +46,4 @@ upper_house = {
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
-}
-
-1861.1.1 = {
-# Technologies
-
-#Inventions
 }

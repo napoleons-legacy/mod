@@ -7,6 +7,12 @@
 		religion = catholic
 		size = 4000
 	}
+	
+	capitalists = {
+		culture = north_italian
+		religion = catholic
+		size = 25
+	}
 
 	bureaucrats = {
 		culture = north_italian
@@ -32,16 +38,16 @@
 		size = 10000
 	}
 
-	artisans = {
+	craftsmen = {
 		culture = north_italian
 		religion = catholic
-		size = 10000
+		size = 3000
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 3000
+		size = 1000
 	}
 
 	soldiers = {
@@ -53,7 +59,7 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 192900
+		size = 199900
 	}
 
 	clergymen = {
@@ -77,13 +83,13 @@
 	}
 
 	clergymen = {
-		culture = french
+		culture = north_italian
 		religion = catholic
 		size = 150
 	}
 
 	artisans = {
-		culture = french
+		culture = north_italian
 		religion = catholic
 		size = 775
 	}
@@ -97,7 +103,7 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 16250
+		size = 14250
 	}
 
 	aristocrats = {
@@ -127,7 +133,7 @@
 	farmers = {
 		culture = french
 		religion = catholic
-		size = 19600
+		size = 21600
 	}
 }
 #Novara (212000/53000 POPS)
@@ -377,13 +383,13 @@
 	clergymen = {
 		culture = north_italian
 		religion = catholic
-		size = 1175
+		size = 1075
 	}
 
 	artisans = {
 		culture = north_italian
 		religion = catholic
-		size = 5900
+		size = 5400
 	}
 
 	soldiers = {
@@ -395,7 +401,7 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 107275
+		size = 76975
 	}
 }
 #Brescia (708000/177000 POPS)
@@ -611,7 +617,7 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 52800
+		size = 50300
 	}
 }
 #Udine (300000/75000 POPS)
@@ -643,7 +649,7 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 68200
+		size = 52200
 	}
 }
 #Tirol Region (368000) #see Austria.txt for balance of Region
@@ -1583,32 +1589,27 @@
 	clergymen = {
 		culture = south_italian
 		religion = catholic
-		size = 1200
+		size = 600
 	}
 
 	artisans = {
 		culture = south_italian
 		religion = catholic
-		size = 6250
+		size = 3125
 	}
 
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size = 2000
+		size = 1000
 	}
 
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 108875
+		size = 48875
 	}
 	
-	farmers = {
-		culture = croat
-		religion = catholic
-		size = 3000
-	}
 }
 #Campania Region (2312000)
 #under the rule of Two Sicilies in 1836
@@ -2264,7 +2265,7 @@
 	farmers = {
 		culture = south_italian
 		religion = catholic
-		size = 33211
+		size = 43211
 	}
 	
 	farmers = {
@@ -2274,3 +2275,99 @@
 	}
 
 }
+
+#Pescara - Former Inuvik (4000/1000 POPS)
+10 = {
+	clergymen = {
+		culture = south_italian
+		religion = catholic
+		size = 600
+	}
+
+	artisans = {
+		culture = south_italian
+		religion = catholic
+		size = 3125
+	}
+
+	soldiers = {
+		culture = south_italian
+		religion = catholic
+		size = 1000
+	}
+
+	farmers = {
+		culture = south_italian
+		religion = catholic
+		size = 60000
+	}
+
+	farmers = {
+		culture = croat
+		religion = catholic
+		size = 3000
+	}
+}
+
+#Belluno - Former Ross River (4000/1000 POPS)
+8 = {
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 500
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 300
+	}
+
+	farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 17600
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 1000
+	}
+
+}
+
+#Sondrio - former Amga (6000/1500 POPS)
+2669 = {
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 500
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 300
+	}
+
+	farmers = {
+		culture = north_italian
+		religion = catholic
+		size = 30000
+	}
+
+}
+

@@ -38,7 +38,9 @@ conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
 
+set_country_flag = catholic_country
 
 # Technologies
 post_napoleonic_thought = 1
@@ -64,7 +66,7 @@ malthusian_thought = 1
 enlightenment_thought = 1
 introspectionism = 1
 piston_steam_engine = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 experimental_railroad = 1
 basic_chemistry = 1
@@ -72,9 +74,8 @@ stock_exchange = 1
 ad_hoc_money_bill_printing = 1
 market_structure = 1
 romanticism = 1
-mechanical_production = 1
+interchangeable_parts = 1
 high_pressure_steam_engine = 1
-
 
 # Inventions
 #corvettes = yes
@@ -105,3 +106,7 @@ schools = culture_tech_school
 decision = france_1836_setup
 
 oob = "FRA_oob.txt"
+
+foreign_investment = {
+	PAP = 6000
+}

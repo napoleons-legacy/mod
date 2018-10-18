@@ -31,6 +31,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = MAK_conservative
 upper_house = {
@@ -43,7 +44,7 @@ upper_house = {
 	communist = 0
 }
 
-
+set_country_flag = sunni_country
 foreign_weapons = yes_foreign_weapons
 
 # Technologies
@@ -56,10 +57,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "MAK_oob.txt"
-1861.1.1 = {
-	oob = "/1861/MAK_oob.txt"
-	literacy = 0.04
-	non_state_culture_literacy = 0.02
-	foreign_weapons = yes_foreign_weapons
-	flintlock_rifles = 1
-}

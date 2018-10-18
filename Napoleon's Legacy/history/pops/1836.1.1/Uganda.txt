@@ -75,37 +75,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 575
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 300
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 1500
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 300
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 10325
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 7000
 	}
@@ -155,7 +155,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 4000
 	}
@@ -204,12 +204,6 @@
 		size = 300
 	}
 
-	artisans = {
-		culture = african_minor
-		religion = animist
-		size = 1450
-	}
-
 	soldiers = {
 		culture = luo
 		religion = sunni
@@ -222,14 +216,20 @@
 		size = 700
 	}
 	
+	artisans = {
+		culture = nilotic
+		religion = animist
+		size = 1450
+	}
+	
 	farmers = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 3700
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 4000
 	}
@@ -321,19 +321,19 @@
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 5075
 	}
 	
 	farmers = {
-		culture = african_minor
+		culture = nilotic
 		religion = sunni
 		size = 2700
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nilotic
 		religion = animist
 		size = 3300
 	}
@@ -395,7 +395,7 @@
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = luo
 		religion = animist
 		size = 1900
 	}
@@ -406,8 +406,14 @@
 		size = 4400
 	}
 
+	artisans = {
+		culture = lacustrine_bantu
+		religion = animist
+		size = 200
+	}
+	
 	slaves = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 6000
 	}

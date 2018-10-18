@@ -115,6 +115,12 @@
 		religion = sunni
 		size = 350
 	}
+	
+	bureaucrats = {
+		culture = tajik
+		religion = sunni
+		size = 150
+	}
 
 	clergymen = {
 		culture = tajik
@@ -127,17 +133,23 @@
 		religion = sunni
 		size = 850
 	}
+	
+	officers = {
+		culture = tajik
+		religion = sunni
+		size = 100
+	}
 
 	soldiers = {
 		culture = tajik
 		religion = sunni
-		size = 175
+		size = 1000
 	}
 
 	farmers = {
 		culture = tajik
 		religion = sunni
-		size = 17450
+		size = 25450
 	}
 
 	aristocrats = {

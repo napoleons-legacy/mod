@@ -4,11 +4,16 @@ From;To;Type;Through;Data;Comment
 #
 13;14;sea;3011;0;Vancouver Crossing
 14;78;sea;3011;0;Vancouver Crossing
+1540;1538;sea;2826;0;Nantong - Shanghai through the Yantze River
+1540;1539;sea;2826;0;Nantong - Suzhou through the Yantze River
+1541;1539;sea;2826;0;Tongzhou - Suzhou through the Yantze River
 62;75;sea;2946;0;Straits of Belle Isle
 68;70;sea;2944;0;Cabot Strait
 #2237;2269;sea;2975;0;Strait of Trinidad
+#2724;2723;canal;301;6;English Channel
 2334;2335;sea;2992;0;Strait of Magellan
 2399;2400;sea;2992;0;Strait of Magellan
+2406;1485;sea;2825;0;Penghu - Taiwan Strait
 77;74;sea;2944;0;Cabot Strait
 72;73;sea;2944;0;Nova Scotia to Cape Breton
 2237;2238;sea;2975;0;Trinidad-Tobago Strait
@@ -41,10 +46,10 @@ From;To;Type;Through;Data;Comment
 #
 254;271;sea;2737;0;Irish Strait
 324;348;sea;2706;0;Aland Strait #Uppsala to Aland #these were in V1
-334;372;sea;2711;0;Öresund
-335;374;sea;2710;0;Bornholmsfärjan
-348;345;sea;2706;0;Aland Strait #Aland to Turku 
-353;349;sea;2709;0;Öselsund
+334;372;sea;2711;0;ï¿½resund
+335;374;sea;2710;0;Bornholmsfï¿½rjan
+348;345;sea;2706;0;Aland Strait #Aland to Turku
+353;349;sea;2709;0;ï¿½selsund
 353;358;sea;2709;0;Strait of Riga
 372;373;sea;2711;0;Fyn-Sjaelland
 371;373;sea;2711;0;Fyn-Jylland
@@ -58,6 +63,10 @@ From;To;Type;Through;Data;Comment
 843;869;sea;2772;0;Izmir Strait
 859;865;sea;2773;0;Dardanelles Strait
 860;861;land;2773;0;Golden Horn
+8;615;impassable;0;0;Belluno-Lienz
+8;618;impassable;0;0;Belluno-Klagenfurt
+8;734;impassable;0;0;Belluno-Trent
+8;735;impassable;0;0;Belluno-Bozen
 759;763;sea;2760;0;Strait of Messina
 759;763;sea;2757;0;Strait of Messina
 837;827;sea;2765;0;Ionian Islands Strait
@@ -72,13 +81,20 @@ From;To;Type;Through;Data;Comment
 267;1724;sea;2735;0;Inverness - Orkney Strait
 780;782;land;2762;0;Mostar Bay
 #301;400;sea;2724;0;UK - France Strait
+#727;2568;impassable;0;0;Bergamo-Lugano
+#727;611;impassable;0;0;Bergamo-Chur
+#727;734;impassable;0;0;Bergamo-Trent
+#727;735;impassable;0;0;Bergamo-Bozen
+#732;615;impassable;0;0;Treviso-Lienz
+#732;618;impassable;0;0;Treviso-Klagenfurth
+#732;735;impassable;0;0;Treviso-Bozen
+#733;618;impassable;0;0;Udine-Klagenfurt
 
 #
 # Asian Straits
 #
 
 1452;1454;sea;2856;0;Biak - Merah Strait
-2406;2562;sea;2825;0;Penghu - Taiwan Strait
 1071;1142;sea;2787;0;Bandar abbhas - Homuz Strait
 1071;1141;sea;2787;0;Lengeh - Homuz Strait
 1083;1086;sea;2832;0;Tatar Straits
@@ -166,17 +182,10 @@ From;To;Type;Through;Data;Comment
 
 #Alps
 
-727;735;impassable;0;0;Bergamo-Bozen
-727;734;impassable;0;0;Bergamo-Trent
-732;735;impassable;0;0;Treviso-Bozen
-732;615;impassable;0;0;Treviso-Linz
-732;618;impassable;0;0;Treviso-Klagenfurth
-733;618;impassable;0;0;Udine-Klagenfurt
-727;611;impassable;0;0;Bergamo-Chur
-727;2568;impassable;0;0;Bergamo-Lugano
 722;605;impassable;0;0;Novara-Bern
 2568;722;impassable;0;0;Lugano-Novara
 609;722;impassable;0;0;Sitten-Novara
+609;726;impassable;0;0;Sitten-Milano
 606;722;impassable;0;0;Lucerne-Novara
 
 #Alaskan Panhandle
@@ -189,12 +198,16 @@ From;To;Type;Through;Data;Comment
 
 #Siberia
 
-2687;2682;impassable;0;0;Northern urals
 2689;2682;impassable;0;0;Northern urals
 2689;1062;impassable;0;0;Northern urals
 1026;1062;impassable;0;0;Northern urals
 2659;2657;impassable;0;0;Yamal-Yenisei
 2659;2692;impassable;0;0;Yamal-Yenisei
+2669;2568;impassable;0;0;Sondrio-Lugano
+2568;726;impassable;0;0;Lugano-Milano
+2669;611;impassable;0;0;Sondrio-Chur
+2669;734;impassable;0;0;Sondrio-Trent
+2669;735;impassable;0;0;Sondrio-Bozen
 2615;2692;impassable;0;0;Yamal-Yenisei
 2646;2692;impassable;0;0;Yamal-Yenisei
 2654;2653;impassable;0;0;Yenisei-Yakut

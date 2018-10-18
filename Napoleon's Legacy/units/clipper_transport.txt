@@ -2,6 +2,8 @@ clipper_transport = {
 	icon = 6
 	naval_icon = 3
 	
+	sail = yes
+	
 	type = naval
 	sprite = Transportship
 	unit_type = transport
@@ -12,7 +14,7 @@ clipper_transport = {
 	priority = 5
 	max_strength = 100
 	default_organisation = 30
-	maximum_speed = 7
+	maximum_speed = 6
 	weighted_value = 1.0
 	can_build_overseas = yes
 

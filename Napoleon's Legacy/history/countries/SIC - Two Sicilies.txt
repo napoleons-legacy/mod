@@ -34,6 +34,9 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = SIC_reactionary
 upper_house = {
@@ -66,7 +69,7 @@ no_standard = 1
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
-publishing_industry = 1
+mechanical_production = 1
 basic_chemistry = 1
 
 #Inventions

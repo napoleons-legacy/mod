@@ -1,4 +1,4 @@
-capital = 2468
+capital = 2476
 primary_culture = australian
 religion = protestant
 government = hms_government
@@ -18,13 +18,13 @@ voting_system = jefferson_method
 political_parties = non_secret_ballots
 
 # Social Reforms
-wage_reform = low_minimum_wage
-work_hours = ten_hours
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
 safety_regulations = trinket_safety
 health_care = trinket_health_care
 unemployment_subsidies = trinket_subsidies
-pensions = low_pensions 
-school_reforms = no_schools
+pensions = no_pensions 
+school_reforms = low_schools
 
 #New Reforms
 conscription = one_year_draft
@@ -32,14 +32,19 @@ debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
 
-ruling_party = AST_conservative
+set_country_flag = protestant_country
+
+ruling_party = AST_liberal_2
 upper_house = {
 	fascist = 0
-	liberal = 50
-	conservative = 25
+	liberal = 25
+	conservative = 50
 	reactionary = 5
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
+
+set_country_flag = new_world_nation

@@ -9,6 +9,7 @@ nationalvalue = nv_productivity
 literacy = 0.5
 non_state_culture_literacy = 0.04
 civilized = yes
+prestige = 5
 
 # Political reforms
 slavery = no_slavery
@@ -35,13 +36,16 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = FIN_conservative
 upper_house = {
 	fascist = 0
 	liberal = 0
-	conservative = 0
-	reactionary = 100
+	conservative = 80
+	reactionary = 20
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
@@ -49,12 +53,19 @@ upper_house = {
 
 decision = FIN_1836_setup
 
+oob = "FIN_oob.txt"
+
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 military_staff_system = 1
 army_command_principle = 1
+post_nelsonian_thought = 1
+clipper_design = 1
+naval_design_bureaus = 1
+alphabetic_flag_signaling = 1
+the_command_principle = 1
 classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 malthusian_thought = 1
@@ -64,7 +75,8 @@ private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
 guild_based_production = 1
-publishing_industry = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
+piston_steam_engine = 1
 

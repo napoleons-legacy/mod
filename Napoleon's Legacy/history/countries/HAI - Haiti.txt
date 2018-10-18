@@ -34,6 +34,11 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
+set_country_flag = new_world_nation
+set_country_flag = slave_revolution
 
 ruling_party = HAI_reactionary
 upper_house = {
@@ -46,11 +51,13 @@ upper_house = {
 	communist = 0
 }
 
+schools = unciv_tech_school
+
 # Technologies
-guild_based_production = 1
-enlightenment_thought = 1
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
 #Starting Consciousness
 consciousness = 2

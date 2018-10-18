@@ -28,9 +28,10 @@ school_reforms = no_schools
 
 # New Reforms
 conscription = no_draft
-debt_law = peonage
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = KUT_conservative
 upper_house = {
@@ -43,6 +44,7 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = sunni_country
 
 foreign_weapons = yes_foreign_weapons
 
@@ -56,14 +58,3 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "KUT_oob.txt"
-1861.1.1 = {
-	oob = "/1861/KUT_oob.txt"
-	literacy = 0.04
-	non_state_culture_literacy = 0.02
-
-	#Military Reforms
-	foreign_weapons = yes_foreign_weapons
-	
-	#Technologies
-	flintlock_rifles = 1
-}

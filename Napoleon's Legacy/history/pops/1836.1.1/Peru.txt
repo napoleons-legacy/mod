@@ -7,7 +7,7 @@
 	aristocrats = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	bureaucrats = {
@@ -25,7 +25,7 @@
 	clergymen = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -37,19 +37,25 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 2665
+		size = 2565
+	}
+	
+	aristocrats = {
+		culture = quechua
+		religion = catholic
+		size = 100
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	artisans = {
@@ -61,13 +67,13 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
 		culture = quechua
 		religion = catholic
-		size = 850
+		size = 700
 	}
 
 	aristocrats = {
@@ -104,31 +110,31 @@
 #Yurimagues (12000/3000 POPS)
 2287 = {
 	aristocrats = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
 		size = 75
 	}
 
 	artisans = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
 		size = 25
 	}
 
 	farmers = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
 		size = 2700
 	}
@@ -141,28 +147,40 @@
 		size = 50
 	}
 
-	clergymen = {
-		culture = amazonian
-		religion = animist
-		size = 75
-	}
-
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 150
-	}
-
 	soldiers = {
 		culture = amazonian
 		religion = animist
-		size = 25
+		size = 175
 	}
 
 	farmers = {
 		culture = amazonian
 		religion = animist
-		size = 2700
+		size = 2775
+	}
+	
+	clergymen = {
+		culture = south_andean
+		religion = catholic
+		size = 5
+	}
+
+	artisans = {
+		culture = south_andean
+		religion = catholic
+		size = 5
+	}
+
+	soldiers = {
+		culture = south_andean
+		religion = catholic
+		size = 5
+	}
+
+	farmers = {
+		culture = south_andean
+		religion = catholic
+		size = 20
 	}
 }
 #Puca Urco (12000/3000 POPS)
@@ -173,18 +191,6 @@
 		size = 50
 	}
 
-	clergymen = {
-		culture = amazonian
-		religion = animist
-		size = 75
-	}
-
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 150
-	}
-
 	soldiers = {
 		culture = amazonian
 		religion = animist
@@ -194,7 +200,31 @@
 	farmers = {
 		culture = amazonian
 		religion = animist
-		size = 2700
+		size = 2925
+	}
+	
+	clergymen = {
+		culture = south_andean
+		religion = catholic
+		size = 5
+	}
+
+	artisans = {
+		culture = south_andean
+		religion = catholic
+		size = 5
+	}
+
+	soldiers = {
+		culture = south_andean
+		religion = catholic
+		size = 5
+	}
+
+	farmers = {
+		culture = south_andean
+		religion = catholic
+		size = 20
 	}
 }
 #Cajamarca Region (296000)
@@ -216,7 +246,7 @@
 	officers = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	clergymen = {
@@ -241,6 +271,18 @@
 		culture = south_andean
 		religion = catholic
 		size = 14050
+	}
+	
+	aristocrats = {
+		culture = quechua
+		religion = catholic
+		size = 125
+	}
+	
+	officers = {
+		culture = quechua
+		religion = catholic
+		size = 100
 	}
 
 	clergymen = {
@@ -290,19 +332,19 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 2375
+		size = 2325
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -326,7 +368,7 @@
 	clergymen = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	artisans = {
@@ -338,13 +380,13 @@
 	soldiers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 1100
+		size = 1000
 	}
 
 	slaves = {
@@ -376,19 +418,19 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 5075
+		size = 5050
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -406,13 +448,13 @@
 	farmers = {
 		culture = quechua
 		religion = catholic
-		size = 8375
+		size = 8350
 	}
 
 	clergymen = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	artisans = {
@@ -424,7 +466,7 @@
 	soldiers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
@@ -436,7 +478,7 @@
 	slaves = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 750
+		size = 600
 	}
 }
 #Moyobamba (24000/6000 POPS)
@@ -450,7 +492,7 @@
 	clergymen = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -462,31 +504,31 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 1750
+		size = 1650
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 10
+		size = 100
 	}
 
 	farmers = {
@@ -495,32 +537,20 @@
 		size = 915
 	}
 
-	aristocrats = {
-		culture = amazonian
-		religion = animist
-		size = 50
-	}
-
-	clergymen = {
-		culture = amazonian
-		religion = animist
-		size = 75
-	}
-
 	artisans = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
-		size = 25
+		size = 250
 	}
 
 	farmers = {
-		culture = amazonian
+		culture = quechua
 		religion = animist
 		size = 2700
 	}
@@ -538,7 +568,7 @@
 	clergymen = {
 		culture = south_andean
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	artisans = {
@@ -550,19 +580,19 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 1625
+		size = 1500
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -574,13 +604,13 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 75
+		size = 150
 	}
 
 	farmers = {
 		culture = quechua
 		religion = catholic
-		size = 6500
+		size = 16400
 	}
 }
 #Jauja (60000/15000 POPS)
@@ -594,7 +624,7 @@
 	clergymen = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -606,19 +636,19 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 25
+		size = 125
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 1475
+		size = 1350
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	artisans = {
@@ -636,7 +666,7 @@
 	farmers = {
 		culture = quechua
 		religion = catholic
-		size = 12175
+		size = 12125
 	}
 }
 #Ayacucho (108000/27000 POPS)
@@ -674,13 +704,13 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 2875
+		size = 2825
 	}
 
 	clergymen = {
@@ -732,7 +762,7 @@
 	clergymen = {
 		culture = south_andean
 		religion = catholic
-		size = 700
+		size = 500
 	}
 
 	artisans = {
@@ -744,7 +774,7 @@
 	artisans = {
 		culture = south_andean
 		religion = catholic
-		size = 2200
+		size = 2400
 	}
 
 	soldiers = {
@@ -764,11 +794,23 @@
 		religion = catholic
 		size = 41075
 	}
+	
+	aristocrats = {
+		culture = quechua
+		religion = catholic
+		size = 200
+	}
+	
+	officers = {
+		culture = quechua
+		religion = catholic
+		size = 100
+	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -780,7 +822,7 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 175
+		size = 150
 	}
 
 	farmers = {
@@ -792,7 +834,7 @@
 	clergymen = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	artisans = {
@@ -804,7 +846,7 @@
 	soldiers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	farmers = {
@@ -830,7 +872,7 @@
 	clergymen = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -842,19 +884,19 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 3350
+		size = 3250
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	artisans = {
@@ -872,31 +914,31 @@
 	farmers = {
 		culture = quechua
 		religion = catholic
-		size = 10050
+		size = 10000
 	}
 
 	clergymen = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	artisans = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	soldiers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 500
+		size = 300
 	}
 
 }
@@ -923,19 +965,19 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 4950
+		size = 4925
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -947,7 +989,7 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 175
+		size = 150
 	}
 
 	farmers = {
@@ -959,7 +1001,7 @@
 	clergymen = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	artisans = {
@@ -971,7 +1013,7 @@
 	soldiers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 25
+		size = 100
 	}
 
 	farmers = {
@@ -1023,31 +1065,19 @@
 	aristocrats = {
 		culture = amazonian
 		religion = animist
-		size = 75
-	}
-
-	clergymen = {
-		culture = amazonian
-		religion = animist
-		size = 50
-	}
-
-	artisans = {
-		culture = amazonian
-		religion = animist
-		size = 200
+		size = 100
 	}
 
 	soldiers = {
 		culture = amazonian
 		religion = animist
-		size = 50
+		size = 300
 	}
 
 	farmers = {
 		culture = amazonian
 		religion = animist
-		size = 36225
+		size = 16225
 	}
 }
 #Puerto Maldonado (12000/3000 POPS)
@@ -1095,7 +1125,7 @@
 	bureaucrats = {
 		culture = south_andean
 		religion = catholic
-		size = 125
+		size = 25
 	}
 
 	officers = {
@@ -1126,6 +1156,24 @@
 		culture = south_andean
 		religion = catholic
 		size = 11625
+	}
+	
+	aristocrats = {
+		culture = quechua
+		religion = catholic
+		size = 200
+	}
+	
+	officers = {
+		culture = quechua
+		religion = catholic
+		size = 100
+	}
+	
+	bureaucrats = {
+		culture = quechua
+		religion = catholic
+		size = 100
 	}
 
 	clergymen = {
@@ -1175,13 +1223,13 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	farmers = {
 		culture = south_andean
 		religion = catholic
-		size = 2075
+		size = 2025
 	}
 
 	clergymen = {
@@ -1243,7 +1291,7 @@
 	clergymen = {
 		culture = quechua
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	artisans = {
@@ -1301,7 +1349,7 @@
 	soldiers = {
 		culture = south_andean
 		religion = catholic
-		size = 50
+		size = 100
 	}
 
 	farmers = {

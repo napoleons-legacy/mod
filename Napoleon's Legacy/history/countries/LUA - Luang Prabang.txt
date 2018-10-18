@@ -31,6 +31,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = theravada_country
 
 ruling_party = LUA_conservative
 upper_house = {
@@ -47,21 +50,11 @@ upper_house = {
 # Technologies
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
 oob = "LUA_oob.txt"
-1861.1.1 = {
-	oob = "/1861/LUA_oob.txt"
-	literacy = 0.05
-	non_state_culture_literacy = 0.02
-	foreign_weapons = yes_foreign_weapons
-	flintlock_rifles = 1
-
-	#Military Reforms
-	foreign_training = yes_foreign_training
-	
-	#Technologies
-}

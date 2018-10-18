@@ -1,6 +1,9 @@
 capital = 1735
 primary_culture = maghrebi
 culture = bedouin
+culture = teda
+culture = berber
+culture = tuareg
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -31,6 +34,7 @@ conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
 
 ruling_party = CYR_conservative
 upper_house = {
@@ -43,6 +47,6 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = sunni_country
 
 foreign_weapons = yes_foreign_weapons
-

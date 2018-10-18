@@ -1,5 +1,6 @@
 capital = 1731
 primary_culture = maghrebi
+culture = berber
 culture = bedouin
 culture = tuareg
 religion = sunni
@@ -33,6 +34,7 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
+border_policy = open_borders
 
 ruling_party = CYR_conservative
 upper_house = {
@@ -45,7 +47,7 @@ upper_house = {
 	communist = 0
 }
 
-
+set_country_flag = sunni_country
 foreign_weapons = yes_foreign_weapons
 
 # Technologies

@@ -1,6 +1,7 @@
 capital = 2061
 primary_culture = swahili
 culture = makua
+culture = yao
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
@@ -31,7 +32,9 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = open_borders
 
 ruling_party = AGC_conservative
 upper_house = {
@@ -44,6 +47,7 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = sunni_country
 set_country_flag = lacking_writing_system
 
 # Starting Consciousness

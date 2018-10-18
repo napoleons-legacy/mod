@@ -23,11 +23,11 @@ upper_house = {
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "KAS_oob.txt"
-1861.1.1 = {
-	oob = "/1861/KAS_oob.txt"
-}
+# Inventions
+#bottling_process = yes
+modern_winemaking = yes
 
+oob = "KAS_oob.txt"
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -51,5 +51,7 @@ conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
+set_country_flag = hindu_country
 

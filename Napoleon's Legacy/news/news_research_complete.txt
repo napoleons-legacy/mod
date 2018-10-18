@@ -5,7 +5,7 @@ generator_selector =
 	case = { value = 10 }
 }
 
-news_priority = 
+news_priority =
 {
 	type = "RESEARCH_COMPLETE"
 	name = "default"
@@ -20,9 +20,9 @@ news_priority =
 		trigger = {
 			NOT = { tags_eq = { 0 0 PLAYER } }
 			OR = {
-				tags_eq = { 0 0 ENG }
 				tags_eq = { 0 0 FRA }
 				tags_eq = { 0 0 RUS }
+				tags_eq = { 0 0 TSA }
 				tags_eq = { 0 0 USA }
 				tags_eq = { 0 0 PRU }
 				tags_eq = { 0 0 NGF }
@@ -43,7 +43,6 @@ news_priority =
 				tags_eq = { 0 0 KMT }
 				tags_eq = { 0 0 JAP }
 				tags_eq = { 0 0 SPA }
-				tags_eq = { 0 0 SPC }
 				tags_eq = { 0 0 TUR }
 				tags_eq = { 0 0 NET }
 				tags_eq = { 0 0 BEL }
@@ -75,9 +74,9 @@ news_priority =
 		trigger = {
 			NOT = {
 				tags_eq = { 0 0 PLAYER }
-				tags_eq = { 0 0 ENG }
 				tags_eq = { 0 0 FRA }
 				tags_eq = { 0 0 RUS }
+				tags_eq = { 0 0 TSA }
 				tags_eq = { 0 0 USA }
 				tags_eq = { 0 0 PRU }
 				tags_eq = { 0 0 NGF }
@@ -90,7 +89,6 @@ news_priority =
 				tags_eq = { 0 0 KMT }
 				tags_eq = { 0 0 JAP }
 				tags_eq = { 0 0 SPA }
-				tags_eq = { 0 0 SPC }
 				tags_eq = { 0 0 TUR }
 				tags_eq = { 0 0 NET }
 				tags_eq = { 0 0 BEL }
@@ -111,7 +109,7 @@ news_priority =
 		priority_add = 1
 	}
 	case = {
-		trigger = { 
+		trigger = {
 			OR = {
 				strings_eq = { 0 0 "flintlock_rifles" }
 				strings_eq = { 0 0 "muzzle_loaded_rifles" }
@@ -128,20 +126,8 @@ news_priority =
 				strings_eq = { 0 0 "electricity" }
 			}
 		}
-		priority_add = 20 
-	}	
-	
-	
-	#case =  #example of inventions with special prios
-	#{ 
-	# 	ENG researched Point defense system
-	#	trigger = 
-	#	{ 
-	#		tags_eq = { 0 0 ENG }
-	#		strings_eq = { 0 0 "point_defense_system" }
-	#	}
-	#	priority_add = 100 
-	#}
+		priority_add = 20
+	}
 }
 
 generate_article =

@@ -17,13 +17,13 @@
 	officers = {
 		culture = turkish
 		religion = sunni
-		size = 50
+		size = 110
 	}
 
 	clergymen = {
 		culture = turkish
 		religion = sunni
-		size = 75
+		size = 110
 	}
 
 	artisans = {
@@ -42,6 +42,24 @@
 		culture = turkish
 		religion = sunni
 		size = 2875
+	}
+	
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	officers = {
+		culture = greek
+		religion = orthodox
+		size = 120
+	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 150
 	}
 
 	clergymen = {
@@ -79,7 +97,7 @@
 	clergymen = {
 		culture = turkish
 		religion = sunni
-		size = 50
+		size = 110
 	}
 
 	artisans = {
@@ -99,11 +117,17 @@
 		religion = sunni
 		size = 1350
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 150
+	}
 
 	clergymen = {
 		culture = greek
 		religion = orthodox
-		size = 75
+		size = 110
 	}
 
 	artisans = {
@@ -115,7 +139,7 @@
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 8525
+		size = 8425
 	}
 }
 #Famagusta (44000/11000 POPS)
@@ -129,7 +153,7 @@
 	clergymen = {
 		culture = turkish
 		religion = sunni
-		size = 50
+		size = 110
 	}
 
 	artisans = {
@@ -149,11 +173,17 @@
 		religion = sunni
 		size = 2500
 	}
+	
+	soldiers = {
+		culture = greek
+		religion = orthodox
+		size = 150
+	}
 
 	clergymen = {
 		culture = greek
 		religion = orthodox
-		size = 75
+		size = 110
 	}
 
 	artisans = {
@@ -165,7 +195,7 @@
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 7525
+		size = 7425
 	}
 
 }

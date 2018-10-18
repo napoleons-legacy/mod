@@ -1,29 +1,27 @@
-capital = 1794
-primary_culture = fulbe
+capital = 1803
+primary_culture = fulbe 
 culture = bambara
-culture = songhai
-culture = tuareg
-culture = wolof
 culture = mande
-culture = dyula
+culture = songhai
 culture = senufo
-culture = mossi
-culture = african_minor
+culture = gur
+culture = tuareg
+culture = dyula
 religion = sunni
-government = absolute_monarchy
+government = democracy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.04
 
 # Political reforms
-slavery = yes_slavery
+slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = none_voting
+vote_franschise = landed_voting
 public_meetings = no_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
-political_parties = underground_parties
+political_parties = harassment
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -34,19 +32,24 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
-# New Reforms
+#New Reforms
 conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
 
-ruling_party = SOK_reactionary
+set_country_flag = sunni_country
+set_country_flag = post_colonial_country
+
+ruling_party = MLI_conservative
 upper_house = {
 	fascist = 0
 	liberal = 16
-	conservative = 21
-	reactionary = 63
+	conservative = 63
+	reactionary = 21
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
+

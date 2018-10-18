@@ -8,28 +8,22 @@
 		size = 500
 	}
 	
-	bureaucrats = {
-		culture = afro_american
-		religion = protestant
-		size = 200
-	}
-
 	officers = {
 		culture = afro_american
 		religion = protestant
-		size = 10
+		size = 100
 	}
 
 	clergymen = {
 		culture = afro_american
 		religion = protestant
-		size = 75
+		size = 100
 	}
 
 	farmers = {
 		culture = afro_american
 		religion = protestant
-		size = 810
+		size = 1010
 	}
 
 	artisans = {
@@ -77,67 +71,67 @@
 	farmers = {
 		culture = kru
 		religion = animist
-		size = 40875
+		size = 45875
 	}
 
 	aristocrats = {
 		culture = mande
-		religion = sunni
+		religion = animist
 		size = 150
 	}
 
 	clergymen = {
 		culture = mande
-		religion = sunni
-		size = 75
+		religion = animist
+		size = 100
 	}
 
 	artisans = {
 		culture = mande
-		religion = sunni
+		religion = animist
 		size = 450
 	}
 
 	soldiers = {
 		culture = mande
-		religion = sunni
+		religion = animist
 		size = 100
 	}
 
 	farmers = {
 		culture = mande
-		religion = sunni
-		size = 8225
-	}
-
-	aristocrats = {
-		culture = african_minor
 		religion = animist
-		size = 75
+		size = 5225
+	}
+	#was african minor
+	aristocrats = {
+		culture = mande
+		religion = animist
+		size = 100
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mande
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
-		size = 3625
+		size = 1625
 	}
 }
 #Harper (204000/51000 POPS) 
@@ -169,37 +163,37 @@
 	farmers = {
 		culture = kru
 		religion = animist
-		size = 34600
+		size = 24600
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = protestant
 		size = 250
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 125
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 650
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 125
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 11850
+		size = 21850
 	}
 }
 #uncolonized in 1836
@@ -232,37 +226,37 @@
 	farmers = {
 		culture = mande
 		religion = sunni
-		size = 22775
+		size = 32775
 	}
-
+	#was african minor
 	aristocrats = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mande
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 300
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
-		size = 75
+		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
-		size = 5475
+		size = 35475
 	}
 }
 #Gbarnga (132000/33000 POPS) 
@@ -294,37 +288,37 @@
 	farmers = {
 		culture = mande
 		religion = sunni
-		size = 10025
+		size = 15025
 	}
-
+	#was african minor
 	aristocrats = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 425
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 225
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 1100
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
 		size = 225
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = mande
 		religion = animist
-		size = 20025
+		size = 65025
 	}
 }
 #Zwedru (168000/42000 POPS) 
@@ -356,7 +350,7 @@
 	farmers = {
 		culture = kru
 		religion = animist
-		size = 20975
+		size = 5975
 	}
 
 	aristocrats = {
@@ -384,9 +378,9 @@
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 17300
+		size = 32300
 	}
 
 }

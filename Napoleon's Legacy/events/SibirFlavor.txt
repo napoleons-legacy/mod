@@ -3,11 +3,11 @@ country_event = {
     title = "EVTNAME5001001"
     desc = "EVTDESC5001001"
     picture = "bagdadrailway"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         war = no
         has_global_flag = build_the_tsr
@@ -19,18 +19,18 @@ country_event = {
             has_country_modifier = generalised_debt_default
         }
     }
-    
+
     mean_time_to_happen = {
         months = 12
     }
-    
+
     option = {
         name = "EVT44355OPTA"
         set_global_flag = build_the_tsr1
         random_list = {
-            33={ treasury = -10000 }
-            33={ treasury = -5000 }
-            33={ treasury = 1000 }
+            33 = { treasury = -10000 }
+            33 = { treasury = -5000 }
+			33 = { treasury = -1000 }
         }
         any_owned = {
             limit = {
@@ -42,11 +42,12 @@ country_event = {
                 }
                 can_build_in_province = {
                     building = railroad
+					limit_to_world_greatest_level = yes
                 }
             }
             infrastructure = 1
         }
-        2686 = { 
+        2686 = {
             change_province_name = "Novonikolayevsk"
             add_province_modifier = {
                 name = gateway_to_harbor
@@ -61,11 +62,11 @@ country_event = {
     title = "EVTNAME5001002"
     desc = "EVTDESC5001002"
     picture = "bagdadrailway"
-    
+
     trigger = {
         OR = {
-        tag = RUS
-        tag = TSA
+            tag = RUS
+            tag = TSA
         }
         war = no
         has_global_flag = build_the_tsr1
@@ -77,18 +78,18 @@ country_event = {
             has_country_modifier = generalised_debt_default
         }
     }
-    
+
     mean_time_to_happen = {
         months = 18
     }
-    
+
     option = {
         name = "EVT44355OPTA"
         set_global_flag = build_the_tsr2
         random_list = {
-            33={ treasury = -10000 }
-            33={ treasury = -5000 }
-            33={ treasury = 1000 }
+            33 = { treasury = -10000 }
+            33 = { treasury = -5000 }
+			33 = { treasury = -1000 }
         }
         any_owned = {
             limit = {
@@ -101,11 +102,12 @@ country_event = {
                 }
                 can_build_in_province = {
                     building = railroad
+					limit_to_world_greatest_level = yes
                 }
             }
             infrastructure = 1
         }
-        1077 = { 
+        1077 = {
             add_province_modifier = {
                 name = gateway_to_harbor
                 duration = 365
@@ -119,11 +121,11 @@ country_event = {
     title = "EVTNAME5001003"
     desc = "EVTDESC5001003"
     picture = "bagdadrailway"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         war = no
         has_global_flag = build_the_tsr2
@@ -135,18 +137,18 @@ country_event = {
             has_country_modifier = generalised_debt_default
         }
     }
-    
+
     mean_time_to_happen = {
         months = 4
     }
-    
+
     option = {
         name = "EVT44355OPTA"
         set_global_flag = build_the_tsr3
         random_list = {
-            33={ treasury = -10000 }
-            33={ treasury = -5000 }
-            33={ treasury = 1000 }
+            33 = { treasury = -10000 }
+            33 = { treasury = -5000 }
+			33 = { treasury = -1000 }
         }
         any_owned = {
             limit = {
@@ -156,11 +158,12 @@ country_event = {
                 }
                 can_build_in_province = {
                     building = railroad
+					limit_to_world_greatest_level = yes
                 }
             }
             infrastructure = 1
         }
-        1078 = { 
+        1078 = {
             add_province_modifier = {
                 name = gateway_to_harbor
                 duration = 365
@@ -175,11 +178,11 @@ country_event = {
     title = "EVTNAME5001004"
     desc = "EVTDESC5001004"
     picture = "bagdadrailway"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         war = no
         has_global_flag = build_the_tsr3
@@ -191,18 +194,18 @@ country_event = {
             has_country_modifier = generalised_debt_default
         }
     }
-    
+
     mean_time_to_happen = {
         months = 20
     }
-    
+
     option = {
         name = "EVT44355OPTA"
         set_global_flag = build_the_tsr4
         random_list = {
-            33={ treasury = -10000 }
-            33={ treasury = -5000 }
-            33={ treasury = 1000 }
+            33 = { treasury = -10000 }
+            33 = { treasury = -5000 }
+			33 = { treasury = -1000 }
         }
         prestige = 30
         any_owned = {
@@ -216,17 +219,18 @@ country_event = {
                 }
                 can_build_in_province = {
                     building = railroad
+					limit_to_world_greatest_level = yes
                 }
             }
             infrastructure = 1
         }
-        1083 = { 
+        1083 = {
             add_province_modifier = {
                 name = gateway_to_harbor
                 duration = 365
             }
         }
-        1082 = { 
+        1082 = {
             add_province_modifier = {
                 name = gateway_to_harbor
                 duration = 1825
@@ -240,11 +244,11 @@ country_event = {
     title = "EVTNAME5001005"
     desc = "EVTDESC5001005"
     picture = "bagdadrailway"
-    
+
     trigger = {
-    OR = {
-        tag = RUS
-        tag = TSA
+        OR = {
+            tag = RUS
+            tag = TSA
         }
         war = no
         has_global_flag = build_the_manchurian_railway
@@ -256,11 +260,11 @@ country_event = {
             has_country_modifier = generalised_debt_default
         }
     }
-    
+
     mean_time_to_happen = {
         months = 10
     }
-    
+
     option = {
         name = "EVT44355OPTA"
         set_global_flag = build_the_manchurian_railway1
@@ -272,13 +276,13 @@ country_event = {
             country_event = 5001006
         }
         random_list = {
-            33={ treasury = -3000 }
-            33={ treasury = -2000 }
-            33={ treasury = 500 }
+            33 = { treasury = -3000 }
+            33 = { treasury = -2000 }
+            33 = { treasury = 500 }
         }
         1479 = {
             infrastructure = 1
-        }       
+        }
         1555 = {
             infrastructure = 1
         }
@@ -294,13 +298,13 @@ country_event = {
         1079 = {
             infrastructure = 1
         }
-        1481 = { 
+        1481 = {
             add_province_modifier = {
                 name = gateway_to_harbor
                 duration = 1825
             }
         }
-        1082 = { 
+        1082 = {
             add_province_modifier = {
                 name = gateway_to_harbor
                 duration = 1825
@@ -314,16 +318,16 @@ country_event = {
     title = "EVTNAME5001006"
     desc = "EVTDESC5001006"
     picture = "bagdadrailway"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT5001006OPTA"
         random_list = {
-            50={ treasury = 5000 }
-            50={ treasury = 2000 }
+            50 = { treasury = 5000 }
+            50 = { treasury = 2000 }
         }
-        1554 = { 
+        1554 = {
             change_province_name = "Harbin"
             add_province_modifier = {
                 name = gateway_to_harbor
@@ -332,4 +336,3 @@ country_event = {
         }
     }
 }
-

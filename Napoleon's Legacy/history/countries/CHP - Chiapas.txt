@@ -7,7 +7,6 @@ nationalvalue = nv_equality
 literacy = 0.09
 civilized = yes
 
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -32,6 +31,9 @@ conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = catholic_country
 
 ruling_party = CHP_liberal
 last_election = 1835.2.14
@@ -45,3 +47,4 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = new_world_nation

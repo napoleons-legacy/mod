@@ -28,13 +28,13 @@
 	craftsmen = {
 		culture = swiss
 		religion = protestant
-		size = 1200
+		size = 21200
 	}
 
 	artisans = {
 		culture = swiss
 		religion = protestant
-		size = 3300
+		size = 1300
 	}
 
 	soldiers = {
@@ -46,7 +46,7 @@
 	farmers = {
 		culture = swiss
 		religion = protestant
-		size = 82590
+		size = 64590
 	}
 
 	aristocrats = {
@@ -277,10 +277,10 @@
 607 = {
 	aristocrats = {
 		culture = swiss
-		religion = catholic
-		size = 300
+		religion = protestant
+		size = 200
 	}
-	
+
 	bureaucrats = {
 		culture = swiss
 		religion = protestant
@@ -491,7 +491,7 @@
 
 }
 
-#Anderma (2800/700 POPS)
+#Geneva, formerly Anderma
 2687 = {
 
 	aristocrats = {

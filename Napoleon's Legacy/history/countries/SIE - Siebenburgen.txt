@@ -15,7 +15,7 @@ upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = yes_meeting
 press_rights = censored_press
-trade_unions = non_socialist
+trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
 
@@ -33,6 +33,9 @@ conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = orthodox_country
 
 ruling_party = SIE_conservative
 upper_house = {

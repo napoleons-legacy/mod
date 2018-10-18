@@ -83,6 +83,12 @@ raw_material_goods = {
 		money = yes	
 		color = { 253 199 110 }
 	}
+	precious_goods = { 
+		cost = 7
+		tradeable = no
+		money = yes	
+		color = { 247 241 61 }
+	}
 }
 
 industrial_goods = {
@@ -121,7 +127,6 @@ industrial_goods = {
 	clipper_convoy = { 
 		cost = 42.00 
 		overseas_penalty = yes
-		available_from_start = no
 		color = { 21 65 30 }
 	}
 	steamer_convoy = { 
@@ -192,12 +197,13 @@ consumer_goods = {
 		available_from_start = no
 		color = { 123 112 54 }
 	}
-	wine = { 
+	wine = {
 		cost = 9.7
+		available_from_start = no
 		color = { 123 0 54 }
 	}
 	liquor = { 
-		cost = 6.4
+		cost = 4.4 #Vanilla is 6.4
 		color = { 76 5 0 }
 	}
 	regular_clothes = { 
@@ -208,7 +214,7 @@ consumer_goods = {
 		cost = 65.00
 		color = { 234 227 40 }
 	}
-	furniture = { 
+	furniture = {
 		cost = 4.9
 		color = { 173 129 40 }
 	}

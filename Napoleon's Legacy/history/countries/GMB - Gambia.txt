@@ -1,11 +1,12 @@
 capital = 1785
-primary_culture = british 
-culture = mande
-culture = african_minor
+primary_culture = mande 
+culture = fulbe
+culture = wolof
+culture = western_nigritic
 religion = protestant
 government = democracy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.04
 
 # Political reforms
@@ -32,10 +33,13 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 set_country_flag = post_colonial_country
 
-ruling_party = WOL_conservative
+ruling_party = GMB_conservative
 upper_house = {
 	fascist = 0
 	liberal = 16

@@ -7,10 +7,12 @@ TUR = {
 }
 
 SHW = {
+	truce_until = 1841.1.1
 	value = 40
 }
 
 TIG = {
+	truce_until = 1841.1.1
 	value = 60
 }
 
@@ -27,7 +29,7 @@ AWS = {
 }
 
 leader = {
-   name = "Ras Ali II of Yejju"
+   name = "Ras Ali II"
    type = land
    date = 1836.1.1
    background = warmonger
@@ -54,12 +56,7 @@ army = {
 		type = irregular
 		home = 1854
 	}
-
-}
-
-army = {
-	name = "Army of the Emperor of Ethiopia"
-	location = 1852
+	
 	regiment = {
 		name= "Imperial Guards"
 		type = irregular
@@ -71,12 +68,7 @@ army = {
 		type = irregular
 		home = 1852
 	}
-
-}
-
-army = {
-	name = "Army of the Negus of Gojjam"
-	location = 1855
+	
 	regiment = {
 		name= "Negus' Guards"
 		type = irregular
@@ -90,3 +82,4 @@ army = {
 	}
 
 }
+
