@@ -3,7 +3,7 @@ country_event = {
     id = 90000
     title = "EVTNAME90000"
     desc = "EVTDESC90000"
-    picture = "supportwar" 
+    picture = "supportwar"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
@@ -15,7 +15,7 @@ country_event = {
             constructing_cb_type = establish_protectorate_casus_belli
             }
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -52,7 +52,7 @@ country_event = {
     id = 90001
     title = "EVTNAME90001"
     desc = "EVTDESC90001"
-    picture = "Demonstration" 
+    picture = "Demonstration"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
@@ -64,7 +64,7 @@ country_event = {
             constructing_cb_type = establish_protectorate_casus_belli
             }
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -101,14 +101,14 @@ country_event = {
     id = 90002
     title = "EVTNAME90002"
     desc = "EVTDESC90002"
-    picture = "Outside_influences" 
+    picture = "Outside_influences"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
         constructing_cb_type = take_from_sphere
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -145,14 +145,14 @@ country_event = {
     id = 90003
     title = "EVTNAME90003"
     desc = "EVTDESC90003"
-    picture = "Demonstration" 
+    picture = "Demonstration"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
         constructing_cb_type = take_from_sphere
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -189,14 +189,14 @@ country_event = {
     id = 90004
     title = "EVTNAME90004"
     desc = "EVTDESC90004"
-    picture = "Opiumwar" 
+    picture = "Opiumwar"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
         constructing_cb_type = add_to_sphere
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -233,14 +233,14 @@ country_event = {
     id = 90005
     title = "EVTNAME90005"
     desc = "EVTDESC90005"
-    picture = "SeaPower" 
+    picture = "SeaPower"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
         constructing_cb_type = add_to_sphere
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -277,14 +277,14 @@ country_event = {
     id = 90006
     title = "EVTNAME90006"
     desc = "EVTDESC90006"
-    picture = "native_force" 
+    picture = "native_force"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
         constructing_cb_type = place_in_the_sun
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -321,14 +321,14 @@ country_event = {
     id = 90007
     title = "EVTNAME90007"
     desc = "EVTDESC90007"
-    picture = "treaty" 
+    picture = "treaty"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
         constructing_cb_type = place_in_the_sun
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -365,7 +365,7 @@ country_event = {
     id = 90008
     title = "EVTNAME90008"
     desc = "EVTDESC90008"
-    picture = "threehurrahs" 
+    picture = "threehurrahs"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
@@ -375,7 +375,7 @@ country_event = {
             constructing_cb_type = humiliate
             }
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }
@@ -412,7 +412,7 @@ country_event = {
     id = 90009
     title = "EVTNAME90009"
     desc = "EVTDESC90009"
-    picture = "anticorn" 
+    picture = "anticorn"
 
     trigger = {
         NOT = { involved_in_crisis = yes }
@@ -422,7 +422,7 @@ country_event = {
             constructing_cb_type = humiliate
             }
         NOT = {
-            OR = {  
+            OR = {
                     has_country_modifier = CB_gen_plus
                     has_country_modifier = CB_gen_minus
                 }

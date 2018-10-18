@@ -10,7 +10,7 @@ party = {
     ideology = liberal
 
     social_policy = no_position_set
-    economic_policy = interventionism 
+    economic_policy = interventionism
     trade_policy = protectionism
     religious_policy = secularized
     citizenship_policy = full_citizenship
@@ -25,7 +25,7 @@ party = {
     ideology = liberal
 
     social_policy = no_position_set
-    economic_policy = interventionism 
+    economic_policy = interventionism
     trade_policy = free_trade
     religious_policy = secularized
     citizenship_policy = full_citizenship
@@ -103,7 +103,7 @@ party = {
     economic_policy = laissez_faire
     trade_policy = free_trade
     religious_policy = pluralism
-    citizenship_policy = limited_citizenship 
+    citizenship_policy = limited_citizenship
     war_policy = pro_military
 }
 
@@ -129,7 +129,7 @@ party = {
 
     ideology = reactionary
 
-    social_policy = no_position_set    
+    social_policy = no_position_set
     economic_policy = state_capitalism
     trade_policy = protectionism
     religious_policy = moralism
@@ -220,7 +220,7 @@ party = {
     ideology = socialist
 
     social_policy = welfare_state
-    economic_policy = interventionism 
+    economic_policy = interventionism
     trade_policy = protectionism
     religious_policy = secularized
     citizenship_policy = full_citizenship
@@ -250,9 +250,9 @@ party = {
     ideology = communist
 
     social_policy = populist_welfare
-    economic_policy = planned_economy 
+    economic_policy = planned_economy
     trade_policy = protectionism
-    religious_policy = pro_atheism 
+    religious_policy = pro_atheism
     citizenship_policy = full_citizenship
     war_policy = pro_military
 }
@@ -307,7 +307,7 @@ unit_names = {
         Áss Vanr Álfr Jötunn
     }
     ironclad = {
-        Ellida Sleipner Viking Frithjof Rjukan Sarpen Lougen Glommen 
+        Ellida Sleipner Viking Frithjof Rjukan Sarpen Lougen Glommen
     }
     manowar = {
         Freia Desideira "St Olaf" "Kong Sverre" Ellida Nordssthernen Nornen Nidaros Ørnen Rjukan Sarpen Lougen Glommen
@@ -324,7 +324,7 @@ unit_names = {
     clipper_transport = {
         Hebe Lina
     }
-    steam_transport = { 
+    steam_transport = {
         "Kong Ring" Skibladner "Engebret Soot" Ara Hans Turisten Børøysund Kysten Oster Suldal Stavenes Stord
     }
     commerce_raider = {

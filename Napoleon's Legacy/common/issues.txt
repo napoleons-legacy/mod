@@ -74,7 +74,7 @@ party_issues = {
                 build_factory = yes
                 expand_factory = yes
                 open_factory = yes
-                destroy_factory = yes        
+                destroy_factory = yes
                 build_railway = yes
                 factory_priority = yes
                 can_subsidise = yes
@@ -98,14 +98,14 @@ party_issues = {
                 build_factory = yes
                 expand_factory = yes
                 open_factory = yes
-                destroy_factory = yes        
+                destroy_factory = yes
                 build_railway = yes
                 factory_priority = yes
                 can_subsidise = yes
                 pop_build_factory = no
                 pop_expand_factory = no
-                pop_open_factory = no                
-                delete_factory_if_no_input = no        
+                pop_open_factory = no
+                delete_factory_if_no_input = no
                 build_factory_invest = yes
                 expand_factory_invest = yes
                 build_railway_invest = yes
@@ -311,7 +311,7 @@ political_reforms = {
     voting_system = {
         first_past_the_post = {
             rules = { largest_share = yes }
-            allow = { 
+            allow = {
                 NOT = { vote_franschise = none_voting }
                 NOT = { has_country_flag = theocratic_government }
             }
@@ -425,7 +425,7 @@ political_reforms = {
             mobilisation_size = 0.01
             global_immigrant_attract = 0.01
             land_unit_start_experience = -2
-            allow = { 
+            allow = {
                 OR = {
                     NOT = { war_policy = jingoism }
                     NOT = { war_policy = pro_military}
@@ -450,7 +450,7 @@ political_reforms = {
             rules = { primary_culture_voting = yes }
             non_accepted_pop_consciousness_modifier = 0.01
             allow = {
-                citizenship_policy = residency 
+                citizenship_policy = residency
                 NOT = { has_country_flag = theocratic_government }
             }
         }
@@ -1096,7 +1096,7 @@ economic_reforms = {
                 }
             }
         }
-    }    
+    }
 
     firearms_production = {
         no_firearms_production = {
@@ -1168,7 +1168,7 @@ economic_reforms = {
                 }
             }
         }
-    }    
+    }
     industrial_construction = {
         no_industrial_construction = {
             core_pop_militancy_modifier = -0.005
@@ -1201,7 +1201,7 @@ economic_reforms = {
                     }
                 }
             }
-        }    
+        }
     }
 }
 
@@ -1213,7 +1213,7 @@ military_reforms = {
             core_pop_militancy_modifier = -0.005
         }
         yes_foreign_training = {
-            #unit stats improve    
+            #unit stats improve
             land_organisation = 0.1
             technology_cost = 9000
             civilization_progress_modifier = 0.1
@@ -1254,7 +1254,7 @@ military_reforms = {
     }
     foreign_weapons = {
         no_foreign_weapons = {
-            core_pop_militancy_modifier = -0.005    
+            core_pop_militancy_modifier = -0.005
         }
         yes_foreign_weapons = {
             land_defense_modifier = 0.1
@@ -1294,7 +1294,7 @@ military_reforms = {
             civilization_progress_modifier = 0.1
             allow = {
                 NOT = { has_country_flag = lacking_writing_system }
-                money = 2000 
+                money = 2000
                 OR = {
                     ai = no
                     AND = {
@@ -1335,7 +1335,7 @@ military_reforms = {
                 }
             }
         }
-    }    
+    }
     foreign_officers = {
         no_foreign_officers = {
                 core_pop_militancy_modifier = -0.005
@@ -1378,7 +1378,7 @@ military_reforms = {
                 }
             }
         }
-    }    
+    }
     army_schools = {
         no_army_schools = {
                 core_pop_militancy_modifier = -0.005
@@ -1404,7 +1404,7 @@ military_reforms = {
                 effect = {
                     random_owned = {
                         limit = { owner = { has_country_modifier = corrupt_army } }
-                        owner = { remove_country_modifier = corrupt_army } 
+                        owner = { remove_country_modifier = corrupt_army }
                     }
                     any_pop = {
                         scaled_militancy = {
@@ -1423,7 +1423,7 @@ military_reforms = {
                 }
             }
         }
-    }    
+    }
     foreign_naval_officers = {
         no_foreign_naval_officers = {
                 core_pop_militancy_modifier = -0.005
@@ -1511,7 +1511,7 @@ military_reforms = {
                     }
                 }
             }
-        }    
+        }
     }
     foreign_navies = {
         no_foreign_navies = {
@@ -1557,7 +1557,7 @@ military_reforms = {
                 }
             }
         }
-    }    
+    }
 
     western_shipyards = {
         no_western_shipyards = {

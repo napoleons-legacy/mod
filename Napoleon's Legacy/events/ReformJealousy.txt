@@ -1,6 +1,6 @@
 country_event = {
 
-    id = 90100 
+    id = 90100
 
     trigger = {
             ai = no
@@ -37,7 +37,7 @@ country_event = {
 
 
     option = {
-        name = "EVTOPTA90100" 
+        name = "EVTOPTA90100"
         any_pop = {
             dominant_issue = {
                 factor = 0.1
@@ -62,7 +62,7 @@ country_event = {
 
 country_event = {
 
-    id = 90101 
+    id = 90101
 
     trigger = {
             OR = {
@@ -92,7 +92,7 @@ country_event = {
 
 
     option = {
-        name = "EVTOPTA90101" 
+        name = "EVTOPTA90101"
         scaled_militancy = {
                 issue = free_press
                 factor = 4
@@ -116,7 +116,7 @@ country_event = {
 
 country_event = {
 
-    id = 90102 
+    id = 90102
 
     trigger = {
             ai = no
@@ -150,7 +150,7 @@ country_event = {
 
 
     option = {
-        name = "EVTOPTA90100" 
+        name = "EVTOPTA90100"
         any_pop = {
             dominant_issue = {
                 factor = 0.1
@@ -200,7 +200,7 @@ country_event = {
 
 
     option = {
-        name = "EVTOPTA90103" 
+        name = "EVTOPTA90103"
         scaled_militancy = {
                 issue = yes_meeting
                 factor = 4
@@ -266,7 +266,7 @@ country_event = {
 
 
     option = {
-        name = "EVTOPTA90100" 
+        name = "EVTOPTA90100"
         any_pop = {
             dominant_issue = {
                 factor = 0.1
@@ -328,7 +328,7 @@ country_event = {
 
 
     option = {
-        name = "EVTOPTA90105" 
+        name = "EVTOPTA90105"
         scaled_militancy = {
                 issue = all_trade_unions
                 factor = 4

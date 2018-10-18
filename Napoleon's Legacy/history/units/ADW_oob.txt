@@ -9,9 +9,9 @@ KBO = {
 
 army = {
     name = "Army of the Adamawa Emirate"
-    location = 1964    
+    location = 1964
 regiment = {
-        name= "Emir's Cavalry"    
+        name= "Emir's Cavalry"
     type = cavalry
         home = 1964    }
 

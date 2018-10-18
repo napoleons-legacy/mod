@@ -104,11 +104,11 @@ signal_detachments = {
         modifier = {
             factor = 2
             army_professionalism = 1
-        }    
+        }
     }
     effect = {
         engineer = {
-            siege = 1            
+            siege = 1
         }
         dragoon = {
             reconnaissance = 1
@@ -201,7 +201,7 @@ synchronized_heavy_support = {
         }
         army_base = {
             supply_consumption = 0.05
-        }  
+        }
     }
 }
 staff_command_support = {
@@ -282,7 +282,7 @@ gas_attack_capability = {
         modifier = {
             factor = 2
             invention = carbon_soil_enrichment
-        }        
+        }
     }
     effect = {
         gas_attack = yes
@@ -393,7 +393,7 @@ flexible_counterattacks = {
         }
         army_base = {
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 #infiltration
@@ -470,7 +470,7 @@ stormtrooper_training = {
         engineer = {
             attack = 1
             defence = 1
-            siege = 1                
+            siege = 1
         }
         army_base = {
             supply_consumption = 0.05
@@ -500,7 +500,7 @@ tank_experiments = {
     }
     effect = {
         activate_unit = tank
-        activate_building = barrel_factory 
+        activate_building = barrel_factory
     }
 }
 tank_exploits = {
@@ -526,8 +526,8 @@ tank_exploits = {
             attack = 2
             defence = 4
             supply_consumption = 1
-            siege = 1                
-        }    
+            siege = 1
+        }
     }
 }
 #modern_army_doctrine
@@ -595,7 +595,7 @@ grand_battle_plan_vs_superior_firepower = {
     effect = {
         army_base = {
             default_organisation = 10
-        } 
+        }
         morale = 0.5
     }
 }
@@ -628,7 +628,7 @@ human_wave_vs_spearhead = {
         tank = {
             attack = 1
             defence = 1
-            siege = 1    
+            siege = 1
             maximum_speed = 1
         }
         cuirassier = {
@@ -815,8 +815,8 @@ machine_gun_armament = {
     }
 }
 colonial_negotiations = {
-    limit = { 
-        year = 1880 
+    limit = {
+        year = 1880
         breech_loaded_rifles = 1
         has_country_flag = existing_country
     }
@@ -833,11 +833,11 @@ colonial_negotiations = {
         }
         modifier = {
             factor = 25
-            economic_responsibility = 1 
+            economic_responsibility = 1
         }
         modifier = {
             factor = 25
-            naval_logistics = 1 
+            naval_logistics = 1
         }
         modifier = {
             factor = 10
@@ -853,7 +853,7 @@ colonial_negotiations = {
         }
     }
     effect = {
-        colonial_life_rating = -5 
+        colonial_life_rating = -5
     }
 }
 #bolt_action_rifles
@@ -1211,7 +1211,7 @@ hussar_activation = {
         }
     }
     effect = {
-        activate_unit = hussar 
+        activate_unit = hussar
     }
 }
 
@@ -1233,7 +1233,7 @@ telegraph_coordination = {
         army_base = {
             default_organisation = 5
             supply_consumption = 0.10
-        } 
+        }
     }
 }
 
@@ -1297,7 +1297,7 @@ ammunition_area_effect_calculations = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1318,7 +1318,7 @@ empirical_combat_efficiency_matrix = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1339,7 +1339,7 @@ combat_loss_evaluation_schemata = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1361,7 +1361,7 @@ pre_planned_depot_systems = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1382,7 +1382,7 @@ logistical_calculations = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1403,7 +1403,7 @@ replenishment_transport_organisation = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1443,7 +1443,7 @@ army_military_political_decision_making = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1464,7 +1464,7 @@ army_local_military_government = {
         army_base = {
             default_organisation = 2.5
             supply_consumption = 0.05
-        } 
+        }
     }
 }
 
@@ -1805,7 +1805,7 @@ army_delegated_power = {
     limit = { army_decision_making = 1 }
     chance = {
         base = 2
-        modifier = {    
+        modifier = {
             factor = 1
             invention = distribution_channels
         }
@@ -1831,7 +1831,7 @@ army_wargames = {
         }
         modifier = {
             factor = 1
-            invention = staff_command_support 
+            invention = staff_command_support
         }
     }
     effect = {

@@ -395,7 +395,7 @@
         size = 4000
     }
 }
-#Fashoda (132000/33000 POPS)  
+#Fashoda (132000/33000 POPS)
 1832 = {
     aristocrats = {
         culture = sudanese
@@ -407,7 +407,7 @@
         culture = sudanese
         religion = sunni
         size = 25
-    }    
+    }
 
     aristocrats = {
         culture = nuer
@@ -467,7 +467,7 @@
         culture = luo
         religion = animist
         size = 50
-    }    
+    }
 
     officers = {
         culture = luo
@@ -497,11 +497,11 @@
         culture = luo
         religion = animist
         size = 4000
-    }    
+    }
 }
-#Red Sea Region (108000) #see Egypt.txt for balance of the region 
+#Red Sea Region (108000) #see Egypt.txt for balance of the region
 #under the rule of Egypt in 1836
-#Suakin (60000/15000 POPS) #now part of Sudan 
+#Suakin (60000/15000 POPS) #now part of Sudan
 1833 = {
     aristocrats = {
         culture = sudanese
@@ -611,7 +611,7 @@
         size = 2000
     }
 }
-#Halaib (48000/12000 POPS) #now part of Sudan 
+#Halaib (48000/12000 POPS) #now part of Sudan
 1834 = {
     aristocrats = {
         culture = sudanese
@@ -1122,7 +1122,7 @@
         culture = sudanese
         religion = sunni
         size = 25
-    }    
+    }
 
     aristocrats = {
         culture = dinka
@@ -1452,7 +1452,7 @@
         size = 7000
     }
 }
-#Upper Nile Region (868000)  
+#Upper Nile Region (868000)
 #uncolonized in 1836
 #Bor (344000/86000 POPS)
 1844 = {

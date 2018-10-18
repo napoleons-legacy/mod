@@ -375,19 +375,19 @@
     aristocrats = {
         culture = malay
         religion = sunni
-        size = 50 
+        size = 50
     }
 
     clergymen = {
         culture = malay
         religion = sunni
-        size = 60 
+        size = 60
     }
 
     artisans = {
         culture = malay
         religion = sunni
-        size = 150 
+        size = 150
     }
 
     soldiers = {
@@ -399,25 +399,25 @@
     farmers = {
         culture = malay
         religion = sunni
-        size = 2700  
+        size = 2700
     }
 
     aristocrats = {
         culture = asian_minor
         religion = animist
-        size = 15 
+        size = 15
     }
 
     clergymen = {
         culture = asian_minor
         religion = animist
-        size = 25 
+        size = 25
     }
 
     artisans = {
         culture = asian_minor
         religion = animist
-        size = 75  
+        size = 75
     }
 
     soldiers = {
@@ -429,7 +429,7 @@
     farmers = {
         culture = asian_minor
         religion = animist
-        size = 1360 
+        size = 1360
     }
 }
 #Siak Region (372000)
@@ -681,7 +681,7 @@
     }
 
 }
-#Aceh Region (444000) 
+#Aceh Region (444000)
 #Ruled by Aceh 1836
 #Banda Aceh (128000/32000 POPS)
 1405 = {

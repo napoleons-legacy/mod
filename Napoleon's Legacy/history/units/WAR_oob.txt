@@ -38,13 +38,13 @@ army = {
     name = "Army of the Kingdom of Warri"
     location = 1931
 regiment = {
-        name= "Olu's Guards"        
+        name= "Olu's Guards"
     type = irregular
     home = 1931    }
 
 
 regiment = {
-        name= "Bonny Warriors"        
+        name= "Bonny Warriors"
     type = irregular
     home = 1932    }
 }

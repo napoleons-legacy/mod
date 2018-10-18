@@ -100,7 +100,7 @@ country_event = {
                 value = -100
             }
             remove_country_modifier = kalmar_union
-            remove_country_modifier= customs_union 
+            remove_country_modifier= customs_union
         }
         ai_chance = {
             factor = 30
@@ -135,7 +135,7 @@ country_event = {
         diplomatic_influence = {
             who = FROM
             value = -200
-        }       
+        }
         war = {
             target = FROM
             attacker_goal = {
@@ -190,7 +190,7 @@ country_event = {
             }
         }
         add_country_modifier = {
-            name = customs_union 
+            name = customs_union
             duration = -1
         }
         ai_chance = {
@@ -283,7 +283,7 @@ country_event = {
                 }
                 is_core = THIS
             }
-            add_core = SCA 
+            add_core = SCA
         }
         add_accepted_culture = swedish
         add_accepted_culture = danish
@@ -327,7 +327,7 @@ country_event = {
         name = "EVTOPTB49504" #Refuse
         set_country_flag = refused_kalmar_union
         FROM = {
-            country_event = 49502 
+            country_event = 49502
             }
         ai_chance = {
             factor = 10
@@ -353,7 +353,7 @@ country_event = {
     desc = "EVTDESC49509"
     picture = "danishgovernment"
 
-    is_triggered_only = yes     
+    is_triggered_only = yes
     option = {
         name = "EVT49509OPTA"
         FROM = {

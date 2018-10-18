@@ -781,7 +781,7 @@ EVTOPTB36625;We found some ballots right over here that disprove this.;;;;;;;;;;
 EVTNAME36623;The St. Barth's Referendum;;;;;;;;;;;;x
 EVTDESC36623;The French government approached us over the question of St. Barth's. The island of Saint Barthélemy had belonged to France until 1784, when it was transferred to Sweden in return for trade privileges in Gothenburg. However, the island proved expensive to maintain and the French government is pushing for a referendum on the future of the island. The French government might try to claim the island if things don't go the way they want and if we offer the island to another Great Power to buy and they don't accept it, we will be forced to hold the referendum.;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME36624;The St. Barth's Question;;;;;;;;;;;;x
-EVTDESC36624;France is pressuring the $FROMCOUNTRY_ADJ$ government to cede them the Island of Saint Barthélemy. The Swedish government, however, seems unwilling to cede it to France and instead they offered to sell the island to us. This could cost some money and it will surely greatly irritate the French, who may use this as an excuse to attack us.;;;;;;;;;;;;x  
+EVTDESC36624;France is pressuring the $FROMCOUNTRY_ADJ$ government to cede them the Island of Saint Barthélemy. The Swedish government, however, seems unwilling to cede it to France and instead they offered to sell the island to us. This could cost some money and it will surely greatly irritate the French, who may use this as an excuse to attack us.;;;;;;;;;;;;x
 EVTOPTA36624;We accept it.;;;;;;;;;;;;x
 EVTOPTB36624;We are not interested.;;;;;;;;;;;;x
 EVTOPTA36623;Hold the referendum.;;;;;;;;;;;;x
@@ -2021,7 +2021,7 @@ EVTDESC97673;$COUNTRY$ has followed a militaristic path until now, determined to
 EVT97673OPTA;So shall it be.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 EVTNAME97674;The Line of Advantage;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC97674;The $COUNTRY_ADJ$ government has followed a policy of progress and westernization until now, hoping that advancing $COUNTRY$ to match the Western powers would keep us safe. We now see this is in error, and that only by an aggressive expansion of our borders can we hope to maintain the security of $COUNTRY$ proper.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT97674OPTA;So shall it be.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,    
+EVT97674OPTA;So shall it be.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME97675;China in Chaos;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC97675;The Chinese have fallen into warring factions, all but crumbling their power and leaving us an advantage we would be fools not to exploit. The Line of Advantage policy dictates that we should strike, and strike soon.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 EVT97675OPTA;We should take advantage while we can.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,

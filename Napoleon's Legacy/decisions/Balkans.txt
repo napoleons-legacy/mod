@@ -105,7 +105,7 @@ political_decisions = {
                 is_sphere_leader_of = WAL
                 is_sphere_leader_of = MOL
                 is_sphere_leader_of = SIE
-            }    
+            }
         }
         allow = {
             war = no
@@ -128,7 +128,7 @@ political_decisions = {
             badboy = 2
             any_country = {
                 limit = {
-                    OR = { 
+                    OR = {
                         is_our_vassal = WAL
                         is_our_vassal = MOL
                         is_our_vassal = SIE
@@ -140,7 +140,7 @@ political_decisions = {
                     type = humiliate
                     months = 12
                 }
-            }        
+            }
             any_country = {
                 limit = {
                     OR = {
@@ -366,7 +366,7 @@ political_decisions = {
                 }
                 annex_to = THIS
             }
-            random_country = { 
+            random_country = {
                 limit = { is_culture_group = czecho_slovak_culture_group part_of_sphere = no is_vassal = no }
                 country_event = 98650
                 }
@@ -500,7 +500,7 @@ political_decisions = {
                         owner = { capital = 771 }
                     }
                     change_tag = CRO
-                }    
+                }
             }
         }
 
@@ -608,7 +608,7 @@ political_decisions = {
                     NOT = { truce_with = THIS }
                     war = no
                 }
-            }            
+            }
             771 = {
                 owner = {
                     OR = {
@@ -705,7 +705,7 @@ political_decisions = {
                 is_sphere_leader_of = SLO
                 is_sphere_leader_of = ALB
                 is_sphere_leader_of = BUL
-            }    
+            }
         }
         allow = {
             war = no
@@ -918,7 +918,7 @@ political_decisions = {
                     in_sphere = THIS
                     sphere_owner = { is_sphere_leader_of = THIS }
                 }
-            }    
+            }
         }
 
         effect = {
@@ -980,7 +980,7 @@ political_decisions = {
                     in_sphere = THIS
                     sphere_owner = { is_sphere_leader_of = THIS }
                 }
-            }    
+            }
         }
 
         effect = {
@@ -1042,7 +1042,7 @@ political_decisions = {
                     in_sphere = THIS
                     sphere_owner = { is_sphere_leader_of = THIS }
                 }
-            }    
+            }
         }
 
         effect = {
@@ -1103,7 +1103,7 @@ political_decisions = {
                     in_sphere = THIS
                     sphere_owner = { is_sphere_leader_of = THIS }
                 }
-            }    
+            }
         }
 
         effect = {
@@ -1164,7 +1164,7 @@ political_decisions = {
                     in_sphere = THIS
                     sphere_owner = { is_sphere_leader_of = THIS }
                 }
-            }    
+            }
         }
 
         effect = {
@@ -1281,7 +1281,7 @@ political_decisions = {
                     }
                     in_sphere = THIS
                 }
-            }    
+            }
         }
 
         effect = {
@@ -1323,7 +1323,7 @@ political_decisions = {
 #                accepted_culture = bosniak
 #            }
 #        }
-#        
+#
 #        allow = {
 #            prestige = 50
 #            NOT = { government = theocracy }
@@ -1337,7 +1337,7 @@ political_decisions = {
 #                }
 #            }
 #        }
-#        
+#
 #        effect = {
 #            add_accepted_culture = bosniak
 #            prestige = -25
@@ -1915,17 +1915,17 @@ political_decisions = {
 #            exists = yes
 #            any_owned_province = { is_core = SIE }
 #        }
-#        
+#
 #        allow = {
 #            SIE = { all_core = { owned_by = THIS } }
 #            war = no
 #        }
-#        
+#
 #        effect = {
 #            badboy = 2
 #            SIE = { all_core = { remove_core = SIE } }
 #        }
-#        
+#
 #        ai_will_do = {
 #            factor = 1
 #            modifier = { factor = 0 badboy = 0.82 }
@@ -1998,7 +1998,7 @@ political_decisions = {
         allow = {
             war = no
             state_n_government = 1
-            OR = { 
+            OR = {
                 AND = {
                     tag = AUS
                     NOT = { AUS_619 = { NOT = { owned_by = THIS } } }
@@ -2025,7 +2025,7 @@ political_decisions = {
                     exists = yes
                     neighbour = THIS
                 }
-            country_event = 60055559    
+            country_event = 60055559
             }
         }
         ai_will_do = { factor = 1 }

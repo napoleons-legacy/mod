@@ -1,7 +1,7 @@
 political_decisions = {
 
 #Pancasila (pronounced pan-sha-si-la)
-pancasila = {    
+pancasila = {
     picture = indoctrinal_education_communist
     potential = {
         NOT = { has_country_flag = pancasila }
@@ -25,7 +25,7 @@ pancasila = {
 }
 
 #Indonesia Raya
-indonesia_raya = {    
+indonesia_raya = {
     picture = map_east_indies
     potential = {
         NOT = {    has_country_flag = indonesia_raya }
@@ -42,7 +42,7 @@ indonesia_raya = {
         war = no
         is_vassal = no
         nationalism_n_imperialism = 1
-        OR = {            
+        OR = {
             war_policy = jingoism
             war_policy = pro_military
         }
@@ -70,7 +70,7 @@ indonesia_raya = {
         GER_2530 = { add_core = INO } #Northern New Guinea
         any_country = {
             limit = {
-                OR = { 
+                OR = {
                     neighbour = THIS
                     any_owned_province = { is_core = INO }
                 }
@@ -82,8 +82,8 @@ indonesia_raya = {
     ai_will_do = { factor = 0 }
 }
 
-#Melayu Raya    
-melayu_raya = {    
+#Melayu Raya
+melayu_raya = {
     picture = map_east_indies
     potential = {
         NOT = {    has_country_flag = melayu_raya    }
@@ -100,7 +100,7 @@ melayu_raya = {
         war = no
         is_vassal = no
         nationalism_n_imperialism = 1
-        OR = {            
+        OR = {
             war_policy = jingoism
             war_policy = pro_military
         }
@@ -113,7 +113,7 @@ melayu_raya = {
         BRU_1394 = { add_core = MLY } #West Borneo
         BRU_1396 = { add_core = MLY } #Sabah/North Borneo
         NET_1398 = { add_core = MLY } #Sumatra
-        NET_1401 = { add_core = MLY } #Siak/Middle Sumatra 
+        NET_1401 = { add_core = MLY } #Siak/Middle Sumatra
         ATJ_1405 = { add_core = MLY } #Aceh/North Sumatra
         NET_1423 = { add_core = MLY } #East Borneo
         NET_1426 = { add_core = MLY } #South Borneo
@@ -122,10 +122,10 @@ melayu_raya = {
         any_country = {
             limit = { exists = yes }
             any_owned = {
-                limit = { 
+                limit = {
                     culture = malay #Any province owned by any country which is majority Malay...
                     OR = {
-                        continent = asia 
+                        continent = asia
                         continent = oceania
                     }
                 }
@@ -134,7 +134,7 @@ melayu_raya = {
         }
         any_country = {
             limit = {
-                OR = { 
+                OR = {
                     neighbour = THIS
                     any_owned_province = { is_core = MLY }
                 }

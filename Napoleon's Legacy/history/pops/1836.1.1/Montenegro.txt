@@ -1,6 +1,6 @@
-#Montenegro Region (192000)  
-#under the rule of Ottoman Empire in 1836  
-#Ulcinj (36000/9000 POPS) 
+#Montenegro Region (192000)
+#under the rule of Ottoman Empire in 1836
+#Ulcinj (36000/9000 POPS)
 800 = {
 
     soldiers = {
@@ -51,7 +51,7 @@
         size = 725
     }
 }
-#Niksic (52000/13000 POPS) 
+#Niksic (52000/13000 POPS)
 2569 = {
 
     aristocrats = {
@@ -132,8 +132,8 @@
         size = 5725
     }
 }
-#under the rule of Montenegro in 1836  
-#Cetinje (104000/26000 POPS) 
+#under the rule of Montenegro in 1836
+#Cetinje (104000/26000 POPS)
 2583 = {
     aristocrats = {
         culture = serb
@@ -183,8 +183,8 @@
         size = 1000
     }
 }
-#Kosovo-Sanjak Region (52000)  #see Serbia.txt for balance of region 
-#under the rule of Ottoman Empire in 1836  
+#Kosovo-Sanjak Region (52000)  #see Serbia.txt for balance of region
+#under the rule of Ottoman Empire in 1836
 #Pljevlja (52000/13000 POPS) #now part of Montenegro
 2577 = {
 
@@ -254,9 +254,9 @@
         size = 200
     }
 }
-#Dalmatia Region (64000) #see Croatia.txt for balance of region 
-#under the rule of Austria in 1836  
-#Kotor (64000/16000 POPS) 
+#Dalmatia Region (64000) #see Croatia.txt for balance of region
+#under the rule of Austria in 1836
+#Kotor (64000/16000 POPS)
 2582 = {
     aristocrats = {
         culture = croat

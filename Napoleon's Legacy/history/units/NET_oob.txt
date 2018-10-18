@@ -3,13 +3,13 @@ CAN = {
 }
 MAL = { value = 400 }
 JAV = { value = 400 }
-DJA = { 
+DJA = {
     value = 125
-    military_access = yes 
+    military_access = yes
 
     }
-SAK = { 
-    military_access = yes 
+SAK = {
+    military_access = yes
     value = 100
     }
 
@@ -94,7 +94,7 @@ army = {
         type = infantry
         home = 1399
         }
-    }    
+    }
 
 army = {
     name = "Nederlandse Leger"
@@ -227,7 +227,7 @@ navy = {
 
 navy = {
     name = "Koninklijke WI Marine"
-    location = 1413 
+    location = 1413
 
     ship = {
         name= "Admiraal Generaal"
@@ -258,7 +258,7 @@ leader = {
     type = land
     personality = active_p
     background = drillmaster
-    prestige = 0.1    
+    prestige = 0.1
 }
 leader = {
     name = "Hendrik Duycker"

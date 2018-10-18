@@ -14,17 +14,17 @@
 #   title = "EVTNAME14005"
 #   desc = "EVTDESC14005"
 #   picture = "election_polls"
-#   
+#
 #   trigger = {
 #   election = yes
 #   NOT = {
 #       OR = {
 #       has_country_modifier = will_influence_elections
-#       has_country_modifier = let_the_chips_fall 
+#       has_country_modifier = let_the_chips_fall
 #           }
 #       }
 #   }
-#       
+#
 #   option = {
 #       name = "EVTOPTA14005"
 #       add_country_modifier = {
@@ -33,7 +33,7 @@
 #       }
 #       ai_chance = { factor =  1 }
 #   }
-#   
+#
 #   option = {
 #       name = "EVTOPTB14005"
 #       random_list = {
@@ -46,7 +46,7 @@
 #                           value = protectionism
 #                               }
 #                           }
-#                       }   
+#                       }
 #                   }
 #           25 = {
 #               random_state = {
@@ -57,7 +57,7 @@
 #                           value = free_trade
 #                               }
 #                           }
-#                       }   
+#                       }
 #                   }
 #           25 = {
 #               random_state = {
@@ -71,8 +71,8 @@
 #                       issue = free_trade
 #                       factor = 4
 #                               }
-#                           }           
-#                       }   
+#                           }
+#                       }
 #                   }
 #           25 = {
 #               random_state = {
@@ -86,8 +86,8 @@
 #                       issue = protectionism
 #                       factor = 4
 #                               }
-#                           }           
-#                       }   
+#                           }
+#                       }
 #                   }
 #               }
 #       random_list = {
@@ -111,7 +111,7 @@
 #                           value = interventionism
 #                               }
 #                           }
-#                       }   
+#                       }
 #                   }
 #           25 = {
 #               random_state = {
@@ -122,7 +122,7 @@
 #                           value = state_capitalism
 #                               }
 #                           }
-#                       }   
+#                       }
 #                   }
 #           25 = {
 #               random_state = {
@@ -133,7 +133,7 @@
 #                           value = planned_economy
 #                               }
 #                           }
-#                       }   
+#                       }
 #                   }
 #               }
 #       random_list = {
@@ -235,7 +235,7 @@
 #                       dominant_issue = {
 #                           factor = 0.25
 #                           value = pro_military
-#                               }   
+#                               }
 #                           }
 #                       }
 #                   }

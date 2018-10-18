@@ -85,7 +85,7 @@ political_decisions = {
             factor = 0
             modifier = { factor = 100 conscription = no_draft }
             modifier = {
-                factor = 100 
+                factor = 100
                 conscription = one_year_draft
                 OR = {
                     war_policy = jingoism
@@ -103,7 +103,7 @@ political_decisions = {
                 }
             }
             modifier = {
-                factor = 100 
+                factor = 100
                 conscription = two_year_draft
                 OR = {
                     war_policy = jingoism
@@ -118,7 +118,7 @@ political_decisions = {
                         }
                     }
                 }
-            }    
+            }
             modifier = {
                 factor = 100
                 conscription = four_year_draft

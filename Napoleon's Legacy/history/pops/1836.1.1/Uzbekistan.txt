@@ -1,6 +1,6 @@
-#Khwarazm Region (380000) #see Kazakhstan.txt and Turkmenistan.txt for balance of region 
-#under the rule of Khiva in 1836  
-#Khiva (200000/50000 POPS) #now part of Uzbekistan  
+#Khwarazm Region (380000) #see Kazakhstan.txt and Turkmenistan.txt for balance of region
+#under the rule of Khiva in 1836
+#Khiva (200000/50000 POPS) #now part of Uzbekistan
 1191 = {
     aristocrats = {
         culture = uzbek
@@ -62,7 +62,7 @@
         size = 3000
     }
 }
-#Nukus (180000/45000 POPS) #now part of Uzbekistan  
+#Nukus (180000/45000 POPS) #now part of Uzbekistan
 1192 = {
     aristocrats = {
         culture = uzbek
@@ -172,9 +172,9 @@
         size = 3650
     }
 }
-#Mawarannahr Region (524000) #see Kazakhstan.txt, Tajikistan.txt, Kirghizstan.txt for balance of region 
-#under the rule of Kokand in 1836  
-#Tashkent (224000/56000 POPS)   
+#Mawarannahr Region (524000) #see Kazakhstan.txt, Tajikistan.txt, Kirghizstan.txt for balance of region
+#under the rule of Kokand in 1836
+#Tashkent (224000/56000 POPS)
 1195 = {
     aristocrats = {
         culture = uzbek
@@ -278,7 +278,7 @@
         size = 2000
     }
 }
-#Kokand (300000/75000 POPS)   
+#Kokand (300000/75000 POPS)
 1202 = {
     aristocrats = {
         culture = kirgiz
@@ -394,8 +394,8 @@
         size = 5000
     }
 }
-#under the rule of Bukhara in 1836  
-#Bukhara (868000/217000 POPS)   
+#under the rule of Bukhara in 1836
+#Bukhara (868000/217000 POPS)
 1198 = {
     aristocrats = {
         culture = uzbek
@@ -523,7 +523,7 @@
         size = 30000
     }
 }
-#Samarkand (544000/136000 POPS)   
+#Samarkand (544000/136000 POPS)
 1199 = {
     aristocrats = {
         culture = uzbek
@@ -621,7 +621,7 @@
         size = 20000
     }
 }
-#Qarshi (280000/70000 POPS)   
+#Qarshi (280000/70000 POPS)
 1200 = {
     aristocrats = {
         culture = uzbek

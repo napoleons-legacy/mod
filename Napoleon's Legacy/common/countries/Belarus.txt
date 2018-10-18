@@ -108,22 +108,22 @@ party = {
 
 unit_names = {
     dreadnought = {
-        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk" 
+        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"
     }
     ironclad = {
-        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk" 
+        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"
     }
     manowar = {
-        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk" 
+        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"
     }
     cruiser = {
-        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"   
+        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"
     }
     frigate = {
-        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"  
+        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"
     }
     monitor = {
-        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"  
+        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"
     }
     clipper_transport = {
 
@@ -132,6 +132,6 @@ unit_names = {
 
     }
     commerce_raider = {
-        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"  
+        "Belarus" "Minsk" "Brest" "Hrodna" "Gomel" "Mogilev" "Vitebsk"
     }
 }

@@ -22,25 +22,25 @@ army = {
         home = 726
     }
 
-    regiment = { 
+    regiment = {
         name = "3. Fanteria di Linea"
         type = infantry
         home = 729
     }
 
-    regiment = { 
+    regiment = {
         name = "4. Fanteria di Linea"
         type = infantry
         home = 728
     }
 
-    regiment = { 
+    regiment = {
         name = "5. Fanteria di Linea"
         type = hussar
         home = 730
     }
 
-    regiment = { 
+    regiment = {
         name = "6. Fanteria di Linea"
         type = hussar
         home = 731

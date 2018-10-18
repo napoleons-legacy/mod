@@ -328,7 +328,7 @@ small_but_efficient = {
         NOT = { money = 1000000 }
         NOT = { year = 1886 }
         OR = {
-            NOT = { 
+            NOT = {
                 is_culture_group = south_slavic
                 is_culture_group = pan_romanian
                 is_culture_group = levantine

@@ -83,7 +83,7 @@ sealane_hunters = {
     limit = { raider_group_doctrine = 1 }
     chance = {
         base = 2
-        modifier = {    
+        modifier = {
             factor = 2
             weapon_platforms = 1
         }
@@ -173,7 +173,7 @@ blue_water_school = {
     }
     effect = {
         navy_base = {
-            build_time = -10 
+            build_time = -10
         }
     }
 }
@@ -192,7 +192,7 @@ brown_water_school = {
     }
     effect = {
         navy_base = {
-            build_time = -10 
+            build_time = -10
         }
     }
 }
@@ -276,7 +276,7 @@ decisive_firepower_doctrine = {
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 naval_firepower_doctrine = {
@@ -301,7 +301,7 @@ naval_firepower_doctrine = {
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 #fleet_auxiliary_cv_doctrine = {
@@ -399,7 +399,7 @@ clipper_shipyard_construction = {
         }
     }
     effect = {
-        activate_building = clipper_shipyard 
+        activate_building = clipper_shipyard
     }
 }
 
@@ -474,7 +474,7 @@ steamer_transports = {
         }
     }
     effect = {
-        activate_unit = steam_transport 
+        activate_unit = steam_transport
     }
 }
 commerce_raiders = {
@@ -535,7 +535,7 @@ ironclads = {
         }
     }
     effect = {
-        activate_unit = ironclad  
+        activate_unit = ironclad
     }
 }
 monitors = {
@@ -555,7 +555,7 @@ monitors = {
         }
     }
     effect = {
-        activate_unit = monitor 
+        activate_unit = monitor
     }
 }
 torpedo_boats = {
@@ -569,7 +569,7 @@ torpedo_boats = {
         modifier = {
             factor = 2
             invention = monitors
-        }        
+        }
     }
     effect = {
         commerce_raider = {
@@ -596,7 +596,7 @@ protected_cruisers = {
         }
     }
     effect = {
-        activate_unit = cruiser 
+        activate_unit = cruiser
     }
 }
 #destroyers = {
@@ -649,7 +649,7 @@ pre_dreadnought = {
             gun_power = 1
             maximum_speed = 1
         }
-        activate_unit = battleship 
+        activate_unit = battleship
     }
 }
 #steam_turbine_ships
@@ -670,7 +670,7 @@ dreadnoughts = {
         }
     }
     effect = {
-        activate_unit = dreadnought 
+        activate_unit = dreadnought
     }
 }
 #light_cruisers = {
@@ -751,7 +751,7 @@ advanced_cruisers = {
         cruiser = {
             hull = 1
             gun_power = 1
-        } 
+        }
     }
 }
 modern_cruisers = {
@@ -774,7 +774,7 @@ modern_cruisers = {
     effect = {
         cruiser = {
             maximum_speed = 1
-        }  
+        }
     }
 }
 #advanced_battlecruisers = {
@@ -786,7 +786,7 @@ modern_cruisers = {
 #            invention = battlecruisers
 #        }
 #    }
-#    effect = { 
+#    effect = {
 #    }
 #}
 advanced_battleships = {
@@ -814,7 +814,7 @@ advanced_battleships = {
         dreadnought = {
             hull = 1
             gun_power = 1
-        } 
+        }
     }
 }
 modern_battleships = {
@@ -837,10 +837,10 @@ modern_battleships = {
     effect = {
         battleship = {
             maximum_speed = 1
-        } 
+        }
         dreadnought = {
             maximum_speed = 1
-        } 
+        }
     }
 }
 #experimental_carriers = {
@@ -848,7 +848,7 @@ modern_battleships = {
 #    chance = {
 #        base = 6
 #    }
-#    effect = { 
+#    effect = {
 #    }
 #}
 #converted_hulk_carriers = {
@@ -872,7 +872,7 @@ modern_battleships = {
 #            invention = converted_hulk_carriers
 #        }
 #    }
-#    effect = { 
+#    effect = {
 #    }
 #}
 #advanced_submarines = {
@@ -922,7 +922,7 @@ optical_rangefinders = {
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 gyrostabilized_fire_control = {
@@ -941,13 +941,13 @@ gyrostabilized_fire_control = {
     effect = {
         navy_base = {
             gun_power = 1
-        } 
+        }
         clipper_transport = {
             gun_power = -1
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 #torpedo_gyroscope = {
@@ -964,7 +964,7 @@ gyrostabilized_fire_control = {
 #    chance = {
 #        base = 6
 #    }
-#    effect = { 
+#    effect = {
 #    }
 #}
 #self_propelled_torpedoes = {
@@ -995,13 +995,13 @@ armour_piercing_projectiles = {
     effect = {
         navy_base = {
             gun_power = 1
-        } 
+        }
         clipper_transport = {
             gun_power = -1
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 armour_piercing_exploding_projectiles = {
@@ -1020,13 +1020,13 @@ armour_piercing_exploding_projectiles = {
     effect = {
         navy_base = {
             gun_power = 1
-        } 
+        }
         clipper_transport = {
             gun_power = -1
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
 
     }
 }
@@ -1046,7 +1046,7 @@ armoured_turrets = {
     effect = {
         navy_base = {
             hull = 1
-        } 
+        }
     }
 }
 #main_armament
@@ -1072,7 +1072,7 @@ bomb_guns = {
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 rifled_guns = {
@@ -1097,7 +1097,7 @@ rifled_guns = {
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 quick_firing_guns = {
@@ -1122,7 +1122,7 @@ quick_firing_guns = {
         }
         steam_transport = {
             gun_power = -1
-        }        
+        }
     }
 }
 armoured_citadels = {
@@ -1222,7 +1222,7 @@ heavy_armour_plates = {
         }
         modifier = {
             factor = 1
-            invention = martin_steel 
+            invention = martin_steel
         }
         modifier = {
             factor = 1
@@ -1232,7 +1232,7 @@ heavy_armour_plates = {
     effect = {
         dreadnought = {
             hull = 2
-        } 
+        }
     }
 }
 large_hull_form = {
@@ -1251,7 +1251,7 @@ large_hull_form = {
     effect = {
         navy_base = {
             hull = 1
-        } 
+        }
     }
 }
 #modern_naval_design
@@ -1697,7 +1697,7 @@ continuous_issuing_of_orders = {
         modifier = {
             factor = 1
             naval_logistics = 1
-        }    
+        }
     }
     effect = {
         navy_base = {

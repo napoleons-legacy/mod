@@ -157,7 +157,7 @@ country_event = {
         name = "EVT95503OPTA"
         set_country_flag = africa_in_the_modern_age
         any_country = {
-            limit = { 
+            limit = {
                 civilized = yes
                 NOT = { relation = { who = THIS value = 25 } }
                 capital_scope = { continent = europe }
@@ -421,7 +421,7 @@ country_event = {
                 factor = 0
                 badboy = 0.92
             }
-        }           
+        }
     }
 }
 
@@ -834,7 +834,7 @@ country_event = {
                 type = place_in_the_sun
                 months = 60
             }
-        }   
+        }
     }
 }
 
@@ -944,9 +944,9 @@ country_event = {
 
         FROM = {
             any_owned = {
-                limit = { 
+                limit = {
                     OR = {
-                    is_core = SUD 
+                    is_core = SUD
                     is_core = ETH
                     }
                 }

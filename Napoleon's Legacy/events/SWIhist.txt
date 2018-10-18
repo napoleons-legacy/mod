@@ -53,8 +53,8 @@ country_event = {
         badboy = 1.3
         NOT = {
             OR = {
-                has_country_modifier = kinda_bad_badboy 
-                has_country_modifier = bad_badboy 
+                has_country_modifier = kinda_bad_badboy
+                has_country_modifier = bad_badboy
                 }
             }
     }

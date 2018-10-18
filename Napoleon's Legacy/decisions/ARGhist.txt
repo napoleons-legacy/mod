@@ -74,7 +74,7 @@ political_decisions = {
                     2381 = { empty = no }
                     2383 = { empty = no }
                 }
-                2382 = { 
+                2382 = {
                     secede_province = THIS
                     add_core = THIS
                     life_rating = 20
@@ -172,7 +172,7 @@ political_decisions = {
                     2361 = { empty = no }
                     2356 = { empty = no }
                 }
-                2362 = { 
+                2362 = {
                     secede_province = THIS
                     add_core = THIS
                     life_rating = 20
@@ -185,7 +185,7 @@ political_decisions = {
                     2362 = { empty = no }
                     2356 = { empty = no }
                 }
-                2364 = { 
+                2364 = {
                     secede_province = THIS
                     add_core = THIS
                     life_rating = 20
@@ -199,7 +199,7 @@ political_decisions = {
                     2362 = { empty = no }
                     2364 = { empty = no }
                 }
-                2365 = { 
+                2365 = {
                     secede_province = THIS
                     add_core = THIS
                     life_rating = 20
@@ -213,7 +213,7 @@ political_decisions = {
                     2362 = { empty = no }
                     2365 = { empty = no }
                 }
-                2377 = { 
+                2377 = {
                     secede_province = THIS
                     add_core = THIS
                     life_rating = 20
@@ -227,7 +227,7 @@ political_decisions = {
                     2377 = { empty = no }
                     2365 = { empty = no }
                 }
-                2372 = { 
+                2372 = {
                     secede_province = THIS
                     add_core = THIS
                     life_rating = 20
@@ -385,19 +385,19 @@ political_decisions = {
         }
 
         effect = {
-            random_owned = { 
-                limit = { owner = { primary_culture = platinean } } 
-                owner = { 
+            random_owned = {
+                limit = { owner = { primary_culture = platinean } }
+                owner = {
                     set_global_flag = falklands_are_the_malvinas
-                    2131 = { change_province_name = "Islas Malvinas" } 
-                } 
+                    2131 = { change_province_name = "Islas Malvinas" }
+                }
             }
-            random_owned = { 
-                limit = { owner = { primary_culture = british } } 
-                owner = { 
+            random_owned = {
+                limit = { owner = { primary_culture = british } }
+                owner = {
                     clr_global_flag = falklands_are_the_malvinas
-                    2131 = { change_province_name = "Falkland Islands" } 
-                } 
+                    2131 = { change_province_name = "Falkland Islands" }
+                }
             }
         }
         ai_will_do = { factor = 1 }
@@ -561,7 +561,7 @@ political_decisions = {
                     limit = { is_core = CRT }
                     secede_province = ENT
                     add_core = ENT
-                } 
+                }
             }
             CRT = { all_core = { remove_core = CRT } }
         }

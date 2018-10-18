@@ -88,7 +88,7 @@ party = {
     trade_policy = free_trade
     religious_policy = pro_atheism
     citizenship_policy = full_citizenship
-    war_policy = pacifism 
+    war_policy = pacifism
 }
 
 party = {
@@ -111,7 +111,7 @@ unit_names = {
         "Mieszko I" "Boleslaw I Chrobry" "Kazimierz II Wielki" "Wladyslaw II Jagiello" "Henryk Walezy" "Stefan Batory" "Jan III Sobieski" "Stanislaw I Leszczynski" "Stanislaw II Poniatowski"
     }
     ironclad = {
-         Rzeczpospolita "Krolestwo Polskie" "Wielke Ksiestwo Litewskie" "Jan Zamoyski" "Zlota Wolnosc" Konfedercja "Ksiestwo Warszawskie" "Piotr Wysocki" 
+         Rzeczpospolita "Krolestwo Polskie" "Wielke Ksiestwo Litewskie" "Jan Zamoyski" "Zlota Wolnosc" Konfedercja "Ksiestwo Warszawskie" "Piotr Wysocki"
     }
     manowar = {
 

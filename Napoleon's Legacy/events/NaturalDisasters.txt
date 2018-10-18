@@ -312,7 +312,7 @@ country_event = {
             }
         }
         any_owned = {
-            limit = { 
+            limit = {
                 OR = {
                     province_id = 763
                     province_id = 759
@@ -329,22 +329,22 @@ country_event = {
 #    id = 21527
 #    title = "EVTNAME21527"
 #    desc = "EVTDESC21527"
-#    
+#
 #    allow_multiple_instances = no
-#    
+#
 #    trigger = {
 #        AND = {
 #            province_id = 843
 #            #year = 1881
 #            #NOT = { year = 1883 }
 #            NOT = { has_province_flag = earthquake_happened }
-#        }    
+#        }
 #    }
-#    
+#
 #    mean_time_to_happen = {
 #        days = 6
 #    }
-#    
+#
 #    option = {
 #        name = "EVTOPTA21520"
 #        set_province_flag = earthquake_happened

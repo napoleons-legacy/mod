@@ -1,6 +1,6 @@
-#Taiwan Region (2980000) 
-#under the rule of China in 1836  
-#Tainan (1452000/363000 POPS) #now part of Taiwan   
+#Taiwan Region (2980000)
+#under the rule of China in 1836
+#Tainan (1452000/363000 POPS) #now part of Taiwan
 1485 = {
     aristocrats = {
         culture = nanfaren
@@ -30,7 +30,7 @@
         culture = nanfaren
         religion = mahayana
         size = 121225
-    }    
+    }
 
     slaves = {
         culture = nanfaren
@@ -74,7 +74,7 @@
         size = 165000
     }
 }
-#Taitung (67k - 268k) #now part of Taiwan  
+#Taitung (67k - 268k) #now part of Taiwan
 2562 = {
     farmers = {
         culture = asian_minor

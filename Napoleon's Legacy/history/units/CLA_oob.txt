@@ -36,10 +36,10 @@ DAH = {
 
 army = {
     name = "Royal army of Calabar"
-    location = 1934    
+    location = 1934
 regiment = {
-        name= "Calabar Warriors"    
+        name= "Calabar Warriors"
         type = irregular
-        home = 1934    
+        home = 1934
         }
 }
