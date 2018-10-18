@@ -1,118 +1,118 @@
 #North America
 TEX = {
-	value = 125		#relation
-	level = 2		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 125        #relation
+    level = 2        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 MEX = {
-	value = 100		#relation
-	level = 2		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 2        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 UCA = {
-	value = 100		#relation
-	level = 3		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 3        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 HUD = {
-	value = 50		#relation
-	level = 2		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 5
+    value = 50        #relation
+    level = 2        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 5
 }
 
 #South America
 ECU = {
-	value = 0		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 0        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 PEU = {
-	value = 100		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 BOL = {
-	value = 100		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 PBC = {
-	value = 100		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 CHL = {
-	value = 100		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 CLM = {
-	value = 100		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 BRZ = {
-	value = 100		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 REI = {
-	value = 50		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 50        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 URU = {
-	value = 75		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 75        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 PRG = {
-	value = -400	#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -400    #relation
+    level = 0        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 CRT = {
-	value = -200		#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -200        #relation
+    level = 0        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 LOS = {
-	value = -200		#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -200        #relation
+    level = 0        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 SBA = {
-	value = -200		#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -200        #relation
+    level = 0        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 ENT = {
-	value = -200		#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -200        #relation
+    level = 0        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 RGS = {
-	value = -200		#relation
-	level = 0		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -200        #relation
+    level = 0        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 ARC = {
-	value = -50		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -50        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 VNZ = {
-	value = 0	#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 0    #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 #Other GP's
 BRI = { value = 50 }
@@ -125,37 +125,37 @@ SPA = { value = -25 }
 
 #Other
 TKG = {
-	value = 0
-	level = 3
-	influence_value = 25
+    value = 0
+    level = 3
+    influence_value = 25
 }
 
 MOR = {
-	value = 0
-	level = 0
-	influence_value = 0
+    value = 0
+    level = 0
+    influence_value = 0
 }
 
 DEN = {
-	value = 200
+    value = 200
 }
 
 QNG ={
-	value = -10
-	level = 0
-	influence_value = 0
+    value = -10
+    level = 0
+    influence_value = 0
 }
 
 BAH ={
-	value = -25
-	level = 0
-	influence_value = 0
+    value = -25
+    level = 0
+    influence_value = 0
 }
 
 PNB ={
-	value = -25
-	level = 0
-	influence_value = 0
+    value = -25
+    level = 0
+    influence_value = 0
 }
 
 NEN = {
@@ -169,135 +169,135 @@ CAN = {
 #African Uncivs
 
 leader = {
-	name = "Winfield Scott"
-	date = 1836.1.1
-	type = land
-	personality = steadfast
-	background = school_of_firepower
-	prestige = 0.3
+    name = "Winfield Scott"
+    date = 1836.1.1
+    type = land
+    personality = steadfast
+    background = school_of_firepower
+    prestige = 0.3
 }
 
 leader = {
-	name = "Zachary Taylor"
-	date = 1836.1.1
-	type = land
-	personality = intuitive
-	background = school_of_offense
-	prestige = 0.1
+    name = "Zachary Taylor"
+    date = 1836.1.1
+    type = land
+    personality = intuitive
+    background = school_of_offense
+    prestige = 0.1
 }
 
 leader = {
-	name = "Thomas Jesup"
-	date = 1836.1.1
-	type = land
-	personality = meticulous
-	background = toady
-	prestige = 0.1
+    name = "Thomas Jesup"
+    date = 1836.1.1
+    type = land
+    personality = meticulous
+    background = toady
+    prestige = 0.1
 }
 
 leader = {
-	name = "Edmund P. Gaines"
-	date = 1828.1.1
-	type = land
-	personality = soldierly
-	background = drillmaster
-	prestige = 0.1
+    name = "Edmund P. Gaines"
+    date = 1828.1.1
+    type = land
+    personality = soldierly
+    background = drillmaster
+    prestige = 0.1
 }
 
 leader = {
-	name = "Alexander Macomb"
-	date = 1812.1.1
-	type = land
-	personality = heroic
-	background = engineer
-	prestige = 0.3
+    name = "Alexander Macomb"
+    date = 1812.1.1
+    type = land
+    personality = heroic
+    background = engineer
+    prestige = 0.3
 }
 
 leader = {
-	name = "Isaac Hull"
-	date = 1810.1.1
-	type = sea
-	personality = skilled
-	background = elderly
-	prestige = 0.2
+    name = "Isaac Hull"
+    date = 1810.1.1
+    type = sea
+    personality = skilled
+    background = elderly
+    prestige = 0.2
 }
 
 leader = {
-	name = "William B. Shubrick"
-	date = 1836.1.1
-	type = sea
-	personality = efficient
-	background = school_of_offense
-	prestige = 0.1
+    name = "William B. Shubrick"
+    date = 1836.1.1
+    type = sea
+    personality = efficient
+    background = school_of_offense
+    prestige = 0.1
 }
 
 leader = {
-	name = "James Biddle"
-	date = 1830.1.1
-	type = sea
-	personality = tactful
-	background = diplomat
-	prestige = 0.1
+    name = "James Biddle"
+    date = 1830.1.1
+    type = sea
+    personality = tactful
+    background = diplomat
+    prestige = 0.1
 }
 
 leader = {
-	name = "Matthew C. Perry"
-	date = 1836.1.1
-	type = sea
-	personality = openminded
-	background = war_college
-	prestige = 0.1
+    name = "Matthew C. Perry"
+    date = 1836.1.1
+    type = sea
+    personality = openminded
+    background = war_college
+    prestige = 0.1
 }
 
 army = {
-	name = "US Dragoons"
-	location = 199
-	regiment = {
-		name= "1st Cavalry Regiment"
-		type = dragoon
-		home = 223
-	}
+    name = "US Dragoons"
+    location = 199
+    regiment = {
+        name= "1st Cavalry Regiment"
+        type = dragoon
+        home = 223
+    }
 
-	regiment = {
-		name= "2nd Cavalry Regiment"
-		type = dragoon
-		home = 241
-	}
+    regiment = {
+        name= "2nd Cavalry Regiment"
+        type = dragoon
+        home = 241
+    }
 
-	regiment = {
-		name= "3rd Cavalry Regiment"
-		type = dragoon
-		home = 205
-	}
+    regiment = {
+        name= "3rd Cavalry Regiment"
+        type = dragoon
+        home = 205
+    }
 
 }
 
 army = {
-	name = "Army of the South"
-	location = 220
-	regiment = {
-		name= "1st Regiment of Infantry"
-		type = infantry
-		home = 211
-	}
+    name = "Army of the South"
+    location = 220
+    regiment = {
+        name= "1st Regiment of Infantry"
+        type = infantry
+        home = 211
+    }
 
-	regiment = {
-		name= "2nd Regiment of Infantry"
-		type = infantry
-		home = 206
-	}
+    regiment = {
+        name= "2nd Regiment of Infantry"
+        type = infantry
+        home = 206
+    }
 
-	regiment = {
-		name= "3rd Regiment of Infantry"
-		type = infantry
-		home = 188
-	}
+    regiment = {
+        name= "3rd Regiment of Infantry"
+        type = infantry
+        home = 188
+    }
 
-	regiment = {
-		name= "1st Regiment of Artillery"
-		type = artillery
-		home = 195
-	}
+    regiment = {
+        name= "1st Regiment of Artillery"
+        type = artillery
+        home = 195
+    }
 
 }
 

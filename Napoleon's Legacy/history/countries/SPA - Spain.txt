@@ -34,7 +34,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -42,20 +43,20 @@ set_country_flag = catholic_country
 ruling_party = SPA_conservative
 last_election = 1834.1.1
 upper_house = {
-	fascist = 0
-	liberal = 35
-	conservative = 60
-	reactionary = 5
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 35
+    conservative = 60
+    reactionary = 5
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 decision = literacy_SPA
 
 govt_flag = {
-	government = presidential_dictatorship
-	flag = theocracy
+    government = presidential_dictatorship
+    flag = theocracy
 }
 
 # Technologies
@@ -94,9 +95,9 @@ nonstate_consciousness = 1
 oob = "SPA_oob.txt"
 
 1837.1.1 = {
-	decision = confiscations_of_mendizabal
+    decision = confiscations_of_mendizabal
 }
 
 1844.5.13 = {
-	decision = establish_la_guardia_civil
+    decision = establish_la_guardia_civil
 }

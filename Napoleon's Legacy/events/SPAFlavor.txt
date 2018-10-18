@@ -9,7 +9,7 @@ country_event = {
     trigger = {
         tag = SPA
         year = 1837
-		NOT = { year = 1840 }
+        NOT = { year = 1840 }
     }
 
     fire_only_once = yes
@@ -274,16 +274,16 @@ country_event = {
 country_event = {
 
     id = 37707
-	title = "EVTNAME37707"
-	desc = "EVTDESC37707"
-	picture = "charity_home_spain"
+    title = "EVTNAME37707"
+    desc = "EVTDESC37707"
+    picture = "charity_home_spain"
 
     trigger = {
         tag = SPA
         year = 1854
         government = hms_government
-		NOT = { year = 1858 }
-		NOT = { money = 30000 }
+        NOT = { year = 1858 }
+        NOT = { money = 30000 }
     }
 
     fire_only_once = yes
@@ -303,25 +303,25 @@ country_event = {
         }
     }
 
-	option = {
-		name = "EVTOPTA37707"
-		treasury = 10000
-		farmers = { militancy = 2 consciousness = 2 }
-	}
+    option = {
+        name = "EVTOPTA37707"
+        treasury = 10000
+        farmers = { militancy = 2 consciousness = 2 }
+    }
 
-	option = {
-		name = "EVTOPTB37707"
-		aristocrats = { scaled_militancy = { factor = 2 ideology = conservative } }
-		aristocrats = { scaled_militancy = { factor = 3 ideology = reactionary } }
-		aristocrats = { scaled_consciousness = { factor = 2 ideology = conservative } }
-		aristocrats = { scaled_consciousness = { factor = 3 ideology = reactionary } }
-	}
+    option = {
+        name = "EVTOPTB37707"
+        aristocrats = { scaled_militancy = { factor = 2 ideology = conservative } }
+        aristocrats = { scaled_militancy = { factor = 3 ideology = reactionary } }
+        aristocrats = { scaled_consciousness = { factor = 2 ideology = conservative } }
+        aristocrats = { scaled_consciousness = { factor = 3 ideology = reactionary } }
+    }
 
-	option = {
-		name = "EVTOPTC37707"
-		treasury = 10000
-		aristocrats = { militancy = 3 consciousness = 4 money = -100 }
-		capitalists = { militancy = 3 consciousness = 4 money = -100 }
+    option = {
+        name = "EVTOPTC37707"
+        treasury = 10000
+        aristocrats = { militancy = 3 consciousness = 4 money = -100 }
+        capitalists = { militancy = 3 consciousness = 4 money = -100 }
     }
 }
 
@@ -1528,860 +1528,860 @@ country_event = {
 
 #events regarding the Chincha Islands War
 country_event = {
-	id = 97150
-	title = "EVTNAME97150" #The Talamb� Incident
-	desc = "EVTDESC97150"
-	picture = "arrested"
+    id = 97150
+    title = "EVTNAME97150" #The Talamb� Incident
+    desc = "EVTDESC97150"
+    picture = "arrested"
 
-	trigger = {
-		capital_scope = { continent = south_america }
-		owns = 2297
-		war = no
-		is_disarmed = no
-		is_vassal = no
-		year = 1863
-		NOT = { has_global_flag = talambo_incident_happened }
-		SPA = {
-			OR = {
-				exists = no
-				AND = {
-					war = no
-					is_greater_power = yes
-					OR = {
-						government = absolute_monarchy
-						government = prussian_constitutionalism
-						government = hms_government
-					}
-				}
-			}
-		}
-	}
+    trigger = {
+        capital_scope = { continent = south_america }
+        owns = 2297
+        war = no
+        is_disarmed = no
+        is_vassal = no
+        year = 1863
+        NOT = { has_global_flag = talambo_incident_happened }
+        SPA = {
+            OR = {
+                exists = no
+                AND = {
+                    war = no
+                    is_greater_power = yes
+                    OR = {
+                        government = absolute_monarchy
+                        government = prussian_constitutionalism
+                        government = hms_government
+                    }
+                }
+            }
+        }
+    }
 
-	mean_time_to_happen = {
-		months = 12
-	}
+    mean_time_to_happen = {
+        months = 12
+    }
 
-	immediate = {
-		set_global_flag = talambo_incident_happened
-	}
+    immediate = {
+        set_global_flag = talambo_incident_happened
+    }
 
-	option = {
-		name = "EVT97150OPTA"
-		random_country = {
-			limit = {
+    option = {
+        name = "EVT97150OPTA"
+        random_country = {
+            limit = {
                 tag = SPA
-				exists = yes
-			}
-			country_event = 97151
-		}
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = 6
-		}
-		ai_chance = {
-			factor = 5
-		}
-	}
+                exists = yes
+            }
+            country_event = 97151
+        }
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            militancy = 6
+        }
+        ai_chance = {
+            factor = 5
+        }
+    }
 
-	option = {
-		name = "EVT97150OPTB"
-		random_country = {
-			limit = {
+    option = {
+        name = "EVT97150OPTB"
+        random_country = {
+            limit = {
                 tag = SPA
-				exists = yes
-			}
-			country_event = 97152
-		}
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = -3
-			dominant_issue = {
-				factor = 0.10
-				value = pro_military
-			}
-		}
-		ai_chance = {
-			factor = 95
-		}
-	}
+                exists = yes
+            }
+            country_event = 97152
+        }
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            militancy = -3
+            dominant_issue = {
+                factor = 0.10
+                value = pro_military
+            }
+        }
+        ai_chance = {
+            factor = 95
+        }
+    }
 }
 
 country_event = {
-	id = 97151
-	title = "EVTNAME97150" #The Talamb� Incident - Peru Apologizes
-	desc = "EVTDESC97151"
-	news = yes
-	news_desc_long = "EVTDESC97151_NEWS_LONG"
-	news_desc_medium = "EVTDESC97151_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC97151_NEWS_SHORT"
-	picture = "arrested"
+    id = 97151
+    title = "EVTNAME97150" #The Talamb� Incident - Peru Apologizes
+    desc = "EVTDESC97151"
+    news = yes
+    news_desc_long = "EVTDESC97151_NEWS_LONG"
+    news_desc_medium = "EVTDESC97151_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC97151_NEWS_SHORT"
+    picture = "arrested"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = "EVT97151OPTA"
-		prestige = 5
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			consciousness = 2
-			dominant_issue = {
-				factor = 0.05
-				value = pacifism
-			}
-		}
-		ai_chance = {
-			factor = 0.95
-		}
-	}
+    option = {
+        name = "EVT97151OPTA"
+        prestige = 5
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            consciousness = 2
+            dominant_issue = {
+                factor = 0.05
+                value = pacifism
+            }
+        }
+        ai_chance = {
+            factor = 0.95
+        }
+    }
 
-	option = {
-		name = "EVT97151OPTB"
-		set_country_flag = restore_the_spanish_empire
-		prestige = -10
-		diplomatic_influence = { who = FROM value = -200 }
-		FROM = { set_country_flag = resisting_spanish_rule }
-		any_country = {
-			limit = {
-				OR = {
-					primary_culture = north_andean
-					primary_culture = south_andean
-					primary_culture = platinean
-				}
-			}
-			set_country_flag = resisting_spanish_rule
-			relation = { who = FROM value = -100 }
-			relation = { who = THIS value = 50 }
-		}
-		war = {
-			target = FROM
-			attacker_goal = {
-				casus_belli = make_puppet
-			}
-		}
-		ai_chance = {
-			factor = 0.05
-		}
-	}
+    option = {
+        name = "EVT97151OPTB"
+        set_country_flag = restore_the_spanish_empire
+        prestige = -10
+        diplomatic_influence = { who = FROM value = -200 }
+        FROM = { set_country_flag = resisting_spanish_rule }
+        any_country = {
+            limit = {
+                OR = {
+                    primary_culture = north_andean
+                    primary_culture = south_andean
+                    primary_culture = platinean
+                }
+            }
+            set_country_flag = resisting_spanish_rule
+            relation = { who = FROM value = -100 }
+            relation = { who = THIS value = 50 }
+        }
+        war = {
+            target = FROM
+            attacker_goal = {
+                casus_belli = make_puppet
+            }
+        }
+        ai_chance = {
+            factor = 0.05
+        }
+    }
 }
 
 country_event = {
-	id = 97152
-	title = "EVTNAME97150" #The Talamb� Incident - Peru Refuses to Apologize
-	desc = "EVTDESC97152"
-	news = yes
-	news_desc_long = "EVTDESC97152_NEWS_LONG"
-	news_desc_medium = "EVTDESC97152_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC97152_NEWS_SHORT"
-	picture = "administration"
+    id = 97152
+    title = "EVTNAME97150" #The Talamb� Incident - Peru Refuses to Apologize
+    desc = "EVTDESC97152"
+    news = yes
+    news_desc_long = "EVTDESC97152_NEWS_LONG"
+    news_desc_medium = "EVTDESC97152_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC97152_NEWS_SHORT"
+    picture = "administration"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = "EVT97152OPTA"
-		prestige = -25
-		badboy = -2
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = 2
-			dominant_issue = {
-				factor = 0.05
-				value = pacifism
-			}
-		}
-		ai_chance = {
-			factor = 40
-		}
-	}
+    option = {
+        name = "EVT97152OPTA"
+        prestige = -25
+        badboy = -2
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            militancy = 2
+            dominant_issue = {
+                factor = 0.05
+                value = pacifism
+            }
+        }
+        ai_chance = {
+            factor = 40
+        }
+    }
 
-	option = {
-		name = "EVT97152OPTB"
-		set_country_flag = restore_the_spanish_empire
-		prestige = -25
-		badboy = 2
-		diplomatic_influence = { who = FROM value = -200 }
-		FROM = { set_country_flag = resisting_spanish_rule }
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			dominant_issue = {
-				factor = 0.05
-				value = jingoism
-			}
-		}
-		any_country = {
-			limit = {
-				OR = {
-					primary_culture = north_andean
-					primary_culture = south_andean
-					primary_culture = platinean
-				}
-			}
-			set_country_flag = resisting_spanish_rule
-			relation = { who = FROM value = -100 }
-			relation = { who = THIS value = 50 }
-		}
-		casus_belli = {
-			target = FROM
-			type = make_puppet
-			months = 30
-		}
-		ai_chance = { factor = 60 }
-	}
+    option = {
+        name = "EVT97152OPTB"
+        set_country_flag = restore_the_spanish_empire
+        prestige = -25
+        badboy = 2
+        diplomatic_influence = { who = FROM value = -200 }
+        FROM = { set_country_flag = resisting_spanish_rule }
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            dominant_issue = {
+                factor = 0.05
+                value = jingoism
+            }
+        }
+        any_country = {
+            limit = {
+                OR = {
+                    primary_culture = north_andean
+                    primary_culture = south_andean
+                    primary_culture = platinean
+                }
+            }
+            set_country_flag = resisting_spanish_rule
+            relation = { who = FROM value = -100 }
+            relation = { who = THIS value = 50 }
+        }
+        casus_belli = {
+            target = FROM
+            type = make_puppet
+            months = 30
+        }
+        ai_chance = { factor = 60 }
+    }
 }
 
 country_event = {
-	id = 97155
-	title = "EVTNAME97155" #Submitting to Spain
-	desc = "EVTDESC97155"
-	picture = "treaty"
+    id = 97155
+    title = "EVTNAME97155" #Submitting to Spain
+    desc = "EVTDESC97155"
+    picture = "treaty"
 
-	trigger = {
-		has_country_flag = resisting_spanish_rule
-		war = no
+    trigger = {
+        has_country_flag = resisting_spanish_rule
+        war = no
         vassal_of = SPA
-		NOT = { has_country_flag = submitting_to_the_spanish }
-	}
+        NOT = { has_country_flag = submitting_to_the_spanish }
+    }
 
-	mean_time_to_happen = {
-		days = 3
-	}
+    mean_time_to_happen = {
+        days = 3
+    }
 
-	immediate = {
-		set_country_flag = submitting_to_the_spanish
-	}
+    immediate = {
+        set_country_flag = submitting_to_the_spanish
+    }
 
-	option = {
-		name = "EVT97155OPTA"
-		clr_country_flag = resisting_spanish_rule
-		prestige = -10
-		random_country = {
-			limit = { has_country_flag = restore_the_spanish_empire }
-			country_event = 97156
-		}
-	}
+    option = {
+        name = "EVT97155OPTA"
+        clr_country_flag = resisting_spanish_rule
+        prestige = -10
+        random_country = {
+            limit = { has_country_flag = restore_the_spanish_empire }
+            country_event = 97156
+        }
+    }
 }
 
 country_event = {
-	id = 97156
-	title = "EVTNAME97156" #Peru Submits
-	desc = "EVTDESC97156"
-	picture = "treaty"
+    id = 97156
+    title = "EVTNAME97156" #Peru Submits
+    desc = "EVTDESC97156"
+    picture = "treaty"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = "EVT97156OPTA"
-		clr_country_flag = restore_the_spanish_empire
-		release_vassal = FROM
-		random_country = {
-			limit = { is_sphere_leader_of = FROM }
-			diplomatic_influence = { who = FROM value = -200 }
-		}
-		relation = { who = FROM value = 100 }
-		diplomatic_influence = { who = FROM value = 200 }
-		ai_chance = {
-			factor = 25
-		}
-	}
+    option = {
+        name = "EVT97156OPTA"
+        clr_country_flag = restore_the_spanish_empire
+        release_vassal = FROM
+        random_country = {
+            limit = { is_sphere_leader_of = FROM }
+            diplomatic_influence = { who = FROM value = -200 }
+        }
+        relation = { who = FROM value = 100 }
+        diplomatic_influence = { who = FROM value = 200 }
+        ai_chance = {
+            factor = 25
+        }
+    }
 
-	option = {
-		name = "EVT97156OPTB"
-		prestige = 10
-		random_country = {
-			limit = { is_sphere_leader_of = FROM }
-			diplomatic_influence = { who = FROM value = -200 }
-		}
-		relation = { who = FROM value = 200 }
-		diplomatic_influence = { who = FROM value = 400 }
-		ai_chance = {
-			factor = 75
-		}
-	}
+    option = {
+        name = "EVT97156OPTB"
+        prestige = 10
+        random_country = {
+            limit = { is_sphere_leader_of = FROM }
+            diplomatic_influence = { who = FROM value = -200 }
+        }
+        relation = { who = FROM value = 200 }
+        diplomatic_influence = { who = FROM value = 400 }
+        ai_chance = {
+            factor = 75
+        }
+    }
 }
 
 country_event = {
-	id = 97160
-	title = "EVTNAME97160" #The Return of the Imperialists
-	desc = "EVTDESC97160"
-	picture = "administration"
+    id = 97160
+    title = "EVTNAME97160" #The Return of the Imperialists
+    desc = "EVTDESC97160"
+    picture = "administration"
 
-	trigger = {
-		has_country_flag = resisting_spanish_rule
-		war = no
-		NOT = { any_core = { country_units_in_province = REB } }
-		NOT = { has_country_flag = protested_the_spanish }
-		any_neighbor_country = {
-			has_country_flag = resisting_spanish_rule
+    trigger = {
+        has_country_flag = resisting_spanish_rule
+        war = no
+        NOT = { any_core = { country_units_in_province = REB } }
+        NOT = { has_country_flag = protested_the_spanish }
+        any_neighbor_country = {
+            has_country_flag = resisting_spanish_rule
             war_with = SPA
-		}
-	}
+        }
+    }
 
-	mean_time_to_happen = {
-		months = 1
-	}
+    mean_time_to_happen = {
+        months = 1
+    }
 
-	immediate = {
-		set_country_flag = protested_the_spanish
-	}
+    immediate = {
+        set_country_flag = protested_the_spanish
+    }
 
-	option = {
-		name = "EVT97160OPTA"
-		prestige = -5
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = 3
-			dominant_issue = {
-				factor = 0.05
-				value = pacifism
-			}
-		}
-		any_neighbor_country = {
-			limit = { has_country_flag = resisting_spanish_rule }
-			relation = { who = THIS value = -50 }
-		}
-		ai_chance = {
-			factor = 25
-		}
-	}
+    option = {
+        name = "EVT97160OPTA"
+        prestige = -5
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            militancy = 3
+            dominant_issue = {
+                factor = 0.05
+                value = pacifism
+            }
+        }
+        any_neighbor_country = {
+            limit = { has_country_flag = resisting_spanish_rule }
+            relation = { who = THIS value = -50 }
+        }
+        ai_chance = {
+            factor = 25
+        }
+    }
 
-	option = {
-		name = "EVT97160OPTB"
-		prestige = 5
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = -3
-			dominant_issue = {
-				factor = 0.10
-				value = pro_military
-			}
-		}
-		any_neighbor_country = {
-			limit = { has_country_flag = resisting_spanish_rule }
-			relation = { who = THIS value = 50 }
-		}
-		random_country = {
-			limit = { has_country_flag = restore_the_spanish_empire }
-			country_event = 97161
-		}
-		ai_chance = {
-			factor = 75
-		}
-	}
+    option = {
+        name = "EVT97160OPTB"
+        prestige = 5
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            militancy = -3
+            dominant_issue = {
+                factor = 0.10
+                value = pro_military
+            }
+        }
+        any_neighbor_country = {
+            limit = { has_country_flag = resisting_spanish_rule }
+            relation = { who = THIS value = 50 }
+        }
+        random_country = {
+            limit = { has_country_flag = restore_the_spanish_empire }
+            country_event = 97161
+        }
+        ai_chance = {
+            factor = 75
+        }
+    }
 }
 
 country_event = {
-	id = 97161
-	title = "EVTNAME97161" #Protest to Spain
-	desc = "EVTDESC97161"
-	picture = "administration"
+    id = 97161
+    title = "EVTNAME97161" #Protest to Spain
+    desc = "EVTDESC97161"
+    picture = "administration"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = "EVT97161OPTA" #So be it.
-		diplomatic_influence = { who = FROM value = -200 }
-		relation = { who = FROM value = -200 }
-		casus_belli = {
-			target = FROM
-			type = make_puppet
-			months = 120
-		}
-	}
+    option = {
+        name = "EVT97161OPTA" #So be it.
+        diplomatic_influence = { who = FROM value = -200 }
+        relation = { who = FROM value = -200 }
+        casus_belli = {
+            target = FROM
+            type = make_puppet
+            months = 120
+        }
+    }
 }
 
 country_event = {
-	id = 97165
-	title = "EVTNAME97165" #Appeal to America?
-	desc = "EVTDESC97165"
-	picture = "administration"
+    id = 97165
+    title = "EVTNAME97165" #Appeal to America?
+    desc = "EVTDESC97165"
+    picture = "administration"
 
-	trigger = {
-		has_country_flag = resisting_spanish_rule
-		OR = {
-			war = no
-			war_with = SPA
-		}
-		OR = {
-			any_neighbor_country = {
-				OR = {
-					vassal_of = SPA
-					tag = SPA
-				}
-			}
-			AND = {
+    trigger = {
+        has_country_flag = resisting_spanish_rule
+        OR = {
+            war = no
+            war_with = SPA
+        }
+        OR = {
+            any_neighbor_country = {
+                OR = {
+                    vassal_of = SPA
+                    tag = SPA
+                }
+            }
+            AND = {
                 SPA = { has_country_flag = restore_the_spanish_empire }
                 war_with = SPA
-			}
-		}
-		NOT = { has_country_flag = appealed_to_americans }
-		USA = {
-			war = no
-			is_greater_power = yes
-			relation = { who = THIS value = 0 }
-			NOT = {
-				alliance_with = THIS
-				is_sphere_leader_of = THIS
-				truce_with = THIS
-			}
-		}
-	}
+            }
+        }
+        NOT = { has_country_flag = appealed_to_americans }
+        USA = {
+            war = no
+            is_greater_power = yes
+            relation = { who = THIS value = 0 }
+            NOT = {
+                alliance_with = THIS
+                is_sphere_leader_of = THIS
+                truce_with = THIS
+            }
+        }
+    }
 
-	mean_time_to_happen = {
-		months = 6
-		modifier = {
-			factor = 0.1
-			war = yes
-		}
-	}
+    mean_time_to_happen = {
+        months = 6
+        modifier = {
+            factor = 0.1
+            war = yes
+        }
+    }
 
-	immediate = {
-		set_country_flag = appealed_to_americans
-	}
+    immediate = {
+        set_country_flag = appealed_to_americans
+    }
 
-	option = {
-		name = "EVT97165OPTA"
-		prestige = 5
-		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = -3
-			dominant_issue = {
-				factor = 0.10
-				value = pro_military
-			}
-		}
-		ai_chance = {
-			factor = 25
-		}
-	}
+    option = {
+        name = "EVT97165OPTA"
+        prestige = 5
+        any_pop = {
+            limit = { is_primary_culture = yes }
+            militancy = -3
+            dominant_issue = {
+                factor = 0.10
+                value = pro_military
+            }
+        }
+        ai_chance = {
+            factor = 25
+        }
+    }
 
-	option = {
-		name = "EVT97165OPTB"
-		prestige = -5
-		USA = { country_event = 97166 }
-		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 0.5
-				war = yes
-				NOT = {
-					any_greater_power = { war_with = THIS }
-				}
-			}
-		}
-	}
+    option = {
+        name = "EVT97165OPTB"
+        prestige = -5
+        USA = { country_event = 97166 }
+        ai_chance = {
+            factor = 75
+            modifier = {
+                factor = 0.5
+                war = yes
+                NOT = {
+                    any_greater_power = { war_with = THIS }
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = 97166
-	title = "EVTNAME97166" #Request for Aid
-	desc = "EVTDESC97166"
-	picture = "treaty"
+    id = 97166
+    title = "EVTNAME97166" #Request for Aid
+    desc = "EVTDESC97166"
+    picture = "treaty"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = "EVT97166OPTA"
-		prestige = -10
-		relation = { who = FROM value = -50 }
-		diplomatic_influence = { who = FROM value = -50 }
-		ai_chance = {
-			factor = 10
-		}
-	}
+    option = {
+        name = "EVT97166OPTA"
+        prestige = -10
+        relation = { who = FROM value = -50 }
+        diplomatic_influence = { who = FROM value = -50 }
+        ai_chance = {
+            factor = 10
+        }
+    }
 
-	option = {
-		name = "EVT97166OPTB"
-		create_alliance = FROM
-		relation = { who = FROM value = 200 }
-		random_country = {
-			limit = {
-				is_sphere_leader_of = FROM
-				NOT = { tag = THIS }
-			}
-			diplomatic_influence = { who = FROM value = -100 }
-			relation = { who = THIS value = -50 }
-		}
-		diplomatic_influence = { who = FROM value = 200 }
-		random_country = {
-			limit = {
-				tag = SPA
-				has_country_flag = restore_the_spanish_empire
-				is_greater_power = no
-			}
-			THIS = {
-				diplomatic_influence = { who = SPA value = -100 }
-			}
-		}
-		random_country = {
-			limit = { has_country_flag = restore_the_spanish_empire }
-			leave_alliance = THIS
-			relation = { who = THIS value = -100 }
-			add_casus_belli = {
-				target = THIS
-				type = free_peoples
-				months = 24
-			}
-			add_casus_belli = {
-				target = THIS
-				type = release_puppet
-				months = 24
-			}
-		}
-		ai_chance = {
-			factor = 90
-		}
-	}
+    option = {
+        name = "EVT97166OPTB"
+        create_alliance = FROM
+        relation = { who = FROM value = 200 }
+        random_country = {
+            limit = {
+                is_sphere_leader_of = FROM
+                NOT = { tag = THIS }
+            }
+            diplomatic_influence = { who = FROM value = -100 }
+            relation = { who = THIS value = -50 }
+        }
+        diplomatic_influence = { who = FROM value = 200 }
+        random_country = {
+            limit = {
+                tag = SPA
+                has_country_flag = restore_the_spanish_empire
+                is_greater_power = no
+            }
+            THIS = {
+                diplomatic_influence = { who = SPA value = -100 }
+            }
+        }
+        random_country = {
+            limit = { has_country_flag = restore_the_spanish_empire }
+            leave_alliance = THIS
+            relation = { who = THIS value = -100 }
+            add_casus_belli = {
+                target = THIS
+                type = free_peoples
+                months = 24
+            }
+            add_casus_belli = {
+                target = THIS
+                type = release_puppet
+                months = 24
+            }
+        }
+        ai_chance = {
+            factor = 90
+        }
+    }
 }
 
 country_event = {
-	id = 97167
-	title = "EVTNAME97167" #Beginning of the Hispano-Moroccan War
-	desc = "EVTDESC97167"
-	picture = "spanish_moroccan_war"
+    id = 97167
+    title = "EVTNAME97167" #Beginning of the Hispano-Moroccan War
+    desc = "EVTDESC97167"
+    picture = "spanish_moroccan_war"
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	trigger = {
+    trigger = {
         tag = SPA
-		owns = 1689
-		OR = {
-			government = hms_government
-			government = absolute_monarchy
-			government = prussian_constitutionalism
-			}
-		MOR = {
-			NOT = { has_leader = "Sultan Abd al-Rahman" }
-			owns = 1695
-			exists = yes
-			ai = yes
-			civilized = no
-			}
-		NOT = {
-			truce_with = THIS
-			owns = 1695 }
-		}
+        owns = 1689
+        OR = {
+            government = hms_government
+            government = absolute_monarchy
+            government = prussian_constitutionalism
+            }
+        MOR = {
+            NOT = { has_leader = "Sultan Abd al-Rahman" }
+            owns = 1695
+            exists = yes
+            ai = yes
+            civilized = no
+            }
+        NOT = {
+            truce_with = THIS
+            owns = 1695 }
+        }
 
-	mean_time_to_happen = { days = 30 }
+    mean_time_to_happen = { days = 30 }
 
-	option = {
-		name = "EVT97167OPTA"
-		prestige = -2
-		random_country = {
-			limit = { is_sphere_leader_of = MOR }
-			diplomatic_influence = { who = MOR value = -300 }
-			relation = { who = MOR value = -300 }
-			leave_alliance = MOR
-			casus_belli = {
-				target = MOR
-				type = add_to_sphere
-				months = 120
-			}
-		}
-		MOR = { define_general = {
-				name = "Sultan Muhammad IV"
-				personality = coolminded
-				background = aristocrat
-				}
-			}
-		relation = {
-			who = MOR
-			value = -300
-			}
-		diplomatic_influence = {
-			who = MOR
-			value = -200
-		}
-		casus_belli = { target = MOR type = treaty_port_casus_belli months = 40 }
-		1689 = {
-			add_province_modifier = { name = nationalist_agitation duration = 365 }
-			any_pop = {
-				random_list = {
-						34 = { }
-						33 = { }
-						33 = { reduce_pop = 0.99 }
-					}
-				}
-			}
-		ai_chance = {
-			factor = 0.05
-			modifier = {
-				factor = 100
-				MOR = {
-				part_of_sphere = yes
-				NOT = { in_sphere = THIS }
-					}
-				}
-			}
-		}
-	option = {
-		name = "EVT97167OPTB"
-		prestige = -2
-		random_country = { limit = { is_sphere_leader_of = MOR }
-			diplomatic_influence = { who = MOR value = -300 }
-			relation = { who = MOR value = -300 }
-			leave_alliance = MOR
-			casus_belli = {
-				target = MOR
-				type = add_to_sphere
-				months = 120
-			}
-		}
-		diplomatic_influence = {
-			who = MOR
-			value = -300
-		}
-		MOR = { define_general = {
-				name = "Sultan Muhammad IV"
-				personality = coolminded
-				background = aristocrat
-				}
-			}
-		1689 = { add_province_modifier = {
-				name = nationalist_agitation
-				duration = 3650
-				}
-			any_pop = {
-				random_list = {
-					34 = { reduce_pop = 0.99 }
-					33 = { reduce_pop = 0.98 }
-					33 = { reduce_pop = 0.97 }
-				}	}
-			}
-			ai_chance = {
-			factor = 0.01
-			}
-		}
+    option = {
+        name = "EVT97167OPTA"
+        prestige = -2
+        random_country = {
+            limit = { is_sphere_leader_of = MOR }
+            diplomatic_influence = { who = MOR value = -300 }
+            relation = { who = MOR value = -300 }
+            leave_alliance = MOR
+            casus_belli = {
+                target = MOR
+                type = add_to_sphere
+                months = 120
+            }
+        }
+        MOR = { define_general = {
+                name = "Sultan Muhammad IV"
+                personality = coolminded
+                background = aristocrat
+                }
+            }
+        relation = {
+            who = MOR
+            value = -300
+            }
+        diplomatic_influence = {
+            who = MOR
+            value = -200
+        }
+        casus_belli = { target = MOR type = treaty_port_casus_belli months = 40 }
+        1689 = {
+            add_province_modifier = { name = nationalist_agitation duration = 365 }
+            any_pop = {
+                random_list = {
+                        34 = { }
+                        33 = { }
+                        33 = { reduce_pop = 0.99 }
+                    }
+                }
+            }
+        ai_chance = {
+            factor = 0.05
+            modifier = {
+                factor = 100
+                MOR = {
+                part_of_sphere = yes
+                NOT = { in_sphere = THIS }
+                    }
+                }
+            }
+        }
+    option = {
+        name = "EVT97167OPTB"
+        prestige = -2
+        random_country = { limit = { is_sphere_leader_of = MOR }
+            diplomatic_influence = { who = MOR value = -300 }
+            relation = { who = MOR value = -300 }
+            leave_alliance = MOR
+            casus_belli = {
+                target = MOR
+                type = add_to_sphere
+                months = 120
+            }
+        }
+        diplomatic_influence = {
+            who = MOR
+            value = -300
+        }
+        MOR = { define_general = {
+                name = "Sultan Muhammad IV"
+                personality = coolminded
+                background = aristocrat
+                }
+            }
+        1689 = { add_province_modifier = {
+                name = nationalist_agitation
+                duration = 3650
+                }
+            any_pop = {
+                random_list = {
+                    34 = { reduce_pop = 0.99 }
+                    33 = { reduce_pop = 0.98 }
+                    33 = { reduce_pop = 0.97 }
+                }    }
+            }
+            ai_chance = {
+            factor = 0.01
+            }
+        }
 
-	option = {
-		name = "EVT98641OPTB"
-		prestige = -2
-		random_country = { limit = { is_sphere_leader_of = MOR }
-			diplomatic_influence = { who = MOR value = -300 }
-			relation = { who = MOR value = -300 }
-			leave_alliance = MOR
-			casus_belli = {
-				target = MOR
-				type = add_to_sphere
-				months = 120
-			}
-		}
-		MOR = { define_general = {
-				name = "Sultan Muhammad IV"
-				personality = coolminded
-				background = aristocrat
-				}
-			}
-		relation = {
-			who = MOR
-			value = -300
-			}
-		diplomatic_influence = {
-			who = MOR
-			value = -300
-		}
-		 casus_belli = {
-			target = MOR
-			type = humiliate
-			months = 100
-			}
-		war = {
-			target = MOR
-				attacker_goal = { casus_belli = treaty_port_casus_belli }
-				defender_goal = {
-					casus_belli = acquire_core_state
-					state_province_id = 1689
-			}
-		 }
-		1689 = { add_province_modifier = {
-				name = nationalist_agitation
-				duration = 365
-				}
-			any_pop = {
-				random_list = {
-						34 = { }
-						33 = { }
-						33 = { reduce_pop = 0.99 }
-					}
-				}
-			}
-		ai_chance = {
-			factor = 0.94
-			modifier = {
-				factor = 0
-				MOR = {
-				part_of_sphere = yes
-				NOT = { in_sphere = THIS }
-					}
-				}
-			}
-		}
-	}
+    option = {
+        name = "EVT98641OPTB"
+        prestige = -2
+        random_country = { limit = { is_sphere_leader_of = MOR }
+            diplomatic_influence = { who = MOR value = -300 }
+            relation = { who = MOR value = -300 }
+            leave_alliance = MOR
+            casus_belli = {
+                target = MOR
+                type = add_to_sphere
+                months = 120
+            }
+        }
+        MOR = { define_general = {
+                name = "Sultan Muhammad IV"
+                personality = coolminded
+                background = aristocrat
+                }
+            }
+        relation = {
+            who = MOR
+            value = -300
+            }
+        diplomatic_influence = {
+            who = MOR
+            value = -300
+        }
+         casus_belli = {
+            target = MOR
+            type = humiliate
+            months = 100
+            }
+        war = {
+            target = MOR
+                attacker_goal = { casus_belli = treaty_port_casus_belli }
+                defender_goal = {
+                    casus_belli = acquire_core_state
+                    state_province_id = 1689
+            }
+         }
+        1689 = { add_province_modifier = {
+                name = nationalist_agitation
+                duration = 365
+                }
+            any_pop = {
+                random_list = {
+                        34 = { }
+                        33 = { }
+                        33 = { reduce_pop = 0.99 }
+                    }
+                }
+            }
+        ai_chance = {
+            factor = 0.94
+            modifier = {
+                factor = 0
+                MOR = {
+                part_of_sphere = yes
+                NOT = { in_sphere = THIS }
+                    }
+                }
+            }
+        }
+    }
 
-
-country_event = {
-	id = 971700
-	title = "EVTNAME971700" #The Moroccan Question
-	desc = "EVTDESC971700"
-	picture = "tangier_photo"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVT971700OPTA" #Agree
-		badboy = -1
-		relation = { who = FROM value = 50 }
-		FROM = { country_event = 971710 }
-		ai_chance = {
-			factor = 80
-			modifier = {
-				factor = 40
-				NOT = { relation = { who = FROM value = 0 } }
-			}
-			modifier = {
-				factor = 90
-				FROM = { is_greater_power = yes }
-			}
-
-			modifier = {
-				factor = 90
-				alliance_with = FROM
-			}
-
-			modifier = {
-				factor = 90
-				is_sphere_leader_of = FROM
-			}
-		}
-	}
-	option = {
-		name = "EVT971700OPTB"
-		relation = { who = FROM value = -150 }
-		FROM = {
-			leave_alliance = THIS
-			end_military_access = THIS
-			casus_belli = {
-				target = THIS
-				type = take_from_sphere
-				months = 36
-			}
-			casus_belli = {
-				target = THIS
-				type = humiliate
-				months = 36
-			}
-		}
-		random_country = {
-			limit = { is_greater_power = yes }
-			relation = { who = THIS value = -75 }
-			casus_belli = {
-				target = THIS
-				type = cut_down_to_size
-				months = 36
-			}
-		}
-		diplomatic_influence = { who = FROM value = -400 }
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 10
-				FROM = { is_greater_power = yes }
-				}
-			}
-		}
-	}
 
 country_event = {
-	id = 971710
-	title = "EVTNAME971710" #The Partition of Morocco
-	desc = "EVTDESC971710"
-	picture = "carlistas_en_miranda"
+    id = 971700
+    title = "EVTNAME971700" #The Moroccan Question
+    desc = "EVTDESC971700"
+    picture = "tangier_photo"
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	immediate = {
-		FROM = { inherit = MOR }
-		any_owned = { limit = { is_core = MOR NOT = { province_id = 1689 province_id = 2590 region = MOR_1696 } } secede_province = FROM }
-	}
+    option = {
+        name = "EVT971700OPTA" #Agree
+        badboy = -1
+        relation = { who = FROM value = 50 }
+        FROM = { country_event = 971710 }
+        ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 40
+                NOT = { relation = { who = FROM value = 0 } }
+            }
+            modifier = {
+                factor = 90
+                FROM = { is_greater_power = yes }
+            }
 
-	option = {
-		name = "EVT971710OPTA"
-		FROM = {
-			any_owned = {
-				limit = {
-					OR = {
-						province_id = 1686
-						province_id = 1687
-						province_id = 1688
-						province_id = 1695
-					}
-				}
-				secede_province = THIS
-			}
-			any_owned = { limit = { province_id = 1686 } secede_province = MOR }
-		}
-		1696 = { secede_province = THIS add_core = MOR any_pop = { literacy = -0.99 } }
-		1773 = { secede_province = THIS add_core = MOR any_pop = { literacy = -0.99 } }
-		1774 = { secede_province = THIS add_core = MOR any_pop = { literacy = -0.99 } }
-		MOR = {
-			civilized = yes
-			nationalvalue = nv_autocracy
-			capital = 1686
-			government = hms_government
-			prestige = -50
-			tech_school =  unciv_tech_school
-		}
-		FROM = {
-			create_vassal = MOR
-			create_alliance = MOR
-			diplomatic_influence = { who = MOR value = 400 }
-			relation = { who = MOR value = 400 }
-		}
-		diplomatic_influence = { who = MOR value = 50 }
-	}
+            modifier = {
+                factor = 90
+                alliance_with = FROM
+            }
+
+            modifier = {
+                factor = 90
+                is_sphere_leader_of = FROM
+            }
+        }
+    }
+    option = {
+        name = "EVT971700OPTB"
+        relation = { who = FROM value = -150 }
+        FROM = {
+            leave_alliance = THIS
+            end_military_access = THIS
+            casus_belli = {
+                target = THIS
+                type = take_from_sphere
+                months = 36
+            }
+            casus_belli = {
+                target = THIS
+                type = humiliate
+                months = 36
+            }
+        }
+        random_country = {
+            limit = { is_greater_power = yes }
+            relation = { who = THIS value = -75 }
+            casus_belli = {
+                target = THIS
+                type = cut_down_to_size
+                months = 36
+            }
+        }
+        diplomatic_influence = { who = FROM value = -400 }
+        ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 10
+                FROM = { is_greater_power = yes }
+                }
+            }
+        }
+    }
+
+country_event = {
+    id = 971710
+    title = "EVTNAME971710" #The Partition of Morocco
+    desc = "EVTDESC971710"
+    picture = "carlistas_en_miranda"
+
+    is_triggered_only = yes
+
+    immediate = {
+        FROM = { inherit = MOR }
+        any_owned = { limit = { is_core = MOR NOT = { province_id = 1689 province_id = 2590 region = MOR_1696 } } secede_province = FROM }
+    }
+
+    option = {
+        name = "EVT971710OPTA"
+        FROM = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        province_id = 1686
+                        province_id = 1687
+                        province_id = 1688
+                        province_id = 1695
+                    }
+                }
+                secede_province = THIS
+            }
+            any_owned = { limit = { province_id = 1686 } secede_province = MOR }
+        }
+        1696 = { secede_province = THIS add_core = MOR any_pop = { literacy = -0.99 } }
+        1773 = { secede_province = THIS add_core = MOR any_pop = { literacy = -0.99 } }
+        1774 = { secede_province = THIS add_core = MOR any_pop = { literacy = -0.99 } }
+        MOR = {
+            civilized = yes
+            nationalvalue = nv_autocracy
+            capital = 1686
+            government = hms_government
+            prestige = -50
+            tech_school =  unciv_tech_school
+        }
+        FROM = {
+            create_vassal = MOR
+            create_alliance = MOR
+            diplomatic_influence = { who = MOR value = 400 }
+            relation = { who = MOR value = 400 }
+        }
+        diplomatic_influence = { who = MOR value = 50 }
+    }
 }
 
 #End of the carlists/christinos
 country_event = {
-	id = 971711
-	title = "EVTNAME971711"
-	desc = "EVTDESC971711"
-	picture = "carlistas_en_miranda"
+    id = 971711
+    title = "EVTNAME971711"
+    desc = "EVTDESC971711"
+    picture = "carlistas_en_miranda"
 
-	trigger = {
-		has_country_flag = fueros_abolished
-		OR = {
-			has_global_flag = spain_glorious_revolution
-			year = 1880
-		}
-		NOT = { has_global_flag = carlists_pacified }
+    trigger = {
+        has_country_flag = fueros_abolished
+        OR = {
+            has_global_flag = spain_glorious_revolution
+            year = 1880
+        }
+        NOT = { has_global_flag = carlists_pacified }
         tag = SPA
-	}
+    }
 
-	fire_only_once = yes
-	mean_time_to_happen = { months = 6 }
+    fire_only_once = yes
+    mean_time_to_happen = { months = 6 }
 
-	option = {
-		name = "EVT971711OPTA"
-		set_global_flag = carlists_pacified
-		remove_accepted_culture = catalan
-		remove_accepted_culture = basque
-		any_owned = {
-			remove_province_modifier = carlist_sympathies
-			remove_province_modifier = christino_sympathies
-			remove_province_modifier = rebel_cell_discovered
-		}
-		any_pop = {
-			limit = { has_pop_culture = spanish }
-			militancy = -4
-		}
-		any_pop = {
-			limit = {
-				OR = {
-					has_pop_culture = basque
-					has_pop_culture = catalan
-				}
-			}
-			consciousness = 9
-			militancy = -4
-		}
-	}
+    option = {
+        name = "EVT971711OPTA"
+        set_global_flag = carlists_pacified
+        remove_accepted_culture = catalan
+        remove_accepted_culture = basque
+        any_owned = {
+            remove_province_modifier = carlist_sympathies
+            remove_province_modifier = christino_sympathies
+            remove_province_modifier = rebel_cell_discovered
+        }
+        any_pop = {
+            limit = { has_pop_culture = spanish }
+            militancy = -4
+        }
+        any_pop = {
+            limit = {
+                OR = {
+                    has_pop_culture = basque
+                    has_pop_culture = catalan
+                }
+            }
+            consciousness = 9
+            militancy = -4
+        }
+    }
 }

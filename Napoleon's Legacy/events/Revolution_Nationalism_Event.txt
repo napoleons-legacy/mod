@@ -9,7 +9,7 @@ country_event = {
     title = "EVTNAME800100" # Funding Patriots?
     desc = "EVTDESC800100"
     picture = "recruits"
-    
+
     trigger = {
         war = no
         is_vassal = no
@@ -366,7 +366,7 @@ province_event = {
     news_desc_long = "EVTDESC97175_NEWS_LONG"
     news_desc_medium = "EVTDESC97175_NEWS_MEDIUM"
     news_desc_short = "EVTDESC97175_NEWS_SHORT"
-    
+
     trigger = {
         OR = {
             is_colonial = yes
@@ -384,11 +384,11 @@ province_event = {
         }
         NOT = { has_province_modifier = colonial_chaos }
     }
-    
+
     mean_time_to_happen = {
         months = 18
     }
-    
+
     option = {
         name = "EVT97175OPTA"
         owner = { prestige = -10 }
@@ -606,7 +606,7 @@ province_event = {
     id = 97181
     title = "EVTNAME97181" #Colonial Uprising in $STATENAME$
     desc = "EVTDESC97181"
-    
+
     trigger = {
         OR = {
             is_colonial = yes
@@ -635,11 +635,11 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 6
     }
-    
+
     option = {
         name = "EVT97181OPTA"
         owner = { prestige = -20 }
@@ -678,9 +678,9 @@ country_event = {
     id = 97182
     title = "EVTNAME97182"
     desc = "EVTDESC97182"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVTDESC97182"
         FROM = {
@@ -856,7 +856,7 @@ province_event = {
     id = 97185
     title = "EVTNAME97185"
     desc = "EVTDESC97185"
-    
+
     trigger = {
         OR = {
             is_colonial = yes
@@ -872,9 +872,9 @@ province_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = { days = 1 }
-    
+
     option = {
         name = "EVT97185OPTA"
         state_scope = {

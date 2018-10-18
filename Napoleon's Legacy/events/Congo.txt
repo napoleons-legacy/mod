@@ -73,12 +73,12 @@ country_event = {
         set_global_flag = zaire_organized
         1982 = { add_core = CNG  }
         1983 = { add_core = CNG  }
-		1985 = { add_core = CNG  secede_province = THIS any_pop = { literacy = -0.99 } }
-		BEL_1984 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
-		BEL_1987 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
-		BEL_1990 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
-		BEL_1992 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
-		BEL_1996 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
+        1985 = { add_core = CNG  secede_province = THIS any_pop = { literacy = -0.99 } }
+        BEL_1984 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
+        BEL_1987 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
+        BEL_1990 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
+        BEL_1992 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
+        BEL_1996 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
 
         any_country = {
             limit = { has_country_flag = yes_to_congo any_owned_province = { is_core = CNG } }
@@ -95,17 +95,17 @@ country_event = {
             government = absolute_monarchy
             military_reform = yes_foreign_training
             military_reform = yes_foreign_weapons
-			activate_technology = flintlock_rifles
+            activate_technology = flintlock_rifles
             military_reform = yes_foreign_officers
             military_reform = yes_foreign_artillery
-			activate_technology = bronze_muzzle_loaded_artillery
+            activate_technology = bronze_muzzle_loaded_artillery
             add_country_modifier = { name = western_presence duration = -1 }
-			tech_school = unciv_tech_school
+            tech_school = unciv_tech_school
         }
-		random_owned = { limit = { owner = { has_country_flag = catholic_country } } CNG = { religion = catholic } }
-		random_owned = { limit = { owner = { has_country_flag = protestant_country } } CNG = { religion = protestant } }
-		random_owned = { limit = { owner = { has_country_flag = orthodox_country } } CNG = { religion = orthodox } }
-		random_owned = { limit = { owner = { has_country_flag = sunni_country } } CNG = { religion = sunni } }
+        random_owned = { limit = { owner = { has_country_flag = catholic_country } } CNG = { religion = catholic } }
+        random_owned = { limit = { owner = { has_country_flag = protestant_country } } CNG = { religion = protestant } }
+        random_owned = { limit = { owner = { has_country_flag = orthodox_country } } CNG = { religion = orthodox } }
+        random_owned = { limit = { owner = { has_country_flag = sunni_country } } CNG = { religion = sunni } }
         ai_chance = { factor = 0.1 }
     }
 }
@@ -156,7 +156,7 @@ country_event = {
         badboy = -1
 
         ai_chance = {
-			factor = 0.8
+            factor = 0.8
             modifier = { factor = 1.8 is_greater_power = no is_secondary_power = no }
             modifier = { factor = 1.5 is_secondary_power = yes }
             modifier = { factor = 5 civilized = no }
@@ -176,7 +176,7 @@ country_event = {
         FROM = { casus_belli = { target = THIS type = cut_down_to_size months = 72 } }
 
         ai_chance = {
-			factor = 0.2
+            factor = 0.2
             modifier = { factor = 1.4 is_greater_power = yes }
             modifier = { factor = 1.2 is_secondary_power = yes }
             modifier = { factor = 0 civilized = no }
@@ -217,7 +217,7 @@ country_event = {
         set_variable = { which = congo_destiny value = 0 }
         CNG = {
             set_country_flag = turn_officers_in_aristocrats
-			set_country_flag = post_colonial_country
+            set_country_flag = post_colonial_country
             primary_culture = THIS
             add_accepted_culture = bakongo
             1983 = { state_scope = { any_pop = { limit = { OR = { type = officers type = aristocrats } } pop_type = labourers } } }
@@ -227,7 +227,7 @@ country_event = {
             any_pop = { limit = { type = officers OR = { is_primary_culture = yes is_accepted_culture = yes } } move_pop = 1983 }
         }
 
-		ai_chance = { factor = 0.9 }
+        ai_chance = { factor = 0.9 }
     }
 
     option = {
@@ -267,14 +267,14 @@ country_event = {
             add_province_modifier = { name = nationalist_agitation duration = 1095 }
             any_pop = { militancy = 3 }
         }
-		any_owned = { limit = { is_core = CNG } add_province_modifier = { name = the_massacre duration = 2190 } }
+        any_owned = { limit = { is_core = CNG } add_province_modifier = { name = the_massacre duration = 2190 } }
         set_global_flag = congo_free_state_over
         set_country_flag = not_congo_primary_culture
         clr_country_flag = historical_congo
         clr_country_flag = congo_master
         any_country = { clr_country_flag = yes_to_congo clr_country_flag = historical_congo clr_country_flag = congo_master }
 
-		ai_chance = { factor = 0.08 }
+        ai_chance = { factor = 0.08 }
     }
 
     option = {
@@ -287,8 +287,8 @@ country_event = {
         CNG = {
             clr_country_flag = congo_free_state_born
             add_country_modifier = { name = philantropic_work duration = 1095 }
-			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
-			any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
+            any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
+            any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
             political_reform = no_slavery
             government = hms_government
             political_reform = non_secret_ballots
@@ -305,7 +305,7 @@ country_event = {
         clr_country_flag = congo_master
         any_country = { clr_country_flag = yes_to_congo clr_country_flag = historical_congo clr_country_flag = congo_master }
 
-		ai_chance = { factor = 0.02 }
+        ai_chance = { factor = 0.02 }
     }
 
     option = {
@@ -314,13 +314,13 @@ country_event = {
         any_country = { limit = { has_country_flag = yes_to_congo } clr_country_flag = yes_to_congo }
         CNG = {
             primary_culture = THIS
-			set_country_flag = post_colonial_country
+            set_country_flag = post_colonial_country
             add_accepted_culture = bakongo
             1983 = { state_scope = { any_pop = { limit = { OR = { type = officers type = aristocrats } } pop_type = labourers } } }
             random_owned = { limit = { is_capital = yes NOT = { has_building = fort } } fort = 1 }
             clr_country_flag = congo_free_state_born
-			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
-			any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
+            any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
+            any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
             add_country_modifier = { name = philantropic_work duration = 1095 }
             political_reform = no_slavery
             government = hms_government
@@ -349,8 +349,8 @@ country_event = {
         CNG = {
             random_owned = { limit = { is_capital = yes NOT = { has_building = fort } } fort = 1 }
             clr_country_flag = congo_free_state_born
-			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
-			any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
+            any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
+            any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
             add_country_modifier = { name = philantropic_work duration = 1095 }
             political_reform = no_slavery
             government = hms_government
@@ -440,10 +440,10 @@ country_event = {
         }
         add_country_modifier = { name = the_congo_reform_association duration = 1095 }
         CNG = {
-			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 1460 } }
+            any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 1460 } }
             capital_scope = {
                 add_province_modifier = { name = congo_company duration = 1095 }
-					any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.5 }
+                    any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.5 }
                 }
                 any_owned = { any_pop = { limit = { is_primary_culture = yes type = aristocrats } money = 100 militancy = -2 } }
                 any_owned = { any_pop = { limit = { is_primary_culture = yes type = officers } money = 50 militancy = -2 } }
@@ -497,10 +497,10 @@ country_event = {
         }
         add_country_modifier = { name = the_congo_reform_association duration = 1095 }
         CNG = {
-			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 1095 } }
+            any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 1095 } }
             capital_scope = {
                 add_province_modifier = { name = congo_company duration = 365 }
-				any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.7 }
+                any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.7 }
             }
         }
         random_list = {
@@ -546,8 +546,8 @@ country_event = {
         }
         CNG = {
             add_country_modifier = { name = philantropic_work duration = 1095 }
-			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 730 } }
-			any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.8 }
+            any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 730 } }
+            any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.8 }
             any_pop = { limit = { is_primary_culture = yes } militancy = 3 }
         }
         random_list = {

@@ -107,14 +107,14 @@ country_event = {
                 value = jingoism
             }
         }
-		random_country = { limit = { exists = yes tag = PLS vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = JOR vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = LBN vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = SYR vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = ASY vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = KDS vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = CRE vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = CLC vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = PLS vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = JOR vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = LBN vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = SYR vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = ASY vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = KDS vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = CRE vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = CLC vassal_of = EGY } annex_to = EGY }
         ai_chance = {
             factor = 95
         }
@@ -283,14 +283,14 @@ country_event = {
                 value = jingoism
             }
         }
-		random_country = { limit = { exists = yes tag = PLS vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = JOR vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = LBN vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = SYR vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = ASY vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = KDS vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = CRE vassal_of = EGY } annex_to = EGY }
-		random_country = { limit = { exists = yes tag = CLC vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = PLS vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = JOR vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = LBN vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = SYR vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = ASY vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = KDS vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = CRE vassal_of = EGY } annex_to = EGY }
+        random_country = { limit = { exists = yes tag = CLC vassal_of = EGY } annex_to = EGY }
     }
 }
 
@@ -409,18 +409,18 @@ country_event = {
 
     option = {
         name = "EVT90081OPTA"
-		random_country = {
-			limit = {
-				tag = HDJ
-				ai = yes
-				OR = {
-					part_of_sphere = no
-					in_sphere = TUR
-				}
-			}
-			annex_to = THIS
-		}
-		HDJ = { all_core = { add_core = TUR } }
+        random_country = {
+            limit = {
+                tag = HDJ
+                ai = yes
+                OR = {
+                    part_of_sphere = no
+                    in_sphere = TUR
+                }
+            }
+            annex_to = THIS
+        }
+        HDJ = { all_core = { add_core = TUR } }
         set_country_flag = egypt_restricted
         random_country = {
             limit = {
@@ -478,7 +478,7 @@ country_event = {
             country_event = 90089
         }
         ai_chance = {
-			factor = 50
+            factor = 50
         }
     }
 
@@ -488,7 +488,7 @@ country_event = {
         badboy = 4
         prestige = 20
         EGY = {
-			tech_school = unciv_tech_school
+            tech_school = unciv_tech_school
             all_core = {
                 limit = { is_core = TUR }
                 remove_core = EGY
@@ -506,7 +506,7 @@ country_event = {
             }
             annex_to = THIS
         }
-		HDJ = { all_core = { add_core = TUR } }
+        HDJ = { all_core = { add_core = TUR } }
         relation = { who = RUS value = -200 }
         leave_alliance = RUS
         any_owned = {
@@ -533,13 +533,13 @@ country_event = {
             leave_alliance = TUR
         }
         ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				badboy = 0.6
+            factor = 50
+            modifier = {
+                factor = 0
+                badboy = 0.6
         }
     }
-	}
+    }
 }
 
 province_event = {
@@ -640,7 +640,7 @@ country_event = {
         name = "EVT90083OPTA"
         clr_country_flag = surrendered_to_OE
         remove_random_economic_reforms = 2
-		remove_random_military_reforms = 2
+        remove_random_military_reforms = 2
         military_reform = no_foreign_training
         military_reform = no_foreign_artillery
         add_country_modifier = {
@@ -742,7 +742,7 @@ country_event = {
             relation = { who = TUR value = 50 }
             NOT = { relation = { who = EGY  value = -50 } }
         }
-		EGY = { any_owned_province = { is_core = TUR } }
+        EGY = { any_owned_province = { is_core = TUR } }
         NOT = {
             year = 1860
             tag = TUR
@@ -767,7 +767,7 @@ country_event = {
         }
         modifier = {
             factor = 4
-			NOT = { TUR = {	national_provinces_occupied = .01 } }
+            NOT = { TUR = {    national_provinces_occupied = .01 } }
         }
         modifier = {
             factor = 2
@@ -846,7 +846,7 @@ country_event = {
         name = "EVT90085OPTB"
         set_country_flag = oriental_crisis_neutral
         prestige = -5
-		leave_alliance = TUR
+        leave_alliance = TUR
         relation = {
             who = TUR
             value = -25
@@ -1037,9 +1037,9 @@ country_event = {
             }
             annex_to = TUR
         }
-		HDJ = { all_core = { add_core = TUR } }
-		relation = { who = EGY value = 100 }
-		#diplomatic_influence = { who = EGY value = -100 }
+        HDJ = { all_core = { add_core = TUR } }
+        relation = { who = EGY value = 100 }
+        #diplomatic_influence = { who = EGY value = -100 }
         relation = { who = RUS value = -200 }
         leave_alliance = RUS
         EGY = {

@@ -84,13 +84,13 @@ nonstate_consciousness = 1
 
 ruling_party = REP_conservative
 upper_house = {
-	fascist = 0
-	liberal = 25
-	conservative = 50
-	reactionary = 25
-	anarcho_liberal = 0
-	socialist = 25
-	communist = 0
+    fascist = 0
+    liberal = 25
+    conservative = 50
+    reactionary = 25
+    anarcho_liberal = 0
+    socialist = 25
+    communist = 0
 }
 
 schools = culture_tech_school

@@ -36,7 +36,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
         }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -138,7 +138,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
 
     }
@@ -245,7 +245,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -348,7 +348,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -449,7 +449,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -555,7 +555,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -663,7 +663,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -771,7 +771,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -885,7 +885,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -994,7 +994,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1100,7 +1100,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1212,7 +1212,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1314,7 +1314,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1415,7 +1415,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1521,7 +1521,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1637,7 +1637,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1750,7 +1750,7 @@ country_event = {
             capital_scope = { continent = australia_new_zealand }
             }
 
-		NOT = { capital_scope = { continent = oceania } tag = TUR }
+        NOT = { capital_scope = { continent = oceania } tag = TUR }
         NOT = { has_country_modifier = female_suffrage }
     }
 
@@ -1906,7 +1906,7 @@ country_event = {
             limit = {
                 NOT = { tag = THIS }
                 NOT = { has_country_modifier = female_suffrage }
-				NOT = { capital_scope = { continent = oceania } tag = TUR }
+                NOT = { capital_scope = { continent = oceania } tag = TUR }
             OR = {
             capital_scope = { continent = europe }
             capital_scope = { continent = north_america }

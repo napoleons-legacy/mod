@@ -41,13 +41,13 @@ set_country_flag = catholic_country
 ruling_party = CLM_liberal
 last_election = 1832.3.10
 upper_house = {
-	fascist = 0
-	liberal = 32
-	conservative = 51
-	reactionary = 17
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 32
+    conservative = 51
+    reactionary = 17
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 decision = CLM_1836_setup

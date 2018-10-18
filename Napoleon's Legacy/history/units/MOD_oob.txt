@@ -1,49 +1,48 @@
 leader = {
-	name = "Francesco IV"
-	date = 1815.1.1
-	type = land
-	personality = arrogant
-	background = hated
-	prestige = 0.5
+    name = "Francesco IV"
+    date = 1815.1.1
+    type = land
+    personality = arrogant
+    background = hated
+    prestige = 0.5
 }
 
 army = {
-	name = "Esercito di Modena"
-	location = 726
-	regiment = {
-		name= "1. Fanteria di Linea"
-		type = infantry
-		home = 739
-	}
+    name = "Esercito di Modena"
+    location = 726
+    regiment = {
+        name= "1. Fanteria di Linea"
+        type = infantry
+        home = 739
+    }
 
-	regiment = {
-		name= "2. Fanteria di Linea"
-		type = infantry
-		home = 726
-	}
-	
-	regiment = { 
-		name = "3. Fanteria di Linea"
-		type = infantry
-		home = 729
-	}
+    regiment = {
+        name= "2. Fanteria di Linea"
+        type = infantry
+        home = 726
+    }
 
-	regiment = { 
-		name = "4. Fanteria di Linea"
-		type = infantry
-		home = 728
-	}
-	
-	regiment = { 
-		name = "5. Fanteria di Linea"
-		type = hussar
-		home = 730
-	}
-	
-	regiment = { 
-		name = "6. Fanteria di Linea"
-		type = hussar
-		home = 731
-	}
+    regiment = { 
+        name = "3. Fanteria di Linea"
+        type = infantry
+        home = 729
+    }
+
+    regiment = { 
+        name = "4. Fanteria di Linea"
+        type = infantry
+        home = 728
+    }
+
+    regiment = { 
+        name = "5. Fanteria di Linea"
+        type = hussar
+        home = 730
+    }
+
+    regiment = { 
+        name = "6. Fanteria di Linea"
+        type = hussar
+        home = 731
+    }
 }
-

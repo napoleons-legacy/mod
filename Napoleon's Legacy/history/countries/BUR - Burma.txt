@@ -38,13 +38,13 @@ set_country_flag = theravada_country
 
 ruling_party = BUR_conservative
 upper_house = {
-	fascist = 0
-	liberal = 12
-	conservative = 77
-	reactionary = 11
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 12
+    conservative = 77
+    reactionary = 11
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 

@@ -4,7 +4,7 @@ country_event = {
     title = "EVTNAME90000"
     desc = "EVTDESC90000"
     picture = "supportwar" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -21,7 +21,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -37,7 +37,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90000"
         add_country_modifier = {
@@ -53,7 +53,7 @@ country_event = {
     title = "EVTNAME90001"
     desc = "EVTDESC90001"
     picture = "Demonstration" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -70,7 +70,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -86,7 +86,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90001"
         add_country_modifier = {
@@ -102,7 +102,7 @@ country_event = {
     title = "EVTNAME90002"
     desc = "EVTDESC90002"
     picture = "Outside_influences" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -114,7 +114,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -130,7 +130,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90002"
         add_country_modifier = {
@@ -146,7 +146,7 @@ country_event = {
     title = "EVTNAME90003"
     desc = "EVTDESC90003"
     picture = "Demonstration" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -158,7 +158,7 @@ country_event = {
                 }
             }
     }
-    
+
         mean_time_to_happen = {
         months = 3
         modifier = {
@@ -174,7 +174,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90003"
         add_country_modifier = {
@@ -190,7 +190,7 @@ country_event = {
     title = "EVTNAME90004"
     desc = "EVTDESC90004"
     picture = "Opiumwar" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -202,7 +202,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -218,7 +218,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90004"
         add_country_modifier = {
@@ -234,7 +234,7 @@ country_event = {
     title = "EVTNAME90005"
     desc = "EVTDESC90005"
     picture = "SeaPower" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -246,7 +246,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -262,7 +262,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90005"
         add_country_modifier = {
@@ -278,7 +278,7 @@ country_event = {
     title = "EVTNAME90006"
     desc = "EVTDESC90006"
     picture = "native_force" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -290,7 +290,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -306,7 +306,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90006"
         add_country_modifier = {
@@ -322,7 +322,7 @@ country_event = {
     title = "EVTNAME90007"
     desc = "EVTDESC90007"
     picture = "treaty" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -334,7 +334,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -350,7 +350,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90007"
         add_country_modifier = {
@@ -366,7 +366,7 @@ country_event = {
     title = "EVTNAME90008"
     desc = "EVTDESC90008"
     picture = "threehurrahs" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -381,7 +381,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -397,7 +397,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90008"
         add_country_modifier = {
@@ -413,7 +413,7 @@ country_event = {
     title = "EVTNAME90009"
     desc = "EVTDESC90009"
     picture = "anticorn" 
-    
+
     trigger = {
         NOT = { involved_in_crisis = yes }
         constructing_cb_progress = 10 #10% progress
@@ -428,7 +428,7 @@ country_event = {
                 }
             }
     }
-    
+
     mean_time_to_happen = {
         months = 3
         modifier = {
@@ -444,7 +444,7 @@ country_event = {
             press_rights = free_press
         }
     }
-    
+
     option = {
         name = "EVTOPTA90009"
         add_country_modifier = {

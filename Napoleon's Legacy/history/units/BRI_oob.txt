@@ -1,683 +1,682 @@
 #Sphere of Influence
 
 ILY = {
-	value = 100		#relation
-	level = 4		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = 100        #relation
+    level = 4        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
       }
 
 EGY = {
-	value = 50		#relation
-	level = 3		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 25
+    value = 50        #relation
+    level = 3        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
 
 IRE = {
-	value = -50		#relation
-	level = 1		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 0
+    value = -50        #relation
+    level = 1        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
 }
 
 JOH = { 
-	value = 50
-	level = 3
+    value = 50
+    level = 3
 }
 
 NET = {
-	value = -75
-	level = 2 		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 25
+    value = -75
+    level = 2         #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 
 }
 
 DNW = {
-	value = -50	#relation
-	level = 2		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 25
+    value = -50    #relation
+    level = 2        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
 
 SWE = {
-	value = 75		#relation
-	level = 2		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 30
+    value = 75        #relation
+    level = 2        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 30
 }
 
 ARC = {
-	value = 125		#relation
-	level = 2		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 25
+    value = 125        #relation
+    level = 2        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 25
 }
 
 GRE = {
-	value = 125		#relation
-	level = 2		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 50
+    value = 125        #relation
+    level = 2        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 50
 }
 
 CAN = {
-	value = -200
+    value = -200
 }
 
 FRA = {
-	value = -50
+    value = -50
 }
 
 leader = {
-	name = "Oliver Cochrane"
-	date = 1831.1.1
-	type = sea
-	personality = charismatic
-	background = adventurer
-	prestige = 0.1
+    name = "Oliver Cochrane"
+    date = 1831.1.1
+    type = sea
+    personality = charismatic
+    background = adventurer
+    prestige = 0.1
 }
 
 army = {
-	name = "Royal Army"
-	location = 300
-	regiment = {
-		name= "1.Royal Guards Division"
-		type = guard
-		home = 300
-	}
+    name = "Royal Army"
+    location = 300
+    regiment = {
+        name= "1.Royal Guards Division"
+        type = guard
+        home = 300
+    }
 
-	regiment = {
-		name= "2.Royal Guards Division"
-		type = guard
-		home = 269
-	}
+    regiment = {
+        name= "2.Royal Guards Division"
+        type = guard
+        home = 269
+    }
 
-	regiment = {
-		name= "3.Royal Guards Division"
-		type = guard
-		home = 263
-	}
+    regiment = {
+        name= "3.Royal Guards Division"
+        type = guard
+        home = 263
+    }
 
-	regiment = {
-		name= "1.Royal Guards Cavalry Division"
-		type = hussar
-		home = 300
-	}
+    regiment = {
+        name= "1.Royal Guards Cavalry Division"
+        type = hussar
+        home = 300
+    }
 
-	regiment = {
-		name= "2.Royal Guards Cavalry Division"
-		type = hussar
-		home = 271
-	}
+    regiment = {
+        name= "2.Royal Guards Cavalry Division"
+        type = hussar
+        home = 271
+    }
 
-	regiment = {
-		name= "3.Royal Guards Cavalry Division"
-		type = hussar
-		home = 293
-	}
+    regiment = {
+        name= "3.Royal Guards Cavalry Division"
+        type = hussar
+        home = 293
+    }
 
 }
 
 army = {
-	name = "Home Army"
-	location = 293
-	regiment = {
-		name= "1.1. Division"
-		type = infantry
-		home = 278
-	}
+    name = "Home Army"
+    location = 293
+    regiment = {
+        name= "1.1. Division"
+        type = infantry
+        home = 278
+    }
 
-	regiment = {
-		name= "2.1. Division"
-		type = infantry
-		home = 277
-	}
+    regiment = {
+        name= "2.1. Division"
+        type = infantry
+        home = 277
+    }
 
-	regiment = {
-		name= "3.1. Division"
-		type = infantry
-		home = 284
-	}
+    regiment = {
+        name= "3.1. Division"
+        type = infantry
+        home = 284
+    }
 
-	regiment = {
-		name= "1.2. Division"
-		type = infantry
-		home = 291
-	}
+    regiment = {
+        name= "1.2. Division"
+        type = infantry
+        home = 291
+    }
 
-	regiment = {
-		name= "2.2. Division"
-		type = infantry
-		home = 292
-	}
+    regiment = {
+        name= "2.2. Division"
+        type = infantry
+        home = 292
+    }
 
-	regiment = {
-		name= "3.2. Division"
-		type = infantry
-		home = 295
-	}
+    regiment = {
+        name= "3.2. Division"
+        type = infantry
+        home = 295
+    }
 
-	regiment = {
-		name= "1.3. Division"
-		type = infantry
-		home = 287
-	}
+    regiment = {
+        name= "1.3. Division"
+        type = infantry
+        home = 287
+    }
 
-	regiment = {
-		name= "2.3. Division"
-		type = infantry
-		home = 294
-	}
+    regiment = {
+        name= "2.3. Division"
+        type = infantry
+        home = 294
+    }
 
-	regiment = {
-		name= "3.3. Division"
-		type = infantry
-		home = 300
-	}
+    regiment = {
+        name= "3.3. Division"
+        type = infantry
+        home = 300
+    }
 
-	regiment = {
-		name= "1.4. Division"
-		type = infantry
-		home = 271
-	}
+    regiment = {
+        name= "1.4. Division"
+        type = infantry
+        home = 271
+    }
 
-	regiment = {
-		name= "2.4. Division"
-		type = infantry
-		home = 270
-	}
+    regiment = {
+        name= "2.4. Division"
+        type = infantry
+        home = 270
+    }
 
-	regiment = {
-		name= "3.4. Division"
-		type = infantry
-		home = 280
-	}
+    regiment = {
+        name= "3.4. Division"
+        type = infantry
+        home = 280
+    }
 
-	regiment = {
-		name= "1.5. Division"
-		type = infantry
-		home = 282
-	}
+    regiment = {
+        name= "1.5. Division"
+        type = infantry
+        home = 282
+    }
 
-	regiment = {
-		name= "2.5. Division"
-		type = infantry
-		home = 283
-	}
+    regiment = {
+        name= "2.5. Division"
+        type = infantry
+        home = 283
+    }
 
-	regiment = {
-		name= "3.5. Division"
-		type = infantry
-		home = 281
-	}
+    regiment = {
+        name= "3.5. Division"
+        type = infantry
+        home = 281
+    }
 
-	regiment = {
-		name= "1.6. Division"
-		type = infantry
-		home = 289
-	}
+    regiment = {
+        name= "1.6. Division"
+        type = infantry
+        home = 289
+    }
 
-	regiment = {
-		name= "2.6. Division"
-		type = engineer
-		home = 288
-	}
+    regiment = {
+        name= "2.6. Division"
+        type = engineer
+        home = 288
+    }
 
-	regiment = {
-		name= "3.6. Division"
-		type = artillery
-		home = 290
-	}
+    regiment = {
+        name= "3.6. Division"
+        type = artillery
+        home = 290
+    }
 }
 
 navy = {
-	name = "2nd Reserve Squadron"
-	location = 303
-	ship = {
-		name= "HMS America"
-		type = frigate
-	}
+    name = "2nd Reserve Squadron"
+    location = 303
+    ship = {
+        name= "HMS America"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Castor"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Castor"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Conquestadore"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Conquestadore"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Eagle"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Eagle"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Forth"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Forth"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Gloucester"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Gloucester"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Pique"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Pique"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Seahorse"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Seahorse"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Stag"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Stag"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Thalia"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Thalia"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Vernon"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Vernon"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Vindictive"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Vindictive"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Medea"
-		type = commerce_raider
-	}
+    ship = {
+        name= "HMS Medea"
+        type = commerce_raider
+    }
 
-	ship = {
-		name= "HMS Phoenix"
-		type = commerce_raider
-	}
-
-}
-
-navy = {
-	name = "1st Reserve Squadron"
-	location = 303
-	ship = {
-		name= "HMS Blenheim"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Cambridge"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Cornwallis"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Defence"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Genoa"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Hercules"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Howe"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Nelson"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Redoubtable"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Salisbury"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Amazon"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Fisguard"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Isis"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Latona"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Melampus"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Minerva"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Nereus"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Seringapatam"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Southampton"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Venus"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Phoenix"
+        type = commerce_raider
+    }
 
 }
 
 navy = {
-	name = "4th Reserve Squadron"
-	location = 301 #Canterbury
-	ship = {
-		name= "HMS Foudroyant"
-		type = manowar
-	}
+    name = "1st Reserve Squadron"
+    location = 303
+    ship = {
+        name= "HMS Blenheim"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Hibernia"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Cambridge"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Illustrious"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Cornwallis"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Implacable"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Defence"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Kent"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Genoa"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Revenge"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Hercules"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Spartiate"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Howe"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Sultan"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Nelson"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Apollo"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Redoubtable"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Horatio"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Salisbury"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Leonidas"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Amazon"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Naiad"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Fisguard"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Owen Glendower"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Isis"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Resistance"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Latona"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Rhin"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Melampus"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Undaunted"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Minerva"
+        type = frigate
+    }
 
-}
+    ship = {
+        name= "HMS Nereus"
+        type = frigate
+    }
 
-navy = {
-	name = "5th Reserve Squadron"
-	location = 281 #Hull
-	ship = {
-		name= "HMS Achille"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Seringapatam"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Canopus"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Southampton"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Donegal"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS San Josef"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Tremendous"
-		type = manowar
-	}
-
-	ship = {
-		name= "HMS Boadicea"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Dryad"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Endymion"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Unite"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Venus"
+        type = frigate
+    }
 
 }
 
 navy = {
-	name = "Mediterranean Fleet"
-	location = 827
-	ship = {
-		name= "HMS Agincourt"
-		type = manowar
-	}
+    name = "4th Reserve Squadron"
+    location = 301 #Canterbury
+    ship = {
+        name= "HMS Foudroyant"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Black Prince"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Hibernia"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Melville"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Illustrious"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Minotaur"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Implacable"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Pitt"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Kent"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Wellington"
-		type = manowar
-	}
+    ship = {
+        name= "HMS Revenge"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Alfred"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Spartiate"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Andromeda"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Sultan"
+        type = manowar
+    }
 
-	ship = {
-		name= "HMS Circe"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Apollo"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Clyde"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Horatio"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Cornwall"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Leonidas"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Eurotas"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Naiad"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Fox"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Owen Glendower"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Hotspur"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Resistance"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Leda"
-		type = frigate
-	}
+    ship = {
+        name= "HMS Rhin"
+        type = frigate
+    }
 
-	ship = {
-		name= "HMS Penelope"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS PresiDNWt"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Proserpine"
-		type = frigate
-	}
-
-	ship = {
-		name= "HMS Salamander"
-		type = commerce_raider
-	}
+    ship = {
+        name= "HMS Undaunted"
+        type = frigate
+    }
 
 }
 
 navy = {
-	name = "2nd Transport Squadron"
-	location = 827
-	ship = {
-		name= "7th Transport Flotilla"
-		type = clipper_transport
-	}
+    name = "5th Reserve Squadron"
+    location = 281 #Hull
+    ship = {
+        name= "HMS Achille"
+        type = manowar
+    }
 
-	ship = {
-		name= "8th Transport Flotilla"
-		type = clipper_transport
-	}
-	ship = {
-		name= "9th Transport Flotilla"
-		type = clipper_transport
-	}
+    ship = {
+        name= "HMS Canopus"
+        type = manowar
+    }
 
-	ship = {
-		name= "10th Transport Flotilla"
-		type = clipper_transport
-	}
-	ship = {
-		name= "19th Transport Flotilla"
-		type = clipper_transport
-	}
+    ship = {
+        name= "HMS Donegal"
+        type = manowar
+    }
 
-	ship = {
-		name= "20th Transport Flotilla"
-		type = clipper_transport
-	}
-	ship = {
-		name= "21th Transport Flotilla"
-		type = clipper_transport
-	}
+    ship = {
+        name= "HMS San Josef"
+        type = manowar
+    }
 
-	ship = {
-		name= "22th Transport Flotilla"
-		type = clipper_transport
-	}
+    ship = {
+        name= "HMS Tremendous"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Boadicea"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Dryad"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Endymion"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Unite"
+        type = frigate
+    }
 
 }
 
+navy = {
+    name = "Mediterranean Fleet"
+    location = 827
+    ship = {
+        name= "HMS Agincourt"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Black Prince"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Melville"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Minotaur"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Pitt"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Wellington"
+        type = manowar
+    }
+
+    ship = {
+        name= "HMS Alfred"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Andromeda"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Circe"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Clyde"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Cornwall"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Eurotas"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Fox"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Hotspur"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Leda"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Penelope"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS PresiDNWt"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Proserpine"
+        type = frigate
+    }
+
+    ship = {
+        name= "HMS Salamander"
+        type = commerce_raider
+    }
+
+}
+
+navy = {
+    name = "2nd Transport Squadron"
+    location = 827
+    ship = {
+        name= "7th Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "8th Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name= "9th Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "10th Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name= "19th Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "20th Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name= "21th Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name= "22th Transport Flotilla"
+        type = clipper_transport
+    }
+
+}

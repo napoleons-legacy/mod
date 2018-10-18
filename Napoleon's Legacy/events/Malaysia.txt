@@ -43,7 +43,7 @@ country_event = {
         1385 = {
             life_rating = 5
             change_province_name = "Johor Bahru"
-			any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.7 }
+            any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.7 }
             add_province_modifier = { name = recently_built_city duration = 365 }
         }
 
@@ -51,7 +51,7 @@ country_event = {
             life_rating = 5
             change_province_name = "Kuala Lumpur"
             trade_goods = precious_metal
-			any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.5 }
+            any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.5 }
             add_province_modifier = { name = recently_built_city duration = 1080 }
         }
 
@@ -59,7 +59,7 @@ country_event = {
             life_rating = 5
             trade_goods = precious_metal
             change_province_name = "Kuantan"
-			any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.7 }
+            any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.7 }
             add_province_modifier = { name = recently_built_city duration = 365 }
         }
     }
@@ -92,14 +92,14 @@ country_event = {
         sphere_owner = { diplomatic_influence = { who = THIS value = -400 } country_event = 956582 }
         any_country = { release_vassal = THIS }
         PRK = { all_core = { remove_core = JOH } }
-		2575 = { any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.5 } }
+        2575 = { any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.5 } }
         any_greater_power = { diplomatic_influence = { who = THIS value = -200 } }
         ai_chance = { factor = 100 }
     }
 
     option = {
         name = "EVT956581OPTB"
-		2575 = { any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.5 } }
+        2575 = { any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.5 } }
         ai_chance = { factor = 0 }
     }
 }
@@ -123,18 +123,18 @@ country_event = {
             type = conquest_any
             months = 60
         }
-		war = {
+        war = {
             target = FROM
-			attacker_goal = { casus_belli = conquest_any }
-			defender_goal = { casus_belli = humiliate }
-		}
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "EVT956582OPTB"
-		FROM = { relation = { who = THIS value = -400 } }
-		prestige = -20
-		ai_chance = { factor = 0 }
-	}
+            attacker_goal = { casus_belli = conquest_any }
+            defender_goal = { casus_belli = humiliate }
+        }
+        ai_chance = { factor = 100 }
+    }
+
+    option = {
+        name = "EVT956582OPTB"
+        FROM = { relation = { who = THIS value = -400 } }
+        prestige = -20
+        ai_chance = { factor = 0 }
+    }
 }

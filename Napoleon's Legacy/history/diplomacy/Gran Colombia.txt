@@ -1,13 +1,13 @@
 #GCO
 vassal = {
-	first = GCO
-	second = ECU
-	start_date = 1836.1.1
-	end_date = 1937.1.1
+    first = GCO
+    second = ECU
+    start_date = 1836.1.1
+    end_date = 1937.1.1
 }
 vassal = {
-	first = GCO
-	second = VNZ
-	start_date = 1836.1.1
-	end_date = 1937.1.1
+    first = GCO
+    second = VNZ
+    start_date = 1836.1.1
+    end_date = 1937.1.1
 }

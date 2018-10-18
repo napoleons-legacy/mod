@@ -1,603 +1,602 @@
-
 #Wisconsin Region
 #Milwaukee (16000/4000 POPS)
 159 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 50
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 200
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 200
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 50
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 3700
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 3700
+    }
 }
 #Eau Claire (4000/1000 POPS)
 160 = {
-	aristocrats = {
+    aristocrats = {
         culture = native_american_minor
-		religion = animist
-		size = 5
-	}
+        religion = animist
+        size = 5
+    }
 
-	officers = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
+    officers = {
+        culture = native_american_minor
+        religion = animist
+        size = 5
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 5
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 5
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 170
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 170
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 930
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 930
+    }
 }
 #Green Bay (8000/2000 POPS)
 161 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 35
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 35
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 40
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 40
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 1810
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 1810
+    }
 
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 10
-	}
+    aristocrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 10
+    }
 }
 #Madison (8000/2000 POPS)
 162 = {
-	bureaucrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 15
-	}
+    bureaucrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 15
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 1835
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 1835
+    }
 }
 
 #Illinois Region ()
 #Chicago (12800 POPS)
 163 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 75
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 75
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 150
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 150
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 450
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 450
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 12125
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 12125
+    }
 }
 #Rockford (2600 POPS)
 164 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 50
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 2500
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 2500
+    }
 }
 #Champaign (2550 POPS)
 165 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 15
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 15
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 50
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 85
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 85
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 2400
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 2400
+    }
 }
 #Peoria (5000 POPS)
 166 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 150
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 150
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 1250
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 1250
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 250
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 250
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 3350
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 3350
+    }
 }
 #Springfield (2500 POPS)
 167 = {
-	bureaucrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 45
-	}
+    bureaucrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 45
+    }
 
-	officers = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    officers = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 35
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 35
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 170
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 170
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 150
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 150
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 2075
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 2075
+    }
 }
 #Carbondale (4000 POPS)
 168 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 200
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 200
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 175
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 175
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 3525
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 3525
+    }
 }
 
 #Indiana Region
 #Indianapolis
 169 = {
-	bureaucrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 75
-	}
+    bureaucrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 75
+    }
 
-	officers = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
+    officers = {
+        culture = native_american_minor
+        religion = animist
+        size = 50
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 75
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 75
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 250
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 250
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 4225
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 4225
+    }
 }
 #Evansville
 170 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 125
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 125
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 300
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 300
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 350
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 350
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 2925
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 2925
+    }
 }
 #South Bend
 171 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 15
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 15
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 975
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 975
+    }
 }
 #Fort Wayne
 172 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 125
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 125
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 200
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 200
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 250
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 250
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 2850
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 2850
+    }
 }
 
 #Michigan Region
 #Detroit
 173 = {
-	bureaucrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 150
-	}
+    bureaucrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 150
+    }
 
-	officers = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    officers = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 150
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 150
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 400
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 400
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 3825
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 3825
+    }
 }
 #Grand Rapids
 174 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 50
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 150
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 150
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 75
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 75
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 1550
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 1550
+    }
 }
 #Saginaw
 175 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 50
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 1200
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 1200
+    }
 }
 #Traverse City
 176 = {
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 10
-	}
+    aristocrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 10
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 125
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 125
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 1800
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 1800
+    }
 }
 #Marquette
 177 = {
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    aristocrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 75
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 75
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 100
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 100
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 2400
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 2400
+    }
 }
 #Ohio Region
 #Cleveland
 178 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = protestant
-		size = 150
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = protestant
+        size = 150
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = protestant
-		size = 550
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = protestant
+        size = 550
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = protestant
-		size = 150
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = protestant
+        size = 150
+    }
 
-	farmers = {
-		culture = yankee
-		religion = protestant
-		size = 5000
-	}
+    farmers = {
+        culture = yankee
+        religion = protestant
+        size = 5000
+    }
 
     farmers = {
         culture = native_american_minor
@@ -607,41 +606,41 @@
 }
 #Columbus
 179 = {
-	bureaucrats = {
+    bureaucrats = {
         culture = native_american_minor
         religion = animist
-		size = 150
-	}
+        size = 150
+    }
 
-	officers = {
+    officers = {
         culture = native_american_minor
         religion = animist
-		size = 85
-	}
+        size = 85
+    }
 
-	clergymen = {
+    clergymen = {
         culture = native_american_minor
         religion = animist
-		size = 75
-	}
+        size = 75
+    }
 
-	artisans = {
+    artisans = {
         culture = native_american_minor
         religion = animist
-		size = 650
-	}
+        size = 650
+    }
 
-	soldiers = {
+    soldiers = {
         culture = native_american_minor
         religion = animist
-		size = 125
-	}
+        size = 125
+    }
 
-	farmers = {
-		culture = yankee
-		religion = protestant
-		size = 4000
-	}
+    farmers = {
+        culture = yankee
+        religion = protestant
+        size = 4000
+    }
 
     farmers = {
         culture = native_american_minor
@@ -651,29 +650,29 @@
 }
 #Sandusky
 180 = {
-	clergymen = {
+    clergymen = {
         culture = native_american_minor
         religion = animist
-		size = 75
-	}
+        size = 75
+    }
 
-	artisans = {
+    artisans = {
         culture = native_american_minor
         religion = animist
-		size = 450
-	}
+        size = 450
+    }
 
-	soldiers = {
+    soldiers = {
         culture = native_american_minor
         religion = animist
-		size = 75
-	}
+        size = 75
+    }
 
-	farmers = {
-		culture = yankee
-		religion = protestant
-		size = 2000
-	}
+    farmers = {
+        culture = yankee
+        religion = protestant
+        size = 2000
+    }
 
     farmers = {
         culture = native_american_minor
@@ -683,29 +682,29 @@
 }
 #Dayton
 181 = {
-	clergymen = {
+    clergymen = {
         culture = native_american_minor
         religion = animist
-		size = 100
-	}
+        size = 100
+    }
 
-	artisans = {
+    artisans = {
         culture = native_american_minor
         religion = animist
-		size = 500
-	}
+        size = 500
+    }
 
-	soldiers = {
+    soldiers = {
         culture = native_american_minor
         religion = animist
-		size = 125
-	}
+        size = 125
+    }
 
-	farmers = {
-		culture = yankee
-		religion = protestant
-		size = 4000
-	}
+    farmers = {
+        culture = yankee
+        religion = protestant
+        size = 4000
+    }
 
     farmers = {
         culture = native_american_minor
@@ -715,29 +714,29 @@
 }
 #Cincinnati
 182 = {
-	clergymen = {
+    clergymen = {
         culture = native_american_minor
         religion = animist
-		size = 135
-	}
+        size = 135
+    }
 
-	artisans = {
+    artisans = {
         culture = native_american_minor
         religion = animist
-		size = 575
-	}
+        size = 575
+    }
 
-	soldiers = {
+    soldiers = {
         culture = native_american_minor
         religion = animist
-		size = 100
-	}
+        size = 100
+    }
 
-	farmers = {
-		culture = yankee
-		religion = protestant
-		size = 4000
-	}
+    farmers = {
+        culture = yankee
+        religion = protestant
+        size = 4000
+    }
 
     farmers = {
         culture = native_american_minor
@@ -747,29 +746,29 @@
 }
 #Marietta
 183 = {
-	clergymen = {
+    clergymen = {
         culture = native_american_minor
         religion = animist
-		size = 85
-	}
+        size = 85
+    }
 
-	artisans = {
+    artisans = {
         culture = native_american_minor
         religion = animist
-		size = 475
-	}
+        size = 475
+    }
 
-	soldiers = {
+    soldiers = {
         culture = native_american_minor
         religion = animist
-		size = 100
-	}
+        size = 100
+    }
 
-	farmers = {
-		culture = yankee
-		religion = protestant
-		size = 2000
-	}
+    farmers = {
+        culture = yankee
+        religion = protestant
+        size = 2000
+    }
 
     farmers = {
         culture = native_american_minor
@@ -781,53 +780,53 @@
 # Provinces for NPL
 #Yar Sale (2080/520 POPS)
 2684 = {
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
+    aristocrats = {
+        culture = native_american_minor
+        religion = animist
+        size = 5
+    }
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 25
+    }
 
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size = 15
-	}
+    soldiers = {
+        culture = native_american_minor
+        religion = animist
+        size = 15
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 450
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 450
+    }
 }
 #Duluth (8000/2000 POPS)
 158 = {
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
+    clergymen = {
+        culture = native_american_minor
+        religion = animist
+        size = 5
+    }
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
+    artisans = {
+        culture = native_american_minor
+        religion = animist
+        size = 5
+    }
 
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 963
-	}
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 963
+    }
 }

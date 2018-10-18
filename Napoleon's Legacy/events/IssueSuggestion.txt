@@ -17,8 +17,8 @@ country_event = {
     trigger = {
         civilized = yes
         health_care = no_health_care
-		NOT = { poor_strata_life_needs = 0.9 }
-		is_ideology_enabled = socialist
+        NOT = { poor_strata_life_needs = 0.9 }
+        is_ideology_enabled = socialist
         }
 
 
@@ -43,7 +43,7 @@ country_event = {
         }
         modifier = {
             factor = 1.5
-			NOT = { average_consciousness = 3 }
+            NOT = { average_consciousness = 3 }
             }
         }
 
@@ -199,7 +199,7 @@ country_event = {
     trigger = {
         civilized = yes
         health_care = trinket_health_care
-		NOT = { poor_strata_life_needs = 0.95 }
+        NOT = { poor_strata_life_needs = 0.95 }
         }
 
 
@@ -251,8 +251,8 @@ country_event = {
 
     option = {
         name = "EVTOPTC3003"
-		poor_strata = { militancy = 1 }
-		ai_chance = { factor = 0 }
+        poor_strata = { militancy = 1 }
+        ai_chance = { factor = 0 }
     }
 }
 
@@ -266,8 +266,8 @@ country_event = {
     trigger = {
         civilized = yes
         health_care = low_health_care
-		NOT = { social_reform_want = 0.2 }
-		is_ideology_enabled = socialist
+        NOT = { social_reform_want = 0.2 }
+        is_ideology_enabled = socialist
         }
 
 
@@ -395,7 +395,7 @@ country_event = {
     trigger = {
         health_care = good_health_care
         civilized = yes
-		NOT = { ruling_party_ideology = conservative }
+        NOT = { ruling_party_ideology = conservative }
         }
 
 
@@ -429,7 +429,7 @@ country_event = {
             militancy = -2
             consciousness = 1
         }
-		ai_chance = { factor = 0 }
+        ai_chance = { factor = 0 }
     }
 
     option = {
@@ -454,7 +454,7 @@ country_event = {
     trigger = {
         civilized = yes
         pensions = no_pensions
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -506,7 +506,7 @@ country_event = {
                     factor = 0.2
                 }
             }
-			farmers = { militancy = -1 }
+            farmers = { militancy = -1 }
             }
         }
 
@@ -581,7 +581,7 @@ country_event = {
         civilized = yes
         pensions = low_pensions
         acceptable_pensions = 5
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -631,7 +631,7 @@ country_event = {
     trigger = {
         civilized = yes
         pensions = acceptable_pensions
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -953,7 +953,7 @@ country_event = {
     trigger = {
         civilized = yes
         unemployment_subsidies = no_subsidies
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1087,7 +1087,7 @@ country_event = {
         civilized = yes
         unemployment_subsidies = acceptable_subsidies
         unemployment = 0.05
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1144,9 +1144,9 @@ country_event = {
         civilized = yes
         unemployment_subsidies = low_subsidies
         wage_reform = low_minimum_wage
-		NOT = { trade_unions = no_trade_unions }
+        NOT = { trade_unions = no_trade_unions }
         poor_strata_militancy = 5
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1217,8 +1217,8 @@ country_event = {
     trigger = {
         civilized = yes
         unemployment_subsidies = acceptable_subsidies
-		NOT = { trade_unions = no_trade_unions }
-		is_ideology_enabled = socialist
+        NOT = { trade_unions = no_trade_unions }
+        is_ideology_enabled = socialist
         }
 
 
@@ -1271,7 +1271,7 @@ country_event = {
         civilized = yes
         safety_regulations = no_safety
         industrial_score = 1
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1325,7 +1325,7 @@ country_event = {
         civilized = yes
         safety_regulations = trinket_safety
         industrial_score = 1
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1379,7 +1379,7 @@ country_event = {
         safety_regulations = low_safety
         social_reform_want = 0.2
         industrial_score = 1
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1450,7 +1450,7 @@ country_event = {
         civilized = yes
         safety_regulations = acceptable_safety
         industrial_score = 1
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1508,8 +1508,8 @@ country_event = {
 
     trigger = {
         civilized = yes
-		NOT = { trade_unions = all_trade_unions }
-		NOT = { safety_regulations = good_safety }
+        NOT = { trade_unions = all_trade_unions }
+        NOT = { safety_regulations = good_safety }
         }
 
 
@@ -1559,7 +1559,7 @@ country_event = {
         civilized = yes
         safety_regulations = low_safety
         health_care = low_health_care
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1619,7 +1619,7 @@ country_event = {
         safety_regulations = acceptable_safety
         health_care = acceptable_health_care
         basic_chemistry = 1
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1714,7 +1714,7 @@ country_event = {
     trigger = {
         civilized = yes
         child_labor = child_labor_legal
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -1768,7 +1768,7 @@ country_event = {
     trigger = {
         civilized = yes
         work_hours = no_work_hour_limit
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {
@@ -2003,7 +2003,7 @@ country_event = {
         civilized = yes
         wage_reform = no_minimum_wage
         social_reform_want = 0.1
-		is_ideology_enabled = socialist
+        is_ideology_enabled = socialist
     }
 
     mean_time_to_happen = {

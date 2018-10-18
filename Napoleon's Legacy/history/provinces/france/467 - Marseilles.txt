@@ -4,7 +4,7 @@ add_core = FRA
 trade_goods = fruit
 life_rating = 32
 state_building = {
-	level = 1
-	building = clipper_shipyard
-	upgrade = yes
+    level = 1
+    building = clipper_shipyard
+    upgrade = yes
 }

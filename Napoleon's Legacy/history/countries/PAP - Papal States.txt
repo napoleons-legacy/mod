@@ -33,7 +33,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -42,13 +43,13 @@ set_country_flag = theocratic_government
 
 ruling_party = PAP_conservative
 upper_house = {
-	fascist = 0
-	liberal = 10
-	conservative = 70
-	reactionary = 20
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 10
+    conservative = 70
+    reactionary = 20
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 decision = PAP_1836_setup
@@ -88,5 +89,5 @@ nonstate_consciousness = 1
 oob = "PAP_oob.txt"
 
 1858.6.23 = {
-	decision = the_case_of_edgardo_mortara 
+    decision = the_case_of_edgardo_mortara 
 }

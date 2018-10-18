@@ -1,17 +1,16 @@
 army = {
-	name = "Army of the Kingdom of Illyria"
-	location = 773
-	regiment = {
-		name= "1st Illyrian Infantry"
-		type = infantry
-		home = 773
-	}
+    name = "Army of the Kingdom of Illyria"
+    location = 773
+    regiment = {
+        name= "1st Illyrian Infantry"
+        type = infantry
+        home = 773
+    }
 
-	regiment = {
-		name= "2nd Illyrian Infantry"
-		type = infantry
-		home = 771
-	}
+    regiment = {
+        name= "2nd Illyrian Infantry"
+        type = infantry
+        home = 771
+    }
 
 }
-

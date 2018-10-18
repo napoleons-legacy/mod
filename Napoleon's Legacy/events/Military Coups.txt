@@ -9,7 +9,7 @@ country_event = {
     title = "EVTNAME152009872" #$COUNTRY_ADJ$ Coup?
     desc = "EVTDESC152009872"
     picture = "Military_reform"
-    
+
     trigger = {
         civilized = yes
         war = no
@@ -34,11 +34,11 @@ country_event = {
             militancy = 7
         }
     }
-    
+
     mean_time_to_happen = {
         months = 50
     }
-    
+
     option = {
         name = "EVT152009872OPTA"
         add_country_modifier = {
@@ -98,7 +98,7 @@ country_event = {
         }
     }
 }
-        
+
 country_event = {
     id = 152009873
     title = "EVTNAME152009873" #The $COUNTRY_ADJ$ Military Coup
@@ -109,7 +109,7 @@ country_event = {
     news_desc_short = "EVTDESC152009873_NEWS_SHORT"
     picture = "Military_reform"
     major = yes
-    
+
     trigger = {
         civilized = yes
         war = no
@@ -138,7 +138,7 @@ country_event = {
             literacy = 0.50
         }   
     }
-    
+
     mean_time_to_happen = {
         months = 200
         modifier = {
@@ -183,7 +183,7 @@ country_event = {
             revolt_percentage = .40
         }
     }
-    
+
     option = {
         name = "EVT152009873OPTA"
         remove_country_modifier = coup_risk
@@ -209,7 +209,7 @@ country_event = {
         political_reform = state_press
         political_reform = state_controlled
         political_reform = underground_parties
-        
+
         add_country_modifier = {
             name = national_confusion
             duration = 365
@@ -227,7 +227,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT152009873OPTB"
         prestige = -10
@@ -283,4 +283,3 @@ country_event = {
         }
     }
 }
-

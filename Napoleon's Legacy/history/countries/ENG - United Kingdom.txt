@@ -90,13 +90,13 @@ nonstate_consciousness = 1
 ruling_party = ENG_liberal
 last_election = 1835.2.19
 upper_house = {
-	fascist = 0
-	liberal = 12
-	conservative = 83
-	reactionary = 5
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 12
+    conservative = 83
+    reactionary = 5
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 schools = naval_tech_school
@@ -104,14 +104,14 @@ schools = naval_tech_school
 decision = literacy_ENG
 
 govt_flag = {
-	government = presidential_dictatorship
-	flag = theocracy
+    government = presidential_dictatorship
+    flag = theocracy
 }
 
 foreign_investment = {
-	BEL = 20000
-	POR = 40000
-	DEN = 2000
+    BEL = 20000
+    POR = 40000
+    DEN = 2000
 }
 
 oob = "ENG_oob.txt"

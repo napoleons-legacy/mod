@@ -6,7 +6,7 @@
 #################################################################################################################
 
 country_event = {
-    
+
     id = 95500
     title = "EVTNAME95500" #The Berlin Conference
     desc = "EVTDESC95500"
@@ -33,7 +33,7 @@ country_event = {
     }
 
     allow_multiple_instances = no
-    
+
     mean_time_to_happen = {
         months = 6
         modifier = {
@@ -46,33 +46,33 @@ country_event = {
         name = "EVT95500OPTA"
         set_global_flag = berlin_conference
         prestige = 25
-		#Ivory Coast
-		1895 = { trade_goods = precious_metal } #Bouake  (Kokumbo Mine)
-		1899 = { trade_goods = coffee } #Bondouku
-		1897 = { trade_goods = coffee } #Akoupe
-		1896 = { trade_goods = coffee } #Man
-		1900 = { trade_goods = fruit } #Odienne
-		#Ghana
-		1909 = { trade_goods = precious_metal } #Sekondi (Tarkwa Mine)
-		1910 = { trade_goods = precious_metal } #Kumai (Obuasi Mine)
-		1907 = { trade_goods = coffee } #Accra (cocoa)
-		1912 = { trade_goods = grain } #Wa
-		1911 = { trade_goods = coffee } #Kintampo (cocoa)
-		1915 = { trade_goods = coffee } #Ho (cocoa)
-		1916 = { trade_goods = cotton } #Yendi
-		#Togo
-		1914 = { trade_goods = coffee } #Lome
-		1917 = { trade_goods = coffee } #Atakpame
-		1918 = { trade_goods = cotton } #Sokode
-		#Nigeria
-		1935 = { trade_goods = coal } #Aruchukwu (representing Enugu)
-		#Morocco
-		1689 = { trade_goods = iron } #Melilla
+        #Ivory Coast
+        1895 = { trade_goods = precious_metal } #Bouake  (Kokumbo Mine)
+        1899 = { trade_goods = coffee } #Bondouku
+        1897 = { trade_goods = coffee } #Akoupe
+        1896 = { trade_goods = coffee } #Man
+        1900 = { trade_goods = fruit } #Odienne
+        #Ghana
+        1909 = { trade_goods = precious_metal } #Sekondi (Tarkwa Mine)
+        1910 = { trade_goods = precious_metal } #Kumai (Obuasi Mine)
+        1907 = { trade_goods = coffee } #Accra (cocoa)
+        1912 = { trade_goods = grain } #Wa
+        1911 = { trade_goods = coffee } #Kintampo (cocoa)
+        1915 = { trade_goods = coffee } #Ho (cocoa)
+        1916 = { trade_goods = cotton } #Yendi
+        #Togo
+        1914 = { trade_goods = coffee } #Lome
+        1917 = { trade_goods = coffee } #Atakpame
+        1918 = { trade_goods = cotton } #Sokode
+        #Nigeria
+        1935 = { trade_goods = coal } #Aruchukwu (representing Enugu)
+        #Morocco
+        1689 = { trade_goods = iron } #Melilla
     }
 }
 
 country_event = {
-    
+
     id = 95502
     title = "EVTNAME95502" #The Age of Colonialism
     desc = "EVTDESC95502"
@@ -125,7 +125,7 @@ country_event = {
     title = "EVTNAME95503" #the Modern Age
     desc = "EVTDESC95503"
     picture = "zulu"
-    
+
     trigger = {
         war = no
         civilized = no
@@ -145,14 +145,14 @@ country_event = {
         NOT = { tag = TRI }
         NOT = { tag = EGY }
         NOT = { tag = LIB }
-		NOT = { tag = OMA }
-		NOT = { tag = CYR }
+        NOT = { tag = OMA }
+        NOT = { tag = CYR }
     }
-    
+
     mean_time_to_happen = {
         days = 1
     }
-    
+
     option = {
         name = "EVT95503OPTA"
         set_country_flag = africa_in_the_modern_age
@@ -168,12 +168,12 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 95504
     title = "EVTNAME95504" #Sahel Jihad
     desc = "EVTDESC95504"
     picture = "arab_revolt"
-    
+
     trigger = {
         primary_culture = fulbe
         war = no
@@ -189,7 +189,7 @@ country_event = {
         }
         any_neighbor_country = {
             civilized = no
-			NOT = { has_country_flag = sunni_country }
+            NOT = { has_country_flag = sunni_country }
             NOT = { truce_with = THIS }
             any_owned_province = {
                 OR = {
@@ -205,7 +205,7 @@ country_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 60
         modifier = {
@@ -217,7 +217,7 @@ country_event = {
             civilization_progress = 0.75
         }
     }
-    
+
     option = {
         name = "EVT95504OPTA"
         any_pop = {
@@ -262,7 +262,7 @@ country_event = {
     title = "EVTNAME95505" #Imperialism Comes to $COUNTRY$
     desc = "EVTDESC95505"
     picture = "scramble_for_africa"
-    
+
     trigger = {
         has_global_flag = berlin_conference
         capital_scope = { continent = africa }
@@ -288,11 +288,11 @@ country_event = {
                 num_of_revolts = 1
             }
         }
-		NOT = {
-			has_country_flag = refused_protectorate
-			has_country_flag = post_colonial_country
+        NOT = {
+            has_country_flag = refused_protectorate
+            has_country_flag = post_colonial_country
     }
-	}
+    }
     mean_time_to_happen = {
         months = 6
         modifier = {
@@ -322,7 +322,7 @@ country_event = {
             sphere_owner = { tag = TUR }
         }
     }
-    
+
     option = {
         name = "EVT95505OPTA"
         sphere_owner = { country_event = 95506 }
@@ -393,9 +393,9 @@ country_event = {
     title = "EVTNAME95506" #The $FROMCOUNTRY_ADJ$ Protectorate
     desc = "EVTDESC95506"
     picture = "scramble_for_africa"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95506OPTA"
         FROM = { set_country_flag = refused_protectorate }
@@ -486,7 +486,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT95507OPTB"
         prestige = -25
@@ -510,12 +510,12 @@ country_event = {
 }
 
 country_event = {
-    
+
     id = 95508
     title = "EVTNAME95508" #The Sale of Assab
     desc = "EVTDESC95508"
     picture = "scramble_for_africa"
-    
+
     trigger = {
         civilized = yes
         is_vassal = no
@@ -542,7 +542,7 @@ country_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 50
         modifier = {
@@ -565,11 +565,11 @@ country_event = {
             tag = ITA
         }
     }
-    
+
     immediate = {
         set_country_flag = sale_of_assab
     }
-    
+
     option = {
         name = "EVT95508OPTA"
         badboy = 2
@@ -599,7 +599,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT95508OPTB"
         badboy = -1
@@ -623,14 +623,14 @@ country_event = {
 }
 
 country_event = {
-            
+
     id = 95509
     title = "EVTNAME95508" #The Sale of Assab - Owner
     desc = "EVTDESC95509"
     picture = "scramble_for_africa"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95509OPTA"
         set_global_flag = assab_sold
@@ -660,9 +660,9 @@ country_event = {
     title = "EVTNAME95510" #Rebellion in Eritrea
     desc = "EVTDESC95510"
     picture = "rebellion"
-    
+
     fire_only_once = yes
-    
+
     trigger = {
         tag = EGY
         civilized = no
@@ -710,12 +710,12 @@ country_event = {
             }
         }
     }
-    
+
     mean_time_to_happen = {
         months = 1
     }
 
-    
+
     option = {
         prestige = 3
         name = "EVT95510OPTA"
@@ -732,7 +732,7 @@ country_event = {
         }
         ai_chance = { factor = 0 }
     }
-    
+
     option = {
         name = "EVT95510OPTB"
         prestige = -3
@@ -750,7 +750,7 @@ country_event = {
     title = "EVTNAME95511"
     desc = "EVTDESC95511"
     picture = "scramble_for_africa"
-    
+
     trigger = {
         has_global_flag = berlin_conference
         capital_scope = { continent = europe }
@@ -788,11 +788,11 @@ country_event = {
             tag = RUS
         }
     }
-    
+
     mean_time_to_happen = {
         months = 24
     }
-    
+
     option = {
         name = "EVT95511OPTA"
         random_country = {
@@ -843,9 +843,9 @@ country_event = {
     title = "EVTNAME95514"
     desc = "EVTDESC95514"
     picture = "scramble_for_africa"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT95514OPTA"
         FROM = {
@@ -866,7 +866,7 @@ country_event = {
     title = "EVTNAME955177"
     desc = "EVTDESC955177"
     picture = "sudan_question"
-    
+
     trigger = {
         war = no
         is_sphere_leader_of = EGY
@@ -882,18 +882,18 @@ country_event = {
             exists = yes
         }
     }
-    
+
     fire_only_once = yes
-    
+
     mean_time_to_happen = { months = 8 }
-        
-    
+
+
     option = {
         name = "EVT955177OPTA"
         EGY = { country_event = 955178 }
         ai_chance = { factor = 100 }
     }
-    
+
     option = {
         name = "EVT955177OPTB"
         prestige = -5
@@ -906,17 +906,17 @@ country_event = {
     title = "EVTNAME955178"
     desc = "EVTDESC955178"
     picture = "sudan_question"
-    
+
     is_triggered_only = yes
-        
-    
+
+
     option = {
         name = "EVT955178OPTA"
         prestige = -5
         FROM = { country_event = 955179 }
         ai_chance = { factor = 0.95 }
     }
-    
+
     option = {
         name = "EVT955178OPTB"
         prestige = 5
@@ -930,18 +930,18 @@ country_event = {
     title = "EVTNAME955179"
     desc = "EVTDESC955179"
     picture = "sudan_question"
-    
+
     is_triggered_only = yes
-        
-    
+
+
     option = {
         name = "EVT955179OPTA"
         prestige = 5
-		SUD = { civilized = no all_core = { remove_core = EGY remove_core = TUR any_pop = { militancy = 7 consciousness = 4 } } }
-		
-        
+        SUD = { civilized = no all_core = { remove_core = EGY remove_core = TUR any_pop = { militancy = 7 consciousness = 4 } } }
+
+
         1834 = { add_core = EGY }
-        
+
         FROM = {
             any_owned = {
                 limit = { 
@@ -950,13 +950,13 @@ country_event = {
                     is_core = ETH
                     }
                 }
-			secede_province = SUD
+            secede_province = SUD
             }
         money = 50000
         }
         SUD = { all_core = { remove_core = DAR remove_core = SHK } }
-		inherit = SUD
-		relation = { who = EGY value = 100 }
+        inherit = SUD
+        relation = { who = EGY value = 100 }
         }
 }
 
@@ -966,13 +966,13 @@ country_event = {
     title = "EVTNAME955180"
     desc = "EVTDESC955180"
     picture = "sudan_question"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT955180OPTA"
-		relation = { who = FROM value = -400 }
-		diplomatic_influence = { who = FROM value = -400 }
+        relation = { who = FROM value = -400 }
+        diplomatic_influence = { who = FROM value = -400 }
         FROM = { any_owned = { limit = {  OR = { is_core = SUD  is_core = ETH } } secede_province = SUD } }
         SUD = { all_core = { remove_core = DAR remove_core = SHK } }
         SUD = {
@@ -989,10 +989,10 @@ country_event = {
             political_reform = primary_culture_only
             political_reform = mandatory_service
         }
-		casus_belli = { target = SUD type = conquest_any months = 30 }
+        casus_belli = { target = SUD type = conquest_any months = 30 }
         FROM = {
-			relation = { who = SUD value = -400 }
-			casus_belli = { target = SUD type = conquest_any months = 30 }
+            relation = { who = SUD value = -400 }
+            casus_belli = { target = SUD type = conquest_any months = 30 }
         }
     }
 }
@@ -1003,9 +1003,9 @@ country_event = {
     title = "EVTNAME955181"
     desc = "EVTDESC955181"
     picture = "scramble_for_africa"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT955181OPTA"
         relation = { who = FROM value = 50 }
@@ -1023,7 +1023,7 @@ country_event = {
             }
         }
     }
-    
+
     option = {
         name = "EVT955181OPTB"
         relation = { who = FROM value = -150 }
@@ -1055,7 +1055,7 @@ country_event = {
     title = "EVTNAME955200"
     desc = "EVTDESC955200"
     picture = "mfecane"
-    
+
     trigger = {
         owns = 2076
         2084 = { empty = no }
@@ -1063,14 +1063,14 @@ country_event = {
         owns = 2083
         invention = the_dark_continent
     }
-    
+
     fire_only_once = yes
-    
+
     mean_time_to_happen = { months = 2 }
-    
+
     option = {
         name = "EVT955200OPTA"
-		2081 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+        2081 = { secede_province = THIS any_pop = { literacy = -0.99 } }
     }
 }
 
@@ -1080,26 +1080,26 @@ country_event = {
     title = "EVTNAME955201"
     desc = "EVTDESC955201"
     picture = "scramble_for_africa"
-    
+
     is_triggered_only = yes
-    
+
     option = {
         name = "EVT955201OPTA"
         treasury = 100000
-		random_country = {
-			limit = { tag = FROM }
-			random_owned = { limit = { owner = { ai = no } } owner = { treasury = -100000 } }
-			random_owned = {
-				limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
-				owner = { set_variable = { which = owed_cash_money value = 100 } }
-			}
-			random_owned = {
-				limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
-				owner = { change_variable = { which = owed_cash_money value = 100 } }
-			}
-		}
+        random_country = {
+            limit = { tag = FROM }
+            random_owned = { limit = { owner = { ai = no } } owner = { treasury = -100000 } }
+            random_owned = {
+                limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+                owner = { set_variable = { which = owed_cash_money value = 100 } }
+            }
+            random_owned = {
+                limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+                owner = { change_variable = { which = owed_cash_money value = 100 } }
+            }
+        }
         relation = { who = FROM value = 25 }
-		2081 = { secede_province = FROM add_core = NMB }
+        2081 = { secede_province = FROM add_core = NMB }
         ai_chance = {
             factor = 0.5
             modifier = { factor = 1.1 relation = { who = FROM value = 50 } }
@@ -1109,7 +1109,7 @@ country_event = {
             modifier = { factor = 10 in_sphere = THIS }
         }
     }
-    
+
     option = {
         name = "EVT955201OPTB"
         relation = { who = FROM value = -50 }
@@ -1122,4 +1122,3 @@ country_event = {
         }
     }
 }
-

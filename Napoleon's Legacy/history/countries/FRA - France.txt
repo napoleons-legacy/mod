@@ -37,7 +37,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -88,18 +89,18 @@ nonstate_consciousness = 1
 ruling_party = FRA_conservative_2
 last_election = 1834.6.21
 upper_house = {
-	fascist = 0
-	liberal = 12
-	conservative = 70
-	reactionary = 18
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 12
+    conservative = 70
+    reactionary = 18
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 govt_flag = {
-	government = hms_government
-	flag = presidential_dictatorship
+    government = hms_government
+    flag = presidential_dictatorship
 }
 
 schools = culture_tech_school
@@ -108,5 +109,5 @@ decision = france_1836_setup
 oob = "FRA_oob.txt"
 
 foreign_investment = {
-	PAP = 6000
+    PAP = 6000
 }

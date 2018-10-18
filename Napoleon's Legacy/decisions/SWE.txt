@@ -18,9 +18,9 @@ political_decisions = {
         }
 
         allow = {
-			NOT = { average_militancy = 3 }
+            NOT = { average_militancy = 3 }
             steel_steamers = 1
-			invention = protected_cruisers
+            invention = protected_cruisers
         }
 
         effect = {

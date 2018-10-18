@@ -441,7 +441,7 @@ province_event = {
 
     option = {
         name = "EVT97086OPTA" #Excellent!
-		life_rating = 18
+        life_rating = 18
         any_pop = {
             limit = { is_culture_group = native_american }
             militancy = 8
@@ -465,15 +465,15 @@ country_event = {
         CHL_2332 = { add_core = CHL }
         relation = {
             who = FROM
-			value = 200
+            value = 200
         }
         any_owned = {
             limit = {
                 FROM = {
                 OR = {
                 tag = ARG
-						tag = ARC
-					}
+                        tag = ARC
+                    }
                   }
                  OR = {
                 is_core = ARG
@@ -503,21 +503,21 @@ country_event = {
         ai_chance = {
             factor = 90
             modifier = {
-				factor = 0.8
+                factor = 0.8
                 war_policy = jingoism
             }
             modifier = {
-				factor = 0.8
+                factor = 0.8
                 NOT = { relation = { who = FROM value = 0 } }
             }
             modifier = {
-				factor = 0.8
+                factor = 0.8
                 FROM = {
                     any_owned_province = { is_core = CHL }
                 }
             }
             modifier = {
-				factor = 0.8
+                factor = 0.8
                 any_owned_province = { is_core = FROM }
             }
         }
@@ -533,8 +533,8 @@ country_event = {
                 FROM = {
                     OR = {
                     tag = ARG
-						tag = ARC
-					}
+                        tag = ARC
+                    }
                     }
             }
             2335 = { add_core = THIS }
@@ -574,13 +574,13 @@ country_event = {
         FROM = {
             any_owned = {
                 limit = {
-					NOT = { province_id = 2131 }
+                    NOT = { province_id = 2131 }
                     OR = {
                         is_core = CRT
                         is_core = ENT
                         is_core = SBA
-						is_core = ARC
-						is_core = ARG
+                        is_core = ARC
+                        is_core = ARG
                         }
                     }
                 secede_province = THIS

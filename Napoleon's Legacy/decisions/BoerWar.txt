@@ -282,7 +282,7 @@ political_decisions = {
             random_owned = { limit = { province_id = 2088 } change_province_name = "Springbok" }
             random_owned = { limit = { province_id = 2558 } change_province_name = "De Aar" }
             random_owned = { limit = { province_id = 2093 } change_province_name = "Calvinia" }
-			random_owned = { limit = { province_id = 2094 } change_province_name = "Kimberley" }
+            random_owned = { limit = { province_id = 2094 } change_province_name = "Kimberley" }
             random_owned = { limit = { province_id = 2111 } change_province_name = "Durban" }
             random_owned = { limit = { province_id = 2105 } state_scope = { change_region_name = "Transvaal" } }
             random_owned = { limit = { province_id = 2102 } state_scope = { change_region_name = "Vrystaat" } }
@@ -327,24 +327,24 @@ political_decisions = {
             prestige = 10
             SAF = {
                 all_core = {
-					limit = { NOT = { owned_by = THIS } }
+                    limit = { NOT = { owned_by = THIS } }
                     remove_core = SAF
                 }
                 primary_culture = THIS
                 add_accepted_culture = boer
-				set_country_flag = post_colonial_country
+                set_country_flag = post_colonial_country
             }
-			any_owned = {
-				limit = { region = TRN_2108 }
-				remove_core = MAT
-				remove_core = GAZ
-			}
+            any_owned = {
+                limit = { region = TRN_2108 }
+                remove_core = MAT
+                remove_core = GAZ
+            }
             any_pop = {
-				limit = { location = { is_core = SAF } }
-				militancy = -3
-			}
-		}
-	}
+                limit = { location = { is_core = SAF } }
+                militancy = -3
+            }
+        }
+    }
 
     treaty_of_vereeniging = {
         picture = treaty_signing
@@ -416,7 +416,7 @@ political_decisions = {
 
         allow = {
             owns = 2087
-			2093 = { NOT = { is_core = THIS } }
+            2093 = { NOT = { is_core = THIS } }
             }
 
         effect = {
@@ -477,10 +477,10 @@ political_decisions = {
         }
 
         allow = {
-			2100 = { NOT = { is_core = THIS } }
-			NOT = { truce_with = XHO }
-			NOT = { casus_belli = XHO }
-			state_n_government = 1
+            2100 = { NOT = { is_core = THIS } }
+            NOT = { truce_with = XHO }
+            NOT = { casus_belli = XHO }
+            state_n_government = 1
         }
 
         effect = {
@@ -515,7 +515,7 @@ political_decisions = {
                 in_sphere = THIS
                 truce_with = THIS
             }
-			NOT = { XHO = { has_country_flag = treaty_of_umtata } }
+            NOT = { XHO = { has_country_flag = treaty_of_umtata } }
         }
 
         allow = {
@@ -531,7 +531,7 @@ political_decisions = {
             prestige = 3
             relation = { who = XHO value = 200 }
             diplomatic_influence = { who = XHO value = -200 }
-			XHO = { foreign_weapons = yes_foreign_weapons set_country_flag = treaty_of_umtata }
+            XHO = { foreign_weapons = yes_foreign_weapons set_country_flag = treaty_of_umtata }
             random_country = {
                 limit = {
                     tag = XHO
@@ -557,6 +557,6 @@ political_decisions = {
             2098 = { change_province_name = "Port Rex" }
         }
 
-		ai_will_do = { factor = 1 }
+        ai_will_do = { factor = 1 }
         }
 }

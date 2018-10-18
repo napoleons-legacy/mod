@@ -355,9 +355,9 @@ country_event = {
             NOT = { terrain = arctic }
             NOT = { terrain = desert }
         }
-		OR = {
-			NOT = { primary_culture = japanese }
-			year = 1850
+        OR = {
+            NOT = { primary_culture = japanese }
+            year = 1850
     }
     }
     mean_time_to_happen = {
@@ -378,12 +378,12 @@ country_event = {
             NOT = { AND = { continent = oceania civilized = no } }
         }
         modifier = {
-			factor = 1.5
-			has_country_modifier = uncivilized_isolationism
-			NOT = { is_culture_group = indo_iranian }
-			NOT = { is_culture_group = south_asian }
-		}
-		modifier = {
+            factor = 1.5
+            has_country_modifier = uncivilized_isolationism
+            NOT = { is_culture_group = indo_iranian }
+            NOT = { is_culture_group = south_asian }
+        }
+        modifier = {
             factor = 2
             medicine = 1
         }

@@ -32,20 +32,21 @@ school_reforms = no_schools
 conscription = four_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = all_voting_pops
+child_labor = child_labor_legal
+citizens_rights = all_voting_pops
 border_policy = open_borders
 
 set_country_flag = catholic_country
 
 ruling_party = SAR_conservative
 upper_house = {
-	fascist = 0
-	liberal = 20
-	conservative = 70
-	reactionary = 10
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 20
+    conservative = 70
+    reactionary = 10
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 decision = SAR_1836_setup

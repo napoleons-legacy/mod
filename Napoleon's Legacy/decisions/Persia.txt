@@ -77,7 +77,7 @@ political_decisions = {
 
         effect = {
             set_country_flag = greater_iran
-			badboy = 10
+            badboy = 10
             any_country = { limit = { neighbour = THIS NOT = { vassal_of = THIS } } relation = { who = THIS value = -50 } }
             RUS_1052 = { add_core = PER }
             1206 = { add_core = PER }
@@ -98,17 +98,17 @@ political_decisions = {
         potential = {
             tag = PER
             civilized = no
-			has_country_modifier = silver_age
-			NOT = {	has_country_flag = dar_al_funun_built }
+            has_country_modifier = silver_age
+            NOT = {    has_country_flag = dar_al_funun_built }
             }
 
         allow = {
-			has_country_modifier = amir_kabir
+            has_country_modifier = amir_kabir
         }
 
         effect = {
             years_of_research = 0.5
-			any_pop = { consciousness = 1 }
+            any_pop = { consciousness = 1 }
             set_country_flag = dar_al_funun_built
             add_country_modifier = {
                 name = dar_al_funun
@@ -149,7 +149,7 @@ political_decisions = {
         picture = caucasus_viceroyalty
         potential = {
             tag = PER
-		    year = 1900
+            year = 1900
             NOT = { has_country_flag = majles_established }
         }
 
@@ -166,7 +166,7 @@ political_decisions = {
             prestige = 5
             plurality = 10
             any_pop = { consciousness = 1 }
-		    clr_country_flag = per_backed_down
+            clr_country_flag = per_backed_down
         }
 
         ai_will_do = { factor = 1 }
@@ -210,7 +210,7 @@ political_decisions = {
         potential = {
             tag = PER
             NOT = { year = 1852 }
-            NOT = {	has_country_flag = amir_kabir }
+            NOT = {    has_country_flag = amir_kabir }
             has_country_modifier = silver_age
         }
 

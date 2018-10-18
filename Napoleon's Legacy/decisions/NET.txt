@@ -87,59 +87,59 @@ political_decisions = {
     }
 
     dutch_wallonia = {
-		picture = become_wallonia
-		potential = {
-			owns = 392
-			owns = 393
-			owns = 394
-			owns = 395
-			owns = 398
-			OR = {
-				AND = {
-					NOT = { has_global_flag = dutch_wallonia_renamed }
-					tag = NET
-				}
-				AND = {
-					has_global_flag = dutch_wallonia_renamed
-					NOT = { tag = NET }
-				}
-			}
-		}
+        picture = become_wallonia
+        potential = {
+            owns = 392
+            owns = 393
+            owns = 394
+            owns = 395
+            owns = 398
+            OR = {
+                AND = {
+                    NOT = { has_global_flag = dutch_wallonia_renamed }
+                    tag = NET
+                }
+                AND = {
+                    has_global_flag = dutch_wallonia_renamed
+                    NOT = { tag = NET }
+                }
+            }
+        }
 
-		allow = {
-			war = no
-			nationalism_n_imperialism = 1
-		}
+        allow = {
+            war = no
+            nationalism_n_imperialism = 1
+        }
 
-		effect = {
-			prestige = 5
-			random_owned = {
-				limit = { owner = { tag = NET } }
-				owner = {
-					set_global_flag = dutch_wallonia_renamed
-					395 = { change_province_name = "Luik" }
-					392 = { change_province_name = "Namen" }
-					398 = { change_province_name = "Aarlen" }
-					393 = { change_province_name = "Doornik" }
-					394 = { change_province_name = "Bergen" }
-				}
-			}
+        effect = {
+            prestige = 5
+            random_owned = {
+                limit = { owner = { tag = NET } }
+                owner = {
+                    set_global_flag = dutch_wallonia_renamed
+                    395 = { change_province_name = "Luik" }
+                    392 = { change_province_name = "Namen" }
+                    398 = { change_province_name = "Aarlen" }
+                    393 = { change_province_name = "Doornik" }
+                    394 = { change_province_name = "Bergen" }
+                }
+            }
 
-			random_owned = {
-				limit = { owner = { NOT = { tag = NET } } }
-				owner = {
-					clr_global_flag = dutch_wallonia_renamed
-					395 = { change_province_name = "Li�ge" }
-					392 = { change_province_name = "Namur" }
-					398 = { change_province_name = "Arlon" }
-					393 = { change_province_name = "Tournai" }
-					394 = { change_province_name = "Charleroi" }
-				}
-			}
-		}
+            random_owned = {
+                limit = { owner = { NOT = { tag = NET } } }
+                owner = {
+                    clr_global_flag = dutch_wallonia_renamed
+                    395 = { change_province_name = "Li�ge" }
+                    392 = { change_province_name = "Namur" }
+                    398 = { change_province_name = "Arlon" }
+                    393 = { change_province_name = "Tournai" }
+                    394 = { change_province_name = "Charleroi" }
+                }
+            }
+        }
 
-		ai_will_do = { factor = 1 }
-	}
+        ai_will_do = { factor = 1 }
+    }
 
     embrace_wallons = {
         picture = embrace_minority

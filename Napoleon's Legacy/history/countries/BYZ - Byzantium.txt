@@ -36,11 +36,11 @@ citizens_rights = primary_culture_only
 
 ruling_party = BYZ_conservative
 upper_house = {
-	fascist = 0
-	liberal = 35
-	conservative = 55
-	reactionary = 10
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 35
+    conservative = 55
+    reactionary = 10
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }

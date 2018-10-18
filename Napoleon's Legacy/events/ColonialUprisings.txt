@@ -55,7 +55,7 @@ country_event = {
     option = {
         name = "EVTOPTB14500"
         random_state = {
-			limit = { is_colonial = yes }
+            limit = { is_colonial = yes }
             any_owned = {
                 add_province_modifier = {
                     name = colonial_dry_spell
@@ -295,11 +295,11 @@ country_event = {
         colonial_nation = yes
         civilized = yes
         empiricism = 1
-		NOT = { has_country_modifier = colonial_museum_of_natural_history }
+        NOT = { has_country_modifier = colonial_museum_of_natural_history }
     }
 
     mean_time_to_happen = {
-		months = 500
+        months = 500
 
         modifier = {
             factor = 0.9
@@ -327,7 +327,7 @@ country_event = {
         name = "EVTOPTA14540"
         random_owned = { limit = { owner = { ai = yes } } owner = { treasury = 50000 } }
         random_owned = { limit = { owner = { ai = no } } owner = { add_tax_relative_income = -0.30 } }
-		add_country_modifier = { name = colonial_museum_of_natural_history duration = -1 }
+        add_country_modifier = { name = colonial_museum_of_natural_history duration = -1 }
         ai_chance = {
             factor = 80
             modifier = {
@@ -610,7 +610,7 @@ country_event = {
     trigger = {
         any_owned_province = {
             is_colonial = yes
-			NOT = { is_state_religion = yes }
+            NOT = { is_state_religion = yes }
         }
     }
 
@@ -642,10 +642,10 @@ country_event = {
         random_state = {
             limit = {
                 is_colonial = yes
-				any_owned_province = { NOT = { is_state_religion = yes } }
+                any_owned_province = { NOT = { is_state_religion = yes } }
             }
             any_pop = {
-				limit = { NOT = { is_state_religion = yes } }
+                limit = { NOT = { is_state_religion = yes } }
                 militancy = 5
             }
         }
@@ -656,7 +656,7 @@ country_event = {
         random_state = {
             limit = {
                 is_colonial = yes
-				any_owned_province = { NOT = { is_state_religion = yes } }
+                any_owned_province = { NOT = { is_state_religion = yes } }
             }
             any_pop = {
                 limit = { is_state_religion = yes }
@@ -672,18 +672,18 @@ country_event = {
     id = 14590
     title = "EVTNAME14590"
     desc = "EVTDESC14590"
-	picture = "native_force"
+    picture = "native_force"
 
     trigger = {
-		any_owned_province = {
+        any_owned_province = {
         is_colonial = yes
-			any_pop = {
-				type = soldiers
-				militancy = 5
+            any_pop = {
+                type = soldiers
+                militancy = 5
         is_primary_culture = no
         is_accepted_culture = no
-			}
-		}
+            }
+        }
     }
 
     mean_time_to_happen = {
@@ -694,30 +694,30 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-			average_militancy = 6
+            average_militancy = 6
         }
         modifier = {
             factor = 0.9
-			average_militancy = 7
+            average_militancy = 7
         }
         modifier = {
             factor = 2
-			NOT = { average_consciousness = 5 }
+            NOT = { average_consciousness = 5 }
         }
     }
 
     option = {
         name = "EVTOPTA14590"
-		random_owned = {
-			limit = {
-				is_colonial = yes
-				any_pop = {
-					type = soldiers
-					militancy = 5
-					is_primary_culture = no
-					is_accepted_culture = no
-				}
-			}
+        random_owned = {
+            limit = {
+                is_colonial = yes
+                any_pop = {
+                    type = soldiers
+                    militancy = 5
+                    is_primary_culture = no
+                    is_accepted_culture = no
+                }
+            }
         state_scope = {
             soldiers = {
                 limit = {
@@ -728,19 +728,19 @@ country_event = {
             }
         }
     }
-	}
+    }
     option = {
         name = "EVTOPTB14590"
             prestige = -5
-		random_owned = {
-			limit = {
-				is_colonial = yes
-				any_pop = {
-					type = soldiers
-					militancy = 5
-					is_primary_culture = no
-					is_accepted_culture = no
-				}
+        random_owned = {
+            limit = {
+                is_colonial = yes
+                any_pop = {
+                    type = soldiers
+                    militancy = 5
+                    is_primary_culture = no
+                    is_accepted_culture = no
+                }
         }
         state_scope = {
             soldiers = {
@@ -749,7 +749,7 @@ country_event = {
                     is_accepted_culture = no
                 }
                 militancy = 2
-				}
+                }
             }
         }
     }
@@ -929,7 +929,7 @@ province_event = {
     mean_time_to_happen = {
         months = 600
         modifier = {
-			factor = 0.9
+            factor = 0.9
             average_militancy = 5
         }
         modifier = {
@@ -938,11 +938,11 @@ province_event = {
         }
         modifier = {
             factor = 0.9
-			owner = { mass_politics = 1 }
+            owner = { mass_politics = 1 }
             }
         modifier = {
             factor = 1.5
-			NOT = { average_consciousness = 5 }
+            NOT = { average_consciousness = 5 }
         }
         modifier = {
             factor = 1.1
@@ -980,7 +980,7 @@ province_event = {
             any_pop = {
                 limit = { militancy = 4 }
                 reduce_pop = 0.99
-				militancy = -1
+                militancy = -1
                 consciousness = 1
             }
         }
@@ -1008,8 +1008,8 @@ country_event = {
     trigger = {
         colonial_nation = yes
         civilized = yes
-		NOT = { administration_spending = 0.5 }
-		NOT = { state_n_government = 1 }
+        NOT = { administration_spending = 0.5 }
+        NOT = { state_n_government = 1 }
         }
 
 
@@ -2144,29 +2144,29 @@ country_event = {
     option = {
         name = "EVTOPTA14780"
         random_state = {
-			limit = { is_colonial = yes }
-			any_pop = { reduce_pop = 0.8 }
-			any_owned = { life_rating = -1 }
-            }
-        ai_chance = {
-            factor = 50
-			modifier = {
-				factor = 100
-				NOT = { money = 10000 }
-        }
-    }
-	}
-    option = {
-        name = "EVTOPTB14780"
-        treasury = -10000
-        random_state = {
-			limit = { is_colonial = yes }
-			any_pop = { reduce_pop = 0.95 }
+            limit = { is_colonial = yes }
+            any_pop = { reduce_pop = 0.8 }
+            any_owned = { life_rating = -1 }
             }
         ai_chance = {
             factor = 50
             modifier = {
-				factor = 0
+                factor = 100
+                NOT = { money = 10000 }
+        }
+    }
+    }
+    option = {
+        name = "EVTOPTB14780"
+        treasury = -10000
+        random_state = {
+            limit = { is_colonial = yes }
+            any_pop = { reduce_pop = 0.95 }
+            }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
                 NOT = { money = 10000 }
             }
         }
@@ -2211,8 +2211,8 @@ country_event = {
             consciousness = 2
         }
         random_state = {
-			limit = { is_colonial = yes }
-			any_owned = { life_rating = 1 }
+            limit = { is_colonial = yes }
+            any_owned = { life_rating = 1 }
             }
         }
 

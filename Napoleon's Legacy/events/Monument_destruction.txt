@@ -63,7 +63,7 @@ country_event = {
                 scaled_consciousness = { factor = 2 ideology = liberal }
                 scaled_consciousness = { factor = 2 ideology = socialist }
             }
-			any_pop = { limit = { has_pop_culture = british } militancy = 4 consciousness = 6 }
+            any_pop = { limit = { has_pop_culture = british } militancy = 4 consciousness = 6 }
         }
         300 = {
             add_province_modifier = { name = war_torn duration = 720 }

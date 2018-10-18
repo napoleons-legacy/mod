@@ -76,16 +76,16 @@ political_decisions = {
         effect = {
             prestige = 30
             random_owned = {
-				limit = { owner = { accepted_culture = south_german } } owner = { remove_accepted_culture = south_german }
-			}
-			random_owned = {
-				limit = { owner = { accepted_culture = north_german } } owner = { remove_accepted_culture = north_german }
+                limit = { owner = { accepted_culture = south_german } } owner = { remove_accepted_culture = south_german }
+            }
+            random_owned = {
+                limit = { owner = { accepted_culture = north_german } } owner = { remove_accepted_culture = north_german }
                 }
-			random_owned = {
-				limit = { owner = { accepted_culture = czech } } owner = { remove_accepted_culture = czech }
-			}
-			random_owned = {
-				limit = { owner = { primary_culture = polish } }
+            random_owned = {
+                limit = { owner = { accepted_culture = czech } } owner = { remove_accepted_culture = czech }
+            }
+            random_owned = {
+                limit = { owner = { primary_culture = polish } }
                 owner = {
                     add_accepted_culture = lithuanian
                     all_core = {
@@ -244,15 +244,15 @@ political_decisions = {
 
         effect = {
             set_country_flag = unite_with_poland
-			random_owned = {
-				limit = { owner = { accepted_culture = south_german } } owner = { remove_accepted_culture = south_german }
-			}
-			random_owned = {
-				limit = { owner = { accepted_culture = north_german } } owner = { remove_accepted_culture = north_german }
-			}
-			random_owned = {
-				limit = { owner = { accepted_culture = czech } } owner = { remove_accepted_culture = czech }
-			}
+            random_owned = {
+                limit = { owner = { accepted_culture = south_german } } owner = { remove_accepted_culture = south_german }
+            }
+            random_owned = {
+                limit = { owner = { accepted_culture = north_german } } owner = { remove_accepted_culture = north_german }
+            }
+            random_owned = {
+                limit = { owner = { accepted_culture = czech } } owner = { remove_accepted_culture = czech }
+            }
             random_country = {
                 limit = {
                     tag = POL
@@ -361,17 +361,17 @@ political_decisions = {
 
         effect = {
             set_country_flag = claimed_eastern_poland
-			badboy = 15
-			955 = { add_core = POL }
-			956 = { add_core = POL }
-			957 = { add_core = POL }
+            badboy = 15
+            955 = { add_core = POL }
+            956 = { add_core = POL }
+            957 = { add_core = POL }
             RUS_707 = { add_core = POL }
             RUS_940 = { add_core = POL }
         }
 
-		ai_will_do = {
-			factor = 1
-			modifier = { factor = 0 badboy = 0.5 }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 badboy = 0.5 }
         }
-	}
+    }
 }

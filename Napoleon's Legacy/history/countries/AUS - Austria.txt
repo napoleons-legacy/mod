@@ -43,13 +43,13 @@ decision = AUS_setup_1836
 
 ruling_party = AUS_conservative
 upper_house = {
-	fascist = 0
-	liberal = 25
-	conservative = 61
-	reactionary = 14
-	anarcho_liberal = 0
-	socialist = 0
-	communist = 0
+    fascist = 0
+    liberal = 25
+    conservative = 61
+    reactionary = 14
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
 }
 
 # Technologies
@@ -87,9 +87,9 @@ nonstate_consciousness = 3
 schools = army_tech_school
 
 foreign_investment = {
-		BAV = 7500
-		WUR = 5000
-		BAD = 5000
+        BAV = 7500
+        WUR = 5000
+        BAD = 5000
 }
 
 oob = "AUS_oob.txt"

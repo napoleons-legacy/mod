@@ -5,7 +5,7 @@ country_event = {
     desc = "EVTDESC49501"
     picture = "danishgovernment"
     is_triggered_only = yes
-    
+
     option = {
         name = "EVTOPTA49501" #Agree
         random_country = {
@@ -86,7 +86,7 @@ country_event = {
     title = "EVTNAME49502" #Refused!
     desc = "EVTDESC49502"
     picture = "danishgovernment"
-    
+
     is_triggered_only = yes
     option = {
         name = "EVTOPTA49502" #Let them go
@@ -226,102 +226,102 @@ country_event = {
         }
     }
 
-	option = {
-		name = "EVTOPTB49503" #Refuse
-		set_country_flag = refused_kalmar_union
-		FROM = { country_event = 49502 }
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0.5
-				in_sphere = FROM
-			}
-			modifier = {
-				factor = 3
-				NOT = {
-					relation = { who = FROM value = 100 }
-				}
-			}
-		}
-	}
+    option = {
+        name = "EVTOPTB49503" #Refuse
+        set_country_flag = refused_kalmar_union
+        FROM = { country_event = 49502 }
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 0.5
+                in_sphere = FROM
+            }
+            modifier = {
+                factor = 3
+                NOT = {
+                    relation = { who = FROM value = 100 }
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = 49504
-	title = "EVTNAME49504" #Form a Political Union?
-	desc = "EVTDESC49504"
-	picture = "danishgovernment"
+    id = 49504
+    title = "EVTNAME49504" #Form a Political Union?
+    desc = "EVTDESC49504"
+    picture = "danishgovernment"
 
-	is_triggered_only = yes
-	option = {
-		name = "EVTOPTA49504" #Agree
-		random_country = {
-			limit = {
-				is_sphere_leader_of = THIS
-				NOT = { tag = FROM }
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = -100
-			}
-		}
-		FROM = {
-			relation = {
-				who = THIS
-				value = 100
-			}
-			diplomatic_influence = {
-				who = THIS
-				value = 100
-			}
-		}
-		any_owned = {
-			limit = {
-				OR = {
-					is_colonial = no
-					continent = europe
-				}
-				is_core = THIS
-			}
-			add_core = SCA 
-		}
-		add_accepted_culture = swedish
-		add_accepted_culture = danish
-		add_accepted_culture = norwegian
-		add_accepted_culture = finnish
-		add_accepted_culture = icelandic
-		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = 0
-				has_country_flag = greater_finland
-			}
-			modifier = {
-				factor = 0.5
-				NOT = {
-					OR = {
-						government = absolute_monarchy
-						government = prussian_constitutionalism
-						government = hms_government
-						government = democracy
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				FROM = {
-					NOT = {
-						OR = {
-							government = absolute_monarchy
-							government = prussian_constitutionalism
-							government = hms_government
-							government = democracy
-						}
-					}
-				}
-			}
-		}
-	}
+    is_triggered_only = yes
+    option = {
+        name = "EVTOPTA49504" #Agree
+        random_country = {
+            limit = {
+                is_sphere_leader_of = THIS
+                NOT = { tag = FROM }
+            }
+            diplomatic_influence = {
+                who = THIS
+                value = -100
+            }
+        }
+        FROM = {
+            relation = {
+                who = THIS
+                value = 100
+            }
+            diplomatic_influence = {
+                who = THIS
+                value = 100
+            }
+        }
+        any_owned = {
+            limit = {
+                OR = {
+                    is_colonial = no
+                    continent = europe
+                }
+                is_core = THIS
+            }
+            add_core = SCA 
+        }
+        add_accepted_culture = swedish
+        add_accepted_culture = danish
+        add_accepted_culture = norwegian
+        add_accepted_culture = finnish
+        add_accepted_culture = icelandic
+        ai_chance = {
+            factor = 90
+            modifier = {
+                factor = 0
+                has_country_flag = greater_finland
+            }
+            modifier = {
+                factor = 0.5
+                NOT = {
+                    OR = {
+                        government = absolute_monarchy
+                        government = prussian_constitutionalism
+                        government = hms_government
+                        government = democracy
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.5
+                FROM = {
+                    NOT = {
+                        OR = {
+                            government = absolute_monarchy
+                            government = prussian_constitutionalism
+                            government = hms_government
+                            government = democracy
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     option = {
         name = "EVTOPTB49504" #Refuse

@@ -1,29 +1,28 @@
 TUR = {
-	value = -100
+    value = -100
 }
 
 army = {
 
-	name = "Army of the Imam of Zaydi"
+    name = "Army of the Imam of Zaydi"
 
-	location = 1178
+    location = 1178
 
-	regiment = {
+    regiment = {
 
-		name= "1. Abdali"
+        name= "1. Abdali"
 
-		type = cavalry
-		
-		home = 1178
-	}
-	regiment = {
+        type = cavalry
 
-		name= "2. Abdali"
+        home = 1178
+    }
+    regiment = {
 
-		type = irregular
-		
-		home = 1178
-	}
+        name= "2. Abdali"
+
+        type = irregular
+
+        home = 1178
+    }
 
 }
-
