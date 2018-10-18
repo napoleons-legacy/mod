@@ -47,18 +47,18 @@ on_battle_lost = {
 }
 
 #country, from = occupier.
-on_surrender = 
+on_surrender =
 {
 
 }
 
-on_new_great_nation = 
+on_new_great_nation =
 {
     10 = 19310
     10 = 19320
 }
 
-on_lost_great_nation = 
+on_lost_great_nation =
 {
 }
 
@@ -94,7 +94,7 @@ on_election_tick = {
 # Note: remember to use tag (allow_multiple_instances = yes)
 # in events specified below, so can be executed several times
 # for each acquired state.
-on_colony_to_state = 
+on_colony_to_state =
 {
     100 = 70000
     100 = 70001
@@ -129,7 +129,7 @@ on_civilize =
     100 = 90910 # RotW
 }
 
-on_my_factories_nationalized = 
+on_my_factories_nationalized =
 {
     100 = 90950
 }

@@ -5,7 +5,7 @@ post_napoleonic_thought = {
     cost = 3600
     unciv_military = yes
 
-    activate_building = fort    
+    activate_building = fort
     army_base = {
         default_organisation = 5
         supply_consumption = 0.10
@@ -293,10 +293,10 @@ point_defense_system = {
     unciv_military = yes
     engineer = {
         support = 0.25
-    } 
+    }
     army_base = {
         supply_consumption = 0.20
-    } 
+    }
     max_fort = 1
     dig_in_cap = 1
     ai_chance = {
@@ -441,10 +441,10 @@ deep_defense_system = {
     unciv_military = yes
     engineer = {
         support = 0.25
-    } 
+    }
     army_base = {
         supply_consumption = 0.20
-    } 
+    }
     max_fort = 1
     dig_in_cap = 1
 
@@ -588,7 +588,7 @@ infiltration = {
     unciv_military = yes
     army_base = {
         supply_consumption = 0.20
-    } 
+    }
     max_fort = 1
     dig_in_cap = 1
 
@@ -669,7 +669,7 @@ modern_army_doctrine = {
 
     army_base = {
         supply_consumption = 0.20
-    } 
+    }
 
     max_fort = 1
     dig_in_cap = 1
@@ -1220,7 +1220,7 @@ machine_guns = {
     unciv_military = yes
 
     combat_width = -5
-    #colonial_life_rating = -10 
+    #colonial_life_rating = -10
     ai_chance = {
         factor = 6
         modifier = {

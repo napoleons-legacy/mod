@@ -38,20 +38,20 @@ army = {
     name = "Army of the Oyo Empire"
     location = 1926
 regiment = {
-        name= "Alaafin of Oyo's Guards"        
+        name= "Alaafin of Oyo's Guards"
 type = cavalry
 
 home = 1926    }
 
 
 regiment = {
-        name= "1st Yoruba Warriors"    
+        name= "1st Yoruba Warriors"
     type = irregular
     home = 1924
     }
 
 regiment = {
-        name= "2nd Yoruba Warriors"        
+        name= "2nd Yoruba Warriors"
 type = irregular
     home = 1925
     }

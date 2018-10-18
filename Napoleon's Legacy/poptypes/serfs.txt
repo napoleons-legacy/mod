@@ -79,7 +79,7 @@ ideologies = {
 
     communist = { factor = 1 }
 
-    liberal = { factor = 1 
+    liberal = { factor = 1
     modifier = {
         factor = 1.2
         literacy = 0.6
@@ -119,7 +119,7 @@ ideologies = {
 
 issues = {
 
-    moralism = { 
+    moralism = {
     factor = 2
 
     modifier = {
@@ -129,7 +129,7 @@ issues = {
     }
 
     pluralism = {
-    factor = 1 
+    factor = 1
 
     modifier = {
         factor = 0

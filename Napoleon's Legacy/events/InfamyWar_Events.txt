@@ -214,7 +214,7 @@ country_event = {
                 NOT = { alliance_with = THIS }
             }
             set_country_flag = coalition_member
-        }       
+        }
     }
 }
 
@@ -268,7 +268,7 @@ country_event = {
                 NOT = { truce_with = THIS }
                 NOT = { neighbour = THIS }
             }
-        }           
+        }
         modifier = {
             factor = 2
             any_greater_power = {

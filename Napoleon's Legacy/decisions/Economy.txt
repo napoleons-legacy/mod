@@ -40,8 +40,8 @@ political_decisions = {
                             tech_school = commerce_tech_school
                             market_regulations = 1
                         }
-                        trade_policy = protectionism 
-                    } 
+                        trade_policy = protectionism
+                    }
                 }
                 owner = { country_event = 22582 }
             }
@@ -51,7 +51,7 @@ political_decisions = {
                     owner = {
                         NOT = { tech_school = commerce_tech_school market_regulations = 1 }
                         trade_policy = protectionism
-                    } 
+                    }
                 }
                 owner = { country_event = 22581 }
             }
@@ -63,8 +63,8 @@ political_decisions = {
                             tech_school = commerce_tech_school
                             market_regulations = 1
                         }
-                        trade_policy = free_trade 
-                    } 
+                        trade_policy = free_trade
+                    }
                 }
                 owner = { country_event = 22585 }
             }
@@ -74,7 +74,7 @@ political_decisions = {
                     owner = {
                         NOT = { tech_school = commerce_tech_school market_regulations = 1 }
                         trade_policy = free_trade
-                    } 
+                    }
                 }
                 owner = { country_event = 22584 }
             }
@@ -134,7 +134,7 @@ political_decisions = {
                             has_country_modifier = mercantilism
                             has_country_modifier = economic_nationalism
                         }
-                    } 
+                    }
                 }
                 owner = {
                     remove_country_modifier = mercantilism
@@ -150,7 +150,7 @@ political_decisions = {
                             has_country_modifier = french_liberal_school
                             has_country_modifier = smithian_school
                         }
-                    } 
+                    }
                 }
                 owner = {
                     remove_country_modifier = french_liberal_school

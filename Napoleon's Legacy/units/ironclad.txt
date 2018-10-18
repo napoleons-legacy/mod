@@ -24,7 +24,7 @@ ironclad = {
 
     #Building Costs
     build_time = 360
-    build_cost = {    
+    build_cost = {
         steamer_convoy = 25
         artillery = 10
         canned_food = 10

@@ -12,14 +12,14 @@ factory_template = {
         effect_multiplier = -2.5
     }
 
-    employees = {        
-        { 
+    employees = {
+        {
             poptype = craftsmen
             effect = throughput
             amount = 0.8
-        }        
-        { 
-            poptype = clerks 
+        }
+        {
+            poptype = clerks
             effect = output
             effect_multiplier = 1.5
             amount = 0.2
@@ -27,7 +27,7 @@ factory_template = {
 
     }
     type = factory
-    workforce = 10000 
+    workforce = 10000
 }
 
 cheap_factory_template = {
@@ -36,19 +36,19 @@ cheap_factory_template = {
     }
 
     owner = {
-        poptype = capitalists 
+        poptype = capitalists
         effect = input
         effect_multiplier = -1.5
     }
 
-    employees = {        
-        { 
+    employees = {
+        {
             poptype = craftsmen
             effect = throughput
             amount = 0.8
-        }        
-        { 
-            poptype = clerks 
+        }
+        {
+            poptype = clerks
             effect = output
             effect_multiplier = 1.5
             amount = 0.2
@@ -56,7 +56,7 @@ cheap_factory_template = {
 
     }
     type = factory
-    workforce = 10000 
+    workforce = 10000
 }
 
 machine_part_user_template = {
@@ -65,19 +65,19 @@ machine_part_user_template = {
     }
 
     owner = {
-        poptype = capitalists 
+        poptype = capitalists
         effect = input
         effect_multiplier = -2.5
     }
 
-    employees = {        
-        { 
+    employees = {
+        {
             poptype = craftsmen
             effect = throughput
             amount = 0.8
-        }        
-        { 
-            poptype = clerks 
+        }
+        {
+            poptype = clerks
             effect = output
             effect_multiplier = 1.5
             amount = 0.2
@@ -85,7 +85,7 @@ machine_part_user_template = {
 
     }
     type = factory
-    workforce = 10000 
+    workforce = 10000
 }
 
 cement_template = {
@@ -95,19 +95,19 @@ cement_template = {
     }
 
     owner = {
-        poptype = capitalists 
+        poptype = capitalists
         effect = input
         effect_multiplier = -2.5
     }
 
-    employees = {        
-        { 
+    employees = {
+        {
             poptype = craftsmen
             effect = throughput
             amount = 0.8
-        }        
-        { 
-            poptype = clerks 
+        }
+        {
+            poptype = clerks
             effect = output
             effect_multiplier = 1.5
             amount = 0.2
@@ -115,13 +115,13 @@ cement_template = {
 
     }
     type = factory
-    workforce = 10000 
+    workforce = 10000
 }
 
 
 ############# LATE GAME FACTORIES
 
-aeroplane_factory = {       
+aeroplane_factory = {
     template = machine_part_user_template
     input_goods = {
         machine_parts = 1.11    #38.69
@@ -141,15 +141,15 @@ aeroplane_factory = {
     }
 }
 
-barrel_factory = {       
+barrel_factory = {
     template = machine_part_user_template
-    input_goods = {   
+    input_goods = {
         automobiles = 0.3    #21
         machine_parts = 1    #29.2
         electric_gear = 0.85    #16
         steel = 2        #7
     }
-    output_goods = barrels 
+    output_goods = barrels
     value = 1.0            #98    total input+maint = 83
     bonus = {
         trigger = { has_building = automobile_factory }
@@ -165,16 +165,16 @@ barrel_factory = {
     }
 }
 
-automobile_factory = {       
+automobile_factory = {
     template = machine_part_user_template
-    input_goods = {     
+    input_goods = {
         machine_parts = 1.05    #36.5
         electric_gear = 1.5    #24
         rubber = 1        #7
         steel = 2.25        #10.58    total input+maint = 89
     }
 
-    output_goods = automobiles 
+    output_goods = automobiles
     value = 1.43            #100
     bonus = {
         trigger = { has_building = machine_parts_factory }
@@ -190,13 +190,13 @@ automobile_factory = {
     }
 }
 
-radio_factory = {       
+radio_factory = {
     template = factory_template
-    input_goods = {      
+    input_goods = {
         glass = 10         #29
         electric_gear = 3    #48      total input+maint = 87
     }
-    output_goods = radio 
+    output_goods = radio
     value = 6.5            #104
     bonus = {
         trigger = { has_building = electric_gear_factory }
@@ -208,13 +208,13 @@ radio_factory = {
     }
 }
 
-telephone_factory = {       
+telephone_factory = {
     template = factory_template
-    input_goods = {       
+    input_goods = {
         glass = 15         #43.5
         electric_gear = 2.5    #40     total input+maint = 93.5
     }
-    output_goods = telephones 
+    output_goods = telephones
     value = 6.5            #104
         bonus = {
         trigger = { has_building = electric_gear_factory }
@@ -228,14 +228,14 @@ telephone_factory = {
 
 ############# STRATEGIC FACTORIES
 
-electric_gear_factory = {       
+electric_gear_factory = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         rubber = 4        #28
         coal = 5        #11.5
         steel = 5        #23.5    total input+maint = 73
     }
-    output_goods = electric_gear 
+    output_goods = electric_gear
     value = 5.5            #88
     bonus = {
         trigger = { trade_goods_in_state = rubber }
@@ -251,13 +251,13 @@ electric_gear_factory = {
     }
 }
 
-machine_parts_factory = {       
+machine_parts_factory = {
     template = factory_template
-    input_goods = {    
+    input_goods = {
         steel = 9        #42.3
         coal = 5        #11.5  total input+maint = 66
     }
-    output_goods = machine_parts 
+    output_goods = machine_parts
     value = 2            #73
     bonus = {
         trigger = { has_building = steel_factory }
@@ -269,12 +269,12 @@ machine_parts_factory = {
     }
 }
 
-synthetic_oil_factory = {       
+synthetic_oil_factory = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         coal = 12        #27.6    total input+maint = 39
     }
-    output_goods = oil 
+    output_goods = oil
     value = 2.5            #30
     bonus = {
         trigger = { trade_goods_in_state = coal }
@@ -284,17 +284,17 @@ synthetic_oil_factory = {
 
 ############# ADVANCED FACTORIES
 
-fuel_refinery = {       
+fuel_refinery = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         oil = 2.5            #30    total input+maint = 40
     }
     output_goods = fuel
     value = 2            #50
     bonus = {
-        trigger = { 
+        trigger = {
             OR = {
-                trade_goods_in_state = oil 
+                trade_goods_in_state = oil
                 has_building = synthetic_oil_factory
                 }
             }
@@ -302,7 +302,7 @@ fuel_refinery = {
     }
 }
 
-steamer_shipyard = {       
+steamer_shipyard = {
     template = factory_template
     input_goods = {
         lumber = 10
@@ -310,7 +310,7 @@ steamer_shipyard = {
         coal = 30        #69
         machine_parts = 0.25 #9.125 total input+maint = 191.125
     }
-    output_goods = steamer_convoy 
+    output_goods = steamer_convoy
     is_coastal = yes
     value = 3.2            #208, base profitability 16.875 up from 13
     bonus = {
@@ -329,9 +329,9 @@ steamer_shipyard = {
 
 ############# LUXURY GOODS FACTORIES
 
-luxury_clothes_factory = {       
+luxury_clothes_factory = {
     template = factory_template
-    input_goods = {   
+    input_goods = {
         regular_clothes = 0.9    #5.22
         silk = 3.9        #39    total input+maint = 54
     }
@@ -347,13 +347,13 @@ luxury_clothes_factory = {
     }
 }
 
-luxury_furniture_factory = {       
+luxury_furniture_factory = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         furniture = 2         #45.08
         tropical_wood = 7.5 #8.1    total input+maint = 53.18
     }
-    output_goods = luxury_furniture 
+    output_goods = luxury_furniture
     value = 1.1            #64.9
     bonus = {
         trigger = { has_building = furniture_factory }
@@ -367,9 +367,9 @@ luxury_furniture_factory = {
 
 ############# MEDIUM FACTORIES
 
-steel_factory = {       
+steel_factory = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         iron = 20        #70
         coal = 5        #11.5    total input+maint = 81.5
     }
@@ -386,13 +386,13 @@ steel_factory = {
     }
 }
 
-artillery_factory = {       
+artillery_factory = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         explosives = 1        #20
         steel = 8        #37.6   total input+maint = 67.6
     }
-    output_goods = artillery 
+    output_goods = artillery
     value = 1.3            #78
     bonus = {
         trigger = { has_building = steel_factory }
@@ -404,14 +404,14 @@ artillery_factory = {
     }
 }
 
-clipper_shipyard = {       
+clipper_shipyard = {
     template = factory_template
-    input_goods = {         
+    input_goods = {
         fabric = 100        #162
         lumber = 100        #90
         steel = 30        #141        total input+maint = 393
     }
-    output_goods = clipper_convoy 
+    output_goods = clipper_convoy
     is_coastal = yes
     value = 9.6            #403.2, down from 10 with a profit of 420
     bonus = {
@@ -428,13 +428,13 @@ clipper_shipyard = {
     }
 }
 
-small_arms_factory = {       
+small_arms_factory = {
     template = factory_template
-    input_goods = {        
+    input_goods = {
         ammunition = 2.0    #35
         steel = 3.0        #14.1        total input+maint = 60
     }
-    output_goods = small_arms 
+    output_goods = small_arms
     value = 2            #74
 
     bonus = {
@@ -449,12 +449,12 @@ small_arms_factory = {
 
 ############# COMMON FACTORIES
 
-furniture_factory = {       
+furniture_factory = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         lumber = 40        #40 total input+maint = 50
     }
-    output_goods = furniture 
+    output_goods = furniture
     value = 12            #58.8
     bonus = {
         trigger = { has_building = lumber_mill }
@@ -462,12 +462,12 @@ furniture_factory = {
     }
 }
 
-paper_mill = {       
+paper_mill = {
     template = factory_template
-    input_goods = { 
+    input_goods = {
         lumber = 50        #45    total input+maint = 55
     }
-    output_goods = paper 
+    output_goods = paper
     value = 20            #68
     bonus = {
         trigger = { has_building = lumber_mill }
@@ -475,12 +475,12 @@ paper_mill = {
     }
 }
 
-regular_clothes_factory = {       
+regular_clothes_factory = {
     template = factory_template
-    input_goods = {  
+    input_goods = {
         fabric = 40        #72    total input+maint = 82
     }
-    output_goods = regular_clothes 
+    output_goods = regular_clothes
     value = 15            #87
     bonus = {
         trigger = { has_building = fabric_factory }
@@ -488,13 +488,13 @@ regular_clothes_factory = {
     }
 }
 
-explosives_factory = {       
+explosives_factory = {
     template = factory_template
-    input_goods = {   
+    input_goods = {
         fertilizer = 3        #30
         ammunition = 0.8    #14    total input+maint = 54
     }
-    output_goods = explosives 
+    output_goods = explosives
     value = 3            #60
     bonus = {
         trigger = { has_building = fertilizer_factory }
@@ -508,13 +508,13 @@ explosives_factory = {
 
 ############# CHEAP FACTORIES
 
-ammunition_factory = {       
+ammunition_factory = {
     template = cheap_factory_template
-    input_goods = {      
+    input_goods = {
         sulphur = 2        #12
         steel = 3        #14.1    total input+maint = 30.1
     }
-    output_goods = ammunition 
+    output_goods = ammunition
     value = 2            #35
     bonus = {
         trigger = { trade_goods_in_state = sulphur }
@@ -526,22 +526,22 @@ ammunition_factory = {
     }
 }
 
-canned_food_factory = {       
+canned_food_factory = {
     template = cheap_factory_template
-    input_goods = { 
+    input_goods = {
         steel = 0.5     #2.35
         cattle = 4         #8
         grain = 4         #8.8
         fish = 4         #6    total input+maint = 29.15
     }
-    output_goods = canned_food 
+    output_goods = canned_food
     value = 2.1            #33.6
     bonus = {
         trigger = { trade_goods_in_state = grain }
         value = 0.075
     }
     bonus = {
-        trigger = { 
+        trigger = {
             OR = {
                 trade_goods_in_state = fish
                 trade_goods_in_state = cattle
@@ -555,12 +555,12 @@ canned_food_factory = {
     }
 }
 
-dye_factory = {       
+dye_factory = {
     template = factory_template #used to becheap_factory_template
-    input_goods = {     
+    input_goods = {
         coal = 9           #20.7    total input+maint = Used to be 24.7 now 30.7
     }
-    output_goods = dye 
+    output_goods = dye
     value = 3            #Used to be 30 (2.5) now 36
     bonus = {
         trigger = { trade_goods_in_state = coal }
@@ -569,14 +569,14 @@ dye_factory = {
 }
 
 
-liquor_distillery = {       
+liquor_distillery = {
     template = cheap_factory_template
-    input_goods = {        
+    input_goods = {
         grain = 10        #22
         fruit = 5        #9
         glass = 13        #37.7    total input+maint = 72.7
     }
-    output_goods = liquor 
+    output_goods = liquor
     value = 17            #74.8
     bonus = {
         trigger = { has_building = glass_factory }
@@ -592,13 +592,13 @@ liquor_distillery = {
     }
 }
 
-winery = {       
+winery = {
     template = cheap_factory_template
-    input_goods = {      
+    input_goods = {
         fruit = 5        #9
         glass = 5        #14.5    total input+maint = 27.5
     }
-    output_goods = wine 
+    output_goods = wine
     value = 3.5            #34
     bonus = {
         trigger = { has_building = glass_factory }
@@ -610,14 +610,14 @@ winery = {
     }
 }
 
-############# BASIC FACTORIES 
+############# BASIC FACTORIES
 
-lumber_mill = {       
+lumber_mill = {
     template = factory_template
-    input_goods = {       
+    input_goods = {
         timber = 100        #90    total input+maint = 100
     }
-    output_goods = lumber 
+    output_goods = lumber
 
     value = 110            #110
     bonus = {
@@ -626,9 +626,9 @@ lumber_mill = {
     }
 }
 
-fabric_factory = {       
+fabric_factory = {
     template = factory_template
-    input_goods = {     
+    input_goods = {
         cotton = 18        # 36
         dye = 2            # 24 total input+maint = 70
     }
@@ -641,7 +641,7 @@ fabric_factory = {
     bonus = {
         trigger = {
             OR = {
-                has_building = dye_factory 
+                has_building = dye_factory
                 trade_goods_in_state = dye
                 }
             }
@@ -649,12 +649,12 @@ fabric_factory = {
     }
 }
 
-cement_factory = {       
+cement_factory = {
     template = cement_template
-    input_goods = {           
+    input_goods = {
         coal = 12        #27.6        total input+maint = 37
-    } 
-    output_goods = cement 
+    }
+    output_goods = cement
     value = 3            #48
     bonus = {
         trigger = { trade_goods_in_state = coal }
@@ -662,12 +662,12 @@ cement_factory = {
     }
 }
 
-glass_factory = {       
+glass_factory = {
     template = factory_template
-    input_goods = {            
+    input_goods = {
         coal = 14        #32.2        total input+maint = 42
     }
-    output_goods = glass 
+    output_goods = glass
     value = 18            #52.2
     bonus = {
         trigger = { trade_goods_in_state = coal }
@@ -675,12 +675,12 @@ glass_factory = {
     }
 }
 
-fertilizer_factory = {       
+fertilizer_factory = {
     template = factory_template
-    input_goods = {   
+    input_goods = {
         sulphur = 6        #36        total input+maint = 46
     }
-    output_goods = fertilizer 
+    output_goods = fertilizer
     value = 5            #50
     bonus = {
         trigger = { trade_goods_in_state = sulphur }
@@ -694,25 +694,25 @@ fertilizer_factory = {
 RGO_template_farmers = {
 
     owner = {
-        poptype = aristocrats 
+        poptype = aristocrats
         effect = output
     }
 
     employees = {
         {
-            poptype = farmers 
+            poptype = farmers
             effect = throughput
             amount = 1
         }
 
         {
-            poptype = serfs 
+            poptype = serfs
             effect = throughput
             amount = 1
         }
 
         {
-            poptype = slaves 
+            poptype = slaves
             effect = throughput
             amount = 1
             effect_multiplier = 1.2
@@ -725,25 +725,25 @@ RGO_template_farmers = {
 
 RGO_template_labourers = {
     owner = {
-        poptype = aristocrats 
+        poptype = aristocrats
         effect = output
     }
 
     employees = {
-        { 
-            poptype = labourers 
+        {
+            poptype = labourers
             effect = throughput
             amount = 1
         }
 
         {
-            poptype = serfs 
+            poptype = serfs
             effect = throughput
             amount = 1
         }
 
         {
-            poptype = slaves 
+            poptype = slaves
             effect = throughput
             amount = 1
             effect_multiplier = 1.3
@@ -757,49 +757,49 @@ RGO_template_labourers = {
 
 cattle_ranch = {
     template = RGO_template_farmers
-    output_goods = cattle 
+    output_goods = cattle
     value = 1.7 #1.8
     farm = yes
 }
 
 coal_mine = {
     template = RGO_template_labourers
-    output_goods = coal 
+    output_goods = coal
     value = 2.4 #2.4
     mine = yes
 }
 
 coffee_plantation = {
     template = RGO_template_farmers
-    output_goods = coffee 
+    output_goods = coffee
     value = 1.5    #1.5
     farm = yes
 }
 
 cotton_plantation = {
     template = RGO_template_farmers
-    output_goods = cotton 
+    output_goods = cotton
     value = 1.8 #3
     farm = yes
 }
 
 dye_plantation = {
     template = RGO_template_farmers
-    output_goods = dye 
+    output_goods = dye
     value = 0.22
     farm = yes
 }
 
 fishing_wharf = {
     template = RGO_template_farmers
-    output_goods = fish 
+    output_goods = fish
     value = 2.1 #2.2
     farm = yes
 }
 
 grain_farm = {
     template = RGO_template_farmers
-    output_goods = grain 
+    output_goods = grain
     value = 1.7 #1.8
     farm = yes
 }
@@ -813,28 +813,28 @@ iron_mine = {
 
 oil_rig = {
     template = RGO_template_labourers
-    output_goods = oil 
+    output_goods = oil
     value = 1
     mine = yes
 }
 
 opium_plantation = {
     template = RGO_template_farmers
-    output_goods = opium 
+    output_goods = opium
     value = 0.7
     farm = yes
 }
 
 orchard = {
     template = RGO_template_farmers
-    output_goods = fruit 
+    output_goods = fruit
     value = 2.7 #2.8
     farm = yes
 }
 
 precious_metal_mine = {
     template = RGO_template_labourers
-    output_goods = precious_metal 
+    output_goods = precious_metal
     value = 3
     mine = yes
 }
@@ -848,63 +848,63 @@ precious_goods_market = {
 
 rubber_lodge = {
     template = RGO_template_labourers
-    output_goods = rubber 
+    output_goods = rubber
     value = 0.75
     farm = yes
 }
 
 sheep_ranch = {
     template = RGO_template_farmers
-    output_goods = wool 
+    output_goods = wool
     value = 4.8 #5
     farm = yes
 }
 
 silkworm_ranch = {
     template = RGO_template_farmers
-    output_goods = silk 
+    output_goods = silk
     value = 0.25    #0.25
     farm = yes
 }
 
 sulphur_mine = {
     template = RGO_template_labourers
-    output_goods = sulphur 
+    output_goods = sulphur
     value = 2
     mine = yes
 }
 
 tea_plantation = {
     template = RGO_template_farmers
-    output_goods = tea 
+    output_goods = tea
     value = 1.75    #1.75
     farm = yes
 }
 
 timber_lodge = {
     template = RGO_template_labourers
-    output_goods = timber 
+    output_goods = timber
     value = 8 #8
     farm = yes
 }
 
 tobacco_plantation = {
     template = RGO_template_farmers
-    output_goods = tobacco 
+    output_goods = tobacco
     value = 2 #2.5
     farm = yes
 }
 
 tropical_wood_lodge = {
     template = RGO_template_labourers
-    output_goods = tropical_wood 
+    output_goods = tropical_wood
     value = 4
     farm = yes
 }
 
 ### Artisans #####################################################################################
 
-artisan_aeroplane = {       
+artisan_aeroplane = {
     input_goods = {
         machine_parts = 1.11    #38.69
         electric_gear = 2    #32
@@ -915,7 +915,7 @@ artisan_aeroplane = {
     value = 0.91            #100
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -924,18 +924,18 @@ artisan_aeroplane = {
     workforce = 10000
 }
 
-artisan_barrel = {       
-    input_goods = {   
+artisan_barrel = {
+    input_goods = {
         automobiles = 0.3    #21
         machine_parts = 1    #29.2
         electric_gear = 0.85    #16
         steel = 2        #7
     }
-    output_goods = barrels 
+    output_goods = barrels
     value = 1.0            #98    total input+maint = 83
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -944,19 +944,19 @@ artisan_barrel = {
     workforce = 10000
 }
 
-artisan_automobile = {       
-    input_goods = {     
+artisan_automobile = {
+    input_goods = {
         machine_parts = 1.05    #36.5
         electric_gear = 1.5    #24
         rubber = 1        #7
         steel = 2.25        #10.58    total input+maint = 89
     }
 
-    output_goods = automobiles 
+    output_goods = automobiles
     value = 1.43            #100
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -965,16 +965,16 @@ artisan_automobile = {
     workforce = 10000
 }
 
-artisan_radio = {       
-    input_goods = {      
+artisan_radio = {
+    input_goods = {
         glass = 10         #29
         electric_gear = 3    #48      total input+maint = 87
     }
-    output_goods = radio 
+    output_goods = radio
     value = 6.5            #104
 
     owner = {
-        poptype = artisans  
+        poptype = artisans
         effect = output
     }
 
@@ -983,16 +983,16 @@ artisan_radio = {
     workforce = 10000
 }
 
-artisan_telephone = {       
-    input_goods = {       
+artisan_telephone = {
+    input_goods = {
         glass = 15         #43.5
         electric_gear = 2.5    #40     total input+maint = 93.5
     }
-    output_goods = telephones 
+    output_goods = telephones
     value = 6.5            #104
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1003,17 +1003,17 @@ artisan_telephone = {
 
 ############# STRATEGIC FACTORIES
 
-artisan_electric_gear = {       
-    input_goods = { 
+artisan_electric_gear = {
+    input_goods = {
         rubber = 4        #28
         coal = 5        #11.5
         steel = 5        #23.5    total input+maint = 73
     }
-    output_goods = electric_gear 
+    output_goods = electric_gear
     value = 5.5            #88
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1022,16 +1022,16 @@ artisan_electric_gear = {
     workforce = 10000
 }
 
-artisan_machine_parts = {       
-    input_goods = {    
+artisan_machine_parts = {
+    input_goods = {
         steel = 9        #42.3
         coal = 5        #11.5  total input+maint = 66
     }
-    output_goods = machine_parts 
+    output_goods = machine_parts
     value = 2            #73
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1042,15 +1042,15 @@ artisan_machine_parts = {
 
 ############# ADVANCED FACTORIES
 
-artisan_fuel = {       
-    input_goods = { 
+artisan_fuel = {
+    input_goods = {
         oil = 2.5            #30    total input+maint = 40
     }
     output_goods = fuel
     value = 2            #50
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1059,19 +1059,19 @@ artisan_fuel = {
     workforce = 10000
 }
 
-artisan_steamer = {       
+artisan_steamer = {
     input_goods = {
         lumber = 10
         steel = 22        #94
         coal = 30        #69
         machine_parts = 0.25 #9.125 total input+maint = 191.125
     }
-    output_goods = steamer_convoy 
+    output_goods = steamer_convoy
     is_coastal = yes
     value = 3.2            #195
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1083,16 +1083,16 @@ artisan_steamer = {
 
 ############# LUXURY GOODS FACTORIES
 
-artisan_luxury_clothes = {       
-    input_goods = {   
+artisan_luxury_clothes = {
+    input_goods = {
         regular_clothes = 0.9    #5.22
         silk = 3.9        #39    total input+maint = 54
     }
-    output_goods = luxury_clothes 
+    output_goods = luxury_clothes
     value = 1            #65
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1101,16 +1101,16 @@ artisan_luxury_clothes = {
     workforce = 10000
 }
 
-artisan_luxury_furniture = {       
-    input_goods = { 
+artisan_luxury_furniture = {
+    input_goods = {
         furniture = 2         #45.08
         tropical_wood = 7.5 #8.1    total input+maint = 53.18
     }
-    output_goods = luxury_furniture 
+    output_goods = luxury_furniture
     value = 1.1            #64.9
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1121,17 +1121,17 @@ artisan_luxury_furniture = {
 
 ############# MEDIUM FACTORIES
 
-artisan_steel = {       
-    input_goods = { 
+artisan_steel = {
+    input_goods = {
         iron = 20        #70
         coal = 5        #11.5    total input+maint = 81.5
     }
 
-    output_goods = steel         #94 
+    output_goods = steel         #94
     value = 20
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1141,16 +1141,16 @@ artisan_steel = {
     workforce = 10000
 }
 
-artisan_artillery = {       
-    input_goods = { 
+artisan_artillery = {
+    input_goods = {
         explosives = 1        #20
         steel = 8        #37.6   total input+maint = 67.6
     }
-    output_goods = artillery 
+    output_goods = artillery
     value = 1.3            #78
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1159,18 +1159,18 @@ artisan_artillery = {
     workforce = 10000
 }
 
-artisan_clipper = {       
-    input_goods = {         
+artisan_clipper = {
+    input_goods = {
         fabric = 100        #162
         lumber = 100        #90
         steel = 30        #141        total input+maint = 393
     }
-    output_goods = clipper_convoy 
+    output_goods = clipper_convoy
     is_coastal = yes
     value = 9.6            #420
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1179,16 +1179,16 @@ artisan_clipper = {
     workforce = 10000
 }
 
-artisan_small_arms = {       
-    input_goods = {        
+artisan_small_arms = {
+    input_goods = {
         ammunition = 2.0    #35
         steel = 3.0        #14.1        total input+maint = 60
     }
-    output_goods = small_arms 
+    output_goods = small_arms
     value = 2            #74
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1199,15 +1199,15 @@ artisan_small_arms = {
 
 ############# COMMON FACTORIES
 
-artisan_furniture = {       
-    input_goods = { 
+artisan_furniture = {
+    input_goods = {
         lumber = 40        #20
     }
-    output_goods = furniture 
+    output_goods = furniture
     value = 12            #58.8
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1216,15 +1216,15 @@ artisan_furniture = {
     workforce = 10000
 }
 
-artisan_paper = {     
-    input_goods = { 
+artisan_paper = {
+    input_goods = {
         lumber = 50        #45    total input+maint = 55
     }
-    output_goods = paper 
+    output_goods = paper
     value = 20            #68
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1233,15 +1233,15 @@ artisan_paper = {
     workforce = 10000
 }
 
-artisan_regular_clothes = {       
-    input_goods = {  
+artisan_regular_clothes = {
+    input_goods = {
         fabric = 45        #was 81
     }
     output_goods = regular_clothes
     value = 15            #87
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1250,12 +1250,12 @@ artisan_regular_clothes = {
     workforce = 10000
 }
 
-artisan_explosives = {       
-    input_goods = {   
+artisan_explosives = {
+    input_goods = {
         fertilizer = 3        #30
         ammunition = 0.8    #14    total input+maint = 54
     }
-    output_goods = explosives 
+    output_goods = explosives
     value = 3            #60
 
     owner = {
@@ -1270,17 +1270,17 @@ artisan_explosives = {
 
 ############# CHEAP FACTORIES
 
-artisan_ammunition = {       
-    input_goods = {      
+artisan_ammunition = {
+    input_goods = {
         sulphur = 2        #12
         coal = 2        #4.6
         iron = 5        #17.5    total input+maint = 44
     }
-    output_goods = ammunition 
+    output_goods = ammunition
     value = 3            #52.5
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1289,18 +1289,18 @@ artisan_ammunition = {
     workforce = 10000
 }
 
-artisan_canned_food = {       
-    input_goods = { 
+artisan_canned_food = {
+    input_goods = {
         steel = 1         #4.7
         cattle = 12     #24
         grain = 12         #26.4
         fish = 12         #18    total input+maint = 85
     }
-    output_goods = canned_food 
+    output_goods = canned_food
     value = 6            #96
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1309,16 +1309,16 @@ artisan_canned_food = {
     workforce = 10000
 }
 
-artisan_liquor = {     
-    input_goods = {        
+artisan_liquor = {
+    input_goods = {
         grain = 10        #22
         glass = 8        #23.2    total input+maint = 55
     }
-    output_goods = liquor 
+    output_goods = liquor
     value = 10            #64
 
     owner = {
-        poptype = artisans  
+        poptype = artisans
         effect = output
     }
 
@@ -1327,17 +1327,17 @@ artisan_liquor = {
     workforce = 10000
 }
 
-artisan_winery = {       
+artisan_winery = {
 
-    input_goods = {      
+    input_goods = {
         fruit = 10        #18
         glass = 10        #29    total input+maint = 57
     }
-    output_goods = wine 
+    output_goods = wine
     value = 7            #67.9
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1346,18 +1346,18 @@ artisan_winery = {
     workforce = 10000
 }
 
-############# BASIC FACTORIES 
+############# BASIC FACTORIES
 
-artisan_lumber = {       
-    input_goods = {       
+artisan_lumber = {
+    input_goods = {
         timber = 100        #90
     }
-    output_goods = lumber 
+    output_goods = lumber
 
     value = 100            #100
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1366,15 +1366,15 @@ artisan_lumber = {
     workforce = 10000
 }
 
-artisan_fabric = {       
-    input_goods = {     
+artisan_fabric = {
+    input_goods = {
         cotton = 23    #46
         dye = 3    #24
     }
     output_goods = fabric
     value = 45            #81
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1383,15 +1383,15 @@ artisan_fabric = {
     workforce = 10000
 }
 
-artisan_cement = {       
-    input_goods = {           
+artisan_cement = {
+    input_goods = {
         coal = 12        #27.6        total input+maint = 37
-    } 
-    output_goods = cement 
+    }
+    output_goods = cement
     value = 3            #48
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1400,15 +1400,15 @@ artisan_cement = {
     workforce = 10000
 }
 
-artisan_glass = {       
-    input_goods = {            
+artisan_glass = {
+    input_goods = {
         coal = 14        #32.2        total input+maint = 42
     }
-    output_goods = glass 
+    output_goods = glass
     value = 18            #52.2
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 
@@ -1417,15 +1417,15 @@ artisan_glass = {
     workforce = 10000
 }
 
-artisan_fertilizer = {       
-    input_goods = {   
+artisan_fertilizer = {
+    input_goods = {
         sulphur = 6        #36        total input+maint = 46
     }
-    output_goods = fertilizer 
+    output_goods = fertilizer
     value = 5            #50
 
     owner = {
-        poptype = artisans 
+        poptype = artisans
         effect = output
     }
 

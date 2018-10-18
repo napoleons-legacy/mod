@@ -51,7 +51,7 @@ leader = {
 
 army = {
     name = "The Canada Garrison"
-    location = 57 
+    location = 57
     regiment = {
         name= "1.6th Division"
         type = infantry
@@ -114,7 +114,7 @@ army = {
         name= "3.8th Division"
         type = infantry
         home = 75
-    }    
+    }
 }
 army = {
     name = "The Australia Garrison"

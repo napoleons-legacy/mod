@@ -21,7 +21,7 @@ romanticist_literature = {
         }
     }
     effect = {
-        shared_prestige = 5 
+        shared_prestige = 5
     }
 }
 romanticist_art = {
@@ -46,7 +46,7 @@ romanticist_art = {
         }
     }
     effect = {
-        shared_prestige = 5  
+        shared_prestige = 5
     }
 }
 romanticist_music = {
@@ -71,7 +71,7 @@ romanticist_music = {
         }
     }
     effect = {
-        shared_prestige = 5 
+        shared_prestige = 5
     }
 }
 #realism
@@ -97,7 +97,7 @@ realist_literature = {
         }
     }
     effect = {
-        shared_prestige = 10 
+        shared_prestige = 10
     }
 }
 realist_art = {
@@ -122,7 +122,7 @@ realist_art = {
         }
     }
     effect = {
-        shared_prestige = 10 
+        shared_prestige = 10
     }
 }
 realist_music = {
@@ -143,7 +143,7 @@ realist_music = {
         }
     }
     effect = {
-        shared_prestige = 10 
+        shared_prestige = 10
     }
 }
 #impressionism
@@ -165,7 +165,7 @@ impressionist_literature = {
         }
     }
     effect = {
-        shared_prestige = 15 
+        shared_prestige = 15
     }
 }
 impressionist_art = {
@@ -207,7 +207,7 @@ impressionist_music = {
         }
     }
     effect = {
-        shared_prestige = 15 
+        shared_prestige = 15
     }
 }
 #expressionism
@@ -230,7 +230,7 @@ expressionist_literature = {
 
     }
     effect = {
-        shared_prestige = 20 
+        shared_prestige = 20
     }
 }
 expressionist_art = {
@@ -251,7 +251,7 @@ expressionist_art = {
         }
     }
     effect = {
-        shared_prestige = 20 
+        shared_prestige = 20
     }
 }
 expressionist_music = {
@@ -272,7 +272,7 @@ expressionist_music = {
         }
     }
     effect = {
-        shared_prestige = 20 
+        shared_prestige = 20
     }
 }
 #mass_culture_n_the_avant_garde
@@ -294,7 +294,7 @@ avantgarde_literature = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 avantgarde_art = {
@@ -336,7 +336,7 @@ avantgarde_music = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 surrealism = {
@@ -354,7 +354,7 @@ surrealism = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 modern_design = {
@@ -372,7 +372,7 @@ modern_design = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 jazz = {
@@ -390,7 +390,7 @@ jazz = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 socialist_realism = {
@@ -412,7 +412,7 @@ socialist_realism = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 #idealism
@@ -431,7 +431,7 @@ neokantian_idealism = {
         }
     }
     effect = {
-        shared_prestige = 5 
+        shared_prestige = 5
     }
 }
 hegelian_idealism = {
@@ -449,7 +449,7 @@ hegelian_idealism = {
         }
     }
     effect = {
-        shared_prestige = 5 
+        shared_prestige = 5
     }
 }
 proto_existentialism = {
@@ -467,7 +467,7 @@ proto_existentialism = {
         }
     }
     effect = {
-        shared_prestige = 5 
+        shared_prestige = 5
     }
 }
 #empiricism
@@ -486,7 +486,7 @@ pragmatism = {
         }
     }
     effect = {
-        shared_prestige = 10 
+        shared_prestige = 10
     }
 }
 i_empiricism = {
@@ -504,7 +504,7 @@ i_empiricism = {
         }
     }
     effect = {
-        shared_prestige = 10 
+        shared_prestige = 10
     }
 }
 #analytic_philosophy
@@ -520,14 +520,14 @@ i_analytic_philosophy = {
         modifier = {
             factor = 2
             biologism = 1
-        }    
+        }
         modifier = {
             factor = 1
             plurality = 5
         }
     }
     effect = {
-        shared_prestige = 15 
+        shared_prestige = 15
     }
 }
 modern_logics = {
@@ -545,7 +545,7 @@ modern_logics = {
         }
     }
     effect = {
-        shared_prestige = 15 
+        shared_prestige = 15
     }
 }
 logical_positivism = {
@@ -563,7 +563,7 @@ logical_positivism = {
         }
     }
     effect = {
-        shared_prestige = 15 
+        shared_prestige = 15
     }
 }
 philosophy_of_language = {
@@ -600,7 +600,7 @@ phenomenology = {
         }
     }
     effect = {
-        shared_prestige = 20 
+        shared_prestige = 20
     }
 }
 hermeneutics = {
@@ -618,7 +618,7 @@ hermeneutics = {
         }
     }
     effect = {
-        shared_prestige = 20 
+        shared_prestige = 20
     }
 }
 #anti__rationalism
@@ -637,7 +637,7 @@ existentialism = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 nihilism_and_the_will = {
@@ -655,7 +655,7 @@ nihilism_and_the_will = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 futurism = {
@@ -673,7 +673,7 @@ futurism = {
         }
     }
     effect = {
-        shared_prestige = 25 
+        shared_prestige = 25
     }
 }
 quantum_theory = {
@@ -803,7 +803,7 @@ social_anthropology = {
         }
     }
     effect = {
-        colonial_prestige = 0.1 
+        colonial_prestige = 0.1
     }
 }
 #social_alienation
@@ -933,7 +933,7 @@ egalitarianism = {
                 ruling_party_ideology = reactionary
                 ruling_party_ideology = conservative
             }
-        }        
+        }
     }
     effect = {
         plurality = 0.05
@@ -989,12 +989,12 @@ hierarchical_order = {
     news = no
     limit = {
         has_country_flag = existing_country
-        state_n_government = 1 
-        OR = { 
+        state_n_government = 1
+        OR = {
             government = hms_government
             government = prussian_constitutionalism
             government = absolute_monarchy
-        }            
+        }
     }
     chance = {
         base = 1
@@ -1278,7 +1278,7 @@ meritocracy_vs._aristocracy = {
         }
     }
     effect = {
-        plurality = 0.05 
+        plurality = 0.05
     }
 }
 #nationalism_n_imperialism
@@ -1375,8 +1375,8 @@ expansionism = {
     }
 }
 mission_to_civilize = {
-    limit = { 
-        year = 1860 
+    limit = {
+        year = 1860
         state_n_government = 1
         has_country_flag = existing_country
     }
@@ -1415,7 +1415,7 @@ mission_to_civilize = {
     effect = {
         colonial_prestige = 0.1
         diplomatic_points = 0.2
-        colonial_life_rating = -10 
+        colonial_life_rating = -10
     }
 }
 separatism = {
@@ -1438,7 +1438,7 @@ separatism = {
     effect = {
         seperatism = 0.5
         rebel_org_gain = {
-            faction = nationalist_rebels 
+            faction = nationalist_rebels
             value = 0.33
         }
     }
@@ -1506,7 +1506,7 @@ terrorism = {
         }
     }
     effect = {
-        enable_crime = terrorist_cells 
+        enable_crime = terrorist_cells
     }
 }
 #general_strikes = {
@@ -1515,7 +1515,7 @@ terrorism = {
 #    chance = {
 #        base = 5
 #    }
-#    effect = { 
+#    effect = {
 #    }
 #}
 secret_police = {
@@ -1736,7 +1736,7 @@ paramilitary_groups = {
         rebel_org_gain = {
             faction = fascist_rebels
             value = 0.25
-        } 
+        }
     }
 }
 the_police_state = {
@@ -1808,8 +1808,8 @@ national_radio_networks = {
             NOT = { invention = vacuum_tube }
         }
     }
-    effect = { 
-        activate_building = radio_factory 
+    effect = {
+        activate_building = radio_factory
         suppression_points_modifier = -0.05
     }
     core_pop_consciousness_modifier = 0.01

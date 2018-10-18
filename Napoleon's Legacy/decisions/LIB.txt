@@ -10,7 +10,7 @@ political_decisions = {
             has_global_flag = berlin_conference
         }
 
-        allow = { 
+        allow = {
             war = no
         }
 
@@ -21,13 +21,13 @@ political_decisions = {
                 add_core = LIB
                 life_rating = 25
             }
-            1890 = { 
-                secede_province = THIS 
+            1890 = {
+                secede_province = THIS
                 add_core = LIB
                 life_rating = 25
             }
-            1891 = { 
-                secede_province = THIS 
+            1891 = {
+                secede_province = THIS
                 add_core = LIB
                 life_rating = 25
             }

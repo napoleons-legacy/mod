@@ -2058,7 +2058,7 @@ province_event = {
             CAR = {
                 vassal_of = THIS
                 is_culture_group = THIS
-            }           
+            }
         }
     }
 
@@ -2121,7 +2121,7 @@ province_event = {
             CAR = {
                 vassal_of = THIS
                 is_culture_group = THIS
-            }           
+            }
         }
     }
 
@@ -2175,7 +2175,7 @@ province_event = {
             }
         }
         NOT = {
-            is_core = CNG           
+            is_core = CNG
         }
     }
 
@@ -2254,7 +2254,7 @@ province_event = {
 #    id = 98853
 #    title = "EVTNAME98800"
 #    desc = "EVTDESC98852"
-#    
+#
 #    trigger = {
 #        region = FRA_1970
 #        owned_by = THIS
@@ -2278,11 +2278,11 @@ province_event = {
 #            is_core = CAR
 #        }
 #    }
-#    
+#
 #    mean_time_to_happen = {
 #        months = 120
 #    }
-#    
+#
 #    option = {
 #        name = "EVT98800OPTA"
 #        state_scope = {
@@ -3639,7 +3639,7 @@ province_event = {
     desc = "EVTDESC98885"
 
     trigger = {
-        region = ENG_2039 
+        region = ENG_2039
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {

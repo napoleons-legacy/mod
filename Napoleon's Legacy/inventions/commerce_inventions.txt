@@ -17,7 +17,7 @@ multitude_of_financial_instruments = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 insurance_companies = {
@@ -38,7 +38,7 @@ insurance_companies = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 regulated_buying_and_selling_of_stocks = {
@@ -59,7 +59,7 @@ regulated_buying_and_selling_of_stocks = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 #business_banks
@@ -96,7 +96,7 @@ capital_for_investors = {
         }
     }
     effect = {
-        factory_cost = -0.01 
+        factory_cost = -0.01
     }
 }
 distribution_channels = {
@@ -192,7 +192,7 @@ private_bank_monitoring = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 market_behaviour_monitoring = {
@@ -213,7 +213,7 @@ market_behaviour_monitoring = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 #mutual_funds
@@ -251,7 +251,7 @@ silver_standard = {
         }
     }
     effect = {
-        tax_eff = 3 
+        tax_eff = 3
     }
 }
 decimal_monetary_system = {
@@ -269,7 +269,7 @@ decimal_monetary_system = {
         }
     }
     effect = {
-        tax_eff = 3 
+        tax_eff = 3
     }
 }
 #private_bank_money_bill_printing
@@ -288,7 +288,7 @@ double_standard = {
         }
     }
     effect = {
-        tax_eff = 2 
+        tax_eff = 2
     }
 }
 fixed_intramonetary_exchange_rates = {
@@ -306,7 +306,7 @@ fixed_intramonetary_exchange_rates = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 #central_bank_money_bill_printing
@@ -329,7 +329,7 @@ gold_standard = {
         }
     }
     effect = {
-        tax_eff = 3 
+        tax_eff = 3
     }
 }
 international_monetary_exchange_rates = {
@@ -351,7 +351,7 @@ international_monetary_exchange_rates = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 #modern_central_bank_system
@@ -370,7 +370,7 @@ state_bond_monetary_mechanism = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 interest_inflation_weapon = {
@@ -392,7 +392,7 @@ interest_inflation_weapon = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 #market_determined_exchange_rates
@@ -449,7 +449,7 @@ nassau_william_sr = {
         }
     }
     effect = {
-        activate_building = paper_mill 
+        activate_building = paper_mill
     }
 }
 james_mill = {
@@ -467,7 +467,7 @@ james_mill = {
         }
     }
     effect = {
-        activate_building = luxury_furniture_factory 
+        activate_building = luxury_furniture_factory
     }
 }
 #late_classical_theory
@@ -489,7 +489,7 @@ john_elliot_cairnes = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 robert_torrens = {
@@ -531,7 +531,7 @@ john_stuart_mill = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 #collectivist_theory
@@ -578,7 +578,7 @@ pierre_joseph_proudhon = {
         }
     }
     effect = {
-        permanent_prestige = 1  
+        permanent_prestige = 1
     }
 }
 karl_marx = {
@@ -643,7 +643,7 @@ karl_marx = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 friedrich_engels = {
@@ -703,7 +703,7 @@ friedrich_engels = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 eduard_bernstein = {
@@ -732,7 +732,7 @@ eduard_bernstein = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 sidney_webb = {
@@ -759,7 +759,7 @@ sidney_webb = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 karl_kautsky = {
@@ -784,7 +784,7 @@ karl_kautsky = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 jean_jaures = {
@@ -805,7 +805,7 @@ jean_jaures = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 #the_historical_theory
@@ -827,7 +827,7 @@ friedrich_list = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 wilhelm_roscher = {
@@ -848,7 +848,7 @@ wilhelm_roscher = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 bruno_hildebrand = {
@@ -869,7 +869,7 @@ bruno_hildebrand = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 karl_knies = {
@@ -890,7 +890,7 @@ karl_knies = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 gustav_von_schmoller = {
@@ -911,7 +911,7 @@ gustav_von_schmoller = {
         }
     }
     effect = {
-        permanent_prestige = 1  
+        permanent_prestige = 1
     }
 }
 adolph_wagner = {
@@ -932,7 +932,7 @@ adolph_wagner = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 william_cunningham = {
@@ -953,7 +953,7 @@ william_cunningham = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 #neoclassical_theory
@@ -975,7 +975,7 @@ johann_heinrich_von_thunen = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 leon_walras = {
@@ -996,7 +996,7 @@ leon_walras = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 stanley_jevons = {
@@ -1017,7 +1017,7 @@ stanley_jevons = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 carl_menger = {
@@ -1038,7 +1038,7 @@ carl_menger = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 thorstein_veblen = {
@@ -1059,7 +1059,7 @@ thorstein_veblen = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 alfred_marshall = {
@@ -1074,13 +1074,13 @@ alfred_marshall = {
             factor = 3
             economic_policy = laissez_faire
         }
-        modifier = {    
+        modifier = {
             factor = 2
             nationalvalue = nv_liberty
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 augustin_cournot = {
@@ -1101,7 +1101,7 @@ augustin_cournot = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 jules_dupuit = {
@@ -1122,7 +1122,7 @@ jules_dupuit = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 vilfredo_pareto = {
@@ -1143,7 +1143,7 @@ vilfredo_pareto = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 knut_wicksell = {
@@ -1164,7 +1164,7 @@ knut_wicksell = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 irving_fischer = {
@@ -1185,7 +1185,7 @@ irving_fischer = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 joseph_schumpeter = {
@@ -1206,7 +1206,7 @@ joseph_schumpeter = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 eugen_von_bohm_bawerk = {
@@ -1227,7 +1227,7 @@ eugen_von_bohm_bawerk = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 #keynesian_economics
@@ -1251,7 +1251,7 @@ john_maynard_keynes = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 richard_kahn = {
@@ -1272,7 +1272,7 @@ richard_kahn = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 ludwig_von_mises = {
@@ -1297,7 +1297,7 @@ ludwig_von_mises = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 friedrich_hayek = {
@@ -1318,7 +1318,7 @@ friedrich_hayek = {
         }
     }
     effect = {
-        permanent_prestige = 1 
+        permanent_prestige = 1
     }
 }
 #market_structure
@@ -1326,13 +1326,13 @@ polypoly_structure = {
     news = no
     limit = {
         has_country_flag = existing_country
-        market_structure = 1 
+        market_structure = 1
         NOT = {
                 OR = {
                     invention = oligopoly_structure
                     invention = monopoly_structure
                 }
-        }    
+        }
     }
     chance = {
         base = 2
@@ -1353,13 +1353,13 @@ oligopoly_structure = {
     news = no
     limit = {
         has_country_flag = existing_country
-        market_structure = 1 
+        market_structure = 1
         NOT = {
             OR = {
                 invention = polypoly_structure
                 invention = monopoly_structure
             }
-        }        
+        }
     }
     chance = {
         base = 2
@@ -1380,13 +1380,13 @@ monopoly_structure = {
     news = no
     limit = {
         has_country_flag = existing_country
-        market_structure = 1 
+        market_structure = 1
         NOT = {
             OR = {
                 invention = polypoly_structure
                 invention = oligopoly_structure
             }
-        }    
+        }
     }
     chance = {
         base = 2
@@ -1419,7 +1419,7 @@ limited_partnership_company = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 joint_stock_company = {
@@ -1437,7 +1437,7 @@ joint_stock_company = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 patent = {
@@ -1481,7 +1481,7 @@ trademark = {
         }
     }
     effect = {
-        factory_cost = -0.02 
+        factory_cost = -0.02
     }
 }
 #market_regulations
@@ -1504,7 +1504,7 @@ anti_trust_laws = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 financial_regulations = {
@@ -1522,7 +1522,7 @@ financial_regulations = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 banking_regulations = {
@@ -1540,7 +1540,7 @@ banking_regulations = {
         }
     }
     effect = {
-        tax_eff = 1 
+        tax_eff = 1
     }
 }
 #economic_responsibility
@@ -1577,7 +1577,7 @@ bankruptcy_proceedings = {
         }
     }
     effect = {
-        factory_cost = -0.01 
+        factory_cost = -0.01
     }
 }
 annual_report_proceedings = {
@@ -1710,10 +1710,10 @@ modern_winemaking = {
     limit = {
         guild_based_production = 1
         OR = {
-            NOT = { 
-                has_country_flag = sunni_country 
-                has_country_flag = shiite_country 
-                has_country_flag = ibadi_country 
+            NOT = {
+                has_country_flag = sunni_country
+                has_country_flag = shiite_country
+                has_country_flag = ibadi_country
             }
             has_country_flag = secularized_muslim_society
             has_country_flag = post_colonial_country
@@ -1937,7 +1937,7 @@ anynomous_investor_business = {
         }
     }
     effect = {
-        factory_input = -0.01 
+        factory_input = -0.01
     }
 }
 marketized_smallholder_business = {

@@ -271,7 +271,7 @@ corrupt_army = {
     supply_consumption = -0.25
     #goods_demand = -0.6
     icon = 18
-}    
+}
 
 fanatic_army = {
     land_organisation = 0.1
@@ -285,7 +285,7 @@ the_hedeselskab = {
     farm_rgo_size = 2
     mine_rgo_size = 2
     icon = 13
-}    
+}
 
 emigration_boom = {
     immigrant_push = 1
@@ -473,7 +473,7 @@ polish_spirit = {
     local_ruling_party_support = -0.5
     local_RGO_output = -0.5
     local_factory_output = -0.5
-    assimilation_rate = -0.25    
+    assimilation_rate = -0.25
     non_accepted_pop_consciousness_modifier = 0.1
     non_accepted_pop_militancy_modifier = 0.05
     icon = 20
@@ -693,7 +693,7 @@ rancho = {
 
 reading = {
     education_efficiency_modifier = 0.05
-    literacy_con_impact = 0.1        
+    literacy_con_impact = 0.1
     icon = 5
 }
 
@@ -1018,7 +1018,7 @@ fascist_welfare = {
 }
 
 beer_hall_putsch = {
-    population_growth = -0.001    
+    population_growth = -0.001
     pop_militancy_modifier = 0.2
     icon = 18
 }
@@ -1758,7 +1758,7 @@ irish_oppression = {
 
 irish_potato_blight = {
     immigrant_attract = -2
-    pop_militancy_modifier = 0.4    
+    pop_militancy_modifier = 0.4
     pop_consciousness_modifier = 0.3
     immigrant_push = 1.5
     local_factory_throughput = -0.25
@@ -1842,7 +1842,7 @@ boxer_agitation = {
 self_strengthening_movement = {
     prestige = 0.02
     #research_points = 1
-    global_pop_consciousness_modifier = 0.2    
+    global_pop_consciousness_modifier = 0.2
     #global_pop_militancy_modifier = 0.02
     icon = 18
 }
@@ -2078,7 +2078,7 @@ sons_of_liberty = {
 }
 
 apache_raiders    = {
-    population_growth = -0.002    
+    population_growth = -0.002
     pop_militancy_modifier = 0.2
     icon = 18
 }

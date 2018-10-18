@@ -4,7 +4,7 @@ private_banks = {
     year = 1836
     cost = 3600
 
-    activate_building = cement_factory 
+    activate_building = cement_factory
     tax_eff = 3
 
     ai_chance = {
@@ -23,7 +23,7 @@ private_banks = {
         }
         modifier = {
             factor = 1.1
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.1
@@ -54,7 +54,7 @@ stock_exchange = {
         }
         modifier = {
             factor = 1.15
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.15
@@ -85,7 +85,7 @@ business_banks = {
         }
         modifier = {
             factor = 1.5
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.5
@@ -115,7 +115,7 @@ investment_banks = {
         }
         modifier = {
             factor = 1.15
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.15
@@ -145,12 +145,12 @@ bank_inspection_board = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
             literacy = 0.6
-        }    
+        }
     }
 }
 mutual_funds = {
@@ -214,7 +214,7 @@ ad_hoc_money_bill_printing = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -225,7 +225,7 @@ ad_hoc_money_bill_printing = {
             tech_school = commerce_tech_school
         }
     }
-}  
+}
 private_bank_money_bill_printing = {
     area = monetary_system
     year = 1836
@@ -288,7 +288,7 @@ modern_central_bank_system = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -345,7 +345,7 @@ early_classical_theory_and_critique = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -379,10 +379,10 @@ late_classical_theory = {
         modifier = {
             factor = 1.04
             any_owned_province = { trade_goods = precious_goods }
-        }        
+        }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -426,7 +426,7 @@ collectivist_theory = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -435,7 +435,7 @@ collectivist_theory = {
         modifier = {
             factor = 0.25
             NOT = { literacy = 0.4 }
-        }        
+        }
     }
 }
 the_historical_theory = {
@@ -466,7 +466,7 @@ the_historical_theory = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -475,7 +475,7 @@ the_historical_theory = {
         modifier = {
             factor = 0.25
             NOT = { literacy = 0.4 }
-        }        
+        }
     }
 }
 neoclassical_theory = {
@@ -506,7 +506,7 @@ neoclassical_theory = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -546,7 +546,7 @@ keynesian_economics = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
@@ -567,7 +567,7 @@ freedom_of_trade = {
     cost = 3600
 
 
-    activate_building = luxury_clothes_factory  
+    activate_building = luxury_clothes_factory
 
     influence = 0.1
     farm_rgo_eff = 0.1
@@ -585,7 +585,7 @@ freedom_of_trade = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.1 
+            literacy = 0.1
         }
         modifier = {
             factor = 1.05
@@ -594,7 +594,7 @@ freedom_of_trade = {
         modifier = {
             factor = 1.04
             any_owned_province = { trade_goods = precious_goods }
-        }        
+        }
         modifier = {
             factor = 1.02
             tech_school = commerce_tech_school
@@ -653,7 +653,7 @@ market_structure = {
             factor = 0.25
             NOT = { literacy = 0.4 }
         }
-    }    
+    }
 
 }
 business_regulations = {
@@ -691,7 +691,7 @@ business_regulations = {
             factor = 0.25
             NOT = { literacy = 0.4 }
         }
-    }    
+    }
 
 }
 market_regulations = {
@@ -727,7 +727,7 @@ market_regulations = {
             factor = 0.25
             NOT = { literacy = 0.4 }
         }
-    }    
+    }
 
 }
 economic_responsibility = {
@@ -809,7 +809,7 @@ guild_based_production = {
     area = tech_organization
     year = 1836
     cost = 3600
-    activate_building = canned_food_factory 
+    activate_building = canned_food_factory
     factory_output = 0.01
     ai_chance = {
         factor = 1.03
@@ -827,12 +827,12 @@ guild_based_production = {
         }
         modifier = {
             factor = 1.25
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.5
             literacy = 0.6
-        }        
+        }
         modifier = {
             factor = 1.02
             tech_school = commerce_tech_school
@@ -875,12 +875,12 @@ organized_factories = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.25
             literacy = 0.6
-        }        
+        }
         modifier = {
             factor = 1.2
             industrial_score = 100
@@ -923,12 +923,12 @@ scientific_management = {
         }
         modifier = {
             factor = 1.05
-            literacy = 0.3 
+            literacy = 0.3
         }
         modifier = {
             factor = 1.05
             literacy = 0.6
-        }        
+        }
         modifier = {
             factor = 1.2
             industrial_score = 200
@@ -981,7 +981,7 @@ time_saving_measures = {
             factor = 0.25
             NOT = { literacy = 0.4 }
         }
-    }    
+    }
 }
 management_strategy = {
     area = tech_organization

@@ -27,7 +27,7 @@
         culture = british
         religion = protestant
         size = 5100
-    }    
+    }
     farmers = {
         culture = sinhala
         religion = theravada
@@ -4142,7 +4142,7 @@
         size = 10
     }
 }
-#Under rule of Jaisalmer 1836  
+#Under rule of Jaisalmer 1836
 #Jaisalmer (440000/110000 POPS)
 1265 = {
     aristocrats = {
@@ -4217,7 +4217,7 @@
         size = 20000
     }
 }
-#Under rule of Jodhpur 1836  
+#Under rule of Jodhpur 1836
 #Jodhpur (1296000/324000 POPS)
 1266 = {
     aristocrats = {
@@ -4316,7 +4316,7 @@
         size = 50000
     }
 }
-#Under rule of Bikaner 1836  
+#Under rule of Bikaner 1836
 #Bikaner (1044000/261000 POPS)
 1267 = {
     aristocrats = {
@@ -4404,7 +4404,7 @@
         size = 30000
     }
 }
-#Under rule of Jaipur 1836  
+#Under rule of Jaipur 1836
 #Jaipur (1636000/409000 POPS)
 1268 = {
     aristocrats = {
@@ -4509,7 +4509,7 @@
         size = 30000
     }
 }
-#Under rule of Mewar 1836  
+#Under rule of Mewar 1836
 #Udaipur (1344000/336000 POPS)
 1269 = {
     aristocrats = {
@@ -4597,7 +4597,7 @@
     }
 
 }
-#Central Provinces Region (8044000) 
+#Central Provinces Region (8044000)
 #Under rule of Gwalior 1836
 #Gwalior (1184000/296000 POPS)
 1270 = {
@@ -5407,7 +5407,7 @@
     }
 }
 #Under rule of Hyderabad 1836
-#Amaraoti (1268000/317000 POPS) 
+#Amaraoti (1268000/317000 POPS)
 1278 = {
     aristocrats = {
         culture = marathi
@@ -6309,7 +6309,7 @@
 
 }
 #Gujarat (7812000)
-#Under British Rule 1836 (2064000) 
+#Under British Rule 1836 (2064000)
 #Ahmadabad (992000/248000 POPS)
 1291 = {
     aristocrats = {
@@ -6414,7 +6414,7 @@
         size = 10
     }
 }
-#Surat (1072000/268000 POPS) 
+#Surat (1072000/268000 POPS)
 1296 = {
     aristocrats = {
         culture = gujarati
@@ -8973,8 +8973,8 @@
 
 }
 #Himalaya Region (56000) #see Nepal.txt and Bhutan.txt for balance of region
-#under the rule of Sikkim in 1836  
-#Tumlong (56000/14000 POPS)  #now part of India 
+#under the rule of Sikkim in 1836
+#Tumlong (56000/14000 POPS)  #now part of India
 #Animist - Lepcha Mun
 1328 = {
     aristocrats = {

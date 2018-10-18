@@ -21,9 +21,9 @@ ASH = { value = -200 }
 
 army = {
     name = "Army of the Sultanate of Damagaram"
-    location = 1815    
+    location = 1815
 regiment = {
-        name= "Sultan's Cavalry"    
+        name= "Sultan's Cavalry"
     type = cavalry
         home = 1815    }
 

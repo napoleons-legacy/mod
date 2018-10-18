@@ -133,7 +133,7 @@ HAVE_MORE_NATIONAL_PROVINCES_OCCUPIED_THAN;The percentage of occupied national p
 HAVE_LESS_NATIONAL_PROVINCES_OCCUPIED_THAN;The percentage of occupied national provinces is less than: ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 yes_to_congo;Voted Yes in the Congo Question;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 NEED_POSITIVE_WARSCORE;The war is not going well enough. §RIn wars were you are not the war leader, contribution is calculated individually. Even though the total warscore might be positive, what allows you to add or not war goals is your individual warscore - your individual contribution - in this war.§W;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-WARGOAL_LACK_JINGO;We require $REQUIRED$ support for jingoism in our country, but have only $VALUE$. Jingoism represents the Ruler or the Upper House will to extend the war. The higher the jingoism, the more the chances that the necessary actors have the will and/or support to extend the war.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;; 
+WARGOAL_LACK_JINGO;We require $REQUIRED$ support for jingoism in our country, but have only $VALUE$. Jingoism represents the Ruler or the Upper House will to extend the war. The higher the jingoism, the more the chances that the necessary actors have the will and/or support to extend the war.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 berlin_conference;Berlin Conference;;;;;;;;;;;;;;;;;;;;;x
 enforce_conference_decision;Enforce Deliberation;;;;;;;;;;;;;;;x;;;;
 enforce_conference_decision_desc;Force a §Ycountry§W to abide to the §YGreat Powers§W deliberation.;;;;;;;;;;;;;;;;x
@@ -247,7 +247,7 @@ HAVE_NOT_A_PORT_IN;Do NOT have a port in ;;;;;;;;;;;;;;x;;;;
 IN_SOCIAL_MOVEMENT;in social movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;x
 NOT_IN_SOCIAL_MOVEMENT;not in social movement\n;;;;;;;;;;;;;;;;;;;;;;;x
 IN_POLITICAL_MOVEMENT;in political movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-NOT_IN_POLITICAL_MOVEMENT;not in political movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;x    
+NOT_IN_POLITICAL_MOVEMENT;not in political movement\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 NEUTRALITY_EFFECT;The nation becomes neutral, dissolving all alliances and setting all satellites free.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 INFLUENCE_CHANGE;§Y$ACTIVE$§W influence with §Y$PASSIVE$§W changes by $MUCH$.\n;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 THE_CAPITAL_IS_NOT;The Capital Is Not ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

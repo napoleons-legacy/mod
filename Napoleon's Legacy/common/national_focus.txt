@@ -145,7 +145,7 @@ promotion_focus = {
         outliner_show_as_percent = yes
 
         limit = {
-            owner = { NOT = { government = proletarian_dictatorship } ai = no } 
+            owner = { NOT = { government = proletarian_dictatorship } ai = no }
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
         }
     }
@@ -179,8 +179,8 @@ promotion_focus = {
         capitalists = 0.20 #20% more likely to become this type
         icon = 14
         outliner_show_as_percent = yes
-        limit = { 
-            owner = { NOT = { government = proletarian_dictatorship } civilized = yes } 
+        limit = {
+            owner = { NOT = { government = proletarian_dictatorship } civilized = yes }
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { has_province_modifier = irish_oppression }
             NOT = { state_scope = { capitalists = 0.007 } }
@@ -193,7 +193,7 @@ promotion_focus = {
         icon = 15
         outliner_show_as_percent = yes
         limit = {
-            NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } } 
+            NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { has_province_modifier = irish_oppression }
             NOT = { state_scope = { clergymen = 0.041 } }
             OR = {
@@ -250,7 +250,7 @@ promotion_focus = {
         outliner_show_as_percent = yes
         limit = {
             owner = { ai = no }
-            NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } } 
+            NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             work_available = { worker = labourers }
         }
     }
@@ -260,7 +260,7 @@ promotion_focus = {
         icon = 20
         outliner_show_as_percent = yes
         limit = {
-            owner = { ai = no } 
+            owner = { ai = no }
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { has_province_modifier = irish_oppression }
             NOT = { state_scope = { officers = 0.002 } }
@@ -296,8 +296,8 @@ production_focus = {
         barrels = 50
         automobiles = 50
         icon = 22
-        limit = { 
-            year = 1880 
+        limit = {
+            year = 1880
             civilized = yes
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { owner = { economic_policy = planned_economy } }
@@ -312,7 +312,7 @@ production_focus = {
         electric_gear = 50
         icon = 23
         limit = {
-            year = 1880 
+            year = 1880
             civilized = yes
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { owner = { economic_policy = planned_economy } }
@@ -326,7 +326,7 @@ production_focus = {
         oil = 50
         icon = 24
         limit = {
-            year = 1880 
+            year = 1880
             civilized = yes
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { owner = { economic_policy = planned_economy } }
@@ -339,7 +339,7 @@ production_focus = {
         steamer_convoy = 50
         clipper_convoy = 50
         icon = 25
-        limit = { 
+        limit = {
             #civilized = yes
             state_scope = { any_owned_province = { port = yes } }
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
@@ -355,7 +355,7 @@ production_focus = {
         fabric = 15
         dye = 15
         icon = 26
-        limit = { 
+        limit = {
             #civilized = yes
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { owner = { economic_policy = planned_economy } }
@@ -370,7 +370,7 @@ production_focus = {
         furniture = 40
         lumber = 40
         icon = 27
-        limit = { 
+        limit = {
         #    civilized = yes
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { owner = { economic_policy = planned_economy } }
@@ -426,8 +426,8 @@ production_focus = {
     encourage_rail = {
         railroads = 0.75 #Capitalists 50% more likely to choose railroads
         icon = 31
-        limit = { 
-            owner = { ai = no }  
+        limit = {
+            owner = { ai = no }
             NOT = { owner = { economic_policy = planned_economy } }
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { has_province_modifier = irish_oppression }

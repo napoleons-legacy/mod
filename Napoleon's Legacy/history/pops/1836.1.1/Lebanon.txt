@@ -1,5 +1,5 @@
 #Suriye Region (68000)  #see Syria.txt & Jordan.txt for balance of region
-#under the rule of Egypt in 1836  
+#under the rule of Egypt in 1836
 #Baalbeck (68000/17000 POPS) #now part of Lebanon
 912 = {
     aristocrats = {
@@ -111,7 +111,7 @@
     }
 }
 #Bayrut Region (260000)  #see Israel-Palestine.txt for balance of region
-#under the rule of Egypt in 1836  
+#under the rule of Egypt in 1836
 #Beirut (128000/32000 POPS) #mashriqi-catholic = maronites
 913 = {
     aristocrats = {
@@ -270,7 +270,7 @@
         size = 490
     }
 }
-#Askaleh (48000/12000 POPS) 
+#Askaleh (48000/12000 POPS)
 914 = {
     aristocrats = {
         culture = mashriqi
@@ -332,7 +332,7 @@
         size = 900
     }
 }
-#Sidon (84000/21000 POPS) 
+#Sidon (84000/21000 POPS)
 915 = {
     aristocrats = {
         culture = mashriqi

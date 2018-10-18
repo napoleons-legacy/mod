@@ -73,7 +73,7 @@ promotion_chance = {
         }
         modifier = {
             factor = 0.1
-            life_needs = 0.8 
+            life_needs = 0.8
         }
         modifier = {
             factor = 0.1
@@ -96,9 +96,9 @@ promotion_chance = {
     }
     modifier = {
         factor = -0.1
-        country = { 
+        country = {
             OR = {
-                slavery = yes_slavery 
+                slavery = yes_slavery
                 slavery = freedom_of_womb
                 debt_law = serfdom
             }
@@ -119,7 +119,7 @@ demotion_chance = {
 
     modifier = {
         factor = -0.1
-        country = { 
+        country = {
             OR = {
                 slavery = yes_slavery
                 slavery = freedom_of_womb
@@ -207,7 +207,7 @@ demotion_chance = {
         }
         modifier = {
             factor = -0.1
-            everyday_needs = 0.8 
+            everyday_needs = 0.8
             strata = middle
             state_scope = { is_colonial = no }
         }
@@ -285,7 +285,7 @@ demotion_chance = {
         factor = 0.5
         strata = middle
         state_scope = { is_colonial = yes }
-        not = { culture = this }            
+        not = { culture = this }
     }
 
     modifier = {
@@ -315,7 +315,7 @@ migration_chance = {
         }
         modifier = {
             factor = -0.1
-            not = { consciousness = 6 } 
+            not = { consciousness = 6 }
         }
     }
 
@@ -418,7 +418,7 @@ colonialmigration_chance = {
         }
         modifier = {
             factor = -0.1
-            not = { consciousness = 6 } 
+            not = { consciousness = 6 }
         }
     }
 
@@ -632,7 +632,7 @@ emigration_chance = {
         }
         modifier = {
             factor = -0.1
-            not = { consciousness = 6 } 
+            not = { consciousness = 6 }
             country = { NOT = { has_country_flag = preparations_to_kill } }
         }
     }

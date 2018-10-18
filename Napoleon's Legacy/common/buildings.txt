@@ -4,7 +4,7 @@
 # Order in here matters for selection priority if icons are overlapping,
 # so leave bases on top
 
-# 
+#
 # cost = x #==> extra construction cost (added to goods cost estimations)
 # time = x #==> number of days to build.
 #
@@ -611,7 +611,7 @@ glass_factory = {
     visibility = yes
     onmap = no
 
-    default_enabled = yes    
+    default_enabled = yes
     production_type = glass_factory
     pop_build_factory = yes
 }
@@ -637,7 +637,7 @@ fertilizer_factory = {
 
 ############# Military Buildings and Infrastructure
 
-fort = {      
+fort = {
     type = fort
     goods_cost =
     {
@@ -649,7 +649,7 @@ fort = {
         artillery = 40
         ammunition = 10
     }
-    time = 1080 
+    time = 1080
     visibility = yes
     onmap = yes
     max_level = 6
@@ -657,7 +657,7 @@ fort = {
     fort_level = 1
 }
 
-naval_base = {    
+naval_base = {
     type = naval_base
     cost = 15000
     goods_cost =
@@ -682,7 +682,7 @@ naval_base = {
     local_ship_build = -0.10
 }
 
-railroad = {   
+railroad = {
     type = infrastructure
     goods_cost =
     {

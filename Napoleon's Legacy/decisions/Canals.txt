@@ -58,7 +58,7 @@ political_decisions = {
                 owns = 1755
             }
             invention = machine_tools
-            invention = nitroglycerin        
+            invention = nitroglycerin
             iron_steamers = 1
             OR = {
                 money = 100000
@@ -111,7 +111,7 @@ political_decisions = {
 
         allow = {
             invention = machine_tools
-            invention = nitroglycerin        
+            invention = nitroglycerin
             iron_steamers = 1
             business_banks = 1
             1755 = { owner = { NOT = { truce_with = THIS war_with = THIS is_greater_power = yes } } }

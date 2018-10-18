@@ -35,7 +35,7 @@ province_event = {
                 trade_unions = non_socialist
                 trade_unions = all_trade_unions
             }
-        }   
+        }
     }
 
     mean_time_to_happen = {
@@ -256,7 +256,7 @@ country_event = {
         modifier = {
             factor  = 0.9
             NOT = { poor_strata_everyday_needs = 0.3 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 10
@@ -446,7 +446,7 @@ province_event = {
         modifier = {
             factor  = 0.9
             NOT = { poor_strata_everyday_needs = 0.8 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 15
@@ -633,7 +633,7 @@ country_event = {
         modifier = {
             factor = 1.2
             NOT = { socialist = 20 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 10
@@ -708,7 +708,7 @@ country_event = {
             limit = { is_colonial = no }
             poor_strata = {
                 ideology = {
-                    value = conservative 
+                    value = conservative
                     factor = 0.1
                 }
                 militancy = -2
@@ -816,7 +816,7 @@ province_event = {
         modifier = {
             factor  = 0.7
             NOT = { poor_strata_everyday_needs = 0.5 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 15
@@ -1021,7 +1021,7 @@ country_event = {
         modifier = {
             factor = 1.2
             NOT = { socialist = 5 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 5
@@ -1164,7 +1164,7 @@ country_event = {
         modifier = {
             factor  = 0.8
             NOT = { poor_strata_everyday_needs = 0.8 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 15
@@ -1309,7 +1309,7 @@ country_event = {
         modifier = {
             factor  = 0.8
             NOT = { poor_strata_everyday_needs = 0.8 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 15
@@ -1466,7 +1466,7 @@ country_event = {
         modifier = {
             factor = 0.8
             average_militancy = 4
-        }                   
+        }
         modifier = {
             factor = 0.9
             socialist = 5
@@ -1648,7 +1648,7 @@ country_event = {
         modifier = {
             factor  = 0.8
             NOT = { poor_strata_everyday_needs = 0.8 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 15
@@ -1788,11 +1788,11 @@ country_event = {
 }
 
 ###########################################################################
-#                                                                         
-#Fascism                                                                      
-#                                                                         
-# Event IDs 17600 - 17700 are reserved for this. DO NOT CHANGE.           
-#                                                                         
+#
+#Fascism
+#
+# Event IDs 17600 - 17700 are reserved for this. DO NOT CHANGE.
+#
 ###########################################################################
 
 #Black Flags
@@ -1813,7 +1813,7 @@ country_event = {
             government = hms_government
             government = absolute_monarchy
         }
-        OR = {          
+        OR = {
             any_core = {
                 empty = no
                 NOT = { owned_by = THIS }
@@ -1991,7 +1991,7 @@ country_event = {
             government = hms_government
             government = absolute_monarchy
         }
-        OR = {          
+        OR = {
             any_core = {
                 empty = no
                 NOT = { owned_by = THIS }
@@ -2148,7 +2148,7 @@ country_event = {
                     name = black_shirts
                     duration = 1095
                 }
-            }   
+            }
         }
     }
 }
@@ -2292,7 +2292,7 @@ country_event = {
                     name = fascist_welfare
                     duration = 365
                 }
-            }   
+            }
         }
     }
 
@@ -2471,8 +2471,8 @@ country_event = {
         add_country_modifier = {
             name = national_confusion
             duration = 365
-        }       
-        country_event = 800051      
+        }
+        country_event = 800051
         ai_chance = {
             factor = 25
             modifier = {
@@ -2516,7 +2516,7 @@ country_event = {
             government = hms_government
             government = absolute_monarchy
         }
-        OR = {      
+        OR = {
             any_core = {
                 empty = no
                 NOT = { owned_by = THIS }
@@ -2704,7 +2704,7 @@ country_event = {
             government = hms_government
             government = absolute_monarchy
         }
-        OR = {      
+        OR = {
             any_core = {
                 empty = no
                 NOT = { owned_by = THIS }
@@ -2941,11 +2941,11 @@ country_event = {
         }
 
         modifier = {
-            factor = 0.9    
+            factor = 0.9
             OR = {
                 nationalvalue = nv_autocracy
                 nationalvalue = nv_tradition
-                nationalvalue = nv_order            
+                nationalvalue = nv_order
             }
         }
     }
@@ -2965,7 +2965,7 @@ country_event = {
             any_pop = {
                 limit = { pop_majority_ideology = fascist }
                 reduce_pop = 0.95
-            }               
+            }
             any_pop = {
                 militancy = -4
                 consciousness = 3
@@ -3027,7 +3027,7 @@ country_event = {
             government = hms_government
             government = absolute_monarchy
         }
-        OR = {          
+        OR = {
             any_core = {
                 empty = no
                 NOT = { owned_by = THIS }
@@ -3487,7 +3487,7 @@ country_event = {
                         is_accepted_culture = yes
                     }
                 }
-                ideology = {    
+                ideology = {
                     value = fascist
                     factor = 0.1
                 }
@@ -3722,11 +3722,11 @@ country_event = {
 }
 
 ###########################################################################
-#                                                                         
-# Communism                                                                   
-#                                                                         
-# Event IDs 17710 - 17730 are reserved for this. DO NOT CHANGE.           
-#                                                                         
+#
+# Communism
+#
+# Event IDs 17710 - 17730 are reserved for this. DO NOT CHANGE.
+#
 ###########################################################################
 
 #Communist Propaganda
@@ -3776,7 +3776,7 @@ country_event = {
         modifier = {
             factor  = 0.8
             NOT = { poor_strata_life_needs = 1.0 }
-        }       
+        }
         modifier = {
             factor = 0.9
             socialist = 20
@@ -3950,7 +3950,7 @@ country_event = {
                 factor = 0.5
                 government = absolute_monarchy
             }
-        }       
+        }
     }
 }
 
@@ -3989,7 +3989,7 @@ country_event = {
         modifier = {
             factor  = 0.9
             NOT = { poor_strata_everyday_needs = 0.3 }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 20
@@ -4193,7 +4193,7 @@ country_event = {
                 socialist = 20
                 average_militancy = 7
             }
-        }   
+        }
         modifier = {
             factor = 0.9
             socialist = 20
@@ -4541,7 +4541,7 @@ province_event = {
             }
             militancy = -3
             consciousness = -3
-        }   
+        }
     }
 
     option = {

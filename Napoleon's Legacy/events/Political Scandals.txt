@@ -72,7 +72,7 @@ country_event = {
         modifier = {
             factor = 0.8
             reactionary = 75
-        }   
+        }
         modifier = {
             factor = 1.2
             NOT = { ruling_party_ideology = reactionary }
@@ -138,7 +138,7 @@ country_event = {
                 value = reactionary
                 factor = -0.1
             }
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }
@@ -224,7 +224,7 @@ country_event = {
         modifier = {
             factor = 0.8
             conservative = 75
-        }   
+        }
         modifier = {
             factor = 1.2
             NOT = { ruling_party_ideology = conservative }
@@ -290,7 +290,7 @@ country_event = {
                 value = conservative
                 factor = -0.1
             }
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }
@@ -371,7 +371,7 @@ country_event = {
         modifier = {
             factor = 0.8
             liberal = 75
-        }   
+        }
         modifier = {
             factor = 1.2
             NOT = { ruling_party_ideology = liberal }
@@ -437,7 +437,7 @@ country_event = {
                 value = liberal
                 factor = -0.1
             }
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }
@@ -519,7 +519,7 @@ country_event = {
         modifier = {
             factor = 0.8
             anarcho_liberal = 75
-        }   
+        }
         modifier = {
             factor = 1.2
             NOT = { ruling_party_ideology = anarcho_liberal }
@@ -585,7 +585,7 @@ country_event = {
                 value = anarcho_liberal
                 factor = -0.1
             }
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }
@@ -667,7 +667,7 @@ country_event = {
         modifier = {
             factor = 0.8
             socialist = 75
-        }   
+        }
         modifier = {
             factor = 1.2
             NOT = { ruling_party_ideology = socialist }
@@ -733,7 +733,7 @@ country_event = {
                 value = socialist
                 factor = -0.1
             }
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }
@@ -816,7 +816,7 @@ country_event = {
         modifier = {
             factor = 0.8
             communist = 75
-        }   
+        }
         modifier = {
             factor = 1.2
             NOT = { ruling_party_ideology = communist }
@@ -882,7 +882,7 @@ country_event = {
                 value = communist
                 factor = -0.1
             }
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }
@@ -965,7 +965,7 @@ country_event = {
         modifier = {
             factor = 0.8
             fascist = 75
-        }   
+        }
         modifier = {
             factor = 1.2
             NOT = { ruling_party_ideology = fascist }
@@ -1031,7 +1031,7 @@ country_event = {
                 value = fascist
                 factor = -0.1
             }
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }
@@ -1064,7 +1064,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 40 
+        months = 40
         modifier = {
             factor = 0.5
             has_country_modifier = party_scandal_evidence
@@ -1120,7 +1120,7 @@ country_event = {
         }
         random_owned = {
             limit = {
-                owner = { 
+                owner = {
                     is_greater_power = no
                     is_secondary_power = no
                 }
@@ -1149,7 +1149,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 40 
+        months = 40
         modifier = {
             factor = 1.5
             NOT = { average_consciousness = 2 }
@@ -1194,7 +1194,7 @@ country_event = {
         add_country_modifier = {
             name = party_scandal_evidence
             duration = 365
-        }   
+        }
         any_pop = {
             limit = {
                 location = { is_colonial = no }

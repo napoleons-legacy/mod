@@ -1,6 +1,6 @@
-#Macedonia Region (192000) #see Greece.txt and Macedonia.txt for balance of region 
-#under the rule of Ottoman Empire in 1836  
-#Petrich (192000/48000 POPS) #now part of Bulgaria 
+#Macedonia Region (192000) #see Greece.txt and Macedonia.txt for balance of region
+#under the rule of Ottoman Empire in 1836
+#Petrich (192000/48000 POPS) #now part of Bulgaria
 808 = {
     aristocrats = {
         culture = turkish
@@ -1058,9 +1058,9 @@
     }
 
 }
-#Dobruja Region (84000) #see Romania.txt for balance of Region  
-#under the rule of the Ottoman Empire in 1836 
-#Silistre (84000/21000 POPS) #now part of Bulgaria  
+#Dobruja Region (84000) #see Romania.txt for balance of Region
+#under the rule of the Ottoman Empire in 1836
+#Silistre (84000/21000 POPS) #now part of Bulgaria
 818 = {
     aristocrats = {
         culture = bulgarian
@@ -1113,13 +1113,13 @@
     farmers = {
         culture = romanian
         religion = orthodox
-        size = 19625 
+        size = 19625
     }
 
     aristocrats = {
         culture = turkish
         religion = sunni
-        size = 400 
+        size = 400
     }
 
     clergymen = {
@@ -1143,13 +1143,13 @@
     farmers = {
         culture = turkish
         religion = sunni
-        size = 4100  
+        size = 4100
     }
 
     aristocrats = {
         culture = bulgarian
         religion = sunni
-        size = 400 
+        size = 400
     }
 
     clergymen = {
@@ -1173,6 +1173,6 @@
     farmers = {
         culture = bulgarian
         religion = sunni
-        size = 4100  
+        size = 4100
     }
 }

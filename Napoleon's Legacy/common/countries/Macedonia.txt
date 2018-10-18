@@ -108,13 +108,13 @@ party = {
 
 unit_names = {
     dreadnought = {
-        Skopje Bitola Thessaloniki Kumanovo Struga 
+        Skopje Bitola Thessaloniki Kumanovo Struga
     }
     ironclad = {
-        Krum "Ivan Aleksandar" Levski Botev Aleksandrov 
+        Krum "Ivan Aleksandar" Levski Botev Aleksandrov
     }
     manowar = {
-        "Lyuben Karavelov" "Stoykov Rakovski" "Panayot Hitov" Karavelo "Stefan Karadzha" 
+        "Lyuben Karavelov" "Stoykov Rakovski" "Panayot Hitov" Karavelo "Stefan Karadzha"
     }
     cruiser = {
         Maritsa Iskar Vit Osam Yantra
@@ -125,11 +125,11 @@ unit_names = {
     monitor = {
         Konstantinov Dalchev Debelyanov Voykikov Vazov
     }
-    clipper_transport = { 
+    clipper_transport = {
 
 
     }
-    steam_transport = { 
+    steam_transport = {
 
 
     }

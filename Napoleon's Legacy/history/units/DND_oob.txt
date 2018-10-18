@@ -25,9 +25,9 @@ ASH = { value = -200 }
 
 army = {
     name = "Army of the Dendi Kingdom"
-    location = 1808    
+    location = 1808
 regiment = {
-        name= "Askiya's Cavalry"    
+        name= "Askiya's Cavalry"
     type = cavalry
         home = 1808    }
 

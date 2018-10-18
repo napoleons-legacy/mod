@@ -46,7 +46,7 @@ fascist_group = {
 
 
     }
-}    
+}
 
 conservative_group = {
     reactionary = {
@@ -84,63 +84,63 @@ conservative_group = {
             group = {
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 1
                         political_movement_strength = 0.1
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 2
                         political_movement_strength = 0.2
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 3
                         political_movement_strength = 0.3
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 4
                         political_movement_strength = 0.4
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 5
                         political_movement_strength = 0.5
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 6
                         political_movement_strength = 0.6
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 7
                         political_movement_strength = 0.7
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 8
                         political_movement_strength = 0.8
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 9
                         political_movement_strength = 0.9
                     }
@@ -156,63 +156,63 @@ conservative_group = {
             group = {
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 1
                         social_movement_strength = 0.1
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 2
                         social_movement_strength = 0.2
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 3
                         social_movement_strength = 0.3
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 4
                         social_movement_strength = 0.4
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 5
                         social_movement_strength = 0.5
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 6
                         social_movement_strength = 0.6
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 7
                         social_movement_strength = 0.7
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 8
                         social_movement_strength = 0.8
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 9
                         social_movement_strength = 0.9
                     }
@@ -244,63 +244,63 @@ socialist_group = {
             group = {
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 1
                         political_movement_strength = 0.1
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 2
                         political_movement_strength = 0.2
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 3
                         political_movement_strength = 0.3
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 4
                         political_movement_strength = 0.4
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 5
                         political_movement_strength = 0.5
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 6
                         political_movement_strength = 0.6
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 7
                         political_movement_strength = 0.7
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 8
                         political_movement_strength = 0.8
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 9
                         political_movement_strength = 0.9
                     }
@@ -340,7 +340,7 @@ socialist_group = {
         }
         remove_social_reform = {
             base = 0
-        }    
+        }
     }
 }
 
@@ -362,63 +362,63 @@ liberal_group = {
             group = {
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 1
                         social_movement_strength = 0.1
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 2
                         social_movement_strength = 0.2
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 3
                         social_movement_strength = 0.3
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 4
                         social_movement_strength = 0.4
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 5
                         social_movement_strength = 0.5
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 6
                         social_movement_strength = 0.6
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 7
                         social_movement_strength = 0.7
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 8
                         social_movement_strength = 0.8
                     }
                 }
                 modifier = {
                     factor = 0.1
-                    OR = { 
+                    OR = {
                         militancy = 9
                         social_movement_strength = 0.9
                     }

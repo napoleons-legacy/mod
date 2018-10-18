@@ -20,9 +20,9 @@ DAH = {
 
 army = {
     name = "Army of the Mossi"
-    location = 1901    
+    location = 1901
 regiment = {
-        name= "Mogho Naba's Cavalry"    
+        name= "Mogho Naba's Cavalry"
     type = cavalry
         home = 1901    }
 
@@ -35,7 +35,7 @@ home = 1902    }
 
 
 regiment = {
-        name= "2nd Mossi Warriors"    
+        name= "2nd Mossi Warriors"
     type = irregular
     home = 1903
     }

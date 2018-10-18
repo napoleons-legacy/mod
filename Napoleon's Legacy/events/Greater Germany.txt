@@ -46,7 +46,7 @@ country_event = {
             }
         }
         any_owned_province = {
-            NOT = { 
+            NOT = {
                 OR = {
                     is_core = AUS
                     is_core = GER
@@ -477,7 +477,7 @@ country_event = {
             is_sphere_leader_of = THIS
         }
         any_owned_province = {
-            NOT = { 
+            NOT = {
                 OR = {
                     is_core = AUS
                     is_core = GER
@@ -635,7 +635,7 @@ country_event = {
                 factor = 0
                 OR = {
                     government = proletarian_dictatorship
-                    government = fascist_dictatorship                   
+                    government = fascist_dictatorship
                 }
             }
             modifier = {
@@ -817,7 +817,7 @@ country_event = {
                 name = nationalist_agitation
                 duration = 1095
             }
-        }           
+        }
         ai_chance = {
             factor = 0
         }
@@ -1107,7 +1107,7 @@ country_event = {
 country_event = {
     id = 31519
     title = "EVTNAME31516" #Austria Petitions to Join Germany
-    desc = "EVTDESC31519"                                                   
+    desc = "EVTDESC31519"
     major = yes
 
     is_triggered_only = yes
@@ -1434,7 +1434,7 @@ country_event = {
         }
         NOT = {
             any_owned_province = {
-                NOT = { 
+                NOT = {
                     OR = {
                         is_core = AUS
                         is_core = GER
@@ -1606,7 +1606,7 @@ country_event = {
                 type = cut_down_to_size
                 months = 60
             }
-        }           
+        }
         ai_chance = {
             factor = 95
             modifier = {
