@@ -3365,33 +3365,6 @@ country_event = {
     }
 }
 
-#End Of The Anaconda Plan
-country_event = {
-    id = 16410
-    title = "EVTNAME16410"
-    desc = "EVTDESC16410"
-    picture = "Anaconda"
-
-    trigger = {
-        has_country_modifier = anaconda_plan
-        OR = {
-            NOT = {
-                blockade = 0.8
-            }
-            war = no
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA16410"
-        remove_country_modifier = anaconda_plan
-    }
-}
-
 # Rise of The KKK
 country_event = {
     id = 16415
@@ -3402,8 +3375,8 @@ country_event = {
     trigger = {
         tag = USA
         has_global_flag = american_civil_war_has_happened
-        has_country_flag = has_used_radical_reconstruction
-        NOT = { exists = CSA }
+        has_country_flag = has_used_radical_reconstruction_NEN
+        NOT = { exists = NEN }
         slavery = no_slavery
         owns = 60
         owns = 195
@@ -3430,8 +3403,6 @@ country_event = {
     }
 }
 
-
-
 ##### Indian Wars #####
 country_event = {
     id = 16420
@@ -3444,7 +3415,7 @@ country_event = {
         owns = 122
         122 = { trade_goods = precious_metal }
         NOT = { has_country_flag = sioux_wars }
-        }
+    }
 
     mean_time_to_happen = {
         months = 12
@@ -3593,6 +3564,7 @@ province_event = {
         }
     }
 }
+
 #Apprehending Geronimo
 country_event = {
     id = 16450

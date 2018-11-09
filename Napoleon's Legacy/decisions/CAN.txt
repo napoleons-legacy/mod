@@ -1,6 +1,6 @@
 political_decisions = {
     canadian_dominion = {
-    picture = canadian_dominion
+        picture = canadian_dominion
         potential = {
             tag = CAN
             exists = yes
@@ -76,7 +76,7 @@ political_decisions = {
     }
 
     organize_british_columbia = {
-    picture = organize_british_columbia
+        picture = organize_british_columbia
         potential = {
             tag = CAN
             year = 1860
@@ -101,7 +101,7 @@ political_decisions = {
     }
 
     form_the_rcmp = {
-    picture = form_the_rcmp
+        picture = form_the_rcmp
         potential = {
             tag = CAN
             NOT = { has_country_modifier = rcmp }
@@ -189,7 +189,7 @@ political_decisions = {
             set_country_flag = build_the_cnr1
             treasury = -2000
             any_owned = {
-            limit = {
+                limit = {
                     province_id = 51
                     can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
                 }
@@ -213,9 +213,10 @@ political_decisions = {
                 limit = {
                     province_id = 36
                     can_build_in_province = { building = railroad limit_to_world_greatest_level = yes }
-            }
+                }
                 infrastructure = 1 owner = { treasury = -2000 }
-        }
+            }
+
             36 = { add_province_modifier = { name = gateway_to_harbor duration = 365 } }
         }
         ai_will_do = { factor = 1 }

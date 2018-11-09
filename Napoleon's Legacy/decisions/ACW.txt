@@ -66,7 +66,7 @@ political_decisions = {
 
     trail_of_tears = {
         potential = {
-                tag = USA
+            tag = USA
 
             NOT = {
                 has_global_flag = marching_on_the_trail_of_tears
@@ -216,94 +216,6 @@ political_decisions = {
             add_country_modifier = {
                 name = the_homestead_act
                 duration = -1
-            }
-        }
-    }
-
-    bixby_letter = {
-        picture = bixby_letter
-        potential = {
-            tag = USA
-            not = {
-                has_country_flag = bixby_letter_sent
-            }
-            war_with = NEN
-        }
-
-        allow = {
-            war_exhaustion = 6
-        }
-
-        effect = {
-            set_country_flag = bixby_letter_sent
-            war_exhaustion = -2
-        }
-    }
-
-    enact_anaconda_plan = {
-        potential = {
-            tag = NEN
-            war_with = USA
-            NOT = {
-                has_global_flag = anaconda_plan_active
-            }
-        }
-
-        allow = {
-            USA = {
-                blockade = 0.8
-            }
-        }
-
-        effect = {
-            USA = {
-                add_country_modifier = {
-                    name = anaconda_plan
-                    duration = -1
-                }
-            }
-            set_global_flag = anaconda_plan_active
-        }
-    }
-
-    shermans_march_to_the_sea = {
-        potential = {
-            tag = NEN
-            war_with = USA
-            NOT = {
-                has_country_flag = sherman_marched_to_the_sea
-            }
-            USA = {
-                owns = 201
-                owns = 2555
-                owns = 204
-            }
-        }
-        allow = {
-            controls = 201
-            controls = 2555
-            controls = 204
-        }
-
-        effect = {
-            set_country_flag = sherman_marched_to_the_sea
-            201 = {
-                any_pop = {
-                    reduce_pop = 0.70
-                }
-            }
-            2555 = {
-                any_pop = {
-                    reduce_pop = 0.90
-                }
-            }
-            204 = {
-                any_pop = {
-                    reduce_pop = 0.90
-                }
-            }
-            USA = {
-                war_exhaustion = 4
             }
         }
     }
@@ -586,7 +498,6 @@ political_decisions = {
         }
     }
 
-
     enact_radical_reconstruction = {
         potential = {
             tag = NEN
@@ -594,6 +505,7 @@ political_decisions = {
             has_global_flag = american_civil_war_has_happened
             NOT = {
                 exists = USA
+                has_country_flag = has_used_radical_reconstruction
                 has_country_flag = has_used_radical_reconstruction_NEN
             }
         }
@@ -625,6 +537,7 @@ political_decisions = {
             remove_accepted_culture = texan
             add_accepted_culture = afro_american
             NEN = { all_core = { add_core = USA } }
+            set_country_flag = has_used_radical_reconstruction
             set_country_flag = has_used_radical_reconstruction_NEN
         }
 
@@ -632,7 +545,6 @@ political_decisions = {
             factor = 1
         }
     }
-
 
     enact_radical_reconstruction_USA = {
         potential = {
@@ -1083,8 +995,6 @@ political_decisions = {
         }
     }
 
-
-
     offer_to_buy_cuba = {
         picture = map_caribbean
         potential = {
@@ -1106,13 +1016,13 @@ political_decisions = {
             SPA = {
                 exists = yes
                 war = no
-            any_owned_province = {
-                is_core = CUB
-                OR = {
-                    controlled_by = REB
-                    has_province_modifier = nationalist_agitation
-                    average_militancy = 6
-                    }
+                any_owned_province = {
+                    is_core = CUB
+                    OR = {
+                        controlled_by = REB
+                        has_province_modifier = nationalist_agitation
+                        average_militancy = 6
+                        }
                 }
             }
             NOT = { has_country_flag = maine_incident }
@@ -1212,7 +1122,7 @@ political_decisions = {
     }
 
     the_iron_range = {
-    picture = dreams_of_empire
+        picture = dreams_of_empire
         potential = {
             owns = 232
             NOT = { has_country_flag = iron_ranges }
@@ -1291,7 +1201,7 @@ political_decisions = {
 
 
     the_american_frontier = {
-    picture = cowboy
+        picture = cowboy
         potential = {
             OR = {
                 primary_culture = texan
@@ -1386,51 +1296,6 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
-
- Brown_raid = {
-        potential = {
-            tag = NEN
-            year = 1855
-            exists = USA
-            NOT = {
-                has_global_flag = american_civil_war_has_happened
-            }
-        }
-
-        allow = {
-            year = 1855
-            war = no
-            NOT = { war_exhaustion = 1 }
-
-            USA = {
-                war = no
-                NOT = {
-                    war_exhaustion = 1
-                }
-            }
-        }
-
-        effect = {
-            diplomatic_influence = {
-                who = USA
-                value = -200
-            }
-            relation = {
-                who = USA
-                value = -200
-            }
-            badboy = 3
-            USA = { country_event = { id = 121215  days = 0  } }
-
-            set_global_flag = american_civil_war_has_happened
-            prestige = 15
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
 
     restore_washington_capital = {
         potential = {

@@ -95,9 +95,7 @@ political_decisions = {
             prestige = 15
             badboy = -4
             any_owned = {
-                limit = {
-                    is_core = GRE
-                }
+                limit = { is_core = GRE }
 
                 remove_core = THIS
                 secede_province = GRE
@@ -106,96 +104,6 @@ political_decisions = {
             set_country_flag = greek_lands_question
         }
     }
-
-    the_british_cession = {
-        picture = parallel_49
-        potential = {
-            tag = CAN
-            NOT = {
-                has_country_flag = britain_ceded
-            }
-        }
-
-        allow = {
-            NOT = {
-                war_with = USA
-            }
-            USA = { owns = 35 }
-            OR = {
-                HUD = { owns = 157 }
-                CAN = { owns = 157 }
-            }
-        }
-
-        effect = {
-            relation = {
-                who = USA
-                value = 100
-            }
-            118 = {
-                secede_province = CAN
-                remove_core = HUD
-                add_core = USA
-            }
-            2684 = {
-                secede_province = CAN
-                remove_core = INC
-            }
-            157 = {
-                secede_province = CAN
-                remove_core = HUD
-                add_core = USA
-            }
-            35 = {
-                secede_province = CAN
-                remove_core = USA
-                add_core = HUD
-                add_core = CAN
-            }
-            38 = {
-                secede_province = CAN
-                remove_core = USA
-                add_core = HUD
-                add_core = CAN
-            }
-            158 = {
-                secede_province = USA
-                add_core = USA
-                remove_core = CAN
-            }
-            118 = { secede_province = USA }
-            157 = { secede_province = USA }
-            2684 = { secede_province = USA }
-            random_country = {
-                limit = {
-                    tag = HUD
-                    owns = 26
-                }
-                35 = { secede_province = HUD }
-                29 = { secede_province = HUD }
-            }
-
-            badboy = -2
-            prestige = 15
-            set_country_flag = britain_ceded
-        }
-
-        ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                NOT = {
-                    badboy = 0.1
-                }
-            }
-            modifier = {
-                factor = 0
-                NOT = { year = 1840 }
-                NOT = { USA = { has_country_flag = hasmanifestdestiny } }
-            }
-        }
-    }
-
 
     crimean_war = {
         potential = {
@@ -289,41 +197,41 @@ political_decisions = {
         }
     }
 
-    annex_algiers = {
-        potential = {
-            tag = TUR
-            is_greater_power = yes
-            year = 1860
-            ALD = {
-                civilized = no
-            }
-            NOT = {
-                has_country_flag = algiers_vassalized
-            }
-        }
-
-        allow = {
-            machine_guns = 1
-            war = no
-            ALD = {
-                civilized = no
-                OR = {
-                    in_sphere = THIS
-                    all_core = {
-                        owned_by = TUR
-                    }
-                }
-            }
-        }
-
-        effect = {
-            prestige = 10
-            inherit = ALD
-            set_country_flag = algiers_vassalized
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
+#    annex_algiers = {
+#        potential = {
+#            tag = TUR
+#            is_greater_power = yes
+#            year = 1860
+#            ALD = {
+#                civilized = no
+#            }
+#            NOT = {
+#                has_country_flag = algiers_vassalized
+#            }
+#        }
+#
+#        allow = {
+#            machine_guns = 1
+#            war = no
+#            ALD = {
+#                civilized = no
+#                OR = {
+#                    in_sphere = THIS
+#                    all_core = {
+#                        owned_by = TUR
+#                    }
+#                }
+#            }
+#        }
+#
+#        effect = {
+#            prestige = 10
+#            inherit = ALD
+#            set_country_flag = algiers_vassalized
+#        }
+#
+#        ai_will_do = {
+#            factor = 1
+#        }
+#    }
 }

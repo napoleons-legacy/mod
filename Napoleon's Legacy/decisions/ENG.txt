@@ -26,6 +26,7 @@ political_decisions = {
             set_country_flag = corn_laws_repealed_flag
         }
     }
+
     crown_empress_of_india = {
         picture = crown_empress_of_india
         news = yes

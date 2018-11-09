@@ -1,0 +1,144 @@
+political_decisions = {
+    the_british_cession = {
+        picture = parallel_49
+        potential = {
+            tag = CAN
+            NOT = {
+                has_country_flag = britain_ceded
+            }
+        }
+
+        allow = {
+            NOT = {
+                war_with = USA
+            }
+            USA = { owns = 35 }
+            OR = {
+                HUD = { owns = 157 }
+                CAN = { owns = 157 }
+            }
+        }
+
+        effect = {
+            relation = {
+                who = USA
+                value = 100
+            }
+            118 = {
+                secede_province = CAN
+                remove_core = HUD
+                add_core = USA
+            }
+
+            2684 = {
+                secede_province = CAN
+                remove_core = INC
+                add_core = USA
+            }
+
+            157 = {
+                secede_province = CAN
+                remove_core = HUD
+                add_core = USA
+            }
+
+            35 = {
+                secede_province = CAN
+                remove_core = USA
+                add_core = HUD
+                add_core = CAN
+            }
+
+            38 = {
+                secede_province = CAN
+                remove_core = USA
+                add_core = HUD
+                add_core = CAN
+            }
+
+            158 = {
+                secede_province = USA
+                add_core = USA
+                remove_core = CAN
+            }
+
+            118 = { secede_province = USA }
+            157 = { secede_province = USA }
+            2684 = { secede_province = USA }
+
+            random_country = {
+                limit = {
+                    tag = HUD
+                    owns = 27
+                }
+                35 = { secede_province = HUD }
+                28 = { secede_province = HUD }
+            }
+
+            badboy = -2
+            prestige = 15
+            set_country_flag = britain_ceded
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    badboy = 2
+                }
+            }
+            modifier = {
+                factor = 0
+                NOT = { year = 1840 }
+                NOT = { USA = { has_country_flag = hasmanifestdestiny } }
+            }
+        }
+    }
+
+    brown_raid = {
+        # TODO make a picture? Or just redo this entire chain
+        potential = {
+            tag = NEN
+            year = 1855
+            exists = USA
+            NOT = {
+                has_global_flag = american_civil_war_has_happened
+            }
+        }
+
+        allow = {
+            year = 1855
+            war = no
+            NOT = { war_exhaustion = 1 }
+
+            USA = {
+                war = no
+                NOT = {
+                    war_exhaustion = 1
+                }
+            }
+        }
+
+        effect = {
+            diplomatic_influence = {
+                who = USA
+                value = -200
+            }
+            relation = {
+                who = USA
+                value = -200
+            }
+
+            badboy = 3
+            USA = { country_event = 121215 }
+
+            set_global_flag = american_civil_war_has_happened
+            prestige = 15
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
