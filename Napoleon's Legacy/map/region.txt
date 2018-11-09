@@ -30,57 +30,57 @@ ENG_74 = { 74 75 76 77 2625 } #Newfoundland
 
 ### United States
 
-USA_78 = { 78 79 80 } #Washington
+USA_78 = { 78 79 80 92 114 } #Washington
 
-USA_81 = { 81 82 83 } #Oregon
+USA_81 = { 81 82 83 91 93 111 } #Oregon
 
-MEX_85 = { 89 84 85 86 87 88 90 104 } #California
+MEX_85 = { 89 87 88 90 96 } #California
 
-USA_91 = { 91 92 93 } #Idaho
+# USA_91 = { } #Idaho
 
-MEX_94 = { 94 96 95 } #Nevada
+MEX_94 = { 84 85 86 94 95 104 } #Nevada
 
-MEX_97 = { 97 98 99 } #Utah
+MEX_97 = { 97 98 99 108 109 110 } #Utah
 
-MEX_100 = { 100 101 102 } #Arizona
+MEX_100 = { 100 101 102 2148 2662 } #Arizona
 
-MEX_103 = { 105 2148 2662 } #New Mexico
+MEX_103 = { 105 129 135 136 } #New Mexico
 
-USA_106 = { 103 106 108 109 } #Colorado
+# USA_106 = { } #Colorado
 
-USA_111 = { 112 107 110 111 } #Wyoming
+# USA_111 = { } #Wyoming
 
-USA_116 = { 113 116 115 114 } #Montana
+USA_116 = { 112 113 116 115 } #Montana
 
-USA_118 = { 117 118 119 } #North Dakota
+# USA_118 = { } #North Dakota
 
-USA_121 = { 120 121 122 } #South Dakota
+USA_121 = { 117 119 120 121 122 } #South Dakota
 
-USA_124 = { 123 124 125 } #Nebraska
+USA_124 = { 107 123 124 125 } #Nebraska
 
-USA_126 = { 126 127 128 } #Kansas
+USA_126 = { 103 106 126 127 128 } #Kansas
 
-USA_129 = { 131 129 130 } #Oklahoma
+# USA_129 = { } #Oklahoma
 
-TEX_132 = { 133 43 132 134 135 136 137 138 } #Texas
+TEX_132 = { 133 43 132 134 137 138 } #Texas
 
 USA_139 = { 139 140 141 142 } #Louisiana
 
-USA_144 = { 143 144 145 } #Arkansas
+USA_144 = { 131 130 143 144 145  } #Arkansas
 
 USA_148 = { 146 148 147 149 150 } #Missouri
 
 USA_151 = { 151 152 153 154 } #Iowa
 
-USA_158 = { 155 156 157 158 2684 } #Minnesota
+USA_158 = { 118 155 156 157 158 2684 } #Minnesota
 
-USA_162 = { 159 160 161 162 } #Wisconsin
+USA_162 = { 159 160 161 162 177 } #Wisconsin
 
 USA_168 = { 163 168 167 166 165 164 } #Illinois
 
 USA_170 = { 169 170 172 171 } #Indiana
 
-USA_176 = { 173 174 175 176 177 } #Michigan
+USA_176 = { 173 174 175 176 } #Michigan
 
 USA_178 = { 178 179 180 183 182 181 } #Ohio
 
