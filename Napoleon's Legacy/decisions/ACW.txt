@@ -220,49 +220,6 @@ political_decisions = {
         }
     }
 
-    emancipation_proclamation = {
-        picture = emancipation_proclamation
-        potential = {
-            tag = NEN
-            NOT = {
-                has_country_flag = emancipation
-                has_country_flag = the_slavery_debate
-                }
-            OR = {
-                war_with = USA
-                    AND = {
-                    NOT = { exists = USA }
-                        has_global_flag = american_civil_war_has_happened
-                    }
-                }
-        }
-
-        allow = {
-            OR = {
-                USA = { national_provinces_occupied = 0.40 }
-                USA = { exists = no }
-            }
-            prestige = 35
-        }
-
-        effect = {
-            set_country_flag = emancipation
-            prestige = 5
-            political_reform = no_slavery
-            any_pop = {
-                limit = { has_pop_culture = yankee }
-                consciousness = -5
-                militancy = -5
-            }
-            any_greater_power = {
-                relation = {
-                    who = NEN
-                    value = 30
-                }
-            }
-        }
-    }
-
     manifest_destiny = {
         potential = {
             tag = USA
@@ -498,96 +455,6 @@ political_decisions = {
         }
     }
 
-    enact_radical_reconstruction = {
-        potential = {
-            tag = NEN
-            war = no
-            has_global_flag = american_civil_war_has_happened
-            NOT = {
-                exists = USA
-                has_country_flag = has_used_radical_reconstruction
-                has_country_flag = has_used_radical_reconstruction_NEN
-            }
-        }
-
-        allow = {
-            NOT = { exists = USA }
-        }
-
-        effect = {
-            war_exhaustion = -10
-            any_pop = { militancy = -1 }
-            any_owned = {
-                limit = { is_core = USA }
-                add_province_modifier = {
-                    name = reconstruction
-                    duration = 2555
-                }
-            }
-            any_pop = {
-                limit = {
-                    has_pop_culture = dixie
-                }
-                consciousness = -3
-                militancy = -3
-            }
-
-            change_tag = USA
-            remove_accepted_culture = dixie
-            remove_accepted_culture = texan
-            add_accepted_culture = afro_american
-            NEN = { all_core = { add_core = USA } }
-            set_country_flag = has_used_radical_reconstruction
-            set_country_flag = has_used_radical_reconstruction_NEN
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
-    enact_radical_reconstruction_USA = {
-        potential = {
-            tag = USA
-            war = no
-            has_global_flag = american_civil_war_has_happened
-            NOT = {
-                exists = NEN
-                has_country_flag = has_used_radical_reconstruction
-                has_country_flag = has_used_radical_reconstruction_NEN
-            }
-        }
-
-        allow = {
-            NOT = { exists = NEN }
-        }
-
-        effect = {
-            war_exhaustion = -10
-            any_pop = { militancy = -1 }
-            any_pop = {
-                limit = {
-                    has_pop_culture = yankee
-                    }
-                consciousness = -3
-                militancy = -3
-            }
-            any_owned = {
-            limit = { is_core = NEN }
-            add_province_modifier = {
-                name = reconstruction
-                duration = 2555
-                }
-            }
-            NEN = { all_core = { add_core = USA } }
-            set_country_flag = has_used_radical_reconstruction
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     annex_hawaii = {
         potential = {
             exists = HAW
@@ -787,9 +654,9 @@ political_decisions = {
             modifier = {
                 factor = 0
                 NOT = { year = 1842 }
-                }
             }
         }
+    }
 
     rio_grande_treaty = {
         picture = rio_grande_treaty
@@ -831,34 +698,6 @@ political_decisions = {
         }
     }
 
-    pass_the_fifteenth_amendment = {
-        picture = first_vote_usa
-        potential = {
-            tag = USA
-            NOT = { has_country_flag = fifteenth_amendment_enacted }
-            NOT = { citizens_rights = all_voting_pops }
-
-            government = democracy
-            has_global_flag = american_civil_war_has_happened
-            has_country_flag = has_used_radical_reconstruction
-        }
-
-        allow = {
-            war = no
-            average_militancy = 1
-        }
-
-        effect = {
-            set_country_flag = fifteenth_amendment_enacted
-            political_reform = all_voting_pops
-
-            any_pop = { limit = { is_primary_culture = no is_accepted_culture = no } militancy = -1 }
-        }
-
-        ai_will_do = { factor = 1 }
-    }
-
-
     texan_claims = {
         picture = all_texas
         potential = {
@@ -897,7 +736,7 @@ political_decisions = {
     }
 
     gadsden_purchase = {
-    picture = gadsden
+        picture = gadsden
         potential = {
             NOT = { owns = 102 }
             102 = { NOT = { is_core = THIS } }
@@ -1089,7 +928,7 @@ political_decisions = {
     }
 
     guano_islands_act = {
-    picture = dreams_of_empire
+        picture = dreams_of_empire
         potential = {
             OR = {
                 owns = 2525
@@ -1198,7 +1037,6 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
-
 
     the_american_frontier = {
         picture = cowboy

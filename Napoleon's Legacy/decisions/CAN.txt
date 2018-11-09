@@ -1,40 +1,4 @@
 political_decisions = {
-    canadian_dominion = {
-        picture = canadian_dominion
-        potential = {
-            tag = CAN
-            exists = yes
-            NOT = { has_country_flag = canadian_dominion }
-        }
-        allow = {
-            war = no
-            owns = 57
-        }
-        effect = {
-            set_country_flag = canadian_dominion
-            any_pop = {
-                militancy = -4
-            }
-            small_arms = 50
-            regular_clothes = 50
-            CAN_60 = { add_core = QUE }
-            capital = 57
-            46 = {
-                state_scope = {
-                    change_region_name = "Southern Ontario"
-                }
-            }
-            58 = {
-                state_scope = {
-                    change_region_name = "Southern Quebec"
-                }
-            }
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     vive_le_quebec = {
         picture = vive_le_quebec
         potential = {

@@ -9,10 +9,9 @@ political_decisions = {
         }
 
         allow = {
-            NOT = {
-                war_with = USA
-            }
+            NOT = { war_with = USA }
             USA = { owns = 35 }
+
             OR = {
                 HUD = { owns = 157 }
                 CAN = { owns = 157 }
@@ -24,24 +23,27 @@ political_decisions = {
                 who = USA
                 value = 100
             }
+
+            157 = {
+                secede_province = CAN
+                remove_core = HUD
+                remove_core = CAN
+                add_core = USA
+            }
+
             118 = {
                 secede_province = CAN
                 remove_core = HUD
+                remove_core = CAN
                 add_core = USA
             }
 
             2684 = {
                 secede_province = CAN
                 remove_core = INC
-                add_core = USA
             }
 
-            157 = {
-                secede_province = CAN
-                remove_core = HUD
-                add_core = USA
-            }
-
+            # 35 and 38 are the US owned lands above the parallel
             35 = {
                 secede_province = CAN
                 remove_core = USA
@@ -54,8 +56,11 @@ political_decisions = {
                 remove_core = USA
                 add_core = HUD
                 add_core = CAN
+
+                change_province_name = "Fort York"
             }
 
+            # Grand Portage
             158 = {
                 secede_province = USA
                 add_core = USA
@@ -72,7 +77,7 @@ political_decisions = {
                     owns = 27
                 }
                 35 = { secede_province = HUD }
-                28 = { secede_province = HUD }
+                38 = { secede_province = HUD }
             }
 
             badboy = -2
