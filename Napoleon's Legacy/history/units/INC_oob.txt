@@ -1,21 +1,21 @@
-army = {
-    name = "Shawnee Braves"
-    location = 169
-    regiment = {
-        name= "1st Rifle Braves"
-        type = infantry
-        home = 169
-    }
+CAN = {
+    value = 200
+}
 
+NEN = {
+    value = 100
+}
+
+USA = {
+    value = -200
 }
 
 army = {
-    name = "Shawnee Braves"
-    location = 181
+    name = "Potowatomi Braves"
+    location = 163
     regiment = {
-        name= "2nd Rifle Braves"
+        name= "1st Rifle Braves"
         type = infantry
-        home = 181
+        home = 163
     }
-
 }
