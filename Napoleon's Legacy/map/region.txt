@@ -44,17 +44,17 @@ MEX_97 = { 97 98 99 108 109 110 } #Utah
 
 MEX_100 = { 100 101 102 2148 2662 } #Arizona
 
-MEX_103 = { 105 129 135 136 } #New Mexico
+MEX_103 = { 105 129 135 136 } #West Texas
 
 # USA_106 = { } #Colorado
 
 # USA_111 = { } #Wyoming
 
-USA_116 = { 112 113 116 115 } #Montana
+USA_116 = { 112 113 116 115 } #Yellowstone
 
 # USA_118 = { } #North Dakota
 
-USA_121 = { 117 119 120 121 122 } #South Dakota
+USA_121 = { 117 119 120 121 122 } #Dakota
 
 USA_124 = { 107 123 124 125 } #Nebraska
 
@@ -66,7 +66,7 @@ TEX_132 = { 133 43 132 134 137 138 } #Texas
 
 USA_139 = { 139 140 141 142 } #Louisiana
 
-USA_144 = { 131 130 143 144 145  } #Arkansas
+USA_144 = { 131 130 143 144 145 } #Arkansaw
 
 USA_148 = { 146 148 147 149 150 } #Missouri
 
