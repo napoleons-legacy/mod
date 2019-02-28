@@ -1,6 +1,5 @@
-owner = HUD
-controller = HUD
-add_core = HUD
+owner = CAN
+controller = CAN
 add_core = CAN
 add_core = MTC
 colonial = 2
