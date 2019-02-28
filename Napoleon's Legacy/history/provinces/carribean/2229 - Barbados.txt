@@ -3,5 +3,6 @@ controller = CAN
 trade_goods = tobacco
 life_rating = 35
 colonial = 2
-naval_base = 1
+naval_base = 2
+fort = 1
 terrain = new_world_plains
