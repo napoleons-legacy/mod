@@ -267,7 +267,7 @@ country_event = {
         prestige = 10
         relation = { who = CAN value = 100 }
 
-		set_country_flag = peaceful_oregon_treaty
+        set_country_flag = peaceful_oregon_treaty
 
         any_pop = {
             scaled_consciousness = {
@@ -590,7 +590,7 @@ country_event = {
         157 = {
             remove_core = CAN
             add_core = USA
-			secede_province = USA
+            secede_province = USA
         }
 
         118 = {
@@ -655,19 +655,19 @@ country_event = {
     picture = "treaty"
 
     trigger = {
-		tag = USA
-		CAN = {
-			NOT = { has_country_flag = imperial_cession }
-		}
+        tag = USA
+        CAN = {
+            NOT = { has_country_flag = imperial_cession }
+        }
 
-		has_country_flag = peaceful_oregon_treaty
-	}
+        has_country_flag = peaceful_oregon_treaty
+    }
 
-	mean_time_to_happen = {
-		days = 5
-	}
+    mean_time_to_happen = {
+        days = 5
+    }
 
-	fire_only_once = yes
+    fire_only_once = yes
 
     option = {
         name = "EVT44158OPTA"
