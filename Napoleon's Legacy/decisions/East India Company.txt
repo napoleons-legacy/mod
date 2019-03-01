@@ -1,39 +1,5 @@
 political_decisions = {
 
-    sell_surplus = {
-        picture = map_india
-        potential = {
-            tag = EIC
-            NOT = {
-                has_country_modifier = surplus_sold
-                year = 1850
-            }
-        }
-
-        allow = {
-            year = 1836
-        }
-
-        effect = {
-            money = 50000
-            add_country_modifier = {
-                name = surplus_sold
-                duration = 730
-            }
-            any_country = {
-                limit = {
-                    exists = yes
-                    capital_scope = { is_core = HND }
-                    NOT = { tag = EIC }
-                }
-                country_event = 121271
-            }
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     end_EIC = {
         picture = map_india
         potential = {

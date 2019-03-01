@@ -484,8 +484,6 @@ EVT36980OPTA;Damn $FROMCOUNTRY_ADJ$ vultures!;;;;;;;;;;;;;;;;;;;;;;x;
 EVTNAME6016813;The $COUNTRY_ADJ$ Regime;;;;;;;;;;;;;;;;;;;;;;x;
 EVTDESC6016813;While our liberators have a theocratic government, our people would never accept this kind of rule and a more secular government was put in charge.;;;;;;;;;;;;;;;;;;;;;;x;
 EVT6016813OPTA;It's for the best.;;;;;;;;;;;;;;;;;;;;;;x;
-EVTNAME36898;The Ascension of Queen Victoria;;;;;;;;;;;;;;;;;;;;;;;x;
-EVTDESC36898;Today, in the year of our Lord $YEAR$, William the Fourth, by the Grace of God, King of the United Kingdom of Great Britain and Ireland, Defender of the Faith, died in Windsor Castle. As he had no living legitimate children, Princess Victoria of Kent, William's niece, found herself ruling one of the Great Powers and the biggest colonial empire in Europe. Her coronation is scheduled for the 28th of June, 1838, when princess Alexandrina Victoria of House Hanover will officially ascend to the throne of the United Kingdom of Great Britain and Ireland as 'Queen Victoria'. Her reign, which would last even a few years into the 20th century, would later be remembered as the absolute zenith of the British Empire, upon which the sun never set. The last British Monarch of the House of Hanover, her ascension also marked the end of the personal union between Britain and Hanover which, under Salic Law, excludes women from inheritance. Her uncle became King Ernest Augustus I of Hanover. Today a jubilant crowd in London has escorted the young Queen Victoria to her residence in the newly reformed Buckingham Palace.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 EVTNAME986518;The Albania Population Exchange;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 EVTNAME986517;The Bosnia Population Exchange;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 EVTNAME986516;The Montenegro Population Exchange;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -2235,33 +2233,6 @@ EVTDESC44146;$FROMCOUNTRY$ has refused to sell the Hawaiian Islands territory. C
 EVT44146OPTA;A foolish move.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC44147;The Hawaiian Islands are ours!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44147OPTA;A wise move.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTNAME44150;54-40 or Fight!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44150;As American and British settlers begin to move to the west coast of North America, there has been a growing dispute as to who owns the Oregon Country. The entire region west of the Rockies (called Columbia by the British) has been explored by both countries and there are legitimate claims on either side. British claims stretch all the way south to the 42nd Parallel while American claims reach north to the 54th Parallel. But the British claim they are willing to compromise and have been pushing for an established border along the Columbia River which they believe would be a fair solution and help both nations avoid another costly war. It's clearly a tense situation, and the spectre of war with the British looms as politicians in the current election campaign are banging the drums of Manifest Destiny in order to gain support.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT44150OPTA;All of Oregon belongs to the United States.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT44150OPTB;Open further negotiations with the British.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT44150OPTC;If a border along the Columbia River helps us avoid war, so be it.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVTNAME44151;The Columbia District;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44151;As American and British settlers begin to move to the west coast of North America, there has been a growing dispute as to who owns the Columbia District. The entire region west of the Rockies (called the Oregon Country by the Americans) has been explored by both countries and there are legitimate claims on either side. The British claim all the way south to the 42nd Parallel and the Americans north to the 54th Parallel. The situation is tense, and made more so by jingoistic American politicians calling for sovereignty over the entire continent. Even so, the American government has sent a delegation seeking a compromise in the region.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
-EVT44151OPTA;We will agree to split the territory between us.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
-EVT44151OPTB;We will not allow a former colony to threaten our interests.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
-EVTNAME44152;The Oregon Treaty;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44152;The British have agreed to a compromise, splitting the Oregon Country between us at the 49th Parallel. Any British lands held by us will be turned over to them, and vice-versa. Though some Americans are upset, many others are breathing a sigh of relief.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
-EVT44152OPTA;This will settle the matter once and for all.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTNAME44153;Oregon Negotiations Break Down;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44153;The talks with the British have broken down, primarily due to the continuing calls by warmongering politicians. Neither of our options now is very pleasant: either we abandon our claims to Oregon no matter what some might think, or we press ahead with the claims and brace for eventual war.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT44153OPTA;Abandon our claims.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT44153OPTB;Press ahead with our claims.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVTNAME44154;American Claims in Columbia;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44154;As American and British settlers begin to move to the west coast of North America, there has been a growing dispute as to who owns the Columbia District. The entire region west of the Rockies (called the Oregon Country by the Americans) has been explored by both countries and there are legitimate claims on either side. Recently the situation has been exacerbated by American politicians rattling their sabers over their idea of 'Manifest Destiny', and they have pressed their claim all the way north to the 54th Parallel. It will almost certainly mean war, and our only consideration should probably be whether we wish to pursue another costly war with the Americans in North America when our time could better be spent elsewhere.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
-EVTNAME44155;Oregon Country is Ours;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44154OPTA;Let them have Columbia. It is not worth fighting over.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44154OPTB;We will not allow a former colony to threaten our interests.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44155;The British have elected to withdraw from Oregon and have signed a treaty to hand any American land over to us.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44155OPTA;A grand day for Manifest Destiny!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTNAME44156;Compromise Along Columbia River;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44156;Tensions over the Columbia District seemed to fizzle as American willingness to compromise had become well apparent to British diplomats during negotiations. A favourable agreement appears to have come within our grasp which would split the Columbia District along the Columbia River and end most disputes over the territory.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
-EVT44156OPTA;All's well that ends well.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44156OPTB;The United Kingdom demands Columbia in its entirety!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME95026;Liberian Independence;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC95026;The Liberian colony was founded as a homeland for freed American slaves by the American Colonization Society. Now that Liberia is considered a financial drain on its resources, the ACS is urging Liberia to proclaim independence and find its own destiny.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
 EVT95026OPTA;Proclaim independence.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

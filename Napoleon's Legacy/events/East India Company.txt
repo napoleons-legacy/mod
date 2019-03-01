@@ -459,23 +459,7 @@ country_event = {
     }
 }
 
-# EIC sells goods
-country_event = {
-    id = 121271
-    title = "EVTNAME121271"
-    desc = "EVTDESC121271"
-    picture = "Western"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA121271"
-        years_of_research = 10
-    }
-}
-
 # EIC Begins to Regrow, starting at Vizapatam
-
 country_event = {
     id = 4662017
     title = "EVTNAME4662017"
@@ -799,7 +783,6 @@ country_event = {
             who = HYD
             value = -25
         }
-
 
         set_country_flag = hyderabad_pushed_closer
         ai_chance = {

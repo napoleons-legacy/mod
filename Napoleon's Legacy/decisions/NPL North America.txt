@@ -4,7 +4,7 @@ political_decisions = {
         potential = {
             tag = CAN
             NOT = {
-                has_country_flag = britain_ceded
+                has_country_flag = imperial_cession
             }
         }
 
@@ -19,84 +19,22 @@ political_decisions = {
         }
 
         effect = {
-            relation = {
-                who = USA
-                value = 100
-            }
-
-            157 = {
-                secede_province = CAN
-                remove_core = HUD
-                remove_core = CAN
-                add_core = USA
-            }
-
-            118 = {
-                secede_province = CAN
-                remove_core = HUD
-                remove_core = CAN
-                add_core = USA
-            }
-
-            2684 = {
-                secede_province = CAN
-                remove_core = INC
-            }
-
-            # 35 and 38 are the US owned lands above the parallel
-            35 = {
-                secede_province = CAN
-                remove_core = USA
-                add_core = HUD
-                add_core = CAN
-            }
-
-            38 = {
-                secede_province = CAN
-                remove_core = USA
-                add_core = HUD
-                add_core = CAN
-
-                change_province_name = "Fort York"
-            }
-
-            # Grand Portage
-            158 = {
-                secede_province = USA
-                add_core = USA
-                remove_core = CAN
-            }
-
-            118 = { secede_province = USA }
-            157 = { secede_province = USA }
-            2684 = { secede_province = USA }
-
-            random_country = {
-                limit = {
-                    tag = HUD
-                    owns = 27
-                }
-                35 = { secede_province = HUD }
-                38 = { secede_province = HUD }
-            }
-
             badboy = -2
             prestige = 15
-            set_country_flag = britain_ceded
+
+            USA = { country_event = 44157 }
+            set_country_flag = imperial_cession
         }
 
         ai_will_do = {
             factor = 1
             modifier = {
                 factor = 0
-                NOT = {
-                    badboy = 2
-                }
+                NOT = { badboy = 2 }
             }
             modifier = {
                 factor = 0
                 NOT = { year = 1840 }
-                NOT = { USA = { has_country_flag = hasmanifestdestiny } }
             }
         }
     }
