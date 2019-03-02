@@ -181,11 +181,11 @@ political_decisions = {
             }
             war = {
                 target = TRA
-                    attacker_goal = { casus_belli = establish_protectorate_casus_belli }
-                    defender_goal = {
+                attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+                defender_goal = {
                     casus_belli = acquire_core_state
                     state_province_id = 1310
-                    }
+                }
             }
             set_country_flag = travancore_eic_conflict
             any_country = {

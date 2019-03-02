@@ -709,3 +709,261 @@ country_event = {
         }
     }
 }
+
+### American Civil War
+
+# Slave owner gets shot in Pennsylvania
+country_event = {
+    id = 44160
+    title = "EVTNAME44160"
+    desc = "EVTDESC44160"
+    picture = "knights_golden_circle"
+
+    trigger = {
+        tag = USA
+        slavery = yes_slavery
+        year = 1850
+
+        has_country_flag = hasmanifestdestiny
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 3
+        modifier = {
+            factor = 0.5
+            is_greater_power = yes
+        }
+    }
+
+    option = {
+        name = "EVT44160OPTA"
+        any_pop = {
+            limit = {
+                is_primary_culture = yes
+                strata = rich
+            }
+
+            consciousness = 1
+        }
+
+        NEN = { country_event = 44161 }
+    }
+}
+
+# New England gets the ultimatum and refuses, war starts
+country_event = {
+    id = 44161
+    title = "EVTNAME44160"
+    desc = "EVTDESC44160"
+    picture = "knights_golden_circle"
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT44161OPTA"
+        # A white peace means the war will restart after 5 years
+        # But, British intervention only happens once!
+        USA_219 = { add_core = NEN }
+        USA_223 = { add_core = USA }
+
+        set_global_flag = acw_first_phase
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = acquire_core_state
+                state_province_id = 219
+            }
+
+            defender_goal = {
+                casus_belli = acquire_core_state
+                state_province_id = 223
+            }
+
+            call_ally = no
+        }
+    }
+}
+
+# British Empire oversees the war
+country_event = {
+    id = 44162
+    title = "EVTNAME44162"
+    desc = "EVTDESC44162"
+    picture = "senate_debate"
+
+    trigger = {
+        tag = CAN
+
+        # Anything not in Pennsylvania is occupied
+        NEN = {
+            any_owned_province = {
+                NOT = { region = USA_223 }
+                controlled_by = USA
+            }
+
+            # above makes it implicit, but explicit is always better!
+            war_with = USA
+        }
+
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    # Join the war, puppeting New England on victory.
+    option = {
+        name = "EVT44162OPTA"
+        military_access = NEN
+        create_alliance = NEN
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+
+            defender_goal = {
+                casus_belli = status_quo
+            }
+
+            call_ally = no
+        }
+
+        set_country_flag = acw_empire_intervenes
+
+        ai_chance = {
+            factor = 95
+        }
+    }
+
+    # Do nothing ... coward
+    option = {
+        name = "EVT44162OPTB"
+        prestige = -5
+
+        ai_chance = {
+            factor = 5
+        }
+    }
+}
+
+# New England wins the war independently
+country_event = {
+    id = 44163
+    title = "EVTNAME44163"
+    desc = "EVTDESC44163"
+    picture = "treaty"
+
+    trigger = {
+        tag = NEN
+
+        USA = { has_recently_lost_war = yes }
+        USA_219 = { owned_by = NEN }
+        has_global_flag = acw_first_phase
+        NOT = {
+            CAN = { has_country_flag = acw_empire_intervenes }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = USA }
+        USA_223 = { remove_core = USA }
+        prestige = 10
+    }
+}
+
+# New England wins the war with help and are puppeted
+country_event = {
+    id = 44164
+    title = "EVTNAME44163"
+    desc = "EVTDESC44164"
+    picture = "treaty"
+
+    trigger = {
+        tag = CAN
+        has_country_flag = acw_empire_intervenes
+
+        USA = { has_recently_lost_war = yes }
+        USA_219 = { owned_by = NEN }
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = USA }
+        USA_223 = { remove_core = USA }
+        create_vassal = NEN
+        NEN = {
+            any_owned = {
+                limit = {
+                    # all of maine
+                    OR = {
+                        province_id = 69
+                        province_id = 248
+                        province_id = 249
+                        province_id = 250
+                    }
+                }
+
+                remove_core = NEN
+                secede_province = CAN
+                add_core = CAN
+            }
+
+            prestige = -1000
+        }
+
+        prestige = 10
+    }
+}
+
+# New England loses the war
+country_event = {
+    id = 44165
+    title = "EVTNAME44165"
+    desc = "EVTDESC44165"
+    picture = "treaty"
+
+    trigger = {
+        tag = USA
+
+        NEN = { has_recently_lost_war = yes }
+        USA_223 = { owned_by = USA }
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = NEN }
+        USA_223 = { remove_core = NEN }
+        prestige = 10
+    }
+}
