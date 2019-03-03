@@ -1,47 +1,50 @@
 #Sphere of Influence
 MEX = {
-    value = 75        #relation
+    value = 75
 }
 ECU = {
-    value = 100        #relation
+    value = 100
 }
 PEU = {
-    value = 100        #relation
+    value = 100
 }
 BOL = {
-    value = 100        #relation
+    value = 100
 }
 CHL = {
-    value = 100        #relation
+    value = 100
 }
 PRG = {
-    value = 100        #relation
+    value = 100
 }
 UCA = {
-    value = 100        #relation
+    value = 100
 }
 HUD = {
-    value = 100        #relation
+    value = 100
 }
 BRZ = {
-    value = 100        #relatio
+    value = 100
 }
 URU = {
-    value = 75        #relation
+    value = 75
+}
+REI = {
+    value = 100
 }
 POR = {
-    value = 100        #relation
+    value = 100
+}
+NSA = {
+    value = -200
+}
+FRA = {
+    value = -200
 }
 
 army = {
-    name = "Ejército de Cuba"
+    name = "Ejï¿½rcito de Cuba"
     location = 2209
-
-    regiment = {
-        name = "1. Brigada Colonial"
-        type = infantry
-        home = 1455
-    }
 
     regiment = {
         name = "2. Brigada Colonial"
@@ -51,24 +54,13 @@ army = {
 }
 
 army = {
-    name = "Ejército de Puerto Rico"
+    name = "Ejï¿½rcito de Puerto Rico"
     location = 2222
 
     regiment = {
         name = "3. Brigada Colonial"
         type = infantry
         home = 1456
-    }
-}
-
-army = {
-    name = "Ejército de Filipinas"
-    location = 1455
-
-    regiment = {
-        name = "4. Brigada Colonial"
-        type = infantry
-        home = 1455
     }
 }
 
@@ -88,21 +80,6 @@ navy = {
 
     ship = {
         name= "3a Flotilla de Transporte"
-        type = clipper_transport
-    }
-}
-
-navy = {
-    name = "Armada de Filipinas"
-    location = 1455
-
-    ship = {
-        name = "Victoria"
-        type = frigate
-    }
-
-    ship = {
-        name= "2a Flotilla de Transporte"
         type = clipper_transport
     }
 }
