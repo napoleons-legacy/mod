@@ -1,4 +1,3 @@
-#Sphere of Influence
 SPA = {
     value = -150
 }
@@ -6,16 +5,16 @@ MEX = {
     value = -50
 }
 EIC = {
-    value = -50        #relation
+    value = -50
 }
 CAN = {
     value = -50
 }
 DAI = {
-    value = 50        #relatio
+    value = 50
 }
 REI = {
-    value = 50        #relation
+    value = 50
 }
 
 army = {
