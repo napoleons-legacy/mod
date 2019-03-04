@@ -10,6 +10,7 @@ political_decisions = {
                 has_country_flag = cuba_unlocked
                 year = 1860
             }
+
             NOT = {
                 owns = 487
                 owns = 762
@@ -29,7 +30,6 @@ political_decisions = {
             political_reform = censored_press
             political_reform = non_socialist
             political_reform = non_secret_ballots
-            change_tag = CUB
             prestige = 10
             NSA = { country_event = 600033 }
             SPA = {
@@ -37,6 +37,8 @@ political_decisions = {
                     remove_core = SPA
                 }
             }
+
+            change_tag = CUB
             any_pop = {
                 limit = {
                     has_pop_culture = caribeno
@@ -225,6 +227,9 @@ political_decisions = {
             tag = SPA
             government = fascist_dictatorship
             NOT = { has_country_flag = falangist_doctrine }
+            POR = {
+                exists = yes
+            }
         }
 
         allow = {
@@ -320,94 +325,6 @@ political_decisions = {
                 badboy = 0.2
             }
         }
-    }
-
-    the_moroccan_question = {
-        picture = moroccan_partition
-        potential = {
-            tag = SPA
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-                government = hms_government
-            }
-            owns = 1689
-            NOT = { has_country_flag = moroccan_question }
-            MOR = {
-                ai = yes
-                exists = yes
-                part_of_sphere = yes
-                NOT = { in_sphere = THIS }
-                sphere_owner = { capital_scope = { continent = europe } }
-                sphere_owner = { NOT = { tag = TUR } }
-                sphere_owner = { NOT = { tag = RUS } }
-            }
-            has_global_flag = berlin_conference
-            1774 = { empty = yes }
-            1773 = { empty = yes }
-            1696 = { empty = yes }
-        }
-
-        allow = {
-            war = no
-        }
-
-        effect = {
-            set_country_flag = moroccan_question
-            MOR = { sphere_owner = { country_event = 971700 } }
-        }
-        ai_will_do = { factor = 1 }
-    }
-
-    abolish_los_fueros = {
-        picture = fueros
-        potential = {
-            tag = SPA
-            OR = {
-                government = absolute_monarchy
-                government = prussian_constitutionalism
-                government = hms_government
-                government = presidential_dictatorship
-                government = fascist_dictatorship
-                government = proletarian_dictatorship
-            }
-            NOT = { has_country_flag = fueros_abolished }
-            NOT = { has_global_flag = carlists_pacified }
-        }
-
-        allow = {
-            war = no
-            revolution_n_counterrevolution = 1
-        }
-
-        effect = {
-            set_country_flag = fueros_abolished
-            any_pop = {
-                limit = {
-                OR = {
-                    has_pop_culture = basque
-                    has_pop_culture = catalan
-                    }
-                }
-                consciousness = 4
-                militancy = 1
-            }
-            any_pop = {
-                scaled_militancy = {
-                    ideology = conservative
-                    factor = 0.5
-                }
-                scaled_militancy = {
-                    ideology = reactionary
-                    factor = 1
-                }
-                scaled_militancy = {
-                    ideology = liberal
-                    factor = -1
-                }
-            }
-        }
-        ai_will_do = { factor = 1 }
     }
 
     effective_occupation_western_sahara = {
