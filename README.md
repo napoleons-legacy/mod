@@ -17,7 +17,6 @@ cd mod && python3 install.py
 
 ## History
 
-The events covered by the mod since the POD are documented here
-[history](history.md)
+The events covered by the mod since the POD are documented [here](history.md).
 
 The history of the mod is open to change as ambiguities and high unlikelihoods are resolved.
