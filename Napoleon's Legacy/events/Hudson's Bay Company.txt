@@ -62,41 +62,25 @@ country_event = {
     picture = "hudson"
 
     trigger = {
-    OR = {
-        AND = {
-            has_global_flag = northern_lands
-            tag = CAN
-            owns = 13
-            exists = HUD
-            }
-        AND = {
-            HUD = {
-                has_country_modifier = in_bankrupcy
-                exists = yes
-                }
-            has_global_flag = northern_lands
-            tag = CAN
-            }
-        AND = {
-            year = 1880
-            tag = CAN
-            exists = HUD
-            }
-        }
+        tag = CAN
+        exists = HUD
+        year = 1840
     }
+
     fire_only_once = yes
-    mean_time_to_happen = { months = 1 }
+    mean_time_to_happen = { months = 18 }
 
     option = {
         name = "EVTOPTA4662008"
         HUD = {
             all_core = {
-                add_core = CAN
-                remove_core = HUD
-                }
+            add_core = CAN
+            remove_core = HUD
             }
+        }
+
         inherit = HUD
         prestige = 10
-        money = 10000
+        money = -10000
     }
 }

@@ -72,13 +72,6 @@ substate = {
     end_date = 1937.1.1
 }
 
-vassal = {
-    first = ARC
-    second = BOL
-    start_date = 1836.1.1
-    end_date = 1937.1.1
-}
-
 #Russia - Abkhazia
 vassal = {
     first = RUS

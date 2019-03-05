@@ -4,42 +4,6 @@
 #Havana
 2209 = {
     aristocrats = {
-        culture = spanish
-        religion = catholic
-        size = 1350
-    }
-
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 500
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 525
-    }
-
-    artisans = {
-        culture = spanish
-        religion = catholic
-        size = 4825
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 500
-    }
-
-    farmers = {
-        culture = caribeno
-        religion = catholic
-        size = 42575
-    }
-
-    aristocrats = {
         culture = caribeno
         religion = catholic
         size = 3103
@@ -96,53 +60,11 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 2500
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 38000
+        size = 40500
     }
 }
 #Jagua
 2210 = {
-    aristocrats = {
-        culture = spanish
-        religion = catholic
-        size = 350
-    }
-
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 300
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 325
-    }
-
-    artisans = {
-        culture = spanish
-        religion = catholic
-        size = 800
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 300
-    }
-
-    farmers = {
-        culture = spanish
-        religion = catholic
-        size = 6325
-    }
-
     aristocrats = {
         culture = caribeno
         religion = catholic
@@ -188,53 +110,11 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 11850
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 25000
+        size = 36850
     }
 }
 #Camaguey
 2211 = {
-    aristocrats = {
-        culture = spanish
-        religion = catholic
-        size = 650
-    }
-
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 200
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 325
-    }
-
-    artisans = {
-        culture = spanish
-        religion = catholic
-        size = 300
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 350
-    }
-
-    farmers = {
-        culture = spanish
-        religion = catholic
-        size = 4325
-    }
-
     aristocrats = {
         culture = caribeno
         religion = catholic
@@ -280,53 +160,11 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 2200
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 25000
+        size = 27200
     }
 }
 #Santiago de Cuba
 2212 = {
-    aristocrats = {
-        culture = spanish
-        religion = catholic
-        size = 450
-    }
-
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 50
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 125
-    }
-
-    artisans = {
-        culture = spanish
-        religion = catholic
-        size = 100
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 150
-    }
-
-    farmers = {
-        culture = spanish
-        religion = catholic
-        size = 2325
-    }
-
     aristocrats = {
         culture = caribeno
         religion = catholic
@@ -372,55 +210,12 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 3300
+        size = 17300
     }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 14000
-    }
-
 }
 
 #Baker/Repulse Bay/ Echo Bay - Now Guantanamo Bay
 44 = {
-    aristocrats = {
-        culture = spanish
-        religion = catholic
-        size = 250
-    }
-
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 30
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 50
-    }
-
-    artisans = {
-        culture = spanish
-        religion = catholic
-        size = 100
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 150
-    }
-
-    farmers = {
-        culture = spanish
-        religion = catholic
-        size = 1000
-    }
-
     aristocrats = {
         culture = caribeno
         religion = catholic

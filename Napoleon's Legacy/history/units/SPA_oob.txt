@@ -20,7 +20,7 @@ PRG = {
 UCA = {
     value = 100
 }
-HUD = {
+CAN = {
     value = 100
 }
 BRZ = {
@@ -42,44 +42,48 @@ FRA = {
     value = -200
 }
 
-army = {
-    name = "Ej�rcito de Cuba"
-    location = 2209
-
-    regiment = {
-        name = "2. Brigada Colonial"
-        type = infantry
-        home = 2209
-    }
-}
-
-army = {
-    name = "Ej�rcito de Puerto Rico"
-    location = 2222
-
-    regiment = {
-        name = "3. Brigada Colonial"
-        type = infantry
-        home = 1456
-    }
+leader = {
+    name = "Andres de Santa Cruz"
+    type = land
+    date = 1836.1.1
+    personality = arrogant
+    background = old_school
 }
 
 navy = {
-    name = "Armada de Cuba"
-    location = 2212
-
+    name = "Marina de Guerra del Peru"
+    location = 2295
     ship = {
-        name = "Santiago"
-        type = manowar
+        name= "Monteagudo"
+        type = frigate
     }
 
     ship = {
-        name= "2a Flotilla de Transporte"
-        type = clipper_transport
+        name= "Santa Cruz"
+        type = frigate
     }
 
-    ship = {
-        name= "3a Flotilla de Transporte"
-        type = clipper_transport
+}
+
+army = {
+    name = "Ej�rcito del Per�"
+    location = 2295
+    regiment = {
+        name= "1. Brigada de Infanter�a"
+        type = infantry
+        home = 2295
     }
+
+    regiment = {
+        name= "2. Brigada de Infanter�a"
+        type = infantry
+        home = 2295
+    }
+
+    regiment = {
+        name= "3. Brigada de Infanter�a"
+        type = infantry
+        home = 2302
+    }
+
 }
