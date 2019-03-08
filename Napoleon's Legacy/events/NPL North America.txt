@@ -12,17 +12,11 @@ country_event = {
     trigger = {
         tag = USA
         13 = {
-            OR = {
-                owned_by = USA
-                owned_by = CAN
-            }
+            owned_by = CAN
         }
 
-        111 = {
-            OR = {
-                owned_by = USA
-                owned_by = CAN
-            }
+        113 = {
+            owned_by = USA
         }
 
         NOT = {
