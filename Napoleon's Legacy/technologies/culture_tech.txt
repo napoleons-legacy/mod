@@ -798,6 +798,12 @@ state_n_government = {
                 tag = USA
             }
         }
+
+        modifier = {
+            factor = 51
+            tag = USA
+        }
+
         modifier = {
             factor = 3
             tech_school = culture_tech_school

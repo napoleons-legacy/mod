@@ -3199,10 +3199,40 @@
         militancy = 9
     }
 }
-#Louisiana Region (280000)
+#Louisiana Region (524000)
 #ruled by USA in 1836
-#New Orleans (128000/32000 POPS)
+#New Orleans (240000/60000 POPS)
 139 = {
+    aristocrats = {
+        culture = acadian
+        religion = catholic
+        size = 350
+    }
+
+    clergymen = {
+        culture = acadian
+        religion = catholic
+        size = 150
+    }
+
+    artisans = {
+        culture = acadian
+        religion = catholic
+        size = 750
+    }
+
+    soldiers = {
+        culture = acadian
+        religion = catholic
+        size = 350
+    }
+
+    farmers = {
+        culture = acadian
+        religion = catholic
+        size = 28400
+    }
+
     aristocrats = {
         culture = dixie
         religion = protestant
@@ -3293,8 +3323,38 @@
         size = 10000
     }
 }
-#Baton Rouge (72000/18000 POPS)
+#Baton Rouge (112000/28000 POPS)
 140 = {
+    aristocrats = {
+        culture = acadian
+        religion = catholic
+        size = 250
+    }
+
+    clergymen = {
+        culture = acadian
+        religion = catholic
+        size = 125
+    }
+
+    artisans = {
+        culture = acadian
+        religion = catholic
+        size = 350
+    }
+
+    soldiers = {
+        culture = acadian
+        religion = catholic
+        size = 250
+    }
+
+    farmers = {
+        culture = acadian
+        religion = catholic
+        size = 9025
+    }
+
     aristocrats = {
         culture = dixie
         religion = protestant
@@ -3403,8 +3463,38 @@
         size = 9875
     }
 }
-#Lake Charles (36000/9000 POPS)
+#Lake Charles (128000/32000 POPS)
 141 = {
+    aristocrats = {
+        culture = acadian
+        religion = catholic
+        size = 250
+    }
+
+    clergymen = {
+        culture = acadian
+        religion = catholic
+        size = 150
+    }
+
+    artisans = {
+        culture = acadian
+        religion = catholic
+        size = 250
+    }
+
+    soldiers = {
+        culture = acadian
+        religion = catholic
+        size = 250
+    }
+
+    farmers = {
+        culture = acadian
+        religion = catholic
+        size = 23100
+    }
+
     aristocrats = {
         culture = dixie
         religion = protestant

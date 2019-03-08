@@ -589,43 +589,50 @@ country_event = {
 
         157 = {
             remove_core = CAN
-            add_core = USA
-            secede_province = USA
+            add_core = THIS
+            secede_province = THIS
         }
 
         118 = {
             remove_core = CAN
-            add_core = USA
-            secede_province = USA
+            add_core = THIS
+            secede_province = THIS
         }
 
-        2684 = {
-            secede_province = CAN
-            remove_core = CAN
-            remove_core = INC
-        }
-        2684 = { secede_province = USA }
+        random_country = {
+            limit = {
+                tag = USA
+                owns = 35
+            }
 
-        # 35 and 38 are the US owned lands above the parallel
+            2684 = {
+                secede_province = CAN
+                remove_core = CAN
+                remove_core = INC
+            }
+            2684 = { secede_province = THIS }
+
+            # Grand Portage
+            158 = {
+                remove_core = CAN
+                add_core = USA
+                secede_province = USA
+            }
+        }
+
+        # 35 and 38 are the owned lands above the parallel
         35 = {
-            remove_core = USA
+            remove_core = THIS
             add_core = CAN
             secede_province = CAN
         }
 
         38 = {
-            remove_core = USA
+            remove_core = THIS
             add_core = CAN
             secede_province = CAN
 
             change_province_name = "Fort York"
-        }
-
-        # Grand Portage
-        158 = {
-            remove_core = CAN
-            add_core = USA
-            secede_province = USA
         }
 
         ai_chance = {
@@ -739,7 +746,7 @@ country_event = {
         }
 
         modifier = {
-            factor = 0.5
+            factor = 0.25
             year = 1848
         }
     }

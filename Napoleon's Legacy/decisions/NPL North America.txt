@@ -9,20 +9,24 @@ political_decisions = {
         }
 
         allow = {
-            NOT = { war_with = USA }
-            USA = { owns = 35 }
-
-            OR = {
-                HUD = { owns = 157 }
-                CAN = { owns = 157 }
+            35 = {
+                owner = {
+                    NOT = { war_with = CAN }
+                }
             }
+
+            CAN = { owns = 157 }
         }
 
         effect = {
             badboy = -2
-            prestige = 15
+            prestige = 5
 
-            USA = { country_event = 44157 }
+            35 = {
+                owner = {
+                    country_event = 44157
+                }
+            }
             set_country_flag = imperial_cession
         }
 

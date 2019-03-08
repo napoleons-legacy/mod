@@ -223,7 +223,6 @@ political_decisions = {
     manifest_destiny = {
         potential = {
             tag = USA
-            is_greater_power = yes
             NOT = { has_country_flag = hasmanifestdestiny }
         }
 
@@ -231,6 +230,7 @@ political_decisions = {
             war = no
             idealism = 1
             state_n_government = 1
+            neighbour = MEX
             NOT = { truce_with = MEX }
             NOT = { war_policy = pacifism }
             NOT = { MEX = { any_owned_province = { country_units_in_province = USA } } }
