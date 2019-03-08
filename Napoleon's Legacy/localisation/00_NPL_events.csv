@@ -49,7 +49,7 @@ EVTDESC4662006;The Central Americans and Peruvians were not able to defeat Gran 
 EVTOPTA4662006;The flame of Gran Colombia burns bright!;;;;;;;;;;;;x
 EVTOPTA99033;We accept those who come.;;;;;;;;;;;;x
 EVTNAME4662008;Liquidate the Hudson's Bay Company.;;;;;;;;;;;;x
-EVTDESC4662008;The Hudson's Bay Company has finally declared bankruptcy, leaving us to seize their assets and fold their current posts into the British Empire;;;;;;;;;;;;x
+EVTDESC4662008;The Hudson's Bay Company has been troubled with severe losses throughout the early 19th Century. With shrinking demand for furs and the Hudson's Bay Company's failures to enter other markets, they have finally defaulted on their debts. The British Empire must take over all of their assets and debts in order to defend Canada from foreign militaries.;;;;;;;;;;;;x
 EVTOPTA4662008;They needed to go.;;;;;;;;;;;;x
 EVTNAME4662009;A New Capital for Gran Colombia?;;;;;;;;;;;;x
 EVTDESC4662009;We have federalized our country, and have decided to choose a new capital for our country. What we choose will be our new capital for the years to come.;;;;;;;;;;;;x
@@ -317,35 +317,6 @@ EVTOPTB37242;Maybe we should just let them be.;;;;;;x;;;;;;;;;;;
 EVTNAME99033;Land of Liberty;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC99033;Many have come into South Africa looking for opportunities or a new life.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT99033OPTA;We Welcome Those Who Come;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTNAME121212;The Louisiana Territory;;;;;;x;;;;;;;;;;;
-EVTDESC121212;"Since the Northern States ""expelled"" us from the Union, immigration to the colonial Louisiana territory has been nil. As a result, many in our government are suggesting that we get rid of the land entirely and attempt to sell it to a neighboring power. Yet some argue that, while it may be an albatross around our neck now, the land will become valuable in the future.";;;;;;x;;;;;;;;;;;
-EVTOPTA121212;Sell it to the British Empire!;;;;;;x;;;;;;;;;;;
-EVTOPTB121212;Sell it to Mexico!;;;;;;x;;;;;;;;;;;
-EVTOPTC121212;Keep it!;;;;;;x;;;;;;;;;;;
-EVTNAME121213;The Louisiana Territory;;;;;;x;;;;;;;;;;;
-EVTDESC121213;"Since the Northern States ""expelled"" the CSA from the Union, immigration to the colonial Louisiana territory has been nil. As a result, the Americans have offered to sell it to us.";;;;;;x;;;;;;;;;;;
-EVTOPTA121213;What a deal!;;;;;;x;;;;;;;;;;;
-EVTOPTB121213;What useless land!;;;;;;x;;;;;;;;;;;
-EVTNAME121214;A Greater Native Confederation;;;;;;x;;;;;;;;;;;
-EVTDESC121214;Now that we own the colonial lands of Central North America, many argue that it would be best utilized by being given the the Native Confederation as a buffer against American agression.;;;;;;x;;;;;;;;;;;
-EVTOPTA121214;Give it to the Natives!;;;;;;x;;;;;;;;;;;
-EVTOPTB121214;We will keep it for our Empire.;;;;;;x;;;;;;;;;;;
-EVTNAME121215;John Brown's Raid;;;;;;;;;x;;;;;;;;
-EVTDESC121215;John Brown's body lies a-mouldering in the grave, but his soul is marching on.'--John Brown's Body, Union Marching song\n\nThe famed hero of the abolitionist movement, the late John Brown, was hanged in $PROVINCENAME$ today after a failed raid on a military armory. Supposedly, Brown had planned to use the arsenal's weapons to arm slaves and incite an open slave rebellion across the entire United States. The raid, and John Brown's death, have furthered escalated anger towards the North, and many are calling for a war to reunite the Union once and for all.;;;;;;;;;x;;;;;;;;
-EVTOPTA121215;To War!;;;;;;x;;;;;;;;;;;
-EVTOPTB121215;We can't risk a war with the North.;;;;;;x;;;;;;;;;;;
-EVTNAME121216;Southern Failure;;;;;;;;;x;;;;;;;;
-EVTDESC121216;Our people are exhausted with war. We have failed to retake the North, and revolts of Northern-inclined traitors are springing up all over our nation. As such, we have today surrendered to our enemies, and have ceased to exist as a nation.;;;;;;;;;x;;;;;;;;
-EVTOPTA121216;How shameful;;;;;;x;;;;;;;;;;;
-EVTNAME121217;Northern Failure;;;;;;;;;x;;;;;;;;
-EVTDESC121217;Our people are exhausted with war. We have failed to retake the South, and revolts of Southern-inclined traitors are springing up all over our nation. As such, we have today surrendered to our enemies, and have ceased to exist as a nation.;;;;;;;;;x;;;;;;;;
-EVTOPTA121217;How shameful;;;;;;x;;;;;;;;;;;
-EVTNAME121218;Northern Victory;;;;;;;;;x;;;;;;;;
-EVTDESC121218;We have triumped! Northern flags wave from Southern windows as our armies march through Washington. The American Civil War is over, and the South is now firmly under the control of the United States. No more will the foul institution of slavery taint our continent.;;;;;;;;;x;;;;;;;;
-EVTOPTA121218;All hail Northern arms!;;;;;;x;;;;;;;;;;;
-EVTNAME121218;Southern Victory;;;;;;;;;x;;;;;;;;
-EVTDESC121218;We have triumped! Southern flags wave from Northern windows as our armies march through Boston. The American Civil War is over, and the North is now firmly under the control of the United States. No more will the foul thoughts of liberalism taint our continent.;;;;;;;;;x;;;;;;;;
-EVTOPTA121218;All hail Southern arms!;;;;;;x;;;;;;;;;;;
 EVTNAME121220;The Legacy of 1812;;;;;;;;;x;;;;;;;;
 EVTDESC121220;The War of 1812 shattered the fledgling United States of America. In the year 1816, British troops marched through the streets of American cities as the USA lost battle after battle with them. At the Hartford Convention that year, the Federalist-supporting, anti-war states of the North voted to expel the Southern and Western states from the Union and make peace with the British. Though the South fought to keep the Union whole, with both the British and their Northern brothers to contend with, their efforts failed. Since then, the USA continues to exist in the North, while the remaining states, under the control of the powerful Southern landowners, abandoned the Constitution and re-adopted the Articles of Confederation, granting state and local governments far more power. Yet many in both nations hope that one day, the Union will be whole once more. With the issue of slavery, firmly supported in the CSA and completely opposed in the USA, rising to prominence recently, many see the increasing divide between the two nations as proof of a coming new war.,;;;;;;;;;x;;;;;;;;
 EVTOPTA121220;Death to the traitors!;;;;;;x;;;;;;;;;;;

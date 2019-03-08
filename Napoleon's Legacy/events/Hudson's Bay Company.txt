@@ -1,60 +1,3 @@
-# HUD event post-indie
-country_event = {
-    id = 121277
-    title = "EVTNAME121277"
-    desc = "EVTDESC121277"
-    picture = "meeting"
-    fire_only_once = yes
-
-    trigger = {
-        tag = HUD
-        war = no
-        NOT = { vassal_of = CAN }
-        year = 1857
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA121269"
-        government = absolute_monarchy
-        any_pop = {
-            consciousness = 1
-            militancy = 1
-        }
-
-        ai_chance = {
-            factor = 30
-        }
-    }
-
-    option = {
-        name = "EVTOPTB121269"
-        government = democracy
-        political_reform = wealth_voting
-        any_pop = {
-            consciousness = 2
-        }
-
-        ai_chance = {
-            factor = 45
-        }
-    }
-
-    option = {
-        name = "EVTOPTC121269"
-        any_pop = {
-            militancy = 2
-        }
-
-        ai_chance = {
-            factor = 25
-        }
-    }
-}
-
 country_event = {
     id = 4662008
     title = "EVTNAME4662008"
@@ -74,13 +17,12 @@ country_event = {
         name = "EVTOPTA4662008"
         HUD = {
             all_core = {
-            add_core = CAN
-            remove_core = HUD
+                add_core = CAN
+                remove_core = HUD
             }
         }
 
         inherit = HUD
-        prestige = 10
-        money = -10000
+        treasury = -10000
     }
 }

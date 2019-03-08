@@ -1,1 +1,478 @@
 # American Civil War Chain
+
+### First Phase
+
+# Slave owner gets shot in Pennsylvania
+country_event = {
+    id = 44160
+    title = "EVTNAME44160"
+    desc = "EVTDESC44160"
+    picture = "knights_golden_circle"
+
+    trigger = {
+        tag = USA
+        slavery = yes_slavery
+        year = 1850
+
+        has_country_flag = hasmanifestdestiny
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 3
+        modifier = {
+            factor = 0.5
+            is_greater_power = yes
+        }
+    }
+
+    option = {
+        name = "EVT44160OPTA"
+        any_pop = {
+            limit = {
+                is_primary_culture = yes
+                strata = rich
+            }
+
+            consciousness = 1
+        }
+
+        NEN = { country_event = 44161 }
+    }
+}
+
+# New England gets the ultimatum and refuses, war starts
+country_event = {
+    id = 44161
+    title = "EVTNAME44160"
+    desc = "EVTDESC44160"
+    picture = "knights_golden_circle"
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT44161OPTA"
+        # A white peace means the war will restart after 5 years
+        # But, British intervention only happens once!
+        USA_219 = { add_core = NEN }
+        USA_223 = { add_core = USA }
+
+        set_global_flag = acw_first_phase
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = acquire_core_state
+                state_province_id = 219
+            }
+
+            defender_goal = {
+                casus_belli = acquire_core_state
+                state_province_id = 223
+            }
+
+            call_ally = no
+        }
+    }
+}
+
+# British Empire oversees the war
+country_event = {
+    id = 44162
+    title = "EVTNAME44162"
+    desc = "EVTDESC44162"
+    picture = "senate_debate"
+
+    trigger = {
+        tag = CAN
+
+        # Anything not in Pennsylvania is occupied
+        NEN = {
+            any_owned_province = {
+                NOT = { region = USA_223 }
+                controlled_by = USA
+            }
+
+            # above makes it implicit, but explicit is always better!
+            war_with = USA
+        }
+
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    # Join the war, puppeting New England on victory.
+    option = {
+        name = "EVT44162OPTA"
+        military_access = NEN
+        create_alliance = NEN
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+
+            defender_goal = {
+                casus_belli = status_quo
+            }
+
+            call_ally = no
+        }
+
+        set_country_flag = acw_empire_intervenes
+
+        ai_chance = {
+            factor = 95
+        }
+    }
+
+    # Do nothing
+    option = {
+        name = "EVT44162OPTB"
+        prestige = -5
+
+        ai_chance = {
+            factor = 5
+        }
+    }
+}
+
+# New England wins the war independently
+country_event = {
+    id = 44163
+    title = "EVTNAME44163"
+    desc = "EVTDESC44163"
+    picture = "treaty"
+
+    trigger = {
+        tag = NEN
+
+        USA = { has_recently_lost_war = yes }
+        USA_219 = { owned_by = NEN }
+        has_global_flag = acw_first_phase
+        NOT = {
+            CAN = { has_country_flag = acw_empire_intervenes }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = USA }
+        USA_223 = { remove_core = USA }
+
+        random_country = {
+            limit = {
+                179 = { owned_by = NEN }
+            }
+
+            USA = {
+                any_owned = {
+                    limit = {
+                        OR = {
+                            region = USA_162
+                            region = USA_168
+                            region = USA_170
+                            region = USA_176
+                            region = USA_178
+                        }
+                    }
+
+                    add_core = NEN
+                    remove_core = USA
+                    secede_province = NEN
+                }
+            }
+        }
+
+        prestige = 10
+    }
+}
+
+# New England wins the war with help and are puppeted
+country_event = {
+    id = 44164
+    title = "EVTNAME44163"
+    desc = "EVTDESC44164"
+    picture = "treaty"
+
+    trigger = {
+        tag = CAN
+        has_country_flag = acw_empire_intervenes
+
+        USA = { has_recently_lost_war = yes }
+        USA_219 = { owned_by = NEN }
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = USA }
+        USA_223 = { remove_core = USA }
+        create_vassal = NEN
+        NEN = {
+            any_owned = {
+                limit = {
+                    # all of maine
+                    OR = {
+                        province_id = 69
+                        province_id = 248
+                        province_id = 249
+                        province_id = 250
+                    }
+                }
+
+                remove_core = NEN
+                secede_province = CAN
+                add_core = CAN
+            }
+
+            prestige = -1000
+        }
+
+        # All of Northwest Territories
+        USA = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = USA_162
+                        region = USA_168
+                        region = USA_170
+                        region = USA_176
+                        region = USA_178
+                    }
+                }
+
+                add_core = CAN
+                remove_core = USA
+                secede_province = CAN
+            }
+        }
+
+        prestige = 10
+        set_country_flag = empire_puppets_nen
+    }
+}
+
+# New England loses the war
+country_event = {
+    id = 44165
+    title = "EVTNAME44165"
+    desc = "EVTDESC44165"
+    picture = "treaty"
+
+    trigger = {
+        tag = USA
+
+        NEN = { has_recently_lost_war = yes }
+        USA_223 = { owned_by = USA }
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVT44163OPTA"
+        USA_219 = { remove_core = NEN }
+        USA_223 = { remove_core = NEN }
+
+        NEN = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = USA_162
+                        region = USA_168
+                        region = USA_170
+                        region = USA_176
+                        region = USA_178
+                    }
+                }
+
+                add_core = USA
+                remove_core = NEN
+                secede_province = USA
+            }
+        }
+
+        prestige = 10
+    }
+}
+
+### Final Phase
+
+# John Browns Raid happens
+country_event = {
+    id = 44166
+    title = "EVTNAME44166"
+    desc = "EVTDESC44166"
+    picture = "john_brown_raid"
+
+    trigger = {
+        tag = USA
+        year = 1859
+        NOT = { truce_with = NEN }
+
+        # Not a puppet
+        exists = NEN
+        NOT = {
+            CAN = {
+                has_country_flag = empire_puppets_nen
+                is_our_vassal = NEN
+            }
+        }
+
+        has_global_flag = acw_first_phase
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    # Send demands to New England
+    option = {
+        name = "EVT44166OPTA"
+        any_pop = {
+            limit = {
+                is_primary_culture = yes
+                strata = rich
+            }
+
+            militancy = 2
+            consciousness = 2
+        }
+
+        relation = {
+            who = NEN
+            value = -100
+        }
+
+        NEN = { country_event = 44167 }
+    }
+}
+
+# New England gets demands
+country_event = {
+    id = 44167
+    title = "EVTNAME44167"
+    desc = "EVTDESC44167"
+    picture = "john_brown_raid"
+    major = yes
+
+    is_triggered_only = yes
+
+    # You can only refuse, the war must happen
+    option = {
+        name = "EVT44167OPTA"
+        # Just keep lowering their relations
+        relation = {
+            who = USA
+            value = -100
+        }
+
+        # New England is a puppet
+        random_country = {
+            limit = {
+                tag = CAN
+                has_country_flag = empire_puppets_nen
+                is_our_vassal = NEN
+            }
+
+            # CAN declares war on USA
+            country_event = 44169
+        }
+
+        USA = { country_event = 44168 }
+    }
+}
+
+# USA declares war on New England, starting the Civil War
+country_event = {
+    id = 44168
+    title = "EVTNAME44168"
+    desc = "EVTDESC44168"
+    picture = "john_brown_raid"
+    major = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = american_civil_war_has_happened
+    }
+
+    # War time
+    option = {
+        name = "EVT44168OPTA"
+
+        war = {
+            target = NEN
+            attacker_goal = {
+                casus_belli = civil_war
+            }
+
+            defender_goal = {
+                casus_belli = civil_war
+            }
+
+            call_ally = no
+        }
+    }
+}
+
+# British Empire declares war on USA, if NEN is a puppet.
+country_event = {
+    id = 44169
+    title = "EVTNAME44169"
+    desc = "EVTDESC44169"
+    picture = "john_brown_raid"
+
+    is_triggered_only = yes
+
+    # Fight the USA
+    option = {
+        name = "EVT44169OPTA"
+
+        release_vassal = NEN
+        military_access = NEN
+
+        war = {
+            target = USA
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+
+            defender_goal = {
+                status_quo
+            }
+
+            call_ally = no
+        }
+
+        set_country_flag = british_intervention_acw
+    }
+}

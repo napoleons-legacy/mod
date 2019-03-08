@@ -267,7 +267,7 @@ country_event = {
         prestige = 10
         relation = { who = CAN value = 100 }
 
-        set_country_flag = peaceful_oregon_treaty
+        set_global_flag = peaceful_oregon_treaty
 
         any_pop = {
             scaled_consciousness = {
@@ -601,6 +601,7 @@ country_event = {
 
         2684 = {
             secede_province = CAN
+            remove_core = CAN
             remove_core = INC
         }
         2684 = { secede_province = USA }
@@ -710,260 +711,195 @@ country_event = {
     }
 }
 
-### American Civil War
+# TODO something to let the INC participate
 
-# Slave owner gets shot in Pennsylvania
+# The fate of the Native Confederation
 country_event = {
-    id = 44160
-    title = "EVTNAME44160"
-    desc = "EVTDESC44160"
-    picture = "knights_golden_circle"
-
-    trigger = {
-        tag = USA
-        slavery = yes_slavery
-        year = 1850
-
-        has_country_flag = hasmanifestdestiny
-    }
+    id = 44170
+    title = "EVTNAME44170"
+    desc = "EVTDESC44170"
 
     fire_only_once = yes
 
+    trigger = {
+        tag = CAN
+        INC = {
+            exists = yes
+            civilized = no
+        }
+
+        state_n_government = 1
+    }
+
     mean_time_to_happen = {
-        months = 3
+        months = 12
         modifier = {
             factor = 0.5
-            is_greater_power = yes
+            has_global_flag = peaceful_oregon_treaty
+        }
+
+        modifier = {
+            factor = 0.5
+            year = 1848
         }
     }
 
+    # Split the Native Confederation, give pieces to whoever wants it
     option = {
-        name = "EVT44160OPTA"
-        any_pop = {
-            limit = {
-                is_primary_culture = yes
-                strata = rich
-            }
+        name = "EVT44170OPTA"
 
-            consciousness = 1
+        badboy = 2
+
+        INC = {
+            all_core = {
+                add_core = CAN
+                remove_core = INC
+            }
         }
 
-        NEN = { country_event = 44161 }
+        inherit = INC
+
+        USA = { country_event = 44171 }
+        NEN = { country_event = 44172 }
+    }
+
+    # British annex all of Native Confederation
+    option = {
+        name = "EVT44170OPTB"
+
+        badboy = 4
+
+        relation = {
+            who = NEN
+            value = -20
+        }
+
+        relation = {
+            who = USA
+            value = -50
+        }
+
+        INC = {
+            all_core = {
+                add_core = CAN
+                remove_core = INC
+            }
+        }
+
+        inherit = INC
+
+        USA = { country_event = 44173 }
     }
 }
 
-# New England gets the ultimatum and refuses, war starts
+# USA offered Illinois and Miami, if they drop claims
 country_event = {
-    id = 44161
-    title = "EVTNAME44160"
-    desc = "EVTDESC44160"
-    picture = "knights_golden_circle"
+    id = 44171
+    title = "EVTNAME44171"
+    desc = "EVTDESC44171"
 
     is_triggered_only = yes
-
     fire_only_once = yes
 
+    # Accept and lose all claims
     option = {
-        name = "EVT44161OPTA"
-        # A white peace means the war will restart after 5 years
-        # But, British intervention only happens once!
-        USA_219 = { add_core = NEN }
-        USA_223 = { add_core = USA }
-
-        set_global_flag = acw_first_phase
-
-        war = {
-            target = USA
-            attacker_goal = {
-                casus_belli = acquire_core_state
-                state_province_id = 219
-            }
-
-            defender_goal = {
-                casus_belli = acquire_core_state
-                state_province_id = 223
-            }
-
-            call_ally = no
-        }
-    }
-}
-
-# British Empire oversees the war
-country_event = {
-    id = 44162
-    title = "EVTNAME44162"
-    desc = "EVTDESC44162"
-    picture = "senate_debate"
-
-    trigger = {
-        tag = CAN
-
-        # Anything not in Pennsylvania is occupied
-        NEN = {
-            any_owned_province = {
-                NOT = { region = USA_223 }
-                controlled_by = USA
-            }
-
-            # above makes it implicit, but explicit is always better!
-            war_with = USA
-        }
-
-        has_global_flag = acw_first_phase
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 10
-    }
-
-    # Join the war, puppeting New England on victory.
-    option = {
-        name = "EVT44162OPTA"
-        military_access = NEN
-        create_alliance = NEN
-
-        war = {
-            target = USA
-            attacker_goal = {
-                casus_belli = cut_down_to_size
-            }
-
-            defender_goal = {
-                casus_belli = status_quo
-            }
-
-            call_ally = no
-        }
-
-        set_country_flag = acw_empire_intervenes
-
-        ai_chance = {
-            factor = 95
-        }
-    }
-
-    # Do nothing ... coward
-    option = {
-        name = "EVT44162OPTB"
-        prestige = -5
-
-        ai_chance = {
-            factor = 5
-        }
-    }
-}
-
-# New England wins the war independently
-country_event = {
-    id = 44163
-    title = "EVTNAME44163"
-    desc = "EVTDESC44163"
-    picture = "treaty"
-
-    trigger = {
-        tag = NEN
-
-        USA = { has_recently_lost_war = yes }
-        USA_219 = { owned_by = NEN }
-        has_global_flag = acw_first_phase
-        NOT = {
-            CAN = { has_country_flag = acw_empire_intervenes }
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 5
-    }
-
-    option = {
-        name = "EVT44163OPTA"
-        USA_219 = { remove_core = USA }
-        USA_223 = { remove_core = USA }
-        prestige = 10
-    }
-}
-
-# New England wins the war with help and are puppeted
-country_event = {
-    id = 44164
-    title = "EVTNAME44163"
-    desc = "EVTDESC44164"
-    picture = "treaty"
-
-    trigger = {
-        tag = CAN
-        has_country_flag = acw_empire_intervenes
-
-        USA = { has_recently_lost_war = yes }
-        USA_219 = { owned_by = NEN }
-        has_global_flag = acw_first_phase
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 5
-    }
-
-    option = {
-        name = "EVT44163OPTA"
-        USA_219 = { remove_core = USA }
-        USA_223 = { remove_core = USA }
-        create_vassal = NEN
-        NEN = {
-            any_owned = {
-                limit = {
-                    # all of maine
-                    OR = {
-                        province_id = 69
-                        province_id = 248
-                        province_id = 249
-                        province_id = 250
-                    }
+        name = "EVT44171OPTA"
+        all_core = {
+            limit = {
+                OR = {
+                    region = USA_162
+                    region = USA_176
+                    region = USA_178
                 }
-
-                remove_core = NEN
-                secede_province = CAN
-                add_core = CAN
             }
 
-            prestige = -1000
+            remove_core = USA
         }
 
-        prestige = 10
+        random_country = {
+            limit = {
+                tag = CAN
+                owns = 2684
+            }
+
+            2684 = { remove_core = USA }
+        }
+
+        USA_168 = { secede_province = USA remove_core = CAN }
+        USA_170 = { secede_province = USA remove_core = CAN }
+    }
+
+    # British keep these two states, USA keeps all acquire_all_cores
+    # Ohio is removed as a US core if New England takes it though, since
+    # US claims in this area are there just for no assimilation. Resolved in 1st ACW Conflict.
+    option = {
+        name = "EVT44171OPTB"
     }
 }
 
-# New England loses the war
+# New England offered Ohio for 10000
 country_event = {
-    id = 44165
-    title = "EVTNAME44165"
-    desc = "EVTDESC44165"
-    picture = "treaty"
+    id = 44172
+    title = "EVTNAME44172"
+    desc = "EVTDESC44172"
 
-    trigger = {
-        tag = USA
-
-        NEN = { has_recently_lost_war = yes }
-        USA_223 = { owned_by = USA }
-        has_global_flag = acw_first_phase
-    }
-
+    is_triggered_only = yes
     fire_only_once = yes
 
-    mean_time_to_happen = {
-        days = 5
+    # Accept and pay
+    option = {
+        name = "EVT44172OPTA"
+
+        treasury = -10000
+        USA_178 = {
+            remove_core = USA
+            remove_core = CAN
+            add_core = NEN
+            secede_province = NEN
+        }
     }
 
+    # Decline, British keep it
     option = {
-        name = "EVT44163OPTA"
-        USA_219 = { remove_core = NEN }
-        USA_223 = { remove_core = NEN }
-        prestige = 10
+        name = "EVT441722OPTB"
+        USA_178 = { add_core = CAN }
+    }
+}
+
+# British annex it all, USA reacts
+country_event = {
+    id = 44173
+    title = "EVTNAME44173"
+    desc = "EVTDESC44173"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    # USA keeps their claims
+    option = {
+        name = "EVT44173OPTA"
+
+        relation = {
+            who = CAN
+            value = -100
+        }
+    }
+
+    # Allow the British to keep it all
+    option = {
+        name = "EVT44173OPTB"
+        any_owned_province = {
+            limit = {
+                OR = {
+                    region = USA_162
+                    region = USA_168
+                    region = USA_170
+                    region = USA_176
+                    region = USA_178
+                }
+            }
+
+            remove_core = USA
+        }
     }
 }
