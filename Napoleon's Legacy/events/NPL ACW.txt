@@ -479,6 +479,10 @@ country_event = {
         }
 
         set_country_flag = british_intervention_acw
+
+        ai_chance = {
+            factor = 90
+        }
     }
 
     # Do nothing
@@ -493,6 +497,10 @@ country_event = {
         relation = {
             who = NEN
             value = -200
+        }
+
+        ai_chance = {
+            factor = 10
         }
     }
 }
