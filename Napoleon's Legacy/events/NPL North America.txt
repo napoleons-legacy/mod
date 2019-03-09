@@ -841,7 +841,7 @@ country_event = {
 # New England offered Ohio for 10000
 country_event = {
     id = 44172
-    title = "EVTNAME44172"
+    title = "EVTNAME44171"
     desc = "EVTDESC44172"
 
     is_triggered_only = yes
@@ -849,9 +849,10 @@ country_event = {
 
     # Accept and pay
     option = {
-        name = "EVT44172OPTA"
+        name = "EVT44171OPTA"
 
         treasury = -10000
+        CAN = { treasury = 10000 }
         USA_178 = {
             remove_core = USA
             remove_core = CAN
@@ -862,7 +863,7 @@ country_event = {
 
     # Decline, British keep it
     option = {
-        name = "EVT441722OPTB"
+        name = "EVT44171OPTB"
         USA_178 = { add_core = CAN }
     }
 }

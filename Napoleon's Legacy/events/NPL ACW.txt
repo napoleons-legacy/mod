@@ -381,7 +381,7 @@ country_event = {
 # New England gets demands
 country_event = {
     id = 44167
-    title = "EVTNAME44167"
+    title = "EVTNAME44166"
     desc = "EVTDESC44167"
     picture = "john_brown_raid"
     major = yes
@@ -455,11 +455,14 @@ country_event = {
 
     is_triggered_only = yes
 
+    immediate = {
+        release_vassal = NEN
+    }
+
     # Fight the USA
     option = {
         name = "EVT44169OPTA"
 
-        release_vassal = NEN
         military_access = NEN
 
         war = {
@@ -476,5 +479,20 @@ country_event = {
         }
 
         set_country_flag = british_intervention_acw
+    }
+
+    # Do nothing
+    option = {
+        name = "EVT44169OPTB"
+        prestige = -20
+        relation = {
+            who = USA
+            value = 100
+        }
+
+        relation = {
+            who = NEN
+            value = -200
+        }
     }
 }
