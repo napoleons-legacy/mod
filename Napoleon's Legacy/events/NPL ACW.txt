@@ -424,7 +424,7 @@ country_event = {
     is_triggered_only = yes
 
     immediate = {
-        set_country_flag = american_civil_war_has_happened
+        set_global_flag = american_civil_war_has_happened
     }
 
     # War time
@@ -502,5 +502,192 @@ country_event = {
         ai_chance = {
             factor = 10
         }
+    }
+}
+
+# USA wins the war
+country_event = {
+    id = 44174
+    title = "EVTNAME44174"
+    desc = "EVTDESC44174"
+    picture = "treaty"
+
+    fire_only_once = yes
+
+    trigger = {
+        war = no
+        NOT = { exists = NEN }
+        has_global_flag = american_civil_war_has_happened
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    # Get their cores, and get some things from the empire if they intervene
+    option = {
+        name = "EVT44174OPTA"
+
+        prestige = 10
+
+        NEN = {
+            all_core = {
+                add_core = USA
+            }
+        }
+
+        set_global_flag = american_reconstruction
+
+        random_country = {
+            limit = {
+                tag = CAN
+                has_country_flag = acw_empire_intervenes
+            }
+
+            # Tell the Empire they lost the war
+            CAN = { country_event = 44175 }
+
+            # Give the USA an event letting them choose what to take
+            USA = { country_event = 44176 }
+        }
+    }
+}
+
+# British are notified of their loss, ending the war with the USA
+country_event = {
+    id = 44175
+    title = "EVTNAME44175"
+    desc = "EVTDESC44175"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44175OPTA"
+    }
+}
+
+# The United States - British Empire peace treaty part 1
+# Native Confederation
+country_event = {
+    id = 44176
+    title = "EVTNAME44176"
+    desc = "EVTDESC44176"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Take the Northwest Territory and Maine (if possible), continue on
+    option = {
+        name = "EVT44176OPTA"
+
+        CAN = {
+            # Transfer anything they own in the area to the USA
+            any_owned_province = {
+                limit = {
+                    OR = {
+                        # Northwest Territory
+                        region = USA_162
+                        region = USA_168
+                        region = USA_170
+                        region = USA_176
+                        region = USA_178
+                        province_id = 2684
+                        province_id = 158
+                        # Maine
+                        province_id = 248
+                        province_id = 249
+                        province_id = 250
+                        province_id = 69
+                    }
+                }
+
+                secede_province = USA
+            }
+
+            # Fix Maine
+            all_core = {
+                limit = {
+                    OR = {
+                        # Maine
+                        province_id = 248
+                        province_id = 249
+                        province_id = 250
+                        province_id = 69
+                    }
+                }
+
+                remove_core = CAN
+                add_core = NEN
+                add_core = USA
+            }
+
+            # Swap the cores
+            all_core = {
+                limit = {
+                    OR = {
+                        # Northwest Territory
+                        region = USA_162
+                        region = USA_168
+                        region = USA_170
+                        region = USA_176
+                        region = USA_178
+                        province_id = 2684
+                        province_id = 158
+                    }
+                }
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = USA
+                NOT = { owns = 13 }
+            }
+
+            country_event = 44177
+        }
+    }
+
+    # Stop the treaty here
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -6
+    }
+}
+
+# The United States - British Empire peace treaty part 2
+# Oregon Treaty revisited
+country_event = {
+    id = 44177
+    title = "EVTNAME44177"
+    desc = "EVTDESC44177"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Correct the borders
+    option = {
+        name = "EVT44177OPTA"
+
+        # Fix Louisiana cores
+        # Set border to 49th parallel
+        # if usa owns oregon, give them all of columbia
+        # if usa doesnt, give them all of oregon instead
+        random_country = {
+            limit = {
+                tag = CAN
+
+            }
+        }
+    }
+
+    # Stop the treaty
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -3
     }
 }
