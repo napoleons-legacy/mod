@@ -229,6 +229,8 @@ country_event = {
 
     option = {
         name = "EVT44163OPTA"
+        end_war = USA
+
         USA_219 = { remove_core = USA }
         USA_223 = { remove_core = USA }
         create_vassal = NEN
@@ -402,7 +404,7 @@ country_event = {
             limit = {
                 tag = CAN
                 has_country_flag = empire_puppets_nen
-                is_our_vassal = NEN
+                # is_our_vassal = NEN (may become a GP and ruin the chain)
             }
 
             # CAN declares war on USA
@@ -472,7 +474,7 @@ country_event = {
             }
 
             defender_goal = {
-                status_quo
+                casus_belli = status_quo
             }
 
             call_ally = no
@@ -568,8 +570,8 @@ country_event = {
     }
 }
 
-# The United States - British Empire peace treaty part 1
-# Native Confederation
+# The United States - British Empire Peace Treaty
+# Eastern half of the USA resolved
 country_event = {
     id = 44176
     title = "EVTNAME44176"
@@ -622,6 +624,7 @@ country_event = {
                 remove_core = CAN
                 add_core = NEN
                 add_core = USA
+                secede_province = USA
             }
 
             # Swap the cores
@@ -638,16 +641,20 @@ country_event = {
                         province_id = 158
                     }
                 }
+
+                remove_core = CAN
+                add_core = USA
+                secede_province = USA
             }
         }
 
         random_country = {
             limit = {
-                tag = USA
-                NOT = { owns = 13 }
+                ai = yes
+                USA = { owns = 115 }
             }
 
-            country_event = 44177
+            USA = { country_event = 44177 }
         }
     }
 
@@ -658,8 +665,7 @@ country_event = {
     }
 }
 
-# The United States - British Empire peace treaty part 2
-# Oregon Treaty revisited
+# Prompt to set the border to the 49th parallel
 country_event = {
     id = 44177
     title = "EVTNAME44177"
@@ -669,19 +675,156 @@ country_event = {
     fire_only_once = yes
     is_triggered_only = yes
 
-    # Correct the borders
+    # Correct the borders and move on
+    # Duplicated from event 44157 in "NPL North America.txt"
     option = {
         name = "EVT44177OPTA"
 
-        # Fix Louisiana cores
-        # Set border to 49th parallel
-        # if usa owns oregon, give them all of columbia
-        # if usa doesnt, give them all of oregon instead
+        157 = {
+            remove_core = CAN
+            add_core = LOU
+            add_core = THIS
+            secede_province = THIS
+        }
+
+        118 = {
+            remove_core = CAN
+            add_core = LOU
+            add_core = THIS
+            secede_province = THIS
+        }
+
+        # 35 and 38 are the owned lands above the parallel
+        35 = {
+            remove_core = THIS
+            remove_core = LOU
+            add_core = CAN
+            secede_province = CAN
+        }
+
+        38 = {
+            remove_core = THIS
+            remove_core = LOU
+            add_core = CAN
+            secede_province = CAN
+
+            change_province_name = "Fort York"
+        }
+
+        random_country = {
+            limit = {
+                tag = CAN
+                owns = 13
+            }
+
+            THIS = { country_event = 44178 }
+        }
+    }
+
+    # Don't set the borders and move on
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -1
+    }
+}
+
+# Western half of the USA resolved
+country_event = {
+    id = 44178
+    title = "EVTNAME44178"
+    desc = "EVTDESC44178"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Take 49th parallel and move onto Caribbean
+    option = {
+        name = "EVT44178OPTA"
+
+        USA_78 = { add_core = USA remove_core = CAN }
+        USA_81 = { add_core = USA remove_core = CAN }
+
+        CAN = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = USA_78
+                        region = USA_81
+                    }
+                }
+
+                secede_province = USA
+            }
+        }
+
         random_country = {
             limit = {
                 tag = CAN
 
+                OR = {
+                    owns = 2190
+                    owns = 2217
+                    owns = 203
+                    owns = 2219
+                    owns = 2224
+                    owns = 2228
+                    owns = 2239
+                }
             }
+
+            THIS = { country_event = 44179 }
+        }
+    }
+
+    # Take 54th parallel and move onto Caribbean
+    option = {
+        name = "EVT44178OPTB"
+        badboy = 4
+
+        USA_78 = { add_core = USA remove_core = CAN }
+        USA_81 = { add_core = USA remove_core = CAN }
+        CAN_13 = { add_core = USA remove_core = CAN }
+        2629 = { remove_core = USA add_core = CAN }
+        18 = { remove_core = USA add_core = CAN }
+
+        CAN = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = USA_78
+                        region = USA_81
+                        region = CAN_13
+                    }
+
+                    NOT = {
+                        OR = {
+                            province_id = 18
+                            province_id = 2629
+                        }
+                    }
+                }
+
+                secede_province = USA
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = CAN
+
+                OR = {
+                    owns = 2190
+                    owns = 2217
+                    owns = 203
+                    owns = 2219
+                    owns = 2224
+                    owns = 2228
+                    owns = 2239
+                }
+            }
+
+            THIS = { country_event = 44179 }
         }
     }
 
@@ -689,5 +832,46 @@ country_event = {
     option = {
         name = "EVT44176OPTB"
         badboy = -3
+    }
+}
+
+# Seize the Caribbean
+country_event = {
+    id = 44179
+    title = "EVTNAME44179"
+    desc = "EVTDESC44179"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    # Correct the borders and move on to the Caribbean
+    option = {
+        name = "EVT44179OPTA"
+        badboy = 4
+
+        CAN = {
+            any_owned = {
+                limit = {
+                    OR ={
+                        region = ENG_203
+                        region = ENG_2224
+                        region = ENG_2228
+                        region = HAI_2213
+                        region = SPA_2209
+                        region = ENG_1979
+                        region = UCA_2186
+                    }
+                }
+
+                secede_province = THIS
+            }
+        }
+    }
+
+    # Stop the treaty
+    option = {
+        name = "EVT44176OPTB"
+        badboy = -2
     }
 }
