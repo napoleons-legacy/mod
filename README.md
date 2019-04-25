@@ -12,11 +12,11 @@ and copy over `Napoleon's Legacy` and the `.mod` file to your mod folder.
 Or, download the mod via git in your terminal via:
 ```
 git clone --depth=1 https://github.com/napoleons-legacy/mod.git
-cd mod && python3 install.py
+cd mod && python install.py
 ```
 
 ## History
 
 The events covered by the mod since the POD are documented [here](history.md).
 
-The history of the mod is open to change as ambiguities and high unlikelihoods are resolved.
+The history of the mod is open to change as it is developed and the scenario is further developed.
