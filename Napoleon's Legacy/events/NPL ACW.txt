@@ -185,13 +185,7 @@ country_event = {
             USA = {
                 any_owned = {
                     limit = {
-                        OR = {
-                            region = USA_162
-                            region = USA_168
-                            region = USA_170
-                            region = USA_176
-                            region = USA_178
-                        }
+                        is_core = INC
                     }
 
                     add_core = NEN
@@ -258,13 +252,7 @@ country_event = {
         USA = {
             any_owned = {
                 limit = {
-                    OR = {
-                        region = USA_162
-                        region = USA_168
-                        region = USA_170
-                        region = USA_176
-                        region = USA_178
-                    }
+                    is_core = INC
                 }
 
                 add_core = CAN
@@ -307,13 +295,7 @@ country_event = {
         NEN = {
             any_owned = {
                 limit = {
-                    OR = {
-                        region = USA_162
-                        region = USA_168
-                        region = USA_170
-                        region = USA_176
-                        region = USA_178
-                    }
+                    is_core = INC
                 }
 
                 add_core = USA
@@ -591,13 +573,7 @@ country_event = {
                 limit = {
                     OR = {
                         # Northwest Territory
-                        region = USA_162
-                        region = USA_168
-                        region = USA_170
-                        region = USA_176
-                        region = USA_178
-                        province_id = 2684
-                        province_id = 158
+                        is_core = INC
                         # Maine
                         province_id = 248
                         province_id = 249
@@ -630,27 +606,20 @@ country_event = {
             # Swap the cores
             all_core = {
                 limit = {
-                    OR = {
-                        # Northwest Territory
-                        region = USA_162
-                        region = USA_168
-                        region = USA_170
-                        region = USA_176
-                        region = USA_178
-                        province_id = 2684
-                        province_id = 158
-                    }
+                    # Northwest Territory
+                    is_core = INC
                 }
 
                 remove_core = CAN
                 add_core = USA
-                secede_province = USA
             }
         }
 
         random_country = {
+            # Countries must differ
             limit = {
                 ai = yes
+                NOT = ( tag = USA )
                 USA = { owns = 115 }
             }
 
@@ -873,5 +842,53 @@ country_event = {
     option = {
         name = "EVT44176OPTB"
         badboy = -2
+    }
+}
+
+# British win the war and must decide where they belong.
+country_event = {
+    id = 44180
+    title = "EVTNAME44180"
+    desc = "EVTDESC44180"
+    picture = "treaty"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = CAN
+        war = no
+        NOT = { exists = USA }
+        has_global_flag = american_civil_war_has_happened
+        has_country_flag = british_intervention_acw
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    # Retain interest in the British Isles
+    option = {
+        name = "EVT44804OPTA"
+        prestige = 10
+
+        NEN = {
+            all_core = {
+                add_core = USA
+            }
+        }
+
+        set_global_flag = american_reconstruction
+    }
+
+    # Abandon the British Isles, focus on North America
+    option = {
+        name = "EVT44180OPTB"
+        prestige = 10
+
+        # Let the British Union know they can keep the isles.
+        BRI = { country_event = 44181 }
+
+        inherit = NEN
+        release_vassal = LOU
     }
 }

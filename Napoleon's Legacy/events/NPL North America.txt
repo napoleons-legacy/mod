@@ -740,7 +740,6 @@ country_event = {
         INC = {
             all_core = {
                 add_core = CAN
-                remove_core = INC
             }
         }
 
@@ -773,7 +772,6 @@ country_event = {
         INC = {
             all_core = {
                 add_core = CAN
-                remove_core = INC
             }
         }
 
