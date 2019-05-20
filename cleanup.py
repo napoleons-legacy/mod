@@ -2,7 +2,8 @@ import os
 from typing import List
 
 MOD_DIRECTORY = "Napoleon's Legacy"
-EXTENSIONS = ("txt", "lua", "map", "csv")
+EXTENSIONS = ["txt", "lua", "map", "csv"]
+
 
 def clean_line(line: str) -> str:
     """Clean a line by removing useless information and following one standard.
@@ -11,7 +12,8 @@ def clean_line(line: str) -> str:
     :returns: str -- The cleaner line
     """
 
-    return line.replace("\t", "    ").replace("\r\n", "\n").rstrip() + "\n"
+    return line.replace(b"\t", b"    ").rstrip() + b"\n"
+
 
 def clean_file(filepath: str) -> bool:
     """Clean the entire file by replacing tabs with spaces,
@@ -25,12 +27,12 @@ def clean_file(filepath: str) -> bool:
     """
 
     file_changed = False
-    with open(filepath, "r+", encoding="ISO-8859-1") as file:
+    with open(filepath, "r+b") as file:
         lines = file.readlines()
         for index, line in enumerate(lines):
             cleaned = clean_line(line)
             if cleaned.isspace():
-                cleaned = "\n"
+                cleaned = b"\n"
 
             if cleaned != line:
                 file_changed = True
@@ -49,6 +51,7 @@ def clean_file(filepath: str) -> bool:
         file.writelines(lines)
 
         return file_changed
+
 
 def clean_style(lines: List[str]) -> bool:
     """Adjust the file information to be stylistically cleaner
@@ -70,11 +73,12 @@ def clean_style(lines: List[str]) -> bool:
         style_changed = True
 
     # add a newline to the end of the file if not exists.
-    if lines and not lines[-1].endswith("\n"):
+    if lines and not lines[-1].endswith(b"\n"):
         lines[-1] += "\n"
         style_changed = True
 
     return style_changed
+
 
 def good_ext(filename: str) -> bool:
     """Verify that the filename has a valid file extension
@@ -82,8 +86,9 @@ def good_ext(filename: str) -> bool:
     :type filename: str
     """
 
-    exts = ("." + s for s in EXTENSIONS)
+    exts = ["." + s for s in EXTENSIONS]
     return any([good for good in exts if filename.endswith(good)])
+
 
 if __name__ == '__main__':
     none_changed = True

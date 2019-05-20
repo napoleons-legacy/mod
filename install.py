@@ -1,11 +1,15 @@
-import shutil, sys, os
+import shutil
+import sys
+import os
 from os.path import expanduser
 
-MACOS_MOD_FOLDER_PATH = expanduser("~/Library/Containers/com.vpltd.Victoria2HeartOfDarkness/Data/Library/Application Support/com.vpltd.Victoria2HeartOfDarkness-MAS/mod")
-WINDOWS_MOD_FOLDER_PATH = "C:\Program Files (x86)\Steam\steamapps\common\Victoria 2\mod"
+MACOS_MOD_FOLDER_PATH = expanduser(
+    "~/Library/Containers/com.vpltd.Victoria2HeartOfDarkness/Data/Library/Application Support/com.vpltd.Victoria2HeartOfDarkness-MAS/mod")
+WINDOWS_MOD_FOLDER_PATH = "C:\Program Files (x86)\Steam\SteamApps\common\Victoria 2\mod"
 
 MOD_FOLDER_PATH = "Napoleon's Legacy"
 MOD_FILE_PATH = "Napoleon.mod"
+
 
 def install_mod(path: str) -> None:
     """Install the mod into the game folder.
@@ -27,6 +31,7 @@ def install_mod(path: str) -> None:
 
     print(f"Copying {MOD_FILE_PATH} into {mod_file_path}.")
     shutil.copy2(MOD_FILE_PATH, mod_file_path)
+
 
 if __name__ == "__main__":
     os_type = sys.platform
