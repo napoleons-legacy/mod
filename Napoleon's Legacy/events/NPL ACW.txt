@@ -489,6 +489,13 @@ country_event = {
     }
 }
 
+### The War is Over
+
+# TODO: should we have this become immediately triggerable
+# by creating a custom CB?
+
+## USA Victory Chain
+
 # USA wins the war
 country_event = {
     id = 44174
@@ -514,11 +521,7 @@ country_event = {
 
         prestige = 10
 
-        NEN = {
-            all_core = {
-                add_core = USA
-            }
-        }
+        NEN = { all_core = { add_core = USA } }
 
         set_global_flag = american_reconstruction
 
@@ -552,7 +555,8 @@ country_event = {
     }
 }
 
-# The United States - British Empire Peace Treaty
+## The United States - British Empire Peace Treaty
+
 # Eastern half of the USA resolved
 country_event = {
     id = 44176
@@ -569,7 +573,7 @@ country_event = {
 
         CAN = {
             # Transfer anything they own in the area to the USA
-            any_owned_province = {
+            any_owned = {
                 limit = {
                     OR = {
                         # Northwest Territory
@@ -651,6 +655,7 @@ country_event = {
 
         157 = {
             remove_core = CAN
+            remove_core = MTC
             add_core = LOU
             add_core = THIS
             secede_province = THIS
@@ -658,6 +663,7 @@ country_event = {
 
         118 = {
             remove_core = CAN
+            remove_core = MTC
             add_core = LOU
             add_core = THIS
             secede_province = THIS
@@ -668,6 +674,7 @@ country_event = {
             remove_core = THIS
             remove_core = LOU
             add_core = CAN
+            add_core = MTC
             secede_province = CAN
         }
 
@@ -675,6 +682,7 @@ country_event = {
             remove_core = THIS
             remove_core = LOU
             add_core = CAN
+            add_core = MTC
             secede_province = CAN
 
             change_province_name = "Fort York"
@@ -845,11 +853,114 @@ country_event = {
     }
 }
 
-# British win the war and must decide where they belong.
+## NEN Victory Chain
+
 country_event = {
     id = 44180
     title = "EVTNAME44180"
     desc = "EVTDESC44180"
+    picture = "treaty"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = NEN
+        war = no
+        NOT = { exists = USA }
+        has_global_flag = american_civil_war_has_happened
+        NOT = { CAN = { has_country_flag = british_intervention_acw } }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    # Partition the United States for reintegration
+    option = {
+        name = "EVT44180OPTA"
+
+        USA = { all_core = { add_core = NEN } }
+
+        USA_205 = { add_core = CSA }
+        USA_201 = { add_core = CSA }
+        USA_200 = { add_core = CSA }
+        USA_196 = { add_core = CSA }
+        USA_194 = { add_core = CSA }
+
+        release_vassal = CSA
+        CSA = {
+            capital = 201
+        }
+
+        release_vassal = LOU
+        LOU = {
+            primary_culture = yankee
+            add_accepted_culture = acadian
+
+        }
+
+        release_vassal = TEX
+
+        any_owned = {
+            limit = {
+                OR = {
+                    region = MEX_85
+                    region = MEX_94
+                    region = MEX_97
+                    region = MEX_100
+                    region = MEX_2138
+                    region = MEX_2142
+                }
+                NOT = { is_core = TEX }
+            }
+
+            add_core = CAL
+        }
+
+
+        release_vassal = CAL
+
+        # Set capital to Portland if Seattle isn't owned
+        random_country = {
+            limit = {
+                tag = COL
+                NEN = { owns = 81 NOT = { owns = 78 owns = 13 } }
+            }
+
+            capital = 81
+        }
+
+        # Set capital to Vancouver if Portland and Seattle aren't owned
+        random_country = {
+            limit = {
+                tag = COL
+                NEN = { owns = 13 NOT = { owns = 78 owns = 81 } }
+            }
+
+            capital = 13
+        }
+
+        # At this point, either COL only has Washington state or it isn't released.
+        release_vassal = COL
+        COL = {
+            primary_culture = yankee
+        }
+
+        diplomatic_influence = { who = CSA value = 400 }
+        diplomatic_influence = { who = LOU value = 400 }
+        diplomatic_influence = { who = TEX value = 400 }
+        diplomatic_influence = { who = CAL value = 400 }
+        diplomatic_influence = { who = COL value = 400 }
+    }
+}
+
+## CAN Victory Chain
+
+# British win the war and must decide where they belong.
+country_event = {
+    id = 44181
+    title = "EVTNAME44181"
+    desc = "EVTDESC44181"
     picture = "treaty"
 
     fire_only_once = yes
@@ -868,27 +979,88 @@ country_event = {
 
     # Retain interest in the British Isles
     option = {
-        name = "EVT44804OPTA"
+        name = "EVT44181OPTA"
         prestige = 10
 
-        NEN = {
-            all_core = {
-                add_core = USA
-            }
-        }
+        NEN = { country_event = 44180 }
 
         set_global_flag = american_reconstruction
     }
 
     # Abandon the British Isles, focus on North America
     option = {
-        name = "EVT44180OPTB"
+        name = "EVT44181OPTB"
         prestige = 10
 
+        primary_culture = anglo_canadian
+        add_accepted_culture = british
+
         # Let the British Union know they can keep the isles.
-        BRI = { country_event = 44181 }
+        BRI = { country_event = 44182 }
 
         inherit = NEN
+        add_accepted_culture = yankee
+
+        USA_205 = { add_core = CSA }
+        USA_201 = { add_core = CSA }
+        USA_200 = { add_core = CSA }
+        USA_196 = { add_core = CSA }
+        USA_194 = { add_core = CSA }
+
+        release_vassal = CSA
+        CSA = {
+            capital = 201
+        }
+
         release_vassal = LOU
+        LOU = {
+            primary_culture = anglo_canadian
+            add_accepted_culture = acadian
+
+        }
+
+        release_vassal = TEX
+
+        any_owned = {
+            limit = {
+                OR = {
+                    region = MEX_85
+                    region = MEX_94
+                    region = MEX_97
+                    region = MEX_100
+                    region = MEX_2138
+                    region = MEX_2142
+                }
+                NOT = { is_core = TEX }
+            }
+
+            add_core = CAL
+        }
+
+        CAL = {
+            primary_culture = anglo_canadian
+            add_accepted_culture = dixie
+        }
+        release_vassal = CAL
+
+        USA = {
+            all_core = {
+                limit = {
+                    NOT = { is_core = CSA }
+                    NOT = { is_core = LOU }
+                    NOT = { is_core = TEX }
+                    NOT = { is_core = CAL }
+                }
+
+                add_core = NEN
+            }
+        }
+        NEN = { all_core = { add_core = CAN } }
+
+        diplomatic_influence = { who = CSA value = 400 }
+        diplomatic_influence = { who = LOU value = 400 }
+        diplomatic_influence = { who = TEX value = 400 }
+        diplomatic_influence = { who = CAL value = 400 }
+        diplomatic_influence = { who = COL value = 400 }
     }
 }

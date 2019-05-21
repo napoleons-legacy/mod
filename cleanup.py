@@ -6,7 +6,7 @@ EXTENSIONS = ["txt", "lua", "map", "csv"]
 
 
 def clean_line(line: str) -> str:
-    """Clean a line by removing useless information and following one standard.
+    """Clean a line by removing tabs and using Unix line endings solely.
     :param line: A line of text
     :type line: str
     :returns: str -- The cleaner line
@@ -50,14 +50,15 @@ def clean_file(filepath: str) -> bool:
         file.truncate()
         file.writelines(lines)
 
-        return file_changed
+    if file_changed:
+        print(f"Cleaned {filepath}")
 
 
 def clean_style(lines: List[str]) -> bool:
     """Adjust the file information to be stylistically cleaner
     :param lines: The file contents
     :type lines: List[str]
-    :returns: bool -- Whether the styling rules were used or not
+    :returns: bool -- True if the file contents were modified, otherwise False.
     """
 
     style_changed = False
@@ -91,19 +92,7 @@ def good_ext(filename: str) -> bool:
 
 
 if __name__ == '__main__':
-    none_changed = True
-    change_count = 0
-
     for dirpath, dirnames, filenames in os.walk(MOD_DIRECTORY):
         for name in filter(good_ext, filenames):
             filepath = os.path.join(dirpath, name)
-            cleaned = clean_file(filepath)
-            if cleaned:
-                print(f"Cleaned {filepath}")
-                none_changed = False
-                change_count += 1
-
-    if none_changed:
-        print("No files were changed.")
-    else:
-        print(f"{change_count} files were changed.")
+            clean_file(filepath)

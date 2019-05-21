@@ -9,6 +9,7 @@ country_event = {
 
     fire_only_once = yes
 
+    # TODO: trigger for when LOU is released at the start?
     trigger = {
         tag = USA
         13 = {
@@ -24,6 +25,7 @@ country_event = {
             has_country_flag = oregon_treaty
         }
 
+        # TODO: remove this flag?
         has_country_flag = hasmanifestdestiny
 
         OR = {
@@ -55,12 +57,9 @@ country_event = {
         set_country_flag = oregon_treaty
         CAN = { country_event = 44154 }
         badboy = 5
-        USA_78 = { add_core = USA }
-        USA_81 = { add_core = USA }
 
-        CAN_13 = { add_core = USA }
-        2627 = { remove_core = USA }
-        18 = { remove_core = USA } # Only 54th parallel, let them keep Stikine though, makes life easier
+        COL = { all_core = { add_core = CAN } }
+        COL = { all_core = { add_core = USA } }
 
         any_pop = {
             dominant_issue = {
@@ -106,6 +105,7 @@ country_event = {
     option = {
         name = "EVT44150OPTB"
         set_country_flag = oregon_treaty
+
         USA_78 = { add_core = USA }
         USA_81 = { add_core = USA }
 
@@ -140,6 +140,9 @@ country_event = {
         name = "EVT44150OPTC"
         set_country_flag = oregon_treaty
         CAN = { country_event = 44156 }
+
+        USA_81 = { add_core = USA }
+
         any_pop = {
             scaled_consciousness = {
                 issue = jingoism
@@ -156,7 +159,7 @@ country_event = {
     }
 }
 
-# The Columbia District
+# The Columbia District, CAN sees request to split fairly
 country_event = {
     id = 44151
     title = "EVTNAME44151"
@@ -174,6 +177,7 @@ country_event = {
 
         USA_78 = { remove_core = CAN }
         USA_81 = { remove_core = CAN }
+        CAN_13 = { remove_core = COL }
 
         any_owned = {
             limit = {
@@ -212,7 +216,7 @@ country_event = {
         name = "EVT44151OPTB"
         badboy = 5
         prestige = 10
-
+        COL = { all_core = { add_core = CAN } }
         leave_alliance = USA
         USA = { country_event = 44153 }
         ai_chance = {
@@ -261,6 +265,22 @@ country_event = {
         prestige = 10
         relation = { who = CAN value = 100 }
 
+        any_owned = {
+            limit = {
+                OR = {
+                    region = CAN_13
+                    region = ENG_22
+                }
+                NOT = {
+                    province_id = 38
+                }
+            }
+            remove_core = USA
+            secede_province = CAN
+        }
+
+        COL = { all_core = { remove_core = CAN } }
+
         set_global_flag = peaceful_oregon_treaty
 
         any_pop = {
@@ -295,9 +315,14 @@ country_event = {
         prestige = -20
         relation = { who = CAN value = -50 }
 
-        USA_78 = { remove_core = USA }
-        USA_81 = { remove_core = USA }
-        CAN_13 = { remove_core = USA }
+        any_owned = {
+            limit = {
+                is_core = COL
+            }
+            secede_province = CAN
+        }
+
+        COL = { all_core = { remove_core = USA } }
 
         any_pop = {
             scaled_militancy = {
@@ -323,6 +348,10 @@ country_event = {
         name = "EVT44153OPTB"
         prestige = 5
         relation = { who = CAN value = -100 }
+
+        COL = { all_core = { add_core = USA } }
+        COL = { all_core = { add_core = CAN } }
+
         any_pop = {
             scaled_consciousness = {
                 issue = jingoism
@@ -383,18 +412,17 @@ country_event = {
         prestige = -20
         USA = { country_event = 44155 }
         relation = { who = USA value = 50 }
-        any_owned = {
-            limit = {
-                OR = {
-                    region = USA_78
-                    region = USA_81
-                    region = CAN_13
-                }
-                is_core = USA
-            }
 
-            remove_core = CAN
+        COL = { all_core = { remove_core = CAN } }
+        any_owned = {
+            limit = { is_core = COL }
             secede_province = USA
+        }
+
+        COL = {
+            primary_culture = dixie
+            remove_accepted_culture = anglo_canadian
+            remove_accepted_culture = french_canadian
         }
 
         ai_chance = {
@@ -499,6 +527,8 @@ country_event = {
         }
 
         USA_81 = { secede_province = USA }
+        CAN_13 = { remove_core = COL }
+        USA_78 = { remove_core = COL }
 
         USA = { country_event = 44152 }
         any_pop = {
@@ -537,6 +567,9 @@ country_event = {
 
         leave_alliance = USA
         USA = { country_event = 44153 }
+
+        COL = { all_core = { add_core = CAN } }
+
         ai_chance = {
             factor = 5
             modifier = {
@@ -585,6 +618,7 @@ country_event = {
         # Adjust the tags for Louisiana no matter what.
         157 = {
             remove_core = CAN
+            remove_core = MTC
             add_core = LOU
             add_core = THIS
             secede_province = THIS
@@ -592,6 +626,7 @@ country_event = {
 
         118 = {
             remove_core = CAN
+            remove_core = MTC
             add_core = LOU
             add_core = THIS
             secede_province = THIS
@@ -602,6 +637,7 @@ country_event = {
             remove_core = THIS
             remove_core = LOU
             add_core = CAN
+            add_core = MTC
             secede_province = CAN
         }
 
@@ -609,6 +645,7 @@ country_event = {
             remove_core = THIS
             remove_core = LOU
             add_core = CAN
+            add_core = MTC
             secede_province = CAN
 
             change_province_name = "Fort York"
@@ -647,7 +684,7 @@ country_event = {
             NOT = { has_country_flag = imperial_cession }
         }
 
-        has_country_flag = peaceful_oregon_treaty
+        has_global_flag = peaceful_oregon_treaty
     }
 
     mean_time_to_happen = {
