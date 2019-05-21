@@ -951,6 +951,8 @@ country_event = {
         diplomatic_influence = { who = TEX value = 400 }
         diplomatic_influence = { who = CAL value = 400 }
         diplomatic_influence = { who = COL value = 400 }
+
+        set_global_flag = american_reconstruction
     }
 }
 
@@ -983,8 +985,6 @@ country_event = {
         prestige = 10
 
         NEN = { country_event = 44180 }
-
-        set_global_flag = american_reconstruction
     }
 
     # Abandon the British Isles, focus on North America
@@ -1062,5 +1062,49 @@ country_event = {
         diplomatic_influence = { who = TEX value = 400 }
         diplomatic_influence = { who = CAL value = 400 }
         diplomatic_influence = { who = COL value = 400 }
+
+        set_global_flag = american_reconstruction
+    }
+}
+
+country_event = {
+    id = 44182
+    title = "EVTNAME44181"
+    desc = "EVTDESC44181"
+    picture = "treaty"
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT44182OPTA"
+
+        relation = {
+            who = CAN
+            value = 200
+        }
+
+        # Return all cores and pass everything in Europe to the Unio
+        CAN = {
+            any_owned = {
+                limit = { is_core = BRI }
+                secede_province = BRI
+            }
+
+            any_owned = {
+                limit = { is_core = IRE }
+                secede_province = IRE
+            }
+
+            relation = {
+                who = IRE
+                value = 200
+            }
+        }
+
+        BRI = { all_core = { remove_core = CAN } }
+        IRE = { all_core = { remove_core = CAN } }
+
+        # TODO add some country flag, will be revised when conflict is redone.
     }
 }
