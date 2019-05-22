@@ -1,8 +1,8 @@
 country_event = {
-
     id = 44122
-    title = "EVTNAME44122" #Webster-Ashburton Treaty
+    title = "EVTNAME44122" # Webster-Ashburton Treaty
     desc = "EVTDESC44122"
+
     news = yes
     news_desc_long = "EVTDESC44122_NEWS_LONG"
     news_desc_medium = "EVTDESC44122_NEWS_MEDIUM"
@@ -19,13 +19,13 @@ country_event = {
             add_core = THIS
             secede_province = THIS
         }
-        69 = {
-            remove_core = NEN
-        }
+
+        69 = { remove_core = NEN }
         relation = {
             who = CAN
             value = 100
         }
+
         ai_chance = {
             factor = 95
         }
@@ -35,9 +35,9 @@ country_event = {
         name = "EVT44122OPTB"
         prestige = 15
         badboy = 4
-        250 = { add_core = THIS add_core = CAN}
-        249 = { add_core = THIS add_core = CAN}
-        69 = { add_core = THIS add_core = CAN}
+        250 = { add_core = THIS add_core = CAN }
+        249 = { add_core = THIS add_core = CAN }
+        69 = { add_core = THIS add_core = CAN }
         relation = {
             who = CAN
             value = -200
@@ -48,7 +48,7 @@ country_event = {
     }
 }
 
-#Mexican-American War
+# Mexican-American War
 country_event = {
     id = 44126
     title = "EVTNAME44126" #USA Demands Northwest Territories!
@@ -77,8 +77,8 @@ country_event = {
                     region = MEX_94
                     region = MEX_97
                     region = MEX_85
-                    region = USA_100
-                    region = USA_103
+                    region = MEX_100
+                    region = MEX_103
                     region = USA_126
                     region = MEX_2138
                     region = MEX_2142
@@ -94,8 +94,8 @@ country_event = {
                     region = MEX_94
                     region = MEX_97
                     region = MEX_85
-                    region = USA_100
-                    region = USA_103
+                    region = MEX_100
+                    region = MEX_103
                     region = USA_126
                     region = MEX_2138
                     region = MEX_2142
@@ -213,192 +213,6 @@ country_event = {
         diplomatic_influence = {
             who = FROM
             value = 400
-        }
-    }
-}
-
-country_event = {
-
-    id = 44140
-    title = "EVTNAME44140" #The Northern Alaska Purchase
-    desc = "EVTDESC44140"
-    picture = "treaty"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT44145OPTA"
-        FROM = { country_event = 44142 }
-        money = 50000
-        prestige = 5
-        ai_chance = {
-            factor = 75
-            modifier = {
-                factor = 0.1
-                any_core = { owned_by = FROM }
-            }
-            modifier = {
-                factor = 0.5
-                truce_with = FROM
-            }
-        }
-    }
-    option = {
-        name = "EVT44145OPTB"
-        FROM = { country_event = 44141 }
-        ai_chance = {
-            factor = 25
-            modifier = {
-                factor = 0.75
-                relation = { who = FROM value = 100 }
-            }
-            modifier = {
-                factor = 0.5
-                alliance_with = FROM
-            }
-        }
-    }
-}
-
-country_event = {
-
-    id = 44141
-    title = "EVTNAME44141" #Refused
-    desc = "EVTDESC44141"
-    picture = "treaty"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT44146OPTA"
-        relation = {
-            who = FROM
-            value = -50
-        }
-        leave_alliance = FROM
-        any_pop = {
-            dominant_issue = {
-                factor = 0.02
-                value = jingoism
-            }
-        }
-    }
-}
-
-country_event = {
-
-    id = 44142
-    title = "EVTNAME44142" #Agreed
-    desc = "EVTDESC44142"
-    picture = "treaty"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT44147OPTA"
-        money = -50000
-        FROM = {
-            any_owned = {
-                limit = { region = USA_1 }
-                secede_province = THIS
-            }
-        }
-        relation = {
-            who = FROM
-            value = 50
-        }
-    }
-}
-
-country_event = {
-
-    id = 44145
-    title = "EVTNAME44145" #The Hawaiian Islands Purchase
-    desc = "EVTDESC44145"
-    picture = "treaty"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT44145OPTA"
-        FROM = { country_event = 44147 }
-        money = 50000
-        prestige = 5
-        ai_chance = {
-            factor = 75
-            modifier = {
-                factor = 0.1
-                any_core = { owned_by = FROM }
-            }
-            modifier = {
-                factor = 0.5
-                truce_with = FROM
-            }
-        }
-    }
-    option = {
-        name = "EVT44145OPTB"
-        FROM = { country_event = 44146 }
-        ai_chance = {
-            factor = 25
-            modifier = {
-                factor = 0.75
-                relation = { who = FROM value = 100 }
-            }
-            modifier = {
-                factor = 0.5
-                alliance_with = FROM
-            }
-        }
-    }
-}
-
-country_event = {
-
-    id = 44146
-    title = "EVTNAME44141" #Refused
-    desc = "EVTDESC44146"
-    picture = "treaty"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT44146OPTA"
-        relation = {
-            who = FROM
-            value = -50
-        }
-        leave_alliance = FROM
-        any_pop = {
-            dominant_issue = {
-                factor = 0.02
-                value = jingoism
-            }
-        }
-    }
-}
-
-country_event = {
-
-    id = 44147
-    title = "EVTNAME44142"
-    desc = "EVTDESC44147"
-    picture = "treaty"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT44147OPTA"
-        money = -50000
-        FROM = {
-            any_owned = {
-                limit = { region = HAW_658 }
-                secede_province = THIS
-            }
-        }
-        relation = {
-            who = FROM
-            value = 50
         }
     }
 }

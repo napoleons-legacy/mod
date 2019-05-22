@@ -623,7 +623,7 @@ country_event = {
             # Countries must differ
             limit = {
                 ai = yes
-                NOT = ( tag = USA )
+                NOT = { tag = USA }
                 USA = { owns = 115 }
             }
 

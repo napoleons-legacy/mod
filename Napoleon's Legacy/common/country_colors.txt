@@ -43,13 +43,6 @@ AWA = {
     color3= { 117 127 174  }
 }
 
-# Belgium FIXED
-BEL     = {
-    color1= { 244 56 49  }
-    color2= { 248 199 67  }
-    color3= { 107 170 77  }
-}
-
 
 # Bosnia
 BOS = {
@@ -524,7 +517,7 @@ SIC = {
     color3= { 131 101 85  }
 }
 
-# Siebenbürgen
+# Siebenbï¿½rgen
 SIE = {
     color1= { 75 111 205  }
     color2= { 124 140 162  }
@@ -664,13 +657,6 @@ HDJ = {
     color1= { 83 167 56  }
     color2= { 123 16 21  }
     color3= { 69 157 208  }
-}
-
-# Krakow FIXED
-KRA = {
-    color1= { 255 255 255  }
-    color2= { 128 146 202  }
-    color3= { 255 255 255  }
 }
 
 # Trieste

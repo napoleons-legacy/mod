@@ -1,22 +1,23 @@
 capital = 543
 primary_culture = north_german
 religion = protestant
-government = absolute_monarchy
-plurality = 0.0
-nationalvalue = nv_order
+government = democracy
+plurality = 25.0
+nationalvalue = nv_liberty
 literacy = 0.8
+non_state_culture_literacy = 0.8
 civilized = yes
-prestige = 15
+prestige = 5
 
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = wealth_weighted_voting
+vote_franschise = landed_voting
 public_meetings = yes_meeting
-press_rights = censored_press
+press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
-political_parties = underground_parties
+political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -27,12 +28,15 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
-# New Reforms
-conscription = no_draft
-debt_law = peonage
+#New Reforms
+conscription = one_year_draft
+debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = FRM_conservative_2
 upper_house = {
@@ -66,8 +70,8 @@ no_standard = 1
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
-compound_steam_engines = 1
-publishing_industry = 1
+piston_steam_engine = 1
+mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 

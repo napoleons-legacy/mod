@@ -13,13 +13,13 @@ literacy = 0.01
 
 ruling_party = ZAN_conservative
 upper_house = {
-    fascist = 0
-    liberal = 12
-    conservative = 76
-    reactionary = 12
-    anarcho_liberal = 0
-    socialist = 0
-    communist = 0
+	fascist = 0
+	liberal = 12
+	conservative = 76
+	reactionary = 12
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
 }
 
 set_country_flag = delay_unciv_annexation
@@ -52,3 +52,4 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
+border_policy = open_borders

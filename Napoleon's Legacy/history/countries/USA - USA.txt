@@ -102,11 +102,3 @@ schools = commerce_tech_school
 decision = USA_1836_setup
 
 oob = "USA_oob.txt"
-
-1838.1.1 = {
-decision = trail_of_tears
-}
-
-1845.1.1 = {
-set_country_flag = hasmanifestdestiny
-}

@@ -28,16 +28,13 @@ pensions = no_pensions
 school_reforms = no_schools
 
 #New Reforms
-border_policy = closed_borders
-
 set_country_flag = protestant_country
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
-
-schools = naval_tech_school
+border_policy = closed_borders
 
 # Technologies
 post_napoleonic_thought = 1
@@ -65,9 +62,9 @@ schools = naval_tech_school
 ruling_party = CAN_reactionary
 upper_house = {
     fascist = 0
-    liberal = 33
-    conservative = 33
-    reactionary = 34
+    liberal = 20
+    conservative = 30
+    reactionary = 50
     anarcho_liberal = 0
     socialist = 0
     communist = 0

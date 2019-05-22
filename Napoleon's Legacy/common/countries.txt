@@ -344,7 +344,6 @@ SCA        = "countries/Scandinavia.txt"
 SWE        = "countries/Sweden.txt"
 
 # Western Europe
-BEL        = "countries/Belgium.txt"
 CAT        = "countries/Catalonia.txt"
 FLA        = "countries/Flanders.txt"
 IRE        = "countries/Ireland.txt"
@@ -394,7 +393,6 @@ VEN        = "countries/Venice.txt"
 
 # Eastern Europe
 BOH        = "countries/Bohemia-Moravia.txt"
-KRA        = "countries/Krakow.txt"
 CRI        = "countries/Crimea.txt"
 EST        = "countries/Estonia.txt"
 HUN        = "countries/Hungary.txt"

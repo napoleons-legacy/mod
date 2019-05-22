@@ -1161,6 +1161,7 @@ political_decisions = {
         }
     }
 
+    # TODO: what do I do with these two decisions?
     transcaucasia_1836_setup = {
         picture = constantinople
         potential = {

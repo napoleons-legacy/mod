@@ -761,7 +761,7 @@ political_decisions = {
         effect = {
             inherit = BRI
             set_global_flag = the_britains_reunified
-            country_event = { id = 66631 months = 1 }
+            country_event = { id = 66631 days = 30 }
         }
 
         ai_will_do = {
@@ -792,7 +792,7 @@ political_decisions = {
         effect = {
             inherit = CAN
             set_global_flag = the_britains_reunified
-            country_event = { id = 66630 months = 1 }
+            country_event = { id = 66630 days = 30 }
         }
 
         ai_will_do = {

@@ -3807,7 +3807,6 @@ country_event = {
         name = "EVT168070OPTB"#Release as vassal
         release_vassal = QAT
         badboy = 5
-        relation = { who = ENG value = -100 }
         relation = { who = PER value = -100 }
         ai_chance = {
             factor = 0.2
@@ -3829,7 +3828,6 @@ country_event = {
             }
         }
         badboy = 7.5
-        relation = { who = ENG value = -200 }
         relation = { who = PER value = -200 }
 
         ai_chance = {

@@ -1,11 +1,13 @@
+# TODO: THIS IS A LITERAL MESS, CLEAN IT UP
+
 #Reform Papal State?
 country_event = {
-        id = 600045
-        title = "EVTNAME600045"
-        desc = "EVTDESC600045"
+    id = 600045
+    title = "EVTNAME600045"
+    desc = "EVTDESC600045"
     picture = "pope"
 
-        trigger = {
+    trigger = {
         tag = PAP
         year = 1846
     }
@@ -18,10 +20,10 @@ country_event = {
 
     option = {
         name = "EVTOPTA600045"
-            political_reform = wealth_voting
-            political_reform = appointed
-            political_reform = free_press
-            political_reform = non_secret_ballots
+        political_reform = wealth_voting
+        political_reform = appointed
+        political_reform = free_press
+        political_reform = non_secret_ballots
 
         any_pop = {
             scaled_militancy = {
@@ -55,17 +57,17 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        }
+    }
 }
 
 #Garibaldi shows up for Pope
 country_event = {
-        id = 600046
-        title = "EVTNAME600046"
-        desc = "EVTDESC600046"
+    id = 600046
+    title = "EVTNAME600046"
+    desc = "EVTDESC600046"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         tag = PAP
         has_global_flag = italian_unification_a
     }
@@ -76,8 +78,8 @@ country_event = {
         months = 3
     }
 
-        option = {
-                name = "EVTOPTA600046"
+    option = {
+        name = "EVTOPTA600046"
         any_pop = {
             scaled_militancy = {
                 ideology = reactionary
@@ -110,30 +112,30 @@ country_event = {
             value = -400
         }
         MOD = {
-                    country_event = 600047
-                }
+            country_event = 600047
+        }
         SIC = {
-                    country_event = 600048
-                }
+            country_event = 600048
+        }
         ILY = {
-                    country_event = 600049
-                }
+            country_event = 600049
+        }
         LUC = {
-                    country_event = 600050
-                }
+            country_event = 600050
+        }
         SAR = {
-                    country_event = 600051
-                }
+            country_event = 600051
+        }
         set_country_flag = ITA_forming
 
         add_country_modifier = {
             name = ITP_forming
             duration = -1
         }
-        }
+    }
 
     option = {
-                name = "EVTOPTB600046"
+        name = "EVTOPTB600046"
         any_pop = {
             scaled_militancy = {
                 ideology = liberal
@@ -142,20 +144,20 @@ country_event = {
         }
         clr_global_flag = italian_unification_a
         set_global_flag = italian_unification_b
-        }
+    }
 }
 
 #MOD hears about Pope
 country_event = {
-        id = 600047
-        title = "EVTNAME600046"
-        desc = "EVTDESC600046"
+    id = 600047
+    title = "EVTNAME600046"
+    desc = "EVTDESC600046"
     picture = "Celebration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-                name = "EVTOPTA600046"
+    option = {
+        name = "EVTOPTA600046"
         any_pop = {
             ideology = {
                 value = liberal
@@ -167,20 +169,20 @@ country_event = {
             consciousness = 3
         }
         set_country_flag = ITM_forming
-        }
+    }
 }
 
 #SIC hears about Pope
 country_event = {
-        id = 600048
-        title = "EVTNAME600046"
-        desc = "EVTDESC600046"
+    id = 600048
+    title = "EVTNAME600046"
+    desc = "EVTDESC600046"
     picture = "Celebration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-                name = "EVTOPTA600046"
+    option = {
+        name = "EVTOPTA600046"
         any_pop = {
             ideology = {
                 value = liberal
@@ -192,20 +194,20 @@ country_event = {
             consciousness = 3
         }
         set_country_flag = ITN_forming
-        }
+    }
 }
 
 #ILY hears about Pope
 country_event = {
-        id = 600049
-        title = "EVTNAME600046"
-        desc = "EVTDESC600046"
+    id = 600049
+    title = "EVTNAME600046"
+    desc = "EVTDESC600046"
     picture = "Celebration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-                name = "EVTOPTA600046"
+    option = {
+        name = "EVTOPTA600046"
         any_pop = {
             ideology = {
                 value = liberal
@@ -217,20 +219,20 @@ country_event = {
             consciousness = 3
         }
         set_country_flag = ITS_forming
-        }
+    }
 }
 
 #LUC hears about Pope
 country_event = {
-        id = 600050
-        title = "EVTNAME600046"
-        desc = "EVTDESC600046"
+    id = 600050
+    title = "EVTNAME600046"
+    desc = "EVTDESC600046"
     picture = "Celebration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-                name = "EVTOPTA600046"
+    option = {
+        name = "EVTOPTA600046"
         any_pop = {
             ideology = {
                 value = liberal
@@ -242,20 +244,20 @@ country_event = {
             consciousness = 3
         }
         set_country_flag = ITL_forming
-        }
+    }
 }
 
 #SAR hears about Pope
 country_event = {
-        id = 600051
-        title = "EVTNAME600046"
-        desc = "EVTDESC600046"
+    id = 600051
+    title = "EVTNAME600046"
+    desc = "EVTDESC600046"
     picture = "Celebration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-                name = "EVTOPTA600046"
+    option = {
+        name = "EVTOPTA600046"
         any_pop = {
             ideology = {
                 value = liberal
@@ -267,7 +269,7 @@ country_event = {
             consciousness = 3
         }
         set_country_flag = ITA_forming
-        }
+    }
 }
 
 
@@ -278,7 +280,7 @@ country_event = {
     desc = "EVTDESC600057"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         ai = no
         NOT = {
             exists = ITA
@@ -291,12 +293,13 @@ country_event = {
     mean_time_to_happen =  {
         days = 5
     }
+
     option = {
-    name = "EVTOPTA600057"
+        name = "EVTOPTA600057"
         ITA = {
             all_core = { remove_core = ITA }
-            }
         }
+    }
 }
 
 #ITM loses all cores
@@ -306,7 +309,7 @@ country_event = {
     desc = "EVTDESC600057"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         ai = no
         NOT = {
             exists = ITM
@@ -320,22 +323,22 @@ country_event = {
         days = 5
     }
 
-        option = {
-                name = "EVTOPTA600057"
+    option = {
+        name = "EVTOPTA600057"
         ITM = {
             all_core = { remove_core = ITM }
-            }
         }
+    }
 }
 
 #ITN loses all cores
 country_event = {
-        id = 600060
-        title = "EVTNAME600057"
-        desc = "EVTDESC600057"
+    id = 600060
+    title = "EVTNAME600057"
+    desc = "EVTDESC600057"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         ai = no
         NOT = {
             exists = ITN
@@ -352,8 +355,8 @@ country_event = {
         name = "EVTOPTA600057"
         ITN = {
             all_core = { remove_core = ITN }
-            }
         }
+    }
 }
 
 #ITS loses all cores
@@ -379,8 +382,8 @@ country_event = {
     name = "EVTOPTA600057"
         ITS = {
             all_core = { remove_core = ITS }
-            }
         }
+    }
 }
 
 #ITL loses all cores
@@ -407,20 +410,20 @@ country_event = {
     name = "EVTOPTA600057"
         ITL = {
             all_core = { remove_core = ITL }
-            }
         }
+    }
 }
 
 #Scenario B
 
 #PAP hears about Garibaldi showing up
 country_event = {
-        id = 600063
-        title = "EVTNAME600063"
-        desc = "EVTDESC600063"
+    id = 600063
+    title = "EVTNAME600063"
+    desc = "EVTDESC600063"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         tag = PAP
         NOT = {
             has_global_flag = italian_unification_a
@@ -434,8 +437,8 @@ country_event = {
         months = 3
     }
 
-        option = {
-                name = "EVTOPTA600063"
+    option = {
+        name = "EVTOPTA600063"
         any_pop = {
             ideology = {
                 value = liberal
@@ -448,17 +451,17 @@ country_event = {
         }
         set_global_flag = italian_unification_b
         set_country_flag = ITA_forming
-        }
+    }
 }
 
 #MOD hears about Garibaldi showing up
 country_event = {
-        id = 600064
-        title = "EVTNAME600063"
-        desc = "EVTDESC600063"
+    id = 600064
+    title = "EVTNAME600063"
+    desc = "EVTDESC600063"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         tag = MOD
         NOT = {
             has_global_flag = italian_unification_a
@@ -472,8 +475,8 @@ country_event = {
         months = 3
     }
 
-        option = {
-                name = "EVTOPTA600063"
+    option = {
+        name = "EVTOPTA600063"
         any_pop = {
             ideology = {
                 value = liberal
@@ -486,17 +489,17 @@ country_event = {
         }
         set_global_flag = italian_unification_b
         set_country_flag = ITM_forming
-        }
+    }
 }
 
 #SIC hears about Garibaldi showing up
 country_event = {
-        id = 600065
-        title = "EVTNAME600063"
-        desc = "EVTDESC600063"
+    id = 600065
+    title = "EVTNAME600063"
+    desc = "EVTDESC600063"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         tag = SIC
         NOT = {
             has_global_flag = italian_unification_a
@@ -510,8 +513,8 @@ country_event = {
         months = 3
     }
 
-        option = {
-                name = "EVTOPTA600063"
+    option = {
+        name = "EVTOPTA600063"
         any_pop = {
             ideology = {
                 value = liberal
@@ -524,17 +527,17 @@ country_event = {
         }
         set_global_flag = italian_unification_b
         set_country_flag = ITN_forming
-        }
+    }
 }
 
 #ILY hears about Garibaldi showing up
 country_event = {
-        id = 600066
-        title = "EVTNAME600063"
-        desc = "EVTDESC600063"
+    id = 600066
+    title = "EVTNAME600063"
+    desc = "EVTDESC600063"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         tag = ILY
         NOT = {
             has_global_flag = italian_unification_a
@@ -548,8 +551,8 @@ country_event = {
         months = 3
     }
 
-        option = {
-                name = "EVTOPTA600063"
+    option = {
+        name = "EVTOPTA600063"
         any_pop = {
             ideology = {
                 value = liberal
@@ -562,17 +565,17 @@ country_event = {
         }
         set_global_flag = italian_unification_b
         set_country_flag = ITS_forming
-        }
+    }
 }
 
 #LUC hears about Garibaldi showing up
 country_event = {
-        id = 600067
-        title = "EVTNAME600063"
-        desc = "EVTDESC600063"
+    id = 600067
+    title = "EVTNAME600063"
+    desc = "EVTDESC600063"
     picture = "Riot"
 
-        trigger = {
+    trigger = {
         tag = LUC
         NOT = {
             has_global_flag = italian_unification_a
@@ -586,8 +589,8 @@ country_event = {
         months = 3
     }
 
-        option = {
-                name = "EVTOPTA600063"
+    option = {
+        name = "EVTOPTA600063"
         any_pop = {
             ideology = {
                 value = liberal
@@ -600,7 +603,7 @@ country_event = {
         }
         set_global_flag = italian_unification_b
         set_country_flag = ITL_forming
-        }
+    }
 }
 
 #SAR hears about Garibaldi showing up
@@ -625,8 +628,8 @@ country_event = {
         months = 3
     }
 
-        option = {
-                name = "EVTOPTA600063"
+    option = {
+        name = "EVTOPTA600063"
         any_pop = {
             ideology = {
                 value = liberal
@@ -639,17 +642,17 @@ country_event = {
         }
         set_global_flag = italian_unification_b
         set_country_flag = ITA_forming
-        }
+    }
 }
 
 #A Redshirt State becomes a republic
 country_event = {
-        id = 600069
-        title = "EVTNAME600069"
-        desc = "EVTDESC600069"
+    id = 600069
+    title = "EVTNAME600069"
+    desc = "EVTDESC600069"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         has_country_flag = taken_by_redshirts
         has_global_flag = italian_unification_b
         NOT = {
@@ -718,8 +721,8 @@ country_event = {
         days = 1
     }
 
-        option = {
-                name = "EVTOPTA600069"
+    option = {
+        name = "EVTOPTA600069"
         relation = {
             who = MOD
             value = -400
@@ -761,17 +764,17 @@ country_event = {
             }
             country_event = 600071
         }
-        }
+    }
 }
 
 #A Redshirt State becomes Republican Italy
 country_event = {
-        id = 600070
-        title = "EVTNAME600070"
-        desc = "EVTDESC600070"
+    id = 600070
+    title = "EVTNAME600070"
+    desc = "EVTDESC600070"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         has_country_flag = taken_by_redshirts
         has_global_flag = italian_unification_b
         NOT = {
@@ -838,8 +841,8 @@ country_event = {
         days = 1
     }
 
-        option = {
-                name = "EVTOPTA600070"
+    option = {
+        name = "EVTOPTA600070"
         change_tag = ITA
         add_accepted_culture = north_italian
         add_accepted_culture = south_italian
@@ -868,65 +871,62 @@ country_event = {
             who = PAP
             value = -400
         }
-            734 = {
-                add_core = ITA
-            }
-            SAR_466 = {
-                add_core = ITA
-            }
-            SAR_765 = {
-                add_core = ITA
-            }
-            SAR_720 = {
-                add_core = ITA
-            }
-            AUS_726 = {
-                add_core = ITA
-            }
-            MOD_739 = {
-                add_core = ITA
-            }
-            AUS_729 = {
-                add_core = ITA
-            }
-            PAP_741 = {
-                add_core = ITA
-            }
-            TUS_744 = {
-                add_core = ITA
-            }
-            PAP_752 = {
-                add_core = ITA
-            }
-            SIC_753 = {
-                add_core = ITA
-            }
-            SIC_754 = {
-                add_core = ITA
-            }
-            764 = {
-                add_core = ITA
-            }
-            763 = {
-                add_core = ITA
-            }
-            762 = {
-                add_core = ITA
-            }
+        734 = {
+            add_core = ITA
         }
+        SAR_466 = {
+            add_core = ITA
+        }
+        SAR_765 = {
+            add_core = ITA
+        }
+        SAR_720 = {
+            add_core = ITA
+        }
+        AUS_726 = {
+            add_core = ITA
+        }
+        AUS_729 = {
+            add_core = ITA
+        }
+        PAP_741 = {
+            add_core = ITA
+        }
+        TUS_744 = {
+            add_core = ITA
+        }
+        PAP_752 = {
+            add_core = ITA
+        }
+        SIC_753 = {
+            add_core = ITA
+        }
+        SIC_754 = {
+            add_core = ITA
+        }
+        764 = {
+            add_core = ITA
+        }
+        763 = {
+            add_core = ITA
+        }
+        762 = {
+            add_core = ITA
+        }
+    }
 }
 
 #Other countries hear of Garibaldi
 country_event = {
-        id = 600071
-        title = "EVTNAME600071"
-        desc = "EVTDESC600071"
+    id = 600071
+    title = "EVTNAME600071"
+    desc = "EVTDESC600071"
     picture = "Celebration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-                name = "EVTOPTA600071"
+    option = {
+        name = "EVTOPTA600071"
         any_pop = {
             ideology = {
                 value = liberal
@@ -937,17 +937,17 @@ country_event = {
             militancy = 6
             consciousness = 3
         }
-        }
+    }
 }
 
 #A Redshirt State is given to a GP and becomes Italy
 country_event = {
-        id = 600072
-        title = "EVTNAME600072"
-        desc = "EVTDESC600072"
+    id = 600072
+    title = "EVTNAME600072"
+    desc = "EVTDESC600072"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         has_country_flag = taken_by_redshirts
         has_global_flag = italian_unification_b
         NOT = {
@@ -1003,8 +1003,8 @@ country_event = {
         days = 1
     }
 
-        option = {
-                name = "EVTOPTA600072"
+    option = {
+        name = "EVTOPTA600072"
         random_country = {
             limit = {
                 exists = yes
@@ -1022,7 +1022,7 @@ country_event = {
                 }
             }
             inherit = THIS
-            country_event = { id=600073 days=0 }
+            country_event = 600073
         }
         any_country = {
             limit = {
@@ -1041,87 +1041,84 @@ country_event = {
             }
             country_event = 600071
         }
-        }
+    }
 }
 
 #Becoming Italy
 country_event = {
-        id = 600073
-        title = "EVTNAME600073"
-        desc = "EVTDESC600073"
+    id = 600073
+    title = "EVTNAME600073"
+    desc = "EVTDESC600073"
     picture = "Celebration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
+    option = {
         name = "EVTOPTA600073"
         change_tag = ITA
         add_accepted_culture = north_italian
         add_accepted_culture = south_italian
         any_country = {
-                limit = {
-                    exists = yes
-                        NOT = {
-                            tag = THIS
-                        }
-                        OR = {
-                            tag = MOD
-                            tag = PAP
-                            tag = SIC
-                            tag = ILY
-                            tag = LUC
-                            tag = SAR
-                        }
-                        government = democracy
-                        has_country_flag = taken_by_redshirts
+            limit = {
+                exists = yes
+                    NOT = {
+                        tag = THIS
                     }
-                country_event = 11101
-            }
+                    OR = {
+                        tag = MOD
+                        tag = PAP
+                        tag = SIC
+                        tag = ILY
+                        tag = LUC
+                        tag = SAR
+                    }
+                    government = democracy
+                    has_country_flag = taken_by_redshirts
+                }
+            country_event = 11101
+        }
         734 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         SAR_466 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         SAR_765 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         SAR_720 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         AUS_726 = {
-                add_core = ITA
-            }
-        MOD_739 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         AUS_729 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         PAP_741 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         TUS_744 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         PAP_752 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         SIC_753 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         SIC_754 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         764 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         763 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         762 = {
-                add_core = ITA
-            }
+            add_core = ITA
+        }
         relation = {
             who = MOD
             value = -400
@@ -1148,7 +1145,7 @@ country_event = {
     }
 
     option = {
-                name = "EVTOPTB600073"
+        name = "EVTOPTB600073"
         prestige = 10
         any_pop = {
             ideology = {
@@ -1163,17 +1160,17 @@ country_event = {
         ai_chance = {
             factor = 0
         }
-        }
+    }
 }
 
 #A Redshirt State is given to Italy
 country_event = {
-        id = 600074
-        title = "EVTNAME600072"
-        desc = "EVTDESC600072"
+    id = 600074
+    title = "EVTNAME600072"
+    desc = "EVTDESC600072"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         has_country_flag = taken_by_redshirts
         has_global_flag = italian_unification_b
         OR = {
@@ -1191,8 +1188,8 @@ country_event = {
         days = 1
     }
 
-        option = {
-                name = "EVTOPTA600072"
+    option = {
+        name = "EVTOPTA600072"
         random_country = {
             limit = {
                 exists = yes
@@ -1223,17 +1220,17 @@ country_event = {
                 }
             country_event = 600071
         }
-        }
+    }
 }
 
 #ITA becomes ITM
 country_event = {
-        id = 600077
-        title = "EVTNAME600077"
-        desc = "EVTDESC600077"
+    id = 600077
+    title = "EVTNAME600077"
+    desc = "EVTDESC600077"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         tag = ITA
         has_country_flag = ITM_forming
         NOT = {
@@ -1247,7 +1244,7 @@ country_event = {
         days = 1
     }
 
-        option = {
+    option = {
         name = "EVTOPTA600077"
         change_tag = ITM
         ITA = {
@@ -1260,12 +1257,12 @@ country_event = {
 
 #ITA becomes ITN
 country_event = {
-        id = 600078
-        title = "EVTNAME600078"
-        desc = "EVTDESC600078"
+    id = 600078
+    title = "EVTNAME600078"
+    desc = "EVTDESC600078"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         tag = ITA
         has_country_flag = ITN_forming
         NOT = {
@@ -1279,7 +1276,7 @@ country_event = {
         days = 1
     }
 
-        option = {
+    option = {
         name = "EVTOPTA600078"
         change_tag = ITN
         ITA = {
@@ -1292,12 +1289,12 @@ country_event = {
 
 #ITA becomes ITS
 country_event = {
-        id = 600079
-        title = "EVTNAME600079"
-        desc = "EVTDESC600079"
+    id = 600079
+    title = "EVTNAME600079"
+    desc = "EVTDESC600079"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         tag = ITA
         has_country_flag = ITS_forming
         NOT = {
@@ -1311,7 +1308,7 @@ country_event = {
         days = 1
     }
 
-        option = {
+    option = {
         name = "EVTOPTA600079"
         change_tag = ITS
         ITA = {
@@ -1324,12 +1321,12 @@ country_event = {
 
 #ITA becomes ITL
 country_event = {
-        id = 600080
-        title = "EVTNAME600080"
-        desc = "EVTDESC600080"
+    id = 600080
+    title = "EVTNAME600080"
+    desc = "EVTDESC600080"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         tag = ITA
         has_country_flag = ITL_forming
         NOT = {
@@ -1343,25 +1340,25 @@ country_event = {
         days = 1
     }
 
-        option = {
+    option = {
         name = "EVTOPTA600080"
         change_tag = ITL
         ITA = {
             all_core = {
                 remove_core = ITA
-                }
             }
         }
+    }
 }
 
 #ITA stays ITA
 country_event = {
-        id = 600081
-        title = "EVTNAME600081"
-        desc = "EVTDESC600081"
+    id = 600081
+    title = "EVTNAME600081"
+    desc = "EVTDESC600081"
     picture = "Celebration"
 
-        trigger = {
+    trigger = {
         tag = ITA
         has_country_flag = ITA_forming
         NOT = {
@@ -1375,15 +1372,17 @@ country_event = {
         days = 1
     }
 
-        option = {
-                name = "EVTOPTA600081"
-                prestige = 5
-        }
+    option = {
+        name = "EVTOPTA600081"
+        prestige = 5
+    }
 }
 
 country_event = {
-
     id = 600082
+    title = "EVTNAME31102"
+    desc = "EVTDESC31102"
+    picture = "administration"
 
     trigger = {
         tag = SPA
@@ -1402,10 +1401,6 @@ country_event = {
     mean_time_to_happen = {
         months = 1
     }
-
-    title = "EVTNAME31102"
-    desc = "EVTDESC31102"
-    picture = "administration"
 
     option = {
         name = "EVTOPTA31102" #We have been ultimately driven from Europe...
