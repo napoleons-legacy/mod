@@ -277,6 +277,7 @@ country_event = {
                     is_core = LUB
                     is_core = LUC
                 }
+                NOT = { province_id = 464 }
             }
 
             add_core = AFA
@@ -381,7 +382,9 @@ country_event = {
                     is_core = CAT
                     is_core = HOL
                     is_core = LUB
+                    is_core = LUC
                 }
+                NOT = { province_id = 464 }
             }
 
             add_core = AFA
@@ -500,7 +503,9 @@ country_event = {
                     is_core = CAT
                     is_core = HOL
                     is_core = LUB
+                    is_core = LUC
                 }
+                NOT = { province_id = 464 }
             }
 
             add_core = AFA
@@ -608,8 +613,11 @@ country_event = {
                     is_core = CAT
                     is_core = HOL
                     is_core = LUB
+                    is_core = LUC
                 }
+                NOT = { province_id = 464 }
             }
+
             add_core = AFA
         }
 

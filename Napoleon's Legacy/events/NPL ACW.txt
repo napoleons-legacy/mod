@@ -319,6 +319,7 @@ country_event = {
 
     trigger = {
         tag = USA
+        war = no
         year = 1859
         NOT = { truce_with = NEN }
 
@@ -552,6 +553,7 @@ country_event = {
 
     option = {
         name = "EVT44175OPTA"
+        prestige = -5
     }
 }
 
@@ -880,6 +882,7 @@ country_event = {
         name = "EVT44180OPTA"
 
         USA = { all_core = { add_core = NEN } }
+        USA = { all_core = { remove_core = USA } }
 
         USA_205 = { add_core = CSA }
         USA_201 = { add_core = CSA }
@@ -917,7 +920,9 @@ country_event = {
             add_core = CAL
         }
 
-
+        CAL = {
+            primary_culture = yankee
+        }
         release_vassal = CAL
 
         # Set capital to Portland if Seattle isn't owned

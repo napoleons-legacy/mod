@@ -6,7 +6,6 @@ country_event = {
 
     is_triggered_only = yes
 
-
     option = {
         name = "EVTOPTA86000"
         any_owned = {
@@ -46,6 +45,7 @@ country_event = {
                 defender_goal = {
                     casus_belli = civil_war
                 }
+                call_ally = no
             }
         }
     }
@@ -105,7 +105,6 @@ country_event = {
         }
 
         release = CAT
-        any_owned = { limit = { is_core = NET } secede_province = NET }
         any_owned = { limit = { is_core = ITA } secede_province = ITA }
         any_owned = { limit = { is_core = ITM } secede_province = ITM }
         any_owned = { limit = { is_core = ITN } secede_province = ITN }
@@ -113,5 +112,7 @@ country_event = {
         any_owned = { limit = { is_core = ITS } secede_province = ITS }
         any_owned = { limit = { is_core = SWI } secede_province = SWI }
         any_owned = { limit = { is_core = SAR } secede_province = SAR }
+
+        change_tag = NET
     }
 }
