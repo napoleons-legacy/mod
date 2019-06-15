@@ -23420,11 +23420,12 @@
 
 535 = {
     text_position = {
-        x = 2944.500000
-        y = 1681.099976
+        x = 2943.5
+        y = 1684.1
     }
 
-    text_scale = 2.200000
+    text_scale = 2.2
+    text_rotation = 0.5
     building_construction = {
         x = 2942.600098
         y = 1687.000000
