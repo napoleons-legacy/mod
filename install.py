@@ -25,19 +25,11 @@ def install_mod(folder: str) -> None:
     print(f"Deleting {mod_file_path}.")
     shutil.rmtree(mod_file_path, ignore_errors=True)
 
-<<<<<<< HEAD
-    print(f"Copying {MOD_FOLDER_PATH} into {mod_folder_path}.")
-    shutil.copytree(MOD_FOLDER_PATH, mod_folder_path)
-
-    print(f"Copying {MOD_FILE_PATH} into {mod_file_path}.")
-    shutil.copy2(MOD_FILE_PATH, mod_file_path)
-=======
     print(f"Copying {MOD_FOLDER} into {mod_folder_path}")
     shutil.copytree(MOD_FOLDER, mod_folder_path)
 
     print(f"Copying {MOD_FILE} into {mod_file_path}")
     shutil.copy2(MOD_FILE, mod_file_path)
->>>>>>> Remove two anti-slavery events in the United States, they should be a slavocracy
 
 
 if __name__ == "__main__":

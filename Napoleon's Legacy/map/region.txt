@@ -103,9 +103,9 @@ USA_247 = { 247 246 248 249 250 } #New England
 
 ### United Kingdom
 
-ENG_254 = { 254 255 256 } #Ulster
+ENG_254 = { 254 255 256 257 } #Ulster
 
-ENG_258 = { 258 259 257 } #Connacht
+ENG_258 = { 258 259 } #Connacht
 
 ENG_260 = { 260 261 262 } #Munster
 

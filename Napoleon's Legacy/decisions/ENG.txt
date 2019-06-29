@@ -957,43 +957,4 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
-
-
-    londonderry_renaming_act = {
-        picture = londonderry_quay
-
-        potential = {
-            OR = {
-                AND = {
-                    primary_culture = irish
-                    NOT = { has_global_flag = londonderry_renamed }
-                }
-                AND = {
-                    primary_culture = british
-                    has_global_flag = londonderry_renamed
-                }
-            }
-            owns = 255
-        }
-
-
-        allow = {
-            war = no
-        }
-
-        effect = {
-
-            random_owned = {
-                limit = { owner = { primary_culture = irish } }
-                owner = { set_global_flag = londonderry_renamed 255 = { change_province_name = "Derry" } }
-            }
-
-            random_owned = {
-                limit = { owner = { primary_culture = british } }
-                owner = { clr_global_flag = londonderry_renamed 255 = { change_province_name = "Londonderry" } }
-            }
-        }
-
-        ai_will_do = { factor = 1 }
-    }
 }
