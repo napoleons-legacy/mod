@@ -25,8 +25,8 @@ country_event = {
             liquor = 200
 
             add_country_modifier = {
-            name = small_country_draft
-            duration = 1825
+                name = small_country_draft
+                duration = 1825
             }
         }
         casus_belli = {
@@ -72,7 +72,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = {
-        days = 5
+        months = 1
     }
 
     option = {
@@ -88,16 +88,20 @@ country_event = {
         random_country = { limit = { tag = NGF exists = yes } THIS = { any_owned = { limit = { is_core = NGF } secede_province = NGF } } }
         random_country = { limit = { tag = SGF exists = yes } THIS = { any_owned = { limit = { is_core = SGF } secede_province = SGF } } }
 
+        random_country = { limit = { tag = HOL exists = yes } THIS = { any_owned = { limit = { is_core = HOL } secede_province = HOL } } }
+
         release = BRE
         release = MUN
         release = WLL
-        release = OST
         release = HAM
         release = RHI
         release = OLD
-        release = HOL
+
         release = LUB
+        random_country = { limit = { tag = HOL exists = no } THIS = { any_owned = { limit = { is_core = HOL } secede_province = LUB } } }
+
         release = LUC
+        FRA = { release_vassal = LUC }
 
         random_country = {
             limit = { tag = SPA owns = 487 } THIS = { all_core = { limit = { is_core = CAT } secede_province = SPA add_core = SPA } }
@@ -111,7 +115,6 @@ country_event = {
         any_owned = { limit = { is_core = ITS } secede_province = ITS }
         any_owned = { limit = { is_core = SWI } secede_province = SWI }
         any_owned = { limit = { is_core = SAR } secede_province = SAR }
-
-        change_tag = NET
+        any_owned = { limit = { is_core = NET } secede_province = NET }
     }
 }

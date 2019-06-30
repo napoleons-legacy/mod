@@ -27,7 +27,7 @@ country_event = {
 
     option = {
         name = "EVT32513OPTA"
-        1049 = { change_province_name = "Novorossiysk" add_core = RUS }
+        1049 = { change_province_name = "Novorossiysk" add_core = THIS }
         1049 = { state_scope = { change_region_name = "Yekaterinodar" } }
 
 
@@ -169,10 +169,10 @@ country_event = {
                 is_core = CIR
                 pop_majority_culture = circassian
             }
-        secede_province = CIR
+            secede_province = CIR
         }
-        CIR = { all_core = { add_core = RUS } }
-        DAG = { all_core = { add_core = RUS } }
+        CIR = { all_core = { limit = { NOT = { is_core = TUR } } add_core = RUS } }
+        DAG = { all_core = { limit = { NOT = { is_core = PER } } add_core = RUS } }
         CHY = { all_core = { add_core = RUS } }
         relation = {
             who = CIR
@@ -405,9 +405,6 @@ country_event = {
                     is_core = DAG
                     is_core = CHY
                 }
-                NOT = {
-                    is_core = PER
-                }
             }
 
             add_province_modifier = { name = population_resettlement duration = 1825 }
@@ -433,7 +430,6 @@ country_event = {
             tag = TSA
         }
         DAG = { exists = no }
-        owns = 1052
         owns = 1053
         owns = 1057
         owns = 1055
@@ -458,7 +454,7 @@ country_event = {
             }
 
         random_list = {
-                    25 = {
+                25 = {
                 add_province_modifier = {
                     name = highlander_raids
                     duration = 6205

@@ -8,7 +8,7 @@ political_decisions = {
             owns = 300
             NOT = {
                 has_country_flag = capital_moved_back
-                }
+            }
         }
 
         alert = no
@@ -47,9 +47,7 @@ political_decisions = {
 
         effect = {
             set_country_flag = carribean_treaty
-            FRA = {
-                country_event = 66550
-            }
+            FRA = { country_event = 66550 }
             badboy = -4
         }
 
@@ -62,14 +60,14 @@ political_decisions = {
         potential = {
             is_greater_power = yes
             exists = GRE
-            GRE = {
-                war = no
-            }
+            GRE = { war = no }
 
             NOT = {
-                tag = TUR
-                truce_with = GRE
-                has_country_flag = greek_lands_question
+                OR = {
+                    tag = TUR
+                    truce_with = GRE
+                    has_country_flag = greek_lands_question
+                }
             }
 
             has_global_flag = greeks_win_war
@@ -84,16 +82,16 @@ political_decisions = {
 
         effect = {
             relation = {
-                    who = GRE
-                    value = 50
+                who = GRE
+                value = 50
             }
             diplomatic_influence = {
-                    who = GRE
-                    value = 50
+                who = GRE
+                value = 50
             }
 
-            prestige = 15
-            badboy = -4
+            prestige = 5
+            badboy = -2
             any_owned = {
                 limit = { is_core = GRE }
 
@@ -103,25 +101,26 @@ political_decisions = {
 
             set_country_flag = greek_lands_question
         }
+
+        ai_will_do = {
+            factor = 1
+        }
     }
 
     crimean_war = {
         potential = {
             tag = TUR
             has_global_flag = russian_civil_war_has_happened
-            RUS = {
-                war_with = TSA
-            }
-            NOT = {
-                has_country_flag = crimean_war
-            }
+            RUS = { war_with = TSA }
+            NOT = { has_country_flag = crimean_war }
         }
+
         allow = {
             tag = TUR
         }
 
         effect = {
-                prestige = 20
+            prestige = 20
             casus_belli = {
                 target = TSA
                 type = free_peoples
@@ -153,6 +152,7 @@ political_decisions = {
                     casus_belli = status_quo
                 }
             }
+
             set_country_flag = crimean_war
         }
 
@@ -161,11 +161,9 @@ political_decisions = {
             modifier = {
                 factor = 0
                 OR = {
-                    war_exhaustion = 1
+                    war_exhaustion = 30
                     RUS = {
-                        NOT = {
-                            war_exhaustion = 10
-                        }
+                        NOT = { war_exhaustion = 30 }
                     }
                 }
             }

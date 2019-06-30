@@ -7022,44 +7022,12 @@
 }
 #Evenkia Region (14000)
 #under the rule of Russia in 1836
-#Dudinka (1000/250 POPS)
+#Dudinka (4000/500 POPS)
 2680 = {
     aristocrats = {
         culture = siberian
         religion = animist
-        size = 5
-    }
-
-    clergymen = {
-        culture = siberian
-        religion = animist
-        size = 5
-    }
-
-    artisans = {
-        culture = siberian
-        religion = animist
         size = 10
-    }
-
-    soldiers = {
-        culture = siberian
-        religion = animist
-        size = 5
-    }
-
-    farmers = {
-        culture = siberian
-        religion = animist
-        size = 225
-    }
-}
-#Svetlogorsk (2000/500 POPS)
-2657 = {
-    aristocrats = {
-        culture = siberian
-        religion = animist
-        size = 5
     }
 
     clergymen = {
@@ -7077,31 +7045,13 @@
     soldiers = {
         culture = siberian
         religion = animist
-        size = 5
+        size = 10
     }
 
     farmers = {
         culture = siberian
         religion = animist
-        size = 410
-    }
-
-    bureaucrats = {
-        culture = russian
-        religion = orthodox
-        size = 3
-    }
-
-    clergymen = {
-        culture = russian
-        religion = orthodox
-        size = 2
-    }
-
-    farmers = {
-        culture = russian
-        religion = orthodox
-        size = 45
+        size = 450
     }
 }
 #Kheta (1000/250 POPS)

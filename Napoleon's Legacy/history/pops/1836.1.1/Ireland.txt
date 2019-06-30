@@ -1,5 +1,4 @@
 #Ulster Region - 1846000
-#under rule of Britain 1836
 #Belfast (540000/135000 POPs)
 254 = {
     aristocrats = {
@@ -238,7 +237,6 @@
 
 }
 #Connaught Region - 1316000
-#under rule of Britain 1836
 #Galway (548000/137000 POPS)
 258 = {
     aristocrats = {
@@ -269,6 +267,32 @@
         culture = irish
         religion = catholic
         size = 126750
+    }
+}
+#Westport (2000/500 POPS)
+2657 = {
+    aristocrats = {
+        culture = irish
+        religion = catholic
+        size = 5
+    }
+
+    clergymen = {
+        culture = irish
+        religion = catholic
+        size = 5
+    }
+
+    artisans = {
+        culture = irish
+        religion = catholic
+        size = 20
+    }
+
+    farmers = {
+        culture = irish
+        religion = catholic
+        size = 470
     }
 }
 #Sligo (768000/192000 POPs)
@@ -317,7 +341,6 @@
 
 }
 #Munster Region - 2244000
-#under rule of Britain 1836
 #Cork (890000/224000 POPS)
 260 = {
     aristocrats = {
@@ -476,7 +499,6 @@
 
 }
 #Leinster Region - 1836000
-#under rule of Britain 1836
 #Dublin (860000/215000 POPs)
 263 = {
     aristocrats = {

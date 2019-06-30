@@ -14,7 +14,7 @@ country_event = {
         }
 }
 
-# reaty with British Empire over Galway
+# Treaty with British Empire over Westport
 country_event = {
     id = 66650
     title = "EVTNAME66650"
@@ -38,16 +38,12 @@ country_event = {
             political_reform = wealth_voting
         }
         BRI = {
-            country_event = {
-                id = 66651 days = 0
-            }
+            country_event = 66651
         }
         CAN = {
-            country_event = {
-                id = 66652 days = 0
-            }
+            country_event = 66652
         }
-        258 = {
+        2657 = {
             remove_core = IRE
             add_core = CAN
             secede_province = CAN

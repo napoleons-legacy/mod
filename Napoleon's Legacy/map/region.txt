@@ -105,7 +105,7 @@ USA_247 = { 247 246 248 249 250 } #New England
 
 ENG_254 = { 254 255 256 257 } #Ulster
 
-ENG_258 = { 258 259 } #Connacht
+ENG_258 = { 258 259 2657 } #Connacht
 
 ENG_260 = { 260 261 262 } #Munster
 
@@ -601,7 +601,7 @@ RUS_2589 = { 986 2688 } #Nenetsia
 
 RUS_2590 = { 2622 2634 2637 2661 2666 } #Coastal Chukotka
 
-RUS_2615 = { 2657 2680 2654 2694 2656 2655 2693 2692 2675 } #Lower Yeniseysk - Taymyria
+RUS_2615 = { 2680 2654 2694 2656 2655 2693 2692 2675 } #Lower Yeniseysk - Taymyria
 
 RUS_2618 = { 1072 2641 2618 2620 2638 2639 1073 2660 } #Upper Okhotsk - Magadan
 
