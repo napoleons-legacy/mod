@@ -135,6 +135,7 @@ country_event = {
         }
     }
 
+    # Send counter-offer
     option = {
         name = "EVTOPTB121227"
         PLC = { country_event = 121232 }
@@ -182,6 +183,7 @@ country_event = {
         }
     }
 
+    # Send counter-offer
     option = {
         name = "EVTOPTB121227"
         PLC = { country_event = 121233 }
@@ -229,6 +231,7 @@ country_event = {
         }
     }
 
+    # Send counter-offer
     option = {
         name = "EVTOPTB121227"
         PLC = { country_event = 121234 }
@@ -300,10 +303,16 @@ country_event = {
         }
         create_alliance = AUS
 
-        703 = {
-            remove_core = PLC
-            add_core = AUS
+        AUS_702 = {
             secede_province = AUS
+            add_core = AUS
+            remove_core = PLC
+        }
+
+        AUS_662 = {
+            secede_province = AUS
+            add_core = AUS
+            remove_core = PLC
         }
 
         ai_chance = {

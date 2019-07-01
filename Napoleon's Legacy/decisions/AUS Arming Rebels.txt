@@ -31,52 +31,6 @@ political_decisions = {
         }
     }
 
-    arming_the_poles = {
-        potential = {
-            war_with = AUS
-            NOT = {
-                exists = GLM
-            }
-            PLC = {
-                NOT = {
-                    AND = {
-                        owns = 714
-                        owns = 702
-                    }
-                }
-            }
-            AUS = {
-                OR = {
-                    owns = 714
-                    owns = 702
-                }
-                NOT = {
-                    has_country_modifier = federalism_modifier
-                }
-            }
-            year = 1860
-        }
-
-        allow = {
-            money = 100000
-            OR = {
-                controls = 702
-                controls = 714
-            }
-        }
-
-        effect = {
-            money = -100000
-            set_global_flag = galician_revolt
-            AUS = {
-                country_event = 55036
-            }
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     arming_the_czechs = {
         potential = {
             war_with = AUS

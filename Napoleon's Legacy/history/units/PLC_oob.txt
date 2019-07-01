@@ -35,7 +35,7 @@ leader = {
 
 army = {
     name = "1st Army"
-    location = 699
+    location = 706
     regiment = {
         name= "1.1st Division"
         type = infantry
@@ -45,7 +45,7 @@ army = {
     regiment = {
         name= "2.1st Division"
         type = infantry
-        home = 706
+        home = 704
     }
 
     regiment = {
@@ -55,9 +55,9 @@ army = {
     }
 
     regiment = {
-        name= "4.1st Division"
-        type = infantry
-        home = 701
+        name= "4.1st Cavalry Division"
+        type = hussar
+        home = 362
     }
 
     regiment = {
@@ -76,46 +76,46 @@ army = {
 
 army = {
     name = "2nd Army"
-    location = 706
+    location = 699
+
     regiment = {
-        name= "1.1st Cavalry Division"
-        type = cavalry
+        name= "1.1st Division"
+        type = infantry
+        home = 714
+    }
+
+    regiment = {
+        name= "2.1st Cavalry Division"
+        type = hussar
         home = 706
     }
 
     regiment = {
-        name= "2.1st Cavalry Division"
-        type = cavalry
+        name= "3.1st Cavalry Division"
+        type = hussar
         home = 703
     }
-
-    regiment = {
-        name= "3.1st Cavalry Division"
-        type = cavalry
-        home = 712
-    }
-
 }
 
 army = {
     name = "3rd Army"
-    location = 706
+    location = 703
     regiment = {
         name= "1.1st Cavalry Division"
-        type = cavalry
-        home = 699
+        type = hussar
+        home = 705
     }
 
     regiment = {
         name= "2.1st Cavalry Division"
-        type = cavalry
-        home = 699
+        type = hussar
+        home = 364
     }
 
     regiment = {
         name= "3.1st Cavalry Division"
-        type = cavalry
-        home = 712
+        type = hussar
+        home = 702
     }
 
 }

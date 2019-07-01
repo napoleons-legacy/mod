@@ -297,7 +297,7 @@ PRU_701 = { 701 699 700 } #Posen
 
 ### Austria
 
-AUS_612 = { 612 613 614 615 } #Tirol
+AUS_612 = { 612 613 614 615 735 } #Tirol
 
 AUS_613 = { 616 617 618 } #K�rnten-Steiermark
 
@@ -321,7 +321,7 @@ AUS_657 = { 657 659 660 2533 } #Eastern Transylvania
 
 AUS_702 = { 703 704 705 714 } #Galicia-Lodomeria
 
-AUS_662 = { 702 951 952 953} #East Galicia
+AUS_662 = { 702 951 952 953 } #East Galicia
 
 RUS_715 = { 715 711 713 716 } #West Galicia
 
@@ -329,9 +329,7 @@ AUS_726 = { 726 727 728 2669 } #Lombardia
 
 AUS_733 = { 733 736 737 } #Friuli
 
-AUS_729 = { 729 730 731 732 8 } #Venetia
-
-AUS_734 = { 734 735 } #South Tirol
+AUS_729 = { 729 730 731 732 8 734 } #Venetia
 
 AUS_736 = { 769 770 778 } #Istria
 

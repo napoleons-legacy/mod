@@ -1012,62 +1012,6 @@ political_decisions = {
         }
     }
 
-    expel_the_poles_GLM = {
-        picture = polish_expelled
-        potential = {
-            is_culture_group = east_slavic
-            OR = {
-                owns = 951
-                owns = 952
-                owns = 953
-                owns = 702
-            }
-            NOT = { has_global_flag = poles_expelled }
-        }
-
-        allow = {
-            war = no
-            owns = 951
-            owns = 952
-            owns = 953
-            owns = 702
-            mass_politics = 1
-            NOT = { citizenship_policy = full_citizenship }
-            NOT = { citizens_rights = all_voting_pops }
-            OR = {
-                government = fascist_dictatorship
-                government = proletarian_dictatorship
-                government = bourgeois_dictatorship
-            }
-        }
-
-        effect = {
-            set_global_flag = poles_expelled
-            952 = { change_province_name = "Ternopil" }
-            953 = { change_province_name = "Frankivsk" }
-            702 = { change_province_name = "Lviv" }
-
-            702 = { remove_core = POL }
-            702 = { remove_core = GLM }
-
-            951 = { remove_core = POL }
-            951 = { remove_core = GLM }
-
-            952 = { remove_core = POL }
-            952 = { remove_core = GLM }
-
-            953 = { remove_core = POL }
-            953 = { remove_core = RUT }
-            953 = { remove_core = GLM }
-
-            702 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 715 } }
-            952 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 706 } }
-            953 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 716 } }
-            951 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 708 } }
-        }
-        ai_will_do = { factor = 1 }
-    }
-
     drain_the_pinsk_marshes = {
         picture = drain_the_pinsk_marshes
         potential = {

@@ -249,9 +249,9 @@ country_event = {
 	title = "EVTNAME4661006" #Bolivia - Argentina border Agreement
 	desc = "EVTDESC4661006"
 	picture = "pbc_argentina_border_treaty"
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		war = no
 		OR = {
@@ -273,28 +273,28 @@ country_event = {
 		owns = 2318
 		owns = 2313
 	}
-	
+
 	mean_time_to_happen = { days = 15 }
 
-		
+
 	option = {
 		name = "EVTOPT4661006A"
 		2315 = { owner = { country_event = 4661007 } }
 		ai_chance = { factor = 100 }
 		}
-		
+
 	option = {
 		name = "EVTOPT4661006B"
 		ai_chance = { factor = 0 }
 		}
 	}
-		
+
 country_event = {
 	id = 4661007
 	title = "EVTNAME4661006" #Bolivia - Argentina border Agreement
 	desc = "EVTDESC4661007"
 	picture = "pbc_argentina_border_treaty"
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -318,10 +318,10 @@ country_event = {
 		FROM = { country_event = 4661008 }
 		relation = { who = BOL value = 25 }
 		FROM = { any_owned = { limit = { is_core = THIS } secede_province = THIS } }
-		
+
 		ai_chance = { factor = 0.98 }
 	}
-		
+
 	option = {
 		name = "EVTOPT4661007B"
 		badboy = 5
@@ -333,19 +333,19 @@ country_event = {
 		ai_chance = { factor = 0.02 }
 		}
 	}
-		
+
 country_event = {
 	id = 4661008
 	title = "EVTNAME4661008" #Argentina Agrees
 	desc = "EVTDESC4661008"
 	picture = "pbc_argentina_border_treaty"
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = "EVTOPT4661008A"
 		any_owned = {
-			limit = { is_core = FROM }		
+			limit = { is_core = FROM }
 			remove_province_modifier = integration_refusal
 			remove_province_modifier = core_integration
 			remove_province_modifier = national_assimilation
@@ -365,7 +365,7 @@ country_event = {
 	picture = "chile_peru_bolivia_treaty"
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT46610102OPTA" #We agree
 		badboy = -2
@@ -384,7 +384,7 @@ country_event = {
 			2309 = { remove_core = THIS remove_core = BOL }
 			2305 = { remove_core = THIS remove_core = BOL }
 		}
-		
+
 		random_owned = {
 			limit = {
 				owner = {
@@ -395,7 +395,7 @@ country_event = {
 			2309 = { remove_core = THIS }
 			2305 = { remove_core = THIS }
 		}
-		
+
 		random_owned = {
 			limit = {
 				owner = {
@@ -409,7 +409,7 @@ country_event = {
 			2308 = { remove_core = THIS remove_core = PEU }
 			2307 = { remove_core = THIS remove_core = PEU }
 		}
-		
+
 		random_owned = {
 			limit = {
 				owner = {
@@ -421,7 +421,7 @@ country_event = {
 			2307 = { remove_core = THIS }
 			2578 = { remove_core = THIS }
 		}
-		
+
 		any_owned = { limit = { NOT = { is_core = THIS } } secede_province = FROM }
 		FROM = { any_owned = { limit = { NOT = { is_core = FROM } } secede_province = THIS } }
 		relation = { who = FROM value = 200 }
@@ -442,7 +442,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT46610102OPTB" #No
 		badboy = 1
@@ -461,9 +461,9 @@ country_event = {
 	picture = "chile_peru_bolivia_treaty"
 
 	is_triggered_only = yes
-	
+
 	immediate = { CHL = { random_owned = { limit = { province_id = 2578 } secede_province = THIS } } }
-	
+
 	option = {
 		name = "EVT46610103OPTA" #The territory is Peru's
 		prestige = 2
@@ -482,7 +482,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT46610103OPTB" #The territory is Chile's
 		prestige = 2
