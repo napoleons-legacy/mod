@@ -1,3 +1,8 @@
+#http://pages.uoregon.edu/caguirre/Ramirez_Agentes.pdf
+#41,000 registered slaves in 1821, that means 10250 slave pops.
+#Loreto Region (96000)
+#Ruled by Peru 1836
+#Iquitos (60000/15000 POPS)
 2286 = {
     aristocrats = {
         culture = south_andean
@@ -101,7 +106,8 @@
         size = 9125
     }
 }
-
+#"Ruled" by Ecuador 1836
+#Yurimagues (12000/3000 POPS)
 2287 = {
     aristocrats = {
         culture = quechua
@@ -133,7 +139,7 @@
         size = 2700
     }
 }
-
+#Yuncos (12000/3000 POPS)
 2288 = {
     aristocrats = {
         culture = amazonian
@@ -177,7 +183,7 @@
         size = 20
     }
 }
-
+#Puca Urco (12000/3000 POPS)
 2289 = {
     aristocrats = {
         culture = amazonian
@@ -221,7 +227,9 @@
         size = 20
     }
 }
-
+#Cajamarca Region (296000)
+#Ruled by Peru 1836
+#Cajamarca (144000/38000 POPS)
 2290 = {
     aristocrats = {
         culture = south_andean
@@ -301,7 +309,7 @@
         size = 19325
     }
 }
-
+#Piura (60000/15000 POPS)
 2291 = {
     aristocrats = {
         culture = south_andean
@@ -378,11 +386,16 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 2000
+        size = 1000
+    }
+
+    slaves = {
+        culture = afro_caribeno
+        religion = catholic
+        size = 1000
     }
 }
-
-# Trujillo
+#Trujillo (68000/17000 POPS)
 2292 = {
     aristocrats = {
         culture = spanish
@@ -495,10 +508,16 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 1700
+        size = 1100
+    }
+
+    slaves = {
+        culture = afro_caribeno
+        religion = catholic
+        size = 600
     }
 }
-
+#Moyobamba (24000/6000 POPS)
 2294 = {
     aristocrats = {
         culture = south_andean
@@ -572,7 +591,9 @@
         size = 2700
     }
 }
-
+#Junin Region (204000)
+#Ruled by Peru 1836
+#Huanuco (36000/9000 POPS)
 2293 = {
     aristocrats = {
         culture = south_andean
@@ -628,7 +649,7 @@
         size = 16400
     }
 }
-
+#Jauja (60000/15000 POPS)
 2296 = {
     aristocrats = {
         culture = south_andean
@@ -684,7 +705,7 @@
         size = 12125
     }
 }
-
+#Ayacucho (108000/27000 POPS)
 2299 = {
     aristocrats = {
         culture = south_andean
@@ -752,7 +773,9 @@
         size = 21525
     }
 }
-
+#Lima Region (484000)
+#Ruled by Peru 1836
+#Lima (324000/81000 POPS)
 2295 = {
     aristocrats = {
         culture = spanish
@@ -901,7 +924,13 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 2900
+        size = 1400
+    }
+
+    slaves = {
+        culture = afro_caribeno
+        religion = catholic
+        size = 1500
     }
 }
 
@@ -1022,8 +1051,7 @@
     }
 
 }
-
-# Huaraz
+#Huaraz (100000/25000 POPS)
 2298 = {
     aristocrats = {
         culture = spanish
@@ -1139,7 +1167,9 @@
         size = 1100
     }
 }
-
+#Ucayali Region (32000)
+#Ruled by Peru 1836
+#Pucallpa (20000/5000 POPS)
 2300 = {
     aristocrats = {
         culture = south_andean
@@ -1195,7 +1225,7 @@
         size = 16225
     }
 }
-
+#Puerto Maldonado (12000/3000 POPS)
 2301 = {
     aristocrats = {
         culture = amazonian
@@ -1227,7 +1257,9 @@
         size = 2700
     }
 }
-
+#Cusco Region (404000)
+#Ruled by Peru 1836
+#Cusco (228000/57000 POPS)
 2302 = {
     aristocrats = {
         culture = spanish
@@ -1343,13 +1375,13 @@
         size = 34275
     }
 
-    farmers = {
+    slaves = {
         culture = afro_caribeno
         religion = catholic
         size = 5000
     }
 }
-
+#Puno (104000/26000 POPS)
 2303 = {
     aristocrats = {
         culture = south_andean
@@ -1405,7 +1437,7 @@
         size = 21500
     }
 }
-
+#Arequipa (72000/18000 POPS)
 2304 = {
     aristocrats = {
         culture = south_andean
@@ -1461,7 +1493,9 @@
         size = 13100
     }
 }
-
+#Atacama Region (100000) #see Chile.txt for balance of Region
+#Ruled by Peru 1836
+#Tacna (100000/25000 POPS)
 2578 = {
     aristocrats = {
         culture = south_andean
@@ -1529,7 +1563,7 @@
         size = 16700
     }
 
-    farmers = {
+    slaves = {
         culture = afro_caribeno
         religion = catholic
         size = 2000

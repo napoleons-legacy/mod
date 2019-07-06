@@ -12,22 +12,31 @@ country_event = {
 
     trigger = {
         tag = CAN
-        year = 1838
+        year = 1837
         OR = {
             government = absolute_monarchy
             government = prussian_constitutionalism
             government = hms_government
         }
+        NOT = { year = 1860 }
     }
 
     major = yes
     fire_only_once = yes
 
-    mean_time_to_happen = { months = 3 }
+    mean_time_to_happen = {
+        months = 5
+        modifier = {
+            factor = 0.1
+            month = 5
+            NOT = { month = 7 }
+        }
+    }
 
     option = {
         name = "EVTOPTA36898"
         prestige = 5
+        election = yes
     }
 }
 
@@ -2007,14 +2016,27 @@ country_event = {
 
     option = {
         name = "EVT37236OPTA"
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -40000 } }
         random_owned = {
-            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
             owner = { set_variable = { which = owed_cash_money value = 40 } }
         }
         random_owned = {
-            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 40000 } }
+            owner = { treasury = -40000 }
         }
         random_list = {
             50 = { add_country_modifier = { name =  bigben_construction duration = 2920 } }
@@ -2029,14 +2051,27 @@ country_event = {
 
     option = {
         name = "EVT37236OPTB"
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -30000 } }
         random_owned = {
-            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
             owner = { set_variable = { which = owed_cash_money value = 30 } }
         }
         random_owned = {
-            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 30000 } }
+            owner = { treasury = -30000 }
         }
         random_list = {
             30 = { add_country_modifier = { name = bigben_construction duration = 2920 } }
@@ -2051,14 +2086,27 @@ country_event = {
 
     option = {
         name = "EVT37236OPTC"
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -20000 } }
         random_owned = {
-            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
             owner = { set_variable = { which = owed_cash_money value = 20 } }
         }
         random_owned = {
-            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 20000 } }
+            owner = { treasury = -20000 }
         }
         random_list = {
             30 = { add_country_modifier = { name = bigben_construction duration = 2920 } }
@@ -2097,35 +2145,35 @@ country_event = {
         300 = {
             set_province_flag = big_ben_built
             add_province_modifier = { name = the_big_ben duration = -1 }
-                    }
+            }
             prestige = 20
         }
     }
 
 #country_event = {
 #
-#   id = 3697005
-#   title = "EVTNAME3697005" #The Canadian Borders - REMOVAL
-#   desc = "EVTDESC3697005"
-#   picture = "danishgovernment"
+#    id = 3697005
+#    title = "EVTNAME3697005" #The Canadian Borders - REMOVAL
+#    desc = "EVTDESC3697005"
+#    picture = "danishgovernment"
 #
-#   fire_only_once = yes
+#    fire_only_once = yes
 #
-#   trigger = {
-#       civilized = yes
-#       2599 = { NOT = { owned_by = THIS } empty = no }
-#       2630 = { NOT = { owned_by = THIS } empty = no }
-#       6 = { empty = yes }
-#       owns = 17
-#   }
+#    trigger = {
+#        civilized = yes
+#        2599 = { NOT = { owned_by = THIS } empty = no }
+#        2630 = { NOT = { owned_by = THIS } empty = no }
+#        6 = { empty = yes }
+#        owns = 17
+#    }
 #
-#   mean_time_to_happen = { days = 30 }
+#    mean_time_to_happen = { days = 30 }
 #
-#   option = {
-#       name = "EVT3697003OPTA"
-#       6 = { secede_province = THIS add_core = CAN any_pop = { literacy = -0.99 } }
-#       }
-#   }
+#    option = {
+#        name = "EVT3697003OPTA"
+#        6 = { secede_province = THIS add_core = CAN any_pop = { literacy = -0.99 } }
+#        }
+#    }
 #
 
 country_event = {
@@ -2151,22 +2199,19 @@ country_event = {
             }
         }
         tag = CAN
-        OR = {
-            2068 = { any_neighbor_province = { owned_by = THIS } }
-            2068 = { any_neighbor_province = { owner = { civilized = no in_sphere = THIS } } }
-        }
+        2070 = { any_neighbor_province = { owned_by = THIS } }
         has_global_flag = berlin_conference
         owns = 2087
     }
 
-    mean_time_to_happen = { days = 1 }
+    mean_time_to_happen = { months = 4 }
 
     option = {
         name = "EVT3697006OPTA"
         2070 = { secede_province = THIS life_rating = 25 }
         2635 = { secede_province = THIS life_rating = 25 }
         2068 = { secede_province = THIS life_rating = 25 }
-        #2068 = { change_province_name = "Salisbury" }
+        2068 = { change_province_name = "Salisbury" }
         2087 = { any_pop = { limit = { type = soldiers has_pop_culture = british } move_pop = 2068 } }
         2087 = { any_pop = { limit = { type = artisans has_pop_culture = british } pop_type = soldiers } }
     }
@@ -2346,8 +2391,8 @@ country_event = {
                 target = SIK
                 attacker_goal = { casus_belli = conquest_any }
                 defender_goal = { casus_belli = humiliate }
-                    }
-            SIK = { tech_school = unciv_tech_school }
+            }
+            SIK = { tech_school = developing_tech_school }
         ai_chance = { factor = 100 }
     }
 
@@ -2375,7 +2420,7 @@ country_event = {
                 NOT = { number_of_states = 2 }
                 civilized = no
                 THIS = { nationalism_n_imperialism = 1 NOT = { has_global_flag = berlin_conference } }
-        }
+            }
             add_casus_belli = { target = THIS type = establish_protectorate_NI_casus_belli months = 24 }
         }
 
@@ -2417,7 +2462,12 @@ country_event = {
     trigger = {
         tag = BHR
         year = 1860
-        QAT = { exists = yes vassal_of = THIS }
+        is_vassal = no
+        ai = yes
+        QAT = {
+            exists = yes
+            vassal_of = THIS
+        }
         ABU = { part_of_sphere = yes }
     }
 
@@ -2457,17 +2507,15 @@ country_event = {
 
     option = {
         name = "EVT3697013OPTA"
-        relation = { who =  BHR value = -400 }
+        relation = { who = BHR value = -400 }
         diplomatic_influence = { who =  BHR value = -400 }
         relation = { who = QAT value = 400 }
-        diplomatic_influence = { who = QAT value = 400 }
-        random_country = {
-            limit = {
-                vassal_of = THIS
-                exists = yes
-                tag = BHR
-                }
-        THIS = { release_vassal = BHR }
+        diplomatic_influence = { who = QAT value = 100 }
+
+        casus_belli = {
+            target = BHR
+            type = make_puppet
+            months = 60
         }
 
         casus_belli = {
@@ -2475,22 +2523,33 @@ country_event = {
             type = add_to_sphere
             months = 60
         }
-        ai_chance = { factor = 0 }
+
+        ai_chance = {
+            factor = 5
+        }
     }
+
     option = {
         name = "EVT3697013OPTB"
         relation = { who =  BHR value = -400 }
         diplomatic_influence = { who =  BHR value = -400 }
         relation = { who = QAT value = 400 }
-        diplomatic_influence = { who = QAT value = 400 }
+
         random_country = {
             limit = {
                 vassal_of = THIS
                 exists = yes
                 tag = BHR
-                }
-        THIS = { release_vassal = BHR }
+            }
+            THIS = { release_vassal = BHR }
         }
+
+        casus_belli = {
+            target = BHR
+            type = make_puppet
+            months = 60
+        }
+
 
         casus_belli = {
             target = BHR
@@ -2500,24 +2559,20 @@ country_event = {
 
         war = {
             target = BHR
-            attacker_goal = {
-                casus_belli = add_to_sphere
-                }
-            defender_goal = {
-                casus_belli = status_quo
-                }
-            }
-        ai_chance = { factor = 100 }
+            attacker_goal = { casus_belli = add_to_sphere }
+        }
+
+        ai_chance = { factor = 90 }
     }
 
     option = {
         name = "EVT3697013OPTC"
         prestige = -5
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 5 }
     }
 }
 
-#UK relations in Arabia
+#UK relations in Arabia - REVISE/Candidate for decision
 country_event = {
 
     id = 3697014
@@ -2529,7 +2584,7 @@ country_event = {
         owns = 1173
         owns = 1175
         is_greater_power = yes
-        }
+    }
 
     fire_only_once = yes
     mean_time_to_happen = { days = 1 }
@@ -2569,17 +2624,17 @@ country_event = {
     option = {
         name = "EVTOPTA113901"
         prestige = 2
-        2478 = { trade_goods = precious_metal add_province_modifier = { name = gold_rush duration = 730 } }
         2601 = { life_rating = -5 change_province_name = "Sandy Desert" }
-        2605 = { life_rating = -5 change_province_name = "Gibson's Desert"}
+        2605 = { life_rating = -5 change_province_name = "Gibson's Desert" }
         2507 = { life_rating = -5 change_province_name = "Alice Springs" }
         2603 = { life_rating = -5 change_province_name = "Tanami" }
         2495 = { change_province_name = "Angle Pole" }
         2476 = { trade_goods = precious_metal add_province_modifier = { name = gold_rush duration = 730 } life_rating = 5 }
-        2468 = {
+        2478 = { trade_goods = precious_metal add_province_modifier = { name = gold_rush duration = 730 } }
+        2468 = { #Sydney
             trade_goods = coal
-            #remove_province_modifier = local_tractors
-            life_rating = 10
+            remove_province_modifier = local_tractors
+            life_rating = 5
             add_province_modifier = { name = gateway_to_harbor duration = 1825 }
         }
 
@@ -2598,125 +2653,21 @@ province_event = {
 
     trigger = {
         trade_goods = precious_metal
-        OR = {
-            province_id = 2478
-            province_id = 2481
-            province_id = 2472
-            province_id = 2470
-            province_id = 2334
-            province_id = 2400
-        }
-        year = 1875
+        province_id = 2400 # Rio Grande
+        year = 1893
     }
 
     mean_time_to_happen = {
         months = 24
-        modifier = {
-            factor = 10000
-            province_id = 2478
-            NOT = { year = 1900 }
-        }
-        modifier = {
-            factor = 10000
-            OR = {
-                province_id = 2478
-                province_id = 2481
-                province_id = 2472
-                province_id = 2470
-            }
-            NOT = { year = 1890 }
-        }
-        modifier = {
-            factor = 10000
-            OR = {
-                province_id = 2334
-                province_id = 2400
-            }
-            NOT = { year = 1905 }
-        }
     }
-
-    immediate = { trade_goods = grain }
 
     option = {
         name = "EVTOPTA315001"
-        owner = { random_owned = { limit = { owner = { owns = 2492 2492 = { NOT = { trade_goods = iron } } } }
-            owner = { 2492 = { trade_goods = iron } }
-            }
-        }
 
-        owner = { random_owned = { limit = { owner = { owns = 2484 2484 = { NOT = { trade_goods = coal } } } }
-            owner = { 2484 = { trade_goods = coal } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2481 2481 = { trade_goods = grain } } }
-            owner = { 2481 = { trade_goods = coal } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2472 2472 = { trade_goods = grain } } }
-            owner = { 2472 = { trade_goods = coal } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2470 2470 = { trade_goods = grain } } }
-            owner = { 2470 = { trade_goods = coal } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2494 2494 = { NOT = { trade_goods = iron } } } }
-            owner = { 2494 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2495 2495 = { NOT = { trade_goods = iron } } } }
-            owner = { 2495 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2495 2495 = { NOT = { trade_goods = iron } } } }
-            owner = { 2495 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2475 2475 = { NOT = { trade_goods = iron } } } }
-            owner = { 2475 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2473 2473 = { NOT = { trade_goods = iron } } } }
-            owner = { 2473 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2483 2483 = { NOT = { trade_goods = iron } } } }
-            owner = { 2483 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2489 2489 = { NOT = { trade_goods = iron } } } }
-            owner = { 2489 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2487 2487 = { NOT = { trade_goods = iron } } } }
-            owner = { 2487 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2482 2482 = { NOT = { trade_goods = iron } } } }
-            owner = { 2482 = { trade_goods = iron } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2400 2400 = { NOT = { trade_goods = wool } } } }
-            owner = { 2400 = { trade_goods = wool } }
-            }
-        }
-
-        owner = { random_owned = { limit = { owner = { owns = 2334 2334 = { NOT = { trade_goods = wool } } } }
-            owner = { 2334 = { trade_goods = wool } }
+        owner = {
+            random_owned = {
+                limit = { owner = { owns = 2400 2400 = { NOT = { trade_goods = grain } } } }
+                owner = { 2400 = { trade_goods = grain } }
             }
         }
     }
@@ -2818,53 +2769,25 @@ country_event = {
     fire_only_once = yes
     mean_time_to_happen = {
         months = 36 #Three years
-        modifier = {
-            factor = 1.50
-            relation = { who = USA value = 100 }
-        }
     }
 
     option = {
         name = "EVT110081OPTA" #Support Paulet!
         badboy = 5
         inherit = HAW
-        relation = { who = USA value = -200 }
-        USA = {
-            casus_belli = {
-                target = CAN
-                type = free_peoples
-                months = 30
-            }
-            casus_belli = {
-                target = CAN
-                type = humiliate
-                months = 30
-            }
-        }
+        relation = { who = USA value = -50 }
 
-        ai_chance = { factor = 30 }
-    }
-
-    option = {
-        name = "EVT110081OPTB" #Demand compensation.
-        badboy = 1
-        treasury = 2500
-        HAW = { treasury = -2500 }
-        relation = { who = USA value = -100 }
-        relation = { who = HAW value = -200 }
-        diplomatic_influence = { who = HAW value = 400 }
-
-        ai_chance = { factor = 30 }
+        ai_chance = { factor = 95 }
     }
 
     option = {
         name = "EVT110081OPTC" #Drop the case entirely.
         badboy = -1
         prestige = -5
-        relation = { who = HAW value = 25 }
+        relation = { who = HAW value = 50 }
         relation = { who = USA value = 50 }
 
-        ai_chance = { factor = 40 }
+        ai_chance = { factor = 5 }
     }
 }
 
@@ -2998,7 +2921,7 @@ country_event = {
             limit = { tag = FROM primary_culture = sotho }
             all_core = { remove_core = BSH }
             any_owned = { limit = { NOT = { is_capital = yes } } secede_province = THIS }
-            tech_school = unciv_tech_school
+            tech_school = developing_tech_school
             research_points = -5000
             remove_accepted_culture = nguni
             set_country_flag = post_colonial_country
@@ -3027,7 +2950,7 @@ country_event = {
             limit = { tag = FROM primary_culture = nguni }
             all_core = { remove_core = SUA }
             any_owned = { limit = { NOT = { is_capital = yes } } secede_province = THIS }
-            tech_school = unciv_tech_school
+            tech_school = developing_tech_school
             research_points = -5000
             remove_accepted_culture = zulu
             set_country_flag = post_colonial_country

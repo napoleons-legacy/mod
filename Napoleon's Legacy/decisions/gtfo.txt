@@ -1,7 +1,43 @@
 political_decisions = {
-    gtfo_on = { picture = gtfo alert = no potential = { num_of_vassals_no_substates  = 1 is_vassal = no NOT = { has_country_flag = gtfo has_country_flag = gtfo_disabled } } allow = { civilized = yes ai = no } effect = { set_country_flag = gtfo } }
-    gtfo_off = { picture = gtfo alert = no potential = { has_country_flag = gtfo NOT = { has_country_flag = gtfo_disabled } } allow = { ai = no } effect = { clr_country_flag = gtfo } }
-    gtfo_disabled = { picture = gtfo alert = no potential = { has_country_flag = gtfo NOT = { has_country_flag = gtfo_disabled } } allow = { ai = no } effect = { clr_country_flag = gtfo set_country_flag = gtfo_disabled } }
+    gtfo_on = {
+        picture = gtfo
+        alert = no
+        potential = {
+            OR = {
+                has_country_flag = government_decisions_on
+                ai = yes
+            }
+            num_of_vassals_no_substates = 1
+            is_vassal = no
+            NOT = { has_country_flag = gtfo has_country_flag = gtfo_disabled }
+        }
+        allow = { civilized = yes ai = no }
+        effect = { set_country_flag = gtfo }
+    }
+    gtfo_off = {
+        picture = gtfo
+        alert = no
+        potential = {
+            has_country_flag = gtfo
+            NOT = { has_country_flag = gtfo_disabled }
+        }
+        allow = { ai = no }
+        effect = { clr_country_flag = gtfo }
+    }
+    gtfo_disabled = {
+        picture = gtfo
+        alert = no
+        potential = {
+            OR = {
+                has_country_flag = government_decisions_on
+                ai = yes
+            }
+            has_country_flag = gtfo
+            NOT = { has_country_flag = gtfo_disabled }
+        }
+        allow = { ai = no }
+        effect = { clr_country_flag = gtfo set_country_flag = gtfo_disabled }
+    }
 
     gtfo_MNP = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo MNP = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no MNP = { war = no } } effect = { prestige_factor = -0.1 release_vassal = MNP diplomatic_influence = { who = MNP value = -100 } } }
     gtfo_BDK = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo BDK = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no BDK = { war = no } } effect = { prestige_factor = -0.1 release_vassal = BDK diplomatic_influence = { who = BDK value = -100 } } }
@@ -104,7 +140,6 @@ political_decisions = {
     gtfo_WES = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo WES = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no WES = { war = no } } effect = { prestige_factor = -0.1 release_vassal = WES diplomatic_influence = { who = WES value = -100 } } }
     gtfo_AKH = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo AKH = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no AKH = { war = no } } effect = { prestige_factor = -0.1 release_vassal = AKH diplomatic_influence = { who = AKH value = -100 } } }
     gtfo_ALT = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo ALT = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no ALT = { war = no } } effect = { prestige_factor = -0.1 release_vassal = ALT diplomatic_influence = { who = ALT value = -100 } } }
-    gtfo_CPL = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CPL = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CPL = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CPL diplomatic_influence = { who = CPL value = -100 } } }
     gtfo_DON = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo DON = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no DON = { war = no } } effect = { prestige_factor = -0.1 release_vassal = DON diplomatic_influence = { who = DON value = -100 } } }
     gtfo_IZH = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo IZH = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no IZH = { war = no } } effect = { prestige_factor = -0.1 release_vassal = IZH diplomatic_influence = { who = IZH value = -100 } } }
     gtfo_KAZ = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo KAZ = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no KAZ = { war = no } } effect = { prestige_factor = -0.1 release_vassal = KAZ diplomatic_influence = { who = KAZ value = -100 } } }
@@ -264,7 +299,6 @@ political_decisions = {
     gtfo_SCA = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo SCA = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no SCA = { war = no } } effect = { prestige_factor = -0.1 release_vassal = SCA diplomatic_influence = { who = SCA value = -100 } } }
     gtfo_SWE = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo SWE = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no SWE = { war = no } } effect = { prestige_factor = -0.1 release_vassal = SWE diplomatic_influence = { who = SWE value = -100 } } }
     gtfo_CAT = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CAT = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CAT = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CAT diplomatic_influence = { who = CAT value = -100 } } }
-    gtfo_FLA = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo FLA = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no FLA = { war = no } } effect = { prestige_factor = -0.1 release_vassal = FLA diplomatic_influence = { who = FLA value = -100 } } }
     gtfo_IRE = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo IRE = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no IRE = { war = no } } effect = { prestige_factor = -0.1 release_vassal = IRE diplomatic_influence = { who = IRE value = -100 } } }
     gtfo_NET = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo NET = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no NET = { war = no } } effect = { prestige_factor = -0.1 release_vassal = NET diplomatic_influence = { who = NET value = -100 } } }
     gtfo_POR = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo POR = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no POR = { war = no } } effect = { prestige_factor = -0.1 release_vassal = POR diplomatic_influence = { who = POR value = -100 } } }
@@ -326,7 +360,6 @@ political_decisions = {
     gtfo_CRO = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CRO = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CRO = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CRO diplomatic_influence = { who = CRO value = -100 } } }
     gtfo_CYP = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CYP = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CYP = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CYP diplomatic_influence = { who = CYP value = -100 } } }
     gtfo_GRE = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo GRE = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no GRE = { war = no } } effect = { prestige_factor = -0.1 release_vassal = GRE diplomatic_influence = { who = GRE value = -100 } } }
-    gtfo_ION = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo ION = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no ION = { war = no } } effect = { prestige_factor = -0.1 release_vassal = ION diplomatic_influence = { who = ION value = -100 } } }
     gtfo_MOL = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo MOL = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no MOL = { war = no } } effect = { prestige_factor = -0.1 release_vassal = MOL diplomatic_influence = { who = MOL value = -100 } } }
     gtfo_MON = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo MON = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no MON = { war = no } } effect = { prestige_factor = -0.1 release_vassal = MON diplomatic_influence = { who = MON value = -100 } } }
     gtfo_ROM = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo ROM = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no ROM = { war = no } } effect = { prestige_factor = -0.1 release_vassal = ROM diplomatic_influence = { who = ROM value = -100 } } }
@@ -336,7 +369,7 @@ political_decisions = {
     gtfo_WAL = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo WAL = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no WAL = { war = no } } effect = { prestige_factor = -0.1 release_vassal = WAL diplomatic_influence = { who = WAL value = -100 } } }
     gtfo_YUG = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo YUG = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no YUG = { war = no } } effect = { prestige_factor = -0.1 release_vassal = YUG diplomatic_influence = { who = YUG value = -100 } } }
     gtfo_ALD = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo ALD = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no ALD = { war = no } } effect = { prestige_factor = -0.1 release_vassal = ALD diplomatic_influence = { who = ALD value = -100 } } }
-    gtfo_CNG = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CNG = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CNG = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CNG diplomatic_influence = { who = CNG value = -100 } } }
+    gtfo_CNG = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo NOT = { has_country_flag = zaire_master } CNG = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CNG = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CNG diplomatic_influence = { who = CNG value = -100 } } }
     gtfo_EGY = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo EGY = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no EGY = { war = no } } effect = { prestige_factor = -0.1 release_vassal = EGY diplomatic_influence = { who = EGY value = -100 } } }
     gtfo_ETH = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo ETH = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no ETH = { war = no } } effect = { prestige_factor = -0.1 release_vassal = ETH diplomatic_influence = { who = ETH value = -100 } } }
     gtfo_MAD = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo MAD = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no MAD = { war = no } } effect = { prestige_factor = -0.1 release_vassal = MAD diplomatic_influence = { who = MAD value = -100 } } }
@@ -421,6 +454,7 @@ political_decisions = {
     gtfo_CAL = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CAL = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CAL = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CAL diplomatic_influence = { who = CAL value = -100 } } }
     gtfo_CAN = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CAN = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CAN = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CAN diplomatic_influence = { who = CAN value = -100 } } }
     gtfo_CHE = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CHE = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CHE = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CHE diplomatic_influence = { who = CHE value = -100 } } }
+    gtfo_COL = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo COL = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no COL = { war = no } } effect = { prestige_factor = -0.1 release_vassal = COL diplomatic_influence = { who = COL value = -100 } } }
     gtfo_COS = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo COS = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no COS = { war = no } } effect = { prestige_factor = -0.1 release_vassal = COS diplomatic_influence = { who = COS value = -100 } } }
     gtfo_CSA = { picture = gtfo alert = no potential = { CSA = { NOT = { has_country_flag = unreleasable_country } } has_country_flag = gtfo CSA = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { ai = no } effect = { prestige = -20 release_vassal = CSA diplomatic_influence = { who = CSA value = -100 } } }
     gtfo_CUB = { picture = gtfo alert = no potential = { ai = no has_country_flag = gtfo CUB = { vassal_of = THIS NOT = { substate_of = THIS } } } allow = { war = no CUB = { war = no } } effect = { prestige_factor = -0.1 release_vassal = CUB diplomatic_influence = { who = CUB value = -100 } } }

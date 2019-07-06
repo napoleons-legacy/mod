@@ -22,7 +22,7 @@
     clerks = {
         culture = swiss
         religion = protestant
-        size = 60
+        size = 100
     }
 
     craftsmen = {
@@ -64,7 +64,7 @@
     clerks = {
         culture = swiss
         religion = catholic
-        size = 30
+        size = 100
     }
 
     craftsmen = {
@@ -90,6 +90,50 @@
         religion = catholic
         size = 45720
     }
+
+    ######Jews
+    aristocrats = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    artisans = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 #Basel (272000/68000 POPS)
 604 = {
@@ -108,7 +152,7 @@
     clerks = {
         culture = swiss
         religion = protestant
-        size = 35
+        size = 100
     }
 
     craftsmen = {
@@ -150,7 +194,7 @@
     clerks = {
         culture = swiss
         religion = catholic
-        size = 30
+        size = 100
     }
 
     craftsmen = {
@@ -212,7 +256,7 @@
     clerks = {
         culture = swiss
         religion = protestant
-        size = 75
+        size = 100
     }
 
     craftsmen = {
@@ -273,7 +317,7 @@
 
 }
 #Vaud & Valais Region (444000)
-#Lausanne (316000/79000 POPS)
+#Geneva (316000/79000 POPS)
 607 = {
     aristocrats = {
         culture = swiss
@@ -303,6 +347,48 @@
         culture = swiss
         religion = protestant
         size = 4000
+    }
+
+    soldiers = {
+        culture = swiss
+        religion = protestant
+        size = 1100
+    }
+
+    farmers = {
+        culture = swiss
+        religion = protestant
+        size = 37320
+    }
+
+    aristocrats = {
+        culture = swiss
+        religion = catholic
+        size = 300
+    }
+
+    bureaucrats = {
+        culture = swiss
+        religion = catholic
+        size = 80
+    }
+
+    officers = {
+        culture = swiss
+        religion = catholic
+        size = 50
+    }
+
+    clergymen = {
+        culture = swiss
+        religion = catholic
+        size = 350
+    }
+
+    artisans = {
+        culture = swiss
+        religion = catholic
+        size = 3000
     }
 
     soldiers = {
@@ -462,13 +548,13 @@
     aristocrats = {
         culture = swiss
         religion = protestant
-        size = 50
+        size = 100
     }
 
     clergymen = {
         culture = swiss
         religion = protestant
-        size = 50
+        size = 100
     }
 
     artisans = {
@@ -480,7 +566,7 @@
     soldiers = {
         culture = swiss
         religion = protestant
-        size = 75
+        size = 100
     }
 
     farmers = {
@@ -493,7 +579,6 @@
 
 #Geneva, formerly Anderma
 2687 = {
-
     aristocrats = {
         culture = swiss
         religion = protestant

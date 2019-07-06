@@ -21,8 +21,6 @@ political_decisions = {
                 }
                 owner = { government = democracy }
             }
-            small_arms = 50
-            regular_clothes = 50
             add_country_modifier = {
                 name = trek_boers
                 duration = 730
@@ -404,7 +402,7 @@ political_decisions = {
     }
 
     claim_north_cape_colony = {
-        picture = map_africa
+        picture = map_saf
         potential = {
             tag = SAF
             2093 = {
@@ -462,7 +460,7 @@ political_decisions = {
     }
 
     claim_xhosa_lands = {
-        picture = map_africa
+        picture = xhosa_people
         potential = {
             tag = SAF
             owns = 2087

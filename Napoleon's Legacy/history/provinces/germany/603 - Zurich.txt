@@ -16,7 +16,7 @@ party_loyalty = {
 
 state_building = {
     level = 1
-    building = fabric_factory
+    building = artillery_factory
     upgrade = yes
 }
 state_building = {

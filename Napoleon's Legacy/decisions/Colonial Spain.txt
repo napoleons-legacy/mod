@@ -1,7 +1,7 @@
 political_decisions = {
 
     education_decree_1863 = {
-        picture = map_phillipines
+        picture = map_philippines
         potential = {
             OR = {
                 tag = SPA

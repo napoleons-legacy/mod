@@ -24,7 +24,7 @@ clipper_transport = {
     build_cost = {
         clipper_convoy = 4
     }
-    min_port_level = 0
+    min_port_level = 1
     limit_per_port = -1
     supply_consumption_score = 1
 

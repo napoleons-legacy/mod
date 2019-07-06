@@ -105,7 +105,7 @@ country_event = {
         set_country_flag = greek_foreign_funding
         ai_chance = {
             factor = 60
-            modifier {
+            modifier = {
                 factor = 0.75
                 relation = {
                     who = TUR

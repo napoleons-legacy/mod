@@ -21,6 +21,9 @@ political_decisions = {
         effect = {
             prestige = 15
             capital = 300
+            remove_accepted_culture = british
+            primary_culture = british
+            add_accepted_culture = anglo_canadian
             set_country_flag = capital_moved_back
         }
 

@@ -1,8 +1,8 @@
 #name = "War of Northern Aggression"
 
-1900.6.30 = {
+1861.6.30 = {
     add_attacker = USA
-    add_defender = CSA
+    add_defender = NEN
 
     # actor
     # receiver
@@ -12,11 +12,11 @@
     war_goal = {
         casus_belli = civil_war
         actor = USA
-        receiver = CSA
+        receiver = NEN
     }
     war_goal = {
         casus_belli = status_quo
-        actor = CSA
+        actor = NEN
         receiver = USA
     }
 

@@ -54,10 +54,16 @@ education_reform = yes_education_reform
 finance_reform = yes_finance_reform
 
 # Technologies
+flintlock_rifles = 1
 
 # Inventions
+small_arms_production = yes
+ammunition_production = yes
 #bottling_process = yes
 modern_winemaking = yes
+big_sail_ships = yes
+sail_ships_transport = yes
+big_sail_support = yes
 
 # Starting Consciousness
 consciousness = 0

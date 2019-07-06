@@ -103,7 +103,6 @@ political_decisions = {
             AUS_619 = { add_core = AUS }
             AUS_612 = { add_core = AUS }
             AUS_613 = { add_core = AUS }
-            AUS_734 = { add_core = AUS }
             capital = 641
             any_pop = {
                 limit = { has_pop_culture = south_german }
@@ -133,8 +132,8 @@ political_decisions = {
 
         effect = {
             set_country_flag = hungarian_revolution_began
-            small_arms = 100
-            regular_clothes = 100
+            small_arms = 10
+            regular_clothes = 10
             leadership = 40
             define_general = {
                 name = "Józef Bem"
@@ -205,9 +204,11 @@ political_decisions = {
 
         effect = {
             clr_global_flag = hungarian_revolution_occurred
+            end_war = AUS
+            set_country_flag = annex_to_master
             AUS = {
                 prestige = 25
-                inherit = HUN
+                create_vassal = HUN
                 any_pop = {
                     scaled_militancy = {
                         ideology = liberal
@@ -215,6 +216,47 @@ political_decisions = {
                     }
                 }
             }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    release_galicia = {
+        potential = {
+            OR = {
+                tag = AUS
+                tag = KUK
+            }
+            owns = 702
+            ai = yes
+            NOT = {
+                exists = GLM
+                has_country_flag = released_galicia
+            }
+        }
+
+        allow = {
+            OR = {
+                NOT = { owns = 631 }
+                NOT = { owns = 2584 }
+            }
+            NOT = { owns = 637 }
+            NOT = { owns = 661 }
+        }
+
+        effect = {
+            set_country_flag = released_galicia
+            prestige = 10
+            any_owned = {
+                limit = { is_core = GLM }
+                secede_province = GLM
+            }
+            create_vassal = GLM
+            create_alliance = GLM
+            diplomatic_influence = { who = GLM value = 200 }
+            relation = { who = GLM value = 200 }
         }
 
         ai_will_do = {
@@ -406,6 +448,41 @@ political_decisions = {
             641 = {
                 life_rating = 5
                 add_province_modifier = { name = recently_built_city duration = 1825 }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    take_eisenstadt = {
+        picture = budapest_city
+        potential = {
+            tag = AUS
+            owns = 619
+            owns = 620
+            624 = {
+                NOT = { owned_by = THIS }
+                owner = { vassal_of = THIS }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            random_country = {
+                limit = {
+                    tag = HUN
+                    vassal_of = THIS
+                    owns = 624
+                    ai = yes
+                }
+                624 = { remove_core = HUN }
+            }
+            624 = {
+                secede_province = THIS
+                add_core = THIS
             }
         }
 

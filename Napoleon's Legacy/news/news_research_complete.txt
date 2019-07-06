@@ -45,7 +45,6 @@ news_priority =
                 tags_eq = { 0 0 SPA }
                 tags_eq = { 0 0 TUR }
                 tags_eq = { 0 0 NET }
-                tags_eq = { 0 0 BEL }
             }
         }
         priority_add = 10
@@ -91,7 +90,6 @@ news_priority =
                 tags_eq = { 0 0 SPA }
                 tags_eq = { 0 0 TUR }
                 tags_eq = { 0 0 NET }
-                tags_eq = { 0 0 BEL }
                 tags_eq = { 0 0 SWE }
                 tags_eq = { 0 0 SCA }
                 tags_eq = { 0 0 CAN }

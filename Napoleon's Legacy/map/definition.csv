@@ -31,16 +31,6 @@ province;red;green;blue;x;x
 30;128;32;64;Regina;x
 31;192;96;0;Stanley;x
 32;192;96;128;Prince Albert;x
-3300;0;15;255;Siling Lake;x
-3301;0;16;255;Hung-tse Lake;x
-3302;0;17;255;Khanka Lake;x
-3303;0;18;255;Lake Alakol;x
-3304;0;19;255;Lake Zaysan;x
-3305;0;20;255;Khovsgol Lake;x
-3306;0;21;255;Uvs Lake;x
-3307;0;22;255;Khyargas Lake;x
-3308;0;23;255;Khar Us Lake;x
-3309;0;24;255;Namak Lake;x
 33;128;96;128;Asquith;x
 34;192;224;128;Saskatoon;x
 35;128;224;128;Maple Creek;x
@@ -333,74 +323,13 @@ province;red;green;blue;x;x
 322;96;64;96;Stockholm;x
 323;160;1;160;Falun;x
 324;196;128;165;Uppsala;x
-3250;26;27;255;Dead Sea;x
-3251;111;17;245;Lake of the Woods;x
-3252;111;17;246;Lake Nipissing;x
-3253;111;17;247;Lake Simcoe;x
-3254;111;17;248;Lake Winnebago;x
-3255;1;222;201;Iberá lake;x
-3256;1;222;202;Lake Saint-Jean;x
-3257;1;222;203;Lake Manicouagan;x
-3258;1;222;204;Lake Mistassini;x
-3259;1;222;205;Lake Sakami;x
 325;192;192;224;Norrkoping;x
-3260;1;222;206;Lobstick Lake;x
-3261;1;222;207;Lake Bienville;x
-3262;1;222;208;Clearwater Lakes;x
-3263;1;222;209;Lake Qullinaaraaluk;x
-3264;1;222;210;God's Lake;x
-3265;1;222;211;Wollaston Lake;x
-3266;1;222;212;Cree Lake;x
-3267;1;222;213;Churchill Lake;x
-3268;1;222;214;Nueltin Lake;x
-3269;1;222;215;Kasba Lake;x
 326;1;1;160;Vasteras;x
-3270;1;222;216;Wholdaia Lake;x
-3271;1;222;217;Dubawnt Lake;x
-3272;1;222;218;Yathkyed Lake;x
-3273;1;222;219;Baker Lake;x
-3274;1;222;220;Schultz Lake;x
-3275;1;222;221;Aberdeen Lake;x
-3276;1;222;222;Clinton-Colden Lake;x
-3277;1;222;223;Williston Lake;x
-3278;1;222;224;Lake Okeechobee;x
-3279;1;222;225;Lake Tuz;x
 327;248;228;0;Orebro;x
-3280;1;222;226;Sevan Lake;x
-3281;1;222;227;Therthar Lake;x
-3282;1;222;228;Razazza Lake;x
-3283;17;20;233;Lake Geneva
-3284;1;222;229;Lake Constance;x
-3285;111;17;244;Fagnano Lake;x
-3286;0;1;255;Songkhla Lake;x
-3287;0;2;255;Lake Gairdner;x
-3288;0;3;255;Lake Torrens;x
-3289;0;4;255;Lake Frome;x
 328;160;128;33;Karlstad;x
-3290;0;5;255;Lake Eyre;x
-3291;0;6;255;Lake Mackay;x
-3292;0;7;255;Lake Argyle;x
-3293;0;8;255;Lake Rukwa;x
-3294;0;9;255;Lake Mweru;x
-3295;0;10;255;Taihu Lake;x
-3296;0;11;255;Chott el Djerid;x
-3297;0;12;255;Chott Melghir;x
-3298;0;13;255;Chott el Hodna;x
-3299;0;14;255;Chott Chergui;x
 329;65;192;224;Gothenburg;x
 330;160;1;32;Boras;x
-3310;0;25;255;Hulun Lake;x
-3311;73;43;222;Lough Neagh;x
-3312;0;26;255;Lake Hjalmaren;x
-3313;0;27;255;Lake Siljan;x
-3314;0;28;255;Lake Storsjon;x
-3315;0;29;255;Lake Segozero;x
-3316;0;30;255;Lake Oulujarvi;x
-3317;0;31;255;Lake Päijänne;x
-3318;0;32;255;Lake Saimaa;x
-3319;0;33;255;Lake Iso-Kalla;x
 331;33;192;224;Gotland;x
-3320;0;34;255;Lake Pyhajarvi;x
 332;64;64;223;Kalmar;x
 333;65;192;97;Vaxjo;x
 334;192;65;97;Malmo;x
@@ -3319,3 +3248,76 @@ province;red;green;blue;x;x
 3247;52;14;236;West Hawaii;x
 3248;53;14;240;West Magellan Strait;x
 3249;144;176;1;Kiritimati;x
+3250;26;27;255;Dead Sea;x
+3251;111;17;245;Lake of the Woods;x
+3252;111;17;246;Lake Nipissing;x
+3253;111;17;247;Lake Simcoe;x
+3254;111;17;248;Lake Winnebago;x
+3255;1;222;201;Iberá lake;x
+3256;1;222;202;Lake Saint-Jean;x
+3257;1;222;203;Lake Manicouagan;x
+3258;1;222;204;Lake Mistassini;x
+3259;1;222;205;Lake Sakami;x
+3260;1;222;206;Lobstick Lake;x
+3261;1;222;207;Lake Bienville;x
+3262;1;222;208;Clearwater Lakes;x
+3263;1;222;209;Lake Qullinaaraaluk;x
+3264;1;222;210;God's Lake;x
+3265;1;222;211;Wollaston Lake;x
+3266;1;222;212;Cree Lake;x
+3267;1;222;213;Churchill Lake;x
+3268;1;222;214;Nueltin Lake;x
+3269;1;222;215;Kasba Lake;x
+3270;1;222;216;Wholdaia Lake;x
+3271;1;222;217;Dubawnt Lake;x
+3272;1;222;218;Yathkyed Lake;x
+3273;1;222;219;Baker Lake;x
+3274;1;222;220;Schultz Lake;x
+3275;1;222;221;Aberdeen Lake;x
+3276;1;222;222;Clinton-Colden Lake;x
+3277;1;222;223;Williston Lake;x
+3278;1;222;224;Lake Okeechobee;x
+3279;1;222;225;Lake Tuz;x
+3280;1;222;226;Sevan Lake;x
+3281;0;33;255;Lake Iso-Kalla;x
+3282;0;34;255;Lake Pyhajarvi;x
+3283;17;20;233;Lake Geneva
+3284;1;222;229;Lake Constance;x
+3285;111;17;244;Fagnano Lake;x
+3286;0;1;255;Songkhla Lake;x
+3287;0;2;255;Lake Gairdner;x
+3288;0;3;255;Lake Torrens;x
+3289;0;4;255;Lake Frome;x
+3290;0;5;255;Lake Eyre;x
+3291;0;6;255;Lake Mackay;x
+3292;0;7;255;Lake Argyle;x
+3293;0;8;255;Lake Rukwa;x
+3294;0;9;255;Lake Mweru;x
+3295;0;10;255;Taihu Lake;x
+3296;0;11;255;Chott el Djerid;x
+3297;0;12;255;Chott Melghir;x
+3298;0;13;255;Chott el Hodna;x
+3299;0;14;255;Chott Chergui;x
+3300;0;15;255;Siling Lake;x
+3301;0;16;255;Hung-tse Lake;x
+3302;0;17;255;Khanka Lake;x
+3303;0;18;255;Lake Alakol;x
+3304;0;19;255;Lake Zaysan;x
+3305;0;20;255;Khovsgol Lake;x
+3306;0;21;255;Uvs Lake;x
+3307;0;22;255;Khyargas Lake;x
+3308;0;23;255;Khar Us Lake;x
+3309;0;24;255;Namak Lake;x
+3310;0;25;255;Hulun Lake;x
+3311;73;43;222;Lough Neagh;x
+3312;0;26;255;Lake Hjalmaren;x
+3313;0;27;255;Lake Siljan;x
+3314;0;28;255;Lake Storsjon;x
+3315;0;29;255;Lake Segozero;x
+3316;0;30;255;Lake Oulujarvi;x
+3317;0;31;255;Lake Päijänne;x
+3318;0;32;255;Lake Saimaa;x
+3319;1;129;178;Vahitahi;x
+3320;1;129;179;Vairaatea;x
+3321;1;129;180;Nukutavake;x
+3322;1;129;181;Pinaki;x

@@ -4,7 +4,7 @@
 #                                                        #
 #########################################################
 
-#The Kan�n-i Es�s�
+#The Kanûn-i Esâsî
 country_event = {
     id = 98625
     title = "EVTNAME98625"
@@ -233,6 +233,15 @@ country_event = {
         political_reform = state_press
         political_reform = state_controlled
         political_reform = underground_parties
+
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
 
         add_country_modifier = {
             name = national_confusion
@@ -695,7 +704,7 @@ country_event = {
                         region = TUR_894 #Adana
                         region = TUR_885 #Kars
                         region = EGY_897 #Aleppo
-                        region = TUR_923 #Mosul
+                        #region = TUR_923 #Mosul
                     }
                 }
                 remove_core = TUR
@@ -721,7 +730,7 @@ country_event = {
                     region = TUR_894 #Adana
                     region = TUR_885 #Kars
                     region = EGY_897 #Aleppo
-                    region = TUR_923 #Mosul
+                    #region = TUR_923 #Mosul
                 }
             }
             remove_core = TUR
@@ -972,6 +981,7 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
+        war = no
         NOT = { tag = CYR }
         owns = 1735
         1738 = { empty = yes }
@@ -980,7 +990,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 24
+        months = 12
     }
 
 
@@ -996,7 +1006,13 @@ country_event = {
         diplomatic_influence = { who = CYR value = -400 }
 
         any_country = {
-            limit = { OR = { NOT = { has_country_flag = sunni_country } tag = THIS } }
+            limit = {
+                exists = yes
+                OR = {
+                    NOT = { has_country_flag = sunni_country }
+                    tag = THIS
+                }
+            }
             relation = { who = CYR value = -200 }
             diplomatic_influence = { who = CYR value = -200 }
         }
@@ -1304,9 +1320,9 @@ country_event = {
 
         war = {
             target = CYR
-                attacker_goal = { casus_belli = conquest_any }
-                defender_goal = { casus_belli = humiliate }
-         }
+            attacker_goal = { casus_belli = conquest_any }
+            defender_goal = { casus_belli = humiliate }
+        }
         ai_chance = { factor = 100 }
     }
 }
@@ -1549,6 +1565,14 @@ country_event = {
             political_reform = underground_parties
             political_reform = primary_culture_only
             political_reform = mandatory_service
+            clr_country_flag = election_started
+            clr_country_flag = conservative_party_in_power
+            clr_country_flag = liberal_party_in_power
+            clr_country_flag = reactionary_party_in_power
+            clr_country_flag = socialist_party_in_power
+            clr_country_flag = communist_party_in_power
+            clr_country_flag = fascist_party_in_power
+            clr_country_flag = anarcho_liberal_party_in_power
 
             add_country_modifier = { name = national_confusion duration = 365 }
         }
@@ -1591,6 +1615,14 @@ country_event = {
             political_reform = underground_parties
             political_reform = primary_culture_only
             political_reform = mandatory_service
+            clr_country_flag = election_started
+            clr_country_flag = conservative_party_in_power
+            clr_country_flag = liberal_party_in_power
+            clr_country_flag = reactionary_party_in_power
+            clr_country_flag = socialist_party_in_power
+            clr_country_flag = communist_party_in_power
+            clr_country_flag = fascist_party_in_power
+            clr_country_flag = anarcho_liberal_party_in_power
 
             add_country_modifier = { name = national_confusion duration = 365 }
         }
@@ -1628,7 +1660,13 @@ country_event = {
         1847 = { empty = yes }
     }
 
-    mean_time_to_happen = { months = 1 }
+    mean_time_to_happen = {
+        months = 12
+        modifier = {
+            factor = 0.25
+            has_global_flag = berlin_conference
+        }
+    }
 
 
     option = {
@@ -1686,13 +1724,19 @@ country_event = {
         owns = 1840
         1841 = { empty = yes }
         1842 = { empty = yes }
-        1843 = { empty = yes }
         1739 = { empty = yes }
         1839 = { empty = yes }
-        has_global_flag = berlin_conference
+        year = 1874
     }
 
-    mean_time_to_happen = { months = 4 }
+    mean_time_to_happen = {
+        months = 12
+
+        modifier = {
+            factor = 0.25
+            has_global_flag = berlin_conference
+        }
+    }
 
 
     option = {
@@ -1710,13 +1754,6 @@ country_event = {
             add_core = DAR
             any_pop = { literacy = -0.99 }
         }
-        1843 = {
-            secede_province = THIS
-            life_rating = 25
-            add_core = SUD
-            add_core = DAR
-            any_pop = { literacy = -0.99 }
-        }
         1739 = {
             secede_province = THIS
             add_core = SUD
@@ -1727,6 +1764,12 @@ country_event = {
             life_rating = 22
             add_core = SUD
             add_core = DAR
+            any_pop = { literacy = -0.99 }
+        }
+        1843 = {
+            secede_province = THIS
+            life_rating = 25
+            add_core = SUD
             any_pop = { literacy = -0.99 }
         }
 
@@ -1754,20 +1797,26 @@ country_event = {
             add_core = DAR
             any_pop = { literacy = -0.99 }
         }
-        1843 = {
+        1739 = {
             secede_province = THIS
-            life_rating = 25
+            add_core = SUD
+            any_pop = { literacy = -0.99 }
+        }
+        1839 = {
+            secede_province = THIS
+            life_rating = 22
             add_core = SUD
             add_core = DAR
             any_pop = { literacy = -0.99 }
         }
 
-        any_owned = { limit = {
-            is_core = DAR
-            NOT = { province_id = 1845 }
-                }
-            secede_province = DAR
+        any_owned = {
+            limit = {
+                is_core = DAR
+                NOT = { province_id = 1845 }
             }
+            secede_province = DAR
+        }
 
         ai_chance = { factor = 0 }
     }
@@ -1925,9 +1974,15 @@ country_event = {
             has_country_flag = egypt_limited_rule_agreed
         }
         war = no
-        BHT = { exists = yes NOT = { has_country_flag = yazidi_kurdistan } }
+        BHT = {
+            exists = yes
+            NOT = { has_country_flag = yazidi_kurdistan }
+        }
         EGY = { war = no }
-        NOT = { year = 1860 }
+        NOT = {
+            year = 1860
+            exists = KDS
+        }
     }
 
     fire_only_once = yes
@@ -1939,7 +1994,7 @@ country_event = {
         set_country_flag = return_persian_lands_on_finish
         2414 = { change_province_name = "Cizre" }
         892 = { change_province_name = "Hakkari" }
-        924 = { change_province_name = "Arbil" }
+        924 = { change_province_name = "Erbil" }
         925 = { change_province_name = "Kirkuk" }
         release_vassal = BHT
         diplomatic_influence = { who = BHT value = -400 }
@@ -1995,7 +2050,7 @@ country_event = {
             relation = { who = BHT value = -400 }
             country_event = 986501
             war = {
-            target = BHT
+                target = BHT
                 attacker_goal = {
                     casus_belli = acquire_core_state
                     state_province_id  = 1111
@@ -2022,7 +2077,7 @@ country_event = {
         set_country_flag = return_persian_lands_on_finish
         2414 = { change_province_name = "Cizre" }
         892 = { change_province_name = "Hakkari" }
-        924 = { change_province_name = "Arbil" }
+        924 = { change_province_name = "Erbil" }
         925 = { change_province_name = "Kirkuk" }
         release_vassal = BHT
         diplomatic_influence = { who = BHT value = -400 }
@@ -2071,7 +2126,7 @@ country_event = {
         name = "EVT986503OPTC"
         2414 = { change_province_name = "Cizre" }
         892 = { change_province_name = "Hakkari" }
-        924 = { change_province_name = "Arbil" }
+        924 = { change_province_name = "Erbil" }
         925 = { change_province_name = "Kirkuk" }
         prestige = 5
         release_vassal = BHT
@@ -2196,8 +2251,13 @@ country_event = {
     trigger = {
         tag = TUR
         has_country_flag = return_persian_lands_on_finish
-        BHT = { exists = no }
+        NOT =  {
+            exists = BHT
+            exists = KDS
+            year = 1880
+        }
         owns = 2414
+        war = no
     }
 
     fire_only_once = yes
@@ -2209,21 +2269,36 @@ country_event = {
         clr_country_flag = return_persian_lands_on_finish
         any_owned = {
             limit = {
-            OR = {
-                is_core = SRN
-                is_core = BHT
-                is_core = BNB
-                is_core = BDN
-                is_core = BTL
+                OR = {
+                    is_core = SRN
+                    is_core = BHT
+                    is_core = BNB
+                    is_core = BDN
+                    is_core = BTL
                 }
             }
-            any_pop = { limit = { OR = { has_pop_religion = yazidi has_pop_religion = catholic has_pop_religion = orthodox } }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_religion = yazidi
+                        has_pop_religion = catholic
+                        has_pop_religion = orthodox
+                    }
+                }
                 militancy = -3
                 consciousness = -3
             }
         }
 
-        any_owned = { limit = { OR = { is_core = RDL is_core = MKN } } secede_province = PER }
+        any_owned = {
+            limit = {
+                OR = {
+                    is_core = RDL
+                    is_core = MKN
+                }
+            }
+            secede_province = PER
+        }
 
         BTL = { all_core = { remove_core = BTL } }
         BDN = { all_core = { remove_core = BDN } }
@@ -2611,10 +2686,6 @@ country_event = {
                 any_pop = { limit = { has_pop_culture = turkish } move_pop = 860 }
             }
         }
-        random_owned = {
-            limit = { province_id = 860 any_pop = { has_pop_culture = greek } }
-            any_pop = { limit = { has_pop_culture = greek } move_pop = 834 }
-        }
 
         FROM = {
             random_owned = {
@@ -2732,7 +2803,13 @@ country_event = {
 
         ai_chance = {
             factor = 0.9
-            modifier = { factor = 0.25 is_greater_power = yes is_disarmed = no military_score = 50 FROM = { is_greater_power = no } }
+            modifier = {
+                factor = 0.25
+                is_greater_power = yes
+                is_disarmed = no
+                military_score = 50
+                FROM = { is_greater_power = no }
+            }
         }
     }
 
@@ -2742,7 +2819,13 @@ country_event = {
         badboy = 1
         ai_chance = {
             factor = 0.1
-            modifier = { factor = 1.25 is_greater_power = yes is_disarmed = no military_score = 50 FROM = { is_greater_power = no } }
+            modifier = {
+                factor = 1.25
+                is_greater_power = yes
+                is_disarmed = no
+                military_score = 50
+                FROM = { is_greater_power = no }
+            }
             modifier = {
                 factor = 0
                 OR = {
@@ -3677,15 +3760,26 @@ country_event = {
     picture = "qatar_beach"
 
     trigger = {
-        tag = TUR
-        exists = QAT
         war = no
-        has_country_flag = tanzimat_reforms_enacted
-        government = absolute_monarchy
+        exists = QAT
+        OR = {
+            AND = {
+                has_country_flag = tanzimat_reforms_enacted
+                tag = TUR
+            }
+            tag = EGY
+        }
+        OR = {
+            government = absolute_monarchy
+            government = hms_government
+            government = prussian_constitutionalism
+        }
         revolution_n_counterrevolution = 1
-        year = 1870
-        NOT = { year = 1885 }
-        QAT = { is_vassal = no ai = no }
+        NOT = { year = 1890 }
+        QAT = {
+            is_vassal = no
+            ai = yes
+        }
         owns = 1163
         owns = 1164
         NOT = { has_country_flag = qatar_protection }
@@ -3705,7 +3799,10 @@ country_event = {
         name = "EVT168050OPTA"#protect
         set_country_flag = qatar_protection
         QAT = { annex_to = TUR }
-        1165 = { add_core = TUR }
+        1165 = {
+            remove_core = BHR
+            add_core = TUR
+        }
         ai_chance = {
             factor = 0.99
         }
@@ -3728,12 +3825,14 @@ country_event = {
     picture = "arab_revolt"
 
     trigger = {
-        tag = TUR
+        OR = {
+            tag = TUR
+            tag = EGY
+        }
         NOT = { exists = QAT }
         owns = 1165
-        is_core = 1165
-        has_country_flag = qatar_protection
-        year = 1890
+        year = 1900
+        1165 = { average_militancy = 3 }
     }
 
     fire_only_once = yes
@@ -3770,11 +3869,13 @@ country_event = {
     picture = "al_wajbah"
 
     trigger = {
-        tag = TUR
+        OR = {
+            tag = TUR
+            tag = EGY
+        }
         NOT = { exists = QAT }
         owns = 1165
-        NOT = { is_core = 1165 }
-        has_country_flag = qatar_protection
+        1165 = { average_militancy = 5 }
         year = 1905
     }
 
@@ -3795,6 +3896,11 @@ country_event = {
     option = {
         name = "EVT168070OPTA"#Yes
         release = QAT
+        random_owned = {
+            limit = { province_id = 1162 }
+            remove_core = THIS
+            owner = { release = BHR }
+        }
         ai_chance = {
             factor = 0.7
             modifier = { factor = 0.1 war_policy = jingoism }
@@ -3806,7 +3912,13 @@ country_event = {
     option = {
         name = "EVT168070OPTB"#Release as vassal
         release_vassal = QAT
-        badboy = 5
+        random_owned = {
+            limit = { province_id = 1162 }
+            remove_core = THIS
+            owner = { release_vassal = BHR }
+        }
+        badboy = 2
+        relation = { who = ENG value = -100 }
         relation = { who = PER value = -100 }
         ai_chance = {
             factor = 0.2
@@ -3820,15 +3932,67 @@ country_event = {
 
     option = {
         name = "EVT168070OPTC"#Reassert our right to rule
-        1165 = {
-            add_core = TUR
-            any_pop = {
-                militancy = 9
-                consciousness = 9
+        badboy = 2
+        random_country = {
+            limit = {
+                exists = yes
+                NOT = { tag = THIS }
+                owns = 1121
+            }
+            relation = { who = THIS value = -100 }
+        }
+
+        random_country = {
+            limit = {
+                exists = yes
+                NOT = { tag = THIS }
+                OR = {
+                    owns = 1236
+                    owns = 1251
+                }
+            }
+            relation = { who = THIS value = -100 }
+        }
+
+        random_country = {
+            limit = {
+                exists = yes
+                NOT = { tag = THIS }
+                owns = 1167
+            }
+            relation = { who = THIS value = -100 }
+        }
+
+        random_country = {
+            limit = {
+                exists = yes
+                NOT = { tag = THIS }
+                owns = 1157
+            }
+            relation = { who = THIS value = -100 }
+        }
+
+        release = QAT
+        random_owned = {
+            limit = { province_id = 1162 }
+            remove_core = THIS
+            owner = { release = BHR }
+            BHR = { create_alliance = QAT }
+            owner = {
+                war = {
+                    target = BHR
+                    attacker_goal = { casus_belli = conquest_any }
+                    call_ally = no
+                }
             }
         }
-        badboy = 7.5
-        relation = { who = PER value = -200 }
+
+        war = {
+            target = QAT
+            attacker_goal = { casus_belli = conquest_any }
+            call_ally = no
+        }
+
 
         ai_chance = {
             factor = 0.1

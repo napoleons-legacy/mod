@@ -53,7 +53,6 @@ pattern =
                     tags_eq = { 0 0 SPA }
                     tags_eq = { 0 0 TUR }
                     tags_eq = { 0 0 NET }
-                    tags_eq = { 0 0 BEL }
                 }
             }
             priority_add = 10

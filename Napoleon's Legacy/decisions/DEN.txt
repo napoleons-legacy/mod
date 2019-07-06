@@ -21,7 +21,7 @@ political_decisions = {
 
         effect = {
             political_reform = landed_voting
-            government = hms_government
+            government = prussian_constitutionalism
             prestige = 5
             set_country_flag = danish_constitutionalism
         }

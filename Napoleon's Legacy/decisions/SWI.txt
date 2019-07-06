@@ -55,7 +55,10 @@ political_decisions = {
         potential = {
             civilized = yes
             has_global_flag = geneva_convention_held
-            NOT = { has_country_modifier = signed_the_geneva_convention }
+            NOT = {
+                has_country_modifier = signed_the_geneva_convention
+                has_country_modifier = interment_camps
+            }
         }
 
         allow = {
@@ -79,10 +82,6 @@ political_decisions = {
             remove_country_modifier = sayings_of_the_dutch
             remove_country_modifier = rangaku
             remove_country_modifier = western_presence
-            remove_country_modifier = isolationist_foreign_naval_officers
-            remove_country_modifier = isolationist_foreign_naval_schools
-            remove_country_modifier = isolationist_foreign_officers
-            remove_country_modifier = isolationist_foreign_training
             any_owned = {
                 remove_province_modifier = western_presence
                 remove_province_modifier = foreign_smugglers
@@ -139,7 +138,7 @@ political_decisions = {
     }
 
     build_gotthard_tunnel = {
-    picture = build_gotthard_tunnel
+        picture = build_gotthard_tunnel
         potential = {
             tag = SWI
             owns = 606
@@ -192,29 +191,36 @@ political_decisions = {
     enact_freedom_of_religion = {
         picture = preacher
         potential = {
+            OR = {
             tag = SWI
-            NOT = { has_country_flag = freedom_of_religion }
+                tag = NET
+            }
+            NOT = { has_country_modifier = freedom_of_religion }
         }
         allow = {
+            OR = {
             government = democracy
+                government = hms_government
+            }
+            invention = secularization
+            public_meetings = yes_meeting
+            press_rights = free_press
             OR = {
                 religious_policy = pro_atheism
                 AND = {
                     religious_policy = secularized
-                    upper_house = { ideology = liberal value = 0.2 }
+                    upper_house = { ideology = liberal value = 0.3 }
                 }
                 AND = {
                     religious_policy = pluralism
-                    upper_house = { ideology = liberal value = 0.35 }
+                    upper_house = { ideology = liberal value = 0.5 }
                 }
             }
         }
 
         effect = {
-            set_country_flag = freedom_of_religion
             add_country_modifier = { name = freedom_of_religion duration = -1 }
         }
-
         ai_will_do = { factor = 1 }
     }
 }

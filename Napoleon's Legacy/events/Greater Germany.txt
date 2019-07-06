@@ -1,7 +1,7 @@
 #############################################################
-#                                                           #
-#                   Greater Germany Events                  #
-#                                                           #
+#                                                            #
+#                      Greater Germany Events                    #
+#                                                            #
 #############################################################
 
 #Forming Germany as Austria
@@ -1305,7 +1305,6 @@ country_event = {
                     region = AUS_619
                     region = AUS_612
                     region = AUS_613
-                    region = AUS_734
                 }
             }
             remove_core = THIS

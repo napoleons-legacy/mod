@@ -19,8 +19,7 @@ country_event = {
         health_care = no_health_care
         NOT = { poor_strata_life_needs = 0.9 }
         is_ideology_enabled = socialist
-        }
-
+    }
 
     mean_time_to_happen = {
         months = 500
@@ -44,9 +43,8 @@ country_event = {
         modifier = {
             factor = 1.5
             NOT = { average_consciousness = 3 }
-            }
         }
-
+    }
 
     option = {
         name = "EVTOPTA3000"
@@ -200,8 +198,7 @@ country_event = {
         civilized = yes
         health_care = trinket_health_care
         NOT = { poor_strata_life_needs = 0.95 }
-        }
-
+    }
 
     mean_time_to_happen = {
         months = 800
@@ -268,8 +265,7 @@ country_event = {
         health_care = low_health_care
         NOT = { social_reform_want = 0.2 }
         is_ideology_enabled = socialist
-        }
-
+    }
 
     mean_time_to_happen = {
         months = 800 # Common
@@ -396,8 +392,7 @@ country_event = {
         health_care = good_health_care
         civilized = yes
         NOT = { ruling_party_ideology = conservative }
-        }
-
+    }
 
     mean_time_to_happen = {
         months = 800 # Common
@@ -507,9 +502,8 @@ country_event = {
                 }
             }
             farmers = { militancy = -1 }
-            }
         }
-
+    }
 
     option = {
         name = "EVTOPTC3300"
@@ -1219,8 +1213,7 @@ country_event = {
         unemployment_subsidies = acceptable_subsidies
         NOT = { trade_unions = no_trade_unions }
         is_ideology_enabled = socialist
-        }
-
+    }
 
     mean_time_to_happen = {
         months = 200 # Common
@@ -1510,8 +1503,7 @@ country_event = {
         civilized = yes
         NOT = { trade_unions = all_trade_unions }
         NOT = { safety_regulations = good_safety }
-        }
-
+    }
 
     mean_time_to_happen = {
         months = 400 # Common

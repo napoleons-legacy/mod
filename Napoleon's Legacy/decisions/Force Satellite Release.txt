@@ -5,21 +5,24 @@ political_decisions = {
         potential = {
             civilized = yes
             is_vassal = yes
-            is_substate = no
             any_greater_power = {
                 is_sphere_leader_of = THIS
                 NOT = { is_our_vassal = THIS }
                 nationalism_n_imperialism = 1
             }
             NOT = { tag = NEH }
+            NOT = { tag = SHW }
+            NOT = { tag = TPG }
             NOT = { has_country_modifier = no_freedom }
             NOT = { has_country_flag = freedom_attempt_made }
         }
 
         allow = {
+            is_substate = no
+            war = no
             OR = {
                 average_militancy = 2
-                revolt_percentage = .25
+                revolt_percentage = 0.25
                 capital_scope = { controlled_by_rebels = yes }
             }
         }

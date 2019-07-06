@@ -1,7 +1,7 @@
 #########################################################
-#                                                       #
-#      Events for Cuba, Phillipines & Puerto Rico       #
-#                                                       #
+#                                                        #
+#      Events for Cuba, Phillipines & Puerto Rico        #
+#                                                        #
 #########################################################
 
 country_event = {
@@ -724,10 +724,12 @@ country_event = {
 }
 
 country_event = {
+
     id = 90140
     title = "EVTNAME90140" #The Intentona de Yauco
     desc = "EVTDESC90140"
     picture = "Cubanrebels"
+
     trigger = {
         year = 1890
         NOT = {
@@ -738,6 +740,7 @@ country_event = {
         revolution_n_counterrevolution = 1
         2222 = { average_consciousness = 5 }
     }
+
     mean_time_to_happen = {
         months = 120
         modifier = {
@@ -780,6 +783,7 @@ country_event = {
             }
         }
     }
+
     option = {
         name = "EVT90140OPTA"
         2222 = {
@@ -832,6 +836,7 @@ country_event = {
             }
         }
     }
+
     option = {
         name = "EVT90140OPTB"
         badboy = -2
@@ -910,16 +915,21 @@ country_event = {
                 factor = 1.2
                 militancy = 5
             }
+
         }
     }
 }
+
 #Equatorial Guinea Treaty
 country_event = {
+
     id = 90141
     title = "EVTNAME90141"
     desc = "EVTDESC90141"
     picture = "danishgovernment"
+
     is_triggered_only = yes
+
     option = {
         name = "EVT90141OPTA" #agreed
         1973 = { secede_province = THIS life_rating = 30 any_pop = { literacy = -0.99 } }
@@ -928,6 +938,7 @@ country_event = {
         any_owned = { limit = { province_id = 1973 } secede_province = FROM }
         ai_chance = { factor = 70 }
     }
+
     option = {
         name = "EVT90141OPTB" #No deal
         FROM = { set_country_flag = refused_treaty_on_bata }

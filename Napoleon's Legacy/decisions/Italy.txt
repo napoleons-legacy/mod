@@ -13,7 +13,7 @@ political_decisions = {
         allow = {
             romanticism = 1
             idealism = 1
-            money = 40000
+            money = 80000
         }
 
         effect = {
@@ -44,12 +44,8 @@ political_decisions = {
         }
 
         effect = {
-            any_pop = { militancy = -5 }
-            any_pop = { scaled_militancy = {
-                factor = 3
-                ideology = reactionary
-                }
-            }
+            any_pop = { militancy = -2 }
+            any_pop = { scaled_militancy = { factor = 3 ideology = reactionary  } }
             political_reform = universal_weighted_voting
             political_reform = proportional_representation
             political_reform = harassment
@@ -176,7 +172,6 @@ political_decisions = {
         effect = {
             set_global_flag = italia_ulterior
             AUS_729 = { add_core = THIS }
-            AUS_734 = { add_core = THIS }
             AUS_736 = { add_core = THIS }
             781 = { add_core = THIS }
         }

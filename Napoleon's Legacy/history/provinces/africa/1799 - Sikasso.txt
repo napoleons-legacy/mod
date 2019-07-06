@@ -2,6 +2,5 @@ owner = MAS
 controller = MAS
 add_core = SEG
 add_core = MAS
-add_core = KNG
-trade_goods = cotton
+trade_goods = fruit
 life_rating = 35

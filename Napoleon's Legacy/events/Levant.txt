@@ -7,7 +7,10 @@ country_event = {
 
     trigger = {
         year = 1860
-        owns = 913
+        913 = {
+            is_colonial = no
+            owned_by = THIS
+        }
         FRA = { has_country_flag = mount_lebanon_intervene }
     }
 
@@ -57,15 +60,16 @@ country_event = {
 }
 
 # and following crash
-country_event = {
+province_event = {
     id = 168010
     title = "EVTNAME168010"
     desc = "EVTDESC168010"
-    picture = "food_shortage"
 
     trigger = {
         year = 1872
-        owns = 913
+        province_id = 913
+        is_colonial = no
+        owner = { is_canal_enabled = 2 }
     }
 
     mean_time_to_happen = { months = 50 }
@@ -73,13 +77,8 @@ country_event = {
 
     option = {
         name = "EVT168010OPTA"
-        913 = {
-            remove_province_modifier = economic_boom
-            add_province_modifier = {
-                name = emigration_boom
-                duration = 365
-            }
-        }
+        remove_province_modifier = economic_boom
+        add_province_modifier = { name = emigration_boom duration = 365 }
     }
 }
 

@@ -47,6 +47,12 @@
 }
 #Malacca (52800/13200 POPS)
 1386 = {
+    aristocrats = {
+        culture = yue
+        religion = mahayana
+        size = 100
+    }
+
     clergymen = {
         culture = yue
         religion = mahayana
@@ -68,13 +74,13 @@
     aristocrats = {
         culture = british
         religion = protestant
-        size = 175
+        size = 50
     }
 
-    bureaucrats = {
-        culture = british
-        religion = protestant
-        size = 25
+    aristocrats = {
+        culture = malay
+        religion = sunni
+        size = 100
     }
 
     clergymen = {

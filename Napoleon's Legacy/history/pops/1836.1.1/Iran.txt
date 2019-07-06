@@ -188,7 +188,7 @@
     farmers = {
         culture = azerbaijani
         religion = sunni
-        size = 11875
+        size = 18875
     }
 
     aristocrats = {
@@ -1034,7 +1034,7 @@
     artisans = {
         culture = persian
         religion = shiite
-        size = 10000
+        size = 2000
     }
 
     soldiers = {
@@ -1046,11 +1046,11 @@
     farmers = {
         culture = persian
         religion = shiite
-        size = 40125
+        size = 56125
     }
 
     slaves = {
-        culture = forest_bantu #african_minor
+        culture = kilombero #african_minor
         religion = animist
         size = 6000
     }
@@ -1346,7 +1346,7 @@
     }
 
     slaves = {
-        culture = forest_bantu #african_minor
+        culture = kilombero #african_minor
         religion = animist
         size = 9000
     }
@@ -1746,7 +1746,7 @@
     artisans = {
         culture = persian
         religion = shiite
-        size = 6750
+        size = 8750
     }
 
     soldiers = {
@@ -1758,7 +1758,7 @@
     farmers = {
         culture = persian
         religion = shiite
-        size = 30625
+        size = 28625
     }
 
     clergymen = {
@@ -1774,9 +1774,9 @@
     }
 
     slaves = {
-        culture = forest_bantu #african_minor
+        culture = kilombero #african_minor
         religion = animist
-        size = 3000
+        size = 500
     }
 
     slaves = {
@@ -2090,7 +2090,7 @@
     }
 
     slaves = {
-        culture = forest_bantu #african_minor
+        culture = kilombero #african_minor
         religion = animist
         size = 2500
     }
@@ -2364,7 +2364,7 @@
     }
 
     slaves = {
-        culture = forest_bantu #african_minor
+        culture = kilombero #african_minor
         religion = animist
         size = 2000
     }
@@ -2470,7 +2470,7 @@
     }
 
     slaves = {
-        culture = forest_bantu #african_minor
+        culture = kilombero #african_minor
         religion = animist
         size = 8000
     }

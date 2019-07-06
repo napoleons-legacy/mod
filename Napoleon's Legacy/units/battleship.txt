@@ -10,7 +10,8 @@ battleship = {
     move_sound = steam_move
     select_sound = steam_selected
     floating_flag = yes
-    colonial_points = 15
+    can_build_overseas = no
+    colonial_points = 25
 
     #Core Abilities
     priority = 40
@@ -18,7 +19,6 @@ battleship = {
     default_organisation = 30
     maximum_speed = 9
     weighted_value = 50.0
-    can_build_overseas = no
 
 
     #Building Costs
@@ -36,15 +36,17 @@ battleship = {
 
     supply_consumption = 1.0
     supply_cost = {
-        steamer_convoy = 1.2
-        artillery = 0.6
+        steamer_convoy = 1.4
+        artillery = 0.7
         canned_food = 0.8
-        coal = 2.5
+        telephones = 0.01
+        fuel = 3
         ammunition = 0.6
-        tobacco = 1.6
+        regular_clothes = 0.3
+        tobacco = 1.5
     }
 
-    #Naval Abilties
+    #Naval Abilities
     hull = 70
     gun_power = 50
     fire_range = 0.75

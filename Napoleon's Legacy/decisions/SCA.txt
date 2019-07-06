@@ -1,7 +1,7 @@
 political_decisions = {
 
     abandon_the_finnish = {
-        picture = old_finnish_map
+        picture = map_finland
         potential = {
             NOT = { tag = SCA }
             accepted_culture = finnish
@@ -25,7 +25,7 @@ political_decisions = {
     }
 
     claim_finland = {
-        picture = old_finnish_map
+        picture = map_finland
         potential = {
             tag = SCA
             343 = { NOT = { is_core = THIS } }

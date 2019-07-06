@@ -3,7 +3,6 @@
 #                     Uncivilized Country Events                        #
 #                                                                    #
 #####################################################################
-# Audax Validator "." Ignore_NEXT
 
 #Wind of Westernization - Initialization event
 country_event = {
@@ -50,6 +49,13 @@ country_event = {
                 }
             }
             modifier = {
+                factor = 0
+                NOT = { num_of_ports = 1 }
+                any_neighbor_country = {
+                    NOT = { civilized = yes }
+                }
+            }
+            modifier = {
                 factor = 0.5
                 nationalvalue = nv_tradition
             }
@@ -61,22 +67,7 @@ country_event = {
             name = uncivilized_isolationism
             duration = -1
         }
-        random_owned = {
-            limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
-            owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
-        }
-        random_owned = {
-            limit = { owner = { foreign_training = yes_foreign_training } }
-            owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-        }
-        random_owned = {
-            limit = { owner = { naval_schools = yes_naval_schools } }
-            owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
-        }
-        random_owned = {
-            limit = { owner = { foreign_training = yes_foreign_training } }
-            owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-        }
+
         ai_chance = {
             factor = 50
             modifier = {
@@ -106,36 +97,17 @@ country_event = {
         any_owned_province = { is_coastal = yes }
         civilized = no
         has_country_modifier = uncivilized_isolationism
-        NOT = { is_culture_group = east_asian }
         any_owned_province = {
             port = yes
-            NOT = { has_province_modifier = boxer_presence }
-            NOT = { has_province_modifier = western_presence }
+            NOT = {
+                has_province_modifier = western_presence
+                has_province_modifier = boxer_presence
+            }
         }
     }
 
     mean_time_to_happen = {
         months = 120
-        modifier = {
-            factor = 0.9
-            average_consciousness = 5
-        }
-        modifier = {
-            factor = 0.9
-            average_consciousness = 7
-        }
-        modifier = {
-            factor = 0.9
-            average_consciousness = 9
-        }
-        modifier = {
-            factor = 1.1
-            NOT = { average_consciousness = 5 }
-        }
-        modifier = {
-            factor = 1.1
-            NOT = { average_consciousness = 3 }
-        }
         modifier = {
             factor = 0.9
             num_of_ports = 10
@@ -161,35 +133,19 @@ country_event = {
     option = {
         name = "EVTOPTA13010"
         random_owned = {
-            limit = { owner = { has_country_modifier = uncivilized_isolationism } }
-            owner = {
-                remove_country_modifier = uncivilized_isolationism
-                remove_country_modifier = isolationist_foreign_naval_officers
-                remove_country_modifier = isolationist_foreign_naval_schools
-                remove_country_modifier = isolationist_foreign_officers
-                remove_country_modifier = isolationist_foreign_training
-                add_country_modifier = { name = western_influences duration = -1 }
+            limit = {
+                port = yes
+                NOT = { has_province_modifier = boxer_presence }
+                NOT = { has_province_modifier = western_presence }
             }
-        }
-
-        random_owned = {
-            limit = { NOT = { owner = { is_culture_group = east_asian } } }
-            owner = {
-
-            }
+            any_pop = { militancy = -3 }
         }
 
         ai_chance = {
-            factor = 25
-            modifier = {
-                factor = 0
-                OR = {
-                    is_culture_group = far_east_asian
-                    is_culture_group = east_asian
-                }
-            }
+            factor = 50
         }
     }
+
     option = {
         name = "EVTOPTB13010"
         random_owned = {
@@ -200,9 +156,10 @@ country_event = {
             }
             add_province_modifier = {
                 name = "western_presence"
-                duration = -1
+                duration = 1825
             }
             any_pop = {
+                militancy = 3
                 ideology = {
                     factor = 0.05
                     value = reactionary
@@ -210,7 +167,15 @@ country_event = {
             }
         }
         ai_chance = {
-            factor = 75
+            factor = 50
+            modifier = {
+                factor = 0.5
+                has_country_modifier = uncivilized_isolationism
+            }
+            modifier = {
+                factor = 0.5
+                is_culture_group = east_asian
+            }
         }
     }
 }
@@ -224,11 +189,11 @@ country_event = {
 
     trigger = {
         civilized = no
+        has_country_modifier = uncivilized_isolationism
         OR = {
             any_owned_province = { port = yes }
             any_neighbor_country = { civilized = yes }
         }
-        has_country_modifier = uncivilized_isolationism
         any_owned_province = {
             OR = {
                 port = yes
@@ -357,10 +322,6 @@ country_event = {
     mean_time_to_happen = {
         months = 120
         modifier = {
-            factor = 1.5
-            has_country_modifier = uncivilized_isolationism
-        }
-        modifier = {
             factor = 0.8
             has_country_modifier = trade_restrictions
         }
@@ -377,7 +338,7 @@ country_event = {
             remove_province_modifier = foreign_smugglers
             add_province_modifier = {
                 name = local_opium_habit
-                duration = -1
+                duration = 3650
             }
         }
         ai_chance = {
@@ -500,7 +461,7 @@ country_event = {
             }
             add_province_modifier = {
                 name = "western_presence"
-                duration = -1
+                duration = 1825
             }
             any_pop = {
                 ideology = {
@@ -727,7 +688,7 @@ country_event = {
             }
             add_province_modifier = {
                 name = "western_presence"
-                duration = -1
+                duration = 3650
             }
             any_pop = {
                 ideology = {
@@ -749,7 +710,7 @@ country_event = {
             }
             add_province_modifier = {
                 name = "western_presence"
-                duration = -1
+                duration = 3650
             }
             any_pop = {
                 ideology = {
@@ -1102,7 +1063,7 @@ country_event = {
             }
             add_province_modifier = {
                 name = "local_opium_habit"
-                duration = -1
+                duration = 3650
             }
             any_pop = {
                 consciousness = 2
@@ -1357,7 +1318,7 @@ province_event = {
         name = "EVTOPTA13055"
         add_province_modifier = {
             name = local_opium_habit
-            duration = -1
+            duration = 3650
         }
         ai_chance = {
             factor = 90
@@ -1459,7 +1420,7 @@ province_event = {
         name = "EVTOPTA13060"
         add_province_modifier = {
             name = "local_opium_habit"
-            duration = -1
+            duration = 3650
         }
         ai_chance = {
             factor = 90
@@ -1578,7 +1539,7 @@ province_event = {
             any_owned = {
                 add_province_modifier = {
                     name = "local_opium_habit"
-                    duration = -1
+                    duration = 3650
                 }
             }
         }
@@ -1757,7 +1718,7 @@ country_event = {
 
         modifier = {
             factor = 0.9
-            plurality = 5
+            plurality = 50
         }
         modifier = {
             factor = 0.9
@@ -2917,11 +2878,6 @@ country_event = {
         random_owned = {
             limit = { owner = { has_country_modifier = uncivilized_isolationism } }
             owner = {
-                remove_country_modifier = uncivilized_isolationism
-                remove_country_modifier = isolationist_foreign_naval_officers
-                remove_country_modifier = isolationist_foreign_naval_schools
-                remove_country_modifier = isolationist_foreign_officers
-                remove_country_modifier = isolationist_foreign_training
                 add_country_modifier = { name = western_influences duration = -1 }
             }
         }
@@ -3836,10 +3792,19 @@ country_event = {
     trigger = {
         tag = EIC
         ai = yes
-        NOT = { tag = PAK }
-        NOT = { has_country_flag = no_british_doctrine }
-        EIC = { ideological_thought = 1 exists = yes }
-        NOT = { has_global_flag = eic_spawned }
+        NOT = {
+            tag = PAK
+            tag = HND
+            is_cultural_union = yes
+            has_country_flag = no_british_doctrine
+            has_global_flag = eic_spawned
+        }
+        overlord = {
+            is_disarmed = no
+            has_recently_lost_war = no
+            ideological_thought = 1
+            exists = yes
+        }
         OR = {
             primary_culture = assamese
             primary_culture = baluchi
@@ -3866,7 +3831,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 75
+        months = 500
         modifier = {
             factor = 1.5
             NOT = { average_militancy = 1 }
@@ -3893,54 +3858,44 @@ country_event = {
         }
         modifier = {
             factor = 0.9
-            NOT = {
-                prestige = 10
-            }
+            NOT = { prestige = 10 }
         }
         modifier = {
             factor = 0.9
-            NOT = {
-                prestige = 5
-            }
+            NOT = { prestige = 5 }
         }
         modifier = {
             factor = 0.1
-            OR = {
-                tag = BHP
-                tag = CRL
-                NOT = {
-                    government = absolute_monarchy
-                    government = prussian_constitutionalism
-                    government = hms_government
-                }
+            NOT = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
             }
+        }
+        modifier = {
+            factor = 0.5
+            overlord = { revolution_n_counterrevolution = 1 }
+        }
+        modifier = {
+            factor = 0.1
+            has_country_modifier = regency_government
         }
     }
 
     option = {
         name = "EVTOPTA13357"
-        tech_school = unciv_tech_school
         set_country_flag = no_british_doctrine
         any_pop = {
-            limit = { is_primary_culture = yes }
+            limit = {
+                OR = {
+                    is_accepted_culture = yes
+                    is_primary_culture = yes
+                }
+            }
             militancy = 4
             consciousness = 1
         }
-        political_reform = peonage
-        any_owned = {
-            limit = {
-                has_pop_type = labourers
-                has_pop_type = serfs
-            }
-            any_pop = { limit = { type = serfs } pop_type = labourers }
-        }
-        any_owned = {
-            limit = {
-                has_pop_type = farmers
-                has_pop_type = serfs
-            }
-            any_pop = { limit = { type = serfs } pop_type = farmers }
-        }
+
         EIC = { country_event = 13358 }
     }
 }
@@ -3962,28 +3917,41 @@ country_event = {
     option = {
         name = "EVTOPTA13358"
         prestige = 5
+        FROM = {
+            tech_school = developing_tech_school
+            political_reform = peonage
+            any_owned = {
+                limit = {
+                    has_pop_type = labourers
+                    has_pop_type = serfs
+                }
+                any_pop = { limit = { type = serfs } pop_type = labourers }
+            }
+            any_owned = {
+                limit = {
+                    has_pop_type = farmers
+                    has_pop_type = serfs
+                }
+                any_pop = { limit = { type = serfs } pop_type = farmers }
+            }
+        }
         inherit = FROM
         any_owned = {
             limit = { is_core = HND }
-            any_pop = {
-                limit = { is_culture_group = south_asian }
-                militancy = 4
-                consciousness = 1
-            }
             random_list = {
-                50 = {
+                34 = {
                     add_province_modifier = {
                         name = nationalist_agitation
-                        duration = 1825
+                        duration = 730
                     }
                 }
-                25 = {
+                33 = {
                     add_province_modifier = {
                         name = nationalist_agitation
                         duration = 365
                     }
                 }
-                25 = {
+                33 = {
                 }
             }
         }
@@ -4052,16 +4020,17 @@ country_event = {
         remove_country_modifier = educational_reform
         remove_country_modifier = military_reform
         remove_country_modifier = western_influences
+        remove_country_modifier = shastar_vidya
         remove_country_modifier = uncivilized_isolationism
         remove_country_modifier = trade_restrictions
         remove_country_modifier = sayings_of_the_dutch
         remove_country_modifier = rangaku
         remove_country_modifier = sakoku
         remove_country_modifier = western_presence
-        remove_country_modifier = isolationist_foreign_naval_officers
-        remove_country_modifier = isolationist_foreign_naval_schools
-        remove_country_modifier = isolationist_foreign_officers
-        remove_country_modifier = isolationist_foreign_training
+        clr_country_flag = using_foreign_weapons
+        clr_country_flag = using_foreign_artillery
+        clr_country_flag = using_foreign_ships
+        clr_country_flag = using_foreign_shipyards
         any_owned = {
             remove_province_modifier = western_presence
             remove_province_modifier = foreign_smugglers
@@ -4073,6 +4042,14 @@ country_event = {
             remove_province_modifier = extraterritoriality_granted
             remove_province_modifier = boxer_presence
             remove_province_modifier = boxer_agitation
+        }
+        random_owned = {
+            limit = { owner = { tag = DAI } }
+            owner = { country_event = { days = 2 id = 199072 } }
+        }
+        random_owned = {
+            limit = { owner = { tag = CAM } }
+            owner = { country_event = { days = 2 id = 199071 } }
         }
     }
 }
@@ -4093,19 +4070,27 @@ country_event = {
 
     option = {
         name = "EVTOPTA90950"
-        random_country = { limit = { tag = FROM is_greater_power = yes } add_casus_belli = { target = THIS type = humiliate months = 12 } }
-        random_country = { limit = { tag = FROM is_greater_power = no } add_casus_belli = { target = THIS type = make_puppet months = 12 } }
+        add_country_modifier = { name = factories_nationalized duration = 365 }
+        random_country = {
+            limit = { tag = FROM }
+            add_casus_belli = {
+                target = THIS
+                type = war_reparations
+                months = 12
+            }
+        }
         relation = { who = FROM value = -100 }
     }
 
     option = {
         name = "EVTOPTB90950"
         relation = { who = FROM value = 100 }
+        add_country_modifier = { name = factories_nationalized duration = 365 }
         rich_strata = { militancy = 3 consciousness = 6 }
     }
 }
 
-#Algerian claims
+#Algerian claims - Candidate for decision
 country_event = {
     id = 90953
     title = "EVTNAME90953"
@@ -4124,6 +4109,7 @@ country_event = {
                 owns = 1718
             }
             NOT = { has_global_flag = algeria_claimed_sahara }
+            NOT = { has_global_flag = mokrani_revolt }
         }
 
     option = {
@@ -4327,153 +4313,6 @@ province_event = {
     }
 }
 
-#Unciv Military Reforms - Isolationist countries don't get bonuses
-# Audax Validator "." Ignore_NEXT
-country_event = {
-    id = 90959
-    title = "EVTNAME90959"
-    desc = "EVTDESC90959"
-    picture = "boxers"
-
-    is_triggered_only = yes
-
-    immediate = {
-        random_owned = {
-            limit = {
-                owner = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    naval_schools = yes_naval_schools
-                    NOT = { has_country_modifier = isolationist_foreign_naval_schools  }
-                }
-            }
-            owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
-        }
-
-        random_owned = {
-            limit = {
-                owner = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    foreign_officers = yes_foreign_officers
-                    NOT = { has_country_modifier = isolationist_foreign_officers }
-                }
-            }
-            owner = { add_country_modifier = { name = isolationist_foreign_officers duration = -1 } }
-        }
-
-        random_owned = {
-            limit = {
-                owner = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    foreign_naval_officers = yes_foreign_naval_officers
-                    NOT = { has_country_modifier = isolationist_foreign_naval_officers }
-                }
-            }
-            owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
-        }
-
-        random_owned = {
-            limit = {
-                owner = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    foreign_training = yes_foreign_training
-                    NOT = { has_country_modifier = isolationist_foreign_training }
-                }
-            }
-            owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-        }
-
-        random_owned = {
-            limit = {
-                owner = {
-                    has_country_modifier = corrupt_army
-                    OR = {
-                        foreign_officers = yes_foreign_officers
-                        foreign_training = yes_foreign_training
-                    }
-                }
-            }
-            owner = { remove_country_modifier = corrupt_army }
-        }
-
-        random_owned = {
-            limit = {
-                owner = {
-                    has_country_modifier = assegai
-                    OR = {
-                        foreign_officers = yes_foreign_officers
-                        foreign_training = yes_foreign_training
-                        foreign_artillery = yes_foreign_artillery
-                        foreign_weapons = yes_foreign_weapons
-                    }
-                }
-            }
-            owner = { remove_country_modifier = assegai }
-        }
-        random_owned = {
-            limit = { owner = { civilized = yes } }
-            owner = {
-                remove_country_modifier = educational_reform
-                remove_country_modifier = military_reform
-                remove_country_modifier = western_influences
-                remove_country_modifier = uncivilized_isolationism
-                remove_country_modifier = trade_restrictions
-                remove_country_modifier = sayings_of_the_dutch
-                remove_country_modifier = rangaku
-                remove_country_modifier = sakoku
-                remove_country_modifier = western_presence
-                remove_country_modifier = isolationist_foreign_naval_officers
-                remove_country_modifier = isolationist_foreign_naval_schools
-                remove_country_modifier = isolationist_foreign_officers
-                remove_country_modifier = isolationist_foreign_training
-                any_owned = {
-                    remove_province_modifier = western_presence
-                    remove_province_modifier = foreign_smugglers
-                    remove_province_modifier = foreign_trading_post
-                    remove_province_modifier = local_opium_habit
-                    remove_province_modifier = european_military_mission
-                    remove_province_modifier = legation_quarter
-                    remove_province_modifier = kettler_denkmal
-                    remove_province_modifier = extraterritoriality_granted
-                    remove_province_modifier = boxer_presence
-                    remove_province_modifier = boxer_agitation
-                }
-            }
-        }
-    }
-
-    option = {
-        name = "EVTOPTA90959"
-    }
-}
-
 # The Golden Stool
 country_event = {
     id = 110073
@@ -4658,20 +4497,34 @@ country_event = {
         name = "EVT90961OPTA" #Send the missionaries
         relation = { who = FROM value = 25 }
         diplomatic_influence = { who = FROM value = 25 }
+        random_owned = { limit = { owner = { has_country_flag = catholic_country } } FROM = { religion = catholic set_country_flag = catholic_country } }
+        random_owned = {
+            limit = { owner = { has_country_flag = protestant_country } }
+            FROM = { religion = protestant set_country_flag = protestant_country }
+        }
+        random_owned = { limit = { owner = { has_country_flag = orthodox_country } } FROM = { religion = orthodox set_country_flag = orthodox_country } }
+        random_owned = { limit = { owner = { has_country_flag = mormon_country } } FROM = { religion = mormon set_country_flag = mormon_country } }
+        random_owned = { limit = { owner = { has_country_flag = coptic_country } } FROM = { religion = coptic set_country_flag = coptic_country } }
+        random_owned = { limit = { owner = { has_country_flag = sunni_country } } FROM = { religion = sunni set_country_flag = sunni_country } }
+        random_owned = { limit = { owner = { has_country_flag = shiite_country } } FROM = { religion = shiite set_country_flag = shiite_country } }
+        random_owned = { limit = { owner = { has_country_flag = shinto_country } } FROM = { religion = shinto set_country_flag = shinto_country } }
+        random_owned = { limit = { owner = { has_country_flag = mahayana_country } } FROM = { religion = mahayana set_country_flag = mahayana_country } }
+        random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } FROM = { religion = gelugpa set_country_flag = gelugpa_country } }
+        random_owned = { limit = { owner = { has_country_flag = theravada_country } } FROM = { religion = theravada set_country_flag = theravada_country } }
+        random_owned = { limit = { owner = { has_country_flag = hindu_country } } FROM = { religion = hindu set_country_flag = hindu_country } }
+        random_owned = { limit = { owner = { has_country_flag = sikh_country } } FROM = { religion = sikh set_country_flag = sikh_country } }
+        random_owned = { limit = { owner = { has_country_flag = jewish_country } } FROM = { religion = jewish set_country_flag = jewish_country } }
+        random_owned = { limit = { owner = { has_country_flag = ibadi_country } } FROM = { religion = ibadi set_country_flag = ibadi_country } }
+        random_owned = { limit = { owner = { has_country_flag = yazidi_country } } FROM = { religion =  yazidi set_country_flag = yazidi_country } }
+
         FROM = { country_event = 90962 }
         ai_chance = {
             factor = 50
             modifier = { factor = 0 NOT = { relation = { who = FROM value = -190 } } }
-            modifier = { factor = 0.5 NOT = { relation = { who = FROM value = -100 } } }
-            modifier = { factor = 0.75 NOT = { relation = { who = FROM value = -50 } } }
-            modifier = { factor = 0.75 NOT = { relation = { who = FROM value = 0 } } }
-            modifier = { factor = 1.1 relation = { who = FROM value = 50 } }
-            modifier = { factor = 1.15 relation = { who = FROM value = 100 } }
-            modifier = { factor = 1.35 relation = { who = FROM value = 150 } }
-            modifier = { factor = 0.9 FROM = { average_militancy = 4 } }
-            modifier = { factor = 0.75 FROM = { average_militancy = 6 } }
-            modifier = { factor = 0.75 FROM = { average_militancy = 8 } }
-            modifier = { factor = 0.5 FROM = { badboy = 0.5 } }
+            modifier = { factor = 1.25 relation = { who = FROM value = 50 } }
+            modifier = { factor = 1.25 relation = { who = FROM value = 100 } }
+            modifier = { factor = 1.25 relation = { who = FROM value = 150 } }
+            modifier = { factor = 1.25 relation = { who = FROM value = 190 } }
         }
     }
 
@@ -4681,6 +4534,10 @@ country_event = {
         FROM = { country_event = 90963 }
         ai_chance = {
             factor = 50
+            modifier = { factor = 1.25 NOT = { relation = { who = FROM value = -100 } } }
+            modifier = { factor = 1.25 NOT = { relation = { who = FROM value = -50 } } }
+            modifier = { factor = 1.25 NOT = { relation = { who = FROM value = 0 } } }
+            modifier = { factor = 1.25 FROM = { badboy = 0.8 } }
         }
     }
 }

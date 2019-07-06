@@ -1,6 +1,5 @@
-owner = NET
-controller = NET
+owner = DJA
+controller = DJA
 add_core = DJA
-trade_goods = timber
+trade_goods = grain
 life_rating = 35
-colonial = 2

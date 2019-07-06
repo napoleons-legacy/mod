@@ -97,10 +97,10 @@ country_event = {
 
     option = {
         name = "EVTOPTA46301"
-        set_country_flag = JogoBonito
+        #set_country_flag = JogoBonito
         prestige = 1
         poor_strata = {
-            militancy = 2
+            consciousness = -2
         }
     }
 }
@@ -122,8 +122,9 @@ province_event = {
             slavery = freedom_of_womb
                 }
             }
-        NOT = { exists = BRZ }
-        NOT = { year = 1840 }
+        NOT = {
+            year = 1840
+        }
     }
 
     fire_only_once = yes
@@ -192,6 +193,14 @@ country_event = {
         set_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
         government = presidential_dictatorship
         political_reform = none_voting
         political_reform = party_appointed
@@ -219,7 +228,7 @@ country_event = {
         }
     }
 
-    option = {
+option = {
         name = "vargasopt2"
         any_owned = {
             limit = {
@@ -240,8 +249,8 @@ country_event = {
                 casus_belli = status_quo
             }
         }
+        }
     }
-}
 
 ####################Pedro II Abdication
 
@@ -257,23 +266,23 @@ country_event = {
             tag = BRZ
             tag = REI
         }
-        month = 10
         year = 1889
         OR = {
             average_militancy = 3
             average_consciousness = 6
         }
         OR = {
-        government = absolute_monarchy
-        government = prussian_constitutionalism
-        government = hms_government
-            }
+            government = absolute_monarchy
+            government = prussian_constitutionalism
+            government = hms_government
+        }
         has_country_flag = coronation_of_pedro
-        NOT = { month = 11 }
     }
+
     mean_time_to_happen = { months = 24 }
 
     fire_only_once = yes
+
     option = {
         name = "EVTOPTA50000"
         clr_country_flag = coronation_of_pedro
@@ -295,7 +304,7 @@ country_event = {
         random_owned = {
             limit = { NOT = { owner = { press_rights = free_press } } }
             owner = { political_reform = free_press }
-    }
+        }
         random_owned = {
             limit = { NOT = { owner = { public_meetings = yes_meeting } } }
             owner = { political_reform = yes_meeting }
@@ -317,10 +326,12 @@ country_event = {
             owner = { political_reform = gerrymandering }
         }
         ruling_party_ideology = liberal
+        election = yes
         any_pop = { ideology = { factor = 0.02 value = liberal } }
         rich_strata = { militancy = -1 consciousness = -3 }
         ai_chance = { factor = 90 }
     }
+
     option = {
         name = "EVTOPTB50000"
         rich_strata = { militancy = 8 consciousness = 7 }
@@ -328,12 +339,14 @@ country_event = {
         ai_chance = { factor = 10 }
     }
 }
+
 country_event = {
 
     id = 50003
     title = "EVTNAME50003"
     desc = "EVTDESC50003"
     picture = "juiz_de_fora"
+
     trigger = {
         OR = {
             tag = BRZ
@@ -341,20 +354,27 @@ country_event = {
         }
         year = 1860
     }
+
     mean_time_to_happen = { months = 12 }
+
     fire_only_once = yes
 
     option = {
         name = "EVTOPTA50003"
-        2446 = { change_province_name = "Juiz de Fora" }
+        2446 = {
+            change_province_name = "Juiz de Fora"
+            trade_goods = coffee
+        }
     }
 }
+
 # BRZ - Coronation of Dom Pedro II
 country_event = {
     id = 110074
     title = "EVTNAME110074"
     desc = "EVTDESC110074"
     picture = "BRZ_pedro_coronation"
+
     trigger = {
         OR = {
             tag = BRZ
@@ -366,23 +386,27 @@ country_event = {
             government = hms_government
         }
         year = 1840
-        NOT = { year = 1840 }
     }
+
     mean_time_to_happen = { months = 12 }
     fire_only_once = yes
+
     option = {
         name = "EVT110074OPTA" #Long live!
-        prestige = 5
+        prestige = 1
+        remove_country_modifier = regency_government
         any_pop = { militancy = -1 consciousness = 1 }
         set_country_flag = coronation_of_pedro
     }
 }
+
 # BRZ - Death of Dom Pedro II
 country_event = {
     id = 110075
     title = "EVTNAME110075"
     desc = "EVTDESC110075"
     picture = "BRZ_pedro_death"
+
     trigger = {
         OR = {
             tag = BRZ
@@ -396,13 +420,16 @@ country_event = {
             government = hms_government
         }
     }
+
     mean_time_to_happen = { months = 30 }
     fire_only_once = yes
+
     option = {
         name = "EVT110075OPTA" #He will be missed.
         clr_country_flag = coronation_of_pedro
         ai_chance = { factor = 60 }
     }
+
     option = {
         name = "EVT110075OPTB" #Time for Democracy
         clr_country_flag = coronation_of_pedro
@@ -427,15 +454,12 @@ country_event = {
         political_reform = first_past_the_post
         political_reform = all_voting_pops
         ruling_party_ideology = liberal
-
         ai_chance = { factor = 40 }
-            }
-        }
+    }
+}
 
 # Cabanagem
-
 country_event = {
-
     id = 46305
     title = "EVTNAME46305"
     desc = "EVTDESC46305"

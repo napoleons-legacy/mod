@@ -484,7 +484,7 @@ political_decisions = {
 
 
     treaty_of_bogota = {
-        picture = colombia_map
+        picture = map_colombia
         potential = {
             OR = {
                 tag = BRZ

@@ -116,11 +116,43 @@
         size = 3050
     }
 
+    ######Jews
+    aristocrats = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    officers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 800
+        size = 200
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 200
+    }
+    ########
 }
 #Bihac (100000/25000 POPS)
 784 = {

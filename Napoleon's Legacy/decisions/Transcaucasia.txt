@@ -570,6 +570,7 @@ political_decisions = {
         potential = {
             is_greater_power = yes
             exists = CIR
+            NOT = { year = 1840 }
             NOT = {
                 has_country_flag = recognize_circassia
                 tag = RUS
@@ -630,6 +631,7 @@ political_decisions = {
         potential = {
             is_greater_power = yes
             exists = CHY
+            NOT = { year = 1840 }
             NOT = {
                 has_country_flag = recognize_chechenya
                 tag = RUS
@@ -690,6 +692,7 @@ political_decisions = {
         potential = {
             is_greater_power = yes
             exists = DAG
+            NOT = { year = 1840 }
             NOT = {
                 has_country_flag = recognize_dagestan
                 tag = RUS

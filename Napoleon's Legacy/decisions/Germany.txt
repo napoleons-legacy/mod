@@ -31,6 +31,7 @@ political_decisions = {
 
     support_ruhr_industrialism = {
         potential = {
+            has_country_flag = prussian_germany
             OR = {
                 tag = PRU
                 tag = TEU
@@ -103,7 +104,7 @@ political_decisions = {
         }
 
         effect = {
-            prestige = 10
+            prestige = 5
             set_country_flag = lippe_dispute_solved
         }
     }
@@ -158,6 +159,7 @@ political_decisions = {
         picture = kaiser_wilhelms_land
         potential = {
             tag = GER
+            has_country_flag = prussian_germany
             owns = 1531
             owns = 2530
             owns = 2531
@@ -199,7 +201,7 @@ political_decisions = {
         }
 
         allow = {
-            year = 1892
+            mass_politics = 1
             OR = {
                 is_greater_power = yes
                 invention = national_fraternity
@@ -219,7 +221,7 @@ political_decisions = {
             set_country_flag = has_questioned_heligoland
         }
     }
-
+    #Convert to repeatable so modifier comes back
     construct_the_walhalla = {
         picture = construct_the_walhalla
         potential = {
@@ -276,6 +278,7 @@ political_decisions = {
 
     von_moltkes_staff_reforms = {
         potential = {
+            has_country_flag = prussian_germany
             OR = {
                 tag = PRU
                 tag = GER
@@ -337,6 +340,7 @@ political_decisions = {
     appoint_von_bismarck = {
     picture = appoint_von_bismarck
         potential = {
+            has_country_flag = prussian_germany
             OR = {
                 tag = PRU
                 tag = NGF
@@ -496,7 +500,7 @@ political_decisions = {
 
     #Claim Togoland
     claim_togoland = {
-        picture = togo_map
+    picture = map_togo
         potential = {
             capital_scope = { continent = europe }
             year = 1850
@@ -519,36 +523,39 @@ political_decisions = {
             war = no
             total_num_of_ports = 10
             total_amount_of_ships = 10
-            money = 50000
+        money = 200000
             OR = {
-                AND = {
-                    colonial_nation = no
-                    OR = {
-                        naval_statistics = 1
-                        blue_and_brown_water_schools = 1
-                    }
-                }
-                AND = {
-                    colonial_nation = yes
-                    naval_logistics = 1
+            1901 = { owner = { civilized = yes } }
+            1922 = { owner = { civilized = yes } }
+            1913 = { owner = { civilized = yes } }
+        }
+        OR = {
+            AND = {
+                colonial_nation = no
+                blue_and_brown_water_schools = 1
+            }
+            AND = {
+                colonial_nation = yes
+                blue_and_brown_water_schools = 1
+                military_logistics = 1
                 }
             }
         }
 
         effect = {
             prestige = 2
-            treasury = -50000
+            treasury = -200000
             1916 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1915 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1914 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1917 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1918 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
-            #random_owned = {
-            #    limit = { owner = { is_culture_group = germanic } }
-            #    owner = {
-            #        1915 = { change_province_name = "Misahöhe" }
-            #    }
-            #}
+            random_owned = {
+                limit = { owner = { is_culture_group = germanic } }
+                owner = {
+                     1915 = { change_province_name = "Misahöhe" }
+                }
+            }
         }
 
         ai_will_do = { factor = 1 }

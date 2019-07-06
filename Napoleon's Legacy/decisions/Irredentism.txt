@@ -1,7 +1,7 @@
 political_decisions = {
 
     greater_norway = {
-        picture = iceland_map
+        picture = map_iceland
         potential = {
             tag = NOR
             NOT = { has_country_flag = greater_norway }
@@ -690,7 +690,7 @@ political_decisions = {
             leadership = 20
             add_country_modifier = {
                 name = small_country_draft
-                duration = 365
+                duration = 30
             }
             set_country_flag = yucatan_draft_happened
         }
@@ -765,7 +765,7 @@ political_decisions = {
             EGY_915 = { add_core = SYR }
             TUR_855 = { add_core = SYR }
             TUR_894 = { add_core = SYR }
-            TUR_923 = { add_core = SYR }
+            #TUR_923 = { add_core = SYR }
             TUR_931 = { add_core = SYR }
             TUR_935 = { add_core = SYR }
             TUR_893 = { add_core = SYR }

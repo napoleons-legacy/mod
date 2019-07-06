@@ -909,13 +909,7 @@ political_decisions = {
             random_owned = { limit = { owner = { owns = 1254 } } ENG_1252 = { add_core = PAK } }
             any_owned = { limit = { is_core = PAK } any_pop = { limit = { OR = { has_pop_religion = sunni has_pop_religion = shiite } } militancy = -2 consciousness = 5 } }
             1223 = { remove_core = CRL }
-            PAK = {
-                tech_school = unciv_tech_school
-                all_core = {
-                    limit = { NOT = { is_core = KAS } }
-                    remove_core = HND
-                }
-            }
+            PAK = { tech_school = developing_tech_school }
             random_owned = {
                 limit = { owner = { government = hms_government } }
                 owner = { PAK = { government = democracy } }
@@ -994,5 +988,73 @@ political_decisions = {
         }
 
         ai_will_do = { factor = 1 }
+    }
+
+    create_india = {
+    picture = form_india
+        potential = {
+            NOT = {
+                has_country_flag = post_colonial_country
+                exists = HND
+                has_country_flag = mughal_reborn
+                is_culture_group = south_asian
+                is_culture_group = indo_iranian
+                tag = PAK
+                tag = MUG
+                tag = NEP
+            }
+            owns = 1251
+            owns = 1261
+            owns = 1305
+            owns = 1309
+            owns = 1236
+            owns = 1272
+            owns = 1297
+        }
+
+        allow = {
+            war = no
+            mass_politics = 1
+        }
+
+        effect = {
+            prestige = 5
+
+            HND = {
+                any_pop = { militancy = -6 }
+                tech_school = developing_tech_school
+                set_country_flag = post_colonial_country
+                add_accepted_culture = avadhi
+                add_accepted_culture = marathi
+                add_accepted_culture = rajput
+                add_accepted_culture = bihari
+                add_accepted_culture = bengali
+                add_accepted_culture = kanauji
+                add_accepted_culture = panjabi
+                add_accepted_culture = kashmiri
+                add_accepted_culture = manipuri
+                add_accepted_culture = assamese
+                add_accepted_culture = oriya
+                add_accepted_culture = gujarati
+            }
+            release_vassal = HND
+            create_alliance = HND
+            relation = { who = HND value = 400 }
+            diplomatic_influence = { who = HND value = 400 }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    has_global_flag = pakistan_born
+                    year = 1915
+                }
+            }
+            modifier = {
+                factor = 0
+                NOT = { 1251 = { state_scope = { average_militancy = 7 } } }
+            }
+        }
     }
 }

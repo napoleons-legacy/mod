@@ -217,7 +217,14 @@ country_event = {
 
         release = ZAN
         relation = { who = ZAN value = 100 }
-        ZAN = { country_event = 95503 }
+
+        ZAN = {
+            country_event = 95503
+            any_state = {
+                limit = { has_pop_type = slaves }
+                is_slave = yes
+            }
+        }
         random_country = {
             limit = {
                 tag = FRA
@@ -234,8 +241,16 @@ country_event = {
             relation = { who = ZAN value = 75 }
         }
 
-        REI = {
-            relation = { who = ZAN value = 75 }
+        ZAN = {
+            any_state = {
+                limit = { has_pop_type = slaves }
+                is_slave = yes
+            }
+        }
+
+        random_owned = {
+            limit = { owner = { slavery = yes_slavery } }
+            owner = { 2048 = { state_scope = { is_slave = yes } } }
         }
 
         ai_chance = { factor = 95 }
@@ -392,6 +407,18 @@ country_event = {
             ZAN = { political_reform = no_slavery }
         }
 
+        ZAN = {
+            any_state = {
+                limit = { has_pop_type = slaves }
+                is_slave = yes
+            }
+        }
+
+        random_owned = {
+            limit = { owner = { slavery = yes_slavery } }
+            owner = { 2048 = { state_scope = { is_slave = yes } } }
+        }
+
         ai_chance = { factor = 5 }
     }
 
@@ -512,6 +539,7 @@ country_event = {
 
         release = ZAN
         relation = { who = ZAN value = 100 }
+
         random_country = {
             limit = {
                 tag = FRA
@@ -524,6 +552,18 @@ country_event = {
             diplomatic_influence = { who = OMA value = 50 }
         }
         change_tag_no_core_switch = ZAN
+
+        ZAN = {
+            any_state = {
+                limit = { has_pop_type = slaves }
+                is_slave = yes
+            }
+        }
+        random_owned = {
+            limit = { owner = { slavery = yes_slavery } }
+            owner = { 2048 = { state_scope = { is_slave = yes } } }
+        }
+
 
         ai_chance = { factor = 0 }
     }
@@ -655,6 +695,18 @@ country_event = {
             diplomatic_influence = { who = OMA value = 50 }
         }
         change_tag_no_core_switch = ZAN
+
+
+        ZAN = {
+            any_state = {
+                limit = { has_pop_type = slaves }
+                is_slave = yes
+            }
+        }
+        random_owned = {
+            limit = { owner = { slavery = yes_slavery } }
+            owner = { 2048 = { state_scope = { is_slave = yes } } }
+        }
 
         ai_chance = { factor = 0 }
     }

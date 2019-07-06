@@ -2,14 +2,196 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+####AI Personalities
+
+benefactor_ai = {
+    cb_generation_speed_modifier = 0.1
+    icon = 3
+}
+
+malevolent_ai = {
+    cb_generation_speed_modifier = -0.05
+    icon = 3
+}
+
+picking_personality = {
+    icon = 3
+}
+
+####
+
+war_propaganda = {
+    war_exhaustion = -0.02
+    badboy = 0.01
+    icon = 15
+}
+
+government_propaganda = {
+    literacy_con_impact = -0.20
+    issue_change_speed = -0.20
+    ruling_party_support = 0.2
+    icon = 5
+}
+
+constitutional_crisis = {
+    badboy = 0.01
+    icon = 6
+}
+
+war_focus = {
+    war_exhaustion = -0.1
+    icon = 7
+}
+
+loyal_vassal = {
+    diplomatic_points_modifier = 0.1
+    icon = 5
+}
+
+in_disrepair = {
+    immigrant_push = 0.5
+    icon = 12
+}
+
+factories_nationalized = {
+    prestige = -0.01
+    icon = 12
+}
+
+nationalization_in_progress = {
+    prestige = 0.01
+    icon = 11
+}
+
+santa_ana_rule = {
+    ruling_party_support = 0.1
+    political_reform_desire = -0.05
+    org_regain = -0.05
+    icon = 5
+}
+
+forceful_back_to_africa = {
+    badboy = 0.15
+    non_accepted_pop_militancy_modifier = 0.02
+    non_accepted_pop_consciousness_modifier = 0.03
+    administrative_efficiency_modifier = -0.3
+    icon = 18
+}
+
+ostflucht = {
+    farm_rgo_size = -0.3
+    mine_rgo_size = -0.6
+    immigrant_attract = -0.5
+    immigrant_push = 0.5
+    pop_consciousness_modifier = 0.1
+    life_rating = -0.25
+    icon = 20
+}
+
+being_dismantled = {
+    prestige = -0.01
+    badboy = -0.05
+    icon = 6
+}
+
+dismantling_country = {
+    prestige = 0.01
+    diplomatic_points_modifier = -0.01
+    icon = 5
+}
+
+considering_colonial_offer = {
+    diplomatic_points_modifier = -0.01
+    icon = 5
+}
+
+the_long_war = {
+    badboy = 0.23
+    war_exhaustion = 0.05
+    icon = 16
+}
+
+# research_lagging_behind = {
+    # prestige = -0.1
+    # research_points_modifier = -0.5
+    # icon = 14
+# }
+
+homeland_productive_year = {
+    farm_RGO_eff = 0.25
+    pop_militancy_modifier = -0.01
+    icon = 13
+}
+
+severe_homeland_drought = {
+    farm_RGO_eff = -0.45
+    farm_rgo_size = -0.25
+    pop_militancy_modifier = 0.02
+    icon = 14
+}
+
+homeland_drought = {
+    farm_RGO_eff = -0.25
+    farm_rgo_size = -0.15
+    pop_militancy_modifier = 0.01
+    icon = 14
+}
+
+disable_conquest_cb = {
+    icon = 16
+}
+
+# colony_to_state_conversion = {
+    # research_points_on_conquer = -1
+    # icon = 5
+# }
+
+colony_to_be_annexed = {
+    prestige = -0.01
+    icon = 5
+}
+
+regency_government = {
+    global_pop_consciousness_modifier = 0.1
+    global_pop_militancy_modifier = 0.05
+    political_reform_desire  = 0.25
+    cb_generation_speed_modifier = -0.25
+    influence_modifier = -0.25
+    org_regain = -0.25
+    icon = 8
+}
+
+reactionary_demands = {
+    core_pop_militancy_modifier = -0.3
+    research_points_modifier = -0.45
+    icon = 10
+}
+
+integrating_colony = {
+    prestige = 0.01
+    icon = 7
+}
+
+claimed_africa = {
+    prestige = 0.01
+    icon = 7
+}
+
+non_interventionism_trade_policy = {
+    min_tariff = 0.75
+    tariff_efficiency_modifier = 0.1
+    tax_efficiency = 0.05
+    icon = 9
+}
+
 french_liberal_school = {
-    max_tariff = -0.25
+    max_tariff = -0.2
     administrative_efficiency_modifier = 0.2
     tax_efficiency = 0.1
     industry_tech_research_bonus = 0.05
     commerce_tech_research_bonus = 0.05
     culture_tech_research_bonus = 0.05
-    influence_modifier = 0.1
+    #influence_modifier = 0.1
     icon = 9
 }
 smithian_school = {
@@ -23,6 +205,12 @@ no_trade_policy_set = {
     icon = 9
 }
 
+russian_protectionism = {
+    min_tariff = 0.75
+    tariff_efficiency_modifier = 0.05
+    icon = 9
+}
+
 mercantilism = {
     min_tariff = 0.5
     tariff_efficiency_modifier = 0.15
@@ -33,7 +221,7 @@ economic_nationalism = {
     min_tariff = 0.75
     tariff_efficiency_modifier = 0.3
     industry_tech_research_bonus = 0.05
-    influence_modifier = -0.1
+    #influence_modifier = -0.1
     icon = 9
 }
 
@@ -113,12 +301,12 @@ amir_kabir = {
     icon = 17
 }
 
-racial_tensions = {
-    life_rating = -0.10
-    immigrant_attract = -0.05
-    pop_militancy_modifier = 0.01
-    pop_consciousness_modifier = 0.01
-}
+# racial_tensions = {
+    # life_rating = -0.10
+    # immigrant_attract = -0.05
+    # pop_militancy_modifier = 0.01
+    # pop_consciousness_modifier = 0.01
+# }
 
 
 ###HPM Modifiers
@@ -139,6 +327,7 @@ war_economy_ships = {
 preparing_for_war = {
     leadership_modifier = 0.5
     min_military_spending = 0.5
+    land_unit_start_experience = 5
     min_tariff = 0.5
     icon = 15
 }
@@ -186,26 +375,6 @@ international_zone_modifier = {
     diplomatic_points_modifier = -0.5
 
     icon = 7
-}
-
-isolationist_foreign_naval_officers = {
-    research_points_on_conquer = -0.25
-    icon = 16
-}
-
-isolationist_foreign_officers = {
-    research_points_on_conquer = -0.25
-    icon = 16
-}
-
-isolationist_foreign_naval_schools = {
-    research_points_on_conquer = -0.25
-    icon = 16
-}
-
-isolationist_foreign_training = {
-    research_points_on_conquer = -0.25
-    icon = 16
 }
 
 preparations_for_war = {
@@ -267,12 +436,6 @@ divided_society = {
     icon = 18
 }
 
-corrupt_army = {
-    supply_consumption = -0.25
-    #goods_demand = -0.6
-    icon = 18
-}
-
 fanatic_army = {
     land_organisation = 0.1
     org_regain = 0.1
@@ -296,10 +459,10 @@ totalitarian_system = {
     suppression_points_modifier = 2
     ruling_party_support = 2
     literacy_con_impact = -0.3
+    issue_change_speed = -2
     education_efficiency_modifier = 0.02
     global_pop_consciousness_modifier = -0.05
     global_pop_militancy_modifier = -0.05
-    issue_change_speed = -2
     research_points_modifier = -0.05
     icon = 7
 }
@@ -400,8 +563,8 @@ recently_built_city = {
 }
 
 law_changed_by_force = {
+    diplomatic_points_modifier = -0.01
     icon = 6
-
 }
 
 wahhabism_in_nejd = {
@@ -422,25 +585,41 @@ new_constitution = {
     issue_change_speed = -0.5
     icon = 5
 }
+#########
+evidence_of_massacre = {
+    prestige = -0.08
+    badboy = 0.2
+    influence_modifier = -0.1
+    icon = 8
+}
 
-preparations_to_kill = {
+evidence_of_massacre2 = {
+    prestige = -0.01
+    badboy = 0.2
+    icon = 8
+}
+
+interment_camps = {
     global_immigrant_attract = -2
-    non_accepted_pop_consciousness_modifier = 0.2
-    non_accepted_pop_militancy_modifier = 0.1
-    badboy = 0.3
+    non_accepted_pop_consciousness_modifier = 0.4
+    non_accepted_pop_militancy_modifier = 0.3
+    tax_efficiency = -0.2
+    administrative_efficiency_modifier = -0.4
+    badboy = 0.2
     icon = 18
 }
 
-withdrew_from_geneva_convention = {
-    diplomatic_points_modifier = -0.25
-    icon = 6
-}
-
-genocide = {
-    immigrant_attract = -2
+mass_graves = {
+    immigrant_attract = -3
+    pop_consciousness_modifier = 0.2
     #immigrant_push = 0.5
     #life_rating = -0.25
     icon = 20
+}
+###########
+withdrew_from_geneva_convention = {
+    diplomatic_points_modifier = -0.25
+    icon = 6
 }
 
 rebuilding_city = {
@@ -528,12 +707,14 @@ blanco_sympathies = {
 }
 
 north_coalition = {
+    prestige = -0.01
     mobilisation_size = -0.03
     org_regain = -0.1
     icon = 16
 }
 
 the_big_army = {
+    prestige = -0.1
     mobilisation_size = 0.2
     land_organisation = 0.2
     supply_consumption = -0.2
@@ -542,6 +723,7 @@ the_big_army = {
 }
 
 caudillo_leaders = {
+    prestige = -0.5
     tax_efficiency = 0.3
     mobilisation_size = 0.02
     supply_consumption = -0.1
@@ -629,12 +811,13 @@ swiss_banking = {
 }
 
 freedom_of_religion = {
-    global_pop_militancy_modifier = -0.01
+    core_pop_militancy_modifier = -0.01
     global_pop_consciousness_modifier = 0.01
     icon = 5
 }
 
 foreign_claims = {
+    diplomatic_points_modifier = -0.05
     icon = 7
 }
 
@@ -745,7 +928,7 @@ potato_blight = {
     pop_militancy_modifier = 0.05
     pop_consciousness_modifier = 0.1
     immigrant_push = 0.50
-    population_growth = -0.01
+    population_growth = -0.001
     icon = 20
 }
 
@@ -756,12 +939,12 @@ anti_jacobin_tract = {
 }
 
 cholera_epidemic_small = {
-    population_growth = -0.01
+    population_growth = -0.001
     icon = 20
 }
 
 cholera_epidemic_big = {
-    population_growth = -0.02
+    population_growth = -0.002
     icon = 20
 }
 
@@ -797,9 +980,11 @@ western_influences = {
 
 uncivilized_isolationism = {
     #goods_demand = -0.1
+    research_points_on_conquer = -1
     core_pop_consciousness_modifier = -0.1
     core_pop_militancy_modifier = -0.1
     research_points_modifier = -0.3
+    cb_generation_speed_modifier = 0.5
     min_tariff = 0.5
     prestige = -0.01
     icon = 10
@@ -807,7 +992,8 @@ uncivilized_isolationism = {
 
 western_presence = {
     pop_consciousness_modifier = 0.1
-    research_points_modifier = 0.02
+    pop_militancy_modifier = 0.05
+    research_points_modifier = 0.01
     icon = 9
 }
 
@@ -912,7 +1098,7 @@ loyal_askaris = {
 muhammad_alis_reforms = {
     org_regain = 0.2
     land_organisation = 0.2
-    mobilisation_size = 0.24
+    mobilisation_size = 0.25
     war_exhaustion = -0.2
     tax_efficiency = 0.05
     mobilisation_economy_impact = -0.25
@@ -1224,7 +1410,8 @@ silk_famine = {
 
 blood_and_iron_mine = {
     mine_rgo_eff = 0.5
-    pop_militancy_modifier = 0.01
+    mine_rgo_size = 0.25
+    pop_consciousness_modifier = 0.01
     icon = 14
 }
 
@@ -1413,20 +1600,20 @@ witwatersrand_gold_rush = {
 
 ##### RGO Spread Events #####
 local_tractors = {
-    farm_RGO_eff = 0.45
+    farm_RGO_eff = 0.5
     icon = 13
 }
 
 local_nitroglycerin_and_machine_tools = {
-    mine_RGO_eff = 0.5
+    mine_RGO_eff = 0.6
     mine_RGO_size = 0.5
     icon = 13
 }
 
 local_distribution_channels_und_electricity = {
-    farm_RGO_eff = 0.5
-    mine_RGO_eff = 0.5
-    local_factory_throughput = 0.05
+    farm_RGO_eff = 0.8 #0.5
+    mine_RGO_eff = 0.8 #0.5
+    local_factory_throughput = 0.1 #0.05
     icon = 11
 }
 
@@ -1490,6 +1677,8 @@ great_depression = {
 central_bank_established = {
     loan_interest = -0.02
     poor_savings_modifier = 0.2
+    tax_efficiency = 0.05
+    tariff_efficiency_modifier = 0.1
     icon = 11
 }
 
@@ -1536,24 +1725,6 @@ spanish_restoration = {
 national_instability = {
     core_pop_militancy_modifier = 0.1
     global_pop_consciousness_modifier = 0.2
-    icon = 4
-}
-
-carlist_sympathies = {
-    prestige = -0.01
-    pop_militancy_modifier = 0.15
-    core_pop_militancy_modifier = 0.01
-    local_RGO_throughput = -0.3
-    immigrant_push = -0.5
-    icon = 4
-}
-
-christino_sympathies = {
-    prestige = -0.01
-    pop_militancy_modifier = 0.15
-    core_pop_militancy_modifier = 0.01
-    local_RGO_throughput = -0.3
-    immigrant_push = -0.5
     icon = 4
 }
 
@@ -1995,6 +2166,8 @@ tewodros_reforms = {
     land_unit_start_experience = 5
     land_attack_modifier = 0.05
     tax_efficiency = 0.3
+    mobilisation_size = 0.25
+    war_exhaustion = -0.2
     prestige = -0.25
     icon = 15
 }
@@ -2048,7 +2221,7 @@ home_of_the_mormons = {
     icon = 19
 }
 
-small_immigration_boom = {
+province_small_immigration_boom = {
     immigrant_attract = 1.5
     icon = 9
 }
@@ -2059,7 +2232,7 @@ gateway_to_harbor = {
     icon = 9
 }
 
-gateway_to_america = {
+gateway_to_poland = {
     immigrant_attract = 1
     population_growth = 0.002
     icon = 19
@@ -2096,7 +2269,7 @@ ottoman_oppression = {
     mobilisation_size = -0.02
     land_organisation = -0.05
     global_assimilation_rate = -0.2
-    tax_efficiency = 0.15
+    tax_efficiency = 0.4
     #non_accepted_pop_militancy_modifier = 0.05
     #non_accepted_pop_consciousness_modifier = 0.1
     icon = 5
@@ -2223,10 +2396,11 @@ louis_napoleon_iii = {
 }
 
 ### Neutrality ###
-neutrality = {
+neutrality_modifier = {
     max_military_spending = -0.10
     leadership_modifier = -0.7
     diplomatic_points_modifier = -0.3
+    core_pop_militancy_modifier = -0.01
     prestige = -0.025
     icon = 7
 }

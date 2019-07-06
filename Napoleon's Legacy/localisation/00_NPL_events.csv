@@ -310,10 +310,10 @@ EVTOPTA66630;Long live the Union!;;;;;;x;;;;;;;;;;;
 EVTNAME66631;The Imperial Victory;;;;;;x;;;;;;;;;;;
 EVTDESC66631;After such a long period of division, today the British people are finally reunified under the House of Hanover. Our armies occupy the cities of our homeland, and from London to Glasgow, throngs of cheering Anglo-Saxons line the streets to celebrate our victory. The republican usurpers have hung along with their supporters, and those on the other side who aided us in our fight have been rewarded. There is much to do in the coming days, but today is a day of celebration for all Britons.;;;;;;x;;;;;;;;;;;
 EVTOPTA66631;God save the Queen!;;;;;;x;;;;;;;;;;;
-EVTNAME37242;The Second Peninsular War;;;;;;x;;;;;;;;;;;
-EVTDESC37242;Spain has once again rebelled against us. In the first Peninsular war, we won due to having a united population. But now with our civil war with the rebels in France, we are not sure that we can fight another costly war against another large country.;;;;;;x;;;;;;;;;;;
-EVTOPTA37242;This will be like the previous war.;;;;;;x;;;;;;;;;;;
-EVTOPTB37242;Maybe we should just let them be.;;;;;;x;;;;;;;;;;;
+EVTNAME600038;The Second Peninsular War;;;;;;x;;;;;;;;;;;
+EVTDESC600038;Spain has once again rebelled against us. In the first Peninsular war, we won due to having a united population. But now with our civil war with the rebels in France, we are not sure that we can fight another costly war against another large country.;;;;;;x;;;;;;;;;;;
+EVTOPTA600038;This will be like the previous war.;;;;;;x;;;;;;;;;;;
+EVTOPTB600038;Maybe we should just let them be.;;;;;;x;;;;;;;;;;;
 EVTNAME99033;Land of Liberty;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC99033;Many have come into South Africa looking for opportunities or a new life.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT99033OPTA;We Welcome Those Who Come;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
@@ -625,8 +625,8 @@ EVTOPTA32482;Who needs the Tartars anyway?;;;;;;x;;;;;;;;;;;
 EVTNAME32470;Murat the Mad;;;;;;x;;;;;;;;;;;
 EVTDESC32470;Though the current King of Naples, Joachim Murat the First, was put on the throne by Napoleon, Murat chose to rebel against France in the Great War of 1822 in a bid for independence. Since then, he has grown progressively madder and more paranoid, reinstating absolutism and imprisoning or killing any who disagree with him. On the positive side, his vast collection of self-awarded medallions has aided the crafting industry significantly.;;;;;;x;;;;;;;;;;;
 EVTOPTA32470;All hail our beloved leader! Or else.;;;;;;x;;;;;;;;;;;
-EVTOPTA37241;We are free!;;;;;;x;;;;;;;;;;;
-EVTOPTB37241;We are safe under the French.;;;;;;x;;;;;;;;;;;
+EVTOPTA600037;We are free!;;;;;;x;;;;;;;;;;;
+EVTOPTB600037;We are safe under the French.;;;;;;x;;;;;;;;;;;
 EVTNAME37243;German War of Liberation;;;;;;x;;;;;;;;;;;
 EVTDESC37243;The Coalition of Nations engages in a war with the French with hopes of gaining their freedom. We have waited for the French to fall into a period of weakness, and this is the perfect chance!;;;;;;x;;;;;;;;;;;
 EVTOPTA37243;The German War of Liberation begins!;;;;;;x;;;;;;;;;;;
@@ -724,12 +724,6 @@ EVTOPTA600035;Viva Espa?!;;;;;;x;;;;;;;;;;;
 EVTNAME600036;No Reunification;;;;;;x;;;;;;;;;;;
 EVTDESC600036;The illegitimate rulers of the Spanish puppet state have, sadly, refused to give in to popular demand and surrender Spain to us. It shall mean war before our nation is whole once more.;;;;;;x;;;;;;;;;;;
 EVTOPTA600036;We shall prevail!;;;;;;x;;;;;;;;;;;
-EVTNAME600037;Indian Equality;;;;;;x;;;;;;;;;;;
-EVTDESC600037;"Shockingly, it seems as though the barbaric Indians of the Native Confederation are savage no longer. Having reached a level of civilization equivalent to ours, they have announced to the world today that they intend to take their place among the nations of the West. As such, our claims to the supposed ""unused"" land that they hold no longer has validity in the eyes of the world.";;;;;;x;;;;;;;;;;;
-EVTOPTA600037;Drat.;;;;;;x;;;;;;;;;;;
-EVTNAME600038;Native Equality;;;;;;x;;;;;;;;;;;
-EVTDESC600038;Under our tutelage, the Native Confederation has grown over the decades to the point that they can no longer be considered any more backwards than the West. Today they have announced their equality to the world, which also reflects well on our drive to civilize the backwards peoples of the world.;;;;;;x;;;;;;;;;;;
-EVTOPTA600038;Hurrah!;;;;;;x;;;;;;;;;;;
 EVTNAME600039;Imperial Experts;;;;;;x;;;;;;;;;;;
 EVTDESC600039;As a dominion of the British Empire, our people both suffer and benefit from our puppet status. Though we are not free to form our own foreign policy, the Imperial government takes an interest in our welfare, and often sends experts to help us modernize our technology so we can better combat those who would take our land.;;;;;;x;;;;;;;;;;;
 EVTOPTA600039;"What is this ""wheel"" they keep talking about?";;;;;;x;;;;;;;;;;;
@@ -1137,6 +1131,7 @@ EVT44168OPTA;So be it.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME44169;War Between the Americas;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC44169;A conflict between New England and the United States of America have broken out once again over a failed raid attempt by an abolitionist in the North. Due to treaties declaring New England as a state protected by the British Empire, the Empire is now required to join in on this war;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44169OPTA;The South must be pacified!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44169OPTB;This is just another regional war.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME44170;The Fate of the Native Confederation;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC44170;The Native Confederation is a point of contention between the Empire and two American states. New England is constantly agitating for the protection of Americans in Ohio from the Natives. The United States refusing to drop their claims on the lands of the Natives, may be open to a compromise, splitting the Confederation between the three parties. However, the Empire can just integrate the Confederation.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44170OPTA;Send the offers.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
@@ -1165,13 +1160,13 @@ EVT44177OPTA;Set the border to the 49th parallel.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,
 EVTNAME44178;Anglo-American Peace Treaty - Oregon Country;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44178OPTA;The 49th parallel is the new border.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44178OPTB;The 54th parallel is the new border.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTNAME44178;Anglo-American Peace Treaty - Caribbean;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44178OPTA;The Caribbean will be American!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44179;Anglo-American Peace Treaty - Caribbean;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44179OPTA;The Caribbean will be American!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC44180;The American Civil War ended with the surrender of the Dixie government in $YEAR$. In order to integrate the rest of the massive United States, various federal occupation forces are required in order to slowly integrate the regions of the United States. The proposed plan is to break up the United States into the Confederate States of America to the South, Louisiana to the Mid-West, Columbia to the North-West, California to the South-West, and the rest going to New England proper. Reintegration with New England will take time, but it is necessary in order for stabilty to cover the American realm. Once the country is reunited whole, it will be time for a new American Union State to prevail!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44180OPTA;The Reconstruction period begins.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC44181;The American Civil War ended with the surrender of the Dixie government in $YEAR$ to Yankee and British forces. Both New England and the former United States have been led to ruin. The British Empire is at a crossroads. To let New England reunite the United States could lead to a repeat of the War of 1812. On the other hand, it will be land controlled by an ally of the British Empire. The British Empire can either choose to let New England rebuild the Americas while the Empire focuses on the British Isles, or the British Empire must rebuild the Americas in the place of New England who will be integrated into the Empire as an equal. To integrate the New Englanders would require strong efforts, and would make the reconquest of the British Isles a goal that must be dropped.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44181OPTA;Let New England rebuild the continent.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44181OPTA;The British Empire will be the masters of the Americas!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44181OPTB;The British Empire will be the masters of the Americas!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME44182;The British Empire Concedes the Isles;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC44182;The Monarchists across the sea have dropped all claims to the British Isles. With the Empire victorious in the American Civil War, it has decided to concede the British Isles in order to refocus their efforts on North America. Any land that is claimed by us, but is owned by them will be returned to our control as a show of good faith. This is the start of a new era for Union-Empire relations!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44182OPTA;Hopefully they will stay there.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

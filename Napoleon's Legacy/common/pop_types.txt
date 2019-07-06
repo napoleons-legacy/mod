@@ -401,9 +401,9 @@ colonialmigration_chance = {
 
     modifier = {
         factor = -0.5
-        OR = {
-            is_primary_culture = no
-            is_accepted_culture = no
+        NOT = {
+            is_primary_culture = yes
+            is_accepted_culture = yes
         }
     }
 

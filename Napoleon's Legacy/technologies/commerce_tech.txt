@@ -5,7 +5,7 @@ private_banks = {
     cost = 3600
 
     activate_building = cement_factory
-    tax_eff = 3
+    tax_eff = 5
 
     ai_chance = {
         factor = 4
@@ -91,6 +91,10 @@ business_banks = {
             factor = 1.5
             literacy = 0.6
         }
+        modifier = {
+            factor = 10
+            colonial_nation = yes
+        }
     }
 }
 investment_banks = {
@@ -120,6 +124,10 @@ investment_banks = {
         modifier = {
             factor = 1.15
             literacy = 0.6
+        }
+        modifier = {
+            factor = 20
+            colonial_nation = yes
         }
     }
 }
@@ -601,7 +609,13 @@ freedom_of_trade = {
         }
         modifier = {
             factor = 0.25
-            NOT = { literacy = 0.4 }
+            NOT = {
+                literacy = 0.4
+                any_owned_province = {
+                    continent = africa
+                    is_colonial = yes
+                }
+            }
         }
     }
 }
@@ -619,7 +633,7 @@ market_structure = {
     rgo_goods_output = { sulphur = 0.1 }
 
     ai_chance = {
-        factor = 1.05
+        factor = 2
 
         modifier = {
             factor = 50
@@ -630,7 +644,7 @@ market_structure = {
             }
         }
         modifier = {
-            factor = 1.2
+            factor = 2
             is_greater_power = yes
         }
         modifier = {
@@ -646,12 +660,23 @@ market_structure = {
             industrial_score = 50
         }
         modifier = {
-            factor = 1.02
+            factor = 2
             tech_school = commerce_tech_school
         }
         modifier = {
+            factor = 20
+            colonial_nation = yes
+            year = 1870
+        }
+        modifier = {
             factor = 0.25
-            NOT = { literacy = 0.4 }
+            NOT = {
+                literacy = 0.4
+                any_owned_province = {
+                    continent = africa
+                    is_colonial = yes
+                }
+            }
         }
     }
 
@@ -670,9 +695,9 @@ business_regulations = {
     rgo_goods_output = { sulphur = 0.1 }
 
     ai_chance = {
-        factor = 1.05
+        factor = 2
         modifier = {
-            factor = 1.2
+            factor = 2
             is_greater_power = yes
         }
         modifier = {
@@ -684,12 +709,23 @@ business_regulations = {
             industrial_score = 150
         }
         modifier = {
-            factor = 1.02
+            factor = 2
             tech_school = commerce_tech_school
         }
         modifier = {
+            factor = 20
+            colonial_nation = yes
+            year = 1870
+        }
+        modifier = {
             factor = 0.25
-            NOT = { literacy = 0.4 }
+            NOT = {
+                literacy = 0.4
+                any_owned_province = {
+                    continent = africa
+                    is_colonial = yes
+                }
+            }
         }
     }
 
@@ -702,9 +738,9 @@ market_regulations = {
     influence = 0.2
     rgo_goods_output = { precious_goods = 0.1 }
     ai_chance = {
-        factor = 1.05
+        factor = 2
         modifier = {
-            factor = 1.2
+            factor = 2
             is_greater_power = yes
         }
         modifier = {
@@ -716,16 +752,30 @@ market_regulations = {
             industrial_score = 250
         }
         modifier = {
-            factor = 1.04
+            factor = 3
             any_owned_province = { trade_goods = precious_goods }
         }
         modifier = {
-            factor = 1.02
+            factor = 2
             tech_school = commerce_tech_school
         }
         modifier = {
+            factor = 50
+            year = 1875
+            any_owned_province = {
+                continent = africa
+                is_colonial = yes
+            }
+        }
+        modifier = {
             factor = 0.25
-            NOT = { literacy = 0.4 }
+            NOT = {
+                literacy = 0.4
+                any_owned_province = {
+                    continent = africa
+                    is_colonial = yes
+                }
+            }
         }
     }
 

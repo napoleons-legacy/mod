@@ -10,7 +10,7 @@ non_state_culture_literacy = 0.1
 civilized = yes
 
 #GreaterPowers = prestige
-prestige = 20
+prestige = 25
 
 # Political reforms
 slavery = yes_slavery
@@ -40,6 +40,7 @@ citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
+set_country_flag = new_world_nation
 
 ruling_party = USA_conservative
 last_election = 1832.5.3
@@ -53,7 +54,6 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = new_world_nation
 
 # Technologies
 post_napoleonic_thought = 1
@@ -93,6 +93,7 @@ steamers = 1
 traditionalism = yes
 political_religion = yes
 paternalism = yes
+cotton_gin = yes
 
 
 # Starting Consciousness

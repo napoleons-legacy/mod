@@ -144,13 +144,6 @@ IRE = {
     color3= { 117 127 174  }
 }
 
-# Ionian Islands FIXED
-ION = {
-    color1= { 69 80 169  }
-    color2= { 248 199 67  }
-    color3= { 131 101 85  }
-}
-
 # Scotland
 SCO = {
     color1= { 199 175 12  }
@@ -517,7 +510,7 @@ SIC = {
     color3= { 131 101 85  }
 }
 
-# Siebenb�rgen
+# Siebenbürgen
 SIE = {
     color1= { 75 111 205  }
     color2= { 124 140 162  }
@@ -536,13 +529,6 @@ VEN = {
     color1= { 54 167 156  }
     color2= { 69 157 208  }
     color3= { 166 189 199  }
-}
-
-# Flanders
-FLA = {
-    color1= { 43 141 172  }
-    color2= { 195 149 155  }
-    color3= { 134 166 117  }
 }
 
 # Haiti

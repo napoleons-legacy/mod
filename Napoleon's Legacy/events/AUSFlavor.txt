@@ -81,6 +81,25 @@ country_event = {
     option = {
         name = "EVTOPTA31502"
         ruling_party_ideology = conservative
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
+        random_owned = {
+            limit = {
+                owner = {
+                    OR = {
+                        government = prussian_constitutionalism
+                        government = hms_government
+                    }
+                }
+            }
+            owner = { set_country_flag = conservative_party_in_power }
+        }
         upper_house = {
             ideology = reactionary
             value = 0.3
@@ -656,6 +675,8 @@ country_event = {
     }
 }
 
+
+#Candidate for decision
 country_event = {
 
     id = 60055558

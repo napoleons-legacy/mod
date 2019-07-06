@@ -39,7 +39,6 @@ news_priority =
                 tags_contains = { 0 SPA }
                 tags_contains = { 0 TUR }
                 tags_contains = { 0 NET }
-                tags_contains = { 0 BEL }
             }
         }
         priority_add = -50
@@ -85,7 +84,6 @@ news_priority =
                 tags_contains = { 0 SPA }
                 tags_contains = { 0 TUR }
                 tags_contains = { 0 NET }
-                tags_contains = { 0 BEL }
                 tags_contains = { 0 SWE }
                 tags_contains = { 0 SCA }
                 tags_contains = { 0 CAN }

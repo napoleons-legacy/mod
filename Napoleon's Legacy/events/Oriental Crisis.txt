@@ -1,7 +1,7 @@
 #########################################################
-#                                                       #
-#               The Oriental Crisis Events              #
-#                                                       #
+#                                                        #
+#                The Oriental Crisis Events                #
+#                                                        #
 #########################################################
 
 #Initial declaration of independence by Egypt
@@ -67,7 +67,7 @@ country_event = {
     }
 }
 
-#the Ottoman response-- war or negotiate?
+#the Ottoman response -- war or negotiate?
 country_event = {
     id = 90076
     title = "EVTNAME90076" # The Oriental Crisis (OE's Reaction)
@@ -99,7 +99,11 @@ country_event = {
             target = EGY
             attacker_goal = { casus_belli = make_puppet }
         }
-        EGY = { release_vassal = HDJ }
+        set_country_flag = exclusive_make_puppet_CB
+        EGY = {
+            add_country_modifier = { name = war_focus duration = -1 }
+            release_vassal = HDJ
+        }
         any_pop = {
             limit = { is_primary_culture = yes }
             dominant_issue = {
@@ -261,7 +265,11 @@ country_event = {
             type = make_puppet
             months = 12
         }
-        EGY = { release_vassal = HDJ }
+        EGY = {
+            release_vassal = HDJ
+            add_country_modifier = { name = war_focus duration = -1 }
+        }
+        set_country_flag = exclusive_make_puppet_CB
         random_owned = {
             limit = {
                 owner = { NOT = { war_with = EGY } }
@@ -319,6 +327,7 @@ country_event = {
         }
         any_owned_province = {
             OR = {
+                province_id = 900
                 region = EGY_897
                 region = EGY_903
                 region = EGY_915
@@ -350,11 +359,12 @@ country_event = {
         remove_country_modifier = muhammad_alis_reforms
         prestige = 20
         TUR = {
-            prestige = -20
+            prestige = -50
         }
         all_core = {
             limit = {
                 OR = {
+                    province_id = 900
                     region = EGY_897
                     region = EGY_903
                     region = EGY_915
@@ -368,6 +378,7 @@ country_event = {
         any_owned = {
             limit = {
                 OR = {
+                    province_id = 900
                     region = EGY_897
                     region = EGY_903
                     region = EGY_915
@@ -429,12 +440,12 @@ country_event = {
             }
             diplomatic_influence = { who = EGY value = -100 }
         }
-        diplomatic_influence = { who = EGY value = 350 }
-        relation = { who = RUS value = -200 }
+        relation = { who = RUS value = -100 }
         leave_alliance = RUS
         EGY = {
             remove_country_modifier = muhammad_alis_reforms
             set_country_flag = surrendered_to_OE
+            add_country_modifier = { name = reactionary_demands duration = 7300 }
             all_core = {
                 limit = { is_core = TUR }
                 remove_core = EGY
@@ -450,7 +461,7 @@ country_event = {
                 }
                 add_province_modifier = {
                     name = nationalist_agitation
-                    duration = 730
+                    duration = 365
                 }
             }
             any_pop = {
@@ -488,7 +499,7 @@ country_event = {
         badboy = 4
         prestige = 20
         EGY = {
-            tech_school = unciv_tech_school
+            tech_school = developing_tech_school
             all_core = {
                 limit = { is_core = TUR }
                 remove_core = EGY
@@ -507,6 +518,7 @@ country_event = {
             annex_to = THIS
         }
         HDJ = { all_core = { add_core = TUR } }
+
         relation = { who = RUS value = -200 }
         leave_alliance = RUS
         any_owned = {
@@ -537,8 +549,8 @@ country_event = {
             modifier = {
                 factor = 0
                 badboy = 0.6
+            }
         }
-    }
     }
 }
 
@@ -740,7 +752,7 @@ country_event = {
         OR = {
             alliance_with = TUR
             relation = { who = TUR value = 50 }
-            NOT = { relation = { who = EGY  value = -50 } }
+            NOT = { relation = { who = EGY value = -50 } }
         }
         EGY = { any_owned_province = { is_core = TUR } }
         NOT = {
@@ -760,7 +772,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 2
+        months = 3
         modifier = {
             factor = 0.5
             alliance_with = TUR
@@ -771,15 +783,15 @@ country_event = {
         }
         modifier = {
             factor = 2
-            EGY = { national_provinces_occupied = .01 }
+            EGY = {    national_provinces_occupied = .01 }
         }
         modifier = {
             factor = 0.5
-            TUR = { national_provinces_occupied = .01 }
+            TUR = {    national_provinces_occupied = .01 }
         }
         modifier = {
             factor = 0.5
-            TUR = { national_provinces_occupied = .10 }
+            TUR = {    national_provinces_occupied = .10 }
         }
     }
 
@@ -795,6 +807,8 @@ country_event = {
             type = liberate_country
             months = 12
         }
+        set_country_flag = exclusive_liberate_country_CB
+        EGY = { add_country_modifier = { name = war_focus duration = -1 } }
         war = {
             target = EGY
             attacker_goal = {
@@ -826,7 +840,7 @@ country_event = {
             }
             modifier = {
                 factor = 1.5
-                TUR = { national_provinces_occupied = .01 }
+                TUR = {    national_provinces_occupied = .01 }
             }
             modifier = {
                 factor = 1.25
@@ -1031,9 +1045,9 @@ country_event = {
         prestige = 10
         end_war = EGY
         random_country = {
-        limit = {
-            tag = HDJ
-            ai = yes
+            limit = {
+                tag = HDJ
+                ai = yes
             }
             annex_to = TUR
         }
@@ -1208,7 +1222,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 3
+        months = 6
         modifier = {
             factor = 0.5
             alliance_with = EGY
@@ -1216,20 +1230,20 @@ country_event = {
         modifier = {
             factor = 4
             NOT = {
-                EGY = { national_provinces_occupied = .01 }
+                EGY = {    national_provinces_occupied = .01 }
             }
         }
         modifier = {
             factor = 2
-            TUR = { national_provinces_occupied = .01 }
+            TUR = {    national_provinces_occupied = .01 }
         }
         modifier = {
             factor = 0.5
-            EGY = { national_provinces_occupied = .01 }
+            EGY = {    national_provinces_occupied = .01 }
         }
         modifier = {
             factor = 0.5
-            EGY = { national_provinces_occupied = .10 }
+            EGY = {    national_provinces_occupied = .10 }
         }
     }
 
@@ -1261,7 +1275,7 @@ country_event = {
             factor = 75
             modifier = {
                 factor = 1.25
-                EGY = { national_provinces_occupied = .05 }
+                EGY = {    national_provinces_occupied = .05 }
             }
             modifier = {
                 factor = 1.25
@@ -1310,7 +1324,7 @@ country_event = {
 
     option = {
         name = "EVT90091OPTA"
-        prestige = -5
+        prestige = -1
         relation = {
             who = FROM
             value = -50

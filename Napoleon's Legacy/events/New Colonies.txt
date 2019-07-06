@@ -1,7 +1,7 @@
 #########################################################
-#                                                       #
-#                  Colonial Core Spread                 #
-#                                                       #
+#                                                        #
+#                     Colonial Core Spread                    #
+#                                                        #
 #########################################################
 
 #Nigeria
@@ -1282,7 +1282,7 @@ province_event = {
     desc = "EVTDESC98830"
 
     trigger = {
-        region = EGY_1842
+        region = EGY_1838 # was EGY_1842 - darfur
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {
@@ -1409,7 +1409,7 @@ province_event = {
     desc = "EVTDESC98830"
 
     trigger = {
-            region = TRI_1735
+        region = TRI_1735
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {
@@ -1758,7 +1758,8 @@ province_event = {
     desc = "EVTDESC98840"
 
     trigger = {
-        region = BEL_1992
+        #region = BEL_1992
+        region = BEL_1984
         owned_by = THIS
         controlled_by = THIS
         any_neighbor_province = {
@@ -2024,128 +2025,6 @@ province_event = {
 }
 
 province_event = {
-    id = 98847
-    title = "EVTNAME98800"
-    desc = "EVTDESC98845"
-
-    trigger = {
-        region = BEL_1992
-        owned_by = THIS
-        controlled_by = THIS
-        any_neighbor_province = {
-            is_core = CNG
-        }
-        owner = {
-            civilized = yes
-            NOT = { capital_scope = { continent = africa } }
-        }
-        OR = {
-            AND = {
-                owner = { owns = 1982 }
-                CNG = { exists = no }
-            }
-            CNG = {
-                vassal_of = THIS
-                is_culture_group = THIS
-            }
-        }
-        NOT = {
-            is_core = CNG
-            AND = {
-                is_core = CAR
-                1965 = { owned_by = THIS }
-            }
-            CAR = {
-                vassal_of = THIS
-                is_culture_group = THIS
-            }
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 120
-    }
-
-    option = {
-        name = "EVT98800OPTA"
-        state_scope = {
-            any_owned = {
-                limit = {
-                    NOT = { is_core = CNG }
-                }
-                add_core = CNG
-                remove_core = CAR
-                remove_core = CGO
-                any_pop = { militancy = -3 }
-            }
-        }
-        CNG = { add_accepted_culture = mongo }
-    }
-}
-
-province_event = {
-    id = 98848
-    title = "EVTNAME98800"
-    desc = "EVTDESC98845"
-
-    trigger = {
-        OR = {
-            region = BEL_1990
-            region = BEL_1996
-        }
-        owned_by = THIS
-        controlled_by = THIS
-        any_neighbor_province = {
-            is_core = CNG
-        }
-        owner = {
-            civilized = yes
-            NOT = { capital_scope = { continent = africa } }
-        }
-        OR = {
-            AND = {
-                owner = { owns = 1982 }
-                CNG = { exists = no }
-            }
-            CNG = {
-                vassal_of = THIS
-                is_culture_group = THIS
-            }
-        }
-        NOT = {
-            is_core = CNG
-            AND = {
-                is_core = CAR
-                1965 = { owned_by = THIS }
-            }
-            CAR = {
-                vassal_of = THIS
-                is_culture_group = THIS
-            }
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 120
-    }
-
-    option = {
-        name = "EVT98800OPTA"
-        state_scope = {
-            any_owned = {
-                limit = {
-                    NOT = { is_core = CNG }
-                }
-                add_core = CNG
-                remove_core = CAR
-                any_pop = { militancy = -3 }
-            }
-        }
-        CNG = { add_accepted_culture = azande }
-    }
-}
-
-province_event = {
     id = 98850
     title = "EVTNAME98800"
     desc = "EVTDESC98845"
@@ -2305,7 +2184,7 @@ province_event = {
     trigger = {
         OR = {
             region = ENG_1844
-            region = EGY_1842
+            region = EGY_1838 #was EGY_1842 darfur
         }
         owned_by = THIS
         controlled_by = THIS
@@ -2361,73 +2240,73 @@ province_event = {
     }
 }
 
-province_event = {
-    id = 98855
-    title = "EVTNAME98800"
-    desc = "EVTDESC98852"
-
-    trigger = {
-        region = BEL_1992
-        owned_by = THIS
-        controlled_by = THIS
-        any_neighbor_province = {
-            is_core = CAR
-        }
-        owner = {
-            civilized = yes
-            NOT = { capital_scope = { continent = africa } }
-        }
-        OR = {
-            AND = {
-                owner = { owns = 1965 }
-                CAR = { exists = no }
-            }
-            CAR = {
-                vassal_of = THIS
-                is_culture_group = THIS
-            }
-        }
-        NOT = {
-            is_core = CAR
-            AND = {
-                is_core = CNG
-                1982 = { owned_by = THIS }
-            }
-            AND = {
-                is_core = CGO
-                1977 = { owned_by = THIS }
-            }
-            CNG = {
-                vassal_of = THIS
-                is_culture_group = THIS
-            }
-            CGO = {
-                vassal_of = THIS
-                is_culture_group = THIS
-            }
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 120
-    }
-
-    option = {
-        name = "EVT98800OPTA"
-        state_scope = {
-            any_owned = {
-                limit = {
-                    NOT = { is_core = CAR }
-                }
-                add_core = CAR
-                remove_core = CNG
-                remove_core = CGO
-                any_pop = { militancy = -3 }
-            }
-        }
-        CAR = { add_accepted_culture = mongo }
-    }
-}
+#province_event = {
+#    id = 98855
+#    title = "EVTNAME98800"
+#    desc = "EVTDESC98852"
+#
+#    trigger = {
+#        region = BEL_1992
+#        owned_by = THIS
+#        controlled_by = THIS
+#        any_neighbor_province = {
+#            is_core = CAR
+#        }
+#        owner = {
+#            civilized = yes
+#            NOT = { capital_scope = { continent = africa } }
+#        }
+#        OR = {
+#            AND = {
+#                owner = { owns = 1965 }
+#                CAR = { exists = no }
+#            }
+#            CAR = {
+#                vassal_of = THIS
+#                is_culture_group = THIS
+#            }
+#        }
+#        NOT = {
+#            is_core = CAR
+#            AND = {
+#                is_core = CNG
+#                1982 = { owned_by = THIS }
+#            }
+#            AND = {
+#                is_core = CGO
+#                1977 = { owned_by = THIS }
+#            }
+#            CNG = {
+#                vassal_of = THIS
+#                is_culture_group = THIS
+#            }
+#            CGO = {
+#                vassal_of = THIS
+#                is_culture_group = THIS
+#            }
+#        }
+#    }
+#
+#    mean_time_to_happen = {
+#        months = 120
+#    }
+#
+#    option = {
+#        name = "EVT98800OPTA"
+#        state_scope = {
+#            any_owned = {
+#                limit = {
+#                    NOT = { is_core = CAR }
+#                }
+#                add_core = CAR
+#                remove_core = CNG
+#                remove_core = CGO
+#                any_pop = { militancy = -3 }
+#            }
+#        }
+#        CAR = { add_accepted_culture = mongo }
+#    }
+#}
 
 province_event = {
     id = 98856
@@ -2553,7 +2432,7 @@ province_event = {
 
     trigger = {
         OR = {
-            region = EGY_1842
+            region = EGY_1838 #was EGY_1842 darfur
             region = ENG_1844
         }
         owned_by = THIS

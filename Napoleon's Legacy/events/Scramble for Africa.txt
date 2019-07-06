@@ -1,8 +1,8 @@
 #Events from 955182 to 955200 used in Congo.txt
 #################################################################################################################
-#                                                                                                               #
-#                    Events for the Berlin Conference and Annexation of African Minors                          #
-#                                                                                                               #
+#                                                                                                                #
+#                     Events for the Berlin Conference and Annexation of African Minors                            #
+#                                                                                                                #
 #################################################################################################################
 
 country_event = {
@@ -26,6 +26,9 @@ country_event = {
             }
         }
         capital_scope = { continent = europe }
+        NOT = { tag = TUR }
+        NOT = { tag = RUS }
+        NOT = { tag = TSA }
         invention = prophylaxis_against_malaria
         invention = mission_to_civilize
         invention = colonial_negotiations
@@ -46,28 +49,34 @@ country_event = {
         name = "EVT95500OPTA"
         set_global_flag = berlin_conference
         prestige = 25
-        #Ivory Coast
-        1895 = { trade_goods = precious_metal } #Bouake  (Kokumbo Mine)
-        1899 = { trade_goods = coffee } #Bondouku
-        1897 = { trade_goods = coffee } #Akoupe
-        1896 = { trade_goods = coffee } #Man
-        1900 = { trade_goods = fruit } #Odienne
-        #Ghana
-        1909 = { trade_goods = precious_metal } #Sekondi (Tarkwa Mine)
-        1910 = { trade_goods = precious_metal } #Kumai (Obuasi Mine)
-        1907 = { trade_goods = coffee } #Accra (cocoa)
-        1912 = { trade_goods = grain } #Wa
-        1911 = { trade_goods = coffee } #Kintampo (cocoa)
-        1915 = { trade_goods = coffee } #Ho (cocoa)
-        1916 = { trade_goods = cotton } #Yendi
-        #Togo
-        1914 = { trade_goods = coffee } #Lome
-        1917 = { trade_goods = coffee } #Atakpame
-        1918 = { trade_goods = cotton } #Sokode
-        #Nigeria
-        1935 = { trade_goods = coal } #Aruchukwu (representing Enugu)
-        #Morocco
-        1689 = { trade_goods = iron } #Melilla
+        TUR = { relation = { who = EGY value = 100 } }
+        any_country = {
+            limit = {
+                OR = {
+                    owns = 2071 #Zimbabwe
+                    owns = 1884 #Sierra Leone
+                    owns = 1887 #Liberia
+                    owns = 2038 #Tanzania
+                    owns = 1779 #Shingit, Mauritania
+                }
+            }
+            country_event = { id = 955203 days = 0 }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    OR = {
+                        owns = 2071 #Zimbabwe
+                        owns = 1884 #Sierra Leone
+                        owns = 1887 #Liberia
+                        owns = 2038 #Tanzania
+                        owns = 1779 #Shingit, Mauritania
+                    }
+                }
+            }
+            owner = { country_event = { id = 955203 days = 0 } }
+        }
     }
 }
 
@@ -265,7 +274,14 @@ country_event = {
 
     trigger = {
         has_global_flag = berlin_conference
-        capital_scope = { continent = africa }
+        NOT = { tag = ETH }
+        OR = {
+            capital_scope = { continent = africa }
+            tag = LHJ
+            tag = FDL
+            tag = KTH
+            tag = MHR
+        }
         civilized = no
         is_vassal = no
         part_of_sphere = yes
@@ -283,18 +299,15 @@ country_event = {
                 neighbour = THIS
             }
             nationalism_n_imperialism = 1
-            NOT = {
-                war_policy = pacifism
-                num_of_revolts = 1
-            }
         }
         NOT = {
             has_country_flag = refused_protectorate
             has_country_flag = post_colonial_country
+        }
     }
-    }
+
     mean_time_to_happen = {
-        months = 6
+        months = 12
         modifier = {
             factor = 10
             has_country_flag = delay_unciv_annexation
@@ -521,7 +534,7 @@ country_event = {
         is_vassal = no
         has_global_flag = berlin_conference
         capital_scope = { continent = europe }
-        any_owned_province = { port = yes }
+        any_owned_province = { has_building = naval_base }
         OR = {
             is_greater_power = yes
             is_secondary_power = yes
@@ -535,7 +548,6 @@ country_event = {
         }
         1851 = {
             owner = {
-                part_of_sphere = no
                 civilized = no
                 war = no
                 NOT = { truce_with = THIS }
@@ -573,16 +585,10 @@ country_event = {
     option = {
         name = "EVT95508OPTA"
         badboy = 2
-        1851 = { owner = { country_event = 95509 } }
+        1851 = {
+            owner = { country_event = 95509 }
+        }
         1851 = { secede_province = THIS }
-        random_country = {
-            limit = { civilized = no owns = 1849 }
-            1849 = { secede_province = THIS }
-        }
-        random_country = {
-            limit = { civilized = no owns = 1850 }
-            1850 = { secede_province = THIS }
-        }
         ai_chance = {
             factor = 75
             modifier = {
@@ -641,13 +647,6 @@ country_event = {
             type = place_in_the_sun
             months = 240
         }
-        FROM = {
-            casus_belli = {
-                target = THIS
-                type = demand_concession_BC_casus_belli
-                months = 60
-            }
-        }
         any_country = {
             limit = { is_greater_power = yes }
             diplomatic_influence = { who = THIS value = -100 }
@@ -685,6 +684,7 @@ country_event = {
         1833 = {
             OR = {
                 NOT = { owned_by = THIS }
+                average_militancy = 4
                 AND = {
                     controlled_by = REB
                     province_control_days = 60
@@ -694,6 +694,7 @@ country_event = {
         1836 = {
             OR = {
                 NOT = { owned_by = THIS }
+                average_militancy = 4
                 AND = {
                     controlled_by = REB
                     province_control_days = 60
@@ -703,6 +704,7 @@ country_event = {
         1829 = {
             OR = {
                 NOT = { owned_by = THIS }
+                average_militancy = 4
                 AND = {
                     controlled_by = REB
                     province_control_days = 60
@@ -783,7 +785,7 @@ country_event = {
             war_exhaustion = 10
             any_owned_province = { continent = africa }
             has_country_modifier = punitive_effects
-            has_country_modifier = neutrality
+            has_country_modifier = neutrality_modifier
             year = 1900
             tag = RUS
         }
@@ -860,7 +862,7 @@ country_event = {
     }
 }
 
-#Annexation of Sudan
+#Annexation of Sudan - Hegemony over the Nile
 country_event = {
     id = 955177
     title = "EVTNAME955177"
@@ -871,22 +873,29 @@ country_event = {
         war = no
         is_sphere_leader_of = EGY
         capital_scope = { continent = europe }
-        NOT = { tag = TUR }
-        NOT = { tag = RUS }
+        NOT = {
+            tag = TUR
+            tag = RUS
+            tag = TSA
+            exists = SUD
+        }
         has_global_flag = berlin_conference
         has_global_flag = mahdist_uprising
-        SUD = { exists = no }
         EGY = {
-            any_owned_province = { is_core = SUD has_province_modifier = fundamentalist_sympathies }
-            owns = 1827
             exists = yes
+            any_owned_province = {
+                is_core = SUD
+                has_province_modifier = fundamentalist_sympathies
+            }
+            any_owned_province = {
+                region = EGY_1834
+            }
         }
     }
 
     fire_only_once = yes
 
     mean_time_to_happen = { months = 8 }
-
 
     option = {
         name = "EVT955177OPTA"
@@ -909,7 +918,6 @@ country_event = {
 
     is_triggered_only = yes
 
-
     option = {
         name = "EVT955178OPTA"
         prestige = -5
@@ -921,7 +929,13 @@ country_event = {
         name = "EVT955178OPTB"
         prestige = 5
         FROM = { country_event = 955180 }
-        ai_chance = { factor = 0.05 }
+        ai_chance = {
+            factor = 0.05
+            modifier = {
+                factor = 0
+                is_vassal = yes
+            }
+        }
     }
 }
 #Egypt Accepts
@@ -933,31 +947,59 @@ country_event = {
 
     is_triggered_only = yes
 
-
     option = {
         name = "EVT955179OPTA"
         prestige = 5
-        SUD = { civilized = no all_core = { remove_core = EGY remove_core = TUR any_pop = { militancy = 7 consciousness = 4 } } }
-
+        SUD = {
+            all_core = {
+                remove_core = DAR
+                remove_core = SHK
+                any_pop = {
+                    militancy = 7
+                    consciousness = 4
+                }
+            }
+        }
 
         1834 = { add_core = EGY }
 
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 50000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 50 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 50000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 50 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 50000 } }
+            owner = { treasury = -50000 }
+        }
+
         FROM = {
+            money = 50000
             any_owned = {
                 limit = {
                     OR = {
-                    is_core = SUD
-                    is_core = ETH
+                        is_core = SUD
+                        is_core = ETH
                     }
                 }
-            secede_province = SUD
+                secede_province = THIS
             }
-        money = 50000
         }
-        SUD = { all_core = { remove_core = DAR remove_core = SHK } }
-        inherit = SUD
         relation = { who = EGY value = 100 }
-        }
+    }
 }
 
 #Egypt Refuses
@@ -973,8 +1015,7 @@ country_event = {
         name = "EVT955180OPTA"
         relation = { who = FROM value = -400 }
         diplomatic_influence = { who = FROM value = -400 }
-        FROM = { any_owned = { limit = {  OR = { is_core = SUD  is_core = ETH } } secede_province = SUD } }
-        SUD = { all_core = { remove_core = DAR remove_core = SHK } }
+
         SUD = {
             civilized = no
             government = theocracy
@@ -988,11 +1029,32 @@ country_event = {
             political_reform = underground_parties
             political_reform = primary_culture_only
             political_reform = mandatory_service
+
+            clr_country_flag = election_started
+            clr_country_flag = conservative_party_in_power
+            clr_country_flag = liberal_party_in_power
+            clr_country_flag = reactionary_party_in_power
+            clr_country_flag = socialist_party_in_power
+            clr_country_flag = communist_party_in_power
+            clr_country_flag = fascist_party_in_power
+            clr_country_flag = anarcho_liberal_party_in_power
+
+            all_core = {
+                remove_core = DAR
+                remove_core = SHK
+            }
         }
-        casus_belli = { target = SUD type = conquest_any months = 30 }
-        FROM = {
-            relation = { who = SUD value = -400 }
-            casus_belli = { target = SUD type = conquest_any months = 30 }
+        casus_belli = {
+            target = FROM
+            type = acquire_any_state
+            months = 30
+        }
+        war = {
+            target = FROM
+            attacker_goal = {
+                casus_belli = acquire_any_state
+                state_province_id = 1837
+            }
         }
     }
 }
@@ -1009,17 +1071,25 @@ country_event = {
     option = {
         name = "EVT955181OPTA"
         relation = { who = FROM value = 50 }
-        1878 = { secede_province = THIS }
-        1792 = { secede_province = FROM }
+        random_owned = {
+            limit = { province_id = 1792 }
+            secede_province = FROM
+        }
+        random_country = {
+            limit = {
+                tag = FROM
+                owns = 1878
+            }
+            random_owned = {
+                limit = { province_id = 1878 }
+                secede_province = THIS
+            }
+        }
         ai_chance = {
             factor = 95
             modifier = {
                 factor = 0.5
                 is_greater_power = yes
-                }
-            modifier = {
-                factor = 4
-                relation = { who = FROM value = 150 }
             }
         }
     }
@@ -1031,13 +1101,11 @@ country_event = {
             target = FROM
             type = place_in_the_sun
             months = 30
-            }
-        FROM = {
-            casus_belli = {
+        }
+        add_casus_belli = {
             target = THIS
             type = place_in_the_sun
             months = 30
-            }
         }
         ai_chance = {
             factor = 5
@@ -1046,30 +1114,5 @@ country_event = {
                 NOT = { relation = { who = FROM value = 0 } }
             }
         }
-    }
-}
-
-#The Conquest of Luhonono
-country_event = {
-    id = 955200
-    title = "EVTNAME955200"
-    desc = "EVTDESC955200"
-    picture = "mfecane"
-
-    trigger = {
-        owns = 2076
-        2084 = { empty = no }
-        2081 = { empty = yes }
-        owns = 2083
-        invention = the_dark_continent
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { months = 2 }
-
-    option = {
-        name = "EVT955200OPTA"
-        2081 = { secede_province = THIS any_pop = { literacy = -0.99 } }
     }
 }

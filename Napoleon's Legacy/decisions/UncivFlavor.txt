@@ -61,9 +61,8 @@ political_decisions = {
             set_country_flag = muhammad_alis_reforms_enacted
             prestige = 5
             treasury = 5000
-            small_arms = 20
-            regular_clothes = 50
             military_reform = yes_foreign_training
+            economic_reform = finance_reform_two
             add_country_modifier = {
                 name = muhammad_alis_reforms
                 duration = -1
@@ -104,10 +103,11 @@ political_decisions = {
     claim_negusa_nagast = {
         picture = claim_negusa_nagast
         potential = {
-            civilized = no
+            #civilized = no
             OR = {
                 primary_culture = amhara
                 primary_culture = tigray
+                primary_culture = oromo
             }
             NOT = { tag = ETH }
             NOT = { exists = ETH }
@@ -204,7 +204,17 @@ political_decisions = {
     conquest_of_the_south = {
         picture = conquest_of_the_south
         potential = {
+            OR = {
             tag = ETH
+                AND = {
+                    year = 1870
+                    OR = {
+                        primary_culture = amhara
+                        primary_culture = tigray
+                        primary_culture = oromo
+                    }
+                }
+            }
             exists = yes
             NOT = { has_country_flag = conquest_of_the_south }
             1864 = { empty = yes }
@@ -214,9 +224,21 @@ political_decisions = {
 
         allow = {
             war = no
+            OR = {
+                AND = {
             owns = 1860
             owns = 1861
             owns = 1865
+                }
+                AND = {
+                    year = 1885
+                    OR = {
+                        owns = 1860
+                        owns = 1861
+                        owns = 1865
+                    }
+                }
+            }
             OR = {
                 land_reform = yes_land_reform
                 admin_reform = yes_admin_reform
@@ -226,15 +248,15 @@ political_decisions = {
                 }
                 civilization_progress = 0.4
                 civilized = yes
-                year = 1885
+                year = 1880
             }
         }
 
         effect = {
             set_country_flag = conquest_of_the_south
-            1864 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } life_rating = 21 }
-            1866 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } life_rating = 21 }
-            1867 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } life_rating = 21 }
+            1864 = { add_core = ETH secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 21 }
+            1866 = { add_core = ETH secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 21 }
+            1867 = { add_core = ETH secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 21 }
         }
 
         ai_will_do = { factor = 1 }
@@ -558,7 +580,6 @@ political_decisions = {
                 AND = {
                     is_canal_enabled = 2
                     capital_scope = { continent = europe }
-                    NOT = { tag = TUR }
                     any_owned_province = {
                         OR = {
                             AND = {
@@ -585,14 +606,12 @@ political_decisions = {
             money = 50000
             nationalism_n_imperialism = 1
             OR = {
-                experimental_psychology = 1
-                invention = expansionism
                 AND = {
-                    naval_plans = 1
+                    naval_logistics = 1
                     ai = no
                 }
                 AND = {
-                    battleship_column_doctrine = 1
+                    blue_and_brown_water_schools = 1
                     ai = yes
                 }
                 any_owned_province = {
@@ -611,41 +630,6 @@ political_decisions = {
             treasury = -50000
             prestige = 2
             1875 = { secede_province = THIS life_rating = 25 }
-        }
-
-        ai_will_do = { factor = 1 }
-    }
-
-
-    commodities_in_south_east_asia = {
-        picture = coffee_in_colombia
-        potential = {
-            OR = {
-                owns = 1369
-                owns = 1346
-            }
-            NOT = { has_global_flag = commodities_in_south_east_asia_placed }
-        }
-
-        allow = {
-            war = no
-            OR = {
-                year = 1890
-                modern_central_bank_system = 1
-            }
-        }
-
-        effect = {
-            set_global_flag = commodities_in_south_east_asia_placed
-            #Vietnam
-            1369 = { trade_goods = tea }
-            1370 = { trade_goods = coffee }
-            1371 = { trade_goods = coffee }
-            1376 = { trade_goods = coffee }
-            1375 = { trade_goods = tobacco }
-            #Thailand
-            1346 = { trade_goods = coffee }
-            1358 = { trade_goods = coffee }
         }
 
         ai_will_do = { factor = 1 }
@@ -791,4 +775,89 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
+
+
+    # adopt_old_techs_lvl_1 = {
+        # picture = self_strengthening_movement
+        # potential = {
+            # civilized = no
+            # year = 1890
+            # NOT = { army_command_principle = 1 }
+        # }
+
+        # allow = {
+            # war = no
+            # money = 250000
+            # year = 1895
+        # }
+
+        # effect = {
+            # treasury = -250000
+            # random_owned = {
+                # limit = { owner = { prestige = 2 } }
+                # owner = { prestige_factor = -0.75 }
+            # }
+            # add_country_modifier = { name = research_lagging_behind duration = 1460 }
+            # random_owned = {
+                # limit = { owner = { NOT = { army_command_principle = 1 } } }
+                # owner = { set_country_flag = first_lvl_techs_adopted }
+            # }
+            # ##Army Tech
+            # random_owned = {
+                # limit = { owner = { NOT = { post_napoleonic_thought = 1 } } }
+                # owner = { activate_technology = post_napoleonic_thought }
+            # }
+            # random_owned = {
+                # limit = { owner = { NOT = { flintlock_rifles = 1 } } }
+                # owner = { activate_technology = flintlock_rifles }
+            # }
+            # random_owned = {
+                # limit = { owner = { NOT = { bronze_muzzle_loaded_artillery = 1 } } }
+                # owner = { activate_technology = bronze_muzzle_loaded_artillery }
+            # }
+            # random_owned = {
+                # limit = { owner = { NOT = { military_staff_system = 1 } } }
+                # owner = { activate_technology = military_staff_system }
+            # }
+            # activate_technology = army_command_principle
+            # ##Navy Tech
+            # random_owned = {
+                # limit = { owner = { NOT = { post_nelsonian_thought = 1 } } }
+                # owner = { activate_technology = post_nelsonian_thought }
+            # }
+            # random_owned = {
+                # limit = { owner = { NOT = { clipper_design = 1 } } }
+                # owner = { activate_technology = clipper_design }
+            # }
+            # activate_technology = naval_design_bureaus
+            # activate_technology = alphabetic_flag_signaling
+            # activate_technology = the_command_principle
+            # ##Commerce Techs
+            # random_owned = {
+                # limit = { owner = { NOT = { guild_based_production = 1 } } }
+                # owner = { activate_technology = guild_based_production }
+            # }
+            # random_owned = {
+                # limit = { owner = { NOT = { no_standard = 1 } } }
+                # owner = { activate_technology = no_standard }
+            # }
+            # activate_technology = private_banks
+            # activate_technology = early_classical_theory_and_critique
+            # activate_technology = freedom_of_trade
+            # ##Culture Techs
+            # activate_technology = classicism_n_early_romanticism
+            # activate_technology = enlightenment_thought
+            # ##Industry Tech
+            # random_owned = {
+                # limit = { owner = { NOT = { piston_steam_engine = 1 } } }
+                # owner = { activate_technology = piston_steam_engine }
+            # }
+            # activate_technology = mechanical_production
+            # activate_technology = mechanized_mining
+
+        # }
+
+        # ai_will_do = { factor = 1 }
+    # }
+
 }

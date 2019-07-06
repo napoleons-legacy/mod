@@ -10,6 +10,12 @@ QNG ={
     level = 0
 }
 
+KWT = {
+    value = 125        #relation
+    level = 5        #3=cordial, 4 = friendly, 5 sphere
+    influence_value = 0
+}
+
 BTL = {
     value = 125        #relation
     level = 5        #3=cordial, 4 = friendly, 5 sphere
@@ -41,7 +47,8 @@ HAL = {
     influence_value = 0
 }
 NEJ = {
-    value = 50
+    value = -25
+    level = 0
 }
 HDJ = {
     value = 125        #relation

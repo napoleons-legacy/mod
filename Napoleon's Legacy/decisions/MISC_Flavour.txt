@@ -54,11 +54,11 @@ political_decisions = {
             1190 = { add_core = KYR }
             1203 = { add_core = KYR }
 
-            KAZ = { tech_school = unciv_tech_school }
-            UZB = { tech_school = unciv_tech_school }
-            KYR = { tech_school = unciv_tech_school }
-            TAJ = { tech_school = unciv_tech_school }
-            TKM = { tech_school = unciv_tech_school }
+            KAZ = { tech_school = developing_tech_school }
+            UZB = { tech_school = developing_tech_school }
+            KYR = { tech_school = developing_tech_school }
+            TAJ = { tech_school = developing_tech_school }
+            TKM = { tech_school = developing_tech_school }
 
         }
 

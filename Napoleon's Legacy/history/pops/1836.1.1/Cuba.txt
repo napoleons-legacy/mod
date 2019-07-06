@@ -1,8 +1,37 @@
-#Cuba
-
-#Ruled by Spain-in-exile in 1836
-#Havana
+#Cuba (936000)
+#Independent in 1836
+#Havana (388000/97000 POPS)
 2209 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 350
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 300
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 325
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 4325
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 200
+    }
+
     aristocrats = {
         culture = caribeno
         religion = catholic
@@ -63,7 +92,7 @@
         size = 40500
     }
 }
-#Jagua
+#Jagua (252000/63000 POPS)
 2210 = {
     aristocrats = {
         culture = caribeno
@@ -113,7 +142,7 @@
         size = 36850
     }
 }
-#Camaguey
+#Camaguey (168000/42000 POPS)
 2211 = {
     aristocrats = {
         culture = caribeno
@@ -163,7 +192,7 @@
         size = 27200
     }
 }
-#Santiago de Cuba
+#Santiago de Cuba (128000/32000 POPS)
 2212 = {
     aristocrats = {
         culture = caribeno
@@ -214,7 +243,7 @@
     }
 }
 
-#Baker/Repulse Bay/ Echo Bay - Now Guantanamo Bay
+#Baker/Repulse Bay/ Echo Bay - Now Guantanamo Bay (5036/1259 POPS)
 44 = {
     aristocrats = {
         culture = caribeno

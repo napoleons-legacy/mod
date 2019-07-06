@@ -214,11 +214,31 @@
         size = 10825
     }
 
+    ######Jews
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 250
+        size = 100
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 #Gelibolu (80000/20000 POPS)
 859 = {
@@ -312,11 +332,31 @@
         size = 5475
     }
 
+    ######Jews
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 250
+        size = 100
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 #Istanbul Region (1268000)
 #under the rule of Ottoman Empire in 1836
@@ -826,11 +866,31 @@
         size = 6425
     }
 
+    ######Jews
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 500
+        size = 200
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+    ########
 
     slaves = {
         culture = armenian
@@ -1316,11 +1376,37 @@
         size = 580
     }
 
+    ######Jews
+    aristocrats = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 200
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 3000
+        size = 1500
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 1100
+    }
+    ########
 }
 #Manisa (244000/61000 POPS)
 870 = {
@@ -2600,11 +2686,31 @@
         size = 28200
     }
 
+    ######Jews
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 775
+    }
+
     farmers = {
         culture = sephardic
         religion = jewish
-        size = 300
+        size = 500
     }
+    ########
 
     aristocrats = {
         culture = greek

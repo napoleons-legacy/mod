@@ -671,17 +671,32 @@
         size = 19500
     }
 
-    clergymen = {
-        culture = north_german
+    ######Jews
+
+    soldiers = {
+        culture = ashkenazi
         religion = jewish
-        size = 5
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
     }
 
     artisans = {
-        culture = north_german
+        culture = ashkenazi
         religion = jewish
-        size = 145
+        size = 100
     }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
 
     clergymen = {
         culture = lithuanian

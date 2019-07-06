@@ -5,6 +5,7 @@ add_core = BRI
 trade_goods = coal
 life_rating = 40
 railroad = 1
+terrain = mining_district
 party_loyalty = {
     ideology = liberal
     loyalty_value = 12

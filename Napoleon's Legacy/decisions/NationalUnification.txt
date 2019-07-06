@@ -41,6 +41,7 @@ political_decisions = {
                                     vassal_of = THIS
                                 }
                                 war = no
+                                is_mobilised = no
                                 is_greater_power = no
                             }
                         }
@@ -150,6 +151,7 @@ political_decisions = {
                                     vassal_of = THIS
                                 }
                                 war = no
+                                is_mobilised = no
                                 is_greater_power = no
                             }
                         }
@@ -229,6 +231,7 @@ political_decisions = {
                                     vassal_of = THIS
                                 }
                                 war = no
+                                is_mobilised = no
                                 is_greater_power = no
                             }
                         }
@@ -338,6 +341,7 @@ political_decisions = {
                                     vassal_of = THIS
                                 }
                                 war = no
+                                is_mobilised = no
                                 is_greater_power = no
                             }
                         }
@@ -369,7 +373,15 @@ political_decisions = {
                 add_core = NGF
             }
             change_tag = NGF
+            any_pop = {
+                limit = { is_primary_culture = yes }
+                militancy = -1
+            }
             FRA_412 = { add_core = GER }
+            random_owned = {
+                limit = { owner = { ai = yes } }
+                owner = { add_country_modifier = { name = law_changed_by_force duration = 365 } }
+            }
             any_country = {
                 limit = {
                     NOT = { tag = UBD }
@@ -425,6 +437,7 @@ political_decisions = {
                                 vassal_of = THIS
                             }
                             war = no
+                            is_mobilised = no
                             is_greater_power = no
                         }
                     }
@@ -490,6 +503,7 @@ political_decisions = {
                                 vassal_of = THIS
                             }
                             war = no
+                            is_mobilised = no
                             is_greater_power = no
                         }
                     }
@@ -571,6 +585,7 @@ political_decisions = {
                     NOT = { tag = DNB }
                     NOT = { tag = PRU }
                     NOT = { tag = BAN }
+                    NOT = { tag = UBD }
                     NOT = { has_country_flag = post_colonial_country }
                     OR = {
                         all_core = { owned_by = THIS }
@@ -612,6 +627,7 @@ political_decisions = {
                         tag = AUS
                         tag = DNB
                         tag = BAN
+                        tag = UBD
                     }
                     OR = {
                         is_vassal = no
@@ -652,6 +668,7 @@ political_decisions = {
                                 vassal_of = THIS
                             }
                             war = no
+                            is_mobilised = no
                             is_greater_power = no
                         }
                     }
@@ -689,6 +706,7 @@ political_decisions = {
                     exists = no
                     NOT = { tag = PRU }
                     NOT = { tag = BAN }
+                    NOT = { tag = UBD }
                     NOT = { has_country_flag = post_colonial_country }
                     OR = {
                         all_core = { owned_by = THIS }
@@ -710,6 +728,7 @@ political_decisions = {
                         vassal_of = THIS
                     }
                     NOT = { has_country_flag = post_colonial_country }
+                    NOT = { tag = UBD }
                 }
                 country_event = 11101
             }
@@ -754,6 +773,8 @@ political_decisions = {
                     AND = {
                     in_sphere = THIS
                         ai = yes
+                        war = no
+                        is_mobilised = no
                     }
                     vassal_of = THIS
                 }
@@ -819,14 +840,17 @@ political_decisions = {
                             vassal_of = THIS
                             }
                             war = no
+                            is_mobilised = no
                             is_greater_power = no
                         }
                     }
                 }
             }
         }
+
         effect = {
             prestige = 20
+
             clr_country_flag = sunni_country
             clr_country_flag = shiite_country
             clr_country_flag = ibadi_country
@@ -844,21 +868,36 @@ political_decisions = {
             clr_country_flag = shinto_country
             clr_country_flag = sikh_country
             clr_country_flag = animist_country
+
             religion = hindu
             set_country_flag = hindu_country
+
             all_core = { remove_core = THIS }
             1303 = { add_core = HND }
             1312 = { add_core = HND }
             change_tag = HND
             any_country = {
                 limit = {
-                    NOT = { is_greater_power = yes }
-                    is_culture_group = south_asian
-                        in_sphere = THIS
-                    NOT = { has_country_flag = post_colonial_country }
-                        OR = {
-                            is_vassal = no
-                            vassal_of = THIS
+                    exists = yes
+                    NOT = {
+                        is_greater_power = yes
+                        has_country_flag = post_colonial_country
+                        tag = PAK
+                    }
+                    OR = {
+                        is_culture_group = south_asian
+                        AND = {
+                            is_culture_group = indo_iranian
+                            NOT = {
+                                has_global_flag = pakistan_formed
+                                has_global_flag = pakistan_born
+                            }
+                        }
+                    }
+                    in_sphere = THIS
+                    OR = {
+                        is_vassal = no
+                        vassal_of = THIS
                     }
                 }
                 country_event = 11101
@@ -874,6 +913,8 @@ political_decisions = {
             add_accepted_culture = manipuri
             add_accepted_culture = assamese
             add_accepted_culture = oriya
+            add_accepted_culture = gujarati
+
         }
         ai_will_do = {
             factor = 1
@@ -1040,9 +1081,9 @@ political_decisions = {
             DAG = { all_core = { add_core = THIS } }
             1103 = { add_core = THIS }
         }
-
         ai_will_do = { factor = 1 }
     }
+
 
     form_antillean_confederation = {
         picture = form_antillean_confederation
@@ -1051,6 +1092,7 @@ political_decisions = {
             ATC = { exists = no }
             2222 = { NOT = { is_core = ATC } }
         }
+
         allow = {
             war = no
             is_vassal = no
@@ -1081,6 +1123,7 @@ political_decisions = {
                 }
             }
         }
+
         effect = {
             prestige = 20
             2222 = { add_core = ATC }
@@ -1088,6 +1131,52 @@ political_decisions = {
             DOM = { all_core = { add_core = ATC } }
             change_tag = ATC
         }
+
         ai_will_do = { factor = 1 }
     }
+
+    reject_pan_nationalism = {
+        picture = indoctrinal_education_communist
+        potential = {
+            NOT = { has_country_flag = rejected_pan_nationalism }
+            is_cultural_union = no
+            OR = {
+                primary_culture = breton
+                primary_culture = occitan
+                primary_culture = picard
+                primary_culture = maltese
+                is_culture_group = american_cultures
+            }
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+            capital_scope = { province_control_days = 7300 }
+            experimental_psychology = 1
+            literacy = 0.5
+            NOT = { has_country_modifier = national_confusion }
+            OR = {
+                school_reforms = acceptable_schools
+                school_reforms = good_schools
+            }
+            OR = {
+                average_consciousness = 6
+                has_country_modifier = political_education
+                has_country_modifier = totalitarian_system
+            }
+        }
+
+        effect = {
+            set_country_flag = rejected_pan_nationalism
+            prestige_factor = -0.25
+            add_country_modifier = {
+                name = political_education
+                duration = 1825
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
 }

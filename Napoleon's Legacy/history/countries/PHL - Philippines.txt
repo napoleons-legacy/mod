@@ -4,8 +4,8 @@ culture = asian_minor
 religion = catholic
 government = presidential_dictatorship
 plurality = 0.0
-civilized = no
 nationalvalue = nv_equality
+civilized = no
 literacy = 0.28
 
 # Political reforms
@@ -49,6 +49,8 @@ upper_house = {
     communist = 0
 }
 
+schools = developing_tech_school
+
 foreign_weapons = yes_foreign_weapons
 army_schools = yes_army_schools
 land_reform = yes_land_reform
@@ -62,6 +64,11 @@ flintlock_rifles = 1
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
+small_arms_production = yes
+ammunition_production = yes
+big_sail_ships = yes
+sail_ships_transport = yes
+big_sail_support = yes
 
 # Starting Consciousness
 consciousness = 4

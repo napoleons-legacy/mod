@@ -6,6 +6,7 @@ country_event = {
     #picture = "Slaves"
     trigger = {
         country = {
+            NOT = { has_country_flag = ghost_country }
             OR = {
                 slavery = yes_slavery
                 slavery = freedom_of_womb
@@ -58,6 +59,7 @@ country_event = {
                         province_id = 159 #Wisconsin
                         province_id = 110 #Wyoming
                         is_core = CAN
+                        is_core = COL
                     }
                 }
             }
@@ -123,6 +125,12 @@ country_event = {
         }
         ai_chance = {
             factor = 50
+            modifier = {
+                factor = 0
+                owner = {
+                    tag = CSA
+                }
+            }
             modifier = {
                 factor = 0
                 owner = { tag = USA }
@@ -200,7 +208,7 @@ country_event = {
 
     trigger = {
         NOT = { tag = FROM }
-        NOT = { has_country_modifier = neutrality }
+        NOT = { has_country_modifier = neutrality_modifier }
         NOT = { has_country_flag = bankruptcy_events_disabled }
     }
 
@@ -212,6 +220,32 @@ country_event = {
         diplomatic_influence = { who = FROM value = -10 }
         casus_belli = { target = FROM type = gunboat months = 12 }
         casus_belli = { target = FROM type = add_to_sphere months = 12 }
+        FROM = {
+            random_owned = {
+                limit = { owner = { has_country_modifier = mercantilism } }
+                owner = { remove_country_modifier = mercantilism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = economic_nationalism } }
+                owner = { remove_country_modifier = economic_nationalism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = french_liberal_school } }
+                owner = { remove_country_modifier = french_liberal_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = non_interventionism_trade_policy } }
+                owner = { remove_country_modifier = non_interventionism_trade_policy }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = smithian_school } }
+                owner = { remove_country_modifier = smithian_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = no_trade_policy_set } }
+                owner = { remove_country_modifier = no_trade_policy_set }
+            }
+        }
         ai_chance = { factor = 0.95 }
     }
 
@@ -221,6 +255,32 @@ country_event = {
         diplomatic_influence = { who = FROM value = 5 }
         any_pop = { limit = { strata = rich } militancy = 2 consciousness = 4 }
         prestige_factor = -0.01
+        FROM = {
+            random_owned = {
+                limit = { owner = { has_country_modifier = mercantilism } }
+                owner = { remove_country_modifier = mercantilism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = economic_nationalism } }
+                owner = { remove_country_modifier = economic_nationalism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = french_liberal_school } }
+                owner = { remove_country_modifier = french_liberal_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = non_interventionism_trade_policy } }
+                owner = { remove_country_modifier = non_interventionism_trade_policy }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = smithian_school } }
+                owner = { remove_country_modifier = smithian_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = no_trade_policy_set } }
+                owner = { remove_country_modifier = no_trade_policy_set }
+            }
+        }
         ai_chance = {
             factor = 0.05
             modifier = { factor = 10 is_sphere_leader_of = FROM }
@@ -240,7 +300,7 @@ country_event = {
     picture = "Bankruptcy"
     trigger = {
         NOT = { tag = FROM }
-        NOT = { has_country_modifier = neutrality }
+        NOT = { has_country_modifier = neutrality_modifier }
         NOT = { has_country_flag = bankruptcy_events_disabled }
     }
 
@@ -255,6 +315,32 @@ country_event = {
             target = FROM
             months = 12
         }
+        FROM = {
+            random_owned = {
+                limit = { owner = { has_country_modifier = mercantilism } }
+                owner = { remove_country_modifier = mercantilism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = economic_nationalism } }
+                owner = { remove_country_modifier = economic_nationalism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = french_liberal_school } }
+                owner = { remove_country_modifier = french_liberal_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = non_interventionism_trade_policy } }
+                owner = { remove_country_modifier = non_interventionism_trade_policy }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = smithian_school } }
+                owner = { remove_country_modifier = smithian_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = no_trade_policy_set } }
+                owner = { remove_country_modifier = no_trade_policy_set }
+            }
+        }
         ai_chance = { factor = 0.95 }
     }
 
@@ -264,6 +350,32 @@ country_event = {
         diplomatic_influence = { who = FROM value = 25 }
         any_pop = { limit = { strata = rich } militancy = 2 consciousness = 4 }
         prestige_factor = -0.15
+        FROM = {
+            random_owned = {
+                limit = { owner = { has_country_modifier = mercantilism } }
+                owner = { remove_country_modifier = mercantilism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = economic_nationalism } }
+                owner = { remove_country_modifier = economic_nationalism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = french_liberal_school } }
+                owner = { remove_country_modifier = french_liberal_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = non_interventionism_trade_policy } }
+                owner = { remove_country_modifier = non_interventionism_trade_policy }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = smithian_school } }
+                owner = { remove_country_modifier = smithian_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = no_trade_policy_set } }
+                owner = { remove_country_modifier = no_trade_policy_set }
+            }
+        }
         ai_chance = {
             factor = 0.05
             modifier = { factor = 3 is_sphere_leader_of = FROM }
@@ -284,7 +396,7 @@ country_event = {
     picture = "stock_crash"
     trigger = {
         NOT = { tag = FROM }
-        NOT = { has_country_modifier = neutrality }
+        NOT = { has_country_modifier = neutrality_modifier }
         NOT = { has_country_flag = bankruptcy_events_disabled }
     }
 
@@ -294,6 +406,32 @@ country_event = {
         name = "EVTOPTA70004"
         relation = { who = FROM value = -50 }
         diplomatic_influence = { who = FROM value = -5 }
+        FROM = {
+            random_owned = {
+                limit = { owner = { has_country_modifier = mercantilism } }
+                owner = { remove_country_modifier = mercantilism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = economic_nationalism } }
+                owner = { remove_country_modifier = economic_nationalism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = french_liberal_school } }
+                owner = { remove_country_modifier = french_liberal_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = non_interventionism_trade_policy } }
+                owner = { remove_country_modifier = non_interventionism_trade_policy }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = smithian_school } }
+                owner = { remove_country_modifier = smithian_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = no_trade_policy_set } }
+                owner = { remove_country_modifier = no_trade_policy_set }
+            }
+        }
         ai_chance = { factor = 0.85 }
     }
 
@@ -307,6 +445,32 @@ country_event = {
             33 = { }
         }
         casus_belli = { target = FROM type = gunboat months = 12 }
+        FROM = {
+            random_owned = {
+                limit = { owner = { has_country_modifier = mercantilism } }
+                owner = { remove_country_modifier = mercantilism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = economic_nationalism } }
+                owner = { remove_country_modifier = economic_nationalism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = french_liberal_school } }
+                owner = { remove_country_modifier = french_liberal_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = non_interventionism_trade_policy } }
+                owner = { remove_country_modifier = non_interventionism_trade_policy }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = smithian_school } }
+                owner = { remove_country_modifier = smithian_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = no_trade_policy_set } }
+                owner = { remove_country_modifier = no_trade_policy_set }
+            }
+        }
         ai_chance = {
             factor = 0.05
             modifier = { factor = 0 is_sphere_leader_of = FROM }
@@ -324,6 +488,32 @@ country_event = {
         name = "EVTOPTC70004"
         relation = { who = FROM value = 50 }
         any_pop = { limit = { strata = rich } militancy = 2 consciousness = 4 }
+        FROM = {
+            random_owned = {
+                limit = { owner = { has_country_modifier = mercantilism } }
+                owner = { remove_country_modifier = mercantilism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = economic_nationalism } }
+                owner = { remove_country_modifier = economic_nationalism }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = french_liberal_school } }
+                owner = { remove_country_modifier = french_liberal_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = non_interventionism_trade_policy } }
+                owner = { remove_country_modifier = non_interventionism_trade_policy }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = smithian_school } }
+                owner = { remove_country_modifier = smithian_school }
+            }
+            random_owned = {
+                limit = { owner = { has_country_modifier = no_trade_policy_set } }
+                owner = { remove_country_modifier = no_trade_policy_set }
+            }
+        }
         ai_chance = {
             factor = 0.1
             modifier = { factor = 10 is_sphere_leader_of = FROM }
@@ -331,6 +521,123 @@ country_event = {
             modifier = { factor = 3 relation = { who = FROM value = 199 } }
             modifier = { factor = 0 NOT = { relation = { who = THIS value = 100 } } }
             modifier = { factor = 0 NOT = { money = 100000 } }
+        }
+    }
+}
+
+#Second Round of Dismantling
+country_event = {
+    id = 70005
+    title = "EVTNAME70005"
+    desc = "EVTDESC70005"
+    picture = "partition_of_africa"
+
+    trigger = {
+        has_country_modifier = being_dismantled
+        num_of_vassals_no_substates = 1
+    }
+
+    is_triggered_only = yes
+
+    allow_multiple_instances = no
+
+    option = {
+        name = "EVT70005OPTA"
+        any_country = {
+            limit = {
+                vassal_of = THIS
+                NOT = { has_country_modifier = considering_colonial_offer }
+                has_country_modifier = colony_to_be_annexed
+            }
+            country_event = 96095
+        }
+    }
+}
+
+#Distributing overseas territories/colonies/non cores
+country_event = {
+    id = 70006
+    title = "EVTNAME70006"
+    desc = "EVTDESC70005"
+    picture = "partition_of_africa"
+
+    trigger = {
+        has_country_modifier = being_dismantled
+        any_owned_province = {
+            OR = {
+                is_overseas = yes
+                is_colonial = yes
+                NOT = { is_core = THIS }
+            }
+        }
+    }
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT70005OPTA"
+        any_country = {
+            limit = {
+                ai = no
+                is_greater_power = yes
+                OR = {
+                    AND = {
+                        truce_with = THIS
+                        has_country_modifier = dismantling_country
+                    }
+                    AND = {
+                        THIS = { has_country_modifier = international_pariah }
+                        has_country_flag = coalition_member
+                    }
+                }
+            }
+            country_event = 96011
+        }
+        any_country = {
+            limit = {
+                NOT = {
+                    any_greater_power = {
+                        ai = no
+                        truce_with = THIS
+                    }
+                }
+                ai = yes
+                is_greater_power = yes
+                OR = {
+                    AND = {
+                        truce_with = THIS
+                        has_country_modifier = dismantling_country
+                    }
+                    AND = {
+                        THIS = { has_country_modifier = international_pariah }
+                        has_country_flag = coalition_member
+                    }
+                }
+            }
+            country_event = { id = 96016 days = 2 }
+        }
+        any_country = {
+            limit = {
+                NOT = {
+                    any_greater_power = {
+                        ai = no
+                        truce_with = THIS
+                    }
+                }
+                is_greater_power = no
+                is_secondary_power = yes
+                OR = {
+                    AND = {
+                        truce_with = THIS
+                        has_country_modifier = dismantling_country
+                    }
+                    AND = {
+                        THIS = { has_country_modifier = international_pariah }
+                        has_country_flag = coalition_member
+                    }
+                }
+            }
+            country_event = { id = 96017 days = 2 }
         }
     }
 }

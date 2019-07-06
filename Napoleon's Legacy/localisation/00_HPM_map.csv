@@ -1,4 +1,31 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+PROV2131;Falkland & South Georgia;;;;;;;;;;;;;x
+PROV3319;Vahitahi;;;;;;;;;;;;;x
+PROV3320;Vairaatea;;;;;;;;;;;;;x
+PROV3321;Nukutavake;;;;;;;;;;;;;x
+PROV3322;Pinaki;;;;;;;;;;;;;x
+FRA_411;Ardennes;;;;;;;;;;;;x
+PROV934;Samawah;;;;;;;;;;;;x
+AUS_627;Lower Silesia;;;;;;;;;;;;x
+ABU_1162;Arabian Gulf;;;;;;;;;;;;x
+EGY_897;Western Syria;;;;;;;;;;;;x
+EGY_903;Eastern Syria;;;;;;;;;;;;x
+PROV928;Baqubah;;;;;;;;;;;;x
+PROV1813;Hasakah;;;;;;;;;;;;x
+PROV907;Deir ez-Zor;;;;;;;;;;;;x
+PROV901;Raqqah;;;;;;;;;;;;x
+PROV2133;Gizab;;;;;;;;;;;;x
+PROV1214;Zaranj;;;;;;;;;;;;x
+PROV582;Bielefeld;;;;;;;;;;;;x
+FRA_400;Champagne;;;;;;;;;;;;x
+PROV2346;Colonia;;;;;;;;;;;;x
+PROV1447;Taliabu;;;;;;;;;;;;x
+BEL_1977;Lower Congo;;;;;;;;;;;;x
+TUR_832;Thessaly;;;;;;;;;;;;x
+PROV1972;Baraka;;;;;;;;;;;;x
+EGY_1758;Western Desert;;;;;;;;;;;;x
+PROV1895;Daloa;;;;;;;;;;;;x
+FRA_1775;Trab el Beidan;;;;;;;;;;;;x
 PROV2721;Heligoland Bight;;;;;;;;;;;;x
 RUS_959;Volyn;;;;;;;;;;;;x
 druze;Druze;;;;;;;;;;;;x
@@ -12,6 +39,7 @@ PROV2046;Mbeya;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV1850;Keren;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 AUS_733;Friuli;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PAP_741;Emilia-Romagna;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
+mining_district;Mining District;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 new_world_semidesert;Desert Scrublands;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 new_world_desert;Desert;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 new_world_boreal;Taiga;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
@@ -28,8 +56,6 @@ PROV2669;Sondrio;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV8;Belluno;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV2351;Magdalena;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV10;Pescara;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-PROV3320;Lake Pyhäjärvi;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-PROV3319;Lake Iso-Kalla;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV3318;Lake Saimaa;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV3317;Lake Päijänne;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV3316;Lake Oulujärvi;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
@@ -346,7 +372,7 @@ PROV2426;Vila do Poti;;;;;;;;;;;;;;;;;;;x;
 NEJ_1156;Ha'il;;;;;;;;;;;;;;;;;;;x;
 PROV396;Eupen-Malmedy;;;;;;;;;;;;;;;;;x;;;;;;
 PROV1445;Koepang;;;;;;;;;;;;;;;;;x;;;;;;
-PROV1448;Tidore;;;;;;;;;;;;;;;;;x;;;;;;
+PROV1448;Ternate;;;;;;;;;;;;;;;;;x;;;;;;
 KOR_1624;Hanseong;;;;;;;;;;;;;;;;;x;;;;;;
 PROV3101;Lake Chad;;;;;;;;;;;;;;;;;x;;;;;;
 PROV3102;Ukerewe;;;;;;;;;;;;;x;;;;;;
@@ -469,9 +495,9 @@ PER_1132;Khuzestan;;;;;;;;;;;;x
 PER_1136;Fars;;;;;;;;;;;;x
 PER_1140;Kerman;;;;;;;;;;;;x
 YEM_1178;Sana'a;;;;;;;;;;;;x
-AFG_1209;Pashtunistan;;;;;;;;;;;;x
+AFG_1209;North Afghanistan;;;;;;;;;;;;x
 KOK_1210;Bandakshan;;;;;;;;;;;;x
-AFG_1214;Kandahar;;;;;;;;;;;;x
+AFG_1214;South Afghanistan;;;;;;;;;;;;x
 PAN_1233;Amritsar;;;;;;;;;;;;x
 ENG_1243;Bundelkhand;;;;;;;;;;;;x
 ENG_1244;Awadh;;;;;;;;;;;;x
@@ -726,7 +752,6 @@ NET_1418;East Java;;;;;;;;;;;;x
 NET_1423;East Borneo;;;;;;;;;;;;x
 NET_1426;South Borneo;;;;;;;;;;;;x
 NET_1446;Timor;;;;;;;;;;;;x
-NET_1447;Moluccas;;;;;;;;;;;;x
 NET_1449;Celebes;;;;;;;;;;;;x
 CHI_1465;Eastern Mongolia;;;;;;;;;;;;x
 CHI_1468;Western Mongolia;;;;;;;;;;;;x
@@ -934,8 +959,8 @@ PROV3277;Williston Lake;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 PROV3278;Lake Okeechobee;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 PROV3279;Lake Tuz;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 PROV3280;Sevan Lake;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-PROV3281;Therthar Lake;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-PROV3282;Razazza Lake;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+PROV3281;Lake Iso-Kalla;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
+PROV3282;Lake Pyhäjärvi;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 PROV3283;Lake Geneva;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 PROV3284;Lake Constance;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 PROV906;As-Suwayda;;;;;;;;;;;x
