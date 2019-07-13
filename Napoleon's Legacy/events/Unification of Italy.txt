@@ -92,7 +92,7 @@ country_event = {
         }
         badboy = 5
         relation = {
-            who = MOD
+            who = KOI
             value = -400
         }
         relation = {
@@ -100,7 +100,7 @@ country_event = {
             value = -400
         }
         relation = {
-            who = ILY
+            who = SYC
             value = -400
         }
         relation = {
@@ -111,13 +111,13 @@ country_event = {
             who = SAR
             value = -400
         }
-        MOD = {
+        KOI = {
             country_event = 600047
         }
         SIC = {
             country_event = 600048
         }
-        ILY = {
+        SYC = {
             country_event = 600049
         }
         LUC = {
@@ -147,7 +147,7 @@ country_event = {
     }
 }
 
-#MOD hears about Pope
+#KOI hears about Pope
 country_event = {
     id = 600047
     title = "EVTNAME600046"
@@ -197,7 +197,7 @@ country_event = {
     }
 }
 
-#ILY hears about Pope
+#SYC hears about Pope
 country_event = {
     id = 600049
     title = "EVTNAME600046"
@@ -454,7 +454,7 @@ country_event = {
     }
 }
 
-#MOD hears about Garibaldi showing up
+#KOI hears about Garibaldi showing up
 country_event = {
     id = 600064
     title = "EVTNAME600063"
@@ -462,7 +462,7 @@ country_event = {
     picture = "Riot"
 
     trigger = {
-        tag = MOD
+        tag = KOI
         NOT = {
             has_global_flag = italian_unification_a
         }
@@ -530,7 +530,7 @@ country_event = {
     }
 }
 
-#ILY hears about Garibaldi showing up
+#SYC hears about Garibaldi showing up
 country_event = {
     id = 600066
     title = "EVTNAME600063"
@@ -538,7 +538,7 @@ country_event = {
     picture = "Riot"
 
     trigger = {
-        tag = ILY
+        tag = SYC
         NOT = {
             has_global_flag = italian_unification_a
         }
@@ -678,7 +678,7 @@ country_event = {
                 }
             }
         }
-        MOD = {
+        KOI = {
             NOT = {
                 OR = {
                     is_greater_power = yes
@@ -694,7 +694,7 @@ country_event = {
                 }
             }
         }
-        ILY = {
+        SYC = {
             NOT = {
                 OR = {
                     is_greater_power = yes
@@ -724,7 +724,7 @@ country_event = {
     option = {
         name = "EVTOPTA600069"
         relation = {
-            who = MOD
+            who = KOI
             value = -400
         }
         relation = {
@@ -732,7 +732,7 @@ country_event = {
             value = -400
         }
         relation = {
-            who = ILY
+            who = SYC
             value = -400
         }
         relation = {
@@ -754,10 +754,10 @@ country_event = {
                         tag = THIS
                     }
                     OR = {
-                        tag = MOD
+                        tag = KOI
                         tag = PAP
                         tag = SIC
-                        tag = ILY
+                        tag = SYC
                         tag = LUC
                         tag = SAR
                     }
@@ -800,7 +800,7 @@ country_event = {
                 }
             }
         }
-        MOD = {
+        KOI = {
             NOT = {
                 OR = {
                     is_greater_power = yes
@@ -816,7 +816,7 @@ country_event = {
                 }
             }
         }
-        ILY = {
+        SYC = {
             NOT = {
                 OR = {
                     is_greater_power = yes
@@ -848,7 +848,7 @@ country_event = {
         add_accepted_culture = south_italian
         clr_country_flag = taken_by_redshirts
         relation = {
-            who = MOD
+            who = KOI
             value = -400
         }
         relation = {
@@ -856,7 +856,7 @@ country_event = {
             value = -400
         }
         relation = {
-            who = ILY
+            who = SYC
             value = -400
         }
         relation = {
@@ -967,7 +967,7 @@ country_event = {
                     is_secondary_power = yes
                 }
             }
-            MOD = {
+            KOI = {
                 OR = {
                     is_greater_power = yes
                     is_secondary_power = yes
@@ -979,7 +979,7 @@ country_event = {
                     is_secondary_power = yes
                 }
             }
-            ILY = {
+            SYC = {
                 OR = {
                     is_greater_power = yes
                     is_secondary_power = yes
@@ -1010,10 +1010,10 @@ country_event = {
                     is_secondary_power = yes
                 }
                 OR = {
-                    tag = MOD
+                    tag = KOI
                     tag = SAR
                     tag = SIC
-                    tag = ILY
+                    tag = SYC
                     tag = PAP
                     tag = LUC
                 }
@@ -1028,10 +1028,10 @@ country_event = {
                         tag = THIS
                     }
                     OR = {
-                        tag = MOD
+                        tag = KOI
                         tag = PAP
                         tag = SIC
-                        tag = ILY
+                        tag = SYC
                         tag = LUC
                         tag = SAR
                     }
@@ -1062,10 +1062,10 @@ country_event = {
                         tag = THIS
                     }
                     OR = {
-                        tag = MOD
+                        tag = KOI
                         tag = PAP
                         tag = SIC
-                        tag = ILY
+                        tag = SYC
                         tag = LUC
                         tag = SAR
                     }
@@ -1114,7 +1114,7 @@ country_event = {
             add_core = ITA
         }
         relation = {
-            who = MOD
+            who = KOI
             value = -400
         }
         relation = {
@@ -1122,7 +1122,7 @@ country_event = {
             value = -400
         }
         relation = {
-            who = ILY
+            who = SYC
             value = -400
         }
         relation = {
@@ -1204,10 +1204,10 @@ country_event = {
                         tag = THIS
                     }
                     OR = {
-                        tag = MOD
+                        tag = KOI
                         tag = PAP
                         tag = SIC
-                        tag = ILY
+                        tag = SYC
                         tag = LUC
                         tag = SAR
                     }
@@ -1412,10 +1412,10 @@ country_event = {
     trigger = {
         year = 1858
         OR = {
-            tag = MOD
+            tag = KOI
             tag = SIC
             tag = PAP
-            tag = ILY
+            tag = SYC
             tag = LUC
             tag = SAR
         }

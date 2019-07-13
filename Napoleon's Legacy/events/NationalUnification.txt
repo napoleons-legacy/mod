@@ -213,7 +213,6 @@ country_event = {
             owner = {
                 any_owned = { limit = { is_core = SYC } remove_core = SYC }
                 any_owned = { limit = { is_core = SRD } remove_core = SRD }
-                any_owned = { limit = { is_core = RMG } remove_core = RMG }
             }
         }
 

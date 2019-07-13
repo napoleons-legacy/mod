@@ -475,8 +475,8 @@ ITA = {
 #    color3= { 99 137 153  }
 #}
 
-# Modena
-MOD = {
+# Kingdom of Italy
+KOI = {
     color1= { 241 252 151  }
     color2= { 129 177 125  }
     color3= { 193 26 14  }
@@ -487,13 +487,6 @@ PAP = {
     color1= { 248 199 67  }
     color2= { 255 255 255  }
     color3= { 48 164 51  }
-}
-
-# Parma FIXED
-PAR = {
-    color1= { 255 255 255  }
-    color2= { 248 199 67  }
-    color3= { 112 150 105  }
 }
 
 # Sardinia FIXED
@@ -515,20 +508,6 @@ SIE = {
     color1= { 75 111 205  }
     color2= { 124 140 162  }
     color3= { 117 127 174  }
-}
-
-# Tuscany FIXED
-TUS = {
-    color1= { 217 80 75  }
-    color2= { 255 255 255  }
-    color3= { 107 170 77  }
-}
-
-# Venice
-VEN = {
-    color1= { 54 167 156  }
-    color2= { 69 157 208  }
-    color3= { 166 189 199  }
 }
 
 # Haiti
@@ -666,13 +645,6 @@ EGY = {
     color3= { 48 164 51  }
 }
 
-# Transvaal FIXED
-TRN = {
-    color1= { 49 244 76  }
-    color2= { 94 117 55  }
-    color3= { 112 150 105  }
-}
-
 # Tripoli FIXED
 TRI = {
     color1= { 87 146 87  }
@@ -690,13 +662,6 @@ TUN = {
 # Sokoto FIXED
 SOK = {
     color1= { 49 244 76  }
-    color2= { 94 117 55  }
-    color3= { 112 150 105  }
-}
-
-# Oranje
-ORA = {
-    color1= { 255 154 82  }
     color2= { 94 117 55  }
     color3= { 112 150 105  }
 }

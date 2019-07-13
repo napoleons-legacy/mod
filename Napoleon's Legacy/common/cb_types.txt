@@ -624,92 +624,6 @@ colonial_reconquest_cb = {
     }
 }
 
-restore_america = {
-    sprite_index = 21
-    is_triggered_only = yes
-    months = 12
-
-    construction_speed = 0.8
-
-    badboy_factor = 0
-    prestige_factor = 0
-    peace_cost_factor = 0.7
-    penalty_factor = 1
-    always = yes
-
-    break_truce_prestige_factor = 5
-    break_truce_infamy_factor = 2
-    break_truce_militancy_factor = 2
-    truce_months = 48
-
-    good_relation_prestige_factor = 1
-    good_relation_infamy_factor = 1
-    good_relation_militancy_factor = 1
-
-    can_use = {
-        war_policy = jingoism
-        NOT = { is_our_vassal = THIS }
-        THIS = {
-            OR = {
-                primary_culture = yankee
-                primary_culture = dixie
-                primary_culture = texan
-            }
-            NOT = { tag = USA }
-        }
-        OR = {
-            THIS = { has_global_flag = second_american_civil_war }
-            USA = { exists = no }
-        }
-        OR = {
-            THIS = { ai = no }
-            THIS = {
-                OR = {
-                    war_policy = pro_military
-                    war_policy = jingoism
-                }
-            }
-            war_with = THIS
-        }
-        is_vassal = no
-        neighbour = THIS
-        any_owned_province = {
-            OR = {
-                is_core = USA
-                is_core = CSA
-                is_core = FSA
-            }
-        }
-        NOT = { in_sphere = THIS }
-        OR = {
-            war_with = THIS
-            THIS = { NOT = { has_country_modifier = punitive_effects } }
-        }
-    }
-
-    allowed_states = {
-        any_owned_province = {
-            OR = {
-                is_core = USA
-                is_core = CSA
-                is_core = FSA
-            }
-        }
-    }
-
-    po_demand_state = yes
-
-    war_name = WAR_RESTORE_AMERICA_NAME
-
-    on_add = {
-        move_issue_percentage = {
-            from = jingoism
-            to = pro_military
-            value = 0.25
-        }
-    }
-}
-
 claim_holy_land = {
     sprite_index = 23
     is_triggered_only = yes
@@ -8108,26 +8022,6 @@ conquest_any = {
     }
 
     on_po_accepted = {
-        THIS = {
-            random_owned = {
-                limit = { is_core = TRN TRN = { exists = no has_country_flag = uncivilize_on_conquest } }
-                THIS = { release_vassal = TRN }
-                TRN = { clr_country_flag = uncivilize_on_conquest civilized = no annex_to = THIS }
-                TRN = { civilized = yes }
-            }
-            random_owned = {
-                limit = { is_core = ORA ORA = { exists = no has_country_flag = uncivilize_on_conquest } }
-                THIS = { release_vassal = ORA }
-                ORA = { clr_country_flag = uncivilize_on_conquest civilized = no annex_to = THIS }
-                ORA = { civilized = yes }
-            }
-            random_owned = {
-                limit = { is_core = NAL NAL = { exists = no has_country_flag = uncivilize_on_conquest } }
-                THIS = { release_vassal = NAL }
-                NAL = { clr_country_flag = uncivilize_on_conquest civilized = no annex_to = THIS }
-                NAL = { civilized = yes }
-            }
-        }
     }
 }
 

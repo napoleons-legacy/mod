@@ -951,7 +951,6 @@ country_event = {
                 OR = {
                     tag = MAH
                     tag = MUG
-                    tag = RAJ
                 }
                 THIS = { primary_culture = marathi }
                 neighbour = THIS

@@ -1,12 +1,12 @@
-capital = 762
-primary_culture = south_italian
+capital = 726
+primary_culture = north_italian
 religion = catholic
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
-literacy = 0.25
+literacy = 0.20
 civilized = yes
-prestige = 10
+prestige = 5
 
 # Political reforms
 slavery = no_slavery
@@ -28,25 +28,26 @@ pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = two_year_draft
+conscription = no_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = culture_voting_only
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
 
-ruling_party = SIC_conservative
+ruling_party = MOD_reactionary
 upper_house = {
     fascist = 0
-    liberal = 20
+    liberal = 22
     conservative = 60
-    reactionary = 20
+    reactionary = 18
     anarcho_liberal = 0
     socialist = 0
     communist = 0
 }
+
 
 # Technologies
 post_napoleonic_thought = 1
@@ -79,4 +80,5 @@ basic_chemistry = 1
 # Starting Consciousness
 consciousness = 3
 nonstate_consciousness = 1
-oob = "ILY_oob.txt"
+
+oob = "KOI_oob.txt"

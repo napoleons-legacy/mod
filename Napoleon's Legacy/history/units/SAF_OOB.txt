@@ -1,24 +1,19 @@
 leader = {
-   name = "Piet Retief"
-   type = land
-   date = 1836.1.1
-   background = nationalist
-   personality = audacious
+    name = "Piet Retief"
+    type = land
+    date = 1825.1.1
+    personality = au_fait
+    background = elderly
+    prestige = 0.3
 }
 
 army = {
     name = "Army of South Africa"
-    location = 2097
+    location = 2090
     regiment = {
         name= "Graaf Reinet Commando"
         type = infantry
         home = 2087
-    }
-
-    regiment = {
-        name= "Petrusvallei Commando"
-        type = infantry
-        home = 2096
     }
 
     regiment = {

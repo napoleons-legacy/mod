@@ -185,18 +185,18 @@ country_event = {
         LUC = { all_core = { remove_core = LUC } }
         inherit = LUC
 
-        740 = { secede_province = MOD add_core = MOD }
+        740 = { secede_province = KOI add_core = KOI }
         746 = { secede_province = PAP add_core = PAP }
 
         badboy = 2
         prestige = 5
         relation = {
             value = 100
-            who = MOD
+            who = KOI
         }
 
         diplomatic_influence = {
-            who = MOD
+            who = KOI
             value = 50
         }
 
@@ -206,7 +206,7 @@ country_event = {
         }
 
         diplomatic_influence = {
-            who = MOD
+            who = KOI
             value = 50
         }
 
@@ -240,7 +240,7 @@ country_event = {
 
         relation = {
             value = -50
-            who = MOD
+            who = KOI
         }
 
         relation = {
@@ -259,7 +259,7 @@ country_event = {
     }
 }
 
-# Clean up SIC and ILY cores.
+# Clean up SIC and SYC cores.
 country_event = {
     id = 4662015
     title = "EVTNAME4662015"
@@ -269,7 +269,7 @@ country_event = {
 
     trigger = {
         tag = SIC
-        ILY = { all_core = { owned_by = THIS } exists = no }
+        SYC = { all_core = { owned_by = THIS } exists = no }
         war = no
     }
 
@@ -278,7 +278,7 @@ country_event = {
     option = {
         name = "EVTOPTA4662015"
 
-        ILY = { all_core = { add_core = SIC remove_core = ILY } }
+        SYC = { all_core = { remove_core = SYC } }
         prestige = 5
     }
 }
@@ -291,7 +291,7 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        tag = ILY
+        tag = SYC
         SIC = { all_core = { owned_by = THIS } exists = no }
         war = no
     }
@@ -299,6 +299,6 @@ country_event = {
     mean_time_to_happen = { months = 1 }
     option = {
         name = "EVTOPTA4662015"
-        SIC = { all_core = { add_core = ILY remove_core = SIC } }
+        SIC = { all_core = { remove_core = SIC } }
     }
 }

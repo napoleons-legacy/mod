@@ -118,13 +118,13 @@ political_decisions = {
     law_of_guarantees = {
         picture = law_of_guarantees
         potential = {
-        OR = {
-            tag = ITA
-            tag = ITN
-            tag = ITS
-            tag = ITM
-            tag = ITL
-        }
+            OR = {
+                tag = ITA
+                tag = ITN
+                tag = ITS
+                tag = ITM
+                tag = ITL
+            }
             NOT = { has_country_flag = law_of_guarantees }
         }
 
@@ -137,9 +137,9 @@ political_decisions = {
             capital = 749
             prestige = 5
             badboy = -2
-            MOD = { all_core = { remove_core = MOD } }
+            KOI = { all_core = { remove_core = KOI } }
             SIC = { all_core = { remove_core = SIC } }
-            ILY = { all_core = { remove_core = ILY } }
+            SYC = { all_core = { remove_core = SYC } }
             PAP = { all_core = { remove_core = PAP } }
             LUC = { all_core = { remove_core = LUC } }
             SAR = { all_core = { remove_core = SAR } }
@@ -149,12 +149,12 @@ political_decisions = {
     italia_irredenta = {
         picture = italia_irredenta
         potential = {
-        OR = {
-            tag = ITA
-            tag = ITN
-            tag = ITS
-            tag = ITM
-            tag = ITL
+            OR = {
+                tag = ITA
+                tag = ITN
+                tag = ITS
+                tag = ITM
+                tag = ITL
             }
             NOT = {
                 has_global_flag = italia_ulterior
@@ -205,7 +205,7 @@ political_decisions = {
     spanish_resto = {
         picture = spanish_sicily
         potential = {
-            tag = ILY
+            tag = SYC
             NOT = { has_country_flag = resto_negotiate }
             exists = SPA
         }

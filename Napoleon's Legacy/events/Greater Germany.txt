@@ -82,8 +82,6 @@ country_event = {
                     is_core = POL
                     is_core = ROM
                     is_core = CRO
-                    is_core = VEN
-                    is_core = LOM
                     is_core = SER
                 }
             }
@@ -801,8 +799,6 @@ country_event = {
                     is_core = POL
                     is_core = ROM
                     is_core = CRO
-                    is_core = VEN
-                    is_core = LOM
                     is_core = SER
                 }
             }

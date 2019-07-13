@@ -170,10 +170,10 @@ form_italy = {
         }
     }
 
-    form_italy_MOD = {
-        picture = italy_mod
+    form_italy_KOI = {
+        picture = italy_koi
         potential = {
-            tag = MOD
+            tag = KOI
             NOT = {
                 exists = ITA
                 exists = ITM
@@ -332,10 +332,10 @@ form_italy = {
         }
     }
 
-    form_italy_ILY = {
+    form_italy_SYC = {
         picture = italy_ily
         potential = {
-            tag = ILY
+            tag = SYC
             NOT = {
                 exists = ITA
                 exists = ITM
@@ -353,7 +353,7 @@ form_italy = {
             war = no
             726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
             754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
-            }
+        }
 
         effect = {
             prestige = 20
@@ -493,7 +493,4 @@ form_italy = {
             factor = 1
         }
     }
-
-
-
 }

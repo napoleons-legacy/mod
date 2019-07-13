@@ -24,7 +24,6 @@ navy = {
     name = "Real Marina delle Sicilia"
     location = 763
 
-
     ship = {
         name= "Ferdinando I"
         type = commerce_raider
@@ -43,5 +42,4 @@ navy = {
         name= "1a Squadrone Transporti"
         type = clipper_transport
     }
-
 }

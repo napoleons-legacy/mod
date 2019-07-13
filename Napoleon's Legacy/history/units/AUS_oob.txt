@@ -54,17 +54,8 @@ SWI = {
     level = 3
     influence_value = 0
 }
-PAR = {
+KOI = {
     value = 100
-    level = 5
-}
-MOD = {
-    value = 100
-    level = 5
-    influence_value = 0
-}
-TUS = {
-    value = 75
     level = 5
     influence_value = 0
 }
@@ -352,7 +343,7 @@ leader = {
 }
 
 leader = {
-    name = "d’Aspre und Hoobreuck"
+    name = "dï¿½Aspre und Hoobreuck"
     date = 1832.1.1
     type = land
     personality = bold

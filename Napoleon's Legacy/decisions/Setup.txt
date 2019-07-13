@@ -705,16 +705,6 @@ political_decisions = {
             TUR_832 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
             TUR_805 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
             TUR_823 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
-
-            any_greater_power = {
-                limit = { NOT = { tag = TUR } }
-                diplomatic_influence = { who = BTL value = -400 }
-                diplomatic_influence = { who = RDL value = -400 }
-                diplomatic_influence = { who = BHT value = -400 }
-                diplomatic_influence = { who = MKN value = -400 }
-                diplomatic_influence = { who = BNB value = -400 }
-                diplomatic_influence = { who = BDN value = -400 }
-            }
         }
         ai_will_do = { factor = 1 }
     }
@@ -966,36 +956,6 @@ political_decisions = {
         }
 
         effect = {
-            any_pop = { limit = { location = { is_core = VEN } has_pop_culture = north_italian } literacy = 0.2 }
-            any_pop = {
-                limit = {
-                    location = {
-                        NOT = {
-                            is_core = LOM
-                            is_core = VEN
-                            province_id = 734
-                            province_id = 735
-                        }
-                    }
-                    has_pop_culture = north_italian
-                }
-                literacy = 0.3
-            }
-
-            any_pop = {
-                limit = {
-                    location = {
-                        OR = {
-                            is_core = LOM
-                            province_id = 734
-                            province_id = 735
-                        }
-                    }
-                    has_pop_culture = north_italian
-                }
-                literacy = 0.35
-            }
-
             AUS_612 = { any_pop = { literacy = 0.1 } }
             any_pop = { limit = { has_pop_culture = north_german } literacy = 0.5 }
             any_pop = { limit = { has_pop_religion = protestant NOT = { has_pop_culture = north_german } literacy = 0.05 } }
@@ -1433,12 +1393,12 @@ political_decisions = {
     PEU_1836_setup = {
         picture = constantinople
         potential = {
-            tag = PEU
+            tag = SPA
             always = no
         }
 
         allow = {
-            tag = PEU
+            tag = SPA
         }
 
         effect = {
@@ -1507,12 +1467,6 @@ political_decisions = {
             activate_technology = flintlock_rifles
             activate_technology = post_napoleonic_thought
             activate_technology = post_nelsonian_thought
-            SPU = {
-                add_country_modifier = { name = relutanct_figher duration = 3650 }
-                activate_technology = flintlock_rifles
-                activate_technology = post_napoleonic_thought
-                activate_technology = post_nelsonian_thought
-            }
         }
     }
 
@@ -2120,7 +2074,6 @@ political_decisions = {
             ECU = { add_country_modifier = { name = credit_risk duration = 3650 } }
             UCA = { add_country_modifier = { name = credit_risk duration = 1825 } }
             HAI = { add_country_modifier = { name = credit_risk duration = 5475 } }
-            SPU = { add_country_modifier = { name = credit_risk duration = 5475 } }
             PRG = { add_country_modifier = { name = unrecognized_country duration = 3650 } }
             RGS = { add_country_modifier = { name = unrecognized_country duration = 3650 } }
 
