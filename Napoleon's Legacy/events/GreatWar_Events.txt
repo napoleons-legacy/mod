@@ -3021,19 +3021,6 @@ country_event = {
             country_event = 96012
         }
 
-        #release LUX as ally, if controlled
-        random_owned = {
-            limit = {
-                province_id = 397
-                LUX = { exists = no }
-            }
-            397 = {
-                add_core = LUX
-                remove_core = GER
-            }
-            LUX = { country_event = 96060 }
-        }
-
         #give back cores to non-allied countries
         any_country = {
             limit = {
@@ -7136,10 +7123,6 @@ country_event = {
                 tag = ITA
                 truce_with = THIS
             }
-            SAR_466 = {
-                add_core = ITA
-                secede_province = ITA
-            }
             472 = {
                 add_core = ITA
                 secede_province = ITA
@@ -7157,7 +7140,6 @@ country_event = {
                 NOT = { exists = ITA }
                 truce_with = THIS
             }
-            SAR_466 = { add_core = SAR secede_province = SAR }
             472 = { add_core = SAR secede_province = SAR }
             473 = { add_core = SAR secede_province = SAR }
 

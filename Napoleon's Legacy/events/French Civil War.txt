@@ -257,29 +257,6 @@ country_event = {
         name = "EVTOPTA86024"
         remove_country_modifier = mad_socialists
         remove_country_modifier = happy_nobility
-        any_owned = {
-            limit = {
-                OR = {
-                    is_core = BRE
-                    is_core = MUN
-                    is_core = SAR
-                    is_core = NET
-                    is_core = WLL
-                    is_core = LUX
-                    is_core = RHI
-                    is_core = HAM
-                    is_core = OLD
-                    is_core = SWI
-                    is_core = CAT
-                    is_core = HOL
-                    is_core = LUB
-                    is_core = LUC
-                }
-                NOT = { province_id = 464 }
-            }
-
-            add_core = AFA
-        }
 
         any_owned = {
             limit = {
@@ -361,30 +338,6 @@ country_event = {
         name = "EVTOPTB86024"
         remove_country_modifier = mad_socialists
         remove_country_modifier = happy_nobility
-
-        any_owned = {
-            limit = {
-                OR = {
-                    is_core = BRE
-                    is_core = MUN
-                    is_core = SAR
-                    is_core = NET
-                    is_core = WLL
-                    is_core = LUX
-                    is_core = RHI
-                    is_core = HAM
-                    is_core = OLD
-                    is_core = SWI
-                    is_core = CAT
-                    is_core = HOL
-                    is_core = LUB
-                    is_core = LUC
-                }
-                NOT = { province_id = 464 }
-            }
-
-            add_core = AFA
-        }
 
         any_pop = {
             militancy = -5
@@ -481,29 +434,6 @@ country_event = {
         name = "EVTOPTA86025"
         remove_country_modifier = mad_nobility
         remove_country_modifier = happy_socialists
-        any_owned = {
-            limit = {
-                OR = {
-                    is_core = BRE
-                    is_core = MUN
-                    is_core = SAR
-                    is_core = NET
-                    is_core = WLL
-                    is_core = LUX
-                    is_core = RHI
-                    is_core = HAM
-                    is_core = OLD
-                    is_core = SWI
-                    is_core = CAT
-                    is_core = HOL
-                    is_core = LUB
-                    is_core = LUC
-                }
-                NOT = { province_id = 464 }
-            }
-
-            add_core = AFA
-        }
 
         any_owned = {
             limit = {
@@ -589,29 +519,6 @@ country_event = {
         name = "EVTOPTB86025"
         remove_country_modifier = mad_nobility
         remove_country_modifier = happy_socialists
-        any_owned = {
-            limit = {
-                OR = {
-                    is_core = BRE
-                    is_core = MUN
-                    is_core = SAR
-                    is_core = NET
-                    is_core = WLL
-                    is_core = LUX
-                    is_core = RHI
-                    is_core = HAM
-                    is_core = OLD
-                    is_core = SWI
-                    is_core = CAT
-                    is_core = HOL
-                    is_core = LUB
-                    is_core = LUC
-                }
-                NOT = { province_id = 464 }
-            }
-
-            add_core = AFA
-        }
 
         any_pop = {
             militancy = -5
@@ -1215,7 +1122,7 @@ country_event = {
         NOT = {
             exists = AFA
         }
-        exists = MUN
+        exists = RHI
     }
 
     fire_only_once = yes

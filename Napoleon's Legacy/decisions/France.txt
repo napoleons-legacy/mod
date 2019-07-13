@@ -344,12 +344,20 @@ political_decisions = {
             OR = {
                 FRA = {
                     any_owned_province = {
-                        is_core = AFA
-                    }
-                    }
-                BOR = {
-                    any_owned_province = {
-                        is_core = AFA
+                        OR = {
+                            is_core = BRE
+                            is_core = MUN
+                            is_core = SAR
+                            is_core = NET
+                            is_core = RHI
+                            is_core = HAM
+                            is_core = OLD
+                            is_core = SWI
+                            is_core = CAT
+                            is_core = HOL
+                            is_core = LUB
+                            is_core = LUC
+                        }
                     }
                 }
             }
@@ -364,6 +372,30 @@ political_decisions = {
         }
 
         effect = {
+            FRA = {
+                any_owned = {
+                    limit = {
+                        OR = {
+                            is_core = BRE
+                            is_core = MUN
+                            is_core = SAR
+                            is_core = NET
+                            is_core = RHI
+                            is_core = HAM
+                            is_core = OLD
+                            is_core = SWI
+                            is_core = CAT
+                            is_core = HOL
+                            is_core = LUB
+                            is_core = LUC
+                        }
+                        NOT = { province_id = 464 }
+                    }
+
+                    add_core = AFA
+                }
+            }
+
             any_owned = {
                 limit = {
                     is_core = AFA
@@ -478,7 +510,7 @@ political_decisions = {
             tag = FRA
             any_owned_province = { is_core = BRT }
             BRT = { exists = no }
-            NOT = { has_country_flag = enacted_french_schooling     }
+            NOT = { has_country_flag = enacted_french_schooling }
         }
 
         allow = {
@@ -493,12 +525,14 @@ political_decisions = {
             remove_accepted_culture = picard
             remove_accepted_culture = occitan
             remove_accepted_culture = breton
+            remove_accepted_culture = wallonian
             remove_accepted_culture = french_canadian
             any_owned = {
                 limit = {
                     OR = {
                         is_core = BRT
                         is_core = OCC
+                        is_core = WLL
                         culture = picard
                     }
                 }
@@ -516,8 +550,14 @@ political_decisions = {
             random_owned = {
                 limit = {
                     OCC = { exists = no }
-        }
+                }
                 OCC = { all_core = { remove_core = OCC } }
+            }
+            random_owned = {
+                limit = {
+                    WLL = { exists = no }
+                }
+                WLL = { all_core = { remove_core = WLL } }
             }
         }
     }

@@ -89,7 +89,7 @@
         size = 42911
     }
     artisans = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 7990
     }
@@ -132,7 +132,7 @@
         size = 26437
     }
     artisans = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 1034
     }
@@ -219,12 +219,12 @@
         size = 33182
     }
     artisans = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 141
     }
     farmers = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 1034
     }
@@ -273,17 +273,17 @@
         size = 47000
     }
     clergymen = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 107
     }
     artisans = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 141
     }
     farmers = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 2820
     }
@@ -381,7 +381,7 @@
     }
 
     farmers = {
-        culture = north_german
+        culture = rhenish
         religion = protestant
         size = 1200
     }
@@ -423,37 +423,37 @@
     }
 
     aristocrats = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 300
     }
 
     clergymen = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 200
     }
 
     artisans = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 1100
     }
 
     soldiers = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 1100
     }
 
     artisans = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 900
     }
 
     farmers = {
-        culture = flemish
+        culture = dutch
         religion = catholic
         size = 18100
     }

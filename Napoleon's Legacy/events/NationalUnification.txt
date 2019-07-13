@@ -198,7 +198,6 @@ country_event = {
                     NOT = { tag = KUK }
                     NOT = { tag = MOL }
                     NOT = { tag = SIE }
-                    NOT = { tag = LUX }
                     NOT = { is_culture_group = south_asian }
                     NOT = { is_culture_group = scandinavian }
                     NOT = { is_culture_group = arab }

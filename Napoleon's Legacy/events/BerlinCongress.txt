@@ -2100,7 +2100,7 @@ country_event = {
             limit = {
                 owner = {
                     NOT = { tag = RUS }
-		    NOT = { tag = TSA }
+            NOT = { tag = TSA }
                     has_country_flag = supported_oe_berlin_congress
                 }
             }
@@ -2119,7 +2119,7 @@ country_event = {
             limit = {
                 owner = {
                     NOT = { tag = RUS }
-		    NOT = { tag = TSA }
+            NOT = { tag = TSA }
                     has_country_flag = supported_balkans_berlin_congress
                 }
             }
@@ -2214,7 +2214,7 @@ country_event = {
             limit = {
                 owner = {
                     NOT = { tag = RUS }
-		    NOT = { tag = TSA }
+            NOT = { tag = TSA }
                     has_country_flag = supported_oe_berlin_congress
                 }
             }
@@ -2233,7 +2233,7 @@ country_event = {
             limit = {
                 owner = {
                     NOT = { tag = RUS }
-		    NOT = { tag = TSA }
+            NOT = { tag = TSA }
                     has_country_flag = supported_balkans_berlin_congress
                 }
             }

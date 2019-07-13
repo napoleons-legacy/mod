@@ -3,25 +3,25 @@
 #Luxembourg (172000/43000 POPS)
 397 = {
     artisans = {
-        culture = north_german
+        culture = rhenish
         religion = catholic
         size = 750
     }
 
     soldiers = {
-        culture = north_german
+        culture = rhenish
         religion = catholic
         size = 1000
     }
 
     farmers = {
-        culture = north_german
+        culture = rhenish
         religion = catholic
-        size = 10580
+        size = 9080
     }
 
     farmers = {
-        culture = north_german
+        culture = rhenish
         religion = protestant
         size = 1320
     }
@@ -65,7 +65,7 @@
     farmers = {
         culture = french
         religion = catholic
-        size = 26375
+        size = 27875
     }
 
     ######Jews

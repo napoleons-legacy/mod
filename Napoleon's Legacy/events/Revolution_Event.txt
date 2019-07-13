@@ -491,11 +491,6 @@ country_event = {
         }
 
         random_owned = {
-            limit = { owner = { primary_culture = dutch accepted_culture = flemish } }
-            owner = { remove_accepted_culture = flemish }
-        }
-
-        random_owned = {
             limit = { owner = { is_culture_group = germanic accepted_culture = ashkenazi } }
             owner = { remove_accepted_culture = ashkenazi }
         }

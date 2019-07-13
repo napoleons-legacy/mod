@@ -874,9 +874,6 @@ country_event = {
         734 = {
             add_core = ITA
         }
-        SAR_466 = {
-            add_core = ITA
-        }
         SAR_765 = {
             add_core = ITA
         }
@@ -1078,9 +1075,6 @@ country_event = {
             country_event = 11101
         }
         734 = {
-            add_core = ITA
-        }
-        SAR_466 = {
             add_core = ITA
         }
         SAR_765 = {

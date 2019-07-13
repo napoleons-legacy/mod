@@ -1592,13 +1592,6 @@ political_decisions = {
                     NOT = { has_global_flag = bismarck_islands_dutch }
                 }
                 AND = {
-                    OR = {
-                        primary_culture = wallonian
-                        primary_culture = flemish
-                    }
-                    NOT = { has_global_flag = bismarck_islands_belgian }
-                }
-                AND = {
                     primary_culture = japanese
                     NOT = { has_global_flag = bismarck_islands_japanese }
                 }
@@ -1632,7 +1625,6 @@ political_decisions = {
             clr_global_flag = bismarck_islands_german
             clr_global_flag = bismarck_islands_italian
             clr_global_flag = bismarck_islands_dutch
-            clr_global_flag = bismarck_islands_belgian
             clr_global_flag = bismarck_islands_japanese
             clr_global_flag = bismarck_islands_spanish
             clr_global_flag = bismarck_islands_portuguese
@@ -1694,20 +1686,6 @@ political_decisions = {
                 1531 = { change_province_name = "New Texel" }
                 2537 = { change_province_name = "New Holland" }
                 owner = { set_global_flag = bismarck_islands_dutch }
-            }
-
-            random_owned = {
-                limit = {
-                    owner = {
-                        OR = {
-                            primary_culture = wallonian
-                            primary_culture = flemish
-                        }
-                    }
-                }
-                1531 = { change_province_name = "New Wallonia" }
-                2537 = { change_province_name = "New Flanders" }
-                owner = { set_global_flag = bismarck_islands_belgian }
             }
 
             random_owned = {

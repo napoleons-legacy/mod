@@ -1701,8 +1701,6 @@ country_event = {
         random_owned = { limit = { owner = { is_culture_group = british } } 1972 = { change_province_name = "Freeburg" } }
         random_owned = { limit = { owner = { is_culture_group = italian } } 1972 = { change_province_name = "Liberacitta" } }
         random_owned = { limit = { owner = { primary_culture = dutch } } 1972 = { change_province_name = "Vrijstad" } }
-        random_owned = { limit = { owner = { primary_culture = flemish } } 1972 = { change_province_name = "Vrijstad" } }
-        random_owned = { limit = { owner = { primary_culture = wallonian } } 1972 = { change_province_name = "Libreville" } }
         random_owned = { limit = { owner = { primary_culture = spanish } } 1972 = { change_province_name = "Ciudad Libre" } }
         random_owned = { limit = { owner = { primary_culture = catalan } } 1972 = { change_province_name = "Ciudad Libre" } }
         random_owned = { limit = { owner = { primary_culture = basque } } 1972 = { change_province_name = "Ciudad Libre" } }
@@ -1720,8 +1718,6 @@ country_event = {
                             is_culture_group = british
                             is_culture_group = italian
                             primary_culture = dutch
-                            primary_culture = flemish
-                            primary_culture = wallonian
                             primary_culture = spanish
                             primary_culture = catalan
                             primary_culture = basque

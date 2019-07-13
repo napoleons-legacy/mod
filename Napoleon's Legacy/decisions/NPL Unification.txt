@@ -120,9 +120,6 @@ form_italy = {
             734 = {
                 add_core = ITA
             }
-            SAR_466 = {
-                add_core = ITA
-            }
             SAR_765 = {
                 add_core = ITA
             }
@@ -202,9 +199,6 @@ form_italy = {
             add_accepted_culture = north_italian
             add_accepted_culture = south_italian
             734 = {
-                add_core = ITM
-            }
-            SAR_466 = {
                 add_core = ITM
             }
             SAR_765 = {
@@ -288,9 +282,6 @@ form_italy = {
             734 = {
                 add_core = ITN
             }
-            SAR_466 = {
-                add_core = ITN
-            }
             SAR_765 = {
                 add_core = ITN
             }
@@ -372,9 +363,6 @@ form_italy = {
             734 = {
                 add_core = ITS
             }
-            SAR_466 = {
-                add_core = ITS
-            }
             SAR_765 = {
                 add_core = ITS
             }
@@ -454,9 +442,6 @@ form_italy = {
             add_accepted_culture = north_italian
             add_accepted_culture = south_italian
             734 = {
-                add_core = ITL
-            }
-            SAR_466 = {
                 add_core = ITL
             }
             SAR_765 = {

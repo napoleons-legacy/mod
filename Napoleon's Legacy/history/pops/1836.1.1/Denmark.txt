@@ -194,25 +194,31 @@
     artisans = {
         culture = danish
         religion = protestant
-        size = 5500
+        size = 6000
     }
 
     soldiers = {
         culture = danish
         religion = protestant
-        size = 250
+        size = 500
     }
 
     farmers = {
         culture = danish
         religion = protestant
-        size = 10025
+        size = 18875
+    }
+
+    aristocrats = {
+        culture = danish
+        religion = protestant
+        size = 200
     }
 
     aristocrats = {
         culture = north_german
         religion = protestant
-        size = 650
+        size = 450
     }
 
     bureaucrats = {
@@ -222,7 +228,7 @@
     }
 
     officers = {
-        culture = north_german
+        culture = danish
         religion = protestant
         size = 150
     }
@@ -236,19 +242,19 @@
     artisans = {
         culture = north_german
         religion = protestant
-        size = 2500
+        size = 2000
     }
 
     soldiers = {
         culture = north_german
         religion = protestant
-        size = 500
+        size = 250
     }
 
     farmers = {
         culture = north_german
         religion = protestant
-        size = 38850
+        size = 30000
     }
 }
 #Aabenra (100000/25000 POPS)
@@ -256,55 +262,43 @@
     clergymen = {
         culture = danish
         religion = protestant
-        size = 125
+        size = 175
     }
 
     artisans = {
         culture = danish
         religion = protestant
-        size = 1100
+        size = 1225
     }
 
     soldiers = {
         culture = danish
         religion = protestant
-        size = 250
+        size = 300
     }
 
     farmers = {
         culture = danish
         religion = protestant
-        size = 16625
+        size = 18175
     }
 
     aristocrats = {
-        culture = north_german
+        culture = danish
         religion = protestant
         size = 100
     }
 
-    clergymen = {
-        culture = north_german
-        religion = protestant
-        size = 50
-    }
-
     artisans = {
         culture = north_german
         religion = protestant
-        size = 250
-    }
-
-    soldiers = {
-        culture = north_german
-        religion = protestant
-        size = 50
+        size = 125
     }
 
     farmers = {
         culture = north_german
         religion = protestant
-        size = 6550
+        size = 5000
     }
 
 }

@@ -202,80 +202,42 @@ political_decisions = {
         }
     }
 
-    perfect_fusion = {
-        picture = perfect_fusion
-        potential = {
-            tag = SAR
-            OR = {
-                government = hms_government
-                government = prussian_constitutionalism
-                }
-            NOT = { has_country_flag = perfect_fusion }
-        }
-
-        allow = {
-            state_n_government = 1
-            average_militancy = 2
-            SAR = { all_core = { owned_by = THIS } }
-        }
-
-        effect = {
-            add_accepted_culture = south_italian
-            SAR = {
-            all_core = {
-                remove_core = SAR
-                any_pop = { consciousness = 3 }
-                }
-            }
-            any_pop = { scaled_militancy = {
-                factor = 3
-                ideology = reactionary
-                }
-            }
-            set_country_flag = perfect_fusion
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     spanish_resto = {
         picture = spanish_sicily
         potential = {
             tag = ILY
             NOT = { has_country_flag = resto_negotiate }
             exists = SPA
-                }
+        }
 
-            allow = {
-                war = no
-                prestige = 15
-                year = 1840
-                }
+        allow = {
+            war = no
+            prestige = 15
+            year = 1840
+        }
 
-            effect = {
-                set_country_flag = resto_negotiate
-                SPA = {
-                    country_event = 600027
-                }
-                prestige = 5
-                }
+        effect = {
+            set_country_flag = resto_negotiate
+            SPA = {
+                country_event = 600027
+            }
+            prestige = 5
+        }
 
-                ai_will_do = {
-                        factor = .5
-                }
+        ai_will_do = {
+            factor = .5
+        }
     }
 
     conquest_of_the_adriatic = {
         picture = conquest_adriatic
         potential = {
             OR = {
-            tag = ITA
-            tag = ITN
-            tag = ITS
-            tag = ITM
-            tag = ITL
+                tag = ITA
+                tag = ITN
+                tag = ITS
+                tag = ITM
+                tag = ITL
             }
             NOT = { has_country_flag = conquest_adriatic_happened }
         }
@@ -305,11 +267,11 @@ political_decisions = {
         picture = reclaim_italian_lands
         potential = {
             OR = {
-            tag = ITA
-            tag = ITN
-            tag = ITS
-            tag = ITM
-            tag = ITL
+                tag = ITA
+                tag = ITN
+                tag = ITS
+                tag = ITM
+                tag = ITL
             }
             NOT = { has_country_flag = reclaim_italian_lands }
             has_country_flag = conquest_adriatic_happened
@@ -324,12 +286,11 @@ political_decisions = {
         effect = {
             badboy = 10
             set_country_flag = reclaim_italian_lands
-            SAR_466 = { add_core = ITA }
-            826 = { add_core = ITA }
-            852 = { add_core = ITA }
-            853 = { add_core = ITA }
-            854 = { add_core = ITA }
-            473 = { add_core = ITA }
+            826 = { add_core = THIS }
+            852 = { add_core = THIS }
+            853 = { add_core = THIS }
+            854 = { add_core = THIS }
+            473 = { add_core = THIS }
         }
 
         ai_will_do = {

@@ -1866,7 +1866,6 @@ free_peoples = {
                     tag = CRO
                     tag = BUL
                     tag = SIE
-                    tag = LUX
                 }
             }
             AND = {
@@ -1916,10 +1915,6 @@ free_peoples = {
             AND = {
                 any_owned_province = { region = AUS_657 }
                 FROM = { tag = SIE }
-            }
-            AND = {
-                any_owned_province = { province_id = 397 }
-                FROM = { tag = LUX }
             }
         }
     }

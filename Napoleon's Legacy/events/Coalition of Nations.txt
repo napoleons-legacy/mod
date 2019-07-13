@@ -12,28 +12,15 @@ country_event = {
             limit = { is_core = AFA }
             secede_province = AFA
         }
-        release = AFA
-        AFA = {
-            political_reform = mandatory_service
-            capital = 375
-            leadership = 80
-            treasury = 10000
-            small_arms = 100
-            ammunition = 200
-            canned_food = 200
-            wine = 200
-            liquor = 200
 
-            add_country_modifier = {
-                name = small_country_draft
-                duration = 1825
-            }
-        }
+        release_vassal = AFA
+
         casus_belli = {
             target = AFA
             type = cut_down_to_size
             months = 1
         }
+
         AFA = {
             create_alliance = FROM
             military_access = FROM
@@ -92,7 +79,6 @@ country_event = {
 
         release = BRE
         release = MUN
-        release = WLL
         release = HAM
         release = RHI
         release = OLD

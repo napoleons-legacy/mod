@@ -206,7 +206,7 @@ FRA_445 = { 445 446 447 } #Limousin
 
 FRA_448 = { 448 449 450 } #Auvergne
 
-FRA_451 = { 451 452 453 454 } #Rhone
+FRA_451 = { 451 452 453 454 465 466 } #Rhone
 
 FRA_455 = { 455 457 456 } #Le Midi
 
@@ -214,10 +214,7 @@ FRA_458 = { 458 459 460 } #Aquitaine
 
 FRA_461 = { 461 462 463 464 } #Languedoc
 
-SAR_466 = { 465 466 472 } #Savoie
-
-FRA_467 = { 467 468 469 470 471 } #Provence
-
+FRA_467 = { 467 468 469 470 471 472 } #Provence
 
 ### Spain & Portugal
 
@@ -250,11 +247,11 @@ POR_2134 = { 2134 2135 2136 } #Macaronesia
 
 ### Germany & Switzerland
 
-HAN_528 = { 528 531 532 535 } #Lower Elbe
+HAN_528 = { 528 531 532 535 539 } #Lower Elbe
 
 HAN_534 = { 534 536 537 585 } #Hannover
 
-HAN_540 = { 539 540 543 542 541 1743 } #East Friesland
+HAN_540 = { 540 543 542 541 1743 538 } #East Friesland
 
 PRU_544 = { 544 545 547 548 } #Mecklenburg
 
@@ -276,7 +273,7 @@ PRU_575 = { 575 576 577 572 397 396 } #Rheinland
 
 PRU_578 = { 578 579 2561 583 } #Eastern Rheinland
 
-PRU_581 = { 580 581 582 584 538 } #Westfalen
+PRU_581 = { 580 581 582 584 } #Westfalen
 
 BAD_586 = { 586 587 588 569 } #Baden
 

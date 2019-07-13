@@ -80,11 +80,6 @@ country_event = {
                 NOT = { brigades_compare = 1 }
             }
         }
-        modifier = {
-            factor = 5
-            tag = LUX
-            ai = yes
-        }
     }
 
     option = {
