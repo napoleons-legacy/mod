@@ -201,7 +201,7 @@ country_event = {
                     OR = {
                         is_core = CYP
                         is_core = BUL
-                        is_core = ALB
+                        region = TUR_853
                         region = EGY_843
                     }
                 }

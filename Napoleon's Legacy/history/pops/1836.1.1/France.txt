@@ -3331,7 +3331,7 @@
     }
 
     soldiers = {
-        culture = north_italian
+        culture = french
         religion = catholic
         size = 1000
     }
@@ -3339,13 +3339,13 @@
     farmers = {
         culture = north_italian
         religion = catholic
-        size = 20375
+        size = 15375
     }
 
     farmers = {
         culture = french
         religion = catholic
-        size = 32175
+        size = 37175
     }
 
 }

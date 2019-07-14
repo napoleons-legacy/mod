@@ -445,19 +445,6 @@ political_decisions = {
                 }
                 literacy = -0.99
             }
-
-            any_pop = {
-                limit = {
-                    has_pop_culture = irish
-                    location = { is_core = IRE }
-                }
-                militancy = 4
-            }
-            any_owned = {
-                limit = { is_core = IRE }
-                add_province_modifier = { name = irish_oppression duration = -1 }
-                add_province_modifier = { name = enclosures duration = -1 }
-            }
             2482 = { add_province_modifier = { name = penal_colony duration = -1 } }
         }
     }

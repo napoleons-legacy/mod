@@ -2809,6 +2809,114 @@
         religion = protestant
         size = 750
     }
+
+    # From Cape Town
+    aristocrats = {
+        culture = british
+        religion = protestant
+        size = 20
+    }
+
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 100
+    }
+
+    artisans = {
+        culture = british
+        religion = protestant
+        size = 400
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 1000
+    }
+
+    farmers = {
+        culture = british
+        religion = protestant
+        size = 1250
+    }
+
+    # From Worcester
+    farmers = {
+        culture = british
+        religion = protestant
+        size = 260
+    }
+
+    # From Swettenham
+    farmers = {
+        culture = british
+        religion = protestant
+        size = 260
+    }
+
+    # From Mossel Bay
+    farmers = {
+        culture = british
+        religion = protestant
+        size = 500
+    }
+
+    # From Port Elizabeth
+    aristocrats = {
+        culture = british
+        religion = protestant
+        size = 100
+    }
+
+    artisans = {
+        culture = british
+        religion = protestant
+        size = 250
+    }
+
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 100
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 100
+    }
+
+    farmers = {
+        culture = british
+        religion = protestant
+        size = 1450
+    }
+
+    # From Graaf Reinet
+    artisans = {
+        culture = british
+        religion = protestant
+        size = 160
+    }
+
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 100
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 100
+    }
+
+    farmers = {
+        culture = british
+        religion = protestant
+        size = 6825
+    }
 }
 #Truro (44000/11000 POPS)
 72 = {

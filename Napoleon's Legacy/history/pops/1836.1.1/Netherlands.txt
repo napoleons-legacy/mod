@@ -41,22 +41,22 @@
     aristocrats = {
         culture = dutch
         religion = protestant
-        size = 1410
+        size = 1110
     }
     officers = {
         culture = dutch
         religion = protestant
-        size = 329
+        size = 179
     }
     bureaucrats = {
         culture = dutch
         religion = protestant
-        size = 2444
+        size = 2244
     }
     clergymen = {
         culture = dutch
         religion = protestant
-        size = 1739
+        size = 1539
     }
     artisans = {
         culture = dutch
@@ -92,6 +92,26 @@
         culture = dutch
         religion = catholic
         size = 7990
+    }
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 300
+    }
+    officers = {
+        culture = french
+        religion = catholic
+        size = 150
+    }
+    bureaucrats = {
+        culture = french
+        religion = catholic
+        size = 200
+    }
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 200
     }
 }
 #Rotterdam (567000/141750 POPS)

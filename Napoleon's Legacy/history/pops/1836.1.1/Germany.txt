@@ -3507,37 +3507,31 @@
     aristocrats = {
         culture = rhenish
         religion = catholic
-        size = 1200
+        size = 1000
     }
 
     bureaucrats = {
         culture = rhenish
         religion = catholic
-        size = 2100
-    }
-
-    capitalists = {
-        culture = rhenish
-        religion = catholic
-        size = 100
+        size = 1900
     }
 
     officers = {
         culture = rhenish
         religion = catholic
-        size = 500
+        size = 250
     }
 
     clergymen = {
         culture = rhenish
         religion = catholic
-        size = 1225
+        size = 1000
     }
 
     clerks = {
         culture = rhenish
         religion = catholic
-        size = 2125
+        size = 2000
     }
 
     craftsmen = {
@@ -3555,19 +3549,19 @@
     artisans = {
         culture = rhenish
         religion = catholic
-        size = 3625
+        size = 3000
     }
 
     soldiers = {
         culture = rhenish
         religion = catholic
-        size = 3000
+        size = 2000
     }
 
     farmers = {
         culture = rhenish
         religion = catholic
-        size = 85210
+        size = 83210
     }
 
     ######Jews
@@ -3613,25 +3607,79 @@
         size = 200
     }
     ########
+
+    aristocrats = {
+        culture = rhenish
+        religion = catholic
+        size = 200
+    }
+
+    bureaucrats = {
+        culture = rhenish
+        religion = catholic
+        size = 200
+    }
+
+    capitalists = {
+        culture = french
+        religion = catholic
+        size = 100
+    }
+
+    officers = {
+        culture = rhenish
+        religion = catholic
+        size = 250
+    }
+
+    clergymen = {
+        culture = rhenish
+        religion = catholic
+        size = 225
+    }
+
+    clerks = {
+        culture = rhenish
+        religion = catholic
+        size = 125
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 625
+    }
+
+    soldiers = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 2000
+    }
 }
 #Aachen (400000/100000 POPS)
 576 = {
     aristocrats = {
         culture = rhenish
         religion = catholic
-        size = 1100
+        size = 800
     }
 
     clergymen = {
         culture = rhenish
         religion = catholic
-        size = 850
+        size = 500
     }
 
     artisans = {
         culture = rhenish
         religion = catholic
-        size = 4500
+        size = 4000
     }
 
     soldiers = {
@@ -3643,19 +3691,31 @@
     farmers = {
         culture = rhenish
         religion = catholic
-        size = 90450
+        size = 89450
+    }
+
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 300
     }
 
     clergymen = {
-        culture = wallonian
+        culture = french
         religion = catholic
-        size = 10
+        size = 360
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 500
     }
 
     farmers = {
-        culture = wallonian
+        culture = french
         religion = catholic
-        size = 990
+        size = 1990
     }
 }
 #Kleves (356000/89000 POPS)

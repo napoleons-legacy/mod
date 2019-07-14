@@ -1,6 +1,5 @@
-owner = PER
-controller = PER
-add_core = PER
+owner = DAG
+controller = DAG
 add_core = DAG
 trade_goods = fruit
 life_rating = 35

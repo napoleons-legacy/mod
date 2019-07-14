@@ -14,31 +14,34 @@ political_decisions = {
         allow = {
             owns = 2087
             2093 = { NOT = { is_core = THIS } }
-            }
+        }
 
         effect = {
             set_country_flag = claimed_north_cape_colony
-            2088 = { owner = {
-            add_casus_belli = {
-                target = THIS
-                type = place_in_the_sun
-                months = 60
+            2088 = {
+                owner = {
+                    add_casus_belli = {
+                        target = THIS
+                        type = place_in_the_sun
+                        months = 60
                     }
                 }
             }
-            2092 = { owner = {
-            add_casus_belli = {
-                target = THIS
-                type = place_in_the_sun
-                months = 60
+            2092 = {
+                owner = {
+                    add_casus_belli = {
+                        target = THIS
+                        type = place_in_the_sun
+                        months = 60
                     }
                 }
             }
-            2093 = { owner = {
-            add_casus_belli = {
-                target = THIS
-                type = place_in_the_sun
-                months = 60
+            2093 = {
+                owner = {
+                    add_casus_belli = {
+                        target = THIS
+                        type = place_in_the_sun
+                        months = 60
                     }
                 }
             }
@@ -57,101 +60,4 @@ political_decisions = {
             }
         }
     }
-
-    claim_xhosa_lands = {
-        picture = xhosa_people
-        potential = {
-            tag = SAF
-            owns = 2087
-            2100 = {
-                OR = {
-                    owned_by = THIS
-                    NOT = { owned_by = XHO }
-                    has_global_flag = berlin_conference
-                }
-            }
-            NOT = { has_country_flag = claimed_xhosa }
-        }
-
-        allow = {
-            2100 = { NOT = { is_core = THIS } }
-            NOT = { truce_with = XHO }
-            NOT = { casus_belli = XHO }
-            state_n_government = 1
-        }
-
-        effect = {
-            set_country_flag = claimed_xhosa
-            badboy = 2
-            2098 = { add_core = SAF }
-            2099 = { add_core = SAF }
-            2100 = { add_core = SAF }
-            2104 = { add_core = SAF }
-            casus_belli ={
-                target = XHO
-                type = conquest_any
-                months = 60
-            }
-            random_country = {
-                limit = { owns = 2100 }
-                relation = { who = THIS value = -100 }
-                leave_alliance = THIS
-            }
-        }
-    }
-
-    treaty_of_umtata = {
-        picture = treaty_signing
-        potential = {
-            owns = 2087
-            XHO = {
-                OR = {
-                    owns = 2098
-                    owns = 2099
-                }
-                truce_with = THIS
-            }
-            NOT = { XHO = { has_country_flag = treaty_of_umtata } }
-        }
-
-        allow = {
-            war = no
-            XHO = {
-                truce_with = THIS
-            }
-        }
-
-        effect = {
-            badboy = 1
-            prestige = 3
-            relation = { who = XHO value = 200 }
-            diplomatic_influence = { who = XHO value = -200 }
-            XHO = { foreign_weapons = yes_foreign_weapons set_country_flag = treaty_of_umtata }
-            random_country = {
-                limit = {
-                    tag = XHO
-                    NOT = { owns = 2098 }
-                    owns = 2099
-                }
-                2099 = {
-                    add_core = SAF
-                    secede_province = THIS
-                }
-            }
-            random_country = {
-                limit = {
-                    tag = XHO
-                    owns = 2098
-                }
-                2098 = {
-                    add_core = SAF
-                    secede_province = THIS
-                }
-            }
-            2099 = { change_province_name = "King William's Town" }
-            2098 = { change_province_name = "Port Rex" }
-        }
-
-        ai_will_do = { factor = 1 }
-        }
 }

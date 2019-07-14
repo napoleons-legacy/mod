@@ -262,25 +262,25 @@
     aristocrats = {
         culture = north_italian
         religion = catholic
-        size = 2550
+        size = 2300
     }
 
     bureaucrats = {
         culture = north_italian
         religion = catholic
-        size = 400
+        size = 300
     }
 
     officers = {
         culture = north_italian
         religion = catholic
-        size = 250
+        size = 200
     }
 
     clergymen = {
         culture = north_italian
         religion = catholic
-        size = 1600
+        size = 1200
     }
 
     artisans = {
@@ -292,19 +292,19 @@
     artisans = {
         culture = north_italian
         religion = catholic
-        size = 9000
+        size = 7000
     }
 
     soldiers = {
         culture = north_italian
         religion = catholic
-        size = 3000
+        size = 2000
     }
 
     farmers = {
         culture = north_italian
         religion = catholic
-        size = 140000
+        size = 138500
     }
 
     ######Jews
@@ -332,37 +332,109 @@
         size = 100
     }
     ########
+
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 250
+    }
+
+    bureaucrats = {
+        culture = french
+        religion = catholic
+        size = 100
+    }
+
+    officers = {
+        culture = french
+        religion = catholic
+        size = 50
+    }
+
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 400
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 2000
+    }
+
+    soldiers = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 1500
+    }
 }
 #Savona (316000/79000 POPS)
 725 = {
     aristocrats = {
         culture = north_italian
         religion = catholic
-        size = 1500
+        size = 1000
     }
 
     clergymen = {
         culture = north_italian
         religion = catholic
-        size = 800
+        size = 600
     }
 
     artisans = {
         culture = north_italian
         religion = catholic
-        size = 4000
+        size = 3000
     }
 
     soldiers = {
         culture = north_italian
         religion = catholic
-        size = 2000
+        size = 1000
     }
 
     farmers = {
         culture = north_italian
         religion = catholic
-        size = 70700
+        size = 69000
+    }
+
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 500
+    }
+
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 200
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    soldiers = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 1700
     }
 }
 #Lombardy Region (2512000)

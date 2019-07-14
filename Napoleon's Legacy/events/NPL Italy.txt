@@ -211,7 +211,7 @@ country_event = {
         }
 
         ai_chance = {
-            factor = 40
+            factor = 60
         }
     }
 
@@ -249,7 +249,7 @@ country_event = {
         }
 
         ai_chance = {
-            factor = 30
+            factor = 10
 
             modifier = {
                 factor = 0

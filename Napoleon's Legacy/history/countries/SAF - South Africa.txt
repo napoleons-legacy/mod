@@ -1,7 +1,7 @@
 capital = 2087
 primary_culture = boer
 religion = protestant
-government = hms_government
+government = democracy
 plurality = 0.6
 nationalvalue = nv_productivity
 literacy = 0.2
@@ -13,22 +13,22 @@ slavery = no_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = wealth_voting
 public_meetings = yes_meeting
-press_rights = free_press
+press_rights = censored_press
 trade_unions = all_trade_unions
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
 
 # Social Reforms
-wage_reform = low_minimum_wage
-work_hours = ten_hours
-safety_regulations = low_safety
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
 health_care = no_health_care
-unemployment_subsidies = trinket_subsidies
-pensions = trinket_pensions
+unemployment_subsidies = no_subsidies
+pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = two_year_draft
+conscription = mandatory_service
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal

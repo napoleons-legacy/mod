@@ -8,17 +8,24 @@ leader = {
 }
 
 army = {
-    name = "Army of South Africa"
+    name = "Boer Regulars"
     location = 2090
+
     regiment = {
-        name= "Graaf Reinet Commando"
+        name = "Worcester Commando"
         type = infantry
-        home = 2087
+        home = 2089
     }
 
     regiment = {
         name= "Khoikhoi Band"
         type = hussar
+        home = 2090
+    }
+
+    regiment = {
+        name = "Cape Commando"
+        type = infantry
         home = 2087
     }
 }

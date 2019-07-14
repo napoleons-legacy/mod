@@ -63,11 +63,6 @@ MOR = {
 }
 
 #Europe
-GRE = {
-    value = -25        #relation
-    level = 0        #3=cordial, 4 = friendly, 5 sphere
-    influence_value = 0
-}
 SER = {
     value = 0        #relation
     level = 5        #3=cordial, 4 = friendly, 5 sphere
