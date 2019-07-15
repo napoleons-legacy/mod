@@ -141,7 +141,7 @@ country_migration_target = {
             capital_scope = { is_colonial = no continent = north_america }
             capital_scope = { is_colonial = no continent = south_america }
             capital_scope = { is_colonial = no continent = australia_new_zealand }
-            tag = SAF
+            country = { has_country_flag = south_africa_immigration }
         }
         OR = {
             government = democracy
@@ -159,7 +159,7 @@ country_migration_target = {
             capital_scope = { is_colonial = no continent = north_america }
             capital_scope = { is_colonial = no continent = south_america }
             capital_scope = { is_colonial = no continent = australia_new_zealand }
-            tag = SAF
+            country = { has_country_flag = south_africa_immigration }
         }
         OR = {
             government = democracy

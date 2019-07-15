@@ -1551,6 +1551,32 @@
         size = 640
     }
 }
+#Izhma (2000/500 POPS)
+2699 = {
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 5
+    }
+
+    farmers = {
+        culture = russian
+        religion = orthodox
+        size = 145
+    }
+
+    clergymen = {
+        culture = ugrian
+        religion = animist
+        size = 5
+    }
+
+    farmers = {
+        culture = ugrian
+        religion = animist
+        size = 345
+    }
+}
 #Vologda Region (1712000)
 #under the rule of Russia in 1836
 #Vologda (776000/194000 POPS)

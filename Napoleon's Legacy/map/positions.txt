@@ -90032,47 +90032,31 @@
 }
 2699 = {
   text_position = {
-    x = 4053.55
-    y = 916.65
+    x = 3661
+    y = 1966.3
   }
-  text_rotation = 0.217
-  text_scale = 2.2
+  text_scale = 5.2
   unit = {
-    x = 4057.5
-    y = 913.95
-  }
-  city = {
-    x = 4060
-    y = 909.9
+    x = 3692.4817
+    y = 1980.575
   }
   factory = {
-    x = 4062.15
-    y = 910.2
+    x = 3671
+    y = 1987
   }
   building_construction = {
-    x = 4062.8
-    y = 908.45
+    x = 3650
+    y = 1980
   }
   military_construction = {
-    x = 4063.95
-    y = 908.25
+    x = 3659
+    y = 1959
   }
   building_position = {
     fort = {
-      x = 4055.35
-      y = 914.75
+      x = 3615.845
+      y = 1978.6383
     }
-    railroad = {
-      x = 4062.45
-      y = 909
-    }
-    naval_base = {
-      x = 4061.1
-      y = 914.8
-    }
-  }
-  building_rotation = {
-    naval_base = 2.4443
   }
 }
 2700 = {

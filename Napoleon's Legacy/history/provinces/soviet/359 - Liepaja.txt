@@ -2,5 +2,7 @@ owner = PLC
 controller = PLC
 add_core = PLC
 add_core = LAT
+add_core = LIT
 trade_goods = grain
 life_rating = 35
+naval_base = 1

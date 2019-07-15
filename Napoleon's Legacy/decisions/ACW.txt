@@ -960,7 +960,7 @@ political_decisions = {
 
 
     back_to_africa_act = {
-    picture = going_to_liberia
+        picture = going_to_liberia
         potential = {
             has_country_flag = new_world_nation
             NOT = { is_culture_group = african_diaspora_cultures }

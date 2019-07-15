@@ -408,7 +408,7 @@
     aristocrats = {
         culture = north_german
         religion = protestant
-        size = 1150
+        size = 650
     }
 
     clergymen = {
@@ -451,6 +451,36 @@
         culture = ashkenazi
         religion = jewish
         size = 750
+    }
+
+    aristocrats = {
+        culture = lithuanian
+        religion = orthodox
+        size = 550
+    }
+
+    clergymen = {
+        culture = lithuanian
+        religion = orthodox
+        size = 125
+    }
+
+    artisans = {
+        culture = lithuanian
+        religion = orthodox
+        size = 600
+    }
+
+    soldiers = {
+        culture = lithuanian
+        religion = orthodox
+        size = 500
+    }
+
+    farmers = {
+        culture = lithuanian
+        religion = orthodox
+        size = 5275
     }
 }
 #Ventspils (140000/35000 POPS) #uralic = Livonian
@@ -532,6 +562,36 @@
         religion = jewish
         size = 950
     }
+
+    aristocrats = {
+        culture = lithuanian
+        religion = orthodox
+        size = 550
+    }
+
+    clergymen = {
+        culture = lithuanian
+        religion = orthodox
+        size = 125
+    }
+
+    artisans = {
+        culture = lithuanian
+        religion = orthodox
+        size = 600
+    }
+
+    soldiers = {
+        culture = lithuanian
+        religion = orthodox
+        size = 500
+    }
+
+    farmers = {
+        culture = lithuanian
+        religion = orthodox
+        size = 5275
+    }
 }
 #Liepaja (96000/24000 POPS)
 359 = {
@@ -607,4 +667,33 @@
         size = 750
     }
 
+    aristocrats = {
+        culture = lithuanian
+        religion = orthodox
+        size = 600
+    }
+
+    clergymen = {
+        culture = lithuanian
+        religion = orthodox
+        size = 125
+    }
+
+    artisans = {
+        culture = lithuanian
+        religion = orthodox
+        size = 800
+    }
+
+    soldiers = {
+        culture = lithuanian
+        religion = orthodox
+        size = 1000
+    }
+
+    farmers = {
+        culture = lithuanian
+        religion = orthodox
+        size = 8275
+    }
 }

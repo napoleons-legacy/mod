@@ -8,6 +8,7 @@ country_event = {
         tag = CAN
         exists = HUD
         year = 1840
+        money = 11000
     }
 
     fire_only_once = yes

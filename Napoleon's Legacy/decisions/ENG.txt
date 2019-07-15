@@ -1,32 +1,4 @@
 political_decisions = {
-    repeal_the_corn_laws = {
-        potential = {
-            OR = {
-                tag = CAN
-                tag = BRI
-            }
-            has_country_flag = great_irish_famine
-            NOT = {
-                has_country_flag = corn_laws_repealed_flag
-            }
-        }
-        allow = {
-            average_militancy = 2
-        }
-
-        effect = {
-            add_country_modifier = {
-                name = corn_laws_repealed
-                duration = 3650
-            }
-            any_pop = {
-                militancy = -1
-                consciousness = 1
-            }
-            set_country_flag = corn_laws_repealed_flag
-        }
-    }
-
     crown_empress_of_india = {
         picture = crown_empress_of_india
         news = yes
