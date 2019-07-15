@@ -3293,7 +3293,7 @@
     }
 
     soldiers = {
-        culture = north_italian
+        culture = french
         religion = catholic
         size = 1000
     }
@@ -3301,13 +3301,13 @@
     farmers = {
         culture = north_italian
         religion = catholic
-        size = 25100
+        size = 15100
     }
 
     farmers = {
         culture = french
         religion = catholic
-        size = 30800
+        size = 40800
     }
 }
 #Chambery (228400/57100 POPS)
@@ -3339,13 +3339,13 @@
     farmers = {
         culture = north_italian
         religion = catholic
-        size = 15375
+        size = 10375
     }
 
     farmers = {
         culture = french
         religion = catholic
-        size = 37175
+        size = 42175
     }
 
 }

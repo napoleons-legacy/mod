@@ -137,21 +137,6 @@ beneluxian = {
     }
 }
 
-pan_swiss = {
-    leader = european
-    unit = EuropeanGC
-    swiss = {
-        color = { 180 40 40}
-        first_names = { Adolf Alexander Eduard Ernst Franz Hans Johann Josef Konstantin Martin
-        Melchior Robert Rudolf Ulrich Wilhelm Augusto Enrico Flavio Giuseppe Vincenzo
-        Antoine Charles Emmanuel Guillaume Gustave Henri Hugo Louis Marc Paul }
-
-        last_names = { Brenner Deucher Funk Haab Herzog Knüsel Munzinger Näff Schneider Siegwart-Müller
-        "von Donatz" "von Salis-Soglio" "von Steiger" "von Tavel" Wille Celio Cotti Fogliardi Motta Zeni
-        Ador Calonder Chaudet Comtesse "de Prangins" Dufour Fornerod Guisan Ruchet Ruchonnet }
-    }
-}
-
 scandinavian = {
     leader = european
     unit = SwedishGC

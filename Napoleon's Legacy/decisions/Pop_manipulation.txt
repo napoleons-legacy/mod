@@ -140,7 +140,6 @@ political_decisions = {
             clr_country_flag = interning_germanics
             clr_country_flag = interning_jewish_cultures
             clr_country_flag = interning_beneluxian
-            clr_country_flag = interning_pan_swiss
             clr_country_flag = interning_scandinavian
             clr_country_flag = interning_british
             clr_country_flag = interning_italian
@@ -1746,35 +1745,6 @@ political_decisions = {
         effect = {
             set_country_flag = interning_polish_culture_group
             change_variable = { which = slowdown_point value = 2 }
-        }
-        ai_will_do = { factor = 0 }
-    }
-
-    intern_pan_swiss = {
-        picture = generic_culture
-        potential = {
-            has_country_modifier = interment_camps
-            has_country_flag = interning_cultures
-            any_owned_province = {
-                any_pop = {
-                    is_primary_culture = no
-                    is_accepted_culture = no
-                    is_culture_group = pan_swiss
-                }
-            }
-            NOT = { has_country_flag = interning_pan_swiss }
-            OR = {
-                has_country_flag = government_decisions_on
-                ai = yes
-            }
-        }
-
-        allow = {
-        }
-
-        effect = {
-            set_country_flag = interning_pan_swiss
-            change_variable = { which = slowdown_point value = 1 }
         }
         ai_will_do = { factor = 0 }
     }

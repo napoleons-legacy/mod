@@ -385,16 +385,6 @@ province_event = {
                 }
             }
             AND = {
-                owner = { has_country_flag = interning_pan_swiss }
-                any_pop = {
-                    is_culture_group = pan_swiss
-                    NOT = {
-                        is_primary_culture = yes
-                        is_accepted_culture = yes
-                    }
-                }
-            }
-            AND = {
                 owner = { has_country_flag = interning_turko_semitic }
                 any_pop = {
                     is_culture_group = turko_semitic
@@ -5550,138 +5540,6 @@ province_event = {
                 }
             }
         }
-
-        ##############Swiss Cultures
-        random_pop = {#Killing in a majority state
-            limit = {
-                is_culture_group = pan_swiss
-                location = {
-                    owner = { has_country_flag = interning_pan_swiss }
-                    state_scope = {
-                        OR = {
-                            is_accepted_culture = yes
-                            is_primary_culture = yes
-                        }
-                        has_national_minority = yes
-                    }
-                }
-            }
-            location = {
-                state_scope = {
-                    any_pop = {
-                        limit = {
-                            is_primary_culture = no
-                            is_accepted_culture = no
-                            is_culture_group = pan_swiss
-                        }
-                        reduce_pop = 0.35
-                        random = {
-                            chance = 30
-                            reduce_pop = 0.9
-                        }
-                        random = {
-                            chance = 30
-                            reduce_pop = 0.9
-                        }
-                        random = {
-                            chance = 30
-                            reduce_pop = 0.9
-                        }
-                    }
-                }
-            }
-        }
-
-        #Killing in a minority state
-        random_pop = {
-            limit = {
-                is_culture_group = pan_swiss
-                location = {
-                    owner = { has_country_flag = interning_pan_swiss }
-                    state_scope = {
-                        is_primary_culture = no
-                        is_accepted_culture = no
-                        any_owned_province = {
-                            OR = {
-                                is_primary_culture = yes
-                                is_accepted_culture = yes
-                            }
-                        }
-                    }
-                }
-            }
-            location = {
-                state_scope = {
-                    any_pop = {
-                        limit = {
-                            is_primary_culture = no
-                            is_accepted_culture = no
-                            is_culture_group = pan_swiss
-                        }
-                        reduce_pop = 0.65
-                        random = {
-                            chance = 20
-                            reduce_pop = 0.9
-                        }
-                        random = {
-                            chance = 20
-                            reduce_pop = 0.9
-                        }
-                        random = {
-                            chance = 20
-                            reduce_pop = 0.9
-                        }
-                    }
-                }
-            }
-        }
-
-        #Killing in a no-presence state
-        random_pop = {
-            limit = {
-                is_culture_group = pan_swiss
-                location = {
-                    owner = { has_country_flag = interning_pan_swiss }
-                    state_scope = {
-                        is_primary_culture = no
-                        is_accepted_culture = no
-                        NOT = {
-                            any_owned_province = {
-                                OR = {
-                                    is_primary_culture = yes
-                                    is_accepted_culture = yes
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            location = {
-                state_scope = {
-                    any_pop = {
-                        limit = {
-                            is_primary_culture = no
-                            is_accepted_culture = no
-                            is_culture_group = pan_swiss
-                        }
-                        reduce_pop = 0.85
-                        random = {
-                            chance = 10
-                            reduce_pop = 0.9
-                        }
-                        random = {
-                            chance = 10
-                            reduce_pop = 0.9
-                        }
-                        random = {
-                            chance = 10
-                            reduce_pop = 0.9
-                        }
-                    }
-                }
-            }
-        }
-
         ##############Turkish Cultures
         random_pop = {#Killing in a majority state
             limit = {
@@ -8364,7 +8222,6 @@ country_event = {
         clr_country_flag = interning_germanics
         clr_country_flag = interning_jewish_cultures
         clr_country_flag = interning_beneluxian
-        clr_country_flag = interning_pan_swiss
         clr_country_flag = interning_scandinavian
         clr_country_flag = interning_british
         clr_country_flag = interning_italian

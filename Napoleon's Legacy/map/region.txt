@@ -283,7 +283,9 @@ BAV_595 = { 595 596 597 598 } #Franconia
 
 BAV_599 = { 599 592 600 601 602 } #Upper Bavaria
 
-SWI_603 = { 603 606 611 2568 605 604 607 608 609 2687 } #Switzerland
+SWI_603 = { 603 606 611 605 604 } #Switzerland
+
+SWI_607 = { 607 608 609 2687 } # Geneva
 
 PRU_682 = { 682 683 684 685 } #Silesia
 
@@ -326,7 +328,7 @@ AUS_662 = { 702 951 952 953 } #East Galicia
 
 RUS_715 = { 715 711 713 716 } #West Galicia
 
-AUS_726 = { 726 727 728 2669 } #Lombardia
+AUS_726 = { 726 727 728 2669 2568 } #Lombardia
 
 AUS_733 = { 736 737 } #Friuli
 
