@@ -2117,7 +2117,7 @@
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 5200
     }
@@ -2382,7 +2382,7 @@
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 2700
     }
@@ -2513,7 +2513,7 @@
 #Przemysl (596000/149000 POPS)
 705 = {
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 4200
     }
@@ -3153,7 +3153,7 @@
 #Bialystok (320000/80000 POPS)
 719 = {
     farmers = {
-        culture = byelorussian
+        culture = ruthenian
         religion = orthodox
         size = 12000
     }
@@ -3189,25 +3189,25 @@
     }
 
     clergymen = {
-        culture = byelorussian
+        culture = ruthenian
         religion = catholic
         size = 100
     }
 
     soldiers = {
-        culture = byelorussian
+        culture = ruthenian
         religion = catholic
         size = 100
     }
 
     artisans = {
-        culture = byelorussian
+        culture = ruthenian
         religion = catholic
         size = 750
     }
 
     farmers = {
-        culture = byelorussian
+        culture = ruthenian
         religion = catholic
         size = 12350
     }
@@ -3266,25 +3266,25 @@
 #Lvov (660000/165000 POPS)
 702 = {
     clergymen = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 750
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 4200
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 1000
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 65050
     }
@@ -3394,25 +3394,25 @@
 #Stryi (404000/101000 POPS)
 951 = {
     clergymen = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 475
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 2550
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 500
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 40475
     }
@@ -3498,32 +3498,32 @@
 #Tarnopil (1136000/284000 POPS)
 952 = {
     clergymen = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 1950
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 9900
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 1950
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 184200
     }
 
 
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 55000
     }
@@ -3615,25 +3615,25 @@
 #Stanislavov (376000/94000 POPS)
 953 = {
     clergymen = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 500
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 2650
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 525
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthenian
         religion = orthodox
         size = 42325
     }

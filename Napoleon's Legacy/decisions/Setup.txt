@@ -665,7 +665,7 @@ political_decisions = {
                 literacy = 0.03
             }
 
-            any_pop = { limit = { has_pop_culture = ukrainian } literacy = 0.02 }
+            any_pop = { limit = { has_pop_culture = ruthenian } literacy = 0.02 }
 
             any_pop = { limit = { has_pop_culture = greek } literacy = 0.07 }
             any_pop = {
@@ -861,10 +861,7 @@ political_decisions = {
 
             any_pop = {
                 limit = {
-                    OR = {
-                        has_pop_culture = byelorussian
-                        has_pop_culture = ukrainian
-                    }
+                    has_pop_culture = ruthenian
                 }
                 literacy = -0.02
             }
@@ -880,7 +877,6 @@ political_decisions = {
                     OR = {
                         is_core = RUS
                         is_core = UKR
-                        is_core = BYE
                     }
                     NOT = {
                         OR = {
@@ -949,7 +945,7 @@ political_decisions = {
             any_pop = { limit = { has_pop_culture = czech } literacy = 0.37 }
             any_pop = { limit = { location = { OR = { province_id = 628 province_id = 619 } } literacy = 0.08 } }
             any_pop = { limit = { OR = { has_pop_culture = ashkenazi has_pop_culture = sephardic } } literacy = 0.40 }
-            any_pop = { limit = { OR = { has_pop_culture = romanian has_pop_culture = serb has_pop_culture = ukrainian } } literacy = -0.07 }
+            any_pop = { limit = { OR = { has_pop_culture = romanian has_pop_culture = serb has_pop_culture = ruthenian } } literacy = -0.07 }
             any_pop = { limit = { has_pop_culture = croat } literacy = -0.02 }
             any_pop = { limit = { has_pop_culture = slovene } literacy = 0.18 }
             any_pop = { limit = { has_pop_culture = polish } literacy = 0.02 }
@@ -1110,7 +1106,7 @@ political_decisions = {
         effect = {
             treasury = 10000
             any_pop = { limit = { has_pop_culture = russian } literacy = -0.06 }
-            any_pop = { limit = { has_pop_culture = ukrainian } literacy = -0.08 }
+            any_pop = { limit = { has_pop_culture = ruthenian } literacy = -0.08 }
             any_pop = { limit = { has_pop_culture = sephardic } literacy = 0.25 }
         }
     }
