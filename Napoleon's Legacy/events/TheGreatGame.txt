@@ -10,10 +10,7 @@ country_event = {
     picture = "greatpowers"
 
     trigger = {
-        OR = {
-            tag = TSA
-            tag = RUS
-        }
+        has_country_flag = russian_country
         is_disarmed = no
         is_greater_power = yes
         OR = {
@@ -620,10 +617,7 @@ country_event = {
         name = "EVT95612OPTA"
         random_country = {
             limit = {
-                OR = {
-                    tag = TSA
-                    tag = RUS
-                }
+                has_country_flag = russian_country
                 is_disarmed = no
                 casus_belli = THIS
                 OR = {
@@ -848,7 +842,7 @@ country_event = {
 
     option = {
         name = "EVT95615OPTA"
-        tech_school = unciv_tech_school
+        tech_school = developing_tech_school
         set_country_flag = no_russian_doctrine
         any_pop = {
             limit = { is_primary_culture = yes }

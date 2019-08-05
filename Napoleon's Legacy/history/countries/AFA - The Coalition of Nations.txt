@@ -2,15 +2,12 @@ capital = 375
 primary_culture = dutch
 culture = north_german
 culture = north_italian
-culture = wallonian
-culture = flemish
-culture = swiss
 culture = catalan
 religion = catholic
-government = democracy
+government = presidential_dictatorship
 plurality = 0.0
 nationalvalue = nv_equality
-literacy = 0.8
+literacy = 0.70
 civilized = yes
 prestige = 15
 
@@ -32,4 +29,22 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
-border_policy = closed
+
+# New Reforms
+conscription = two_year_draft
+debt_law = debtors_prisons
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
+border_policy = closed_borders
+
+ruling_party = HOL_conservative
+upper_house = {
+    fascist = 0
+    liberal = 1
+    conservative = 90
+    reactionary = 1
+    anarcho_liberal = 0
+    socialist = 0
+    communist = 0
+}

@@ -167,6 +167,10 @@ country_event = {
             type = humiliate
             months = 12
         }
+        set_country_flag = exclusive_humiliate_CB
+        KOR = {
+            add_country_modifier = { name = war_focus duration = -1 }
+        }
         war = {
             target = KOR
             attacker_goal = {
@@ -355,10 +359,7 @@ country_event = {
             name = "western_influences"
             duration = -1
         }
-        remove_country_modifier = isolationist_foreign_naval_officers
-        remove_country_modifier = isolationist_foreign_naval_schools
-        remove_country_modifier = isolationist_foreign_officers
-        remove_country_modifier = isolationist_foreign_training
+
         random_country = {
             limit = { is_our_vassal = THIS }
             release_vassal = THIS
@@ -524,10 +525,7 @@ country_event = {
             name = "western_influences"
             duration = -1
         }
-        remove_country_modifier = isolationist_foreign_naval_officers
-        remove_country_modifier = isolationist_foreign_naval_schools
-        remove_country_modifier = isolationist_foreign_officers
-        remove_country_modifier = isolationist_foreign_training
+
         random_country = {
             limit = { is_our_vassal = THIS }
             release_vassal = THIS
@@ -647,7 +645,8 @@ country_event = {
             militancy = 5
             consciousness = 5
         }
-        any_greater_power = {
+        any_country = {
+            limit = { is_greater_power = yes }
             diplomatic_influence = { who = THIS value = -200 }
         }
     }
@@ -763,6 +762,16 @@ country_event = {
         prestige = -10
         random_country = {
             limit = {
+                is_our_vassal = KOR
+                tag = KOR
+            }
+            THIS = {
+                release_vassal = KOR
+                leave_alliance = KOR
+            }
+        }
+        random_country = {
+            limit = {
                 OR = {
                     tag = TKG
                     tag = JAP
@@ -778,7 +787,7 @@ country_event = {
                 is_greater_power = yes
             }
             modifier = {
-                factor = 0
+                factor = 0.5
                 OR = {
                     is_our_vassal = KOR
                     alliance_with = KOR
@@ -805,9 +814,17 @@ country_event = {
         name = "EVT85026OPTA"
         prestige = 20
         badboy = 5
-        create_vassal = KOR
-        create_alliance = KOR
-        KOR = { country_event = 85027 }
+        random_list = {
+            50 = {
+                KOR = {
+                    set_country_flag = seoul_occupied
+                    country_event = 85027
+                }
+            }
+            50 = {
+                KOR = { country_event = 85027 }
+            }
+        }
         FROM = {
             relation = { who = THIS value = -100 }
             leave_alliance = THIS
@@ -839,11 +856,40 @@ country_event = {
         name = "EVT85026OPTB"
         prestige = -20
         badboy = -2
-        KOR = { country_event = 85029 }
-        casus_belli = {
-            target = FROM
-            type = release_puppet
-            months = 24
+        random_list = {
+            70 = {
+                KOR = {
+                    set_country_flag = seoul_occupied
+                    country_event = 85029
+                }
+            }
+            30 = {
+                KOR = { country_event = 85029 }
+            }
+        }
+        random_country = {
+            limit = {
+                tag = KOR
+                vassal_of = FROM
+            }
+            THIS = {
+                casus_belli = {
+                    target = FROM
+                    type = release_puppet
+                    months = 24
+                }
+            }
+        }
+        random_country = {
+            limit = {
+                tag = KOR
+                is_vassal = no
+            }
+            add_casus_belli = {
+                target = THIS
+                type = make_puppet
+                months = 24
+            }
         }
         casus_belli = {
             target = FROM
@@ -883,6 +929,10 @@ country_event = {
     option = {
         name = "EVT85027OPTA"
         prestige = -20
+        FROM = {
+            create_vassal = KOR
+            create_alliance = KOR
+        }
         random_country = {
             limit = {
                 tag = FROM
@@ -906,6 +956,29 @@ country_event = {
             relation = { who = THIS value = -100 }
             leave_alliance = THIS
         }
+        ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 0.25
+                NOT = { has_country_flag = seoul_occupied }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT85027OPTB"
+        capital = 1619
+        FROM = {
+            casus_belli = {
+                target = KOR
+                type = make_puppet
+                months = 60
+            }
+            country_event = 85032
+        }
+        ai_chance = {
+            factor = 20
+        }
     }
 }
 
@@ -925,16 +998,6 @@ country_event = {
         name = "EVT85028OPTA"
         casus_belli = {
             target = FROM
-            type = release_puppet
-            months = 60
-        }
-        casus_belli = {
-            target = FROM
-            type = take_from_sphere
-            months = 60
-        }
-        casus_belli = {
-            target = FROM
             type = humiliate
             months = 60
         }
@@ -943,41 +1006,68 @@ country_event = {
             type = make_puppet
             months = 60
         }
-        casus_belli = {
-            target = KOR
-            type = add_to_sphere
-            months = 60
-        }
-        random_owned = {
+        random_country = {
             limit = {
-                THIS = {
-                    civilized = no
-                    owns = 1485
-                }
-                FROM = { civilized = yes }
+                tag = KOR
+                vassal_of = FROM
             }
-            owner = {
-                add_casus_belli = {
-                    target = FROM
-                    type = treaty_port_casus_belli
-                    months = 12
-                }
+            THIS = {
                 casus_belli = {
                     target = FROM
-                    type = humiliate
-                    months = 12
+                    type = release_puppet
+                    months = 60
                 }
-                war = {
+            }
+        }
+        random_country = {
+            limit = {
+                tag = KOR
+                in_sphere = FROM
+                THIS = { is_greater_power = yes }
+            }
+            THIS = {
+                casus_belli = {
                     target = FROM
-                    attacker_goal = { casus_belli = humiliate }
-                    defender_goal = { casus_belli = treaty_port_casus_belli }
+                    type = take_from_sphere
+                    months = 60
                 }
             }
         }
 
         random_owned = {
             limit = {
+                owner = { is_greater_power = yes }
+            }
+            owner = {
+                casus_belli = {
+                    target = KOR
+                    type = add_to_sphere
+                    months = 60
+                }
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = FROM
+                civilized = yes
                 THIS = {
+                    civilized = no
+                    owns = 1485
+                }
+            }
+            casus_belli = { target = THIS type = treaty_port_casus_belli months = 12 }
+            THIS = { casus_belli = { target = FROM type = cut_down_to_size months = 12 } }
+            war = {
+                target = THIS
+                attacker_goal = { casus_belli = treaty_port_casus_belli }
+                defender_goal = { casus_belli = cut_down_to_size }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
                     civilized = yes
                     owns = 1485
                 }
@@ -986,7 +1076,7 @@ country_event = {
                 war = {
                     target = FROM
                     attacker_goal = {
-                        casus_belli = humiliate
+                        casus_belli = cut_down_to_size
                     }
                     defender_goal = {
                         casus_belli = acquire_any_state
@@ -997,7 +1087,7 @@ country_event = {
         }
         random_owned = {
             limit = {
-                THIS = {
+                owner = {
                     civilized = no
                     NOT = { owns = 1485 }
                     OR = {
@@ -1022,7 +1112,7 @@ country_event = {
             owner = {
                 war = {
                     target = FROM
-                    attacker_goal = { casus_belli = humiliate }
+                    attacker_goal = { casus_belli = cut_down_to_size }
                     defender_goal = { casus_belli = treaty_port_casus_belli }
                 }
             }
@@ -1030,15 +1120,33 @@ country_event = {
 
         random_owned = {
             limit = {
-                THIS = {
+                owner = {
                     civilized = yes
-                    NOT = { owns = 1485 }
+                    NOT = {
+                        owns = 1485
+                        owns = 1498 #Macao
+                        owns = 1538 #Shanghai
+                        owns = 1496 #Hong Kong
+                        owns = 1566    #Qingdao
+                        owns = 1481 #Lushun - Port Arthur
+                        owns = 1569 #Weihaiwei
+                        owns = 1606 #Jiaxing
+                        owns = 2562 #Tainan
+                        owns = 1499 #Hainan
+                        owns = 2632 #Kwangchowan
+                        owns = 1608 #Ningbo
+                        owns = 1695 #Ifni
+                        owns = 2640 #Gwadar
+                        owns = 1637 #Cheju
+                        owns = 2589 #Tsushima
+                    }
                 }
             }
             owner = {
                 war = {
                     target = FROM
-                    attacker_goal = { casus_belli = humiliate }
+                    attacker_goal = { casus_belli = cut_down_to_size }
+                    defender_goal = { casus_belli = cut_down_to_size }
                 }
             }
         }
@@ -1054,29 +1162,55 @@ country_event = {
         any_pop = { militancy = 2 }
         casus_belli = {
             target = FROM
-            type = release_puppet
-            months = 24
-        }
-        casus_belli = {
-            target = FROM
-            type = take_from_sphere
-            months = 24
-        }
-        casus_belli = {
-            target = FROM
             type = humiliate
-            months = 24
+            months = 60
         }
         casus_belli = {
             target = KOR
             type = make_puppet
-            months = 24
+            months = 60
         }
-        casus_belli = {
-            target = KOR
-            type = add_to_sphere
-            months = 24
+        random_country = {
+            limit = {
+                tag = KOR
+                vassal_of = FROM
+            }
+            THIS = {
+                casus_belli = {
+                    target = FROM
+                    type = release_puppet
+                    months = 60
+                }
+            }
         }
+        random_country = {
+            limit = {
+                tag = KOR
+                in_sphere = FROM
+                THIS = { is_greater_power = yes }
+            }
+            THIS = {
+                casus_belli = {
+                    target = FROM
+                    type = take_from_sphere
+                    months = 60
+                }
+            }
+        }
+
+        random_owned = {
+            limit = {
+                owner = { is_greater_power = yes }
+            }
+            owner = {
+                casus_belli = {
+                    target = KOR
+                    type = add_to_sphere
+                    months = 60
+                }
+            }
+        }
+
         ai_chance = {
             factor = 0
         }
@@ -1127,6 +1261,30 @@ country_event = {
             relation = { who = THIS value = -100 }
             leave_alliance = THIS
         }
+
+        ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 0.25
+                NOT = { has_country_flag = seoul_occupied }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT85027OPTB"
+        capital = 1619
+        FROM = {
+            casus_belli = {
+                target = KOR
+                type = make_puppet
+                months = 60
+            }
+            country_event = 85032
+        }
+        ai_chance = {
+            factor = 20
+        }
     }
 }
 
@@ -1142,9 +1300,17 @@ country_event = {
         name = "EVT85026OPTA"
         prestige = 20
         badboy = 5
-        create_vassal = KOR
-        create_alliance = KOR
-        KOR = { country_event = 85027 }
+        random_list = {
+            90 = {
+                KOR = {
+                    set_country_flag = seoul_occupied
+                    country_event = 85027
+                }
+            }
+            10 = {
+                KOR = { country_event = 85027 }
+            }
+        }
         FROM = {
             relation = { who = THIS value = -50 }
             casus_belli = {
@@ -1154,7 +1320,7 @@ country_event = {
             }
             casus_belli = {
                 target = FROM
-                type = take_from_sphere
+                type = cut_down_to_size
                 months = 12
             }
             casus_belli = {
@@ -1223,7 +1389,7 @@ country_event = {
 
 country_event = {
     id = 85031
-    title = "EVTNAME85031" #Japan will lose cores on Korea after the timer runs out
+    title = "EVTNAME85031" #Japan will lose cores on Korea after the timer runs out - Candidate for decision
     desc = "EVTDESC85031"
     picture = "tonghak_rebellion"
 
@@ -1244,5 +1410,69 @@ country_event = {
     option = {
         name = "EVT85031OPTA"
         KOR = { all_core = { remove_core = JAP remove_core = TKG } }
+    }
+}
+
+#Japan/China gets informed that Korea is resisting
+country_event = {
+    id = 85032
+    title = "EVTNAME85032"
+    desc = "EVTDESC85032"
+    picture = "tonghak_rebellion"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT85032OPTA"
+        random_country = {
+            limit = {
+                tag = KOR
+                vassal_of = THIS
+            }
+            THIS = { release_vassal = KOR }
+        }
+        random_country = {
+            limit = {
+                tag = FROM
+                OR = {
+                    NOT = { has_country_flag = seoul_occupied }
+                    NOT = { THIS = { primary_culture = japanese } }
+                }
+            }
+            clr_country_flag = seoul_occupied
+            THIS = {
+                war = {
+                    target = KOR
+                    attacker_goal = { casus_belli = make_puppet }
+                }
+            }
+        }
+        random_country = {
+            limit = {
+                tag = FROM
+                has_country_flag = seoul_occupied
+                THIS = { primary_culture = japanese }
+            }
+            clr_country_flag = seoul_occupied
+            any_owned = {
+                limit = {
+                    OR = {
+                        province_id = 1628
+                        province_id = 1624
+                    }
+                }
+                secede_province = THIS
+            }
+            THIS = {
+                war = {
+                    target = KOR
+                    attacker_goal = { casus_belli = make_puppet }
+                    defender_goal = {
+                        casus_belli = acquire_core_state
+                        state_province_id  = 1624
+                    }
+                }
+            }
+        }
     }
 }

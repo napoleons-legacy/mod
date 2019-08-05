@@ -1,10 +1,7 @@
 political_decisions = {
     fatherland_volunteers = {
         potential = {
-            OR = {
-                tag = BRZ
-                tag = REI
-            }
+            has_country_flag = brazilian_country
             government = hms_government
             NOT = {
                 has_country_flag = pedro_said_it_best
@@ -27,10 +24,7 @@ political_decisions = {
     golden_law = {
         picture = golden_law
         potential = {
-            OR = {
-                tag = BRZ
-                tag = REI
-            }
+            has_country_flag = brazilian_country
             NOT = { has_country_flag = golden_law_passed }
             OR = {
                 government = hms_government
@@ -64,10 +58,7 @@ political_decisions = {
     build_teresina = {
         picture = build_teresina
         potential = {
-            OR = {
-                tag = BRZ
-                tag = REI
-            }
+            has_country_flag = brazilian_country
             year = 1852
             NOT = { has_country_flag = teresina_built }
         }
@@ -89,10 +80,7 @@ political_decisions = {
     build_belo_horizonte = {
         picture = build_belo_horizonte
         potential = {
-            OR = {
-                tag = BRZ
-                tag = REI
-            }
+            has_country_flag = brazilian_country
             year = 1870
             NOT = { has_country_flag = bh_built }
         }
@@ -117,7 +105,7 @@ political_decisions = {
         potential = {
             OR = {
                 tag = ARG
-                tag = ARC
+                tag = LPL
             }
             NOT = { has_country_flag = 1420_passed }
             NOT = { school_reforms = low_schools }
@@ -135,91 +123,6 @@ political_decisions = {
         }
     }
 
-    integrating_bahia = {
-        picture = fatherland_volunteers
-        potential = {
-            OR = {
-                is_sphere_leader_of = BAH
-                is_sphere_leader_of = BRZ
-            }
-
-            exists = BAH
-            exists = BRZ
-            NOT = { tag = BAH }
-            BAH = { ai = yes }
-        }
-
-        allow = {
-            war = no
-            is_sphere_leader_of = BAH
-            is_sphere_leader_of = BRZ
-            BAH = { war = no OR = { is_vassal = no vassal_of = THIS } }
-            BRZ = { war = no OR = { is_vassal = no vassal_of = THIS } }
-        }
-
-        effect = {
-            BRZ = { inherit = BAH }
-            relation = { who = BRZ value = 50 }
-        }
-        ai_will_do = { factor = 1 }
-    }
-
-    integrating_pernambuco = {
-        picture = fatherland_volunteers
-        potential = {
-            OR = {
-                is_sphere_leader_of = PNB
-                is_sphere_leader_of = BRZ
-            }
-            exists = PNB
-            exists = BRZ
-            NOT = { tag = PNB }
-            PNB = { ai = yes }
-        }
-        allow = {
-            war = no
-            PNB = { war = no OR = { is_vassal = no vassal_of = THIS } }
-            BRZ = { war = no OR = { is_vassal = no vassal_of = THIS } }
-            is_sphere_leader_of = PNB
-            is_sphere_leader_of = BRZ
-        }
-
-        effect = {
-            BRZ = { inherit = PNB }
-            relation = { who = BRZ value = 50 }
-        }
-
-        ai_will_do = { factor = 1 }
-    }
-
-
-    integrating_rgs = {
-        picture = fatherland_volunteers
-        potential = {
-            OR = {
-                is_sphere_leader_of = RGS
-                is_sphere_leader_of = BRZ
-            }
-            exists = RGS
-            exists = BRZ
-            NOT = { tag = RGS }
-            RGS = { ai = yes }
-        }
-        allow = {
-            war = no
-            RGS = { war = no OR = { is_vassal = no vassal_of = THIS } }
-            BRZ = { war = no OR = { is_vassal = no vassal_of = THIS } }
-            is_sphere_leader_of = RGS
-            is_sphere_leader_of = BRZ
-        }
-
-        effect = {
-            BRZ = { inherit = RGS }
-            relation = { who = BRZ value = 50 }
-        }
-        ai_will_do = { factor = 1 }
-    }
-
     new_life_in_the_new_world = {
         picture = new_life
         potential = {
@@ -231,15 +134,20 @@ political_decisions = {
                 primary_culture = australian
                 primary_culture = anglo_canadian
                 primary_culture = french_canadian
+                primary_culture = boer
             }
             OR = {
                 continent = north_america
                 continent = south_america
                 primary_culture = australian
+                has_country_flag = south_africa_immigration
             }
             is_greater_power = no
             NOT = { has_country_flag = come_to_the_new_world }
-            number_of_states = 2
+            OR = {
+                number_of_states = 2
+                has_country_flag = south_africa_immigration
+            }
             num_of_ports = 1
         }
 
@@ -271,7 +179,7 @@ political_decisions = {
             factor = 0
             modifier = {
                 factor = 100
-                OR  = { tag = BRZ tag = CHL }
+                OR  = { has_country_flag = brazilian_country tag = CHL }
             }
         }
     }
@@ -279,10 +187,7 @@ political_decisions = {
     brazilian_rubber_boom = {
         picture = rubber_cycle
         potential = {
-            OR = {
-                tag = BRZ
-                tag = REI
-            }
+            has_country_flag = brazilian_country
             owns = 2550
             owns = 2419
             owns = 2532
@@ -484,12 +389,9 @@ political_decisions = {
 
 
     treaty_of_bogota = {
-        picture = colombia_map
+        picture = map_colombia
         potential = {
-            OR = {
-                tag = BRZ
-                tag = REI
-            }
+            has_country_flag = brazilian_country
             NOT = { has_country_flag = treaty_of_bogota }
             OR = {
                 is_vassal = no
@@ -555,7 +457,7 @@ political_decisions = {
 
         ai_will_do = {
             factor = 1
-            modifier = { factor = 0 NOT = { tag = BRZ year = 1910 } }
+            modifier = { factor = 0 NOT = { has_country_flag = brazilian_country year = 1910 } }
         }
     }
 

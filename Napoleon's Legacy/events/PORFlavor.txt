@@ -203,6 +203,14 @@ country_event = {
         political_reform = appointed
         political_reform = harassment
         government = prussian_constitutionalism
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        set_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
 
         add_country_modifier = {
             name = national_confusion
@@ -242,10 +250,7 @@ country_event = {
     picture = "scramble_for_africa"
 
     trigger = {
-            OR = {
-                tag = POR
-                tag = REI
-        }
+        has_country_flag = portuguese_country
         war = no
         has_global_flag = berlin_conference
         is_greater_power = no
@@ -384,10 +389,7 @@ country_event = {
     picture = "scramble_for_africa"
 
     trigger = {
-            OR = {
-                tag = POR
-                tag = REI
-        }
+        has_country_flag = portuguese_country
         war = no
         has_global_flag = berlin_conference
         is_greater_power = no
@@ -607,16 +609,13 @@ country_event = {
     picture = "carlos_i_regicide"
 
     trigger = {
-            OR = {
-                tag = POR
-                tag = REI
-        }
+        tag = POR
         year = 1905
-            OR = {
-        government = hms_government
-        government = prussian_constitutionalism
-        government = absolute_monarchy
-                }
+        OR = {
+            government = hms_government
+            government = prussian_constitutionalism
+            government = absolute_monarchy
+        }
         NOT = {
             has_country_flag = regicide_king_carlos
             year = 1915
@@ -734,6 +733,15 @@ country_event = {
         political_reform = non_socialist
         political_reform = gerrymandering
         political_reform = no_slavery
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
+
         random_owned = {
             limit = { owner = { NOT = { child_labor = child_labor_illegal } } }
             owner = { social_reform = child_labor_restricted }
@@ -799,10 +807,7 @@ country_event = {
             owns = 2065
             owns = 2063
         }
-        OR = {
-            tag = POR
-            tag = REI
-        }
+        has_country_flag = portuguese_country
         2581 = { empty = yes }
     }
 
@@ -834,22 +839,21 @@ country_event = {
     picture = "portuguese_africa_company"
 
     trigger = {
-        OR = {
-            tag = REI
-            tag = POR
-        }
-        year = 1850
+        has_country_flag = portuguese_country
+        year = 1847
         2049 = { owner = { civilized = no ai = yes war = no } }
         2050 = { owner = { civilized = no ai = yes war = no } }
+        NOT = { has_country_flag = reconquest_of_lourenco_marques }
     }
 
-    mean_time_to_happen = { months = 10 }
+    mean_time_to_happen = { months = 12 }
 
     fire_only_once = yes
 
     option = {
         name = "EVT49516OPTA"
         prestige = 2
+        set_country_flag = reconquest_of_lourenco_marques
         2049 = { owner = { relation = { who = THIS value = -250 } } }
         2049 = {
             secede_province = THIS

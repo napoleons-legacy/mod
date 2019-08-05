@@ -90,7 +90,28 @@ country_event = {
 
     option = {
         name = "EVTOPTA30000" # let's organize it
-        money = -1000
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 10000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 10 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 10000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 10 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 10000 } }
+            owner = { treasury = -10000 }
+        }
         set_global_flag = PlanWorldFair
         set_country_flag = world_fair_planner
     }

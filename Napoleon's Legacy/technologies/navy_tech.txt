@@ -154,7 +154,6 @@ battleship_column_doctrine = {
         modifier = {
             factor = 100
             OR = {
-                tag = BEL
                 tag = SPA
                 tag = CHL
             }
@@ -184,6 +183,12 @@ raider_group_doctrine = {
         modifier = {
             factor = 0.75
             NOT = { literacy = 0.3 }
+            is_greater_power = yes
+        }
+        # Good LIT GPs should pay more attention here
+        modifier = {
+            factor = 1.5
+            literacy = 0.3
             is_greater_power = yes
         }
         # Valuable to naval tech school countries (UK)
@@ -255,7 +260,6 @@ raider_group_doctrine = {
         modifier = {
             factor = 100
             OR = {
-                tag = BEL
                 tag = SPA
             }
         }
@@ -284,6 +288,12 @@ blue_and_brown_water_schools = {
         modifier = {
             factor = 0.75
             NOT = { literacy = 0.3 }
+            is_greater_power = yes
+        }
+        # Good LIT GPs should pay more attention here
+        modifier = {
+            factor = 1.5
+            literacy = 0.3
             is_greater_power = yes
         }
         # Valuable to naval tech school countries (UK)
@@ -345,13 +355,6 @@ blue_and_brown_water_schools = {
             any_owned_province = { is_overseas = yes }
         }
 
-        modifier = {
-            factor = 100
-            OR = {
-                tag = BEL
-                tag = SPA
-            }
-        }
     }
 }
 

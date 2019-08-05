@@ -1,41 +1,83 @@
 #Piemonte Region (1610000)
-#under the rule of Sardinia in 1836
 #Turin (916000/229000 POPS)
 720 = {
+
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    bureaucrats = {
+        culture = french
+        religion = catholic
+        size = 150
+    }
+
+    officers = {
+        culture = french
+        religion = catholic
+        size = 125
+    }
+
     aristocrats = {
         culture = north_italian
         religion = catholic
-        size = 4000
+        size = 3000
     }
 
     capitalists = {
-        culture = north_italian
+        culture = french
         religion = catholic
         size = 25
+    }
+
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 300
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 6000
+    }
+
+    soldiers = {
+        culture = north_italian
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = north_italian
+        religion = catholic
+        size = 12900
     }
 
     bureaucrats = {
         culture = north_italian
         religion = catholic
-        size = 850
+        size = 700
     }
 
     officers = {
         culture = north_italian
         religion = catholic
-        size = 425
+        size = 300
     }
 
     clergymen = {
         culture = north_italian
         religion = catholic
-        size = 2325
+        size = 2025
     }
 
     artisans = {
         culture = north_italian
         religion = catholic
-        size = 10000
+        size = 2000
     }
 
     craftsmen = {
@@ -44,35 +86,49 @@
         size = 3000
     }
 
-    artisans = {
-        culture = north_italian
-        religion = catholic
-        size = 1000
-    }
-
     soldiers = {
         culture = north_italian
         religion = catholic
-        size = 5000
+        size = 4000
     }
 
     farmers = {
         culture = north_italian
         religion = catholic
-        size = 199900
+        size = 187000
+    }
+
+    ######Jews
+    aristocrats = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
     }
 
     clergymen = {
-        culture = north_italian
+        culture = ashkenazi
         religion = jewish
-        size = 10
+        size = 100
     }
 
     artisans = {
-        culture = north_italian
+        culture = ashkenazi
         religion = jewish
-        size = 490
+        size = 100
     }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 #Aosta (156000/39000 POPS)
 721 = {
@@ -201,31 +257,30 @@
     }
 }
 #Liguria Region (960000)
-#under the rule of Sardinia in 1836
 #Genoa (644000/161000 POPS)
 724 = {
     aristocrats = {
         culture = north_italian
         religion = catholic
-        size = 2550
+        size = 2300
     }
 
     bureaucrats = {
         culture = north_italian
         religion = catholic
-        size = 400
+        size = 300
     }
 
     officers = {
         culture = north_italian
         religion = catholic
-        size = 250
+        size = 200
     }
 
     clergymen = {
         culture = north_italian
         religion = catholic
-        size = 1600
+        size = 1200
     }
 
     artisans = {
@@ -237,51 +292,7 @@
     artisans = {
         culture = north_italian
         religion = catholic
-        size = 9000
-    }
-
-    soldiers = {
-        culture = north_italian
-        religion = catholic
-        size = 3000
-    }
-
-    farmers = {
-        culture = north_italian
-        religion = catholic
-        size = 140000
-    }
-
-    clergymen = {
-        culture = north_italian
-        religion = jewish
-        size = 5
-    }
-
-    artisans = {
-        culture = north_italian
-        religion = jewish
-        size = 195
-    }
-}
-#Savona (316000/79000 POPS)
-725 = {
-    aristocrats = {
-        culture = north_italian
-        religion = catholic
-        size = 1500
-    }
-
-    clergymen = {
-        culture = north_italian
-        religion = catholic
-        size = 800
-    }
-
-    artisans = {
-        culture = north_italian
-        religion = catholic
-        size = 4000
+        size = 7000
     }
 
     soldiers = {
@@ -293,11 +304,140 @@
     farmers = {
         culture = north_italian
         religion = catholic
-        size = 70700
+        size = 138500
+    }
+
+    ######Jews
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    artisans = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
+
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 250
+    }
+
+    bureaucrats = {
+        culture = french
+        religion = catholic
+        size = 100
+    }
+
+    officers = {
+        culture = french
+        religion = catholic
+        size = 50
+    }
+
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 400
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 2000
+    }
+
+    soldiers = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 1500
+    }
+}
+#Savona (316000/79000 POPS)
+725 = {
+    aristocrats = {
+        culture = north_italian
+        religion = catholic
+        size = 1000
+    }
+
+    clergymen = {
+        culture = north_italian
+        religion = catholic
+        size = 600
+    }
+
+    artisans = {
+        culture = north_italian
+        religion = catholic
+        size = 3000
+    }
+
+    soldiers = {
+        culture = north_italian
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = north_italian
+        religion = catholic
+        size = 69000
+    }
+
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 500
+    }
+
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 200
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    soldiers = {
+        culture = french
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 1700
     }
 }
 #Lombardy Region (2512000)
-#under the rule of Austria in 1836
 #Milan (1332000/333000 POPS)
 726 = {
     aristocrats = {
@@ -360,17 +500,37 @@
         size = 275925
     }
 
-    clergymen = {
-        culture = north_italian
+    ######Jews
+    aristocrats = {
+        culture = ashkenazi
         religion = jewish
-        size = 5
+        size = 100
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
     }
 
     artisans = {
-        culture = north_italian
+        culture = ashkenazi
         religion = jewish
-        size = 95
+        size = 100
     }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 #Bergamo (472000/118000 POPS)
 727 = {
@@ -437,7 +597,6 @@
     }
 }
 #Venetia Region (2060000)
-#under the rule of Austria in 1836
 #Venice (448000/112000 POPS)
 729 = {
     aristocrats = {
@@ -506,17 +665,37 @@
         size = 60925
     }
 
-    clergymen = {
-        culture = north_italian
+    ######Jews
+    aristocrats = {
+        culture = ashkenazi
         religion = jewish
-        size = 10
+        size = 100
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
     }
 
     artisans = {
-        culture = north_italian
+        culture = ashkenazi
         religion = jewish
-        size = 490
+        size = 100
     }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 #Verona (516000/129000 POPS)
 730 = {
@@ -652,8 +831,7 @@
         size = 52200
     }
 }
-#Tirol Region (368000) #see Austria.txt for balance of Region
-#under the rule of Austria in 1836
+#Tirol Region (368000)
 #Trent (276000/69000 POPS) #now part of Italy
 734 = {
     aristocrats = {
@@ -1202,17 +1380,37 @@
         size = 149900
     }
 
-    clergymen = {
-        culture = north_italian
+    ######Jews
+    aristocrats = {
+        culture = ashkenazi
         religion = jewish
-        size = 10
+        size = 100
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
     }
 
     artisans = {
-        culture = north_italian
+        culture = ashkenazi
         religion = jewish
-        size = 490
+        size = 100
     }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 #Leghorn (380000/95000 POPS)
 745 = {
@@ -1252,17 +1450,31 @@
         size = 84600
     }
 
-    clergymen = {
-        culture = north_italian
+    ######Jews
+    soldiers = {
+        culture = ashkenazi
         religion = jewish
-        size = 25
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
     }
 
     artisans = {
-        culture = north_italian
+        culture = ashkenazi
         religion = jewish
-        size = 1225
+        size = 550
     }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 500
+    }
+    ########
 }
 #Siena (380000/95000 POPS)
 747 = {
@@ -1443,17 +1655,37 @@
         size = 230750
     }
 
-    clergymen = {
-        culture = south_italian
+    ######Jews
+    aristocrats = {
+        culture = sephardic
         religion = jewish
-        size = 25
+        size = 100
+    }
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
     }
 
     artisans = {
-        culture = south_italian
+        culture = sephardic
         religion = jewish
-        size = 1375
+        size = 600
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 500
+    }
+    ########
 }
 #Viterbo (180000/45000 POPS)
 750 = {

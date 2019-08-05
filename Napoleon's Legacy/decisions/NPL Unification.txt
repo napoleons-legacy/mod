@@ -19,6 +19,7 @@ political_decisions = {
                 tag = DZG
             }
         }
+
         allow = {
             prestige = 45
             nationalism_n_imperialism = 1
@@ -51,7 +52,6 @@ political_decisions = {
                             }
                         }
                         NOT = { culture = north_german }
-
                     }
                 }
             }
@@ -87,12 +87,13 @@ political_decisions = {
         }
     }
 
-form_italy = {
+    form_italy = {
         potential = {
             OR = {
-            tag = PAP
-            tag = SAR
+                tag = PAP
+                tag = SAR
             }
+
             NOT = {
                 exists = ITA
                 exists = ITM
@@ -117,51 +118,15 @@ form_italy = {
             change_tag = ITA
             add_accepted_culture = north_italian
             add_accepted_culture = south_italian
-            734 = {
-                add_core = ITA
-            }
-            SAR_466 = {
-                add_core = ITA
-            }
-            SAR_765 = {
-                add_core = ITA
-            }
-            SAR_720 = {
-                add_core = ITA
-            }
-            AUS_726 = {
-                add_core = ITA
-            }
-            MOD_739 = {
-                add_core = ITA
-            }
-            AUS_729 = {
-                add_core = ITA
-            }
-            PAP_741 = {
-                add_core = ITA
-            }
-            TUS_744 = {
-                add_core = ITA
-            }
-            PAP_752 = {
-                add_core = ITA
-            }
-            SIC_753 = {
-                add_core = ITA
-            }
-            SIC_754 = {
-                add_core = ITA
-            }
-            764 = {
-                add_core = ITA
-            }
-            763 = {
-                add_core = ITA
-            }
-            762 = {
-                add_core = ITA
-            }
+
+            SAR = { all_core = { add_core = ITA } }
+            PAP = { all_core = { add_core = ITA } }
+            KOI = { all_core = { add_core = ITA } }
+            LUC = { all_core = { add_core = ITA } }
+            SIC = { all_core = { add_core = ITA } }
+            SYC = { all_core = { add_core = ITA } }
+            473 = { add_core = ITA }
+
             any_country = {
                 limit = {
                     is_culture_group = italian
@@ -176,10 +141,11 @@ form_italy = {
         }
     }
 
-    form_italy_MOD = {
-        picture = italy_mod
+    form_italy_KOI = {
+        picture = italy_koi
+
         potential = {
-            tag = MOD
+            tag = KOI
             NOT = {
                 exists = ITA
                 exists = ITM
@@ -204,51 +170,15 @@ form_italy = {
             change_tag = ITM
             add_accepted_culture = north_italian
             add_accepted_culture = south_italian
-            734 = {
-                add_core = ITM
-            }
-            SAR_466 = {
-                add_core = ITM
-            }
-            SAR_765 = {
-                add_core = ITM
-            }
-            SAR_720 = {
-                add_core = ITM
-            }
-            AUS_726 = {
-                add_core = ITM
-            }
-            MOD_739 = {
-                add_core = ITM
-            }
-            AUS_729 = {
-                add_core = ITM
-            }
-            PAP_741 = {
-                add_core = ITM
-            }
-            TUS_744 = {
-                add_core = ITM
-            }
-            PAP_752 = {
-                add_core = ITM
-            }
-            SIC_753 = {
-                add_core = ITM
-            }
-            SIC_754 = {
-                add_core = ITM
-            }
-            764 = {
-                add_core = ITM
-            }
-            763 = {
-                add_core = ITM
-            }
-            762 = {
-                add_core = ITM
-            }
+
+            SAR = { all_core = { add_core = ITM } }
+            PAP = { all_core = { add_core = ITM } }
+            KOI = { all_core = { add_core = ITM } }
+            LUC = { all_core = { add_core = ITM } }
+            SIC = { all_core = { add_core = ITM } }
+            SYC = { all_core = { add_core = ITM } }
+            473 = { add_core = ITM }
+
             any_country = {
                 limit = {
                     is_culture_group = italian
@@ -284,58 +214,22 @@ form_italy = {
             war = no
             726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
             754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
-            }
+        }
 
         effect = {
             prestige = 20
             change_tag = ITN
             add_accepted_culture = north_italian
             add_accepted_culture = south_italian
-            734 = {
-                add_core = ITN
-            }
-            SAR_466 = {
-                add_core = ITN
-            }
-            SAR_765 = {
-                add_core = ITN
-            }
-            SAR_720 = {
-                add_core = ITN
-            }
-            AUS_726 = {
-                add_core = ITN
-            }
-            MOD_739 = {
-                add_core = ITN
-            }
-            AUS_729 = {
-                add_core = ITN
-            }
-            PAP_741 = {
-                add_core = ITN
-            }
-            TUS_744 = {
-                add_core = ITN
-            }
-            PAP_752 = {
-                add_core = ITN
-            }
-            SIC_753 = {
-                add_core = ITN
-            }
-            SIC_754 = {
-                add_core = ITN
-            }
-            764 = {
-                add_core = ITN
-            }
-            763 = {
-                add_core = ITN
-            }
-            762 = {
-                add_core = ITN
-            }
+
+            SAR = { all_core = { add_core = ITN } }
+            PAP = { all_core = { add_core = ITN } }
+            KOI = { all_core = { add_core = ITN } }
+            LUC = { all_core = { add_core = ITN } }
+            SIC = { all_core = { add_core = ITN } }
+            SYC = { all_core = { add_core = ITN } }
+            473 = { add_core = ITN }
+
             any_country = {
                 limit = {
                     is_culture_group = italian
@@ -350,10 +244,10 @@ form_italy = {
         }
     }
 
-    form_italy_ILY = {
+    form_italy_SYC = {
         picture = italy_ily
         potential = {
-            tag = ILY
+            tag = SYC
             NOT = {
                 exists = ITA
                 exists = ITM
@@ -371,58 +265,22 @@ form_italy = {
             war = no
             726 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
             754 = { owner = { OR = { in_sphere = THIS tag = THIS } } }
-            }
+        }
 
         effect = {
             prestige = 20
             change_tag = ITS
             add_accepted_culture = north_italian
             add_accepted_culture = south_italian
-            734 = {
-                add_core = ITS
-            }
-            SAR_466 = {
-                add_core = ITS
-            }
-            SAR_765 = {
-                add_core = ITS
-            }
-            SAR_720 = {
-                add_core = ITS
-            }
-            AUS_726 = {
-                add_core = ITS
-            }
-            MOD_739 = {
-                add_core = ITS
-            }
-            AUS_729 = {
-                add_core = ITS
-            }
-            PAP_741 = {
-                add_core = ITS
-            }
-            TUS_744 = {
-                add_core = ITS
-            }
-            PAP_752 = {
-                add_core = ITS
-            }
-            SIC_753 = {
-                add_core = ITS
-            }
-            SIC_754 = {
-                add_core = ITS
-            }
-            764 = {
-                add_core = ITS
-            }
-            763 = {
-                add_core = ITS
-            }
-            762 = {
-                add_core = ITS
-            }
+
+            SAR = { all_core = { add_core = ITS } }
+            PAP = { all_core = { add_core = ITS } }
+            KOI = { all_core = { add_core = ITS } }
+            LUC = { all_core = { add_core = ITS } }
+            SIC = { all_core = { add_core = ITS } }
+            SYC = { all_core = { add_core = ITS } }
+            473 = { add_core = ITS }
+
             any_country = {
                 limit = {
                     is_culture_group = italian
@@ -465,51 +323,15 @@ form_italy = {
             change_tag = ITL
             add_accepted_culture = north_italian
             add_accepted_culture = south_italian
-            734 = {
-                add_core = ITL
-            }
-            SAR_466 = {
-                add_core = ITL
-            }
-            SAR_765 = {
-                add_core = ITL
-            }
-            SAR_720 = {
-                add_core = ITL
-            }
-            AUS_726 = {
-                add_core = ITL
-            }
-            MOD_739 = {
-                add_core = ITL
-            }
-            AUS_729 = {
-                add_core = ITL
-            }
-            PAP_741 = {
-                add_core = ITL
-            }
-            TUS_744 = {
-                add_core = ITL
-            }
-            PAP_752 = {
-                add_core = ITL
-            }
-            SIC_753 = {
-                add_core = ITL
-            }
-            SIC_754 = {
-                add_core = ITL
-            }
-            764 = {
-                add_core = ITL
-            }
-            763 = {
-                add_core = ITL
-            }
-            762 = {
-                add_core = ITL
-            }
+
+            SAR = { all_core = { add_core = ITL } }
+            PAP = { all_core = { add_core = ITL } }
+            KOI = { all_core = { add_core = ITL } }
+            LUC = { all_core = { add_core = ITL } }
+            SIC = { all_core = { add_core = ITL } }
+            SYC = { all_core = { add_core = ITL } }
+            473 = { add_core = ITL }
+
             any_country = {
                 limit = {
                     is_culture_group = italian
@@ -523,7 +345,4 @@ form_italy = {
             factor = 1
         }
     }
-
-
-
 }

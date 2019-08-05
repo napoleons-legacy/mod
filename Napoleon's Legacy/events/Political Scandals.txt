@@ -1,7 +1,7 @@
 #############################################
 # Scandal Events For The APD Mod            #
 # By GAGA Extrem                            #
-# August 2012                               #
+# August 2012                                #
 #############################################
 
 # 880130 - Party Scandal - Reactionary
@@ -75,7 +75,7 @@ country_event = {
         }
         modifier = {
             factor = 1.2
-            NOT = { ruling_party_ideology = reactionary }
+            NOT = {    ruling_party_ideology = reactionary }
         }
         modifier = {
             factor = 0.7
@@ -227,7 +227,7 @@ country_event = {
         }
         modifier = {
             factor = 1.2
-            NOT = { ruling_party_ideology = conservative }
+            NOT = {    ruling_party_ideology = conservative }
         }
         modifier = {
             factor = 0.7
@@ -374,7 +374,7 @@ country_event = {
         }
         modifier = {
             factor = 1.2
-            NOT = { ruling_party_ideology = liberal }
+            NOT = {    ruling_party_ideology = liberal }
         }
         modifier = {
             factor = 0.7
@@ -522,7 +522,7 @@ country_event = {
         }
         modifier = {
             factor = 1.2
-            NOT = { ruling_party_ideology = anarcho_liberal }
+            NOT = {    ruling_party_ideology = anarcho_liberal }
         }
         modifier = {
             factor = 0.7
@@ -670,7 +670,7 @@ country_event = {
         }
         modifier = {
             factor = 1.2
-            NOT = { ruling_party_ideology = socialist }
+            NOT = {    ruling_party_ideology = socialist }
         }
         modifier = {
             factor = 0.7
@@ -819,7 +819,7 @@ country_event = {
         }
         modifier = {
             factor = 1.2
-            NOT = { ruling_party_ideology = communist }
+            NOT = {    ruling_party_ideology = communist }
         }
         modifier = {
             factor = 0.7
@@ -968,7 +968,7 @@ country_event = {
         }
         modifier = {
             factor = 1.2
-            NOT = { ruling_party_ideology = fascist }
+            NOT = {    ruling_party_ideology = fascist }
         }
         modifier = {
             factor = 0.7

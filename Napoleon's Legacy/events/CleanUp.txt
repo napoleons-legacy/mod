@@ -16,8 +16,17 @@ country_event = {
         ruling_party_ideology = communist
         average_militancy = 3
         OR = {
+            has_country_modifier = regency_government
+            average_militancy = 8
+            NOT = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+            }
+        }
+        OR = {
             num_of_revolts = 1
-            national_provinces_occupied = .10
+            national_provinces_occupied = 0.10
             is_disarmed = yes
             communist = 20
             socialist = 40
@@ -29,25 +38,32 @@ country_event = {
         months = 12
         modifier = {
             factor = 0.8
-            average_militancy = 4
+            war_exhaustion = 40
         }
         modifier = {
             factor = 0.8
-            average_militancy = 5
+            war_exhaustion = 75
         }
         modifier = {
             factor = 0.8
-            average_militancy = 6
+            average_militancy = 9
         }
         modifier = {
             factor = 0.5
-            revolt_percentage = .25
+            revolt_percentage = 0.25
         }
     }
     option = {
         name = "EVTOPTA60000"
+        random_owned = {
+            limit = { owner = { has_country_modifier = regency_government } }
+            owner = { remove_country_modifier = regency_government }
+        }
+        random_owned = {
+            limit = { owner = { has_country_modifier = santa_ana_rule } }
+            owner = { remove_country_modifier = santa_ana_rule }
+        }
         government = proletarian_dictatorship
-
         political_reform = none_voting
         political_reform = party_appointed
         political_reform = no_meeting
@@ -84,6 +100,15 @@ country_event = {
         ruling_party_ideology = reactionary
         average_militancy = 3
         OR = {
+            has_country_modifier = regency_government
+            average_militancy = 8
+            NOT = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+            }
+        }
+        OR = {
             revolt_percentage = 0.10
             national_provinces_occupied = 0.10
             is_disarmed = yes
@@ -96,19 +121,19 @@ country_event = {
         months = 180
         modifier = {
             factor = 0.8
-            average_militancy = 4
+            war_exhaustion = 40
         }
         modifier = {
             factor = 0.8
-            average_militancy = 5
+            war_exhaustion = 75
         }
         modifier = {
             factor = 0.8
-            average_militancy = 6
+            average_militancy = 9
         }
         modifier = {
             factor = 0.5
-            revolt_percentage = .25
+            revolt_percentage = 0.25
         }
         modifier = {
             factor = 2
@@ -120,12 +145,20 @@ country_event = {
         }
         modifier = {
             factor = 4
-            literacy = 0.7
+            nationalvalue = nv_liberty
         }
     }
 
     option = {
         name = "EVT60010OPTA"
+        random_owned = {
+            limit = { owner = { has_country_modifier = regency_government } }
+            owner = { remove_country_modifier = regency_government }
+        }
+        random_owned = {
+            limit = { owner = { has_country_modifier = santa_ana_rule } }
+            owner = { remove_country_modifier = santa_ana_rule }
+        }
         clr_country_flag = communist_gov
         clr_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -169,6 +202,15 @@ country_event = {
         ruling_party_ideology = anarcho_liberal
         average_militancy = 3
         OR = {
+            has_country_modifier = regency_government
+            average_militancy = 8
+            NOT = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+            }
+        }
+        OR = {
             num_of_revolts = 1
             national_provinces_occupied = .10
             is_disarmed = yes
@@ -178,28 +220,35 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 24
+        months = 12
         modifier = {
             factor = 0.8
-            average_militancy = 4
+            war_exhaustion = 40
         }
         modifier = {
             factor = 0.8
-            average_militancy = 5
+            war_exhaustion = 75
         }
         modifier = {
             factor = 0.8
-            average_militancy = 6
+            average_militancy = 9
         }
         modifier = {
             factor = 0.5
-            revolt_percentage = .25
+            revolt_percentage = 0.25
         }
     }
     major = yes
     option = {
         name = "EVTOPTA60020"
-        prestige_factor = -0.1
+        random_owned = {
+            limit = { owner = { has_country_modifier = regency_government } }
+            owner = { remove_country_modifier = regency_government }
+        }
+        random_owned = {
+            limit = { owner = { has_country_modifier = santa_ana_rule } }
+            owner = { remove_country_modifier = santa_ana_rule }
+        }
         government = bourgeois_dictatorship
         political_reform = none_voting
         political_reform = party_appointed
@@ -213,11 +262,109 @@ country_event = {
         social_reform = no_subsidies
         social_reform = no_pensions
         social_reform = no_health_care
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
+        prestige_factor = -0.1
         country_event = 800053
     }
 }
@@ -240,6 +387,15 @@ country_event = {
         ruling_party_ideology = fascist
         average_militancy = 3
         OR = {
+            has_country_modifier = regency_government
+            average_militancy = 8
+            NOT = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+            }
+        }
+        OR = {
             num_of_revolts = 1
             national_provinces_occupied = .10
             is_disarmed = yes
@@ -252,24 +408,32 @@ country_event = {
         months = 12
         modifier = {
             factor = 0.8
-            average_militancy = 4
+            war_exhaustion = 40
         }
         modifier = {
             factor = 0.8
-            average_militancy = 5
+            war_exhaustion = 75
         }
         modifier = {
             factor = 0.8
-            average_militancy = 6
+            average_militancy = 9
         }
         modifier = {
             factor = 0.5
-            revolt_percentage = .25
+            revolt_percentage = 0.25
         }
     }
     major = yes
     option = {
         name = "EVT60030OPTA"
+        random_owned = {
+            limit = { owner = { has_country_modifier = regency_government } }
+            owner = { remove_country_modifier = regency_government }
+        }
+        random_owned = {
+            limit = { owner = { has_country_modifier = santa_ana_rule } }
+            owner = { remove_country_modifier = santa_ana_rule }
+        }
         government = fascist_dictatorship
         political_reform = none_voting
         political_reform = party_appointed
@@ -278,12 +442,109 @@ country_event = {
         political_reform = state_controlled
         political_reform = underground_parties
         political_reform = culture_voting_only
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
-        prestige_factor = -0.05
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
+        prestige_factor = -0.1
         country_event = 800051
     }
 }
@@ -318,11 +579,14 @@ country_event = {
     major = yes
     option = {
         name = "EVTOPTA60050"
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
+        random_owned = {
+            limit = { owner = { has_country_modifier = regency_government } }
+            owner = { remove_country_modifier = regency_government }
+        }
+        random_owned = {
+            limit = { owner = { has_country_modifier = santa_ana_rule } }
+            owner = { remove_country_modifier = santa_ana_rule }
+        }
         clr_country_flag = communist_gov
         clr_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -334,7 +598,110 @@ country_event = {
         remove_country_modifier = fight_the_power
         government = democracy
         election = yes
+        prestige_factor = -0.05
         random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -359,11 +726,6 @@ country_event = {
 
     option = {
         name = "EVTOPTA60040"
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
         clr_country_flag = communist_gov
         set_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -373,6 +735,108 @@ country_event = {
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
         government = absolute_monarchy
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -399,11 +863,6 @@ country_event = {
 
     option = {
         name = "EVTNAME60060"
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
         government = prussian_constitutionalism
         random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
         clr_country_flag = communist_gov
@@ -414,6 +873,108 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -447,11 +1008,6 @@ country_event = {
 
     option = {
         name = "EVTOPTA60070"
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
         clr_country_flag = communist_gov
         clr_country_flag = absolute_monarchy_gov
         clr_country_flag = semi_constitutional_monarchy_gov
@@ -462,6 +1018,108 @@ country_event = {
         clr_country_flag = anarcho_liberal_gov
         government = hms_government
         random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -503,11 +1161,108 @@ country_event = {
         set_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -544,11 +1299,108 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         set_country_flag = anarcho_liberal_gov
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -585,11 +1437,108 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         clr_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -627,11 +1576,108 @@ country_event = {
         clr_country_flag = presidential_dictatorship_gov
         set_country_flag = fascist_gov
         clr_country_flag = anarcho_liberal_gov
-        clr_country_flag = everywhere_genocide_only
-        clr_country_flag = non_colonial_genocide_only
-        clr_country_flag = colonial_genocide_only
-        clr_country_flag = preparations_to_kill
-        remove_country_modifier = preparations_to_kill
+        #Genocide Cleanup
+        ##Set Up Timer based on time the thing ran
+        random_owned = {
+            limit = { owner = { NOT = { check_variable = { which = evidence_count value = 2 } } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1460 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 2 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 1825 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 4 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2190 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 6 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2555 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 8 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 2920 } }
+        }
+        random_owned = {
+            limit = { owner = { check_variable = { which = evidence_count value = 10 } } }
+            owner = { add_country_modifier = { name = law_changed_by_force duration = 3285 } } #9 years
+        }
+        ##Clean Variables
+        set_variable = { which = evidence_count value = 0 }
+        set_variable = { which = slowdown_point value = 0 }
+        #Delete Modifiers
+        random_owned = {
+            limit = { owner = { has_country_modifier = interment_camps } }
+            owner = { remove_country_modifier = interment_camps }
+        }
+        #Delete Block
+        clr_country_flag = government_busy_with_something
+        #Place
+        clr_country_flag = interning_on_colonies
+        clr_country_flag = interning_on_homeland
+        clr_country_flag = interning_everywhere
+        #Who
+        clr_country_flag = interning_cultures
+        clr_country_flag = interning_religions
+        #Specific religions
+        clr_country_flag = interning_catholics
+        clr_country_flag = interning_protestants
+        clr_country_flag = interning_mormons
+        clr_country_flag = interning_orthodoxies
+        clr_country_flag = interning_coptics
+        clr_country_flag = interning_sunnis
+        clr_country_flag = interning_shiites
+        clr_country_flag = interning_ibadis
+        clr_country_flag = interning_druzi
+        clr_country_flag = interning_jewish
+        clr_country_flag = interning_yazidis
+        clr_country_flag = interning_mahayanas
+        clr_country_flag = interning_gelugpas
+        clr_country_flag = interning_theravadas
+        clr_country_flag = interning_hindus
+        clr_country_flag = interning_shintos
+        clr_country_flag = interning_sikhs
+        clr_country_flag = interning_animists
+        #Specific Cultures
+        clr_country_flag = interning_germanics
+        clr_country_flag = interning_jewish_cultures
+        clr_country_flag = interning_beneluxian
+        clr_country_flag = interning_scandinavian
+        clr_country_flag = interning_british
+        clr_country_flag = interning_italian
+        clr_country_flag = interning_iberian
+        clr_country_flag = interning_french
+        clr_country_flag = interning_south_slavic
+        clr_country_flag = interning_pan_albanian
+        clr_country_flag = interning_pan_romanian
+        clr_country_flag = interning_hungarian_culture_group
+        clr_country_flag = interning_polish_culture_group
+        clr_country_flag = interning_czecho_slovak_culture_group
+        clr_country_flag = interning_east_slavic
+        clr_country_flag = interning_baltic
+        clr_country_flag = interning_levantine
+        clr_country_flag = interning_turko_semitic
+        clr_country_flag = interning_caucasian
+        clr_country_flag = interning_arab
+        clr_country_flag = interning_iranian_turanian
+        clr_country_flag = interning_central_asian
+        clr_country_flag = interning_south_asian
+        clr_country_flag = interning_indo_iranian
+        clr_country_flag = interning_southeast_asian
+        clr_country_flag = interning_east_asian
+        clr_country_flag = interning_far_east_asian
+        clr_country_flag = interning_oceanic
+        clr_country_flag = interning_native_american
+        clr_country_flag = interning_american_cultures
+        clr_country_flag = interning_neo_european_cultures
+        clr_country_flag = interning_latin_american_cultures
+        clr_country_flag = interning_african_diaspora_cultures
+        clr_country_flag = interning_west_african
+        clr_country_flag = interning_central_african
+        clr_country_flag = interning_east_african
+        clr_country_flag = interning_southern_african
+        clr_country_flag = animists_run
+        ##
     }
 }
 
@@ -676,10 +1722,8 @@ country_event = {
             tag = KUK
             tag = AUS
             tag = DNB
+            tag = CSA
             tag = DES
-            tag = FSA
-            tag = UIL
-            tag = UNB
             tag = UBD
             tag = INO
             tag = IRE
@@ -755,6 +1799,10 @@ country_event = {
         OR = {
             ruling_party_ideology = liberal
             ruling_party_ideology = socialist
+            NOT = {
+                political_parties = underground_parties
+                vote_franschise = none_voting
+            }
         }
     }
 
@@ -764,7 +1812,14 @@ country_event = {
 
     option = {
         name = "EVTOPTA60140"
-        political_reform = appointed
+        random_owned = {
+            limit = { owner = { NOT = { government = democracy } } }
+            owner = { political_reform = appointed }
+        }
+        random_owned = {
+            limit = { owner = { government = democracy } }
+            owner = { political_reform = population_equal_weight }
+        }
     }
 }
 
@@ -777,7 +1832,6 @@ country_event = {
     trigger = {
         civilized = yes
         trade_unions = no_trade_unions
-        revolution_n_counterrevolution = 1
         OR = {
             AND = {
                 ruling_party_ideology = communist
@@ -817,189 +1871,6 @@ country_event = {
         name = "EVTOPTA60150"
         war_exhaustion = 5
         remove_country_modifier = female_suffrage
-    }
-}
-
-# handling insolvent AI countries that cannot borrow money
-
-country_event = {
-    id = 60165
-    title = "EVTNAME60165"
-    desc = "EVTDESC60165"
-    picture = "bankruptcy"
-
-    trigger = {
-        ai = yes
-        civilized = yes
-        OR = {
-            has_country_modifier = in_bankrupcy
-            has_country_modifier = generalised_debt_default
-            AND = {
-                civilized = no
-                NOT = { finance_reform = finance_reform_two }
-            }
-        }
-        NOT = {
-            money = 10
-            has_country_modifier = emergency_tax_measures1
-            has_country_modifier = emergency_tax_measures2
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVT60165OPTA"
-        add_country_modifier = {
-            name = emergency_tax_measures1
-            duration = -1
-        }
-    }
-}
-
-country_event = {
-    id = 60166
-    title = "EVTNAME60166"
-    desc = "EVTDESC60166"
-    picture = "bankruptcy"
-
-    trigger = {
-        ai = yes
-        civilized = yes
-        has_country_modifier = emergency_tax_measures1
-        NOT = { money = 10 }
-    }
-
-    mean_time_to_happen = {
-        months = 6
-    }
-
-    option = {
-        name = "EVT60165OPTA"
-        remove_country_modifier = emergency_tax_measures1
-        add_country_modifier = {
-            name = emergency_tax_measures2
-            duration = -1
-        }
-    }
-}
-
-country_event = {
-    id = 60167
-    title = "EVTNAME60167"
-    desc = "EVTDESC60167"
-    picture = "bankruptcy"
-
-    trigger = {
-        OR = {
-            has_country_modifier = emergency_tax_measures1
-            has_country_modifier = emergency_tax_measures2
-        }
-        OR = {
-            ai = no
-            money = 1000
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-        modifier = {
-            factor = 0.01
-            ai = no
-        }
-    }
-
-    option = {
-        name = "EVT60167OPTA"
-        remove_country_modifier = emergency_tax_measures1
-        remove_country_modifier = emergency_tax_measures2
-    }
-}
-
-#Occitania Cleanup Event
-country_event = {
-    id = 6016807
-    title = "EVTNAME6016807"
-    desc = "EVTDESC6016807"
-
-    is_triggered_only = yes
-
-    immediate = {
-        any_owned = {
-            limit = {
-                is_core = OCC
-                NOT = { province_id = 464 }
-                NOT = { province_id = 460 }
-            }
-            assimilate = yes
-        }
-    }
-
-    option = {
-        name = "EVT6016807PTA"
-        annex_to = FRA
-    }
-
-}
-
-#Totalitarian modifiers in a non totalitarian regime
-country_event = {
-    id = 6016809
-    title = "EVTNAME6016809"
-    desc = "EVTDESC6016809"
-    picture = "greatpowers"
-
-    trigger = {
-        NOT = { government = fascist_dictatorship }
-        NOT = { government = proletarian_dictatorship }
-        OR = {
-            has_country_modifier = totalitarian_system
-            has_country_modifier = political_education
-            has_country_modifier = cult_of_personality
-            has_country_modifier = the_terror
-        }
-    }
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "EVT6016809PTA"
-            remove_country_modifier = totalitarian_system
-            remove_country_modifier = political_education
-            remove_country_modifier = cult_of_personality
-            remove_country_modifier = the_terror
-    }
-}
-
-#Cleaning after international zones
-country_event = {
-    id = 6016811
-    title = "EVTNAME6016811"
-    desc = "EVTDESC6016811"
-    picture = "deliberation"
-
-    trigger = {
-        year = 1890
-        OR = {
-            has_country_modifier = international_zone_modifier
-            has_country_flag = international_zone
-        }
-        OR = {
-            number_of_states = 2
-            government = proletarian_dictatorship
-            government = bourgeois_dictatorship
-            government = fascist_dictatorship
-        }
-    }
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "EVT6016811OPTA"
-        remove_country_modifier = international_zone_modifier
-        clr_country_flag = international_zone
     }
 }
 
@@ -1049,5 +1920,2402 @@ country_event = {
     option = {
         name = "EVT6016813OPTA"
         government = absolute_monarchy
+    }
+}
+
+#Party Loyalty cleanup
+country_event = {
+    id = 6016814
+    title = "EVTNAME6016814"
+    desc = "EVTDESC6016814"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT6016814OPTA"
+        #USA
+        USA = {
+            210 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            232 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -13
+                }
+            }
+            213 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -13
+                }
+            }
+            220 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -13
+                }
+            }
+            221 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -13
+                }
+            }
+            139 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -10
+                }
+            }
+            169 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            170 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            171 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            172 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            173 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -10
+                }
+            }
+            178 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            179 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            180 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            181 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            182 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -7
+                }
+            }
+            184 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            185 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            186 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            189 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            190 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            191 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            195 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            198 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            204 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            206 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+                party_loyalty = {
+                    ideology = reactionary
+                    loyalty_value = -5
+                }
+            }
+            209 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            212 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            217 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -10
+                }
+            }
+            219 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            222 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            231 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            236 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            237 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -10
+                }
+            }
+            244 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            245 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            246 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            2555 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            2556 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -20
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            183 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -17
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            239 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -17
+                }
+            }
+            147 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            148 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            149 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            150 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            165 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            166 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            167 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            168 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            174 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            175 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            176 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            187 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            188 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -15
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            192 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            194 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            196 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            197 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            200 = {
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            205 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -15
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+                party_loyalty = {
+                    ideology = reactionary
+                    loyalty_value = -5
+                }
+            }
+            207 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            208 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -15
+                }
+            }
+            229 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -15
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            230 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -15
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            243 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -15
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            233 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            234 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            235 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            238 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            240 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            241 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -45
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -7
+                }
+            }
+            242 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            247 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            248 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            249 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            140 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            141 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            142 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            143 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            144 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            145 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            146 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            163 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            177 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            199 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            201 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            211 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            214 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            215 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            216 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            218 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            223 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -10
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -10
+                }
+            }
+            224 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            226 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            227 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -12
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -12
+                }
+            }
+            164 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -10
+                }
+            }
+            193 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -10
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            225 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -10
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -10
+                }
+            }
+            228 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -10
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -10
+                }
+            }
+            202 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -5
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -5
+                }
+            }
+            60 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -25
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -25
+                }
+            }
+            2146 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -40
+                }
+            }
+            2627 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -25
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -25
+                }
+            }
+        }
+
+        #UK
+        BRI = {
+            266 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                267 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                272 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                273 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                274 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                276 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                278 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                285 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                291 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                293 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                294 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                    party_loyalty = {
+                        ideology = reactionary
+                        loyalty_value = -5
+                    }
+                }
+                295 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                296 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -12
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -17
+                    }
+                }
+                297 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                270 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -2
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                1724 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                275 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -10
+                    }
+                }
+                298 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -12
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -17
+                    }
+                }
+                303 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -17
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -12
+                    }
+                }
+                254 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                255 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                256 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                257 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                258 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                259 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                260 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                261 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                262 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                263 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                264 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -10
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                265 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                268 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -5
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                269 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -5
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                271 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -5
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                277 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                279 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -10
+                    }
+                }
+                280 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -5
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                281 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -10
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                282 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                283 = {
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                288 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -10
+                    }
+                }
+                289 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -10
+                    }
+                }
+                290 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -5
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                299 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -5
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                300 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -5
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -20
+                    }
+                }
+                301 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -20
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                284 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -15
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -15
+                    }
+                }
+                286 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -15
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -15
+                    }
+                }
+                287 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -15
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                292 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -15
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -5
+                    }
+                }
+                302 = {
+                    party_loyalty = {
+                        ideology = conservative
+                        loyalty_value = -6
+                    }
+                    party_loyalty = {
+                        ideology = liberal
+                        loyalty_value = -10
+                    }
+                }
+        }
+        #Portugal
+        POR = {
+            521 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -25
+                }
+            }
+        }
+        #Uruguay
+        URU = {
+            2344 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -30
+                }
+            }
+            2345 = {
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -25
+                }
+            }
+            2347 = {
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -25
+                }
+            }
+            2346 = {
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -25
+                }
+            }
+        }
+        #Switzerland
+        SWI = {
+            603 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -30
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -1
+                }
+            }
+            604 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -25
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -1
+                }
+            }
+            605 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -30
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -1
+                }
+            }
+            607 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -25
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -1
+                }
+            }
+            608 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -30
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -1
+                }
+            }
+            609 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -5
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -20
+                }
+            }
+            606 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -5
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -20
+                }
+            }
+            2568 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -2
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -20
+                }
+            }
+            611 = {
+                party_loyalty = {
+                    ideology = liberal
+                    loyalty_value = -15
+                }
+                party_loyalty = {
+                    ideology = conservative
+                    loyalty_value = -20
+                }
+            }
+        }
+    }
+}
+
+# #Non-core to state flip
+# country_event = {
+    # id = 6016815
+    # title = "EVTNAME6016813"
+    # desc = "EVTDESC6016813"
+
+    # is_triggered_only = yes
+
+    # option = {
+        # name = "EVT6016813OPTA"
+        # civilized = no
+        # neutrality = yes
+        # annex_to = FROM
+    # }
+# }
+
+
+#The Long War
+country_event = {
+    id = 6016816
+    title = "EVTNAME6016816"
+    desc = "EVTDESC6016816"
+    picture = "spanish_moroccan_war"
+
+    trigger = {
+        ai = no
+        exists = yes
+        war = yes
+        NOT = { has_country_flag = in_great_war }
+        war_countries = {
+            #NOT = { any_greater_power = { alliance_with = THIS }
+            war_exhaustion = 75
+            is_vassal = no
+            OR = {
+                AND = {
+                    ai = yes
+                    NOT = { has_country_flag = in_great_war }
+                    lost_national = 0.75
+                    OR = {
+                        capital_scope = {
+                            controlled_by = THIS
+                            province_control_days = 1825 #5 years
+                        }
+                        any_owned_province = {
+                            controlled_by = THIS
+                            province_control_days = 3650 #10 years
+                        }
+                    }
+                }
+                AND = {
+                    ai = yes
+                    NOT = { has_country_flag = in_great_war }
+                    lost_national = 0.85
+                    OR = {
+                        capital_scope = {
+                            controlled_by = THIS
+                            province_control_days = 1643 #4.5 years
+                        }
+                        any_owned_province = {
+                            controlled_by = THIS
+                            province_control_days = 2920 #8 years
+                        }
+                    }
+                }
+                AND = {
+                    ai = yes
+                    NOT = { has_country_flag = in_great_war }
+                    lost_national = 0.9
+                    OR = {
+                        capital_scope = {
+                            controlled_by = THIS
+                            province_control_days = 1460 #4 years
+                        }
+                        any_owned_province = {
+                            controlled_by = THIS
+                            province_control_days = 2190 #6 years
+                        }
+                    }
+                }
+                AND = {
+                    NOT = { has_country_flag = in_great_war }
+                    lost_national = 1
+                    OR = {
+                        capital_scope = {
+                            controlled_by = THIS
+                            province_control_days = 730 #2 years
+                        }
+                        any_owned_province = {
+                            controlled_by = THIS
+                            province_control_days = 1460 #4 years
+                        }
+                    }
+                }
+                AND = {
+                    has_country_flag = in_great_war
+                    national_provinces_occupied = 0.9
+                    capital_scope = {
+                        controlled_by  = THIS
+                        province_control_days = 3650  #10 years
+                    }
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 36
+        modifier = {
+            factor = 1.4
+            war_exhaustion = 25
+        }
+        modifier = {
+            factor = 1.4
+            war_exhaustion = 50
+        }
+        modifier = {
+            factor = 1.4
+            war_exhaustion = 75
+        }
+
+        modifier = {
+            factor = 10
+            war_countries = { ai = no }
+        }
+
+        modifier = {
+            factor = 0.8
+            war_countries = {
+                war_exhaustion = 90
+                is_vassal = no
+                OR = {
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 0.75
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 1825 #5 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 3650 #10 years
+                            }
+                        }
+                    }
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 0.85
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 1643 #4.5 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 2920 #8 years
+                            }
+                        }
+                    }
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 0.9
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 1460 #4 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 2190 #6 years
+                            }
+                        }
+                    }
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 1
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 730 #2 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 1460 #4 years
+                            }
+                        }
+                    }
+                    AND = {
+                        has_country_flag = in_great_war
+                        national_provinces_occupied = 0.9
+                        capital_scope = {
+                            controlled_by  = THIS
+                            province_control_days = 3650  #10 years
+                        }
+                    }
+                }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            war_countries = {
+                NOT = { military_score = 10 }
+                is_vassal = no
+                OR = {
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 0.75
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 1825 #5 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 3650 #10 years
+                            }
+                        }
+                    }
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 0.85
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 1643 #4.5 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 2920 #8 years
+                            }
+                        }
+                    }
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 0.9
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 1460 #4 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 2190 #6 years
+                            }
+                        }
+                    }
+                    AND = {
+                        NOT = { has_country_flag = in_great_war }
+                        lost_national = 1
+                        OR = {
+                            capital_scope = {
+                                controlled_by = THIS
+                                province_control_days = 730 #2 years
+                            }
+                            any_owned_province = {
+                                controlled_by = THIS
+                                province_control_days = 1460 #4 years
+                            }
+                        }
+                    }
+                    AND = {
+                        has_country_flag = in_great_war
+                        national_provinces_occupied = 0.8
+                        capital_scope = {
+                            controlled_by  = THIS
+                            province_control_days = 3650  #10 years
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT6016816OPTA"
+        add_country_modifier = { name = the_long_war duration = 1095 }
+        move_issue_percentage = {
+            from = anti_military
+            to = pacifism
+            value = 0.25
+        }
+        move_issue_percentage = {
+            from = pro_military
+            to = anti_military
+            value = 0.25
+        }
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+}
+
+#Imperialism CB
+    country_event = {
+    id = 6016817
+    title = "EVTNAME6016817"
+    desc = "EVTDESC6016817"
+    picture = "spanish_moroccan_war"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT6016817OPTA"
+    }
+}
+
+#Constitutional Crisis - Party Changed after elections
+country_event = {
+    id = 6016818
+    title = "EVTNAME6016818"
+    desc = "EVTDESC6016818"
+    picture = "chartist_rally"
+
+    trigger = {
+        ai = no
+        OR = {
+            government = prussian_constitutionalism
+            government = hms_government
+        }
+        OR = {
+            AND = {
+                has_country_flag = conservative_party_in_power
+                NOT = { ruling_party_ideology = conservative }
+            }
+            AND = {
+                has_country_flag = liberal_party_in_power
+                NOT = { ruling_party_ideology = liberal }
+            }
+            AND = {
+                has_country_flag = reactionary_party_in_power
+                NOT = { ruling_party_ideology = reactionary }
+            }
+            AND = {
+                has_country_flag = socialist_party_in_power
+                NOT = { ruling_party_ideology = socialist }
+            }
+            AND = {
+                has_country_flag = communist_party_in_power
+                NOT = { ruling_party_ideology = communist }
+            }
+            AND = {
+                has_country_flag = fascist_party_in_power
+                NOT = { ruling_party_ideology = fascist }
+            }
+            AND = {
+                has_country_flag = anarcho_liberal_party_in_power
+                NOT = { ruling_party_ideology = anarcho_liberal }
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "EVT6016818OPTA"
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
+        add_country_modifier = { name = constitutional_crisis duration = 365 }
+        #Primary Culture Only Angry
+        random_owned = {
+            limit = {
+                owner = {
+                    government = prussian_constitutionalism
+                    citizens_rights = primary_culture_only
+                }
+            }
+            owner = {
+                prestige = -4
+                plurality = -4
+                any_pop = {
+                    limit = { is_primary_culture = yes }
+                    militancy = 2
+                    consciousness = 3
+                }
+                any_pop = {
+                    limit = { NOT = { is_primary_culture = yes } }
+                    militancy = 1
+                    consciousness = 4
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    government = hms_government
+                    citizens_rights = primary_culture_only
+                }
+            }
+            owner = {
+                prestige = -8
+                plurality = -8
+                any_pop = {
+                    limit = { is_primary_culture = yes }
+                    militancy = 3
+                    consciousness = 4
+                }
+                any_pop = {
+                    limit = { NOT = { is_primary_culture = yes } }
+                    militancy = 2
+                    consciousness = 8
+                }
+            }
+        }
+        #Accepted and Primary Angry
+        random_owned = {
+            limit = {
+                owner = {
+                    government = prussian_constitutionalism
+                    citizens_rights = culture_voting_only
+                }
+            }
+            owner = {
+                prestige = -4
+                plurality = -4
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    militancy = 2
+                    consciousness = 3
+                }
+                any_pop = {
+                    limit = {
+                        NOT = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    militancy = 1
+                    consciousness = 4
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    government = hms_government
+                    citizens_rights = culture_voting_only
+                }
+            }
+            owner = {
+                prestige = -8
+                plurality = -8
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    militancy = 3
+                    consciousness = 4
+                }
+                any_pop = {
+                    limit = {
+                        NOT = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    militancy = 2
+                    consciousness = 8
+                }
+            }
+        }
+
+
+        #Everyone Angry
+        random_owned = {
+            limit = {
+                owner = {
+                    government = prussian_constitutionalism
+                    citizens_rights = all_voting_pops
+                }
+            }
+            owner = {
+                prestige = -4
+                plurality = -4
+                any_pop = {
+                    militancy = 2
+                    consciousness = 3
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    government = hms_government
+                    citizens_rights = all_voting_pops
+                }
+            }
+            owner = {
+                prestige = -8
+                plurality = -8
+                any_pop = {
+                    militancy = 3
+                    consciousness = 4
+                }
+            }
+        }
+
+        random_owned = {
+            limit = { owner = { ruling_party_ideology = conservative } }
+            owner = {
+                set_country_flag = conservative_party_in_power
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    scaled_militancy = {
+                        ideology = conservative
+                        factor = -4
+                    }
+                    scaled_consciousness = {
+                        ideology = conservative
+                        factor = -5
+                    }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { ruling_party_ideology = liberal } }
+            owner = {
+                set_country_flag = liberal_party_in_power
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    scaled_militancy = {
+                        ideology = liberal
+                        factor = -4
+                    }
+                    scaled_consciousness = {
+                        ideology = liberal
+                        factor = -5
+                    }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { ruling_party_ideology = reactionary } }
+            owner = {
+                set_country_flag = reactionary_party_in_power
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    scaled_militancy = {
+                        ideology = reactionary
+                        factor = -4
+                    }
+                    scaled_consciousness = {
+                        ideology = reactionary
+                        factor = -5
+                    }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { ruling_party_ideology = socialist } }
+            owner = {
+                set_country_flag = socialist_party_in_power
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    scaled_militancy = {
+                        ideology = socialist
+                        factor = -4
+                    }
+                    scaled_consciousness = {
+                        ideology = socialist
+                        factor = -5
+                    }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { ruling_party_ideology = communist } }
+            owner = {
+                set_country_flag = communist_party_in_power
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    scaled_militancy = {
+                        ideology = communist
+                        factor = -4
+                    }
+                    scaled_consciousness = {
+                        ideology = communist
+                        factor = -5
+                    }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { ruling_party_ideology = fascist } }
+            owner = {
+                set_country_flag = fascist_party_in_power
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    scaled_militancy = {
+                        ideology = fascist
+                        factor = -4
+                    }
+                    scaled_consciousness = {
+                        ideology = fascist
+                        factor = -5
+                    }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { ruling_party_ideology = anarcho_liberal } }
+            owner = {
+                set_country_flag = anarcho_liberal_party_in_power
+                any_pop = {
+                    limit = {
+                        OR = {
+                            is_primary_culture = yes
+                            is_accepted_culture = yes
+                        }
+                    }
+                    scaled_militancy = {
+                        ideology = anarcho_liberal
+                        factor = -4
+                    }
+                    scaled_consciousness = {
+                        ideology = anarcho_liberal
+                        factor = -5
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Ghost Units Cleanup 2/2
+country_event = {
+    id = 6016819
+    title = "EVTNAME6016819"
+    desc = "EVTDESC6016819"
+
+    is_triggered_only = yes
+
+    immediate = {
+        political_reform = no_slavery
+        political_reform = debtors_prisons
+        FROM = {
+            random_owned = {
+                secede_province = THIS
+            }
+        }
+    }
+
+    option = {
+        name = "EVT6016819OPTA"
+        set_country_flag = ghost_country
+        add_country_modifier = { name = neutrality_modifier duration = -1 }
+        political_reform = closed_borders
+        treasury = 1000
+        neutrality = yes
+        random_owned = {
+            limit = { owner = { civilized = no } }
+            owner = {
+                civilized = yes
+                set_country_flag = uncivilized_on_absorb
+            }
+        }
+    }
+}
+
+#Ghost Units Cleanup 1/2
+country_event = {
+    id = 6016821
+    title = "EVTNAME6016819"
+    desc = "EVTDESC6016819"
+
+    is_triggered_only = yes
+
+    immediate = {
+        FROM = {
+            any_owned = {
+                limit = {
+                    OR = {
+                        province_id = 3319
+                        province_id = 3320
+                        province_id = 3321
+                        province_id = 3322
+                    }
+                }
+                secede_province = TMT
+            }
+        }
+    }
+
+    option = {
+        name = "EVT6016819OPTA"
+        add_country_modifier = { name = neutrality_modifier duration = -1 }
+        political_reform = closed_borders
+        treasury = 1000
+        neutrality = yes
+        any_country = {
+            limit = {
+                exists = no
+                OR = {
+                    is_mobilised = yes
+                    total_amount_of_ships = 1
+                }
+            }
+            country_event = 6016819
+        }
     }
 }

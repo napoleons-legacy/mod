@@ -92,6 +92,7 @@ country_event = {
             77 = {
                 secede_province = FRA
                 remove_core = CAN
+                add_core = FRA
             }
         }
         relation = {

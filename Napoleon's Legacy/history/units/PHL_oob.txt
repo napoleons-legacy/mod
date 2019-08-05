@@ -1,0 +1,49 @@
+SPA = {
+    value = -150
+}
+MEX = {
+    value = -50
+}
+EIC = {
+    value = -50
+}
+CAN = {
+    value = -50
+}
+DAI = {
+    value = 50
+}
+REI = {
+    value = 50
+}
+
+army = {
+    name = "Ej�rcito de Filipinas"
+    location = 1455
+
+    regiment = {
+        name = "1. Brigada"
+        type = infantry
+        home = 1455
+    }
+    regiment = {
+        name = "2. Brigada"
+        type = infantry
+        home = 1455
+    }
+}
+
+navy = {
+    name = "Armada de Filipinas"
+    location = 1455
+
+    ship = {
+        name = "Victoria"
+        type = frigate
+    }
+
+    ship = {
+        name= "2a Flotilla de Transporte"
+        type = clipper_transport
+    }
+}

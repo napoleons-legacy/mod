@@ -1,10 +1,10 @@
 #Sphere of Influence
 
-ILY = {
+SYC = {
     value = 100        #relation
     level = 4        #3=cordial, 4 = friendly, 5 sphere
     influence_value = 0
-      }
+}
 
 EGY = {
     value = 50        #relation
@@ -42,18 +42,11 @@ SWE = {
     influence_value = 30
 }
 
-ARC = {
+LPL = {
     value = 125        #relation
     level = 2        #3=cordial, 4 = friendly, 5 sphere
     influence_value = 25
 }
-
-GRE = {
-    value = 125        #relation
-    level = 2        #3=cordial, 4 = friendly, 5 sphere
-    influence_value = 50
-}
-
 CAN = {
     value = -200
 }
@@ -63,49 +56,125 @@ FRA = {
 }
 
 leader = {
-    name = "Oliver Cochrane"
-    date = 1831.1.1
-    type = sea
-    personality = charismatic
-    background = adventurer
+    name = "William Parker"
+    picture = eng_adm_parker
+    date = 1830.1.1
+    type = land
+    personality = calm
+    background = exranker
+}
+
+leader = {
+    name = "Arthur Wellesley"
+    picture = european_general_34
+    date = 1810.1.1
+    type = land
+    personality = heroic
+    background = school_of_defense
+    prestige = 0.3
+}
+
+leader = {
+    name = "Hugh Gough"
+    picture = eng_gen_goughhugh
+    date = 1830.1.1
+    type = land
+    personality = dauntless
+    background = school_of_the_bayonet
     prestige = 0.1
 }
 
+leader = {
+    name = "Henry Hardinge"
+    picture = eng_gen_hardinge
+    date = 1830.1.1
+    type = land
+    personality = tactful
+    background = gifted_administrator
+    prestige = 0.1
+}
+
+leader = {
+    name = "Raglan"
+    picture = eng_gen_raglan
+    date = 1836.1.1
+    type = land
+    personality = mediocre
+    background = aristocrat
+    prestige = 0.0
+}
+
+leader = {
+    name = "Whitworth-Aylmer"
+    date = 1825.1.1
+    type = land
+    personality = reserved
+    background = generals_aide
+    prestige = 0.1
+}
+
+leader = {
+    name = "John Fox Burgoyne"
+    date = 1836.1.1
+    type = land
+    personality = able
+    background = engineer
+    prestige = 0.0
+}
+
+leader = {
+    name = "Sir George Brown"
+    date = 1836.1.1
+    type = land
+    personality = harsh
+    background = cavalry_school
+    prestige = 0.0
+}
+
+leader = {
+    name = "James Dundas"
+    date = 1836.1.1
+    type = sea
+    personality = cautious
+    background = elderly
+    prestige = 0.0
+}
+
 army = {
-    name = "Royal Army"
+    name = "Republican Army"
     location = 300
     regiment = {
-        name= "1.Royal Guards Division"
+        name= "1.Republican Guards Division"
         type = guard
         home = 300
     }
 
     regiment = {
-        name= "2.Royal Guards Division"
+        name= "2.Republican Guards Division"
         type = guard
         home = 269
     }
 
     regiment = {
-        name= "3.Royal Guards Division"
+        name= "3.Republican Guards Division"
         type = guard
         home = 263
     }
 
     regiment = {
-        name= "1.Royal Guards Cavalry Division"
+        name= "1.Republican Guards Cavalry Division"
         type = hussar
         home = 300
     }
 
     regiment = {
-        name= "2.Royal Guards Cavalry Division"
+        name= "2.Republican Guards Cavalry Division"
         type = hussar
         home = 271
     }
 
     regiment = {
-        name= "3.Royal Guards Cavalry Division"
+        name= "3.Republican Guards Cavalry Division"
         type = hussar
         home = 293
     }
@@ -114,7 +183,7 @@ army = {
 
 army = {
     name = "Home Army"
-    location = 293
+    location = 294
     regiment = {
         name= "1.1. Division"
         type = infantry

@@ -3,6 +3,32 @@
 #Ruled By Britain 1836
 #Singapore (36000/9000 POPS)
 1384 = {
+    aristocrats = {
+        culture = british
+        religion = protestant
+        size = 1925
+    }
+    officers = {
+        culture = british
+        religion = protestant
+        size = 950
+    }
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 225
+    }
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 985
+    }
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 5100
+    }
+
     clergymen = {
         culture = yue
         religion = mahayana
@@ -47,6 +73,12 @@
 }
 #Malacca (52800/13200 POPS)
 1386 = {
+    aristocrats = {
+        culture = yue
+        religion = mahayana
+        size = 100
+    }
+
     clergymen = {
         culture = yue
         religion = mahayana
@@ -66,15 +98,9 @@
     }
 
     aristocrats = {
-        culture = british
-        religion = protestant
-        size = 175
-    }
-
-    bureaucrats = {
-        culture = british
-        religion = protestant
-        size = 25
+        culture = malay
+        religion = sunni
+        size = 100
     }
 
     clergymen = {

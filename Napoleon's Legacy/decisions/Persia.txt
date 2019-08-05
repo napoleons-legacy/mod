@@ -99,8 +99,8 @@ political_decisions = {
             tag = PER
             civilized = no
             has_country_modifier = silver_age
-            NOT = {    has_country_flag = dar_al_funun_built }
-            }
+            NOT = { has_country_flag = dar_al_funun_built }
+        }
 
         allow = {
             has_country_modifier = amir_kabir

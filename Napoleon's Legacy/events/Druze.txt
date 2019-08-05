@@ -94,10 +94,10 @@ country_event = {
 
     option = {
         name = "EVT167010OPTA"
-        FRA = { country_event = { id = 167020 days = 10 } }
+        FRA = { country_event = { id = 167020 days = 5 } }
 
         ai_chance = {
-                factor = 1
+            factor = 1
         }
     }
 
@@ -227,9 +227,9 @@ country_event = {
         ai_chance = {
                 factor = 1
                 modifier = {
-                        factor = 0
-                        NOT = { total_amount_of_divisions = 2 } #France needed to supply 6000 soldiers
-                }
+                    factor = 0
+                    NOT = { total_amount_of_divisions = 2 } #France needed to supply 6000 soldiers
+            }
         }
     }
 
@@ -301,9 +301,9 @@ country_event = {
         ai_chance = {
                 factor = 1
                 modifier = {
-                        factor = 0
-                        total_amount_of_divisions = 2 #France needed to supply 6000 soldiers
-                }
+                    factor = 0
+                    total_amount_of_divisions = 2 #France needed to supply 6000 soldiers
+            }
         }
     }
 }

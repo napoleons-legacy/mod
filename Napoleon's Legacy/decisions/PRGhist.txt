@@ -1,38 +1,5 @@
 political_decisions = {
 
-    occupy_misiones = {
-        picture = occupy_misiones
-        potential = {
-                tag = PRG
-                government = presidential_dictatorship
-                year = 1838
-                NOT = { has_country_flag = misiones_occupied }
-                NOT = { year = 1860 }
-                NOT = { owns = 2554 }
-                    }
-
-        allow = {
-            war = no
-            ARC = { war = yes }
-        }
-
-        effect = {
-            set_country_flag = misiones_occupied
-            prestige = 2
-            2554 = { secede_province = PRG
-            add_core = PRG
-            remove_core = CRT
-            }
-            ARC = { country_event = 700010 }
-            SBA = { country_event = 700010 }
-            CRT = { country_event = 700010 }
-        }
-
-        ai_will_do = {
-            factor = 100
-        }
-    }
-
     paraguay_independence = {
         picture = paraguay_independence
         potential = {
@@ -61,18 +28,12 @@ political_decisions = {
                     exists = yes
                     have_core_in = PRG
                     OR = {
-                        tag = ARC
-                        tag = ARG
+                        tag = LPL
                         AND = {
                             owns = 2379
-                            NOT = { exists = ARC }
-                            NOT = { exists = ARG }
+                            NOT = { exists = LPL }
                         }
-                        AND = {
-                            owns = 2348
-                            NOT = { exists = ARC }
-                            NOT = { exists = ARG }
-                        }
+                        NOT = { exists = LPL }
                     }
                 }
                 country_event = 4661010
@@ -80,17 +41,11 @@ political_decisions = {
 
             any_neighbor_country = {
                 limit = {
-                NOT = {
-                    OR = {
-                        tag = CRT
-                        tag = ENT
-                        tag = ARC
-                        tag = ARG
-                        tag = SBA
-                        }
+                    NOT = {
+                        tag = LPL
                     }
                 }
-                country_event =    700013
+                country_event = 700013
             }
         }
 

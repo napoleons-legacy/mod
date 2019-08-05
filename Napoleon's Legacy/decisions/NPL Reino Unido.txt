@@ -1,0 +1,39 @@
+political_decisions = {
+
+    reino_unido_constitution = {
+        picture = reino_unido
+
+        potential = {
+            tag = REI
+            NOT = {
+                has_country_flag = reino_unido_new_constitution
+                exists = POR
+                exists = BRZ
+            }
+
+            owns = 2447
+            owns = 521
+        }
+
+        allow = {
+            central_bank_money_bill_printing = 1
+            social_science = 1
+            naval_logistics = 1
+            invention = national_fraternity
+        }
+
+        effect = {
+            set_country_flag = reino_unido_new_constitution
+            BRZ = { all_core = { remove_core = BRZ } }
+            POR = {
+                all_core = { remove_core = POR }
+                clr_country_flag = move_PR
+                clr_country_flag = stay_BR
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

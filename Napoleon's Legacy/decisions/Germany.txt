@@ -31,6 +31,7 @@ political_decisions = {
 
     support_ruhr_industrialism = {
         potential = {
+            has_country_flag = prussian_germany
             OR = {
                 tag = PRU
                 tag = TEU
@@ -103,7 +104,7 @@ political_decisions = {
         }
 
         effect = {
-            prestige = 10
+            prestige = 5
             set_country_flag = lippe_dispute_solved
         }
     }
@@ -158,6 +159,7 @@ political_decisions = {
         picture = kaiser_wilhelms_land
         potential = {
             tag = GER
+            has_country_flag = prussian_germany
             owns = 1531
             owns = 2530
             owns = 2531
@@ -187,39 +189,7 @@ political_decisions = {
         }
     }
 
-    the_heligoland_question = {
-        potential = {
-            OR = {
-                tag = GER
-                tag = FED
-            }
-            NOT = {
-                has_country_flag = has_questioned_heligoland
-            }
-        }
-
-        allow = {
-            year = 1892
-            OR = {
-                is_greater_power = yes
-                invention = national_fraternity
-            }
-            OR = {
-                AND = {
-                    2013 = { empty = no }
-                    2015 = { empty = no }
-                }
-                owns = 2081
-            }
-        }
-        effect = {
-            533 = {
-                add_core = GER # Heligoland is my last territorial demand!
-            }
-            set_country_flag = has_questioned_heligoland
-        }
-    }
-
+    #Convert to repeatable so modifier comes back
     construct_the_walhalla = {
         picture = construct_the_walhalla
         potential = {
@@ -276,6 +246,7 @@ political_decisions = {
 
     von_moltkes_staff_reforms = {
         potential = {
+            has_country_flag = prussian_germany
             OR = {
                 tag = PRU
                 tag = GER
@@ -337,6 +308,7 @@ political_decisions = {
     appoint_von_bismarck = {
     picture = appoint_von_bismarck
         potential = {
+            has_country_flag = prussian_germany
             OR = {
                 tag = PRU
                 tag = NGF
@@ -383,13 +355,14 @@ political_decisions = {
     reclaim_alsace_lorraine = {
         picture = reichsland_elsass
         potential = {
-            has_country_flag = lost_alsace_lorraine
+            tag = GER
             412 = {
                 NOT = {
                     is_core = GER
                     owned_by = GER
                 }
             }
+            NOT = { has_country_flag = reclaimed_alsace_lorraine }
         }
 
         allow = {
@@ -403,7 +376,7 @@ political_decisions = {
         }
 
         effect = {
-            clr_country_flag = lost_alsace_lorraine
+            set_country_flag = reclaimed_alsace_lorraine
             badboy = 5
             FRA_412 = { add_core = GER }
             random_country = {
@@ -434,74 +407,13 @@ political_decisions = {
         }
     }
 
-    purchase_spanish_pacific = {
-        picture = treaty_signing
-        potential = {
-            primary_culture = north_german
-            is_greater_power = yes
-            nationalism_n_imperialism = 1
-            any_owned_province = {
-                is_core = GER
-                port = yes
-            }
-            1455 = {
-                NOT = { owned_by = SPA }
-                owner = {
-                    NOT = { vassal_of = SPA }
-                }
-            }
-            SPA = {
-                is_greater_power = no
-                any_owned_province = {
-                    OR = {
-                        region = SPA_610
-                        region = SPA_2517
-                    }
-                }
-            }
-            NOT = {
-                has_global_flag = tried_to_buy_spanish_pacific
-                #any_owned_province = { continent = oceania }
-            }
-        }
-        allow = {
-            money = 50000
-            OR = {
-                biologism = 1
-                military_logistics = 1
-                steel_steamers = 1
-            }
-            NOT = {
-                truce_with = SPA
-                SPA = { war = yes }
-            }
-        }
-        effect = {
-            set_global_flag = tried_to_buy_spanish_pacific
-            random_country = {
-                limit = {
-                    tag = SPA
-                    exists = yes
-                    any_owned_province = {
-                        OR = {
-                            region = SPA_610
-                            region = SPA_2517
-                        }
-                    }
-                }
-                country_event = 33025
-            }
-        }
-    }
-
     #Claim Togoland
     claim_togoland = {
-        picture = togo_map
+    picture = map_togo
         potential = {
             capital_scope = { continent = europe }
             year = 1850
-            NOT = { tag = RUS }
-            NOT = { tag = TSA }
+            NOT = { has_country_flag = russian_country }
             NOT = { tag = TUR }
             1914 = { empty = yes }
             1915 = { empty = yes }
@@ -519,36 +431,39 @@ political_decisions = {
             war = no
             total_num_of_ports = 10
             total_amount_of_ships = 10
-            money = 50000
+        money = 200000
             OR = {
-                AND = {
-                    colonial_nation = no
-                    OR = {
-                        naval_statistics = 1
-                        blue_and_brown_water_schools = 1
-                    }
-                }
-                AND = {
-                    colonial_nation = yes
-                    naval_logistics = 1
+            1901 = { owner = { civilized = yes } }
+            1922 = { owner = { civilized = yes } }
+            1913 = { owner = { civilized = yes } }
+        }
+        OR = {
+            AND = {
+                colonial_nation = no
+                blue_and_brown_water_schools = 1
+            }
+            AND = {
+                colonial_nation = yes
+                blue_and_brown_water_schools = 1
+                military_logistics = 1
                 }
             }
         }
 
         effect = {
             prestige = 2
-            treasury = -50000
+            treasury = -200000
             1916 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1915 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1914 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1917 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
             1918 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 25 }
-            #random_owned = {
-            #    limit = { owner = { is_culture_group = germanic } }
-            #    owner = {
-            #        1915 = { change_province_name = "Misahöhe" }
-            #    }
-            #}
+            random_owned = {
+                limit = { owner = { is_culture_group = germanic } }
+                owner = {
+                     1915 = { change_province_name = "Misahöhe" }
+                }
+            }
         }
 
         ai_will_do = { factor = 1 }

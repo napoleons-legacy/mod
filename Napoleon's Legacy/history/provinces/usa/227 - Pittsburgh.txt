@@ -4,7 +4,7 @@ controller = NEN
 add_core = NEN
 trade_goods = coal
 life_rating = 35
-
+terrain = mining_district
 party_loyalty = {
     ideology = conservative
     loyalty_value = 12

@@ -5,20 +5,11 @@ BRA = {
     military_access = no
 }
 
-SGM = {
-    value = 225
-    level = 5
-    influence_value = 0
-    military_access = yes
-}
-
 DZG = {
-
-    value = 150    level = 5
+    value = 150
+    level = 5
     influence_value = 25
-
     military_access = no
-
 }
 COB = {
     value = 0
@@ -125,12 +116,6 @@ WUR = {
     military_access = no
 }
 
-#Europe
-KRA = {
-    value = 125
-    level = 4
-    influence_value = 0
-}
 #Other GP's
 AUS = {
     value = 150
@@ -347,7 +332,7 @@ army = {
 }
 
 navy = {
-    name = "Königlich Preußische Marine"
+    name = "Kï¿½niglich Preuï¿½ische Marine"
     location = 680
     ship = {
         name= "1. Klipperflottille"

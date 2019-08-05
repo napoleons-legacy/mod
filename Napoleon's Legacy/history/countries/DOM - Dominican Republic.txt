@@ -1,5 +1,6 @@
 capital = 2214
 primary_culture = caribeno
+culture = afro_caribeno
 religion = catholic
 government = presidential_dictatorship
 plurality = 10
@@ -47,7 +48,7 @@ upper_house = {
     communist = 0
 }
 
-schools = unciv_tech_school
+schools = developing_tech_school
 set_country_flag = new_world_nation
 
 # Technologies

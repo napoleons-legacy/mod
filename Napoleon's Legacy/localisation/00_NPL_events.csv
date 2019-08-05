@@ -38,8 +38,8 @@ EVTDESC4662002;We have defeated the Gran Colombians and seized Panama for our co
 EVTOPTA4662002;We welcome the people of Panama into our republic.;;;;;;;;;;;;x
 EVTNAME4662003;Our Claim to Pastaza;;;;;;;;;;;;x
 EVTDESC4662003;We have claimed Pastaza since our independence, and the time to regain lost land is now! We have a chance to bring down Gran Colombia and show our strength and ability to be a regional power;;;;;;;;;;;;x
-EVTNAME4662004;Peruvian Victory!;;;;;;;;;;;;x
-EVTDESC4662004;We have defeated the Gran Colombians and shown them the strength of Peru. The terms for peace were the secession of Pastaza from Ecuador and the limiting of Colombia to build an army.;;;;;;;;;;;;x
+EVTNAME4662004;Spanish Victory!;;;;;;;;;;;;x
+EVTDESC4662004;We have defeated the Gran Colombians and shown them the strength of Spain. The terms for peace were the secession of Pastaza from Ecuador and the limiting of Colombia to build an army.;;;;;;;;;;;;x
 EVTOPTA4662004;Pastaza is ours!;;;;;;;;;;;;x
 EVTNAME4662005;Collapse of Gran Colombia;;;;;;;;;;;;x
 EVTDESC4662005;We are no longer able to lead Gran Colombia. Ecuador and Venezuela no longer have faith in our unity, having already left the federation. It is time to reinvent ourselves as Colombia. Maybe one day we can reignite the flame of Gran Colombia.;;;;;;;;;;;;x
@@ -48,13 +48,9 @@ EVTNAME4662006;Unification of Gran Colombia;;;;;;;;;;;;x
 EVTDESC4662006;The Central Americans and Peruvians were not able to defeat Gran Colombia in their imperialist wars to kill the federation. Due to these wars, the respective governments of Ecuador and Venezuela have agreed to centralize the federation in hopes of strengthening our position in South America.;;;;;;;;;;;;x
 EVTOPTA4662006;The flame of Gran Colombia burns bright!;;;;;;;;;;;;x
 EVTOPTA99033;We accept those who come.;;;;;;;;;;;;x
-EVTNAME4662007;Colonize Inland?;;;;;;;;;;;;x
-EVTDESC4662007;The Americans and British have robbed us of our land in the west, threatening our chances of survival. If we claim the territory inland and colonize it before the British, we will become stronger, and maybe one day control the Canadian lands;;;;;;;;;;;;x
-EVTOPTA4662007;This is a great idea!;;;;;;;;;;;;x
-EVTOPTB4662007;Maybe later.;;;;;;;;;;;;x
 EVTNAME4662008;Liquidate the Hudson's Bay Company.;;;;;;;;;;;;x
-EVTDESC4662008;The Hudson's Bay Company has long been a thorn in our back, challenging us at every attemp to colonize inland. We finally have a chance to take over the Hudson's Bay Company!;;;;;;;;;;;;x
-EVTOPTA4662008;We remove the thorn.;;;;;;;;;;;;x
+EVTDESC4662008;The Hudson's Bay Company has been troubled with severe losses throughout the early 19th Century. With shrinking demand for furs and the Hudson's Bay Company's failures to enter other markets, they have finally defaulted on their debts. The British Empire must take over all of their assets and debts in order to defend Canada from foreign militaries.;;;;;;;;;;;;x
+EVTOPTA4662008;They needed to go.;;;;;;;;;;;;x
 EVTNAME4662009;A New Capital for Gran Colombia?;;;;;;;;;;;;x
 EVTDESC4662009;We have federalized our country, and have decided to choose a new capital for our country. What we choose will be our new capital for the years to come.;;;;;;;;;;;;x
 EVTOPTA4662009;Bogota is the only candidate.;;;;;;;;;;;;x
@@ -273,35 +269,6 @@ EVTNAME66615;Imperial Intervention;;;;;;x;;;;;;;;;;;
 EVTDESC66615;The House of Hanover has today attempted to crush the opposition to its rule in Australia by actively intervening in the conflict there. While opinion in our nation was tenuous, with many secret monarchists opposing us, this schocking attack on our bretheren down under has produced strong support in our nation for actively intervening ourselves to stop the Empire from stopping the efforts of the valiant Australia freedom fighters.;;;;;;x;;;;;;;;;;;
 EVTOPTA66615;Down with Alexandrina Victoria!;;;;;;x;;;;;;;;;;;
 EVTOPTB66615;It's not worth going to war over.;;;;;;x;;;;;;;;;;;
-EVTNAME66616;The Scottish Question;;;;;;x;;;;;;;;;;;
-EVTDESC66616;Though Britain has been a unified nation consisting of the old Kingdoms of England and Scotland for over a hundred years, government policy towards Scotland changed significantly when the British Revolution of 1825 took place. Adopting the ruthlessly centralizing policies of the French Republic, the new Union government removed any remaining autonomy the Scots had and launched upon a policy of cultural unification, shutting down schools that taught the Scottish lanugage and attempting to destroy much of Scotland's heritage. As a result, many of the Scots have grown increasingly bitter against our republic and long for a return of the monarchy.;;;;;;x;;;;;;;;;;;
-EVTOPTA66616;They are not Scots, they are BRITONS.;;;;;;x;;;;;;;;;;;
-EVTNAME66617;A Scottish Assembly?;;;;;;x;;;;;;;;;;;
-EVTDESC66617;Though the policy of cultural homogenization has had some effects in Scotland, there are still very large amounts of Scots who refuse to view themselves as British citizens. Some of the more moderately minded Scots, who support republicanism, have proposed a compromise by establishing a seperate parliament for Scotland that will give the Scots some autonomy. As this is totally repugnant to the centralization policies of our government, however, few of the MPs are willing to support this idea.;;;;;;x;;;;;;;;;;;
-EVTOPTA66617;They must submit to our rule.;;;;;;x;;;;;;;;;;;
-EVTNAME66618;Scottish Home Rule?;;;;;;x;;;;;;;;;;;
-EVTDESC66618;The continued resistance of the Scots to accepting central rule has worn down the will of many of the more moderate Members of Parliament. In order to secure stability in the Union once and for all, and to better resist the monarchist influences amongst the Scottish radicals, the Moderates have today sumbitted a proposal to grant the Scots recognition as a region of the Union with some control over economic and religious matters. While the Union would still have much more power than the local assemblies of Scotland, the liberal parties of Parliament are completely opposed to the idea. If accepted, the proposal will appease the Scots, but the more radical republicans threaten to consider the current government illegitimate and a traitor to the principles of the Union if it goes through.;;;;;;x;;;;;;;;;;;
-EVTOPTA66618;We are one Union. The motion fails.;;;;;;x;;;;;;;;;;;
-EVTOPTB66618;Damn the radicals. The motion passes.;;;;;;x;;;;;;;;;;;
-EVTNAME66619;Influence in Scotland;;;;;;x;;;;;;;;;;;
-EVTDESC66619;The usurpers on the home island have today drawn a line in the sand for the oppressed Scottish population of the British Isles, informing them that they have no alternative but to accept cultural homogenization. This presents a golden opportunity for us, as many supporters of the House of Hanover still reside in Scotland. If we make a promise to them to recognize Scotland as a seperate kingdom under a common monarch once we retake the Isles, we stand a good chance at securing significant support amongst their population. Whether we will actually keep this promise, of course, remains to be seen.;;;;;;x;;;;;;;;;;;
-EVTOPTA66619;Scotland will be free if it fights for us.;;;;;;x;;;;;;;;;;;
-EVTOPTB66619;Everyone knows Scots can't rule themselves.;;;;;;x;;;;;;;;;;;
-EVTNAME66620;Failed Coup;;;;;;x;;;;;;;;;;;
-EVTDESC66620;Today the radical republicans overplayed their hand. They attempted to launch a coup d'?at against our government in the hopes of establishing a Jacobin dictatorship over the nation that would restore the policies of centralization. Thankfully, however, most of the military stayed loyal to our government, and the perpetrators are being rounded up and executed as we speak.;;;;;;x;;;;;;;;;;;
-EVTOPTA66620;Disturbing, but not surprising.;;;;;;x;;;;;;;;;;;
-EVTNAME66621;The Coup;;;;;;x;;;;;;;;;;;
-EVTDESC66621;Today the radical republicans seized control of the government in a coup d'?at. Motivated by the hope of establishing a Jacobin dictatorship over the nation that would restore the policies of centralization, a majority of Parliament and the military sided with them, and the democratic Union government has fallen. As we speak, the supporters of decentralization are being rounded up and executed.;;;;;;x;;;;;;;;;;;
-EVTOPTA66621;Disturbing, but not surprising.;;;;;;x;;;;;;;;;;;
-EVTNAME66622;The Scottish Promise;;;;;;x;;;;;;;;;;;
-EVTDESC66622;Now that we have retaken the British Isles, our Scottish supporters are requesting that we fulfill our promise to release them as an autonomous nation under a personal union with us. While we did promise them such an agreement, their current military might is much smaller than our own. If we want to, we could conceivably resist fulfilling our promise.;;;;;;x;;;;;;;;;;;
-EVTOPTA66622;A promise is a promise.;;;;;;x;;;;;;;;;;;
-EVTNAME66623;Our Nation Begins to Crumble;;;;;;x;;;;;;;;;;;
-EVTDESC66623;After suffering defeats against the British Union in our battle for influence over the previous decades, much of our populace has begun to abandon the monarchy as a hopeless cause. Each week, more pro-Union riots occur, more spies infiltrate our government, and more of our military shows itself to be disloyal to us. It is feared that the Union will soon strike a devastating blow against us from both without and within.;;;;;;x;;;;;;;;;;;
-EVTOPTA66623;We must perservere.;;;;;;x;;;;;;;;;;;
-EVTNAME66624;Our Nation Begins to Crumble;;;;;;x;;;;;;;;;;;
-EVTDESC66624;After suffering defeats against the British Empire in our battle for influence over the previous decades, much of our populace has begun to abandon the republic as a hopeless cause. Each week, more pro-Empire riots occur, more spies infiltrate our government, and more of our military shows itself to be disloyal to us. It is feared that the Empire will soon strike a devastating blow against us from both without and within.;;;;;;x;;;;;;;;;;;
-EVTOPTA66624;We must perservere.;;;;;;x;;;;;;;;;;;
 EVTNAME66625;The Final Battle;;;;;;x;;;;;;;;;;;
 EVTDESC66625;In a dastardly move, the legions of treasonous supporters of the British Union have risen up today and seized control of many of our grandest cities, including the capital. At the same time, we have been informed that the Union has declared war on us with the express purpose of reuniting the British peoples under one government. We are at a grave disadvantage, but if we wish to survive against these foul republicans, we must fight against them with all our might. The war will not end until War Exhaustion for one side reaches 100 or until the other side is completely conquered.;;;;;;x;;;;;;;;;;;
 EVTOPTA66625;God save the Queen!;;;;;;x;;;;;;;;;;;
@@ -314,89 +281,44 @@ EVTOPTA66630;Long live the Union!;;;;;;x;;;;;;;;;;;
 EVTNAME66631;The Imperial Victory;;;;;;x;;;;;;;;;;;
 EVTDESC66631;After such a long period of division, today the British people are finally reunified under the House of Hanover. Our armies occupy the cities of our homeland, and from London to Glasgow, throngs of cheering Anglo-Saxons line the streets to celebrate our victory. The republican usurpers have hung along with their supporters, and those on the other side who aided us in our fight have been rewarded. There is much to do in the coming days, but today is a day of celebration for all Britons.;;;;;;x;;;;;;;;;;;
 EVTOPTA66631;God save the Queen!;;;;;;x;;;;;;;;;;;
-EVTNAME37242;The Second Peninsular War;;;;;;x;;;;;;;;;;;
-EVTDESC37242;Spain has once again rebelled against us. In the first Peninsular war, we won due to having a united population. But now with our civil war with the rebels in France, we are not sure that we can fight another costly war against another large country.;;;;;;x;;;;;;;;;;;
-EVTOPTA37242;This will be like the previous war.;;;;;;x;;;;;;;;;;;
-EVTOPTB37242;Maybe we should just let them be.;;;;;;x;;;;;;;;;;;
+EVTNAME600038;The Second Peninsular War;;;;;;x;;;;;;;;;;;
+EVTDESC600038;Spain has once again rebelled against us. In the first Peninsular war, we won due to having a united population. But now with our civil war with the rebels in France, we are not sure that we can fight another costly war against another large country.;;;;;;x;;;;;;;;;;;
+EVTOPTA600038;This will be like the previous war.;;;;;;x;;;;;;;;;;;
+EVTOPTB600038;Maybe we should just let them be.;;;;;;x;;;;;;;;;;;
 EVTNAME99033;Land of Liberty;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC99033;Many have come into South Africa looking for opportunities or a new life.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT99033OPTA;We Welcome Those Who Come;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTNAME121212;The Louisiana Territory;;;;;;x;;;;;;;;;;;
-EVTDESC121212;"Since the Northern States ""expelled"" us from the Union, immigration to the colonial Louisiana territory has been nil. As a result, many in our government are suggesting that we get rid of the land entirely and attempt to sell it to a neighboring power. Yet some argue that, while it may be an albatross around our neck now, the land will become valuable in the future.";;;;;;x;;;;;;;;;;;
-EVTOPTA121212;Sell it to the British Empire!;;;;;;x;;;;;;;;;;;
-EVTOPTB121212;Sell it to Mexico!;;;;;;x;;;;;;;;;;;
-EVTOPTC121212;Keep it!;;;;;;x;;;;;;;;;;;
-EVTNAME121213;The Louisiana Territory;;;;;;x;;;;;;;;;;;
-EVTDESC121213;"Since the Northern States ""expelled"" the CSA from the Union, immigration to the colonial Louisiana territory has been nil. As a result, the Americans have offered to sell it to us.";;;;;;x;;;;;;;;;;;
-EVTOPTA121213;What a deal!;;;;;;x;;;;;;;;;;;
-EVTOPTB121213;What useless land!;;;;;;x;;;;;;;;;;;
-EVTNAME121214;A Greater Native Confederation;;;;;;x;;;;;;;;;;;
-EVTDESC121214;Now that we own the colonial lands of Central North America, many argue that it would be best utilized by being given the the Native Confederation as a buffer against American agression.;;;;;;x;;;;;;;;;;;
-EVTOPTA121214;Give it to the Natives!;;;;;;x;;;;;;;;;;;
-EVTOPTB121214;We will keep it for our Empire.;;;;;;x;;;;;;;;;;;
-EVTNAME121215;John Brown's Raid;;;;;;;;;x;;;;;;;;
-EVTDESC121215;John Brown's body lies a-mouldering in the grave, but his soul is marching on.'--John Brown's Body, Union Marching song\n\nThe famed hero of the abolitionist movement, the late John Brown, was hanged in $PROVINCENAME$ today after a failed raid on a military armory. Supposedly, Brown had planned to use the arsenal's weapons to arm slaves and incite an open slave rebellion across the entire United States. The raid, and John Brown's death, have furthered escalated anger towards the North, and many are calling for a war to reunite the Union once and for all.;;;;;;;;;x;;;;;;;;
-EVTOPTA121215;To War!;;;;;;x;;;;;;;;;;;
-EVTOPTB121215;We can't risk a war with the North.;;;;;;x;;;;;;;;;;;
-EVTNAME121216;Southern Failure;;;;;;;;;x;;;;;;;;
-EVTDESC121216;Our people are exhausted with war. We have failed to retake the North, and revolts of Northern-inclined traitors are springing up all over our nation. As such, we have today surrendered to our enemies, and have ceased to exist as a nation.;;;;;;;;;x;;;;;;;;
-EVTOPTA121216;How shameful;;;;;;x;;;;;;;;;;;
-EVTNAME121217;Northern Failure;;;;;;;;;x;;;;;;;;
-EVTDESC121217;Our people are exhausted with war. We have failed to retake the South, and revolts of Southern-inclined traitors are springing up all over our nation. As such, we have today surrendered to our enemies, and have ceased to exist as a nation.;;;;;;;;;x;;;;;;;;
-EVTOPTA121217;How shameful;;;;;;x;;;;;;;;;;;
-EVTNAME121218;Northern Victory;;;;;;;;;x;;;;;;;;
-EVTDESC121218;We have triumped! Northern flags wave from Southern windows as our armies march through Washington. The American Civil War is over, and the South is now firmly under the control of the United States. No more will the foul institution of slavery taint our continent.;;;;;;;;;x;;;;;;;;
-EVTOPTA121218;All hail Northern arms!;;;;;;x;;;;;;;;;;;
-EVTNAME121218;Southern Victory;;;;;;;;;x;;;;;;;;
-EVTDESC121218;We have triumped! Southern flags wave from Northern windows as our armies march through Boston. The American Civil War is over, and the North is now firmly under the control of the United States. No more will the foul thoughts of liberalism taint our continent.;;;;;;;;;x;;;;;;;;
-EVTOPTA121218;All hail Southern arms!;;;;;;x;;;;;;;;;;;
 EVTNAME121220;The Legacy of 1812;;;;;;;;;x;;;;;;;;
 EVTDESC121220;The War of 1812 shattered the fledgling United States of America. In the year 1816, British troops marched through the streets of American cities as the USA lost battle after battle with them. At the Hartford Convention that year, the Federalist-supporting, anti-war states of the North voted to expel the Southern and Western states from the Union and make peace with the British. Though the South fought to keep the Union whole, with both the British and their Northern brothers to contend with, their efforts failed. Since then, the USA continues to exist in the North, while the remaining states, under the control of the powerful Southern landowners, abandoned the Constitution and re-adopted the Articles of Confederation, granting state and local governments far more power. Yet many in both nations hope that one day, the Union will be whole once more. With the issue of slavery, firmly supported in the CSA and completely opposed in the USA, rising to prominence recently, many see the increasing divide between the two nations as proof of a coming new war.,;;;;;;;;;x;;;;;;;;
 EVTOPTA121220;Death to the traitors!;;;;;;x;;;;;;;;;;;
 EVTNAME121225;The Commonwealth's Place in the World;;;;;;;;;x;;;;;;;;
-EVTDESC121225;After decades of humilation by Austria, Russia, and Prussia, the Polish-Lithuanian Commonwealth was restored with the help of the French in the first two decades of the 19th century. The Duchy of Warsaw, created from Prussian and Austrian territory stolen from Poland, was created after the War of the Third Coalition. After Russia's defeat in the Second Polish War in 1813, additional territory was added and the Polish-Lithuanian Commonwealth was declared to be reborn, with Prince J?ef Poniatowski, taking the name Stanislaw III, becoming King. But the War of the Sixth Coalition showed the reborn nation's precarious position. The old alliance with France has faded as a result of the peace, and the Kingdom is surrounded by unfriendly states. We must choose who will be our partner in foreign policy if we are to survive.;;;;;;;;;x;;;;;;;;
-EVTOPTA121225;Beg the French for protection!;;;;;;x;;;;;;;;;;;
-EVTOPTB121225;We could make a deal with Austria.;;;;;;x;;;;;;;;;;;
-EVTOPTC121225;Turn Prussia from an enemy into a friend.;;;;;;x;;;;;;;;;;;
-EVTOPTD121225;Make a deal with the devil: Russia!;;;;;;x;;;;;;;;;;;
-EVTOPTE121225;Poland is strong enough to stand on its own!;;;;;;x;;;;;;;;;;;
+EVTDESC121225;After decades of humilation by Austria, Russia, and Prussia, the Polish-Lithuanian Commonwealth was restored with the help of the French in the first two decades of the 19th century. The Duchy of Warsaw, created from Prussian and Austrian territory stolen from Poland, was created after the War of the Third Coalition. After Russia's defeat in the Second Polish War in 1813, additional territory was added and the Polish-Lithuanian Commonwealth was declared to be reborn with Prince J?ef Poniatowski taking the name Stanislaw III, becoming King. But the War of the Sixth Coalition showed the reborn nation's precarious position. The old alliance with France has faded as a result of the peace, and the Kingdom is surrounded by unfriendly states. We must choose who will be our partner in foreign policy if we are to survive.;;;;;;;;;x;;;;;;;;
+EVTOPTA121225;Re-kindle the alliance with France.;;;;;;x;;;;;;;;;;;
+EVTOPTB121225;Austria was a former ally.;;;;;;x;;;;;;;;;;;
+EVTOPTC121225;Prussia has the military ability.;;;;;;x;;;;;;;;;;;
+EVTOPTD121225;The Russian Empire is our largest border.;;;;;;x;;;;;;;;;;;
+EVTOPTE121225;Poland-Lithuania can stand on its own!;;;;;;x;;;;;;;;;;;
 EVTNAME121226;A New Polish Alliance?;;;;;;;;;x;;;;;;;;
 EVTDESC121226;The Polish-Lithuanian Commonwealth has sent a delegation to us asking for a return to the policies of alliance between France and Poland that existed under Napoleon I. We abandoned this after the War of the Sixth Coalition, but we could recreate it at the cost of relations with Central and Eastern states.;;;;;;;;;x;;;;;;;;
 EVTOPTA121226;The French and the Poles are natural allies!;;;;;;x;;;;;;;;;;;
 EVTOPTB121226;The last thing we want is entanglements in East Europe.;;;;;;x;;;;;;;;;;;
-EVTNAME121227;An Austrian-Polish Alliance?;;;;;;;;;x;;;;;;;;
-EVTDESC121227;The Polish-Lithuanian Commonwealth has sent a delegation to us asking for a partnership between our nations. While this could give us a leg up over our rivals, many believe we should demand the city of Krakow, part of our spoils in the earlier Partitions of Poland, in exchange.;;;;;;;;;x;;;;;;;;
-EVTOPTA121227;An alliance is a great idea!;;;;;;x;;;;;;;;;;;
-EVTOPTB121227;If they give us Krakow, sure.;;;;;;x;;;;;;;;;;;
-EVTOPTC121227;No way!;;;;;;x;;;;;;;;;;;
-EVTNAME121228;A Prussian-Polish Alliance?;;;;;;;;;x;;;;;;;;
-EVTDESC121228;The Polish-Lithuanian Commonwealth has sent a delegation to us asking for a partnership between our nations. While this could give us a leg up over our rivals, many believe we should demand the province of Torun, part of our spoils in the earlier Partitions of Poland, in exchange.;;;;;;;;;x;;;;;;;;
-EVTOPTA121228;An alliance is a great idea!;;;;;;x;;;;;;;;;;;
-EVTOPTB121228;If they give us Torun, sure.;;;;;;x;;;;;;;;;;;
-EVTOPTC121228;No way!;;;;;;x;;;;;;;;;;;
-EVTNAME121229;A Russian-Polish Alliance?;;;;;;;;;x;;;;;;;;
-EVTDESC121229;The Polish-Lithuanian Commonwealth has sent a delegation to us asking for a partnership between our nations. While this could give us a leg up over our rivals, many believe we should demand the Minsk provinces, part of our spoils in the earlier Partitions of Poland, in exchange.;;;;;;;;;x;;;;;;;;
-EVTOPTA121229;An alliance is a great idea!;;;;;;x;;;;;;;;;;;
-EVTOPTB121229;If they give us Minsk, sure.;;;;;;x;;;;;;;;;;;
-EVTOPTC121229;No way!;;;;;;x;;;;;;;;;;;
-EVTNAME121230;Success!;;;;;;;;;x;;;;;;;;
+EVTNAME121227;The $FROMCOUNTRY_ADJ$-Polish Alliance;;;;;;x;;;;;;;;;;;
+EVTDESC121227;A delegation from the Polish-Lithuanian Commonwealth requesting for an alliance between our nations. While this would benefit both countries, Poland-Lithuania would benefit more. Some think a counter-offer should be made to balance the benefits. This counter-offer would entail a concession reminiscent of the spoils gained in the earlier Polish-Lithuanian partitions.;;;;;;;;;x;;;;;;;;
+EVTOPTA121227;No land is necessary.;;;;;;x;;;;;;;;;;;
+EVTOPTB121227;Send the counter-offer.;;;;;;x;;;;;;;;;;;
+EVTOPTC121227;Decline the offer.;;;;;;x;;;;;;;;;;;
+EVTNAME121230;The $FROMCOUNTRY_ADJ$-Polish Summit - Success;;;;;;;;;x;;;;;;;;
 EVTDESC121230;Our diplomacy has proven a great success. We have forged an alliance that will, God willing, last many years.;;;;;;;;;x;;;;;;;;
-EVTOPTA121230;Poland will never again be destroyed.;;;;;;x;;;;;;;;;;;
-EVTNAME121231;Failure!;;;;;;;;;x;;;;;;;;
-EVTDESC121231;Our diplomacy has proven a failure. No alliance has been formed, and all we have done is make the nations surrounding us more wary.;;;;;;;;;x;;;;;;;;
-EVTOPTA121231;What a travesty.;;;;;;x;;;;;;;;;;;
-EVTNAME121232;Austria's Terms;;;;;;;;;x;;;;;;;;
-EVTDESC121232;Austria has proved willing to consider an alliance, but only if we agree to a territorial cession of the city of Krakow.;;;;;;;;;x;;;;;;;;
-EVTOPTA121232;It's worth it.;;;;;;x;;;;;;;;;;;
-EVTOPTB121232;Never!;;;;;;x;;;;;;;;;;;
-EVTNAME121233;Prussias's Terms;;;;;;;;;x;;;;;;;;
-EVTDESC121233;Prussia has proved willing to consider an alliance, but only if we agree to a territorial cession of the Torun province.;;;;;;;;;x;;;;;;;;
-EVTOPTA121233;It's worth it.;;;;;;x;;;;;;;;;;;
-EVTOPTB121233;Never!;;;;;;x;;;;;;;;;;;
-EVTNAME121234;Russias's Terms;;;;;;;;;x;;;;;;;;
-EVTDESC121234;Russia has proved willing to consider an alliance, but only if we agree to a territorial cession of the lands in the Minsk area.;;;;;;;;;x;;;;;;;;
-EVTOPTA121234;It's worth it.;;;;;;x;;;;;;;;;;;
-EVTOPTB121234;Never!;;;;;;x;;;;;;;;;;;
+EVTOPTA121230;Poland-Lithuania will prevail!;;;;;;x;;;;;;;;;;;
+EVTNAME121231;The $FROMCOUNTRY_ADJ$-Polish Summit - Failure;;;;;;;;;x;;;;;;;;
+EVTDESC121231;Polish-Lithuanian diplomacy has proven a failure. The delegation sent failed in their job to secure an alliance and as a consequence, made the nations surrounding Poland-Lithuania more ambivalent.;;;;;;;;;x;;;;;;;;
+EVTOPTA121231;A dark cloud looms.;;;;;;x;;;;;;;;;;;
+EVTNAME121232;$FROMCOUNTRY$'s Terms;;;;;;;;;x;;;;;;;;
+EVTDESC121232;$FROMCOUNTRY$ has proved willing to consider an alliance, but only if we agree to a territorial cession of the Galicia-Lodomeria region;;;;;;;;;x;;;;;;;;
+EVTOPTA121232;Accept the counter-offer.;;;;;;x;;;;;;;;;;;
+EVTOPTB121232;No alliance is worth Polish-Lithuanian land!;;;;;;x;;;;;;;;;;;
+EVTDESC121233;$FROMCOUNTRY$ has proved willing to consider an alliance, but only if we agree to a territorial cession of the Torun province and Poznan region.;;;;;;;;;x;;;;;;;;
+EVTDESC121234;$FROMCOUNTRY$ has proved willing to consider an alliance, but only if we agree to a territorial cession of the lands in the Minsk area.;;;;;;;;;x;;;;;;;;
 EVTNAME121262;Believers and Pagans;;;;;;;;;x;;;;;;;;
 EVTDESC121262;A recent policy enacted by the British Empire allows for unlimited missionary operations within our borders. While this may be good for the souls of our wards, Hindu and Muslim intellectuals alike are both furiously protesting against the agressive tactics of the missionaries. Some are even beginning to call for a holy war to drive out Christians from India.;;;;;;;;;x;;;;;;;;
 EVTOPTA121262;Can't we all just get along?;;;;;;x;;;;;;;;;;;
@@ -646,9 +568,9 @@ EVTNAME40002;France Refuses;;;;;;x;;;;;;;;;;;
 EVTDESC40002;The French tyrants have refused to abandon their claims on Haiti. Very well, then: if they will not accept gold, then we will give them steel instead!;;;;;;x;;;;;;;;;;;
 EVTOPTA40002;Come then, you frogs!;;;;;;x;;;;;;;;;;;
 EVTNAME32490;The Return of Greek Nationalism;;;;;;x;;;;;;;;;;;
-EVTDESC32490;In the 1820s, the Greek subjects of our Empire began a massive rebellion against our rule. Thankfully, due to the weakened state of the Christian Powers, infighting amongst the rebels, and the aid of Egypt, we managed to crush the revolt. Yet now, a decade later, Hellenistic sentiments continue to bubble beneath the surface of the calm in Greece. We must face the fact that another Greek rebellion is likely quite soon.;;;;;;x;;;;;;;;;;;
+EVTDESC32490;In the 1820s, the Greek subjects of our Empire began a massive rebellion against our rule. Thankfully, due to the weakened state of the Christian powers, infighting amongst the rebels, and the aid of Egypt, the revolt was crushed. Yet now, a decade later, Hellenistic sentiments continue to bubble beneath the surface of the calm in Greece. We must face the fact that another Greek rebellion is likely quite soon.;;;;;;x;;;;;;;;;;;
 EVTOPTA32490;We shall survive this storm, too.;;;;;;x;;;;;;;;;;;
-EVTNAME32489;Secret Societies;;;;;;x;;;;;;;;;;;
+EVTNAME32489;Greek Secret Societies;;;;;;x;;;;;;;;;;;
 EVTDESC32489;Resentment against Turkish rule has led to the emergence of organizations pushing for complete independence for Greece from our Empire.;;;;;;x;;;;;;;;;;;
 EVTOPTA32489;Barbarians.;;;;;;x;;;;;;;;;;;
 EVTNAME32488;A Rising Greek Movement;;;;;;x;;;;;;;;;;;
@@ -659,15 +581,12 @@ EVTNAME32487;Foreign Funding for the Greeks;;;;;;x;;;;;;;;;;;
 EVTDESC32487;It seems that we shall have to deal with more than the stubbornness of the Greeks in our efforts to retain our Empire's integrity. Disgustingly, the Greek Rebels are now receiving funding from Christian nations, increasing their effectiveness.;;;;;;x;;;;;;;;;;;
 EVTOPTA32487;I doubt they will ever be able to pay that money back.;;;;;;x;;;;;;;;;;;
 EVTNAME32486;The Greek War for Independence;;;;;;x;;;;;;;;;;;
-EVTDESC32486;News has reached us that the Greeks have organized an effective rebellion against the Turks and declared independence from the Ottoman Empire. It is likely, however, that the Turks will not be long in crushing this rebellion. If we wish, we can establish diplomatic relations with the Greeks and interven in the war, though this would drastically hurt relations with the Ottomans. Our wealthier populace, however, seems eager to support the revival of Athens, and will not take a refusal to intervene very well.;;;;;;x;;;;;;;;;;;
+EVTDESC32486;News has reached us that the Greeks have organized an effective rebellion against the Turks and declared independence from the Ottoman Empire. It is likely, however, that the Turks will not be long in crushing this rebellion. If we wish, we can establish diplomatic relations with the Greeks and intervene in the war, though this would drastically hurt relations with the Ottomans. Our wealthier populace, however, seems eager to support the revival of Athens, and will not take a refusal to intervene very well.;;;;;;x;;;;;;;;;;;
 EVTOPTA32486;We owe much to the ancient Greeks. It is only fitting that we aid their descendants.;;;;;;x;;;;;;;;;;;
 EVTOPTB32486;They're not even real Greeks, you idiots!;;;;;;x;;;;;;;;;;;
-EVTNAME32485;Intervention in the Greek War;;;;;;x;;;;;;;;;;;
-EVTDESC32485;We have received terrible news. As if our fight with the Greek rebels has not been difficult enough, it seems that a Great Power has decided to intervene in an attempt to restore Greek independence. They have informed us that they will withdraw their armies if we make peace with Greece, but not until then.;;;;;;x;;;;;;;;;;;
-EVTOPTA32485;We conquered Athens once and we shall do so again.;;;;;;x;;;;;;;;;;;
-EVTNAME32484;A Stifling of Hellenism;;;;;;x;;;;;;;;;;;
-EVTDESC32484;Through our intense efforts to quash the movement for Greek Independence, we have managed to successfully track down and execute nearly all the central figures in the movement. While Greek nationalism will likely never truly end, we have at least made it far less potent.;;;;;;x;;;;;;;;;;;
-EVTOPTA32484;A more peaceful time awaits.;;;;;;x;;;;;;;;;;;
+EVTNAME32485;Greek War of Independence - Foreign Intervention;;;;;;x;;;;;;;;;;;
+EVTDESC32485;A great power has intervened in the Greek War of Independence on the side of the Greek fighters. They will only leave once the situation in Greece is resolved, for better or worse. The Ottoman Empire must win this war or else, the rest of the Balkans will open up to foreign intervention and strife.;;;;;;x;;;;;;;;;;;
+EVTOPTA32485;Athens will be conquered yet again!;;;;;;x;;;;;;;;;;;
 EVTNAME32483;Our Ancient Military;;;;;;x;;;;;;;;;;;
 EVTDESC32483;By the Victorian Era, the military of the Ottoman Empire was extremely outdated. Though alliances with European Powers had helped somewhat, as had the abolition of the Janissaries in 1826, the Empire's capabilities were far behind those of the Christian Powers. Until we launch upon a large modernization effort, our military will suffer in comparison to those of the Christians.;;;;;;x;;;;;;;;;;;
 EVTOPTA32483;Outdated? This is the same force that conquered the Romans!;;;;;;x;;;;;;;;;;;
@@ -677,8 +596,8 @@ EVTOPTA32482;Who needs the Tartars anyway?;;;;;;x;;;;;;;;;;;
 EVTNAME32470;Murat the Mad;;;;;;x;;;;;;;;;;;
 EVTDESC32470;Though the current King of Naples, Joachim Murat the First, was put on the throne by Napoleon, Murat chose to rebel against France in the Great War of 1822 in a bid for independence. Since then, he has grown progressively madder and more paranoid, reinstating absolutism and imprisoning or killing any who disagree with him. On the positive side, his vast collection of self-awarded medallions has aided the crafting industry significantly.;;;;;;x;;;;;;;;;;;
 EVTOPTA32470;All hail our beloved leader! Or else.;;;;;;x;;;;;;;;;;;
-EVTOPTA37241;We are free!;;;;;;x;;;;;;;;;;;
-EVTOPTB37241;We are safe under the French.;;;;;;x;;;;;;;;;;;
+EVTOPTA600037;We are free!;;;;;;x;;;;;;;;;;;
+EVTOPTB600037;We are safe under the French.;;;;;;x;;;;;;;;;;;
 EVTNAME37243;German War of Liberation;;;;;;x;;;;;;;;;;;
 EVTDESC37243;The Coalition of Nations engages in a war with the French with hopes of gaining their freedom. We have waited for the French to fall into a period of weakness, and this is the perfect chance!;;;;;;x;;;;;;;;;;;
 EVTOPTA37243;The German War of Liberation begins!;;;;;;x;;;;;;;;;;;
@@ -776,12 +695,6 @@ EVTOPTA600035;Viva Espa?!;;;;;;x;;;;;;;;;;;
 EVTNAME600036;No Reunification;;;;;;x;;;;;;;;;;;
 EVTDESC600036;The illegitimate rulers of the Spanish puppet state have, sadly, refused to give in to popular demand and surrender Spain to us. It shall mean war before our nation is whole once more.;;;;;;x;;;;;;;;;;;
 EVTOPTA600036;We shall prevail!;;;;;;x;;;;;;;;;;;
-EVTNAME600037;Indian Equality;;;;;;x;;;;;;;;;;;
-EVTDESC600037;"Shockingly, it seems as though the barbaric Indians of the Native Confederation are savage no longer. Having reached a level of civilization equivalent to ours, they have announced to the world today that they intend to take their place among the nations of the West. As such, our claims to the supposed ""unused"" land that they hold no longer has validity in the eyes of the world.";;;;;;x;;;;;;;;;;;
-EVTOPTA600037;Drat.;;;;;;x;;;;;;;;;;;
-EVTNAME600038;Native Equality;;;;;;x;;;;;;;;;;;
-EVTDESC600038;Under our tutelage, the Native Confederation has grown over the decades to the point that they can no longer be considered any more backwards than the West. Today they have announced their equality to the world, which also reflects well on our drive to civilize the backwards peoples of the world.;;;;;;x;;;;;;;;;;;
-EVTOPTA600038;Hurrah!;;;;;;x;;;;;;;;;;;
 EVTNAME600039;Imperial Experts;;;;;;x;;;;;;;;;;;
 EVTDESC600039;As a dominion of the British Empire, our people both suffer and benefit from our puppet status. Though we are not free to form our own foreign policy, the Imperial government takes an interest in our welfare, and often sends experts to help us modernize our technology so we can better combat those who would take our land.;;;;;;x;;;;;;;;;;;
 EVTOPTA600039;"What is this ""wheel"" they keep talking about?";;;;;;x;;;;;;;;;;;
@@ -1150,10 +1063,6 @@ EVTNAME44156;Compromise Along the South of the Columbia River;;;;;;;;;;;;x,,,,,,
 EVTDESC44156;Tensions over the Columbia District seemed to fizzle as American willingness to compromise had become well apparent to British diplomats during negotiations. A favourable agreement appears to have come within our grasp which would split the Columbia District along the south of the Columbia River and end most disputes over the territory.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
 EVT44156OPTA;All's well that ends well.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44156OPTB;The British Empire will retain Columbia in its entirety!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTNAME44157;The British Cession;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC44157;Representatives from the British Empire have offered the United States lands south of the 49th parallel and some lands near the Minnesota Territory as a trade for the lands north of the 49th parallel owned by the United States. The land trade would resolve many longstanding issues with the definitions of the American border with the Empire, but given the history the United States has with the Empire, is it necessary?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44157OPTA;The frontier will look nicer;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVT44157OPTB;We do not negotiate with filthy monarchists!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME44158;The Extension of the Oregon Treaty;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC44158;Now that the definition of the Oregon Territory has been set in stone, many in the American government are clamoring for an extension of the treaty to handle longstanding issues with the 49th parallel with regards to the American-Empire border.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44158OPTA;Move forward with the request;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
@@ -1164,3 +1073,96 @@ EVT44159OPTA;Move forward with an extension;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT44159OPTB;We lose too much for some paltry land;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME36898;The Ascension of Queen Victoria;;;;;;;;;;;;;;;;;;;;;;;x;
 EVTDESC36898;Today, in the year of our Lord $YEAR$, William the Fourth, by the Grace of God, King of the United Kingdom of Great Britain and Ireland, Defender of the Faith, died in Toronto. As he had no living legitimate children, Princess Victoria of Kent, William's niece, found herself ruling one of the Great Powers and the biggest colonial empire in the World. Her coronation is scheduled for the 28th of June, 1838, when princess Alexandrina Victoria of House Hanover will officially ascend to the throne of the United Kingdom of Great Britain and Ireland as 'Queen Victoria'. Her reign, which would last even a few years into the 20th century, would later be remembered as a period of turmoil for the British Empire, battling with the British Republicans. Today a jubilant crowd has escorted the young Queen Victoria to her residence in the possibly temporary capital of the British Empire, Bytown.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+EVTNAME44160;Fugitive Slave Crisis of $YEAR$;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44160;Slaves from Maryland have escaped over to neighboring Pennsylvania over in New England. The owners of the slaves had sent a hunting party and gone themselves as well to regain their slaves. After crossing the border into nearby Philadelphia, they engaged with the nearby police forces in a standoff. With the police refusing to let the slave owners search the city for their slaves, the situation became chilly. Nobody knows who fired the first shot, but it left five policemen, three from the hunting party, and the slave owner dead. When news broke in the United States, there were near-riots in Atlanta and demands for retribution on the New Englanders. With the situation destabilizing, the United States government has formulated an ultimatum, demanding the return of all fugitive slaves in New England, and the presence of the United States Army in Pennsylvania to ensure transit of all slaves. This can, and likely will mean war between the two countries, but not much can be done about it.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44160OPTA;Send the ultimatum!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44161OPTA;Then Maryland will just become ours!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44162;Fugitive Slave War in New England;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44162;The war in New England has reached a boiling point with the war drawing ever closer near British borders. Many in the government are fearful that in the event of an American victory, there will be a new war in the future to overtake Canada as revenge for the earlier American humiliation in 1814. Envoys from New England have offered to make New England subordinate to the Empire, with the added benefit of the transfer of Maine to the Empire if the Empire intervenes and sucessfully defends New England from the Dixie hordes. This will certainly bring us to war with the United States, but perhaps this is a war of necessity when put in scope of the far greater conflict with the British Union.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44162OPTA;We must protect our allies!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44162OPTB;We are not their babysitters!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44163;The Defeat of the United States;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44163;The United States have been repelled and the State of Maryland has finally been liberated from the clutches of slavery!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44163OPTA;Excellent!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44164;The United States have been repelled and our agreement with the New Englanders will be upheld!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44165;The Defeat of New England;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44165;The New Englanders have been repelled and the State of Pennsylvania has finally been liberated from the clutches of liberalism!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44166;John Browns Raid;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44166;An abolitionist named John Brown attempted to initiate an armed slave revolt across the South in $YEAR$ by taking control of the United States arsenal at Harper's Ferry in Virginia. Graciously defended by Colonel Robert E. Lee, he was able to capture John Brown. Under interrogation, it was revealed that John Brown was covertly supported by the New England government in an attempt to destablize the South, opening it for an invasion from the North. Dixieland is getting ever closer to erupting in total chaos, with John Brown broken out of his cell by a mob and lynched. The United States has formulated an ultimatum to the North, requiring a military presence in key cities to quell dangerous thought, the transfer of all fugitive slaves, and reparations to the South under threat of war.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44166OPTA;The North must be pacified!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44167;An abolitionist named John Brown attempted to initiate an armed slave revolt across the United States in $YEAR$ by taking control of the nearby United States arsenal at Harper's Ferry in Virginia. Ultimately failing, John Brown was captured. It seems that John Brown has claimed the New England government gave him direct support, which is preposterous. With these claims, the United States is in an uproar demanding retribution on New England. The United States sent us an ultimatum, requiring a military presence in key cities to quell dangerous thought, the transfer of all fugitive slaves, and reparations to the South under threat of war. These demands are unfounded and the clouds of war loom closer once again.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44167OPTA;Then war it must be!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44168;John Browns Raid - American Civil War Starts;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44168;Our demands have been refused by the Northerners and with the public mood heavily against New England, war is the only path forward. The two countries can no longer stay divided, one must be defeated to pave way for the United American States to become once again!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44168OPTA;So be it.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44169;War Between the Americas;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44169;A conflict between New England and the United States of America have broken out once again over a failed raid attempt by an abolitionist in the North. Due to treaties declaring New England as a state protected by the British Empire, the Empire is now required to join in on this war;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44169OPTA;The South must be pacified!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44169OPTB;This is just another regional war.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44170;The Fate of the Native Confederation;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44170;The Native Confederation is a point of contention between the Empire and two American states. New England is constantly agitating for the protection of Americans in Ohio from the Natives. The United States refusing to drop their claims on the lands of the Natives, may be open to a compromise, splitting the Confederation between the three parties. However, the Empire can just integrate the Confederation.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44170OPTA;Send the offers.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44170OPTB;The Confederation is British!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44171;The British Offer;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44171;The British Empire have come over to the United States to resolve the longstanding issues with the Native Confederation. While many in the United States want the whole occupation of the Confederation, there are also those to just want nothing to do with the land, having been out of our control for more than just a few years. The offer from the British entails the removal of all American claims on the land of the Confederation with the transfer of the native territories Illinois and Miami to the United States.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44171OPTA;Accept the offer;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44171OPTB;We have no need for this;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44172;The British Empire have come over to New England to resolve the longstanding issues with the Native Confederation. While many in the New England want a peaceful resolution to the treatment of Americans in Ohio, many just want nothing to do with the land, having never been in our control. The offer from the British entails the sale of the Ohio area, which contains near-all of the Americans in the Confederation for a low fee of 10,000.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44173;British Aggression in the Northwest Territories;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44173;News has reached $CAPITAL$ that the British Empire have annexed the Native Confederation, who initially served as a buffer state between the United States and Canada. While the United States shares a border with Empire near Oregon and the Mid-West, the Native Confederation protected the core of the British Empire from the American army in the event of a war between the two countries. The United States can either go against this illegal occupation, potentially fighting a war over the land in the near future, or allowing the British to set their occupation in stone.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44173OPTA;The land is ours!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44173OPTB;The British can keep it.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44174;American Civil War Ends;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44174;The American Civil War ended with the surrender of the Yankee government in $YEAR$. The union once sundered in 1816 as a result of the fleeing British Empire taking whatever action it could to ensure its safety in Canada, is now once again whole. While the union was restored, it was important for the United States to reconstruct the North to fit the new American lifestyle and most importantly, prevent secession from ever happening again.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44174OPTA;The United States must rebuild.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44175;The End of the American Civil War;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44175;The American Civil War ended with the surrender of the Yankee government in $YEAR$. Even though the British Empire intervened on the side of New England, it was not enough to prevent the United States' triumph over New England. The British Empire in their pursuit of the British Isles looked down on their Southern neighbors, thinking of them as yet another minor inconvenience, has been greatly disturbed. The country that was greatly humiliated in 1816 has returned and displaced the British Empire once again as the primary power in the Americas. The war was lost and it was time for the British Empire to pay.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44175OPTA;Maybe the America's aren't so safe after all.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44176;Anglo-American Peace Treaty - Eastern Americas;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44176;The defeat of the British Empire in preventing the United States from conquering New England greatly changed the power dynamics of the continent. The British Empire having been defeated was required to make concessions to the United States for fear of a repeaat of the War of 1812, but this time the Americans would likely win. The Anglo-American treaty punished the British Empire for its meddling with the Americans and changed the face of the continent.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44176OPTA;Return what we have lost!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44176OPTB;There is nothing more we want.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44177;Anglo-American Peace Treaty - The Northern Border;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44177OPTA;Set the border to the 49th parallel.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44178;Anglo-American Peace Treaty - Oregon Country;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44178OPTA;The 49th parallel is the new border.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44178OPTB;The 54th parallel is the new border.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44179;Anglo-American Peace Treaty - Caribbean;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44179OPTA;The Caribbean will be American!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44180;The American Civil War ended with the surrender of the Dixie government in $YEAR$. In order to integrate the rest of the massive United States, various federal occupation forces are required in order to slowly integrate the regions of the United States. The proposed plan is to break up the United States into the Confederate States of America to the South, Louisiana to the Mid-West, Columbia to the North-West, California to the South-West, and the rest going to New England proper. Reintegration with New England will take time, but it is necessary in order for stabilty to cover the American realm. Once the country is reunited whole, it will be time for a new American Union State to prevail!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44180OPTA;The Reconstruction period begins.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44181;The American Civil War ended with the surrender of the Dixie government in $YEAR$ to Yankee and British forces. Both New England and the former United States have been led to ruin. The British Empire is at a crossroads. To let New England reunite the United States could lead to a repeat of the War of 1812. On the other hand, it will be land controlled by an ally of the British Empire. The British Empire can either choose to let New England rebuild the Americas while the Empire focuses on the British Isles, or the British Empire must rebuild the Americas in the place of New England who will be integrated into the Empire as an equal. To integrate the New Englanders would require strong efforts, and would make the reconquest of the British Isles a goal that must be dropped.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44181OPTA;Let New England rebuild the continent.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44181OPTB;The British Empire will be the masters of the Americas!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44182;The British Empire Concedes the Isles;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44182;The Monarchists across the sea have dropped all claims to the British Isles. With the Empire victorious in the American Civil War, it has decided to concede the British Isles in order to refocus their efforts on North America. Any land that is claimed by us, but is owned by them will be returned to our control as a show of good faith. This is the start of a new era for Union-Empire relations!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44182OPTA;Hopefully they will stay there.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME44183;The British Cession;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC44183;Representatives from the British Empire have offered the United States lands south of the 49th parallel and some lands near the Minnesota Territory as a trade for the lands north of the 49th parallel owned by the United States. The land trade would resolve many longstanding issues with the definitions of the American border with the Empire, but given the history the United States has with the Empire, is it necessary?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44183OPTA;The frontier will be simplified.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT44183OPTB;We do not negotiate with filthy monarchists!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME7880761;Mexico Attempts to Seize Louisiana!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC7880761;The logistical failures of the Mexican-American war may cost the United States more than it had expected. The war was prosecuted to gain land from Mexico, but now it will be prosecuted to defend the territorial integrity of the Union. If the war is lost, All American land west of the Mississippi will be lost to Mexico.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880761OPTA;We must fight on!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME7880762;The Seizure of Louisiana;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC7880762;The invasion of Mexico by the United States was repelled with great defeat and humiliation on the side of the Americans. Not only were they defeated, the entire Louisiana territory was seized from them. While a great day of disaster for the Americans, this is a day for celebration in Mexico!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880762OPTA;The Mexican Empire is eternal!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME7880763;Control of the Cape;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC7880763;With the conclusion of the Cape War in favourable terms, something must be done to prevent any future challenges to our control. More specifically, the issue pertaining to the presence of our former enemies nearby. To secure the frontier, threats at home must be pacified.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880763OPTA;Secure the frontier!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME7880765;The $FROMCOUNTRY_ADJ$ Ultimatum;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC7880765;Demands have been sent from $FROMCOUNTRY$ demanding for a transfer of French minorities to their direct control, citing reasons such as oppression and the ensurement of peace in the current era. While shedding off this land would only rid the country of unsupported minorities, losing the land would cost the country vast swathes of valuable land.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880765OPTA;Transfer the land;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880765OPTB;It will remain ours!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME7880766;The $FROMCOUNTRY_ADJ$ Transfer of Lugano;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC7880766;Demands have been sent to $FROMCOUNTRY$ demanding for a transfer of French minorities from their direct control. It has been noted that the transfer of land populated by Italians has been guaranteed to $COUNTRY$ as well, all that is necessary is to accept this guarantee to move forward in the transfer of the land to $COUTNRY$ control.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880766OPTA;Accept the guarantee;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880766OPTB;We don't want this;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME7880767;Spain Revolts!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC7880767;The Spanish at Madrid have mutinied against French control and are starting a war to gain their independence from the French Empire. It seems that the bonds made during the Peninsular War did not mean much to the traitorous nobles in Spain. Should Spain be taught a lesson or let go?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880767OPTA;War it is!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT7880767OPTB;If you love something, let it go;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME600037;Independence From France?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC600037;The time may come for the Spanish to free themselves from the French grip on the country that has been there for decades. The French, fighting a civil war will be unlikely to attack lest they open up another front in the war. The time for Spanish independence may be now.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT600037OPTA;Its now or never;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT600037OPTB;Bide our time for now;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

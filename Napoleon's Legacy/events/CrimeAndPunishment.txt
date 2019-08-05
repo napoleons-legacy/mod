@@ -256,8 +256,8 @@ country_event = {
             }
         }
         #modifier = {
-        #   factor = 1.5
-        #   luxury_needs = 0.5
+        #    factor = 1.5
+        #    luxury_needs = 0.5
         #}
     }
 

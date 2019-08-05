@@ -3,10 +3,7 @@ political_decisions = {
     organize_central_asia = {
         picture = laghouat_algiers
         potential = {
-            OR = {
-                tag = RUS
-                tag = TSA
-            }
+            has_country_flag = russian_country
             owns = 1204 #Ashkhabad
             owns = 1191 #Khiva
             owns = 1198 #Bukkhara
@@ -54,11 +51,11 @@ political_decisions = {
             1190 = { add_core = KYR }
             1203 = { add_core = KYR }
 
-            KAZ = { tech_school = unciv_tech_school }
-            UZB = { tech_school = unciv_tech_school }
-            KYR = { tech_school = unciv_tech_school }
-            TAJ = { tech_school = unciv_tech_school }
-            TKM = { tech_school = unciv_tech_school }
+            KAZ = { tech_school = developing_tech_school }
+            UZB = { tech_school = developing_tech_school }
+            KYR = { tech_school = developing_tech_school }
+            TAJ = { tech_school = developing_tech_school }
+            TKM = { tech_school = developing_tech_school }
 
         }
 

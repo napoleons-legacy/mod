@@ -1,0 +1,76 @@
+CAN = {
+    value = -100
+}
+
+FRA = {
+    value = -150
+}
+
+CHL = {
+    value = 75
+}
+
+PEU = {
+    value = -200
+}
+
+PRG = {
+    value = -50
+}
+
+PBC = {
+    value = -100
+}
+
+REI = {
+    value = -100
+}
+
+BRZ = {
+    value = -100
+}
+
+USA = {
+    value = -50
+}
+
+
+army = {
+    name = "Ej�rcito de Buenos Aires"
+    location = 2348
+    regiment = {
+        name= "1. Divisi�n de Infanter�a"
+        type = infantry
+        home = 2348
+    }
+
+    regiment = {
+        name= "2. Divisi�n de Infanter�a"
+        type = infantry
+        home = 2348
+    }
+
+    regiment = {
+        name= "3. Divisi�n de Infanter�a"
+        type = infantry
+        home = 2348
+    }
+    regiment = {
+        name= "1. Divisi�n de Infanter�a"
+        type = infantry
+        home = 2379
+    }
+    regiment = {
+        name= "2. Divisi�n de Infanter�a"
+        type = infantry
+        home = 2379
+    }
+}
+
+leader = {
+   name = "Angel Pacheco"
+   type = land
+   date = 1836.1.1
+   background = aristocrat
+   personality = implacable
+}

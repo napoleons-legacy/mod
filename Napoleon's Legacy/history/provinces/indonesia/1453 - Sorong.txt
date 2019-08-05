@@ -1,6 +1,5 @@
-owner = NET
-controller = NET
+owner = MAL
+controller = MAL
 add_core = PPG
-trade_goods = fish
+trade_goods = grain
 life_rating = 31
-colonial = 2

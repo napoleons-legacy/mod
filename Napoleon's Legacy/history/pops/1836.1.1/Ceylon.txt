@@ -182,40 +182,46 @@
         size = 1900
     }
 
-    aristocrats = {
-        culture = british
-        religion = protestant
-        size = 25
-    }
-
-    bureaucrats = {
-        culture = british
-        religion = protestant
-        size = 50
-    }
-
-    clergymen = {
-        culture = british
-        religion = protestant
-        size = 50
-    }
-
     artisans = {
         culture = british
         religion = protestant
         size = 1100
     }
 
-    soldiers = {
-        culture = british
-        religion = protestant
-        size = 100
-    }
-
     farmers = {
         culture = british
         religion = protestant
         size = 675
+    }
+
+    aristocrats = {
+        culture = british
+        religion = protestant
+        size = 1150
+    }
+
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 550
+    }
+
+    officers = {
+        culture = british
+        religion = protestant
+        size = 500
+    }
+
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 175
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 3100
     }
 }
 #Jaffna (288000/72000 POPS)
@@ -278,6 +284,30 @@
         culture = tamil
         religion = hindu
         size = 21000
+    }
+
+    aristocrats = {
+        culture = british
+        religion = protestant
+        size = 1375
+    }
+
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 375
+    }
+
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 250
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 3000
     }
 }
 #Kandy (304000/76000 POPS)
@@ -474,6 +504,36 @@
         culture = mashriqi
         religion = sunni
         size = 2150
+    }
+
+    aristocrats = {
+        culture = british
+        religion = protestant
+        size = 550
+    }
+
+    officers = {
+        culture = british
+        religion = protestant
+        size = 400
+    }
+
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 500
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 2000
     }
 }
 #Maldives (24000/6000 POPS) #now independent

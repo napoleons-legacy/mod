@@ -775,7 +775,7 @@
     farmers = {
         culture = vietnamese
         religion = mahayana
-        size = 30925
+        size = 40925
     }
 
     slaves = {
@@ -787,7 +787,7 @@
     clergymen = {
         culture = vietnamese
         religion = catholic
-        size = 50
+        size = 100
     }
 
     artisans = {

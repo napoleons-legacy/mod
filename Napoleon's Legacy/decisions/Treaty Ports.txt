@@ -66,7 +66,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -101,7 +101,7 @@ political_decisions = {
             factor = 1
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -142,7 +142,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -197,7 +197,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -294,7 +294,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -349,7 +349,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -415,7 +415,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -460,7 +460,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -515,7 +515,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }
@@ -570,7 +570,7 @@ political_decisions = {
                 }
                 modifier = {
                     factor = 0
-                    OR = { tag = RUS tag = TSA }
+                    has_country_flag = russian_country
                     NOT = { owns = 1481 }
                     1481 = { owner = { civilized = no truce_with = THIS } }
                 }

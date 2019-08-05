@@ -4,7 +4,6 @@ political_decisions = {
         potential = {
             OR = {
                 tag = UKR
-                tag = BYE
                 tag = LSK
             }
             NOT = { has_country_flag = national_awakening }
@@ -22,26 +21,12 @@ political_decisions = {
                 limit = { owner = { tag = UKR } }
                 owner = {
                     any_country = {
-                        limit = { exists = no NOT = { primary_culture = ukrainian } accepted_culture = ukrainian }
-                        remove_accepted_culture = ukrainian
+                        limit = { exists = no NOT = { primary_culture = ruthenian } accepted_culture = ruthenian }
+                        remove_accepted_culture = ruthenian
                     }
                     any_country = {
-                        limit = { exists = yes NOT = { primary_culture = ukrainian } accepted_culture = ukrainian }
+                        limit = { exists = yes NOT = { primary_culture = ruthenian } accepted_culture = ruthenian }
                         country_event = { id = 443039 days = 5 }
-                    }
-                }
-            }
-
-            random_owned = {
-                limit = { owner = { tag = BYE } }
-                owner = {
-                    any_country = {
-                        limit = { exists = no NOT = { primary_culture = byelorussian } accepted_culture = byelorussian }
-                        remove_accepted_culture = byelorussian
-                    }
-                    any_country = {
-                        limit = { exists = yes NOT = { primary_culture = byelorussian } accepted_culture = byelorussian }
-                        country_event = { id = 443039 days = 10 }
                     }
                 }
             }

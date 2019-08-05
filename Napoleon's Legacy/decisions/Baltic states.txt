@@ -85,8 +85,7 @@ political_decisions = {
         picture = form_baltic_states
         potential = {
             NOT = {
-                tag = RUS
-                tag = TSA
+                has_country_flag = russian_country
                 tag = PLC
                 exists = UBD
                 is_culture_group = baltic
@@ -201,8 +200,7 @@ political_decisions = {
         picture = old_vilnius
         potential = {
             UBD = { exists = yes }
-            NOT = { tag = RUS }
-            NOT = { tag = TSA }
+            NOT = { has_country_flag = russian_country }
             OR = {
                 tag = UBD
                 is_our_vassal = UBD

@@ -35,6 +35,7 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = mahayana_country
+set_country_flag = exempt_from_vassal_contribution
 
 ruling_party = JAP_reactionary
 upper_house = {
@@ -58,8 +59,15 @@ finance_reform = yes_finance_reform
 flintlock_rifles = 1
 
 # Inventions
+small_arms_production = yes
+ammunition_production = yes
+
+# Inventions
 #bottling_process = yes
 modern_winemaking = yes
+big_sail_ships = yes
+sail_ships_transport = yes
+big_sail_support = yes
 
 # Starting Consciousness
 consciousness = 0

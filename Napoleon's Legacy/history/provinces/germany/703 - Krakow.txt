@@ -1,5 +1,7 @@
 owner = PLC
 controller = PLC
 add_core = PLC
+add_core = GLM
 trade_goods = coal
 life_rating = 40
+fort = 1

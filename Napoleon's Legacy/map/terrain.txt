@@ -158,10 +158,20 @@ categories =  {
     farmlands = {
         movement_cost = 1.0
         color = { 137 104 165 }
-        farm_rgo_size = 0.2
-        farm_rgo_eff = 0.00
+        farm_rgo_size = 0.0
+        farm_rgo_eff = 0.25
         mine_rgo_size = 0.0
         mine_rgo_eff = 0.0
+        supply_limit = 10
+    }
+
+    mining_district = {
+        movement_cost = 1.0
+        color = { 137 104 165 }
+        farm_rgo_size = 0.0
+        farm_rgo_eff = 0.0
+        mine_rgo_size = 0.0
+        mine_rgo_eff = 0.25
         supply_limit = 10
     }
 
@@ -276,7 +286,7 @@ categories =  {
         mine_rgo_size = -0.95
         mine_rgo_eff = 0.0
         min_build_railroad = 6
-        min_build_fort = 2
+        min_build_fort = 6
     }
 
     new_world_boreal = {

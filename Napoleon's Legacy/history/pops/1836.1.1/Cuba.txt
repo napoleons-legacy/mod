@@ -1,37 +1,7 @@
 #Cuba (936000)
-#Ruled by Spain in 1836
+#Independent in 1836
 #Havana (388000/97000 POPS)
 2209 = {
-    aristocrats = {
-        culture = spanish
-        religion = catholic
-        size = 350
-    }
-
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 300
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 325
-    }
-
-    artisans = {
-        culture = spanish
-        religion = catholic
-        size = 4325
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 200
-    }
-
     aristocrats = {
         culture = caribeno
         religion = catholic
@@ -89,13 +59,7 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 2500
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 38000
+        size = 40500
     }
 }
 #Jagua (252000/63000 POPS)
@@ -145,13 +109,7 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 11850
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 25000
+        size = 36850
     }
 }
 #Camaguey (168000/42000 POPS)
@@ -201,13 +159,7 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 2200
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 25000
+        size = 27200
     }
 }
 #Santiago de Cuba (128000/32000 POPS)
@@ -257,15 +209,8 @@
     farmers = {
         culture = afro_caribeno
         religion = catholic
-        size = 3300
+        size = 17300
     }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 14000
-    }
-
 }
 
 #Baker/Repulse Bay/ Echo Bay - Now Guantanamo Bay (5036/1259 POPS)

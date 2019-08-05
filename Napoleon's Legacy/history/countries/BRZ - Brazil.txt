@@ -37,6 +37,7 @@ citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
+set_country_flag = brazilian_country
 
 ruling_party = BRZ_conservative
 last_election = 1835.1.1
@@ -51,8 +52,6 @@ upper_house = {
 }
 
 set_country_flag = new_world_nation
-
-decision = BRZ_1836_setup
 
 # Technologies
 post_napoleonic_thought = 1

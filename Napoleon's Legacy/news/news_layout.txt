@@ -634,7 +634,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        tag = POR
+                        has_country_flag = portuguese_country
                         ruling_party_ideology = communist
                     }
                     and = {
@@ -642,7 +642,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            tag = POR
+                            has_country_flag = portuguese_country
                             ruling_party_ideology = communist
                         }
                     }
@@ -651,7 +651,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            tag = POR
+                            has_country_flag = portuguese_country
                             ruling_party_ideology = communist
                         }
                     }
@@ -664,14 +664,14 @@ style =
             trigger = {
                 or = {
                     and = {
-                        tag = POR
+                        has_country_flag = portuguese_country
                     }
                     and = {
                         civilized = no
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            tag = POR
+                            has_country_flag = portuguese_country
                         }
                     }
                     and = {
@@ -679,7 +679,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            tag = POR
+                            has_country_flag = portuguese_country
                         }
                     }
                 }
@@ -1018,7 +1018,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        tag = BRZ
+                        has_country_flag = brazilian_country
                         ruling_party_ideology = communist
                     }
                     and = {
@@ -1026,7 +1026,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            tag = BRZ
+                            has_country_flag = brazilian_country
                             ruling_party_ideology = communist
                         }
                     }
@@ -1035,7 +1035,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            tag = BRZ
+                            has_country_flag = brazilian_country
                             ruling_party_ideology = communist
                         }
                     }
@@ -1048,7 +1048,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        tag = BRZ
+                        has_country_flag = brazilian_country
                         ruling_party_ideology = fascist
                     }
                     and = {
@@ -1056,7 +1056,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            tag = BRZ
+                            has_country_flag = brazilian_country
                             ruling_party_ideology = fascist
                         }
                     }
@@ -1065,7 +1065,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            tag = BRZ
+                            has_country_flag = brazilian_country
                             ruling_party_ideology = fascist
                         }
                     }
@@ -1078,7 +1078,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        tag = BRZ
+                        has_country_flag = brazilian_country
                         ruling_party_ideology = reactionary
                     }
                     and = {
@@ -1086,7 +1086,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            tag = BRZ
+                            has_country_flag = brazilian_country
                             ruling_party_ideology = reactionary
                         }
                     }
@@ -1095,7 +1095,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            tag = BRZ
+                            has_country_flag = brazilian_countryry_flag = brazilian_country
                             ruling_party_ideology = reactionary
                         }
                     }
@@ -1108,14 +1108,14 @@ style =
             trigger = {
                 or = {
                     and = {
-                        tag = BRZ
+                        has_country_flag = brazilian_country
                     }
                     and = {
                         civilized = no
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            tag = BRZ
+                            has_country_flag = brazilian_country
                         }
                     }
                     and = {
@@ -1123,7 +1123,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            tag = BRZ
+                            has_country_flag = brazilian_country
                         }
                     }
                 }

@@ -6,10 +6,10 @@ country_event = {
     picture = "Monarchy"
     is_triggered_only = yes
 
-    #on ILY's terms
+    #on SYC's terms
     option = {
         name = "EVTOPTA600027"
-        ILY = { country_event = 600028 }
+        SYC = { country_event = 600028 }
 
         ai_chance = {
             factor = 30
@@ -19,7 +19,7 @@ country_event = {
     #On SPA's terms
     option = {
         name = "EVTOPTB600027"
-        ILY = { country_event = 600029 }
+        SYC = { country_event = 600029 }
         prestige = 5
 
         ai_chance = {
@@ -30,9 +30,9 @@ country_event = {
     #No deal
     option = {
         name = "EVTOPTC600027"
-        ILY = { country_event = 600030 }
+        SYC = { country_event = 600030 }
 
-        set_country_flag = cuba_unlocked
+        set_country_flag = peru_unlocked
 
         ai_chance = {
             factor = 10
@@ -40,7 +40,7 @@ country_event = {
     }
 }
 
-#On ILY's terms
+#On SYC's terms
 country_event = {
     id = 600028
     title = "EVTNAME600028"
@@ -48,7 +48,7 @@ country_event = {
     picture = "Monarchy"
     is_triggered_only = yes
 
-    #on ILY's terms
+    #on SYC's terms
     option = {
         name = "EVTOPTA600028"
         prestige = 10
@@ -61,11 +61,11 @@ country_event = {
         relation = { who = FRA value = -100 }
         relation = { who = SIC value = -100 }
 
-        ILY = {
-            all_core = { remove_core = ILY }
+        SYC = {
+            all_core = { remove_core = SYC }
         }
 
-        ILY = { inherit = SPA }
+        SYC = { inherit = SPA }
         change_tag = SPA
     }
 }
@@ -95,11 +95,11 @@ country_event = {
         relation = { who = FRA value = -100 }
         relation = { who = SIC value = -100 }
 
-        ILY = {
-            all_core = { remove_core = ILY }
+        SYC = {
+            all_core = { remove_core = SYC }
         }
 
-        ILY = { inherit = SPA }
+        SYC = { inherit = SPA }
         change_tag = SPA
         SPA = { country_event = 600032 }
 
@@ -119,7 +119,7 @@ country_event = {
     }
 }
 
-#No Deal for ILY
+#No Deal for SYC
 country_event = {
     id = 600030
     title = "EVTNAME600030"
@@ -142,7 +142,7 @@ country_event = {
 
     option = {
         name = "EVTOPTA600031"
-        set_country_flag = cuba_unlocked
+        set_country_flag = peru_unlocked
     }
 }
 
@@ -169,12 +169,23 @@ country_event = {
 
     option = {
         name = "EVTOPTA600033"
-        NSA = {
-            any_owned = {
-                limit = { owned_by = THIS }
+        SPA = {
+            all_core = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            is_core = PEU
+                            is_core = CAT
+                        }
+                    }
+                }
+
                 add_core = NSA
-                remove_core = CUB
             }
+        }
+
+        SPA_498 = {
+            add_core = FRA
         }
     }
 }
@@ -260,9 +271,9 @@ country_event = {
 
 # NSA Revolts against France
 country_event = {
-    id = 37241
-    title = "EVTNAME37241"
-    desc = "EVTDESC37241"
+    id = 600037
+    title = "EVTNAME600037"
+    desc = "EVTDESC600037"
     picture = "Monarchy"
 
     trigger = {
@@ -279,18 +290,18 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen =  {
-        months = 5
+        months = 1
     }
 
     option = {
-        name = "EVTOPTA37241"
+        name = "EVTOPTA600037"
         FRA = { release_vassal = NSA }
         relation = {
             who = FRA
             value = -150
         }
 
-        FRA = { country_event = 37242 }
+        FRA = { country_event = 7880767 }
         ai_chance = {
             factor = 100
             modifier = {
@@ -304,7 +315,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB37241"
+        name = "EVTOPTB600037"
         prestige = -5
         ai_chance = {
             factor = 0
@@ -315,16 +326,16 @@ country_event = {
 # France responds
 country_event = {
 
-    id = 37242
+    id = 7880767
 
     is_triggered_only = yes
 
-    title = "EVTNAME37242"
-    desc = "EVTDESC37242"
+    title = "EVTNAME7880767"
+    desc = "EVTDESC7880767"
     picture = "Riot"
 
     option = {
-        name = "EVTOPTA37242"
+        name = "EVT7880767OPTA"
         casus_belli = {
             target = FROM
             type = make_puppet
@@ -332,7 +343,7 @@ country_event = {
         }
 
         war = {
-            target = FROM
+            target = NSA
             attacker_goal = {
                 casus_belli = make_puppet
             }
@@ -343,7 +354,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB37242"
+        name = "EVT7880767OPTB"
         prestige = -15
     }
 }

@@ -1,9 +1,8 @@
 #########################################################
-#                                                       #
-#               South American Events                   #
-#                                                       #
+#                                                        #
+#                  South American Events                    #
+#                                                        #
 #########################################################
-
 
 country_event = {
     id = 97070
@@ -199,9 +198,13 @@ country_event = {
 
     option = {
         name = "EVTOPT97076A" #We will settle the Amazon.
-        prestige = 5
+        prestige = 16
         treasury = -25000
-        2549 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+        2549 = {
+            secede_province = THIS
+            any_pop = { literacy = -0.99 }
+            life_rating = 6
+        }
         ai_chance = {
             factor = 90
         }
@@ -215,31 +218,177 @@ country_event = {
             factor = 10
             modifier = {
                 factor = 0
-                tag = BRZ
+                has_country_flag = brazilian_country
             }
         }
     }
 }
 
+#Chile-Bolivia Treaty of Peace and Friendship
 country_event = {
-    id = 97051
-    title = "EVTNAME97051" #Renaming Sucre
-    desc = "EVTDESC97051"
-    picture = "sucre"
+    id = 46610102
+    title = "EVTNAME46610102"
+    desc = "EVTDESC46610102"
+    picture = "chile_peru_bolivia_treaty"
 
-    fire_only_once = yes
-
-    trigger = {
-        tag = BOL
-        is_vassal = no
-        year = 1838
-        owns = 2313
-        }
-
-    mean_time_to_happen = { days = 5 }
+    is_triggered_only = yes
 
     option = {
-        name = "EVT970501PTA"
-        2313 = { change_province_name = "Sucre" }
+        name = "EVT46610102OPTA" #We agree
+        badboy = -2
+        treasury = 30000
+        FROM = {
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { money = 60000 }
+                        NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                    }
+                }
+                owner = { set_variable = { which = owed_cash_money value = 60 } }
+            }
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { money = 60000 }
+                        check_variable = { which = owed_cash_money value = 9 }
+                    }
+                }
+                owner = { change_variable = { which = owed_cash_money value = 60 } }
+            }
+            random_owned = {
+                limit = { owner = { money = 60000 } }
+                owner = { treasury = -60000 }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    has_country_flag = treaty_of_peace_and_friendship_bolivia
+                    OR = {
+                        tag = PBC
+                        tag = BOL
+                    }
+                }
+            }
+            2309 = { remove_core = THIS remove_core = BOL }
+            2305 = { remove_core = THIS remove_core = BOL }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    has_country_flag = treaty_of_peace_and_friendship_bolivia
+                    tag = CHL
+                }
+            }
+            2309 = { remove_core = THIS }
+            2305 = { remove_core = THIS }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    has_country_flag = treaty_of_lima_1929
+                    OR = {
+                        tag = PBC
+                        tag = PEU
+                    }
+                }
+            }
+            2308 = { remove_core = THIS remove_core = PEU }
+            2307 = { remove_core = THIS remove_core = PEU }
+        }
+
+        random_owned = {
+            limit = {
+                owner = {
+                    has_country_flag = treaty_of_lima_1929
+                    tag = CHL
+                }
+            }
+            2308 = { remove_core = THIS }
+            2307 = { remove_core = THIS }
+            2578 = { remove_core = THIS }
+        }
+
+        any_owned = { limit = { NOT = { is_core = THIS } } secede_province = FROM }
+        FROM = { any_owned = { limit = { NOT = { is_core = FROM } } secede_province = THIS } }
+        relation = { who = FROM value = 200 }
+
+        ai_chance = {
+            factor = 90
+            modifier = {
+                factor = 0.8
+                war_policy = jingoism
+            }
+            modifier = {
+                factor = 0.8
+                FROM = { brigades_compare = 2 }
+            }
+            modifier = {
+                factor = 1.25
+                any_owned_province = { is_core = FROM }
+            }
         }
     }
+
+    option = {
+        name = "EVT46610102OPTB" #No
+        badboy = 1
+        relation = { who = FROM value = -200 }
+        ai_chance = {
+            factor = 10
+        }
+    }
+}
+
+#Tacna/Arica Compromise
+country_event = {
+    id = 46610103
+    title = "EVTNAME46610103"
+    desc = "EVTDESC46610103"
+    picture = "chile_peru_bolivia_treaty"
+
+    is_triggered_only = yes
+
+    immediate = { CHL = { random_owned = { limit = { province_id = 2578 } secede_province = THIS } } }
+
+    option = {
+        name = "EVT46610103OPTA" #The territory is Peru's
+        prestige = 2
+        2578 = { secede_province = PEU remove_core = CHL }
+        relation = { who = CHL value = -25 }
+        relation = { who = PEU value = 50 }
+        ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 0.5
+                relation = { who = CHL value = 150 }
+            }
+            modifier = {
+                factor = 0.5
+                PEU = { NOT = { in_sphere = THIS } }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT46610103OPTB" #The territory is Chile's
+        prestige = 2
+        2578 = { secede_province = CHL remove_core = PEU }
+        relation = { who = PEU value = -25 }
+        relation = { who = CHL value = 50 }
+        ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 0.5
+                relation = { who = PEU value = 150 }
+            }
+            modifier = {
+                factor = 0.5
+                PEU = { NOT = { in_sphere = THIS } }
+            }
+        }
+    }
+}

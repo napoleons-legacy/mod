@@ -1,0 +1,38 @@
+political_decisions = {
+
+    seize_louisiana = {
+        picture = manifest_destiny
+        potential = {
+            tag = MEX
+            USA = { has_country_flag = hasmanifestdestiny }
+            NOT = {
+                has_country_flag = treaty_of_guadalupe_hidalgo
+                has_country_flag = manifest_destiny_refuted
+                has_country_flag = louisiana_seized
+            }
+
+            war_with = USA
+        }
+
+        allow = {
+            war_with = USA
+            controls = 139
+            controls = 140
+            controls = 143
+            controls = 146
+        }
+
+        effect = {
+            set_country_flag = louisiana_seized
+            badboy = 12
+
+            LOU = { all_core = { add_core = MEX } }
+            COL = { all_core = { limit = { is_core = USA } add_core = MEX } }
+            USA = { country_event = 7880761 }
+        }
+
+        ai_will_do = {
+            factor = 0.65
+        }
+    }
+}

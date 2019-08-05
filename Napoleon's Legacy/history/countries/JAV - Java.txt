@@ -44,6 +44,11 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 
 foreign_weapons = yes_foreign_weapons
+# Technologies
 flintlock_rifles = 1
+
+# Inventions
+small_arms_production = yes
+ammunition_production = yes
 
 set_country_flag = sunni_country

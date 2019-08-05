@@ -503,6 +503,7 @@ province_event = {
             is_greater_power = yes
         }
         is_colonial = yes
+        is_overseas = yes
         NOT = {
             life_rating = 25
             has_global_flag = botanical_expedition_in_progress
@@ -1076,12 +1077,12 @@ country_event = {
         }
         add_country_modifier = {
             name = the_statue_of_liberty
-            duration = -1
+            duration = 3650
         }
         706 = {
             add_province_modifier = {
-                name = gateway_to_america
-                duration = -1
+                name = gateway_to_poland
+                duration = 1825
             }
         }
     }
@@ -1254,7 +1255,7 @@ country_event = {
                 badboy = 0.88
                 war_exhaustion = 10
                 war_policy = pacifism
-                has_country_modifier = neutrality
+                has_country_modifier = neutrality_modifier
                 has_country_flag = in_great_war
                 has_country_modifier = no_more_war
                 any_owned_province = { is_core = THIS }
@@ -1264,7 +1265,7 @@ country_event = {
             badboy = 0.92
             war_exhaustion = 10
             war_policy = pacifism
-            has_country_modifier = neutrality
+            has_country_modifier = neutrality_modifier
             has_country_flag = in_great_war
             has_country_modifier = no_more_war
         }
@@ -1527,6 +1528,14 @@ country_event = {
                 political_reform = state_press
                 political_reform = state_controlled
                 political_reform = underground_parties
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
 
                 add_country_modifier = {
                     name = national_confusion
@@ -1558,6 +1567,15 @@ country_event = {
                 social_reform = good_health_care
                 nationalize = yes
 
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
+
                 add_country_modifier = {
                     name = national_confusion
                     duration = 365
@@ -1587,6 +1605,15 @@ country_event = {
                 social_reform = no_subsidies
                 social_reform = no_pensions
                 social_reform = no_health_care
+
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
 
                 add_country_modifier = {
                     name = national_confusion
@@ -1716,6 +1743,15 @@ country_event = {
                 political_reform = appointed
                 political_reform = underground_parties
 
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
+
                 add_country_modifier = {
                     name = national_confusion
                     duration = 365
@@ -1738,6 +1774,15 @@ country_event = {
                 political_reform = no_meeting
                 political_reform = state_press
                 political_reform = underground_parties
+
+                clr_country_flag = election_started
+                clr_country_flag = conservative_party_in_power
+                clr_country_flag = liberal_party_in_power
+                clr_country_flag = reactionary_party_in_power
+                clr_country_flag = socialist_party_in_power
+                clr_country_flag = communist_party_in_power
+                clr_country_flag = fascist_party_in_power
+                clr_country_flag = anarcho_liberal_party_in_power
 
                 add_country_modifier = {
                     name = national_confusion
@@ -1793,7 +1838,7 @@ country_event = {
     picture = "deliberation"
 
     trigger = {
-        has_country_modifier = neutrality
+        has_country_modifier = neutrality_modifier
         NOT = {
             badboy = 1
             is_greater_power = yes
@@ -1826,7 +1871,7 @@ country_event = {
         name = "EVT81002212OPTB"
         set_country_flag = abandoned_neutrality
         prestige = -20
-        remove_country_modifier = neutrality
+        remove_country_modifier = neutrality_modifier
         ai_chance = {
             factor = 0
         }
@@ -2024,10 +2069,10 @@ country_event = {
             remove_country_modifier = western_presence
             remove_country_modifier = rangaku
             remove_country_modifier = sakoku
-            remove_country_modifier = isolationist_foreign_naval_officers
-            remove_country_modifier = isolationist_foreign_naval_schools
-            remove_country_modifier = isolationist_foreign_officers
-            remove_country_modifier = isolationist_foreign_training
+            clr_country_flag = using_foreign_weapons
+            clr_country_flag = using_foreign_artillery
+            clr_country_flag = using_foreign_ships
+            clr_country_flag = using_foreign_shipyards
             any_owned = {
                 remove_province_modifier = western_presence
                 remove_province_modifier = foreign_smugglers
@@ -2126,7 +2171,7 @@ country_event = {
             limit = {
                 is_greater_power = yes
                 capital_scope = { continent = europe }
-                NOT = { tag = TUR tag = RUS tag = TSA }
+                NOT = { tag = TUR has_country_flag = russian_country }
                 }
             casus_belli = { target = THIS type = cut_down_to_size months = 36 }
         }
@@ -2168,8 +2213,7 @@ country_event = {
                     }
                     tag = SWE
                     tag = NOR
-                    tag = RUS
-                    tag = TSA
+                    has_country_flag = russian_country
                 }
             }
             relation = { who = THIS value = 50 }
@@ -2181,7 +2225,7 @@ country_event = {
     option = {
         name = "EVTOPTB810003" #We will NOT abolish the sound dues
         badboy = 3
-        prestige = 40
+        prestige = 10
         set_global_flag = sound_dues_resisted
         FROM = { country_event = { id = 810007 days = 7 } }
 
@@ -2214,13 +2258,32 @@ country_event = {
 
     option = {
         name = "EVTOPTA810004" #We will pay our part
-        prestige = 30
-        diplomatic_influence = { who = FROM value = 50 }
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -100000 } }
+        prestige = 2
+
         random_owned = {
-            limit = { owner = { ai = yes } }
+            limit = {
+                owner = {
+                    NOT = { money = 100000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 100 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 100000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 100 } }
         }
+        random_owned = {
+            limit = { owner = { money = 100000 } }
+            owner = { treasury = -100000 }
+        }
+
+        diplomatic_influence = { who = FROM value = 50 }
 
         random_country = {
             limit = {
@@ -2233,10 +2296,7 @@ country_event = {
         random_country = {
             limit = {
                 NOT = { tag = THIS }
-                OR = {
-                    tag = RUS
-                    tag = TSA
-                }
+                has_country_flag = russian_country
             }
             country_event = { id = 810005 days = 7 }
         }
@@ -2244,8 +2304,7 @@ country_event = {
             limit = {
                 owner = {
                     OR = {
-                        tag = RUS
-                        tag = TSA
+                        has_country_flag = russian_country
                         tag = BRI
                     }
                 }
@@ -2255,8 +2314,7 @@ country_event = {
                         NOT = { tag = THIS }
                         capital_scope = { continent = europe }
                         is_greater_power = yes
-                        NOT = { tag = RUS }
-                        NOT = { tag = TSA }
+                        NOT = { has_country_flag = russian_country }
                         NOT = { tag = TUR }
                         NOT = { tag = BRI }
                         NOT = { owns = 372 }
@@ -2275,18 +2333,35 @@ country_event = {
 
     option = {
         name = "EVTOPTB810004" #We will pay everything
-        prestige = 100
+        prestige = 5
         diplomatic_influence = { who = FROM value = 200 }
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -300000 } }
         random_owned = {
-            limit = { owner = { ai = yes } }
+            limit = {
+                owner = {
+                    NOT = { money = 300000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 300 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 300000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 300 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 300000 } }
+            owner = { treasury = -300000 }
         }
         ai_chance = {
             factor = 30
             modifier = {
                 factor = 0
-                NOT = { money = 200000 }
+                NOT = { money = 300000 }
             }
         }
     }
@@ -2303,29 +2378,36 @@ country_event = {
 
     option = {
         name = "EVTOPTA810005" #We will pay our part
-        prestige = 30
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -100000 } }
+        prestige = 2
         random_owned = {
-            limit = { owner = { ai = yes } }
+            limit = {
+                owner = {
+                    NOT = { money = 100000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 100 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 100000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 100 } }
         }
+        random_owned = {
+            limit = { owner = { money = 100000 } }
+            owner = { treasury = -100000 }
+        }
+
         random_list = {
             50 = { FROM = { country_event = { id = 810008 days = 7 } } }
             50 = { FROM = { country_event = { id = 810008 days = 8 } } }
         }
 
         ai_chance = { factor = 90 }
-    }
-
-    option = {
-        name = "EVTOPTB810005" #We will pay in installments
-        prestige = 20
-        set_variable = { which = owed_cash_money value = 100 }
-        random_list = {
-            50 = { FROM = { country_event = { id = 810008 days = 7 } } }
-            50 = { FROM = { country_event = { id = 810008 days = 8 } } }
-        }
-        ai_chance = { factor = 0 }
     }
 
     option = {
@@ -2340,8 +2422,7 @@ country_event = {
             modifier = {
                 factor = 0
                 OR = {
-                    tag = RUS
-                    tag = TSA
+                    has_country_flag = russian_country
                     tag = BRI
                 }
             }
@@ -2360,29 +2441,31 @@ country_event = {
 
     option = {
         name = "EVTOPTA810006" #We will pay their part
-        prestige = 30
-        casus_belli = { target = FROM type = war_reparations months = 48 } relation = { who = FROM value = -150 }
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -100000 } }
-        random_owned = {
-            limit = { owner = { ai = yes } }
-            owner = { change_variable = { which = owed_cash_money value = 100 } }
-        }
-        ai_chance = { factor = 100 }
-    }
-
-    option = {
-        name = "EVTOPTB810006" #We will pay their part in installments
-        prestige = 20
+        prestige = 3
         casus_belli = { target = FROM type = war_reparations months = 48 } relation = { who = FROM value = -150 }
         random_owned = {
-            limit = { owner = { NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            limit = {
+                owner = {
+                    NOT = { money = 100000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
             owner = { set_variable = { which = owed_cash_money value = 100 } }
         }
         random_owned = {
-            limit = { owner = { check_variable = { which = owed_cash_money value = 9 } } }
+            limit = {
+                owner = {
+                    NOT = { money = 100000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 100 } }
         }
-        ai_chance = { factor = 0 }
+        random_owned = {
+            limit = { owner = { money = 100000 } }
+            owner = { treasury = -100000 }
+        }
+        ai_chance = { factor = 100 }
     }
 
     option = {
@@ -2404,7 +2487,7 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = "EVTOPTA810007" #We will pay their part
+        name = "EVTOPTA810007"
         relation = { who = FROM value = -300 }
         diplomatic_influence = { who = FROM value = -300 }
         casus_belli = { target = FROM type = cut_down_to_size months = 36 }
@@ -2420,8 +2503,7 @@ country_event = {
                     }
                     tag = SWE
                     tag = NOR
-                    tag = RUS
-                    tag = TSA
+                    has_country_flag = russian_country
                     AND = {
                         primary_culture = north_german
                         is_greater_power = yes

@@ -1,7 +1,7 @@
 owner = BRI
 controller = BRI
-add_core = CAN
 add_core = BRI
+add_core = CAN
 trade_goods = grain
 life_rating = 35
 fort = 1

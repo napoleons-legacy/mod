@@ -32,6 +32,9 @@ debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
+border_policy = open_borders
+
+set_country_flag = theravada_country
 
 ruling_party = CAM_conservative
 upper_house = {
@@ -44,10 +47,21 @@ upper_house = {
     communist = 0
 }
 
+govt_flag = {
+    government = absolute_monarchy
+    flag = theocracy
+}
 
 # Technologies
 
 # Inventions
+#bottling_process = yes
+modern_winemaking = yes
+small_arms_production = yes
+ammunition_production = yes
+big_sail_ships = yes
+sail_ships_transport = yes
+big_sail_support = yes
 
 # Starting Consciousness
 consciousness = 0

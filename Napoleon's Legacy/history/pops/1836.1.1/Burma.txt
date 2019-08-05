@@ -1095,12 +1095,6 @@
         religion = theravada
         size = 5075
     }
-
-    bureaucrats = {
-        culture = british
-        religion = protestant
-        size = 25
-    }
 }
 #Mergui (332000/83000 POPS)
 1344 = {
@@ -1211,12 +1205,6 @@
 #Under rule of Britain 1836
 #Sittwe (176000/44000 POPS)
 1345 = {
-    bureaucrats = {
-        culture = british
-        religion = protestant
-        size = 10
-    }
-
     aristocrats = {
         culture = burmese
         religion = sunni

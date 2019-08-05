@@ -714,7 +714,7 @@ darwinism = {
         }
     }
     effect = {
-        education_efficiency = 0.50
+        education_efficiency = 0.3
     }
 }
 social_darwinism = {
@@ -735,9 +735,8 @@ social_darwinism = {
         war_exhaustion = -0.05
     }
 }
-#social_science
 sociology = {
-    limit = { social_science = 1 }
+    limit = { biologism = 1 }
     news = no
     chance = {
         base = 2
@@ -752,24 +751,8 @@ sociology = {
     }
     core_pop_consciousness_modifier = 0.01
 }
-social_psychology = {
-    limit = { social_science = 1 }
-    news = no
-    chance = {
-        base = 2
-        modifier = {
-            factor = 2
-            experimental_psychology = 1
-        }
-        modifier = {
-            factor = 2
-            behaviorism = 1
-        }
-    }
-    core_pop_consciousness_modifier = 0.01
-}
 political_science = {
-    limit = { social_science = 1 }
+    limit = { biologism = 1 }
     news = no
     chance = {
         base = 2
@@ -784,6 +767,23 @@ political_science = {
         modifier = {
             factor = 1
             naval_directionism = 1
+        }
+    }
+    core_pop_consciousness_modifier = 0.01
+}
+#social_science
+social_psychology = {
+    limit = { social_science = 1 }
+    news = no
+    chance = {
+        base = 2
+        modifier = {
+            factor = 2
+            experimental_psychology = 1
+        }
+        modifier = {
+            factor = 2
+            behaviorism = 1
         }
     }
     core_pop_consciousness_modifier = 0.01
@@ -1765,9 +1765,9 @@ the_police_state = {
         suppression_points_modifier = 0.25
     }
 }
-#behaviorism
+#psychoanalysis
 mass_advertising = {
-    limit = { behaviorism = 1 }
+    limit = { psychoanalysis = 1 }
     news = no
     chance = {
         base = 2
@@ -1791,7 +1791,7 @@ mass_advertising = {
     core_pop_consciousness_modifier = 0.01
 }
 national_radio_networks = {
-    limit = { behaviorism = 1 }
+    limit = { psychoanalysis = 1 }
     news = no
     chance = {
         base = 3
@@ -1815,7 +1815,7 @@ national_radio_networks = {
     core_pop_consciousness_modifier = 0.01
 }
 the_talkies = {
-    limit = { behaviorism = 1 }
+    limit = { psychoanalysis = 1 }
     news = no
     chance = {
         base = 2

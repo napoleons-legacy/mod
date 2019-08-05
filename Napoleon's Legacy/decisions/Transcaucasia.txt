@@ -105,8 +105,7 @@ political_decisions = {
                 tag = GEO
                 tag = AZB
                 tag = ARM
-                tag = RUS
-                tag = TSA
+                has_country_flag = russian_country
             }
             NOT = { exists = TCA }
             NOT = { has_global_flag = transcaucasia_formed }
@@ -570,10 +569,10 @@ political_decisions = {
         potential = {
             is_greater_power = yes
             exists = CIR
+            NOT = { year = 1840 }
             NOT = {
                 has_country_flag = recognize_circassia
-                tag = RUS
-                tag = TSA
+                has_country_flag = russian_country
                 tag = CIR
                 CIR = { part_of_sphere = yes civilized = no }
             }
@@ -630,10 +629,10 @@ political_decisions = {
         potential = {
             is_greater_power = yes
             exists = CHY
+            NOT = { year = 1840 }
             NOT = {
                 has_country_flag = recognize_chechenya
-                tag = RUS
-                tag = TSA
+                has_country_flag = russian_country
                 tag = CHY
                 CHY = { part_of_sphere = yes civilized = no }
             }
@@ -690,10 +689,10 @@ political_decisions = {
         potential = {
             is_greater_power = yes
             exists = DAG
+            NOT = { year = 1840 }
             NOT = {
                 has_country_flag = recognize_dagestan
-                tag = RUS
-                tag = TSA
+                has_country_flag = russian_country
                 tag = DAG
                 DAG = { part_of_sphere = yes civilized = no }
             }

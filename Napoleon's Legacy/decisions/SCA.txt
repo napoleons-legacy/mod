@@ -1,7 +1,7 @@
 political_decisions = {
 
     abandon_the_finnish = {
-        picture = old_finnish_map
+        picture = map_finland
         potential = {
             NOT = { tag = SCA }
             accepted_culture = finnish
@@ -25,7 +25,7 @@ political_decisions = {
     }
 
     claim_finland = {
-        picture = old_finnish_map
+        picture = map_finland
         potential = {
             tag = SCA
             343 = { NOT = { is_core = THIS } }
@@ -81,11 +81,11 @@ political_decisions = {
                     is_primary_culture = no
                     is_accepted_culture = no
                 }
-            consciousness = 3
+                consciousness = 3
             }
         }
 
-        ai_will_do = { factor = 1     }
+        ai_will_do = { factor = 1 }
     }
 
     move_capital_to_gothenburg = {

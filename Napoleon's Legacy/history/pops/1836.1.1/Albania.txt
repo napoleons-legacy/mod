@@ -44,6 +44,14 @@
         religion = orthodox
         size = 4065
     }
+
+    ######Jews
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+    ########
 }
 850 = {
     aristocrats = {

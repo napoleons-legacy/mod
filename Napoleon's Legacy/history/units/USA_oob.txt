@@ -73,37 +73,13 @@ PRG = {
     influence_value = 0
 }
 
-CRT = {
-    value = -200        #relation
-    level = 0        #3=cordial, 4 = friendly, 5 sphere
-    influence_value = 0
-}
-
 LOS = {
     value = -200        #relation
     level = 0        #3=cordial, 4 = friendly, 5 sphere
     influence_value = 0
 }
 
-SBA = {
-    value = -200        #relation
-    level = 0        #3=cordial, 4 = friendly, 5 sphere
-    influence_value = 0
-}
-
-ENT = {
-    value = -200        #relation
-    level = 0        #3=cordial, 4 = friendly, 5 sphere
-    influence_value = 0
-}
-
-RGS = {
-    value = -200        #relation
-    level = 0        #3=cordial, 4 = friendly, 5 sphere
-    influence_value = 0
-}
-
-ARC = {
+LPL = {
     value = -50        #relation
     level = 1        #3=cordial, 4 = friendly, 5 sphere
     influence_value = 0
@@ -142,18 +118,6 @@ DEN = {
 
 QNG ={
     value = -10
-    level = 0
-    influence_value = 0
-}
-
-BAH ={
-    value = -25
-    level = 0
-    influence_value = 0
-}
-
-PNB ={
-    value = -25
     level = 0
     influence_value = 0
 }
@@ -255,13 +219,13 @@ army = {
     regiment = {
         name= "1st Cavalry Regiment"
         type = dragoon
-        home = 223
+        home = 204
     }
 
     regiment = {
         name= "2nd Cavalry Regiment"
         type = dragoon
-        home = 241
+        home = 2555
     }
 
     regiment = {

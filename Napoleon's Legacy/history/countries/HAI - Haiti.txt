@@ -4,7 +4,7 @@ culture = afro_caribeno
 religion = catholic
 government = presidential_dictatorship
 plurality = 10
-nationalvalue = nv_autocracy
+nationalvalue = nv_equality
 literacy = 0.02
 non_state_culture_literacy = 0.05
 civilized = yes
@@ -52,13 +52,16 @@ upper_house = {
     communist = 0
 }
 
-schools = unciv_tech_school
+schools = developing_tech_school
 
 # Technologies
 
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
+big_sail_ships = yes
+sail_ships_transport = yes
+big_sail_support = yes
 
 #Starting Consciousness
 consciousness = 2
