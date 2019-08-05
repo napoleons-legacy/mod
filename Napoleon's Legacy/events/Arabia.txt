@@ -898,68 +898,207 @@ country_event = {
     }
 }
 
-#CBs to finish taking Yemen
+#Kuwait asks for protection
 country_event = {
-    id = 98727
-    title = "EVTNAME98725"
-    desc = "EVTDESC98725"
-    picture = "wahhabism"
+
+    id = 96122
+    title = "EVTNAME96122"
+    desc = "EVTDESC96122"
+    picture = "arab_revolt"
 
     trigger = {
-        has_country_flag = claimed_yemen
-        ai = yes
         war = no
-        any_neighbor_country = {
-            OR = {
-                tag = FDL
-                tag = LHJ
-                tag = KTH
-                tag = MHR
-            }
+        tag = KWT
         exists = yes
-        }
-            NOT = { casus_belli = FDL }
-            NOT = { casus_belli = LHJ }
-            NOT = { casus_belli = KTH }
-            NOT = { casus_belli = MHR }
-            NOT = { truce_with = FDL }
-            NOT = { truce_with = LHJ }
-            NOT = { truce_with = KTH }
-            NOT = { truce_with = MHR }
-            NOT = { year = 1900 }
-    }
-
-    mean_time_to_happen = { days = 30 }
-
-    option = {
-        name = "EVT98725OPTA"
-            diplomatic_influence = { who = LHJ value = -400 }
-            diplomatic_influence = { who = FDL value = -400 }
-            diplomatic_influence = { who = KTH value = -400 }
-            diplomatic_influence = { who = MHR value = -400 }
-            diplomatic_influence = { who = YEM value = -400 }
-            diplomatic_influence = { who = NYE value = -400 }
-        any_country = {
-            limit = {
-            exists = yes
-            OR = {
-                tag = FDL
-                tag = LHJ
-                tag = KTH
-                tag = MHR
+        year = 1880
+        has_global_flag = berlin_conference
+        OR = {
+            overlord = {
+                OR = {
+                    tag = TUR
+                    tag = EGY
+                }
+                OR = {
+                    relation = { who = RUS value = 25 }
+                    alliance_with = RUS
+                    in_sphere = RUS
+                    RUS = { owns = 1096 }
+                    RUS = { owns = 1121 }
+                }
             }
-        }
-        relation = { who = THIS value = -400 }
-        add_casus_belli = {
-                target = THIS
-                type = establish_protectorate_BC_casus_belli
-                months = 100
-            }
-        add_casus_belli = {
-                target = THIS
-                type = establish_protectorate_NI_casus_belli
-                months = 100
+            any_neighbor_country = {
+                owns = 932
+                owns = 926
+                OR = {
+                    tag = TUR
+                    tag = EGY
+                }
+                OR = {
+                    relation = { who = RUS value = 25 }
+                    alliance_with = RUS
+                    in_sphere = RUS
+                    RUS = { owns = 1096 }
+                    RUS = { owns = 1121 }
                 }
             }
         }
+        any_greater_power = {
+            NOT = { has_country_flag = russian_country }
+            owns = 1251
+        }
     }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 40
+        modifier = {
+            factor = 0.1
+            any_neighbor_country = {
+                OR = {
+                    tag = TUR
+                    tag = EGY
+                }
+                in_sphere = RUS
+            }
+        }
+        modifier = {
+            factor = 0.5
+            any_neighbor_country = {
+                OR = {
+                    tag = TUR
+                    tag = EGY
+                }
+                relation = { who = RUS value = 100 }
+            }
+        }
+        modifier = {
+            factor = 0.5
+            any_neighbor_country = {
+                OR = {
+                    tag = TUR
+                    tag = EGY
+                }
+                alliance_with = RUS
+            }
+        }
+        modifier = {
+            factor = 0.5
+            year = 1885
+        }
+        modifier = {
+            factor = 4
+            1163 = { owner = { civilized = no } }
+        }
+        modifier = {
+            factor = 0.25
+            year = 1888
+        }
+    }
+
+    option = {
+        name = "EVT96122OPTA" #Ask the british/GPs to protect us
+        random_country = {
+            limit = {
+                NOT = { has_country_flag = russian_country }
+                is_greater_power = yes
+                owns = 1251
+            }
+            country_event = 96123
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    option = {
+        name = "EVT96122OPTB" #We don't need protection.
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+#Kuwait asks for protection - to GP
+country_event = {
+
+    id = 96123
+    title = "EVTNAME96123"
+    desc = "EVTDESC96123"
+    picture = "mubarak_al_sabah"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT961223PTA" #Integrate Kuwait
+        random_country = {
+            limit = {
+                tag = KWT
+                exists = yes
+                is_vassal = yes
+            }
+            overlord = { release_vassal = KWT }
+        }
+
+        random_country = {
+            limit = {
+                exists = yes
+                OR = {
+                    tag = TUR
+                    tag = EGY
+                }
+                neighbour = KWT
+            }
+            country_event = 96124
+        }
+
+        inherit = KWT
+
+        ai_chance = {
+            factor = 95
+        }
+    }
+
+    option = {
+        name = "EVT96123OPTB" #We don't wish to get involved
+        prestige = -10
+        ai_chance = {
+            factor = 5
+            modifier = {
+                factor = 0
+                NOT = { relation = { who = TUR value = 0 } }
+            }
+            modifier = {
+                factor = 2
+                relation = { who = TUR value = 150 }
+            }
+            modifier = {
+                factor = 2
+                alliance_with = TUR
+            }
+        }
+    }
+}
+
+#Ottomans informed that Kuwait defected
+country_event = {
+
+    id = 96124
+    title = "EVTNAME96124"
+    desc = "EVTDESC96124"
+    picture = "mubarak_al_sabah"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT961224PTA"
+        relation = { who = FROM value = -50 }
+        random_owned = {
+            limit = {
+                province_id = 932
+                is_core = THIS
+            }
+            935 = { add_core = THIS }
+        }
+    }
+}

@@ -9,11 +9,7 @@ country_event = {
     news_desc_short = "EVTDESC97550_NEWS_SHORT"
     picture = "mexico_soldiers"
 
-    fire_only_once = yes
-
-    trigger = { tag = UCA }
-
-    mean_time_to_happen = { days = 1 }
+    is_triggered_only = yes
 
     option = {
         name = "EVT975521OPTA"
@@ -55,6 +51,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         owns = 2201
         NOT = {
@@ -110,6 +107,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         owns = 2197
         NOT = {
@@ -165,6 +163,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         owns = 2193
         NOT = {
@@ -218,6 +217,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         owns = 2191
         NOT = {
@@ -270,6 +270,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         2191 = {
             NOT = { is_core = UCA }
@@ -307,6 +308,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         2193 = {
             NOT = { is_core = UCA }
@@ -358,6 +360,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         2197 = {
             NOT = { is_core = UCA }
@@ -403,6 +406,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         2201 = {
             NOT = { is_core = UCA }
@@ -447,6 +451,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         exists = ELS
         any_owned_province = {
             OR = {
@@ -542,6 +547,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         exists = HON
         any_owned_province = {
             OR = {
@@ -637,6 +643,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         NOT = { has_country_flag = nicaragua_independence }
         exists = NIC
         any_owned_province = {
@@ -733,6 +740,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         NOT = { has_country_flag = costa_rica_independence }
         exists = COS
         any_owned_province = {
@@ -833,6 +841,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         war = no
         OR = {
             exists = ELS
@@ -933,7 +942,7 @@ country_event = {
         }
         add_country_modifier = {
             name = small_country_draft
-            duration = 1095
+            duration = 30
         }
         any_country = {
             limit = {
@@ -948,7 +957,7 @@ country_event = {
             all_core = { add_core = UCA }
             add_country_modifier = {
                 name = small_country_draft
-                duration = 1095
+                duration = 30
             }
         }
         war = {
@@ -1103,6 +1112,7 @@ country_event = {
 
     trigger = {
         tag = UCA
+        exists = yes
         ai = yes
         OR = {
             war_with = ELS
@@ -1330,6 +1340,7 @@ country_event = {
 
     trigger = {
         ai = yes
+        exists = yes
         war = no
         is_vassal = no
         is_disarmed = no

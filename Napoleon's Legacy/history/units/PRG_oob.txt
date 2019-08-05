@@ -10,7 +10,7 @@ BRZ = {
 URU = {
     value = -250
 }
-ARC = {
+LPL = {
     value = -250
 }
 CHL = {
@@ -22,42 +22,31 @@ BOL = {
 REI = {
     value = -400
 }
-CRT = {
-    value = -250
-}
-ENT = {
-    value = -300
-}
-SBA = {
-    value = -250
-}
-
-
 
 army = {
-    name = "Ejército del Paraguay"
+    name = "Ejï¿½rcito del Paraguay"
     location = 2339
     regiment = {
-        name= "1.1ra División de Infantería"
+        name= "1.1ra Divisiï¿½n de Infanterï¿½a"
         type = infantry
         home = 2339
     }
 
     regiment = {
-        name= "2.2ra División de Infantería"
+        name= "2.2ra Divisiï¿½n de Infanterï¿½a"
         type = infantry
         home = 2339
     }
 
     regiment = {
-        name= "3.3ra División de Infantería"
+        name= "3.3ra Divisiï¿½n de Infanterï¿½a"
         type = infantry
         home = 2339
     }
 
 }
 leader = {
-    name = "Domingo Francisco Sánchez"
+    name = "Domingo Francisco Sï¿½nchez"
     type = land
     date = 1836.1.1
     background = school_of_the_bayonet

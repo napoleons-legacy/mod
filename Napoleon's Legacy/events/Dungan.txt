@@ -1,8 +1,8 @@
 #########################################################
-#                                                       #
+#                                                        #
 #       Events for the Panthay and                      #
-#       Dungan Rebellion in China                       #
-#                                                       #
+#       Dungan Rebellion in China                        #
+#                                                        #
 #########################################################
 
 province_event = {
@@ -12,8 +12,6 @@ province_event = {
 
     trigger = {
         OR = {
-
-
             owned_by = QNG
             owner = { substate_of = QNG }
         }
@@ -443,7 +441,7 @@ country_event = {
         OR = {
             XBI = { average_militancy = 2 }
             1557 = { average_militancy = 4 }
-            XBI = { civilization_progress = 0.4  }
+            XBI = { civilization_progress = 0.4     }
         }
         has_global_flag = dungan_rebellion
     }

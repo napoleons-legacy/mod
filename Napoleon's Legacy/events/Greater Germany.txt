@@ -1,7 +1,7 @@
 #############################################################
-#                                                           #
-#                   Greater Germany Events                  #
-#                                                           #
+#                                                            #
+#                      Greater Germany Events                    #
+#                                                            #
 #############################################################
 
 #Forming Germany as Austria
@@ -82,8 +82,6 @@ country_event = {
                     is_core = POL
                     is_core = ROM
                     is_core = CRO
-                    is_core = VEN
-                    is_core = LOM
                     is_core = SER
                 }
             }
@@ -375,7 +373,7 @@ country_event = {
                     neighbour = THIS
                     is_culture_group = THIS
                     tag = FRA
-                    tag = RUS
+                    has_country_flag = russian_country
                     tag = BRI
                     tag = CAN
                 }
@@ -431,7 +429,7 @@ country_event = {
                     neighbour = THIS
                     is_culture_group = THIS
                     tag = FRA
-                    tag = RUS
+                    has_country_flag = russian_country
                     tag = BRI
                     tag = CAN
                 }
@@ -801,8 +799,6 @@ country_event = {
                     is_core = POL
                     is_core = ROM
                     is_core = CRO
-                    is_core = VEN
-                    is_core = LOM
                     is_core = SER
                 }
             }
@@ -956,7 +952,7 @@ country_event = {
                     neighbour = THIS
                     is_culture_group = THIS
                     tag = FRA
-                    tag = RUS
+                    has_country_flag = russian_country
                     tag = BRI
                     tag = CAN
                 }
@@ -1305,7 +1301,6 @@ country_event = {
                     region = AUS_619
                     region = AUS_612
                     region = AUS_613
-                    region = AUS_734
                 }
             }
             remove_core = THIS
@@ -1403,7 +1398,7 @@ country_event = {
                     neighbour = THIS
                     is_culture_group = THIS
                     tag = FRA
-                    tag = RUS
+                    has_country_flag = russian_country
                     tag = BRI
                     tag = CAN
                 }
@@ -1595,7 +1590,7 @@ country_event = {
                 capital_scope = { continent = europe }
                 OR = {
                     tag = FRA
-                    tag = RUS
+                    has_country_flag = russian_country
                     NOT = { relation = { who = THIS value = 0 } }
                 }
             }

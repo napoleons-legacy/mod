@@ -1,7 +1,6 @@
-owner = REI
-controller = REI
+owner = LPL
+controller = LPL
+add_core = LPL
 add_core = BOL
-add_core = REI
-add_core = PEU
-trade_goods = timber
+trade_goods = rubber
 life_rating = 31

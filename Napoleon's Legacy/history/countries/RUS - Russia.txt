@@ -1,7 +1,6 @@
 capital = 994
 primary_culture = russian
-culture = byelorussian
-culture = ukrainian
+culture = ruthenian
 culture = ugrian
 culture = alaskan
 religion = orthodox
@@ -15,7 +14,7 @@ civilized = yes
 set_country_flag = serfdom_not_abolished
 
 #GreaterPowers = prestige
-prestige = 50
+prestige = 70
 
 # Political reforms
 slavery = no_slavery
@@ -45,6 +44,7 @@ citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 set_country_flag = orthodox_country
+set_country_flag = russian_country
 
 ruling_party = RUS_conservative
 upper_house = {
@@ -83,6 +83,7 @@ mechanical_production = 1
 mechanized_mining = 1
 basic_chemistry = 1
 piston_steam_engine = 1
+#puddling = 1
 
 #Inventions
 #corvettes = yes

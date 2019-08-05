@@ -1,82 +1,18 @@
 #Mzilikazi of Matabele flees to Matabeland
-country_event = {
-    id = 95517
-    title = "EVTNAME95517"
-    desc = "EVTDESC95517"
-    picture = "mzilikazi_flees"
-
-    is_triggered_only = yes
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "EVT95517OPTA"
-        prestige = 3
-        MAT = { country_event = 95518 }
-        }
-    }
-
-country_event = { #Mzilikazi of Matabele flees to Matabeland
-    id = 95518
-    title = "EVTNAME95518"
-    desc = "EVTDESC95518"
-    picture = "mzilikazi_flees"
-
-    is_triggered_only = yes
-
-    fire_only_once = yes
-
-    option = {
-        name = "EVT95518OPTA"
-        2071 = {
-            add_core = MAT
-            secede_province = MAT
-            life_rating = 25
-            any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
-        }
-        2574 = {
-            add_core = MAT
-            secede_province = MAT
-            life_rating = 20
-            any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
-        }
-        2075 = {
-            add_core = MAT
-            secede_province = MAT
-            life_rating = 20
-            any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
-        }
-
-        2108 = {
-            any_pop = { limit = { has_pop_culture = nguni }
-            reduce_pop = 0.8
-            }
-        }
-
-        2071 = { any_pop = { limit = { has_pop_culture = nguni } reduce_pop = 1.2 } }
-
-        MAT = {
-            capital = 2071
-            add_country_modifier = { name = assegai duration = -1 }
-        any_owned = {
-            limit = {
-            OR = {
-                province_id = 2105
-                province_id = 2106
-                province_id = 2107
-                province_id = 2108
-                province_id = 2109
-                }
-            }
-            secede_province = FROM
-            }
-        }
-        2071 = { state_scope = { change_region_name = "Matabeleland" } }
-    }
-}
-
+#country_event = {
+#    id = 95517
+#    title = "EVTNAME95517"
+#    desc = "EVTDESC95517"
+#    picture = "mzilikazi_flees"
+#
+#    is_triggered_only = yes
+#
+#
+#    option = {
+#        name = "EVT95517OPTA"
+#        MAT = { country_event = 95518 }
+#    }
+#}
 
 country_event = { #The Mfecane
     id = 95519
@@ -94,7 +30,7 @@ country_event = { #The Mfecane
 
     fire_only_once = yes
 
-    mean_time_to_happen = { days = 10 }
+    mean_time_to_happen = { months = 4 }
 
     option = {
         name = "EVT95519OPTA"

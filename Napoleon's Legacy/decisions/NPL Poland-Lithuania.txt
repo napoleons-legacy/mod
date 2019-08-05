@@ -1,0 +1,241 @@
+political_decisions = {
+    reclaim_duchy_of_prussia = {
+        picture = plc_west_ost
+        potential = {
+            tag = PLC
+            NOT = { has_country_flag = reclaimed_prussia }
+        }
+
+        allow = {
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+        }
+
+        effect = {
+            set_country_flag = reclaimed_prussia
+
+            badboy = 5
+
+            PRU_690 = { add_core = PLC }
+            PRU_695 = { add_core = PLC }
+            PML = { all_core = { remove_core = PML } }
+
+            relation = { who = PRU value = -200 }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                badboy = 18
+            }
+        }
+    }
+
+    reclaim_silesia = {
+        picture = plc_silesia
+        potential = {
+            tag = PLC
+            has_country_flag = reclaimed_prussia
+            NOT = { has_country_flag = reclaimed_silesia }
+            owns = 690 # Danzig
+            owns = 695 # Konigsberg
+        }
+
+        allow = {
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+        }
+
+        effect = {
+            set_country_flag = reclaimed_silesia
+            badboy = 5
+
+            SLS = { all_core = { add_core = PLC remove_core = SLS } }
+            relation = { who = PRU value = -200 }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                badboy = 18
+            }
+        }
+    }
+
+    reclaim_galicia = {
+        picture = plc_galicia
+        potential = {
+            tag = PLC
+            NOT = { has_country_flag = reclaimed_galicia }
+            NOT = { GLM = { all_core = { is_core = PLC } } }
+        }
+
+        allow = {
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+        }
+
+        effect = {
+            set_country_flag = reclaimed_galicia
+            badboy = 6
+
+            GLM = { all_core = { add_core = PLC } }
+            relation = { who = AUS value = -200 }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                badboy = 16
+            }
+        }
+    }
+
+    reclaim_ruthenian_borderlands = {
+        picture = plc_russia
+        potential = {
+            tag = PLC
+            NOT = { has_country_flag = reclaimed_ruthenian_borderlands }
+        }
+
+        allow = {
+            nationalism_n_imperialism = 1
+            is_greater_power = yes
+        }
+
+        effect = {
+            set_country_flag = reclaimed_ruthenian_borderlands
+            badboy = 10
+
+            RUS_940 = { add_core = PLC }
+            RUS_959 = { add_core = PLC }
+            RUS_958 = { add_core = PLC }
+
+            random_country = { limit = { has_country_flag = russian_country exists = yes } relation = { who = PLC value = -200 } }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                badboy = 10
+            }
+        }
+    }
+
+    reclaim_latvia = {
+        picture = plc_russia
+        potential = {
+            tag = PLC
+            NOT = { has_country_flag = reclaimed_latvia }
+            owns = 360 # Vilnius
+            owns = 718 # Minsk
+            owns = 958 # Kiev
+        }
+
+        allow = {
+            revolution_n_counterrevolution = 1
+            is_greater_power = yes
+        }
+
+        effect = {
+            set_country_flag = reclaimed_latvia
+            LAT = { all_core = { add_core = PLC } }
+            random_country = { limit = { has_country_flag = russian_country exists = yes } relation = { who = PLC value = -200 } }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    reclaim_ruthenia_all = {
+        picture = plc_russia
+        potential = {
+            tag = PLC
+            has_country_flag = reclaimed_ruthenian_borderlands
+            NOT = { has_country_flag = reclaimed_ruthenia_all }
+
+            owns = 718
+            owns = 955
+            owns = 354
+        }
+
+        allow = {
+            mass_politics = 1
+            is_greater_power = yes
+        }
+
+        effect = {
+            set_country_flag = reclaimed_ruthenia_all
+
+            UKR = { all_core = { add_core = PLC} }
+
+            random_country = { limit = { has_country_flag = russian_country exists = yes } relation = { who = PLC value = -200 } }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    embrace_ruthenians = {
+        picture = greater_ukraine
+
+        potential = {
+            tag = PLC
+            NOT = {
+                primary_culture = ruthenian
+                accepted_culture = ruthenian
+            }
+        }
+
+        allow = {
+            prestige = 50
+            revolution_n_counterrevolution = 1
+            invention = national_fraternity
+            NOT = {
+                any_owned_province = {
+                    culture = ruthenian
+                    average_militancy = 3
+                }
+            }
+        }
+
+        effect = {
+            add_accepted_culture = ruthenian
+            any_pop = {
+                limit = { has_pop_culture = ruthenian }
+                militancy = -1
+                consciousness = -3
+            }
+
+            any_pop = {
+                limit = {
+                    OR = {
+                        is_primary_culture = yes
+                        is_accepted_culture = yes
+                    }
+                }
+                consciousness = 1
+            }
+
+            any_pop = {
+                limit = {
+                    is_primary_culture = no
+                    is_accepted_culture = no
+                }
+                consciousness = 3
+            }
+        }
+    }
+
+    # TODO: make a Poland-Lithuania-Ruthenia flavor tag?
+}

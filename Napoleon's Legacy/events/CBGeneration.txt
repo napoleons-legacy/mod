@@ -13,7 +13,7 @@ country_event = {
             constructing_cb_type = conquest
             constructing_cb_type = demand_concession_casus_belli
             constructing_cb_type = establish_protectorate_casus_belli
-            }
+        }
         NOT = {
             OR = {
                     has_country_modifier = CB_gen_plus

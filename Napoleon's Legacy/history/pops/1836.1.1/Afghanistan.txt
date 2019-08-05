@@ -175,7 +175,7 @@
     farmers = {
         culture = pashtun
         religion = sunni
-        size = 70112
+        size = 50112
     }
 
     aristocrats = {
@@ -347,31 +347,31 @@
     aristocrats = {
         culture = pashtun
         religion = sunni
-        size = 325
+        size = 163
     }
 
     clergymen = {
         culture = pashtun
         religion = sunni
-        size = 175
+        size = 87
     }
 
     artisans = {
         culture = pashtun
         religion = sunni
-        size = 850
+        size = 425
     }
 
     soldiers = {
         culture = pashtun
         religion = sunni
-        size = 1000
+        size = 500
     }
 
     farmers = {
         culture = pashtun
         religion = sunni
-        size = 14650
+        size = 27325
     }
 
     aristocrats = {
@@ -407,61 +407,61 @@
     aristocrats = {
         culture = hazara
         religion = shiite
-        size = 1050
+        size = 525
     }
 
     clergymen = {
         culture = hazara
         religion = shiite
-        size = 500
+        size = 250
     }
 
     artisans = {
         culture = hazara
         religion = shiite
-        size = 2700
+        size = 513
     }
 
     soldiers = {
         culture = hazara
         religion = shiite
-        size = 525
+        size = 1100
     }
 
     farmers = {
         culture = hazara
         religion = shiite
-        size = 49225
+        size = 24613
     }
 
     aristocrats = {
         culture = hazara
         religion = sunni
-        size = 350
+        size = 175
     }
 
     clergymen = {
         culture = hazara
         religion = sunni
-        size = 188
+        size = 94
     }
 
     artisans = {
         culture = hazara
         religion = sunni
-        size = 850
+        size = 425
     }
 
     soldiers = {
         culture = hazara
         religion = sunni
-        size = 1000
+        size = 500
     }
 
     farmers = {
         culture = hazara
         religion = sunni
-        size = 12612
+        size = 6306
     }
 
     slaves = {
@@ -804,6 +804,100 @@
         culture = tajik
         religion = sunni
         size = 6000
+    }
+
+}
+
+#Former South Gerorgia
+2133 = {
+    aristocrats = {
+        culture = pashtun
+        religion = sunni
+        size = 163
+    }
+
+    clergymen = {
+        culture = pashtun
+        religion = sunni
+        size = 87
+    }
+
+    artisans = {
+        culture = pashtun
+        religion = sunni
+        size = 425
+    }
+
+    soldiers = {
+        culture = pashtun
+        religion = sunni
+        size = 500
+    }
+
+    farmers = {
+        culture = pashtun
+        religion = sunni
+        size = 7325
+    }
+
+    aristocrats = {
+        culture = hazara
+        religion = shiite
+        size = 525
+    }
+
+    clergymen = {
+        culture = hazara
+        religion = shiite
+        size = 250
+    }
+
+    artisans = {
+        culture = hazara
+        religion = shiite
+        size = 350
+    }
+
+    soldiers = {
+        culture = hazara
+        religion = shiite
+        size = 1263
+    }
+
+    farmers = {
+        culture = hazara
+        religion = shiite
+        size = 24613
+    }
+
+    aristocrats = {
+        culture = hazara
+        religion = sunni
+        size = 175
+    }
+
+    clergymen = {
+        culture = hazara
+        religion = sunni
+        size = 94
+    }
+
+    artisans = {
+        culture = hazara
+        religion = sunni
+        size = 425
+    }
+
+    soldiers = {
+        culture = hazara
+        religion = sunni
+        size = 500
+    }
+
+    farmers = {
+        culture = hazara
+        religion = sunni
+        size = 6306
     }
 
 }

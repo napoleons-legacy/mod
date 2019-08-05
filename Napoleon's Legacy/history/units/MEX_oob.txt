@@ -49,6 +49,7 @@ leader = {
 army = {
     name = "Activo Oajaca"
     location = 2177
+
     regiment = {
         name= "1.Oajaca y Tlaxcala"
         type = irregular
@@ -58,13 +59,13 @@ army = {
     regiment = {
         name= "2.Oajaca y Tlaxcala"
         type = irregular
-        home = 2177
+        home = 2173
     }
 
     regiment = {
         name= "3.Oajaca y Tlaxcala"
         type = irregular
-        home = 2177
+        home = 2167
     }
 
 }
@@ -81,13 +82,13 @@ army = {
     regiment = {
         name= "2.Division Comonfort"
         type = irregular
-        home = 2176
+        home = 2159
     }
 
     regiment = {
         name= "3.Division Comonfort"
         type = irregular
-        home = 2176
+        home = 2174
     }
 
 }

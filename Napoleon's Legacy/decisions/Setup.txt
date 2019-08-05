@@ -1,39 +1,5 @@
 political_decisions = {
 
-    enable_options = {
-        alert = no
-        potential = {
-            ai = no
-            NOT = { has_global_flag = looking_through_options }
-            NOT = { year = 1837 }
-        }
-
-        allow = {
-        }
-
-        effect = {
-            set_global_flag = looking_through_options
-            set_country_flag = country_looking_through_options
-        }
-    }
-
-    disable_options = {
-        alert = no
-        potential = {
-            ai = no
-            has_country_flag = country_looking_through_options
-            NOT = { year = 1837 }
-        }
-
-        allow = {
-        }
-
-        effect = {
-            clr_global_flag = looking_through_options
-            clr_country_flag = country_looking_through_options
-        }
-    }
-
     option_disable_anarcho_liberals = {
         alert = no
         potential = {
@@ -49,15 +15,58 @@ political_decisions = {
         effect = {
             set_global_flag = anarcho_liberals_disabled
         }
+        ai_will_do = { factor = 0 }
     }
 
-    option_disable_hpm_crisis = {
+    unlock_crisis_in_1870 = {
         alert = no
         potential = {
             ai = no
             has_country_flag = country_looking_through_options
             NOT = { year = 1837 }
+            NOT = { has_global_flag = unlock_crisis_in_1870 }
+        }
+
+        allow = {
+        }
+
+        effect = {
+            set_global_flag = unlock_crisis_in_1870
+        }
+        ai_will_do = { factor = 0 }
+    }
+
+    option_disable_hpm_crisis = {
+        alert = no
+        potential = {
+            exists = yes
             NOT = { has_global_flag = revolution_n_counter_researched }
+            OR = {
+                AND = {
+                    ai = no
+                    has_country_flag = country_looking_through_options
+                    NOT = { year = 1837 }
+                }
+                AND = {
+                    ai = yes
+                    year = 1886
+                    OR = {
+                        revolution_n_counterrevolution = 1
+                        any_neighbor_country = { revolution_n_counterrevolution = 1 }
+                        any_greater_power = { revolution_n_counterrevolution = 1 }
+                    }
+                }
+                AND = {
+                    ai = yes
+                    year = 1870
+                    has_global_flag = unlock_crisis_in_1870
+                    OR = {
+                        revolution_n_counterrevolution = 1
+                        any_neighbor_country = { revolution_n_counterrevolution = 1 }
+                        any_greater_power = { revolution_n_counterrevolution = 1 }
+                    }
+                }
+            }
         }
 
         allow = {
@@ -66,6 +75,7 @@ political_decisions = {
         effect = {
             set_global_flag = revolution_n_counter_researched
         }
+        ai_will_do = { factor = 1 }
     }
 
     option_enable_fantasy_countries = {
@@ -83,6 +93,7 @@ political_decisions = {
         effect = {
             set_global_flag = fantasy_countries_enabled
         }
+        ai_will_do = { factor = 0 }
     }
 
     option_enable_easter_eggs = {
@@ -100,6 +111,7 @@ political_decisions = {
         effect = {
             set_global_flag = easter_eggs_enabled
         }
+        ai_will_do = { factor = 0 }
     }
 
     option_disable_workplace_events = {
@@ -117,6 +129,7 @@ political_decisions = {
         effect = {
             set_global_flag = workplace_events_disabled
         }
+        ai_will_do = { factor = 0 }
     }
 
     option_disable_bankruptcy_events = {
@@ -135,6 +148,7 @@ political_decisions = {
             set_country_flag = bankruptcy_events_disabled
             any_country = { limit = { ai = no } set_country_flag = bankruptcy_events_disabled }
         }
+        ai_will_do = { factor = 0 }
     }
 
 ###Setup Decisions
@@ -431,19 +445,6 @@ political_decisions = {
                 }
                 literacy = -0.99
             }
-
-            any_pop = {
-                limit = {
-                    has_pop_culture = irish
-                    location = { is_core = IRE }
-                }
-                militancy = 4
-            }
-            any_owned = {
-                limit = { is_core = IRE }
-                add_province_modifier = { name = irish_oppression duration = -1 }
-                add_province_modifier = { name = enclosures duration = -1 }
-            }
             2482 = { add_province_modifier = { name = penal_colony duration = -1 } }
         }
     }
@@ -508,12 +509,12 @@ political_decisions = {
 
     literacy_POR = {
         potential = {
-            tag = POR
+            has_country_flag = portuguese_country
             always = no
         }
 
         allow = {
-            tag = POR
+            has_country_flag = portuguese_country
         }
 
         effect = {
@@ -664,7 +665,7 @@ political_decisions = {
                 literacy = 0.03
             }
 
-            any_pop = { limit = { has_pop_culture = ukrainian } literacy = 0.02 }
+            any_pop = { limit = { has_pop_culture = ruthenian } literacy = 0.02 }
 
             any_pop = { limit = { has_pop_culture = greek } literacy = 0.07 }
             any_pop = {
@@ -691,16 +692,6 @@ political_decisions = {
             TUR_832 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
             TUR_805 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
             TUR_823 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
-
-            any_greater_power = {
-                limit = { NOT = { tag = TUR } }
-                diplomatic_influence = { who = BTL value = -400 }
-                diplomatic_influence = { who = RDL value = -400 }
-                diplomatic_influence = { who = BHT value = -400 }
-                diplomatic_influence = { who = MKN value = -400 }
-                diplomatic_influence = { who = BNB value = -400 }
-                diplomatic_influence = { who = BDN value = -400 }
-            }
         }
         ai_will_do = { factor = 1 }
     }
@@ -822,7 +813,6 @@ political_decisions = {
         }
 
         effect = {
-            treasury = 10000
             1008 = { set_province_flag = moscow_city }
             1008 = { any_pop = { literacy = 0.1 } }
             994 = { any_pop = { literacy = 0.1 } }
@@ -871,10 +861,7 @@ political_decisions = {
 
             any_pop = {
                 limit = {
-                    OR = {
-                        has_pop_culture = byelorussian
-                        has_pop_culture = ukrainian
-                    }
+                    has_pop_culture = ruthenian
                 }
                 literacy = -0.02
             }
@@ -890,7 +877,6 @@ political_decisions = {
                     OR = {
                         is_core = RUS
                         is_core = UKR
-                        is_core = BYE
                     }
                     NOT = {
                         OR = {
@@ -953,44 +939,13 @@ political_decisions = {
         }
 
         effect = {
-            any_pop = { limit = { location = { is_core = VEN } has_pop_culture = north_italian } literacy = 0.2 }
-            any_pop = {
-                limit = {
-                    location = {
-                        NOT = {
-                            is_core = LOM
-                            is_core = VEN
-                            province_id = 734
-                            province_id = 735
-                        }
-                    }
-                    has_pop_culture = north_italian
-                }
-                literacy = 0.3
-            }
-
-            any_pop = {
-                limit = {
-                    location = {
-                        OR = {
-                            is_core = LOM
-                            province_id = 734
-                            province_id = 735
-                        }
-                    }
-                    has_pop_culture = north_italian
-                }
-                literacy = 0.35
-            }
-
             AUS_612 = { any_pop = { literacy = 0.1 } }
-            AUS_734 = { any_pop = { limit = { has_pop_culture = south_german } literacy = 0.1 } }
             any_pop = { limit = { has_pop_culture = north_german } literacy = 0.5 }
             any_pop = { limit = { has_pop_religion = protestant NOT = { has_pop_culture = north_german } literacy = 0.05 } }
             any_pop = { limit = { has_pop_culture = czech } literacy = 0.37 }
             any_pop = { limit = { location = { OR = { province_id = 628 province_id = 619 } } literacy = 0.08 } }
             any_pop = { limit = { OR = { has_pop_culture = ashkenazi has_pop_culture = sephardic } } literacy = 0.40 }
-            any_pop = { limit = { OR = { has_pop_culture = romanian has_pop_culture = serb has_pop_culture = ukrainian } } literacy = -0.07 }
+            any_pop = { limit = { OR = { has_pop_culture = romanian has_pop_culture = serb has_pop_culture = ruthenian } } literacy = -0.07 }
             any_pop = { limit = { has_pop_culture = croat } literacy = -0.02 }
             any_pop = { limit = { has_pop_culture = slovene } literacy = 0.18 }
             any_pop = { limit = { has_pop_culture = polish } literacy = 0.02 }
@@ -1149,14 +1104,9 @@ political_decisions = {
         }
 
         effect = {
-            small_arms = 20
-            ammunition = 20
-            canned_food = 20
-            wine = 20
-            liquor = 20
             treasury = 10000
             any_pop = { limit = { has_pop_culture = russian } literacy = -0.06 }
-            any_pop = { limit = { has_pop_culture = ukrainian } literacy = -0.08 }
+            any_pop = { limit = { has_pop_culture = ruthenian } literacy = -0.08 }
             any_pop = { limit = { has_pop_culture = sephardic } literacy = 0.25 }
         }
     }
@@ -1216,7 +1166,6 @@ political_decisions = {
                 }
                 literacy = 0.05
             }
-            any_pop = { limit = { has_pop_culture = flemish } literacy = 0.39 }
             any_pop = { limit = { has_pop_culture = breton } literacy = -0.1 }
             any_pop = { limit = { has_pop_culture = south_german } literacy = 0.54 }
             any_pop = { limit = { has_pop_culture = north_italian } literacy = 0.24 }
@@ -1372,15 +1321,19 @@ political_decisions = {
     BRZ_1836_setup = {
         picture = constantinople
         potential = {
-            tag = BRZ
+            has_country_flag = brazilian_country
             always = no
         }
 
         allow = {
-            tag = BRZ
+            has_country_flag = brazilian_country
         }
 
         effect = {
+            add_country_modifier = {
+                name = regency_government
+                duration = -1
+            }
             any_pop = { limit = { has_pop_culture = french } literacy = 0.4 }
             2435 = { any_pop = { limit = { is_primary_culture = yes } literacy = 0.11 } }
             BRZ_2462 = { any_pop = { limit = { is_primary_culture = yes } literacy = 0.05 } }
@@ -1423,12 +1376,12 @@ political_decisions = {
     PEU_1836_setup = {
         picture = constantinople
         potential = {
-            tag = PEU
+            tag = SPA
             always = no
         }
 
         allow = {
-            tag = PEU
+            tag = SPA
         }
 
         effect = {
@@ -1493,33 +1446,26 @@ political_decisions = {
             2296 = { add_province_modifier = { name = silver_mine duration = -1 } }
             312 = { add_province_modifier = { name = silver_mine duration = -1 } }
 
-            add_country_modifier = { name = relutanct_figher duration = 3650 }
             activate_technology = flintlock_rifles
             activate_technology = post_napoleonic_thought
             activate_technology = post_nelsonian_thought
-            SPU = {
-                add_country_modifier = { name = relutanct_figher duration = 3650 }
-                activate_technology = flintlock_rifles
-                activate_technology = post_napoleonic_thought
-                activate_technology = post_nelsonian_thought
-            }
         }
     }
 
     URU_1836_setup = {
         potential = {
-            tag = URU
+            tag = REI
             always = no
         }
 
         allow = {
-            tag = URU
+            tag = REI
         }
 
         effect = {
-            any_pop = { limit = { has_pop_culture = brazilian } literacy = 0.06 }
+            URU_2344 = { any_pop = { limit = { has_pop_culture = brazilian } literacy = 0.06 } }
             2344 = { any_pop = { limit = { is_primary_culture = yes } literacy = 0.1 } } #Montevideo
-            ARC = { 2348 = { any_pop = { limit = { is_primary_culture = yes } literacy = 0.1 } } }
+            2348 = { any_pop = { limit = { is_primary_culture = yes } literacy = 0.1 } }
         }
     }
 
@@ -1636,7 +1582,7 @@ political_decisions = {
             GRE_826 = { add_province_modifier = { name = small_baby_boom duration = 2920 } }
         }
     }
-
+###############################
     1836_initial_setup = {
         potential = {
             ai = yes
@@ -1656,6 +1602,122 @@ political_decisions = {
             set_global_flag = 1836_set_up
             set_country_flag = existing_country
             any_country = { limit = { exists = yes } set_country_flag = existing_country }
+
+            ################Starting Events###########################
+            MEX = { country_event = { id = 44805 days = 2 } }
+            UCA = { country_event = { id = 97550 days = 2 } }
+            QNG = { country_event = { id = 160009 days = 5 } }
+            BRI = { country_event = { id = 98200 days = 3 } }
+            ##########################################################
+
+            #################Giving Starting Money to Pops and Countries######################
+            any_country = { limit = { exists = yes is_greater_power = yes } capitalists = { money = 1000 } aristocrats = { money = 500 } artisans = { money = 200 } }
+            any_country = { limit = { exists = yes is_secondary_power = yes } capitalists = { money = 800 } aristocrats = { money = 400 } artisans = { money = 100 } }
+            any_country = {
+                limit = {
+                    exists = yes
+                    is_greater_power = no
+                    is_secondary_power = no
+                    civilized = yes
+                }
+                capitalists = { money = 500 }
+                aristocrats = { money = 200 }
+                artisans = { money = 50 }
+                small_arms = 30
+                canned_food = 30
+                liquor = 15
+                artillery = 15
+            }
+            any_country = {
+                limit = {
+                    exists = yes
+                    is_greater_power = yes
+                    NOT = { tag = SPA }
+                }
+                small_arms = 105
+                canned_food = 105
+                liquor = 60
+                artillery = 60
+                treasury = 100000
+            }
+            any_country = {
+                limit = {
+                    exists = yes
+                    OR = {
+                        is_secondary_power = yes
+                        tag = SPA
+                    }
+                }
+                small_arms = 60
+                canned_food = 60
+                liquor = 30
+                artillery = 30
+                treasury = 50000
+            }
+
+            any_country = { limit = { exists = yes civilized = yes is_greater_power = no is_secondary_power = no number_of_states = 2 } treasury = 10000 }
+            any_country = { limit = { exists = yes civilized = yes is_greater_power = no is_secondary_power = no NOT = { number_of_states = 2 } } treasury = 5000 }
+            any_country = { limit = { exists = yes civilized = no NOT = { tag = QNG } } treasury = 2500 }
+            #########Countries that start at war will get a war-chest#########
+
+            any_country = {
+                limit = {
+                    exists = yes
+                    is_greater_power = yes
+                    war = yes
+                }
+                treasury = 50000
+            }
+
+            any_country = {
+                limit = {
+                    exists = yes
+                    is_secondary_power = yes
+                    war = yes
+                }
+                treasury = 25000
+            }
+
+            any_country = {
+                limit = {
+                    exists = yes
+                    civilized = yes
+                    war = yes
+                }
+                treasury = 10000
+            }
+
+            any_country = {
+                limit = {
+                    exists = yes
+                    civilized = no
+                    war = yes
+                }
+                treasury = 5000
+            }
+            #########Top GPs are richer#########
+            any_country = {
+                limit = { rank = 1 }
+                treasury = 200000
+            }
+
+            any_country = {
+                limit = { rank = 2 NOT = { rank = 1 } }
+                treasury = 100000
+            }
+
+            any_country = {
+                limit = { rank = 3 NOT = { rank = 2 } }
+                treasury = 50000
+            }
+
+            any_country = {
+                limit = { rank = 4 NOT = { rank = 3 } }
+                treasury = 25000
+            }
+
+            #################Giving Starting Money to Pops and Countries######################
+
             #################Class Literacy Setup######################
             any_country = {
                 limit = {
@@ -1854,45 +1916,50 @@ political_decisions = {
             #################Class Literacy Setup######################
 
             #################Provinces Setup######################
-            2509 = { add_province_modifier = { name = small_immigration_boom duration = 10950 } }    #Auckland, NZ
-            46 = { add_province_modifier = { name = small_immigration_boom duration = 10950 } }        #Toronto, CA
-            56 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }        #Kingston, CA
-            58 = { add_province_modifier = { name = small_immigration_boom duration = 10950 } }        #Montreal, CA
-            65 = { add_province_modifier = { name = small_immigration_boom duration = 10950 } }        #Quebec City,CA
-            2476 = { add_province_modifier = { name = small_immigration_boom duration = 3650 } }    #Kingston, CA
-            2477 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Melbourne, AU
-            2479 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Sale, AU
-            2472 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Eden, AU
-            2468 = { add_province_modifier = { name = small_immigration_boom duration = 3650 } }    #Sydney, AU
-            2469 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Newcastle, AU
-            2470 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Port Macquarie, AU
-            2483 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Brisbane, AU
-            2482 = { add_province_modifier = { name = small_immigration_boom duration = 3650 } }    #Tasmania, AU
-            2484 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Gladstone, AU
-            2491 = { add_province_modifier = { name = small_immigration_boom duration = 7300 } }    #Adelaide, AU
+            2509 = { add_province_modifier = { name = province_small_immigration_boom duration = 10950 } }    #Auckland, NZ
+            46 = { add_province_modifier = { name = province_small_immigration_boom duration = 10950 } }        #Toronto, CA
+            56 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }        #Kingston, CA
+            58 = { add_province_modifier = { name = province_small_immigration_boom duration = 10950 } }        #Montreal, CA
+            65 = { add_province_modifier = { name = province_small_immigration_boom duration = 10950 } }        #Quebec City,CA
+            2476 = { add_province_modifier = { name = province_small_immigration_boom duration = 3650 } }    #Kingston, CA
+            2477 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Melbourne, AU
+            2479 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Sale, AU
+            2472 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Eden, AU
+            2468 = { add_province_modifier = { name = province_small_immigration_boom duration = 3650 } }    #Sydney, AU
+            2469 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Newcastle, AU
+            2470 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Port Macquarie, AU
+            2483 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Brisbane, AU
+            2482 = { add_province_modifier = { name = province_small_immigration_boom duration = 3650 } }    #Tasmania, AU
+            2484 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Gladstone, AU
+            2491 = { add_province_modifier = { name = province_small_immigration_boom duration = 7300 } }    #Adelaide, AU
             372 = { add_province_modifier = { name = sound_dues_toll duration = -1 } } #Copenhagen
             2172 = { set_province_flag = mexico_city }
             1616 = { set_province_flag = summer_palace }
             #################Provinces Setup######################
 
-            #################Giving Starting Money to Pops and Countries######################
-            any_country = { limit = { is_greater_power = yes } capitalists = { money = 1000 } aristocrats = { money = 500 } artisans = { money = 200 } }
-            any_country = { limit = { is_secondary_power = yes } capitalists = { money = 800 } aristocrats = { money = 400 } artisans = { money = 100 } }
-            any_country = {
-                limit = { is_greater_power = no is_secondary_power = no civilized = yes }
-                capitalists = { money = 500 } aristocrats = { money = 200 } artisans = { money = 50 }
+            #################Hawaii Setup######################
+            HAW = {
+                any_pop = {
+                    limit = {
+                        is_primary_culture = yes
+                        OR = {
+                            has_pop_religion = protestant
+                            has_pop_religion = catholic
+                        }
+                    }
+                    literacy = 0.49
+                }
+                any_pop = {
+                    limit = { has_pop_culture = yankee }
+                    literacy = 0.64
+                }
             }
-            any_country = { limit = { is_greater_power = yes NOT = { tag = SPA tag = TUR } } treasury = 10000 }
-            any_country = { limit = { OR = { is_secondary_power = yes tag = SPA tag = TUR } } treasury = 5000 }
-            any_country = { limit = { civilized = yes is_greater_power = no is_secondary_power = no number_of_states = 2 } treasury = 2000 }
-            any_country = { limit = { civilized = yes is_greater_power = no is_secondary_power = no NOT = { number_of_states = 2 } } treasury = 1000 }
-            any_country = { limit = { civilized = no NOT = { tag = QNG } } treasury = 500 }
-            #################Giving Starting Money to Pops and Countries######################
 
             #################Japan Setup######################
             #Shogun Faction
             any_country = {
                 limit = {
+                    exists = yes
                     OR = {
                         tag = KAG
                         tag = SEN
@@ -1908,26 +1975,12 @@ political_decisions = {
                 aristocrats = { ideology = { value = reactionary factor = 0.4 } }
                 add_country_modifier = { name = uncivilized_isolationism duration = -1 }
                 add_country_modifier = { name = sakoku duration = -1 }
-                random_owned = {
-                    limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
-                }
-                random_owned = {
-                    limit = { owner = { foreign_training = yes_foreign_training } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-                }
-                random_owned = {
-                    limit = { owner = { naval_schools = yes_naval_schools } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
-                }
-                random_owned = {
-                    limit = { owner = { foreign_training = yes_foreign_training } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-                }
+
             }
             #Emperor Faction
             any_country = {
                 limit = {
+                    exists = yes
                     OR = {
                         tag = CHO
                         tag = SAT
@@ -1947,24 +2000,26 @@ political_decisions = {
                     any_pop = { ideology = { value = liberal factor = 0.2 } }
                     add_province_modifier = { name = foreign_trading_post duration = -1 }
                 }
-                random_owned = {
-                    limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
+
                 }
-                random_owned = {
-                    limit = { owner = { foreign_training = yes_foreign_training } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
+            #################Japan Setup######################
+
+            #################Qing Setup######################
+            QNG = {
+                add_country_modifier = { name = global_baby_boom duration = 1065 }
+                add_country_modifier = { name = uncivilized_isolationism duration = -1 }
+                remove_country_modifier = western_influences
+                set_country_flag = mandate
+                any_pop = {
+                    limit = { type = bureaucrats }
+                    literacy = 0.05
                 }
-                random_owned = {
-                    limit = { owner = { naval_schools = yes_naval_schools } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
-                }
-                random_owned = {
-                    limit = { owner = { foreign_training = yes_foreign_training } }
-                    owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
+                any_pop = {
+                    limit = { type = aristocrats }
+                    literacy = 0.06
                 }
             }
-            #################Japan Setup######################
+            #################Qing Setup######################
 
             #################Ethiopia Setup######################
             any_country = {
@@ -2001,9 +2056,7 @@ political_decisions = {
             ECU = { add_country_modifier = { name = credit_risk duration = 3650 } }
             UCA = { add_country_modifier = { name = credit_risk duration = 1825 } }
             HAI = { add_country_modifier = { name = credit_risk duration = 5475 } }
-            SPU = { add_country_modifier = { name = credit_risk duration = 5475 } }
             PRG = { add_country_modifier = { name = unrecognized_country duration = 3650 } }
-            RGS = { add_country_modifier = { name = unrecognized_country duration = 3650 } }
 
             #################Setup Texas######################
             TEX = {
@@ -2019,15 +2072,14 @@ political_decisions = {
             #################Setup Texas######################
 
             #################Setup SWI######################
-            SWI = { 603 = { aristocrats  = { money = 12000 } } }
-            SWI = { any_pop = { limit = { has_pop_religion = protestant } ideology = { factor = 0.5 value = liberal } } }
-            SWI = { any_pop = { limit = { has_pop_religion = catholic } ideology = { factor = 0.5 value = conservative } } }
-            #################Setup SWI######################
+            SWI = {
+                603 = { aristocrats  = { money = 12000 } }
+                any_pop = { limit = { has_pop_religion = protestant } ideology = { factor = 0.5 value = liberal } }
+                any_pop = { limit = { has_pop_religion = catholic } ideology = { factor = 0.5 value = conservative } }
+                add_country_modifier = { name = freedom_of_religion duration = -1 }
+            }
 
-            #################Belgian War of Independence######################
-            NET = { war_exhaustion = 40 }
-            BEL = { war_exhaustion = 20 }
-            #################Belgian War of Independence######################
+            #################Setup SWI######################
 
             #################1832 War with Colombia######################
             ECU = { war_exhaustion = 50 any_pop = { militancy = 3 } }
@@ -2051,70 +2103,9 @@ political_decisions = {
 
             any_country = {
                 limit = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    naval_schools = yes_naval_schools
-                    NOT = { has_country_modifier = isolationist_foreign_naval_schools  }
+                    has_country_flag = lacking_writing_system
+                    exists = yes
                 }
-                add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 }
-            }
-
-            any_country = {
-                limit = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    foreign_officers = yes_foreign_officers
-                    NOT = { has_country_modifier = isolationist_foreign_officers }
-                }
-                add_country_modifier = { name = isolationist_foreign_officers duration = -1 }
-            }
-
-            any_country = {
-                limit = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    foreign_naval_officers = yes_foreign_naval_officers
-                    NOT = { has_country_modifier = isolationist_foreign_naval_officers }
-                }
-                add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 }
-            }
-
-            any_country = {
-                limit = {
-                    OR = {
-                        is_culture_group = east_asian
-                        has_country_modifier = uncivilized_isolationism
-                        has_country_modifier = sakoku
-                        vassal_of = QNG
-                        substate_of = QNG
-                    }
-                    civilized = no
-                    foreign_training = yes_foreign_training
-                    NOT = { has_country_modifier = isolationist_foreign_training }
-                }
-                add_country_modifier = { name = isolationist_foreign_training duration = -1 }
-            }
-
-            any_country = {
-                limit = { has_country_flag = lacking_writing_system exists = yes }
                 add_country_modifier = { name = lacks_writing_system duration = -1 }
             }
 
@@ -2140,21 +2131,39 @@ political_decisions = {
             #################Slaves and Serfs  Pops Setup######################
             serfs = { militancy = -9 consciousness = -9 literacy = -0.99 }
             slaves = { literacy = -0.99 }
+            any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 }
             any_country = {
-                limit = { exists = yes has_pop_type = serfs }
+                limit = {
+                    exists = yes
+                    has_pop_type = serfs
+                }
                 serfs = { militancy = -9 consciousness = -9 literacy = -0.99 }
             }
             any_country = {
-                limit = { exists = yes has_pop_type = slaves }
+                limit = {
+                    exists = yes
+                    has_pop_type = slaves
+                }
                 slaves = { literacy = -0.99 }
             }
-            any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 }
-            any_country = { limit = { exists = yes } any_pop = { limit = { has_pop_culture = gypsy } literacy = -0.99 } }
+            any_country = {
+                limit = { exists = yes }
+                any_pop = {
+                    limit = { has_pop_culture = gypsy }
+                    literacy = -0.99
+                }
+            }
             #################Slaves and Serfs  Pops Setup######################
 
             #################Romanian Pops Setup######################
             any_country = {
-                limit = { OR = { tag = MOL tag = WAL } }
+                limit = {
+                    exists = yes
+                    OR = {
+                        tag = MOL
+                        tag = WAL
+                    }
+                }
                 any_pop = {
                     limit = { OR = { has_pop_culture = ashkenazi has_pop_culture = sephardic  } }
                     literacy = 0.3
@@ -2167,7 +2176,12 @@ political_decisions = {
             #################Romanian Pops Setup######################
 
             #################Government Flags Setup######################
-            any_country = { limit = { government = absolute_monarchy NOT = { has_country_flag = absolute_monarchy_gov } exists = yes }
+            any_country = {
+                limit = {
+                    government = absolute_monarchy
+                    NOT = { has_country_flag = absolute_monarchy_gov }
+                    exists = yes
+                }
                 clr_country_flag = communist_gov
                 set_country_flag = absolute_monarchy_gov
                 clr_country_flag = semi_constitutional_monarchy_gov
@@ -2178,7 +2192,12 @@ political_decisions = {
                 clr_country_flag = anarcho_liberal_gov
             }
 
-            any_country = { limit = { government = hms_government NOT = { has_country_flag = constitutional_monarchy_gov } exists = yes }
+            any_country = {
+                limit = {
+                    government = hms_government
+                    NOT = { has_country_flag = constitutional_monarchy_gov }
+                    exists = yes
+                }
                 clr_country_flag = communist_gov
                 clr_country_flag = absolute_monarchy_gov
                 clr_country_flag = semi_constitutional_monarchy_gov
@@ -2189,7 +2208,12 @@ political_decisions = {
                 clr_country_flag = anarcho_liberal_gov
             }
 
-            any_country = { limit = { government = democracy NOT = { has_country_flag = democracy_gov } exists = yes }
+            any_country = {
+                limit = {
+                    government = democracy
+                    NOT = { has_country_flag = democracy_gov }
+                    exists = yes
+                }
                 clr_country_flag = communist_gov
                 clr_country_flag = absolute_monarchy_gov
                 clr_country_flag = semi_constitutional_monarchy_gov
@@ -2200,7 +2224,12 @@ political_decisions = {
                 clr_country_flag = anarcho_liberal_gov
             }
 
-            any_country = { limit = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } exists = yes }
+            any_country = {
+                limit = {
+                    government = presidential_dictatorship
+                    NOT = { has_country_flag = presidential_dictatorship_gov }
+                    exists = yes
+                }
                 clr_country_flag = communist_gov
                 clr_country_flag = absolute_monarchy_gov
                 clr_country_flag = semi_constitutional_monarchy_gov
@@ -2211,7 +2240,12 @@ political_decisions = {
                 clr_country_flag = anarcho_liberal_gov
             }
 
-            any_country = { limit = { government = prussian_constitutionalism NOT = { has_country_flag = semi_constitutional_monarchy_gov } exists = yes }
+            any_country = {
+                limit = {
+                    government = prussian_constitutionalism
+                    NOT = { has_country_flag = semi_constitutional_monarchy_gov }
+                    exists = yes
+                }
                 clr_country_flag = communist_gov
                 clr_country_flag = absolute_monarchy_gov
                 set_country_flag = semi_constitutional_monarchy_gov
@@ -2222,35 +2256,115 @@ political_decisions = {
                 clr_country_flag = anarcho_liberal_gov
             }
 
-            any_country = { limit = { civilized = no foreign_weapons = yes_foreign_weapons NOT = { has_country_flag = using_foreign_weapons } }
+            any_country = {
+                limit = {
+                    exists = yes
+                    civilized = no
+                    foreign_weapons = yes_foreign_weapons
+                    NOT = { has_country_flag = using_foreign_weapons }
+                }
                 set_country_flag = using_foreign_weapons
             }
 
-            any_country = { limit = { civilized = no foreign_artillery = yes_foreign_artillery NOT = { has_country_flag = using_foreign_artillery } }
+            any_country = {
+                limit = {
+                    exists = yes
+                    civilized = no
+                    foreign_artillery = yes_foreign_artillery
+                    NOT = { has_country_flag = using_foreign_artillery }
+                }
                 set_country_flag = using_foreign_artillery
             }
 
-            any_country = { limit = { civilized = no foreign_navies = yes_foreign_navies NOT = { has_country_flag = using_foreign_ships } }
+            any_country = {
+                limit = {
+                    exists = yes
+                    civilized = no
+                    foreign_navies = yes_foreign_navies
+                    NOT = { has_country_flag = using_foreign_ships }
+                }
                 set_country_flag = using_foreign_ships
             }
 
-            any_country = { limit = { civilized = no western_shipyards = yes_western_shipyards NOT = { has_country_flag = using_foreign_shipyards } }
+            any_country = {
+                limit = {
+                    exists = yes
+                    civilized = no
+                    western_shipyards = yes_western_shipyards
+                    NOT = { has_country_flag = using_foreign_shipyards }
+                }
                 set_country_flag = using_foreign_shipyards
             }
 
+            any_country = {
+                limit = {
+                    ai = yes
+                    exists = yes
+                }
+                random = {
+                    chance = 10
+                    remove_country_modifier = malevolent_ai
+                    add_country_modifier = { name = benefactor_ai duration = 8030 }
+                }
+                random = {
+                    chance = 10
+                    remove_country_modifier = benefactor_ai
+                    add_country_modifier = { name = malevolent_ai duration = 8030 }
+                }
+                random_list = {
+                    20 = { add_country_modifier = { name = picking_personality duration = 7300 } }
+                    20 = { add_country_modifier = { name = picking_personality duration = 9125 } }
+                    20 = { add_country_modifier = { name = picking_personality duration = 8030 } }
+                    20 = { add_country_modifier = { name = picking_personality duration = 10220 } }
+                    20 = { add_country_modifier = { name = picking_personality duration = 10950 } }
+                }
+            }
             #################Government Flags Setup######################
 
-            QNG = { add_country_modifier = { name = corrupt_army duration = 10950 } }
-            ENT = { add_country_modifier = { name = caudillo_leaders duration = 7300 } }
-            CRT = { add_country_modifier = { name = caudillo_leaders duration = 1825 } }
             HAI = { add_country_modifier = { name = divided_society duration = 10950 } }
 
-            any_greater_power = {
-                limit = { NOT = { tag = PRU } }
+            any_country = {
+                limit = {
+                    exists = yes
+                    is_greater_power = yes
+                }
+                diplomatic_influence = { who = GAZ value = -400 }
+                diplomatic_influence = { who = AGC value = -400 }
+            }
+
+            any_country = {
+                limit = {
+                    exists = yes
+                    is_greater_power = yes
+                    NOT = { is_our_vassal = NEH }
+                }
                 diplomatic_influence = { who = NEH value = -400 }
             }
 
             MEX = { add_country_modifier = { name = fight_the_power duration = 3650 } }
+            1253 = { add_province_modifier = { name = local_economic_downturn duration = 8760 } }
+
+            any_country = {
+                limit = {
+                    ai = no
+                    OR = {
+                        government = prussian_constitutionalism
+                        government = hms_government
+                    }
+                }
+                random_owned = {
+                    limit = { owner = { ruling_party_ideology = conservative } }
+                    owner = { set_country_flag = conservative_party_in_power }
+                }
+                random_owned = {
+                    limit = { owner = { ruling_party_ideology = liberal } }
+                    owner = { set_country_flag = liberal_party_in_power }
+                }
+                random_owned = {
+                    limit = { owner = { ruling_party_ideology = reactionary } }
+                    owner = { set_country_flag = reactionary_party_in_power }
+                }
+            }
         }
     }
 
@@ -2280,6 +2394,40 @@ political_decisions = {
             }
             912 = { any_pop = { limit = { has_pop_religion = shiite } militancy = 5 } } #Baalbeck
             915 = { any_pop = { limit = { has_pop_religion = shiite } militancy = 5 } } #Sidon
+        }
+    }
+
+    pick_AI_personality = {
+        picture = constantinople
+        potential = {
+            ai = yes
+            year = 1837
+            NOT = {
+                has_country_modifier = picking_personality
+            }
+        }
+
+        allow = {
+        }
+
+        effect = {
+            random = {
+                chance = 10
+                remove_country_modifier = malevolent_ai
+                add_country_modifier = { name = benefactor_ai duration = 8030 }
+            }
+            random = {
+                chance = 10
+                remove_country_modifier = benefactor_ai
+                add_country_modifier = { name = malevolent_ai duration = 8030 }
+            }
+            random_list = {
+                20 = { add_country_modifier = { name = picking_personality duration = 7300 } }
+                20 = { add_country_modifier = { name = picking_personality duration = 9125 } }
+                20 = { add_country_modifier = { name = picking_personality duration = 8030 } }
+                20 = { add_country_modifier = { name = picking_personality duration = 10220 } }
+                20 = { add_country_modifier = { name = picking_personality duration = 10950 } }
+            }
         }
     }
 }

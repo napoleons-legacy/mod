@@ -1,9 +1,5 @@
 political_decisions = {
 
-    #
-    # TODO CLEAN UP THIS NASTY FILE
-    #
-
     enact_liquor_prohibition = {
         picture = enact_liquor_prohibition
         potential = {
@@ -199,6 +195,7 @@ political_decisions = {
         potential = {
             can_nationalize = yes
             civilized = yes
+            NOT = { has_country_modifier = nationalization_in_progress }
         }
 
         allow = {
@@ -247,6 +244,7 @@ political_decisions = {
         }
 
         effect = {
+            add_country_modifier = { name = nationalization_in_progress duration = 365 }
             nationalize = yes
         }
 
@@ -342,161 +340,14 @@ political_decisions = {
         ai_will_do = { factor = 1 }
     }
 
-    genocide_minorities = {
-        picture = genocide_minorities
-        potential = {
-            NOT = { has_country_flag = preparations_to_kill }
-            OR = {
-                government = absolute_monarchy
-                government = theocracy
-                government = fascist_dictatorship
-                government = presidential_dictatorship
-                government = proletarian_dictatorship
-            }
-            revolution_n_counterrevolution = 1
-        }
-
-        allow = {
-            war = no
-            NOT = { any_owned_province = { has_province_modifier = genocide } }
-            invention = rhetoric_of_hate
-            money = 100000
-            OR = {
-                government = absolute_monarchy
-                government = theocracy
-                government = fascist_dictatorship
-                government = presidential_dictatorship
-                government = proletarian_dictatorship
-            }
-            OR = {
-                ruling_party_ideology = reactionary
-                ruling_party_ideology = fascist
-                ruling_party_ideology = communist
-            }
-        }
-
-        effect = {
-            add_tax_relative_income = -0.1
-            plurality = -50
-            set_country_flag = preparations_to_kill
-            random_owned = { limit = { owner = { has_country_modifier = signed_the_geneva_convention  } } owner = { badboy = 3 } }
-            any_owned = { limit = { has_province_modifier = national_assimilation } owner = { country_event = 2611 } }
-            random_list = {
-                25 = { add_country_modifier = { name = preparations_to_kill duration = 548 } country_event = { id = 4433 days = 549 } }
-                25 = { add_country_modifier = { name = preparations_to_kill duration = 730 } country_event = { id = 4433 days = 731 } }
-                25 = { add_country_modifier = { name = preparations_to_kill duration = 910 } country_event = { id = 4433 days = 911 } }
-                25 = { add_country_modifier = { name = preparations_to_kill duration = 1095 } country_event = { id = 4433 days = 1096 }  }
-            }
-            any_owned = {
-                remove_province_modifier = core_integration
-                remove_province_modifier = national_assimilation
-                remove_province_modifier = national_assimilation_acceptance
-            }
-            clr_country_flag = everywhere_genocide_only
-            clr_country_flag = non_colonial_genocide_only
-            clr_country_flag = colonial_genocide_only
-
-            any_pop = {
-                scaled_militancy = { ideology = socialist factor = 7 }
-                scaled_militancy = { ideology = liberal factor = 7 }
-                scaled_militancy = { ideology = anarcho_liberal factor = 7 }
-                scaled_militancy = { ideology = conservative factor = 7 }
-            }
-
-            any_pop = {
-                limit = { is_primary_culture = no is_accepted_culture = no }
-                militancy = 3
-                consciousness = 5
-            }
-
-            any_pop = {
-                limit = { agree_with_ruling_party = 0.70 }
-                militancy = -7
-            }
-
-            random_owned = {
-                limit = { owner = { ruling_party_ideology = fascist } }
-                owner = {
-                    any_pop = {
-                        scaled_militancy = { ideology = communist factor = 7 }
-                        scaled_militancy = { ideology = reactionary factor = 5 }
-                    }
-                }
-            }
-
-            random_owned = {
-                limit = { owner = { ruling_party_ideology = communist } }
-                owner = {
-                    any_pop = {
-                        scaled_militancy = { ideology = fascist factor = 7 }
-                        scaled_militancy = { ideology = reactionary factor = 7 }
-                    }
-                }
-            }
-
-            random_owned = {
-                limit = { owner = { ruling_party_ideology = reactionary } }
-                owner = {
-                    any_pop = {
-                        scaled_militancy = { ideology = communist factor = 7 }
-                        scaled_militancy = { ideology = fascist factor = 7 }
-                    }
-                }
-            }
-
-            random_owned = {
-                limit = { owner = { ruling_party_ideology = fascist } }
-                owner = {
-                    any_pop = {
-                        limit = {
-                            OR = {
-                                is_primary_culture = yes
-                                is_accepted_culture = yes
-                            }
-                        }
-                        scaled_militancy = { ideology = fascist factor = -5 }
-                    }
-                }
-            }
-
-            random_owned = {
-                limit = { owner = { ruling_party_ideology = communist } }
-                owner = {
-                    any_pop = {
-                        limit = {
-                            OR = {
-                                is_primary_culture = yes
-                                is_accepted_culture = yes
-                            }
-                        }
-                        scaled_militancy = { ideology = communist factor = -5 }
-                    }
-                }
-            }
-
-            random_owned = {
-                limit = { owner = { ruling_party_ideology = reactionary } }
-                owner = {
-                    any_pop = {
-                        limit = {
-                            OR = {
-                                is_primary_culture = yes
-                                is_accepted_culture = yes
-                            }
-                        }
-                        scaled_militancy = { ideology = reactionary factor = -2.5 }
-                    }
-                }
-            }
-        }
-
-        ai_will_do = { factor = 0 }
-    }
-
     enslave_the_serfs = {
         alert = no
         picture = enslave_the_serfs_image
         potential = {
+            OR = {
+                has_country_flag = government_decisions_on
+                ai = yes
+            }
             OR = {
                 government = absolute_monarchy
                 government = prussian_constitutionalism
@@ -901,6 +752,7 @@ political_decisions = {
 
         effect = {
             plurality = -25
+            set_country_flag = totalitarian_government
             add_country_modifier = {
                 name = totalitarian_system
                 duration = -1
@@ -1013,6 +865,7 @@ political_decisions = {
                 AND = { tag = TAJ owns = 1207 NOT = { capital = 1207 } }
                 AND = { tag = KAZ owns = 1181 NOT = { capital = 1181 } }
                 AND = { tag = MLI owns = 1794 NOT = { capital = 1794 } }
+                AND = { tag = KOR owns = 1624 NOT = { capital = 1624 } }
                 AND = { tag = ASH civilized = yes owns = 1907 NOT = { capital = 1907 } }
             }
         }
@@ -1020,6 +873,7 @@ political_decisions = {
         allow = { war = no }
 
         effect = {
+            random_owned = { limit = { owner = { tag = KOR } } owner = { capital = 1624 } }
             random_owned = { limit = { owner = { tag = ASH } } owner = { capital = 1907 } }
             random_owned = { limit = { owner = { tag = MLI } } owner = { capital = 1794 } }
             random_owned = { limit = { owner = { tag = KAZ } } owner = { capital = 1181 } }
@@ -1669,13 +1523,14 @@ political_decisions = {
         picture = change_border_policy
         alert = no
         potential = {
+            exists = yes
             civilized = yes
+            ai = no
             NOT = { has_country_flag = change_border_policy }
-            NOT = { has_country_modifier = law_changed_by_force }
+            #has_country_flag = government_decisions_on
         }
 
         allow = {
-            state_n_government = 1
             NOT = { has_country_modifier = law_changed_by_force }
         }
 
@@ -1691,6 +1546,7 @@ political_decisions = {
         alert = no
         potential = {
             has_country_flag = change_border_policy
+            #ai = no
         }
 
         allow = {
@@ -1707,7 +1563,11 @@ political_decisions = {
         picture = closed_border
         alert = no
         potential = {
+            exists = yes
+            OR = {
             has_country_flag = change_border_policy
+                ai = yes
+            }
             NOT = { border_policy = closed_borders }
         }
 
@@ -1753,7 +1613,11 @@ political_decisions = {
         picture = immigration_quotas
         alert = no
         potential = {
+            exists = yes
+            OR = {
             has_country_flag = change_border_policy
+                ai = yes
+            }
             NOT = { border_policy = quota_immigration }
             OR = {
                 is_culture_group = latin_american_cultures
@@ -1773,6 +1637,7 @@ political_decisions = {
 
         allow = {
             state_n_government = 1
+            NOT = { has_country_modifier = law_changed_by_force }
         }
 
         effect = {
@@ -1802,12 +1667,16 @@ political_decisions = {
         picture = immigrants_arriving
         alert = no
         potential = {
+            exists = yes
+            OR = {
             has_country_flag = change_border_policy
+                ai = yes
+            }
             NOT = { border_policy = open_borders }
         }
 
         allow = {
-            state_n_government = 1
+            NOT = { has_country_modifier = law_changed_by_force }
         }
 
         effect = {
@@ -1816,13 +1685,28 @@ political_decisions = {
             political_reform = open_borders
         }
 
-        ai_will_do = { factor = 0 }
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 has_country_modifier = totalitarian_system }
+            modifier = { factor = 0 NOT = { year = 1850 } }
+            modifier = { factor = 0 NOT = { state_n_government = 1 } }
+            modifier = { factor = 0 has_country_flag = ghost_country }
+            modifier = {
+                factor = 0
+                OR = {
+                    tag = USA
+                    tag = AST
+                    tag = NZL
+                    tag = CAN
+                }
+            }
+        }
     }
 
     state_of_emergency = {
         picture = state_of_emergency
         potential = {
-            state_n_government = 1
+            year = 1870
             NOT = { has_country_flag = state_of_emergency }
             NOT = { has_country_modifier = law_changed_by_force }
             OR = {
@@ -1869,7 +1753,16 @@ political_decisions = {
             }
         }
 
-        ai_will_do = { factor = 1 }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    government = democracy
+                    government = hms_government
+                }
+            }
+        }
     }
 
     renovate_capital = {

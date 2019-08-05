@@ -44,16 +44,34 @@
         size = 200
     }
 
+    clergymen = {
+        culture = british
+        religion = protestant
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 100
+    }
+
+    officers = {
+        culture = british
+        religion = protestant
+        size = 50
+    }
+
     artisans = {
         culture = british
         religion = protestant
-        size = 3000
+        size = 3200
     }
 
     soldiers = {
         culture = british
         religion = protestant
-        size = 1100
+        size = 1200
     }
 
     farmers = {
@@ -1317,6 +1335,12 @@
         culture = british
         religion = protestant
         size = 630
+    }
+
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 40
     }
 
     aristocrats = {

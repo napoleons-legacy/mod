@@ -1,0 +1,108 @@
+country_event = {
+    id = 86000
+    title = "EVTNAME86000"
+    desc = "EVTDESC86000"
+    picture = "Riot"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA86000"
+        any_owned = {
+            limit = { is_core = AFA }
+            secede_province = AFA
+        }
+
+        release_vassal = AFA
+
+        casus_belli = {
+            target = AFA
+            type = cut_down_to_size
+            months = 1
+        }
+
+        AFA = {
+            create_alliance = FROM
+            military_access = FROM
+            war = {
+                target = THIS
+                attacker_goal = {
+                    casus_belli = cut_down_to_size
+                }
+                defender_goal = {
+                    casus_belli = civil_war
+                }
+                call_ally = no
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 86001
+    title = "EVTNAME86001"
+    desc = "EVTDESC86001"
+    picture = "Celebration"
+
+    trigger = {
+        civilized = yes
+        tag = AFA
+        war = no
+        OR = {
+            FRA = { is_disarmed = yes }
+            BOR = { is_disarmed = yes }
+            FRA = { exists = no }
+            BOR = { exists = no }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "EVTOPTA86001"
+
+        end_war = FRA
+        end_war = BOR
+
+        all_core = { remove_core = FRA remove_core = BOR remove_core = AFA }
+
+        random_country = { limit = { tag = GER exists = yes } THIS = { any_owned = { limit = { is_core = GER } secede_province = GER } } }
+        random_country = { limit = { tag = FED exists = yes } THIS = { any_owned = { limit = { is_core = FED } secede_province = FED } } }
+        random_country = { limit = { tag = NGF exists = yes } THIS = { any_owned = { limit = { is_core = NGF } secede_province = NGF } } }
+        random_country = { limit = { tag = SGF exists = yes } THIS = { any_owned = { limit = { is_core = SGF } secede_province = SGF } } }
+
+        random_country = { limit = { tag = HOL exists = yes } THIS = { any_owned = { limit = { is_core = HOL } secede_province = HOL } } }
+        random_country = { limit = { tag = DNW exists = yes } THIS = { any_owned = { limit = { is_core = HOL } secede_province = DNW add_core = DNW } } }
+        random_country = { limit = { tag = DEN exists = yes } THIS = { any_owned = { limit = { is_core = HOL } secede_province = DEN add_core = DEN } } }
+
+        release = BRE
+        release = MUN
+        release = HAM
+        release = RHI
+        release = OLD
+
+        release = LUB
+        random_country = { limit = { tag = HOL exists = no } THIS = { any_owned = { limit = { is_core = HOL } secede_province = LUB } } }
+
+        release = LUC
+        FRA = { release_vassal = LUC }
+
+        random_country = {
+            limit = { tag = SPA owns = 487 } THIS = { all_core = { limit = { is_core = CAT } secede_province = SPA add_core = SPA } }
+        }
+
+        release = CAT
+        any_owned = { limit = { is_core = ITA } secede_province = ITA }
+        any_owned = { limit = { is_core = ITM } secede_province = ITM }
+        any_owned = { limit = { is_core = ITN } secede_province = ITN }
+        any_owned = { limit = { is_core = ITL } secede_province = ITL }
+        any_owned = { limit = { is_core = ITS } secede_province = ITS }
+        any_owned = { limit = { is_core = SWI } secede_province = SWI }
+        any_owned = { limit = { is_core = SAR } secede_province = SAR }
+        any_owned = { limit = { is_core = NET } secede_province = NET }
+    }
+}

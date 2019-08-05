@@ -27,8 +27,8 @@ nv_equality = {
 }
 
 nv_autocracy = {
-    literacy_con_impact = -0.2
-    core_pop_militancy_modifier = -0.01
+    literacy_con_impact = -0.25
+    core_pop_militancy_modifier = -0.02
     ruling_party_support = 0.3
     political_reform_desire = -0.05
     mobilisation_size = 0.045
@@ -36,11 +36,13 @@ nv_autocracy = {
 }
 
 nv_tradition = {
+    literacy_con_impact = -0.3
     research_points_modifier = -0.1
-    global_pop_militancy_modifier = -0.01
-    social_reform_desire = -0.2
+    core_pop_militancy_modifier = -0.02
+    social_reform_desire = -0.1
+    political_reform_desire = -0.1
     issue_change_speed = -0.2
-    ruling_party_support = 0.25
+    ruling_party_support = 0.4
     mobilisation_size = 0.04
     mobilisation_economy_impact = 1.0
 }

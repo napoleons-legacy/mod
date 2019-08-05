@@ -61,8 +61,8 @@ province_event = {
             year = 1899
             has_global_flag = GermanizeSchlewsigDanes
             has_global_flag = NOGermanizeSchlewsigDanes
-            }
         }
+    }
 
     mean_time_to_happen =  {
         months = 6
@@ -325,275 +325,6 @@ country_event = {
 
 }
 
-#German-Spanish Treaty of 1899
-country_event = {
-    id = 33025
-    title = "EVTNAME33025" #The Spanish Pacific
-    desc = "EVTDESC33025"
-    picture = "deliberation"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT33025OPTA"
-        treasury = 50000
-        relation = { who = FROM value = 100 }
-        FROM = { country_event = 33026 }
-        ai_chance = {
-            factor = 80
-            modifier = {
-                factor = 0.5
-                NOT = {
-                    relation = { who = FROM value = 0 }
-                }
-            }
-        }
-    }
-
-    option = {
-        name = "EVT33025OPTB"
-        relation = { who = FROM value = -50 }
-        FROM = { country_event = 33027 }
-        ai_chance = {
-            factor = 20
-            modifier = {
-                factor = 0
-                in_sphere = FROM
-            }
-            modifier = {
-                factor = 0.5
-                alliance_with = FROM
-            }
-            modifier = {
-                factor = 2
-                NOT = {
-                    relation = { who = FROM value = 0 }
-                }
-            }
-        }
-    }
-}
-
-country_event = {
-    id = 33026
-    title = "EVTNAME33026"
-    desc = "EVTDESC33026"
-    picture = "treaty"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT33026OPTA"
-        treasury = -50000
-        diplomatic_influence = { who = FROM value = 50 }
-        FROM = {
-            any_owned = {
-                limit = {
-                    OR = {
-                        region = SPA_610
-                        region = SPA_2517
-                    }
-                }
-                secede_province = THIS
-            }
-        }
-    }
-}
-
-country_event = {
-    id = 33027
-    title = "EVTNAME33027"
-    desc = "EVTDESC33027"
-    picture = "administration"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT33027OPTA"
-        prestige = -10
-        relation = { who = FROM value = -100 }
-        diplomatic_influence = { who = FROM value = -200 }
-        casus_belli = {
-            target = FROM
-            type = place_in_the_sun
-            months = 24
-        }
-        casus_belli = {
-            target = FROM
-            type = humiliate
-            months = 24
-        }
-        ai_chance = {
-            factor = 80
-        }
-    }
-
-    option = {
-        name = "EVT33027OPTB"
-        badboy = -1
-        prestige = -20
-        relation = { who = FROM value = -25 }
-        ai_chance = {
-            factor = 20
-        }
-    }
-}
-
-#German East Africa
-country_event = {
-    id = 33030
-    title = "EVTNAME33030" #The German East Africa Company
-    desc = "EVTDESC33030"
-    picture = "german_east_africa_company"
-
-    trigger = {
-        OR = {
-            tag = NGF
-            tag = GER
-        }
-        OR = {
-            government = absolute_monarchy
-            government = prussian_constitutionalism
-            government = hms_government
-        }
-        is_greater_power = yes
-        invention = prophylaxis_against_malaria
-        invention = mission_to_civilize
-        invention = colonial_negotiations
-        has_global_flag = berlin_conference
-        NOT = { has_country_flag = german_east_africa_company }
-        ZAN = {
-            war = no
-            civilized = no
-            any_owned_province = {
-                OR = {
-                    region = ENG_2024
-                    region = ENG_2036
-                    region = ENG_2039
-                }
-            }
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 12
-        modifier = {
-            factor = 0.5
-            is_sphere_leader_of = ZAN
-        }
-        modifier = {
-            factor = 0.5
-            year = 1885
-        }
-        modifier = {
-            factor = 0.5
-            year = 1888
-        }
-        modifier = {
-            factor = 2
-            NOT = { is_sphere_leader_of = ZAN }
-            ZAN = { part_of_sphere = yes }
-        }
-    }
-
-    option = {
-        name = "EVT33030OPTA"
-        set_country_flag = german_east_africa_company
-        badboy = 3
-        ZAN = { country_event = 33031 }
-        ai_chance = {
-            factor = 90
-            modifier = {
-                factor = 0
-                badboy = 0.88
-            }
-        }
-    }
-
-    option = {
-        name = "EVT33030OPTB"
-        set_country_flag = german_east_africa_company
-        badboy = -1
-        relation = { who = ZAN value = 100 }
-        ai_chance = { factor = 10 }
-            }
-}
-
-country_event = {
-    id = 33031
-    title = "EVTNAME33031" #German Warships
-    desc = "EVTDESC33031"
-    picture = "german_east_africa_company"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT33031OPTA"
-        clr_country_flag = delay_unciv_annexation
-        prestige = 5
-        relation = { who = FROM value = -400 }
-        add_casus_belli = {
-            target = FROM
-            type = demand_concession_BC_casus_belli
-            months = 60
-        }
-        ai_chance = {
-            factor = 5
-            modifier = {
-                factor = 5
-                part_of_sphere = yes
-            }
-            modifier = {
-                factor = 4
-                any_greater_power = { alliance_with = THIS }
-                NOT = { alliance_with = FROM }
-            }
-            modifier = {
-                factor = 0
-                in_sphere = FROM
-            }
-        }
-    }
-
-    option = {
-        name = "EVT33031OPTB"
-        clr_country_flag = delay_unciv_annexation
-        prestige = -5
-        FROM = { prestige = 5 }
-        relation = { who = FROM value = 400 }
-        FROM = { diplomatic_influence = { who = THIS value = 50 } }
-        any_owned = {
-            limit = {
-                OR = {
-                    region = ENG_2024
-                    region = ENG_2036
-                    region = ENG_2039
-                }
-                NOT = { province_id = 2048 }
-            }
-            secede_province = FROM
-        }
-        any_country = {
-            limit = {
-                civilized = yes
-                OR = {
-                    alliance_with = THIS
-                    is_sphere_leader_of = THIS
-                }
-                NOT = { tag = FROM }
-            }
-            casus_belli = {
-                target = FROM
-                type = place_in_the_sun
-                months = 30
-            }
-        }
-        ai_chance = {
-            factor = 95
-        }
-    }
-}
-
 country_event = {
     id = 33035
     title = "EVTNAME33035"
@@ -660,7 +391,7 @@ country_event = {
         }
         owns = 549
         total_pops = 13000000
-        year = 1895
+        year = 1890
     }
 
     fire_only_once = yes
@@ -669,11 +400,12 @@ country_event = {
 
     option = {
         name = "EVT33040OPTA"
+        set_global_flag = german_LR_normalized
         GER = { all_core = { limit = { life_rating = 40  } life_rating = -5 } }
     }
 }
 
-#Non Berlin-Munich germany picks a Capital
+#Non Berlin-Munich germany picks a Capital - Candidate to turn in a decision
 country_event = {
     id = 33042
     title = "EVTNAME33042"
@@ -730,4 +462,274 @@ country_event = {
         name = "EVT33042OPTE" #Don't change
         ai_chance = { factor = 2 }
     }
+}
+
+
+#Ostflucht
+country_event = {
+    id = 33043
+    title = "EVTNAME33043"
+    desc = "EVTDESC33043"
+    picture = "drang_nach_osten"
+
+    trigger = {
+        tag = GER
+        industrial_score = 500
+        has_global_flag = german_LR_normalized
+        any_owned_province = {
+            OR = {
+                region = PRU_701 #Posen
+                region = PRU_690 #Westpreussen
+                region = PRU_695 #Ostpreussen
+                region = PRU_682 #Lower Silesia
+            }
+            any_pop = {
+                strata = poor
+                NOT = { everyday_needs = 0.5 }
+            }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 24
+
+        modifier = {
+            factor = 0.8
+            any_owned_province = {
+                OR = {
+                    region = PRU_701
+                    region = PRU_690
+                    region = PRU_695
+                    region = PRU_682
+                }
+                any_pop = {
+                    strata = poor
+                    NOT = { everyday_needs = 0.25 }
+                }
+            }
+        }
+
+        modifier = {
+            factor = 0.8
+            any_owned_province = {
+                OR = {
+                    region = PRU_701
+                    region = PRU_690
+                    region = PRU_695
+                    region = PRU_682
+                }
+                any_pop = {
+                    strata = poor
+                    NOT = { everyday_needs = 0.1 }
+                }
+            }
+        }
+
+        modifier = {
+            factor = 0.4
+            any_owned_province = {
+                OR = {
+                    region = PRU_701 #Posen
+                    region = PRU_690 #Westpreussen
+                    region = PRU_695 #Ostpreussen
+                    region = PRU_682 #Lower Silesia
+                }
+                any_pop = {
+                    strata = poor
+                    NOT = { life_needs = 0.75 }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT33043OPTA"
+        random_owned = {
+            limit = { province_id = 580 } #Dusseldorf
+            add_province_modifier = { name = population_resettlement duration = 365 }
+        }
+        random_owned = {
+            limit = { province_id = 564 } #Frankfurt
+            add_province_modifier = { name = population_resettlement duration = 365 }
+        }
+        random_owned = {
+            limit = { province_id = 575 } #Cologne
+            add_province_modifier = { name = population_resettlement duration = 365 }
+        }
+        random_owned = {
+            limit = { province_id = 580 } #Dortmund
+            add_province_modifier = { name = population_resettlement duration = 365 }
+        }
+        random_owned = {
+            limit = { province_id = 528 } #Hamburg
+            add_province_modifier = { name = population_resettlement duration = 365 }
+        }
+
+        #Silesia
+        random_owned = {
+            limit = { region = PRU_682 } #Silesia
+            owner = {
+                random_list = {
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_682 }
+                            life_rating = -2
+                            add_province_modifier = { name = ostflucht duration = 730 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_682 }
+                            life_rating = -2
+                            add_province_modifier = { name = ostflucht duration = 1095 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_682 }
+                            life_rating = -2
+                            add_province_modifier = { name = ostflucht duration = 1460 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_682 }
+                            life_rating = -2
+                            add_province_modifier = { name = ostflucht duration = 1460 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                }
+            }
+        }
+        #Posen
+        random_owned = {
+            limit = { region = PRU_701 } #Posen
+            owner = {
+                random_list = {
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_701 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 180 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_701 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 365 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_701 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 545 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_701 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 730 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                }
+            }
+        }
+
+        #Westpreussen
+        random_owned = {
+            limit = { region = PRU_690 } #Westpreussen
+            owner = {
+                random_list = {
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_690 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 92 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_690 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 184 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_690 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 276 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_690 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 368 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                }
+            }
+        }
+
+        #Ostpreussen
+        random_owned = {
+            limit = { region = PRU_695 } #Ostpreussen
+            owner = {
+                random_list = {
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_695 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 150 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_695 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 300 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_695 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 450 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                    25 = {
+                        any_owned = {
+                            limit = { region = PRU_695 }
+                            life_rating = -1
+                            add_province_modifier = { name = ostflucht duration = 600 }
+                            remove_province_modifier = blood_and_iron_mine
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
 }

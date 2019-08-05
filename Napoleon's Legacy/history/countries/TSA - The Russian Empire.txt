@@ -1,7 +1,6 @@
 capital = 1008
 primary_culture = russian
-culture = byelorussian
-culture = ukrainian
+culture = ruthenian
 culture = ugrian
 culture = alaskan
 religion = orthodox
@@ -45,6 +44,7 @@ citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 set_country_flag = orthodox_country
+set_country_flag = russian_country
 
 ruling_party = RUS_conservative
 upper_house = {
@@ -56,8 +56,6 @@ upper_house = {
     socialist = 0
     communist = 0
 }
-
-decision = RUS_setup_1836
 
 # Technologies
 post_napoleonic_thought = 1
@@ -97,5 +95,3 @@ govt_flag = {
     government = hms_government
     flag = theocracy
 }
-
-oob = "RUS_oob.txt"

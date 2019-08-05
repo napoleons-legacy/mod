@@ -840,7 +840,7 @@ country_event = {
         473 = {
             owned_by = THIS
             controlled_by = REB
-            province_control_days = 180
+            province_control_days = 365
         }
         war = no
         NOT = { exists = CRS }
@@ -874,12 +874,12 @@ country_event = {
         847 = {
             owned_by = THIS
             controlled_by = REB
-            province_control_days = 180
+            province_control_days = 365
         }
         848 = {
             owned_by = THIS
             controlled_by = REB
-            province_control_days = 180
+            province_control_days = 365
         }
         war = no
         NOT = { exists = CRE }
@@ -914,17 +914,17 @@ country_event = {
         855 = {
             owned_by = THIS
             controlled_by = REB
-            province_control_days = 180
+            province_control_days = 365
         }
         856 = {
             owned_by = THIS
             controlled_by = REB
-            province_control_days = 180
+            province_control_days = 365
         }
         857 = {
             owned_by = THIS
             controlled_by = REB
-            province_control_days = 180
+            province_control_days = 365
         }
         war = no
         NOT = { exists = CYP }
@@ -988,7 +988,52 @@ country_event = {
         treasury = -1000
         801 = {
             secede_province = THIS
-            naval_base = 1
+        }
+        random_owned = {
+            limit = {
+                owner = { 2553 = { empty = yes } }
+            }
+            2553 = { secede_province = THIS }
+        }
+        random_owned = {
+            limit = {
+                owner = { 2551 = { empty = yes } }
+            }
+            2551 = { secede_province = THIS }
+        }
+
+        random_owned = {
+            limit = {
+                owner = { 3322 = { empty = yes } }
+            }
+            3322 = { secede_province = THIS }
+        }
+        random_owned = {
+            limit = {
+                owner = { 3319 = { empty = yes } }
+            }
+            3319 = { secede_province = THIS }
+        }
+        random_owned = {
+            limit = {
+                owner = { 3320 = { empty = yes } }
+            }
+            3320 = { secede_province = THIS }
+        }
+        random_owned = {
+            limit = {
+                owner = { 3321 = { empty = yes } }
+            }
+            3321 = { secede_province = THIS }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    2552 = { empty = yes }
+                    exists = CAN
+                }
+            }
+            2552 = { secede_province = CAN }
         }
         random_country = {
             limit = {
@@ -1015,99 +1060,6 @@ country_event = {
 
 country_event = {
 
-    id = 37235
-    title = "EVTNAME37235" #The Algerian Rebellion
-    desc = "EVTDESC37235"
-    picture = "arab_revolt"
-
-    trigger = {
-        tag = FRA
-        war = no
-        is_disarmed = no
-        ALD = {
-            exists = yes
-            neighbour = THIS
-            civilized = no
-        }
-        NOT = {
-            truce_with = ALD
-            alliance_with = ALD
-            has_country_flag = no_more_algerian_rebellion
-            has_country_modifier = punitive_effects
-            war_policy = pacifism
-            casus_belli = ALD
-            year = 1890
-            nationalism_n_imperialism = 1
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 3
-        modifier = {
-            factor = 4
-            has_country_flag = algerian_rebellion
-        }
-        modifier = {
-            factor = 3
-            ai = no
-        }
-    }
-
-    option = {
-        name = "EVT37235OPTA"
-        badboy = 2
-        relation = { who = ALD value = -200 }
-        diplomatic_influence = { who = ALD value = -200 }
-        random_country = {
-            limit = {
-                tag = ALD
-                NOT = { number_of_states = 2 }
-            }
-            add_casus_belli = {
-                target = THIS
-                type = establish_protectorate_casus_belli
-                months = 24
-            }
-        }
-        random_country = {
-            limit = {
-                tag = ALD
-                number_of_states = 2
-            }
-            add_casus_belli = {
-                target = THIS
-                type = demand_concession_casus_belli
-                months = 24
-            }
-        }
-        ai_chance = {
-            factor = 95
-            modifier = {
-                factor = 0
-                badboy = 0.92
-            }
-        }
-    }
-    option = {
-        name = "EVT37235OPTB"
-        prestige = -5
-        relation = { who = ALD value = 25 }
-        ai_chance = {
-            factor = 10
-        }
-    }
-    option = {
-        name = "EVT37235OPTC"
-        set_country_flag = no_more_algerian_rebellion
-        ai_chance = {
-            factor = 0
-        }
-    }
-}
-
-
-country_event = {
-
     id = 37236
     title = "EVTNAME37236" #Eiffel Tower Construction
     desc = "EVTDESC37236"
@@ -1117,14 +1069,27 @@ country_event = {
 
     option = {
         name = "EVT37236OPTA"
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -40000 } }
         random_owned = {
-            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
             owner = { set_variable = { which = owed_cash_money value = 40 } }
         }
         random_owned = {
-            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 40000 } }
+            owner = { treasury = -40000 }
         }
         random_list = {
             50 = { add_country_modifier = { name = eiffel_tower_construction duration = 600 } }
@@ -1139,14 +1104,27 @@ country_event = {
 
     option = {
         name = "EVT37236OPTB"
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -30000 } }
         random_owned = {
-            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
             owner = { set_variable = { which = owed_cash_money value = 30 } }
         }
         random_owned = {
-            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 30000 } }
+            owner = { treasury = -30000 }
         }
         random_list = {
             30 = { add_country_modifier = { name = eiffel_tower_construction duration = 600 } }
@@ -1161,14 +1139,27 @@ country_event = {
 
     option = {
         name = "EVT37236OPTC"
-        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -20000 } }
         random_owned = {
-            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
             owner = { set_variable = { which = owed_cash_money value = 20 } }
         }
         random_owned = {
-            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
             owner = { change_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 20000 } }
+            owner = { treasury = -20000 }
         }
         random_list = {
             30 = { add_country_modifier = { name = eiffel_tower_construction duration = 600 } }
@@ -1226,15 +1217,17 @@ country_event = {
     trigger = {
         tag = FRA
         owns = 1700
+        NOT = { has_country_flag = marched_through_the_iron_gates }
+        year = 1836
         OR = {
             government = hms_government
             government = absolute_monarchy
             government = prussian_constitutionalism
-            }
+        }
         NOT = {
             year = 1870
             owns = 1705
-            }
+        }
         ALD = {
             exists = yes
             ai = yes
@@ -1242,21 +1235,26 @@ country_event = {
         }
     }
 
-    mean_time_to_happen = { days = 15 }
+    mean_time_to_happen = { months = 12 }
 
     immediate = { ALD = { capital =  1713 } }
 
     option = {
         name = "EVT37238OPTA"
-        badboy = 3
-        casus_belli = { target = ALD type = demand_concession_casus_belli months = 30 }
-        ai_chance = { factor = 0.99 }
+        set_country_flag = marched_through_the_iron_gates
+        badboy = 2
+        casus_belli = {
+            target = ALD
+            type = demand_concession_casus_belli
+            months = 30
+        }
+        ai_chance = { factor = 100 }
     }
 
     option = {
         name = "EVT37238OPTB"
         prestige = -5
-        ai_chance = { factor = 0.01 }
+        ai_chance = { factor = 0 }
     }
 }
 
@@ -1300,7 +1298,7 @@ country_event = {
     }
 
 
-#al-Qadir's Revolt
+#Mokrani Revolt
 country_event = {
 
     id = 37240
@@ -1311,40 +1309,455 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        is_greater_power = yes
-        owns = 1711
-        owns = 1712
-        owns = 1713
-        owns = 1715
+        OR = {
+            owns = 1711
+            owns = 1712
+            owns = 1713
+            owns = 1715
+        }
         ALD = { exists = no }
         NOT = { truce_with = ALD }
         NOT = { has_global_flag = algeria_claimed_sahara }
-        has_global_flag = berlin_conference
+        #has_global_flag = berlin_conference
         NOT = { capital_scope = { continent = africa } }
         year = 1871
         war = no
+        1718 = { empty = yes }
     }
 
     mean_time_to_happen = { months = 6 }
 
     immediate = {
-#       ALD_1714 = { secede_province = THIS add_core = ALD }
         ALD_1718 = { secede_province = THIS add_core = ALD }
     }
 
     option = {
         name = "EVT37240OPTA"
-#       ALD_1714 = { secede_province = ALD any_pop = { literacy = -0.99 } }
+        set_global_flag = mokrani_revolt
         ALD_1718 = { secede_province = ALD any_pop = { literacy = -0.99 } }
         ALD = { civilized = no }
-            war = {
-                target = ALD
+        FRA_1700 = { add_province_modifier = { name = nationalist_agitation duration = 365 } }
+        ALD_1708 = { add_province_modifier = { name = nationalist_agitation duration = 365 } }
+
+        casus_belli ={
+            target = ALD
+            type = conquest_any
+            months = 60
+        }
+        war = {
+            target = ALD
             attacker_goal = { casus_belli = conquest_any }
-                defender_goal = {
-                    casus_belli = acquire_all_cores
-                country = FRA
-                }
             call_ally = no
+        }
+
+        random_country = {
+            limit = {
+                tag = ALD
+                exists = yes
+                neighbour = THIS
+                NOT = { number_of_states = 2 }
+                NOT = { civilized = yes }
+                THIS = { nationalism_n_imperialism = 1 has_global_flag = berlin_conference }
+            }
+            add_casus_belli = { target = THIS type = establish_protectorate_BC_casus_belli months = 48 }
+        }
+
+        random_country = {
+            limit = {
+                tag = ALD
+                exists = yes
+                neighbour = THIS
+                NOT = { number_of_states = 2 }
+                NOT = { civilized = yes }
+                THIS = { nationalism_n_imperialism = 1 NOT = { has_global_flag = berlin_conference } }
+            }
+            add_casus_belli = { target = THIS type = establish_protectorate_NI_casus_belli months = 48 }
+        }
+
+        random_country = {
+            limit = {
+                tag = ALD
+                exists = yes
+                neighbour = THIS
+                NOT = { number_of_states = 2 }
+                NOT = { civilized = yes }
+                THIS = { NOT = { nationalism_n_imperialism = 1 } }
+            }
+            add_casus_belli = { target = THIS type = establish_protectorate_casus_belli months = 48 }
+        }
+    }
+}
+
+#Battle of Logand�me
+country_event = {
+
+    id = 37241
+    title = "EVTNAME37241"
+    desc = "EVTDESC37241"
+    picture = "fouta_tooro"
+
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = faidherbe_ambitions
+        1788 = { owner = { civilized = no ai = yes } }
+        owns = 2573
+        owns = 1783
+        owns = 1784
+        war = no
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    option = {
+        name = "EVT37241OPTA"
+        badboy = 3
+        diplomatic_influence = { who = WOL value = -400 }
+
+            random_country = {
+                limit = {
+                    exists = yes
+                    neighbour = THIS
+                    tag = WOL
+                }
+                add_casus_belli = {
+                    target = THIS
+                    type = conquest_any
+                    months = 12
+                }
+                relation = { who = THIS value = -400 }
+                war = {
+                    target = THIS
+                    attacker_goal = {
+                        casus_belli = acquire_core_state
+                        state_province_id = 1783
+                    }
+                    defender_goal = { casus_belli = conquest_any }
+                    call_ally = no
+                }
+            }
+
+            random_country = {
+                limit = {
+                    exists = yes
+                    neighbour = THIS
+                    tag = TRZ
+                }
+                add_casus_belli = {
+                    target = THIS
+                    type = add_to_sphere
+                    months = 12
+                }
+                relation = { who = THIS value = -400 }
+                casus_belli = {
+                    target = THIS
+                    type = acquire_state
+                    months = 12
+                }
+                war = {
+                    target = THIS
+                    attacker_goal = {
+                        casus_belli = acquire_state
+                        state_province_id = 1783
+                    }
+                    defender_goal = { casus_belli = add_to_sphere }
+                    call_ally = no
+                }
+            }
+
+        1788 = {
+            any_pop = { limit = { NOT = { has_pop_religion = catholic } } reduce_pop = 0.7 }
+            secede_province = THIS
+            change_province_name = "Kaolack"
+            add_province_modifier = { name = nationalist_agitation duration = 720 }
+        }
+
+        random_country = {
+            limit = {
+                tag = TOO
+                exists = yes
+                neighbour = FRA
+                NOT = { number_of_states = 2 }
+                THIS = { NOT = { has_global_flag = berlin_conference } }
+            }
+            leave_alliance = FRA
+            relation = { who = FRA value = -400 }
+            FRA = { diplomatic_influence = { who = TOO value = -400 } }
+            add_casus_belli = {
+                target = FRA
+                type = establish_protectorate_casus_belli
+                months = 24
             }
         }
+
+        random_country = {
+            limit = {
+                tag = TOO
+                exists = yes
+                neighbour = FRA
+                number_of_states = 2
+                THIS = { NOT = { has_global_flag = berlin_conference } }
+            }
+            leave_alliance = FRA
+            relation = { who = FRA value = -400 }
+            FRA = { diplomatic_influence = { who = TOO value = -400 } }
+            add_casus_belli = {
+                target = FRA
+                type = demand_concession_casus_belli
+                months = 24
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = WOL
+                exists = yes
+                neighbour = FRA
+                number_of_states = 2
+                THIS = { NOT = { has_global_flag = berlin_conference } }
+            }
+            leave_alliance = FRA
+            relation = { who = FRA value = -400 }
+            FRA = { diplomatic_influence = { who = WOL value = -400 } }
+            add_casus_belli = {
+                target = FRA
+                type = demand_concession_casus_belli
+                months = 24
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = TOO
+                exists = yes
+                neighbour = FRA
+                number_of_states = 2
+                THIS = {
+                    nationalism_n_imperialism = 1
+                    has_global_flag = berlin_conference
+                }
+            }
+            leave_alliance = FRA
+            relation = { who = FRA value = -400 }
+            FRA = { diplomatic_influence = { who = TOO value = -400 } }
+            add_casus_belli = {
+                target = FRA
+                type = demand_concession_BC_casus_belli
+                months = 24
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = TOO
+                exists = yes
+                neighbour = FRA
+                NOT = { number_of_states = 2 }
+                THIS = {
+                    nationalism_n_imperialism = 1
+                    has_global_flag = berlin_conference
+                }
+            }
+            leave_alliance = FRA
+            relation = { who = FRA value = -400 }
+            FRA = { diplomatic_influence = { who = TOO value = -400 } }
+            add_casus_belli = {
+                target = FRA
+                type = establish_protectorate_BC_casus_belli
+                months = 24
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = WOL
+                exists = yes
+                neighbour = FRA
+                NOT = { number_of_states = 2 }
+                THIS = {
+                    nationalism_n_imperialism = 1
+                    has_global_flag = berlin_conference
+                }
+            }
+            leave_alliance = FRA
+            relation = { who = FRA value = -400 }
+            FRA = { diplomatic_influence = { who = WOL value = -400 } }
+            add_casus_belli = {
+                target = FRA
+                type = establish_protectorate_BC_casus_belli
+                months = 24
+            }
+        }
+
+        random_country = {
+            limit = {
+                tag = TRZ
+                exists = yes
+                NOT = { in_sphere = THIS }
+            }
+            leave_alliance = FRA
+            add_casus_belli = {
+                target = FRA
+                type = add_to_sphere
+                months = 24
+            }
+        }
+
+        ai_chance = {
+            factor = 100
+            modifier = { factor = 0 badboy = 0.9 }
+        }
+    }
+
+    option = {
+        name = "EVT37241OPTB"
+        prestige = -5
+        ai_chance = {
+            factor = 0
+            modifier = { factor = 100 badboy = 0.9 }
+        }
+    }
+}
+
+
+#Founding Libreville
+country_event = {
+
+    id = 37242
+    title = "EVTNAME37242"
+    desc = "EVTDESC37242"
+    picture = "first_barbary_war"
+
+    trigger = {
+        slavery = no_slavery
+        1972 = { empty = yes }
+        1974 = { empty = yes }
+        OR = {
+            is_greater_power = yes
+            is_secondary_power = yes
+        }
+        capital_scope = { continent = europe }
+        NOT = { has_country_flag = russian_country }
+        NOT = { tag = TUR }
+        war = no
+        any_owned_province = { has_building = naval_base }
+        total_amount_of_ships = 40
+        raider_group_doctrine = 1
+    }
+
+    mean_time_to_happen = {
+        months = 80
+
+        modifier = {
+            factor = 0.8
+            is_greater_power = yes
+        }
+
+        modifier = {
+            factor = 0.5
+            primary_culture = anglo_canadian
+        }
+    }
+
+    option = {
+        name = "EVT37242OPTA"
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 50000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 50 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 50000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 50 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 50000 } }
+            owner = { treasury = -50000 }
+        }
+
+        1972 = {
+            secede_province = THIS
+            life_rating = 25
+            any_pop = { literacy = -0.99 }
+        }
+        1974 = {
+            secede_province = THIS
+            life_rating = 25
+            any_pop = { literacy = -0.99 }
+        }
+
+        random_owned = { limit = { owner = { is_culture_group = french } } 1972 = { change_province_name = "Libreville" } }
+        random_owned = { limit = { owner = { is_culture_group = germanic } } 1972 = { change_province_name = "Freistadt" } }
+        random_owned = { limit = { owner = { is_culture_group = british } } 1972 = { change_province_name = "Freeburg" } }
+        random_owned = { limit = { owner = { is_culture_group = italian } } 1972 = { change_province_name = "Liberacitta" } }
+        random_owned = { limit = { owner = { primary_culture = dutch } } 1972 = { change_province_name = "Vrijstad" } }
+        random_owned = { limit = { owner = { primary_culture = spanish } } 1972 = { change_province_name = "Ciudad Libre" } }
+        random_owned = { limit = { owner = { primary_culture = catalan } } 1972 = { change_province_name = "Ciudad Libre" } }
+        random_owned = { limit = { owner = { primary_culture = basque } } 1972 = { change_province_name = "Ciudad Libre" } }
+        random_owned = { limit = { owner = { primary_culture = portuguese } } 1972 = { change_province_name = "Cidade-Livre" } }
+        random_owned = { limit = { owner = { is_culture_group = scandinavian } } 1972 = { change_province_name = "Fristad" } }
+
+
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = {
+                        OR = {
+                            is_culture_group = french
+                            is_culture_group = germanic
+                            is_culture_group = british
+                            is_culture_group = italian
+                            primary_culture = dutch
+                            primary_culture = spanish
+                            primary_culture = catalan
+                            primary_culture = basque
+                            primary_culture = portuguese
+                            is_culture_group = scandinavian
+                        }
+                    }
+                }
+            }
+            1972 = { change_province_name = "Libreville" }
+        }
+    }
+
+    option = {
+        name = "EVT37242OPTB"
+        prestige = -5
+        ai_chance = { factor = 0 }
+    }
+}
+
+#Bordeaux change to Wood
+province_event = {
+
+    id = 37243
+    title = "EVTNAME37243"
+    desc = "EVTDESC37243"
+
+    fire_only_once = yes
+
+    trigger = {
+        province_id = 458
+        owner = { iron_railroad = 1 }
+        has_building =  railroad
+    }
+
+    mean_time_to_happen = { months = 36 }
+
+
+    option = {
+        name = "EVT37243OPTA"
+        trade_goods = timber
+        add_province_modifier = { name = drained_marsh duration = 365 }
+    }
 }

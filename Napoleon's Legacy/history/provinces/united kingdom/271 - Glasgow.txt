@@ -1,7 +1,7 @@
 owner = BRI
 controller = BRI
-add_core = CAN
 add_core = BRI
+add_core = CAN
 add_core = SCO
 trade_goods = coal
 naval_base = 2

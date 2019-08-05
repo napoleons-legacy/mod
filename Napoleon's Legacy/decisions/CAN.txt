@@ -77,7 +77,7 @@ political_decisions = {
             owns = 36
         }
         effect = {
-            22 = { life_rating = 11 }
+            22 = { life_rating = 2 }
             add_country_modifier = { name = rcmp duration = -1 }
         }
         ai_will_do = {
@@ -252,7 +252,7 @@ political_decisions = {
             }
             25 = {
                 change_province_name = "Calgary"
-                life_rating = 12
+                life_rating = 3
                 add_province_modifier = { name = gateway_to_harbor duration = 365 }
             }
             69 = { change_province_name = "Edmundston" }
@@ -372,7 +372,7 @@ political_decisions = {
         potential = {
             owns = 57
             NOT = { has_global_flag = ottawa_founded }
-            57 = { NOT = { has_province_modifier = genocide } }
+            57 = { NOT = { has_province_modifier = mass_graves } }
         }
 
         allow = {

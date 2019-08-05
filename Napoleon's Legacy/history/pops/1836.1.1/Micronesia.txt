@@ -2,24 +2,6 @@
 #colonized by Spain in 1836
 #Guam (6000/1500 POPS)
 2517 = {
-    bureaucrats = {
-        culture = spanish
-        religion = catholic
-        size = 1
-    }
-
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 4
-    }
-
-    soldiers = {
-        culture = spanish
-        religion = catholic
-        size = 5
-    }
-
     artisans = {
         culture = micronesian
         religion = animist
@@ -40,12 +22,6 @@
 }
 #Saipan (5600/1400 POPS)
 2521 = {
-    clergymen = {
-        culture = spanish
-        religion = catholic
-        size = 2
-    }
-
     artisans = {
         culture = micronesian
         religion = animist

@@ -261,7 +261,7 @@
     aristocrats = {
         culture = croat
         religion = catholic
-        size = 50
+        size = 100
     }
 
     officers = {
@@ -273,7 +273,7 @@
     clergymen = {
         culture = croat
         religion = catholic
-        size = 50
+        size = 100
     }
 
     artisans = {
@@ -285,7 +285,7 @@
     soldiers = {
         culture = croat
         religion = catholic
-        size = 50
+        size = 100
     }
 
     farmers = {
@@ -345,7 +345,7 @@
     aristocrats = {
         culture = north_italian
         religion = catholic
-        size = 50
+        size = 100
     }
 
     officers = {
@@ -357,7 +357,7 @@
     clergymen = {
         culture = north_italian
         religion = catholic
-        size = 50
+        size = 100
     }
 
     artisans = {

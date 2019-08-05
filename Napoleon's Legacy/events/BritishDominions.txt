@@ -52,7 +52,7 @@ country_event = {
             militancy = -10
         }
         AST = {
-            all_core = { remove_core = THIS remove_core = ENG }
+            all_core = { remove_core = THIS remove_core = CAN }
         }
         release_vassal = AST
         AST = { prestige = -80 }

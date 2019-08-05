@@ -1,0 +1,114 @@
+# Reduction of Swiss lands
+country_event = {
+    id = 7880765
+    title = "EVTNAME7880765"
+    desc = "EVTDESC7880765"
+    picture = "switzerland"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    # Drop Lausanne and Lugano (if Italian neighbor), remove cores, and add German cores.
+    option = {
+        name = "EVT7880765OPTA"
+
+        relation = { who = FROM value = 50 }
+
+        SWI_607 = {
+            remove_core = THIS
+            secede_province = FROM
+        }
+
+        random_country = {
+            limit = {
+                owns = 726
+                NOT = { owns = 2568 }
+                OR = {
+                    primary_culture = north_italian
+                    accepted_culture = north_italian
+                }
+            }
+
+            country_event = 7880766
+        }
+
+        SWI_603 = { add_core = GER }
+
+        ai_chance = {
+            factor = 90
+            modifier = {
+                factor = 0
+                is_greater_power = yes
+            }
+
+            modifier = {
+                factor = 1.2
+                in_sphere = FROM
+            }
+        }
+    }
+
+    # Don't drop claims, German cores not added.
+    option = {
+        name = "EVT7880765OPTB"
+        prestige = 10
+
+        relation = { who = FROM value = -100 }
+
+        ai_chance = {
+            factor = 10
+        }
+    }
+}
+
+# Italian neighbor is offered Lugano
+country_event = {
+    id = 7880766
+    title = "EVTNAME7880766"
+    desc = "EVTDESC7880766"
+    picture = "switzerland"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    # Take it
+    option = {
+        name = "EVT7880766OPTA"
+        prestige = 3
+
+        relation = { who = FROM value = -100 }
+        2568 = { remove_core = SWI }
+        2568 = { secede_province = THIS add_core = THIS }
+
+        ai_chance = {
+            factor = 95
+
+            modifier = {
+                factor = 0.85
+                relation = { who = FROM value = 100 }
+            }
+
+            modifier = {
+                factor = 0.7
+                alliance_with = FROM
+            }
+        }
+    }
+
+    # Don't take it
+    option = {
+        name = "EVT7880766OPTB"
+        badboy = -2
+
+        relation = { who = FROM value = 100 }
+
+        ai_chance = {
+            factor = 5
+
+            modifier = {
+                factor = 10
+                badboy = 24
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 #########################################
-#           Austrian Dominions          #
+#            Austrian Dominions            #
 #########################################
 # Hungarian Independence?
 country_event = {
@@ -23,13 +23,13 @@ country_event = {
         OR = {
             AND = {
                 NOT = { accepted_culture = hungarian }
-        any_state = {
-            any_owned_province = {
-                is_core = HUN
-                culture = hungarian
+                any_state = {
+                    any_owned_province = {
+                        is_core = HUN
+                        culture = hungarian
                         literacy = 0.25
-            }
-            average_militancy = 2
+                    }
+                    average_militancy = 2
                 }
             }
             AND = {
@@ -95,6 +95,7 @@ country_event = {
     }
 
     immediate = { random_owned = { limit = { owner = { accepted_culture = hungarian } } owner = { remove_accepted_culture = hungarian } } }
+
     option = {
         name = "EVT90017OPTA"
         any_pop = {
@@ -294,13 +295,13 @@ country_event = {
         OR = {
             AND = {
                 NOT = { accepted_culture = croat }
-        any_state = {
-            any_owned_province = {
-                is_core = CRO
-                culture = croat
+                any_state = {
+                    any_owned_province = {
+                        is_core = CRO
+                        culture = croat
                         literacy = 0.25
-            }
-            average_militancy = 3
+                    }
+                    average_militancy = 3
                 }
             }
             AND = {
@@ -3005,187 +3006,6 @@ country_event = {
             militancy = 5
         }
         set_country_flag = danish_independence
-    }
-}
-
-#The Grand Duchy of Finland to Russia
-country_event = {
-    id = 49510
-    title = "EVTNAME49510"
-    desc = "EVTDESC49510"
-    picture = "diet_of_finland"
-
-    fire_only_once = yes
-
-    trigger = {
-        war = no
-        tag = RUS
-        NOT = { has_country_flag = no_grand_duchy_finland }
-        is_our_vassal = FIN
-        nationalism_n_imperialism = 1
-        OR = {
-            government = absolute_monarchy
-            government = prussian_constitutionalism
-            government = hms_government
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 120
-        modifier = {
-            factor = 1.5
-            any_pop = {
-                has_pop_culture = finnish
-                is_accepted_culture = yes
-            }
-        }
-        modifier = {
-            factor = 0.5
-            nationalism_n_imperialism = 1
-        }
-        modifier = {
-            factor = 0.5
-            revolution_n_counterrevolution = 1
-        }
-        modifier = {
-            factor = 0.8
-            invention = separatism
-        }
-    }
-
-    option = {
-        name = "EVT90017OPTA"
-        FIN = { any_pop = { limit = { has_pop_culture = finnish } militancy = 7 } }
-        any_pop = { limit = { has_pop_culture = finnish } militancy = 6 }
-        any_owned = {
-            limit = { culture = finnish }
-            add_province_modifier = { name = nationalist_agitation duration = 1825 }
-        }
-        ai_chance = {
-            factor = 15
-            modifier = {
-                factor = 1.5
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = pro_military
-            }
-            modifier = {
-                factor = 0.75
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 0.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 3
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 5
-            }
-        }
-    }
-    option = {
-        name = "EVT49510OPTB"
-        badboy = -1
-        set_country_flag = finland_is_recognized
-        FIN = {
-            government = prussian_constitutionalism
-            ruling_party_ideology = conservative
-            political_reform = landed_voting
-            political_reform = appointed
-            political_reform = yes_meeting
-            political_reform = censored_press
-            political_reform = no_trade_unions
-            political_reform = harassment
-            set_country_flag = grand_duchy_finland
-            remove_accepted_culture = swedish
-            any_pop = {
-                limit = { has_pop_culture = finnish }
-                militancy = -8
-            }
-        }
-        any_pop = {
-            limit = { has_pop_culture = finnish }
-            militancy = -3
-        }
-        any_pop = {
-            limit = {
-                NOT = { has_pop_culture = finnish }
-                is_primary_culture = no
-            }
-            militancy = 2
-        }
-        relation = {
-            who = FIN
-            value = 200
-        }
-        diplomatic_influence = {
-            who = FIN
-            value = 200
-        }
-        ai_chance = {
-            factor = 90
-            modifier = {
-                factor = 1.25
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 1.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 3
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 5
-            }
-        }
-    }
-    option = {
-        name = "EVT90017OPTC"
-        set_country_flag = no_grand_duchy_finland
-        badboy = 1
-        any_pop = {
-            limit = {
-                location = { is_core = FIN }
-                has_pop_culture = finnish
-            }
-            militancy = 8
-        }
-        FIN = {
-            remove_accepted_culture = swedish
-            any_owned = {
-                limit = { culture = finnish }
-                add_province_modifier = {
-                    name = nationalist_agitation
-                    duration = 3650
-                }
-            }
-            any_pop = {
-            limit = {
-                has_pop_culture = finnish
-                }
-                militancy = 9
-                consciousness = 9
-            }
-        }
-        any_owned = {
-            limit = { culture = finnish }
-            add_province_modifier = {
-                name = nationalist_agitation
-                duration = 3650
-            }
-        }
-        ai_chance = {
-            factor = 0
-        }
     }
 }
 

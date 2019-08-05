@@ -81,17 +81,43 @@
         size = 4675
     }
 
+    ######Jews
+    aristocrats = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    officers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     clergymen = {
         culture = sephardic
         religion = jewish
-        size = 25
+        size = 100
     }
 
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 1475
+        size = 500
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 600
+    }
+    ########
 }
 #Ruled by Aljaziar 1836
 #Bougie (448000/112000 POPS)
@@ -399,17 +425,43 @@
         size = 2600
     }
 
+    ######Jews
+    aristocrats = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    officers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     clergymen = {
         culture = sephardic
         religion = jewish
-        size = 20
+        size = 100
     }
 
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 1230
+        size = 380
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 480
+    }
+    ########
 }
 #Aljazair-ruled in 1836 :
 #Tilimsan - Tlemcen (221600/55400 POPS)
@@ -493,11 +545,32 @@
         size = 12500
     }
 
+    ######Jews
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     farmers = {
         culture = sephardic
         religion = jewish
-        size = 400
+        size = 100
     }
+    ########
 
     slaves = {
         culture = forest_bantu
@@ -788,17 +861,43 @@
         size = 25550
     }
 
+    ######Jews
+    aristocrats = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    officers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
     clergymen = {
         culture = sephardic
         religion = jewish
-        size = 25
+        size = 100
     }
 
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 975
+        size = 300
     }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 300
+    }
+    ########
 }
 #Biskra (100000/25000 POPS)
 1710 = {

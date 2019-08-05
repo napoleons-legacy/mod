@@ -398,6 +398,42 @@
 #Trujillo (68000/17000 POPS)
 2292 = {
     aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 250
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 105
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 100
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 175
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 1000
+    }
+
+    aristocrats = {
         culture = south_andean
         religion = catholic
         size = 375
@@ -742,6 +778,48 @@
 #Lima (324000/81000 POPS)
 2295 = {
     aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 350
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 1350
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 800
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 850
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 9150
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 700
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 42575
+    }
+
+    aristocrats = {
         culture = south_andean
         religion = catholic
         size = 1675
@@ -861,8 +939,45 @@
         size = 1500
     }
 }
-#Ica (60000/15000 POPS)
+
+# Ica
 2297 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 850
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 600
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 575
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1350
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 450
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 4325
+    }
+
     aristocrats = {
         culture = south_andean
         religion = catholic
@@ -944,6 +1059,42 @@
 }
 #Huaraz (100000/25000 POPS)
 2298 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 450
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 175
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 175
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 100
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 175
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 2325
+    }
+
     aristocrats = {
         culture = south_andean
         religion = catholic
@@ -1117,6 +1268,42 @@
 #Cusco (228000/57000 POPS)
 2302 = {
     aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 350
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 300
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 325
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 800
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 300
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 6325
+    }
+
+    aristocrats = {
         culture = south_andean
         religion = catholic
         size = 1150
@@ -1258,6 +1445,36 @@
 }
 #Arequipa (72000/18000 POPS)
 2304 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 250
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 75
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 300
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 800
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 50
+    }
+
     aristocrats = {
         culture = south_andean
         religion = catholic

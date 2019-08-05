@@ -3,23 +3,37 @@ political_decisions = {
     specific_trade_policy = {
         picture = specific_trade_policy
         potential = {
-            NOT = { has_country_flag = trade_policy_choosing_disabled }
+            OR = {
+                has_country_flag = government_decisions_on
+                ai = yes
+            }
             exists = yes
             OR = {
                 civilized = yes
                 NOT = { finance_reform = no_finance_reform }
             }
             NOT = {
+                has_country_flag = trade_policy_choosing_disabled
+                has_country_flag = ghost_country
+                has_country_flag = cant_use_decisions
+                has_global_flag = trade_policy_globally_disabled
+                has_country_modifier = russian_protectionism
                 has_country_modifier = mercantilism
                 has_country_modifier = economic_nationalism
                 has_country_modifier = french_liberal_school
                 has_country_modifier = smithian_school
+                has_country_modifier = non_interventionism_trade_policy
                 has_country_modifier = no_trade_policy_set
+                has_country_modifier = in_bankrupcy
+                has_country_modifier = bad_debter
+                has_country_modifier = generalised_debt_default
+                has_country_modifier = preparing_for_war
             }
         }
 
         allow = {
             election = no
+            is_vassal = no
             OR = {
                 AND = {
                     trade_policy = protectionism
@@ -80,7 +94,13 @@ political_decisions = {
             }
         }
 
-        ai_will_do = { factor = 1 }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                money = 3000000
+            }
+        }
     }
 
     rescind_trade_policy = {

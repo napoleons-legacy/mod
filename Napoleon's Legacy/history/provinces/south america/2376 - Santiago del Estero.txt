@@ -1,9 +1,7 @@
-owner = ARC
-
-controller = ARC
-
-add_core = ARC
-
+owner = LPL
+controller = LPL
+add_core = LPL
+add_core = ARG
 trade_goods = timber
 terrain = savanna
 life_rating = 35

@@ -75,13 +75,12 @@ political_decisions = {
         }
     }
 
-     law_of_return = {
+    law_of_return = {
         picture = law_of_return
          potential = {
             OR = {
                 AND = {
                     tag = ISR
-
                     owns = 916
                     owns = 917
                     owns = 918
@@ -89,7 +88,6 @@ political_decisions = {
                     owns = 920
                     owns = 921
                 }
-
                 AND = {
                     tag = ARM
                     is_secondary_power = yes
@@ -100,6 +98,7 @@ political_decisions = {
             }
              NOT = { has_country_flag = law_of_return_issued }
          }
+
          allow = {
             war = no
             nationalism_n_imperialism = 1
@@ -109,14 +108,33 @@ political_decisions = {
                 money = 50000
                 ai = yes
             }
-         }
+        }
 
         effect = {
-            random_owned = { limit = { owner = { ai = no } } owner = { treasury = -50000 } }
             random_owned = {
-                limit = { owner = { ai = yes } }
+                limit = {
+                    owner = {
+                        NOT = { money = 50000 }
+                        NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                    }
+                }
                 owner = { set_variable = { which = owed_cash_money value = 50 } }
             }
+            random_owned = {
+                limit = {
+                    owner = {
+                        NOT = { money = 50000 }
+                        check_variable = { which = owed_cash_money value = 9 }
+                    }
+                }
+                owner = { change_variable = { which = owed_cash_money value = 50 } }
+            }
+            random_owned = {
+                limit = { owner = { money = 50000 } }
+                owner = { treasury = -50000 }
+            }
+
+
             set_country_flag = law_of_return_issued
             random_owned = {
                 limit = { owner = { tag = ISR } }
@@ -143,7 +161,7 @@ political_decisions = {
             }
         }
 
-         ai_will_do = { factor = 1 }
+        ai_will_do = { factor = 1 }
     }
 
     greater_israel = {

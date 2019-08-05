@@ -20,10 +20,7 @@ country_event = {
         remove_country_modifier = sakoku
         remove_country_modifier = rangaku
         remove_country_modifier = uncivilized_isolationism
-        remove_country_modifier = isolationist_foreign_naval_officers
-        remove_country_modifier = isolationist_foreign_naval_schools
-        remove_country_modifier = isolationist_foreign_officers
-        remove_country_modifier = isolationist_foreign_training
+
         add_country_modifier = {
             name = "western_influences"
             duration = -1
@@ -131,10 +128,7 @@ country_event = {
         treasury = -100000
         FROM = { country_event = 97609 }
         remove_country_modifier = uncivilized_isolationism
-        remove_country_modifier = isolationist_foreign_naval_officers
-        remove_country_modifier = isolationist_foreign_naval_schools
-        remove_country_modifier = isolationist_foreign_officers
-        remove_country_modifier = isolationist_foreign_training
+
         add_country_modifier = {
             name = "western_influences"
             duration = -1
@@ -380,6 +374,14 @@ country_event = {
         set_country_flag = supports_imperial_edict
         relation = { who = FROM value = 50 }
         ruling_party_ideology = conservative
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
         ai_chance = {
             factor = 50
             modifier = {
@@ -408,6 +410,14 @@ country_event = {
         set_country_flag = opposes_imperial_edict
         relation = { who = FROM value = -50 }
         ruling_party_ideology = reactionary
+        clr_country_flag = election_started
+        clr_country_flag = conservative_party_in_power
+        clr_country_flag = liberal_party_in_power
+        clr_country_flag = reactionary_party_in_power
+        clr_country_flag = socialist_party_in_power
+        clr_country_flag = communist_party_in_power
+        clr_country_flag = fascist_party_in_power
+        clr_country_flag = anarcho_liberal_party_in_power
         ai_chance = {
             factor = 50
             modifier = {
@@ -1105,7 +1115,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -1143,7 +1153,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = daimyo_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -1155,7 +1165,7 @@ country_event = {
             owner = {
                 add_country_modifier = {
                     name = taiping_draft
-                    duration = 365
+                    duration = 90
                 }
             }
         }
@@ -1267,10 +1277,16 @@ country_event = {
         OR = {
             AND = {
                 owns = 1649
+                war = no
+                is_mobilised = no
                 1657 = {
                     OR = {
                         owned_by = THIS
-                        owner = { vassal_of = THIS }
+                        owner = {
+                            vassal_of = THIS
+                            war = no
+                            is_mobilised = no
+                        }
                     }
                 }
             }
@@ -1282,7 +1298,11 @@ country_event = {
                     }
                 }
                 war = no
-                TKG = { war = no }
+                is_mobilised = no
+                TKG = {
+                    war = no
+                    is_mobilised = no
+                }
                 truce_with = TKG
             }
         }
@@ -1333,6 +1353,7 @@ country_event = {
         }
         any_country = {
             limit = {
+                ai = yes
                 OR = {
                     tag = SEN
                     tag = YZW
@@ -1344,7 +1365,25 @@ country_event = {
                 exists = yes
             }
             end_war = THIS
-            country_event = 97647
+            end_war = JAP
+            end_war = TKG
+            country_event = { id = 97647 days = 15 }
+        }
+        any_country = {
+            limit = {
+                ai = no
+                OR = {
+                    tag = SEN
+                    tag = YZW
+                    tag = CHO
+                    tag = SAT
+                    tag = TOS
+                    tag = KAG
+                }
+                exists = yes
+            }
+            end_war = THIS
+            country_event = { id = 97647 days = 1 }
         }
     }
 }
@@ -1374,7 +1413,7 @@ country_event = {
     }
 
     option = {
-        name = "EVT97647OPTA"
+        name = "EVT97647OPTB"
         random_country = {
             limit = {
                 tag = JAP
@@ -1573,7 +1612,8 @@ country_event = {
                 exists = yes
             }
             end_war = THIS
-            country_event = 97652
+            end_war = JAP
+            country_event = { id = 97652 days = 15 }
         }
     }
 }
@@ -1617,7 +1657,7 @@ country_event = {
         relation = { who = TKG value = -200 }
         add_country_modifier = {
             name = taiping_draft
-            duration = 365
+            duration = 90
         }
         ai_chance = {
             factor = 0
@@ -2663,7 +2703,7 @@ country_event = {
         nationalism_n_imperialism = 1
         1086 = { #Pogobi
             owner = {
-                tag = RUS
+                has_country_flag = russian_country
                 NOT = { truce_with = THIS }
                 NOT = { alliance_with = THIS }
             }
@@ -2920,15 +2960,15 @@ country_event = {
     }
     option = {
         name = "EVT97683OPTB" #Set them completely free and play as them
-            EZO = { all_core = { remove_core = JAP remove_core = TKG } }
-            all_core = { limit = { state_id = 1086 } remove_core = TKG remove_core = JAP add_core = EZO }
-            any_owned = { limit = { is_core = EZO } secede_province = EZO }
-            relation = { who = EZO value = 400 }
-            diplomatic_influence = { who = EZO value = 400 }
-            change_tag_no_core_switch = EZO
+        EZO = { all_core = { remove_core = JAP remove_core = TKG } }
+        all_core = { limit = { state_id = 1086 } remove_core = TKG remove_core = JAP add_core = EZO }
+        any_owned = { limit = { is_core = EZO } secede_province = EZO }
+        relation = { who = EZO value = 400 }
+        diplomatic_influence = { who = EZO value = 400 }
+        change_tag_no_core_switch = EZO
         ai_chance = { factor = 0 }
-        }
     }
+}
 
 country_event = {
     id = 97683
@@ -2975,24 +3015,32 @@ country_event = {
             political_reform = non_secret_ballots
             political_reform = proportional_representation
             ruling_party_ideology = conservative
+            clr_country_flag = election_started
+            clr_country_flag = conservative_party_in_power
+            clr_country_flag = liberal_party_in_power
+            clr_country_flag = reactionary_party_in_power
+            clr_country_flag = socialist_party_in_power
+            clr_country_flag = communist_party_in_power
+            clr_country_flag = fascist_party_in_power
+            clr_country_flag = anarcho_liberal_party_in_power
             election = yes
-            small_arms = 50
-            canned_food = 50
-            ammunition = 50
-            artillery = 50
+            small_arms = 10
+            canned_food = 10
+            ammunition = 10
+            artillery = 10
             treasury = 50000
-        define_general = {
-            name = "Hijikata Toshizo"
-            personality = implacable
-            background = school_of_firepower
-                }
+            define_general = {
+                name = "Hijikata Toshizo"
+                personality = implacable
+                background = school_of_firepower
             }
         }
     }
+}
 
 country_event = {
     id = 97684
-    title = "EVTNAME97684" #The Ezo Republic - Remove Cores
+    title = "EVTNAME97684" #The Ezo Republic - Remove Cores - Candidate for decision
     desc = "EVTDESC97684"
     picture = "ezo_end"
 
@@ -3002,7 +3050,7 @@ country_event = {
         OR = {
             tag = JAP
             tag = TKG
-            }
+        }
         owns = 1642
         has_global_flag = boshin_war_has_happened
         civilized = yes
@@ -3010,8 +3058,8 @@ country_event = {
         EZO = {
             is_core = 1642
             exists = no
-            }
         }
+    }
 
     mean_time_to_happen = { days = 5 }
 

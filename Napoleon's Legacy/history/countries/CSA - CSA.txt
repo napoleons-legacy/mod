@@ -1,6 +1,5 @@
 capital = 60
 primary_culture = dixie
-culture = texan
 religion = protestant
 government = democracy
 plurality = 25.1
@@ -63,6 +62,7 @@ late_classical_theory = 1
 market_structure = 1
 
 #Inventions
+    cotton_gin = yes
     authoritarianism = yes
     hierarchical_order = yes
     traditionalism = yes

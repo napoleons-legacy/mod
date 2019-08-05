@@ -1,8 +1,9 @@
 owner = CAN
 controller = CAN
 add_core = CAN
-add_core = ARC
+add_core = LPL
+add_core = ARG
 trade_goods = wool
 life_rating = 30
 colonial = 2
-terrain = new_world_plains
+terrain = new_world_arctic

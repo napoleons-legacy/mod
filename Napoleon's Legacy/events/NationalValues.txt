@@ -42,6 +42,7 @@ country_event = {
     trigger = {
         civilized = yes
         is_vassal = no
+        year = 1850
         OR = {
             nationalvalue = nv_order
             nationalvalue = nv_autocracy
@@ -169,8 +170,9 @@ country_event = {
     picture = "Demonstration"
 
     trigger = {
+        civilized = no
         average_militancy = 8
-        nationalvalue = nv_liberty
+        nationalvalue = nv_tradition
     }
 
     mean_time_to_happen = {

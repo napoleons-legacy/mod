@@ -7,270 +7,6 @@
 # Event IDs 14000 are reserved for country. DO NOT CHANGE.
 #
 ###########################################################################
-#Select if you are going to vote on the elections or not
-
-#country_event = {
-#   id = 14005
-#   title = "EVTNAME14005"
-#   desc = "EVTDESC14005"
-#   picture = "election_polls"
-#
-#   trigger = {
-#   election = yes
-#   NOT = {
-#       OR = {
-#       has_country_modifier = will_influence_elections
-#       has_country_modifier = let_the_chips_fall
-#           }
-#       }
-#   }
-#
-#   option = {
-#       name = "EVTOPTA14005"
-#       add_country_modifier = {
-#           name = will_influence_elections
-#           duration = 213
-#       }
-#       ai_chance = { factor =  1 }
-#   }
-#
-#   option = {
-#       name = "EVTOPTB14005"
-#       random_list = {
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = protectionism
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = free_trade
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                       factor = 0.4
-#                       value = protectionism
-#                               }
-#                       scaled_militancy = {
-#                       issue = free_trade
-#                       factor = 4
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                       factor = 0.4
-#                       value = free_trade
-#                               }
-#                       scaled_militancy = {
-#                       issue = protectionism
-#                       factor = 4
-#                               }
-#                           }
-#                       }
-#                   }
-#               }
-#       random_list = {
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = laissez_faire
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = interventionism
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = state_capitalism
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = planned_economy
-#                               }
-#                           }
-#                       }
-#                   }
-#               }
-#       random_list = {
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = pro_atheism
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           value = moralism
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = secularized
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = pluralism
-#                               }
-#                           }
-#                       }
-#                   }
-#               }
-#       random_list = {
-#           33 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = residency
-#                               }
-#                           }
-#                       }
-#                   }
-#           33 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = limited_citizenship
-#                               }
-#                           }
-#                       }
-#                   }
-#           33 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = full_citizenship
-#                               }
-#                           }
-#                       }
-#                   }
-#               }
-#       random_list = {
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = jingoism
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = pro_military
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = anti_military
-#                               }
-#                           }
-#                       }
-#                   }
-#           25 = {
-#               random_state = {
-#                   limit = { is_colonial = no }
-#                   any_pop = {
-#                       dominant_issue = {
-#                           factor = 0.25
-#                           value = pacifism
-#                               }
-#                           }
-#                       }
-#                   }
-#               }
-#       add_country_modifier = {
-#           name = let_the_chips_fall
-#           duration = 213
-#           }
-#       ai_chance = { factor = 0 }
-#       }
-#   }
-
-
 # A Heated Debate: Trade Policy
 country_event = {
     id = 14000
@@ -287,7 +23,7 @@ country_event = {
         name = "EVTOPTA14000"
         any_pop = {
             dominant_issue = {
-                factor = 0.2
+                factor = 0.04
                 value = protectionism
             }
             scaled_militancy = {
@@ -301,7 +37,7 @@ country_event = {
         name = "EVTOPTB14000"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.02
                 value = protectionism
             }
             scaled_militancy = {
@@ -317,7 +53,7 @@ country_event = {
             10 = {
                 any_pop = {
                     dominant_issue = {
-                        factor = 0.25
+                        factor = 0.03
                         value = free_trade
                     }
                 }
@@ -325,7 +61,7 @@ country_event = {
             10 = {
                 any_pop = {
                     dominant_issue = {
-                        factor = 0.25
+                        factor = 0.03
                         value = protectionism
                     }
                 }
@@ -337,7 +73,7 @@ country_event = {
         name = "EVTOPTD14000"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.02
                 value = free_trade
             }
             scaled_militancy = {
@@ -351,7 +87,7 @@ country_event = {
         name = "EVTOPTE14000"
         any_pop = {
             dominant_issue = {
-                factor = 0.2
+                factor = 0.04
                 value = free_trade
             }
             scaled_militancy = {
@@ -377,7 +113,7 @@ country_event = {
         name = "EVTOPTA14010"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = laissez_faire
             }
             scaled_militancy = {
@@ -391,7 +127,7 @@ country_event = {
         name = "EVTOPTB14010"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = interventionism
             }
             scaled_militancy = {
@@ -405,7 +141,7 @@ country_event = {
         name = "EVTOPTC14010"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = state_capitalism
             }
             scaled_militancy = {
@@ -419,7 +155,7 @@ country_event = {
         name = "EVTOPTD14010"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = planned_economy
             }
             scaled_militancy = {
@@ -445,7 +181,7 @@ country_event = {
         name = "EVTOPTA14020"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = pro_atheism
             }
             scaled_militancy = {
@@ -459,7 +195,7 @@ country_event = {
         name = "EVTOPTB14020"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = secularized
             }
             scaled_militancy = {
@@ -473,7 +209,7 @@ country_event = {
         name = "EVTOPTC14020"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = pluralism
             }
             scaled_militancy = {
@@ -487,7 +223,7 @@ country_event = {
         name = "EVTOPTD14020"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = moralism
             }
             scaled_militancy = {
@@ -513,7 +249,7 @@ country_event = {
         name = "EVTOPTA14030"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = residency
             }
             scaled_militancy = {
@@ -527,7 +263,7 @@ country_event = {
         name = "EVTOPTB14030"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = limited_citizenship
             }
             scaled_militancy = {
@@ -541,7 +277,7 @@ country_event = {
         name = "EVTOPTC14030"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = full_citizenship
             }
             scaled_militancy = {
@@ -567,7 +303,7 @@ country_event = {
         name = "EVTOPTA14040"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = jingoism
             }
             scaled_militancy = {
@@ -581,7 +317,7 @@ country_event = {
         name = "EVTOPTB14040"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = pro_military
             }
             scaled_militancy = {
@@ -595,7 +331,7 @@ country_event = {
         name = "EVTOPTC14040"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = anti_military
             }
             scaled_militancy = {
@@ -609,7 +345,7 @@ country_event = {
         name = "EVTOPTD14040"
         any_pop = {
             dominant_issue = {
-                factor = 0.1
+                factor = 0.04
                 value = pacifism
             }
             scaled_militancy = {
@@ -633,48 +369,292 @@ country_event = {
 
     option = {
         name = "EVTOPTA14050"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.3
-                value = protectionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = free_trade
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.3
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14050"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = protectionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = free_trade
-                factor = 0.2
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = protectionism
+                }
+                scaled_militancy = {
+                    issue = free_trade
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14050"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = protectionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = protectionism
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = protectionism
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = protectionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = protectionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = protectionism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14050"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = protectionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = protectionism
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = protectionism
+                }
+            }
+        }
+
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = protectionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = protectionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = protectionism
+                }
             }
         }
     }
@@ -683,7 +663,7 @@ country_event = {
         name = "EVTOPTE14050"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = protectionism
             }
         }
@@ -703,48 +683,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14060"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = free_trade
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = protectionism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14060"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = free_trade
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = protectionism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = free_trade
+                }
+                scaled_militancy = {
+                    issue = protectionism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14060"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = free_trade
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = free_trade
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14060"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = free_trade
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = free_trade
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = free_trade
+                }
             }
         }
     }
@@ -753,7 +969,7 @@ country_event = {
         name = "EVTOPTE14060"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = free_trade
             }
         }
@@ -773,48 +989,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14070"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = laissez_faire
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = planned_economy
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14070"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = laissez_faire
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = planned_economy
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = laissez_faire
+                }
+                scaled_militancy = {
+                    issue = planned_economy
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14070"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = laissez_faire
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = laissez_faire
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14070"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = laissez_faire
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = laissez_faire
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = laissez_faire
+                }
             }
         }
     }
@@ -823,7 +1275,7 @@ country_event = {
         name = "EVTOPTE14070"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = laissez_faire
             }
         }
@@ -843,48 +1295,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14080"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = interventionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = state_capitalism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14080"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = interventionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = state_capitalism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = interventionism
+                }
+                scaled_militancy = {
+                    issue = state_capitalism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14080"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = interventionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = interventionism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14080"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = interventionism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = interventionism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = interventionism
+                }
             }
         }
     }
@@ -893,7 +1581,7 @@ country_event = {
         name = "EVTOPTE14080"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = interventionism
             }
         }
@@ -913,48 +1601,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14090"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = state_capitalism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = interventionism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14090"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = state_capitalism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = interventionism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = state_capitalism
+                }
+                scaled_militancy = {
+                    issue = interventionism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14090"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = state_capitalism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = state_capitalism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14090"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = state_capitalism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = state_capitalism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = state_capitalism
+                }
             }
         }
     }
@@ -963,7 +1887,7 @@ country_event = {
         name = "EVTOPTE14090"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = state_capitalism
             }
         }
@@ -983,48 +1907,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14100"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = planned_economy
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = laissez_faire
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14100"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = planned_economy
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = laissez_faire
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = planned_economy
+                }
+                scaled_militancy = {
+                    issue = laissez_faire
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14100"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = planned_economy
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = planned_economy
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14100"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = planned_economy
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = planned_economy
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = planned_economy
+                }
             }
         }
     }
@@ -1033,7 +2193,7 @@ country_event = {
         name = "EVTOPTE14100"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = planned_economy
             }
         }
@@ -1053,48 +2213,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14110"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = pro_atheism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = moralism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14110"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = pro_atheism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = moralism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_atheism
+                }
+                scaled_militancy = {
+                    issue = moralism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14110"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = pro_atheism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_atheism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14110"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = pro_atheism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_atheism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_atheism
+                }
             }
         }
     }
@@ -1103,7 +2499,7 @@ country_event = {
         name = "EVTOPTE14110"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = pro_atheism
             }
         }
@@ -1123,48 +2519,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14120"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = secularized
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pluralism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14120"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = secularized
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pluralism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = secularized
+                }
+                scaled_militancy = {
+                    issue = pluralism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14120"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = secularized
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = secularized
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14120"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = secularized
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = secularized
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = secularized
+                }
             }
         }
     }
@@ -1173,7 +2805,7 @@ country_event = {
         name = "EVTOPTE14120"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = secularized
             }
         }
@@ -1193,48 +2825,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14130"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = pluralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = secularized
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14130"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = pluralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = secularized
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pluralism
+                }
+                scaled_militancy = {
+                    issue = secularized
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14130"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = pluralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pluralism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14130"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = pluralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pluralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pluralism
+                }
             }
         }
     }
@@ -1243,7 +3111,7 @@ country_event = {
         name = "EVTOPTE14130"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = pluralism
             }
         }
@@ -1263,48 +3131,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14140"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = moralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pro_atheism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14140"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = moralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pro_atheism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = moralism
+                }
+                scaled_militancy = {
+                    issue = pro_atheism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14140"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = moralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = moralism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14140"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = moralism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = moralism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = moralism
+                }
             }
         }
     }
@@ -1313,7 +3417,7 @@ country_event = {
         name = "EVTOPTE14140"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = moralism
             }
         }
@@ -1333,48 +3437,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14150"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = residency
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = limited_citizenship
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14150"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = residency
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = limited_citizenship
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = residency
+                }
+                scaled_militancy = {
+                    issue = limited_citizenship
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14150"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = residency
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = residency
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14150"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = residency
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = residency
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = residency
+                }
             }
         }
     }
@@ -1383,7 +3723,7 @@ country_event = {
         name = "EVTOPTE14150"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = residency
             }
         }
@@ -1403,48 +3743,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14160"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = limited_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = full_citizenship
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14160"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = limited_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = full_citizenship
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = limited_citizenship
+                }
+                scaled_militancy = {
+                    issue = full_citizenship
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14160"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = limited_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = limited_citizenship
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14160"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = limited_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = limited_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = limited_citizenship
+                }
             }
         }
     }
@@ -1453,7 +4029,7 @@ country_event = {
         name = "EVTOPTE14160"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = limited_citizenship
             }
         }
@@ -1473,48 +4049,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14170"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = full_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = residency
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14170"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = full_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = residency
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = full_citizenship
+                }
+                scaled_militancy = {
+                    issue = residency
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14170"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = full_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = full_citizenship
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14170"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = full_citizenship
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = full_citizenship
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = full_citizenship
+                }
             }
         }
     }
@@ -1523,7 +4335,7 @@ country_event = {
         name = "EVTOPTE14170"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = full_citizenship
             }
         }
@@ -1543,48 +4355,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14180"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = jingoism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pacifism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14180"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = jingoism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pacifism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = jingoism
+                }
+                scaled_militancy = {
+                    issue = pacifism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14180"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = jingoism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = jingoism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14180"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = jingoism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = jingoism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = jingoism
+                }
             }
         }
     }
@@ -1593,7 +4641,7 @@ country_event = {
         name = "EVTOPTE14180"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = jingoism
             }
         }
@@ -1613,48 +4661,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14190"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = pro_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = anti_military
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14190"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = pro_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = anti_military
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pro_military
+                }
+                scaled_militancy = {
+                    issue = anti_military
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14190"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = pro_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pro_military
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14190"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = pro_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pro_military
+                }
             }
         }
     }
@@ -1663,7 +4947,7 @@ country_event = {
         name = "EVTOPTE14190"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = pro_military
             }
         }
@@ -1683,48 +4967,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14200"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = anti_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pro_military
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14200"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = anti_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = pro_military
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = anti_military
+                }
+                scaled_militancy = {
+                    issue = pro_military
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14200"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = anti_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = anti_military
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14200"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = anti_military
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = anti_military
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = anti_military
+                }
             }
         }
     }
@@ -1733,7 +5253,7 @@ country_event = {
         name = "EVTOPTE14200"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = anti_military
             }
         }
@@ -1754,48 +5274,284 @@ country_event = {
 
     option = {
         name = "EVTOPTA14210"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.30
-                value = pacifism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = jingoism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.30
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTB14210"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.25
-                value = pacifism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
             }
-            scaled_militancy = {
-                issue = jingoism
-                factor = 0.2
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.25
+                    value = pacifism
+                }
+                scaled_militancy = {
+                    issue = jingoism
+                    factor = 0.2
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTC14210"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.15
-                value = pacifism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.15
+                    value = pacifism
+                }
             }
         }
     }
 
     option = {
         name = "EVTOPTD14210"
-        any_pop = {
-            dominant_issue = {
-                factor = 0.10
-                value = pacifism
+        random_state = {
+            limit = { is_colonial = no }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 5 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 10 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 15 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pacifism
+                }
+            }
+        }
+        random_state = {
+            limit = {
+                owner = { number_of_states = 20 }
+                is_colonial = no
+            }
+            any_pop = {
+                dominant_issue = {
+                    factor = 0.10
+                    value = pacifism
+                }
             }
         }
     }
@@ -1804,7 +5560,7 @@ country_event = {
         name = "EVTOPTE14210"
         any_pop = {
             dominant_issue = {
-                factor = 0.05
+                factor = 0.03 #was 0.05
                 value = pacifism
             }
         }

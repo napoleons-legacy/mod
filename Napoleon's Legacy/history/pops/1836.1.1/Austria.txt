@@ -404,17 +404,43 @@
         size = 980
     }
 
-    clergymen = {
-        culture = south_german
+    ######Jews
+    aristocrats = {
+        culture = ashkenazi
         religion = jewish
-        size = 5
+        size = 100
+    }
+
+    officers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
     }
 
     artisans = {
-        culture = south_german
+        culture = ashkenazi
         religion = jewish
-        size = 495
+        size = 300
     }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 300
+    }
+    ########
 }
 #Sankt Polten (88000/22000 POPS)
 620 = {

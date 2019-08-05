@@ -1,5 +1,5 @@
 capital = 104 # Sonoma
-primary_culture = yankee
+primary_culture = dixie
 religion = protestant
 government = democracy
 plurality = 0.5
@@ -32,6 +32,9 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
+border_policy = open_borders
+
+set_country_flag = protestant_country
 
 ruling_party = CAL_liberal
 upper_house = {
@@ -43,3 +46,5 @@ upper_house = {
     socialist = 0
     communist = 0
 }
+
+set_country_flag = new_world_nation

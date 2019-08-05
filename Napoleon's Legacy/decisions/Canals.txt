@@ -53,13 +53,32 @@ political_decisions = {
         }
 
         allow = {
-            OR = {
-                1755 = { owner = { in_sphere = THIS } }
-                owns = 1755
-            }
             invention = machine_tools
             invention = nitroglycerin
-            iron_steamers = 1
+            raider_group_doctrine = 1
+            OR = {
+                1755 = {
+                    OR = {
+                        owned_by = THIS
+                        owner = { in_sphere = THIS }
+                        owner = { vassal_of = THIS }
+                    }
+                }
+                AND = {
+                    year = 1870
+                    rank = 1
+                    1755 = {
+                        owner = {
+                            civilized = no
+                            NOT = { part_of_sphere = yes }
+                            OR = {
+                                is_vassal = no
+                                overlord = { is_greater_power = no }
+                            }
+                        }
+                    }
+                }
+            }
             OR = {
                 money = 100000
                 ai = yes
@@ -180,14 +199,17 @@ political_decisions = {
             interchangeable_parts = 1
         }
         allow = {
-            OR = {
-                1723 = { owner = { in_sphere = THIS } }
-                owns = 1723
-            }
             invention = machine_tools
             invention = nitroglycerin
-            iron_steamers = 1
             invention = prophylaxis_against_malaria
+            iron_steamers = 1
+            1723 = {
+                OR = {
+                    owned_by = THIS
+                    owner = { in_sphere = THIS }
+                    owner = { vassal_of = THIS }
+                }
+            }
             OR = {
                 money = 200000
                 ai = yes

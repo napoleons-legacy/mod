@@ -1,20 +1,18 @@
-# TODO REFORMAT THIS FILE.
-
 # British Union claims Ulster
 country_event = {
-        id = 66649
-        title = "EVTNAME66649"
-        desc = "EVTDESC66649"
+    id = 66649
+    title = "EVTNAME66649"
+    desc = "EVTDESC66649"
     picture = "administration"
 
     is_triggered_only = yes
 
-        option = {
-            name = "EVTOPTA66649"
-        }
+    option = {
+        name = "EVTOPTA66649"
+    }
 }
 
-# reaty with British Empire over Galway
+# Treaty with British Empire over Westport
 country_event = {
     id = 66650
     title = "EVTNAME66650"
@@ -24,12 +22,10 @@ country_event = {
     is_triggered_only = yes
 
     #B1
-        option = {
-            name = "EVTOPTA66650"
+    option = {
+        name = "EVTOPTA66650"
         any_owned = {
-            limit = {
-                is_core = IRE
-            }
+            limit = { is_core = IRE }
             remove_core = CAN
         }
         IRE = {
@@ -37,96 +33,80 @@ country_event = {
             political_reform = appointed
             political_reform = wealth_voting
         }
-        BRI = {
-            country_event = {
-                id = 66651 days = 0
-            }
-        }
-        CAN = {
-            country_event = {
-                id = 66652 days = 0
-            }
-        }
-        258 = {
+        BRI = { country_event = 66651 }
+        CAN = { country_event = 66652 }
+
+        2657 = {
             remove_core = IRE
             add_core = CAN
             secede_province = CAN
         }
+
         set_global_flag = irish_chain_done
         set_global_flag = empire_wins_ireland
-        add_country_modifier = {
-            name = end_ireland
-            duration = 4500
+
+        ai_chance = {
+            factor = 35
         }
-            ai_chance = {
-                factor = 35
-            }
-        }
+    }
 
     #B2
-        option = {
-            name = "EVTOPTB66650"
-            CAN = {
-            country_event = {
-                id = 66653 days = 0
-            }
+    option = {
+        name = "EVTOPTB66650"
+        CAN = {
+            country_event = 66653
         }
-            ai_chance = {
-                factor = 65
-            }
+
+        ai_chance = {
+            factor = 65
         }
+    }
 }
 
 # British Union Reaction
 country_event = {
-        id = 66651
-        title = "EVTNAME66651"
-        desc = "EVTDESC66651"
+    id = 66651
+    title = "EVTNAME66651"
+    desc = "EVTDESC66651"
     picture = "administration"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-            name = "EVTOPTA66651"
-        }
+    option = {
+        name = "EVTOPTA66651"
+    }
 }
 
 #British Empire relations boost
 country_event = {
-        id = 66652
-        title = "EVTNAME66652"
-        desc = "EVTDESC66652"
+    id = 66652
+    title = "EVTNAME66652"
+    desc = "EVTDESC66652"
     picture = "meeting3"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-            name = "EVTOPTA66652"
-        relation = {
-            who = IRE
-            value = 400
-        }
-        diplomatic_influence = {
-            who = IRE
-            value = 200
-        }
+    option = {
+        name = "EVTOPTA66652"
+        relation = { who = IRE value = 400 }
+        diplomatic_influence = { who = IRE value = 200 }
         create_alliance = CAN
-        }
+    }
 }
 
 #B2
 country_event = {
     id = 66653
-        title = "EVTNAME66653"
-        desc = "EVTDESC66653"
+    title = "EVTNAME66653"
+    desc = "EVTDESC66653"
     picture = "Travel"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
-        option = {
-            name = "EVTOPTA66653"
+    option = {
+        name = "EVTOPTA66653"
         IRE = {
-            set_country_flag = nope
+            set_country_flag = ireland_no_response
         }
     }
 }
@@ -141,14 +121,11 @@ country_event = {
     is_triggered_only = yes
 
     #sends event F
-        option = {
-            name = "EVTOPTA66654"
-            IRE = {
-            country_event = {
-                id = 66655 days = 0
-            }
-        }
-            ai_chance = {
+    option = {
+        name = "EVTOPTA66654"
+        IRE = { country_event = 66655 }
+
+        ai_chance = {
             factor = 70
         }
     }
@@ -156,12 +133,9 @@ country_event = {
     #sends event G
     option = {
         name = "EVTOPTB66654"
-            IRE = {
-            country_event = {
-                id = 66656 days = 0
-            }
-        }
-            ai_chance = {
+            IRE = { country_event = 66656 }
+
+        ai_chance = {
             factor = 30
         }
     }
@@ -169,51 +143,35 @@ country_event = {
 
 #F
 country_event = {
-        id = 66655
-        title = "EVTNAME66655"
-        desc = "EVTDESC66655"
+    id = 66655
+    title = "EVTNAME66655"
+    desc = "EVTDESC66655"
     picture = "Sturt"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
     #F1
-        option = {
-            name = "EVTOPTA66655"
+    option = {
+        name = "EVTOPTA66655"
         any_owned = {
-            limit = {
-                is_core = IRE
-            }
+            limit = { is_core = IRE }
             remove_core = BRI
         }
+
         government = democracy
         political_reform = state_equal_weight
         political_reform = universal_weighted_voting
-        add_accepted_culture = british
-        relation = {
-            who = CAN
-            value = -400
-        }
-        relation = {
-            who = BRI
-            value = 400
-        }
-        BRI = {
-            country_event = {
-                id = 66658 days = 0
-            }
-        }
-        CAN = {
-            country_event = {
-                id = 66659 days = 0
-            }
-        }
+
+        relation = { who = CAN value = -400 }
+        relation = { who = BRI value = 400 }
+
+        BRI = { country_event = 66658 }
+        CAN = { country_event = 66659 }
+
         set_global_flag = irish_chain_done
         set_global_flag = union_wins_ireland
-        add_country_modifier = {
-            name = end_ireland
-            duration = 4500
-        }
-            ai_chance = {
+
+        ai_chance = {
             factor = 100
         }
     }
@@ -221,52 +179,41 @@ country_event = {
     #F2
     option = {
         name = "EVTOPTB66655"
-            set_global_flag = irish_chain_done
+        set_global_flag = irish_chain_done
         set_global_flag = union_wins_ireland
-        add_country_modifier = {
-            name = end_ireland
-            duration = 4500
-        }
-        BRI = {
-            country_event = {
-                id = 66657 days = 0
-            }
-        }
-            ai_chance = {
+
+        BRI = { country_event = 66657 }
+
+        ai_chance = {
             factor = 0
         }
-
     }
 }
 
 #G
 country_event = {
-        id = 66656
-        title = "EVTNAME66656"
-        desc = "EVTDESC66656"
+    id = 66656
+    title = "EVTNAME66656"
+    desc = "EVTDESC66656"
     picture = "finepeople"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
     option = {
         name = "EVTOPTA66656"
         set_global_flag = irish_chain_done
         set_global_flag = union_wins_ireland
-        add_country_modifier = {
-            name = end_ireland
-            duration = 4500
-        }
     }
 }
 
 # H
 country_event = {
-        id = 66657
-        title = "EVTNAME66657"
-        desc = "EVTDESC66657"
+    id = 66657
+    title = "EVTNAME66657"
+    desc = "EVTDESC66657"
     picture = "finepeople"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
     option = {
         name = "EVTOPTA66657"
@@ -275,35 +222,29 @@ country_event = {
 
 #I
 country_event = {
-        id = 66658
-        title = "EVTNAME66658"
-        desc = "EVTDESC66658"
+    id = 66658
+    title = "EVTNAME66658"
+    desc = "EVTDESC66658"
     picture = "finepeople"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
     option = {
         name = "EVTOPTA66658"
         create_alliance = IRE
-        relation = {
-            who = IRE
-            value = 400
-        }
-        diplomatic_influence = {
-            who = IRE
-            value = 200
-        }
+        diplomatic_influence = { who = IRE value = 200 }
+        relation = { who = IRE value = 100 }
     }
 }
 
 #J
 country_event = {
-        id = 66659
-        title = "EVTNAME66659"
-        desc = "EVTDESC66659"
+    id = 66659
+    title = "EVTNAME66659"
+    desc = "EVTDESC66659"
     picture = "finepeople"
 
-        is_triggered_only = yes
+    is_triggered_only = yes
 
     option = {
         name = "EVTOPTA66659"
@@ -312,9 +253,9 @@ country_event = {
 
 #The Emergency Irish Chain Starter
 country_event = {
-        id = 66660
-        title = "EVTNAME66660"
-        desc = "EVTDESC66660"
+    id = 66660
+    title = "EVTNAME66660"
+    desc = "EVTDESC66660"
     picture = "administration"
 
     trigger = {
@@ -324,6 +265,7 @@ country_event = {
             has_global_flag = british_claim_on_ireland
             has_global_flag = the_Britains_reunified
         }
+
         war = no
     }
 
@@ -333,1193 +275,21 @@ country_event = {
         months = 1
     }
 
-        option = {
-            name = "EVTOPTA66660"
+    option = {
+        name = "EVTOPTA66660"
         set_global_flag = british_claim_on_ireland
-        ENG_254 = {
-            add_core = BRI
-        }
+        ENG_254 = { add_core = BRI }
+
         release_vassal = IRE
         leave_alliance = IRE
-        diplomatic_influence = {
-            who = IRE
-            value = -200
-        }
-        relation = {
-            who = IRE
-            value = -100
-        }
-        IRE = {
-            country_event = 66649
-        }
-        }
-}
 
-# The Start of the Aussie Chain
-country_event = {
-        id = 66600
-        title = "EVTNAME66600"
-        desc = "EVTDESC66600"
-    picture = "austflag"
+        diplomatic_influence = { who = IRE value = -200 }
+        relation = { who = IRE value = -100 }
 
-        trigger = {
-        year = 1867
-        OR = {
-            tag = BRI
-            tag = CAN
-        }
-        BRI = {
-            OR = {
-                government = democracy
-                government = presidential_dictatorship
-            }
-        }
-        CAN = {
-            OR = {
-                government = hms_government
-                government = prussian_constitutionalism
-                government = absolute_monarchy
-            }
-            owns = 2476
-            owns = 2468
-            owns = 2483
-            owns = 2491
-            owns = 2497
-            owns = 2505
-        }
-        NOT = {
-            has_global_flag = the_Britains_reunified
-        }
-        exists = BRI
-        exists = CAN
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA66600"
-        any_owned = {
-            limit = {
-                is_core = AST
-            }
-            remove_core = CAN
-        }
-        ENG_2468 = {
-            any_pop = {
-                consciousness = 1
-                militancy = 2
-            }
-            add_core = CAP
-        }
-        ENG_2476 = {
-            any_pop = {
-                consciousness = 1
-                militancy = 2
-            }
-            add_core = BRP
-        }
-        ENG_2483 = {
-            any_pop = {
-                consciousness = 1
-                militancy = 2
-            }
-            add_core = CAP
-        }
-        ENG_2491 = {
-            any_pop = {
-                consciousness = 1
-                militancy = 2
-            }
-            add_core = BRP
-        }
-        ENG_2497 = {
-            any_pop = {
-                consciousness = 1
-                militancy = 2
-            }
-            add_core = CAN
-        }
-        ENG_2505 = {
-            any_pop = {
-                consciousness = 1
-                militancy = 2
-            }
-            add_core = CAN
-        }
-        set_global_flag = aussie_prewar
-        add_country_modifier = {
-            name = aussie_instability
-            duration = 180
-        }
+        IRE = { country_event = 66649 }
     }
 }
 
-# Start of Aussie Civil War
-country_event = {
-        id = 66601
-        title = "EVTNAME66601"
-        desc = "EVTDESC66601"
-    picture = "austflag"
-
-        trigger = {
-        year = 1867
-        tag = CAN
-        has_global_flag = aussie_prewar
-        NOT = {
-            has_global_flag = the_Britains_reunified
-        }
-        exists = BRI
-        exists = CAN
-        war = no
-        BRI = {
-            war = no
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        months = 2
-    }
-
-    option = {
-        name = "EVTOPTA66601"
-        ENG_2497 = {
-            remove_core = CAN
-        }
-        ENG_2497 = {
-            remove_core = CAP
-        }
-        ENG_2497 = {
-            add_core = BRP
-        }
-        ENG_2505 = {
-            remove_core = CAN
-        }
-        ENG_2505 = {
-            remove_core = BRP
-        }
-        ENG_2505 = {
-            add_core = CAP
-        }
-        any_owned = {
-            limit = {
-                OR = {
-                    has_province_modifier = CAN_beacon
-                    any_neighbor_province = {
-                        has_province_modifier = CAN_beacon
-                    }
-                }
-            }
-            add_core = CAP
-        }
-        any_owned = {
-            limit = {
-                OR = {
-                    has_province_modifier = CAN_beacon
-                    any_neighbor_province = {
-                        has_province_modifier = CAN_beacon
-                    }
-                }
-            }
-            remove_core = BRP
-        }
-        any_owned = {
-            limit = {
-                OR = {
-                    has_province_modifier = BRI_beacon
-                    any_neighbor_province = {
-                        has_province_modifier = BRI_beacon
-                    }
-                }
-            }
-            add_core = BRP
-        }
-        any_owned = {
-            limit = {
-                OR = {
-                    has_province_modifier = BRI_beacon
-                    any_neighbor_province = {
-                        has_province_modifier = BRI_beacon
-                    }
-                }
-            }
-            remove_core = CAP
-        }
-        any_owned = {
-            limit = {
-                is_core = BRP
-            }
-            secede_province = BRP
-        }
-        any_owned = {
-            limit = {
-                is_core = CAP
-            }
-            secede_province = CAP
-        }
-        BRI = {
-                    country_event = 66602
-                }
-        CAP = {
-            political_reform = mandatory_service
-            capital = 2468
-            leadership = 80
-            treasury = 500000
-            small_arms = 100
-            ammunition = 200
-            canned_food = 200
-            wine = 200
-            liquor = 200
-
-            add_country_modifier = {
-            name = small_country_draft
-            duration = 1825
-            }
-            government = hms_government
-            civilized = yes
-            any_pop = {
-                limit = {
-                    has_pop_culture = british
-                    pop_type = farmers
-                }
-                pop_type = soldiers
-            }
-        }
-        BRP = {
-            political_reform = mandatory_service
-            capital = 2476
-            leadership = 80
-            treasury = 500000
-            small_arms = 100
-            ammunition = 200
-            canned_food = 200
-            wine = 200
-            liquor = 200
-
-            add_country_modifier = {
-            name = small_country_draft
-            duration = 1825
-            }
-            government = democracy
-            civilized = yes
-            any_pop = {
-                limit = {
-                    has_pop_culture = british
-                    pop_type = farmers
-                }
-                pop_type = soldiers
-            }
-        }
-        set_global_flag = aussie_civil_war
-    }
-}
-
-# Britain Informed of Aussie War
-country_event = {
-        id = 66602
-        title = "EVTNAME66602"
-        desc = "EVTDESC66602"
-    picture = "austflag"
-
-        is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66601"
-        remove_country_modifier = aussie_instability
-    }
-}
-
-#WE Victory for CAP
-country_event = {
-    id = 66603
-    title = "EVTNAME86029"
-    desc = "EVTDESC86029"
-    picture = "Riot"
-
-    trigger = {
-        tag = BRP
-        war_with = CAP
-        war_exhaustion = 40
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA86029"
-        CAP = {
-            inherit = BRP
-        }
-    }
-}
-
-#WE Victory for BRP
-country_event = {
-    id = 66604
-    title = "EVTNAME86029"
-    desc = "EVTDESC86029"
-    picture = "Riot"
-
-    trigger = {
-        tag = CAP
-        war_with = BRP
-        war_exhaustion = 40
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    option = {
-        name = "EVTOPTA86029"
-        BRP = {
-            inherit = CAP
-        }
-    }
-}
-
-#Back to war with CAP
-country_event = {
-    id = 66605
-    title = "EVTNAME86034"
-    desc = "EVTDESC86034"
-    picture = "Riot"
-
-    trigger = {
-        tag = BRP
-        NOT = {
-            war_with = CAP
-        }
-        has_global_flag = aussie_civil_war
-        exists = BRP
-        exists = CAP
-    }
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA86034"
-        war = {
-            target = CAP
-            attacker_goal = {
-                casus_belli = civil_war
-            }
-            defender_goal = {
-                casus_belli = civil_war
-            }
-        }
-    }
-}
-
-#BRP wins Aussie Civil War
-country_event = {
-    id = 66606
-    title = "EVTNAME86034"
-    desc = "EVTDESC86034"
-    picture = "Celebration"
-
-    trigger = {
-        tag = BRP
-        NOT = {
-            war_with = CAP
-            exists = CAP
-        }
-        has_global_flag = aussie_civil_war
-        exists = BRP
-    }
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA66607"
-        BRI = {
-                    country_event = 66607
-                }
-        any_owned = {
-            remove_core = CAP
-        }
-        any_owned = {
-            remove_core = BRP
-        }
-        any_owned = {
-            add_core = BRI
-        }
-        ENG_2497 = {
-            add_core = BRI
-        }
-        ENG_2505 = {
-            add_core = BRI
-        }
-    }
-}
-
-#BRP wins Aussie Civil War
-country_event = {
-    id = 66607
-    title = "EVTNAME66607"
-    desc = "EVTDESC66607"
-    picture = "Celebration"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66607"
-        inherit = BRP
-        set_global_flag = australian_chain_done
-        set_global_flag = union_wins_aus
-        add_country_modifier = {
-            name = end_aus
-            duration = 4500
-        }
-    }
-}
-
-#CAP wins Aussie Civil War
-country_event = {
-    id = 66608
-    title = "EVTNAME86034"
-    desc = "EVTDESC86034"
-    picture = "Celebration"
-
-    trigger = {
-        tag = CAP
-        NOT = {
-            war_with = BRP
-            exists = BRP
-        }
-        has_global_flag = aussie_civil_war
-        exists = CAP
-    }
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA66609"
-        CAN = {
-                    country_event = 66609
-                }
-        any_owned = {
-            remove_core = BRP
-        }
-        any_owned = {
-            remove_core = CAP
-        }
-        any_owned = {
-            add_core = CAN
-        }
-        ENG_2497 = {
-            add_core = CAN
-        }
-        ENG_2505 = {
-            add_core = CAN
-        }
-    }
-}
-
-#CAP wins Aussie Civil War
-country_event = {
-    id = 66609
-    title = "EVTNAME66609"
-    desc = "EVTDESC66609"
-    picture = "Celebration"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66609"
-        inherit = CAP
-        set_global_flag = australian_chain_done
-        set_global_flag = empire_wins_aus
-        add_country_modifier = {
-            name = end_aus
-            duration = 4500
-        }
-    }
-}
-
-#NET gets decision to invade
-country_event = {
-    id = 66610
-
-    title = "EVTNAME66610"
-    desc = "EVTDESC66610"
-    picture = "austflag"
-
-    trigger = {
-        tag = NET
-        NOT = {
-            war_with = BRP
-            truce_with = BRP
-        }
-        owns = 1414
-        has_global_flag = aussie_civil_war
-        exists = BRP
-        BRP = {
-            war_exhaustion = 20
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA66610"
-        relation = {
-            value = -200
-            who = BRI
-        }
-        badboy = 4
-        casus_belli = {
-            target = BRP
-            type = acquire_state
-            months = 3
-        }
-        ai_chance = {
-            factor = 70
-        }
-    }
-
-    option = {
-        name = "EVTOPTB66610"
-        ai_chance = {
-            factor = 30
-        }
-    }
-}
-
-#REI gets decision to invade
-country_event = {
-    id = 66611
-
-    title = "EVTNAME66611"
-    desc = "EVTDESC66611"
-    picture = "austflag"
-
-    trigger = {
-        tag = REI
-        NOT = {
-            war_with = CAP
-            truce_with = CAP
-        }
-        owns = 1439
-        has_global_flag = aussie_civil_war
-        exists = BRP
-        CAP = {
-            war_exhaustion = 20
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA66611"
-        relation = {
-            value = -200
-            who = CAN
-        }
-        badboy = 4
-        casus_belli = {
-            target = CAP
-            type = acquire_state
-            months = 1
-        }
-        ai_chance = {
-            factor = 70
-        }
-    }
-
-    option = {
-        name = "EVTOPTB66611"
-        ai_chance = {
-            factor = 30
-        }
-    }
-}
-
-#Penalty for BRI declaring war on CAP
-country_event = {
-    id = 66612
-    title = "EVTNAME66612"
-    desc = "EVTDESC66612"
-    picture = "Riot"
-
-    trigger = {
-        tag = BRI
-        war_with = CAP
-        has_global_flag = aussie_civil_war
-        exists = CAP
-        NOT = {
-            has_global_flag = unlawful_intervention
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA66612"
-        CAN = {
-            country_event = {
-                id = 66613 days = 0
-            }
-        }
-        any_pop = {
-            militancy = 6
-            consciousness = 3
-        }
-        set_global_flag = unlawful_intervention
-    }
-}
-
-#Penalty for BRI declaring war on CAP (CAN gets the Call)
-country_event = {
-    id = 66613
-    title = "EVTNAME66613"
-    desc = "EVTDESC66613"
-    picture = "Celebration"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66613"
-        casus_belli = {
-            target = BRP
-            type = conquest
-            months = 1
-        }
-        war = {
-            target = BRP
-            attacker_goal = {
-                casus_belli = conquest
-            }
-            defender_goal = {
-                casus_belli = status_quo
-            }
-        }
-        casus_belli = {
-            target = BRI
-            type = cut_down_to_size
-            months = 1
-        }
-        war = {
-            target = BRI
-            attacker_goal = {
-                casus_belli = cut_down_to_size
-            }
-            defender_goal = {
-                casus_belli = status_quo
-            }
-        }
-        ai_chance = {
-            factor = 100
-        }
-    }
-    option = {
-        name = "EVTOPTB66613"
-        prestige = -30
-        ai_chance = {
-            factor = 0
-        }
-    }
-}
-
-#Penalty for CAN declaring war on BRP
-country_event = {
-    id = 66614
-    title = "EVTNAME66614"
-    desc = "EVTDESC66614"
-    picture = "Riot"
-
-    trigger = {
-        tag = CAN
-        war_with = BRP
-        has_global_flag = aussie_civil_war
-        exists = BRP
-        NOT = {
-            has_global_flag = unlawful_intervention
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA66614"
-        BRI = {
-            country_event = {
-                id = 66615 days = 0
-            }
-        }
-        any_pop = {
-            militancy = 6
-            consciousness = 3
-        }
-        set_global_flag = unlawful_intervention
-    }
-}
-
-#Penalty for CAN declaring war on BRP (BRI gets the Call)
-country_event = {
-    id = 66615
-    title = "EVTNAME66615"
-    desc = "EVTDESC66615"
-    picture = "Celebration"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66615"
-        casus_belli = {
-            target = CAP
-            type = conquest
-            months = 1
-        }
-        war = {
-            target = CAP
-            attacker_goal = {
-                casus_belli = conquest
-            }
-            defender_goal = {
-                casus_belli = status_quo
-            }
-        }
-        casus_belli = {
-            target = CAN
-            type = cut_down_to_size
-            months = 1
-        }
-        war = {
-            target = CAN
-            attacker_goal = {
-                casus_belli = cut_down_to_size
-            }
-            defender_goal = {
-                casus_belli = status_quo
-            }
-        }
-        ai_chance = {
-            factor = 100
-        }
-    }
-    option = {
-        name = "EVTOPTB66615"
-        prestige = -30
-        ai_chance = {
-            factor = 0
-        }
-    }
-}
-
-
-
-#Scottish 1853 Event
-country_event = {
-
-    id = 66617
-    title = "EVTNAME66617"
-    desc = "EVTDESC66617"
-    picture = "Unite"
-
-    trigger = {
-        tag = BRI
-        year = 1853
-        NOT = {
-            exists = SCO
-        }
-        BRI = {
-            OR = {
-                government = democracy
-                government = presidential_dictatorship
-            }
-        }
-        CAN = {
-            OR = {
-                government = hms_government
-                government = prussian_constitutionalism
-                government = absolute_monarchy
-            }
-        }
-        NOT = {
-            has_global_flag = the_Britains_reunified
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        months = 2
-    }
-
-    option = {
-        name = "EVTOPTA66617"
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            reduce_pop = 1.2
-        }
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            militancy = 2
-            consciousness = 2
-        }
-    }
-}
-
-#Scottish 1886 Event
-country_event = {
-
-    id = 66618
-    title = "EVTNAME66618"
-    desc = "EVTDESC66618"
-    picture = "Lind"
-
-    trigger = {
-        tag = BRI
-        year = 1886
-        NOT = {
-            exists = SCO
-            has_global_flag = BRI_using_modifier
-            has_global_flag = CAN_using_modifier
-        }
-        BRI = {
-            OR = {
-                government = democracy
-                government = presidential_dictatorship
-            }
-        }
-        CAN = {
-            OR = {
-                government = hms_government
-                government = prussian_constitutionalism
-                government = absolute_monarchy
-            }
-        }
-        NOT = {
-            has_global_flag = the_Britains_reunified
-        }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        months = 2
-    }
-
-    option = {
-        name = "EVTOPTA66618"
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            reduce_pop = 1.2
-        }
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            militancy = 3
-            consciousness = 3
-        }
-        CAN = {
-            country_event = 66619
-        }
-        set_global_flag = scottish_chain_a
-        ai_chance = {
-            factor = 60
-        }
-    }
-    option = {
-        name = "EVTOPTB66618"
-        add_accepted_culture = scottish
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            militancy = -3
-            consciousness = -3
-        }
-        any_pop = {
-            scaled_militancy = {
-                ideology = liberal
-                factor = 3
-            }
-        }
-        any_pop = {
-            scaled_militancy = {
-                ideology = anarcho_liberal
-                factor = 3
-            }
-        }
-        any_pop = {
-            scaled_militancy = {
-                ideology = communist
-                factor = 3
-            }
-        }
-        any_pop = {
-            scaled_militancy = {
-                ideology = socialist
-                factor = 3
-            }
-        }
-        set_global_flag = scottish_chain_b
-        ai_chance = {
-            factor = 40
-        }
-    }
-}
-
-#CAN hears about Scottish Choice A
-country_event = {
-
-    id = 66619
-    title = "EVTNAME66619"
-    desc = "EVTDESC66619"
-    picture = "Upperhouse"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66619"
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            militancy = -3
-            consciousness = -3
-        }
-        set_global_flag = scotland_chain_done
-        set_country_flag = the_scottish_promise
-        set_global_flag = empire_wins_scotland
-        ai_chance = {
-            factor = 100
-        }
-    }
-    option = {
-        name = "EVTOPTB66619"
-        set_global_flag = scotland_chain_done
-        set_global_flag = union_wins_scotland
-        ai_chance = {
-            factor = 0
-        }
-    }
-}
-
-#Attempted Coup - If Con is under 5
-country_event = {
-
-    id = 66620
-    title = "EVTNAME66620"
-    desc = "EVTDESC66620"
-    picture = "Rebellion"
-
-    trigger = {
-        tag = BRI
-        year = 1886
-        NOT = {
-            has_global_flag = scotland_chain_done
-            consciousness = 5
-        }
-        has_global_flag = scottish_chain_b
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        months = 6
-    }
-
-    option = {
-        name = "EVTOPTA66618"
-        any_pop = {
-            scaled_militancy = {
-                ideology = liberal
-                factor = -2
-            }
-        }
-        any_pop = {
-            scaled_militancy = {
-                ideology = anarcho_liberal
-                factor = -2
-            }
-        }
-        any_pop = {
-            scaled_militancy = {
-                ideology = communist
-                factor = -2
-            }
-        }
-        any_pop = {
-            scaled_militancy = {
-                ideology = socialist
-                factor = -2
-            }
-        }
-        set_global_flag = scotland_chain_done
-        set_global_flag = union_wins_scotland
-    }
-}
-
-#Attempted Coup - If Con. is over 5
-country_event = {
-
-    id = 66621
-    title = "EVTNAME66621"
-    desc = "EVTDESC66621"
-    picture = "Rebellion"
-
-    trigger = {
-        tag = BRI
-        year = 1886
-        NOT = {
-            has_global_flag = scotland_chain_done
-        }
-        consciousness = 5
-        has_global_flag = scottish_chain_b
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        months = 6
-    }
-
-    option = {
-        name = "EVTOPTA66621"
-        government = presidential_dictatorship
-        political_reform = none_voting
-        political_reform = party_appointed
-        political_reform = no_meeting
-        political_reform = state_press
-        political_reform = underground_parties
-        remove_accepted_culture = scottish
-        CAN = {
-            country_event = 66619
-        }
-    }
-}
-
-#CAN called on to fulfill Scottish promise
-country_event = {
-
-    id = 66622
-    title = "EVTNAME66622"
-    desc = "EVTDESC66622"
-    picture = "queenvictoria"
-
-    trigger = {
-        tag = CAN
-        owns = 300
-        has_country_flag = the_scottish_promise
-        has_global_flag = the_Britains_reunified
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen =  {
-        days = 1
-    }
-
-    option = {
-        name = "EVTOPTA66622"
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            militancy = -5
-            consciousness = -5
-        }
-        badboy = -5
-        release_vassal = SCO
-        create_alliance = SCO
-        diplomatic_influence = {
-            who = SCO
-                value = 300
-        }
-        SCO = {
-            add_accepted_culture = british
-        }
-        ai_chance = {
-            factor = 45
-        }
-    }
-    option = {
-        name = "EVTOPTB66619"
-        any_pop = {
-            limit = {
-                culture = scottish
-            }
-            militancy = 5
-            consciousness = 5
-        }
-        badboy = 5
-        ai_chance = {
-            factor = 55
-        }
-    }
-}
-
-#CAN gets hit by the modifier
-country_event = {
-    id = 66623
-    title = "EVTNAME66623"
-    desc = "EVTDESC66623"
-    picture = "anarchism"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66623"
-        any_pop = {
-            militancy = 2
-        }
-    }
-}
-
-#BRI gets hit by the modifier
-country_event = {
-    id = 66624
-    title = "EVTNAME66624"
-    desc = "EVTDESC66624"
-    picture = "anarchism"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVTOPTA66624"
-        any_pop = {
-            militancy = 2
-        }
-    }
-}
 
 #CAN hears of the Final Battle
 country_event = {
@@ -1663,8 +433,8 @@ country_event = {
             all_core = {
                 add_core = BRI
                 remove_core = CAN
-                }
             }
+        }
         prestige = 20
         set_global_flag = the_Britains_reunified
     }
@@ -1697,8 +467,8 @@ country_event = {
             all_core = {
                 add_core = CAN
                 remove_core = BRI
-                }
             }
+        }
         prestige = 20
         set_global_flag = the_Britains_reunified
     }

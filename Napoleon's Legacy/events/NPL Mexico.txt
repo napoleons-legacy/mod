@@ -1,0 +1,56 @@
+# USA notified of Mexico going to seize Louisiana
+country_event = {
+    id = 7880761
+    title = "EVTNAME7880761"
+    desc = "EVTNAME7880761"
+    picture = "mexican_louisiana"
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "EVT7880761OPTA"
+    }
+}
+
+country_event = {
+    id = 7880762
+    title = "EVTNAME7880762"
+    desc = "EVTDESC7880762"
+    picture = "mexican_louisiana"
+
+    fire_only_once = yes
+
+    trigger = {
+        truce_with = USA
+        has_country_flag = louisiana_seized
+        USA = { has_recently_lost_war = yes }
+    }
+
+    option = {
+        name = "EVT7880762OPTA"
+        prestige = 15
+
+        USA = {
+            any_pop = {
+                limit = {
+                    is_primary_culture = yes
+                }
+
+                militancy = 1
+                consciousness = 2
+            }
+
+            any_owned = {
+                limit = {
+                    OR = {
+                        is_core = LOU
+                        is_core = COL
+                    }
+                }
+
+                secede_province = MEX
+            }
+        }
+    }
+}

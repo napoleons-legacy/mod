@@ -3,6 +3,7 @@ primary_culture = french
 culture = french_canadian
 culture = picard
 culture = breton
+culture = wallonian
 religion = catholic
 government = hms_government
 plurality = 25
@@ -12,7 +13,7 @@ non_state_culture_literacy = 0.01
 civilized = yes
 
 #GreaterPowers = prestige
-prestige = 125
+prestige = 140
 
 # Political reforms
 slavery = yes_slavery
@@ -52,7 +53,6 @@ army_command_principle = 1
 post_nelsonian_thought = 1
 battleship_column_doctrine = 1
 clipper_design = 1
-steamers = 1
 naval_design_bureaus = 1
 alphabetic_flag_signaling = 1
 the_command_principle = 1
@@ -77,10 +77,12 @@ market_structure = 1
 romanticism = 1
 interchangeable_parts = 1
 high_pressure_steam_engine = 1
+#puddling = 1
 
 # Inventions
-#corvettes = yes
-commerce_raiders = yes
+
+secularization = yes
+social_conscience = yes
 
 # Starting Consciousness
 consciousness = 3
@@ -110,4 +112,5 @@ oob = "FRA_oob.txt"
 
 foreign_investment = {
     PAP = 6000
+    KOI = 4000
 }

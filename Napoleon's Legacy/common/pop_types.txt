@@ -401,9 +401,9 @@ colonialmigration_chance = {
 
     modifier = {
         factor = -0.5
-        OR = {
-            is_primary_culture = no
-            is_accepted_culture = no
+        NOT = {
+            is_primary_culture = yes
+            is_accepted_culture = yes
         }
     }
 
@@ -503,6 +503,7 @@ emigration_chance = {
             location = { continent = north_america }
             location = { continent = south_america }
             location = { continent = australia_new_zealand }
+            country = { has_country_flag = south_africa_immigration }
         }
         country = {
             has_country_flag = new_world_nation
@@ -662,10 +663,6 @@ emigration_chance = {
         factor = -0.3
         state_scope = { has_factories = yes }
         country = { NOT = { has_country_flag = preparations_to_kill } }
-        OR = {
-            country = { NOT = { has_country_flag = great_irish_famine } }
-            location = { NOT = { is_core = IRE } }
-        }
     }
 
     modifier = {
@@ -861,6 +858,7 @@ assimilation_chance = {
             location = { continent = north_america }
             location = { continent = south_america }
             location = { continent = australia_new_zealand }
+            country = { has_country_flag = south_africa_immigration }
         }
     }
 
@@ -878,6 +876,7 @@ assimilation_chance = {
                 location = { continent = north_america }
                 location = { continent = south_america }
                 location = { continent = australia_new_zealand }
+                country = { has_country_flag = south_africa_immigration }
             }
         }
     }
@@ -896,6 +895,7 @@ assimilation_chance = {
             location = { continent = north_america }
             location = { continent = south_america }
             location = { continent = australia_new_zealand }
+            country = { has_country_flag = south_africa_immigration }
         }
     }
 
@@ -906,6 +906,7 @@ assimilation_chance = {
         OR = {
             location = { continent = north_america }
             location = { continent = south_america }
+            country = { has_country_flag = south_africa_immigration }
         }
     }
 

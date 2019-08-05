@@ -150,14 +150,23 @@ country_event = {
     desc = "EVTDESC4662010"
     picture = "vittoriano"
 
+    fire_only_once = yes
+
     trigger = {
         tag = FRA
-        OR = {
-            has_global_flag = italian_unification_b
-            has_global_flag = italian_unification_a
-        }
 
-        year = 1840
+        OR = {
+            AND = {
+                OR = {
+                    has_global_flag = italian_unification_b
+                    has_global_flag = italian_unification_a
+                }
+
+                year = 1840
+            }
+
+            year = 1855
+        }
 
         NOT = {
             exists = ITA
@@ -168,7 +177,6 @@ country_event = {
         }
     }
 
-    fire_only_once = yes
     mean_time_to_happen = { months = 3 }
 
     option = {
@@ -177,23 +185,33 @@ country_event = {
         LUC = { all_core = { remove_core = LUC } }
         inherit = LUC
 
-        740 = { secede_province = MOD add_core = MOD }
+        740 = { secede_province = KOI add_core = KOI }
         746 = { secede_province = PAP add_core = PAP }
 
         badboy = 2
-        prestige = 3
+        prestige = 5
         relation = {
-            value = 100
-            who = MOD
+            value = 50
+            who = KOI
+        }
+
+        diplomatic_influence = {
+            who = KOI
+            value = 25
         }
 
         relation = {
-            value = 100
+            value = 50
             who = PAP
         }
 
+        diplomatic_influence = {
+            who = PAP
+            value = 25
+        }
+
         ai_chance = {
-            factor = 40
+            factor = 60
         }
     }
 
@@ -201,6 +219,8 @@ country_event = {
         name = "EVTOPTB4662010"
         badboy = -3
         prestige = 5
+        release_vassal = LUC
+
         relation = {
             value = 100
             who = LUC
@@ -213,14 +233,14 @@ country_event = {
 
     option = {
         name = "EVTOPTC4662010"
-        badboy = 5
-        prestige = 10
+        badboy = 4
+        prestige = 7
 
         inherit = LUC
 
         relation = {
             value = -50
-            who = MOD
+            who = KOI
         }
 
         relation = {
@@ -229,7 +249,7 @@ country_event = {
         }
 
         ai_chance = {
-            factor = 30
+            factor = 10
 
             modifier = {
                 factor = 0
@@ -239,7 +259,7 @@ country_event = {
     }
 }
 
-# Clean up SIC and ILY cores.
+# Clean up SIC and SYC cores.
 country_event = {
     id = 4662015
     title = "EVTNAME4662015"
@@ -249,7 +269,7 @@ country_event = {
 
     trigger = {
         tag = SIC
-        ILY = { all_core = { owned_by = THIS } exists = no }
+        SYC = { all_core = { owned_by = THIS } exists = no }
         war = no
     }
 
@@ -258,7 +278,7 @@ country_event = {
     option = {
         name = "EVTOPTA4662015"
 
-        ILY = { all_core = { add_core = SIC remove_core = ILY } }
+        SYC = { all_core = { remove_core = SYC } }
         prestige = 5
     }
 }
@@ -271,7 +291,7 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        tag = ILY
+        tag = SYC
         SIC = { all_core = { owned_by = THIS } exists = no }
         war = no
     }
@@ -279,6 +299,6 @@ country_event = {
     mean_time_to_happen = { months = 1 }
     option = {
         name = "EVTOPTA4662015"
-        SIC = { all_core = { add_core = ILY remove_core = SIC } }
+        SIC = { all_core = { remove_core = SIC } }
     }
 }

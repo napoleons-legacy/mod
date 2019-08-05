@@ -1,0 +1,100 @@
+country_event = {
+    id = 7880763
+    title = "EVTNAME7880763"
+    desc = "EVTDESC7880763"
+    picture = "trekboers"
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    trigger = {
+        tag = SAF
+        NOT = { exists = XHO }
+    }
+
+    option = {
+        name = "EVT7880763OPTA"
+        prestige = 3
+
+        ENG_2087 = {
+            remove_core = XHO
+            add_province_modifier = {
+                name = baby_boom
+                duration = 2555
+            }
+        }
+
+        any_pop = {
+            limit = {
+                has_pop_culture = xhosa
+            }
+
+            random_list = {
+                20 = { reduce_pop = 0.3 }
+                30 = { reduce_pop = 0.4 }
+                30 = { reduce_pop = 0.5 }
+                20 = { reduce_pop = 0.6 }
+            }
+        }
+
+        set_country_flag = won_cape_war
+    }
+}
+
+country_event = {
+    id = 7880764
+    title = "EVTNAME7880763"
+    desc = "EVTDESC7880763"
+    picture = "trekboers"
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    trigger = {
+        tag = XHO
+        NOT = { exists = SAF }
+    }
+
+    option = {
+        name = "EVT7880763OPTA"
+        prestige = 6
+        money = 25000
+        research_points = 3000
+
+        military_reform = yes_foreign_weapons
+        military_reform = yes_foreign_training
+        economic_reform = yes_firearms_production
+
+        activate_technology = flintlock_rifles
+
+        ENG_2096 = {
+            remove_core = SAF
+            add_province_modifier = {
+                name = baby_boom
+                duration = 2555
+            }
+        }
+
+        any_pop = {
+            limit = {
+                has_pop_culture = boer
+            }
+
+            random_list = {
+                20 = { reduce_pop = 0.3 }
+                30 = { reduce_pop = 0.4 }
+                30 = { reduce_pop = 0.5 }
+                20 = { reduce_pop = 0.6 }
+            }
+        }
+
+
+        set_country_flag = won_cape_war
+    }
+}

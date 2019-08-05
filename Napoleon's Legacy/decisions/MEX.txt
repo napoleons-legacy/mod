@@ -23,13 +23,25 @@ political_decisions = {
 
         effect = {
             government = hms_government
+            election = yes
+            random_owned = {
+                limit = { owner = { has_country_modifier = santa_ana_rule } }
+                owner = { remove_country_modifier = santa_ana_rule }
+            }
             any_pop = {
                 scaled_militancy = {
                     ideology = liberal
                     factor = 8
                 }
+                scaled_militancy = {
+                    ideology = socialist
+                    factor = 8
             }
-
+                scaled_militancy = {
+                    ideology = conservative
+                    factor = 6
+                }
+            }
             FRA = {
                 relation = {
                     who = THIS
@@ -173,13 +185,12 @@ political_decisions = {
             random_owned = {
                 limit = { owner = { primary_culture = mexican } }
                 owner = {
-                    129 = { add_core = MEX }
-                    128 = { add_core = MEX }
-                    103 = { add_core = MEX }
-                    107 = { add_core = MEX }
+                    130 = { add_core = MEX }
+                    131 = { add_core = MEX }
                     108 = { add_core = MEX }
                     109 = { add_core = MEX }
                     110 = { add_core = MEX }
+                    99 = { add_core = MEX }
                 }
             }
         }
