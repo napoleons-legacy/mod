@@ -78,7 +78,8 @@ basic_chemistry = 1
 
 #Inventions
 
-
 # Starting Consciousness
 consciousness = 4
 nonstate_consciousness = 2
+
+oob = "ILL_oob.txt"

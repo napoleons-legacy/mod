@@ -312,15 +312,14 @@ country_event = {
         }
         create_alliance = AUS
 
-        AUS_702 = {
-            secede_province = AUS
-            add_core = AUS
-            remove_core = PLC
-        }
+        any_owned = {
+            limit = {
+                region = AUS_702
+                region = AUS_662
+                province_id = 662
+            }
 
-        AUS_662 = {
             secede_province = AUS
-            add_core = AUS
             remove_core = PLC
         }
 

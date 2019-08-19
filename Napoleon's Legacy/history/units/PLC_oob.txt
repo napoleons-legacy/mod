@@ -24,6 +24,14 @@ DZG = {
     value = 100
 }
 
+SAX = {
+    value = 100
+}
+
+HUN = {
+    value = 100
+}
+
 # Can't use Polish glyphs, so no glyphs added
 leader = {
     name = "Jozef Chlopicki"

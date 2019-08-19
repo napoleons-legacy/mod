@@ -247,9 +247,9 @@ POR_2134 = { 2134 2135 2136 } #Macaronesia
 
 ### Germany & Switzerland
 
-HAN_528 = { 528 531 532 535 539 } #Lower Elbe
+HAN_528 = { 528 531 535 539 } #Lower Elbe
 
-HAN_534 = { 534 536 537 585 } #Hannover
+HAN_534 = { 532 534 536 537 553 } #Hannover
 
 HAN_540 = { 540 543 542 541 1743 538 } #East Friesland
 
@@ -257,23 +257,23 @@ PRU_544 = { 544 545 547 548 } #Mecklenburg
 
 PRU_546 = { 546 679 680 692 681 } #Pomerania
 
-PRU_549 = { 549 550 551 552 } #Brandenburg
-
-PRU_553 = { 553 555 556 557 } #Magdeburg
+PRU_549 = { 549 550 551 552 555 557 } #Brandenburg
 
 PRU_554 = { 554 561 562 563 } #Thuringia
 
-SAX_558 = { 559 558 560 687 } #Saxony
+SAX_558 = { 556 559 558 560 687 } #Saxony
 
-HES_2560 = { 564 565 566 567 568 2560 } #Hessen
+HES_2560 = { 564 565 567 568 2560 } #Hessen
 
 PRU_570 = { 570 573 574 571 } #Palatinate
 
 PRU_575 = { 575 576 577 572 396 397 } #Rheinland
 
-PRU_578 = { 578 579 2561 583 } #Eastern Rheinland
+PRU_578 = { 578 579 2561 } #Eastern Rheinland
 
-PRU_581 = { 580 581 582 584 } #Westfalen
+PRU_581 = { 580 581 582 585 } #North Westfalen
+
+PRU_583 = { 566 583 584 } #South Westfalen
 
 BAD_586 = { 586 587 588 569 } #Baden
 
