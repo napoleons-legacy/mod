@@ -1,7 +1,7 @@
 political_decisions = {
     accademia_della_crusca = {
         potential = {
-    	    tag = PAP
+            tag = PAP
             NOT = { has_country_flag = accademia_della_crusca }
         }
 

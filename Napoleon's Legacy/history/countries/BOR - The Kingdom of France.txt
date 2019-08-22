@@ -82,14 +82,14 @@ commerce_raiders = yes
 consciousness = 3
 nonstate_consciousness = 1
 
-ruling_party = REP_conservative
+ruling_party = FRA_conservative_3
 upper_house = {
     fascist = 0
-    liberal = 25
+    liberal = 20
     conservative = 50
-    reactionary = 25
+    reactionary = 10
     anarcho_liberal = 0
-    socialist = 25
+    socialist = 20
     communist = 0
 }
 

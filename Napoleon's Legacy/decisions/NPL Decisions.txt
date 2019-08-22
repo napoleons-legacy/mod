@@ -1,37 +1,5 @@
 political_decisions = {
 
-    # Return the Canadian capital to London.
-    move_capital = {
-        picture = move_home
-        potential = {
-            tag = CAN
-            owns = 300
-            NOT = {
-                has_country_flag = capital_moved_back
-            }
-        }
-
-        alert = no
-
-        allow = {
-            tag = CAN
-            owns = 300
-        }
-
-        effect = {
-            prestige = 15
-            capital = 300
-            remove_accepted_culture = british
-            primary_culture = british
-            add_accepted_culture = anglo_canadian
-            set_country_flag = capital_moved_back
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     carribean_treaty = {
         potential = {
             tag = CAN

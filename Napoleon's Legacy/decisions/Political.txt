@@ -846,6 +846,7 @@ political_decisions = {
                 AND = { tag = UKR owns = 958 NOT = { capital = 958 } }
                 AND = { tag = CUB owns = 2209 NOT = { capital = 2209 } }
                 AND = { tag = GRE owns = 860 NOT = { capital = 860 } state_n_government = 1 prestige = 40 860 = { is_core = THIS } }
+                AND = { tag = GRE owns = 834 NOT = { capital = 834 } 860 = { NOT = { is_core = THIS } } }
                 AND = { tag = PHL owns = 1455 NOT = { capital = 1455 } }
                 AND = { tag = DAI owns = 1369 NOT = { capital = 1369 } }
                 AND = { tag = SIA owns = 1346 NOT = { capital = 1346 } }
@@ -867,6 +868,11 @@ political_decisions = {
                 AND = { tag = MLI owns = 1794 NOT = { capital = 1794 } }
                 AND = { tag = KOR owns = 1624 NOT = { capital = 1624 } }
                 AND = { tag = ASH civilized = yes owns = 1907 NOT = { capital = 1907 } }
+                AND = { tag = NET owns = 375 NOT = { capital = 375 } }
+                AND = { tag = BOR owns = 425 NOT = { capital = 425 } }
+                AND = { tag = SAR owns = 720 NOT = { capital = 720 } }
+                AND = { tag = SPA owns = 487 NOT = { capital = 487 } }
+                AND = { tag = CAN owns = 300 NOT = { capital = 300 } }
             }
         }
 
@@ -895,8 +901,12 @@ political_decisions = {
             random_owned = { limit = { owner = { tag = DAI } } owner = { capital = 1369 } }
             random_owned = { limit = { owner = { tag = PHL } } owner = { capital = 1455 } }
             random_owned = {
-                limit = { owner = { tag = GRE } }
+                limit = { owner = { tag = GRE owns = 860 860 = { is_core = GRE } } }
                 owner = { capital = 860 860 = { any_pop = { limit = { has_pop_religion = orthodox } militancy = -2 } } }
+            }
+            random_owned = {
+                limit = { owner = { tag = GRE owns = 834 860 = { NOT = { is_core = GRE } } } }
+                owner = { capital = 834 }
             }
             random_owned = { limit = { owner = { tag = CUB } } owner = { capital = 2209 } }
             random_owned = { limit = { owner = { tag = UKR } } owner = { capital = 958 } }
@@ -918,6 +928,25 @@ political_decisions = {
             random_owned = { limit = { owner = { tag = ALD } } owner = { capital = 1700 } }
             random_owned = { limit = { owner = { tag = NIG } } owner = { capital = 1808 } }
             random_owned = { limit = { owner = { tag = MLI } } owner = { capital = 1794 } }
+            random_owned = { limit = { owner = { tag = NET } } owner = { capital = 375 } }
+            random_owned = {
+                limit = { owner = { tag = BOR } }
+                owner = { capital = 425 war_exhaustion = -25 }
+                FRA = { all_core = { remove_core = FRA } }
+            }
+            random_owned = { limit = { owner = { tag = SAR } } owner = { capital = 720 } }
+            random_owned = { limit = { owner = { tag = SPA } } owner = { capital = 487 } }
+            random_owned = {
+                limit = { owner = { tag = CAN } }
+                owner = {
+                    prestige = 15
+                    capital = 300
+                    remove_accepted_culture = british
+                    primary_culture = british
+                    add_accepted_culture = anglo_canadian
+                    set_country_flag = capital_moved_back
+                }
+            }
         }
 
         ai_will_do = { factor = 1 }

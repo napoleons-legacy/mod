@@ -1,33 +1,4 @@
 political_decisions = {
-move_home = {
-        picture = move_home
-        potential = {
-            tag = NET
-            owns = 375
-            NOT = {
-                has_country_flag = returned_home
-            }
-        }
-
-        allow = {
-            NET = {
-                all_core = {
-                    owned_by = THIS
-                }
-            }
-        }
-
-        effect = {
-            capital = 375
-            prestige = 25
-            set_country_flag = returned_home
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     dutch_wallonia = {
         picture = become_wallonia
         potential = {

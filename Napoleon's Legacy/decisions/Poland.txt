@@ -137,7 +137,7 @@ political_decisions = {
                 }
             }
             change_tag = PLC
-            capital = 703
+            capital = 706
             any_greater_power = {
                 limit = {
                     OR = {

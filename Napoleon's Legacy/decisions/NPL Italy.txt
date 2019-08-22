@@ -1,29 +1,4 @@
 political_decisions = {
-
-    move_home_SAR = {
-        picture = move_home
-        potential = {
-            tag = SAR
-            owns = 720
-            NOT = {
-                has_country_flag = returned_home
-            }
-        }
-
-        allow = {
-            owns = 720
-        }
-
-        effect = {
-            capital = 720
-            prestige = 50
-            set_country_flag = returned_home
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     spanish_resto = {
         picture = spanish_sicily
         potential = {

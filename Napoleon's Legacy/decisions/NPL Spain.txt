@@ -93,31 +93,6 @@ political_decisions = {
         }
     }
 
-    move_home_SPA = {
-        picture = move_home
-        potential = {
-            tag = SPA
-            owns = 487
-            NOT = {
-                has_country_flag = returned_home
-            }
-        }
-
-        allow = {
-            owns = 487
-        }
-
-        effect = {
-            capital = 487
-            prestige = 20
-            set_country_flag = returned_home
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     form_the_pbc = {
         picture = peru_bolivia
         potential = {

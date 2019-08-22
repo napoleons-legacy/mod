@@ -99,35 +99,6 @@ political_decisions = {
         }
     }
 
-    move_home_BOR = {
-        picture = move_home
-        potential = {
-            tag = BOR
-            owns = 425
-            NOT = {
-                has_country_flag = returned_home
-            }
-        }
-
-        allow = {
-            owns = 425
-        }
-
-        effect = {
-            capital = 425
-            prestige = 20
-            set_country_flag = returned_home
-            war_exhaustion = -25
-            any_owned = {
-                remove_core = FRA
-            }
-        }
-
-        ai_will_do = {
-            factor = 1
-        }
-    }
-
     release_AFA = {
         potential = {
             OR = {

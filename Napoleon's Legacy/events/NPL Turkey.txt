@@ -288,6 +288,7 @@ country_event = {
         NOT = {
             war_with = TUR
             has_global_flag = greeks_win_war
+            year = 1860
         }
 
         has_global_flag = greek_revolt_starts
@@ -300,7 +301,7 @@ country_event = {
     option = {
         name = "EVTOPTA86082"
 
-        capital = 834
+        prestige = 15
         any_owned = {
             remove_core = TUR
         }

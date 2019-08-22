@@ -116,6 +116,7 @@ political_decisions = {
             RUS_940 = { add_core = PLC }
             RUS_959 = { add_core = PLC }
             RUS_958 = { add_core = PLC }
+            RUS_968 = { add_core = PLC }
 
             random_country = { limit = { has_country_flag = russian_country exists = yes } relation = { who = PLC value = -200 } }
         }
