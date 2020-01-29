@@ -18866,7 +18866,7 @@
     x = 3010
     y = 1714.5
   }
-  text_scale = 1.5
+  text_scale = 1.9
   unit = {
     x = 3012
     y = 1715
@@ -20839,7 +20839,7 @@
     x = 3032.5
     y = 1563
   }
-  text_scale = 2
+  text_scale = 1.8
   unit = {
     x = 3032.5
     y = 1565
@@ -20952,17 +20952,13 @@
 }
 622 = {
   text_position = {
-    x = 3023.5
-    y = 1587.8
+    x = 3025
+    y = 1589
   }
-  text_scale = 2.7
+  text_scale = 3
   building_construction = {
-    x = 3035.1001
+    x = 3035
     y = 1596.6
-  }
-  military_construction = {
-    x = 3030
-    y = 1586
   }
   factory = {
     x = 3028
@@ -20970,14 +20966,8 @@
   }
   building_position = {
     fort = {
-      x = 3011.1001
+      x = 3022.5
       y = 1592
-    }
-  }
-  spawn_railway_track = {
-    {
-      x = 3007
-      y = 1591
     }
   }
 }
@@ -24216,8 +24206,8 @@
 }
 734 = {
   text_position = {
-    x = 2978.5
-    y = 1551
+    x = 2980.5
+    y = 1551.5
   }
   text_scale = 2.3
   unit = {
@@ -24241,22 +24231,21 @@
 }
 735 = {
   text_position = {
-    x = 2983.5
-    y = 1561.5
+    x = 2985
+    y = 1563
   }
-  text_rotation = 0.3197
-  text_scale = 2.8
+  text_scale = 2.3
   unit = {
     x = 2985
     y = 1565
   }
   building_construction = {
     x = 2978
-    y = 1561
+    y = 1562
   }
   factory = {
-    x = 2973.5
-    y = 1560
+    x = 2991.5
+    y = 1565
   }
   building_position = {
     fort = {
@@ -25407,22 +25396,18 @@
   }
 }
 767 = {
+  text_position = {
+    x = 3047
+    y = 1556
+  }
+  text_scale = 2.25
   unit = {
     x = 3050
     y = 1560
   }
-  text_position = {
-    x = 3050
-    y = 1556.5
-  }
-  text_scale = 2.1
   building_construction = {
     x = 3047.3999
     y = 1554
-  }
-  military_construction = {
-    x = 3045
-    y = 1558.9
   }
   factory = {
     x = 3058
@@ -25436,23 +25421,19 @@
   }
 }
 768 = {
+  text_position = {
+    x = 3036
+    y = 1546.3
+  }
+  text_rotation = 6.2832
+  text_scale = 2.5
   unit = {
     x = 3035
     y = 1548
   }
-  text_position = {
-    x = 3035.8999
-    y = 1546.3
-  }
-  text_rotation = 6.2832
-  text_scale = 2.2
   building_construction = {
     x = 3031.2
     y = 1554.2
-  }
-  military_construction = {
-    x = 3040
-    y = 1552.2
   }
   factory = {
     x = 3025

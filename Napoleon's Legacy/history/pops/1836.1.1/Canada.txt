@@ -3328,6 +3328,30 @@
 }
 #Truro (44000/11000 POPS)
 72 = {
+    officers = {
+        culture = british
+        religion = protestant
+        size = 5
+    }
+
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 5
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 674
+    }
+
+    artisans = {
+        culture = british
+        religion = protestant
+        size = 138
+    }
+
     clergymen = {
         culture = anglo_canadian
         religion = protestant

@@ -1,0 +1,9 @@
+army = {
+    name = "Rhinebund Armee"
+    location = 564
+    regiment = {
+        name= "1. Rhinebund Infanterie-Brigade"
+        type = infantry
+        home = 564
+    }
+}
