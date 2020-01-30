@@ -24,29 +24,29 @@ REI = {
 }
 
 army = {
-    name = "Ejï¿½rcito del Paraguay"
+    name = "Ejército del Paraguay"
     location = 2339
     regiment = {
-        name= "1.1ra Divisiï¿½n de Infanterï¿½a"
+        name= "1.1ra División de Infantería"
         type = infantry
         home = 2339
     }
 
     regiment = {
-        name= "2.2ra Divisiï¿½n de Infanterï¿½a"
+        name= "2.2ra División de Infantería"
         type = infantry
         home = 2339
     }
 
     regiment = {
-        name= "3.3ra Divisiï¿½n de Infanterï¿½a"
+        name= "3.3ra División de Infantería"
         type = infantry
         home = 2339
     }
 
 }
 leader = {
-    name = "Domingo Francisco Sï¿½nchez"
+    name = "Domingo Francisco Sánchez"
     type = land
     date = 1836.1.1
     background = school_of_the_bayonet

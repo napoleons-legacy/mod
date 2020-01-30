@@ -19,7 +19,7 @@ VNZ = {
 
 
 leader = {
-    name = "Jose Balliviï¿½n"
+    name = "Jose Ballivián"
     type = land
     date = 1836.1.1
     background = generals_aide
@@ -27,7 +27,7 @@ leader = {
 }
 
 army = {
-    name = "Ejï¿½rcito de Bolivia"
+    name = "Ejército de Bolivia"
     location = 2310 #La Paz
     regiment = {
         name= "1. Brigada de Infanteria"
