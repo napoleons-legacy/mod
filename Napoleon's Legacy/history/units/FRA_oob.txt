@@ -336,7 +336,7 @@ army = {
     regiment = {
         name= "1.7�me Division d'Infanterie"
         type = infantry
-        home = 415
+        home = 429
     }
 
     regiment = {
@@ -371,7 +371,8 @@ army = {
 
     regiment = {
         name= "7.7�me Division d'Infanterie"
-        type = artillery    home = 416
+        type = artillery
+        home = 416
     }
 }
 

@@ -63,7 +63,7 @@ MOR = {
 }
 
 army = {
-    name = "Exï¿½rcito Imperial"
+    name = "Exército Imperial"
     location = 2447
     regiment = {
         name= "1. Brigada de Infantaria"
@@ -104,7 +104,7 @@ army = {
     regiment = {
         name= "7. Brigada de Infantaria"
         type = infantry
-        home = 2441
+        home = 2447
     }
 
     regiment = {
@@ -128,7 +128,7 @@ army = {
 }
 
 army = {
-    name = "Exï¿½rcito Portuguï¿½s"
+    name = "Exército Português"
     location = 521
     regiment = {
         name= "1. Brigada de Infantaria"
@@ -169,33 +169,33 @@ army = {
 }
 
 army = {
-    name = "Exï¿½rcito de Africa Ocidental"
+    name = "Exército de Africa Ocidental"
     location = 1999
 
     regiment = {
-        name = "1. Divisï¿½o Colonial"
+        name = "1. Divisão Colonial"
         type = infantry
         home = 525
     }
 }
 
 army = {
-    name = "Exï¿½rcito de Africa Oriental"
+    name = "Exército de Africa Oriental"
     location = 2059
 
     regiment = {
-        name = "2. Divisï¿½o Colonial"
+        name = "2. Divisão Colonial"
         type = infantry
         home = 2134
     }
 }
 
 army = {
-    name = "Exï¿½rcito da ï¿½ndia"
+    name = "Exército da Índia"
     location = 1303
 
     regiment = {
-        name = "3. Divisï¿½o Colonial"
+        name = "3. Divisão Colonial"
         type = infantry
         home = 1303
     }
@@ -210,22 +210,22 @@ navy = {
     }
 
     ship = {
-        name= "Dom Joï¿½o VI"
+        name= "Dom João VI"
         type = manowar
     }
 
     ship = {
-        name= "Nossa Senhora da Conceiï¿½ï¿½o"
+        name= "Nossa Senhora da Conceição"
         type = manowar
     }
 
     ship = {
-        name= "Sï¿½o Sebastiï¿½o"
+        name= "São Sebastião"
         type = manowar
     }
 
     ship = {
-        name= "Amazï¿½nia"
+        name= "Amazônia"
         type = manowar
     }
 
@@ -240,7 +240,7 @@ navy = {
     }
 
     ship = {
-        name= "Prï¿½ncipe do Brasil"
+        name= "Príncipe do Brasil"
         type = manowar
     }
 
@@ -306,7 +306,7 @@ leader = {
 }
 
 leader = {
-    name = "Josï¿½ Joaquim da Rosa Coelho"
+    name = "José Joaquim da Rosa Coelho"
     picture = european_admiral_5
     type = sea
     date = 1820.12.14
@@ -325,7 +325,7 @@ leader = {
 }
 
 leader = {
-    name = "Luï¿½s Barreto"
+    name = "Luís Barreto"
     date = 1824.1.1
     type = land
     personality = resolute
@@ -352,7 +352,7 @@ leader = {
 }
 
 leader = {
-    name = "Sebastiï¿½o Pinto"
+    name = "Sebastião Pinto"
     date = 1825.1.1
     type = land
     personality = perverse
@@ -361,7 +361,7 @@ leader = {
 }
 
 leader = {
-    name = "Barï¿½o de Tramandaï¿½"
+    name = "Barão de Tramandaí"
     date = 1830.1.1
     type = land
     personality = cautious
@@ -397,7 +397,7 @@ leader = {
 }
 
 leader = {
-    name = "Luï¿½s Alves de Lima e Silva"
+    name = "Luís Alves de Lima e Silva"
     picture = southamerican_general_6
     date = 1836.1.1
     type = land

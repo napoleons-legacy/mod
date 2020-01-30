@@ -324,7 +324,7 @@ AUS_657 = { 657 659 660 2533 } #Eastern Transylvania
 
 AUS_702 = { 703 704 705 714 } #Galicia-Lodomeria
 
-AUS_662 = { 702 951 952 953 } #East Galicia
+AUS_662 = { 662 702 951 952 953 } #East Galicia
 
 RUS_715 = { 715 711 713 716 } #West Galicia
 
@@ -370,7 +370,7 @@ SAR_765 = { 765 766 473 } #Sardinia & Corscia/Thyrrenian Islands
 
 WAL_665 = { 664 665 666 668 667 669 } #Wallachia
 
-MOL_673 = { 673 672 670 671 663 662 } #Moldavia
+MOL_673 = { 673 672 670 671 663 } #Moldavia
 
 TUR_674 = { 674 675 818 } #Dobrudja
 
