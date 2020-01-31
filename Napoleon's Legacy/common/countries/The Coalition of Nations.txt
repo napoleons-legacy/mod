@@ -210,13 +210,12 @@ party = {
     citizenship_policy = residency
     war_policy = jingoism
 }
-
 unit_names = {
     dreadnought = {
         "De Ruyter" "Tromp" "De Zeven Provincien" "Evertsen" "Kortenaer" "Piet Hein" "Witte de With" "Jacob van Heemskerk"
     }
     battleship = {
-        Buffel "De Zeven Provinciï¿½n" Evertsen Guinea "Hertog Hendrik" "Jacob van Heemskerck" "Koning der Nederlanden" "Koningin Regentes" Kortenaer "Maarten Harpetsz. Tromp" "Piet Hein" "De Ruyter" Schorpioen Stier
+        Buffel "De Zeven Provinciën" Evertsen Guinea "Hertog Hendrik" "Jacob van Heemskerck" "Koning der Nederlanden" "Koningin Regentes" Kortenaer "Maarten Harpetsz. Tromp" "Piet Hein" "De Ruyter" Schorpioen Stier
     }
     ironclad = {
         "Hertog Hendrik" "Koning der Nederlanden" "Koningin Regentes" "Koning Willem" "Prins Hendrik"
