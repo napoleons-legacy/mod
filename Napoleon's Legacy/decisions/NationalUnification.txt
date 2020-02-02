@@ -936,9 +936,9 @@ political_decisions = {
                 change_province_name = "Kolmar"
             }
             409 = {
-                change_province_name = "Stra√üburg"
+                change_province_name = "Straﬂburg"
                 state_scope = {
-                    change_region_name = "Elsa√ü-Lothringen"
+                    change_region_name = "Elsaﬂ-Lothringen"
                 }
             }
             prestige = 5

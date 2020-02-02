@@ -42,7 +42,7 @@ political_decisions = {
                 limit = { owner = { NOT = { tag = NET } } }
                 owner = {
                     clr_global_flag = dutch_wallonia_renamed
-                    395 = { change_province_name = "LiÃ¨ge" }
+                    395 = { change_province_name = "Liège" }
                     392 = { change_province_name = "Namur" }
                     398 = { change_province_name = "Arlon" }
                     393 = { change_province_name = "Tournai" }

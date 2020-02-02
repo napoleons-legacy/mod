@@ -339,7 +339,7 @@ political_decisions = {
                     change_region_name = "Lettland"
                 }
             }
-            356 = { change_province_name = "DÃ¼naburg" }
+            356 = { change_province_name = "Dünaburg" }
             357 = { change_province_name = "Mitau" }
             358 = { change_province_name = "Windau" }
             359 = { change_province_name = "Libau" }
@@ -503,7 +503,7 @@ political_decisions = {
                     change_region_name = "Estonia"
                 }
             }
-            351 = { change_province_name = "PÃ¤rnu" }
+            351 = { change_province_name = "Pärnu" }
             352 = { change_province_name = "Tartu" }
             353 = { change_province_name = "Saaremaa" }
 

@@ -461,7 +461,7 @@ political_decisions = {
             random_owned = {
                 limit = { owner = { is_culture_group = germanic } }
                 owner = {
-                     1915 = { change_province_name = "MisahÃ¶he" }
+                     1915 = { change_province_name = "Misahöhe" }
                 }
             }
         }
