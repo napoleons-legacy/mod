@@ -1,0 +1,513 @@
+political_decisions = {
+
+    rename_holland = {
+        picture = national_value
+        potential = {
+            NET_375 = { owned_by = THIS } # Holland
+            OR = {
+                AND = {
+                    has_global_flag = renamed_holland
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_holland
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 1
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_holland
+                    375 = {
+                        state_scope = { change_region_name = "Hollande" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_holland
+                    375 = {
+                        state_scope = { change_region_name = "Holland" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_zeeland = {
+        picture = national_value
+        potential = {
+            NET_379 = { owned_by = THIS } # Zeeland
+            OR = {
+                AND = {
+                    has_global_flag = renamed_zeeland
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_zeeland
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 3
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_zeeland
+                    378 = { change_province_name = "Middelbourg" }
+                    380 = { change_province_name = "Bréda" }
+                    381 = {
+                        change_province_name = "Limbourg"
+                        state_scope = { change_region_name = "Brabant-Septentrional" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_zeeland
+                    378 = { change_province_name = "Middelburg" }
+                    380 = { change_province_name = "Breda" }
+                    381 = {
+                        change_province_name = "Limburg"
+                        state_scope = { change_region_name = "Zeeland" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_friesland = {
+        picture = national_value
+        potential = {
+            NET_385 = { owned_by = THIS } # Friesland
+            OR = {
+                AND = {
+                    has_global_flag = renamed_friesland
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_friesland
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 1
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_friesland
+                    383 = {
+                        change_province_name = "Groningue"
+                        state_scope = { change_region_name = "Frise" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_friesland
+                    383 = {
+                        change_province_name = "Groningen"
+                        state_scope = { change_region_name = "Friesland" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_flanders = {
+        picture = national_value
+        potential = {
+            BEL_387 = { owned_by = THIS } # Flanders
+            OR = {
+                AND = {
+                    has_global_flag = renamed_flanders
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_flanders
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 3
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_flanders
+                    387 = { change_province_name = "Bruxelles" }
+                    389 = { change_province_name = "Gand" }
+                    390 = {
+                        change_province_name = "Anvers"
+                        state_scope = { change_region_name = "Flandre" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_flanders
+                    387 = { change_province_name = "Brussels" }
+                    389 = { change_province_name = "Ghent" }
+                    390 = {
+                        change_province_name = "Antwerp"
+                        state_scope = { change_region_name = "Flanders" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_catalonia = {
+        picture = national_value
+        potential = {
+            owns = 498 # Barcelona
+            owns = 499 # Girona
+            owns = 500 # Lérida
+            owns = 501 # Tarragona
+            OR = {
+                AND = {
+                    has_global_flag = renamed_catalonia
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_catalonia
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 5
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_catalonia
+                    498 = { change_province_name = "Barcelone" }
+                    499 = { change_province_name = "Gérone" }
+                    501 = {
+                        change_province_name = "Tarragone"
+                        state_scope = { change_region_name = "Catalogne" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_catalonia
+                    498 = { change_province_name = "Barcelona" }
+                    499 = { change_province_name = "Girona" }
+                    501 = {
+                        change_province_name = "Tarragona"
+                        state_scope = { change_region_name = "Catalonia" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_lower_elbe = {
+        picture = national_value
+        potential = {
+            owns = 528 # Hamburg -> Lower Elbe
+            OR = {
+                AND = {
+                    has_global_flag = renamed_lower_elbe
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_lower_elbe
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 1
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_lower_elbe
+                    528 = {
+                        change_province_name = "Hambourg"
+                        state_scope = { change_region_name = "Elbe Inférieur" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_lower_elbe
+                    528 = {
+                        change_province_name = "Hamburg"
+                        state_scope = { change_region_name = "Lower Elbe" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_east_friesland = {
+        picture = national_value
+        potential = {
+            owns = 540 # Oldenburg -> East Friesland
+            OR = {
+                AND = {
+                    has_global_flag = renamed_east_friesland
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_east_friesland
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 1
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_east_friesland
+                    540 = {
+                        state_scope = { change_region_name = "Frise-Orientale" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_east_friesland
+                    540 = {
+                        state_scope = { change_region_name = "East Friesland" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_palatinate = {
+        picture = national_value
+        potential = {
+            PRU_570 = { owned_by = THIS } # Palatinate
+            OR = {
+                AND = {
+                    has_global_flag = renamed_palatinate
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_palatinate
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 2
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_palatinate
+                    570 = { change_province_name = "Mayence" }
+                    571 = { change_province_name = "Caseloutre" }
+                    573 = { change_province_name = "Sarrebruck" }
+                    574 = {
+                        change_province_name = "Coblence"
+                        state_scope = { change_region_name = "Rhin-et-Moselle" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_palatinate
+                    570 = { change_province_name = "Mainz" }
+                    571 = { change_province_name = "Kaiserslautern" }
+                    573 = { change_province_name = "Saarbrücken" }
+                    574 = {
+                        change_province_name = "Koblenz"
+                        state_scope = { change_region_name = "Palatinate" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_rheinland = {
+        picture = national_value
+        potential = {
+            PRU_575 = { owned_by = THIS } # Rheinland
+            OR = {
+                AND = {
+                    has_global_flag = renamed_rheinland
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_rheinland
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 3
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_rheinland
+                    396 = { change_province_name = "Eupen et Malmédy" }
+                    572 = { change_province_name = "Trèves" }
+                    576 = { change_province_name = "Aix-la-Chapelle" }
+                    577 = {
+                        change_province_name = "Clèves"
+                        state_scope = { change_region_name = "Rhénanie" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_rheinland
+                    396 = { change_province_name = "Eupen-Malmedy" }
+                    572 = { change_province_name = "Trier" }
+                    576 = { change_province_name = "Aachen" }
+                    577 = {
+                        change_province_name = "Cleves"
+                        state_scope = { change_region_name = "Rheinland" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    rename_piemonte = {
+        picture = national_value
+        potential = {
+            SAR_720 = { owned_by = THIS } # Piemonte
+            OR = {
+                AND = {
+                    has_global_flag = renamed_piemonte
+                    has_country_flag = french_country
+                }
+                NOT = {
+                    has_global_flag = renamed_piemonte
+                    has_country_flag = french_country
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            prestige = 5
+            random_owned = {
+                limit = { owner = { has_country_flag = french_country } }
+                owner = {
+                    clr_global_flag = renamed_piemonte
+                    721 = { change_province_name = "Aoste" }
+                    722 = { change_province_name = "Novare" }
+                    723 = { change_province_name = "Alexandrie" }
+                    724 = { change_province_name = "Gênes" }
+                    725 = {
+                        change_province_name = "Savone"
+                        state_scope = { change_region_name = "Piémont" }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = { owner = { NOT = { has_country_flag = french_country } } }
+                owner = {
+                    set_global_flag = renamed_piemonte
+                    721 = { change_province_name = "Aosta" }
+                    722 = { change_province_name = "Novara" }
+                    723 = { change_province_name = "Alessandria" }
+                    724 = { change_province_name = "Genoa" }
+                    725 = {
+                        change_province_name = "Savona"
+                        state_scope = { change_region_name = "Piemonte" }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+}

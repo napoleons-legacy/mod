@@ -29,15 +29,18 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
-school_reforms = low_schools
+school_reforms = no_schools
 
 #New Reforms
-conscription = one_year_draft
+conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
+
+set_country_flag = catholic_country
+set_country_flag = french_country
 
 # Technologies
 post_napoleonic_thought = 1
@@ -48,7 +51,6 @@ army_command_principle = 1
 post_nelsonian_thought = 1
 battleship_column_doctrine = 1
 clipper_design = 1
-steamers = 1
 naval_design_bureaus = 1
 alphabetic_flag_signaling = 1
 the_command_principle = 1
@@ -73,10 +75,12 @@ market_structure = 1
 romanticism = 1
 interchangeable_parts = 1
 high_pressure_steam_engine = 1
+#puddling = 1
 
 # Inventions
-#corvettes = yes
-commerce_raiders = yes
+
+secularization = yes
+social_conscience = yes
 
 # Starting Consciousness
 consciousness = 3
