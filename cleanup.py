@@ -1,33 +1,27 @@
-import os
 from typing import List
 
-MOD_DIRECTORY = "Napoleon's Legacy"
+from util import MOD_DIRECTORY, process_directory
+
 EXTENSIONS = ["txt", "lua", "map", "csv"]
 
 
 def clean_line(line: str) -> str:
-    """Clean a line by removing tabs and using Unix line endings solely.
-    :param line: A line of text
-    :type line: str
-    :returns: str -- The cleaner line
+    """Clean a line by replacing tabs with four spaces
+    and using Unix line endings solely.
     """
 
     return line.replace(b"\t", b"    ").rstrip() + b"\n"
 
 
-def clean_file(filepath: str) -> bool:
+def clean_file(file_path: str) -> None:
     """Clean the entire file by replacing tabs with spaces,
     replacing Windows line endings with Unix line endings,
     and removing trailing whitespace. We also adjust the file
     such that it follows style rules.
-
-    :param filepath: The path of the file
-    :type filepath: str
-    :returns: bool -- Whether the file was changed or not
     """
 
     file_changed = False
-    with open(filepath, "r+b") as file:
+    with open(file_path, "r+b") as file:
         lines = file.readlines()
         for index, line in enumerate(lines):
             cleaned = clean_line(line)
@@ -39,7 +33,6 @@ def clean_file(filepath: str) -> bool:
 
             lines[index] = cleaned
 
-        # check for more style things
         style_changed = clean_style(lines)
 
         if style_changed:
@@ -51,14 +44,13 @@ def clean_file(filepath: str) -> bool:
         file.writelines(lines)
 
     if file_changed:
-        print(f"Cleaned {filepath}")
+        print(f"Cleaned {file_path}")
 
 
 def clean_style(lines: List[str]) -> bool:
-    """Adjust the file information to be stylistically cleaner
-    :param lines: The file contents
-    :type lines: List[str]
-    :returns: bool -- True if the file contents were modified, otherwise False.
+    """Adjust the file information to be stylistically cleaner.
+    This leaves no newlines at the start of the file and only one
+    at the end of the file.
     """
 
     style_changed = False
@@ -81,18 +73,5 @@ def clean_style(lines: List[str]) -> bool:
     return style_changed
 
 
-def good_ext(filename: str) -> bool:
-    """Verify that the filename has a valid file extension
-    :param filename: The name of the file
-    :type filename: str
-    """
-
-    exts = ["." + s for s in EXTENSIONS]
-    return any([good for good in exts if filename.endswith(good)])
-
-
 if __name__ == '__main__':
-    for dirpath, dirnames, filenames in os.walk(MOD_DIRECTORY):
-        for name in filter(good_ext, filenames):
-            filepath = os.path.join(dirpath, name)
-            clean_file(filepath)
+    process_directory(MOD_DIRECTORY, EXTENSIONS, clean_file)
