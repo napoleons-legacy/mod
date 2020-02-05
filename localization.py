@@ -28,7 +28,7 @@ class LocalizationGroup:
         and internal duplicate list.
         """
         self.localizations = {}
-        self.__duplicates = collections.defaultdict(list)
+        self.duplicates = collections.defaultdict(list)
 
     def add(self: LG, local: L) -> None:
         """Add a localization entry to the group."""
@@ -36,33 +36,36 @@ class LocalizationGroup:
         self.localizations[file_path] = local
 
         for key, entry in local.entries.items():
-            self.__duplicates[key].append((file_path, entry))
+            self.duplicates[key].append((file_path, entry))
 
         for key, entries in local.duplicates.items():
             for entry in entries:
-                self.__duplicates[key].append((file_path, entry))
+                self.duplicates[key].append((file_path, entry))
 
     def filter(self: LG) -> None:
-        """Dedupes all registered localization files in the group."""
-        self.__drop_uniques()
+        """Deduplicates all registered localization files in the group."""
+        self.drop_uniques()
 
         all_removed = []
-        for key, assoc in self.__duplicates.items():
-            removed = self.__drop_duplicates(key, assoc)
+        for key, assoc in self.duplicates.items():
+            removed = self.drop_duplicates(key, assoc)
             all_removed.append((key, removed))
 
-        self.__display_removed(all_removed)
+        self.echo_removed(all_removed)
 
     def export(self: LG) -> None:
         """Export all updated records to their respective files."""
         for local in self.localizations.values():
             local.export()
 
-    def __drop_uniques(self: LG) -> None:
-        self.__duplicates = {k: v for (k, v) in self.__duplicates.items()
-                             if len(v) != 1}
+    def drop_uniques(self: LG) -> None:
+        """Drop all entries that are designated as duplicate
+        while only having one, unique occurrence."""
+        self.duplicates = {k: v for (k, v) in self.duplicates.items()
+                           if len(v) != 1}
 
-    def __display_removed(self: LG, all_removed: List[Tuple[str, AssocList]]) -> None:
+    def echo_removed(self: LG, all_removed: List[Tuple[str, AssocList]]) -> None:
+        """Display all removed keys from the provided file path."""
         for removed in all_removed:
             key, assoc = removed
             for entry in assoc:
@@ -71,17 +74,20 @@ class LocalizationGroup:
                 click.secho(f"Removed duplicate key `{key}` from {file_path}",
                             fg="red")
 
-    def __drop_duplicates(self: LG, key: str, assoc: AssocList) -> AssocList:
-        self.__prompt_entries(key, assoc)
-        return self.__prompt_deduplication(key, assoc)
+    def drop_duplicates(self: LG, key: str, assoc: AssocList) -> AssocList:
+        """Drop all duplicated entries for the provided key and return the removed entries."""
+        self.echo_entries(key, assoc)
+        return self.prompt_deduplication(key, assoc)
 
-    def __prompt_entries(self: LG, key: str, assoc: AssocList) -> None:
+    def echo_entries(self: LG, key: str, assoc: AssocList) -> None:
+        """Display all found entries for the specified key."""
         click.secho(f"{len(assoc)} ", fg="cyan", bold=True, nl=False)
         click.secho(f"total entries found for key ", fg="white", nl=False)
         click.secho(key, fg="bright_blue", nl=False)
         click.secho(".\n", fg="white")
 
-    def __prompt_deduplication(self: LG, key: str, assoc: AssocList) -> AssocList:
+    def prompt_deduplication(self: LG, key: str, assoc: AssocList) -> AssocList:
+        """Display a prompt to deduplicate specified entries."""
         for index, local in enumerate(assoc):
             file_path, entry = local
             entry_style = click.style(f"Entry {index + 1}", fg="bright_blue")
@@ -97,7 +103,7 @@ class LocalizationGroup:
 
             click.echo(f"{entry_style} {file_style}{local_style}\n")
 
-        self.__prompt_files(assoc)
+        self.prompt_files(assoc)
 
         choice_style = click.style("Which entry should be chosen?",
                                    fg="bright_red")
@@ -112,10 +118,11 @@ class LocalizationGroup:
         click.echo()
 
         assoc_removed = assoc[:chosen_entry - 1] + assoc[chosen_entry:]
-        self.__dedupe(key, assoc[chosen_entry - 1], assoc_removed)
+        self.deduplicate(key, assoc[chosen_entry - 1], assoc_removed)
         return assoc_removed
 
-    def __prompt_files(self: LG, assoc: AssocList) -> None:
+    def prompt_files(self: LG, assoc: AssocList) -> None:
+        """Display a prompt to open the provided files."""
         file_names = set(map(lambda tup: tup[0], assoc))
 
         file_names_repr = ", ".join(file_names)
@@ -127,7 +134,10 @@ class LocalizationGroup:
             for file_name in file_names:
                 click.launch(file_name)
 
-    def __dedupe(self: LG, key: str, chosen: Assoc, assoc_removed: AssocList) -> None:
+    def deduplicate(self: LG, key: str, chosen: Assoc, assoc_removed: AssocList) -> None:
+        """Drop duplicated entries and emplace the chosen entry
+        over the original incase it is a duplicate.
+        """
         file_path, entry = chosen
         self.localizations[file_path].entries[key] = entry
 
@@ -162,7 +172,7 @@ class Localization:
 
                 trimmed = row[:len(COLUMNS)]
 
-                cleaned = [self.__clean_junk(value) for value in trimmed]
+                cleaned = [self.clean_junk(value) for value in trimmed]
                 cleaned.extend([""] * (len(COLUMNS) - len(cleaned)))
 
                 head, *tail = cleaned
@@ -191,7 +201,7 @@ class Localization:
         if key in self.entries and entry == self.entries[key]:
             self.entries.pop(key)
 
-    def __clean_junk(self: L, value: str) -> str:
+    def clean_junk(self: L, value: str) -> str:
         chars = set(value.lower())
         chars.discard("x")
         chars.discard(",")
