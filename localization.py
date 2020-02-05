@@ -16,7 +16,8 @@ EXTENSIONS = ["csv"]
 Row = List[str]
 L = TypeVar("L", bound="Localization")
 LG = TypeVar("LG", bound="LocalizationGroup")
-LGAssoc = List[Tuple[str, Row]]
+Assoc = Tuple[str, Row]
+AssocList = List[Assoc]
 
 
 class LocalizationGroup:
@@ -36,6 +37,10 @@ class LocalizationGroup:
 
         for key, entry in local.entries.items():
             self.__duplicates[key].append((file_path, entry))
+
+        for key, entries in local.duplicates.items():
+            for entry in entries:
+                self.__duplicates[key].append((file_path, entry))
 
     def filter(self: LG) -> None:
         """Dedupes all registered localization files in the group."""
@@ -57,7 +62,7 @@ class LocalizationGroup:
         self.__duplicates = {k: v for (k, v) in self.__duplicates.items()
                              if len(v) != 1}
 
-    def __display_removed(self: LG, all_removed: List[Tuple[str, LGAssoc]]) -> None:
+    def __display_removed(self: LG, all_removed: List[Tuple[str, AssocList]]) -> None:
         for removed in all_removed:
             key, assoc = removed
             for entry in assoc:
@@ -66,17 +71,17 @@ class LocalizationGroup:
                 click.secho(f"Removed duplicate key `{key}` from {file_path}",
                             fg="red")
 
-    def __drop_duplicates(self: LG, key: str, assoc: LGAssoc) -> LGAssoc:
+    def __drop_duplicates(self: LG, key: str, assoc: AssocList) -> AssocList:
         self.__prompt_entries(key, assoc)
         return self.__prompt_deduplication(key, assoc)
 
-    def __prompt_entries(self: LG, key: str, assoc: LGAssoc) -> None:
+    def __prompt_entries(self: LG, key: str, assoc: AssocList) -> None:
         click.secho(f"{len(assoc)} ", fg="cyan", bold=True, nl=False)
         click.secho(f"total entries found for key ", fg="white", nl=False)
         click.secho(key, fg="bright_blue", nl=False)
         click.secho(".\n", fg="white")
 
-    def __prompt_deduplication(self: LG, key: str, assoc: LGAssoc) -> LGAssoc:
+    def __prompt_deduplication(self: LG, key: str, assoc: AssocList) -> AssocList:
         for index, local in enumerate(assoc):
             file_path, entry = local
             entry_style = click.style(f"Entry {index + 1}", fg="bright_blue")
@@ -107,10 +112,10 @@ class LocalizationGroup:
         click.echo()
 
         assoc_removed = assoc[:chosen_entry - 1] + assoc[chosen_entry:]
-        self.__dedupe(key, assoc_removed)
+        self.__dedupe(key, assoc[chosen_entry - 1], assoc_removed)
         return assoc_removed
 
-    def __prompt_files(self: LG, assoc: LGAssoc) -> None:
+    def __prompt_files(self: LG, assoc: AssocList) -> None:
         file_names = set(map(lambda tup: tup[0], assoc))
 
         file_names_repr = ", ".join(file_names)
@@ -122,7 +127,10 @@ class LocalizationGroup:
             for file_name in file_names:
                 click.launch(file_name)
 
-    def __dedupe(self: LG, key: str, assoc_removed: LGAssoc) -> None:
+    def __dedupe(self: LG, key: str, chosen: Assoc, assoc_removed: AssocList) -> None:
+        file_path, entry = chosen
+        self.localizations[file_path].entries[key] = entry
+
         for assoc in assoc_removed:
             file_path, entry = assoc
             local = self.localizations[file_path]
@@ -137,12 +145,12 @@ class Localization:
     """A model for any localization file in the game."""
 
     def __init__(self: L, file_path: str) -> None:
-        """Initialize file path and entries
+        """Initialize file path, entries, and duplicates
         with the file contents provided.
         """
         self.file_path = file_path
         self.entries = {}
-        duplicates = collections.defaultdict(list)
+        self.duplicates = collections.defaultdict(list)
 
         with open(file_path, "r", encoding="latin-1") as file:
             reader = csv.reader(file, delimiter=";")
@@ -163,13 +171,7 @@ class Localization:
                     keys.add(first)
                     self.entries[head] = tail
                 else:
-                    original = self.entries[head]
-                    dupes = duplicates[head]
-
-                    if len(dupes) == 0 or original != dupes[0]:
-                        dupes.insert(0, original)
-
-                    dupes.append(tail)
+                    self.duplicates[head].append(tail)
 
     def export(self: L) -> None:
         """Write a localization file over
@@ -178,13 +180,15 @@ class Localization:
         with open(self.file_path, "w", encoding="latin-1") as file:
             file.write(Localization.to_str(COLUMNS) + "\n")  # Header
 
-            for key, entry in self.entries.items:
+            for key, entry in self.entries.items():
                 output = Localization.to_str([key] + entry)
                 file.write(output + "\n")
 
     def drop_entry(self: L, key: str, entry: Row) -> None:
         """Drop a key from the model if the provided entry matches."""
-        if entry == self.entries[key]:
+        self.duplicates.pop(key, None)
+
+        if key in self.entries and entry == self.entries[key]:
             self.entries.pop(key)
 
     def __clean_junk(self: L, value: str) -> str:
