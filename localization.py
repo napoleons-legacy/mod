@@ -19,16 +19,18 @@ LG = TypeVar("LG", bound="LocalizationGroup")
 LGAssoc = List[Tuple[str, Row]]
 
 
-# TODO: duplicates like release_bukovina (1 in one file, two in another) should have
-
 class LocalizationGroup:
     """A grouping of localization files in the game."""
 
     def __init__(self: LG) -> None:
+        """Initialize file path to localization dictionary
+        and internal duplicate list.
+        """
         self.localizations = {}
         self.__duplicates = collections.defaultdict(list)
 
     def add(self: LG, local: L) -> None:
+        """Add a localization entry to the group."""
         file_path = local.file_path
         self.localizations[file_path] = local
 
@@ -36,6 +38,7 @@ class LocalizationGroup:
             self.__duplicates[key].append((file_path, entry))
 
     def filter(self: LG) -> None:
+        """Dedupes all registered localization files in the group."""
         self.__drop_uniques()
 
         all_removed = []
@@ -46,6 +49,7 @@ class LocalizationGroup:
         self.__display_removed(all_removed)
 
     def export(self: LG) -> None:
+        """Export all updated records to their respective files."""
         for local in self.localizations.values():
             local.export()
 
@@ -125,6 +129,7 @@ class LocalizationGroup:
             local.drop_entry(key, entry)
 
 
+# A global localization group.
 localization_group = LocalizationGroup()
 
 
@@ -132,6 +137,9 @@ class Localization:
     """A model for any localization file in the game."""
 
     def __init__(self: L, file_path: str) -> None:
+        """Initialize file path and entries
+        with the file contents provided.
+        """
         self.file_path = file_path
         self.entries = {}
         duplicates = collections.defaultdict(list)
@@ -164,6 +172,9 @@ class Localization:
                     dupes.append(tail)
 
     def export(self: L) -> None:
+        """Write a localization file over
+        its csv file with updated records.
+        """
         with open(self.file_path, "w", encoding="latin-1") as file:
             file.write(Localization.to_str(COLUMNS) + "\n")  # Header
 
@@ -172,6 +183,7 @@ class Localization:
                 file.write(output + "\n")
 
     def drop_entry(self: L, key: str, entry: Row) -> None:
+        """Drop a key from the model if the provided entry matches."""
         if entry == self.entries[key]:
             self.entries.pop(key)
 
@@ -183,14 +195,16 @@ class Localization:
 
     @classmethod
     def to_str(self: L, entry: Iterable[str]) -> str:
+        """Output an iterable row as a semi-colon joined string with
+        an extra semi-colon at the end.
+        """
         return ";".join(entry) + ";"
 
 
 def clean_localization(file_path: str) -> None:
+    """Registers all localization models with the global group."""
     global localization_group
-
     localization = Localization(file_path)
-
     localization_group.add(localization)
 
 
