@@ -24,11 +24,13 @@ class LocalizationGroup:
     """A grouping of localization files in the game."""
 
     def __init__(self: LG) -> None:
-        """Initialize file path to localization dictionary
-        and internal duplicate list.
+        """Initialize file path to localization dictionary,
+        duplicates to an empty default dictionary,
+        and all_removed to an empty list.
         """
         self.localizations = {}
         self.duplicates = collections.defaultdict(list)
+        self.all_removed = []
 
     def add(self: LG, local: L) -> None:
         """Add a localization entry to the group."""
@@ -46,12 +48,15 @@ class LocalizationGroup:
         """Deduplicates all registered localization files in the group."""
         self.drop_uniques()
 
-        all_removed = []
-        for key, assoc in self.duplicates.items():
-            removed = self.drop_duplicates(key, assoc)
-            all_removed.append((key, removed))
+        items = self.duplicates.items()
+        total_duplicates = sum(map(lambda tup: len(tup[1]), items))
+        click.secho(f"There are {total_duplicates} duplicates to be processed." +
+                    " Press (Ctrl+C) to exit and save progress at any time.",
+                    fg="bright_black")
 
-        self.echo_removed(all_removed)
+        for key, assoc in items:
+            removed = self.drop_duplicates(key, assoc)
+            self.all_removed.append((key, removed))
 
     def export(self: LG) -> None:
         """Export all updated records to their respective files."""
@@ -64,9 +69,9 @@ class LocalizationGroup:
         self.duplicates = {k: v for (k, v) in self.duplicates.items()
                            if len(v) != 1}
 
-    def echo_removed(self: LG, all_removed: List[Tuple[str, AssocList]]) -> None:
+    def echo_removed(self: LG) -> None:
         """Display all removed keys from the provided file path."""
-        for removed in all_removed:
+        for removed in self.all_removed:
             key, assoc = removed
             for entry in assoc:
                 file_path, _ = entry
@@ -128,8 +133,8 @@ class LocalizationGroup:
         file_names_repr = ", ".join(file_names)
         ending = "this file" if len(file_names) == 1 else "these files"
 
-        first_style = click.style(
-            f"Do you want to open {ending}?", fg="bright_green")
+        first_style = click.style(f"Do you want to open {ending}?",
+                                  fg="bright_green")
         if click.confirm(first_style):
             for file_name in file_names:
                 click.launch(file_name)
@@ -222,6 +227,16 @@ def clean_localization(file_path: str) -> None:
     localization_group.add(localization)
 
 
+def prompt_export() -> None:
+    if len(localization_group.all_removed) == 0:
+        return
+
+    export_style = click.style("Do you want to save your changes?",
+                               fg="bright_green")
+    if click.confirm(export_style):
+        localization_group.export()
+
+
 if __name__ == "__main__":
     directory = os.path.join(MOD_DIRECTORY, "localisation")
     process_directory(directory, EXTENSIONS, clean_localization)
@@ -229,5 +244,11 @@ if __name__ == "__main__":
     try:
         localization_group.filter()
         localization_group.export()
+        localization_group.echo_removed()
     except click.Abort:
-        pass
+        try:
+            click.echo()
+            localization_group.echo_removed()
+            prompt_export()
+        except click.Abort:
+            pass
