@@ -80,8 +80,10 @@ class LocalizationGroup:
             for entry in assoc:
                 file_path, _ = entry
 
-                click.secho(f"Removed duplicate key `{key}` from {file_path}",
-                            fg="red")
+                first_style = click.style(key, fg="bright_blue")
+                second_style = click.style(file_path, fg="bright_yellow")
+                click.echo("Removed duplicate key " +
+                           f"{first_style} from {second_style}.")
 
     def drop_duplicates(self: LG, key: str, assoc: AssocList) -> AssocList:
         """Drop all duplicated entries for the provided key and return the removed entries."""
@@ -90,7 +92,7 @@ class LocalizationGroup:
 
     def echo_entries(self: LG, key: str, assoc: AssocList) -> None:
         """Display all found entries for the specified key."""
-        click.secho(f"{len(assoc)} ", fg="cyan", bold=True, nl=False)
+        click.secho(f"{len(assoc)} ", fg="bright_cyan", nl=False)
         click.secho(f"total entries found for key ", fg="white", nl=False)
         click.secho(key, fg="bright_blue", nl=False)
         click.secho(".\n", fg="white")
