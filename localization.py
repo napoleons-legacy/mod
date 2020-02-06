@@ -192,12 +192,13 @@ class Localization:
         """Write a localization file over
         its csv file with updated records.
         """
-        with open(self.file_path, "w", encoding="latin-1") as file:
-            file.write(Localization.to_str(COLUMNS) + "\n")  # Header
+        with open(self.file_path, "wb") as file:
+            header = bytes(Localization.to_str(COLUMNS), "latin-1")
+            file.write(header + b"\n")
 
             for key, entry in self.entries.items():
-                output = Localization.to_str([key] + entry)
-                file.write(output + "\n")
+                output = bytes(Localization.to_str([key] + entry), "latin-1")
+                file.write(output + b"\n")
 
     def drop_entry(self: L, key: str, entry: Row) -> None:
         """Drop a key from the model if the provided entry matches."""
