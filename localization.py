@@ -31,6 +31,10 @@ class LocalizationGroup:
         self.localizations = {}
         self.duplicates = collections.defaultdict(list)
         self.all_removed = []
+        self.prompt_file = True
+
+    def set_file(self: LG, prompt_file: bool) -> None:
+        self.prompt_file = prompt_file
 
     def add(self: LG, local: L) -> None:
         """Add a localization entry to the group."""
@@ -128,6 +132,9 @@ class LocalizationGroup:
 
     def prompt_files(self: LG, assoc: AssocList) -> None:
         """Display a prompt to open the provided files."""
+        if not self.prompt_file:
+            return
+
         file_names = set(map(lambda tup: tup[0], assoc))
 
         file_names_repr = ", ".join(file_names)
@@ -238,9 +245,16 @@ def prompt_export() -> None:
         localization_group.export()
 
 
-if __name__ == "__main__":
+@click.command()
+@click.option("--file/--no-file",
+              default=True,
+              help="Prompt to open the files containing duplicates.")
+def main(file):
     directory = os.path.join(MOD_DIRECTORY, "localisation")
     process_directory(directory, EXTENSIONS, clean_localization)
+
+    global localization_group
+    localization_group.set_file(file)
 
     try:
         localization_group.filter()
@@ -253,3 +267,7 @@ if __name__ == "__main__":
             prompt_export()
         except click.Abort:
             pass
+
+
+if __name__ == "__main__":
+    main()
