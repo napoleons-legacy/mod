@@ -20,6 +20,11 @@ Assoc = Tuple[str, Row]
 AssocList = List[Assoc]
 
 
+def get_name(file_path: str) -> str:
+    file_name, _ = os.path.splitext(file_path)
+    return os.path.basename(file_name)
+
+
 class LocalizationGroup:
     """A grouping of localization files in the game."""
 
@@ -55,12 +60,23 @@ class LocalizationGroup:
         items = self.duplicates.items()
         total_duplicates = sum(map(lambda tup: len(tup[1]), items))
         click.secho(f"There are {total_duplicates} duplicates to be processed." +
-                    " Press (Ctrl+C) to exit and save progress at any time.",
+                    " Press <Ctrl+C> to exit and save progress at any time.",
                     fg="bright_black")
 
         for key, assoc in items:
             removed = self.drop_duplicates(key, assoc)
             self.all_removed.append((key, removed))
+
+    def prompt_export(self: LG) -> None:
+        if len(self.all_removed) == 0:
+            return
+
+        self.echo_removed()
+
+        export_style = click.style("Do you want to save your changes?",
+                                   fg="bright_green")
+        if click.confirm(export_style):
+            self.export()
 
     def export(self: LG) -> None:
         """Export all updated records to their respective files."""
@@ -80,10 +96,11 @@ class LocalizationGroup:
             for entry in assoc:
                 file_path, _ = entry
 
-                first_style = click.style(key, fg="bright_blue")
-                second_style = click.style(file_path, fg="bright_yellow")
+                key_style = click.style(key, fg="bright_blue")
+                file_style = click.style(
+                    get_name(file_path), fg="bright_yellow")
                 click.echo("Removed duplicate key " +
-                           f"{first_style} from {second_style}.")
+                           f"{key_style} from {file_style}.")
 
     def drop_duplicates(self: LG, key: str, assoc: AssocList) -> AssocList:
         """Drop all duplicated entries for the provided key and return the removed entries."""
@@ -102,7 +119,7 @@ class LocalizationGroup:
         for index, local in enumerate(assoc):
             file_path, entry = local
             entry_style = click.style(f"Entry {index + 1}", fg="bright_blue")
-            file_style = click.style(f"({file_path})", fg="bright_yellow")
+            file_style = click.style(get_name(file_path), fg="bright_yellow")
 
             entry_str = Localization.to_str(entry)
             wrapped = textwrap.wrap(entry_str,
@@ -142,9 +159,9 @@ class LocalizationGroup:
         file_names_repr = ", ".join(file_names)
         ending = "this file" if len(file_names) == 1 else "these files"
 
-        first_style = click.style(f"Do you want to open {ending}?",
-                                  fg="bright_green")
-        if click.confirm(first_style):
+        end_style = click.style(f"Do you want to open {ending}?",
+                                fg="bright_green")
+        if click.confirm(end_style):
             for file_name in file_names:
                 click.launch(file_name)
 
@@ -232,19 +249,8 @@ class Localization:
 
 def clean_localization(file_path: str) -> None:
     """Registers all localization models with the global group."""
-    global localization_group
     localization = Localization(file_path)
     localization_group.add(localization)
-
-
-def prompt_export() -> None:
-    if len(localization_group.all_removed) == 0:
-        return
-
-    export_style = click.style("Do you want to save your changes?",
-                               fg="bright_green")
-    if click.confirm(export_style):
-        localization_group.export()
 
 
 @click.command()
@@ -255,20 +261,21 @@ def main(file):
     directory = os.path.join(MOD_DIRECTORY, "localisation")
     process_directory(directory, EXTENSIONS, clean_localization)
 
-    global localization_group
+    if len(localization_group.duplicates) == 0:
+        click.echo("No duplicates to remove found.")
+        return
+
     localization_group.set_file(file)
 
     try:
         localization_group.filter()
-        localization_group.export()
-        localization_group.echo_removed()
     except click.Abort:
-        try:
-            click.echo()
-            localization_group.echo_removed()
-            prompt_export()
-        except click.Abort:
-            pass
+        click.echo()
+
+    try:
+        localization_group.prompt_export()
+    except click.Abort:
+        pass
 
 
 if __name__ == "__main__":

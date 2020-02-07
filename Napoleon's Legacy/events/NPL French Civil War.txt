@@ -975,9 +975,9 @@ country_event = {
 
 # FED declares war on the non-AFA French nation
 country_event = {
-    id = 37243
-    title = "EVTNAME37243"
-    desc = "EVTDESC37243"
+    id = 600042
+    title = "EVTNAME600042"
+    desc = "EVTDESC600042"
     picture = "Monarchy"
 
     trigger = {
@@ -997,7 +997,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA37243"
+        name = "EVTOPTA600042"
         create_alliance = AFA
         military_access = AFA
         casus_belli = {
@@ -1018,7 +1018,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB37243"
+        name = "EVTOPTB600042"
         prestige = -10
         ai_chance = {
             factor = 0
@@ -1029,8 +1029,8 @@ country_event = {
 #FED declares war on the non-AFA French nation (BOR exists)
 country_event = {
     id = 37244
-    title = "EVTNAME37243"
-    desc = "EVTDESC37243"
+    title = "EVTNAME600042"
+    desc = "EVTDESC600042"
     picture = "Monarchy"
 
     trigger = {
@@ -1052,7 +1052,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA37243"
+        name = "EVTOPTA600042"
         create_alliance = AFA
         military_access = AFA
         casus_belli = {
@@ -1073,7 +1073,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB37243"
+        name = "EVTOPTB600042"
         prestige = -10
         ai_chance = {
             factor = 0
@@ -1084,7 +1084,7 @@ country_event = {
 #FED makes peace with France, wins war
 country_event = {
     id = 37245
-    title = "EVTNAME37243"
+    title = "EVTNAME600042"
     desc = "EVTDESC37245"
     picture = "Celebration"
 
