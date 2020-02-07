@@ -57,6 +57,10 @@ class LocalizationGroup:
         """Deduplicates all registered localization files in the group."""
         self.drop_uniques()
 
+        if len(self.duplicates) == 0:
+            click.echo("No duplicates to remove found.")
+            return
+
         items = self.duplicates.items()
         total_duplicates = sum(map(lambda tup: len(tup[1]), items))
         click.secho(f"There are {total_duplicates} duplicates to be processed." +
@@ -260,10 +264,6 @@ def clean_localization(file_path: str) -> None:
 def main(file):
     directory = os.path.join(MOD_DIRECTORY, "localisation")
     process_directory(directory, EXTENSIONS, clean_localization)
-
-    if len(localization_group.duplicates) == 0:
-        click.echo("No duplicates to remove found.")
-        return
 
     localization_group.set_file(file)
 
