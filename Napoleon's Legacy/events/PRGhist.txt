@@ -500,7 +500,6 @@ country_event = {
         PRG = { clr_country_flag = asked_for_peace
         clr_country_flag = usa_expedition }
         end_war = PRG
-        end_military_access = URU
         ai_chance = {
                 factor = 0.99
             }

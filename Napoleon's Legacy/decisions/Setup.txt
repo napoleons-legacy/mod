@@ -2064,7 +2064,6 @@ political_decisions = {
             }
             #################Setup UK Ideology######################
 
-            URU = { add_country_modifier = { name = credit_risk duration = 3650 } }
             ECU = { add_country_modifier = { name = credit_risk duration = 3650 } }
             UCA = { add_country_modifier = { name = credit_risk duration = 1825 } }
             HAI = { add_country_modifier = { name = credit_risk duration = 5475 } }

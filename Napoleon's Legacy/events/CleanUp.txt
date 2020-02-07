@@ -3441,16 +3441,14 @@ country_event = {
                 }
         }
         #Portugal
-        POR = {
+        REI = {
             521 = {
                 party_loyalty = {
                     ideology = liberal
                     loyalty_value = -25
                 }
             }
-        }
-        #Uruguay
-        URU = {
+            #Uruguay
             2344 = {
                 party_loyalty = {
                     ideology = liberal
