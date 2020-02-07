@@ -20,6 +20,23 @@ git clone --depth=1 -b development https://github.com/napoleons-legacy/mod.git
 ```
 or change the branch to `development` and download as a zip folder.
 
+## Development
+
+Before submitting a pull request, it is best to do:
+```
+python cleanup.py
+```
+
+This cleans up the file by using spaces over tabs, and UNIX line endings over Windows line endings, and more.
+
+If adding localization, it is best to do:
+```
+pip install -r requirements.txt
+python localization.py
+```
+
+If there are duplicates, resolve them.
+
 ## History
 
 The events covered by the mod since the POD are documented [here](history.md).
