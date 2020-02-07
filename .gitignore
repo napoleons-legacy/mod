@@ -29,4 +29,6 @@ $RECYCLE.BIN/
 *.lnk
 
 HPM/
-.vscode
+.vscode/
+.ipynb_checkpoints/
+__pycache__/
