@@ -2616,7 +2616,7 @@ liberal_rebels = {
                 is_culture_group = germanic
                 NOT = { tag = GER }
                 NOT = { tag = TEU }
-                NOT = { tag = FED }
+                NOT = { tag = RHB }
                 NOT = { tag = AUS }
                 NOT = { tag = KUK }
                 NOT = { has_country_flag = wants_to_unify }

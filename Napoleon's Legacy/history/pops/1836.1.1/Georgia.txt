@@ -2,30 +2,6 @@
 #under the rule of Russia in 1836
 #Tblisi (232000/58000 POPS) #circassian-orthodox = Ossetian
 1090 = {
-    bureaucrats = {
-        culture = russian
-        religion = orthodox
-        size = 100
-    }
-
-    clergymen = {
-        culture = russian
-        religion = orthodox
-        size = 25
-    }
-
-    artisans = {
-        culture = russian
-        religion = orthodox
-        size = 25
-    }
-
-    soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 250
-    }
-
     aristocrats = {
         culture = georgian
         religion = orthodox
@@ -508,12 +484,6 @@
         culture = circassian
         religion = orthodox
         size = 450
-    }
-
-    soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 100
     }
 
     farmers = {

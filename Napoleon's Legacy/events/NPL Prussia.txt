@@ -225,7 +225,7 @@ country_event = {
     }
 }
 
-# FED gets PRU offer
+# RHB gets PRU offer
 country_event = {
 
     id = 121313
@@ -321,7 +321,7 @@ country_event = {
         }
 
         has_country_flag = bismarck_in_the_reich
-        exists = FED
+        exists = RHB
     }
 
     fire_only_once = yes
@@ -333,7 +333,7 @@ country_event = {
     option = {
         name = "EVTOPTA121316"
         set_country_flag = prussian_fed_concord_attempt
-        FED = { country_event = 121313 }
+        RHB = { country_event = 121313 }
 
         ai_chance = {
             factor = 90
@@ -348,7 +348,7 @@ country_event = {
     }
 }
 
-# Prussia decides to go Teutonica or Germanic - FED does not exist
+# Prussia decides to go Teutonica or Germanic - RHB does not exist
 country_event = {
 
     id = 121317
@@ -363,7 +363,7 @@ country_event = {
         NOT = {
             has_country_flag = prussian_fed_concord_attempt
             year = 1889
-            exists = FED
+            exists = RHB
         }
 
         has_country_flag = bismarck_in_the_reich

@@ -34,7 +34,7 @@ country_event = {
         NOT = {
             exists = GER
             exists = NGF
-            exists = FED
+            exists = RHB
             has_country_flag = fed_unifying
         }
     }
@@ -79,7 +79,7 @@ country_event = {
         NOT = {
             exists = GER
             exists = NGF
-            exists = FED
+            exists = RHB
             has_global_flag = federation_rejected
             has_global_flag = federation_accepted
         }
@@ -219,14 +219,14 @@ country_event = {
             annex_to = THIS
         }
 
-        change_tag = FED
+        change_tag = RHB
 
         GER = {
             all_core = {
                 limit = {
                     NOT = { OR = { is_core = PRU is_core = DZG } }
                     }
-                add_core = FED
+                add_core = RHB
             }
         }
 
@@ -287,7 +287,7 @@ country_event = {
         NOT = {
             exists = GER
             exists = NGF
-            exists = FED
+            exists = RHB
             has_global_flag = federation_rejected
             has_global_flag = federation_accepted
         }
@@ -394,12 +394,12 @@ country_event = {
                     NOT = { OR = { is_core = PRU is_core = DZG is_core = SWE } }
                 }
 
-                add_core = FED
+                add_core = RHB
             }
         }
 
         FRM = {
-            change_tag = FED
+            change_tag = RHB
         }
 
         any_country = {
@@ -409,10 +409,10 @@ country_event = {
                     tag = THIS
                 }
             }
-            annex_to = FED
+            annex_to = RHB
         }
 
-        FED = {
+        RHB = {
             prestige = -100
             add_accepted_culture = south_german
             add_accepted_culture = north_german
@@ -425,13 +425,13 @@ country_event = {
             government = hms_government
         }
 
-        create_alliance = FED
+        create_alliance = RHB
         diplomatic_influence = {
-            who = FED
+            who = RHB
             value = 300
         }
 
-        create_vassal = FED
+        create_vassal = RHB
         set_global_flag = federation_accepted
 
         any_country = {
@@ -486,7 +486,7 @@ country_event = {
 
     option = {
         name = "EVTOPTA55005"
-        FED = { inherit = THIS }
+        RHB = { inherit = THIS }
         ai_chance = {
             factor = 100
         }
@@ -543,7 +543,7 @@ country_event = {
         year = 1850
         NOT = {
             exists = GER
-            exists = FED
+            exists = RHB
         }
     }
 

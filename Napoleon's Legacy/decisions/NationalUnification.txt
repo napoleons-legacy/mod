@@ -14,7 +14,7 @@ political_decisions = {
                 exists = SGF
                 exists = GER
                 tag = DNB
-                tag = FED
+                tag = RHB
                 AND = {
                     tag = AUS
                     NOT = { has_country_flag = austrian_greater_germany }
@@ -311,7 +311,7 @@ political_decisions = {
                 exists = GER
                 exists = NGF
                 tag = UBD
-                tag = FED
+                tag = RHB
                 tag = TEU
             }
         }
@@ -475,7 +475,7 @@ political_decisions = {
             OR = {
                 tag = NGF
                 tag = SGF
-                tag = FED
+                tag = RHB
             }
             NOT = {
                 exists = GER

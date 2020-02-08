@@ -9,7 +9,7 @@ political_decisions = {
             }
             NOT = {
                 exists = GER
-                exists = FED
+                exists = RHB
                 tag = SGF
                 tag = NGF
                 tag = PRU
@@ -78,9 +78,9 @@ political_decisions = {
                         is_core = DZG
                         }
                 }
-                add_core = FED
+                add_core = RHB
             }
-            change_tag = FED
+            change_tag = RHB
         }
         ai_will_do = {
             factor = 1

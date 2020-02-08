@@ -71,7 +71,7 @@ country_event = {
         all_core = { remove_core = FRA remove_core = BOR remove_core = AFA }
 
         random_country = { limit = { tag = GER exists = yes } THIS = { any_owned = { limit = { is_core = GER } secede_province = GER } } }
-        random_country = { limit = { tag = FED exists = yes } THIS = { any_owned = { limit = { is_core = FED } secede_province = FED } } }
+        random_country = { limit = { tag = RHB exists = yes } THIS = { any_owned = { limit = { is_core = RHB } secede_province = RHB } } }
         random_country = { limit = { tag = NGF exists = yes } THIS = { any_owned = { limit = { is_core = NGF } secede_province = NGF } } }
         random_country = { limit = { tag = SGF exists = yes } THIS = { any_owned = { limit = { is_core = SGF } secede_province = SGF } } }
 

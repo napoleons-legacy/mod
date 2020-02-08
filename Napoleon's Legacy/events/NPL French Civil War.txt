@@ -973,7 +973,7 @@ country_event = {
     }
 }
 
-# FED declares war on the non-AFA French nation
+# RHB declares war on the non-AFA French nation
 country_event = {
     id = 600042
     title = "EVTNAME600042"
@@ -982,7 +982,7 @@ country_event = {
 
     trigger = {
         OR = {
-            tag = FED
+            tag = RHB
             tag = GER
         }
         exists = AFA
@@ -1026,7 +1026,7 @@ country_event = {
     }
 }
 
-#FED declares war on the non-AFA French nation (BOR exists)
+#RHB declares war on the non-AFA French nation (BOR exists)
 country_event = {
     id = 37244
     title = "EVTNAME600042"
@@ -1035,7 +1035,7 @@ country_event = {
 
     trigger = {
         OR = {
-            tag = FED
+            tag = RHB
             tag = GER
         }
         exists = AFA
@@ -1081,7 +1081,7 @@ country_event = {
     }
 }
 
-#FED makes peace with France, wins war
+#RHB makes peace with France, wins war
 country_event = {
     id = 37245
     title = "EVTNAME600042"
@@ -1090,7 +1090,7 @@ country_event = {
 
     trigger = {
         OR = {
-            tag = FED
+            tag = RHB
             tag = GER
         }
         has_global_flag = German_war_of_lib

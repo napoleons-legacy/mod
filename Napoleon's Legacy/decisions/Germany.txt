@@ -8,7 +8,7 @@ political_decisions = {
             OR = {
                 tag = GER
                 tag = NGF
-                tag = FED
+                tag = RHB
             }
             owns = 369
         }
@@ -73,7 +73,7 @@ political_decisions = {
                 tag = BAV
                 tag = SGF
                 tag = GER
-                tag = FED
+                tag = RHB
             }
             owns = 599
             NOT = {
@@ -197,7 +197,7 @@ political_decisions = {
                 tag = BAV
                 tag = SGF
                 tag = GER
-                tag = FED
+                tag = RHB
             }
             owns = 602
             NOT = {
@@ -281,7 +281,7 @@ political_decisions = {
         potential = {
             OR = {
                 tag = GER
-                tag = FED
+                tag = RHB
                 tag = NGF
             }
             owns = 578
