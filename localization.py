@@ -33,16 +33,22 @@ class LocalizationGroup:
         duplicates to an empty default dictionary,
         and all_removed to an empty list.
         """
+
         self.localizations = {}
         self.duplicates = collections.defaultdict(list)
         self.all_removed = []
         self.prompt_file = True
 
-    def set_file(self: LG, prompt_file: bool) -> None:
+    def set_prompt_file(self: LG, prompt_file: bool) -> None:
+        """Set the flag that enables displaying the prompt
+        to open files containing duplicate entries for some key.
+        """
+
         self.prompt_file = prompt_file
 
     def add(self: LG, local: L) -> None:
         """Add a localization entry to the group."""
+
         file_path = local.file_path
         self.localizations[file_path] = local
 
@@ -55,6 +61,7 @@ class LocalizationGroup:
 
     def filter(self: LG) -> None:
         """Deduplicates all registered localization files in the group."""
+
         self.drop_uniques()
 
         if len(self.duplicates) == 0:
@@ -72,6 +79,8 @@ class LocalizationGroup:
             self.all_removed.append((key, removed))
 
     def prompt_export(self: LG) -> None:
+        """Prompt to export changed entries to their files."""
+
         if len(self.all_removed) == 0:
             return
 
@@ -84,12 +93,15 @@ class LocalizationGroup:
 
     def export(self: LG) -> None:
         """Export all updated records to their respective files."""
+
         for local in self.localizations.values():
             local.export()
 
     def drop_uniques(self: LG) -> None:
         """Drop all entries that are designated as duplicate
-        while only having one, unique occurrence."""
+        while only having one, unique occurrence.
+        """
+
         self.duplicates = {k: v for (k, v) in self.duplicates.items()
                            if len(v) != 1}
 
@@ -107,12 +119,16 @@ class LocalizationGroup:
                            f"{key_style} from {file_style}.")
 
     def drop_duplicates(self: LG, key: str, assoc: AssocList) -> AssocList:
-        """Drop all duplicated entries for the provided key and return the removed entries."""
+        """Drop all duplicated entries for
+        the provided key and return the removed entries.
+        """
+
         self.echo_entries(key, assoc)
         return self.prompt_deduplication(key, assoc)
 
     def echo_entries(self: LG, key: str, assoc: AssocList) -> None:
         """Display all found entries for the specified key."""
+
         click.secho(f"{len(assoc)} ", fg="bright_cyan", nl=False)
         click.secho(f"total entries found for key ", fg="white", nl=False)
         click.secho(key, fg="bright_blue", nl=False)
@@ -120,6 +136,7 @@ class LocalizationGroup:
 
     def prompt_deduplication(self: LG, key: str, assoc: AssocList) -> AssocList:
         """Display a prompt to deduplicate specified entries."""
+
         for index, local in enumerate(assoc):
             file_path, entry = local
             entry_style = click.style(f"Entry {index + 1}", fg="bright_blue")
@@ -155,6 +172,7 @@ class LocalizationGroup:
 
     def prompt_files(self: LG, assoc: AssocList) -> None:
         """Display a prompt to open the provided files."""
+
         if not self.prompt_file:
             return
 
@@ -173,6 +191,7 @@ class LocalizationGroup:
         """Drop duplicated entries and emplace the chosen entry
         over the original incase it is a duplicate.
         """
+
         file_path, entry = chosen
         self.localizations[file_path].entries[key] = entry
 
@@ -193,6 +212,7 @@ class Localization:
         """Initialize file path, entries, and duplicates
         with the file contents provided.
         """
+
         self.file_path = file_path
         self.entries = {}
         self.duplicates = collections.defaultdict(list)
@@ -222,6 +242,7 @@ class Localization:
         """Write a localization file over
         its csv file with updated records.
         """
+
         with open(self.file_path, "wb") as file:
             header = bytes(Localization.to_str(COLUMNS), "latin-1")
             file.write(header + b"\n")
@@ -232,12 +253,17 @@ class Localization:
 
     def drop_entry(self: L, key: str, entry: Row) -> None:
         """Drop a key from the model if the provided entry matches."""
+
         self.duplicates.pop(key, None)
 
         if key in self.entries and entry == self.entries[key]:
             self.entries.pop(key)
 
     def clean_junk(self: L, value: str) -> str:
+        """Return True if a string contains only x's and comma's,
+        otherwise False.
+        """
+
         chars = set(value.lower())
         chars.discard("x")
         chars.discard(",")
@@ -248,11 +274,13 @@ class Localization:
         """Output an iterable row as a semi-colon joined string with
         an extra semi-colon at the end.
         """
+
         return ";".join(entry) + ";"
 
 
 def clean_localization(file_path: str) -> None:
     """Registers all localization models with the global group."""
+
     localization = Localization(file_path)
     localization_group.add(localization)
 
@@ -262,10 +290,14 @@ def clean_localization(file_path: str) -> None:
               default=True,
               help="Prompt to open the files containing duplicates.")
 def main(file):
+    """Start the localization cleanup program.
+    For more information, do `python localization.py --help`.
+    """
+
     directory = os.path.join(MOD_DIRECTORY, "localisation")
     process_directory(directory, EXTENSIONS, clean_localization)
 
-    localization_group.set_file(file)
+    localization_group.set_prompt_file(file)
 
     try:
         localization_group.filter()
