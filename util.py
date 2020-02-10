@@ -1,5 +1,5 @@
 import os
-from typing import Callable, Dict, List
+from typing import Callable, Dict, List, Tuple
 
 
 def read_mod_file(file_name: str) -> Dict[str, str]:
@@ -16,18 +16,18 @@ def read_mod_file(file_name: str) -> Dict[str, str]:
     return file_data
 
 
-def find_mod_directory() -> str:
+def find_mod_directory() -> Tuple[str, str]:
     """Find the mod directory from the first seen .mod file."""
 
     for file_name in os.listdir("."):
         if file_name.endswith(".mod"):
             mod_file = read_mod_file(file_name)
-            return mod_file["user_dir"]
+            return (file_name, mod_file["user_dir"])
 
     raise FileNotFoundError("No .mod file found in directory.")
 
 
-MOD_DIRECTORY = find_mod_directory()
+MOD_FILE, MOD_DIRECTORY = find_mod_directory()
 
 
 def is_good_ext(extensions: List[str]) -> Callable[[str], bool]:
