@@ -5,6 +5,8 @@ from os import path
 MACOS_FOLDER_PATH = path.expanduser(
     "~/Library/Containers/com.vpltd.Victoria2HeartOfDarkness/Data/Library/Application Support/com.vpltd.Victoria2HeartOfDarkness-MAS/mod")
 WINDOWS_FOLDER_PATH = "C:\Program Files (x86)\Steam\SteamApps\common\Victoria 2\mod"
+LINUX_FOLDER_PATH = path.expanduser(
+    "~/.steam/steam/steamapps/common/Victoria 2/mod")
 
 MOD_FOLDER = "Napoleon's Legacy"
 MOD_FILE = "Napoleon.mod"
@@ -39,6 +41,6 @@ if __name__ == "__main__":
     elif os_type == "darwin":
         install_mod(MACOS_FOLDER_PATH)
     elif os_type == "linux":
-        sys.exit("Victoria 2 cannot run on linux systems.")
+        install_mod(LINUX_FOLDER_PATH)
     else:
         sys.exit(f"Unrecognized OS {os_type}")
